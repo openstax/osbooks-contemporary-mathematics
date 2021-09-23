@@ -1,0 +1,569 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Applications of the Normal Distribution</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Applications of the Normal Distribution</md:title>
+    <md:content-id>m00008</md:content-id>
+    <md:uuid>c83b9507-7035-41c0-b507-680261d853af</md:uuid>
+  </metadata>
+  <content>
+    <figure class="splash" id="fig-00001">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/Photo_8.9.jpg"/>
+      </media>
+      <caption><emphasis effect="italic">Photo 8.9 – Photo of a response sheet for a standardized test (the kind you bubble in), with some responses marked and a pencil in the act of filling in another response</emphasis></caption>
+      </figure>
+      <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold"> After completing this module, you should be able to:</emphasis></para>
+      <list list-type="enumerated" id="list-00001">
+      <item>Apply the normal distribution to real-world scenarios.</item>
+      </list>
+      <para id="para-00002">As we saw in Module 6, the word “standardized” is closely associated with the normal distribution. This is why things like college entrance exams, state achievement tests for K-12 students, and Advanced Placement tests are often called “standardized tests”: scores are assigned in a way that forces them to follow a normal distribution, with a mean and standard deviation that are consistent from year to year. It also allows people like college admissions officers to directly compare an applicant who took the ACT (a college entrance exam) to an applicant who instead chose to take the SAT (a different college entrance exam). The ability to compare individuals from different groups like this is one of the benefits of using the normal distribution. We’ll explore some of those benefits and other real-world uses of the normal distribution in this module.</para>
+      </section>
+      <section id="sect-00002">
+      <title>College Entrance Exams</title>
+      <para id="para-00003"><emphasis effect="bold">There are two good ways to compare two data values from different groups: using <emphasis effect="italic">z</emphasis>-scores and using percentiles. The two methods will always give consistent results (meaning that we won’t find, for example, that the first value is better using <emphasis effect="italic">z</emphasis>-scores but the second value is better using percentiles), so use whichever method is more comfortable for you.</emphasis></para>
+      <example id="exam-00001">
+      <title>EXAMPLE 41 – Evaluating College Entrance Exam Scores</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00004">According to the Digest of Education Statistics (found at nces.ed.gov), composite scores on the SAT have mean 1060 and standard deviation 195, while composite scores on the ACT have mean 21 and standard deviation 5.</para>
+      <list list-type="enumerated" id="list-00002">
+      <item>At what percentile would an SAT score of 990 fall?</item>
+      <item>What is the <emphasis effect="italic">z</emphasis>-score of an ACT score of 27?</item>
+      <item>Which is better: a score of 1450 on the SAT or 29 on the ACT?</item>
+      </list>
+      </problem>
+      <solution id="sol-00001">
+      <list list-type="enumerated" id="list-00003">
+      <item>Using Google Sheets, we can answer this question with the formula “=NORM.DIST(990, 1060, 195, TRUE)”. A score of 990 would fall at the 36<sup>th</sup> percentile.</item>
+      <item>Using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac></mrow></math>, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>27</mn><mo>−</mo><mn>21</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>1.2</mn></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00005">Let’s compare the values using both percentiles and z-values:</para>
+      <para id="para-00006"><emphasis effect="bold">Percentiles: </emphasis>Using “=NORM.DIST(1450, 1060, 195, TRUE)” we find that an SAT score of 1450 is at the 98<sup>th</sup> percentile. Meanwhile, by entering “=NORM.DIST(29, 21, 5, TRUE)” we see that an ACT score of 29 is around the 95<sup>th</sup> percentile. Since it’s at a higher percentile, we can conclude that an SAT score of 1450 is better than an ACT score of 29.</para>
+      <para id="para-00007"><emphasis effect="italic"><emphasis effect="bold">z</emphasis>-scores: <emphasis effect="italic"/></emphasis>Using the formula, we see that the <emphasis effect="italic">z</emphasis>-score for an SAT score of 1450 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>1450</mn><mo>−</mo><mn>1060</mn></mrow><mrow><mn>195</mn></mrow></mfrac><mo>=</mo><mn>2</mn></mrow></math>, while the <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">z</emphasis>-score for an ACT score of 29 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>29</mn><mo>−</mo><mn>21</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>1.6</mn></mrow></math>. Since it has a higher <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">z</emphasis>-score, an SAT score of 1450 is better than an ACT score of 29.</para></item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00001">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00008">According to data found at mba.com, the mean score on the GMAT (an entrance exam for graduate schools in business management) is 565, with standard deviation 116. For the LSAT (an entrance exam for law schools), the mean score is 150 with standard deviation 10 (according to <emphasis effect="underscore">www.kaptest.com</emphasis>).</para>
+      <list list-type="enumerated" id="list-00004">
+      <item>What is the <emphasis effect="italic">z</emphasis>-score for a GMAT score of 715?</item>
+      <item>At what percentile is an LSAT score of 166?</item>
+      <item>Which is better: a GMAT score of 650 or an LSAT score of 161?</item>
+      </list>
+      </problem>
+      <solution id="sol-00002">
+      <list list-type="enumerated" id="list-00005">
+      <item>1.29</item>
+      <item>94.5<sup>th</sup></item>
+      <item>An LSAT score of 161 is better</item>
+      </list>
+      </solution>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title> Coin flipping</title>
+      <para id="para-00009">In the opening of Module 6, we saw that the number of heads we get when we flip a coin 100 times is distributed normally. It can be shown that if <emphasis effect="italic">n</emphasis> is the number of flips, then the mean of that distribution is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mi>n</mi></msqrt></mrow><mn>2</mn></mfrac></mrow></math> (as long as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>20</mn></mrow></math>). So, for 100 flips, the mean of the distribution is 50 and the standard deviation is 5. Here’s the histogram we got for 10,000 repetitions of the experiment with the normal distribution with mean 50 and standard deviation 5 overlaid:
+      <figure id="fig-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_08_07_099.jpg"/>
+      </media>
+      <caption><emphasis effect="italic">Tech 9.99: Same as Tech 9.63:</emphasis></caption>
+      </figure>
+      </para>
+      <para id="para-00010">Sure enough, those match up very closely! In that opening example, one of our early runs gave us 70 heads in 100 flips, which we noted seemed unusual. Using the normal distribution, we can identify exactly how unusual that really is. Using Google Sheets, the formula “=NORM.DIST(70, 50, 5, TRUE)” gives us 0.999968, which is the 99.997<sup>th</sup> percentile! How is that useful? Suppose you need to test whether a coin is fair, and so you flip it 100 times. While we might be suspicious if we get 70 heads out of the 100 flips, we now have a numerical measure for how unusual that is: if the coin were fair, we would expect to see 70 heads (or more) only <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mo>−</mo><mn>99.9968</mn><mo>=</mo><mn>0.0032</mn><mi>%</mi></mrow></math> of the time. That’s really unlikely! Analysis like this is related to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hypothesis testing</emphasis>, an important application of statistics in the sciences and social sciences.</para>
+      <example id="exam-00002">
+      <title>EXAMPLE 42 – Flipping a Coin</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00011">Let’s say we flip a coin 64 times and count the number of heads.</para>
+      <list list-type="enumerated" id="list-00006">
+      <item>What would be the mean of the corresponding distribution?</item>
+      <item>What would be the standard deviation of the corresponding distribution?</item>
+      <item>Suppose we got 25 heads, which seems a little low. At what percentile would 25 heads fall?</item>
+      </list>
+      </problem>
+      <solution id="sol-00003">
+      <list list-type="enumerated" id="list-00007">
+      <item>Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>64</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>32</mn></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Again using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, we get a standard deviation of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mrow><mn>64</mn></mrow></msqrt></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Using “=NORM.DIST(25, 32, 4, TRUE)”, we see that 25 heads is at the 4<sup>th</sup> percentile.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00012">You flip a coin 144 times and count the number of heads.</para>
+      <list list-type="enumerated" id="list-00008">
+      <item>What is the mean of the corresponding distribution?</item>
+      <item>What is the standard deviation of the corresponding distribution?</item>
+      <item>You flipped 81 heads. At what percentile does that fall?</item>
+      </list>
+      </problem>
+      <solution id="sol-00004">
+      <list list-type="enumerated" id="list-00009">
+      <item>72</item>
+      <item>6</item>
+      <item>93<sup>rd</sup></item>
+      </list>
+      </solution>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00004">
+      <title>Analyzing Data That Are Normally Distributed</title>
+      <para id="para-00013">Whenever we’re working with a data set that has a distribution that looks symmetric and bell-shaped, we can use techniques associated with the normal distribution to analyze the data.</para>
+      <example id="exam-00003">
+      <title>EXAMPLE 43 – Using Normal Techniques to Analyze Data</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00014">The data in “AvgSAT” contains the average SAT score for students attending every institution of higher learning in the US for which data is available (data from data.ed.gov). Back in Example 12, we created a histogram for these data:
+      <figure id="fig-00003">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_08_07_100.jpg"/>
+      </media>
+      <caption><emphasis effect="italic">Tech 9.100: Same as Tech 9.20:</emphasis></caption>
+      </figure>
+      </para>
+      <para id="para-00015">This distribution is fairly symmetric (it’s just a little right-skewed) and bell-shaped, so we can use normal distribution techniques to analyze the data.</para>
+      <list list-type="enumerated" id="list-00010">
+      <item>What is the mean of these average SAT scores?</item>
+      <item>What is the standard deviation of these SAT scores?</item>
+      <item>Using the answers to the previous two questions, use NORM.DIST in Google Sheets to estimate at what percentile the University at Buffalo in New York (average SAT: 1250) falls.</item>
+      <item>Use PERCENTRANK to find the actual percentile of the University at Buffalo, and see how close the estimate in the previous question came.</item>
+      </list>
+      </problem>
+      <solution id="sol-00005">
+      <list list-type="enumerated" id="list-00011">
+      <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.</item>
+      <item>Using the STDEV function, we get that the standard deviation is 125.517.</item>
+      <item>Entering “=NORM.DIST(1250, 1141, 125.517, TRUE)” into Google Sheets, we estimate that the University at Buffalo is at the 81<sup>st</sup> percentile.</item>
+      <item>Using PERCENTRANK, we find that the actual percentile is the 84<sup>th</sup>. These are close!</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00003">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00016">Again using the data in “AvgSAT”, find the average SAT score of a school at the 35<sup>th</sup> percentile in two ways: using NORM.INV and using PERCENTILE.</para>
+      </problem>
+      <solution id="sol-00006">
+      <para id="para-00017">Using NORM.INV: 1092.8</para>
+      <para id="para-00018">Using PERCENTILE: 1085</para>
+      </solution>
+      </exercise>
+      </note>
+      <note class="who-knew" id="note-00004">
+      <title>[WHO KNEW?] POLITICAL MEDDLING EXPOSED</title>
+      <para id="para-00019">The normal distribution pops up in some unusual places. Recently, a team at Duke University has been using statistics to help identify partisan gerrymandering, where electoral districts have been carefully drawn in a way that benefits one political party over another. In their analysis, they found that hypothetical election results in randomly drawn districts are normally distributed! By using techniques similar to the ones we used above, they can quantify precisely how biased a particular electoral map is by finding the percentile rank of the actual election result on the normal distribution of the hypothetical results. You can find out more about their work at their website: <emphasis effect="underscore">https://sites.duke.edu/quantifyinggerrymandering/</emphasis></para>
+      </note>
+      </section>
+      <section id="sect-00005">
+      <title>Check Your Understanding</title>
+      <para id="para-00020">For problems 1 – 3, recall that the SAT exam has mean 1060 and standard deviation 195, and that composite scores on the ACT have mean 21 and standard deviation 5.</para>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00021">
+      <list list-type="enumerated" number-style="arabic" id="list-00012">
+      <item>At what percentile would an SAT score of 940 fall?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00007">
+      <para id="para-00022">27<sup>th</sup></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00023">
+      <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00013">
+      <item>What score would be at the 67<sup>th</sup> percentile on the ACT?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00008">
+      <para id="para-00024">23.2</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00025">
+      <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00014">
+      <item>Which is a better score: 1300 on the SAT or 27 on the ACT?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00009">
+      <para id="para-00026">Answer: 1300 on the SAT</para>
+      </solution>
+      </exercise>
+      <para id="para-00027">For problems 4 – 6, recall that if we flip a coin at least 20 times, the distribution of the number of heads is approximately normal with mean equal to half the number of flips and standard deviation equal to half of the square root of the number of flips.</para>
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00028">
+      <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00015">
+      <item>Suppose we flip a coin 120 times. What are the mean and standard deviation of the corresponding distribution of heads?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00010">
+      <para id="para-00029"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>μ</mi><mo>=</mo><mn>60</mn></mrow></math>; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>120</mn></mrow></msqrt><mo>≈</mo><mn>5.477</mn></mrow></math></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <problem id="prob-00011">
+      <para id="para-00030"><list list-type="enumerated" number-style="arabic" start-value="5" id="list-00016">
+      <item>Let’s say you flip 70 heads in 120 flips. At what percentile would that fall?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00011">
+      <para id="para-00031">96.6<sup>th</sup></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00032">
+      <list list-type="enumerated" number-style="arabic" start-value="6" id="list-00017">
+      <item>How many heads would be at the 30<sup>th</sup> percentile? Round to the nearest whole number.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00012">
+      <para id="para-00033">57</para>
+      </solution>
+      </exercise>
+      <para id="para-00034">For problems 7 – 10, use the data in “World Tax,” which gives the tax revenue of many countries of the world in 2017, expressed as a percentage of their gross domestic products (data from the World Bank). You can assume that the distribution is approximately normal (but you can make a histogram to check, if you want).</para>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00035">
+      <list list-type="enumerated" number-style="arabic" start-value="7" id="list-00018">
+      <item>What tax revenue percentage falls at the third quartile? Answer this question using Google Sheets in two ways: using PERCENTILE and using NORM.INV.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00013">
+      <para id="para-00036">PERCENTILE gives 20.86; NORM.INV gives 21.11</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00037">
+      <list list-type="enumerated" number-style="arabic" start-value="8" id="list-00019">
+      <item>What tax revenue percentage falls at the 20<sup>th</sup> percentile? Answer this question using Google Sheets in two ways: using PERCENTILE and using NORM.INV.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00014">
+      <para id="para-00038">PERCENTILE gives 11.82; NORM.INV gives 11.68.</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00039">
+      <list list-type="enumerated" number-style="arabic" start-value="9" id="list-00020">
+      <item>At what percentile does the United Kingdom (25.62%, found on row 46 in the spreadsheet) fall? Answer this question using Google Sheets in two ways: using PERCENTRANK and using NORM.DIST.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00015">
+      <para id="para-00040">PERCENTRANK gives 92.6<sup>th</sup>; NORM.DIST gives 91.9<sup>th</sup>.</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00041">
+      <list list-type="enumerated" number-style="arabic" start-value="10" id="list-00021">
+      <item>At what percentile does Kiribati (21.97%, found on row 62 in the spreadsheet) fall? Answer this question using Google Sheets in two ways: using PERCENTRANK and using NORM.DIST.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00016">
+      <para id="para-00042">PERCENTRANK gives 77<sup>th</sup>; NORM.DIST gives 79.2<sup>nd</sup>.</para>
+      </solution>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00006">
+      <title>Exercises</title>
+      <para id="para-00043">For exercises 1 – 8, assume we’re looking at results from two different standardized tests. The first, called the ABC, has mean 250 and standard deviation 50. The second, called the XYZ, has mean 80 and standard deviation 10.</para>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00044">
+      <list list-type="enumerated" number-style="arabic" id="list-00022">
+      <item>What would be the <emphasis effect="italic">z</emphasis>-score of a result of 322 on the ABC?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00017">
+      <para id="para-00045">1.44</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00046">
+      <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00023">
+      <item>What would be the <emphasis effect="italic">z</emphasis>-score of a result of 57 on the XYZ?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00018">
+      <para id="para-00047">Answer: -2.3</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00019">
+      <problem id="prob-00019">
+      <para id="para-00048">
+      <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00024">
+      <item>At what percentile would a result of 211 on the ABC fall? Round your answer to the nearest percentile.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00019">
+      <para id="para-00049">22<sup>nd</sup></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00020">
+      <problem id="prob-00020">
+      <para id="para-00050">
+      <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00025">
+      <item>At what percentile would a result of 94 on the XYZ fall? Round your answer to the nearest percentile.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00020">
+      <para id="para-00051">92<sup>nd</sup></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00021">
+      <problem id="prob-00021">
+      <para id="para-00052">
+      <list list-type="enumerated" number-style="arabic" start-value="5" id="list-00026">
+      <item>What score would fall at the first quartile on the ABC? Round your answer to the nearest whole number.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00021">
+      <para id="para-00053">216</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00022">
+      <problem id="prob-00022">
+      <para id="para-00054">
+      <list list-type="enumerated" number-style="arabic" start-value="6" id="list-00027">
+      <item>What score would fall at the 60<sup>th</sup> percentile on the XYZ? Round your answer to the nearest whole number.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00022">
+      <para id="para-00055">83</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00023">
+      <problem id="prob-00023">
+      <para id="para-00056">
+      <list list-type="enumerated" number-style="arabic" start-value="7" id="list-00028">
+      <item>Which score is better: 202 on the ABC or 72 on the XYZ?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00023">
+      <para id="para-00057">72 on XYZ</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00024">
+      <problem id="prob-00024">
+      <para id="para-00058">
+      <list list-type="enumerated" number-style="arabic" start-value="8" id="list-00029">
+      <item>Which score is better: 324 on the ABC or 94 on the XYZ?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00024">
+      <para id="para-00059">Answer: 325 on ABC</para>
+      </solution>
+      </exercise>
+      <para id="para-00060">For Exercises 9 – 15, recall that if we flip a coin at least 20 times, the distribution of the number of heads is approximately normal with mean equal to half the number of flips and standard deviation equal to half of the square root of the number of flips.</para>
+      <exercise id="exer-00025">
+      <problem id="prob-00025">
+      <para id="para-00061">
+      <list list-type="enumerated" number-style="arabic" start-value="9" id="list-00030">
+      <item>What would be the mean and standard deviation for the number of heads in 80 coin flips?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00025">
+      <para id="para-00062"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>μ</mi><mo>=</mo><mn>40</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>80</mn></mrow></msqrt><mo>≈</mo><mn>4.472</mn></mrow></math></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00026" xmlns="http://cnx.rice.edu/cnxml">
+      <problem id="prob-00026">
+      <para id="para-00063">
+      <list list-type="enumerated" number-style="arabic" start-value="10" id="list-00031">
+      <item>What would be the mean and standard deviation for the number of heads in 144 coin flips?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00026">
+      <para id="para-00064"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>μ</mi><mo>=</mo><mn>72</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>144</mn></mrow></msqrt><mo>=</mo><mn>6</mn></mrow></math></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00027" xmlns="http://cnx.rice.edu/cnxml">
+      <problem id="prob-00027">
+      <para id="para-00065">
+      <list list-type="enumerated" number-style="arabic" start-value="11" id="list-00032">
+      <item>How many heads would be at the 80<sup>th</sup> percentile for 80 coin flips? Round your answer to the nearest whole number.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00027">
+      <para id="para-00066">44</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00028">
+      <problem id="prob-00028">
+      <para id="para-00067">
+      <list list-type="enumerated" number-style="arabic" start-value="12" id="list-00033">
+      <item>How many heads would be at the 20<sup>th</sup> percentile for 144 coin flips? Round your answer to the nearest whole number.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00028">
+      <para id="para-00068">67</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00029">
+      <problem id="prob-00029">
+      <para id="para-00069">
+      <list list-type="enumerated" number-style="arabic" start-value="13" id="list-00034">
+      <item>What is the <emphasis effect="italic">z</emphasis>-score for 51 heads in 80 coin flips? Round your answer to the nearest hundredth.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00029">
+      <para id="para-00070">2.46</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00030">
+      <problem id="prob-00030">
+      <para id="para-00071">
+      <list list-type="enumerated" number-style="arabic" start-value="14" id="list-00035">
+      <item>What is the <emphasis effect="italic">z</emphasis>-score for 87 heads in 144 coin flips? Round your answer to the nearest hundredth.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00030">
+      <para id="para-00072">2.5</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00031">
+      <problem id="prob-00031">
+      <para id="para-00073">
+      <list list-type="enumerated" number-style="arabic" start-value="15" id="list-00036">
+      <item>Which would be more unusual: flipping 51 heads in 80 tries or flipping 87 heads in 144 tries? How do you know?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00031">
+      <para id="para-00074">87 heads in 144 tries is more unusual because it has the higher <emphasis effect="italic">z</emphasis>-score.</para>
+      </solution>
+      </exercise>
+      <para id="para-00075">For Exercises 16 – 21, use the data in “Wheat,” which gives the yield of wheat (in bushels) produced over several equally-sized plots (the data were collected as part of an experiment reported in “The experimental error of field trials” by W.B. Mercer and A.D. Hall (<emphasis effect="italic">Journal of Agricultural Science (Cambridge)</emphasis> <emphasis effect="bold">4:</emphasis> 107-132 and accessed at <emphasis effect="underscore">https://seattlecentral.edu/qelp/sets/059/059.html</emphasis>).</para>
+      <exercise id="exer-00032">
+      <problem id="prob-00032">
+      <para id="para-00076">
+      <list list-type="enumerated" number-style="arabic" start-value="16" id="list-00037">
+      <item>Create a histogram of Yield to check that it’s approximately normally distributed.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00032">
+      <figure id="fig-00004">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_08_07_101.jpg"/>
+      </media>
+      <caption><emphasis effect="italic">Tech 8.101: Histogram of data in sheet Tech8.101. Domain should be 2.6 to 5.2, bin width 0.2, labels as below.</emphasis></caption>
+      </figure>
+      </solution>
+      </exercise>
+      <exercise id="exer-00033">
+      <problem id="prob-00033">
+      <para id="para-00077">
+      <list list-type="enumerated" number-style="arabic" start-value="17" id="list-00038">
+      <item>Find the mean and standard deviation of Yield. Round answers to the nearest thousandth.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00033">
+      <para id="para-00078"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>μ</mi><mo>=</mo><mn>3.949</mn></mrow></math>; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>0.458</mn></mrow></math></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00034" xmlns="http://cnx.rice.edu/cnxml">
+      <problem id="prob-00034">
+      <para id="para-00079">
+      <list list-type="enumerated" number-style="arabic" start-value="18" id="list-00039">
+      <item>What proportion of yields does the normal distribution predict should fall below 4.56? Round to the nearest thousandth.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00034">
+      <para id="para-00080">0.909</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00035">
+      <problem id="prob-00035">
+      <para id="para-00081">
+      <list list-type="enumerated" number-style="arabic" start-value="19" id="list-00040">
+      <item>At what percentile does the normal distribution predict a yield of 3.6 would fall? Round to the nearest whole number.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00035">
+      <para id="para-00082">22<sup>nd</sup></para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00036">
+      <problem id="prob-00036">
+      <para id="para-00083">
+      <list list-type="enumerated" number-style="arabic" start-value="20" id="list-00041">
+      <item>What yield does the normal distribution estimate would fall at the 80<sup>th</sup> percentile? Round to the nearest hundredth.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00036">
+      <para id="para-00084">4.33</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00037">
+      <problem id="prob-00037">
+      <para id="para-00085">
+      <list list-type="enumerated" number-style="arabic" start-value="21" id="list-00042">
+      <item>What yield does the normal distribution estimate would fall at the 95<sup>th</sup> percentile? Round to the nearest hundredth.</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00037">
+      <para id="para-00086">4.70</para>
+      </solution>
+      </exercise>
+      <exercise id="exer-00038">
+      <problem id="prob-00038">
+      <para id="para-00087">
+      <list list-type="enumerated" number-style="arabic" start-value="22" id="list-00043">
+      <item>If one of these plots yields 2.8 bushels, would that be a good or bad result? How do you know?</item>
+      </list>
+      </para>
+      </problem>
+      <solution id="sol-00038">
+      <para id="para-00088">A yield of 2.8 bushels falls below the 1<sup>st</sup> percentile, which means over 99% of plots this size would produce more. That’s a bad result.</para>
+      </solution>
+      </exercise>
+      </section>
+  </content>
+</document>

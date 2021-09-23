@@ -1,0 +1,1188 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Range and Standard Deviation</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Range and Standard Deviation</md:title>
+    <md:content-id>m00005</md:content-id>
+    <md:uuid>bc1a1d64-dca0-4530-8fb7-b596bf87663e</md:uuid>
+  </metadata>
+  <content>
+  <section class="learning-objectives" id="sect-00001">
+<para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+<list list-type="enumerated" number-style="arabic" id="list-00001">
+<item>Calculate the range of a data set</item>
+<item>Calculate the standard deviation of a data set</item>
+</list>
+<para id="para-00002">Measures of centrality like the mean can give us only part of the picture that a data set paints. For example, let’s say you’ve just gotten the results of a standardized test back, and your score was 138.The mean score on the test is 120. So, your score is above average! But how good is it <emphasis effect="italic">really</emphasis>? If all the scores were between 100 and 140, then you know your score must be among the best.But if the scores ranged from 0 to 200, then maybe 140 is good, but not great (though still above average). Knowing information about how the data are spread out can help us put a particular data value in better context. In this module, we’ll look at two numbers that help us describe the spread in the data: the range and the standard deviation. These numbers are called measures of dispersion.</para>
+</section>
+<section id="sect-00002">
+<title> The Range</title>
+<para id="para-00003">Our first measure of dispersion is the <emphasis effect="bold">range</emphasis>. It’s the measure we used in the standardized test example above.</para>
+<note id="note-00001">
+<title>Definition</title>
+<para id="para-00004">The <emphasis effect="bold">range</emphasis> of a data set is the difference between the maximum and minimum values in the set.</para>
+</note>
+<para id="para-00005">Let’s look at a couple of examples.</para>
+<example id="exam-00001">
+<title>EXAMPLE 24 – Finding the Range</title>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00006">You survey some of your friends to find out how many hours they work each week. Their responses are: 5, 20, 8, 10, 35, 12. What is the range?</para>
+</problem>
+<solution id="sol-00001">
+<para id="para-00007">The maximum value in the set is 35 and the minimum is 5, so the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>35</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow></math>.</para>
+</solution>
+</exercise>
+</example>
+<note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00008">On your morning commute, you decide to record how long you have to wait each time you get caught at a red light. Here are the times in seconds: 12, 58, 35, 79, 21. What is the range?</para>
+</problem>
+<solution id="sol-00002">
+<para id="para-00009">67</para>
+</solution>
+</exercise>
+</note>
+<para id="para-00010">For large data sets, finding the maximum and minimum values can be daunting. There are two way to do it ina spreadsheet. First, you can ask the spreadsheet program to sort the data from smallest to largest, then find the first and last numbers on the sorted list. The second method uses built-in functions to find the minimum and maximum. This video shows you how to do that in Google Sheets:</para>
+<note class="video" id="note-00003">
+<title>Finding the Minimum and Maximum in Google Sheets</title>
+<para id="para-00011">&lt;https://www.youtube.com/watch?v=brX5CrT8QLk></para>
+</note>
+ <para id="para-00012">In either method, once you’ve found the maximum and minimum, all you have to do is subtract to findthe range.</para>
+<example id="exam-00002"> 
+<title>EXAMPLE 254 – Finding the Range with Google Sheets </title>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00013">The data in “AvgSAT” contains the average SAT score for students attending every institutionof higher learning in the US for which data is available (data from data.ed.gov). What is the range of these average SAT scores?</para>
+</problem>
+<solution id="sol-00003">
+<para id="para-00014">To find the maximum, click on an empty cell in the spreadsheet, type “=MAX(”, and then clickon the letter that marks the top of the column containing the AvgSAT data. That inserts a reference to the column into our function. Then we close the parentheses and hit the enter key. The formula is replaced with the maximum value in our data: 1566. Using the same process (but with “MIN” instead of “MAX”), we find the minimum value is 785. So, the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1566</mn><mo>−</mo><mn>785</mn><mo>=</mo><mn>781</mn></mrow></math>.</para>
+</solution>
+</exercise>
+</example>
+<note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00015">The file “InState” contains in-state tuition costs (in dollars) for every institution of higher learning in the US for which data is available (data from data.ed.gov). What is the range of these costs?</para>
+</problem>
+<solution id="sol-00004">
+<para id="para-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>74</mn><mo>,</mo><mn>514</mn><mo>−</mo><mn>480</mn><mo>=</mo><mi>$</mi><mn>74</mn><mo>,</mo><mn>034</mn></mrow></math>
+</para>
+</solution>
+</exercise>
+</note>
+<para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">The range is very easy to compute, but it depends only on two of the data values in the entire set. If there happens to be just one unusually high or low data value, then the range might give a distorted measure of dispersion. Our next measure takes every single data value into account, making it more reliable.</para>
+</section>
+<section id="sect-00003">
+<title> The Standard Deviation</title>
+<para id="para-00018">The standard deviation is a measure of dispersion that can be interpreted as approximately the average distance of every data value from the mean. (This distance from the mean is the “deviation” in “standard deviation.”)</para>
+<note class="formula" id="note-00005">
+<para id="para-00019">The standard deviation is computed as follows:</para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mstyle displaystyle="true"><mo>∑</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></msqrt></mrow></math><para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">Here, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> represents each data value, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> is the mean of the data values, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>is the number of data values, and the capital sigma (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Σ</mi></math>) indicates that we take a sum.</para>
+</note>
+<para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">To compute the standard deviation using the formula, we follow the steps below:</para>
+<list list-type="enumerated" number-style="arabic" id="list-00002">
+<item>Compute the mean of all the data values.</item>
+<item>Subtract the mean from each data value.</item>
+<item>Square those differences.</item>
+<item>Add up the results in step 3.</item>
+<item>Divide the result in step 4 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow>
+</math></item>
+<item xmlns="http://cnx.rice.edu/cnxml">Take the square root of the result in step 5.</item>
+</list>
+<para id="para-00022">Let’s see that process in action.</para>
+<example id="exam-00003">
+<title>EXAMPLE 26 – Computing the Standard Deviation</title>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00023">You surveyed some of your friends to find out how many hours they work each week. Their responses were: 5, 20, 8, 10, 35, 12. What is the standard deviation?</para>
+</problem>
+<solution id="sol-00005">
+<para id="para-00024">Let’s follow the six steps mentioned previously to compute the standard deviation.</para>
+<para id="para-00025">Step 1: Find the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><mn>5</mn><mo>+</mo><mn>20</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>35</mn><mo>+</mo><mn>12</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>15</mn></mrow></math>.</para>
+<para id="para-00026" xmlns="http://cnx.rice.edu/cnxml">Step 2: Subtract the mean from each data value. To help keep track, let’s do this in a table. In the first column, we’ll list each of our data values (and we’ll label the column <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>); in the second, we’ll subtract <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mn>15</mn></mrow></math> from each data value.</para>
+<table summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<tbody>
+<row>
+<entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+</row>
+<row xmlns="http://cnx.rice.edu/cnxml">
+<entry>5</entry>
+<entry>-10</entry>
+</row>
+<row>
+<entry>20</entry>
+<entry>5</entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>-7</entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>-5</entry>
+</row>
+<row>
+<entry>35</entry>
+<entry>20</entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>-3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="para-00027">Step 3: Square the differences. Let’s add a column to our table for those values:</para>
+<table summary="." id="table-00002">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="c3" colwidth="1*"/>
+<tbody>
+<row>
+<entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
+</row>
+<row xmlns="http://cnx.rice.edu/cnxml">
+<entry>5</entry>
+<entry>-10</entry>
+<entry>100</entry>
+</row>
+<row>
+<entry>20</entry>
+<entry>5</entry>
+<entry>25</entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>-7</entry>
+<entry>49</entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>-5</entry>
+<entry>25</entry>
+</row>
+<row>
+<entry>35</entry>
+<entry>20</entry>
+<entry>400</entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>-3</entry>
+<entry>9</entry>
+</row></tbody>
+</tgroup>
+</table>
+<para id="para-00028">Step 4: Add up those squares:</para>
+<table summary="." id="table-00003">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="c3" colwidth="1*"/>
+<tbody>
+<row>
+<entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
+</row>
+<row xmlns="http://cnx.rice.edu/cnxml">
+<entry>5</entry>
+<entry>-10</entry>
+<entry>100</entry>
+</row>
+<row>
+<entry>20</entry>
+<entry>5</entry>
+<entry>25</entry>
+</row>
+<row>
+<entry>8</entry>
+<entry>-7</entry>
+<entry>49</entry>
+</row>
+<row>
+<entry>10</entry>
+<entry>-5</entry>
+<entry>25</entry>
+</row>
+<row>
+<entry>35</entry>
+<entry>20</entry>
+<entry>400</entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>-3</entry>
+<entry>9</entry>
+</row>
+<row>
+<entry/>
+<entry>Sum:</entry>
+<entry>608</entry>
+</row></tbody>
+</tgroup>
+</table>
+<para id="para-00029">Step 5: Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
+<para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Step 6: Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
+<para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Thus, the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
+</solution>
+</exercise>
+</example>
+<note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00032">On your morning commute, you decide to record how long you have to wait each time you get caught at a red light. Here are the times in seconds: 12, 58, 35, 79, 21. What is the standard deviation?</para>
+</problem>
+<solution id="sol-00006">
+<para id="para-00033"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mn>752.5</mn></mrow></msqrt><mo>≈</mo><mn>27.432</mn></mrow></math>.</para>
+</solution>
+</exercise>
+</note>
+<para id="para-00034" xmlns="http://cnx.rice.edu/cnxml">The computation for the standard deviation is complicated, even for just a small data set. We’d never want to compute it by hand for a large data set! Luckily, technology makes this calculation easy. Here’s a video demonstrating how to compute the standard deviation in Google Sheets:</para>
+<note class="video" id="note-00007">
+<title>Finding the Standard Deviation with Google Sheets</title>
+<para id="para-00035">&lt;https://www.youtube.com/watch?v=4V_B_8iTUw0></para>
+</note>
+<example id="exam-00004">
+<title>EXAMPLE 27 – Finding the Standard Deviation with Google Sheets</title>
+<exercise id="exer-00007">
+<problem id="prob-00007">
+<para id="para-00036">The data in “AvgSAT” contains the average SAT score for students attending every institutionof higher learning in the US for which data is available (data from data.ed.gov). What is the standard deviationof these average SAT scores?</para>
+</problem>
+<solution id="sol-00007">
+<para id="para-00037">To find the standard deviation, we click in an empty cell in our spreadsheet and then type “=STDEV(”. Next, click on the letter at the top of the column containing our data; this will put a reference to that column into our formula. Then close the parentheses with and hit the enter key. The formula is replaced with the result: 125.517.</para>
+</solution>
+</exercise>
+</example>
+<note class="your-turn" id="note-00008">
+<exercise id="exer-00008">
+<problem id="prob-00008">
+<para id="para-00038">The file “InState” contains in-state tuition costs (in dollars) for every institution of higher learning in the US for which data is available (data from data.ed.gov). What is the standard deviation ofthese costs?</para>
+</problem>
+<solution id="sol-00008">
+<para id="para-00039">$13,333.77.</para>
+</solution>
+</exercise>
+</note>
+</section>
+<section id="sect-00004">
+<title>Check Your Understanding</title>
+<exercise id="exer-00009">
+<problem id="prob-00009">
+<para id="para-00040">
+<list list-type="enumerated" number-style="arabic" id="list-00003">
+<item>Given the data 1, 4, 5, 5, and 10, find the range.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00009">
+<para id="para-00041">9</para>
+</solution>
+</exercise>
+<exercise id="exer-00010">
+<problem id="prob-00010">
+<para id="para-00042">
+<list list-type="enumerated" number-style="arabic" start-value="2" id="list-00004">
+<item>Given the data 1, 4, 5, 5, and 10, find the standard deviation using the process outlined in the definition.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00010">
+<para id="para-00043"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>10.5</mn></mrow></msqrt><mo>≈</mo><mn>3.240</mn></mrow></math></para>
+</solution>
+</exercise>
+<exercise id="exer-00011" xmlns="http://cnx.rice.edu/cnxml">
+<problem id="prob-00011">
+<para id="para-00044">
+<list list-type="enumerated" number-style="arabic" start-value="3" id="list-00005">
+<item>Employees at a college help desk track the number of people who request assistance each week. Here is a sample of the results (also found in the data set “HelpDesk”):
+<table summary="." id="table-00004">
+<tgroup cols="6">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="c3" colwidth="1*"/>
+<colspec colnum="4" colname="c4" colwidth="1*"/>
+<colspec colnum="5" colname="c5" colwidth="1*"/>
+<colspec colnum="6" colname="c6" colwidth="1*"/>
+<tbody>
+<row>
+<entry>142</entry>
+<entry>153</entry>
+<entry>158</entry>
+<entry>156</entry>
+<entry>141</entry>
+<entry>143</entry>
+</row>
+<row>
+<entry>139</entry>
+<entry>158</entry>
+<entry>156</entry>
+<entry>146</entry>
+<entry>137</entry>
+<entry>153</entry>
+</row>
+<row>
+<entry>136</entry>
+<entry>127</entry>
+<entry>157</entry>
+<entry>148</entry>
+<entry>132</entry>
+<entry>139</entry>
+</row>
+<row>
+<entry>155</entry>
+<entry>167</entry>
+<entry>143</entry>
+<entry>168</entry>
+<entry>133</entry>
+<entry>157</entry>
+</row>
+<row>
+<entry>138</entry>
+<entry>156</entry>
+<entry>164</entry>
+<entry>130</entry>
+<entry>148</entry>
+<entry>136</entry>
+</row></tbody>
+</tgroup>
+</table>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+<item>Compute the range.</item>
+<item>Compute the standard deviation.</item>
+</list></item>
+</list>
+</para>
+</problem>
+<solution id="sol-00011">
+<para id="para-00045">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+<item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>168</mn><mo>−</mo><mn>127</mn><mo>=</mo><mn>41</mn></mrow></math></item>
+<item xmlns="http://cnx.rice.edu/cnxml">11.306</item>
+</list>
+</para>
+</solution>
+</exercise>
+<exercise id="exer-00012">
+<problem id="prob-00012">
+<para id="para-00046">
+<list list-type="enumerated" number-style="arabic" start-value="4" id="list-00008">
+<item>The following are data (from data.ed.gov, accessed January 2020) on the admission rates of the different branch campuses in the University of California system, along with the out-of-state tuition and fee cost (data can be found in “UofCal”):
+<table summary="." id="table-00005">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="c3" colwidth="1*"/>
+<tbody>
+<row>
+<entry>Campus</entry>
+<entry>Admission Rate</entry>
+<entry>Cost</entry>
+</row>
+<row>
+<entry>Berkeley</entry>
+<entry>0.1484</entry>
+<entry>43176</entry>
+</row>
+<row>
+<entry>Davis</entry>
+<entry>0.4107</entry>
+<entry>43394</entry>
+</row>
+<row>
+<entry>Irvine</entry>
+<entry>0.2876</entry>
+<entry>42692</entry>
+</row>
+<row>
+<entry>Los Angeles</entry>
+<entry>0.1404</entry>
+<entry>42218</entry>
+</row>
+<row>
+<entry>Merced</entry>
+<entry>0.6617</entry>
+<entry>42530</entry>
+</row>
+<row>
+<entry>Riverside</entry>
+<entry>0.5057</entry>
+<entry>42819</entry>
+</row>
+<row>
+<entry>San Diego</entry>
+<entry>0.3006</entry>
+<entry>43159</entry>
+</row>
+<row>
+<entry>Santa Barbara</entry>
+<entry>0.322</entry>
+<entry>43383</entry>
+</row>
+<row>
+<entry>Santa Cruz</entry>
+<entry>0.4737</entry>
+<entry>42952</entry>
+</row></tbody>
+</tgroup>
+</table>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00009">
+<item>Compute the range of the admission rate.</item>
+<item>Compute the standard deviation of the admission rate.</item>
+</list></item>
+</list></para>
+</problem>
+<solution id="sol-00012">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00010">
+<item>Range: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6617</mn><mo>−</mo><mn>0.1404</mn><mo>=</mo><mn>0.5213</mn></mrow></math></item>
+<item xmlns="http://cnx.rice.edu/cnxml">Standard deviation: 0.170</item>
+</list>
+</solution>
+</exercise>
+<exercise id="exer-00013">
+<problem id="prob-00013">
+<para id="para-00047">
+<list list-type="enumerated" number-style="arabic" start-value="5" id="list-00011">
+<item>Using the data from number 4 (“UofCal”), find the:</item>
+</list>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00012">
+<item>Range of the cost.</item>
+<item>Standard deviation of the cost.</item></list>
+</para>
+</problem>
+<solution id="sol-00013">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00013">
+<item>Range: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>43</mn><mo>,</mo><mn>394</mn><mo>−</mo><mn>42</mn><mo>,</mo><mn>218</mn><mo>=</mo><mi>$</mi><mn>1</mn><mo>,</mo><mn>176</mn></mrow></math></item>
+<item xmlns="http://cnx.rice.edu/cnxml">Standard deviation: $398.37</item>
+</list>
+</solution>
+</exercise>
+</section>
+<section class="section-exercises" id="sect-00005">
+<exercise id="exer-00014">
+<problem id="prob-00014">
+<para id="para-00048">
+<list list-type="enumerated" number-style="arabic" id="list-00014">
+<item>Given the data 81, 84, 89, 85, 86, 84:</item>
+</list>
+</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00015">
+<item>Compute the range.</item>
+<item>Compute the standard deviation using the formula.</item>
+</list>
+</problem>
+<solution id="sol-00014">
+<para id="para-00049">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00016">
+<item>8</item>
+<item>2.639</item>
+</list></para>
+</solution>
+</exercise>
+<exercise id="exer-00015">
+<problem id="prob-00015">
+<para id="para-00050">
+<list list-type="enumerated" number-style="arabic" start-value="2" id="list-00017">
+<item>Given the data 127, 167, 156, 158, 156, 157:</item></list>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00018">
+<item>Compute the range.</item>
+<item>Compute the standard deviation using the formula.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00015">
+<para id="para-00051">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00019">
+<item>40</item>
+<item>13.635</item>
+</list>
+</para>
+</solution>
+</exercise>
+<para id="para-00052">For exercises 3 through 12, use the data found in “TNSchools,” which has data on many institutions of higher education in the state of Tennessee (data from data.ed.gov). Here are what the columns represent:</para>
+<table summary="." id="table-00006">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<thead>
+<row>
+<entry><emphasis effect="bold">Column name</emphasis></entry>
+<entry><emphasis effect="bold">Description</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>AdmRate</entry>
+<entry>Proportion of applicants that are admitted</entry>
+</row>
+<row>
+<entry>UGEnr</entry>
+<entry>Number of undergraduate students</entry>
+</row>
+<row>
+<entry>PTUG</entry>
+<entry>Proportion of undergraduates who attend part-time</entry>
+</row>
+<row>
+<entry>InState</entry>
+<entry>Tuition and fees for in-state students</entry>
+</row>
+<row>
+<entry>OutState</entry>
+<entry>Tuition and fees for out-of-state students</entry>
+</row>
+<row>
+<entry>FacSal</entry>
+<entry>Mean monthly faculty salary</entry>
+</row>
+<row>
+<entry>Pell</entry>
+<entry>Proportion of students receiving Pell Grants</entry>
+</row>
+<row>
+<entry>MedDebt</entry>
+<entry>Median student loan debt at degree completion</entry>
+</row>
+<row>
+<entry>StartAge</entry>
+<entry>Mean age at the time of entry</entry>
+</row>
+<row>
+<entry>Female</entry>
+<entry>Proportion of students who identify as female</entry>
+</row>
+</tbody></tgroup>
+</table>
+<exercise id="exer-00016">
+<problem id="prob-00016">
+<para id="para-00053">
+<list list-type="enumerated" number-style="arabic" start-value="3" id="list-00020">
+<item>Find the range of admissions rates.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00016">
+<para id="para-00054">0.904</para>
+</solution>
+</exercise>
+<exercise id="exer-00017">
+<problem id="prob-00017">
+<para id="para-00055">
+<list list-type="enumerated" number-style="arabic" start-value="4" id="list-00021">
+<item>Find the standard deviation of admissions rates.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00017">
+<para id="para-00056">0.173</para>
+</solution>
+</exercise>
+<exercise id="exer-00018">
+<problem id="prob-00018">
+<para id="para-00057">
+<list list-type="enumerated" number-style="arabic" start-value="5" id="list-00022">
+<item>Find the range of undergraduate enrollments.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00018">
+<para id="para-00058">22620</para>
+</solution>
+</exercise>
+<exercise id="exer-00019">
+<problem id="prob-00019">
+<para id="para-00059">
+<list list-type="enumerated" number-style="arabic" start-value="6" id="list-00023">
+<item>Find the standard deviation of undergraduate enrollments.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00019">
+<para id="para-00060">5173.235</para>
+</solution>
+</exercise>
+<exercise id="exer-00020">
+<problem id="prob-00020">
+<para id="para-00061">
+<list list-type="enumerated" number-style="arabic" start-value="7" id="list-00024">
+<item>Find the range of the proportions of undergraduates attending part-time.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00020">
+<para id="para-00062">0.708</para>
+</solution>
+</exercise>
+<exercise id="exer-00021">
+<problem id="prob-00021">
+<para id="para-00063">
+<list list-type="enumerated" number-style="arabic" start-value="8" id="list-00025">
+<item>Find the standard deviation of the proportions of undergraduates attending part-time.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00021">
+<para id="para-00064">0.150</para>
+</solution>
+</exercise>
+<exercise id="exer-00022">
+<problem id="prob-00022">
+<para id="para-00065">
+<list list-type="enumerated" number-style="arabic" start-value="9" id="list-00026">
+<item>Find the range of in-state tuition costs.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00022">
+<para id="para-00066">41,657</para>
+</solution>
+</exercise>
+<exercise id="exer-00023">
+<problem id="prob-00023">
+<para id="para-00067">
+<list list-type="enumerated" number-style="arabic" start-value="10" id="list-00027">
+<item>Find the standard deviation of in-state tuition costs.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00023">
+<para id="para-00068">10,845</para>
+</solution>
+</exercise>
+<exercise id="exer-00024">
+<problem id="prob-00024">
+<para id="para-00069">
+<list list-type="enumerated" number-style="arabic" start-value="11" id="list-00028">
+<item>Find the range of median debt.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00024">
+<para id="para-00070">13,730</para>
+</solution>
+</exercise>
+<exercise id="exer-00025">
+<problem id="prob-00025">
+<para id="para-00071">
+<list list-type="enumerated" number-style="arabic" start-value="12" id="list-00029">
+<item>Find the standard deviation of median debt.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00025">
+<para id="para-00072">3,527.48</para>
+</solution>
+</exercise>
+<para id="para-00073">For Exercises 13 – 26, use the following table (found in the dataset NHL19, and accessed at ESPN.com), which gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS; teams get two points for a win and one point for an overtime loss), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA):</para>
+<table summary="." id="table-00007">
+<tgroup cols="8">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="c3" colwidth="1*"/>
+<colspec colnum="4" colname="c4" colwidth="1*"/>
+<colspec colnum="5" colname="c5" colwidth="1*"/>
+<colspec colnum="6" colname="c6" colwidth="1*"/>
+<colspec colnum="7" colname="c7" colwidth="1*"/>
+<colspec colnum="8" colname="c8" colwidth="1*"/>
+<thead>
+<row>
+<entry><emphasis effect="bold">Team</emphasis></entry>
+<entry><emphasis effect="bold">W</emphasis></entry>
+<entry><emphasis effect="bold">L</emphasis></entry>
+<entry><emphasis effect="bold">OTL</emphasis></entry>
+<entry><emphasis effect="bold">PTS</emphasis></entry>
+<entry><emphasis effect="bold">GF</emphasis></entry>
+<entry><emphasis effect="bold">GA</emphasis></entry>
+<entry><emphasis effect="bold">DIFF</emphasis></entry>
+</row>
+</thead><tbody>
+<row>
+<entry>Tampa Bay Lightning</entry>
+<entry>62</entry>
+<entry>16</entry>
+<entry>4</entry>
+<entry>128</entry>
+<entry>325</entry>
+<entry>222</entry>
+<entry>103</entry>
+</row>
+<row>
+<entry>Calgary Flames</entry>
+<entry>50</entry>
+<entry>25</entry>
+<entry>7</entry>
+<entry>107</entry>
+<entry>289</entry>
+<entry>227</entry>
+<entry>62</entry>
+</row>
+<row>
+<entry>Boston Bruins</entry>
+<entry>49</entry>
+<entry>24</entry>
+<entry>9</entry>
+<entry>107</entry>
+<entry>259</entry>
+<entry>215</entry>
+<entry>44</entry>
+</row>
+<row>
+<entry>Washington Capitals</entry>
+<entry>48</entry>
+<entry>26</entry>
+<entry>8</entry>
+<entry>104</entry>
+<entry>278</entry>
+<entry>249</entry>
+<entry>29</entry>
+</row>
+<row>
+<entry>New York Islanders</entry>
+<entry>48</entry>
+<entry>27</entry>
+<entry>7</entry>
+<entry>103</entry>
+<entry>228</entry>
+<entry>196</entry>
+<entry>32</entry>
+</row>
+<row>
+<entry>San Jose Sharks</entry>
+<entry>46</entry>
+<entry>27</entry>
+<entry>9</entry>
+<entry>101</entry>
+<entry>289</entry>
+<entry>261</entry>
+<entry>28</entry>
+</row>
+<row>
+<entry>Toronto Maple Leafs</entry>
+<entry>46</entry>
+<entry>28</entry>
+<entry>8</entry>
+<entry>100</entry>
+<entry>286</entry>
+<entry>251</entry>
+<entry>35</entry>
+</row>
+<row>
+<entry>Nashville Predators</entry>
+<entry>47</entry>
+<entry>29</entry>
+<entry>6</entry>
+<entry>100</entry>
+<entry>240</entry>
+<entry>214</entry>
+<entry>26</entry>
+</row>
+<row>
+<entry>Pittsburgh Penguins</entry>
+<entry>44</entry>
+<entry>26</entry>
+<entry>12</entry>
+<entry>100</entry>
+<entry>273</entry>
+<entry>241</entry>
+<entry>32</entry>
+</row>
+<row>
+<entry>Winnipeg Jets</entry>
+<entry>47</entry>
+<entry>30</entry>
+<entry>5</entry>
+<entry>99</entry>
+<entry>272</entry>
+<entry>244</entry>
+<entry>28</entry>
+</row>
+<row>
+<entry>Carolina Hurricanes</entry>
+<entry>46</entry>
+<entry>29</entry>
+<entry>7</entry>
+<entry>99</entry>
+<entry>245</entry>
+<entry>223</entry>
+<entry>22</entry>
+</row>
+<row>
+<entry>St. Louis Blues</entry>
+<entry>45</entry>
+<entry>28</entry>
+<entry>9</entry>
+<entry>99</entry>
+<entry>247</entry>
+<entry>223</entry>
+<entry>24</entry>
+</row>
+<row>
+<entry>Columbus Blue Jackets</entry>
+<entry>47</entry>
+<entry>31</entry>
+<entry>4</entry>
+<entry>98</entry>
+<entry>258</entry>
+<entry>232</entry>
+<entry>26</entry>
+</row>
+<row>
+<entry>Montreal Canadiens</entry>
+<entry>44</entry>
+<entry>30</entry>
+<entry>8</entry>
+<entry>96</entry>
+<entry>249</entry>
+<entry>236</entry>
+<entry>13</entry>
+</row>
+<row>
+<entry>Dallas Stars</entry>
+<entry>43</entry>
+<entry>32</entry>
+<entry>7</entry>
+<entry>93</entry>
+<entry>210</entry>
+<entry>202</entry>
+<entry>8</entry>
+</row>
+<row>
+<entry>Vegas Golden Knights</entry>
+<entry>43</entry>
+<entry>32</entry>
+<entry>7</entry>
+<entry>93</entry>
+<entry>249</entry>
+<entry>230</entry>
+<entry>19</entry>
+</row>
+<row>
+<entry>Colorado Avalanche</entry>
+<entry>38</entry>
+<entry>30</entry>
+<entry>14</entry>
+<entry>90</entry>
+<entry>260</entry>
+<entry>246</entry>
+<entry>14</entry>
+</row>
+<row>
+<entry>Arizona Coyotes</entry>
+<entry>39</entry>
+<entry>35</entry>
+<entry>8</entry>
+<entry>86</entry>
+<entry>213</entry>
+<entry>223</entry>
+<entry>-10</entry>
+</row>
+<row>
+<entry>Florida Panthers</entry>
+<entry>36</entry>
+<entry>32</entry>
+<entry>14</entry>
+<entry>86</entry>
+<entry>267</entry>
+<entry>280</entry>
+<entry>-13</entry>
+</row>
+<row>
+<entry>Chicago Blackhawks</entry>
+<entry>36</entry>
+<entry>34</entry>
+<entry>12</entry>
+<entry>84</entry>
+<entry>270</entry>
+<entry>292</entry>
+<entry>-22</entry>
+</row>
+<row>
+<entry>Minnesota Wild</entry>
+<entry>37</entry>
+<entry>36</entry>
+<entry>9</entry>
+<entry>83</entry>
+<entry>211</entry>
+<entry>237</entry>
+<entry>-26</entry>
+</row>
+<row>
+<entry>Philadelphia Flyers</entry>
+<entry>37</entry>
+<entry>37</entry>
+<entry>8</entry>
+<entry>82</entry>
+<entry>244</entry>
+<entry>281</entry>
+<entry>-37</entry>
+</row>
+<row>
+<entry>Vancouver Canucks</entry>
+<entry>35</entry>
+<entry>36</entry>
+<entry>11</entry>
+<entry>81</entry>
+<entry>225</entry>
+<entry>254</entry>
+<entry>-29</entry>
+</row>
+<row>
+<entry>Anaheim Ducks</entry>
+<entry>35</entry>
+<entry>37</entry>
+<entry>10</entry>
+<entry>80</entry>
+<entry>199</entry>
+<entry>251</entry>
+<entry>-52</entry>
+</row>
+<row>
+<entry>Edmonton Oilers</entry>
+<entry>35</entry>
+<entry>38</entry>
+<entry>9</entry>
+<entry>79</entry>
+<entry>232</entry>
+<entry>274</entry>
+<entry>-42</entry>
+</row>
+<row>
+<entry>New York Rangers</entry>
+<entry>32</entry>
+<entry>36</entry>
+<entry>14</entry>
+<entry>78</entry>
+<entry>227</entry>
+<entry>272</entry>
+<entry>-45</entry>
+</row>
+<row>
+<entry>Buffalo Sabres</entry>
+<entry>33</entry>
+<entry>39</entry>
+<entry>10</entry>
+<entry>76</entry>
+<entry>226</entry>
+<entry>271</entry>
+<entry>-45</entry>
+</row>
+<row>
+<entry>Detroit Red Wings</entry>
+<entry>32</entry>
+<entry>40</entry>
+<entry>10</entry>
+<entry>74</entry>
+<entry>227</entry>
+<entry>277</entry>
+<entry>-50</entry>
+</row>
+<row>
+<entry>New Jersey Devils</entry>
+<entry>31</entry>
+<entry>41</entry>
+<entry>10</entry>
+<entry>72</entry>
+<entry>222</entry>
+<entry>275</entry>
+<entry>-53</entry>
+</row>
+<row>
+<entry>Los Angeles Kings</entry>
+<entry>31</entry>
+<entry>42</entry>
+<entry>9</entry>
+<entry>71</entry>
+<entry>202</entry>
+<entry>263</entry>
+<entry>-61</entry>
+</row>
+<row>
+<entry>Ottawa Senators</entry>
+<entry>29</entry>
+<entry>47</entry>
+<entry>6</entry>
+<entry>64</entry>
+<entry>242</entry>
+<entry>302</entry>
+<entry>-60</entry>
+</row>
+</tbody></tgroup>
+</table>
+<exercise id="exer-00026">
+<problem id="prob-00026">
+<para id="para-00074">
+<list list-type="enumerated" number-style="arabic" start-value="13" id="list-00030">
+<item>Compute the standard deviation of wins.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00026">
+<para id="para-00075">7.488</para>
+</solution>
+</exercise>
+<exercise id="exer-00027">
+<problem id="prob-00027">
+<para id="para-00076">
+<list list-type="enumerated" number-style="arabic" start-value="14" id="list-00031">
+<item>Compute the range of wins.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00027">
+<para id="para-00077">33</para>
+</solution>
+</exercise>
+<exercise id="exer-00028">
+<problem id="prob-00028">
+<para id="para-00078">
+<list list-type="enumerated" number-style="arabic" start-value="15" id="list-00032">
+<item>Compute the standard deviation of losses.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00028">
+<para id="para-00079">6.372</para>
+</solution>
+</exercise>
+<exercise id="exer-00029">
+<problem id="prob-00029">
+<para id="para-00080">
+<list list-type="enumerated" number-style="arabic" start-value="16" id="list-00033">
+<item>Compute the range of losses.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00029">
+<para id="para-00081">31</para>
+</solution>
+</exercise>
+<exercise id="exer-00030">
+<problem id="prob-00030">
+<para id="para-00082">
+<list list-type="enumerated" number-style="arabic" start-value="17" id="list-00034">
+<item>Compute the standard deviation of overtime losses.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00030">
+<para id="para-00083">2.633</para>
+</solution>
+</exercise>
+<exercise id="exer-00031">
+<problem id="prob-00031">
+<para id="para-00084">
+<list list-type="enumerated" number-style="arabic" start-value="18" id="list-00035">
+<item>Compute the range of overtime losses.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00031">
+<para id="para-00085">10</para>
+</solution>
+</exercise>
+<exercise id="exer-00032">
+<problem id="prob-00032">
+<para id="para-00086">
+<list list-type="enumerated" number-style="arabic" start-value="19" id="list-00036">
+<item>Compute the standard deviation of points.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00032">
+<para id="para-00087">13.653</para>
+</solution>
+</exercise>
+<exercise id="exer-00033">
+<problem id="prob-00033">
+<para id="para-00088">
+<list list-type="enumerated" number-style="arabic" start-value="20" id="list-00037">
+<item>Compute the range of points.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00033">
+<para id="para-00089">64</para>
+</solution>
+</exercise>
+<exercise id="exer-00034">
+<problem id="prob-00034">
+<para id="para-00090">
+<list list-type="enumerated" number-style="arabic" start-value="21" id="list-00038">
+<item>Compute the standard deviation of goals scored (GF).</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00034">
+<para id="para-00091">29.404</para>
+</solution>
+</exercise>
+<exercise id="exer-00035">
+<problem id="prob-00035">
+<para id="para-00092">
+<list list-type="enumerated" number-style="arabic" start-value="22" id="list-00039">
+<item>Compute the range of goals scored (GF).</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00035">
+<para id="para-00093">126</para>
+</solution>
+</exercise>
+<exercise id="exer-00036">
+<problem id="prob-00036">
+<para id="para-00094">
+<list list-type="enumerated" number-style="arabic" start-value="23" id="list-00040">
+<item>Compute the standard deviation of goals against (GA).</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00036">
+<para id="para-00095">26.906</para>
+</solution>
+</exercise>
+<exercise id="exer-00037">
+<problem id="prob-00037">
+<para id="para-00096">
+<list list-type="enumerated" number-style="arabic" start-value="24" id="list-00041">
+<item>Compute the range of goals against (GA).</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00037">
+<para id="para-00097">106</para>
+</solution>
+</exercise>
+<exercise id="exer-00038">
+<problem id="prob-00038">
+<para id="para-00098">
+<list list-type="enumerated" number-style="arabic" start-value="25" id="list-00042">
+<item>Compute the standard deviation of goal differential.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00038">
+<para id="para-00099">40.849</para>
+</solution>
+</exercise>
+<exercise id="exer-00039">
+<problem id="prob-00039">
+<para id="para-00100">
+<list list-type="enumerated" number-style="arabic" start-value="26" id="list-00043">
+<item>Compute the range of goal differential.</item>
+</list>
+</para>
+</problem>
+<solution id="sol-00039">
+<para id="para-00101">164</para>
+</solution>
+</exercise>
+</section>
+</content>
+</document>

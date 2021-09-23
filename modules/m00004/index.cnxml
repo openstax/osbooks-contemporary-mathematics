@@ -1,0 +1,2973 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Mean, Median and Mode</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:title>Mean, Median and Mode</md:title>
+  <md:content-id>m00004</md:content-id>
+  <md:uuid>a3ebfbc2-fdfc-45f5-be99-dac7dc2d6d7a</md:uuid>
+  </metadata>
+  <content>
+  <figure class="splash" id="fig-00001">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/jpeg" src="../../media/Photo_8.8.jpg"/>
+  </media>
+  <caption>Photo 8.8: <emphasis effect="italic">Extraordinarily busy sidewalk scene, with at least dozens of people visible, shoulder-to-shoulder.</emphasis></caption>
+  </figure>
+  <section class="learning-objectives" id="sect-00001">
+  <title>Learning Objectives</title>
+  <para id="para-00001">After completing this module, you should be able to:</para>
+  <list list-type="enumerated" number-style="arabic" id="list-00001">
+  <item>Calculate the mode of a data set.</item>
+  <item>Calculate the median of a data set.</item>
+  <item>Calculate the mean of a data set.</item>
+  <item>Contrast measures of central tendency to identify the most representative average.</item>
+  <item>Solve application problems involving mean, median and mode.</item>
+  </list>
+  <para id="para-00002">What exactly do we mean when we describe something as “average?” Is the height of an average person the height that more people share than any other? What if we line up every person in the world, in order from shortest to tallest, and find the person right in the middle: Is that person’s height the average? Or maybe it’s something more esoteric. Imagine a game where you and a friend are trying to guess the typical person’s height. Once the guesses are made, you bring in every person and measure their height. You and your friend then figure out how far off each of your guesses were from the actual value, then square that number. The result is the number of points you earn for that person. After we check every height and award points accordingly, the person with the lower score wins (because a lower score means that person’s guess was, overall, closer to the actual values). The person whose guess comes closest to the person’s true height wins. Could we define the average height to be the number that you should guess to give you the smallest possible score?</para>
+  <para id="para-00003">Each of these methods of determining the “average” is commonly used. They are all methods of measuring <emphasis effect="italic">centrality </emphasis>(or <emphasis effect="italic">central tendency</emphasis>). Centrality is just a word that describes the middle of a set of data. All give potentially different results, and all are useful for different reasons. In this module, we’ll explore each of these methods of finding the “average.”</para>
+  </section>
+  <section id="sect-00002">
+  <title>The Mode</title>
+  <para id="para-00004">In our discussion of average heights, the first possible definition we offered was the height that more people share than any other. This is the <term id="term-00001">mode</term>, or the value that appears most often.</para>
+  <note class="definition" id="note-00001">
+  <para id="para-00005">The <emphasis effect="bold">mode</emphasis> of a set of quantitative data is the value that appears most often.</para>
+  <para id="para-00006">If there are two modes, the data are called <emphasis effect="bold">bimodal</emphasis>.</para>
+  </note>
+  <para id="para-00007">Let’s look at some examples.</para>
+  <example id="exam-00001">
+  <title>EXAMPLE 15 – Finding the Mode Using a Stem-and-Leaf Plot</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001">
+  <para id="para-00008">In Example 9, we looked at a stem-and-leaf plot of the sale prices (in dollars) of a particular collectible trading card:
+  <table summary="." id="table-00001">
+  <tgroup cols="14">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <colspec colnum="10" colname="c10" colwidth="1*"/>
+  <colspec colnum="11" colname="c11" colwidth="1*"/>
+  <colspec colnum="12" colname="c12" colwidth="1*"/>
+  <colspec colnum="13" colname="c13" colwidth="1*"/>
+  <colspec colnum="14" colname="c14" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1">0</entry>
+  <entry>5</entry>
+  <entry>8</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">1</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry>4</entry>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry colsep="1">2</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">3</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">4</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">6</entry>
+  <entry>0</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row></tbody>
+  </tgroup>
+  </table></para>
+  <para id="para-00009">What is the mode price?</para>
+  </problem>
+  <solution id="sol-00001">
+  <para id="para-00010">The mode is the price that appears most often. Both 15 and 20 appear four times, more than any other values. So, they are the modes (and we can conclude that this set of data is bimodal).</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00002">
+  <exercise id="exer-00002">
+  <problem id="prob-00002">
+  <para id="para-00011">In Example 10, we constructed a stem-and-leaf plot for the number of times in one minute that different crickets chirped. Here’s the result:
+  <table summary="." id="table-00002">
+  <tgroup cols="15">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <colspec colnum="10" colname="c10" colwidth="1*"/>
+  <colspec colnum="11" colname="c11" colwidth="1*"/>
+  <colspec colnum="12" colname="c12" colwidth="1*"/>
+  <colspec colnum="13" colname="c13" colwidth="1*"/>
+  <colspec colnum="14" colname="c14" colwidth="1*"/>
+  <colspec colnum="15" colname="c15" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1">8</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">9</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>3</entry>
+  <entry>7</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">10</entry>
+  <entry>0</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>3</entry>
+  <entry>3</entry>
+  <entry>4</entry>
+  <entry>4</entry>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry>6</entry>
+  <entry>7</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry colsep="1">11</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">12</entry>
+  <entry>0</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00012">What is the mode?</para>
+  </problem>
+  <solution id="sol-00002">
+  <para id="para-00013">There are two modes: 89 and 104, each of which appears three times.</para>
+  </solution>
+  </exercise>
+  </note>
+  <para id="para-00014">When we have a complete list of the data or a stem-and-leaf plot, it’s pretty straightforward to find the mode; we just need to find the number that appears most often. If we’re given a frequency distribution instead, the technique is different (but just as straightforward): we’re looking for the number with the highest frequency.</para>
+  <example id="exam-00002">
+  <title>EXAMPLE 16 – Finding the Mode Using a Frequency Distribution</title>
+  <exercise id="exer-00003">
+  <problem id="prob-00003">
+  <para id="para-00015">In Example 3, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Here’s the result:
+  <table summary="." id="table-00003">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*" align="center"/>
+  <colspec colnum="2" colname="c2" colwidth="1*" align="center"/>
+  <thead>
+  <row>
+  <entry>Number of siblings</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>0</entry>
+  <entry>5</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>6</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>3</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>2</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00016">What is the mode of the number of siblings?</para>
+  </problem>
+  <solution id="sol-00003">
+  <para id="para-00017">The mode is the value that appears the most often, which means it has the greatest frequency. Thirteen of the respondents have one sibling, more than any other number. So, the mode is one.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00003">
+  <exercise id="exer-00004">
+  <problem id="prob-00004">
+  <para id="para-00018">In Your Turn 3, you found a frequency distribution for the number of people who shared a residence with people in a sample. Here’s the result:
+  <table summary="." id="table-00004">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of people in the residence</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>1</entry>
+  <entry>12</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>6</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00019">What’s the mode of the number of people in these residences?</para>
+  </problem>
+  <solution id="sol-00004">
+  <para id="para-00020">2</para>
+  </solution>
+  </exercise>
+  </note>
+  <para id="para-00021">What happens if there is no number in the data that appears more than once? In that case, by our definition, every data value is a mode. But according to some other definitions, the data would have no mode. In practice, though, it doesn’t really matter; if no data value appears more than once, then the mode is not helpful at all as a measure of centrality.</para>
+  </section>
+  <section id="sect-00003">
+  <title>The Median</title>
+  <para id="para-00022">Let's revisit our example of trying to identify the height of the “average” person. If we lined everyone up in order by height and found the person right in the middle, that person’s height is called the <term id="term-00002">median</term>, or the value that is greater than and less than no more than half of the values.</para>
+  <note class="definition" id="note-00004">
+  <para id="para-00023">The <emphasis effect="bold">median</emphasis> of a set of quantitative data is a number with the property that no more than 50% of the data values are less than the median and no more than 50% of the data values are greater than the median.</para>
+  </note>
+  <para id="para-00024">This is one of those definitions that is more complicated than the concept it’s trying to describe (to account for some technicalities that we don’t need to worry about). So, let’s look at a really simple example. Consider the following list of numbers: 11, 12, 13, 13, 14. Is the first number on the list, 11, the median? There are no values less than 11 (that’s 0%), and there are four values greater than 11 (that’s 80%). Since more than 50% of the data are greater than 11, the definition is violated; it’s not the median. Here’s a chart with the rest of the data, with red shading to show where the definition is violated:
+  <table summary="." id="table-00005">
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Data value</entry>
+  <entry>Number of values below</entry>
+  <entry>Percentage of values below</entry>
+  <entry>Number of values above</entry>
+  <entry>Percentage of values above</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>11</entry>
+  <entry>0</entry>
+  <entry>0%</entry>
+  <entry>4</entry>
+  <entry>80%</entry>
+  </row>
+  <row>
+  <entry>12</entry>
+  <entry>1</entry>
+  <entry>20%</entry>
+  <entry>3</entry>
+  <entry>60%</entry>
+  </row>
+  <row>
+  <entry>13</entry>
+  <entry>2</entry>
+  <entry>40%</entry>
+  <entry>1</entry>
+  <entry>20%</entry>
+  </row>
+  <row>
+  <entry>14</entry>
+  <entry>4</entry>
+  <entry>80%</entry>
+  <entry>0</entry>
+  <entry>0%</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00025">Only 13 has no violations, so it’s the median according to the definition. In practice, we find the median just like we described in the average height example: by lining up all the data values in order from smallest to largest and picking the value in the middle. For our easy example (with data values 11, 12, 13, 13, 14), that first 13 is right in the middle; there are two values to the left and two values to the right. If there’s not one value right in the middle, we pick the two closest, then choose the number exactly between them. For example, let’s say we have the data 41, 44, 46, 53. Since there are an even number of data values in our list, we can’t pick the one right in the middle. The two closest to the middle are 44 and 46, so we’ll choose the number halfway between those to be the median: 45. As this example shows, the median (unlike the mode) doesn’t have to be a number in our original set of data.</para>
+  <para id="para-00026">In the examples we’ve looked at so far, it’s been pretty easy to identify which number is right in the middle. If we had a very large dataset, though, it might be harder. Fortunately, we have some formulas to help us with that.</para>
+  <note class="formula" id="note-00005">
+  <para id="para-00027">Suppose we have a set of data with <emphasis effect="italic">n</emphasis> values, ordered from smallest to largest. If <emphasis effect="italic">n</emphasis> is odd, then the median is the data value at position <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow></math>. If <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis> is even, then we find the values at positions <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></math>. If those values are named <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> and <emphasis effect="italic">b</emphasis>, then the median is defined to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mn>2</mn></mfrac></mrow></math>.</para>
+  </note>
+  <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml">Let’s put those formulas to work in an example.</para>
+  <example id="exam-00003">
+  <title>EXAMPLE 17 – Finding the Median Using a Stem-and-Leaf Plot</title>
+  <exercise id="exer-00005">
+  <problem id="prob-00005">
+  <para id="para-00029">Earlier, we looked at a stem-and-leaf plot of 33 of the sale prices (in dollars) of a particular collectible trading card:
+  <table summary="." id="table-00006">
+  <tgroup cols="14">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <colspec colnum="10" colname="c10" colwidth="1*"/>
+  <colspec colnum="11" colname="c11" colwidth="1*"/>
+  <colspec colnum="12" colname="c12" colwidth="1*"/>
+  <colspec colnum="13" colname="c13" colwidth="1*"/>
+  <colspec colnum="14" colname="c14" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1">0</entry>
+  <entry>5</entry>
+  <entry>8</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">1</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry>4</entry>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry colsep="1">2</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">3</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">4</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">6</entry>
+  <entry>0</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00030">What is the median price?</para>
+  </problem>
+  <solution id="sol-00005">
+  <para id="para-00031">Since 33 is odd, the median is the data value at position <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow></math>, where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis> is the number of values in the dataset. There are 33 total values, so our formula becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>33</mn><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>17</mn></mrow></math>. That means we want to look for the 17<sup xmlns="http://cnx.rice.edu/cnxml">th</sup> number in the dataset. Counting from the lowest value, we get:
+  <table summary="." id="table-00007">
+  <tgroup cols="14">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <colspec colnum="10" colname="c10" colwidth="1*"/>
+  <colspec colnum="11" colname="c11" colwidth="1*"/>
+  <colspec colnum="12" colname="c12" colwidth="1*"/>
+  <colspec colnum="13" colname="c13" colwidth="1*"/>
+  <colspec colnum="14" colname="c14" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1"/>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>3</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">0</entry>
+  <entry>5</entry>
+  <entry>8</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1"/>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry>7</entry>
+  <entry>8</entry>
+  <entry>9</entry>
+  <entry>10</entry>
+  <entry>11</entry>
+  <entry>12</entry>
+  <entry>13</entry>
+  <entry>14</entry>
+  <entry>15</entry>
+  <entry>16</entry>
+  </row>
+  <row>
+  <entry colsep="1">1</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry>4</entry>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry colsep="1"/>
+  <entry>17</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">2</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">3</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">4</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">6</entry>
+  <entry>0</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00032">The seventeenth number is 20, so the median is 20.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00006">
+  <exercise id="exer-00006">
+  <problem id="prob-00006">
+  <para id="para-00033">Find the median of the data given in this stem-and-leaf plot (there are 17 data values):
+  <table summary="." id="table-00008">
+  <tgroup cols="7">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry>12</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry>13</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry>4</entry>
+  <entry>4</entry>
+  <entry>6</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>14</entry>
+  <entry>2</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry>15</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry>16</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry>17</entry>
+  <entry>0</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  </problem>
+  <solution id="sol-00006">
+  <para id="para-00034">136</para>
+  </solution>
+  </exercise>
+  </note>
+  <para id="para-00035">Now, let’s tackle an example with an even number of values.</para>
+  <example id="exam-00004">
+  <title>EXAMPLE 18 – Finding the Median</title>
+  <exercise id="exer-00007">
+  <problem id="prob-00007">
+  <para id="para-00036">Earlier, we looked at the number of times different crickets (of differing species, genders, etc.) chirped in a one-minute span. Here are the raw data:
+  <table summary="." id="table-00009">
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry>89</entry>
+  <entry>97</entry>
+  <entry>82</entry>
+  <entry>102</entry>
+  <entry>84</entry>
+  <entry>99</entry>
+  </row>
+  <row>
+  <entry>115</entry>
+  <entry>105</entry>
+  <entry>89</entry>
+  <entry>109</entry>
+  <entry>107</entry>
+  <entry>89</entry>
+  </row>
+  <row>
+  <entry>101</entry>
+  <entry>109</entry>
+  <entry>116</entry>
+  <entry>103</entry>
+  <entry>100</entry>
+  <entry>91</entry>
+  </row>
+  <row>
+  <entry>93</entry>
+  <entry>103</entry>
+  <entry>120</entry>
+  <entry>91</entry>
+  <entry>85</entry>
+  <entry>104</entry>
+  </row>
+  <row>
+  <entry>104</entry>
+  <entry>82</entry>
+  <entry>106</entry>
+  <entry>92</entry>
+  <entry>104</entry>
+  <entry>106</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00037">Find the median.</para>
+  </problem>
+  <solution id="sol-00007">
+  <para id="para-00038">Step 1: In order to find the median, we first need to sort the data so that they’re in order, smallest to largest:
+  <table summary="." id="table-00010">
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry>82</entry>
+  <entry>82</entry>
+  <entry>84</entry>
+  <entry>85</entry>
+  <entry>89</entry>
+  <entry>89</entry>
+  </row>
+  <row>
+  <entry>89</entry>
+  <entry>91</entry>
+  <entry>91</entry>
+  <entry>92</entry>
+  <entry>93</entry>
+  <entry>97</entry>
+  </row>
+  <row>
+  <entry>99</entry>
+  <entry>100</entry>
+  <entry>101</entry>
+  <entry>102</entry>
+  <entry>103</entry>
+  <entry>103</entry>
+  </row>
+  <row>
+  <entry>104</entry>
+  <entry>104</entry>
+  <entry>104</entry>
+  <entry>105</entry>
+  <entry>106</entry>
+  <entry>106</entry>
+  </row>
+  <row>
+  <entry>107</entry>
+  <entry>109</entry>
+  <entry>109</entry>
+  <entry>115</entry>
+  <entry>116</entry>
+  <entry>120</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00039">Step 2: Next, we figure out how many data values we have. Counting them up, we see there are 30, which is even.</para>
+  <para id="para-00040">Step 3: Since we have an even number of data values, we need to find the values in positions <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>30</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>15</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>30</mn></mrow><mn>2</mn></mfrac><mo>+</mo><mn>1</mn><mo>=</mo><mn>16</mn></mrow></math>. These are 101 and 102.</para>
+  <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml">Step 4: We use the formula to compute the median: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>101</mn><mo>+</mo><mn>102</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>101.5</mn></mrow></math>.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00008">
+  <problem id="prob-00008">
+  <para id="para-00042">This table gives the records of the Major League Baseball teams at the end of the 2019 season (data from mlb.com):
+  <table summary="." id="table-00011">
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Team</entry>
+  <entry>Wins</entry>
+  <entry>Losses</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>HOU</entry>
+  <entry>107</entry>
+  <entry>55</entry>
+  </row>
+  <row>
+  <entry>LAD</entry>
+  <entry>106</entry>
+  <entry>56</entry>
+  </row>
+  <row>
+  <entry>NYY</entry>
+  <entry>103</entry>
+  <entry>59</entry>
+  </row>
+  <row>
+  <entry>MIN</entry>
+  <entry>101</entry>
+  <entry>61</entry>
+  </row>
+  <row>
+  <entry>ATL</entry>
+  <entry>97</entry>
+  <entry>65</entry>
+  </row>
+  <row>
+  <entry>OAK</entry>
+  <entry>97</entry>
+  <entry>65</entry>
+  </row>
+  <row>
+  <entry>TBR</entry>
+  <entry>96</entry>
+  <entry>66</entry>
+  </row>
+  <row>
+  <entry>CLE</entry>
+  <entry>93</entry>
+  <entry>69</entry>
+  </row>
+  <row>
+  <entry>WSN</entry>
+  <entry>93</entry>
+  <entry>69</entry>
+  </row>
+  <row>
+  <entry>STL</entry>
+  <entry>91</entry>
+  <entry>71</entry>
+  </row>
+  <row>
+  <entry>MIL</entry>
+  <entry>89</entry>
+  <entry>73</entry>
+  </row>
+  <row>
+  <entry>NYM</entry>
+  <entry>86</entry>
+  <entry>76</entry>
+  </row>
+  <row>
+  <entry>ARI</entry>
+  <entry>85</entry>
+  <entry>77</entry>
+  </row>
+  <row>
+  <entry>BOS</entry>
+  <entry>84</entry>
+  <entry>78</entry>
+  </row>
+  <row>
+  <entry>CHC</entry>
+  <entry>84</entry>
+  <entry>78</entry>
+  </row>
+  <row>
+  <entry>PHI</entry>
+  <entry>81</entry>
+  <entry>81</entry>
+  </row>
+  <row>
+  <entry>TEX</entry>
+  <entry>78</entry>
+  <entry>84</entry>
+  </row>
+  <row>
+  <entry>SFG</entry>
+  <entry>77</entry>
+  <entry>85</entry>
+  </row>
+  <row>
+  <entry>CIN</entry>
+  <entry>75</entry>
+  <entry>87</entry>
+  </row>
+  <row>
+  <entry>CHW</entry>
+  <entry>72</entry>
+  <entry>89</entry>
+  </row>
+  <row>
+  <entry>LAA</entry>
+  <entry>72</entry>
+  <entry>90</entry>
+  </row>
+  <row>
+  <entry>COL</entry>
+  <entry>71</entry>
+  <entry>91</entry>
+  </row>
+  <row>
+  <entry>SDP</entry>
+  <entry>70</entry>
+  <entry>92</entry>
+  </row>
+  <row>
+  <entry>PIT</entry>
+  <entry>69</entry>
+  <entry>93</entry>
+  </row>
+  <row>
+  <entry>SEA</entry>
+  <entry>68</entry>
+  <entry>94</entry>
+  </row>
+  <row>
+  <entry>TOR</entry>
+  <entry>67</entry>
+  <entry>95</entry>
+  </row>
+  <row>
+  <entry>KCR</entry>
+  <entry>59</entry>
+  <entry>103</entry>
+  </row>
+  <row>
+  <entry>MIA</entry>
+  <entry>57</entry>
+  <entry>105</entry>
+  </row>
+  <row>
+  <entry>BAL</entry>
+  <entry>54</entry>
+  <entry>108</entry>
+  </row>
+  <row>
+  <entry>DET</entry>
+  <entry>47</entry>
+  <entry>114</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00043">What is the median number of wins?</para>
+  </problem>
+  <solution id="sol-00008">
+  <para id="para-00044">82.5</para>
+  </solution>
+  </exercise>
+  </note>
+  <example id="exam-00005">
+  <title>EXAMPLE 19 – Finding the Median Using a Frequency Distribution</title>
+  <exercise id="exer-00009">
+  <problem id="prob-00009">
+  <para id="para-00045">Earlier, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Here’s the result:
+  <table summary="." id="table-00012">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of siblings</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>0</entry>
+  <entry>5</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>6</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>3</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>2</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00046">What is the median of the number of siblings?</para>
+  </problem>
+  <solution id="sol-00009">
+  <para id="para-00047">There are 30 data values total, so the median is between the fifteenth and sixteenth values in the ordered list. There are five 0s and thirteen 1s according to the frequency distribution, so items one through five are all 0s and items six through eighteen are all 1s. Since both items fifteen and sixteen are 1s, the median is 1.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00008">
+  <exercise id="exer-00010">
+  <problem id="prob-00010">
+  <para id="para-00048">Earlier, you found a frequency distribution for the number of people who shared a residence with people in a sample. Here’s the result:
+  <table summary="." id="table-00013">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of people in the residence</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>1</entry>
+  <entry>12</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>6</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00049">What’s the median of the number of people in these residences?</para>
+  </problem>
+  <solution id="sol-00010">
+  <para id="para-00050">2</para>
+  </solution>
+  </exercise>
+  </note>
+  </section>
+  <section id="sect-00004">
+  <title>The Mean</title>
+  <para id="para-00051">Recall our example of ways we could identify the “average” height of an individual. The last method we posited was also the most complicated. It involved a game where the player guesses a height, then figures out how far off that guess is from every single person’s height. Those differences get squared and added together to get a score. Our next measure of centrality gives the lowest possible score. Verifying that fact is way, way beyond what we are covering in this book. Fortunately, though, we don’t have to work all that hard to compute this measure: the <emphasis effect="italic">mean</emphasis>.</para>
+  <note class="definition" id="note-00009">
+  <para id="para-00052">Given a data set containing <emphasis effect="italic">n</emphasis> total values, the <emphasis effect="bold">mean</emphasis> of the data set is defined as the sum of all the data values, divided by <emphasis effect="italic">n</emphasis>.</para>
+  </note>
+  <para id="para-00053">This is a computation you have likely done before. In many places, including spreadsheet programs like Microsoft Excel and Google Sheets, this number is called the <emphasis effect="italic">average</emphasis>. For statisticians, though, the word <emphasis effect="italic">average</emphasis> has too many possible meanings, so they prefer the one we’ll use: mean.</para>
+  <example id="exam-00006">
+  <title>EXAMPLE 20 – Finding the Mean</title>
+  <exercise id="exer-00011">
+  <problem id="prob-00011">
+  <para id="para-00054">Compute the mean of the numbers 12, 15, 17, 18, 18, and 19.</para>
+  </problem>
+  <solution id="sol-00011">
+  <para id="para-00055">The mean is the sum of the values, divided by the number of values on the list. So, we get:
+  <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mn>12</mn><mo>+</mo><mn>15</mn><mo>+</mo><mn>17</mn><mo>+</mo><mn>18</mn><mo>+</mo><mn>18</mn><mo>+</mo><mn>19</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mfrac><mrow><mn>99</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>16.5</mn><mo>.</mo></mrow></math></equation></para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00012">
+  <problem id="prob-00012">
+  <para id="para-00056">Compute the mean of the numbers 5, 8, 11, 12, 12, 12, 15, 18, and 20. Round your answer to three decimal places.</para>
+  </problem>
+  <solution id="sol-00012">
+  <para id="para-00057">12.556</para>
+  </solution>
+  </exercise>
+  </note>
+  <example id="exam-00007">
+  <title>EXAMPLE 21 – Finding the Mean Using a Frequency Distribution</title>
+  <exercise id="exer-00013">
+  <problem id="prob-00013">
+  <para id="para-00058">Earlier, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Here’s the result:
+  <table summary="." id="table-00014">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of siblings</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>0</entry>
+  <entry>5</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>6</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>3</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>2</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00059">What is the mean of the number of siblings?</para>
+  </problem>
+  <solution id="sol-00013">
+  <para id="para-00060">We compute the mean by adding up all the data values and then dividing by the number of data values on the list. Adding up the frequencies, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>30</mn></mrow></math> data values in our list. Now, to find the sum of all the data values, we could simply reconstruct the raw data and add up all the numbers there. But, there’s an easier way: Remember that repeatedly adding a number to itself is the definition of multiplication. So, for example, since there are six 2s in our data, the sum of all those 2s must be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>. Let’s add a column to our distribution for these products:
+  <table summary="." id="table-00015" xmlns="http://cnx.rice.edu/cnxml">
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of siblings</entry>
+  <entry>Frequency</entry>
+  <entry>(Number of siblings) <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>×</mo></math> (Frequency)</entry>
+  </row>
+  </thead>
+  <tbody xmlns="http://cnx.rice.edu/cnxml">
+  <row>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>0</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>13</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>6</entry>
+  <entry>12</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>3</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>2</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  <entry>5</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00061">So, the sum of all our data values is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>47</mn></mrow></math>. The mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>47</mn></mrow><mrow><mn>30</mn></mrow></mfrac><mo>˜</mo><mn>1.567</mn></mrow></math>.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00014">
+  <problem id="prob-00014">
+  <para id="para-00062">Earlier, you found a frequency distribution for the number of people who shared a residence with people in a sample. Here’s the result:
+  <table summary="." id="table-00016">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of people in the residence</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>1</entry>
+  <entry>12</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>6</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <para id="para-00063">What’s the mean of the number of people in these residences?</para>
+  </problem>
+  <solution id="sol-00014">
+  <para id="para-00064"><equation id="eq-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>91</mn></mrow><mrow><mn>40</mn></mrow></mfrac><mo>=</mo><mn>2.275</mn></mrow></math></equation></para>
+  </solution>
+  </exercise>
+  </note>
+  <para id="para-00065" xmlns="http://cnx.rice.edu/cnxml">As the number of data values we are considering grows, the computation for the mean gets more and more complicated. That’s why people generally trust technology to perform that computation. Take a look at this video to learn how to compute means (and medians and modes) using Google Sheets:</para>
+  <note class="video" id="note-00012">
+  <para id="para-00066"><emphasis effect="bold">VIDEO: Computing Measures of Centrality Using Google Sheets &lt;https://www.youtube.com/watch?v=BVll247FEio></emphasis></para>
+  </note>
+  <para id="para-00067">Note that a recent update to Google Sheets introduced a new function called “MODE.MULT” which will find every mode (not just the first one on the list).</para>
+  <example id="exam-00008">
+  <title>EXAMPLE 22 – Using Google Sheets to Compute Measures of Centrality</title>
+  <exercise id="exer-00015">
+  <problem id="prob-00015">
+  <para id="para-00068">The dataset ‘InState’ contains the in-state tuitions of every college and university in the country that reported that data to the Department of Education (data accessed at data.ed.gov). Find the mode, median, and mean of those in-state tuition values.</para>
+  </problem>
+  <solution id="sol-00015">
+  <para id="para-00069">To find the mode, we select an empty cell type “=MODE(”,click on the header of the column to insert a reference to the column into our formula, and then close the parentheses. When we hit the enter key, our formula is replaced with the mode: $13,380. We can find the median and mean using the same process, except using the functions “MEDIAN” and “AVERAGE” in place of “MODE”. We find that the median is $11,207 and the mean is $15,476.79.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00013">
+  <exercise id="exer-00016">
+  <problem id="prob-00016">
+  <para id="para-00070">The dataset ‘MLB2019’ gives the number of wins for every Major League Baseball team in the 2019 season. Use Google Sheets to find the mode(s), median, and mean.</para>
+  </problem>
+  <solution id="sol-00016">
+  <para id="para-00071">Modes: 72, 84, 93, 97</para>
+  <para id="para-00072">Median: 82.5</para>
+  <para id="para-00073">Mean: 90.967 (rounded to three decimal places)</para>
+  </solution>
+  </exercise>
+  </note>
+  </section>
+  <section id="sect-00005">
+  <title>Which is Better: Mode, Median, or Mean?</title>
+  <para id="para-00074">If the mode, median, and mean all purport to measure the same thing (centrality), why do we need all three? The answer is complicated, as each measure has its own strengths and weaknesses. The mode is simple to compute, but there may be more than one. Further, if no data value appears more than once, the mode is entirely unhelpful. As for the mean and median, the main difference between these two measures is how each is affected by extreme values. Consider this example: the mean and median of 1, 2, 3, 4, 5 are both 3. But what if the dataset is instead 1, 2, 3, 4, 10? The median is still 3, but the mean is now 4. What this example shows is that the mean is sensitive to extreme values, while the median isn’t. This knowledge can help us decide which of the two is more relevant for a given data set. If it is important that the really high or really low values are reflected in the measure of centrality, then the mean is the better option. If very high or low values are not important, however, then we should stick with the median. The decision between mean and median only really matters if the data are skewed; if the data are symmetric, then the mean and median are going to be approximately equal, and the distinction between them is irrelevant. If the data are skewed, the mean gets pulled in the direction of the skew (i.e., if the data are right-skewed, then the mean will be bigger than the median; if the data are left-skewed, the opposite relation is true).</para>
+  <example id="exam-00009">
+  <title>EXAMPLE 23 – Which Measure of Centrality Should I Use?</title>
+  <exercise id="exer-00017">
+  <problem id="prob-00017">
+  <para id="para-00075">For the following situations, decide which measure(s) of centrality would be best:
+  <list list-type="enumerated" number-style="arabic" id="list-00002">
+  <item>You found a used car that you like, and you want to know if the price is too high or too low. You find a list of sale prices for that make and model, and you see that the distribution of those prices is skewed to the right. Some of the prices at the high end are close to the original sale price of the car, so you guess that those cars might have really low mileage, or have other enhancements added on that increased the value (but which don’t apply to the car you found).</item>
+  <item>You are asked to analyze the responses to a survey. One of the questions asked, “How strongly do you agree with the statement, ‘I believe my elected representatives have my best interests in mind when they vote’?” Responses are a number between 1 and 5, with 1 representing “strongly disagree” and 5 representing “strongly agree.”</item>
+  <item>You are asked to find the “average” household income for a ZIP code. Those values are skewed right.</item>
+  <item>Thinking back to the situation at the beginning of this module: you want to find “average” height. The data you’ve collected seem to be distributed symmetrically.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00017">
+  <para id="para-00076"><list list-type="enumerated" number-style="arabic" id="list-00003">
+  <item>In this situation, the high values are not comparable to the value of the car you found and we don’t want them to affect the results. Also, we’re unlikely to find many repeated values, so the mode is probably not useful. Median is best.</item>
+  <item>Here, we want to know what a typical result is. The mean doesn’t really make sense; it involves adding the numbers together, so it would treat two “strongly disagree” and two “strongly agree” responses (those add to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>12</mn></mrow></math>) as exactly the same as four “neutral” responses (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>12</mn></mrow></math>). But those are really different situations; the first shows a strong polarization in the responses, while the second represents strong indifference. The mode is probably the best choice (because the data are actually categorical), but the median would be good too.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The mode isn’t going to be useful in this situation because it’s unlikely you will find many households that have exactly the same income. The mean and median will be different because of the skew, so the choice comes down to the extreme values. Remember that the data are skewed right, so high values are prevalent. Because these high values are important for our analysis, we want them to be reflected in the results. Thus, the mean is best. That being said, the median is also useful; it allows us to say something like “50% of the households surveyed make more than” the median.</item>
+  <item>Because we aren’t likely to find many people with exactly the same height, the mode won’t be useful. Since the data are symmetric, the mean and the median will be about the same. So, it doesn’t really matter which of those two we choose.</item>
+  </list></para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00014">
+  <exercise id="exer-00018">
+  <problem id="prob-00018">
+  <para id="para-00077">For the following situations, decide which measure(s) of centrality would be best:
+  <list list-type="enumerated" number-style="arabic" id="list-00004">
+  <item>The data come from a survey question where the responses range from 1 (“not interested”) to 10 (“very interested”).</item>
+  <item>The data are fuel efficiency measures (in miles per gallon) for various vehicles. The data are right-skewed.</item>
+  <item>The data are scores on an exam, and they are left-skewed.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00018">
+  <para id="para-00078"><list list-type="enumerated" number-style="arabic" id="list-00005">
+  <item>Mode or median</item>
+  <item>Median or mean</item>
+  <item>Median or mean</item>
+  </list>
+  </para>
+  </solution>
+  </exercise>
+  </note>
+  </section>
+  <section id="sect-00006">
+  <title>Check Your Understanding</title>
+  <exercise id="exer-00019">
+  <problem id="prob-00019">
+  <para id="para-00079">1. Use the given stem-and-leaf plot to determine the mode, median, and mean:
+  <table summary="." id="table-00017">
+  <tgroup cols="10">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <colspec colnum="10" colname="c10" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1">8</entry>
+  <entry>8</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">9</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>7</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">10</entry>
+  <entry>2</entry>
+  <entry>5</entry>
+  <entry>6</entry>
+  <entry>7</entry>
+  <entry>8</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">11</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  <entry>4</entry>
+  <entry>5</entry>
+  <entry>7</entry>
+  <entry>9</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry colsep="1">12</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry>5</entry>
+  <entry>7</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">13</entry>
+  <entry>0</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>4</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  </problem>
+  <solution id="sol-00019">
+  <para id="para-00080">Mode: 112</para>
+  <para id="para-00081">Median: 113</para>
+  <para id="para-00082">Mean: 112.64</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00020">
+  <problem id="prob-00020">
+  <para id="para-00083">2. A survey of college students asked how many courses those students were currently taking. The results are summarized in this frequency distribution:
+  <table summary="." id="table-00018">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of classes</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>1</entry>
+  <entry>1</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>3</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>16</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>4</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+  <item>Find the mode of the number of classes.</item>
+  <item>Find the median of the number of classes.</item>
+  <item>Find the mean of the number of classes.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00020">
+  <para id="para-00084">Answer:
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+  <item>3</item>
+  <item>3</item>
+  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>107</mn></mrow><mrow><mn>32</mn></mrow></mfrac><mo>˜</mo><mn>3.344</mn></mrow></math></item>
+  </list></para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00021" xmlns="http://cnx.rice.edu/cnxml">
+  <problem id="prob-00021">
+  <para id="para-00085">3. Employees at a college help desk track the number of people who request assistance each week. Here is a sample of the results (also found in the dataset “HelpDesk”):
+  <table summary="." id="table-00019">
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry>142</entry>
+  <entry>153</entry>
+  <entry>158</entry>
+  <entry>156</entry>
+  <entry>141</entry>
+  <entry>143</entry>
+  </row>
+  <row>
+  <entry>139</entry>
+  <entry>158</entry>
+  <entry>156</entry>
+  <entry>146</entry>
+  <entry>137</entry>
+  <entry>153</entry>
+  </row>
+  <row>
+  <entry>136</entry>
+  <entry>127</entry>
+  <entry>157</entry>
+  <entry>148</entry>
+  <entry>132</entry>
+  <entry>139</entry>
+  </row>
+  <row>
+  <entry>155</entry>
+  <entry>167</entry>
+  <entry>143</entry>
+  <entry>168</entry>
+  <entry>133</entry>
+  <entry>157</entry>
+  </row>
+  <row>
+  <entry>138</entry>
+  <entry>156</entry>
+  <entry>164</entry>
+  <entry>130</entry>
+  <entry>148</entry>
+  <entry>136</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00008">
+  <item>Compute the mode.</item>
+  <item>Compute the median.</item>
+  <item>Compute the mean.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00021">
+  <para id="para-00086"><list list-type="enumerated" number-style="lower-alpha" id="list-00009">
+  <item>156</item>
+  <item>147</item>
+  <item>147.2</item>
+  </list></para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00022">
+  <problem id="prob-00022">
+  <para id="para-00087">4. The following are data (from data.ed.gov, accessed January 2020) on the admission rates of the different branch campuses in the University of California system, along with the out-of-state tuition and fee cost (data can be found in “UofCal”):
+  <table summary="." id="table-00020">
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Campus</entry>
+  <entry>Admission Rate</entry>
+  <entry>Cost</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Berkeley</entry>
+  <entry>0.1484</entry>
+  <entry>43176</entry>
+  </row>
+  <row>
+  <entry>Davis</entry>
+  <entry>0.4107</entry>
+  <entry>43394</entry>
+  </row>
+  <row>
+  <entry>Irvine</entry>
+  <entry>0.2876</entry>
+  <entry>42692</entry>
+  </row>
+  <row>
+  <entry>Los Angeles</entry>
+  <entry>0.1404</entry>
+  <entry>42218</entry>
+  </row>
+  <row>
+  <entry>Merced</entry>
+  <entry>0.6617</entry>
+  <entry>42530</entry>
+  </row>
+  <row>
+  <entry>Riverside</entry>
+  <entry>0.5057</entry>
+  <entry>42819</entry>
+  </row>
+  <row>
+  <entry>San Diego</entry>
+  <entry>0.3006</entry>
+  <entry>43159</entry>
+  </row>
+  <row>
+  <entry>Santa Barbara</entry>
+  <entry>0.322</entry>
+  <entry>43383</entry>
+  </row>
+  <row>
+  <entry>Santa Cruz</entry>
+  <entry>0.4737</entry>
+  <entry>42952</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
+  <item>Compute the mode, median, and mean admission rate.</item>
+  <item>Compute the mode, median, and mean cost.</item>
+  </list>
+  </para>
+  </problem>
+  <solution id="sol-00022">
+  <para id="para-00088"><list list-type="enumerated" number-style="lower-alpha" id="list-00011">
+  <item><para id="para-00089">Mode: not useful; every value appears only once</para>
+  <para id="para-00090">Median: 0.322</para>
+  <para id="para-00091">Mean: 0.3612</para></item>
+  <item><para id="para-00092">Mode: not useful; every value appears only once</para>
+  <para id="para-00093">Median: $42,952</para>
+  <para id="para-00094">Mean: $42924.78</para></item>
+  </list></para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00023">
+  <problem id="prob-00023">
+  <para id="para-00095">5. Consider the data in “InState,” which shows in-state tuition and fees for most institutions of higher learning in the United States (from data.ed.gov, accessed January 2020). Compute the mode, median, and mean.</para>
+  </problem>
+  <solution id="sol-00023">
+  <para id="para-00096">Answer:</para>
+  <para id="para-00097">Mode: $13,380</para>
+  <para id="para-00098">Median: $11,207</para>
+  <para id="para-00099">Mean: $15,476.79</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00024">
+  <problem id="prob-00024">
+  <para id="para-00100">6. Workers for a particular company have complained that their wages are too low, while the management says wages are plenty high. If the company’s salaries are right-skewed, which measure of centrality will the workers choose to represent salary? Which will management choose?</para>
+  </problem>
+  <solution id="sol-00024">
+  <para id="para-00101">Answer: Since the data are right skewed, the mean will be bigger than the mean. Thus, the workers would rather use the median, while the management will prefer the mean.</para>
+  </solution>
+  </exercise>
+  </section>
+  <section class="exercises" id="sect-00007">
+  <title>Exercises</title>
+  <para id="para-00102">Unless otherwise instructed, round all answers to three decimal places.</para>
+  <exercise id="exer-00025">
+  <problem id="prob-00025">
+  <para id="para-00103">1. Consider the stem-and-leaf plot:
+  <table summary="." id="table-00021">
+  <tgroup cols="9">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1">0</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>6</entry>
+  <entry>6</entry>
+  <entry>7</entry>
+  <entry/>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>2</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>0</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>0</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00012">
+  <item>Find the mode.</item>
+  <item>Find the median.</item>
+  <item>Find the mean.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00025">
+  <para id="para-00104">Answers:
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00013">
+  <item>10</item>
+  <item>11</item>
+  <item>14.727</item>
+  </list>
+  </para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00026">
+  <problem id="prob-00026">
+  <para id="para-00105">2. Consider the stem-and-leaf plot:
+  <table summary="." id="table-00022">
+  <tgroup cols="9">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <colspec colnum="9" colname="c9" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry colsep="1">7</entry>
+  <entry>8</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">8</entry>
+  <entry>0</entry>
+  <entry>6</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">9</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>4</entry>
+  <entry>8</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">10</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>3</entry>
+  <entry>5</entry>
+  <entry>9</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+  <entry colsep="1">11</entry>
+  <entry>0</entry>
+  <entry>0</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  <entry>6</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry colsep="1">12</entry>
+  <entry>0</entry>
+  <entry>1</entry>
+  <entry>5</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
+  <item>Find the mode.</item>
+  <item>Find the median.</item>
+  <item>Find the mean.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00026">
+  <para id="para-00106">Answers:
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00015">
+  <item>111</item>
+  <item>109</item>
+  <item>104.348</item>
+  </list>
+  </para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00027">
+  <problem id="prob-00027">
+  <para id="para-00107">3. In Exercise 19 in Module 1, you found the following frequency distribution for number of countries visited by students:
+  <table summary="." id="table-00023">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of countries</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>0</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>11</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>5</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>1</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00016">
+  <item>Find the mode of the number of countries visited.</item>
+  <item>Find the median of the number of countries visited.</item>
+  <item>Find the mean of the number of countries visited.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00027">
+  <para id="para-00108">Answers:
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00017">
+  <item>0</item>
+  <item>1</item>
+  <item>0.8</item>
+  </list></para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00028">
+  <problem id="prob-00028">
+  <para id="para-00109">4. In Exercise 20 in Module 1, you found the following frequency distribution for number of fumbles by a selection of football players:
+  <table summary="." id="table-00024">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Number of fumbles</entry>
+  <entry>Frequency</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>0</entry>
+  <entry>5</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>3</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>4</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00018">
+  <item>Find the mode of the number of fumbles.</item>
+  <item>Find the median of the number of fumbles.</item>
+  <item>Find the mean of the number of fumbles.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00028">
+  <para id="para-00110">Answers:
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00019">
+  <item>1</item>
+  <item>1</item>
+  <item>1.24</item>
+  </list></para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00029">
+  <problem id="prob-00029">
+  <para id="para-00111">5. A public opinion poll about an upcoming election asked respondents, “How many political advertisements do you recall seeing on television in the last 24 hours?” Here are the responses:
+  <table summary="." id="table-00025">
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry>6</entry>
+  <entry>2</entry>
+  <entry>5</entry>
+  <entry>5</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  </row>
+  <row>
+  <entry>5</entry>
+  <entry>2</entry>
+  <entry>4</entry>
+  <entry>8</entry>
+  <entry>6</entry>
+  <entry>3</entry>
+  </row>
+  <row>
+  <entry>4</entry>
+  <entry>1</entry>
+  <entry>3</entry>
+  <entry>0</entry>
+  <entry>1</entry>
+  <entry>2</entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>4</entry>
+  <entry>2</entry>
+  <entry>5</entry>
+  <entry>3</entry>
+  <entry>4</entry>
+  </row>
+  <row>
+  <entry>1</entry>
+  <entry>6</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  <entry>2</entry>
+  <entry>3</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00020">
+  <item>Compute the mode.</item>
+  <item>Compute the median.</item>
+  <item>Compute the mean.</item>
+  </list></para>
+  </problem>
+  <solution id="sol-00029">
+  <para id="para-00112">Answer:
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00021">
+  <item>2</item>
+  <item>3</item>
+  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>98</mn></mrow><mrow><mn>30</mn></mrow></mfrac><mo>˜</mo><mn>3.267</mn></mrow></math></item>
+  </list></para>
+  </solution>
+  </exercise>
+  <para id="para-00113" xmlns="http://cnx.rice.edu/cnxml">For exercises 6 through 14, use the data found in “TNSchools,” which has data on many institutions of higher education in the state of Tennessee (data from data.ed.gov). Here are what the columns represent:
+  <table summary="." id="table-00026">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Column name</entry>
+  <entry>Description</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>AdmRate</entry>
+  <entry>Proportion of applicants that are admitted</entry>
+  </row>
+  <row>
+  <entry>UGEnr</entry>
+  <entry>Number of undergraduate students</entry>
+  </row>
+  <row>
+  <entry>PTUG</entry>
+  <entry>Proportion of undergraduates who attend part-time</entry>
+  </row>
+  <row>
+  <entry>InState</entry>
+  <entry>Tuition and fees for in-state students</entry>
+  </row>
+  <row>
+  <entry>OutState</entry>
+  <entry>Tuition and fees for out-of-state students</entry>
+  </row>
+  <row>
+  <entry>FacSal</entry>
+  <entry>Mean monthly faculty salary</entry>
+  </row>
+  <row>
+  <entry>Pell</entry>
+  <entry>Proportion of students receiving Pell Grants</entry>
+  </row>
+  <row>
+  <entry>MedDebt</entry>
+  <entry>Median student loan debt at degree completion</entry>
+  </row>
+  <row>
+  <entry>StartAge</entry>
+  <entry>Mean age at the time of entry</entry>
+  </row>
+  <row>
+  <entry>Female</entry>
+  <entry>Proportion of students who identify as female</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table></para>
+  <exercise id="exer-00030">
+  <problem id="prob-00030">
+  <para id="para-00114">6. What is the mean undergraduate enrollment at these schools?</para>
+  </problem>
+  <solution id="sol-00030">
+  <para id="para-00115">Answer: 3649.476</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00031">
+  <problem id="prob-00031">
+  <para id="para-00116">7. What is the median undergraduate enrollment at these schools?</para>
+  </problem>
+  <solution id="sol-00031">
+  <para id="para-00117">Answer: 1540</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00032">
+  <problem id="prob-00032">
+  <para id="para-00118">8. Generate a histogram for undergraduate enrollment, and use it to describe the effect of the distribution on the mean and the median as measures of centrality.</para>
+  </problem>
+  <solution id="sol-00032">
+  <para id="para-00119">Answer: Because the data are strongly skewed to the right, the mean is much higher than the median.</para>
+  <figure id="fig-00002">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_03_060.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.60: Histogram like this, using data from Tech8.60:</emphasis></caption>
+  </figure>
+  </solution>
+  </exercise>
+  <exercise id="exer-00033">
+  <problem id="prob-00033">
+  <para id="para-00120">9. What is the mean proportion of part-time undergraduates at these schools?</para>
+  </problem>
+  <solution id="sol-00033">
+  <para id="para-00121">Answer: 0.139</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00034">
+  <problem id="prob-00034">
+  <para id="para-00122">10. What is the median proportion of part-time undergraduates at these schools?</para>
+  </problem>
+  <solution id="sol-00034">
+  <para id="para-00123">Answer: 0.102</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00035">
+  <problem id="prob-00035">
+  <para id="para-00124">11. Generate a histogram for proportion of part-time undergraduates, and use it to describe the effect of the distribution on the mean and the median as measures of centrality.</para>
+  </problem>
+  <solution id="sol-00035">
+  <para id="para-00125">Answer: Because the data are strongly skewed to the right, the mean is much higher than the median.</para>
+  <figure id="fig-00003">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_03_061.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.61: Histogram like this, using data from Tech8.61:</emphasis></caption>
+  </figure>
+  </solution>
+  </exercise>
+  <exercise id="exer-00036">
+  <problem id="prob-00036">
+  <para id="para-00126">12. What is the mean of the monthly faculty salaries at these schools?</para>
+  </problem>
+  <solution id="sol-00036">
+  <para id="para-00127">Answer: $6,627.571</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00037">
+  <problem id="prob-00037">
+  <para id="para-00128">13. What is the median of the monthly faculty salaries at these schools?</para>
+  </problem>
+  <solution id="sol-00037">
+  <para id="para-00129">Answer: 6670</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00038">
+  <problem id="prob-00038">
+  <para id="para-00130">14. Generate a histogram for the monthly faculty salaries, and use it to describe the effect of the distribution on the mean and the median as measures of centrality.</para>
+  </problem>
+  <solution id="sol-00038">
+  <para id="para-00131">Answer: Because the distribution is fairly symmetric, the mean is close to the median.</para>
+  <figure id="fig-00004">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_03_062.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.62: Histogram like this, using data from Tech8.62:</emphasis></caption>
+  </figure>
+  </solution>
+  </exercise>
+  <para id="para-00132">The data set “AvgSAT” gives the average SAT score for incoming students (I’m using “average” here to stand in for “mean” to avoid confusion in the following problems) for every institution in the United States that reported the data (from data.ed.gov). Use that data set to answer questions 15-17.</para>
+  <exercise id="exer-00039">
+  <problem id="prob-00039">
+  <para id="para-00133">15. What is the mean of the average SAT scores?</para>
+  </problem>
+  <solution id="sol-00039">
+  <para id="para-00134">Answer: 1141</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00040">
+  <problem id="prob-00040">
+  <para id="para-00135">16. What is the median of the average SAT scores?</para>
+  </problem>
+  <solution id="sol-00040">
+  <para id="para-00136">Answer: 1123</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00041">
+  <problem id="prob-00041">
+  <para id="para-00137">17. Construct a histogram of average SAT scores, and describe how the distribution affects the mean and the median.</para>
+  </problem>
+  <solution id="sol-00041">
+  <para id="para-00138">Answer: The distribution is slightly right-skewed, so the mean is a little larger than the median.</para>
+  <figure id="fig-00005">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_03_063.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.63: Same as Tech 8.20</emphasis></caption>
+  </figure>
+  </solution>
+  </exercise>
+  <para id="para-00139">For Exercises 18 through 38, use the following table (found in the dataset NHL19, and accessed at ESPN.com), which gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS; teams get two points for a win and one point for an overtime loss), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA):
+  <table summary="." id="table-00027">
+  <tgroup cols="8">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <colspec colnum="8" colname="c8" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Team</entry>
+  <entry>W</entry>
+  <entry>L</entry>
+  <entry>OTL</entry>
+  <entry>PTS</entry>
+  <entry>GF</entry>
+  <entry>GA</entry>
+  <entry>DIFF</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Tampa Bay Lightning</entry>
+  <entry>62</entry>
+  <entry>16</entry>
+  <entry>4</entry>
+  <entry>128</entry>
+  <entry>325</entry>
+  <entry>222</entry>
+  <entry>103</entry>
+  </row>
+  <row>
+  <entry>Calgary Flames</entry>
+  <entry>50</entry>
+  <entry>25</entry>
+  <entry>7</entry>
+  <entry>107</entry>
+  <entry>289</entry>
+  <entry>227</entry>
+  <entry>62</entry>
+  </row>
+  <row>
+  <entry>Boston Bruins</entry>
+  <entry>49</entry>
+  <entry>24</entry>
+  <entry>9</entry>
+  <entry>107</entry>
+  <entry>259</entry>
+  <entry>215</entry>
+  <entry>44</entry>
+  </row>
+  <row>
+  <entry>Washington Capitals</entry>
+  <entry>48</entry>
+  <entry>26</entry>
+  <entry>8</entry>
+  <entry>104</entry>
+  <entry>278</entry>
+  <entry>249</entry>
+  <entry>29</entry>
+  </row>
+  <row>
+  <entry>New York Islanders</entry>
+  <entry>48</entry>
+  <entry>27</entry>
+  <entry>7</entry>
+  <entry>103</entry>
+  <entry>228</entry>
+  <entry>196</entry>
+  <entry>32</entry>
+  </row>
+  <row>
+  <entry>San Jose Sharks</entry>
+  <entry>46</entry>
+  <entry>27</entry>
+  <entry>9</entry>
+  <entry>101</entry>
+  <entry>289</entry>
+  <entry>261</entry>
+  <entry>28</entry>
+  </row>
+  <row>
+  <entry>Toronto Maple Leafs</entry>
+  <entry>46</entry>
+  <entry>28</entry>
+  <entry>8</entry>
+  <entry>100</entry>
+  <entry>286</entry>
+  <entry>251</entry>
+  <entry>35</entry>
+  </row>
+  <row>
+  <entry>Nashville Predators</entry>
+  <entry>47</entry>
+  <entry>29</entry>
+  <entry>6</entry>
+  <entry>100</entry>
+  <entry>240</entry>
+  <entry>214</entry>
+  <entry>26</entry>
+  </row>
+  <row>
+  <entry>Pittsburgh Penguins</entry>
+  <entry>44</entry>
+  <entry>26</entry>
+  <entry>12</entry>
+  <entry>100</entry>
+  <entry>273</entry>
+  <entry>241</entry>
+  <entry>32</entry>
+  </row>
+  <row>
+  <entry>Winnipeg Jets</entry>
+  <entry>47</entry>
+  <entry>30</entry>
+  <entry>5</entry>
+  <entry>99</entry>
+  <entry>272</entry>
+  <entry>244</entry>
+  <entry>28</entry>
+  </row>
+  <row>
+  <entry>Carolina Hurricanes</entry>
+  <entry>46</entry>
+  <entry>29</entry>
+  <entry>7</entry>
+  <entry>99</entry>
+  <entry>245</entry>
+  <entry>223</entry>
+  <entry>22</entry>
+  </row>
+  <row>
+  <entry>St. Louis Blues</entry>
+  <entry>45</entry>
+  <entry>28</entry>
+  <entry>9</entry>
+  <entry>99</entry>
+  <entry>247</entry>
+  <entry>223</entry>
+  <entry>24</entry>
+  </row>
+  <row>
+  <entry>Columbus Blue Jackets</entry>
+  <entry>47</entry>
+  <entry>31</entry>
+  <entry>4</entry>
+  <entry>98</entry>
+  <entry>258</entry>
+  <entry>232</entry>
+  <entry>26</entry>
+  </row>
+  <row>
+  <entry>Montreal Canadiens</entry>
+  <entry>44</entry>
+  <entry>30</entry>
+  <entry>8</entry>
+  <entry>96</entry>
+  <entry>249</entry>
+  <entry>236</entry>
+  <entry>13</entry>
+  </row>
+  <row>
+  <entry>Dallas Stars</entry>
+  <entry>43</entry>
+  <entry>32</entry>
+  <entry>7</entry>
+  <entry>93</entry>
+  <entry>210</entry>
+  <entry>202</entry>
+  <entry>8</entry>
+  </row>
+  <row>
+  <entry>Vegas Golden Knights</entry>
+  <entry>43</entry>
+  <entry>32</entry>
+  <entry>7</entry>
+  <entry>93</entry>
+  <entry>249</entry>
+  <entry>230</entry>
+  <entry>19</entry>
+  </row>
+  <row>
+  <entry>Colorado Avalanche</entry>
+  <entry>38</entry>
+  <entry>30</entry>
+  <entry>14</entry>
+  <entry>90</entry>
+  <entry>260</entry>
+  <entry>246</entry>
+  <entry>14</entry>
+  </row>
+  <row>
+  <entry>Arizona Coyotes</entry>
+  <entry>39</entry>
+  <entry>35</entry>
+  <entry>8</entry>
+  <entry>86</entry>
+  <entry>213</entry>
+  <entry>223</entry>
+  <entry>-10</entry>
+  </row>
+  <row>
+  <entry>Florida Panthers</entry>
+  <entry>36</entry>
+  <entry>32</entry>
+  <entry>14</entry>
+  <entry>86</entry>
+  <entry>267</entry>
+  <entry>280</entry>
+  <entry>-13</entry>
+  </row>
+  <row>
+  <entry>Chicago Blackhawks</entry>
+  <entry>36</entry>
+  <entry>34</entry>
+  <entry>12</entry>
+  <entry>84</entry>
+  <entry>270</entry>
+  <entry>292</entry>
+  <entry>-22</entry>
+  </row>
+  <row>
+  <entry>Minnesota Wild</entry>
+  <entry>37</entry>
+  <entry>36</entry>
+  <entry>9</entry>
+  <entry>83</entry>
+  <entry>211</entry>
+  <entry>237</entry>
+  <entry>-26</entry>
+  </row>
+  <row>
+  <entry>Philadelphia Flyers</entry>
+  <entry>37</entry>
+  <entry>37</entry>
+  <entry>8</entry>
+  <entry>82</entry>
+  <entry>244</entry>
+  <entry>281</entry>
+  <entry>-37</entry>
+  </row>
+  <row>
+  <entry>Vancouver Canucks</entry>
+  <entry>35</entry>
+  <entry>36</entry>
+  <entry>11</entry>
+  <entry>81</entry>
+  <entry>225</entry>
+  <entry>254</entry>
+  <entry>-29</entry>
+  </row>
+  <row>
+  <entry>Anaheim Ducks</entry>
+  <entry>35</entry>
+  <entry>37</entry>
+  <entry>10</entry>
+  <entry>80</entry>
+  <entry>199</entry>
+  <entry>251</entry>
+  <entry>-52</entry>
+  </row>
+  <row>
+  <entry>Edmonton Oilers</entry>
+  <entry>35</entry>
+  <entry>38</entry>
+  <entry>9</entry>
+  <entry>79</entry>
+  <entry>232</entry>
+  <entry>274</entry>
+  <entry>-42</entry>
+  </row>
+  <row>
+  <entry>New York Rangers</entry>
+  <entry>32</entry>
+  <entry>36</entry>
+  <entry>14</entry>
+  <entry>78</entry>
+  <entry>227</entry>
+  <entry>272</entry>
+  <entry>-45</entry>
+  </row>
+  <row>
+  <entry>Buffalo Sabres</entry>
+  <entry>33</entry>
+  <entry>39</entry>
+  <entry>10</entry>
+  <entry>76</entry>
+  <entry>226</entry>
+  <entry>271</entry>
+  <entry>-45</entry>
+  </row>
+  <row>
+  <entry>Detroit Red Wings</entry>
+  <entry>32</entry>
+  <entry>40</entry>
+  <entry>10</entry>
+  <entry>74</entry>
+  <entry>227</entry>
+  <entry>277</entry>
+  <entry>-50</entry>
+  </row>
+  <row>
+  <entry>New Jersey Devils</entry>
+  <entry>31</entry>
+  <entry>41</entry>
+  <entry>10</entry>
+  <entry>72</entry>
+  <entry>222</entry>
+  <entry>275</entry>
+  <entry>-53</entry>
+  </row>
+  <row>
+  <entry>Los Angeles Kings</entry>
+  <entry>31</entry>
+  <entry>42</entry>
+  <entry>9</entry>
+  <entry>71</entry>
+  <entry>202</entry>
+  <entry>263</entry>
+  <entry>-61</entry>
+  </row>
+  <row>
+  <entry>Ottawa Senators</entry>
+  <entry>29</entry>
+  <entry>47</entry>
+  <entry>6</entry>
+  <entry>64</entry>
+  <entry>242</entry>
+  <entry>302</entry>
+  <entry>-60</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </para>
+  <exercise id="exer-00042">
+  <problem id="prob-00042">
+  <para id="para-00140">18. Compute the mode(s) of wins.</para>
+  </problem>
+  <solution id="sol-00042">
+  <para id="para-00141">Answer: 35, 46, 47</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00043">
+  <problem id="prob-00043">
+  <para id="para-00142">19. Compute the median of wins.</para>
+  </problem>
+  <solution id="sol-00043">
+  <para id="para-00143">Answer: 43</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00044">
+  <problem id="prob-00044">
+  <para id="para-00144">20. Compute the mean of wins.</para>
+  </problem>
+  <solution id="sol-00044">
+  <para id="para-00145">Answer: 41</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00045">
+  <problem id="prob-00045">
+  <para id="para-00146">21. Compute the mode(s) of losses.</para>
+  </problem>
+  <solution id="sol-00045">
+  <para id="para-00147">Answer: 30, 32, 36</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00046">
+  <problem id="prob-00046">
+  <para id="para-00148">22. Compute the median of losses.</para>
+  </problem>
+  <solution id="sol-00046">
+  <para id="para-00149">Answer: 32</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00047">
+  <problem id="prob-00047">
+  <para id="para-00150">23. Compute the mean of losses.</para>
+  </problem>
+  <solution id="sol-00047">
+  <para id="para-00151">Answer: 32.258</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00048">
+  <problem id="prob-00048">
+  <para id="para-00152">24. Compute the mode(s) of overtime losses.</para>
+  </problem>
+  <solution id="sol-00048">
+  <para id="para-00153">Answer: 9</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00049">
+  <problem id="prob-00049">
+  <para id="para-00154">25. Compute the median of overtime losses.</para>
+  </problem>
+  <solution id="sol-00049">
+  <para id="para-00155">Answer: 9</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00050">
+  <problem id="prob-00050">
+  <para id="para-00156">26. Compute the mean of overtime losses.</para>
+  </problem>
+  <solution id="sol-00050">
+  <para id="para-00157">Answer: 8.742</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00051">
+  <problem id="prob-00051">
+  <para id="para-00158">27. Compute the mode(s) of points.</para>
+  </problem>
+  <solution id="sol-00051">
+  <para id="para-00159">Answer: 99, 100</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00052">
+  <problem id="prob-00052">
+  <para id="para-00160">28. Compute the median of points.</para>
+  </problem>
+  <solution id="sol-00052">
+  <para id="para-00161">Answer: 93</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00053">
+  <problem id="prob-00053">
+  <para id="para-00162">29. Compute the mean of points.</para>
+  </problem>
+  <solution id="sol-00053">
+  <para id="para-00163">Answer: 90.742</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00054">
+  <problem id="prob-00054">
+  <para id="para-00164">30. Compute the mode(s) of goals scored (GF).</para>
+  </problem>
+  <solution id="sol-00054">
+  <para id="para-00165">Answer: 227, 249, 289</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00055">
+  <problem id="prob-00055">
+  <para id="para-00166">31. Compute the median of goals scored (GF).</para>
+  </problem>
+  <solution id="sol-00055">
+  <para id="para-00167">Answer: 245</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00056">
+  <problem id="prob-00056">
+  <para id="para-00168">32. Compute the mean of goals scored (GF).</para>
+  </problem>
+  <solution id="sol-00056">
+  <para id="para-00169">Answer: 247.226</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00057">
+  <problem id="prob-00057">
+  <para id="para-00170">33. Compute the mode(s) of goals against (GA).</para>
+  </problem>
+  <solution id="sol-00057">
+  <para id="para-00171">Answer: 223</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00058">
+  <problem id="prob-00058">
+  <para id="para-00172">34. Compute the median of goals against (GA).</para>
+  </problem>
+  <solution id="sol-00058">
+  <para id="para-00173">Answer: 246</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00059">
+  <problem id="prob-00059">
+  <para id="para-00174">35. Compute the mean of goals against (GA).</para>
+  </problem>
+  <solution id="sol-00059">
+  <para id="para-00175">Answer: 247.226</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00060">
+  <problem id="prob-00060">
+  <para id="para-00176">36. Compute the mode(s) of goal differential</para>
+  </problem>
+  <solution id="sol-00060">
+  <para id="para-00177">Answer: -45, 26, 28, 32</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00061">
+  <problem id="prob-00061">
+  <para id="para-00178">37. Compute the median of goals against (GA).</para>
+  </problem>
+  <solution id="sol-00061">
+  <para id="para-00179">Answer: 13</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00062">
+  <problem id="prob-00062">
+  <para id="para-00180">38. Compute the mean of goals against (GA).</para>
+  </problem>
+  <solution id="sol-00062">
+  <para id="para-00181">Answer: 0</para>
+  </solution>
+  </exercise>
+  <para id="para-00182">For exercises 39 through 50, use the data in “CUNY” (taken from data.ed.gov, which gives proportions of degrees awarded in various disciplines) to answer the given questions:</para>
+  <exercise id="exer-00063">
+  <problem id="prob-00063">
+  <para id="para-00183">39. Compute the median proportion of degrees awarded in Information Science.</para>
+  </problem>
+  <solution id="sol-00063">
+  <para id="para-00184">Answer: 0.041</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00064">
+  <problem id="prob-00064">
+  <para id="para-00185">40. Compute the mean proportion of degrees awarded in Information Science.</para>
+  </problem>
+  <solution id="sol-00064">
+  <para id="para-00186">Answer: 0.049</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00065">
+  <problem id="prob-00065">
+  <para id="para-00187">41. Compute the median proportion of degrees awarded in Education.</para>
+  </problem>
+  <solution id="sol-00065">
+  <para id="para-00188">Answer: 0.014</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00066">
+  <problem id="prob-00066">
+  <para id="para-00189">42. Compute the mean proportion of degrees awarded in Education.</para>
+  </problem>
+  <solution id="sol-00066">
+  <para id="para-00190">Answer: 0.031</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00067">
+  <problem id="prob-00067">
+  <para id="para-00191">43. Compute the median proportion of degrees awarded in Humanities.</para>
+  </problem>
+  <solution id="sol-00067">
+  <para id="para-00192">Answer: 0.108</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00068">
+  <problem id="prob-00068">
+  <para id="para-00193">44. Compute the mean proportion of degrees awarded in Humanities.</para>
+  </problem>
+  <solution id="sol-00068">
+  <para id="para-00194">Answer: 0.169</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00069">
+  <problem id="prob-00069">
+  <para id="para-00195">45. Compute the median proportion of degrees awarded in Biology.</para>
+  </problem>
+  <solution id="sol-00069">
+  <para id="para-00196">Answer: 0.013</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00070">
+  <problem id="prob-00070">
+  <para id="para-00197">46. Compute the mean proportion of degrees awarded in Biology.</para>
+  </problem>
+  <solution id="sol-00070">
+  <para id="para-00198">Answer: 0.028</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00071">
+  <problem id="prob-00071">
+  <para id="para-00199">47. Compute the median proportion of degrees awarded in Physical Science.</para>
+  </problem>
+  <solution id="sol-00071">
+  <para id="para-00200">Answer: 0.021</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00072">
+  <problem id="prob-00072">
+  <para id="para-00201">48. Compute the mean proportion of degrees awarded in Physical Science.</para>
+  </problem>
+  <solution id="sol-00072">
+  <para id="para-00202">Answer: 0.034</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00073">
+  <problem id="prob-00073">
+  <para id="para-00203">49. Compute the median proportion of degrees awarded in Social Science.</para>
+  </problem>
+  <solution id="sol-00073">
+  <para id="para-00204">Answer: 0.020</para>
+  </solution>
+  </exercise>
+  <exercise id="exer-00074">
+  <problem id="prob-00074">
+  <para id="para-00205">50. Compute the mean proportion of degrees awarded in Social Science.</para>
+  </problem>
+  <solution id="sol-00074">
+  <para id="para-00206">Answer: 0.060</para>
+  </solution>
+  </exercise>
+  </section>
+  </content>
+  </document>
