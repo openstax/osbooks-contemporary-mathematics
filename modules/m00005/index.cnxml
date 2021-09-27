@@ -36,11 +36,8 @@
 <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
 <exercise id="exer-00002">
 <problem id="prob-00002">
-<para id="para-00008">On your morning commute, you decide to record how long you have to wait each time you get caught at a red light. Here are the times in seconds: 12, 58, 35, 79, 21. What is the range?</para>
+<para id="para-00008"><link class="os-embed" url="#exercise/CM-C08-M4-Q001"/></para>
 </problem>
-<solution id="sol-00002">
-<para id="para-00009">67</para>
-</solution>
 </exercise>
 </note>
 <para id="para-00010">For large data sets, finding the maximum and minimum values can be daunting. There are two way to do it ina spreadsheet. First, you can ask the spreadsheet program to sort the data from smallest to largest, then find the first and last numbers on the sorted list. The second method uses built-in functions to find the minimum and maximum. This video shows you how to do that in Google Sheets:</para>
@@ -63,12 +60,8 @@
 <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
 <exercise id="exer-00004">
 <problem id="prob-00004">
-<para id="para-00015">The file “InState” contains in-state tuition costs (in dollars) for every institution of higher learning in the US for which data is available (data from data.ed.gov). What is the range of these costs?</para>
+<para id="para-00015"><link class="os-embed" url="#exercise/CM-C08-M4-Q002"/></para>
 </problem>
-<solution id="sol-00004">
-<para id="para-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>74</mn><mo>,</mo><mn>514</mn><mo>−</mo><mn>480</mn><mo>=</mo><mi>$</mi><mn>74</mn><mo>,</mo><mn>034</mn></mrow></math>
-</para>
-</solution>
 </exercise>
 </note>
 <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">The range is very easy to compute, but it depends only on two of the data values in the entire set. If there happens to be just one unusually high or low data value, then the range might give a distorted measure of dispersion. Our next measure takes every single data value into account, making it more reliable.</para>
@@ -238,11 +231,8 @@
 <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
 <exercise id="exer-00006">
 <problem id="prob-00006">
-<para id="para-00032">On your morning commute, you decide to record how long you have to wait each time you get caught at a red light. Here are the times in seconds: 12, 58, 35, 79, 21. What is the standard deviation?</para>
+<para id="para-00032"><link class="os-embed" url="#exercise/CM-C08-M4-Q003"/></para>
 </problem>
-<solution id="sol-00006">
-<para id="para-00033"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mn>752.5</mn></mrow></msqrt><mo>≈</mo><mn>27.432</mn></mrow></math>.</para>
-</solution>
 </exercise>
 </note>
 <para id="para-00034" xmlns="http://cnx.rice.edu/cnxml">The computation for the standard deviation is complicated, even for just a small data set. We’d never want to compute it by hand for a large data set! Luckily, technology makes this calculation easy. Here’s a video demonstrating how to compute the standard deviation in Google Sheets:</para>
@@ -264,11 +254,8 @@
 <note class="your-turn" id="note-00008">
 <exercise id="exer-00008">
 <problem id="prob-00008">
-<para id="para-00038">The file “InState” contains in-state tuition costs (in dollars) for every institution of higher learning in the US for which data is available (data from data.ed.gov). What is the standard deviation ofthese costs?</para>
+<para id="para-00038"><link class="os-embed" url="#exercise/CM-C08-M4-Q004"/></para>
 </problem>
-<solution id="sol-00008">
-<para id="para-00039">$13,333.77.</para>
-</solution>
 </exercise>
 </note>
 </section>
@@ -276,409 +263,45 @@
 <title>Check Your Understanding</title>
 <exercise id="exer-00009">
 <problem id="prob-00009">
-<para id="para-00040">
-<list list-type="enumerated" number-style="arabic" id="list-00003">
-<item>Given the data 1, 4, 5, 5, and 10, find the range.</item>
-</list>
-</para>
+<para id="para-00040"><link class="os-embed" url="#exercise/CM-C08-M4-Q005"/></para>
 </problem>
-<solution id="sol-00009">
-<para id="para-00041">9</para>
-</solution>
 </exercise>
 <exercise id="exer-00010">
 <problem id="prob-00010">
-<para id="para-00042">
-<list list-type="enumerated" number-style="arabic" start-value="2" id="list-00004">
-<item>Given the data 1, 4, 5, 5, and 10, find the standard deviation using the process outlined in the definition.</item>
-</list>
-</para>
+<para id="para-00042"><link class="os-embed" url="#exercise/CM-C08-M4-Q006"/></para>
 </problem>
-<solution id="sol-00010">
-<para id="para-00043"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>10.5</mn></mrow></msqrt><mo>≈</mo><mn>3.240</mn></mrow></math></para>
-</solution>
 </exercise>
 <exercise id="exer-00011" xmlns="http://cnx.rice.edu/cnxml">
 <problem id="prob-00011">
-<para id="para-00044">
-<list list-type="enumerated" number-style="arabic" start-value="3" id="list-00005">
-<item>Employees at a college help desk track the number of people who request assistance each week. Here is a sample of the results (also found in the data set “HelpDesk”):
-<table summary="." id="table-00004">
-<tgroup cols="6">
-<colspec colnum="1" colname="c1" colwidth="1*"/>
-<colspec colnum="2" colname="c2" colwidth="1*"/>
-<colspec colnum="3" colname="c3" colwidth="1*"/>
-<colspec colnum="4" colname="c4" colwidth="1*"/>
-<colspec colnum="5" colname="c5" colwidth="1*"/>
-<colspec colnum="6" colname="c6" colwidth="1*"/>
-<tbody>
-<row>
-<entry>142</entry>
-<entry>153</entry>
-<entry>158</entry>
-<entry>156</entry>
-<entry>141</entry>
-<entry>143</entry>
-</row>
-<row>
-<entry>139</entry>
-<entry>158</entry>
-<entry>156</entry>
-<entry>146</entry>
-<entry>137</entry>
-<entry>153</entry>
-</row>
-<row>
-<entry>136</entry>
-<entry>127</entry>
-<entry>157</entry>
-<entry>148</entry>
-<entry>132</entry>
-<entry>139</entry>
-</row>
-<row>
-<entry>155</entry>
-<entry>167</entry>
-<entry>143</entry>
-<entry>168</entry>
-<entry>133</entry>
-<entry>157</entry>
-</row>
-<row>
-<entry>138</entry>
-<entry>156</entry>
-<entry>164</entry>
-<entry>130</entry>
-<entry>148</entry>
-<entry>136</entry>
-</row></tbody>
-</tgroup>
-</table>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00006">
-<item>Compute the range.</item>
-<item>Compute the standard deviation.</item>
-</list></item>
-</list>
-</para>
+<para id="para-00044"><link class="os-embed" url="#exercise/CM-C08-M4-Q007"/></para>
 </problem>
-<solution id="sol-00011">
-<para id="para-00045">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00007">
-<item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>168</mn><mo>−</mo><mn>127</mn><mo>=</mo><mn>41</mn></mrow></math></item>
-<item xmlns="http://cnx.rice.edu/cnxml">11.306</item>
-</list>
-</para>
-</solution>
 </exercise>
 <exercise id="exer-00012">
 <problem id="prob-00012">
-<para id="para-00046">
-<list list-type="enumerated" number-style="arabic" start-value="4" id="list-00008">
-<item>The following are data (from data.ed.gov, accessed January 2020) on the admission rates of the different branch campuses in the University of California system, along with the out-of-state tuition and fee cost (data can be found in “UofCal”):
-<table summary="." id="table-00005">
-<tgroup cols="3">
-<colspec colnum="1" colname="c1" colwidth="1*"/>
-<colspec colnum="2" colname="c2" colwidth="1*"/>
-<colspec colnum="3" colname="c3" colwidth="1*"/>
-<tbody>
-<row>
-<entry>Campus</entry>
-<entry>Admission Rate</entry>
-<entry>Cost</entry>
-</row>
-<row>
-<entry>Berkeley</entry>
-<entry>0.1484</entry>
-<entry>43176</entry>
-</row>
-<row>
-<entry>Davis</entry>
-<entry>0.4107</entry>
-<entry>43394</entry>
-</row>
-<row>
-<entry>Irvine</entry>
-<entry>0.2876</entry>
-<entry>42692</entry>
-</row>
-<row>
-<entry>Los Angeles</entry>
-<entry>0.1404</entry>
-<entry>42218</entry>
-</row>
-<row>
-<entry>Merced</entry>
-<entry>0.6617</entry>
-<entry>42530</entry>
-</row>
-<row>
-<entry>Riverside</entry>
-<entry>0.5057</entry>
-<entry>42819</entry>
-</row>
-<row>
-<entry>San Diego</entry>
-<entry>0.3006</entry>
-<entry>43159</entry>
-</row>
-<row>
-<entry>Santa Barbara</entry>
-<entry>0.322</entry>
-<entry>43383</entry>
-</row>
-<row>
-<entry>Santa Cruz</entry>
-<entry>0.4737</entry>
-<entry>42952</entry>
-</row></tbody>
-</tgroup>
-</table>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00009">
-<item>Compute the range of the admission rate.</item>
-<item>Compute the standard deviation of the admission rate.</item>
-</list></item>
-</list></para>
+<para id="para-00046"><link class="os-embed" url="#exercise/CM-C08-M4-Q008"/></para>
 </problem>
-<solution id="sol-00012">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00010">
-<item>Range: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6617</mn><mo>−</mo><mn>0.1404</mn><mo>=</mo><mn>0.5213</mn></mrow></math></item>
-<item xmlns="http://cnx.rice.edu/cnxml">Standard deviation: 0.170</item>
-</list>
-</solution>
 </exercise>
 <exercise id="exer-00013">
 <problem id="prob-00013">
-<para id="para-00047">
-<list list-type="enumerated" number-style="arabic" start-value="5" id="list-00011">
-<item>Using the data from number 4 (“UofCal”), find the:</item>
-</list>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00012">
-<item>Range of the cost.</item>
-<item>Standard deviation of the cost.</item></list>
-</para>
+<para id="para-00047"><link class="os-embed" url="#exercise/CM-C08-M4-Q009"/></para>
 </problem>
-<solution id="sol-00013">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00013">
-<item>Range: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>43</mn><mo>,</mo><mn>394</mn><mo>−</mo><mn>42</mn><mo>,</mo><mn>218</mn><mo>=</mo><mi>$</mi><mn>1</mn><mo>,</mo><mn>176</mn></mrow></math></item>
-<item xmlns="http://cnx.rice.edu/cnxml">Standard deviation: $398.37</item>
-</list>
-</solution>
 </exercise>
 </section>
 <section class="section-exercises" id="sect-00005">
 <exercise id="exer-00014">
 <problem id="prob-00014">
-<para id="para-00048">
-<list list-type="enumerated" number-style="arabic" id="list-00014">
-<item>Given the data 81, 84, 89, 85, 86, 84:</item>
-</list>
-</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00015">
-<item>Compute the range.</item>
-<item>Compute the standard deviation using the formula.</item>
-</list>
+<para id="para-00048"><link class="os-embed" url="#exercise/CM-C08-M4-Q010"/></para>
 </problem>
-<solution id="sol-00014">
-<para id="para-00049">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00016">
-<item>8</item>
-<item>2.639</item>
-</list></para>
-</solution>
 </exercise>
 <exercise id="exer-00015">
 <problem id="prob-00015">
-<para id="para-00050">
-<list list-type="enumerated" number-style="arabic" start-value="2" id="list-00017">
-<item>Given the data 127, 167, 156, 158, 156, 157:</item></list>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00018">
-<item>Compute the range.</item>
-<item>Compute the standard deviation using the formula.</item>
-</list>
-</para>
+<para id="para-00050"><link class="os-embed" url="#exercise/CM-C08-M4-Q011"/></para>
 </problem>
-<solution id="sol-00015">
-<para id="para-00051">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00019">
-<item>40</item>
-<item>13.635</item>
-</list>
-</para>
-</solution>
 </exercise>
-<para id="para-00052">For exercises 3 through 12, use the data found in “TNSchools,” which has data on many institutions of higher education in the state of Tennessee (data from data.ed.gov). Here are what the columns represent:</para>
-<table summary="." id="table-00006">
-<tgroup cols="2">
-<colspec colnum="1" colname="c1" colwidth="1*"/>
-<colspec colnum="2" colname="c2" colwidth="1*"/>
-<thead>
-<row>
-<entry><emphasis effect="bold">Column name</emphasis></entry>
-<entry><emphasis effect="bold">Description</emphasis></entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>AdmRate</entry>
-<entry>Proportion of applicants that are admitted</entry>
-</row>
-<row>
-<entry>UGEnr</entry>
-<entry>Number of undergraduate students</entry>
-</row>
-<row>
-<entry>PTUG</entry>
-<entry>Proportion of undergraduates who attend part-time</entry>
-</row>
-<row>
-<entry>InState</entry>
-<entry>Tuition and fees for in-state students</entry>
-</row>
-<row>
-<entry>OutState</entry>
-<entry>Tuition and fees for out-of-state students</entry>
-</row>
-<row>
-<entry>FacSal</entry>
-<entry>Mean monthly faculty salary</entry>
-</row>
-<row>
-<entry>Pell</entry>
-<entry>Proportion of students receiving Pell Grants</entry>
-</row>
-<row>
-<entry>MedDebt</entry>
-<entry>Median student loan debt at degree completion</entry>
-</row>
-<row>
-<entry>StartAge</entry>
-<entry>Mean age at the time of entry</entry>
-</row>
-<row>
-<entry>Female</entry>
-<entry>Proportion of students who identify as female</entry>
-</row>
-</tbody></tgroup>
-</table>
 <exercise id="exer-00016">
 <problem id="prob-00016">
-<para id="para-00053">
-<list list-type="enumerated" number-style="arabic" start-value="3" id="list-00020">
-<item>Find the range of admissions rates.</item>
-</list>
-</para>
+<para id="para-00053"><link class="os-embed" url="#exercise/CM-C08-M4-Q012"/></para>
 </problem>
-<solution id="sol-00016">
-<para id="para-00054">0.904</para>
-</solution>
-</exercise>
-<exercise id="exer-00017">
-<problem id="prob-00017">
-<para id="para-00055">
-<list list-type="enumerated" number-style="arabic" start-value="4" id="list-00021">
-<item>Find the standard deviation of admissions rates.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00017">
-<para id="para-00056">0.173</para>
-</solution>
-</exercise>
-<exercise id="exer-00018">
-<problem id="prob-00018">
-<para id="para-00057">
-<list list-type="enumerated" number-style="arabic" start-value="5" id="list-00022">
-<item>Find the range of undergraduate enrollments.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00018">
-<para id="para-00058">22620</para>
-</solution>
-</exercise>
-<exercise id="exer-00019">
-<problem id="prob-00019">
-<para id="para-00059">
-<list list-type="enumerated" number-style="arabic" start-value="6" id="list-00023">
-<item>Find the standard deviation of undergraduate enrollments.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00019">
-<para id="para-00060">5173.235</para>
-</solution>
-</exercise>
-<exercise id="exer-00020">
-<problem id="prob-00020">
-<para id="para-00061">
-<list list-type="enumerated" number-style="arabic" start-value="7" id="list-00024">
-<item>Find the range of the proportions of undergraduates attending part-time.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00020">
-<para id="para-00062">0.708</para>
-</solution>
-</exercise>
-<exercise id="exer-00021">
-<problem id="prob-00021">
-<para id="para-00063">
-<list list-type="enumerated" number-style="arabic" start-value="8" id="list-00025">
-<item>Find the standard deviation of the proportions of undergraduates attending part-time.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00021">
-<para id="para-00064">0.150</para>
-</solution>
-</exercise>
-<exercise id="exer-00022">
-<problem id="prob-00022">
-<para id="para-00065">
-<list list-type="enumerated" number-style="arabic" start-value="9" id="list-00026">
-<item>Find the range of in-state tuition costs.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00022">
-<para id="para-00066">41,657</para>
-</solution>
-</exercise>
-<exercise id="exer-00023">
-<problem id="prob-00023">
-<para id="para-00067">
-<list list-type="enumerated" number-style="arabic" start-value="10" id="list-00027">
-<item>Find the standard deviation of in-state tuition costs.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00023">
-<para id="para-00068">10,845</para>
-</solution>
-</exercise>
-<exercise id="exer-00024">
-<problem id="prob-00024">
-<para id="para-00069">
-<list list-type="enumerated" number-style="arabic" start-value="11" id="list-00028">
-<item>Find the range of median debt.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00024">
-<para id="para-00070">13,730</para>
-</solution>
-</exercise>
-<exercise id="exer-00025">
-<problem id="prob-00025">
-<para id="para-00071">
-<list list-type="enumerated" number-style="arabic" start-value="12" id="list-00029">
-<item>Find the standard deviation of median debt.</item>
-</list>
-</para>
-</problem>
-<solution id="sol-00025">
-<para id="para-00072">3,527.48</para>
-</solution>
 </exercise>
 <para id="para-00073">For Exercises 13 – 26, use the following table (found in the dataset NHL19, and accessed at ESPN.com), which gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS; teams get two points for a win and one point for an overtime loss), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA):</para>
 <table summary="." id="table-00007">
