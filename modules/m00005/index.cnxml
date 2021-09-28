@@ -29,7 +29,7 @@
 <para id="para-00006">You survey some of your friends to find out how many hours they work each week. Their responses are: 5, 20, 8, 10, 35, 12. What is the range?</para>
 </problem>
 <solution id="sol-00001">
-<para id="para-00007">The maximum value in the set is 35 and the minimum is 5, so the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>35</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow></math>.</para>
+<para id="para-00007">The maximum value in the set is 35 and the minimum is 5, so the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>35</mn><mo>-</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow></math>.</para>
 </solution>
 </exercise>
 </example>
@@ -42,8 +42,7 @@
 </note>
 <para id="para-00010">For large data sets, finding the maximum and minimum values can be daunting. There are two way to do it ina spreadsheet. First, you can ask the spreadsheet program to sort the data from smallest to largest, then find the first and last numbers on the sorted list. The second method uses built-in functions to find the minimum and maximum. This video shows you how to do that in Google Sheets:</para>
 <note class="video" id="note-00003">
-<title>Finding the Minimum and Maximum in Google Sheets</title>
-<para id="para-00011">&lt;https://www.youtube.com/watch?v=brX5CrT8QLk></para>
+<para id="para-00011"><emphasis effect="bold">Finding the Minimum and Maximum in Google Sheets &lt;<link url="https://openstax.org/r/min-max_Google-Sheet">https://www.youtube.com/watch?v=brX5CrT8QLk</link>></emphasis></para>
 </note>
  <para id="para-00012">In either method, once you’ve found the maximum and minimum, all you have to do is subtract to findthe range.</para>
 <example id="exam-00002"> 
@@ -53,7 +52,7 @@
 <para id="para-00013">The data in “AvgSAT” contains the average SAT score for students attending every institutionof higher learning in the US for which data is available (data from data.ed.gov). What is the range of these average SAT scores?</para>
 </problem>
 <solution id="sol-00003">
-<para id="para-00014">To find the maximum, click on an empty cell in the spreadsheet, type “=MAX(”, and then clickon the letter that marks the top of the column containing the AvgSAT data. That inserts a reference to the column into our function. Then we close the parentheses and hit the enter key. The formula is replaced with the maximum value in our data: 1566. Using the same process (but with “MIN” instead of “MAX”), we find the minimum value is 785. So, the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1566</mn><mo>−</mo><mn>785</mn><mo>=</mo><mn>781</mn></mrow></math>.</para>
+<para id="para-00014">To find the maximum, click on an empty cell in the spreadsheet, type “=MAX(”, and then clickon the letter that marks the top of the column containing the AvgSAT data. That inserts a reference to the column into our function. Then we close the parentheses and hit the enter key. The formula is replaced with the maximum value in our data: 1566. Using the same process (but with “MIN” instead of “MAX”), we find the minimum value is 785. So, the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1566</mn><mo>-</mo><mn>785</mn><mo>=</mo><mn>781</mn></mrow></math>.</para>
 </solution>
 </exercise>
 </example>
@@ -70,7 +69,7 @@
 <title> The Standard Deviation</title>
 <para id="para-00018">The standard deviation is a measure of dispersion that can be interpreted as approximately the average distance of every data value from the mean. (This distance from the mean is the “deviation” in “standard deviation.”)</para>
 <note class="formula" id="note-00005">
-<para id="para-00019">The standard deviation is computed as follows:</para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mstyle displaystyle="true"><mo>∑</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></msqrt></mrow></math><para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">Here, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> represents each data value, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> is the mean of the data values, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>is the number of data values, and the capital sigma (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Σ</mi></math>) indicates that we take a sum.</para>
+<para id="para-00019">The standard deviation is computed as follows:</para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mstyle displaystyle="true"><mo>?</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></msqrt></mrow></math><para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">Here, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> represents each data value, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> is the mean of the data values, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>is the number of data values, and the capital sigma (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>S</mi></math>) indicates that we take a sum.</para>
 </note>
 <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">To compute the standard deviation using the formula, we follow the steps below:</para>
 <list list-type="enumerated" number-style="arabic" id="list-00002">
@@ -78,7 +77,7 @@
 <item>Subtract the mean from each data value.</item>
 <item>Square those differences.</item>
 <item>Add up the results in step 3.</item>
-<item>Divide the result in step 4 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow>
+<item>Divide the result in step 4 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow>
 </math></item>
 <item xmlns="http://cnx.rice.edu/cnxml">Take the square root of the result in step 5.</item>
 </list>
@@ -100,7 +99,7 @@
 <tbody>
 <row>
 <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
 </row>
 <row xmlns="http://cnx.rice.edu/cnxml">
 <entry>5</entry>
@@ -138,8 +137,8 @@
 <tbody>
 <row>
 <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
 </row>
 <row xmlns="http://cnx.rice.edu/cnxml">
 <entry>5</entry>
@@ -182,8 +181,8 @@
 <tbody>
 <row>
 <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
 </row>
 <row xmlns="http://cnx.rice.edu/cnxml">
 <entry>5</entry>
@@ -222,9 +221,9 @@
 </row></tbody>
 </tgroup>
 </table>
-<para id="para-00029">Step 5: Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
-<para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Step 6: Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
-<para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Thus, the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
+<para id="para-00029">Step 5: Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
+<para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Step 6: Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>˜</mo><mn>11.027</mn></mrow></math>.</para>
+<para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Thus, the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>˜</mo><mn>11.027</mn></mrow></math>.</para>
 </solution>
 </exercise>
 </example>
@@ -237,8 +236,7 @@
 </note>
 <para id="para-00034" xmlns="http://cnx.rice.edu/cnxml">The computation for the standard deviation is complicated, even for just a small data set. We’d never want to compute it by hand for a large data set! Luckily, technology makes this calculation easy. Here’s a video demonstrating how to compute the standard deviation in Google Sheets:</para>
 <note class="video" id="note-00007">
-<title>Finding the Standard Deviation with Google Sheets</title>
-<para id="para-00035">&lt;https://www.youtube.com/watch?v=4V_B_8iTUw0></para>
+<para id="para-00035"><emphasis effect="bold">Finding the Standard Deviation with Google Sheets &lt;<link url="https://openstax.org/r/StanDev_Google-Sheet">https://www.youtube.com/watch?v=4V_B_8iTUw0</link>></emphasis></para>
 </note>
 <example id="exam-00004">
 <title>EXAMPLE 27 – Finding the Standard Deviation with Google Sheets</title>
