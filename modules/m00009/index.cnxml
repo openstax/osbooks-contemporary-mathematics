@@ -33,7 +33,7 @@
   <para id="para-00006">A dataset that a response variable depends on contains values of the <emphasis effect="bold">explanatory variable</emphasis>, or <emphasis effect="bold">independent variable.</emphasis></para>
   </note>
   <example id="exam-00001">
-  <title>EXAMPLE 44 – Identifying Explanatory and Response Variables</title>
+  <title>Example 44 – Identifying Explanatory and Response Variables</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
   <para id="para-00007">For each of the following pairs of related data sets, identify which (if any) should be assigned the role of response variable and which should be assigned to be the explanatory variable.</para>
@@ -55,20 +55,8 @@
   <note class="your-turn" id="note-00002">
   <exercise id="exer-00002">
   <problem id="prob-00002">
-  <para id="para-00008">Given these pairs of data sets, identify which (if either) would be the best choice for the <emphasis effect="italic">response</emphasis> variable.</para>
-  <list list-type="enumerated" number-style="arabic" id="list-00004">
-  <item>A person’s age and their annual income</item>
-  <item>A student’s GPA and their score on the SAT</item>
-  <item>A student’s GPA and the number of hours they spend studying per week</item>
-  </list>
+  <para id="para-00008"><link class="os-embed" url="#exercise/CM-C08-M8-Q001"/></para>
   </problem>
-  <solution id="sol-00002">
-  <list list-type="enumerated" number-style="arabic" id="list-00005">
-  <item>Income</item>
-  <item>Either; neither one seems to directly influence the other (they’re both influenced by the student’s academic ability)</item>
-  <item>GPA</item>
-  </list>
-  </solution>
   </exercise>
   </note>
   <para id="para-00009">Once we’ve assigned roles to our two data sets, we can take the first step in visualizing the relationship between them: creating a scatter plot.</para>
@@ -79,7 +67,7 @@
   <para id="para-00011">A <emphasis effect="bold">scatter plot</emphasis> visualizes the relationship between two quantitative sets of data by turning the data sets into ordered pairs, which are then plotted in the <emphasis effect="italic">xy</emphasis>-plane.</para>
   </note>
   <example id="exam-00002">
-  <title>EXAMPLE 45 – Creating Scatter Plots by Hand</title>
+  <title>Example 45 – Creating Scatter Plots by Hand</title>
   <exercise id="exer-00003">
   <problem id="prob-00003">
   <para id="para-00012">Jonathan is exploring the relationship between scores on the midterm exam and final exam in his math course. Here are some of the scores reported by his classmates:</para>
@@ -196,57 +184,8 @@
   <note class="your-turn" id="note-00004">
   <exercise id="exer-00004">
   <problem id="prob-00004">
-  <para id="para-00019">Create a scatter plot to visualize the following data, showing the top five NFL receivers by number of receptions for the 2019 season. Treat <emphasis effect="italic">Yards</emphasis> as the response:</para>
-  <table summary="." id="table-00003">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>Player</entry>
-  <entry>Receptions</entry>
-  <entry>Yards</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>Stefon Diggs</entry>
-  <entry>127</entry>
-  <entry>1535</entry>
-  </row>
-  <row>
-  <entry>Davante Adams</entry>
-  <entry>115</entry>
-  <entry>1374</entry>
-  </row>
-  <row>
-  <entry>DeAndre Hopkins</entry>
-  <entry>115</entry>
-  <entry>1407</entry>
-  </row>
-  <row>
-  <entry>Darren Waller</entry>
-  <entry>107</entry>
-  <entry>1196</entry>
-  </row>
-  <row>
-  <entry>Travis Kelce</entry>
-  <entry>105</entry>
-  <entry>1416</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+  <para id="para-00019"><link class="os-embed" url="#exercise/CM-C08-M8-Q002"/></para>
   </problem>
-  <solution id="sol-00004">
-  <figure id="fig-00006">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_107.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.107: Scatter plot using data in Tech8.107. Receptions on horizontal axis, Yards on vertical axis. Label each axis:</emphasis></caption>
-  </figure>
-  </solution>
   </exercise>
   </note>
   <para id="para-00020">For large data sets, it’s impractical to create scatter plots manually. Luckily, Google Sheets automates this process for us. This video will show you how:</para>
@@ -254,7 +193,7 @@
   <para id="para-00021">VIDEO: Scatter Plots in Google Sheets &lt;https://www.youtube.com/watch?v=YC1Is9YJX0k></para>
   </note>
   <example id="exam-00003">
-  <title>EXAMPLE 46 – Creating Scatter Plots in Google Sheets</title>
+  <title>Example 46 – Creating Scatter Plots in Google Sheets</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
   <para id="para-00022">The data set NHL19 (found at ESPN.com) gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA). Use Google Sheets to create a scatter plot for GF vs. GA.</para>
@@ -276,16 +215,8 @@
   <note class="your-turn" id="note-00007">
   <exercise id="exer-00006">
   <problem id="prob-00006">
-  <para id="para-00025">Using the same data (NHL19), use Google Sheets to create a scatter plot for points (PTS) vs. wins (W).</para>
+  <para id="para-00025"><link class="os-embed" url="#exercise/CM-C08-M8-Q003"/></para>
   </problem>
-  <solution id="sol-00006">
-  <figure id="fig-00008">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_109.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.109: Scatter plot using data in Tech8.109. W on horizontal axis, PTS on vertical axis.</emphasis></caption>
-  </figure>
-  </solution>
   </exercise>
   </note>
   </section>
@@ -297,28 +228,28 @@
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_110.jpg"/>
   </media>
   <caption>Figure 8.4.a: caption: Curved pattern<newline/>
-  Tech 8.110: Scatterplot using the data in Tech8.110, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> in a contrasting color.</caption>
+    Tech 8.110: Scatterplot using the data in Tech8.110, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> in a contrasting color.</caption>
   </figure>
   <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_111.jpg"/>
   </media>
   <caption>Figure 8.4.b: caption: No curved pattern<newline/>
-  Tech 8.111: Scatterplot using the data in Tech8.111.</caption>
+    Tech 8.111: Scatterplot using the data in Tech8.111.</caption>
   </figure>
   <figure id="fig-00011">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_112.jpg"/>
   </media>
   <caption>Figure 8.4.c: caption: Curved pattern<newline/>
-  Tech 8.112: Scatterplot using the data in Tech8.112, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>80</mn><mo>−</mo><mn>30</mn><mi>sin</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>30</mn><mo stretchy="false">)</mo><mo>/</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>in a contrasting color.</caption>
+    Tech 8.112: Scatterplot using the data in Tech8.112, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>80</mn><mo>-</mo><mn>30</mn><mi>sin</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>30</mn><mo stretchy="false">)</mo><mo>/</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>in a contrasting color.</caption>
   </figure>
   <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_113.jpg"/>
   </media>
   <caption>Figure 8.4.d: caption: No curved pattern<newline/>
-  Tech 8.113: Scatterplot using the data in Tech8.113</caption>
+    Tech 8.113: Scatterplot using the data in Tech8.113</caption>
   </figure>
   <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italic">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
   <figure id="fig-00013">
@@ -361,54 +292,54 @@
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_118.jpg"/>
   </media>
   <caption>Figure 8.5: Caption: Classifying the strength and direction of linear relationships.<newline/>
-  Figure 8.5.a: Caption: Perfect negative relationship<newline/>
-  Tech 8.118: Scatter plot using data in Tech8.118:</caption>
+    Figure 8.5.a: Caption: Perfect negative relationship<newline/>
+    Tech 8.118: Scatter plot using data in Tech8.118:</caption>
   </figure>
   <figure id="fig-00018">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_119.jpg"/>
   </media>
   <caption>Figure 8.5.b: Caption: Strong negative relationship<newline/>
-  Tech 8.119: Scatter plot using data in Tech8.119</caption>
+    Tech 8.119: Scatter plot using data in Tech8.119</caption>
   </figure>
   <figure id="fig-00019">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_120.jpg"/>
   </media>
   <caption>Figure 8.5.c: Caption: Weak negative relationship<newline/>
-  Tech 8.120: Scatter plot using data in Tech8.120</caption>
+    Tech 8.120: Scatter plot using data in Tech8.120</caption>
   </figure>
   <figure id="fig-00020">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_121.jpg"/>
   </media>
   <caption>Figure 8.5.d: Caption: No relationship<newline/>
-  Tech 8.121: Same as Tech8.116</caption>
+    Tech 8.121: Same as Tech8.116</caption>
   </figure>
   <figure id="fig-00021">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_122.jpg"/>
   </media>
   <caption>Figure 8.5.e: Caption: Weak positive relationship<newline/>
-  Tech 8.122: Scatter plot using data in Tech8.122</caption>
+    Tech 8.122: Scatter plot using data in Tech8.122</caption>
   </figure>
   <figure id="fig-00022">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_123.jpg"/>
   </media>
   <caption>Figure 8.5.f: Caption: Strong positive relationship<newline/>
-  Tech 8.123: Scatter plot using data in Tech8.123</caption>
+    Tech 8.123: Scatter plot using data in Tech8.123</caption>
   </figure>
   <figure id="fig-00023">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_124.jpg"/>
   </media>
   <caption>Figure 8.5.g: Caption: Perfect positive relationship<newline/>
-  Tech 8.124: Scatter plot using data in Tech8.124</caption>
+    Tech 8.124: Scatter plot using data in Tech8.124</caption>
   </figure>
   <para id="para-00037">The strength and direction (positive or negative) of a linear relationship can also be measured with a statistic called the <emphasis effect="bold">correlation coefficient</emphasis> (denoted <emphasis effect="italic">r</emphasis>). Positive values of <emphasis effect="italic">r</emphasis> indicate a positive relationship, while negative values of <emphasis effect="italic">r</emphasis> indicate a negative relationship. Values of <emphasis effect="italic">r</emphasis> close to 0 indicate a weak relationship, while values close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math> correspond to a very strong relationship.</para>
   <note class="definition" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00038">The <emphasis effect="bold">correlation coefficient</emphasis> (denoted <emphasis effect="italic">r</emphasis>) is a number between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math> that quantifies the strength and direction of the linear relationship between two data sets.</para>
+  <para id="para-00038">The <emphasis effect="bold">correlation coefficient</emphasis> (denoted <emphasis effect="italic">r</emphasis>) is a number between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math> that quantifies the strength and direction of the linear relationship between two data sets.</para>
   </note>
   <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">Looking back at Figure 9.5, the correlation coefficients for those relationships are:</para>
   <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
@@ -420,7 +351,7 @@
   <item>0.97</item>
   <item>1</item>
   </list>
-  <para id="para-00040">There’s no firm rule that establishes a cutoff value of <emphasis effect="italic">r</emphasis> to divide strong relationships from weak ones, but <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>0.7</mn></mrow></math> is often given as the dividing line (i.e., if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>></mo><mn>0.7</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mo>−</mo><mn>0.7</mn></mrow></math> the relationship is strong, and if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>0.7</mn><mo>&lt;</mo><mi>r</mi><mo>&lt;</mo><mn>0.7</mn></mrow></math> the relationship is weak). The formula for computing <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is very complicated; it’s almost never done by hand. Google Sheets will do the computation for you using the CORREL function. The syntax works like this: if your explanatory values are in cells A2 to A50 and the corresponding response values are in B2 to B50, then you can find the correlation coefficient by entering “=CORREL(A2:A50, B2:B50)”. (Note that the order doesn’t matter for correlation coefficients; “=CORREL(B2:B50, A2:A50)” will give the same result.)</para>
+  <para id="para-00040">There’s no firm rule that establishes a cutoff value of <emphasis effect="italic">r</emphasis> to divide strong relationships from weak ones, but <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>0.7</mn></mrow></math> is often given as the dividing line (i.e., if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>></mo><mn>0.7</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mo>-</mo><mn>0.7</mn></mrow></math> the relationship is strong, and if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>0.7</mn><mo>&lt;</mo><mi>r</mi><mo>&lt;</mo><mn>0.7</mn></mrow></math> the relationship is weak). The formula for computing <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is very complicated; it’s almost never done by hand. Google Sheets will do the computation for you using the CORREL function. The syntax works like this: if your explanatory values are in cells A2 to A50 and the corresponding response values are in B2 to B50, then you can find the correlation coefficient by entering “=CORREL(A2:A50, B2:B50)”. (Note that the order doesn’t matter for correlation coefficients; “=CORREL(B2:B50, A2:A50)” will give the same result.)</para>
   <para id="para-00041">Let’s put all of this together in an example.</para>
   <example id="exam-00004">
   <title>EXAMPLE 47 – Interpreting Scatter Plots</title>
@@ -492,7 +423,7 @@
   </list>
   <list list-type="enumerated" number-style="lower-alpha" id="list-00017">
   <item>No, there’s no curved pattern.</item>
-  <item>Since the points tend downward as we move from left to right, this is a negative relationship. The points are not tightly grouped around a line, but the pattern is clear. It looks like it has approximately the same strength as the plot in Figure 9.5e, just with the opposite sign. So, we might guess that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>−</mo><mn>0.6</mn></mrow></math>.</item>
+  <item>Since the points tend downward as we move from left to right, this is a negative relationship. The points are not tightly grouped around a line, but the pattern is clear. It looks like it has approximately the same strength as the plot in Figure 9.5e, just with the opposite sign. So, we might guess that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.6</mn></mrow></math>.</item>
   </list>
   </solution>
   </exercise>
@@ -500,82 +431,8 @@
   <note class="your-turn" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
   <exercise id="exer-00008">
   <problem id="prob-00008">
-  <para id="para-00044">For each of the plots below, answer the following questions:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00018">
-  <item>Is there a curved pattern in the data? If yes, stop here. If no, continue to part <emphasis effect="italic">b</emphasis>.</item>
-  <item>Classify the strength and direction of the relationship. Make a guess at the value of <emphasis effect="italic">r</emphasis>.</item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" id="list-00019">
-  <item>
-  <figure id="fig-00028">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_129.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.129: Scatter plot using data in Tech8.129</emphasis></caption>
-  </figure>
-  </item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00020">
-  <item>
-  <figure id="fig-00029">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_130.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.130: Scatter plot using data in Tech8.130</emphasis></caption>
-  </figure>
-  </item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00021">
-  <item>
-  <figure id="fig-00030">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_131.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.131: Scatter plot using data in Tech8.131</emphasis></caption>
-  </figure>
-  </item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00022">
-  <item>
-  <figure id="fig-00031">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_132.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.132: Scatter plot using data in Tech8.132</emphasis></caption>
-  </figure>
-  </item>
-  </list>
+  <para id="para-00044"><link class="os-embed" url="#exercise/CM-C08-M8-Q004"/></para>
   </problem>
-  <solution id="sol-00008">
-  <list list-type="enumerated" number-style="arabic" id="list-00023">
-  <item/>
-  </list>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00024">
-  <item>No curved pattern</item>
-  <item>Strong negative relationship, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mo>−</mo><mn>0.9</mn></mrow>
-  </math></item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00025" xmlns="http://cnx.rice.edu/cnxml">
-  <item/>
-  </list>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00026">
-  <item>Curved pattern</item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00027">
-  <item/>
-  </list>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00028">
-  <item>No curved pattern</item>
-  <item>No apparent relationship, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0</mn></mrow></math></item>
-  </list>
-  <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00029" xmlns="http://cnx.rice.edu/cnxml">
-  <item/>
-  </list>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00030">
-  <item>No curved pattern</item>
-  <item>Weak positive relationship, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0.6</mn></mrow></math></item>
-  </list>
-  </solution>
   </exercise>
   </note>
   <example id="exam-00005" xmlns="http://cnx.rice.edu/cnxml">
@@ -588,8 +445,8 @@
   <list list-type="enumerated" number-style="arabic" id="list-00031">
   <item>There is a curved pattern in the data, so the correlation coefficient isn’t meaningful.</item>
   <item>Using “=CORREL(A2:A101, C2:C101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.89</mn></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Using “=CORREL(A2:A101, D2:D101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>−</mo><mn>0.66</mn></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Using “=CORREL(A2:A101, E2:E101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>−</mo><mn>0.04</mn></mrow></math>.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">Using “=CORREL(A2:A101, D2:D101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.66</mn></mrow></math>.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">Using “=CORREL(A2:A101, E2:E101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.04</mn></mrow></math>.</item>
   </list>
   </solution>
   </exercise>
@@ -597,16 +454,8 @@
   <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
   <exercise id="exer-00010">
   <problem id="prob-00010">
-  <para id="para-00046">The data that were plotted in Your Turn 47 can be found in the data set “correlationcoefficient2”. All of them share the same values for the explanatory variable <emphasis effect="italic">x</emphasis>. The four responses are labeled <emphasis effect="italic">y1</emphasis> through <emphasis effect="italic">y4</emphasis>. Compute the correlation coefficients for each, if appropriate, using Google Sheets. Round to the nearest hundredth.</para>
+  <para id="para-00046"><link class="os-embed" url="#exercise/CM-C08-M8-Q005"/></para>
   </problem>
-  <solution id="sol-00010">
-  <list list-type="enumerated" number-style="arabic" id="list-00032">
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>−</mo><mn>0.91</mn></mrow></math></item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Not appropriate</item>
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>−</mo><mn>0.01</mn></mrow></math></item>
-  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.62</mn></mrow></math></item>
-  </list>
-  </solution>
   </exercise>
   </note>
   <note class="work-out" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
@@ -627,12 +476,12 @@
   <para id="para-00051">So, how do we find the equation of the regression line? Recall the point-slope form of the equation of a line:</para>
   <note class="formula" id="note-00014">
   <para id="para-00052">If a line has slope <emphasis effect="italic">m</emphasis> and passes through a point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></math>, then the point-slope form of the equation of the line is:</para>
-  <para id="para-00053" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></math></para>
+  <para id="para-00053" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></math></para>
   </note>
   <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">The regression line has two properties that we can use to find its equation. First, it always passes through the <emphasis effect="italic">point of means</emphasis>. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>y</mi><mo>¯</mo></mover></math>are the means of the explanatory and response data sets, respectively, then the point of means is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>,</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></math>. We’ll use that as the point in the point-slopeform of the equation. Second, if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow></math>are the standard deviations of the explanatory and response data sets, respectively, and if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>is the correlation coefficient, then the slope is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mi>r</mi><mo>×</mo><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow></math>. Putting all that together with the point-slope formula gives us this:</para>
   <note class="formula" id="note-00015" xmlns="http://cnx.rice.edu/cnxml">
   <para id="para-00055">Suppose <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> are explanatory and response data sets that have a linear relationship. If their means are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>y</mi><mo>¯</mo></mover></math>respectively, their standard deviations are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow></math>respectively, and their correlation coefficient is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>, then the equation of the regression line is:</para>
-  <para id="para-00056" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math>.</para>
+  <para id="para-00056" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math>.</para>
   </note>
   <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">Let's walk through an example.</para>
   <example id="exam-00006">
@@ -642,24 +491,21 @@
   <para id="para-00058">Suppose you have data sets <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">y</emphasis> with the following statistics: <emphasis effect="italic">x</emphasis> has mean 21 and standard deviation 4, <emphasis effect="italic">y</emphasis> has mean 8 and standard deviation 2, and their correlation coefficient is -0.4. What’s the equation of the regression line?</para>
   </problem>
   <solution id="sol-00011">
-  <para id="para-00059">We’re given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mn>21</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo>=</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>−</mo><mn>0.4</mn></mrow></math>. Let's start with the formula for the equation of the regression line:
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math></para>
+  <para id="para-00059">We’re given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mn>21</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo>=</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.4</mn></mrow></math>. Let's start with the formula for the equation of the regression line:
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math></para>
   <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">Plugging in our values gives us:
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.4</mn><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>21</mn><mo stretchy="false">)</mo><mo>+</mo><mn>8</mn></mrow></math></para>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.4</mn><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>21</mn><mo stretchy="false">)</mo><mo>+</mo><mn>8</mn></mrow></math></para>
   <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">We can rearrange the equation as follows:</para>
   <para id="para-00062">Our final regression line equation is:
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.2</mn><mi>x</mi><mo>+</mo><mn>12.2</mn></mrow></math></para>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.2</mn><mi>x</mi><mo>+</mo><mn>12.2</mn></mrow></math></para>
   </solution>
   </exercise>
   </example>
   <note class="your-turn" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
   <exercise id="exer-00012">
   <problem id="prob-00012">
-  <para id="para-00063">Suppose you have data sets <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">y</emphasis> with the following statistics: <emphasis effect="italic">x</emphasis> has mean 100 and standard deviation 5, <emphasis effect="italic">y</emphasis> has mean 200 and standard deviation 20, and their correlation coefficient is 0.75. What’s the equation of the regression line?</para>
+  <para id="para-00063"><link class="os-embed" url="#exercise/CM-C08-M8-Q006"/></para>
   </problem>
-  <solution id="sol-00012">
-  <para id="para-00064"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0.75</mn><mrow><mo>(</mo><mrow><mfrac><mrow><mn>20</mn></mrow><mn>5</mn></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mn>100</mn><mo stretchy="false">)</mo><mo>+</mo><mn>200</mn><mo>=</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>100</mn></mrow></math></para>
-  </solution>
   </exercise>
   </note>
   <para id="para-00065" xmlns="http://cnx.rice.edu/cnxml">As you can see, finding the equation of the regression line involves a lot of steps if you have to find all of the values of the needed quantities yourself. But, as usual, technology comes to our rescue. This video (which you actually watched earlier when learning how to create scatter plots) covers the regression line at aroundthe 3:30 mark. Note that Google Sheets calls it the "trendline."</para>
@@ -672,18 +518,15 @@
   <para id="para-00068">In Example 46, we considered the relationship between goals scored (GF) and goals against (GA) using the data set “NHL19”. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
   </problem>
   <solution id="sol-00013">
-  <para id="para-00069">Once we have recreated the scatter plot, we find the equation of the regression line by clicking the threedots at the top right of the plot, selecting “Edit chart,” then clicking on “Customize” and “Series.” We add the regression line by checking the box next to “Trendline,” and then we show the equation by selecting “Use Equation” in the drop-down menu under “Label.” The equation of the tangent line is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>0.0554</mn><mi>x</mi><mo>+</mo><mn>261</mn></mrow></math>.</para>
+  <para id="para-00069">Once we have recreated the scatter plot, we find the equation of the regression line by clicking the threedots at the top right of the plot, selecting “Edit chart,” then clicking on “Customize” and “Series.” We add the regression line by checking the box next to “Trendline,” and then we show the equation by selecting “Use Equation” in the drop-down menu under “Label.” The equation of the tangent line is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.0554</mn><mi>x</mi><mo>+</mo><mn>261</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
   <note class="your-turn" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
   <exercise id="exer-00014">
   <problem id="prob-00014">
-  <para id="para-00070">In Your Turn 46, you created a scatter plot for points (PTS) vs. wins (W) using the data set “NHL19”. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
+  <para id="para-00070"><link class="os-embed" url="#exercise/CM-C08-M8-Q007"/></para>
   </problem>
-  <solution id="sol-00014">
-  <para id="para-00071"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>1.8</mn><mi>x</mi><mo>+</mo><mn>16.9</mn></mrow></math></para>
-  </solution>
   </exercise>
   </note>
   </section>
@@ -749,8 +592,8 @@
   <solution id="sol-00015">
   <list list-type="enumerated" number-style="arabic" id="list-00034">
   <item>Using Google Sheets, we find that the regression line equation is <emphasis effect="italic">y</emphasis> = 0.884 <emphasis effect="italic">x</emphasis> – 456, where <emphasis effect="italic">y</emphasis> is the number of runs scored and <emphasis effect="italic">x</emphasis> is the number of hits.</item>
-  <item>Plugging 1500 into the equation of the regression line, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1500</mn><mo>−</mo><mn>456</mn><mo>=</mo><mn>870</mn></mrow></math>. We would predict that a team with 1500 hits would score 870 runs.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">The Royals had 1356 hits, so we would predict their run total to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1356</mn><mo>−</mo><mn>456</mn><mo>≈</mo><mn>743</mn></mrow></math>. They actually scored 691 runs, so they underperformed expectations by 52 runs (743 – 691).</item>
+  <item>Plugging 1500 into the equation of the regression line, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1500</mn><mo>-</mo><mn>456</mn><mo>=</mo><mn>870</mn></mrow></math>. We would predict that a team with 1500 hits would score 870 runs.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The Royals had 1356 hits, so we would predict their run total to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1356</mn><mo>-</mo><mn>456</mn><mo>˜</mo><mn>743</mn></mrow></math>. They actually scored 691 runs, so they underperformed expectations by 52 runs (743 – 691).</item>
   <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the predicted change in the response that corresponds to a one unit increase in the explanatory variable. So, we expect one additional hit to result in 0.884 more runs. Since 0.884 runs doesn’t really make sense, we can get a better interpretation by multiplying through by ten or one hundred: Ten additional hits will result in almost nine additional runs, or a hundred additional hits will yield on average just over 88 additional runs.</item>
   </list>
   </solution>
@@ -759,22 +602,8 @@
   <note class="your-turn" id="note-00018">
   <exercise id="exer-00016">
   <problem id="prob-00016">
-  <para id="para-00077">Using the “MLB2019Off” data set, answer the following:</para>
-  <list list-type="enumerated" number-style="arabic" id="list-00035">
-  <item>What is the equation of the regression line for the number of times a runner is caught stealing a base (CS) vs. the number of successful stolen bases (SB)?</item>
-  <item>How many times would we expect a team to be caught stealing if the team steals 70 bases in a season?</item>
-  <item>Did the Philadelphia Phillies (PHI) overperform or underperform in terms of getting caught stealing, basedon their stolen base total? By how much?</item>
-  <item>Write a sentence to interpret the slope of the regression line.</item>
-  </list>
+  <para id="para-00077"><link class="os-embed" url="#exercise/CM-C08-M8-Q008"/></para>
   </problem>
-  <solution id="sol-00016">
-  <list list-type="enumerated" number-style="arabic" id="list-00036">
-  <item><emphasis effect="italic">y =</emphasis> 0.174 <emphasis effect="italic">x</emphasis> + 14.5</item>
-  <item>26.68</item>
-  <item>Predicted: 28; actual: 18. The Phillies were caught around 10 fewer times than expected.</item>
-  <item>Every 10 additional steal attempts will result in getting caught about 1.7 times on average.</item>
-  </list>
-  </solution>
   </exercise>
   </note>
   <note class="who-knew" id="note-00019">
@@ -815,11 +644,8 @@
   <note class="your-turn" id="note-00022">
   <exercise id="exer-00018">
   <problem id="prob-00018">
-  <para id="para-00083">A group of full-time students at the University of Toledo are surveyed to see if there’s a link between the number of classes they are taking and the average number of hours of sleep they get. Every student in the sample is taking between three and six classes. A regression line is found that describes the relationship. Give some examples of students about whom we wouldn’t want to make predictions using this regression line.</para>
+  <para id="para-00083"><link class="os-embed" url="#exercise/CM-C08-M8-Q009"/></para>
   </problem>
-  <solution id="sol-00018">
-  <para id="para-00084">Some examples include students at other universities, high school students, part-time students, and students taking fewer than three or more than six classes.</para>
-  </solution>
   </exercise>
   </note>
   </section>
@@ -869,819 +695,55 @@
   <title>Check Your Understanding</title>
   <exercise id="exer-00019">
   <problem id="prob-00019">
-  <para id="para-00100">
-  <list list-type="enumerated" number-style="arabic" id="list-00039">
-  <item>Make a scatterplot for the following data by hand:</item>
-  </list>
-  </para>
-  <table summary="." id="table-00005">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>x</entry>
-  <entry>y</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>20</entry>
-  <entry>13</entry>
-  </row>
-  <row>
-  <entry>11</entry>
-  <entry>15</entry>
-  </row>
-  <row>
-  <entry>8</entry>
-  <entry>17</entry>
-  </row>
-  <row>
-  <entry>22</entry>
-  <entry>13</entry>
-  </row>
-  <row>
-  <entry>25</entry>
-  <entry>10</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+  <para id="para-00100"><link class="os-embed" url="#exercise/CM-C08-M8-Q010"/></para>
   </problem>
-  <solution id="sol-00019">
-  <figure id="fig-00035">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_133.jpg"/>
-  </media>
-  <caption>Tech 8.133: Scatter plot using the data in Tech8.133</caption>
-  </figure>
-  <para id="para-00101">For problems 2 and 3, answer these questions:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00040">
-  <item>Is there a curved pattern in the data? If yes, stop here.</item>
-  <item>Classify the strength and direction of the relationship. Make a guess at the value of <emphasis effect="italic">r</emphasis>.</item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00020">
   <problem id="prob-00020">
-  <list list-type="enumerated" number-style="lower-alpha" start-value="2" id="list-00041">
-  <item/>
-  </list>
-  <figure id="fig-00036">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_134.jpg"/>
-  </media>
-  <caption>Tech 8.134: Scatter plot using data in Tech8.134:</caption>
-  </figure>
+  <para id="para-00064"><link class="os-embed" url="#exercise/CM-C08-M8-Q011"/></para>
   </problem>
-  <solution id="sol-00020">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00042">
-  <item>Yes</item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00021">
-  <problem id="prob-00021">
-  <para id="para-00102">
-  <list list-type="enumerated" number-style="lower-alpha" start-value="3" id="list-00043">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00037">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_135.jpg"/>
-  </media>
-  <caption>Tech 8.135: Scatter plot using data in Tech8.135</caption>
-  </figure>
-  </problem>
-  <solution id="sol-00021">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00044">
-  <item>No</item>
-  <item>Weak positive relationship; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0.5</mn></mrow></math></item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00022" xmlns="http://cnx.rice.edu/cnxml">
   <problem id="prob-00022">
-  <para id="para-00103">
-  <list list-type="enumerated" number-style="lower-alpha" start-value="4" id="list-00045">
-  <item>Use the data in MLB2019Off to investigate the relationship between slugging percentage (SLG, explanatory) and runs scored (R, response).</item>
-  </list>
-  </para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00046">
-  <item>What’s the correlation coefficient? Round to the nearest hundredth.</item>
-  <item>What’s the equation of the regression line? Round the slope and intercept to the nearest whole number.</item>
-  </list>
+  <para id="para-00103"><link class="os-embed" url="#exercise/CM-C08-M8-Q012"/></para>
   </problem>
-  <solution id="sol-00022">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00047">
-  <item>0.96</item>
-  <item><emphasis effect="italic">y</emphasis> = 2900 <emphasis effect="italic">x</emphasis> – 478</item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00023">
   <problem id="prob-00023">
-  <para id="para-00104">
-  <list list-type="enumerated" number-style="lower-alpha" start-value="5" id="list-00048">
-  <item>The regression equation used to predict average monthly faculty salary (FacSal) from out-of-state tuition (OutState) using the data in “TNSchools” is <emphasis effect="italic">y</emphasis> = 0.161 <emphasis effect="italic">x</emphasis> + 2645.</item>
-  </list>
-  </para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00049">
-  <item>Predict the average monthly faculty salary for a school that charges $30,000 in out-of-state tuition.</item>
-  <item>Maryville College charges $34,880 for out-of-state students, and their average monthly faculty salary is $6,765. Do they pay faculty more or less than expected? By how much?</item>
-  <item>Write a sentence to interpret the slope.</item>
-  </list>
+  <para id="para-00104"><link class="os-embed" url="#exercise/CM-C08-M8-Q013"/></para>
   </problem>
-  <solution id="sol-00023">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00050">
-  <item>$7,472.5</item>
-  <item>Less than expected by $1,495.88</item>
-  <item>For every $1,000 increase in out-of-state tuition, we expect average monthly salary to increase by $161.</item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section class="section-exercises" id="sect-00011">
   <exercise id="exer-00024">
   <problem id="prob-00024">
-  <para id="para-00105">
-  <list list-type="enumerated" number-style="arabic" id="list-00051">
-  <item>This table contains data (from <emphasis effect="underscore">www.sports-reference.com</emphasis>) for the first five schools (alphabetically) that fielded an NCAA Division I men’s basketball team in the 2018-2019 season. It shows the total number of points each team scored (PF) and the total number of points their opponents scored against them (PA). Create a scatter plot by hand of PA vs. PF.</item>
-  </list>
-  </para>
-  <table summary="." id="table-00006">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <tbody>
-  <row>
-  <entry>School</entry>
-  <entry>PF</entry>
-  <entry>PA</entry>
-  </row>
-  <row>
-  <entry>Abilene Christian</entry>
-  <entry>2502</entry>
-  <entry>2161</entry>
-  </row>
-  <row>
-  <entry>Air Force</entry>
-  <entry>2179</entry>
-  <entry>2294</entry>
-  </row>
-  <row>
-  <entry>Akron</entry>
-  <entry>2271</entry>
-  <entry>2107</entry>
-  </row>
-  <row>
-  <entry>Alabama A&amp;M</entry>
-  <entry>1938</entry>
-  <entry>2285</entry>
-  </row>
-  <row>
-  <entry>Alabama-Birmingham</entry>
-  <entry>2470</entry>
-  <entry>2370</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+  <para id="para-00105"><link class="os-embed" url="#exercise/CM-C08-M8-Q014"/></para>
   </problem>
-  <solution id="sol-00024">
-  <figure id="fig-00038">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_136.jpg"/>
-  </media>
-  <caption>Tech 8.136: Scatter plot of the data in Tech8.136. PF on horizontal axis; PA on vertical:</caption>
-  </figure>
-  </solution>
   </exercise>
   <exercise id="exer-00025">
   <problem id="prob-00025">
-  <para id="para-00106">
-  <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00052">
-  <item>This table contains data (from <emphasis effect="underscore">www.sports-reference.com</emphasis>) for the first five schools (alphabetically) that fielded an NCAA Division I men’s basketball team in the 2018-2019 season. It shows the total number of field goals each team scored (FG) and the total number of three-point field goals they scored (3P). Create a scatter plot by hand of 3P vs. FG.</item>
-  </list>
-  </para>
-  <table summary="." id="table-00007">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <tbody>
-  <row>
-  <entry>School</entry>
-  <entry>FG</entry>
-  <entry>3P</entry>
-  </row>
-  <row>
-  <entry>Abilene Christian</entry>
-  <entry>897</entry>
-  <entry>251</entry>
-  </row>
-  <row>
-  <entry>Air Force</entry>
-  <entry>802</entry>
-  <entry>234</entry>
-  </row>
-  <row>
-  <entry>Akron</entry>
-  <entry>797</entry>
-  <entry>297</entry>
-  </row>
-  <row>
-  <entry>Alabama A&amp;M</entry>
-  <entry>736</entry>
-  <entry>182</entry>
-  </row>
-  <row>
-  <entry>Alabama-Birmingham</entry>
-  <entry>906</entry>
-  <entry>234</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+  <para id="para-00106"><link class="os-embed" url="#exercise/CM-C08-M8-Q015"/></para>
   </problem>
-  <solution id="sol-00025">
-  <figure id="fig-00039">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_137.jpg"/>
-  </media>
-  <caption>Tech 8.137: Scatter plot using the data in Tech8.137. 3P on vertical axis; FG on horizontal:</caption>
-  </figure>
-  <para id="para-00107">Exercises 3 – 6 use the data in “MBB2019” (from <emphasis effect="underscore">www.sports-reference.com</emphasis>), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season.</para>
-  </solution>
   </exercise>
   <exercise id="exer-00026">
   <problem id="prob-00026">
-  <para id="para-00108">
-  <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00053">
-  <item>Use Google Sheets to create a scatter plot of points scored against a team (PA) vs. points scored by the team (PF).</item>
-  </list>
-  </para>
+  <para id="para-00108"><link class="os-embed" url="#exercise/CM-C08-M8-Q016"/></para>
   </problem>
-  <solution id="sol-00026">
-  <figure id="fig-00040">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_138.jpg"/>
-  </media>
-  <caption>Tech 8.138: Scatter plot using data in Tech8.138. PF on horizontal axis; PA on vertical:</caption>
-  </figure>
-  </solution>
-  </exercise>
-  <exercise id="exer-00027">
-  <problem id="prob-00027">
-  <para id="para-00109">
-  <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00054">
-  <item>Use Google Sheets to create a scatter plot of number of three-point field goals made (3P) vs. total field goals made (FG).</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00027">
-  <figure id="fig-00041">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_139.jpg"/>
-  </media>
-  <caption>Tech 8.139: Scatter plot using data in Tech8.139. FG on horizontal axis; 3P on vertical:</caption>
-  </figure>
-  </solution>
-  </exercise>
-  <exercise id="exer-00028">
-  <problem id="prob-00028">
-  <para id="para-00110">
-  <list list-type="enumerated" number-style="arabic" start-value="5" id="list-00055">
-  <item>Use Google Sheets to create a scatter plot of number of fouls (Fouls) vs. number of blocks (BLK).</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00028">
-  <figure id="fig-00042">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_140.jpg"/>
-  </media>
-  <caption>Tech 8.140: Scatter plot using data in Tech8.140. BLK on horizontal axis; Fouls on vertical:</caption>
-  </figure>
-  </solution>
-  </exercise>
-  <exercise id="exer-00029">
-  <problem id="prob-00029">
-  <para id="para-00111">
-  <list list-type="enumerated" number-style="arabic" start-value="6" id="list-00056">
-  <item>Use Google Sheets to create a scatter plot of points scored (PF) vs. percent of three-point shots made (3P%).</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00029">
-  <figure id="fig-00043">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_141.jpg"/>
-  </media>
-  <caption>Tech 8.141: Scatter plot using data in Tech8.141. 3P% on horizontal axis; PF on vertical:</caption>
-  </figure>
-  <para id="para-00112">For Exercises 7 – 14, answer the following questions:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00057">
-  <item>Is there a curved pattern in the data? If yes, stop here. If no, continue to part <emphasis effect="italic">b</emphasis>.</item>
-  <item>Classify the strength and direction of the relationship. Make a guess at the value of <emphasis effect="italic">r</emphasis>.</item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00030">
   <problem id="prob-00030">
-  <para id="para-00113">
-  <list list-type="enumerated" number-style="arabic" start-value="7" id="list-00058">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00044">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_142.jpg"/>
-  </media>
-  <caption>Tech 8.142: Scatter plot using data in Tech8.142:</caption>
-  </figure>
+  <para id="para-00113"><link class="os-embed" url="#exercise/CM-C08-M8-Q017"/></para>
   </problem>
-  <solution id="sol-00030">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00059">
-  <item>No</item>
-  <item>Strong negative relationship; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mo>−</mo><mn>0.85</mn></mrow>
-  </math></item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00031" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00031">
-  <para id="para-00114">
-  <list list-type="enumerated" number-style="arabic" start-value="8" id="list-00060">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00045">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_143.jpg"/>
-  </media>
-  <caption>Tech 89.143: Scatter plot using data in Tech8.143:</caption>
-  </figure>
-  </problem>
-  <solution id="sol-00031">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00061">
-  <item>No</item>
-  <item>Weak positive; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0.5</mn></mrow></math></item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00032" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00032">
-  <para id="para-00115">
-  <list list-type="enumerated" number-style="arabic" start-value="9" id="list-00062">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00046">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_144.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.144: Scatter plot using data in Tech8.144:</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00032">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00063">
-  <item>No</item>
-  <item>No apparent relationship; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0</mn></mrow></math></item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00033" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00033">
-  <para id="para-00116">
-  <list list-type="enumerated" number-style="arabic" start-value="10" id="list-00064">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00047">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_145.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.145: Scatter plot using data in Tech8.145:</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00033">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00065">
-  <item>Yes</item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00034">
-  <problem id="prob-00034">
-  <para id="para-00117">
-  <list list-type="enumerated" number-style="arabic" start-value="11" id="list-00066">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00048">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_146.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.146: Scatter plot using data in Tech8.146:</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00034">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00067">
-  <item>No</item>
-  <item>Weak negative, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mo>−</mo><mn>0.5</mn></mrow></math></item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00035" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00035">
-  <para id="para-00118">
-  <list list-type="enumerated" number-style="arabic" start-value="12" id="list-00068">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00049">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_147.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.147: Scatter plot using data in Tech8.147:</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00035">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00069">
-  <item>Yes</item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00036">
-  <problem id="prob-00036">
-  <para id="para-00119">
-  <list list-type="enumerated" number-style="arabic" start-value="13" id="list-00070">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00050">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_148.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.148: Scatter plot using data in Tech8.148:</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00036">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00071">
-  <item>No</item>
-  <item>Strong positive, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0.8</mn></mrow></math></item>
-  </list>
-  </solution>
-  </exercise>
-  <exercise id="exer-00037" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00037">
-  <para id="para-00120">
-  <list list-type="enumerated" number-style="arabic" start-value="14" id="list-00072">
-  <item/>
-  </list>
-  </para>
-  <figure id="fig-00051">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_149.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.149: Scatter plot using data in Tech8.149:</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00037">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00073">
-  <item>No</item>
-  <item>No apparent relationship, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0</mn></mrow></math>.</item>
-  </list>
-  <para id="para-00121" xmlns="http://cnx.rice.edu/cnxml">For Exercises 15 – 24, use the data in “MBB2019” (from <emphasis effect="underscore">www.sports-reference.com</emphasis>), which contains data on every school that fielded an NCAA Division I men’sbasketball team in the 2018-2019 season.</para>
-  </solution>
   </exercise>
   <exercise id="exer-00038">
   <problem id="prob-00038">
-  <para id="para-00122">
-  <list list-type="enumerated" number-style="arabic" start-value="15" id="list-00074">
-  <item>What is the correlation coefficient for points scored against a team (PA) vs. points scored by the team (PF)? Round to the nearest hundredth.</item>
-  </list>
-  </para>
+  <para id="para-00122"><link class="os-embed" url="#exercise/CM-C08-M8-Q018"/></para>
   </problem>
-  <solution id="sol-00038">
-  <para id="para-00123">0.61</para>
-  </solution>
   </exercise>
-  <exercise id="exer-00039">
-  <problem id="prob-00039">
-  <para id="para-00124">
-  <list list-type="enumerated" number-style="arabic" start-value="16" id="list-00075">
-  <item>What is the equation of the regression line for PA vs. PF?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00039">
-  <para id="para-00125"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0.394</mn><mi>x</mi><mo>+</mo><mn>1410</mn></mrow></math></para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00040" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00040">
-  <para id="para-00126">
-  <list list-type="enumerated" number-style="arabic" start-value="17" id="list-00076">
-  <item>Predict the total number of points scored against a team that itself scores 2200 points.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00040">
-  <para id="para-00127">2277</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00041">
-  <problem id="prob-00041">
-  <para id="para-00128">
-  <list list-type="enumerated" number-style="arabic" start-value="18" id="list-00077">
-  <item>Georgia Tech scored 2,091 points, and had 2,130 points scored against them. Is their PA higher or lower than expected? By how much?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00041">
-  <para id="para-00129">Lower by 104 points</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00042">
-  <problem id="prob-00042">
-  <para id="para-00130">
-  <list list-type="enumerated" number-style="arabic" start-value="19" id="list-00078">
-  <item>Write a sentence that interprets the slope of the regression line for PA vs. PF.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00042">
-  <para id="para-00131">For every additional 10 points a team scores, we predict there will be nearly 4 points scored against them, on average.</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00043">
-  <problem id="prob-00043">
-  <para id="para-00132">
-  <list list-type="enumerated" number-style="arabic" start-value="20" id="list-00079">
-  <item>What is the correlation coefficient for three-point field goals made (3P) vs. total field goals made (FG)? Round to the nearest hundredth.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00043">
-  <para id="para-00133">0.52</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00044">
-  <problem id="prob-00044">
-  <para id="para-00134">
-  <list list-type="enumerated" number-style="arabic" start-value="21" id="list-00080">
-  <item>What is the equation of the regression line for 3P vs. FG?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00044">
-  <para id="para-00135"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0.267</mn><mi>x</mi><mo>+</mo><mn>29.4</mn></mrow></math></para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00045" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00045">
-  <para id="para-00136">
-  <list list-type="enumerated" number-style="arabic" start-value="22" id="list-00081">
-  <item>How many three-point field goals made would you expect for a team that made 1000 total field goals?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00045">
-  <para id="para-00137">296</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00046">
-  <problem id="prob-00046">
-  <para id="para-00138">
-  <list list-type="enumerated" number-style="arabic" start-value="23" id="list-00082">
-  <item>Seton Hall made 888 field goals; of those, 240 were three-point field goals. Did they make more or fewer three-point field goals than expected? How many more or fewer?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00046">
-  <para id="para-00139">26 fewer</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00047">
-  <problem id="prob-00047">
-  <para id="para-00140">
-  <list list-type="enumerated" number-style="arabic" start-value="24" id="list-00083">
-  <item>Write a sentence to interpret the slope of the regression line for 3P vs. FG.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00047">
-  <para id="para-00141">For every 10 additional field goals made, we expect 2.7 more three-point field goals on average.</para>
-  </solution>
-</exercise>
-<para id="para-00142">Exercises 25 – 40 use the data sets “Public” and “Private” (data from data.ed.gov), which give many institutions of higher learning in the US (public institutions in “Public” and private, non-profit institutions in “Private”), the schools’ 75<sup>th</sup> percentiles on the math section of the SAT (SATM75), the verbal section of the SAT (SATV75), the math section of the ACT (ACTM75), and the English section of the ACT (ACTE75). It also gives the schools’ admission rates (AdmRate) and total annual cost of attendance (Cost).</para>
   <exercise id="exer-00048">
   <problem id="prob-00048">
-  <para id="para-00143">
-  <list list-type="enumerated" number-style="arabic" start-value="25" id="list-00084">
-  <item>It might seem reasonable to expect the cost to attend a school to go down as the proportion of applicants admitted goes up. Create two scatter plots (one for private schools, one for public) to investigate that hunch. Can we use linear regression to describe that relationship for these? Why or why not?</item>
-  </list>
-  </para>
+  <para id="para-00143"><link class="os-embed" url="#exercise/CM-C08-M8-Q019"/></para>
   </problem>
-  <solution id="sol-00048">
-  <para id="para-00144">We can for public schools, because there’s no curved pattern in the scatter plot (whatever relationship is there is very weak; it looks like <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0</mn></mrow></math>. However, there’s a very strong pattern in the scatter plot for private schools, so we can’t use regression there.</para>
-  <figure id="fig-00052" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_150.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.150: Scatter plot using data in Tech8.150. Title: Public Schools, AdmRate on horizontal axis, Cost on vertical axis.</emphasis></caption>
-  </figure>
-  <figure id="fig-00053">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_151.jpg"/>
-  </media>
-  <caption><emphasis effect="italic">Tech 8.151: Scatter plot using data in Tech8.151. Title: Private Schools, AdmRate on horizontal axis, Cost on vertical axis.</emphasis></caption>
-  </figure>
-  </solution>
-  </exercise>
-  <exercise id="exer-00049">
-  <problem id="prob-00049">
-  <para id="para-00145">
-  <list list-type="enumerated" number-style="arabic" start-value="26" id="list-00085">
-  <item>Find the correlation between the 75<sup>th</sup> percentiles of the two sections of the SAT at public schools and at private schools. Which has a stronger relationship?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00049">
-  <para id="para-00146">Both round to 0.92, so they are equally strong.</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00050">
-  <problem id="prob-00050">
-  <para id="para-00147">
-  <list list-type="enumerated" number-style="arabic" start-value="27" id="list-00086">
-  <item>What score would we predict falls at the 75<sup>th</sup> percentile on the verbal section of the SAT at a public school where the 75<sup>th</sup> percentile on the math section of the SAT is 500?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00050">
-  <para id="para-00148">530.5</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00051">
-  <problem id="prob-00051">
-  <para id="para-00149">
-  <list list-type="enumerated" number-style="arabic" start-value="28" id="list-00087">
-  <item>What score would we predict falls at the 75<sup>th</sup> percentile on the verbal section of the SAT at a private school where the 75<sup>th</sup> percentile on the math section of the SAT is 500?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00051">
-  <para id="para-00150">529.5</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00052">
-  <problem id="prob-00052">
-  <para id="para-00151">
-  <list list-type="enumerated" number-style="arabic" start-value="29" id="list-00088">
-  <item>Find the slope of the regression line that we would use to predict the 75<sup>th</sup> percentile SAT math score from the 75<sup>th</sup> percentile ACT English score at public schools, and write a sentence to interpret that slope.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00052">
-  <para id="para-00152">The slope is 14, so we’d expect a 1 point increase in the 75<sup>th</sup> percentile ACT English score to result in a 14 point increase in the 75<sup>th</sup> percentile of the SAT math scores.</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00053">
-  <problem id="prob-00053">
-  <para id="para-00153">
-  <list list-type="enumerated" number-style="arabic" start-value="30" id="list-00089">
-  <item>Predict the cost of attendance at a public school whose 75<sup>th</sup> percentile on the SAT verbal section is 700.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00053">
-  <para id="para-00154">$26,504</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00054">
-  <problem id="prob-00054">
-  <para id="para-00155">
-  <list list-type="enumerated" number-style="arabic" start-value="31" id="list-00090">
-  <item>The cost of attendance at DePauw University, a private school, is $62,567. The 75<sup>th</sup> percentile on the SAT math section is 680. Is DePauw more or less expensive that we would predict based on the SAT math score? By how much?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00054">
-  <para id="para-00156">$7,340 more expensive</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00055">
-  <problem id="prob-00055">
-  <para id="para-00157">
-  <list list-type="enumerated" number-style="arabic" start-value="32" id="list-00091">
-  <item>The cost of attendance at Coastal Carolina University, a public school, is $24,599. The 75<sup>th</sup> percentile of ACT English scores at Coastal Carolina is 24. Is the cost higher or lower than we would expect based on the ACT English score? By how much?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00055">
-  <para id="para-00158">$2,987 more expensive</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00056">
-  <problem id="prob-00056">
-  <para id="para-00159">
-  <list list-type="enumerated" number-style="arabic" start-value="33" id="list-00092">
-  <item>Find the equation of the regression line that we would use to predict the 75<sup>th</sup> percentile ACT English score from the 75<sup>th</sup> percentile ACT math score at public institutions.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00056">
-  <para id="para-00160"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>1.13</mn><mi>x</mi><mo>−</mo><mn>2.08</mn></mrow></math></para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00057" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00057">
-  <para id="para-00161">
-  <list list-type="enumerated" number-style="arabic" start-value="34" id="list-00093">
-  <item>Find the equation of the regression line that we would use to predict cost of attendance at public schoolsusing the 75<sup>th</sup> percentile ACT math score.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00057">
-  <para id="para-00162"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>728</mn><mi>x</mi><mo>+</mo><mn>4350</mn></mrow></math></para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00058" xmlns="http://cnx.rice.edu/cnxml">
-  <problem id="prob-00058">
-  <para id="para-00163">
-  <list list-type="enumerated" number-style="arabic" start-value="35" id="list-00094">
-  <item>Does the University of Hawai’i at Hilo have a higher or lower 75<sup>th</sup> percentile verbal SAT score (590) than we’d expect based on its 75<sup>th</sup> percentile math SAT score (580)? By how much?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00058">
-  <para id="para-00164">Higher by 1.18 points</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00059">
-  <problem id="prob-00059">
-  <para id="para-00165">
-  <list list-type="enumerated" number-style="arabic" start-value="36" id="list-00095">
-  <item>Find the slope of the regression line we would use to estimate cost from the 75<sup>th</sup> percentile SAT math scores at public institutions. Write a sentence to interpret that slope.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00059">
-  <para id="para-00166">The slope is 36.2, so we’d expect a 10 point increase in the 75<sup>th</sup> percentile SAT math score to result in a cost increase of $362.</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00060">
-  <problem id="prob-00060">
-  <para id="para-00167">
-  <list list-type="enumerated" number-style="arabic" start-value="37" id="list-00096">
-  <item>Find the slope of the regression line we would use to estimate cost from the 75<sup>th</sup> percentile SAT math scores at private institutions. Write a sentence to interpret that slope.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00060">
-  <para id="para-00168">The slope is 134, so we’d expect a 10 point increase in the 75<sup>th</sup> percentile SAT math score to result in a cost increase of $1,340.</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00061">
-  <problem id="prob-00061">
-  <para id="para-00169">
-  <list list-type="enumerated" number-style="arabic" start-value="38" id="list-00097">
-  <item>Look at the scatter plots that show the relationship between cost and the 75<sup>th</sup> percentiles of the various test scores at private institutions. Which (if any) of the four exhibit a pattern that rules out analysis using linear regression?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00061">
-  <para id="para-00170">SAT math, SAT verbal, ACT math</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00062">
-  <problem id="prob-00062">
-  <para id="para-00171">
-  <list list-type="enumerated" number-style="arabic" start-value="39" id="list-00098">
-  <item>Look at the scatter plots that show the relationship between cost and the 75<sup>th</sup> percentiles of the various test scores at public institutions. Which (if any) of the four exhibit a pattern thatrules out analysis using linear regression?</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00062">
-  <para id="para-00172">none</para>
-  </solution>
-  </exercise>
-  <exercise id="exer-00063">
-  <problem id="prob-00063">
-  <para id="para-00173">
-  <list list-type="enumerated" number-style="arabic" start-value="40" id="list-00099">
-  <item>Looking at public institutions, rank the four test scores from highest to lowest in terms of the strength of their relationships to cost.</item>
-  </list>
-  </para>
-  </problem>
-  <solution id="sol-00063">
-  <para id="para-00174">ACT math (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.546</mn></mrow></math>), SAT math (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.519</mn></mrow></math>), ACT English (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.517</mn></mrow></math>), SAT verbal (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.468</mn></mrow></math>)</para>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00012" xmlns="http://cnx.rice.edu/cnxml">
@@ -1793,8 +855,8 @@
   </section>
   <section class="formula-review" id="sect-00028">
   <title>Formulas</title>
-  <para id="para-00181"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mstyle displaystyle="true"><mo>∑</mo> <mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></msqrt></mrow></math></para>
-  <para id="para-00182" xmlns="http://cnx.rice.edu/cnxml">Here, <emphasis effect="italic">s</emphasis> is the standard deviation, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> represents each data value, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> is the mean of the data values, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>is the number of data values, and the capital sigma (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Σ</mi></math>) indicates that we take a sum.</para>
+  <para id="para-00181"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mstyle displaystyle="true"><mo>?</mo> <mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mstyle></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></msqrt></mrow></math></para>
+  <para id="para-00182" xmlns="http://cnx.rice.edu/cnxml">Here, <emphasis effect="italic">s</emphasis> is the standard deviation, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> represents each data value, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> is the mean of the data values, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>is the number of data values, and the capital sigma (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>S</mi></math>) indicates that we take a sum.</para>
   </section>
   <section id="sect-00029" xmlns="http://cnx.rice.edu/cnxml">
   <title>Video</title>
@@ -1849,8 +911,8 @@
   </section>
   <section class="formula-review" id="sect-00037">
   <title>Formulas</title>
-  <para id="para-00186">If <emphasis effect="italic">x</emphasis> is a member of a normally distributed data set with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>μ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac></mrow></math>.</para>
-  <para id="para-00187" xmlns="http://cnx.rice.edu/cnxml">If you know a <emphasis effect="italic">z</emphasis>-score but not the original data value <emphasis effect="italic">x</emphasis>, you can find it by solving the previous equation for <emphasis effect="italic">x</emphasis>:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>μ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi></mrow></math>.</para>
+  <para id="para-00186">If <emphasis effect="italic">x</emphasis> is a member of a normally distributed data set with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>s</mi></math>, then the standardized score for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>s</mi></mfrac></mrow></math>.</para>
+  <para id="para-00187" xmlns="http://cnx.rice.edu/cnxml">If you know a <emphasis effect="italic">z</emphasis>-score but not the original data value <emphasis effect="italic">x</emphasis>, you can find it by solving the previous equation for <emphasis effect="italic">x</emphasis>:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>s</mi></mrow></math>.</para>
   </section>
   </section>
   <section id="sect-00038" xmlns="http://cnx.rice.edu/cnxml">
@@ -1888,9 +950,8 @@
   </section>
   <section class="formula-review" id="sect-00043">
   <title>Formulas</title>
-  <para id="para-00188">If a line has slope <emphasis effect="italic">m</emphasis> and passes through a point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></math>, then the point-slope form of the equation of the line is:
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></math>Suppose <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> are explanatory and response data sets that have a linear relationship. If their means are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>y</mi><mo>¯</mo></mover></math> respectively, their standard deviations are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow></math> respectively, and their correlation coefficient is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>, then the equation of the regression line is:
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math>.</para>
+  <para id="para-00188">If a line has slope <emphasis effect="italic">m</emphasis> and passes through a point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></math>, then the point-slope form of the equation of the line is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></math>Suppose <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> are explanatory and response data sets that have a linear relationship. If their means are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>y</mi><mo>¯</mo></mover></math> respectively, their standard deviations are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow></math> respectively, and their correlation coefficient is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>, then the equation of the regression line is:
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math>.</para>
   </section>
   <section id="sect-00044" xmlns="http://cnx.rice.edu/cnxml">
   <title>Video</title>
@@ -1914,368 +975,89 @@
   <title>Module 1</title>
   <exercise id="exer-00064">
   <problem id="prob-00064">
-  <para id="para-00190">Decide whether randomization is being used in the selection of these samples. If it is, identify the type of random sample (simple, systematic, cluster, or stratified).</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00116">
-  <item>A college student wants to gauge interest in a new club he’s thinking about starting. He chooses three residence halls at random, and slides a survey form under the door to every room.</item>
-  <item>The manager of a campus dining hall wants feedback on a new dish that is being served, so she asks the first 10 people who choose that dish what they think of it.</item>
-  <item>The administration of a large university system with five campuses wants to administer a survey to students in the system. The surveyor chooses 50 students at random from each campus; the 250 students selected form thesample.</item>
-  </list>
+  <para id="para-00190"><link class="os-embed" url="#exercise/CM-C08-M8-Q020"/></para>
   </problem>
-  <solution id="sol-00064">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00117">
-  <item>Randomization is being used; cluster random sample</item>
-  <item>Randomization is not being used</item>
-  <item>Randomization is being used; stratified random sample</item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00065">
   <problem id="prob-00065">
-  <para id="para-00191">A sample of college students were asked how many of their meals were provided by a campus dining hall on the previous day. Here are the results:</para>
-  <table summary="." id="table-00008">
-  <tgroup cols="7">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <colspec colnum="4" colname="c4" colwidth="1*"/>
-  <colspec colnum="5" colname="c5" colwidth="1*"/>
-  <colspec colnum="6" colname="c6" colwidth="1*"/>
-  <colspec colnum="7" colname="c7" colwidth="1*"/>
-  <tbody>
-  <row>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>3</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>3</entry>
-  <entry>0</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00192">Create a frequency distribution for these data.</para>
+  <para id="para-00191"><link class="os-embed" url="#exercise/CM-C08-M8-Q021"/></para>
   </problem>
-  <solution id="sol-00065">
-  <table summary="." id="table-00009">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>Meals</entry>
-  <entry>Frequency</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>0</entry>
-  <entry>9</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>7</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00048">
   <title>Module 2</title>
   <exercise id="exer-00066">
   <problem id="prob-00066">
-  <para id="para-00193">Create a bar chart to visualize the data in question 2.</para>
+  <para id="para-00193"><link class="os-embed" url="#exercise/CM-C08-M8-Q022"/></para>
   </problem>
-  <solution id="sol-00066">
-  <figure id="fig-00054">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_02_152.jpg"/>
-  </media>
-  <caption>Tech 8.152: Bar chart using data in Tech8.152, like this:</caption>
-  </figure>
-  </solution>
   </exercise>
   <exercise id="exer-00067">
   <problem id="prob-00067">
-  <para id="para-00194">Use the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, to create a histogram of the number of free throws made by each team (FT).</para>
+  <para id="para-00194"><link class="os-embed" url="#exercise/CM-C08-M8-Q023"/></para>
   </problem>
-  <solution id="sol-00067">
-  <figure id="fig-00055">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_02_154.jpg"/>
-  </media>
-  <caption>Tech 8.154: Histogram using data in Tech8.154. Horizontal axis runs from 225to 675, bin width 25:</caption>
-  </figure>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00049">
   <title>Module 3</title>
   <exercise id="exer-00068">
   <problem id="prob-00068">
-  <para id="para-00195">The data below show the top ten scorers (by points per game) in the National Basketball Association for the 2018 – 2019 season. Find the mode, median, and mean age of these players by hand.</para>
-  <table summary="." id="table-00010">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>Rank</entry>
-  <entry>Player</entry>
-  <entry>Age</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>1</entry>
-  <entry>James Harden</entry>
-  <entry>29</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>Paul George</entry>
-  <entry>28</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>Giannis Antetokounmpo</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>Joel Embiid</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>Stephen Curry</entry>
-  <entry>30</entry>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>Devin Booker</entry>
-  <entry>22</entry>
-  </row>
-  <row>
-  <entry>7</entry>
-  <entry>Kawhi Leonard</entry>
-  <entry>27</entry>
-  </row>
-  <row>
-  <entry>8</entry>
-  <entry>Kevin Durant</entry>
-  <entry>30</entry>
-  </row>
-  <row>
-  <entry>9</entry>
-  <entry>Damian Lillard</entry>
-  <entry>28</entry>
-  </row>
-  <row>
-  <entry>10</entry>
-  <entry>Bradley Beal</entry>
-  <entry>25</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+  <para id="para-00195"><link class="os-embed" url="#exercise/CM-C08-M8-Q024"/></para>
   </problem>
-  <solution id="sol-00068">
-  <para id="para-00196">Modes: 24, 28, 30; median: 27.5; mean: 26.7</para>
-  </solution>
   </exercise>
   <exercise id="exer-00069">
   <problem id="prob-00069">
-  <para id="para-00197">Using the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, find the mean, median, and mode of the number of free throws made by each team (FT).</para>
+  <para id="para-00197"><link class="os-embed" url="#exercise/CM-C08-M8-Q025"/></para>
   </problem>
-  <solution id="sol-00069">
-  <para id="para-00198">Mode: 461; median: 446; mean: 446.41</para>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00050">
   <title>Module 4</title>
   <exercise id="exer-00070">
   <problem id="prob-00070">
-  <para id="para-00199">Using the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, find the range and standard deviation of the number of free throws made by each team (FT).</para>
+  <para id="para-00199"><link class="os-embed" url="#exercise/CM-C08-M8-Q026"/></para>
   </problem>
-  <solution id="sol-00070">
-  <para id="para-00200">Range: 425; standard deviation: 76.12</para>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00051">
   <title>Module 5</title>
   <exercise id="exer-00071">
   <problem id="prob-00071">
-  <para id="para-00201">Use the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, to answer the following:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00118">
-  <item>What number of free throws (FT) is at the 40<sup>th</sup> percentile?</item>
-  <item>At what percentile is Syracuse University, which made 480 free throws?</item>
-  </list>
+  <para id="para-00201"><link class="os-embed" url="#exercise/CM-C08-M8-Q027"/></para>
   </problem>
-  <solution id="sol-00071">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00119">
-  <item>424</item>
-  <item>69.3<sup>rd</sup></item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00052">
   <title>Module 6</title>
   <exercise id="exer-00072">
   <problem id="prob-00072">
-  <para id="para-00202">Identify the means and standard deviations of these normal distributions:</para>
-  <figure id="fig-00056">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_06_156.jpg"/>
-  </media>
-  <caption>Tech 8.156: Graph of two normal pdfs on the domain 0&lt;x>15. The first one in red has mean 10 and standard deviation 2. The second one in blue has mean 7 and standard deviation 3:</caption>
-  </figure>
+  <para id="para-00202"><link class="os-embed" url="#exercise/CM-C08-M8-Q028"/></para>
   </problem>
-  <solution id="sol-00072">
-  <para id="para-00203">Red: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>μ</mi><mo>=</mo><mn>10</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>2</mn></mrow></math>; blue: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>μ</mi><mo>=</mo><mn>7</mn></mrow></math>; <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>3</mn></mrow></math>.</para>
-  </solution>
   </exercise>
   <exercise id="exer-00073" xmlns="http://cnx.rice.edu/cnxml">
   <problem id="prob-00073">
-  <para id="para-00204">Answer the following about data that are distributed normally with mean 200 and standard deviation 20:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00120">
-  <item>What proportion of the data are between 160 and 240?</item>
-  <item>What’s the standardized score of the data value 235?</item>
-  <item>At what percentile would the data value 187 fall?</item>
-  <item>What data value would be at the 90<sup>th</sup> percentile?</item>
-  </list>
+  <para id="para-00204"><link class="os-embed" url="#exercise/CM-C08-M8-Q029"/></para>
   </problem>
-  <solution id="sol-00073">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00121">
-  <item>0.95 or 95%</item>
-  <item>1.75</item>
-  <item>25.8<sup>th</sup></item>
-  <item>225.63</item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00053">
   <title>Module 7</title>
   <exercise id="exer-00074">
   <problem id="prob-00074">
-  <para id="para-00205">Use the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, to answer the following:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00122">
-  <item>What is the standardized score for Purdue Universitiy’s number of free throws (FT = 461)?</item>
-  <item>At what percentile would we estimate Purdue’s value of FT to fall, using the normal distribution?</item>
-  <item>At what percentile does Purdue’s value of FT actually fall?</item>
-  </list>
+  <para id="para-00205"><link class="os-embed" url="#exercise/CM-C08-M8-Q030"/></para>
   </problem>
-  <solution id="sol-00074">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00123">
-  <item>0.19</item>
-  <item>57.6<sup>th</sup></item>
-  <item>57.1<sup>st</sup></item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00054">
   <title>Module 8</title>
   <exercise id="exer-00075">
   <problem id="prob-00075">
-  <para id="para-00206">For each of the following scatter plots, decide whether linear regression would be appropriate. If it is, classify the strength and direction of the relationship.</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00124">
-  <item>
-  <figure id="fig-00057">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_157.jpg"/>
-  </media>
-  <caption>Tech 8.157: Scatter plot using the data in Tech8.157:</caption>
-  </figure>
-  </item>
-  <item>
-  <figure id="fig-00058">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_158.jpg"/>
-  </media>
-  <caption>Tech 8.158: Scatter plot using the data in Tech8.158:</caption>
-  </figure>
-  </item>
-  <item>
-  <figure id="fig-00059">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_08_159.jpg"/>
-  </media>
-  <caption>Tech 8.159: Scatter plot using data in Tech8.159:</caption>
-  </figure>
-  </item>
-  </list>
+  <para id="para-00206"><link class="os-embed" url="#exercise/CM-C08-M8-Q031"/></para>
   </problem>
-  <solution id="sol-00075">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00125">
-  <item>Not appropriate</item>
-  <item>Appropriate; weak positive</item>
-  <item>Appropriate; strong negative</item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00076">
   <problem id="prob-00076">
-  <para id="para-00207">Use the data in “NBA2019” (from www.sports-reference.com), which contains data on every player in the National Basketball Association who scored a point in the 2018-2019 season, to answer the following:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00126">
-  <item>What is the correlation coefficient between the number of field goals attempted per game (FGA) and number of points scored per game (PTS)?</item>
-  <item>What is the equation of the regression line we would use to predict PTS from FGA?</item>
-  <item>Write a sentence to interpret the slope of the regression line.</item>
-  <item>Predict the number of points per game for a player who attempts 16 field goals per game.</item>
-  <item>Danilo Gallinari attempted 13 field goals per game, and averaged 19.8 points per game. Did he score more or fewer points per game than expected? By how much?</item>
-  </list>
+  <para id="para-00207"><link class="os-embed" url="#exercise/CM-C08-M8-Q032"/></para>
   </problem>
-  <solution id="sol-00076">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00127">
-  <item>0.98</item>
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>1.31</mn><mi>x</mi><mo>−</mo><mn>0.415</mn></mrow></math></item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Each additional field goal attempt per game results in an expected increase of 1.31 points per game, on average.</item>
-  <item>20.545</item>
-  <item>He scored 3.2 points per game more than expected.</item>
-  </list>
-  </solution>
   </exercise>
   </section>
   </section>
@@ -2285,349 +1067,79 @@
   <title>Module 1</title>
   <exercise id="exer-00077">
   <problem id="prob-00077">
-  <para id="para-00208">Decide whether randomization is being used in the selection of these samples. If it is, identify the type of random sample (simple, systematic, cluster, or stratified).</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00128">
-  <item>A vinyl record dealer is trying to price a large collection she’s thinking of buying. She looks at every tenth record on the shelf and notes the value.</item>
-  <item>A court clerk is charged with identifying one hundred people for a jury pool for upcoming legal hearings. He has an alphabetized list of registered voters in his jurisdiction, so he uses a random number generator to pick one hundred names from the list.</item>
-  <item>A state agricultural officer is worried about the spread of a parasitic disease among cattle. He chooses 30 cattle farms at random and tests each cow on those 30 farms for the disease.</item>
-  </list>
+  <para id="para-00208"><link class="os-embed" url="#exercise/CM-C08-M8-Q033"/></para>
   </problem>
-  <solution id="sol-00077">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00129">
-  <item>Randomization is being used; systematic random sample</item>
-  <item>Randomization is being used; simple random sample</item>
-  <item>Randomization is being used; cluster random sample</item>
-  </list>
-  </solution>
   </exercise>
   <exercise id="exer-00078">
   <problem id="prob-00078">
-  <para id="para-00209">A sample of donations to a blood bank contained these blood types:</para>
-  <table summary="." id="table-00011">
-  <tgroup cols="8">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <colspec colnum="4" colname="c4" colwidth="1*"/>
-  <colspec colnum="5" colname="c5" colwidth="1*"/>
-  <colspec colnum="6" colname="c6" colwidth="1*"/>
-  <colspec colnum="7" colname="c7" colwidth="1*"/>
-  <colspec colnum="8" colname="c8" colwidth="1*"/>
-  <tbody>
-  <row>
-  <entry>A</entry>
-  <entry>O</entry>
-  <entry>A</entry>
-  <entry>O</entry>
-  <entry>A</entry>
-  <entry>A</entry>
-  <entry>AB</entry>
-  <entry>O</entry>
-  </row>
-  <row>
-  <entry>O</entry>
-  <entry>A</entry>
-  <entry>AB</entry>
-  <entry>A</entry>
-  <entry>O</entry>
-  <entry>O</entry>
-  <entry>A</entry>
-  <entry>A</entry>
-  </row>
-  <row>
-  <entry>O</entry>
-  <entry>O</entry>
-  <entry>B</entry>
-  <entry>O</entry>
-  <entry>B</entry>
-  <entry>O</entry>
-  <entry>O</entry>
-  <entry>O</entry>
-  </row>
-  <row>
-  <entry>B</entry>
-  <entry>A</entry>
-  <entry>O</entry>
-  <entry>A</entry>
-  <entry>O</entry>
-  <entry>O</entry>
-  <entry>A</entry>
-  <entry>A</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00210">Create a frequency distribution for these data.</para>
+  <para id="para-00209"><link class="os-embed" url="#exercise/CM-C08-M8-Q034"/></para>
   </problem>
-  <solution id="sol-00078">
-  <table summary="." id="table-00012">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>Type</entry>
-  <entry>Frequency</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>A</entry>
-  <entry>12</entry>
-  </row>
-  <row>
-  <entry>B</entry>
-  <entry>3</entry>
-  </row>
-  <row>
-  <entry>AB</entry>
-  <entry>2</entry>
-  </row>
-  <row>
-  <entry>O</entry>
-  <entry>15</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00057">
   <title>Module 2</title>
   <exercise id="exer-00079">
   <problem id="prob-00079">
-  <para id="para-00211">Create a bar chart by hand to visualize the data in question 2.</para>
+  <para id="para-00211"><link class="os-embed" url="#exercise/CM-C08-M8-Q035"/></para>
   </problem>
-  <solution id="sol-00079">
-  <figure id="fig-00060">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_02_153.jpg"/>
-  </media>
-  <caption>Tech 8.153: Bar chart using data in Tech8.153, as below.</caption>
-  </figure>
-  </solution>
   </exercise>
   <exercise id="exer-00080">
   <problem id="prob-00080">
-  <para id="para-00212">Use the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, to create a histogram of the number of total rebounds by each team (TRB).</para>
+  <para id="para-00212"><link class="os-embed" url="#exercise/CM-C08-M8-Q036"/></para>
   </problem>
-  <solution id="sol-00080">
-  <figure id="fig-00061">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_08_02_155.jpg"/>
-  </media>
-  <caption>Tech 8.155: Histogram using data in Tech8.155. Horizontal axis runs from 800 to 1600, bin width 50:</caption>
-  </figure>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00058">
   <title>Module 3</title>
   <exercise id="exer-00081">
   <problem id="prob-00081">
-  <para id="para-00213">The table below shows the number of players on the rosters of each English Premier League team. Find the mode, median, and mean by hand.</para>
-  <table summary="." id="table-00013">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>TEAM</entry>
-  <entry>ACTIVE PLAYERS</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>Manchester United F.C.</entry>
-  <entry>27</entry>
-  </row>
-  <row>
-  <entry>Manchester City F.C.</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>Chelsea F.C.</entry>
-  <entry>25</entry>
-  </row>
-  <row>
-  <entry>Arsenal F.C.</entry>
-  <entry>28</entry>
-  </row>
-  <row>
-  <entry>Tottenham Hotspur F.C.</entry>
-  <entry>27</entry>
-  </row>
-  <row>
-  <entry>Liverpool F.C.</entry>
-  <entry>30</entry>
-  </row>
-  <row>
-  <entry>Crystal Palace</entry>
-  <entry>29</entry>
-  </row>
-  <row>
-  <entry>Everton F.C.</entry>
-  <entry>23</entry>
-  </row>
-  <row>
-  <entry>Leicester City</entry>
-  <entry>25</entry>
-  </row>
-  <row>
-  <entry>West Ham United F.C.</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>Newcastle United F.C.</entry>
-  <entry>28</entry>
-  </row>
-  <row>
-  <entry>Aston Villa F.C.</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>Fulham F.C.</entry>
-  <entry>27</entry>
-  </row>
-  <row>
-  <entry>Southampton F.C.</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>Wolverhampton Wanderers F.C.</entry>
-  <entry>22</entry>
-  </row>
-  <row>
-  <entry>Brighton &amp; Hove Albion</entry>
-  <entry>31</entry>
-  </row>
-  <row>
-  <entry>Burnley F.C.</entry>
-  <entry>22</entry>
-  </row>
-  <row>
-  <entry>West Bromwich Albion F.C.</entry>
-  <entry>26</entry>
-  </row>
-  <row>
-  <entry>Leeds United F.C.</entry>
-  <entry>25</entry>
-  </row>
-  <row>
-  <entry>Sheffield United F.C.</entry>
-  <entry>27</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+  <para id="para-00213"><link class="os-embed" url="#exercise/CM-C08-M8-Q037"/></para>
   </problem>
-  <solution id="sol-00081">
-  <para id="para-00214">Modes: 24, 27; median: 25.5; mean: 25.9</para>
-  </solution>
   </exercise>
   <exercise id="exer-00082">
   <problem id="prob-00082">
-  <para id="para-00215">Using the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, find the mean, median, and mode of the total number of rebounds made by each team (TRB).</para>
+  <para id="para-00215"><link class="os-embed" url="#exercise/CM-C08-M8-Q038"/></para>
   </problem>
-  <solution id="sol-00082">
-  <para id="para-00216">Mode: 1215; median: 1163; mean: 1169.54</para>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00059">
   <title>Module 4</title>
   <exercise id="exer-00083">
   <problem id="prob-00083">
-  <para id="para-00217">Using the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, find the range and standard deviation of the total number of rebounds made by each team (TRB).</para>
+  <para id="para-00217"><link class="os-embed" url="#exercise/CM-C08-M8-Q039"/></para>
   </problem>
-  <solution id="sol-00083">
-  <para id="para-00218">Range: 744; standard deviation: 121.88</para>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00060">
   <title>Module 5</title>
   <exercise id="exer-00084">
   <problem id="prob-00084">
-  <para id="para-00219">Use the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, to answer the following:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00130">
-  <item>What number of total rebounds (TRB) is at the 3<sup>rd</sup> quartile?</item>
-  <item>At what percentile is the University of Evansville, which had 1095 total rebounds?</item>
-  </list>
+  <para id="para-00219"><link class="os-embed" url="#exercise/CM-C08-M8-Q040"/></para>
   </problem>
-  <solution id="sol-00084">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00131">
-  <item>1238</item>
-  <item>27.8<sup>th</sup></item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00061">
   <title>Module 6</title>
   <exercise id="exer-00085">
   <problem id="prob-00085">
-  <para id="para-00220">Answer the following about data that are distributed normally with mean 50 and standard deviation 5:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00132">
-  <item>What proportion of the data are between 35 and 65?</item>
-  <item>What’s the standardized score of the data value 37?</item>
-  <item>At what percentile would the data value 58 fall?</item>
-  <item>What data value would be at the 40<sup>th</sup> percentile?</item>
-  </list>
+  <para id="para-00220"><link class="os-embed" url="#exercise/CM-C08-M8-Q041"/></para>
   </problem>
-  <solution id="sol-00085">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00133">
-  <item>0.997 or 99.7%</item>
-  <item>-2.6</item>
-  <item>94.5<sup>th</sup></item>
-  <item>48.73</item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00062">
   <title>Module 7</title>
   <exercise id="exer-00086">
   <problem id="prob-00086">
-  <para id="para-00221">Use the data in “MBB2019” (from www.sports-reference.com), which contains data on every school that fielded an NCAA Division I men’s basketball team in the 2018-2019 season, to answer the following:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00134">
-  <item>What is the standardized score for the number of total rebounds (TRB) recorded by Mississippi State University (TRB = 1215)?</item>
-  <item>At what percentile would we estimate Mississippi State’s TRB value fall, using the normal distribution?</item>
-  <item>At what percentile does Mississippi State’s TRB value actually fall?</item>
-  </list>
+  <para id="para-00221"><link class="os-embed" url="#exercise/CM-C08-M8-Q042"/></para>
   </problem>
-  <solution id="sol-00086">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00135">
-  <item>0.37</item>
-  <item>64.5<sup>th</sup></item>
-  <item>67.9<sup>th</sup></item>
-  </list>
-  </solution>
   </exercise>
   </section>
   <section id="sect-00063">
   <title>Module 8</title>
   <exercise id="exer-00087">
   <problem id="prob-00087">
-  <para id="para-00222">Use the data in “NBA2019” (from www.sports-reference.com), which contains data on every player in the National Basketball Association who scored a point in the 2018-2019 season, to answer the following:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00136">
-  <item>What is the correlation coefficient between the number of two-point field goals made per game (2P) and number of points scored per game (PTS)?</item>
-  <item>What is the equation of the regression line we would use to predict PTS from 2P?</item>
-  <item>Write a sentence to interpret the slope of the regression line.</item>
-  <item>Predict the number of points per game for a player who makes 6 two-point field goals per game.</item>
-  <item>J.J. Redick made 2.8 field goals per game, and averaged 18.1 points per game. Did he score more or fewer points per game than expected? By how much?</item>
-  </list>
+  <para id="para-00222"><link class="os-embed" url="#exercise/CM-C08-M8-Q043"/></para>
   </problem>
-  <solution id="sol-00087">
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00137">
-  <item>0.85</item>
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>2.73</mn><mi>x</mi><mo>+</mo><mn>3.19</mn></mrow></math></item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Every additional two-point field goal made corresponds to an additional 2.73 points per game, on average.</item>
-  <item>19.57</item>
-  <item>He scored about 7.3 points per game more than expected.</item>
-  </list>
-  </solution>
   </exercise>
   </section>
   </section>
