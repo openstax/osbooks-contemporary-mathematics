@@ -6,7 +6,7 @@
   <md:uuid>c5ec5645-4396-47a4-acce-0b93b1fe41a6</md:uuid>
   </metadata>
   <content>
-  <figure id="fig-00001">
+  <figure class="unnumbered" id="fig-00001">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_102.jpg"/>
   </media>
@@ -151,28 +151,28 @@
   </tgroup>
   </table>
   <para id="para-00015">Next, let’s make the axes. On the horizontal axis, make sure the range of values is sufficient to cover all of the explanatory data. For our data, that’s 68 to 94. Similarly, the vertical axis should cover all of the response data (73 to 95):</para>
-  <figure id="fig-00002">
+  <figure class="unnumbered" id="fig-00002">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_103.jpg"/>
   </media>
   <caption><emphasis effect="italic">Tech 8.103: A set of coordinate axes. The range of x-values should run 65 to 95; the y-values should run 70 to 100.</emphasis></caption>
   </figure>
   <para id="para-00016">Our first point is (88, 84). So, we’ll locate 88 on the horizontal axis, 84 on the vertical axis, and identify the point that’s directly above the first location and horizontally level with the second:</para>
-  <figure id="fig-00003">
+  <figure class="unnumbered" id="fig-00003">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_104.jpg"/>
   </media>
   <caption><emphasis effect="italic">Tech 8.104: Same as Tech 8.103, but add red label “88” at 88 on the horizontal axis and a red dashed vertical line at x=88. Add blue label “84” at 84 on vertical axis, and blue dashed horizontal line at y=84. Add black dot at (88,84):</emphasis></caption>
   </figure>
   <para id="para-00017">Repeat this process to place the other four points on the graph:</para>
-  <figure id="fig-00004">
+  <figure class="unnumbered" id="fig-00004">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_105.jpg"/>
   </media>
   <caption><emphasis effect="italic">Tech 8.105: Same as Tech 8.103, but with points at (88,84), (71,80), (75,77), (94,95), and (68,73):</emphasis></caption>
   </figure>
   <para id="para-00018">Finally, label the axes:</para>
-  <figure id="fig-00005">
+  <figure class="unnumbered" id="fig-00005">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_106.jpg"/>
   </media>
@@ -203,7 +203,7 @@
   </problem>
   <solution id="sol-00005">
   <para id="para-00024">Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection). Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.” Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case). Now, click on the variable under “Series” and select the one that should go on the horizontal axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
-  <figure id="fig-00007">
+  <figure class="unnumbered" id="fig-00007">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_108.jpg"/>
   </media>
@@ -223,28 +223,28 @@
   <section id="sect-00004">
   <title>Reading and Interpreting Scatter Plots</title>
   <para id="para-00026">Scatter plots give us information about the existence and strength of a relationship between two data sets. To break that information down, there are a series of questions we might ask to help us. First: Is there a curved pattern in the data? If the answer is “yes,” then we can stop; none of the linear regression techniques from here to the end of this module are appropriate. Figure 9.4 shows several examples of scatterplots that can help us identify these curved patterns.</para>
-  <figure id="fig-00009">
+  <figure class="unnumbered" id="fig-00009">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_110.jpg"/>
   </media>
   <caption>Figure 8.4.a: caption: Curved pattern<newline/>
       Tech 8.110: Scatterplot using the data in Tech8.110, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> in a contrasting color.</caption>
   </figure>
-  <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
+  <figure class="unnumbered" id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_111.jpg"/>
   </media>
   <caption>Figure 8.4.b: caption: No curved pattern<newline/>
       Tech 8.111: Scatterplot using the data in Tech8.111.</caption>
   </figure>
-  <figure id="fig-00011">
+  <figure class="unnumbered" id="fig-00011">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_112.jpg"/>
   </media>
   <caption>Figure 8.4.c: caption: Curved pattern<newline/>
       Tech 8.112: Scatterplot using the data in Tech8.112, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>80</mn><mo>-</mo><mn>30</mn><mi>sin</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>30</mn><mo stretchy="false">)</mo><mo>/</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>in a contrasting color.</caption>
   </figure>
-  <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
+  <figure class="unnumbered" id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_113.jpg"/>
   </media>
@@ -252,28 +252,28 @@
       Tech 8.113: Scatterplot using the data in Tech8.113</caption>
   </figure>
   <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italic">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
-  <figure id="fig-00013">
+  <figure class="unnumbered" id="fig-00013">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_114.jpg"/>
   </media>
   <caption><emphasis effect="italic">Tech 8.114: same as Tech 8.113 except the points whose x-values are within 2 of 50 or 80 are colored green:</emphasis></caption>
   </figure>
   <para id="para-00028">Now, we can mentally estimate the middle of each group of points. Let's add our mental averages to the plot as red, starred points:</para>
-  <figure id="fig-00014">
+  <figure class="unnumbered" id="fig-00014">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_115.jpg"/>
   </media>
   <caption><emphasis effect="italic">Tech 8.115: same as Tech 8.114 except we add red points at (50, 200) and (80, 108). Maybe make those points a different shape as well to highlight the fact that they don’t necessarily belong to the original data:</emphasis></caption>
   </figure>
   <para id="para-00029">Since those two red, starred points occur at different heights, we can conclude that there’s likely a relationship worth exploring. Here’s another example:</para>
-  <figure id="fig-00015">
+  <figure class="unnumbered" id="fig-00015">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_116.jpg"/>
   </media>
   <caption><emphasis effect="italic">Tech 8.116: Scatter plot using data in Tech8.116:</emphasis></caption>
   </figure>
   <para id="para-00030">Let’s look again at the points near 50 and near 80, and estimate the middles of those clusters:</para>
-  <figure id="fig-00016">
+  <figure class="unnumbered" id="fig-00016">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_117.jpg"/>
   </media>
@@ -287,7 +287,7 @@
   <para id="para-00035">In a <emphasis effect="bold">negative linear relationship</emphasis>, as the values of the explanatory variable increase, the values of the response tend to decrease, on average.</para>
   </note>
   <para id="para-00036">Let’s look at some scatter plots and classify the depicted relationships.</para>
-  <figure id="fig-00017">
+  <figure class="unnumbered" id="fig-00017">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_118.jpg"/>
   </media>
@@ -295,42 +295,42 @@
       Figure 8.5.a: Caption: Perfect negative relationship<newline/>
       Tech 8.118: Scatter plot using data in Tech8.118:</caption>
   </figure>
-  <figure id="fig-00018">
+  <figure class="unnumbered" id="fig-00018">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_119.jpg"/>
   </media>
   <caption>Figure 8.5.b: Caption: Strong negative relationship<newline/>
       Tech 8.119: Scatter plot using data in Tech8.119</caption>
   </figure>
-  <figure id="fig-00019">
+  <figure class="unnumbered" id="fig-00019">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_120.jpg"/>
   </media>
   <caption>Figure 8.5.c: Caption: Weak negative relationship<newline/>
       Tech 8.120: Scatter plot using data in Tech8.120</caption>
   </figure>
-  <figure id="fig-00020">
+  <figure class="unnumbered" id="fig-00020">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_121.jpg"/>
   </media>
   <caption>Figure 8.5.d: Caption: No relationship<newline/>
       Tech 8.121: Same as Tech8.116</caption>
   </figure>
-  <figure id="fig-00021">
+  <figure class="unnumbered" id="fig-00021">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_122.jpg"/>
   </media>
   <caption>Figure 8.5.e: Caption: Weak positive relationship<newline/>
       Tech 8.122: Scatter plot using data in Tech8.122</caption>
   </figure>
-  <figure id="fig-00022">
+  <figure class="unnumbered" id="fig-00022">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_123.jpg"/>
   </media>
   <caption>Figure 8.5.f: Caption: Strong positive relationship<newline/>
       Tech 8.123: Scatter plot using data in Tech8.123</caption>
   </figure>
-  <figure id="fig-00023">
+  <figure class="unnumbered" id="fig-00023">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_124.jpg"/>
   </media>
@@ -360,7 +360,7 @@
   <para id="para-00042">Consider these four scatter plots:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00007">
   <item>
-  <figure id="fig-00024">
+  <figure class="unnumbered" id="fig-00024">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_125.jpg"/>
   </media>
@@ -370,7 +370,7 @@
   </list>
   <list list-type="enumerated" number-style="lower-alpha" start-value="2" id="list-00008">
   <item>
-  <figure id="fig-00025">
+  <figure class="unnumbered" id="fig-00025">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_126.jpg"/>
   </media>
@@ -380,7 +380,7 @@
   </list>
   <list list-type="enumerated" number-style="lower-alpha" start-value="3" id="list-00009">
   <item>
-  <figure id="fig-00026">
+  <figure class="unnumbered" id="fig-00026">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_127.jpg"/>
   </media>
@@ -390,7 +390,7 @@
   </list>
   <list list-type="enumerated" number-style="lower-alpha" start-value="4" id="list-00010">
   <item>
-  <figure id="fig-00027">
+  <figure class="unnumbered" id="fig-00027">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_128.jpg"/>
   </media>
@@ -657,19 +657,19 @@
   <note class="people-mathematics" id="note-00023">
   <title>Francis Galton, Karl Pearson, and Ronald Fisher</title>
   <para id="para-00086">Francis Galton, Karl Pearson, and Ronald Fisher</para>
-  <figure id="fig-00032">
+  <figure class="unnumbered" id="fig-00032">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/Photo_8.11.jpg"/>
   </media>
   <caption>Photo 8.11: Picture of Francis Galton</caption>
   </figure>
-  <figure id="fig-00033">
+  <figure class="unnumbered" id="fig-00033">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/Photo_8.12.jpg"/>
   </media>
   <caption>Photo 8.12: Picture of Karl Pearson</caption>
   </figure>
-  <figure id="fig-00034">
+  <figure class="unnumbered" id="fig-00034">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/Photo_8.13.jpg"/>
   </media>
