@@ -111,7 +111,7 @@
   <exercise id="exer-00003">
   <problem id="prob-00003">
   <para id="para-00029">A teacher records the responses of the class (28 students) on the first question of a multiple choice quiz, with five possible responses (A, B, C, D, and E):
-  <table summary="." id="table-00001">
+  <table class="unnumbered" summary="." id="table-00001">
   <tgroup cols="7">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
   <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -165,7 +165,7 @@
   <solution id="sol-00003">
   <para id="para-00031">Step 1 – For each possible response, count the number of times that response appears in the data. In the responses for this class, “A” appears 14 times, “B” 4 times, “C” 6 times, “D” 0 times, and “E” 4 times.</para>
   <para id="para-00032">Step 2 – Make a table with two columns. The first column should be labelled so that the reader knows what the responses mean, and the second should be labeled “Frequency.”
-  <table summary="." id="table-00002">
+  <table class="unnumbered" summary="." id="table-00002">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
   <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -333,7 +333,7 @@
   <list list-type="enumerated" id="list-00006">
   <item>Every data value should fall into exactly one bin. For example, if the lowest value in our data is 42, the lowest bin should not be 45-49.</item>
   <item>Every bin should have the same width. Note that if we shift the upper limits of our bins down a bit to avoid ambiguity (like described above), we can’t simply subtract the lower limit from the upper limit to get the bin width; instead, we subtract the lower limit of the bin from the lower limit of the <emphasis effect="italic">next</emphasis> bin. For example, if we’re looking at GPAs rounded to the nearest hundredth, we might choose bins like 2.00-2.24, 2.25-2.49, 2.50-2.74, etc. These bins all have a width of 0.25.</item>
-  <item>If the minimum or maximum value of the data fall right on the boundary between two bins, then it’s OK to bend the rule just a little in order to avoid having an additional bin containing just that one value. We’ll see an example of this in just a moment.</item>
+  <item>If the minimum or maximum value of the data falls right on the boundary between two bins, then it’s OK to bend the rule just a little in order to avoid having an additional bin containing just that one value. We’ll see an example of this in just a moment.</item>
   <item>If we have too many or too few bins, it can be difficult to get a good sense of the distribution. Seven or eight bins is ideal, but that’s not a firm rule; anything between five and twelve is fine. We often choose the number of bins so that the widths are round numbers.</item>
   </list>
   <example id="exam-00004">
