@@ -1,11 +1,11 @@
-<document xmlns="http://cnx.rice.edu/cnxml"/>
+<document xmlns="http://cnx.rice.edu/cnxml">
   <title>Visualizing Data</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:title>Visualizing Data</md:title>
   <md:content-id>m00003</md:content-id>
   <md:uuid>7baffe9f-fb35-422f-bac7-89e4353e21ed</md:uuid>
   </metadata>
-  <content/>
+  <content>
   <section class="learning-objectives" id="sect-00001">
   <title>Learning Objectives</title>
   <para id="para-00001">By the end of this section you will be able to</para>
@@ -744,14 +744,14 @@
   </note>
   <para id="para-00073">As we mentioned above, stem-and-leaf plots aren’t always going to be useful. For example, if all the data in your data set are between 20 and 29, then you’ll just have one stem, which isn’t terribly useful. (Although there are methods for addressing this called, such as <emphasis effect="italic">stem splitting</emphasis>, we won’t go into it at this time.) On the other end of the spectrum, the data may be so spread out that every stem has only one leaf. (This problem can sometimes be addressed by rounding off the data values to the tens, hundreds, or some other place value, then using that place for the leaves.) Finally, if you have dozens or hundreds (or more) of data values, then a stem-and-leaf plot becomes too unwieldy to be useful. Fortunately, we have other tools we can use.</para>
   </section>
-  <section id="sect-00007"/>
+  <section id="sect-00007">
   <title>Histograms</title>
   <para id="para-00074"><term id="term-00006">Histograms</term> are visualizations that can be used for any set of quantitative data, no matter how big or spread out. They differ from a categorical bar chart in that the horizontal axis is labeled with numbers (not ranges of numbers), and the bars are drawn so that they touch each other. The heights of the bars reflect the frequencies in each bin. Unlike with stem-and-leaf plots, we cannot recreate the original data set from a histogram. However, histograms are easy to make with technology and are great for identifying the distribution of our data. Let’s first create one histogram by hand to help us better understand how histograms work.</para>
   <note class="definition" id="note-00016">
   <para id="para-00075">A <emphasis effect="bold">histogram</emphasis> is a type of bar chart for quantitative data built using a binned frequency distribution.</para>
   </note>
-  <example id="exam-00007"/><title>Example 11 –  Constructing a Histogram </title>
-  <exercise id="exer-00013"/>
+  <example id="exam-00007"><title>Example 11 –  Constructing a Histogram </title>
+  <exercise id="exer-00013">
   <problem id="prob-00013"><para id="para-00076">Back in Example 10, we built a stem-and-leaf plot for the number of chirps made by crickets in one minute. Here are the raw data that we used then:</para>
   <table class="unnumbered" frame="none" id="table-00019" summary=".">
   <tgroup cols="6">
@@ -796,7 +796,7 @@
   </table>
   <para id="para-00077">Construct a histogram to visualize these results.</para>
   </problem>
-  <solution id="sol-00013"/>
+  <solution id="sol-00013">
   <para id="para-00078">Step 1 – Histograms are built on binned frequency distributions, so we’ll make that first. Luckily, the stem-and-leaf plot we made earlier can help us do this much more quickly:</para>
   <table class="unnumbered" frame="none" id="table-00020" summary=".">
   <tgroup cols="15">
@@ -917,8 +917,318 @@
   </table>
   <para id="para-00080">(Note that, when we made binned frequency diagrams in the last module, we noted that if the biggest data value was right on the border between two bins, it was OK to lump it in with the lower bin. That’s not recommended when building histograms, so the data value 120 is all alone in the 120-129 bin.)</para>
   <para id="para-00081">Step 2 – Create the axes. On the horizontal axis, start labeling with the lower end of the first bin (in this case, 80), and go up to the higher end of the last bin (120). Mark off the other bin boundaries, making sure they’re all evenly spaced. On the vertical axis, start with zero and go up at least to the greatest frequency you see in your bins (14 in this example), making sure that the labels you make are evenly spaced and that the difference between those numbers is the same. Let’s count off our vertical axis by threes:</para>
-  <figure class="unnumbered" id="fig-00016"/>
+  <figure class="unnumbered" id="fig-00016">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_02_015.jpg"/>
   </media>
-  <caption/><emphasis effect="italic"/></section>Tech 8.15: A set of axes intersecting in the lower left corner of the diagram. Evenly-spaced la
+  <caption><emphasis effect="italic">Tech 8.15: A set of axes intersecting in the lower left corner of the diagram. Evenly-spaced labels 80, 90, 100, 110, 120, 130 with tick marks on the horizontal axis, evenly-spaced labels 3, 6, 9, 12, 15 with ticks on the vertical axis, like this:</emphasis></caption>
+  </figure>
+  <para id="para-00082">Step 3 – Draw in the bars. Remember that the bars of a histogram touch, and that the heights are determined by the frequency. So, the first bar will cover 80 to 90 on the horizontal axis, and have a height of 7:</para>
+  <figure class="unnumbered" id="fig-00017">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_016.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.16: The same as 8.15, but with a bar in a contrasting color covering the segment on the horizontal axis from 80 to 90, and which goes up to a height of 7 as measured on the vertical axis. The bar should be outlined in a darker but complimentary color to the shade used to fill the inside:</emphasis></caption>
+  </figure>
+  <para id="para-00083">Now, we can fill in the others:</para>
+  <figure class="unnumbered" id="fig-00018">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_017.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.17: The same as 8.16, but with bars in the same contrasting color covering the areas as described in the table above:</emphasis></caption>
+  </figure>
+  <para id="para-00084">Now let's compare the histogram we just created to the stem-and-leaf plot we made earlier:</para>
+  <figure class="unnumbered" id="fig-00019">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_018.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.18: The same as 8.17, but with the stem-and-leaf plot above rotated and adjacent (which I can’t seem to replicate in Word):</emphasis></caption>
+  </figure>
+  <para id="para-00085">Notice that the leaves on the rotated stem-and-leaf plot match the bars on our histogram! We can view stem-and-leaf plots as sideways histograms. But, as we’ll see soon, we can do much more with histograms.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00017">
+  <exercise id="exer-00014">
+  <problem id="prob-00014"><para id="para-00086"><link class="os-embed" url="#exercise/CM-C08-M2-Q007"/></para>
+  </problem>
+  </exercise>
+  </note>
+  <para id="para-00088">Now that we’ve seen the connection between stem-and-leaf plots and histograms, we are ready to look at how we can use Google Sheets to build histograms.</para>
+  <note class="video" id="note-00026"><para id="para-00124"><emphasis effect="bold">VIDEO: Creating Histograms Using Google Sheets &lt;<link url="https://openstax.org/r/CreatingHistograms">https://openstax.org/r/CreatingHistograms></link></emphasis></para></note>
+  <para id="para-00089">Let’s use Google Sheets to create a histogram for a large data set.</para>
+  <example id="exam-00008"><title>EXAMPLE 12 – Creating a Histogram in Google Sheets</title>
+  <exercise id="exer-00015">
+  <problem id="prob-00015"><para id="para-00090">The data in “AvgSAT” contains the average SAT score for students attending every institution of higher learning in the US for which data is available (data from data.ed.gov). Create a histogram in Google Sheets of the average SAT scores. Use bins of width 50. Are the data uniformly distributed, symmetric, left-skewed, or right-skewed?</para>
+  </problem>
+  <solution id="sol-00015">
+  <para id="para-00091">Using the procedure described in the video above, we get this:</para>
+  <figure class="unnumbered" id="fig-00021">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_020.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.20: Bar chart like the one that follows; data in sheet Tech8.20</emphasis></caption>
+  </figure>
+  <para id="para-00092">The data are fairly symmetric, but slightly right-skewed.</para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00018">
+  <exercise id="exer-00016">
+  <problem id="prob-00016"><para id="para-00093"><link class="os-embed" url="#exercise/CM-C08-M2-Q008"/></para>
+  </problem>
+  </exercise>
+  </note> 
+  </section>
+  <section id="sect-00008">
+  <title>Bar Charts for Labeled Data</title>
+  <para id="para-00096">Sometimes we have quantitative data where each value is labeled according to the source of the data. For example, in Your Turn 12, you looked at in-state tuition data. Every value you used to create that histogram was associated with a school; the schools are the labels. In Your Turn 11, you found a histogram of the wins of every Major League Baseball team in 2019. Each of those win totals had a label: the team. If we’re interested in visualizing differences among the different teams, or schools, or whatever the labels are, we create a different version of the bar graph known as a <emphasis effect="bold">bar chart for labeled data</emphasis>.</para>
+  <note class="definition" id="note-00019">
+  <para id="para-00097">In a <emphasis effect="bold">bar chart for labeled data</emphasis> each data value gets its own bar; that value determines the height of the bar. On the horizontal axis, the bars are labeled with the data labels.</para>
+  </note>
+  <para id="para-00098">These graphs are made in Google Sheets in exactly the same way as regular bar graphs. The only change is that the vertical axis will be labeled with the units for your quantitative data instead of just “Frequency.”</para>
+  <example id="exam-00009"><title>EXAMPLE 13 – Building a Bar Chart for Labeled Data</title>
+  <exercise id="exer-00017">
+  <problem id="prob-00017"><para id="para-00099">The following table shows the gross domestic product (GDP) for the United States for the years 2010 to 2019 (data from data.worldbank.org):</para>
+  <table class="unnumbered" frame="none" id="table-00023" summary=".">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row><entry>Year</entry>
+  <entry>GDP (in $ trillions)</entry></row>
+  </thead>
+  <tbody>
+  <row><entry>2010</entry>
+  <entry>14.992</entry></row>
+  <row><entry>2011</entry>
+  <entry>15.543</entry></row>
+  <row><entry>2012</entry>
+  <entry>16.197</entry></row>
+  <row><entry>2013</entry>
+  <entry>16.785</entry></row>
+  <row><entry>2014</entry>
+  <entry>17.527</entry></row>
+  <row><entry>2015</entry>
+  <entry>18.225</entry></row>
+  <row><entry>2016</entry>
+  <entry>18.715</entry></row>
+  <row><entry>2017</entry>
+  <entry>19.519</entry></row>
+  <row><entry>2018</entry>
+  <entry>20.580</entry></row>
+  <row><entry>2019</entry>
+  <entry>21.433</entry></row></tbody>
+  </tgroup>
+  </table>
+  <para id="para-00100">Construct a visualization of these data to explore the change in GDP over time.</para>
+  </problem>
+  <solution id="sol-00017">
+  <para id="para-00101">In this case, the years are the labels, and the data we are interested in are the GDP numbers. Once you have the table above (including the labels) entered into a spreadsheet, click and drag to select the full table. Then, in the “Insert” menu, click “Chart.” The result may not be a bar chart; if it’s not, select “Column chart” in the drop-down menu “Chart type” in the Chart Editor. If you want, you can edit things like the chart title in the “Customize” tab in the Chart Editor. Here’s the result:</para>
+  <figure class="unnumbered" id="fig-00023">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_022.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.22: Bar chart like this one. Data are in Tech8.22.</emphasis></caption>
+  </figure>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00020">
+  <exercise id="exer-00018">
+  <problem id="prob-00018"><para id="para-00102"><link class="os-embed" url="#exercise/CM-C08-M2-Q009"/></para>
+  </problem>
+  </exercise>
+  </note>
+  </section>
+  </section>
+  <section id="sect-00009">
+  <title>Misleading Graphs</title>
+  <para id="para-00104">Graphical representations of data can be manipulated in ways that intentionally mislead the reader. There are two primary ways this can be done: by manipulating the scales on the axes and by manipulating or misrepresenting areas of bars. Let’s look at some examples of these.</para>
+  <example id="exam-00010"><title>EXAMPLE 14 – Misleading Graphs</title>
+  <para id="para-00105">The English Premier League is the top soccer organization in the United Kingdom. As of January 2020, here are the teams and their payrolls (data from spotrac.com):</para>
+  <table class="unnumbered" frame="none" id="table-00025" summary=".">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row><entry>Team</entry>
+  <entry>Salary (£1,000,000s)</entry></row>
+  </thead>
+  <tbody>
+  <row><entry>Manchester United F.C.</entry>
+  <entry>175.7</entry></row>
+  <row><entry>Manchester City F.C.</entry>
+  <entry>136.5</entry></row>
+  <row><entry>Chelsea F.C.</entry>
+  <entry>132.8</entry></row>
+  <row><entry>Arsenal F.C.</entry>
+  <entry>130.7</entry></row>
+  <row><entry>Tottenham Hotspur F.C.</entry>
+  <entry>129.2</entry></row>
+  <row><entry>Liverpool F.C.</entry>
+  <entry>118.6</entry></row>
+  <row><entry>Crystal Palace</entry>
+  <entry>85.0</entry></row>
+  <row><entry>Everton F.C.</entry>
+  <entry>82.5</entry></row>
+  <row><entry>Leicester City</entry>
+  <entry>73.7</entry></row>
+  <row><entry>West Ham United F.C.</entry>
+  <entry>69.2</entry></row>
+  <row><entry>Newcastle United F.C.</entry>
+  <entry>56.9</entry></row>
+  <row><entry>Aston Villa F.C.</entry>
+  <entry>52.3</entry></row>
+  <row><entry>Fulham F.C.</entry>
+  <entry>52.1</entry></row>
+  <row><entry>Southampton F.C.</entry>
+  <entry>49.6</entry></row>
+  <row><entry>Wolverhampton Wanderers F.C.</entry>
+  <entry>49.5</entry></row>
+  <row><entry>Brighton &amp; Hove Albion</entry>
+  <entry>43.7</entry></row>
+  <row><entry>Burnley F.C.</entry>
+  <entry>35.5</entry></row>
+  <row><entry>West Bromwich Albion F.C.</entry>
+  <entry>23.8</entry></row>
+  <row><entry>Leeds United F.C.</entry>
+  <entry>22.5</entry></row>
+  <row><entry>Sheffield United F.C.</entry>
+  <entry>19.7</entry></row></tbody>
+  </tgroup>
+  </table>
+  <para id="para-00106">Let’s focus on the top five teams. Here’s a bar chart of their payrolls:</para>
+  <figure class="unnumbered" id="fig-00025">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_024.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.24: Bar chart like this one, data in sheet Tech8.24. Note the scale on the vertical axis.</emphasis></caption>
+  </figure>
+  <para id="para-00107">Now, here’s another bar chart visualizing exactly the same data:</para>
+  <figure class="unnumbered" id="fig-00026">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_025.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.25: Bar chart like this using the data in sheet Tech8.24. Note the vertical scale.</emphasis></caption>
+  </figure>
+  <para id="para-00108">You'll notice that these two graphs look strikingly different. In the second graph, the gap between Manchester United and the other four teams looks significantly larger than in the first graph, but the data are the same. The scale on the vertical axis has been manipulated here. The first graph's axis starts at zero, while the lowest value on the second graph's axis is 120. This trick has a strong impact on the viewer’s perception of the data.</para>
+  </example>
+  <note class="check-point" id="note-00021">
+  <para id="para-00109"><emphasis effect="italic">Beware of vertical axes that don’t start at zero! They overemphasize differences in heights.</emphasis></para>
+  </note>
+  <para id="para-00110">To further emphasize the difference this creates in our perception let's look at that data again, but this time using graphics instead of colored areas on our bar graph.</para>
+  <figure class="unnumbered" id="fig-00027">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_026.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.26: Infographic-style chart like this one, using the data from sheet Tech8.24. Image of the banknote is “10 front.jpg” but any British banknote can be used. When scaling, make sure to maintain the correct aspect ratio of the banknotes. A thin black border around the notes might make them easier to see; this is fine. Labels on the horizontal axis may need to be shifted around to keep them centered under the relevant bars.</emphasis></caption>
+  </figure>
+  <para id="para-00111">This graph uses an image of a £10 banknote in place of the bars. Using an image that evokes the context of the data in place of a standard, boring bar is a common tool that people use when creating <emphasis effect="italic">infographics</emphasis>. However, this is generally not a good practice because it distorts the data. Notice that our “bars” (the banknotes) are just as tall here as they were in the previous figure. But, to maintain the right proportions, the <emphasis effect="italic">widths</emphasis> had to be adjusted as well. Let’s look at the heights first. The largest bar (for Manchester United) represents a payroll of £175.7 million. But the bottom is at £120 million, for a net (apparent) height of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>175.7</mn><mo>-</mo><mn>120</mn><mo>=</mo><mn>55.7</mn></mrow></math>. Now look at the smallest bar (for Tottenham Hotspur). Its height is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>129.2</mn><mo>-</mo><mn>120</mn><mo>=</mo><mn>9.2</mn></mrow></math>. So, the smaller bar is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>9.2</mn></mrow><mrow><mn>55.7</mn></mrow></mfrac></mstyle><mo>≈</mo><mn>16.5</mn><mi>%</mi></mrow></math> of the height of the bigger one. That is the same percentage that we would get if we did the same computation on the bars in the original bar chart. However, when looking at rectangles, the human eye tends to process <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">areas</emphasis> more easily than <emphasis effect="italic">heights</emphasis>. In the original bar chart, the area of the smaller bar is about 16.5% of the bigger one. That’s the same ratio as the heights because the bases of those rectangles are all the same. But in the infographic, the bases of the banknote "bars" are all different. In order to maintain the right dimensions, the base of the smaller bar is <emphasis effect="italic">also</emphasis> 16.5% of the base of the larger one. The result is a bar whose area is only <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mo stretchy="false">(</mo><mn>16.5</mn><mi>%</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>≈</mo><mn>2.7</mn><mi>%</mi></mrow></math> of the area of the larger one. That’s an incredibly significant difference.</para>
+  <note class="check-point" id="note-00022" xmlns="http://cnx.rice.edu/cnxml">
+  <para id="para-00112"><emphasis effect="italic">Beware of infographics! Areas overemphasize a difference that should be measured with a height!</emphasis></para>
+  </note>
+  <para id="para-00113">Now, let’s look at all 20 teams again. Here’s a histogram of the payrolls of the teams:</para>
+  <figure class="unnumbered" id="fig-00028">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_027.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.27: Histogram like this one. Heights are 4, 8, 3, 4, 1.</emphasis></caption>
+  </figure>
+  <para id="para-00114">The histogram indicates that the data are right-skewed, with the highest number of teams having a payroll between £40 million and £80 million. Now let's view this same data in another chart:</para>
+  <figure class="unnumbered" id="fig-00029">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/CS_Figure_08_02_028.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Tech 8.28: a graph like this one. The bars should be closer together like in Tech 8.27, but the labels on the horizontal axis should be centered below each bar.</emphasis></caption>
+  </figure>
+  <para id="para-00115">Even though this chart uses the same data, the skew seems to be reversed. Why? Well, even though this graph <emphasis effect="italic">looks</emphasis> like a histogram, it isn’t. Look closely at the labels on the horizontal axis; they don't correspond to spots on the axis, but instead provide a range, meaning this is a bar graph based on a binned frequency distribution. When we review these ranges, we can see that the last range is misleading as it consists of all data “over 80.” If the bins all had the same width, that last bin would run from 80 to 120. However, we can see from the histogram that the maximum value for this data is between 160 and 200. If the last bin in this bar graph were labeled honestly, it would read “80-200,” which would drive home the fact that the width of that bar is misleading.</para>
+  <note class="check-point" id="note-00023">
+  <para id="para-00116">?? <emphasis effect="italic">Always check the horizontal axis on histograms! The widths of all the bars should be equal.</emphasis></para>
+  </note>
+  <note class="your-turn" id="note-00024">
+  <exercise id="exer-00020">
+  <problem id="prob-00020"><para id="para-00117"><link class="os-embed" url="#exercise/CM-C08-M2-Q010"/></para>
+  </problem>
+  </exercise>
+  </note>
+  <para id="para-00121">Here is a video that further explains some of these concepts.</para>
+  <note class="video" id="note-00027"><para id="para-00125"><emphasis effect="bold">VIDEO: Misleading Graphs &lt;<link url="https://openstax.org/r/MisleadingGraphs">https://www.youtube.com/watch?v=E91bGT9BjYk</link>></emphasis></para></note>
+  <note class="who-knew" id="note-00025"><title>NAPOLEON'S FAILED INVASION</title>
+  <figure class="unnumbered" id="fig-00034">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/Photo_8.14.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Photo 8.14: https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Minard.png (public domain)</emphasis></caption>
+  </figure>
+  <para id="para-00122">One of the most famous data visualizations ever created was this one, which Charles Joseph Minard used to depict Napoleon’s disastrous attempted invasion of Russia. Here’s the same visualization, but translated into English:</para>
+  <figure class="unnumbered" id="fig-00035">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/png" src="../../media/Photo_8.15.jpg"/>
+  </media>
+  <caption><emphasis effect="italic">Photo 8.15: https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Redrawing_of_Minard's_Napoleon_map.svg (CC BY-SA 4.0)</emphasis></caption>
+  </figure>
+  <para id="para-00123">Minard’s chart is remarkable in that it shows not just how the size of Napoleon’s army shrank drastically over time, but also the location on the map, the direction the army was traveling at the time, and the temperature during the retreat.</para>
+  </note>
+  </section>
+  <section id="sect-00010"><title>Check Your Understanding</title>
+  <exercise id="exer-00019">
+  <problem id="prob-00019">
+  <para id="para-00127"><link class="os-embed" url="#exercise/CM-C08-M2-Q011"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00021">
+<problem id="prob-00021">
+<para id="para-00072"><link class="os-embed" url="#exercise/CM-C08-M2-Q012"/></para>
+</problem>
+</exercise>
+<exercise id="exer-00022">
+<problem id="prob-00022">
+<para id="para-00087"><link class="os-embed" url="#exercise/CM-C08-M2-Q013"/></para>
+</problem>
+</exercise>
+</section>
+  <section class="section-exercises" id="sect-00011">
+  <exercise id="exer-00023">
+  <problem id="prob-00023">
+  <para id="para-00013"><link class="os-embed" url="#exercise/CM-C08-M2-Q014"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00024">
+  <problem id="prob-00024">
+  <para id="para-00014"><link class="os-embed" url="#exercise/CM-C08-M2-Q015"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00025">
+  <problem id="prob-00025">
+  <para id="para-00015"><link class="os-embed" url="#exercise/CM-C08-M2-Q016"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00026">
+  <problem id="prob-00026">
+  <para id="para-00037"><link class="os-embed" url="#exercise/CM-C08-M2-Q017"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00027">
+  <problem id="prob-00027">
+  <para id="para-00038"><link class="os-embed" url="#exercise/CM-C08-M2-Q018"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00028">
+  <problem id="prob-00028">
+  <para id="para-00039"><link class="os-embed" url="#exercise/CM-C08-M2-Q019"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00029">
+  <problem id="prob-00029">
+  <para id="para-00040"><link class="os-embed" url="#exercise/CM-C08-M2-Q020"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00030">
+  <problem id="prob-00030">
+  <para id="para-00050"><link class="os-embed" url="#exercise/CM-C08-M2-Q021"/></para>
+  </problem>
+  </exercise>
+  </section>
+  </content>
+  </document>
