@@ -1051,9 +1051,11 @@
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
   <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <tbody>
+  <thead>
   <row><entry>Team</entry>
   <entry>Salary (£1,000,000s)</entry></row>
+  </thead>
+  <tbody>
   <row><entry>Manchester United F.C.</entry>
   <entry>175.7</entry></row>
   <row><entry>Manchester City F.C.</entry>
@@ -1113,7 +1115,7 @@
   <para id="para-00108">You'll notice that these two graphs look strikingly different. In the second graph, the gap between Manchester United and the other four teams looks significantly larger than in the first graph, but the data are the same. The scale on the vertical axis has been manipulated here. The first graph's axis starts at zero, while the lowest value on the second graph's axis is 120. This trick has a strong impact on the viewer’s perception of the data.</para>
   </example>
   <note class="check-point" id="note-00021">
-  <para id="para-00109">?? <emphasis effect="italic">Beware of vertical axes that don’t start at zero! They overemphasize differences in heights.</emphasis></para>
+  <para id="para-00109"><emphasis effect="italic">Beware of vertical axes that don’t start at zero! They overemphasize differences in heights.</emphasis></para>
   </note>
   <para id="para-00110">To further emphasize the difference this creates in our perception let's look at that data again, but this time using graphics instead of colored areas on our bar graph.</para>
   <figure class="unnumbered" id="fig-00027">
