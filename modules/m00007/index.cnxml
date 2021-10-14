@@ -10,7 +10,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_063.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.63: Histogram of data in Tech8.63 (bin width 1) with overlay of normal probability density function with mean 50 and standard deviation 5, scaled by factor of 10,000, as below. A vertical translation of the normal plot may be necessary to get it to line up better with the histogram; for mine, Isubtracted 0.5 from the x values to create the plot. As a reminder, in case you need the formula, the formula for the normal probability density function (pdf) with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>p</mi></mrow></msqrt></mrow></mfrac><mi>exp</mi><mrow><mo>(</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mi>µ</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></math>; thus the curve I plotted below is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10000</mn><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>0.5</mn><mo stretchy="false">)</mo></mrow></math>, with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow/></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>5</mn></mrow></math>.</emphasis>
+  <caption><emphasis effect="italics">Tech 8.63: Histogram of data in Tech8.63 (bin width 1) with overlay of normal probability density function with mean 50 and standard deviation 5, scaled by factor of 10,000, as below. A vertical translation of the normal plot may be necessary to get it to line up better with the histogram; for mine, Isubtracted 0.5 from the x values to create the plot. As a reminder, in case you need the formula, the formula for the normal probability density function (pdf) with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>p</mi></mrow></msqrt></mrow></mfrac><mi>exp</mi><mrow><mo>(</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mi>µ</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>)</mo></mrow></mrow></math>; thus the curve I plotted below is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>g</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>10000</mn><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>0.5</mn><mo stretchy="false">)</mo></mrow></math>, with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow/></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>5</mn></mrow></math>.</emphasis>
   </caption>
   </figure>
   <section class="learning-objectives" id="sect-00001" xmlns="http://cnx.rice.edu/cnxml">
@@ -19,12 +19,12 @@
   <list list-type="enumerated" number-style="arabic" id="list-00001">
   <item>Describe the characteristics of the normal distribution</item>
   <item>Apply the 68-95-99.7 percent groups to normal distribution data sets</item>
-  <item>Use the normal distribution to calculate a <emphasis effect="italic">z</emphasis>-score</item>
+  <item>Use the normal distribution to calculate a <emphasis effect="italics">z</emphasis>-score</item>
   <item>Find and interpret percentiles and quartiles</item>
   </list></para>
   <para id="para-00002">Many data sets that result from natural phenomena tend to have histograms that are symmetric and bell-shaped. Imagine finding yourself with a whole lot of time on your hands, and nothing to keep you entertained but a coin, a pencil, and paper. You decide to flip that coin 100 times and record the number of heads. With nothing else to do, you repeat the experiment ten times total. Using a computer to simulate this series of experiments, here’s a sample for the number of heads in each trial:</para>
   <para id="para-00032">54, 51, 40, 42, 53, 50, 52, 52, 47, 54</para>
-  <para id="para-00003">It makes sense that we’d get somewhere around 50 heads when we flip the coin 100 times, and it makes sense that the result won’t <emphasis effect="italic">always</emphasis> be exactly 50 heads. In our results, we can see numbers that were generally near 50 and not always 50, like we thought.</para>
+  <para id="para-00003">It makes sense that we’d get somewhere around 50 heads when we flip the coin 100 times, and it makes sense that the result won’t <emphasis effect="italics">always</emphasis> be exactly 50 heads. In our results, we can see numbers that were generally near 50 and not always 50, like we thought.</para>
   </section>
   <section id="sect-00002">
   <title>Moving Toward Normality</title>
@@ -33,7 +33,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_064.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.64: Histogram of the data in Tech8.64, with bins of width 1, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.64: Histogram of the data in Tech8.64, with bins of width 1, like this:</emphasis>
   </caption>
   </figure>
   <para id="para-00005">This is interesting, but the data seem pretty sparce. There were no trials where you saw between 43 and 47 heads, for example. Those results don’t seem impossible; we just didn’t flip enough times to give them a chance to pop up. So, let’s do this again, but this time well repeat our 100-flip experiment 100 times. I won’t bother showing you all 100 results, but here’s the histogram:
@@ -41,7 +41,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_065.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.65: Histogram using data in Tech8.65, bins of width 1, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.65: Histogram using data in Tech8.65, bins of width 1, like this:</emphasis>
   </caption>
   </figure>
   </para>
@@ -50,7 +50,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_066.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.66: Histogram using data in Tech8.66, bins of width 1, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.66: Histogram using data in Tech8.66, bins of width 1, like this:</emphasis>
   </caption>
   </figure>
   </para>
@@ -59,13 +59,13 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_067.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.67: Histogram using data in Tech8.63, bins with width 1, like this. Note that this is the same as Tech 8.63, without the curve overlaid:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.67: Histogram using data in Tech8.63, bins with width 1, like this. Note that this is the same as Tech 8.63, without the curve overlaid:</emphasis>
   </caption>
   </figure>
   <para id="para-00008">The distribution is pretty clear now. Distributions that are symmetric and bell-shaped like this pop up in all sorts of natural phenomena, such as the heights of people in a population, the circumferences of eggs of a particular bird species, and the numbers of leaves on mature trees of a particular species. All of these have bell-shaped distributions. Additionally, the results of many types of repeated experiments generally follow this same pattern, as we saw with the coin-flipping example; this fact is the basis for much of the work done by statisticians. It’s a fact that’s important enough to have its own name: the Central Limit Theorem.</para>
   <note class="people-mathematics" id="note-00001">
   <title>John Kerrich</title>
-  <para id="para-00009">Having enough time on your hands to actually perform this coin-flipping experiment may sound far-fetched, but the English mathematician John Kerrich found himself in just such a situation. While he was studying abroad in Denmark in 1940, that country was invaded by the Germans. Kerrich was captured and placed in an internment camp, where he remained for the duration of the war. Kerrich knew that he had all kinds of time on his hands. He also studied statistics, so he knew what should happen <emphasis effect="italic">theoretically</emphasis> if he flipped a coin many, many times. He also knew of nobody who had ever <emphasis effect="italic">tested</emphasis> that theory with an actual, large-scale experiment. So, he did it: while he was incarcerated, Kerrich flipped a regular coin 10,000 times and recorded the results. Sure enough, the theory held up!</para>
+  <para id="para-00009">Having enough time on your hands to actually perform this coin-flipping experiment may sound far-fetched, but the English mathematician John Kerrich found himself in just such a situation. While he was studying abroad in Denmark in 1940, that country was invaded by the Germans. Kerrich was captured and placed in an internment camp, where he remained for the duration of the war. Kerrich knew that he had all kinds of time on his hands. He also studied statistics, so he knew what should happen <emphasis effect="italics">theoretically</emphasis> if he flipped a coin many, many times. He also knew of nobody who had ever <emphasis effect="italics">tested</emphasis> that theory with an actual, large-scale experiment. So, he did it: while he was incarcerated, Kerrich flipped a regular coin 10,000 times and recorded the results. Sure enough, the theory held up!</para>
   </note>
   </section>
   <section id="sect-00003">
@@ -75,14 +75,14 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_068.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.68: Tech 8.63 again</emphasis>
+  <caption><emphasis effect="italics">Tech 8.68: Tech 8.63 again</emphasis>
   </caption>
   </figure>
   </para>
   <para id="para-00011">Because distributions with this shape appear so often, we have a special name for them: <emphasis effect="bold">normal distributions</emphasis>.</para>
   <note class="definition" id="note-00002">
   <para id="para-00012">A set of data is <emphasis effect="bold">normally distributed</emphasis> (or follows a <emphasis effect="bold">normal distribution</emphasis>) if it has a symmetric, bell-shaped histogram.</para></note>
-  <para id="para-00013">Normal distributions can be completely described using two numbers we’ve seen before: the <emphasis effect="italic">mean</emphasis> of the data and the <emphasis effect="italic">standard deviation</emphasis> of the data. You may remember that we described the mean as a measure of centrality; for a normal distribution, the mean tells us exactly where the center of the distribution falls. The peak of the distribution happens at the mean (and, because the distribution is symmetric, it’s also the median). The standard deviation is a measure of dispersion; for a normal distribution, it tells us how spread out the histogram looks. To illustrate these points, let’s look at some examples.</para>
+  <para id="para-00013">Normal distributions can be completely described using two numbers we’ve seen before: the <emphasis effect="italics">mean</emphasis> of the data and the <emphasis effect="italics">standard deviation</emphasis> of the data. You may remember that we described the mean as a measure of centrality; for a normal distribution, the mean tells us exactly where the center of the distribution falls. The peak of the distribution happens at the mean (and, because the distribution is symmetric, it’s also the median). The standard deviation is a measure of dispersion; for a normal distribution, it tells us how spread out the histogram looks. To illustrate these points, let’s look at some examples.</para>
   <example id="exam-00001">
   <title>EXAMPLE 31 – Identifying the Mean of a Normal Distribution</title>
   <exercise id="exer-00001">
@@ -92,7 +92,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_069.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.69: a graph showing three normal pdfs in three colors. Red is normal with mean 1, blue is normal with mean 2, yellow is normal with mean 3. All have standard deviation 0.5. There is no y-axis. The result should look like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.69: a graph showing three normal pdfs in three colors. Red is normal with mean 1, blue is normal with mean 2, yellow is normal with mean 3. All have standard deviation 0.5. There is no y-axis. The result should look like this:</emphasis>
   </caption>
   </figure>
   </problem>
@@ -102,7 +102,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_070.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.70: The same as 8.69, but with a red dotted line segment going from the peak of the red curve down to the axis (at x = 1), a blue dotted line segment going from the peak of the blue curve down to the axis (at x = 2), and a yellow dotted line segment going from the peak of the yellow curve down to the axis (at x = 3).</emphasis>
+  <caption><emphasis effect="italics">Tech 8.70: The same as 8.69, but with a red dotted line segment going from the peak of the red curve down to the axis (at x = 1), a blue dotted line segment going from the peak of the blue curve down to the axis (at x = 2), and a yellow dotted line segment going from the peak of the yellow curve down to the axis (at x = 3).</emphasis>
   </caption>
   </figure>
   <para id="para-00016">The peak of the red (leftmost) distribution occurs over the number 1 on the horizontal axis. Thus, the mean of the red distribution is 1. Similarly, the mean of the blue (middle) distribution is 2, and the mean of the yellow (rightmost) distribution is 3.</para>
@@ -125,7 +125,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_072.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.72: a graph showing three normal pdfs in three colors. Red is normal with mean 2 and standard deviation 1, blue is normal with mean 2 and standard deviation 2, yellow is normal with mean 2 and standard deviation 3. There is no y-axis. The result should look like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.72: a graph showing three normal pdfs in three colors. Red is normal with mean 2 and standard deviation 1, blue is normal with mean 2 and standard deviation 2, yellow is normal with mean 2 and standard deviation 3. There is no y-axis. The result should look like this:</emphasis>
   </caption>
   </figure>
   </problem>
@@ -135,7 +135,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_073.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.73: A graph showing the pdf of a normal distribution with mean 2 and standard deviation 3 on the domain -6 to 10. Graph should be yellow. No y-axis. Like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.73: A graph showing the pdf of a normal distribution with mean 2 and standard deviation 3 on the domain -6 to 10. Graph should be yellow. No y-axis. Like this:</emphasis>
   </caption>
   </figure>
   </para> 
@@ -144,16 +144,16 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_074.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.74: A graph showing the pdf of a normal distribution with mean 2 and standard deviation 3 on the domain -6 to 10. Graph should be green. No y-axis. Between -1 and 5, the graph should be overlaid with a thicker graph in red with opacity chosen so that the original graph can be seen through the thick graph; the effect should be like going over the graph with a red highlighter. Between -6 and -1 and between 5 and 10, the same should be done except in yellow, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.74: A graph showing the pdf of a normal distribution with mean 2 and standard deviation 3 on the domain -6 to 10. Graph should be green. No y-axis. Between -1 and 5, the graph should be overlaid with a thicker graph in red with opacity chosen so that the original graph can be seen through the thick graph; the effect should be like going over the graph with a red highlighter. Between -6 and -1 and between 5 and 10, the same should be done except in yellow, like this:</emphasis>
   </caption>
   </figure>
   </para>
-  <para id="para-00022">The places where the graph changes from curving up to curving down (or vice versa) are called <emphasis effect="italic">inflection points</emphasis>. Let’s identify where those occur by dropping a line straight down from each:
+  <para id="para-00022">The places where the graph changes from curving up to curving down (or vice versa) are called <emphasis effect="italics">inflection points</emphasis>. Let’s identify where those occur by dropping a line straight down from each:
   <figure id="fig-00013">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_075.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.75: The same as Tech 8.74, but with green dashed lines going from the axis to the graph at x=-1 and x=5, and a red dashed line going from the axis to the graph at x=2, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.75: The same as Tech 8.74, but with green dashed lines going from the axis to the graph at x=-1 and x=5, and a red dashed line going from the axis to the graph at x=2, like this:</emphasis>
   </caption>
   </figure>
   </para>
@@ -162,7 +162,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_076.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.76: a graph showing the normal pdf with mean 2 and standard deviation 1 in red, the normal pdf with mean 2 and standard deviation 2 in blue, red points on the red graph above x=1 and x=3, with a red dotted line from each straight down to the axis, and blue points on the blue graph above x=0 and x=4 with a blue dotted line from each straight down to the axis, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.76: a graph showing the normal pdf with mean 2 and standard deviation 1 in red, the normal pdf with mean 2 and standard deviation 2 in blue, red points on the red graph above x=1 and x=3, with a red dotted line from each straight down to the axis, and blue points on the blue graph above x=0 and x=4 with a blue dotted line from each straight down to the axis, like this:</emphasis>
   </caption>
   </figure>
   </para>
@@ -187,7 +187,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_078.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.78: Graph of the pdf of a normal distribution with mean 55 and standard deviation 3, on 45&lt;x&lt;70. No y-axis. Like this:</emphasis> 
+  <caption><emphasis effect="italics">Tech 8.78: Graph of the pdf of a normal distribution with mean 55 and standard deviation 3, on 45&lt;x&lt;70. No y-axis. Like this:</emphasis> 
   </caption>
   </figure>
   </problem>
@@ -197,7 +197,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_079.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.79: Same graph as in Tech 8.78, but add: blue dots on the graph above x=52 and x=58, dotted blue lines from those dots straight down to the axis, a red dot on the graph above x=55, and a dotted red line from that point straight down to the axis, like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.79: Same graph as in Tech 8.78, but add: blue dots on the graph above x=52 and x=58, dotted blue lines from those dots straight down to the axis, a red dot on the graph above x=55, and a dotted red line from that point straight down to the axis, like this:</emphasis>
   </caption>
   </figure> 
   <para id="para-00030">From the red (middle) line, we can see that the mean of this distribution is 55. The blue (outermost) lines are each 3 units away from the mean (at 52 and 58), so the standard deviation is 3.</para>
@@ -214,22 +214,22 @@
   </section>
   <section id="sect-00004">
   <title>Properties of Normal Distributions: The 68-95-99.7 Rule</title>
-  <para id="para-00033">The most important property of normal distributions is tied to its standard deviation. If a data set is perfectly normally distributed, then 68% of the data values will fall within one standard deviation of the mean. For example, suppose we have a set of data that follows the normal distribution with mean 400 and standard deviation 100. Then 68% of the data would fall between the values of 300 (one standard deviation <emphasis effect="italic">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>300</mn></mrow></math>) and 500 (one standard deviation <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>+</mo><mn>100</mn><mo>=</mo><mn>500</mn></mrow></math>). Here’s what that looks like on the histogram; the shaded area represents 68% of the total area under the graph and above the axis:</para>
+  <para id="para-00033">The most important property of normal distributions is tied to its standard deviation. If a data set is perfectly normally distributed, then 68% of the data values will fall within one standard deviation of the mean. For example, suppose we have a set of data that follows the normal distribution with mean 400 and standard deviation 100. Then 68% of the data would fall between the values of 300 (one standard deviation <emphasis effect="italics">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>300</mn></mrow></math>) and 500 (one standard deviation <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>+</mo><mn>100</mn><mo>=</mo><mn>500</mn></mrow></math>). Here’s what that looks like on the histogram; the shaded area represents 68% of the total area under the graph and above the axis:</para>
   <figure id="fig-00019" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_081.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.81: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=300 and x=500 is shaded in a lighter version of the color of the graph. The label “68%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “16%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.81: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=300 and x=500 is shaded in a lighter version of the color of the graph. The label “68%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “16%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
   </caption>
   </figure>
   <para id="para-00034">Since 68% of the area is in the shaded region, this means that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mi>%</mi><mo>-</mo><mn>68</mn><mi>%</mi><mo>=</mo><mn>32</mn><mi>%</mi></mrow></math> of the area is found in the unshaded regions. We know that the distribution is symmetric, so that 32% must be divided evenly into the two unshaded tails: 16% in each.</para>
-  <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Of course, data sets in the real world are never perfect; when dealing with actual data that seem to follow a symmetric, bell-shaped distribution, we’ll equivocate a little and say that <emphasis effect="italic">approximately</emphasis> 68% of the data fall within one standard deviation of the mean.</para>
-  <para id="para-00036">The rule for one standard deviation can be extended to two standard deviations. Approximately 95% of a normally distributed data set will fall within 2 standard deviations of the mean. If the mean is 400 and the standard deviation is 100, that means 95% of the data would fall between 200 (two standard deviations <emphasis effect="italic">below</emphasis> the mean: 400 – 2 x 100 = 200) and 600 (two standard deviations <emphasis effect="italic">above</emphasis> the mean: 400 + 2 x 100 = 600). Here’s what that looks like on the histogram:
+  <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Of course, data sets in the real world are never perfect; when dealing with actual data that seem to follow a symmetric, bell-shaped distribution, we’ll equivocate a little and say that <emphasis effect="italics">approximately</emphasis> 68% of the data fall within one standard deviation of the mean.</para>
+  <para id="para-00036">The rule for one standard deviation can be extended to two standard deviations. Approximately 95% of a normally distributed data set will fall within 2 standard deviations of the mean. If the mean is 400 and the standard deviation is 100, that means 95% of the data would fall between 200 (two standard deviations <emphasis effect="italics">below</emphasis> the mean: 400 – 2 x 100 = 200) and 600 (two standard deviations <emphasis effect="italics">above</emphasis> the mean: 400 + 2 x 100 = 600). Here’s what that looks like on the histogram:
   <figure id="fig-00020">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_082.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.82: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=200 and x=600 is shaded in a lighter version of the color of the graph. The label “95%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “2.5%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.82: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=200 and x=600 is shaded in a lighter version of the color of the graph. The label “95%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “2.5%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
   </caption>
   </figure>
   </para>
@@ -239,7 +239,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_083.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.83: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=100 and x=700 is shaded in a lighter version of the color of the graph. The label “99.7%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “0.15%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.83: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=100 and x=700 is shaded in a lighter version of the color of the graph. The label “99.7%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “0.15%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
   </caption>
   </figure>
   </para>
@@ -404,16 +404,16 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_084.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.84: The graph of a normal pdf with mean 100 and standard deviation 10 in blue, no vertical axis. The area under the curve between 90 and 110 should be shaded light blue, with a label right in the middle reading “68%” above a double-headed arrow running from 90 to 110. Label and arrow should also be blue:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.84: The graph of a normal pdf with mean 100 and standard deviation 10 in blue, no vertical axis. The area under the curve between 90 and 110 should be shaded light blue, with a label right in the middle reading “68%” above a double-headed arrow running from 90 to 110. Label and arrow should also be blue:</emphasis>
   </caption>
   </figure>
   </para> 
-  <para id="para-00045">Since we know that 68% of the data lie within one standard deviation of the mean, the implication is that 32% of the data must fall <emphasis effect="italic">beyond</emphasis> one standard deviation away from the mean. Since the histogram is symmetric, we can conclude that half of the 32% (or 16%) is more than one standard deviation <emphasis effect="italic">above</emphasis> the mean and the other half is more than one standard deviation <emphasis effect="italic">below</emphasis> the mean:
+  <para id="para-00045">Since we know that 68% of the data lie within one standard deviation of the mean, the implication is that 32% of the data must fall <emphasis effect="italics">beyond</emphasis> one standard deviation away from the mean. Since the histogram is symmetric, we can conclude that half of the 32% (or 16%) is more than one standard deviation <emphasis effect="italics">above</emphasis> the mean and the other half is more than one standard deviation <emphasis effect="italics">below</emphasis> the mean:
   <figure id="fig-00023">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_085.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.85: Same as 9.84, except the rest of the area under the curve is shaded a light red, with two labels reading “16%” at the ends along with red double-headed arrows running from 60 to 90 and from 110 to 140:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.85: Same as 9.84, except the rest of the area under the curve is shaded a light red, with two labels reading “16%” at the ends along with red double-headed arrows running from 60 to 90 and from 110 to 140:</emphasis>
   </caption>
   </figure>
   </para> 
@@ -422,8 +422,8 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_086.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Figure 9.1: Proportions related to the “68” part of the 68-95-99.7 Rule.</emphasis><newline/>
-  <emphasis effect="italic">Tech 8.86: Same as Tech 8.85, except the “68%” label and its arrow are replaced by a vertical blue line under the curve at x=100, two blue labels reading “34%” on either side of that line, and two blue double-headed arrows under those labels, running from 90 to 100 and 100 to 110:</emphasis></caption>
+  <caption><emphasis effect="italics">Figure 9.1: Proportions related to the “68” part of the 68-95-99.7 Rule.</emphasis><newline/>
+  <emphasis effect="italics">Tech 8.86: Same as Tech 8.85, except the “68%” label and its arrow are replaced by a vertical blue line under the curve at x=100, two blue labels reading “34%” on either side of that line, and two blue double-headed arrows under those labels, running from 90 to 100 and 100 to 110:</emphasis></caption>
   </figure>
   </para>
   <para id="para-00047">So, just the “68” part of the 68-95-99.7 Rule gives us four other proportions in addition to the 68% in the rule. Similarly, the “95” and “99.7” parts each give us four more proportions:
@@ -431,8 +431,8 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_087.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Figure 8.2: Proportions related to the “95” part of the 68-95-99.7 Rule.</emphasis><newline/>
-  <emphasis effect="italic">Tech 8.87: Similar to 8.86, except the blue shading now goes from 80 to 120 (with red shading everywhere else), the blue labels each read “47.5%”, and the red labels read “2.5%”:</emphasis>
+  <caption><emphasis effect="italics">Figure 9.2: Proportions related to the “95” part of the 68-95-99.7 Rule.</emphasis><newline/>
+  <emphasis effect="italics">Tech 8.87: Similar to 9.86, except the blue shading now goes from 80 to 120 (with red shading everywhere else), the blue labels each read “47.5%”, and the red labels read “2.5%”:</emphasis>
   </caption>
   </figure>
   </para>
@@ -440,8 +440,8 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_088.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Figure 8.3: Proportions related to the “95” part of the 68-95-99.7 Rule.</emphasis><newline/>
-  <emphasis effect="italic">Tech 8.88: Like Tech 8.87, except the blue shading now goes from 70 to 130 (with red shading everywhere else), the blue labels each read “49.85%”, and the red labels read “0.15%”:</emphasis>
+  <caption><emphasis effect="italics">Figure 9.3: Proportions related to the “95” part of the 68-95-99.7 Rule.</emphasis><newline/>
+  <emphasis effect="italics">Tech 8.88: Like Tech 8.87, except the blue shading now goes from 70 to 130 (with red shading everywhere else), the blue labels each read “49.85%”, and the red labels read “0.15%”:</emphasis>
   </caption>
   </figure> 
   <para id="para-00048">We can put all these together to find even more complicated proportions. For example, since the proportion between 100 and 120 is 47.5% and the proportion between 100 and 110 is 34%, we can subtract to find that the proportion between 110 and 120 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>47.5</mn><mo>-</mo><mn>34</mn><mo>=</mo><mn>13.5</mn><mi>%</mi></mrow></math>:</para>
@@ -449,7 +449,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_089.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.89: The same graph as the previous art, but with blue shading from 100 to 110, red shading from 110 to 120, blue label “34%” in or above the blue region, with blue double-headed arrow spanning blue region, red label “13.5%” in or above the red region, with red double-headed arrow spanning red region, and black label “47.5%” centered on the colored regions (at roughly x=110) with black double-headed arrow spanning both regions:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.89: The same graph as the previous art, but with blue shading from 100 to 110, red shading from 110 to 120, blue label “34%” in or above the blue region, with blue double-headed arrow spanning blue region, red label “13.5%” in or above the red region, with red double-headed arrow spanning red region, and black label “47.5%” centered on the colored regions (at roughly x=110) with black double-headed arrow spanning both regions:</emphasis>
   </caption>
   </figure>
   <example id="exam-00006">
@@ -469,7 +469,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_090.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.90: Graph of the pdf of a normal distribution with mean 80 and standard deviation 3 on the domain 68&lt;x&lt;92. Vertical black lines run from the axis to the graph at 71, 74, 77, 80, 83, 86, and 89:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.90: Graph of the pdf of a normal distribution with mean 80 and standard deviation 3 on the domain 68&lt;x&lt;92. Vertical black lines run from the axis to the graph at 71, 74, 77, 80, 83, 86, and 89:</emphasis>
   </caption>
   </figure>
   <list list-type="enumerated" number-style="arabic" id="list-00013">
@@ -479,10 +479,10 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_091.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.91: The same as 8.90, but with the area under the curve to the right of 86 shaded:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.91: The same as 8.90, but with the area under the curve to the right of 86 shaded:</emphasis>
   </caption>
   </figure>
-  <para id="para-00051">That’s the right tail consisting of data more than two standard deviations above the mean; as we saw above in Figure 8.2, that proportion is 2.5%.</para>
+  <para id="para-00051">That’s the right tail consisting of data more than two standard deviations above the mean; as we saw above in Figure 9.2, that proportion is 2.5%.</para>
   <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00014">
   <item>Let’s shade in the relevant part of the histogram:</item>
   </list>
@@ -490,15 +490,15 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_092.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.92: The same as 8.90, but with the area between 74 and 77 shaded:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.92: The same as 8.90, but with the area between 74 and 77 shaded:</emphasis>
   </caption>
   </figure>
-  <para id="para-00052">These are data that are more than one but less than two standard deviations below the mean. From Figure 8.2, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from Figure 8.1, we know that 34% of the data is less than one standard deviation below the mean:</para>
+  <para id="para-00052">These are data that are more than one but less than two standard deviations below the mean. From Figure 9.2, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from Figure 9.1, we know that 34% of the data is less than one standard deviation below the mean:</para>
   <figure id="fig-00031">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_093.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.93: The same as 8.92, except drop the black lines, add red shading between 77 and 80, and add labels and double-headed arrows to the shaded regions: 13.5% to the blue, 34% to the red, and 47.5% to the union of the two:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.93: The same as 8.92, except drop the black lines, add red shading between 77 and 80, and add labels and double-headed arrows to the shaded regions: 13.5% to the blue, 34% to the red, and 47.5% to the union of the two:</emphasis>
   </caption>
   </figure> 
   <para id="para-00053">Subtracting, we see that the proportion of data between 74 and 77 is 13.5%.</para>
@@ -509,7 +509,7 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_094.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.94: same as 8.90, but with blue shading between 74 and 83:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.94: same as 9.90, but with blue shading between 74 and 83:</emphasis>
   </caption>
   </figure>
   <para id="para-00054">Let’s break region into two pieces at the mean:</para>
@@ -517,10 +517,10 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_095.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.95: Same as 8.90, but drop the vertical lines, shade 74&lt;x&lt;80 in blue, and shade 80&lt;x&lt;83 in red:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.95: Same as 9.90, but drop the vertical lines, shade 74&lt;x&lt;80 in blue, and shade 80&lt;x&lt;83 in red:</emphasis>
   </caption>
   </figure>
-  <para id="para-00055">From Figure 8.2, we know the blue (leftmost)region represents 47.5% of the data. And, using Figure 8.1, we get that the red (rightmost) region covers 34% of the data. Adding those together, the proportion we want is 81.5%.</para>
+  <para id="para-00055">From Figure 9.2, we know the blue (leftmost) region represents 47.5% of the data. And, using Figure 9.1, we get that the red (rightmost) region covers 34% of the data. Adding those together, the proportion we want is 81.5%.</para>
   </solution>
   </exercise>
   </example>
@@ -534,18 +534,18 @@
   </section>
   <section id="sect-00005">
   <title>Standardized Scores</title>
-  <para id="para-00057">In the previous section, any time we wanted to apply the 68-95-99.7 Rule, we first had to figure out how many standard deviations above or below the mean our data fell. That calculation is common enough that it has itsown name: the <emphasis effect="bold">standardized score</emphasis>, or <emphasis effect="italic"><emphasis effect="bold">z</emphasis></emphasis><emphasis effect="bold">-score</emphasis>.</para>
+  <para id="para-00057">In the previous section, any time we wanted to apply the 68-95-99.7 Rule, we first had to figure out how many standard deviations above or below the mean our data fell. That calculation is common enough that it has its own name: the <emphasis effect="bold">standardized score</emphasis>, or <emphasis effect="italics"><emphasis effect="bold">z</emphasis></emphasis><emphasis effect="bold">-score</emphasis>.</para>
   <note class="definition" id="note-00010">
-  <para id="para-00058">In a normally distributed data set, the number of standard deviations a particular value falls above or below the mean is that value’s <emphasis effect="bold">standardized score</emphasis>. Values above the meanhave positive standardized scores, while those below the mean have negative standardized scores. Since it’s common to use the letter <emphasis effect="italic">z</emphasis> to represent a standard score, we’ll often use the term <emphasis effect="italic"><emphasis effect="bold">z</emphasis>-score<emphasis effect="italic"/></emphasis>.</para>
+  <para id="para-00058">In a normally distributed data set, the number of standard deviations a particular value falls above or below the mean is that value’s <emphasis effect="bold">standardized score</emphasis>. Values above the meanhave positive standardized scores, while those below the mean have negative standardized scores. Since it’s common to use the letter <emphasis effect="italics">z</emphasis> to represent a standard score, we’ll often use the term <emphasis effect="italics"><emphasis effect="bold">z</emphasis>-score</emphasis>.</para>
   </note>
-  <para id="para-00059">So far, we’ve only really considered <emphasis effect="italic">z</emphasis>-scores that are whole numbers, but in general they can be any number at all. For example, if we have data that are normally distributed with mean 80 and standard deviation 6, the value 85 is five units above the mean, which is less than one standard deviation. Dividing by the standard deviation, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math>. Since 85 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math> of one standard deviation above the mean, we’d say that the standardized score for 85 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math> (which is positive, since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>85</mn><mo>></mo><mn>80</mn></mrow></math>). This calculation describes the way we compute standardized scores.</para>
+  <para id="para-00059">So far, we’ve only really considered <emphasis effect="italics">z</emphasis>-scores that are whole numbers, but in general they can be any number at all. For example, if we have data that are normally distributed with mean 80 and standard deviation 6, the value 85 is five units above the mean, which is less than one standard deviation. Dividing by the standard deviation, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math>. Since 85 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math> of one standard deviation above the mean, we’d say that the standardized score for 85 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math> (which is positive, since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>85</mn><mo>></mo><mn>80</mn></mrow></math>). This calculation describes the way we compute standardized scores.</para>
   <note class="formula" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00060">If <emphasis effect="italic">x</emphasis> is a member of a normally distributed data set with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>σ</mi></mfrac></mrow></math>.</para>
-  <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">If you know a <emphasis effect="italic">z</emphasis>-score but not the original data value <emphasis effect="italic">x</emphasis>, you can find it by solving the previous equation for <emphasis effect="italic">x</emphasis>:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi></mrow></math>.</para>
+  <para id="para-00060">If <emphasis effect="italics">x</emphasis> is a member of a normally distributed data set with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>σ</mi></mfrac></mrow></math>.</para>
+  <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">If you know a <emphasis effect="italics">z</emphasis>-score but not the original data value <emphasis effect="italics">x</emphasis>, you can find it by solving the previous equation for <emphasis effect="italics">x</emphasis>:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi></mrow></math>.</para>
   </note>
   <note class="check-point" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00062">?? The symbols <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow/></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math> are the Greek letters <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">mu</emphasis> and <emphasis effect="italic">sigma</emphasis>. They are the analogues of the English letters <emphasis effect="italic">m</emphasis> and <emphasis effect="italic">s</emphasis>, which stand for <emphasis effect="italic">mean</emphasis> and <emphasis effect="italic">standard deviation</emphasis>.</para>
-  <para id="para-00063">If you convert every data value in a data set into its <emphasis effect="italic">z</emphasis>-score, the resulting set of data will have mean 0 and standard deviation 1. This is why we call these <emphasis effect="italic">standardized scores</emphasis>: the normal distribution with mean 0 and standard deviation 1 is often called the <emphasis effect="italic">standard normal distribution</emphasis>.</para>
+  <para id="para-00062">?? The symbols <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow/></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math> are the Greek letters <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">mu</emphasis> and <emphasis effect="italics">sigma</emphasis>. They are the analogues of the English letters <emphasis effect="italics">m</emphasis> and <emphasis effect="italics">s</emphasis>, which stand for <emphasis effect="italics">mean</emphasis> and <emphasis effect="italics">standard deviation</emphasis>.</para>
+  <para id="para-00063">If you convert every data value in a data set into its <emphasis effect="italics">z</emphasis>-score, the resulting set of data will have mean 0 and standard deviation 1. This is why we call these <emphasis effect="italics">standardized scores</emphasis>: the normal distribution with mean 0 and standard deviation 1 is often called the <emphasis effect="italics">standard normal distribution</emphasis>.</para>
   </note>
   <example id="exam-00007">
   <title>EXAMPLE 37 – Standardizing Data</title>
@@ -587,7 +587,7 @@
   </list>
   </problem>
   <solution id="sol-00015">
-  <para id="para-00068">We’ll use the formula previously introduced to convert <emphasis effect="italic">z</emphasis>-scores into <emphasis effect="italic">x</emphasis> values. In this case, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>µ</mi><mo>=</mo><mn>10</mn></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>2</mn></mrow></math>:</para>
+  <para id="para-00068">We’ll use the formula previously introduced to convert <emphasis effect="italics">z</emphasis>-scores into <emphasis effect="italics">x</emphasis> values. In this case, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>µ</mi><mo>=</mo><mn>10</mn></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>2</mn></mrow></math>:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00023" xmlns="http://cnx.rice.edu/cnxml">
   <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi><mo>=</mo><mn>10</mn><mo>+</mo><mn>1.4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12.8</mn></mrow></math></item>
   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow/></math></item>
@@ -607,13 +607,13 @@
   </section>
   <section id="sect-00006">
   <title> Using Google Sheets to Find Normal Percentiles</title>
-  <para id="para-00070">The 68-95-99.7 Rule is great when we’re dealing with whole-number <emphasis effect="italic">z</emphasis>-scores.. However, if the <emphasis effect="italic">z</emphasis>-score is not a whole number, the Rule isn’t going to help us. Luckily, we can use technology to help us out. We’ll talk here about the built-in functions in Google Sheets, but other tools work similarly.</para>
+  <para id="para-00070">The 68-95-99.7 Rule is great when we’re dealing with whole-number <emphasis effect="italics">z</emphasis>-scores.. However, if the <emphasis effect="italics">z</emphasis>-score is not a whole number, the Rule isn’t going to help us. Luckily, we can use technology to help us out. We’ll talk here about the built-in functions in Google Sheets, but other tools work similarly.</para>
   <para id="para-00071">Let’s say we’re working with normally distributed data with mean 40 and standard deviation 7, and we want to know at what percentile a data value of 50 would fall. That corresponds to finding the proportion of the data that are less than 50. If we create our histogram and mark off whole-number multiples of the standard deviation like we did before, we’ll see why the 68-95-99.7 Rule isn’t going to help:</para>
   <figure id="fig-00034">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_06_096.jpg"/>
   </media>
-  <caption><emphasis effect="italic">Tech 8.96: Graph of the pdf of a normal distribution with mean 40 and standard deviation 7 on the domain 12&lt;x&lt;68. Vertical black lines run from the axis to the graph at 19, 26, 33, 40, 47, 54, and 61. The region under the graph and to the left of x=50 is shaded blue:</emphasis>
+  <caption><emphasis effect="italics">Tech 8.96: Graph of the pdf of a normal distribution with mean 40 and standard deviation 7 on the domain 12&lt;x&lt;68. Vertical black lines run from the axis to the graph at 19, 26, 33, 40, 47, 54, and 61. The region under the graph and to the left of x=50 is shaded blue:</emphasis>
   </caption>
   </figure> 
   <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at Figures 8.2 and 8.3, the best we can say is that 50 is between the 84<sup>th</sup> and 99.5<sup>th</sup> percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
