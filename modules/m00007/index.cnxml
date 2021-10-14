@@ -615,12 +615,12 @@
   <caption><emphasis effect="italics">Tech 8.96: Graph of the pdf of a normal distribution with mean 40 and standard deviation 7 on the domain 12&lt;x&lt;68. Vertical black lines run from the axis to the graph at 19, 26, 33, 40, 47, 54, and 61. The region under the graph and to the left of x=50 is shaded blue:</emphasis>
   </caption>
   </figure> 
-  <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at Figures 8.2 and 8.3, the best we can say is that 50 is between the 84<sup>th</sup> and 99.5<sup>th</sup> percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
+  <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at Figures 9.2 and 9.3, the best we can say is that 50 is between the 84<sup>th</sup> and 99.5<sup>th</sup> percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00026">
   <item>Click in an empty cell in your worksheet.</item>
   <item>Type “=NORM.DIST(“</item>
   <item>Inside the parentheses, we must enter a list of four things, separated by commas: the data value, the mean, the standard deviation, and the word “TRUE”. These have to be entered in this order!</item>
-  <item>Close the parentheses, and hit Enter. The result is then displayed in the cell; convert it to a percent toget the percentile.</item>
+  <item>Close the parentheses, and hit Enter. The result is then displayed in the cell; convert it to a percent to get the percentile.</item>
   </list>
   <para id="para-00073">So, for our example, we should type “=NORM.DIST(50, 40, 7, TRUE)” into an empty cell, and hit Enter. The result is 0.9234362745; converting to a percent and rounding, we can conclude that 50 is at the 92<sup>nd</sup> percentile. Let’s walk through a few more examples.</para>
   <example id="exam-00009">
@@ -650,7 +650,7 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00076">Google Sheets can also help us go the other direction: If we want to find the data value that corresponds to a given percentile, we can use the NORM.INV function. For example, if we have normally distributed data with mean 150 and standard deviation 25, we can find the data value at the 30<sup>th</sup> percentileas follows:</para>
+  <para id="para-00076">Google Sheets can also help us go the other direction: If we want to find the data value that corresponds to a given percentile, we can use the NORM.INV function. For example, if we have normally distributed data with mean 150 and standard deviation 25, we can find the data value at the 30<sup>th</sup> percentile as follows:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00031">
   <item>Click on an empty cell in your worksheet.</item>
   <item>Type “=NORM.INV(“</item>
