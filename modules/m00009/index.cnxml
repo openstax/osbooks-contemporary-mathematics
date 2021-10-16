@@ -71,7 +71,7 @@
   <exercise id="exer-00003">
   <problem id="prob-00003">
   <para id="para-00012">Jonathan is exploring the relationship between scores on the midterm exam and final exam in his math course. Here are some of the scores reported by his classmates:</para>
-  <table summary="." id="table-00001">
+  <table class="unnumbered" summary="." id="table-00001">
   <tgroup cols="3">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
   <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -190,7 +190,7 @@
   </note>
   <para id="para-00020">For large data sets, it’s impractical to create scatter plots manually. Luckily, Google Sheets automates this process for us. This video will show you how:</para>
   <note class="video" id="note-00005">
-  <para id="para-00021"><emphasis effect="bold">VIDEO: Scatter Plots in Google Sheets &lt;<link url="https://openstax.org/r/Scatter-Plots">https://www.youtube.com/watch?v=YC1Is9YJX0k</link>></emphasis></para>
+  <para id="para-00021"><emphasis effect="bold">VIDEO: Scatter Plots in Google Sheets &lt;<link url="https://openstax.org/r/Scatter-Plots">https://openstax.org/r/Scatter-Plots</link>></emphasis></para>
   </note>
   <example id="exam-00003">
   <title>Example 46 – Creating Scatter Plots in Google Sheets</title>
@@ -202,7 +202,7 @@
   </note>
   </problem>
   <solution id="sol-00005">
-  <para id="para-00024">Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection). Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.” Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case). Now, click on the variable under “Series” and select the one that should go on the horizontal axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
+  <para id="para-00024">Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection). Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.” Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case). Now, click on the variable under “Series” and select the one that should go on the vertical axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
   <figure class="unnumbered" id="fig-00007">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_108.jpg"/>
@@ -227,29 +227,29 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_110.jpg"/>
   </media>
-  <caption>Figure 8.4.a: caption: Curved pattern<newline/>
-      Tech 8.110: Scatterplot using the data in Tech8.110, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> in a contrasting color.</caption>
+  <caption><emphasis effect="italics">Figure 9.4.a: caption: Curved pattern</emphasis><newline/>
+    <emphasis effect="italics">Tech 8.110: Scatterplot using the data in Tech8.110, overlaid with the plot of</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">in a contrasting color.</emphasis></caption>
   </figure>
   <figure class="unnumbered" id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_111.jpg"/>
   </media>
-  <caption>Figure 8.4.b: caption: No curved pattern<newline/>
-      Tech 8.111: Scatterplot using the data in Tech8.111.</caption>
+  <caption><emphasis effect="italics">Figure 9.4.b: caption: No curved pattern</emphasis><newline/>
+    <emphasis effect="italics">Tech 8.111: Scatterplot using the data in Tech8.111.</emphasis></caption>
   </figure>
   <figure class="unnumbered" id="fig-00011">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_112.jpg"/>
   </media>
-  <caption>Figure 8.4.c: caption: Curved pattern<newline/>
-      Tech 8.112: Scatterplot using the data in Tech8.112, overlaid with the plot of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>80</mn><mo>-</mo><mn>30</mn><mi>sin</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>30</mn><mo stretchy="false">)</mo><mo>/</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math>in a contrasting color.</caption>
+  <caption><emphasis effect="italics">Figure 9.4.c: caption: Curved pattern</emphasis><newline/>
+    <emphasis effect="italics">Tech 8.112: Scatterplot using the data in Tech8.112, overlaid with the plot of</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>80</mn><mo>-</mo><mn>30</mn><mi>sin</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>30</mn><mo stretchy="false">)</mo><mo>/</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math><emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">in a contrasting color.</emphasis></caption>
   </figure>
   <figure class="unnumbered" id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/png" src="../../media/CS_Figure_08_08_113.jpg"/>
   </media>
-  <caption>Figure 8.4.d: caption: No curved pattern<newline/>
-      Tech 8.113: Scatterplot using the data in Tech8.113</caption>
+  <caption><emphasis effect="italics">Figure 9.4.d: caption: No curved pattern</emphasis><newline/>
+    <emphasis effect="italics">Tech 8.113: Scatterplot using the data in Tech8.113</emphasis></caption>
   </figure>
   <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italics">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
   <figure class="unnumbered" id="fig-00013">
