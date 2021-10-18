@@ -60,7 +60,7 @@
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_08_07_099.jpg"/>
       </media>
-      <caption><emphasis effect="italic">Tech 9.99: Same as Tech 9.63:</emphasis></caption>
+      <caption><emphasis effect="italic">Tech 8.99: Same as Tech 8.63:</emphasis></caption>
       </figure>
       </para>
       <para id="para-00010">Sure enough, those match up very closely! In that opening example, one of our early runs gave us 70 heads in 100 flips, which we noted seemed unusual. Using the normal distribution, we can identify exactly how unusual that really is. Using Google Sheets, the formula “=NORM.DIST(70, 50, 5, TRUE)” gives us 0.999968, which is the 99.997<sup>th</sup> percentile! How is that useful? Suppose you need to test whether a coin is fair, and so you flip it 100 times. While we might be suspicious if we get 70 heads out of the 100 flips, we now have a numerical measure for how unusual that is: if the coin were fair, we would expect to see 70 heads (or more) only <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mo>-</mo><mn>99.9968</mn><mo>=</mo><mn>0.0032</mn><mi>%</mi></mrow></math> of the time. That’s really unlikely! Analysis like this is related to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hypothesis testing</emphasis>, an important application of statistics in the sciences and social sciences.</para>
