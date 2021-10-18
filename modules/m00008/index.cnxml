@@ -79,7 +79,7 @@
       <list list-type="enumerated" id="list-00007">
       <item>Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>64</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>32</mn></mrow></math>.</item>
       <item xmlns="http://cnx.rice.edu/cnxml">Again using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, we get a standard deviation of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mrow><mn>64</mn></mrow></msqrt></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Using “=NORM.DIST(25, 32, 4, TRUE)”, we see that 25 heads is at the 4<sup>th</sup> percentile.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Using “=NORM.DIST(25, 32, 4, TRUE)”, we see that 25 heads is at the 4<sup>th</sup> percentile. Reading and Interpreting Scatter Plots</item>
       </list>
       </solution>
       </exercise>
@@ -104,7 +104,7 @@
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_08_07_100.jpg"/>
       </media>
-      <caption><emphasis effect="italic">Tech 9.100: Same as Tech 9.20:</emphasis></caption>
+      <caption><emphasis effect="italic">Tech 8.100: Same as Tech 8.20:</emphasis></caption>
       </figure>
       </para>
       <para id="para-00015">This distribution is fairly symmetric (it’s just a little right-skewed) and bell-shaped, so we can use normal distribution techniques to analyze the data.</para>
@@ -117,7 +117,8 @@
       </problem>
       <solution id="sol-00005">
       <list list-type="enumerated" id="list-00011">
-      <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.</item>
+      <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.174“The experimental error of field trials”
+            by W.B. Mercer and A.D. Hall</item>
       <item>Using the STDEV function, we get that the standard deviation is 125.517.</item>
       <item>Entering “=NORM.DIST(1250, 1141, 125.517, TRUE)” into Google Sheets, we estimate that the University at Buffalo is at the 81<sup>st</sup> percentile.</item>
       <item>Using PERCENTRANK, we find that the actual percentile is the 84<sup>th</sup>. These are close!</item>
