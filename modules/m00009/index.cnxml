@@ -33,7 +33,7 @@
   <para id="para-00006">A dataset that a response variable depends on contains values of the <emphasis effect="bold">explanatory variable</emphasis>, or <emphasis effect="bold">independent variable.</emphasis></para>
   </note>
   <example id="exam-00001">
-  <title>Example 44 – Identifying Explanatory and Response Variables</title>
+  <title><!--Example 44 – -->Identifying Explanatory and Response Variables</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
   <para id="para-00007">For each of the following pairs of related data sets, identify which (if any) should be assigned the role of response variable and which should be assigned to be the explanatory variable.</para>
@@ -67,7 +67,7 @@
   <para id="para-00011">A <emphasis effect="bold">scatter plot</emphasis> visualizes the relationship between two quantitative sets of data by turning the data sets into ordered pairs, which are then plotted in the <emphasis effect="italics">xy</emphasis>-plane.</para>
   </note>
   <example id="exam-00002">
-  <title>Example 45 – Creating Scatter Plots by Hand</title>
+  <title><!--Example 45 – -->Creating Scatter Plots by Hand</title>
   <exercise id="exer-00003">
   <problem id="prob-00003">
   <para id="para-00012">Jonathan is exploring the relationship between scores on the midterm exam and final exam in his math course. Here are some of the scores reported by his classmates:</para>
@@ -193,7 +193,7 @@
   <para id="para-00021"><emphasis effect="bold">VIDEO: Scatter Plots in Google Sheets &lt;<link url="https://openstax.org/r/Scatter-Plots">https://openstax.org/r/Scatter-Plots</link>></emphasis></para>
   </note>
   <example id="exam-00003">
-  <title>Example 46 – Creating Scatter Plots in Google Sheets</title>
+  <title><!--Example 46 – -->Creating Scatter Plots in Google Sheets</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
   <para id="para-00022">The data set NHL19 (found at ESPN.com) gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA). Use Google Sheets to create a scatter plot for GF vs. GA.</para>
@@ -354,7 +354,7 @@
   <para id="para-00040">There’s no firm rule that establishes a cutoff value of <emphasis effect="italics">r</emphasis> to divide strong relationships from weak ones, but <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>0.7</mn></mrow></math> is often given as the dividing line (i.e., if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>></mo><mn>0.7</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mo>-</mo><mn>0.7</mn></mrow></math> the relationship is strong, and if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>0.7</mn><mo>&lt;</mo><mi>r</mi><mo>&lt;</mo><mn>0.7</mn></mrow></math> the relationship is weak). The formula for computing <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is very complicated; it’s almost never done by hand. Google Sheets will do the computation for you using the CORREL function. The syntax works like this: if your explanatory values are in cells A2 to A50 and the corresponding response values are in B2 to B50, then you can find the correlation coefficient by entering “=CORREL(A2:A50, B2:B50)”. (Note that the order doesn’t matter for correlation coefficients; “=CORREL(B2:B50, A2:A50)” will give the same result.)</para>
   <para id="para-00041">Let’s put all of this together in an example.</para>
   <example id="exam-00004">
-  <title>EXAMPLE 47 – Interpreting Scatter Plots</title>
+  <title><!--EXAMPLE 47 – -->Interpreting Scatter Plots</title>
   <exercise id="exer-00007">
   <problem id="prob-00007">
   <para id="para-00042">Consider these four scatter plots:</para>
@@ -433,7 +433,7 @@
   </exercise>
   </note>
   <example id="exam-00005" xmlns="http://cnx.rice.edu/cnxml">
-  <title>EXAMPLE 48 – Finding the Correlation Coefficient</title>
+  <title><!--EXAMPLE 48 – -->Finding the Correlation Coefficient</title>
   <exercise id="exer-00009">
   <problem id="prob-00009">
   <para id="para-00045">The data that were plotted in Example 47 can be found in the data set “correlationcoefficient1”. All of them share the same values for the explanatory variable <emphasis effect="italics">x</emphasis>. The four responses are labeled <emphasis effect="italics">y1</emphasis> through <emphasis effect="italics">y4</emphasis>. Compute the correlation coefficients for each, if appropriate, using Google Sheets. Round to the nearest hundredth.</para>
@@ -481,7 +481,7 @@
   </note>
   <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">Let's walk through an example.</para>
   <example id="exam-00006">
-  <title>EXAMPLE 49 – Finding the Equation of the Regression Line from Statistics</title>
+  <title><!--EXAMPLE 49 – -->Finding the Equation of the Regression Line from Statistics</title>
   <exercise id="exer-00011">
   <problem id="prob-00011">
   <para id="para-00058">Suppose you have data sets <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> with the following statistics: <emphasis effect="italics">x</emphasis> has mean 21 and standard deviation 4, <emphasis effect="italics">y</emphasis> has mean 8 and standard deviation 2, and their correlation coefficient is -0.4. What’s the equation of the regression line?</para>
@@ -510,7 +510,7 @@
   </note>
   <para id="para-00067">Let's put this into practice.</para>
   <example id="exam-00007">
-  <title>Example 50 – Finding the Equation of the Regression Line Using Google Sheets</title>
+  <title><!--Example 50 – -->Finding the Equation of the Regression Line Using Google Sheets</title>
   <exercise id="exer-00013">
   <problem id="prob-00013">
   <para id="para-00068">In Example 46, we considered the relationship between goals scored (GF) and goals against (GA) using the data set “NHL19”. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
@@ -576,7 +576,7 @@
   <para id="para-00074">The equation of the regression line is <emphasis effect="italics">y</emphasis> = 0.687 <emphasis effect="italics">x</emphasis> + 27.4, where <emphasis effect="italics">y</emphasis> is the final exam score and <emphasis effect="italics">x</emphasis> is the midterm exam score. If Frank scored 85 on the midterm, then our prediction for his final exam score is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mn>85</mn><mo>+</mo><mn>27.4</mn><mo>=</mo><mn>85.795</mn></mrow></math>. To use the regression line to evaluate performance, we use a data value we’ve already observed. For example, Allison scored 88 on the midterm. The regression line predicts that someone who scores an 88 on the midterm will get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mn>88</mn><mo>+</mo><mn>27.4</mn><mo>=</mo><mn>87.856</mn></mrow></math>on the final. Allison actually scored 84 on the final, meaning she underperformed expectations by almost 4 points (87.856 – 84).</para>
   <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml">The second application of the equation of the regression line is interpreting the slope of the line to describe the relationship between the explanatory and response data sets. For the exam data in the previous paragraph, the slope of the regression line is 0.687. Recall that the slope of a line can be computed by finding two points on the line and dividing the difference in the <emphasis effect="italics">y</emphasis>-values of those points by the difference in the <emphasis effect="italics">x</emphasis> values. Keeping that in mind, we can interpretour slope as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>=</mo><mfrac><mrow><mtext>difference in final scores</mtext></mrow><mrow><mtext>difference in midterm scores</mtext></mrow></mfrac></mrow></math> . Multiplying both sides of that equation by the denominator of the fraction, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mtext>difference in midterm scores</mtext><mo>=</mo><mtext>difference in final scores</mtext></mrow></math>. Thus, a one-point increase in the midterm score would result in a predicted increase in the final score of 0.687 points. A ten-point drop in the midterm score would give us a decrease in the predicted final score of 6.87 points. In general, the slope gives us the predicted change in the response that corresponds to a one unit increase in the explanatory variable.</para>
   <example id="exam-00008" xmlns="http://cnx.rice.edu/cnxml">
-  <title>EXAMPLE 51 – Applying the Equation of the Regression Line</title>
+  <title><!--EXAMPLE 51 – -->Applying the Equation of the Regression Line</title>
   <exercise id="exer-00015">
   <problem id="prob-00015">
   <para id="para-00076">The data in “MLB2019Off” gives offensive team stats for the 2019 Major League Baseball season (data from <emphasis effect="underscore"><link url="https://openstax.org/r/baseball-reference">https://openstax.org/r/baseball-reference</link></emphasis>). Use that data set to answer these questions:</para>
@@ -620,7 +620,7 @@
   <para id="para-00081"><emphasis effect="bold">Extrapolation</emphasis> is the act of using a regression line to make a prediction about something that doesn’t belong in the original data set.</para>
   </note>
   <example id="exam-00009">
-  <title>EXAMPLE 52 – Identifying Extrapolation</title>
+  <title><!--EXAMPLE 52 – -->Identifying Extrapolation</title>
   <exercise id="exer-00017">
   <problem id="prob-00017">
   <para id="para-00082">In Example 51, we used the data in “MLB2019Off” (data from <emphasis effect="underscore"><link url="https://openstax.org/r/baseball-reference">https://openstax.org/r/baseball-reference</link></emphasis>) to find a regression line that we could use to predict the number of runs scored by a Major League Baseball team based on the number of hits the team recorded. Critique the use of that regression line to answer these questions:</para>
