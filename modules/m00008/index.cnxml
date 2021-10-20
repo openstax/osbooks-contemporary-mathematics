@@ -24,7 +24,7 @@
       <title>College Entrance Exams</title>
       <para id="para-00003"><emphasis effect="bold">There are two good ways to compare two data values from different groups: using <emphasis effect="italic">z</emphasis>-scores and using percentiles. The two methods will always give consistent results (meaning that we won’t find, for example, that the first value is better using <emphasis effect="italic">z</emphasis>-scores but the second value is better using percentiles), so use whichever method is more comfortable for you.</emphasis></para>
       <example id="exam-00001">
-      <title>EXAMPLE 41 – Evaluating College Entrance Exam Scores</title>
+      <title><!--EXAMPLE 41 – -->Evaluating College Entrance Exam Scores</title>
       <exercise id="exer-00001">
       <problem id="prob-00001">
       <para id="para-00004">According to the Digest of Education Statistics (found at nces.ed.gov), composite scores on the SAT have mean 1060 and standard deviation 195, while composite scores on the ACT have mean 21 and standard deviation 5.</para>
@@ -65,7 +65,7 @@
       </para>
       <para id="para-00010">Sure enough, those match up very closely! In that opening example, one of our early runs gave us 70 heads in 100 flips, which we noted seemed unusual. Using the normal distribution, we can identify exactly how unusual that really is. Using Google Sheets, the formula “=NORM.DIST(70, 50, 5, TRUE)” gives us 0.999968, which is the 99.997<sup>th</sup> percentile! How is that useful? Suppose you need to test whether a coin is fair, and so you flip it 100 times. While we might be suspicious if we get 70 heads out of the 100 flips, we now have a numerical measure for how unusual that is: if the coin were fair, we would expect to see 70 heads (or more) only <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mo>-</mo><mn>99.9968</mn><mo>=</mo><mn>0.0032</mn><mi>%</mi></mrow></math> of the time. That’s really unlikely! Analysis like this is related to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hypothesis testing</emphasis>, an important application of statistics in the sciences and social sciences.</para>
       <example id="exam-00002">
-      <title>EXAMPLE 42 – Flipping a Coin</title>
+      <title><!--EXAMPLE 42 – -->Flipping a Coin</title>
       <exercise id="exer-00003">
       <problem id="prob-00003">
       <para id="para-00011">Let’s say we flip a coin 64 times and count the number of heads.</para>
@@ -96,7 +96,7 @@
       <title>Analyzing Data That Are Normally Distributed</title>
       <para id="para-00013">Whenever we’re working with a data set that has a distribution that looks symmetric and bell-shaped, we can use techniques associated with the normal distribution to analyze the data.</para>
       <example id="exam-00003">
-      <title>EXAMPLE 43 – Using Normal Techniques to Analyze Data</title>
+      <title><!--EXAMPLE 43 – -->Using Normal Techniques to Analyze Data</title>
       <exercise id="exer-00005">
       <problem id="prob-00005">
       <para id="para-00014">The data in “AvgSAT” contains the average SAT score for students attending every institution of higher learning in the US for which data is available (data from data.ed.gov). Back in Example 12, we created a histogram for these data:
