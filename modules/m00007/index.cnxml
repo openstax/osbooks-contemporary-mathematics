@@ -84,7 +84,7 @@
   <para id="para-00012">A set of data is <emphasis effect="bold">normally distributed</emphasis> (or follows a <emphasis effect="bold">normal distribution</emphasis>) if it has a symmetric, bell-shaped histogram.</para></note>
   <para id="para-00013">Normal distributions can be completely described using two numbers we’ve seen before: the <emphasis effect="italics">mean</emphasis> of the data and the <emphasis effect="italics">standard deviation</emphasis> of the data. You may remember that we described the mean as a measure of centrality; for a normal distribution, the mean tells us exactly where the center of the distribution falls. The peak of the distribution happens at the mean (and, because the distribution is symmetric, it’s also the median). The standard deviation is a measure of dispersion; for a normal distribution, it tells us how spread out the histogram looks. To illustrate these points, let’s look at some examples.</para>
   <example id="exam-00001">
-  <title>EXAMPLE 31 – Identifying the Mean of a Normal Distribution</title>
+  <title><!--EXAMPLE 31 – -->Identifying the Mean of a Normal Distribution</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
   <para id="para-00014">This graph shows three normal distributions. What are their means?</para>
@@ -117,7 +117,7 @@
   </exercise>
   </note>
   <example id="exam-00002">
-  <title>EXAMPLE 32 – Identifying the Standard Deviation of a Normal Distribution</title>
+  <title><!--EXAMPLE 32 – -->Identifying the Standard Deviation of a Normal Distribution</title>
   <exercise id="exer-00003">
   <problem id="prob-00003">
   <para id="para-00019">This graph shows three distributions, all with mean 2. What are their standard deviations?</para>
@@ -179,7 +179,7 @@
   </note>
   <para id="para-00027">Let’s put it all together to identify a completely unknown normal distribution.</para>
   <example id="exam-00003">
-  <title>EXAMPLE 33 – Identifying the Mean and Standard Deviation of a Normal Distribution</title>
+  <title><!--EXAMPLE 33 – -->Identifying the Mean and Standard Deviation of a Normal Distribution</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
   <para id="para-00028">Using the graph, identify the mean and standard deviation of the normal distribution.</para>
@@ -248,7 +248,7 @@
   <para id="para-00040">The <emphasis effect="bold">68-95-99.7 Rule</emphasis> says that, for normally distributed data, 68% of the data fall within 1 standard deviation of the mean, 95% fall within 2 standard deviations of the mean, and 99.7% fall within 3 standard deviations of the mean.</para>
   </note>
   <example id="exam-00004">
-  <title>EXAMPLE 34 – Using the 68-95-99.7 Rule to Find Percentages</title>
+  <title><!--EXAMPLE 34 – -->Using the 68-95-99.7 Rule to Find Percentages</title>
   <exercise id="exer-00007">
   <problem id="prob-00007">
   <list list-type="enumerated" number-style="arabic" id="list-00002">
@@ -374,7 +374,7 @@
   </exercise>
   </note>
   <example id="exam-00005">
-  <title>EXAMPLE 35 – Using the 68-95-99.7 Rule to Find Data Values</title>
+  <title><!--EXAMPLE 35 – -->Using the 68-95-99.7 Rule to Find Data Values</title>
   <exercise id="exer-00009">
   <problem id="prob-00009">
   <list list-type="enumerated" id="list-00008">
@@ -453,7 +453,7 @@
   </caption>-->
   </figure>
   <example id="exam-00006">
-  <title>EXAMPLE 36 – Finding Other Proportions Using the 68-95-99.7 Rule</title>
+  <title><!--EXAMPLE 36 – -->Finding Other Proportions Using the 68-95-99.7 Rule</title>
   <exercise id="exer-00011">
   <problem id="prob-00011">
   <para id="para-00049">Assume that we have data that are normally distributed with mean 80 and standard deviation 3.</para>
@@ -548,7 +548,7 @@
   <para id="para-00063">If you convert every data value in a data set into its <emphasis effect="italics">z</emphasis>-score, the resulting set of data will have mean 0 and standard deviation 1. This is why we call these <emphasis effect="italics">standardized scores</emphasis>: the normal distribution with mean 0 and standard deviation 1 is often called the <emphasis effect="italics">standard normal distribution</emphasis>.</para>
   </note>
   <example id="exam-00007">
-  <title>EXAMPLE 37 – Standardizing Data</title>
+  <title><!--EXAMPLE 37 – -->Standardizing Data</title>
   <exercise id="exer-00013">
   <problem id="prob-00013">
   <para id="para-00064">Suppose we have data that are normally distributed with mean 50 and standard deviation 6. Compute the standardized scores (rounded to three decimal places) for these data values:</para>
@@ -576,7 +576,7 @@
   </exercise>
   </note>
   <example id="exam-00008">
-  <title>EXAMPLE 38 – Converting Standardized Scores to Original Values</title>
+  <title><!--EXAMPLE 38 – -->Converting Standardized Scores to Original Values</title>
   <exercise id="exer-00015">
   <problem id="prob-00015">
   <para id="para-00067">Suppose we have data that are normally distributed with mean 10 and standard deviation 2. Convert the following standardized scores into data values.</para>
@@ -624,7 +624,7 @@
   </list>
   <para id="para-00073">So, for our example, we should type “=NORM.DIST(50, 40, 7, TRUE)” into an empty cell, and hit Enter. The result is 0.9234362745; converting to a percent and rounding, we can conclude that 50 is at the 92<sup>nd</sup> percentile. Let’s walk through a few more examples.</para>
   <example id="exam-00009">
-  <title>EXAMPLE 39 – Using Google Sheets to Find Percentiles</title>
+  <title><!--EXAMPLE 39 – -->Using Google Sheets to Find Percentiles</title>
   <exercise id="exer-00017">
   <problem id="prob-00017">
   <para id="para-00074">Suppose we have data that are normally distributed with mean 28 and standard deviation 4. At what percentile do each of the following data values fall?</para>
@@ -659,7 +659,7 @@
   </list>
   <para id="para-00077">In our example, we want the 30<sup>th</sup> percentile; converting 30% to a decimal gives us 0.3. So, we’ll type “=NORM.INV(0.3, 150, 25)” to get 136.8899872; let’s round that off to 137.</para>
   <example id="exam-00010">
-  <title>EXAMPLE 40 – Using Google Sheets to Find the Data Value Corresponding to a Percentile</title>
+  <title><!--EXAMPLE 40 – -->Using Google Sheets to Find the Data Value Corresponding to a Percentile</title>
   <exercise id="exer-00019">
   <problem id="prob-00019">
   <para id="para-00078">Suppose we have data that are normally distributed with mean 47 and standard deviation 9. Find the data values (rounded to the nearest tenth) corresponding to these percentiles:</para>
