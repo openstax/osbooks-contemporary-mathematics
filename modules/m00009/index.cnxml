@@ -379,7 +379,7 @@
   </figure>
   </item>
   </list>
-  <list list-type="enumerated" number-style="lower-alpha" start-value="2" id="list-00008">
+  <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00008">
   <item>
   <figure class="unnumbered" id="fig-00025">
   <media alt="Insert Alt Text">
@@ -389,7 +389,7 @@
   </figure>
   </item>
   </list>
-  <list list-type="enumerated" number-style="lower-alpha" start-value="3" id="list-00009">
+  <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00009">
   <item>
   <figure class="unnumbered" id="fig-00026">
   <media alt="Insert Alt Text">
@@ -399,7 +399,7 @@
   </figure>
   </item>
   </list>
-  <list list-type="enumerated" number-style="lower-alpha" start-value="4" id="list-00010">
+  <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00010">
   <item>
   <figure class="unnumbered" id="fig-00027">
   <media alt="Insert Alt Text">
@@ -477,7 +477,7 @@
   <note class="definition" id="note-00013">
   <para id="para-00049">For a given set of explanatory and response data, the <emphasis effect="bold">regression line</emphasis> (also called the <emphasis effect="bold">least-squares line</emphasis> or <emphasis effect="bold">line of best fit</emphasis>) is the line that does the best job of approximating the data.</para>
   </note>
-  <para id="para-00050">“best job” of approximating the data? The way that statisticians characterize this “best line” is rather technical, but we’ll include it for the sake of satisfying your curiosity (and backing up the claim of "best"). Imagine drawing a line that looks like it does a pretty good job of approximating the data. Most of the points in the scatter plot will probably not fall exactly on the line; the distance above or below the line a given point falls is called that point’s <emphasis effect="italics">residual</emphasis>. We could compute the residuals for every point in the scatter plot. If you take all those residuals and square them, then add the results together, you get a statistic called the <emphasis effect="italics">sum of squared errors</emphasis> for the line (the name tells you what it is: “sum” because we’re adding, “squared” because we’re squaring, and “errors” is another word for “residuals”). The line that we choose to be the “best” is the one that has the smallest possible sum of squared errors. The implied minimization (“smallest”) is where the “least” in “least squares” comes from; the “squares” comes from the fact that we’re minimizing the sum of <emphasis effect="italics">squared</emphasis> errors. Here ends the super technical part.</para>
+  <para id="para-00050">What does it mean to say that a particular line does the “best job” of approximating the data? The way that statisticians characterize this “best line” is rather technical, but we’ll include it for the sake of satisfying your curiosity (and backing up the claim of "best"). Imagine drawing a line that looks like it does a pretty good job of approximating the data. Most of the points in the scatter plot will probably not fall exactly on the line; the distance above or below the line a given point falls is called that point’s <emphasis effect="italics">residual</emphasis>. We could compute the residuals for every point in the scatter plot. If you take all those residuals and square them, then add the results together, you get a statistic called the <emphasis effect="italics">sum of squared errors</emphasis> for the line (the name tells you what it is: “sum” because we’re adding, “squared” because we’re squaring, and “errors” is another word for “residuals”). The line that we choose to be the “best” is the one that has the smallest possible sum of squared errors. The implied minimization (“smallest”) is where the “least” in “least squares” comes from; the “squares” comes from the fact that we’re minimizing the sum of <emphasis effect="italics">squared</emphasis> errors. Here ends the super technical part.</para>
   <section id="sect-00006">
   <title>Finding the Equation of the Regression Line</title>
   <para id="para-00051">So, how do we find the equation of the regression line? Recall the point-slope form of the equation of a line:</para>
