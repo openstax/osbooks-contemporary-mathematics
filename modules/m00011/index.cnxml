@@ -6,399 +6,399 @@
     <md:uuid>2a41a71b-c2db-4787-bb5b-eee8b2f99e02</md:uuid>
   </metadata>
   <content>
-    <para><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
-    <list list-type="enumerated" number-style="arabic">
+    <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Represent sets in a variety of ways.</item>
     <item>Represent well-defined sets and the empty set with proper set notation.</item>
     <item>Compute the cardinal value of a set.</item>
     <item>Differentiate between finite and infinite sets.</item>
     <item>Differentiate between equal and equivalent sets.</item>
     </list>
-    <section>
+    <section id="sect-00001">
     <title>Sets and Ways to Represent Them</title>
-    <para>Think back to your kitchen organization. If the drawer is the <term>set</term>, then the forks and knives are <term>elements</term> in the set. Sets can be described in a number of different ways: by roster, by set-builder notation, by interval notation, by graphing on a number line, and by Venn diagrams. Sets are typically designated with capital letters. If we consider a set with only a few members, the simplest way to represent it is by the <emphasis effect="bold">roster</emphasis> (or <emphasis effect="italics">listing</emphasis>) <emphasis effect="bold">method</emphasis>. For example, if <emphasis effect="italics">F</emphasis> represents our set of flatware, we can represent <emphasis effect="italics">F</emphasis> by using the following set notation with the roster method:</para>
-    <para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mo>&#x007B;</mo><mi mathvariant="normal">fork, spoon, knife, meat thermometer, can opener</mi><mo>&#x007D;</mo></mrow></math></para>
-    <note class="definition">
-    <para>A <emphasis effect="bold">set</emphasis> is a well-defined collection of distinct objects.</para>
-    <para>The objects of a set are called its <emphasis effect="bold">elements.</emphasis></para>
-    <para>The <emphasis effect="bold">roster method</emphasis> is a listing of elements in a set enclosed by curly braces and separated by commas.</para>
+    <para id="para-00002">Think back to your kitchen organization. If the drawer is the <term id="term-00001">set</term>, then the forks and knives are <term id="term-00002">elements</term> in the set. Sets can be described in a number of different ways: by roster, by set-builder notation, by interval notation, by graphing on a number line, and by Venn diagrams. Sets are typically designated with capital letters. If we consider a set with only a few members, the simplest way to represent it is by the <emphasis effect="bold">roster</emphasis> (or <emphasis effect="italics">listing</emphasis>) <emphasis effect="bold">method</emphasis>. For example, if <emphasis effect="italics">F</emphasis> represents our set of flatware, we can represent <emphasis effect="italics">F</emphasis> by using the following set notation with the roster method:</para>
+    <para id="para-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mo>{</mo><mi mathvariant="normal">fork, spoon, knife, meat thermometer, can opener</mi><mo>}</mo></mrow></math></para>
+    <note class="definition" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00004">A <emphasis effect="bold">set</emphasis> is a well-defined collection of distinct objects.</para>
+    <para id="para-00005">The objects of a set are called its <emphasis effect="bold">elements.</emphasis></para>
+    <para id="para-00006">The <emphasis effect="bold">roster method</emphasis> is a listing of elements in a set enclosed by curly braces and separated by commas.</para>
     </note>
-    <example>
-    <title>EXAMPLE 1 &#x2013; Writing a Set Using the Roster or Listing Method</title>
-    <exercise>
-    <problem>
-    <para>Write a set consisting of your three favorite sports and label it with a capital <emphasis effect="italics">S</emphasis>.</para>
+    <example id="exam-00001">
+    <title>EXAMPLE 1 – Writing a Set Using the Roster or Listing Method</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007">Write a set consisting of your three favorite sports and label it with a capital <emphasis effect="italics">S</emphasis>.</para>
     </problem>
-    <solution>
-    <para>There are multiple possible answers depending on what your three favorite sports are, but any answer must list three different sports separated by commas, such as the following:</para>
-    <para><equation><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>S</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mi mathvariant="normal">hockey, basketball, soccer</mi></mrow> <mo>}</mo></mrow></mrow></math></equation></para>
+    <solution id="sol-00001">
+    <para id="para-00008">There are multiple possible answers depending on what your three favorite sports are, but any answer must list three different sports separated by commas, such as the following:</para>
+    <para id="para-00009"><equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>S</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mi mathvariant="normal">hockey, basketball, soccer</mi></mrow> <mo>}</mo></mrow></mrow></math></equation></para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q001"/></para>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CM-C01-M1-Q001"/></para>
     </problem>
     </exercise>
     </note>
-    <para>All the sets we have considered so far have been <term>well-defined sets</term>. A well-defined set clearly communicates whether an element is a member of the set or not. The members of a well-defined set are fixed and do not change over time. Consider the following question. What are your top ten songs of 2021? You could create a list of your top 10 favorite songs from 2021, but the list your friend creates will not necessarily contain the same 10 songs. So, the set of your top 10 songs of 2021 is not a well-defined set. On the other hand, the set of the letters in your name is a well-defined set because it does not vary (unless of course you change your name). The NFL wide receiver, Chad Johnson, famously changed his name to Chad Ochocinco to match his jersey number of eighty-four.</para>
-    <note class="definition">
-    <para>A <emphasis effect="bold">well-defined set</emphasis> is any set whose elements are fixed and do not change over time. Given any element, everyone can agree on whether it is, or is not, a member of the set.</para>
+    <para id="para-00011">All the sets we have considered so far have been <term id="term-00003">well-defined sets</term>. A well-defined set clearly communicates whether an element is a member of the set or not. The members of a well-defined set are fixed and do not change over time. Consider the following question. What are your top ten songs of 2021? You could create a list of your top 10 favorite songs from 2021, but the list your friend creates will not necessarily contain the same 10 songs. So, the set of your top 10 songs of 2021 is not a well-defined set. On the other hand, the set of the letters in your name is a well-defined set because it does not vary (unless of course you change your name). The NFL wide receiver, Chad Johnson, famously changed his name to Chad Ochocinco to match his jersey number of eighty-four.</para>
+    <note class="definition" id="note-00003">
+    <para id="para-00012">A <emphasis effect="bold">well-defined set</emphasis> is any set whose elements are fixed and do not change over time. Given any element, everyone can agree on whether it is, or is not, a member of the set.</para>
     </note>
-    <example>
-    <title>EXAMPLE 2 &#x2013; Identifying Well-Defined Sets</title>
-    <exercise>
-    <problem>
-    <para>For each of the following collections, determine if it represents a well-defined set.</para>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <example id="exam-00002">
+    <title>EXAMPLE 2 – Identifying Well-Defined Sets</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00013">For each of the following collections, determine if it represents a well-defined set.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
     <item>The group of all past vice presidents of the United States.</item>
     <item>A group of old cats.</item>
     </list>
     </problem>
-    <solution>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <solution id="sol-00002">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
     <item>The group of all past vice presidents of the United States is a well-defined set, because you can clearly identify if any individual was or was not a member of that group. For example, Britney Spears is not a member of this set, but Joe Biden is a member of this set.</item>
     <item>A group of old cats is not a well-defined set because the word old is ambiguous. Some people might consider a seven-year-old cat to be old, while others might think a cat is not old until it is 13 years old. Because people can disagree on what is and what is not a member of this group, the set is not well-defined.</item>
     </list>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q002"/></para>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CM-C01-M1-Q002"/></para>
     </problem>
     </exercise>
     </note>
-    <para>On January 20<sup>th</sup>, 2021, Kamala Harris was sworn in as the first female Vice President of the United States of America. If we were to consider the set of all female Vice Presidents of the United States of America prior to January 20<sup>th</sup>, 2021, this set would be known as an <term>empty set</term>; the number of people in this set is 0, since there were no female Vice Presidents before Harris..</para>
-    <note class="definition">
-    <para>The <emphasis effect="bold">empty set,</emphasis> also called the null set, is a set without any elements. It is written symbolically using a pair of braces, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mi mathvariant="normal">&#x00A0;</mi><mo>}</mo></mrow></mrow></math>, or a zero with a slash through it, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#x2205;</mo></math></para>
+    <para id="para-00015">On January 20<sup>th</sup>, 2021, Kamala Harris was sworn in as the first female Vice President of the United States of America. If we were to consider the set of all female Vice Presidents of the United States of America prior to January 20<sup>th</sup>, 2021, this set would be known as an <term id="term-00004">empty set</term>; the number of people in this set is 0, since there were no female Vice Presidents before Harris..</para>
+    <note class="definition" id="note-00005">
+    <para id="para-00016">The <emphasis effect="bold">empty set,</emphasis> also called the null set, is a set without any elements. It is written symbolically using a pair of braces, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mi mathvariant="normal"> </mi><mo>}</mo></mrow></mrow></math>, or a zero with a slash through it, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∅</mo></math></para>
     </note>
-    <para>&#x1F6A6; <emphasis effect="italics">The set containing the number 0</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mn>0</mn><mo>&#x007D;</mo></mrow></math>, <emphasis effect="italics">is a set with one element in it. It is not the same as the empty set</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mi mathvariant="normal">&#x00A0;</mi><mo>&#x007D;</mo></mrow></math>, <emphasis effect="italics">which does not have any elements in it. Symbolically:</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mn>0</mn><mo>&#x007D;</mo><mo>&#x2260;</mo><mo>&#x007B;</mo><mi mathvariant="normal">&#x00A0;</mi><mo>&#x007D;</mo></mrow></math><emphasis effect="italics">.</emphasis></para>
-    <example>
-    <title>EXAMPLE 3 &#x2013; Representing the Empty Set Symbolically</title>
-    <exercise>
-    <problem>
-    <para>Represent each of the following sets symbolically.</para>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">🚦 <emphasis effect="italics">The set containing the number 0</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></math>, <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">is a set with one element in it. It is not the same as the empty set</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mi mathvariant="normal"> </mi><mo>}</mo></mrow></math>, <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">which does not have any elements in it. Symbolically:</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>0</mn><mo>}</mo><mo>≠</mo><mo>{</mo><mi mathvariant="normal"> </mi><mo>}</mo></mrow></math><emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">.</emphasis></para>
+    <example id="exam-00003">
+    <title>EXAMPLE 3 – Representing the Empty Set Symbolically</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00018">Represent each of the following sets symbolically.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
     <item>The set of prime numbers less than 2.</item>
     <item>The set of birds that are also mammals.</item>
     </list>
     </problem>
-    <solution>
-    <list list-type="enumerated" number-style="lower-alpha">
-    <item>A prime number is a natural number greater than 1, that is only divisible by one and itself. Since there are no prime numbers less than 2, this set is empty, and we can represent it symbolically as follows: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mi mathvariant="normal"></mi><mo>}</mo></mrow><mi mathvariant="normal">or</mi><mo>&#x2205;</mo><mo>.</mo></mrow></math></item>
-    <item>The set of birds and the set of mammals do not intersect so, the set of birds that are also mammals is empty, and we can represent it symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x2205;</mo><mi mathvariant="normal">or &#x007B; &#x007D;</mi><mi mathvariant="normal">.</mi></mrow></math> The two different symbols for the empty set can be used interchangeably. The symbols <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mi mathvariant="normal"></mi><mo>}</mo></mrow></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#x2205;</mo></math> both represent the empty set symbolically.</item>
+    <solution id="sol-00003">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
+    <item>A prime number is a natural number greater than 1, that is only divisible by one and itself. Since there are no prime numbers less than 2, this set is empty, and we can represent it symbolically as follows: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mi mathvariant="normal"/><mo>}</mo></mrow><mi mathvariant="normal">or</mi><mo>∅</mo><mo>.</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The set of birds and the set of mammals do not intersect so, the set of birds that are also mammals is empty, and we can represent it symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∅</mo><mi mathvariant="normal">or { }</mi><mi mathvariant="normal">.</mi></mrow></math> The two different symbols for the empty set can be used interchangeably. The symbols <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mi mathvariant="normal"/><mo>}</mo></mrow></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∅</mo></math> both represent the empty set symbolically.</item>
     </list>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q003"/></para>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CM-C01-M1-Q003"/></para>
     </problem>
     </exercise>
     </note>
-    <note class="who-knew">
+    <note class="who-knew" id="note-00007">
     <title>The Number Zero</title>
-    <para>We use the number zero as a placeholder or to represent the concept of nothing every day. The machine language of computers is binary, consisting only of zeros and ones, but the number zero was a powerful invention that allowed our understanding of mathematics and science to develop. The historical record shows the Babylonians first used zeros around 300 B.C., while the Mayans developed and began using zero separately around 350 A.D. What is considered the first formal use of zero in arithmetic operations was developed by the Indian mathematician Brahmagupta around 650 A.D.</para>
-    <para><emphasis effect="bold">WEBSITE: Brahmagupta, Mathematician and Astronomer</emphasis>
-    &lt;https://www.storyofmathematics.com/indian_brahmagupta.html&gt;</para>
-    <para>Another interesting feature of the number zero is that it is that although it is an even number, it is the only number the is neither negative nor positive.</para>
+    <para id="para-00020">We use the number zero as a placeholder or to represent the concept of nothing every day. The machine language of computers is binary, consisting only of zeros and ones, but the number zero was a powerful invention that allowed our understanding of mathematics and science to develop. The historical record shows the Babylonians first used zeros around 300 B.C., while the Mayans developed and began using zero separately around 350 A.D. What is considered the first formal use of zero in arithmetic operations was developed by the Indian mathematician Brahmagupta around 650 A.D.</para>
+    <para id="para-00021"><emphasis effect="bold">WEBSITE: Brahmagupta, Mathematician and Astronomer</emphasis>
+    &lt;https://www.storyofmathematics.com/indian_brahmagupta.html></para>
+    <para id="para-00022">Another interesting feature of the number zero is that it is that although it is an even number, it is the only number the is neither negative nor positive.</para>
     </note>
-    <para>For larger sets that have a natural ordering, sometimes an ellipsis is used to indicate that the pattern continues. It is common practice to list the first three elements of a set to establish a pattern, write the ellipsis, and then provide the last element. Consider the set of all lowercase letters of the English alphabet, <emphasis effect="italics">A</emphasis>. This set can be written symbolically as follows, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>&#x007B;</mo><mi mathvariant="normal">a,b,c,</mi><mo>&#x2026;</mo><mi mathvariant="normal">, z</mi><mo>&#x007D;</mo></mrow></math></para>
-    <para>The sets we have been discussing so far are <term>finite sets.</term>They all have a limited or fixed number of elements. We also use an ellipsis for <term>infinite sets</term>, which have an unlimited number of elements, to indicate that the pattern continues. For example, the set of <term>natural numbers</term>, which is the set of all positive counting numbers, could be represented as such:</para>
-    <para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x2115;</mi><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#x2026;</mo><mo>&#x007D;</mo></mrow></math></para>
-    <para>There is no element following the ellipsis because there is no largest natural number&#x2013;you can always add one more to get to the next natural number. Because the set of natural numbers grows without bound, it is an infinite set.</para>
-    <note class="definition">
-    <para>A <emphasis effect="bold">finite set</emphasis> is a set with a limited number of members.</para>
-    <para>An <emphasis effect="bold">infinite set</emphasis> is a set with an unlimited number of members.</para>
-    <para>The set of <emphasis effect="bold">natural numbers</emphasis> is the set of counting numbers, starting with the number one. It is represented symbolically as follows: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x2115;</mi><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#x2026;</mo><mo>&#x007D;</mo></mrow></math></para>
+    <para id="para-00023">For larger sets that have a natural ordering, sometimes an ellipsis is used to indicate that the pattern continues. It is common practice to list the first three elements of a set to establish a pattern, write the ellipsis, and then provide the last element. Consider the set of all lowercase letters of the English alphabet, <emphasis effect="italics">A</emphasis>. This set can be written symbolically as follows, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>{</mo><mi mathvariant="normal">a,b,c,</mi><mo>…</mo><mi mathvariant="normal">, z</mi><mo>}</mo></mrow></math></para>
+    <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">The sets we have been discussing so far are <term id="term-00005">finite sets.</term>They all have a limited or fixed number of elements. We also use an ellipsis for <term id="term-00006">infinite sets</term>, which have an unlimited number of elements, to indicate that the pattern continues. For example, the set of <term id="term-00007">natural numbers</term>, which is the set of all positive counting numbers, could be represented as such:</para>
+    <para id="para-00025"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℕ</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo><mo>}</mo></mrow></math></para>
+    <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml">There is no element following the ellipsis because there is no largest natural number–you can always add one more to get to the next natural number. Because the set of natural numbers grows without bound, it is an infinite set.</para>
+    <note class="definition" id="note-00008">
+    <para id="para-00027">A <emphasis effect="bold">finite set</emphasis> is a set with a limited number of members.</para>
+    <para id="para-00028">An <emphasis effect="bold">infinite set</emphasis> is a set with an unlimited number of members.</para>
+    <para id="para-00029">The set of <emphasis effect="bold">natural numbers</emphasis> is the set of counting numbers, starting with the number one. It is represented symbolically as follows: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℕ</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo><mo>}</mo></mrow></math></para>
     </note>
-    <example>
-    <title>EXAMPLE 4 &#x2013; Writing a Finite Set Using the Roster Method and an Ellipsis</title>
-    <exercise>
-    <problem>
-    <para>Write the set of even natural numbers including and between 2 and 100, and label it with a capital <emphasis effect="italics">E</emphasis>. Include an ellipsis.</para>
+    <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <title>EXAMPLE 4 – Writing a Finite Set Using the Roster Method and an Ellipsis</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00030">Write the set of even natural numbers including and between 2 and 100, and label it with a capital <emphasis effect="italics">E</emphasis>. Include an ellipsis.</para>
     </problem>
-    <solution>
-    <para>Write the label, E followed by an equal sign, then a bracket. Write the first 3 even numbers separated by commas beginning with the number 2 to establish a pattern, then include an ellipses, followed by a comma and the last number in the list, 100. Finally write the closing bracket to complete the set. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mo>&#x2026;</mo><mo>,</mo><mn>100</mn></mrow> <mo>}</mo></mrow></mrow></math></para>
+    <solution id="sol-00004">
+    <para id="para-00031">Write the label, E followed by an equal sign, then a bracket. Write the first 3 even numbers separated by commas beginning with the number 2 to establish a pattern, then include an ellipses, followed by a comma and the last number in the list, 100. Finally write the closing bracket to complete the set. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mo>…</mo><mo>,</mo><mn>100</mn></mrow> <mo>}</mo></mrow></mrow></math></para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q004"/></para>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C01-M1-Q004"/></para>
     </problem>
     </exercise>
     </note>
-    <para>Our number system is made up of several different infinite sets of numbers. The set of <term>integers</term>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x2124;</mi><mo>,</mo></mrow></math>is another infinite set of numbers. It includes all the positive and negative counting numbers and the number zero. There is no largest or smallest integer.</para>
-    <note class="definition">
-    <para>An <emphasis effect="bold">integer</emphasis> is a positive counting number, a negative counting number or the number zero.</para>
+    <para id="para-00033">Our number system is made up of several different infinite sets of numbers. The set of <term id="term-00008">integers</term>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℤ</mi><mo>,</mo></mrow></math>is another infinite set of numbers. It includes all the positive and negative counting numbers and the number zero. There is no largest or smallest integer.</para>
+    <note class="definition" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00034">An <emphasis effect="bold">integer</emphasis> is a positive counting number, a negative counting number or the number zero.</para>
     </note>
-    <example>
-    <title>EXAMPLE 5 &#x2013; Writing an Infinite Set Using the Roster Method and Ellipses</title>
-    <exercise>
-    <problem>
-    <para>Write the set of integers using the roster method, and label it with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x2124;</mi></math>.</para>
+    <example id="exam-00005">
+    <title>EXAMPLE 5 – Writing an Infinite Set Using the Roster Method and Ellipses</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00035">Write the set of integers using the roster method, and label it with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℤ</mi></math>.</para>
     </problem>
-    <solution>
-    <para>Because then negative counting numbers are infinite, to represent that the pattern continues without bound to left we include an ellipses as the first element in our list, followed by a comma and at least 3 consecutive integers separated by commas to establish a pattern, finally an ellipses is added to the end of the list to show that the set of integers continues without bound to the right. The set of integers may be represented as follows, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x2124;</mi><mo>=</mo><mo>&#x007B;</mo><mo>&#x2026;</mo><mo>,</mo><mo>&#x2212;</mo><mn>2</mn><mo>,</mo><mo>&#x2212;</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>&#x2026;</mo><mo>&#x007D;</mo><mo>.</mo></mrow></math></para>
+    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00036">Because then negative counting numbers are infinite, to represent that the pattern continues without bound to left we include an ellipses as the first element in our list, followed by a comma and at least 3 consecutive integers separated by commas to establish a pattern, finally an ellipses is added to the end of the list to show that the set of integers continues without bound to the right. The set of integers may be represented as follows, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℤ</mi><mo>=</mo><mo>{</mo><mo>…</mo><mo>,</mo><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mo>…</mo><mo>}</mo><mo>.</mo></mrow></math></para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q005"/></para>
+    <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C01-M1-Q005"/></para>
     </problem>
     </exercise>
     </note>
-    <para>A shorthand way to write sets is with the use of <term>set builder notation</term>, which is a verbal description or formula for the set. For example, the set of all lower-case letters of the English alphabet, <emphasis effect="italics">A</emphasis>, written in set builder notation is:</para>
-    <para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi mathvariant="normal">&#x00A0;</mi><mo>=</mo><mi mathvariant="normal">&#x00A0;</mi><mrow><mo>{</mo> <mrow><mi mathvariant="normal">&#x00A0;</mi><mi>x</mi><mi mathvariant="normal">&#x00A0;</mi><mo>&#x007C;</mo><mi mathvariant="normal">&#x00A0;</mi><mi>x</mi><mi mathvariant="normal">&#x00A0;</mi><mi>is</mi><mi mathvariant="normal">&#x00A0;</mi><mi>a</mi><mi mathvariant="normal">&#x00A0;</mi><mi>lowe</mi><mi>r</mi><mo>&#x2212;</mo><mi>case</mi><mi mathvariant="normal">&#x00A0;</mi><mi>lett</mi><mi>er</mi><mi mathvariant="normal">&#x00A0;</mi><mi>of</mi><mi mathvariant="normal">&#x00A0;</mi><mi>the</mi><mi mathvariant="normal">&#x00A0;</mi><mi>E</mi><mi>ngli</mi><mi>sh</mi><mi mathvariant="normal">&#x00A0;</mi><mi>alph</mi><mi>abet</mi><mo>.</mo><mi mathvariant="normal">&#x00A0;</mi></mrow> <mo>}</mo></mrow></mrow></math></para>
-    <para>This is read as, &#x201C;Set A is the set of all elements <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> such that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> is a lower-case letter of the English alphabet.&#x201D;</para>
-    <note class="definition">
-    <para><emphasis effect="bold">Set builder notation</emphasis> uses a verbal description or formula to represent a set.</para>
+    <para id="para-00038">A shorthand way to write sets is with the use of <term id="term-00009">set builder notation</term>, which is a verbal description or formula for the set. For example, the set of all lower-case letters of the English alphabet, <emphasis effect="italics">A</emphasis>, written in set builder notation is:</para>
+    <para id="para-00039"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi mathvariant="normal"> </mi><mo>=</mo><mi mathvariant="normal"> </mi><mrow><mo>{</mo> <mrow><mi mathvariant="normal"> </mi><mi>x</mi><mi mathvariant="normal"> </mi><mo>|</mo><mi mathvariant="normal"> </mi><mi>x</mi><mi mathvariant="normal"> </mi><mi>is</mi><mi mathvariant="normal"> </mi><mi>a</mi><mi mathvariant="normal"> </mi><mi>lowe</mi><mi>r</mi><mo>−</mo><mi>case</mi><mi mathvariant="normal"> </mi><mi>lett</mi><mi>er</mi><mi mathvariant="normal"> </mi><mi>of</mi><mi mathvariant="normal"> </mi><mi>the</mi><mi mathvariant="normal"> </mi><mi>E</mi><mi>ngli</mi><mi>sh</mi><mi mathvariant="normal"> </mi><mi>alph</mi><mi>abet</mi><mo>.</mo><mi mathvariant="normal"> </mi></mrow> <mo>}</mo></mrow></mrow></math></para>
+    <para id="para-00040" xmlns="http://cnx.rice.edu/cnxml">This is read as, “Set A is the set of all elements <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> such that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> is a lower-case letter of the English alphabet.”</para>
+    <note class="definition" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00041"><emphasis effect="bold">Set builder notation</emphasis> uses a verbal description or formula to represent a set.</para>
     </note>
-    <example>
-    <title>EXAMPLE 6 &#x2013; Writing a Set Using Set Builder Notation</title>
-    <exercise>
-    <problem>
-    <para>Using set builder notation, write the set <emphasis effect="italics">B</emphasis> of all types of balls. Explain what the notation means.</para>
+    <example id="exam-00006">
+    <title>EXAMPLE 6 – Writing a Set Using Set Builder Notation</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00042">Using set builder notation, write the set <emphasis effect="italics">B</emphasis> of all types of balls. Explain what the notation means.</para>
     </problem>
-    <solution>
-    <para>The verbal description of the set is, &#x201C;Set B is the set of all elements <emphasis effect="italics">b</emphasis> such that <emphasis effect="italics">b</emphasis> is a ball.&#x201D; This set can be written in set builder notation as follows, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mi mathvariant="normal">&#x00A0;</mi><mo>=</mo><mi mathvariant="normal">&#x00A0;</mi><mrow><mo>{</mo> <mrow><mi mathvariant="normal">&#x00A0;</mi><mi>b</mi><mi mathvariant="normal">&#x00A0;</mi><mo>&#x007C;</mo><mi mathvariant="normal">&#x00A0;</mi><mi>b</mi><mi mathvariant="normal">&#x00A0;</mi><mi>is</mi><mi mathvariant="normal">&#x00A0;</mi><mi>a</mi><mi mathvariant="normal">&#x00A0;</mi><mi>ball</mi><mo>.</mo><mi mathvariant="normal">&#x00A0;</mi></mrow> <mo>}</mo></mrow></mrow></math></para>
+    <solution id="sol-00006">
+    <para id="para-00043">The verbal description of the set is, “Set B is the set of all elements <emphasis effect="italics">b</emphasis> such that <emphasis effect="italics">b</emphasis> is a ball.” This set can be written in set builder notation as follows, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mi mathvariant="normal"> </mi><mo>=</mo><mi mathvariant="normal"> </mi><mrow><mo>{</mo> <mrow><mi mathvariant="normal"> </mi><mi>b</mi><mi mathvariant="normal"> </mi><mo>|</mo><mi mathvariant="normal"> </mi><mi>b</mi><mi mathvariant="normal"> </mi><mi>is</mi><mi mathvariant="normal"> </mi><mi>a</mi><mi mathvariant="normal"> </mi><mi>ball</mi><mo>.</mo><mi mathvariant="normal"> </mi></mrow> <mo>}</mo></mrow></mrow></math></para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q006"/></para>
+    <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C01-M1-Q006"/></para>
     </problem>
     </exercise>
     </note>
-    <example>
-    <title>EXAMPLE 7 &#x2013; Writing Sets Using Various Methods</title>
-    <exercise>
-    <problem>
-    <para>Consider the set of letters in the word &#x201C;happy.&#x201D; Determine the best way to represent this set, then write the set using either the roster method or set builder notation.</para>
+    <example id="exam-00007">
+    <title>EXAMPLE 7 – Writing Sets Using Various Methods</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00045">Consider the set of letters in the word “happy.” Determine the best way to represent this set, then write the set using either the roster method or set builder notation.</para>
     </problem>
-    <solution>
-    <para>Because the letters in the word &#x201C;happy&#x201D; consist of a small finite set, the best way to represent this set is with the roster method. Choose a label to represent the set, such as H.</para>
-    <para><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mi>h</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>p</mi><mo>,</mo><mi>y</mi></mrow> <mo>}</mo></mrow></mrow></math>.</para>
-    <para>Notice that the letter p is only represented one time, because when representing members of a set each unique element is only listed once no matter how many times it occurs. Duplicate elements are never repeated when representing members of a set.</para>
+    <solution id="sol-00007">
+    <para id="para-00046">Because the letters in the word “happy” consist of a small finite set, the best way to represent this set is with the roster method. Choose a label to represent the set, such as H.</para>
+    <para id="para-00047"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mi>h</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>p</mi><mo>,</mo><mi>y</mi></mrow> <mo>}</mo></mrow></mrow></math>.</para>
+    <para id="para-00048" xmlns="http://cnx.rice.edu/cnxml">Notice that the letter p is only represented one time, because when representing members of a set each unique element is only listed once no matter how many times it occurs. Duplicate elements are never repeated when representing members of a set.</para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q007"/></para>
+    <note class="your-turn" id="note-00014">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C01-M1-Q007"/></para>
     </problem>
     </exercise>
     </note>
     </section>
-    <section>
+    <section id="sect-00002">
     <title>Computing the Cardinal Value of a Set</title>
-    <para>Almost all the sets most people work with outside of pure mathematics are finite sets. For these sets, the <term>cardinal value</term> or <term>cardinality</term> of the set is the number of elements in the set. For example, a set that contains 4 elements has a cardinality of 4. How do we measure the cardinality of infinite sets? The &#x2018;smallest&#x2019; infinite set is the set of natural numbers or counting numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x2115;</mi><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#x2026;</mo><mo>&#x007D;</mo></mrow></math>. This set has a cardinality of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x2135;</mi><mn>0</mn></msub></mrow></math>. More interestingly, the set of rational numbers can be shown to have the same cardinality of the natural numbers, even though there is an infinite number of rational numbers between each neighboring pair of natural numbers. All sets that have the same cardinality as the set of natural numbers are <term>countably infinite</term>.</para>
-    <note class="definition">
-    <para>The <emphasis effect="bold">cardinal value</emphasis> or <emphasis effect="bold">cardinality</emphasis> of a finite set,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, is the number of distinct elements in set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> and is denoted symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math>.</para>
-    <para>A set is <emphasis effect="bold">countably infinite</emphasis> if it has the same cardinality as the set of natural numbers.</para>
+    <para id="para-00050">Almost all the sets most people work with outside of pure mathematics are finite sets. For these sets, the <term id="term-00010">cardinal value</term> or <term id="term-00011">cardinality</term> of the set is the number of elements in the set. For example, a set that contains 4 elements has a cardinality of 4. How do we measure the cardinality of infinite sets? The ‘smallest’ infinite set is the set of natural numbers or counting numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℕ</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo><mo>}</mo></mrow></math>. This set has a cardinality of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>ℵ</mi><mn>0</mn></msub></mrow></math>. More interestingly, the set of rational numbers can be shown to have the same cardinality of the natural numbers, even though there is an infinite number of rational numbers between each neighboring pair of natural numbers. All sets that have the same cardinality as the set of natural numbers are <term id="term-00012" xmlns="http://cnx.rice.edu/cnxml">countably infinite</term>.</para>
+    <note class="definition" id="note-00015">
+    <para id="para-00051">The <emphasis effect="bold">cardinal value</emphasis> or <emphasis effect="bold">cardinality</emphasis> of a finite set,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, is the number of distinct elements in set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> and is denoted symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math>.</para>
+    <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml">A set is <emphasis effect="bold">countably infinite</emphasis> if it has the same cardinality as the set of natural numbers.</para>
     </note>
-    <example>
-    <title>EXAMPLE 8 &#x2013; Computing the Cardinal Value of a Set</title>
-    <exercise>
-    <problem>
-    <para>Write the cardinal value of each of the following sets in symbolic form.</para>
-    <list list-type="enumerated" number-style="lower-alpha">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mi mathvariant="normal">&#x00A0;</mi><mo>&#x007B;</mo><mi>fork</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>spoo</mi><mi>n</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>knif</mi><mi>e</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>meat</mi><mi mathvariant="normal">&#x00A0;</mi><mi>ther</mi><mi>mome</mi><mi>ter</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>can</mi><mi mathvariant="normal">&#x00A0;</mi><mi>open</mi><mi>er</mi><mo>&#x007D;</mo></mrow></math></item>
-    <item>The empty set.</item>
+    <example id="exam-00008">
+    <title>EXAMPLE 8 – Computing the Cardinal Value of a Set</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00053">Write the cardinal value of each of the following sets in symbolic form.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mi mathvariant="normal"> </mi><mo>{</mo><mi>fork</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>spoo</mi><mi>n</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>knif</mi><mi>e</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>meat</mi><mi mathvariant="normal"> </mi><mi>ther</mi><mi>mome</mi><mi>ter</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>can</mi><mi mathvariant="normal"> </mi><mi>open</mi><mi>er</mi><mo>}</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The empty set.</item>
     </list>
     </problem>
-    <solution>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <solution id="sol-00008">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
     <item>There are 5 distinct elements in set <emphasis effect="italics">F</emphasis>: a fork, a spoon, a knife, a meat thermometer, and a can opener. Therefore, the cardinal value of set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> is 5 and written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>F</mi><mo>)</mo></mrow><mo>=</mo><mn>5.</mn></mrow></math></item>
-    <item>Because the empty set does not have any elements in it, the cardinality of the empty set is zero. Symbolically we write this as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mo>&#x2205;</mo><mo>)</mo></mrow><mo>=</mo><mn>0.</mn></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Because the empty set does not have any elements in it, the cardinality of the empty set is zero. Symbolically we write this as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mo>∅</mo><mo>)</mo></mrow><mo>=</mo><mn>0.</mn></mrow></math></item>
     </list>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q008"/></para>
+    <note class="your-turn" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C01-M1-Q008"/></para>
     </problem>
     </exercise>
     </note>
-    <para>Now that we have learned to represent finite and infinite sets using both the roster method and set builder notation, we should also be able to determine if a set is finite or infinite based on its verbal or symbolic description. A set is finite if it has a limited number of members. One way to determine if a set is finite or not is to determine the cardinality of the set. If the cardinality of a set is a natural number, then the set is finite.</para>
-    <example>
-    <title>EXAMPLE 9 &#x2013; Differentiating Between Finite and Infinite Sets</title>
-    <exercise>
-    <problem>
-    <para>Classify each of the following sets as infinite or finite.</para>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <para id="para-00055">Now that we have learned to represent finite and infinite sets using both the roster method and set builder notation, we should also be able to determine if a set is finite or infinite based on its verbal or symbolic description. A set is finite if it has a limited number of members. One way to determine if a set is finite or not is to determine the cardinality of the set. If the cardinality of a set is a natural number, then the set is finite.</para>
+    <example id="exam-00009">
+    <title>EXAMPLE 9 – Differentiating Between Finite and Infinite Sets</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00056">Classify each of the following sets as infinite or finite.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00008">
     <item>E = {2, 4, 6, 8, 10}</item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>is the set of lower-case letters of the English Alphabet, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>&#x007B;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mo>&#x2026;</mo><mo>,</mo><mi>z</mi><mo>&#x007D;</mo></mrow></math>.</item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x211A;</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mstyle displaystyle="true"><mfrac><mi>pq</mi></mfrac></mstyle><mi mathvariant="normal">&#x007C;</mi><mi>p</mi><mi mathvariant="normal">&#x00A0;</mi><mi>and</mi><mi mathvariant="normal">&#x00A0;</mi><mi>q</mi><mi mathvariant="normal">&#x00A0;</mi><mi>are</mi><mi mathvariant="normal">&#x00A0;</mi><mi>inte</mi><mi>gers</mi><mi mathvariant="normal">&#x00A0;</mi><mi>and</mi><mi mathvariant="normal">&#x00A0;</mi><mi>q</mi><mo>&#x2260;</mo><mn>0</mn></mrow> <mo>}</mo></mrow></mrow></math>.</item>
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>is the set of lower-case letters of the English Alphabet, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mo>…</mo><mo>,</mo><mi>z</mi><mo>}</mo></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℚ</mi><mo>=</mo><mrow><mo>{</mo> <mrow><mstyle displaystyle="true"><mfrac><mi>pq</mi></mfrac></mstyle><mi mathvariant="normal">|</mi><mi>p</mi><mi mathvariant="normal"> </mi><mi>and</mi><mi mathvariant="normal"> </mi><mi>q</mi><mi mathvariant="normal"> </mi><mi>are</mi><mi mathvariant="normal"> </mi><mi>inte</mi><mi>gers</mi><mi mathvariant="normal"> </mi><mi>and</mi><mi mathvariant="normal"> </mi><mi>q</mi><mo>≠</mo><mn>0</mn></mrow> <mo>}</mo></mrow></mrow></math>.</item>
     </list>
     </problem>
-    <solution>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <solution id="sol-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00009">
     <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>E</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn></mrow></math>, Since 5 is a natural number, the set is finite.</item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mo>=</mo><mn>26</mn></mrow></math>, Since 26 is a natural number, the set is finite.</item>
-    <item>Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x211A;</mi></math> is the set of rational numbers or fractions. Because the set of integers is a subset of the set of rational numbers, and the set of integers is infinite, the set of rational numbers is also infinite. There is no smallest or largest rational number.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mo>=</mo><mn>26</mn></mrow></math>, Since 26 is a natural number, the set is finite.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℚ</mi></math> is the set of rational numbers or fractions. Because the set of integers is a subset of the set of rational numbers, and the set of integers is infinite, the set of rational numbers is also infinite. There is no smallest or largest rational number.</item>
     </list>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q009"/></para>
+    <note class="your-turn" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C01-M1-Q009"/></para>
     </problem>
     </exercise>
     </note>
     </section>
-    <section>
+    <section id="sect-00003">
     <title>Equal versus Equivalent Sets</title>
-    <para>When speaking or writing we tend to use equal and equivalent interchangeably, but there is actually a distinction between their meanings. Consider a new Ford Escape Hybrid and a new Toyota Rav4 Hybrid. Both cars are hybrid electric sport utility vehicles; in that sense, they are <term>equivalent</term>. They will both get you from place to place in a relatively fuel-efficient way. In this example we are comparing the single member set {Toyota Rav4 Hybrid} to the single member set {Ford Escape Hybrid}. Since these two sets have the same number of elements, they are also equivalent mathematically. But they are not equal, because the two cars have different looks and features, and probably even handle differently. Each manufacturer will emphasize the features unique to their vehicle to persuade you to buy it; if the SUVs were truly equal, there would be no reason to choose one over the other. Now consider two Honda CR-Vs that are made with exactly the same parts, on the same assembly line within a few minutes of each other&#x2014;these SUVs are <term>equal</term>. They are identical to each other, and the only differentiator when making a purchasing decision would be varied pricing at different dealerships. The set {Honda CR-V} is equal to the set {Honda CR-V}.</para>
-    <note class="definition">
-    <para>Two sets are <emphasis effect="bold">equal</emphasis> if they have the same elements without regard to order. Symbolically: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow></math></para>
-    <para>Two sets are <emphasis effect="bold">equivalent</emphasis> if they have the same cardinality. Symbolically: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x223C;</mo><mi>B</mi></mrow></math></para>
+    <para id="para-00058">When speaking or writing we tend to use equal and equivalent interchangeably, but there is actually a distinction between their meanings. Consider a new Ford Escape Hybrid and a new Toyota Rav4 Hybrid. Both cars are hybrid electric sport utility vehicles; in that sense, they are <term id="term-00013">equivalent</term>. They will both get you from place to place in a relatively fuel-efficient way. In this example we are comparing the single member set {Toyota Rav4 Hybrid} to the single member set {Ford Escape Hybrid}. Since these two sets have the same number of elements, they are also equivalent mathematically. But they are not equal, because the two cars have different looks and features, and probably even handle differently. Each manufacturer will emphasize the features unique to their vehicle to persuade you to buy it; if the SUVs were truly equal, there would be no reason to choose one over the other. Now consider two Honda CR-Vs that are made with exactly the same parts, on the same assembly line within a few minutes of each other—these SUVs are <term id="term-00014">equal</term>. They are identical to each other, and the only differentiator when making a purchasing decision would be varied pricing at different dealerships. The set {Honda CR-V} is equal to the set {Honda CR-V}.</para>
+    <note class="definition" id="note-00018">
+    <para id="para-00059">Two sets are <emphasis effect="bold">equal</emphasis> if they have the same elements without regard to order. Symbolically: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow></math></para>
+    <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">Two sets are <emphasis effect="bold">equivalent</emphasis> if they have the same cardinality. Symbolically: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∼</mo><mi>B</mi></mrow></math></para>
     </note>
-    <para>Now, let us consider a Toyota dealership that has 10 RAV4s on the lot, 8 Prii, 7 Highlanders, and 12 Camrys. There is a one-to-one relationship between the set of vehicles on the lot and the set consisting of the number of each type of vehicle on the lot. Therefore, these two sets are equivalent, but not equal. The set {RAV4, Prius, Highlander, Camry} is equivalent to the set {10, 8, 7, 12} because they have the same number of elements.</para>
-    <para><emphasis effect="bold">VIDEO: Equal and Equivalent Sets &lt;https://www.youtube.com/watch?v=9Ug3d_dmmrk&gt;</emphasis></para>
-    <para>&#x1F6A6; <emphasis effect="italics">If two sets are equal, they are also equivalent, because equal sets also have the same cardinality.</emphasis></para>
-    <example>
-    <title>EXAMPLE 10 &#x2013; Differentiating Between Equivalent and Equal Sets</title>
-    <exercise>
-    <problem>
-    <para>Determine if the following pairs of sets are equal, equivalent, or neither.</para>
-    <list list-type="enumerated" number-style="lower-alpha">
-    <item>E = {2, 4, 6, 8, 10} and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mi mathvariant="normal">&#x00A0;</mi><mo>&#x007B;</mo><mi mathvariant="normal">fork, spoon, knife, meat thermometer, can opener</mi><mo>&#x007D;</mo></mrow></math></item>
-    <item>The empty set and the set of prime numbers less than 2.</item>
+    <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">Now, let us consider a Toyota dealership that has 10 RAV4s on the lot, 8 Prii, 7 Highlanders, and 12 Camrys. There is a one-to-one relationship between the set of vehicles on the lot and the set consisting of the number of each type of vehicle on the lot. Therefore, these two sets are equivalent, but not equal. The set {RAV4, Prius, Highlander, Camry} is equivalent to the set {10, 8, 7, 12} because they have the same number of elements.</para>
+    <para id="para-00062"><emphasis effect="bold">VIDEO: Equal and Equivalent Sets &lt;https://www.youtube.com/watch?v=9Ug3d_dmmrk></emphasis></para>
+    <para id="para-00063">🚦 <emphasis effect="italics">If two sets are equal, they are also equivalent, because equal sets also have the same cardinality.</emphasis></para>
+    <example id="exam-00010">
+    <title>EXAMPLE 10 – Differentiating Between Equivalent and Equal Sets</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00064">Determine if the following pairs of sets are equal, equivalent, or neither.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
+    <item>E = {2, 4, 6, 8, 10} and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mi mathvariant="normal"> </mi><mo>{</mo><mi mathvariant="normal">fork, spoon, knife, meat thermometer, can opener</mi><mo>}</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The empty set and the set of prime numbers less than 2.</item>
     <item>The set of vowels in the word happiness and the set of consonants in the word happiness.</item>
     </list>
     </problem>
-    <solution>
-    <list list-type="enumerated" number-style="lower-alpha">
-    <item>Sets E and F both have a cardinal value of 5, but the elements in these sets are different. So, the two sets are equivalent, but they are not equal: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>&#x223C;</mo><mi>F</mi></mrow></math>.</item>
-    <item>The set of prime numbers consists of the set of counting numbers greater than one that can only be divided evenly by one and itself. The set of prime numbers less than 2 is an empty set, since there are no prime numbers less than 2. Therefore, these two sets are equal (and equivalent).</item>
-    <item>The set of vowels in the word happiness is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mi>a</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>i</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>e</mi></mrow> <mo>}</mo></mrow></mrow></math> and the set of consonants in the word happiness is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mi>h</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>p</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>n</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>s</mi></mrow> <mo>}</mo></mrow></mrow></math>. The cardinal value of these sets two sets is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mo>&#x007B;</mo><mi>a</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>i</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>e</mi><mo>&#x007D;</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>3</mn></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mo>&#x007B;</mo><mi>h</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>p</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>n</mi><mo>,</mo><mi mathvariant="normal">&#x00A0;</mi><mi>s</mi><mo>&#x007D;</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo>,</mo></mrow></math>respectively. Because the cardinality of the two sets differs, they are not equivalent. Further, their elements are not identical, so they are also not equal.</item>
+    <solution id="sol-00010">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00011">
+    <item>Sets E and F both have a cardinal value of 5, but the elements in these sets are different. So, the two sets are equivalent, but they are not equal: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>∼</mo><mi>F</mi></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The set of prime numbers consists of the set of counting numbers greater than one that can only be divided evenly by one and itself. The set of prime numbers less than 2 is an empty set, since there are no prime numbers less than 2. Therefore, these two sets are equal (and equivalent).</item>
+    <item>The set of vowels in the word happiness is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mi>a</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>i</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>e</mi></mrow> <mo>}</mo></mrow></mrow></math> and the set of consonants in the word happiness is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mi>h</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>p</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>n</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>s</mi></mrow> <mo>}</mo></mrow></mrow></math>. The cardinal value of these sets two sets is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mo>{</mo><mi>a</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>i</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>e</mi><mo>}</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>3</mn></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mo>{</mo><mi>h</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>p</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>n</mi><mo>,</mo><mi mathvariant="normal"> </mi><mi>s</mi><mo>}</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo>,</mo></mrow></math>respectively. Because the cardinality of the two sets differs, they are not equivalent. Further, their elements are not identical, so they are also not equal.</item>
     </list>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q010"/></para>
+    <note class="your-turn" id="note-00019" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C01-M1-Q010"/></para>
     </problem>
     </exercise>
     </note>
-    <note class="people-mathematics">
+    <note class="people-mathematics" id="note-00020">
     <title>Georg Cantor</title>
-    <figure class="unnumbered">
+    <figure class="unnumbered" id="fig-00001">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/Photo_1.0b.jpg"/>
     </media>
     <caption>Photo 1.0b<emphasis effect="italics">: Picture of Georg Cantor</emphasis></caption>
     </figure>
-    <para>Georg Cantor the father of modern set theory was born during the year 1845 in Saint Petersburg, Russa and later moved to Germany as a youth. Besides being an accomplished mathematician, he also played the violin. Cantor received his doctoral degree in Mathematics at the age of 22.</para>
-    <para>In 1870, at the age of 25 he established the uniqueness theorem for trigonometric series. His most significant work happened between 1874 and 1884 when he established the existence of transcendental numbers also called irrational numbers and proved that the set of Real numbers are uncountably infinite despite the objections of his former professor Leopold Kronecker.</para>
-    <para>Cantor published his final treatise on set theory in 1897 at the age of 52 and was awarded the Sylvester medial from the Royal Society of London in 1904 for his contributions to the field of set theory. At the heart of Cantors work was his goal to solve the Continuum problem which later influenced the works of David Hilbert and Ernst Zermelo.</para>
-    <para>References:</para>
-    <para>Wikipedia contributors. "Cantor." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 23 Mar. 2021. Web. 20 Jul. 2021.</para>
-    <para>Akihiro Kanamori, Set Theory from Cantor to Cohen, Editor(s): Dov M. Gabbay, Akihiro Kanamori, John Woods, Handbook of the History of Logic, North-Holland, Volume 6, 2012.</para>
+    <para id="para-00066">Georg Cantor the father of modern set theory was born during the year 1845 in Saint Petersburg, Russa and later moved to Germany as a youth. Besides being an accomplished mathematician, he also played the violin. Cantor received his doctoral degree in Mathematics at the age of 22.</para>
+    <para id="para-00067">In 1870, at the age of 25 he established the uniqueness theorem for trigonometric series. His most significant work happened between 1874 and 1884 when he established the existence of transcendental numbers also called irrational numbers and proved that the set of Real numbers are uncountably infinite despite the objections of his former professor Leopold Kronecker.</para>
+    <para id="para-00068">Cantor published his final treatise on set theory in 1897 at the age of 52 and was awarded the Sylvester medial from the Royal Society of London in 1904 for his contributions to the field of set theory. At the heart of Cantors work was his goal to solve the Continuum problem which later influenced the works of David Hilbert and Ernst Zermelo.</para>
+    <para id="para-00069">References:</para>
+    <para id="para-00070">Wikipedia contributors. "Cantor." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 23 Mar. 2021. Web. 20 Jul. 2021.</para>
+    <para id="para-00071">Akihiro Kanamori, Set Theory from Cantor to Cohen, Editor(s): Dov M. Gabbay, Akihiro Kanamori, John Woods, Handbook of the History of Logic, North-Holland, Volume 6, 2012.</para>
     </note>
     </section>
-    <section>
+    <section id="sect-00004">
     <title>Check Your Understanding</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q011"/></para>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00072"><link class="os-embed" url="#exercise/CM-C01-M1-Q011"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q012"/></para>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00073"><link class="os-embed" url="#exercise/CM-C01-M1-Q012"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q013"/></para>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C01-M1-Q013"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q014"/></para>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00075"><link class="os-embed" url="#exercise/CM-C01-M1-Q014"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q015"/></para>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C01-M1-Q015"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q016"/></para>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00077"><link class="os-embed" url="#exercise/CM-C01-M1-Q016"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q017"/></para>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00078"><link class="os-embed" url="#exercise/CM-C01-M1-Q017"/></para>
     </problem>
-    <solution>
-    <para>Roster method:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mo>&#x2026;</mo><mo>,</mo><mi>Z</mi><mo>&#x007D;</mo><mo>,</mo></mrow></math> and set builder notation: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mi>x</mi><mo>&#x007C;</mo><mi>x</mi><mi mathvariant="normal"> is a capital letter of the English alphabet</mi><mi mathvariant="normal">.&#x007D;</mi></mrow></math></para>
+    <solution id="sol-00011">
+    <para id="para-00079">Roster method:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mo>…</mo><mo>,</mo><mi>Z</mi><mo>}</mo><mo>,</mo></mrow></math> and set builder notation: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mi>x</mi><mo>|</mo><mi>x</mi><mi mathvariant="normal"> is a capital letter of the English alphabet</mi><mi mathvariant="normal">.}</mi></mrow></math></para>
     </solution>
     </exercise>
     </section>
-    <section class="section-exercises">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q018"/></para>
+    <section class="section-exercises" id="sect-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C01-M1-Q018"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q019"/></para>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00081"><link class="os-embed" url="#exercise/CM-C01-M1-Q019"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q020"/></para>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00082"><link class="os-embed" url="#exercise/CM-C01-M1-Q020"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q021"/></para>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00083"><link class="os-embed" url="#exercise/CM-C01-M1-Q021"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q022"/></para>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00084"><link class="os-embed" url="#exercise/CM-C01-M1-Q022"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q023"/></para>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00085"><link class="os-embed" url="#exercise/CM-C01-M1-Q023"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M1-Q024"/></para>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00086"><link class="os-embed" url="#exercise/CM-C01-M1-Q024"/></para>
     </problem>
     </exercise>
     </section>
-    <section>
+    <section id="sect-00006">
     <title>Module 1 Summary</title>
-    <section class="key-terms">
+    <section class="key-terms" id="sect-00007">
     <title>Key Terms</title>
-    <list bullet-style="none">
+    <list bullet-style="none" id="list-00012">
     <item>set</item>
     <item>elements</item>
     <item>well-defined set</item>
@@ -410,9 +410,9 @@
     <item>equivalent sets</item>
     </list>
     </section>
-    <section class="key-concepts">
+    <section class="key-concepts" id="sect-00008">
     <title>Key Concepts</title>
-    <list bullet-style="none">
+    <list bullet-style="none" id="list-00013">
     <item>Represent sets using both the roster method and set builder notation.</item>
     <item>Differentiate between well-defined sets and sets that are not well-defined.</item>
     <item>Represent the empty set symbolically.</item>
@@ -421,9 +421,9 @@
     <item>Differentiate between equal and equivalent sets.</item>
     </list>
     </section>
-    <section class="videos">
+    <section class="videos" id="sect-00009">
     <title>Videos</title>
-    <para><emphasis effect="bold">Equal and Equivalent Sets &lt;https://www.youtube.com/watch?v=9Ug3d_dmmrk&gt;</emphasis></para>
+    <para id="para-00087"><emphasis effect="bold">Equal and Equivalent Sets &lt;https://www.youtube.com/watch?v=9Ug3d_dmmrk></emphasis></para>
     </section>
     </section>
     </content>

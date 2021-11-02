@@ -6,233 +6,233 @@
     <md:uuid>94161dc9-2706-4efe-925a-9b3d114dfa93</md:uuid>
   </metadata>
   <content>
-    <section class="learning-objectives">
+    <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
-    <para>After completing this module, you should be able to:</para>
-    <list list-type="enumerated" number-style="arabic">
+    <para id="para-00001">After completing this module, you should be able to:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Interpret Venn diagrams with three sets.</item>
     <item>Create Venn diagrams with three sets.</item>
     <item>Apply set operations to three sets.</item>
     <item>Prove equality of sets using Venn diagrams.</item>
     </list>
     </section>
-    <figure class="unnumbered">
+    <figure class="unnumbered" id="fig-00001">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/Photo 1.5.jpg"/>
     </media>
     <caption>Photo 1.5: Internet related image with custom news feed or advertisements.</caption>
     </figure>
-    <para>Have you ever searched for a something on the Internet and then soon after start seeing multiple advertisements for that item when you are browsing other web pages? Large corporations have built their business on data collection and analysis. As we start working with larger data sets the analysis becomes more complex. In this module we will extend our knowledge of set relationships by including a third set.</para>
-    <para> A Venn diagram with two intersecting sets breaks up the universal set into four regions, simply adding one additional set will increase the number of regions to eight, doubling the complexity of the problem.</para>
-    <section>
+    <para id="para-00002">Have you ever searched for a something on the Internet and then soon after start seeing multiple advertisements for that item when you are browsing other web pages? Large corporations have built their business on data collection and analysis. As we start working with larger data sets the analysis becomes more complex. In this module we will extend our knowledge of set relationships by including a third set.</para>
+    <para id="para-00003"> A Venn diagram with two intersecting sets breaks up the universal set into four regions, simply adding one additional set will increase the number of regions to eight, doubling the complexity of the problem.</para>
+    <section id="sect-00002">
     <title>Venn Diagrams with Three Sets</title>
-    <para>A Venn diagram with two intersecting sets breaks the universal set up into four distinct regions.</para>
-    <figure class="unnumbered">
+    <para id="para-00004">A Venn diagram with two intersecting sets breaks the universal set up into four distinct regions.</para>
+    <figure class="unnumbered" id="fig-00002">
     <media alt="Insert Alt Text">
-    <image mime-type="image/png" src="../../media/CS_Figure_01_05_027.png"/>
+    <image mime-type="image/png" src="../../media/CS_Figure_01_05_027.jpg"/>
     </media>
     <caption>Figure 1.27<emphasis effect="italics">: Venn diagram with two intersecting sets</emphasis>
     </caption>
     </figure>
-    <para>A Venn diagram with three intersecting sets breaks up the universal set into 8 distinct regions.</para>
-    <figure class="unnumbered">
+    <para id="para-00005">A Venn diagram with three intersecting sets breaks up the universal set into 8 distinct regions.</para>
+    <figure class="unnumbered" id="fig-00003">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_028a.jpg"/>
     </media>
     <caption>Figure 1.28<emphasis effect="italics">: Venn diagram with three intersecting sets.</emphasis>
     </caption>
     </figure>
-    <para>In the next example, we will explore the three main blood factors, A, B and Rh. The following background information about blood types will help explain the relationships between the sets of blood factors. If an individual has blood factor A or B, those will be included in their blood type. The Rh factor is indicated with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>+</mo></math>or a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#x2212;</mo></math>. For example if a person has all three blood factors, then their blood type would be In the Venn diagram they would be in the intersection of all three sets,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>&#x2229;</mo><mi>R</mi><msup><mi>h</mi><mo>+</mo></msup><mo>.</mo></mrow></math> If a person did not have any of these three blood factors then their blood type would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>O</mi><mo>&#x2212;</mo></msup><mo>,</mo></mrow></math>and they would be in the set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>&#x222A;</mo><mi>R</mi><msup><mi>h</mi><mo>+</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>&#x2032;</mo></msup></mrow></math>which is the region outside all three circles.</para>
-    <note class="tech-check">
+    <para id="para-00006">In the next example, we will explore the three main blood factors, A, B and Rh. The following background information about blood types will help explain the relationships between the sets of blood factors. If an individual has blood factor A or B, those will be included in their blood type. The Rh factor is indicated with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>+</mo></math>or a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo></math>. For example if a person has all three blood factors, then their blood type would be In the Venn diagram they would be in the intersection of all three sets,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>R</mi><msup><mi>h</mi><mo>+</mo></msup><mo>.</mo></mrow></math> If a person did not have any of these three blood factors then their blood type would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>O</mi><mo>−</mo></msup><mo>,</mo></mrow></math>and they would be in the set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>R</mi><msup><mi>h</mi><mo>+</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>which is the region outside all three circles.</para>
+    <note class="tech-check" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
     <title>Shading Venn Diagram</title>
-    <para>Venn Diagram is an android application that allows you to visualize how the sets are related in a Venn diagram by entering expressions and displaying the resulting Venn diagram of the set shaded in gray.</para>
-    <figure class="unnumbered">
+    <para id="para-00007">Venn Diagram is an android application that allows you to visualize how the sets are related in a Venn diagram by entering expressions and displaying the resulting Venn diagram of the set shaded in gray.</para>
+    <figure class="unnumbered" id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/Chapter 1_Screen1.2.jpg"/>
     </media>
     <caption>Screen 1.2: Google Play Store image of Venn Diagram app.</caption>
     </figure>
-    <para>The Venn Diagram application uses some notation that differs from the notation covered in the text.</para>
-    <list list-type="enumerated" number-style="lower-alpha">
-    "<item>The complement of set A in this text is written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>&#x2032;</mo></msup></math>but the Venn Diagram uses <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mi>C</mi></msup></mrow></math>to represent the complement operation.</item>
-    "<item>The set difference operation, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>&#x2212;</mo></math>,is available in the application, although this operation is not covered in the text.</item>
+    <para id="para-00008">The Venn Diagram application uses some notation that differs from the notation covered in the text.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+    <item>The complement of set A in this text is written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math>but the Venn Diagram uses <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mi>C</mi></msup></mrow></math>to represent the complement operation.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The set difference operation, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo></math>,is available in the application, although this operation is not covered in the text.</item>
     </list>
-    <para>It is recommended that you explore this application to expand your knowledge of Venn diagrams prior to continuing with the next example.</para>
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">It is recommended that you explore this application to expand your knowledge of Venn diagrams prior to continuing with the next example.</para>
     </note>
-    <example>
+    <example id="exam-00001">
     <title>Interpreting a Venn Diagram with Three Sets</title>
-    <exercise>
-    <problem>
-    <para>Use the Venn diagram showing the blood types of 100 people who donated blood at a local clinic to answer the following questions.</para>
-    <figure class="unnumbered">
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">Use the Venn diagram showing the blood types of 100 people who donated blood at a local clinic to answer the following questions.</para>
+    <figure class="unnumbered" id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_029a.jpg"/>
     </media>
     <caption>Figure 1.29: Venn diagram with three main blood types: A, B, and Rh+</caption>
     </figure>
-    <para>
-    <list>
+    <para id="para-00011">
+    <list id="list-00003">
     <item>How many people donated blood with a type A blood factor?</item>
-    <item>Julio has blood type<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>B</mi><mo>+</mo></msup><mo>.</mo><mo>&#x2297;</mo></mrow></math>If he needs to have surgery that requires a blood transfusion, he can accept blood from anyone who does not have a type A blood factor. How many people donated blood that Julio can accept?</item>
-    <item>How many people who donated blood do not have the Rh+ blood factor?</item>
+    <item>Julio has blood type<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>B</mi><mo>+</mo></msup><mo>.</mo><mo>⊗</mo></mrow></math>If he needs to have surgery that requires a blood transfusion, he can accept blood from anyone who does not have a type A blood factor. How many people donated blood that Julio can accept?</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">How many people who donated blood do not have the Rh+ blood factor?</item>
     <item>How many people had type A and type B blood?</item>
     </list>
     </para>
     </problem>
-    <solution>
-    <para>
-    <list list-type="lower-alpha">
-    <item>The number of people who donated blood with a type A blood factor will include the sum of all the values included in the A circle. It will be the union of sets <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2212;</mo></msup><mo>,</mo><mtext>&#x00A0;</mtext><msup><mi>A</mi><mo>+</mo></msup><mo>,</mo><mtext>&#x00A0;</mtext><mi>A</mi><msup><mi>B</mi><mo>&#x2212;</mo></msup><mtext>&#x00A0;and&#x00A0;</mtext><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo>.</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo></mo><mi>A</mi><mo></mo><mo>=</mo><mi>n</mi><mo></mo><msup><mi>A</mi><mo>&#x2212;</mo></msup><mo></mo><mo>+</mo><mi>n</mi><mo></mo><msup><mi>A</mi><mo>+</mo></msup><mo></mo><mo>+</mo><mi>n</mi><mo></mo><mi>A</mi><msup><mi>B</mi><mo>&#x2212;</mo></msup><mo></mo><mo>+</mo><mi>n</mi><mo></mo><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo></mo><mo>=</mo><mn>6</mn><mo>+</mo><mn>36</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>46.</mn></mrow></math></item>
-    <item>In part a, it was determined that the number of donors with a type A blood factor is 46, to determine the number of people who did not have a type A blood factor, use the following property,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>&#x2032;</mo></msup></math>union is equal to<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>, which means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo></mo><mi>A</mi><mo></mo><mo>+</mo><mi>n</mi><mo></mo><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo></mo><mo>=</mo><mi>n</mi><mo stretchy='false'>(</mo><mi>U</mi><mo stretchy='false'>)</mo><mo>,</mo></mrow></math>and<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo></mo><mi>A</mi><mo>&#x0027;</mo><mo></mo><mo>=</mo><mi>n</mi><mo></mo><mi>U</mi><mo></mo><mo>&#x2212;</mo><mi>n</mi><mo stretchy='false'>(</mo><mi>A</mi><mo></mo><mo>=</mo><mn>100</mn><mo>&#x2212;</mo><mn>46</mn><mo>=</mo><mn>54.</mn></mrow></math> 54 people donated blood that Julio can accept.</item>
-    <item>This would be everyone outside the Rh+ circle, or everyone with a negative Rh factor,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo></mo><mi>R</mi><msup><mi>h</mi><mo>&#x2212;</mo></msup><mo stretchy='false'>)</mo><mo>=</mo><mi>n</mi><mo stretchy='false'>(</mo><msup><mi>O</mi><mo>&#x2212;</mo></msup><mo></mo><mo>+</mo><mi>n</mi><mo stretchy='false'>(</mo><msup><mi>A</mi><mo>&#x2212;</mo></msup><mo></mo><mo>+</mo><mi>n</mi><mo stretchy='false'>(</mo><mi>A</mi><msup><mi>B</mi><mo>&#x2212;</mo></msup><mo stretchy='false'>)</mo><mo>+</mo><mi>n</mi><mo stretchy='false'>(</mo><msup><mi>B</mi><mo>&#x2212;</mo></msup><mo stretchy='false'>)</mo><mo>=</mo><mn>7</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>16.</mn></mrow></math></item>
-    <item>To have both blood type A and Blood type B a person would need to be in the intersection of sets A and B, the place where the two circles overlap.  The two circles overlap in the regions labeled <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><msup><mi>B</mi><mo>&#x2212;</mo></msup></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo>.</mo></mrow></math>Add up the number of people in these two regions to get the total. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4.</mn></mrow></math>This can be written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo stretchy='false'>(</mo><mi>A</mi><mtext>&#x00A0;and&#x00A0;</mtext><mi>B</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>n</mi><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>=</mo><mi>n</mi><mo stretchy='false'>(</mo><mi>A</mi><msup><mi>B</mi><mo>&#x2212;</mo></msup><mo></mo><mo>+</mo><mi>n</mi><mo stretchy='false'>(</mo><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo stretchy='false'>)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4.</mn></mrow></math></item>
+    <solution id="sol-00001">
+    <para id="para-00012">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+    <item>The number of people who donated blood with a type A blood factor will include the sum of all the values included in the A circle. It will be the union of sets <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>−</mo></msup><mo>,</mo><mtext> </mtext><msup><mi>A</mi><mo>+</mo></msup><mo>,</mo><mtext> </mtext><mi>A</mi><msup><mi>B</mi><mo>−</mo></msup><mtext> and </mtext><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo>.</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo/><mi>A</mi><mo/><mo>=</mo><mi>n</mi><mo/><msup><mi>A</mi><mo>−</mo></msup><mo/><mo>+</mo><mi>n</mi><mo/><msup><mi>A</mi><mo>+</mo></msup><mo/><mo>+</mo><mi>n</mi><mo/><mi>A</mi><msup><mi>B</mi><mo>−</mo></msup><mo/><mo>+</mo><mi>n</mi><mo/><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo/><mo>=</mo><mn>6</mn><mo>+</mo><mn>36</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>46.</mn></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">In part a, it was determined that the number of donors with a type A blood factor is 46, to determine the number of people who did not have a type A blood factor, use the following property,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math>union is equal to<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>, which means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo/><mi>A</mi><mo/><mo>+</mo><mi>n</mi><mo/><msup><mi>A</mi><mo>′</mo></msup><mo/><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo><mo>,</mo></mrow></math>and<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo/><mi>A</mi><mo>'</mo><mo/><mo>=</mo><mi>n</mi><mo/><mi>U</mi><mo/><mo>−</mo><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo/><mo>=</mo><mn>100</mn><mo>−</mo><mn>46</mn><mo>=</mo><mn>54.</mn></mrow></math> 54 people donated blood that Julio can accept.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">This would be everyone outside the Rh+ circle, or everyone with a negative Rh factor,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo/><mi>R</mi><msup><mi>h</mi><mo>−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>O</mi><mo>−</mo></msup><mo/><mo>+</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>A</mi><mo>−</mo></msup><mo/><mo>+</mo><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><msup><mi>B</mi><mo>−</mo></msup><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>B</mi><mo>−</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>7</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>16.</mn></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">To have both blood type A and Blood type B a person would need to be in the intersection of sets A and B, the place where the two circles overlap.  The two circles overlap in the regions labeled <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><msup><mi>B</mi><mo>−</mo></msup></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo>.</mo></mrow></math>Add up the number of people in these two regions to get the total. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4.</mn></mrow></math>This can be written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mtext> and </mtext><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><msup><mi>B</mi><mo>−</mo></msup><mo/><mo>+</mo><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><msup><mi>B</mi><mo>+</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4.</mn></mrow></math></item>
     </list>
     </para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q001"/></para>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CM-C01-M5-Q001"/></para>
     </problem>
     </exercise>
     </note>
-    <note class="who-knew">
+    <note class="who-knew" id="note-00003">
     <title>Blood Types</title>
-    <para>Most people know their main blood type of A, B, AB, or O and whether or not they Rh+ or Rh-, but did you know that the International Society of Blood Transfusion recognizes twenty-eight additional blood types which have important implications for organ transplants and successful pregnancy. For more information, check out this article:</para>
-    <para><emphasis effect="bold">WEBSITE: Blood mystery solved: Two new blood types identified</emphasis>
-    &lt;https://www.sciencedaily.com/releases/2012/02/120223183819.htm&gt;</para>
+    <para id="para-00014">Most people know their main blood type of A, B, AB, or O and whether or not they Rh+ or Rh-, but did you know that the International Society of Blood Transfusion recognizes twenty-eight additional blood types which have important implications for organ transplants and successful pregnancy. For more information, check out this article:</para>
+    <para id="para-00015"><emphasis effect="bold">WEBSITE: Blood mystery solved: Two new blood types identified</emphasis>
+    &lt;https://www.sciencedaily.com/releases/2012/02/120223183819.htm></para>
     </note>
     </section>
-    <section>
+    <section id="sect-00003">
     <title>Creating Venn Diagrams with Three Sets</title>
-    <para>In general, when creating Venn diagrams from data involving three subsets of a universal set, the strategyis to work from the inside out. Start with the intersection of the 3 sets, then address the regions that involvethe intersection of two sets. Next, complete the regions that involve a single set, and finally address the region in the universal set that does not intersect with any of the three sets. This method can be extended to any number of sets.  The key is to work from the region involving the most overlap then work your way from the centerout.</para>
-    <example>
+    <para id="para-00016">In general, when creating Venn diagrams from data involving three subsets of a universal set, the strategyis to work from the inside out. Start with the intersection of the 3 sets, then address the regions that involvethe intersection of two sets. Next, complete the regions that involve a single set, and finally address the region in the universal set that does not intersect with any of the three sets. This method can be extended to any number of sets.  The key is to work from the region involving the most overlap then work your way from the centerout.</para>
+    <example id="exam-00002">
     <title>Creating a Venn Diagram with Three Sets</title>
-    <exercise>
-    <problem>
-    <para>A teacher surveyed her class of 43 students to find out how they prepared for their last test. 24 made flash cards, 14 studied their notes, and 27 completed the review assignment. Of the entire class of 43 students, 12 completed the review and made flash cards, 9 completed the review and studied their notes, and 7 made flash cards and studied their notes, while 5 completed all three of these tasks. The remaining students did not do any of these tasks. Create a Venn diagram with subsets labeled: &#x201C;Notes&#x201D;, &#x201C;Flash Cards&#x201D;, and &#x201C;Review&#x201D; to represent how the students prepared for the test.</para>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00017">A teacher surveyed her class of 43 students to find out how they prepared for their last test. 24 made flash cards, 14 studied their notes, and 27 completed the review assignment. Of the entire class of 43 students, 12 completed the review and made flash cards, 9 completed the review and studied their notes, and 7 made flash cards and studied their notes, while 5 completed all three of these tasks. The remaining students did not do any of these tasks. Create a Venn diagram with subsets labeled: “Notes”, “Flash Cards”, and “Review” to represent how the students prepared for the test.</para>
     </problem>
-    <solution>
-    <para>First, draw a Venn diagram with three intersecting circles, and label the universal set with the cardinality of the class.</para>
-    <figure class="unnumbered">
+    <solution id="sol-00002">
+    <para id="para-00018">First, draw a Venn diagram with three intersecting circles, and label the universal set with the cardinality of the class.</para>
+    <figure class="unnumbered" id="fig-00006">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_028b.jpg"/>
     </media>
     <caption>Figure 1.28: <emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review</emphasis></caption>
     </figure>
-    <para>Next, in the region where all three sets intersect, enter the number of students who completed all three tasks.</para>
-    <figure class="unnumbered">
+    <para id="para-00019">Next, in the region where all three sets intersect, enter the number of students who completed all three tasks.</para>
+    <figure class="unnumbered" id="fig-00007">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_029a.jpg"/>
     </media>
-    <caption>Figure 1.29:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review &#x2013; Intersection of all 3 labeled</emphasis></caption>
+    <caption>Figure 1.29:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of all 3 labeled</emphasis></caption>
     </figure>
-    <para>Next, calculate the value and label the sections where just 2 sets overlap. A total of 12 completed the review and made flash cards, but 5 of these did all three, so, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>&#x2212;</mo><mn>5</mn><mo>=</mo><mn>7</mn></mrow></math>is the value for the region where the flash card set intersects with the review set. A total of 9 completed the review and studied their notes, but, we have already accounted for 5 of these who did all three, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>&#x2212;</mo><mn>5</mn><mo>=</mo><mn>4</mn></mrow></math>is the number of students who just did the review and studied their notes. A total of 7 made flash cards and studied their notes, subtracting the 5 that did all 3 leaves 2 students who only studied their notes and made flash cards.</para>
-    <figure class="unnumbered">
+    <para id="para-00020">Next, calculate the value and label the sections where just 2 sets overlap. A total of 12 completed the review and made flash cards, but 5 of these did all three, so, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>7</mn></mrow></math>is the value for the region where the flash card set intersects with the review set. A total of 9 completed the review and studied their notes, but, we have already accounted for 5 of these who did all three, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>4</mn></mrow></math>is the number of students who just did the review and studied their notes. A total of 7 made flash cards and studied their notes, subtracting the 5 that did all 3 leaves 2 students who only studied their notes and made flash cards.</para>
+    <figure class="unnumbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_030.jpg"/>
     </media>
-    <caption>Figure 1.30:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review &#x2013; Intersection of 2 and 3 sets labeled</emphasis>
+    <caption>Figure 1.30:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of 2 and 3 sets labeled</emphasis>
     </caption>
     </figure>
-    <para>Now, repeat this process to find the number of students who only completed one of these three tasks. A total of 24 students completed flash cards, but we have already accounted for 2+5+7=14 of these. 24-14=10 students who just made flash cards.  A total of 14 studied their notes, but we have already accounted for 4+5+2=11 of these. 14-11=3 students only studied their notes. A total of 27 students completed the review assignment, but we have already accounted for 4+5+7=16 of these, which means 27-16=11 students only completed the review assignment. Add these values to the Venn diagram.</para>
-    <figure class="unnumbered">
+    <para id="para-00021">Now, repeat this process to find the number of students who only completed one of these three tasks. A total of 24 students completed flash cards, but we have already accounted for 2+5+7=14 of these. 24-14=10 students who just made flash cards.  A total of 14 studied their notes, but we have already accounted for 4+5+2=11 of these. 14-11=3 students only studied their notes. A total of 27 students completed the review assignment, but we have already accounted for 4+5+7=16 of these, which means 27-16=11 students only completed the review assignment. Add these values to the Venn diagram.</para>
+    <figure class="unnumbered" id="fig-00009">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_031.jpg"/>
     </media>
-    <caption>Figure 1.31:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review &#x2013; Intersection of 1, 2, and 3 sets labeled</emphasis>
+    <caption>Figure 1.31:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of 1, 2, and 3 sets labeled</emphasis>
     </caption>
     </figure>
-    <para>Finally, compute how many students did not do any of these three tasks. Add up all the numbers in the Review circle to find the number of students who completed the review. A total of 27 completed the review, an additional 3 just completed notes, 2 more completed notes and flash cards and then 10 more completed just flash cards. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>27</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>42</mn></mrow></math>. Because there are total of 43 students in the class, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>43</mn><mo>&#x2212;</mo><mn>42</mn><mo>=</mo><mn>1</mn></mrow></math>, means only one student did not complete any of these tasks to prepare for the last test.  Record this value in the Venn diagram somewhere in the rectangle, but outside of all the circles to complete the diagram.</para>
-    <figure class="unnumbered">
+    <para id="para-00022">Finally, compute how many students did not do any of these three tasks. Add up all the numbers in the Review circle to find the number of students who completed the review. A total of 27 completed the review, an additional 3 just completed notes, 2 more completed notes and flash cards and then 10 more completed just flash cards. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>27</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>42</mn></mrow></math>. Because there are total of 43 students in the class, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>43</mn><mo>−</mo><mn>42</mn><mo>=</mo><mn>1</mn></mrow></math>, means only one student did not complete any of these tasks to prepare for the last test.  Record this value in the Venn diagram somewhere in the rectangle, but outside of all the circles to complete the diagram.</para>
+    <figure class="unnumbered" id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_032.jpg"/>
     </media>
-    <caption>Figure 1.32: <emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review &#x2013; Complete</emphasis>
+    <caption>Figure 1.32: <emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Complete</emphasis>
     </caption>
     </figure>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q002"/></para>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C01-M5-Q002"/></para>
     </problem>
     </exercise>
     </note>
     </section>
-    <section>
+    <section id="sect-00004">
     <title>Applying Set Operations to Three Sets</title>
-    <para>Set operations are applied between two sets at a time. Parentheses indicate which operation should be performed first. As with numbers, the inner most parentheses are applied first. Next, find the complement of any sets, then perform any union or intersections that remain.</para>
-    <example>
+    <para id="para-00024">Set operations are applied between two sets at a time. Parentheses indicate which operation should be performed first. As with numbers, the inner most parentheses are applied first. Next, find the complement of any sets, then perform any union or intersections that remain.</para>
+    <example id="exam-00003">
     <title>Applying Set Operations to Three Sets</title>
-    <exercise>
-    <problem>
-    <para>Perform the set operations as indicated on the following sets:
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>U</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>&#x007D;</mo></mrow>
-    </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math>,and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math></para>
-    <list list-type="lower-alpha">
-    <item>Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x2229;</mo><mi>C</mi><mo>.</mo></mrow></math></item>
-    <item>Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mo stretchy='false'>(</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>.</mo></mrow></math></item>
-    <item>Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>&#x222A;</mo><msup><mi>C</mi><mo>&#x2032;</mo></msup><mo>.</mo></mrow></math></item>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00025">Perform the set operations as indicated on the following sets:
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>U</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>12</mn><mo>}</mo></mrow>
+    </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>}</mo><mo>,</mo></mrow></math>,and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>}</mo><mo>.</mo></mrow></math></para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <item>Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∩</mo><mi>C</mi><mo>.</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>.</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∪</mo><msup><mi>C</mi><mo>′</mo></msup><mo>.</mo></mrow></math></item>
     </list>
     </problem>
-    <solution>
-    <para>
-    <list list-type="lower-alpha">
-    <item>Parentheses first, A intersection B equals<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math>the elements common to both A and B. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x2229;</mo><mi>C</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>&#x2229;</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>&#x007D;</mo><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math>because theonly elements that are in both sets are 0 and 6.</item>
-    <item>Parentheses first, B union C equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math>the collection of all elements in set B or set C or both. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mo stretchy='false'>(</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>&#x2229;</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>&#x007D;</mo><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math>because the intersection of these two sets is the set of elements that are common to both sets.</item>
-    <item>Parentheses first, A intersection B equals<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math>Next, find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>C</mi><mo>&#x2032;</mo></msup><mo>.</mo></mrow></math>The complement of set C is the set of elements in the universal set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>that are not in set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>.</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>C</mi><mo>&#x2032;</mo></msup><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math>Finally, find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x222A;</mo><msup><mi>C</mi><mo>&#x2032;</mo></msup><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>&#x222A;</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>&#x007D;</mo><mo>=</mo><mo>&#x007B;</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math></item></list>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00026">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+    <item>Parentheses first, A intersection B equals<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>,</mo></mrow></math>the elements common to both A and B. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∩</mo><mi>C</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>∩</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>}</mo><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>,</mo></mrow></math>because theonly elements that are in both sets are 0 and 6.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Parentheses first, B union C equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>∪</mo><mi>C</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>}</mo><mo>,</mo></mrow></math>the collection of all elements in set B or set C or both. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>∩</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>12</mn><mo>}</mo><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>,</mo></mrow></math>because the intersection of these two sets is the set of elements that are common to both sets.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Parentheses first, A intersection B equals<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>.</mo></mrow></math>Next, find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>C</mi><mo>′</mo></msup><mo>.</mo></mrow></math>The complement of set C is the set of elements in the universal set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>that are not in set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>.</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>C</mi><mo>′</mo></msup><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo><mo>.</mo></mrow></math>Finally, find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∪</mo><msup><mi>C</mi><mo>′</mo></msup><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>∪</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo><mo>=</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>}</mo><mo>.</mo></mrow></math></item></list>
     </para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q003"/></para>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C01-M5-Q003"/></para>
     </problem>
     </exercise>
     </note>
-    <para>Notice that the answers to Your Turn 36 a, b and c are the same as the answers to Example 36 a, b, and c, respectively. This is not a coincidence. The following equivalences hold true for sets:</para>
-    <list>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mo stretchy='false'>(</mo><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>=</mo><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x2229;</mo><mi>C</mi></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mo stretchy='false'>(</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>=</mo><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x222A;</mo><mi>C</mi><mo>.</mo></mrow></math>These are the associative property for set intersection and set union.</item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>&#x2229;</mo><mi>A</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>&#x222A;</mo><mi>A</mi><mo>.</mo></mrow></math>These are the commutative property for set intersection and set union.</item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x2229;</mo><mo stretchy='false'>(</mo><mi>B</mi><mo>&#x222A;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>=</mo><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x222A;</mo><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x2229;</mo><mi>C</mi><mo stretchy='false'>)</mo></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mo stretchy='false'>(</mo><mi>B</mi><mo>&#x2229;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>=</mo><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo stretchy='false'>)</mo><mo>&#x2229;</mo><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>C</mi><mo stretchy='false'>)</mo><mo>.</mo></mrow></math>These are the distributive property for sets over union and intersection, respectively.</item>
+    <para id="para-00028">Notice that the answers to Your Turn 36 a, b and c are the same as the answers to Example 36 a, b, and c, respectively. This is not a coincidence. The following equivalences hold true for sets:</para>
+    <list id="list-00007">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∩</mo><mi>C</mi></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∪</mo><mi>C</mi><mo>.</mo></mrow></math>These are the associative property for set intersection and set union.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>∩</mo><mi>A</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>∪</mo><mi>A</mi><mo>.</mo></mrow></math>These are the commutative property for set intersection and set union.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∪</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∩</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>.</mo></mrow></math>These are the distributive property for sets over union and intersection, respectively.</item>
     </list>
     </section>
-    <section>
+    <section id="sect-00005" xmlns="http://cnx.rice.edu/cnxml">
     <title> Proving Equality of Sets Using Venn Diagrams</title>
-    <para>To prove set equality using Venn diagrams the strategy is to draw a Venn diagram to represent each side ofthe equality, then look at the resulting diagrams to see if the regions under consideration are identical.
+    <para id="para-00029">To prove set equality using Venn diagrams the strategy is to draw a Venn diagram to represent each side ofthe equality, then look at the resulting diagrams to see if the regions under consideration are identical.
     </para>
-    <para>In the next, example we will use Venn diagram&#x2019;s to prove the De Morgan&#x2019;s law for set complement over union is true using a Venn diagram, but, before we begin, let us confirm De Morgan&#x2019;s law works for a specific example. While showing something is true for one specific example is not a proof, it will provide us with some reason to believe that it may be true for all cases.  Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>U</mi><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>&#x007B;</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>&#x007D;</mo><mo>,</mo></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>=</mo><mo>&#x007B;</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math>De Morgan&#x2019;s law for set complement over union states that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><msup><mo stretchy='false'>)</mo><mo>&#x2032;</mo></msup><mo>=</mo><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup><mo>.</mo></mrow></math>To begin,find the value of the set defined by each side of the equation. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></mrow></math> is thecollection of all unique element in set A or set B or both. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><mo>=</mo><mo>&#x007B;</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>&#x007D;</mo><mo>.</mo></mrow>
-    </math>The complement of A union B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>&#x2032;</mo></msup></mrow></math>is the set of all element in the universal set that are not in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></mrow></math>. So, the left side the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>&#x2032;</mo></msup></mrow></math>is equal to the set  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math>The right sid of the equation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup><mo>.</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>&#x2032;</mo></msup></math> is the set of all members of the universal set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>that are not in set A. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math>Similarly,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>&#x0027;</mo><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math>Finally,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup></mrow></math> is the set of all elements that are in both  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>&#x2032;</mo></msup></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>B</mi><mo>&#x2032;</mo></msup><mo>.</mo></mrow></math>The numbers 1 and 7 are common to both sets, therefore, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo><mo>.</mo></mrow></math> Because, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo><mo>=</mo><mo>&#x007B;</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>&#x007D;</mo></mrow></math> we have demonstrated that De Morgan&#x2019;s law for set complement over union works for this particular example. The Venn diagram is figure 2.34 depicts this relationship.</para>
-    <figure class="unnumbered">
+    <para id="para-00030">In the next, example we will use Venn diagram’s to prove the De Morgan’s law for set complement over union is true using a Venn diagram, but, before we begin, let us confirm De Morgan’s law works for a specific example. While showing something is true for one specific example is not a proof, it will provide us with some reason to believe that it may be true for all cases.  Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>U</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>.</mo></mrow></math>De Morgan’s law for set complement over union states that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy="false">)</mo><mo>′</mo></msup><mo>=</mo><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math>To begin,find the value of the set defined by each side of the equation. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></math> is thecollection of all unique element in set A or set B or both. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>.</mo></mrow>
+    </math>The complement of A union B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>is the set of all element in the universal set that are not in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></math>. So, the left side the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>is equal to the set  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math>The right sid of the equation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math> is the set of all members of the universal set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>that are not in set A. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math>Similarly,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>'</mo><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math>Finally,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup></mrow></math> is the set of all elements that are in both  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math>The numbers 1 and 7 are common to both sets, therefore, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math> Because, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo></mrow></math> we have demonstrated that De Morgan’s law for set complement over union works for this particular example. The Venn diagram is figure 2.34 depicts this relationship.</para>
+    <figure class="unnumbered" id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_035.jpg"/>
     </media>
     <caption>Figure 1.35:<emphasis effect="italics">Venn diagram of union of 2 sets and the complement.</emphasis></caption>
     </figure>
-    <example>
-    <title>Proving De Morgan&#x2019;s Law for Set Complement over Union Using a Venn Diagram</title>
-    <exercise>
-    <problem>
-    <para>Law for the complement of the union of two sets A and B states that: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><msup><mo stretchy='false'>)</mo><mo>&#x2032;</mo></msup><mo>=</mo><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup><mo>.</mo></mrow></math>Use a Venn diagram to prove that De Morgan&#x2019;s Law is true.</para>
+    <example id="exam-00004">
+    <title>Proving De Morgan’s Law for Set Complement over Union Using a Venn Diagram</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00031">Law for the complement of the union of two sets A and B states that: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy="false">)</mo><mo>′</mo></msup><mo>=</mo><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math>Use a Venn diagram to prove that De Morgan’s Law is true.</para>
     </problem>
-    <solution>
-    <para>First, draw a Venn diagram representing the left side of the equality. In Figure 2.34. The regions of interest are shaded blue to highlight the sets of interest. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></mrow></math>is shaded blue left, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>&#x222A;</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>&#x2032;</mo></msup></mrow></math>is shaded blue on the right.</para>
-    <figure class="unnumbered">
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00032">First, draw a Venn diagram representing the left side of the equality. In Figure 2.34. The regions of interest are shaded blue to highlight the sets of interest. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></math>is shaded blue left, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>is shaded blue on the right.</para>
+    <figure class="unnumbered" id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_036.jpg"/>
     </media>
     <caption>Figure 1.36:<emphasis effect="italics">Venn diagram of union of 2 sets and the complement.</emphasis>
     </caption>
     </figure>
-    <para>Then, draw a Venn diagram to represent the right side of the equation. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>&#x2032;</mo></msup></math>is shaded blue and  is shaded yellow. Because yellow and blue mix to form green,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><msup><mi>B</mi><mo>&#x2032;</mo></msup></mrow></math>is shaded green.</para>
-    <figure class="unnumbered">
+    <para id="para-00033">Then, draw a Venn diagram to represent the right side of the equation. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math>is shaded blue and  is shaded yellow. Because yellow and blue mix to form green,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup></mrow></math>is shaded green.</para>
+    <figure class="unnumbered" id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_037.jpg"/>
     </media>
@@ -240,83 +240,83 @@
     </emphasis>
     </caption>
     </figure>
-    <para>Verify the conclusion. Because the shaded region in the Venn diagram for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>A</mi><mo>&#x222A;</mo><mi>B</mi><msup><mo stretchy='false'>)</mo><mo>&#x2032;</mo></msup></mrow></math>matches the shaded region in the Venn diagram for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>&#x2032;</mo></msup><mo>&#x2229;</mo><mi>B</mi><mo>&#x0027;</mo></mrow></math>the two sides of the equation are equal, and statement is true. This completes the proof that De Morgan&#x2019;s law is valid.</para>
+    <para id="para-00034">Verify the conclusion. Because the shaded region in the Venn diagram for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy="false">)</mo><mo>′</mo></msup></mrow></math>matches the shaded region in the Venn diagram for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><mi>B</mi><mo>'</mo></mrow></math>the two sides of the equation are equal, and statement is true. This completes the proof that De Morgan’s law is valid.</para>
     </solution>
     </exercise>
     </example>
-    <note class="your-turn">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q004"/></para>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C01-M5-Q004"/></para>
     </problem>
     </exercise>
     </note>
     </section>
-    <section>
+    <section id="sect-00006">
     <title>Check Your Understanding</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q005"/></para>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C01-M5-Q005"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q006"/></para>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C01-M5-Q006"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q007"/></para>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C01-M5-Q007"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q008"/></para>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00039"><link class="os-embed" url="#exercise/CM-C01-M5-Q008"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q009"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="section-exercises">
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q010"/></para>
-    </problem>
-    </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q011"/></para>
-    </problem>
-    </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q012"/></para>
-    </problem>
-    </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q013"/></para>
-    </problem>
-    </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q014"/></para>
-    </problem>
-    </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q015"/></para>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C01-M5-Q009"/></para>
     </problem>
     </exercise>
     </section>
-    <section>
+    <section class="section-exercises" id="sect-00007">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C01-M5-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C01-M5-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00043"><link class="os-embed" url="#exercise/CM-C01-M5-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C01-M5-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C01-M5-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00046"><link class="os-embed" url="#exercise/CM-C01-M5-Q015"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00008">
     <title>Module 5 Summary</title>
-    <section class="key-concepts">
+    <section class="key-concepts" id="sect-00009">
     <title>Key Concepts</title>
-    <list>
+    <list id="list-00008">
     <item>Interpret Venn diagrams with three overlapping sets.</item>
     <item>Including the blood factors: A, B and Rh</item>
     <item>Create Venn diagrams with three overlapping sets.</item>
@@ -325,279 +325,279 @@
     </list>
     </section>
     </section>
-    <section class="Projects">
+    <section class="Projects" id="sect-00010">
     <title>Projects</title>
-    <section>
+    <section id="sect-00011">
     <title>Cardinality of Infinite Sets</title>
-    <para>In set theory, is has been shown that the set of irrational numbers has a cardinality greater than the setof natural numbers. That is, the set of irrational numbers is so large that it is uncountably infinite.</para>
-    <list list-type="enumerated" number-style="arabic">
-    <item>Perform a search with the phrase, &#x201C;Who first proved that the real numbers are uncountable?&#x201D;</item></list>
-    <list list-type="lower-alpha">
+    <para id="para-00047">In set theory, is has been shown that the set of irrational numbers has a cardinality greater than the setof natural numbers. That is, the set of irrational numbers is so large that it is uncountably infinite.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00009">
+    <item>Perform a search with the phrase, “Who first proved that the real numbers are uncountable?”</item></list>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
     <item>Who first proved that the real numbers are uncountable?</item>
     <item>What was the significance of this proof to the development of set theory and by extension other fields of Mathematics?</item>
     </list>
-    <list list-type="enumerated" number-style="2">
+    <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00011">
     <item>Recent discoveries in the field of set theory include the to a 70 year old problem previously thought to be unprovable. To learn more read this article:</item></list>
-    <Para>&lt;https://www.scientificamerican.com/article/mathematicians-measure-infinities-and-find-theyre-equal/&gt;</Para>
-    <list list-type="enumerated" number-style="lower-alpha">
+    <para id="para-00048">&lt;https://www.scientificamerican.com/article/mathematicians-measure-infinities-and-find-theyre-equal/></para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00012">
     <item>What does it mean for two infinite sets to have the same size?</item>
     <item>The real numbers are sometimes referred to as what?</item>
-    <item>Summarize your understanding of the problem known as the &#x201C;Continuum Hypothesis.&#x201D;</item>
-    <item>Malliaris and Shelah&#x2019;s proof of this 70 year old problems in opening up investigation in what two fields of Mathematics.</item></list>
-    <list list-type="enumerated" number-style="3">
+    <item>Summarize your understanding of the problem known as the “Continuum Hypothesis.”</item>
+    <item>Malliaris and Shelah’s proof of this 70 year old problems in opening up investigation in what two fields of Mathematics.</item></list>
+    <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00013">
     <item>Summarize your understanding of infinity.</item>
     <item>Define what it means to be infinite.</item>
     <item>Explain the difference between countable and uncountable sets.</item>
     <item>Research the difference between a discrete set and a continuous set, then summarize your findings.</item>
     </list>
     </section>
-    <section>
+    <section id="sect-00012">
     <title>Set Notation</title>
-    <para>In arithmetic, the operation of addition is represented by the plus sign, +, but multiplication is represented in multiple ways including <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x22C5;</mo><mo>,</mo><mtext>&#x00A0;</mtext><mo>&#x00D7;</mo><mo>,</mo><mtext>&#x00A0;</mtext><mo>&#x2217;</mo><mo>,</mo></mrow></math>and parentheses, such as 5(3). Several set operation also are written in different forms based on the preferences of the mathematician and often their publisher.</para>
-    <list list-type="enumerated" number-style="arabic">
-    <item>Search for &#x201C;Set Complement&#x201D; on the internet and list at least three ways to represent the complement of a set.</item>
+    <para id="para-00049">In arithmetic, the operation of addition is represented by the plus sign, +, but multiplication is represented in multiple ways including <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>⋅</mo><mo>,</mo><mtext> </mtext><mo>×</mo><mo>,</mo><mtext> </mtext><mo>∗</mo><mo>,</mo></mrow></math>and parentheses, such as 5(3). Several set operation also are written in different forms based on the preferences of the mathematician and often their publisher.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <item>Search for “Set Complement” on the internet and list at least three ways to represent the complement of a set.</item>
     <item>Both the Set Challenge and Venn Diagram smartphone apps highlighted in the Tech Check sections have an operation for set difference. List at least 2 ways to represent set difference and provide a verbal description of how to calculate the difference between two sets A and B.</item>
-    <item>When researching possible Venn diagram applications, the Greek letter delta, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>&#x0394;</mi></math>appeared as a symbol used as a set operator. List at least one other symbol used for this same operation.</item>
-    <item>Search for &#x201C;List of possible set operations and their symbols&#x201D;, Find and select two symbols that were not presented in this chapter.</item></list>
+    <item>When researching possible Venn diagram applications, the Greek letter delta, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Δ</mi></math>appeared as a symbol used as a set operator. List at least one other symbol used for this same operation.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Search for “List of possible set operations and their symbols”, Find and select two symbols that were not presented in this chapter.</item></list>
     </section>
-    <section>
+    <section id="sect-00013">
     <title>The Real Number System</title>
-    <para>The set of Real numbers and their properties are studied in elementary school today, but how did the number system evolve? The idea of the natural numbers or counting numbers have been around prior to written words as evidenced by tally marks in cave writing.  Create a timeline for significant contributions to the real number system.</para>
-    <list list-type="enumerated" number-style="arabic">
-    <item>Use the following phrase to search for information on the origins of the number zero: &#x201C;history of the number zero&#x201D; in your browser, then record significant dates for the invention and common use of the number zero on your timeline.</item>
-    <item>Find out who is credited for discovering that the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mn>2</mn></msqrt></mrow></math>is irrational and add this information to your timeline. Hint search for: &#x201C;Who was the first to discover irrational numbers?&#x201D;</item>
-    <item>Research Georg Cantor&#x2019;s contribution to the representation of the Real numbers as a continuum and add this to your timeline.</item>
-    <item>Research Ernst Zermelo&#x2019;s contribution to the real number system and add this to your timeline.</item></list>
+    <para id="para-00050">The set of Real numbers and their properties are studied in elementary school today, but how did the number system evolve? The idea of the natural numbers or counting numbers have been around prior to written words as evidenced by tally marks in cave writing.  Create a timeline for significant contributions to the real number system.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00015">
+    <item>Use the following phrase to search for information on the origins of the number zero: “history of the number zero” in your browser, then record significant dates for the invention and common use of the number zero on your timeline.</item>
+    <item>Find out who is credited for discovering that the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mn>2</mn></msqrt></mrow></math>is irrational and add this information to your timeline. Hint search for: “Who was the first to discover irrational numbers?”</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Research Georg Cantor’s contribution to the representation of the Real numbers as a continuum and add this to your timeline.</item>
+    <item>Research Ernst Zermelo’s contribution to the real number system and add this to your timeline.</item></list>
     </section>
     </section>
-    <section class="chapter-review">
+    <section class="chapter-review" id="sect-00014">
     <title>Chapter Review</title>
-    <section>
+    <section id="sect-00015">
     <title>Module 1</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q016"/></para>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C01-M5-Q016"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q017"/></para>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C01-M5-Q017"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q018"/></para>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C01-M5-Q018"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q019"/></para>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C01-M5-Q019"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q020"/></para>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00055"><link class="os-embed" url="#exercise/CM-C01-M5-Q020"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q021"/></para>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C01-M5-Q021"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q022"/></para>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C01-M5-Q022"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q023"/></para>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C01-M5-Q023"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q024"/></para>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C01-M5-Q024"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q025"/></para>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00060"><link class="os-embed" url="#exercise/CM-C01-M5-Q025"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q026"/></para>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C01-M5-Q026"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q027"/></para>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C01-M5-Q027"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q028"/></para>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C01-M5-Q028"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q029"/></para>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00064"><link class="os-embed" url="#exercise/CM-C01-M5-Q029"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q030"/></para>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C01-M5-Q030"/></para>
     </problem>
     </exercise>
     </section>
-    <section>
+    <section id="sect-00016">
     <title>Module 2</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q031"/></para>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00066"><link class="os-embed" url="#exercise/CM-C01-M5-Q031"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q032"/></para>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00067"><link class="os-embed" url="#exercise/CM-C01-M5-Q032"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q033"/></para>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00068"><link class="os-embed" url="#exercise/CM-C01-M5-Q033"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q034"/></para>
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00069"><link class="os-embed" url="#exercise/CM-C01-M5-Q034"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q035"/></para>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00070"><link class="os-embed" url="#exercise/CM-C01-M5-Q035"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q036"/></para>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00071"><link class="os-embed" url="#exercise/CM-C01-M5-Q036"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q037"/></para>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00072"><link class="os-embed" url="#exercise/CM-C01-M5-Q037"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q038"/></para>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00073"><link class="os-embed" url="#exercise/CM-C01-M5-Q038"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q039"/></para>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C01-M5-Q039"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q040"/></para>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00075"><link class="os-embed" url="#exercise/CM-C01-M5-Q040"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q041"/></para>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C01-M5-Q041"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q042"/></para>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00077"><link class="os-embed" url="#exercise/CM-C01-M5-Q042"/></para>
     </problem>
     </exercise>
     </section>
-    <section>
+    <section id="sect-00017">
     <title>Module 3</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q043"/></para>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00078"><link class="os-embed" url="#exercise/CM-C01-M5-Q043"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q044"/></para>
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00079"><link class="os-embed" url="#exercise/CM-C01-M5-Q044"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q045"/></para>
+    <exercise id="exer-00049">
+    <problem id="prob-00049">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C01-M5-Q045"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q046"/></para>
+    <exercise id="exer-00050">
+    <problem id="prob-00050">
+    <para id="para-00081"><link class="os-embed" url="#exercise/CM-C01-M5-Q046"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q047"/></para>
+    <exercise id="exer-00051">
+    <problem id="prob-00051">
+    <para id="para-00082"><link class="os-embed" url="#exercise/CM-C01-M5-Q047"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q048"/></para>
+    <exercise id="exer-00052">
+    <problem id="prob-00052">
+    <para id="para-00083"><link class="os-embed" url="#exercise/CM-C01-M5-Q048"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q049"/></para>
+    <exercise id="exer-00053">
+    <problem id="prob-00053">
+    <para id="para-00084"><link class="os-embed" url="#exercise/CM-C01-M5-Q049"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q050"/></para>
+    <exercise id="exer-00054">
+    <problem id="prob-00054">
+    <para id="para-00085"><link class="os-embed" url="#exercise/CM-C01-M5-Q050"/></para>
     </problem>
     </exercise>
     </section>
-    <section>
+    <section id="sect-00018">
     <title>Module 4</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q051"/></para>
+    <exercise id="exer-00055">
+    <problem id="prob-00055">
+    <para id="para-00086"><link class="os-embed" url="#exercise/CM-C01-M5-Q051"/></para>
     </problem>
     </exercise>
     </section>
-    <section>
+    <section id="sect-00019">
     <title>Module 5</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q052"/></para>
+    <exercise id="exer-00056">
+    <problem id="prob-00056">
+    <para id="para-00087"><link class="os-embed" url="#exercise/CM-C01-M5-Q052"/></para>
     </problem>
     </exercise>
     </section>
     </section>
-    <section class="chapter-test">
+    <section class="chapter-test" id="sect-00020">
     <title>Chapter Test</title>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q053"/></para>
+    <exercise id="exer-00057">
+    <problem id="prob-00057">
+    <para id="para-00088"><link class="os-embed" url="#exercise/CM-C01-M5-Q053"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q054"/></para>
+    <exercise id="exer-00058">
+    <problem id="prob-00058">
+    <para id="para-00089"><link class="os-embed" url="#exercise/CM-C01-M5-Q054"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q055"/></para>
+    <exercise id="exer-00059">
+    <problem id="prob-00059">
+    <para id="para-00090"><link class="os-embed" url="#exercise/CM-C01-M5-Q055"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q056"/></para>
+    <exercise id="exer-00060">
+    <problem id="prob-00060">
+    <para id="para-00091"><link class="os-embed" url="#exercise/CM-C01-M5-Q056"/></para>
     </problem>
     </exercise>
-    <exercise>
-    <problem>
-    <para><link class="os-embed" url="#exercise/CM-C01-M5-Q057"/></para>
+    <exercise id="exer-00061">
+    <problem id="prob-00061">
+    <para id="para-00092"><link class="os-embed" url="#exercise/CM-C01-M5-Q057"/></para>
     </problem>
     </exercise>
     </section>
