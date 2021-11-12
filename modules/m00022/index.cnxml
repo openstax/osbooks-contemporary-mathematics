@@ -6,5 +6,462 @@
     <md:uuid>3ebba900-54cf-4cd8-8de5-d0e4e8158092</md:uuid>
   </metadata>
   <content>
-  </content>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001">After completing this module, you should be able to:</para>
+    <list list-type="enumerated" id="list-00001">
+    <item>Use De Morgan’s Laws to negate conjunctions and disjunctions.</item>
+    <item>Construct the negation of a conditional statement.</item>
+    <item>Use truth tables to evaluate De Morgan’s Laws.</item>
+    </list>
+    </section>
+    <figure class="unnumbered" id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_02_06_008.jpg"/>
+    </media>
+    <caption>Photo 2.8<emphasis effect="italic">: Picture of a large suspension bridge.</emphasis></caption>
+    </figure>
+    <para id="para-00002">Augustus De Morgan was an English mathematician known for his contributions to set theory and logic. The contributions to logic made by De Morgan and George Boole during the 19<sup>th</sup> century acted as a bridge to the development of computers which may be the greatest invention of the 20<sup>th</sup> century.</para>
+    <note class="people-mathematics" id="note-00001">
+    <title>George Boole</title>
+    <figure class="unnumbered" id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_02_06_009.jpg"/>
+    </media>
+    <caption>Photo 2.9<emphasis effect="italic">: Picture of a circuit board</emphasis></caption>
+    </figure>
+    <para id="para-00003">George Boole was born in Lincolnshire, England in 1815. He was the son of a cobbler who provided him some initial education, but Boole was mostly self-taught. He began teaching at 16 and opened his own school at the age of 20. In 1849, at the age of 34 he was appointed professor of mathematics at Queens College in Cork, Ireland. He later published the paper, <emphasis effect="italic">An Investigation of the Laws of Thought, on Which Are Founded the Mathematical Theories of Logic and Probabilities</emphasis> in 1854, which is the treatise that the field of Boolean algebra and digital circuitry was built on.</para>
+    <para id="para-00004">George Boole fathered five daughters with his wife and mathematician Mary Everest Boole and also has a crater on the moon named for him.</para>
+    <para id="para-00005">Reference: Posamentier, Alfred and Spreitzer Christian, “Chapter 35 George Boole: English (1815-1864)” pp. 279-283, <emphasis effect="italic">Math Makers: the lives and works of 50 famous mathematicians</emphasis>, Prometheus Books, 2019.</para>
+    </note>
+    <section id="sect-00002">
+    <title>Negation of Conjunctions and Disjunctions</title>
+    <para id="para-00006">In Chapter 2, Module 5, Example 37 De Morgan’s Law for set complement over union was proved using a Venn Diagram. Because the complement of a set is analogous to negation and union is analogous to an <emphasis effect="italic">or</emphasis> statement, there are equivalent versions of De Morgan’s Laws for logic.</para>
+    <para id="para-00007">De Morgan’s Law for the negation of a disjunction states that, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math> is logically equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+    <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">De Morgan’s Law for the negation of a conjunction states that, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> 🚦 <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">Recall that the symbol for logical equivalence is:</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>≡</mo><mo>.</mo></mrow></math></para>
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">De Morgan’s Laws allow us to write the negation of conjunctions and disjunctions without using the phrase, “It is not the case that …” to indicate the parentheses. Avoiding the phrase, “It is not the case that …” often results in a written or verbal statement the is clearer or easier to understand.</para>
+    <example id="exam-00001">
+    <title>Applying De Morgan’s Law for Negation of Conjunctions and Disjunctions</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">Write the negation of each statement in words without using the phrase, <emphasis effect="italic">it is not the case that.</emphasis></para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+    <item>Kristin is a biomedical engineer and Thomas is a chemical engineer.</item>
+    <item>Miguel had cake or he had ice cream.</item>
+    </list>
+    </problem>
+    <solution id="sol-00001">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+    <item>Kristin is a biomedical engineer and Thomas is a chemical engineer has the form, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math>where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is the statement “Kristin is a biomedical engineer,” and <emphasis effect="italic">q</emphasis> is the statement “Thomas is a chemical engineer.” By De Morgan’s Law, the negation of a conjunction, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math> is logically equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math>~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is “Kristen is not a biomedical engineer,” and ~<emphasis effect="italic">q </emphasis>is “Thomas is not a chemical engineer.”  So, by De Morgan’s Law the solution has the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi></mrow></math>, so the answer is, “Kristin is not a biomedical engineer or Tom is not a chemical engineer.”</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Miguel had cake or he had ice cream has the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is the statement, “Miguel had cake,” and <emphasis effect="italic">q</emphasis> is the statement, “Miguel had ice cream.” By De Morgan’s Law for the negations of a disjunction <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> The solution is the statement, “Miguel did not have cake and he did not have ice cream.”</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CM-C02-M6-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title> Negation of a Conditional Statement</title>
+    <para id="para-00012">The negation of any statement has the opposite truth values of the original statement. Consider this truth table for the <term id="term-00001">negation of the conditional</term>.</para>
+    <note class="definition" id="note-00003">
+    <para id="para-00013">The <emphasis effect="bold">negation of a conditional</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>→</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math> is the conjunction of <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and not <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+    </note>
+    <table summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Table 2.10<emphasis effect="italic">: Truth Table for the Negation of a Conditional Statement</emphasis></title>
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry namest="c1" nameend="c4">Negation of a Conditional</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>p</mtext></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>q</mtext></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>p</mtext><mo>→</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mtext>p</mtext><mo>→</mo><mtext>q</mtext><mo stretchy="false">)</mo></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    </row>
+    <row>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00014">The only time the negation of the conditional statement is true, is when <emphasis effect="italic">p</emphasis> is true, and <emphasis effect="italic">q</emphasis> is false. This means that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math> is logically equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>,</mo></mrow></math> as the following truth table demonstrates.</para>
+    <table summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Table 2.11<emphasis effect="italic">: Truth Table Proving the Negation of the Conditional Is Equal to the Statement,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math></title>
+    <tgroup cols="7" xmlns="http://cnx.rice.edu/cnxml">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <colspec colnum="6" colname="c6" colwidth="1*"/>
+    <colspec colnum="7" colname="c7" colwidth="1*"/>
+    <tbody>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>p</mtext></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>q</mtext></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>p</mtext><mo>→</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mtext>p</mtext><mo>→</mo><mtext>q</mtext></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>p</mtext><mtext> </mtext><mo>∧</mo><mo>~</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mtext>p</mtext><mo>→</mo><mtext>q</mtext></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mtext>p</mtext><mtext> </mtext><mo>∧</mo><mo>~</mo><mtext>q</mtext></mrow><mo>)</mo></mrow></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <example id="exam-00002">
+    <title>Constructing the Negation of a Conditional Statement</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00015">Write the negation of each conditional statement.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+    <item>If Adele won a Grammy, then she is a singer.</item>
+    <item>If Henrik Lundqvist played professional hockey, then he did not win the Stanley Cup.</item>
+    </list>
+    </problem>
+    <solution id="sol-00002">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
+    <item>The negation of the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> is the statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> The hypothesis of the conditional statement is <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>: Adele won a Grammy and conclusion of the conditional statement is <emphasis effect="italic">q</emphasis>: Adele is a singer. The negation of the conclusion, ~<emphasis effect="italic">q</emphasis> is the statement: “She is not a singer,” therefore, the answer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>:</mo></mrow></math> “Adele won a Grammy, and she is not a singer.”</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The hypothesis is <emphasis effect="italic">p</emphasis>: Henrik Lundqvist played professional hockey and the conclusion of the conditional statement is <emphasis effect="italic">q</emphasis>: He did not win the Stanley Cup. The negation of <emphasis effect="italic">q</emphasis> is the statement: “He won the Stanley Cup; therefore, the negation of the conditional statement is equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>:</mo></mrow></math> Henrick Lundqvist played professional hockey, and he won the Stanley Cup.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CM-C02-M6-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Constructing the Negation of a Conditional Statement with Quantifiers</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00017">Write the negation of each conditional statement.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+    <item>If all cats purr, then Sylvester purrs.</item>
+    <item>If a penguin is a bird, then some birds do not fly.</item>
+    </list>
+    </problem>
+    <solution id="sol-00003">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+    <item>The negation of the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> is the statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> The hypothesis of the conditional statement is <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>: All cats purr, and conclusion of the conditional statement is <emphasis effect="italic">q</emphasis>: Sylvester purrs. The negation of the conclusion, ~<emphasis effect="italic">q</emphasis> is the statement: “Sylvester does not purr,” therefore, the answer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>:</mo></mrow></math> “All cats purr, but Sylvester does not purr.”</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The hypothesis is <emphasis effect="italic">p</emphasis>: “A penguin is a bird,” and the conclusion of the conditional statement is <emphasis effect="italic">q</emphasis>: “Some birds do not fly.” The negation of <emphasis effect="italic">q</emphasis> is the statement: “All birds fly,” therefore, the negation of the conditional statement is equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mtext> </mtext><mo>∧</mo><mo>~</mo><mi>q</mi><mo>:</mo></mrow></math> “A penguin is a bird, and all birds fly.”</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CM-C02-M6-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00019">Many of the properties that hold true for number systems and sets also hold true for logical statements. The following table summarizes some of the most useful properties for analyzing and constructing logical arguments. These properties can be verified using a truth table.</para>
+    <table summary="." id="table-00003">
+    <title>Table 2.12<emphasis effect="italic">: Common Properties That Hold True for All Logical Statements.</emphasis></title>
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry>Property</entry>
+    <entry>Conjunction (AND)</entry>
+    <entry>Disjunction (OR)</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Commutative</emphasis></entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>≡</mo><mi>q</mi><mo>∧</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>≡</mo><mi>q</mi><mo>∨</mo><mi>p</mi></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Associative</emphasis></entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>≡</mo><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>≡</mo><mi>p</mi><mo>∨</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Distributive</emphasis></entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>≡</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>≡</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">De Morgan’s</emphasis></entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Conditional</emphasis></entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext>  </mtext><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Negating a Conditional Statement with a Conjunction or Disjunction</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00020">Write the negation of each conditional statement applying De Morgan’s Law.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00008">
+    <item>If mom needs to buy chips, then Mike had friends over and Bob was hungry.</item>
+    <item>If Juan had pizza or Chris had wings, then dad watched the game.</item>
+    </list>
+    </problem>
+    <solution id="sol-00004">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00009">
+    <item>The conditional has the form If <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis> or <emphasis effect="italic">r</emphasis>, where <emphasis effect="italic">p</emphasis> is “Mom needs to buy chips,” <emphasis effect="italic">q</emphasis> is “Mike had friends over,” and <emphasis effect="italic">r</emphasis> is “Bob was hungry.”  The negation of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo stretchy="false">(</mo><mi>q</mi><mo>∧</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mo stretchy="false">(</mo><mi>q</mi><mo>∧</mo><mi>r</mi><mo stretchy="false">)</mo><mo>.</mo></mrow></math> Applying De Morgan’s Law to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>q</mi><mo>∧</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></math> the result is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>r</mi></mrow></math>, so our conditional statement becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo stretchy="false">(</mo><mo>~</mo><mi>q</mi><mo>∨</mo><mo>~</mo><mi>r</mi><mo stretchy="false">)</mo><mo>.</mo></mrow></math> By the distributive property for conjunction over disjunction, this statement is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Translating the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math> into words, the solution is: “Mom needs to buy chips and Mike did not have friends over, or Mom needs to buy chips and Bob was not hungry.”</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The conditional has the form If <emphasis effect="italic">p</emphasis> or <emphasis effect="italic">q</emphasis>, then <emphasis effect="italic">r</emphasis>, where <emphasis effect="italic">p</emphasis> is “Juan had pizza,”, <emphasis effect="italic">q</emphasis> is “Chris had wings,” and <emphasis effect="italic">r</emphasis> is “Dad watched the game.” The negation of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mo>~</mo><mi>r</mi><mo>.</mo></mrow></math> By the distributive property for disjunction over conjuction, the statement is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Translating the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math> into words, the solution is: “Juan had pizza or dad did not watch the game, and Chris had wings or dad did not watch the game.”</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C02-M6-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title> Evaluating De Morgan’s Laws with Truth Tables</title>
+    <para id="para-00022">In Chapter 2 we saw that we could prove the validity of De Morgan’s Laws using Venn diagrams. Truth tables can also be used to prove two statements are logically equivalent. If two statements are logically equivalent, you can use the form of the statement that is clearer or more persuasive when constructing a logical argument.</para>
+    <para id="para-00023">In the next example, we will prove the validity of one of De Morgan’s Laws using a truth table. The same procedure can be applied to any two logical statement that you believe are equivalent. If the last column of the truth table is a tautology, all true, then the two statements are logically equivalent.</para>
+    <example id="exam-00005">
+    <title>Verifying De Morgan’s Law for Negation of a Conjunction</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00024">Construct a truth table to verify De Morgan’s Law for the negation of a conjunction <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mo>~</mo><mi>q</mi></mrow></math>is valid.</para>
+    </problem>
+    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00025">To verify any logical equivalence, replace the logical equivalence symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≡</mo></math>with the biconditional symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math>, then create a truth table for the statement and verify that it is valid by confirming it is a tautology. The statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi></mrow></math>becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math>Because we have two basic statements, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p,</emphasis> and <emphasis effect="italic">q</emphasis> the truth table will have 4 rows to account for all the possible outcomes.  The columns will be <emphasis effect="italic">p</emphasis>, <emphasis effect="italic">q</emphasis>, ~<emphasis effect="italic">p</emphasis>, ~<emphasis effect="italic">q,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi><mo>,</mo></mrow></math> and the biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mtext> </mtext><mo>∨</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+    <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <colspec colnum="6" colname="c6" colwidth="1*"/>
+    <colspec colnum="7" colname="c7" colwidth="1*"/>
+    <colspec colnum="8" colname="c8" colwidth="1*"/>
+    <tbody>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>p</mtext></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>q</mtext></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>p</mtext><mo>∧</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mtext>p</mtext><mo>∧</mo><mtext>q</mtext></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mtext>p</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mtext>p</mtext><mtext> </mtext><mo>∨</mo><mo>~</mo><mtext>q</mtext></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mtext>p</mtext><mo>∧</mo><mtext>q</mtext></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mtext>p</mtext><mtext> </mtext><mo>∨</mo><mo>~</mo><mtext>q</mtext></mrow><mo>)</mo></mrow></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00026">The last column is all true, therefore the statement is valid and De Morgan’s Law for the negation of a conjunction is verified.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C02-M6-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>[Check Your Understanding]</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00028"><link class="os-embed" url="#exercise/CM-C02-M6-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C02-M6-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00030"><link class="os-embed" url="#exercise/CM-C02-M6-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C02-M6-Q009"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00006">
+    <title>Exercises</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C02-M6-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00033"><link class="os-embed" url="#exercise/CM-C02-M6-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00034"><link class="os-embed" url="#exercise/CM-C02-M6-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C02-M6-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C02-M6-Q014"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00007">
+    <title>Summary</title>
+    <section class="key-terms" id="sect-00008">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00010">
+    <item>Negation of a conditional</item>
+    <item>Conjunction</item>
+    <item>Disjunction</item>
+    <item>Conditional</item>
+    <item>Truth Table</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00009">
+    <title>Key Concepts</title>
+    <list id="list-00011">
+    <item>Use De Morgan’s Laws to negate conjunctions and disjunctions.</item>
+    <item>Construct the negation of a conditional statement.</item>
+    <item>Use truth tables to evaluate De Morgan’s Laws.</item>
+    </list>
+    </section>
+    <note class="formula" id="note-00008">
+    <para id="para-00037">De Morgan’s Law for negation of a conjunction: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mo>~</mo><mi>q</mi></mrow></math></para>
+    <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">De Morgan’s Law for the negation of a disjunction: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></para>
+    <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">Negation of a conditional: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext>  </mtext><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></para>
+    <para id="para-00040" xmlns="http://cnx.rice.edu/cnxml">Writing conditional as a disjunction: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></para>
+    </note>
+    </section>
+    </content>    
 </document>
