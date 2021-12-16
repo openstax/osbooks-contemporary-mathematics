@@ -248,28 +248,28 @@
       <tbody>
       <row>
       <entry><emphasis effect="bold">Commutative</emphasis></entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>=</mo><mi>q</mi><mo>?</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>=</mo><mi>q</mi><mo>?</mo><mi>p</mi></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>≡</mo><mi>q</mi><mo>∧</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>≡</mo><mi>q</mi><mo>∨</mo><mi>p</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry><emphasis effect="bold">Associative</emphasis></entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi><mo>=</mo><mi>p</mi><mo>?</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi><mo>=</mo><mi>p</mi><mo>?</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>≡</mo><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>≡</mo><mi>p</mi><mo>∨</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry><emphasis effect="bold">Distributive</emphasis></entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>≡</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>≡</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry><emphasis effect="bold">De Morgan’s</emphasis></entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>=</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>?</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>=</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>?</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry><emphasis effect="bold">Conditional</emphasis></entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>=</mo><mtext>  </mtext><mi>p</mi><mo>?</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mtext> </mtext><mo>=</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>≡</mo><mtext>  </mtext><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
       </row>
       </tbody>
       </tgroup>
