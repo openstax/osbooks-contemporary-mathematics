@@ -226,7 +226,7 @@
       <tbody>
       <row>
       <entry>Premise:</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry rowsep="1">Premise:</entry>
@@ -245,7 +245,7 @@
       <note class="check-point" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
       <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="italic">The conditional statement can also be described as, “If antecedent, then consequent.”  This is where the law of denying the consequent gets its name.</emphasis></para>
       </note>
-      <para id="para-00030">To verify if the law of denying the consequent is a valid argument, construct a truth table for the argument, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math> and verify that it is a tautology.</para>
+      <para id="para-00030">To verify if the law of denying the consequent is a valid argument, construct a truth table for the argument, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math> and verify that it is a tautology.</para>
       <table summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
       <title><emphasis effect="italic">Truth Table Demonstrating the Law of Denying the Consequent Is a Tautology</emphasis></title>
       <tgroup cols="7">
@@ -262,9 +262,9 @@
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi> </mi><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi> </mi><mo>~</mo><mi>p</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
