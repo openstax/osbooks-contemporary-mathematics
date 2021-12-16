@@ -45,9 +45,9 @@
       </note>
       <section id="sect-00002">
       <title> Law of Detachment</title>
-      <para id="para-00016">The <term id="term-00008">law of detachment</term> is a form of a conditional argument that asserts both the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is true and the hypothesis, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is also true, then makes the claim that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> true. The law of detachment is also called affirming the hypothesis (or antecedent) and modus ponens. Arguments that have this form are valid.</para>
+      <para id="para-00016">The <term id="term-00008">law of detachment</term> is a form of a conditional argument that asserts both the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is true and the hypothesis, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is also true, then makes the claim that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> true. The law of detachment is also called affirming the hypothesis (or antecedent) and modus ponens. Arguments that have this form are valid.</para>
       <note class="definition" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00017">The <emphasis effect="bold">law of detachment</emphasis> is a valid form of a conditional argument that asserts that if both the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is true and the hypothesis, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is true, then the conclusion <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> must also be true. Symbolically it has the form: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+      <para id="para-00017">The <emphasis effect="bold">law of detachment</emphasis> is a valid form of a conditional argument that asserts that if both the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is true and the hypothesis, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is true, then the conclusion <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> must also be true. Symbolically it has the form: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math></para>
       </note>
       <table frame="none" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
       <title>Table 2.13 <emphasis effect="italic">: Law of Detachment</emphasis></title>
@@ -62,7 +62,7 @@
       <tbody>
       <row>
       <entry>Premise:</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry rowsep="1">Premise:</entry>
@@ -94,7 +94,7 @@
       <row>
       <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
@@ -119,7 +119,7 @@
       </tbody>
       </tgroup>
       </table>
-      <para id="para-00020">Another way to verify that the law of detachment is a valid argument is to construct a truth table for the argument, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>q</mi></mrow></math> and verify that it is a tautology.</para>
+      <para id="para-00020">Another way to verify that the law of detachment is a valid argument is to construct a truth table for the argument, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>q</mi></mrow></math> and verify that it is a tautology.</para>
       <table summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
       <title>Table 2.15<emphasis effect="italic">: Truth Table Demonstrating the Law of Detachment Is a Tautology</emphasis></title>
       <tgroup cols="5">
@@ -132,9 +132,9 @@
       <row>
       <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>q</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
@@ -167,7 +167,7 @@
       </tbody>
       </tgroup>
       </table>
-      <para id="para-00021">Venn diagram’s may also be used to verify deductive arguments which include conditional premises. Consider the statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>:</mo></mrow></math> “If you play guitar, then you are a musician.” The set of guitarist is a subset of the set of musicians, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>.</mo></mrow></math> To verify that an argument is valid using a Venn diagram, draw the Venn diagram representing all the premises in the argument only. Then look to see if the conclusion is also represented by the Venn diagram of the premises.  If it is, the argument is valid.  If it is not, the argument is not valid. The set of guitarist is drawn as a subset of the set of musicians to represent the premise, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>.</mo></mrow></math> The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>×</mo></math> represents the premise: <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true. This completes the drawing of the premises.</para>
+      <para id="para-00021">Venn diagram’s may also be used to verify deductive arguments which include conditional premises. Consider the statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>:</mo></mrow></math> “If you play guitar, then you are a musician.” The set of guitarist is a subset of the set of musicians, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>⊂</mo><mi>q</mi><mo>.</mo></mrow></math> To verify that an argument is valid using a Venn diagram, draw the Venn diagram representing all the premises in the argument only. Then look to see if the conclusion is also represented by the Venn diagram of the premises.  If it is, the argument is valid.  If it is not, the argument is not valid. The set of guitarist is drawn as a subset of the set of musicians to represent the premise, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math> The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>×</mo></math> represents the premise: <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true. This completes the drawing of the premises.</para>
       <figure class="unnumbered" id="fig-00002">
       <media alt="Insert Alt Text">
       <image mime-type="image/jpg" src="../../media/CS_Figure_02_07_TA_005.jpg"/>
