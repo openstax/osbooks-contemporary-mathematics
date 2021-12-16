@@ -105,9 +105,9 @@
       </tbody>
       </tgroup>
       </table>
-      <para id="para-00011">Because the last column it not all true, the biconditional is not valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is not logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math>.</para>
+      <para id="para-00011">Because the last column it not all true, the biconditional is not valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is not logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math>.</para>
       </item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Construct a truth table for the biconditional formed by using the first statement as the hypothesis and the second statement as the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>
+      <item xmlns="http://cnx.rice.edu/cnxml">Construct a truth table for the biconditional formed by using the first statement as the hypothesis and the second statement as the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>
       <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
       <tgroup cols="6">
       <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -120,10 +120,10 @@
       <row>
       <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>?</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
@@ -160,7 +160,7 @@
       </tbody>
       </tgroup>
       </table>
-      <para id="para-00012">Because the last column is true for every entry, the biconditional is valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math>. Symbolically, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mtext> </mtext><mo>=</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>?</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+      <para id="para-00012">Because the last column is true for every entry, the biconditional is valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math>. Symbolically, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>.</mo></mrow></math></para>
       </item>
       </list>
       </solution>
@@ -176,7 +176,7 @@
       </section>
       <section id="sect-00003">
       <title>Compose the Converse, Inverse, and Contrapositive of a Conditional Statement</title>
-      <para id="para-00014">The <term id="term-00003">converse</term>, <term id="term-00004">inverse</term>, and <term id="term-00005">contrapositive</term> are variations of the conditionalstatement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>.</mo></mrow></math> The main reason for learning about the other named forms of the conditional is that the conditional statement is logically equivalent to the contrapositive and the converse is logically equivalent to the inverse.</para>
+      <para id="para-00014">The <term id="term-00003">converse</term>, <term id="term-00004">inverse</term>, and <term id="term-00005">contrapositive</term> are variations of the conditionalstatement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math> The main reason for learning about the other named forms of the conditional is that the conditional statement is logically equivalent to the contrapositive and the converse is logically equivalent to the inverse.</para>
       <table summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
       <title>Table 2.9<emphasis effect="italic">: Variations of the Conditional Statement, If p then q.</emphasis></title>
       <tgroup cols="8">
@@ -203,10 +203,10 @@
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
       <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>?</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>?</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
       </row>
       <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
@@ -252,9 +252,9 @@
       </tgroup>
       </table>
       <note class="definition" id="note-00003">
-      <para id="para-00015">Given a conditional statement of the form if <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis>, the <emphasis effect="bold">converse</emphasis> is formed by interchanging the hypothesis and the conclusion. The converse is if <emphasis effect="italic">q</emphasis> then <emphasis effect="italic">p</emphasis>. Symbolically the converse of the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>?</mo><mi>p</mi><mo>.</mo></mrow></math> The converse is logically equivalent to the inverse.</para>
-      <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">Given a conditional statement of the form if <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis>, the <emphasis effect="bold">inverse</emphasis> is formed by negating both the hypothesis and the conclusion. The inverse is if ~<emphasis effect="italic">p</emphasis> then ~<emphasis effect="italic">q</emphasis>. Symbolically the inverse of the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>?</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> The inverse is logically equivalent to the converse.</para>
-      <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">Given a conditional statement of the form if <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis>, the <emphasis effect="bold">contrapositive</emphasis> is formed by interchanging and negating both the hypothesis and the conclusion. The contrapositive is if ~<emphasis effect="italic">q</emphasis> then ~<emphasis effect="italic">p</emphasis>. Symbolically the contrapositive of the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>?</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>.</mo></mrow></math> The contrapositive is logically equivalent to the conditional.</para>
+      <para id="para-00015">Given a conditional statement of the form if <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis>, the <emphasis effect="bold">converse</emphasis> is formed by interchanging the hypothesis and the conclusion. The converse is if <emphasis effect="italic">q</emphasis> then <emphasis effect="italic">p</emphasis>. Symbolically the converse of the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi><mo>.</mo></mrow></math> The converse is logically equivalent to the inverse.</para>
+      <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">Given a conditional statement of the form if <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis>, the <emphasis effect="bold">inverse</emphasis> is formed by negating both the hypothesis and the conclusion. The inverse is if ~<emphasis effect="italic">p</emphasis> then ~<emphasis effect="italic">q</emphasis>. Symbolically the inverse of the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> The inverse is logically equivalent to the converse.</para>
+      <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">Given a conditional statement of the form if <emphasis effect="italic">p</emphasis> then <emphasis effect="italic">q</emphasis>, the <emphasis effect="bold">contrapositive</emphasis> is formed by interchanging and negating both the hypothesis and the conclusion. The contrapositive is if ~<emphasis effect="italic">q</emphasis> then ~<emphasis effect="italic">p</emphasis>. Symbolically the contrapositive of the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>.</mo></mrow></math> The contrapositive is logically equivalent to the conditional.</para>
       </note>
       <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
       <title>Writing the Converse, Inverse, and Contrapositive of a Conditional Statement</title>
