@@ -631,26 +631,28 @@
   <para id="para-00081"><emphasis effect="bold">Extrapolation</emphasis> is the act of using a regression line to make a prediction about something that doesn’t belong in the original data set.</para>
   </note>
   <example id="exam-00009">
-  <title>Identifying Extrapolation</title>
+  <title>More Applying the Equation of the Regression Line</title>
   <exercise id="exer-00017">
   <problem id="prob-00017">
-  <para id="para-00082">In <link target-id="exam-00008" document="m00009"/><!--Example 51-->, we used the data in “MLB2019Off” (data from <link url="https://openstax.org/r/baseball-reference">https://openstax.org/r/baseball-reference</link>) to find a regression line that we could use to predict the number of runs scored by a Major League Baseball team based on the number of hits the team recorded. Critique the use of that regression line to answer these questions:</para>
+  <para id="para-00082">The data in “WNBA2019” gives team statistics from the 2019 WNBA season (data from basketball-reference.com).  Use that data set to answer these questions about team wins (W) and the proportion of team field goals made (FG%, the number of shots made divided by the number of shots attempted.  Even though this column is labeled using a percent sign, the values are not expressed as percentages):</para>
   <list list-type="enumerated" number-style="arabic" id="list-00037">
-  <item>The Hiroshima Toyo Carp of the Nippon Professional Baseball Organization (a professional baseball league in Japan) had 1232 hits in 2019. How many runs do we expect them to score?</item>
-  <item>How many runs would we expect a MLB team to score if they have 500 hits?</item>
-  <item>The 1920 Cleveland Indians scored 644 runs on 1448 hits on their way to the American League championship. Did their run total exceed expectations based on their hits?</item>
+    <item>What is the equation of the regression line for wins vs. proportion of made field goals?</item>
+    <item>How many wins would we expect for a team that makes 42% of its shots?</item>
+    <item>Did the New York Liberty overperform or underperform in terms of wins, based on the team’s proportion of made field goals?</item>
+    <item>Write a sentence to interpret the slope of the regression line.</item>
   </list>
   </problem>
   <solution id="sol-00017">
   <list list-type="enumerated" number-style="arabic" id="list-00038">
-  <item>The regression line was made using data from Major League Teams. Since the Carp are in a different league,we shouldn’t use our regression line to make predictions about the Carp’s run total. That would be extrapolation!</item>
-  <item>The teams we used to make our regression line had hit totals between 1281 and 1554. If a team only had 500 hits over the course of a season, that team would be really different from the ones we used to build our regression line. So, answering this question would be extrapolation!</item>
-  <item>Our regression line was made using data from the 2019 season. A team that played in 1920 likely doesn’t have much in common with the teams of 2019, so answering this question would be extrapolation!</item>
+    <item>Using Google Sheets, we get the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>178.097</mn><mi>x</mi><mo>−</mo><mn>58.543</mn></mrow></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is the proportion of field goals made and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> is the number of wins.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since 42% corresponds to a proportion of 0.42, we’ll plug 0.42 into the regression equation for $x$, which gives us <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.42</mn><mo>−</mo><mn>58.543</mn><mo>≈</mo><mn>16.26</mn></mrow></math>.  We would predict that a team that makes 42% of its shots would win about 16 games.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The New York Liberty made 41.4% of their shots, so we expect they would have <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.414</mn><mo>−</mo><mn>58.543</mn><mo>≈</mo><mn>15.19</mn></mrow></math>wins.  In fact, they had only 10 wins, so they underperformed expectations by over 5 wins.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the expected increase in the response that corresponds to a one unit increase in the explanatory variable.  If we simply go with that interpretation, we would get a sentence like “We expect an increase in proportion of field goals made of 1 would result in an additional 178 wins.”  That sentence doesn’t make much sense for a couple of reasons; first, since proportions must be between 0 and 1, the proportion of made field goals can’t be increased by 1 and still make sense.  Second, the total number of games played is only 34, so no team could get an additional 178 wins!  So, we’ll have to change the units.  Since the proportions of made field goals are often expressed as a percentage, we could try to use that.  If we express the slope as a fraction with 1 in the denominator (remember, the denominator represents the proportion of field goals made), then convert the denominator to a percentage and simplify, we get <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mn>1</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mrow><mn>100</mn><mi>%</mi></mrow></mfrac></mstyle><mo>≈</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1.78</mn></mrow><mrow><mn>1</mn><mi>%</mi></mrow></mfrac></mstyle></mrow></math>.  So, an increase in field goal percentage of 1% would result in an expected increase of 1.78 wins.</item>
   </list>
   </solution>
   </exercise>
   </example>
-  <note class="your-turn" id="note-00022">
+  <note class="your-turn" id="note-00022" xmlns="http://cnx.rice.edu/cnxml">
   <exercise id="exer-00018">
   <problem id="prob-00018">
   <para id="para-00083"><link class="os-embed" url="#exercise/CM-C08-M8-009"/></para>
