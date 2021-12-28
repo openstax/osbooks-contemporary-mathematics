@@ -6,5 +6,530 @@
     <md:uuid>c0e31e72-040c-4a47-86e2-1d96a82a323e</md:uuid>
   </metadata>
   <content>
+    <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001">After completing this module, you should be able to:</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Identify geometric sequences.</item>
+      <item>Find a given term in a geometric sequence.</item>
+      <item>Find the nth term of a geometric sequence.</item>
+      <item>Find the sum of a finite geometric sequence.</item>
+      <item>Use geometric sequences and series to solve real world applications.</item>
+      </list>
+      </section>
+      <figure class="unnumbered" id="fig-00001">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_03_011_009.jpg"/>
+      </media>
+      <caption><emphasis effect="bold">CS_Photo_03_011_009: Family looking over bank statements and retirement finds
+      </emphasis>
+      </caption>
+      </figure>
+      <para id="para-00002">One of the concerns when investing is the <emphasis effect="bold">doubling time</emphasis>, which is length of time it takes for the value of the investment to be twice, or double, that of its starting value. A shorterdoubling times means the investment bets bigger, sooner. For example, if you invest $200 in an account with a an8 year doubling time, then in eight years the value of the account will be double the starting amount, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mi>$</mi><mn>200</mn><mo>=</mo><mi>$</mi><mn>400</mn></mrow></math>. After another eight years (for a total of 16 years) the investment would be twice its valueafter the first eight years, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>×</mo><mi>$</mi><mn>400</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>×</mo><mrow><mo>(</mo><mrow><mi>$</mi><mn>400</mn></mrow><mo>)</mo></mrow><mo>=</mo><mi>$</mi><mn>800</mn></mrow></math>. Every eight years, the investment would double again, so after the thirdeight-year period, the investment would be worth <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>×</mo><mi>$</mi><mn>400</mn></mrow><mo>)</mo></mrow><mo>=</mo><mi>$</mi><mn>1600</mn></mrow></math>. This process exhibits exponential growth, an application of geometric series, which is explored in this module.</para>
+      <para id="para-00003" xmlns="http://cnx.rice.edu/cnxml">Usain Bolt is a Jamaican sprinter who holds the world record for the 100 m and 200 m sprints. It’s likely we can agree if Usain raced a tortoise, even with Usain beginning at the starting line but the tortoise at the 50 m mark, Usain would win the race handily.</para>
+      <para id="para-00004">	Or would he? We should agree that Usain would have to first catch halfway up to the tortoise. But he would still be behind. Then Usain would have to catch halfway up to the tortoise again. And then catch halfway up to the tortoise again. He would have to catch halfway up repeatedly. But there would always be a bit more to catch up and he would have to catch halfway up again. At each halfway mark, Usain gets closer, but needs to get closer still. The number of times he’d have to catch halfway up to the tortoise never ends. So, Usain would never catch up to the tortoise.</para>
+      <para id="para-00005">	This is a play on a paradox attributed to the ancient Greek philosopher Zeno. It illustrates two things.The first is that using discrete instances to model continuous activity leads to silly results. On the other hand, and more to our purposes here, it is an example of a geometric sequence, and hints at a cool result from suchseries.</para>
+      <section id="sect-00002">
+      <title>Identifying Geometric Sequences</title>
+      <para id="para-00006">We know what a sequence is, but what makes a sequence a geometric sequence? In an arithmetic sequence, each term is the previous term plus the constant difference. So, you add a (possibly negative) number at each step.In a <emphasis effect="bold">geometric sequence</emphasis>, though, each term is the previous term multiplies by a specified value, called the <emphasis effect="bold">common ratio</emphasis>. In the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>24</mn><mo>,</mo><mn>48</mn><mo>,</mo><mn>96</mn><mo>,</mo><mn>192</mn><mo>,</mo><mn>384</mn><mo>,</mo><mn>728</mn><mo>,</mo><mn>1456</mn></mrow> <mo>}</mo></mrow></mrow></math> the common ratio is 2. To see how difference between an arithmetic sequence and geometric sequence, examine these two sequences.</para>
+      <note class="definition" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00007">A sequence is a <emphasis effect="bold">geometric sequence</emphasis> if each term of the sequence is the previous term times the same value.</para>
+      <para id="para-00008">In a geometric sequence, the number that is multiplied by a term to get the next term is called the <emphasis effect="bold">common ratio</emphasis>.</para>
+      </note>
+      <figure class="unnumbered" id="fig-00002">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_11_001.jpg"/>
+      </media>
+      <caption><emphasis effect="bold">CS_Figure_03_11_001: Sequence of numbers
+      </emphasis>
+      </caption>
+      </figure>
+      <para id="para-00009">Each term in this arithmetic sequence is the previous term plus 5.</para>
+      <para id="para-00010"><emphasis effect="bold">Geometric sequence</emphasis></para>
+      <figure class="unnumbered" id="fig-00003">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_11_002.jpg"/>
+      </media>
+      <caption><emphasis effect="bold">CS_Figure_03_11_002: Sequence of numbers</emphasis>
+      </caption>
+      </figure>
+      <para id="para-00011">Each term in this geometric sequence is the previous term times 2.</para>
+      <para id="para-00012">In the sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>24</mn><mo>,</mo><mn>48</mn><mo>,</mo><mn>96</mn><mo>,</mo><mn>192</mn><mo>,</mo><mn>384</mn><mo>,</mo><mn>728</mn><mo>,</mo><mn>1456</mn><mo>}</mo></mrow></math>, the numbers get big fairly quickly, and stay positive. However, that’s not always the case with geometric sequences. Depending on the value of the common ratio, the terms could increase each time (like in the one shown), or the terms can get smallereach time, or the terms can alternate between positive and negative values. It all depends on the value of the common ratio, r.</para>
+      <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml">Consider this geometric sequence:
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mn>5</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>45</mn><mo>,</mo><mn>135</mn><mo>,</mo><mn>405</mn><mo>,</mo><mn>2025...</mn><mo>}</mo></math></para>
+      <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Each term is the previous term times 5, which means the common ratio is 5. This common ratio is larger than 1, and so the terms increase each time. Now, look at this geometric sequence: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>6</mn><mo>,</mo><mn>18</mn><mo>,</mo><mo>−</mo><mn>54</mn><mo>,</mo><mn>162</mn><mo>,</mo><mo>−</mo><mn>486</mn><mo>,</mo><mn>1458...</mn><mo>}</mo></math></para>
+      <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml">Each term is the previous term times -3, and the sign of the terms alternate from positive to negative. Then, there’s this geometric sequence: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mrow><mn>9</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>,</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>9</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mrow><mn>27</mn></mrow></mfrac><mn>...</mn></mrow> <mo>}</mo></mrow></math>
+      </para>
+      <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">Each term is the previous term times <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>, andthe terms decrease each time. What we should take away from these three examples is if the common ratio is a positive number larger than 1, then the sequence increases. If the common ratio is a negative number, then the signof the terms alternates between positive and negative. If the common ratio is between 0 and 1, then the terms decrease.</para>
+      <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">Two special cases of geometric sequences are when the constant ratio is 1 and when the common ratio is 0. When the constant ratio is 1, every term of the sequence is the same, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>3</mn></mrow><mo>}</mo></mrow></mrow></math>. This is referred to as a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">constant sequence</emphasis>. When the constant ratio is 0, the first term can be any number, but every term after the first term is 0., as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mo>−</mo><mn>43.2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mo>,</mo><mn>0</mn><mo>}</mo></mrow></math>.</para>
+      <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Identifying Geometric Sequences</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00018">For each sequence below, determine if the sequence is a geometric sequence. If so, identify the common ratio.</para>
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mn>5</mn><mo>,</mo><mn>20</mn><mo>,</mo><mn>80</mn><mo>,</mo><mn>320</mn><mo>,</mo><mn>1280</mn><mo>,</mo><mn>5120</mn><mo>,</mo><mn>20480</mn><mo>,</mo><mn>...</mn><mo>}</mo></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mo>−</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mo>−</mo><mn>12</mn><mo>,</mo><mn>24</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>33</mn><mo>}</mo></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mrow><mn>4</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>,</mo><mn>...</mn></mrow> <mo>}</mo></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+      <item>In the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mn>5</mn><mo>,</mo><mn>20</mn><mo>,</mo><mn>80</mn><mo>,</mo><mn>320</mn><mo>,</mo><mn>1280</mn><mo>,</mo><mn>5120</mn><mo>,</mo><mn>20480</mn><mo>,</mo><mn>...</mn><mo>}</mo></math>, the jump from 5 to 20 is a multiplication by 4, as is the next jump to 80, and the next to 320. Each term is 4 times the previous term. Since each term is 4 times the previous, this is a geometric sequence. The common ratio is 4.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">In the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>{</mo><mo>−</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mo>−</mo><mn>12</mn><mo>,</mo><mn>24</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>33</mn><mo>}</mo></math>, notice that 6 is -3 times -2. The jump from 6 to -12 is another multiplication by negative. So, if this is a geometric sequence, each term should be the previous term times -2. But the change from 24 to 11 is not a multiplication by -2, This means the sequence is not a geometric sequence.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">In the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mrow><mn>4</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>,</mo><mn>...</mn></mrow> <mo>}</mo></mrow></math>, the change from 4 to 2 is a multiplication by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, as is the next jump, from 2 to 1, as is the next from 1 to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>. Each term is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> times the previous term. Since each term is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>times the previous, this is a geometric sequence. The common ratio is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00019"><link class="os-embed" url="#exercise/CM-C03-M11-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00020">As with arithmetic sequences, the first term is labeled <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math>. The number that is multiplied by each term is called the common ratio and is denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>. So if the first term is known, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub> <mi>a</mi> <mn>1</mn></msub></mrow></math>, and the common ratio is known, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>, then the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>n</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></math> term, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub></math>, can be calculated with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math>.</para>
+      <note class="formula" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00021">The nth term of the geometric sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub></math>, with first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math> and common ratio r is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math></para>
+      </note>
+      <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">Return to the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mrow><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>24</mn><mo>,</mo><mn>48</mn><mo>,</mo><mn>96</mn><mo>,</mo><mn>192</mn><mo>,</mo><mn>384</mn><mo>,</mo><mn>728</mn><mo>,</mo><mn>...</mn></mrow> <mo>}</mo></mrow></math>. We observe that the first term is 3, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></math>. We also found that the common ratio is 2, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mn>2</mn></math>.Table 4.7 shows how any term can be calculated using just <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>.</para>
+      <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <title><emphasis effect="bold">TABLE 4.7 Terms of a Geometric Sequence</emphasis></title>
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <colspec colnum="4" colname="c4" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>, place in sequence</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msup><mi>i</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></math>,term</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Value of term</entry>
+      <entry>Term written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>×</mo><msup><mi>r</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msup></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>1</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">3</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>2</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>2</mn></msub></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">6</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>3</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>3</mn></msub></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">12</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>4</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>4</mn></msub></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">24</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>5</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>5</mn></msub></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">48</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><msup><mn>2</mn><mn>4</mn></msup></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi>
+      </math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>i</mi></msub></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><msup><mn>2</mn><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msup></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Determining the Value of a Specific Term in a Geometric Sequence</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+        <para id="para-00023">In the following geometric sequences, determine the indicated term of the geometric sequence with given first term and common ratio.</para>
+        <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+        <item>Determine the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mn>9</mn><mrow><mi>t</mi><mi>h</mi></mrow></msup></math> term of the geometric sequence with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>×</mo><mn>6</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mn>3</mn></math>.</item>
+        <item xmlns="http://cnx.rice.edu/cnxml">Determine the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mn>11</mn><mrow><mi>t</mi><mi>h</mi></mrow></msup></math> term of the geometric sequence with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mo>−</mo><mn>5</mn></math>.</item>
+        </list>
+        </problem>
+        <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+        <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
+        <item>Using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math> with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>6</mn><mo>,</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext> </mtext><mi>r</mi><mo>=</mo><mn>3</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>9</mn></math>, we calculate
+        <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>9</mn></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mn>9</mn><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>6</mn><mo>×</mo><msup><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mrow><mn>9</mn><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>6</mn><mo>×</mo><msup><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mn>8</mn></msup><mo>=</mo><mn>6</mn><mo>×</mo><mn>6561</mn><mo>=</mo><mn>39366</mn></math></para>
+      </item>
+        <item xmlns="http://cnx.rice.edu/cnxml">Using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math> with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mo>−</mo><mn>5</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>11</mn></math>, we calculate
+        <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mrow><mn>11</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mn>11</mn><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>2</mn><mo>×</mo><msup><mo stretchy="false">(</mo><mo>−</mo><mn>5</mn><mo stretchy="false">)</mo><mrow><mn>10</mn></mrow></msup><mo>=</mo><mn>2</mn><mo>×</mo><mn>9765625</mn><mo>=</mo><mn>1953250</mn></math>.</para></item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00026"><link class="os-embed" url="#exercise/CM-C03-M11-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00027">&lt;link url="https://openstax.org/r/Geometric_Sequences> Geometric Sequences</para>
+      </section>
+      <section id="sect-00003">
+      <title>Finding the Sum of a Finite Geometric Sequence</title>
+      <para id="para-00028">As with arithmetic sequences, it is possible to add the terms of the geometric sequence. Like arithmetic sequences, the formula for the finite sum of the terms of a geometric sequence has a straightforward formula.</para>
+      <note class="formula" id="note-00005">
+      <para id="para-00029">The sum of the first <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> terms of a finite geometric sequence, written<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>s</mi><mrow><mi>n</mi><mo>,</mo></mrow></msub> </math>, with first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math> and commonratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></math> provided that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>≠</mo><mn>1</mn></math>.</para>
+      </note>
+      <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Calculating the Sum of a Finite Geometric Sequence</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+      <item>What is the sum of the first 13 terms of the geometric sequence with first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn></math> and common ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></math>?</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">What is the sum of the first 7 terms of the geometric sequence with first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>16</mn></math> and common ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></math>?</item>
+      </list>
+      </problem>
+      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+      <item>Using  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mn>3</mn></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>13</mn></math>, we find that the sum is
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>S</mi><mrow><mn>13</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mn>3</mn><mrow><mn>13</mn><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>3</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mn>3</mn><mrow><mn>12</mn></mrow></msup></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mn>531441</mn></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mn>531441</mn></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mo>−</mo><mn>531440</mn></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>×</mo><mn>265720</mn><mo>=</mo><mn>1328600</mn></mrow></math>
+      <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">The sum of the first 13 terms of this geometric sequence is 1328600.</para></item>
+      <item>Using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>16</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>7</mn></math>, we find that the sum is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><msub><mi>s</mi><mn>7</mn></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>16</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac bevelled="true"><mn>1</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>7</mn><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mrow><mo>(</mo><mrow><mfrac bevelled="true"><mn>1</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>16</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac bevelled="true"><mn>1</mn><mn>8</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>6</mn></msup></mrow><mrow><mfrac bevelled="true"><mn>7</mn><mn>8</mn></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>16</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><mfrac bevelled="true"><mn>1</mn><mrow><mn>262144</mn></mrow></mfrac></mrow><mrow><mfrac bevelled="true"><mn>7</mn><mn>8</mn></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>16</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mfrac bevelled="true"><mrow><mn>262143</mn></mrow><mrow><mn>262144</mn></mrow></mfrac></mrow><mrow><mfrac bevelled="true"><mn>7</mn><mn>8</mn></mfrac></mrow></mfrac></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mo>=</mo><mn>16</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>262143</mn></mrow><mrow><mn>229376</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>262143</mn></mrow><mrow><mn>14336</mn></mrow></mfrac><mo>=</mo><mn>18.2856</mn></mtd></mtr></mtable></math>
+      <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">The sum of the first 7 terms of this geometric sequence is<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>18.2856</mn></math>.</para></item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00032"><link class="os-embed" url="#exercise/CM-C03-M11-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00004">
+      <title>Using Geometric Sequences to Solve Real World Applications</title>
+      <para id="para-00033">Geometric sequences have a multitude of applications, one of which is compound interest. Compound interestis something that happens to money deposited into an account, be it savings or an IRA. What happens at regular intervals is the interest on the account is calculated and added to the account. This means the interest that wasearned later gains its OWN interest. This allows the money to grow faster. If that interest is added every month, we say it is compounded monthly. If the interest is added daily, then we say it is compounded daily. The amount of money that is deposited into the account is called the principal and is denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>. The account earns money on that principle. The amount it earns is a percentage of the money in theaccount. The interest rate, expressed as a decimal, is denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+      <mi>r</mi></math>.</para>
+      <note class="formula" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00034">If you deposit P dollars in an account what earned compound interest compounded yearly, then the amount inthe account, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, after <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>t</mi></math> years is calculated with the formula:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mi>P</mi><msup><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo><mi>t</mi></msup></math>. This is a geometric sequence, with constant ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo></math> and first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mi>P</mi></math>.</para>
+      </note>
+      <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <title> Calculating Interest Compounded Yearly</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00035">Daryl deposits $1000 in an account earning <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mi>%</mi></math> interest compounded yearly. How much money is in the account after 25 years?</para>
+      </problem>
+      <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00036">Using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mi>P</mi><msup><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo><mi>t</mi></msup></math> with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mo>=</mo><mn>1000</mn></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mn>0.04</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>t</mi><mo>=</mo><mn>25</mn></math>, we find that<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi><mo>=</mo><mi>P</mi><msup><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo><mi>t</mi></msup><mo>=</mo><mn>1000</mn><mo>×</mo><msup><mo stretchy="false">(</mo><mn>1.04</mn><mo stretchy="false">)</mo><mrow><mn>25</mn></mrow></msup><mo>=</mo><mn>1000</mn><mo>×</mo><mn>2.66583633</mn><mo>=</mo><mn>2665.84</mn></math>. After 25 years, there is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>$</mi><mn>2</mn><mo>,</mo><mn>665.84</mn></math> in the account.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00037"><link class="os-embed" url="#exercise/CM-C03-M11-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00038">Another application of geometric sequences is exponential growth. This arises in biology quite frequently, especially in relation to bacterial cultures, but also with other organism population models. In bacterial cultures, the time it takes the population to double is often recorded. This time to double is the same, regardless of how big the population gets. So, if the population doubles after three hours, it doubles again after another 3 hours, and again after another 3 hours, and so on. Put into geometric sequence language, it has a common ratio of 2.</para>
+      <example id="exam-00005">
+      <title>Doubling a Bacterial Culture</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00039">When<emphasis effect="italic">Escherichia coli</emphasis> (<emphasis effect="italic">E. Coli</emphasis>) is in a broth culture at 37 C, the population of <emphasis effect="italic">E. Coli </emphasis>doubles in number every 20 minutes. If the culture began with 30 organisms, how many <emphasis effect="italic">E. Coli </emphasis>bacteria are present in the culture after 16 hours?</para>
+      </problem>
+      <solution id="sol-00005">
+      <para id="para-00040">Since the population is doubling every 20 minutes, this is a geometric sequence situation with common ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>2</mn></mrow></math>. The culture begins with 30 organisms, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>30</mn></mrow></math>. The time,16 hours, is 48 20-minute periods, so we’re looking for the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>48</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term in the sequence. Using these values in the geometric sequence formula gives</para>
+      <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mrow><mn>48</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>30</mn><mo>×</mo><msup><mn>2</mn><mrow><mn>48</mn><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>30</mn><mo>×</mo><msup><mn>2</mn><mrow><mn>47</mn></mrow></msup><mo>=</mo><mn>30</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1.40737</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>14</mn></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>4.22212</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>15</mn></mrow></msup></mrow></math></para>
+      <para id="para-00042" xmlns="http://cnx.rice.edu/cnxml">So, after 16 hours, the culture contains <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.22212</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>15</mn></mrow></msup></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">E. Coli</emphasis> organisms. That’s more than 4,000 trillion bacteria.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00009">
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00043"><link class="os-embed" url="#exercise/CM-C03-M11-Q005"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00006">
+      <title>Applying the Sum of a Finite Geometric Sequence</title>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00044">A player places one grain of rice on the first square of a chess board. On the second square, the player places 2 grains of rice. On the third square, the player places 4 grains of rice. On each successive square of the board, the player doubles the number of grains of rice placed on the chess board. When the player places the last rice on the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mn>64</mn><mrow><mi>t</mi><mi>h</mi></mrow></msup></math> square, how many total grains of rice have been placed on the board?</para>
+      </problem>
+      <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00045">Since the number of grains of rice is doubled at each step, this is a geometric sequence with first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></math> and common ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>=</mo><mn>2</mn></math>. Rice is placed on 64 total squares, so we want the sum of the first 64 terms. Using this information and the formula, the total number of grains of rice on the board will be
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><msub><mi>s</mi><mrow><mn>64</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mn>2</mn><mrow><mn>64</mn><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mn>2</mn><mrow><mn>63</mn></mrow></msup></mrow><mrow><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mn>2</mn><mrow><mn>63</mn></mrow></msup></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mo>=</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>9.2233720369</mn><mo>×</mo><msup><mn>10</mn><mrow><mn>18</mn></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>9.2233720369</mn><mo>×</mo><msup><mn>10</mn><mrow><mn>18</mn></mrow></msup></mtd></mtr></mtable></math></para>
+      <para id="para-00046" xmlns="http://cnx.rice.edu/cnxml">That’s a 20 digit number!</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00010">
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00047"><link class="os-embed" url="#exercise/CM-C03-M11-Q006"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <section id="sect-00005">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00048"><link class="os-embed" url="#exercise/CM-C03-M11-Q007"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00049"><link class="os-embed" url="#exercise/CM-C03-M11-Q008"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00050"><link class="os-embed" url="#exercise/CM-C03-M11-Q009"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00051"><link class="os-embed" url="#exercise/CM-C03-M11-Q010"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00052"><link class="os-embed" url="#exercise/CM-C03-M11-Q011"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00006">
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00053"><link class="os-embed" url="#exercise/CM-C03-M11-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00019">
+      <problem id="prob-00019">
+      <para id="para-00054"><link class="os-embed" url="#exercise/CM-C03-M11-Q013"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00020">
+      <problem id="prob-00020">
+      <para id="para-00055"><link class="os-embed" url="#exercise/CM-C03-M11-Q014"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00021">
+      <problem id="prob-00021">
+      <para id="para-00056"><link class="os-embed" url="#exercise/CM-C03-M11-Q015"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00022">
+      <problem id="prob-00022">
+      <para id="para-00057"><link class="os-embed" url="#exercise/CM-C03-M11-Q016"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00023">
+      <problem id="prob-00023">
+      <para id="para-00058"><link class="os-embed" url="#exercise/CM-C03-M11-Q017"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section id="sect-00007">
+      <title>Module 11 – Geometric Sequences</title>
+      <section class="key-terms" id="sect-00008">
+      <title>Key Terms</title>
+      <list bullet-style="none" id="list-00008">
+      <item>Geometric sequence</item>
+      <item>Common ratio</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00009">
+      <title>Key Concepts</title>
+      <list list-type="bulleted" id="list-00009">
+      <item>Geometric sequence</item>
+      <item>Finding an arbitrary term in a geometric sequence</item>
+      <item>Constant ratio</item>
+      <item>Finding the sum of a finite geometric sequence</item>
+      <item>Applying arithmetic sequences</item>
+      </list>
+      </section>
+      <section class="formula-review" id="sect-00010">
+      <title>Formulas</title>
+      <para id="para-00059"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></math></para>
+      <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mrow><mo>(</mo><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></math>
+      </para>
+      </section>
+      <section class="eoc-videos" id="sect-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Videos</title>
+      <para id="para-00061">&lt;link url="https://openstax.org/r/Geometric_Sequences> Geometric Sequences</para>
+      <para id="para-00062">&lt;link url="https://openstax.org/r/Sum_of_a_Finite_Geometric_Sequence4> Sum of a Finite Geometric Sequence</para>
+      </section>
+      <section class="projects" id="sect-00012">
+      <title>Encryption Throughout History</title>
+      <para id="para-00063">Encryption began at least as far back as the Roman Empire. During the reign of Caesar, a particular cypherwas used, fittingly named the Caesar Cypher. This encryption process granted the Romans a great tactical advantage. Even if a message was intercepted, it would not make sense to the person intercepting the message.</para>
+      <para id="para-00064">Find four instances when encryption was used and cracked over the course of history.</para>
+      </section>
+      <section id="sect-00013">
+      <title>The Golden Ratio in Art and Architecture</title>
+      <para id="para-00065">The golden ratio has been used in art and architecture as far back as ancient Greece (possibly further). It also appears in South America (Incan architecture). Find five instances of the use of the golden ratio in art or architecture and describe its use in each of those instances.</para>
+      </section>
+      <section id="sect-00014">
+      <title>Your Budget</title>
+      <para id="para-00066">Budgeting either is, or will shortly be, an important aspect of your life. Managing money well reduces stress in your life, and provides space for planning for future expenses, be they vacations of home improvements.</para>
+      <para id="para-00067">Imagine your life ten years from now. Estimate your monthly income. Identify expenses you will encounter monthly (mortgage or rent, car payment, insurance, entertainment, etc.). Decide on an amount you plan to save monthly (this is treated as an expense). Create a spreadsheet with those values. Record your monthly net income (your income minus your expenses). Determine how much money you will have saved over the course of five years (ignore interest). Write a reflection on your anticipated financial health.</para>
+      </section>
+      <section id="sect-00015">
+      <title>Estimating PI</title>
+      <para id="para-00068">The value of pi is the ratio of the circumference of a circle to the diameter of the circle. It is also equal to the ratio of the area of the circle to the square of the radius of the square.</para>
+      <para id="para-00069">Research three ways to physically estimate pi.</para>
+      <para id="para-00070">Estimate pi using all three processes you found.</para>
+      <para id="para-00071">Present your process and solutions in class.</para>
+      </section>
+      <section id="sect-00016">
+      <title>Design Your Own Shift Cypher</title>
+      <para id="para-00072">A cypher is a message written in such a way as to mask its contents. Changing a message into its cypher form is called encryption. Decryption or deciphering is the process of changing a cyphertext message back into theoriginal (legible) message. One process of encryption is to scramble the letters, symbols, and punctuation of a message according to a mathematical rule. One rule that could be used for such a cypher is addition in a chosen modulus. In this project, you will create such a cypher, encrypt a message, then decrypt the message.</para>
+      <para id="para-00073">Step 1: Choose the letters, symbols, and punctuation marks you want to allow in your messages. This shouldinclude at least the uppercase letters and a space character. This is your character set.</para>
+      <para id="para-00074">Step 2: Count the number of characters you will use. Label this number <emphasis effect="italic">n</emphasis>.</para> 
+      <para id="para-00075">Step 3: Pair each character of your character set an integer from 0 to (<emphasis effect="italic">n</emphasis> – 1). Do not assign more than one character to an integer.</para>
+      <para id="para-00076">Step 4: Choose an integer between 1 and (<emphasis effect="italic">n-1</emphasis>). This will be the number used to create the cypher. Label this number <emphasis effect="italic">s</emphasis>.</para>
+      <para id="para-00077">Step 5: Write a message using your character set.</para>
+      <para id="para-00078">Step 6: Replace every character in your message by the integer with which it was paired in Step 3.</para>
+      <para id="para-00079">Step 7: For every number, <emphasis effect="italic">x</emphasis>, from step 7, perform the addition <emphasis effect="italic">x</emphasis> + <emphasis effect="italic">s</emphasis> (mod <emphasis effect="italic">n</emphasis>).</para>
+      <para id="para-00080">Step 8: Replace every number found in Step 7 with the character with which it was paired in Step 3. This is your cyphertext.</para>
+      <para id="para-00081">Decrypting your cyphertext</para>
+      <para id="para-00082">To decrypt your cyphertext, reverse the steps above.</para>
+      <para id="para-00083">Step 1 Replace the cyphertext characters with the paired values.</para>
+      <para id="para-00084">Step 2 For each value <emphasis effect="italic">x,</emphasis> perform the <emphasis effect="italic">subtraction</emphasis> <emphasis effect="italic">x</emphasis> – <emphasis effect="italic">s</emphasis> (mod n).</para>
+      <para id="para-00085">Step 3 Replace the numbers from Step 2 with their paired characters from the character set.</para>
+      <para id="para-00086">The message is then deciphered.</para>
+      </section>
+      <section id="sect-00017">
+      <title>Design Your Own Cypher Using Multiplication</title>
+      <para id="para-00087">A cypher is a message written in such a way as to mask its contents. Changing a message into its cypher form is called encryption. Decryption or deciphering is the process of changing a cyphertext message back into theoriginal (legible) message. One process of encryption is to scramble the letters, symbols, and punctuation of a message according to a mathematical rule. One rule that could be used for such a cypher is multiplication in a chosen modulus. In this project, you will create such a cypher, encrypt a message, then decrypt the message.</para>
+      <para id="para-00088">Step 1: Choose the letters, symbols, and punctuation marks you want to allow in your messages. This shouldinclude at least the uppercase letters and a space character. This is your character set.</para>
+      <para id="para-00089">Step 2: Count the number of characters you will use. Label this number <emphasis effect="italic">n</emphasis>. 
+      Step 3:	Pair each character of your character set an integer from 0 to (<emphasis effect="italic">n</emphasis> – 1). Do not assign more than one character to an integer.</para>
+      <para id="para-00090">Step 4: Choose an integer, labeled <emphasis effect="italic">s</emphasis>, between 1 and (<emphasis effect="italic">n-1</emphasis>) so that GCF(<emphasis effect="italic">n</emphasis>,<emphasis effect="italic">s</emphasis>) = 1. This will be the number used to create the cypher.</para>
+      <para id="para-00091">Step 5: Write a message using your character set.</para>
+      <para id="para-00092">Step 6: Replace every character in your message by the integer with which it was paired in Step 3.</para>
+      <para id="para-00093">Step 7: For every number, <emphasis effect="italic">x</emphasis>, from step 7, perform the multiplication <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mi>s</mi></mrow></math> (mod <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis>).</para>
+      <para id="para-00094">Step 8: Replace every number found in Step 7 with the character with which it was paired in Step 3. This is your cyphertext.</para>
+      <para id="para-00095">Decrypting your cyphertext</para>
+      <para id="para-00096">Before Beginning to decrypt in this cypher, you need to know the <emphasis effect="bold">multiplicative inverse</emphasis> of the value you chose as <emphasis effect="italic">s</emphasis>.</para>
+      <para id="para-00097">Step 1 The multiplicative inverse of <emphasis effect="italic">s </emphasis>is the number that, when multiplied by <emphasis effect="italic">s </emphasis>in your modulus, equals 1. To find this, you will have to multiply <emphasis effect="italic">s </emphasis>and every number between 2 and (<emphasis effect="italic">n </emphasis>– 1) until the product is 1 (mod n). Once this number is found, the message can be decrypted. Call this number <emphasis effect="italic">r</emphasis>.</para>
+      <para id="para-00098">Step 2 To decrypt your cyphertext, replace the cyphertext characters with the paired values.</para>
+      <para id="para-00099">Step 3 For each of the value, <emphasis effect="italic">x,</emphasis> perform the multiplication <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>×</mo><mi>r</mi><mrow><mo>(</mo><mrow><mi>mod</mi><mtext> </mtext><mi>n</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
+      <para id="para-00100" xmlns="http://cnx.rice.edu/cnxml">Step 4 Replace the numbers from Step 3 with their paired characters from the character set.</para>
+      <para id="para-00101">The message is then deciphered.</para>
+      </section>
+      <section class="chapter-test" id="sect-00018">
+      <title>Chapter Test</title>
+      <exercise id="exer-00024">
+      <problem id="prob-00024">
+      <para id="para-00102"><link class="os-embed" url="#exercise/CM-C03-M11-Q018"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00025">
+      <problem id="prob-00025">
+      <para id="para-00103"><link class="os-embed" url="#exercise/CM-C03-M11-Q019"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00026">
+      <problem id="prob-00026">
+      <para id="para-00104"><link class="os-embed" url="#exercise/CM-C03-M11-Q020"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00027">
+      <problem id="prob-00027">
+      <para id="para-00105"><link class="os-embed" url="#exercise/CM-C03-M11-Q021"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00028">
+      <problem id="prob-00028">
+      <para id="para-00106"><link class="os-embed" url="#exercise/CM-C03-M11-Q022"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00029">
+      <problem id="prob-00029">
+      <para id="para-00107"><link class="os-embed" url="#exercise/CM-C03-M11-Q023"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00030">
+      <problem id="prob-00030">
+      <para id="para-00108"><link class="os-embed" url="#exercise/CM-C03-M11-Q024"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00031">
+      <problem id="prob-00031">
+      <para id="para-00109"><link class="os-embed" url="#exercise/CM-C03-M11-Q025"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00032">
+      <problem id="prob-00032">
+      <para id="para-00110"><link class="os-embed" url="#exercise/CM-C03-M11-Q026"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00033">
+      <problem id="prob-00033">
+      <para id="para-00111"><link class="os-embed" url="#exercise/CM-C03-M11-Q027"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00034">
+      <problem id="prob-00034">
+      <para id="para-00112"><link class="os-embed" url="#exercise/CM-C03-M11-Q028"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00035">
+      <problem id="prob-00035">
+      <para id="para-00113"><link class="os-embed" url="#exercise/CM-C03-M11-Q029"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00036">
+      <problem id="prob-00036">
+      <para id="para-00114"><link class="os-embed" url="#exercise/CM-C03-M11-Q030"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00037">
+      <problem id="prob-00037">
+      <para id="para-00115"><link class="os-embed" url="#exercise/CM-C03-M11-Q031"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00038">
+      <problem id="prob-00038">
+      <para id="para-00116"><link class="os-embed" url="#exercise/CM-C03-M11-Q032"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00039">
+      <problem id="prob-00039">
+      <para id="para-00117"><link class="os-embed" url="#exercise/CM-C03-M11-Q033"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00040">
+      <problem id="prob-00040">
+      <para id="para-00118"><link class="os-embed" url="#exercise/CM-C03-M11-Q034"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00041">
+      <problem id="prob-00041">
+      <para id="para-00119"><link class="os-embed" url="#exercise/CM-C03-M11-Q035"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00042">
+      <problem id="prob-00042">
+      <para id="para-00120"><link class="os-embed" url="#exercise/CM-C03-M11-Q036"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00043">
+      <problem id="prob-00043">
+      <para id="para-00121"><link class="os-embed" url="#exercise/CM-C03-M11-Q037"/></para>
+      </problem>
+      </exercise>
+      </section>
+      </section>
+      </section> 
   </content>
 </document>
