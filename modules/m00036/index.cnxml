@@ -6,5 +6,453 @@
     <md:uuid>00dac90c-e864-44b9-9a35-03d3f16a0c85</md:uuid>
   </metadata>
   <content>
+    <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Define and identify numbers that are real numbers.</item>
+      <item>Identify subsets of the real numbers.</item>
+      <item>Recognize properties of real numbers.</item>
+      </list>
+      </section>
+      <figure class="unnumbered" id="fig-00001">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_03_06_007.jpg"/>
+      </media>
+      <caption>CS_Photo_03_06_007: Two children doing mental math by counting with their fingers.</caption>
+      </figure>
+      <para id="para-00002">Have you ever been impressed by the speed at which someone can do math in their head? Most of us at one time or another have witnessed a person speed through mental math, an impressive feat that often bests calculators. One such person is Neelkantha Bhanu Prakash. As of September 20, 2020, he is considered the world’s fastest human calculator. He currently holds four World Records. How does someone do that, though? Have they memorized lots of arithmetic facts? Are they simply brilliant?</para>
+      <para id="para-00003">The answer isn't simple so much as it is about knowledge. Real numbers behave in some very regular ways, following rules that can be learned. In this module, those rules are explored. .</para>
+      <para id="para-00004"><link url="https://openstax.org/r/Arthur_Benjamin_TED_talk,_Faster_than_a_Calculator"> Arthur BenjaminTED talk, Faster than a Calculator</link></para>
+      <section id="sect-00002">
+      <title>Defining and Identifying Real Numbers</title>
+      <para id="para-00005"><emphasis effect="bold">Real numbers</emphasis> are the rational and irrational numbers combined.</para>
+      <note class="definition" id="note-00001">
+      <para id="para-00006">The real numbers are the union of the set of rational numbers and the set of irrational numbers.</para>
+      </note>
+      <para id="para-00007">The real numbers represent the collection of all physical distances that exist, along with 0 and the negatives of those physical distances. For example, if you take a measure of three units, and divide that distance into eight (8) equal lengths, the distance you have formed is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math> units. Also, if you draw a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">right triangle</emphasis> (a triangle with one angle equal to 90 degrees) with one side length of 1, and the other side length of 3, the long side of the triangle will have length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>10</mn></mrow></msqrt></math> units.</para>
+      <figure class="unnumbered" id="fig-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_001.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_001: A right triangle with one leg length 1, the other leg length 3, and the hypotenusewith length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>10</mn></mrow></msqrt></math>. The right angle should be marks with 90 degrees.</caption>
+      </figure>
+      <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">Of course, if we name something the real numbers, there must be numbers that aren't real. Otherwise, they’d just be called the numbers. One such not real number, one that cannot be a length, is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mo>−</mo><mn>1</mn></mrow></msqrt></math>. It is part of a collection of numbers called the complex numbers, it is denoted with the letter <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>. As an extension, the square root of any negative number is not a real number, but instead a complex number.</para>
+      <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">To determine if a number is real or not, check to see if there are any negatives under a square root or any <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi><mo>'</mo><mi>s</mi></math>. If there are any present, the number is not real.</para>
+      <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <title> Identifying Real Numbers</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00010">Determine if each of the following are real numbers.</para>
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mfrac><mrow><mn>4</mn><msqrt><mn>3</mn></msqrt></mrow><mn>7</mn></mfrac></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13.3381</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>17</mn><msqrt><mrow><mo>−</mo><mn>8</mn></mrow></msqrt></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mfrac><mrow><mn>4</mn><msqrt><mn>3</mn></msqrt></mrow><mn>7</mn></mfrac></math> is a real number, as there are no negatives under the square roots, nor is there any factor of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13.3381</mn></math> is a rational number, and so is a real number.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>17</mn><msqrt><mrow><mo>−</mo><mn>8</mn></mrow></msqrt></math> is not a real number, as there is a negative number under the square root.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00011"><link class="os-embed" url="#exercise/CM-C03-M6-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title>Identifying Subsets of Real Numbers</title>
+      <para id="para-00012">The real numbers were built out of pieces, including integers, rational numbers, and irrational numbers. As such, the real numbers have named subsets as shown in Table.</para>
+      <table class="unnumbered" summary="." id="table-00001">
+      <title>TABLE – Subsets of Real Numbers</title>
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <colspec colnum="4" colname="c4" colwidth="1pt"/>
+      <thead>
+      <row>
+      <entry>Set Name</entry>
+      <entry>Set Symbol</entry>
+      <entry>Set Description</entry>
+      <entry>Partial List of Elements of the Set</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>Natural Numbers</entry>
+      <entry/>
+      <entry>The counting numbers</entry>
+      <entry>{1, 2, 3, 4…</entry>
+      </row>
+      <row>
+      <entry>Whole Numbers</entry>
+      <entry/>
+      <entry>The counting numbers and 0</entry>
+      <entry>{0, 1, 2, 3, 4…</entry>
+      </row>
+      <row>
+      <entry>Integers</entry>
+      <entry/>
+      <entry>The natural numbers, their negatives, and 0</entry>
+      <entry>{…,-3, -2, -1, 0, 1, 2, 3…</entry>
+      </row>
+      <row>
+      <entry>Rational Numbers</entry>
+      <entry/>
+      <entry>Fractions of integers</entry>
+      <entry/>
+      </row>
+      <row>
+      <entry>Irrational Numbers</entry>
+      <entry/>
+      <entry>Numbers that cannot be written as a fraction of integers</entry>
+      <entry/>
+      </row>
+      <row>
+      <entry>Real Numbers</entry>
+      <entry/>
+      <entry>The union of the rational and irrational numbers, all possible physical lengths, and their negatives</entry>
+      <entry/>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00013">When we categorize numbers using these sets, we use the smallest set that they belong to. For instance, -7 is an integer, and a rational number, and a real number. The smallest set to which -7 belongs is integer, so we’d say it belongs to the integers.</para>
+      <para id="para-00014">We can also represent the relationships between the different sets of real numbers  using set notation. All natural numbers are integers, but there are integers that are not natural numbers, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+      <mo>⊂</mo></math>. Similarly, every integer is a rational number, but there are rational numbers that arenot integers, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>⊂</mo></math>. The same is true of the rationanumbers and the real numbers, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>⊂</mo></math>.</para>
+      <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml">There is no agreed upon symbol for the irrational numbers. If we represent the irrationals as the set A, we should note that the following are true: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∪</mo><mtext> </mtext><mi>A</mi><mtext> </mtext><mo>=</mo></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∩</mo><mtext> </mtext><mi>A</mi><mtext> </mtext><mo>=</mo><mtext> </mtext><mo>∅</mo></math>. Recall that this meansthe irrationals are the complement of the rational numbers in the universal set of real numbers.</para>
+      <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Categorizing Numbers</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00016">Identify all subsets of the real numbers to which the following real numbers belong.</para>
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+      <item>a.<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn><mtext>a</mtext><mtext>.</mtext><mtext> </mtext><mn>14</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">b.<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo><mn>14223</mn><mtext>b</mtext><mtext>.</mtext><mtext> </mtext><mo>−</mo><mn>14.223</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">c.<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>17</mn><mtext>c</mtext><mtext>.</mtext></mrow></msqrt></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn></math> is a natural number, integer, rational number</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo><mn>14.223</mn></math> is a rational number...</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>17</mn></mrow></msqrt></math> is an irrational number.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00017"><link class="os-embed" url="#exercise/CM-C03-M6-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00003">
+      <title> Categorizing Numbers within a Venn Diagram</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00018">Place the following numbers correctly into the Venn diagram.
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mspace width="1em"/><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mspace width="1em"/><mo>−</mo><mn>10</mn><mtext> </mtext><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac><mtext> </mtext><mn>41</mn><mtext> </mtext><mfrac><mn>1</mn><mrow><mn>20</mn></mrow></mfrac><mtext> </mtext></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mi>π</mi></math></para>
+      </problem>				
+      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <figure class="unnumbered" id="fig-00003">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_002.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_002: concentric oval diagram</caption>
+      </figure>
+      <para id="para-00019">Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></math>is irrational, it belongs in the real numbers, but outside the rational numbers.</para>
+      <figure class="unnumbered" id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_003.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_003: concentric oval diagram</caption>
+      </figure>
+      <para id="para-00020">Since -10 is an integer, it belongs in the integers but outside the natural numbers.</para>
+      <figure class="unnumbered" id="fig-00005">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_004.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_004: concentric oval diagram</caption>
+      </figure>
+      <para id="para-00021">Since is a rational number, it belongs in the rational numbers but not in the integers.</para>
+      <figure class="unnumbered" id="fig-00006">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_005.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_005: concentric oval diagram</caption>
+      </figure>
+      <para id="para-00022">Since 41 is a natural number, it belongs in the natural numbers circle.</para>
+      <figure class="unnumbered" id="fig-00007">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_006.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_006: concentric oval diagram</caption>
+      </figure>
+      <para id="para-00023">Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math> is a rational number, it belongs in the rational numbers but not in the integers.</para>
+      <figure class="unnumbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_007.jpg"/>
+      </media>
+      <caption>CS_Figure_03_06_007: concentric oval diagram</caption>
+      </figure>
+      <para id="para-00024">Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mi>π</mi></mrow></math>is irrational, it belongs in the real numbers, but outside the rational numbers.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00025"><link class="os-embed" url="#exercise/CM-C03-M6-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00026"><link url="https://openstax.org/r/Sets_of_Real_Numbers"> Sets of Real Numbers</link></para>
+      </section>
+      <section id="sect-00004">
+      <title>Recognizing Properties of Real Numbers</title>
+      <para id="para-00027">The real numbers behave in very regular ways. These behaviors are called the <emphasis effect="bold">properties of the real numbers.</emphasis> Knowing these properties helps when evaluating formulas, working with equations, or performing algebra. Being familiar with these properties is helpful in all settings where numbers are used and manipulated. For example, when multiplying <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>13</mn><mo>×</mo><mn>25</mn></mrow></math>, you could multiply the 4 and 25 first. If you know that product is 100, it makes the multiplication easier.</para>
+      <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml">Table is a partial list of properties of real numbers.</para>
+      <table class="unnumbered" summary="." id="table-00002">
+      <title>TABLE – Properties of Real Numbers</title>
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <thead>
+      <row>
+      <entry>Property</entry>
+      <entry>Example</entry>
+      <entry>In words</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>Distributive property <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>×</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><mo>×</mo><mi>b</mi><mo>+</mo><mi>a</mi><mo>×</mo><mi>c</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>×</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>4</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Multiplication distributes across addition</entry>
+      </row>
+      <row>
+      <entry>Commutative property of addition <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>a</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>7</mn><mo>+</mo><mn>4</mn></math>
+      </entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Numbers can be added in any order</entry>
+      </row>
+      <row>
+      <entry>Commutative property of multiplication <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>×</mo><mi>a</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>10</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>4</mn><mo>×</mo><mn>10</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Numbers can be multiplied in any order</entry>
+      </row>
+      <row>
+      <entry>Associative property of addition <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo><mo>+</mo><mi>c</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>8</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>8</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Doesn't matter which pair of numbers is added first</entry>
+      </row>
+      <row>
+      <entry>Associative property of multiplication <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo><mo>+</mo><mi>c</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>5</mn>
+      <mo stretchy="false">)</mo><mo>×</mo><mn>7</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Doesn't matter which pair of numbers is multiplied first</entry>
+      </row>
+      <row>
+      <entry>Additive identity property <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>a</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>17</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>17</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Any number plus zero is the number</entry>
+      </row>
+      <row>
+      <entry>Multiplicative identity property <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mn>1</mn><mo>=</mo><mi>a</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>21</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>21</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Any number times one is the number</entry>
+      </row>
+      <row>
+      <entry>Additive inverse property <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mo stretchy="false">(</mo><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn><mo>+</mo><mo stretchy="false">(</mo><mo>−</mo><mn>14</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Every number plus its negative is zero</entry>
+      </row>
+      <row>
+      <entry>Multiplicative inverse property, provided <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>a</mi></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></math></entry> 
+      <entry xmlns="http://cnx.rice.edu/cnxml">Every non-zero number times its reciprocal is one</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00029">The names of the properties are suggestive. The <emphasis effect="bold">commutative properties</emphasis>,for example, suggest commuting, or moving. <emphasis effect="bold">Associative properties</emphasis> suggest which items are associated with others, or, if order matters in the computation. The <emphasis effect="bold">distributive property</emphasis> addresses how a number is distributed across parentheses.</para>
+      <example id="exam-00004">
+      <title>Identifying Properties of Real Numbers</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00030">In each of the following, identify which property of the real numbers is being applied.</para>
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>+</mo><mo stretchy="false">(</mo><mn>8</mn><mo>+</mo><mn>13</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>4</mn><mo>+</mo><mn>8</mn><mo stretchy="false">)</mo><mo>+</mo><mn>13</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>34</mn><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mrow><mn>34</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>27</mn><mo>+</mo><mn>14</mn></math>
+      </item>
+      </list>
+      </problem>
+      <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+      <item>Here the pair of numbers that are added first is switched. This is the associative property.</item>
+      <item>Here a number is multiplied by its reciprocal resulting in 1. This is the multiplicative inverse property.</item>
+      <item>Here the order in which numbers are added is switched. This is the commutative property of addition.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00005">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00031"><link class="os-embed" url="#exercise/CM-C03-M6-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00032">Using these properties to perform arithmetic quickly relies on spotting easy numbers to work with. Look for numbers that add to a multiple of 10, or multiply to a multiple of 10 or 100.</para>
+      <example id="exam-00005">
+      <title>Using Properties of Real Numbers in Calculations</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00033">Use properties of the real numbers and mental math to calculate the following.</para>
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00008">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn><mo>×</mo><mn>13</mn><mo>×</mo><mn>50</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn><mo>+</mo><mn>84</mn><mo>+</mo><mn>27</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>9</mn><mo>×</mo><mn>16</mn><mo>×</mo><mn>11</mn></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00009">
+      <item>Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn><mo>×</mo><mn>50</mn><mo>=</mo><mn>100</mn></math>, so 
+      that becomes the multiplication to do first. Use the commutative property of multiplication to change the order of the numbers being multiplied. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn><mo>×</mo><mn>13</mn><mo>×</mo><mn>50</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>50</mn><mo>×</mo><mn>13</mn><mo>=</mo><mn>100</mn><mo>×</mo><mn>13</mn><mo>=</mo><mn>1300</mn></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>40</mn></math>, so that becomes the addition to do first. Use the commutative property of addition to changethe order in which the numbersare added. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn><mo>+</mo><mn>84</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>13</mn><mo>+</mo><mn>27</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>40</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>124</mn></math>
+      </item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>13</mn><mo>+</mo><mn>84</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>13</mn><mo>+</mo><mn>27</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>40</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>124</mn></mtd></mtr><mtr><mtd><mn>9</mn><mo>×</mo><mn>11</mn><mo>=</mo><mn>99</mn></mtd></mtr></mtable></math>. Using that, the problem can be changed to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>13</mn><mo>+</mo><mn>84</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>13</mn><mo>+</mo><mn>27</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>40</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>124</mn></mtd></mtr><mtr><mtd><mn>99</mn><mo>×</mo><mn>16</mn></mtd></mtr></mtable></math>. That, however, doesn't look easy at all. But<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>99</mn><mo>×</mo><mn>16</mn><mo>=</mo><mo stretchy="false">(</mo><mn>100</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>×</mo><mn>16</mn><mo>=</mo><mn>100</mn><mo>×</mo><mn>16</mn><mo>−</mo><mn>1</mn><mo>×</mo><mn>16</mn><mo>=</mo><mn>1600</mn><mo>−</mo><mn>16</mn></math>. Using the distributive property, we rewrite and expand this, as . The last step is subtraction, so the final answer is 1584. So, multiplying by 99 is the same as multiplying by 100, then subtracting the other number once.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00034"><link class="os-embed" url="#exercise/CM-C03-M6-Q005"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00035"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers_#1"> Properties of the Real Numbers #1
+      </link></para>
+      <para id="para-00036"><link url="https://openstax.org/r/Properties_of_the-Real_Numbers_#2"> Properties of the Real Numbers #2
+      </link></para>
+      <para id="para-00037"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers_#3"> Properties of the Real Numbers #3 
+      </link></para>
+      </section>
+      <section id="sect-00005">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00038"><link class="os-embed" url="#exercise/CM-C03-M6-Q006"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00039"><link class="os-embed" url="#exercise/CM-C03-M6-Q007"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00040"><link class="os-embed" url="#exercise/CM-C03-M6-Q008"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00006">
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00041"><link class="os-embed" url="#exercise/CM-C03-M6-Q009"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00042"><link class="os-embed" url="#exercise/CM-C03-M6-Q010"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00043"><link class="os-embed" url="#exercise/CM-C03-M6-Q011"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00044"><link class="os-embed" url="#exercise/CM-C03-M6-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00045"><link class="os-embed" url="#exercise/CM-C03-M6-Q013"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section id="sect-00007">
+      <title>Module 6 – Real Numbers</title>
+      <section class="key-terms" id="sect-00008">
+      <title>Key Terms</title>
+      <list bullet-style="none" id="list-00010">
+      <item>Real Numbers</item>
+      <item>Complex number</item>
+      <item>Imaginary number</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00009">
+      <title>Key Concepts</title>
+      <list list-type="bulleted" id="list-00011">
+      <item>Know what a real number is</item>
+      <item>Know the subsets of the real numbers</item>
+      <item>Know the relationship between the subsets of real numbers</item>
+      <item>Correctly use the properties of real numbers in calculation</item>
+      </list>
+      <list list-type="bulleted" id="list-00012">
+      <item>Distributive property</item>
+      <item>Commutative property</item>
+      <item>Additive identity</item>
+      <item>Multiplicative identity</item>
+      <item>Additive inverse</item>
+      <item>Multiplicative inverse</item>
+      </list>
+      </section>
+      <section class="formula-review" id="sect-00010">
+      <title>Formulas</title>
+      <para id="para-00046">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mi>a</mi><mo>×</mo><mi>b</mi><mo>+</mo><mi>a</mi><mo>×</mo><mi>c</mi>
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>a</mi>
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mi>b</mi><mo>=</mo><mi>b</mi><mo>×</mo><mi>a</mi>
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>+</mo><mi>c</mi>
+      </math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mrow><mo>(</mo><mrow><mi>b</mi><mo>×</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mi>a</mi><mo>×</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>×</mo><mi>c</mi></math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>a</mi></math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mn>1</mn><mo>=</mo><mn>0</mn></math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mrow><mo>(</mo><mrow><mo>−</mo><mi>a</mi></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></math>
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>a</mi></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>1</mn></math>
+      </para>
+      </section>
+      <section class="eoc-videos" id="sect-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Videos</title>
+      <para id="para-00047"><link url="https://openstax.org/r/Arthur_Benjamin_TED_talk,_Faster_than_a_Calculator"> Arthur Benjamin TEDtalk, Faster than a Calculator</link></para>
+      <para id="para-00048"><link url="https://openstax.org/r/Sets_of_Real_Numbers"> Sets of Real Numbers</link></para>
+      <para id="para-00049"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers_#1"> Properties of the Real Numbers #1
+      </link></para>
+      <para id="para-00050"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers-#2"> Properties of the Real Numbers #2
+      </link></para>
+      <para id="para-00051"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers-#3"> Properties of the Real Numbers #3
+      </link></para>
+      </section>
+      </section>       
   </content>
 </document>
