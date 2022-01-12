@@ -16,30 +16,30 @@
     <item>Prove equality of sets using Venn diagrams.</item>
     </list>
     </section>
-    <figure class="unnumbered" id="fig-00001">
+    <figure id="fig-00001">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_01_05_005.jpg"/>
     </media>
-    <caption>Photo 1.5: Internet related image with custom news feed or advertisements.</caption>
+    <caption>Internet related image with custom news feed or advertisements.</caption>
     </figure>
     <para id="para-00002">Have you ever searched for a something on the Internet and then soon after start seeing multiple advertisements for that item when you are browsing other web pages? Large corporations have built their business on data collection and analysis. As we start working with larger data sets the analysis becomes more complex. In this module we will extend our knowledge of set relationships by including a third set.</para>
     <para id="para-00003"> A Venn diagram with two intersecting sets breaks up the universal set into four regions, simply adding one additional set will increase the number of regions to eight, doubling the complexity of the problem.</para>
     <section id="sect-00002">
     <title>Venn Diagrams with Three Sets</title>
     <para id="para-00004">A Venn diagram with two intersecting sets breaks the universal set up into four distinct regions.</para>
-    <figure class="unnumbered" id="fig-00002">
+    <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_027.jpg"/>
     </media>
-    <caption>Figure 1.27<emphasis effect="italics">: Venn diagram with two intersecting sets</emphasis>
+    <caption><emphasis effect="italics">Venn diagram with two intersecting sets</emphasis>
     </caption>
     </figure>
     <para id="para-00005">A Venn diagram with three intersecting sets breaks up the universal set into 8 distinct regions.</para>
-    <figure class="unnumbered" id="fig-00003">
+    <figure id="fig-00003">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_028a.jpg"/>
     </media>
-    <caption>Figure 1.28<emphasis effect="italics">: Venn diagram with three intersecting sets.</emphasis>
+    <caption><emphasis effect="italics">Venn diagram with three intersecting sets.</emphasis>
     </caption>
     </figure>
     <para id="para-00006">In the next example, we will explore the three main blood factors, A, B and Rh. The following background information about blood types will help explain the relationships between the sets of blood factors. If an individual has blood factor A or B, those will be included in their blood type. The Rh factor is indicated with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>+</mo></math>or a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo></math>. For example if a person has all three blood factors, then their blood type would be In the Venn diagram they would be in the intersection of all three sets,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>R</mi><msup><mi>h</mi><mo>+</mo></msup><mo>.</mo></mrow></math> If a person did not have any of these three blood factors then their blood type would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>O</mi><mo>−</mo></msup><mo>,</mo></mrow></math>and they would be in the set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>R</mi><msup><mi>h</mi><mo>+</mo></msup></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>which is the region outside all three circles.</para>
@@ -64,11 +64,11 @@
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00010">Use the Venn diagram showing the blood types of 100 people who donated blood at a local clinic to answer the following questions.</para>
-    <figure class="unnumbered" id="fig-00005">
+    <figure id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_029a.jpg"/>
     </media>
-    <caption>Figure 1.29: Venn diagram with three main blood types: A, B, and Rh+</caption>
+    <caption>Venn diagram with three main blood types: A, B, and Rh+</caption>
     </figure>
     <para id="para-00011">
     <list id="list-00003">
@@ -116,41 +116,41 @@
     </problem>
     <solution id="sol-00002">
     <para id="para-00018">First, draw a Venn diagram with three intersecting circles, and label the universal set with the cardinality of the class.</para>
-    <figure class="unnumbered" id="fig-00006">
+    <figure id="fig-00006">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_028b.jpg"/>
     </media>
-    <caption>Figure 1.28: <emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review</emphasis></caption>
+    <caption><emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review</emphasis></caption>
     </figure>
     <para id="para-00019">Next, in the region where all three sets intersect, enter the number of students who completed all three tasks.</para>
-    <figure class="unnumbered" id="fig-00007">
+    <figure id="fig-00007">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_029a.jpg"/>
     </media>
-    <caption>Figure 1.29:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of all 3 labeled</emphasis></caption>
+    <caption><emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of all 3 labeled</emphasis></caption>
     </figure>
     <para id="para-00020">Next, calculate the value and label the sections where just 2 sets overlap. A total of 12 completed the review and made flash cards, but 5 of these did all three, so, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>7</mn></mrow></math>is the value for the region where the flash card set intersects with the review set. A total of 9 completed the review and studied their notes, but, we have already accounted for 5 of these who did all three, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>4</mn></mrow></math>is the number of students who just did the review and studied their notes. A total of 7 made flash cards and studied their notes, subtracting the 5 that did all 3 leaves 2 students who only studied their notes and made flash cards.</para>
-    <figure class="unnumbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_030.jpg"/>
     </media>
-    <caption>Figure 1.30:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of 2 and 3 sets labeled</emphasis>
+    <caption><emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of 2 and 3 sets labeled</emphasis>
     </caption>
     </figure>
     <para id="para-00021">Now, repeat this process to find the number of students who only completed one of these three tasks. A total of 24 students completed flash cards, but we have already accounted for 2+5+7=14 of these. 24-14=10 students who just made flash cards.  A total of 14 studied their notes, but we have already accounted for 4+5+2=11 of these. 14-11=3 students only studied their notes. A total of 27 students completed the review assignment, but we have already accounted for 4+5+7=16 of these, which means 27-16=11 students only completed the review assignment. Add these values to the Venn diagram.</para>
-    <figure class="unnumbered" id="fig-00009">
+    <figure id="fig-00009">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_031.jpg"/>
     </media>
-    <caption>Figure 1.31:<emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of 1, 2, and 3 sets labeled</emphasis>
+    <caption><emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Intersection of 1, 2, and 3 sets labeled</emphasis>
     </caption>
     </figure>
     <para id="para-00022">Finally, compute how many students did not do any of these three tasks. Add up all the numbers in the Review circle to find the number of students who completed the review. A total of 27 completed the review, an additional 3 just completed notes, 2 more completed notes and flash cards and then 10 more completed just flash cards. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>27</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>42</mn></mrow></math>. Because there are total of 43 students in the class, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>43</mn><mo>−</mo><mn>42</mn><mo>=</mo><mn>1</mn></mrow></math>, means only one student did not complete any of these tasks to prepare for the last test.  Record this value in the Venn diagram somewhere in the rectangle, but outside of all the circles to complete the diagram.</para>
-    <figure class="unnumbered" id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_032.jpg"/>
     </media>
-    <caption>Figure 1.32: <emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Complete</emphasis>
+    <caption><emphasis effect="italics">Venn diagram with three intersecting sets: Notes, Flash Cards, and Review – Complete</emphasis>
     </caption>
     </figure>
     </solution>
@@ -210,11 +210,11 @@
     </para>
     <para id="para-00030">In the next, example we will use Venn diagram’s to prove the De Morgan’s law for set complement over union is true using a Venn diagram, but, before we begin, let us confirm De Morgan’s law works for a specific example. While showing something is true for one specific example is not a proof, it will provide us with some reason to believe that it may be true for all cases.  Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>U</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>}</mo><mo>,</mo></mrow></math>and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>=</mo><mo>{</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>.</mo></mrow></math>De Morgan’s law for set complement over union states that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy="false">)</mo><mo>′</mo></msup><mo>=</mo><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math>To begin,find the value of the set defined by each side of the equation. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></math> is thecollection of all unique element in set A or set B or both. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo>{</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>}</mo><mo>.</mo></mrow>
     </math>The complement of A union B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>is the set of all element in the universal set that are not in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></math>. So, the left side the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>is equal to the set  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math>The right sid of the equation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math> is the set of all members of the universal set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>U</mi></math>that are not in set A. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math>Similarly,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>'</mo><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math>Finally,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup></mrow></math> is the set of all elements that are in both  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>B</mi><mo>′</mo></msup><mo>.</mo></mrow></math>The numbers 1 and 7 are common to both sets, therefore, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>.</mo></mrow></math> Because, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>7</mn><mo>}</mo></mrow></math> we have demonstrated that De Morgan’s law for set complement over union works for this particular example. The Venn diagram is figure 2.34 depicts this relationship.</para>
-    <figure class="unnumbered" id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_035.jpg"/>
     </media>
-    <caption>Figure 1.35:<emphasis effect="italics">Venn diagram of union of 2 sets and the complement.</emphasis></caption>
+    <caption><emphasis effect="italics">Venn diagram of union of 2 sets and the complement.</emphasis></caption>
     </figure>
     <example id="exam-00004">
     <title>Proving De Morgan’s Law for Set Complement over Union Using a Venn Diagram</title>
@@ -224,19 +224,19 @@
     </problem>
     <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
     <para id="para-00032">First, draw a Venn diagram representing the left side of the equality. In Figure 2.34. The regions of interest are shaded blue to highlight the sets of interest. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></math>is shaded blue left, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>)</mo></mrow></mrow><mo>′</mo></msup></mrow></math>is shaded blue on the right.</para>
-    <figure class="unnumbered" id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_036.jpg"/>
     </media>
-    <caption>Figure 1.36:<emphasis effect="italics">Venn diagram of union of 2 sets and the complement.</emphasis>
+    <caption><emphasis effect="italics">Venn diagram of union of 2 sets and the complement.</emphasis>
     </caption>
     </figure>
     <para id="para-00033">Then, draw a Venn diagram to represent the right side of the equation. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>A</mi><mo>′</mo></msup></math>is shaded blue and  is shaded yellow. Because yellow and blue mix to form green,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>∩</mo><msup><mi>B</mi><mo>′</mo></msup></mrow></math>is shaded green.</para>
-    <figure class="unnumbered" id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_05_037.jpg"/>
     </media>
-    <caption>Figure 1.37:<emphasis effect="italics">Venn diagram of intersection of the complement of two sets.
+    <caption><emphasis effect="italics">Venn diagram of intersection of the complement of two sets.
     </emphasis>
     </caption>
     </figure>
