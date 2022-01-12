@@ -32,7 +32,9 @@
     <caption>Photo 1.2c: Place setting with a knife and fork.</caption>
     </figure>
     <para id="para-00007">Recall the set of flatware in our kitchen drawer from Module 1, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mo>{</mo><mi mathvariant="normal">fork, spoon, knife, can opener, meat thermometer</mi><mo>}</mo></mrow></math>. Suppose you are preparing to eat dinner, so you pull a fork and a knife from the drawer to set the table. The set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>D</mi><mo>=</mo><mo>{</mo><mi mathvariant="normal">knife,fork</mi><mo>}</mo></mrow></math> is a subset of set F, because every member or element of set D is alsoa member of set F. More specifically, set D is a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">proper subset</emphasis> of set F, because there are other members of set F not in set D. The only subset of a set that is not a proper subset of the set would be the set itself.</para>
-    <para id="para-00008">🚦<emphasis effect="italics">The empty set or null set, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∅</mo></math>, is a propersubset of every set, except itself.</emphasis></para>
+    <note class="check-point" id="note-00015">
+    <para id="para-00008"><emphasis effect="italics">The empty set or null set, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∅</mo></math>, is a propersubset of every set, except itself.</emphasis></para>
+    </note>
     <note class="definition" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
     <para id="para-00009">Set A is a <emphasis effect="bold">proper subset</emphasis> of set B if every member of set A is also a member of set B and there is a least one element in set B that is not also in set A. Symbolically, this relationship is written: <emphasis effect="italics"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow></math> and isread, A is a proper subset of B.</emphasis></para>
     </note>
@@ -41,12 +43,12 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_01_02_TA_001.jpg"/>
     </media>
-    <caption>Tech Art 1.1<emphasis effect="italics">: A is a subset of set B. Element x is a member of both set A and set B. Two circles are labeled A and B. Circle B is shaded blue, Circle A is inside blue circle B and is shaded tan. x is in Circle A.</emphasis>
-    </caption>
     </figure>
-    <para id="para-00011">🚦 <emphasis effect="italics">While we can list all the subsets of a finite set, it not possible tolist all the possible subsets of an infinite set, as it would take an infinitely long time.</emphasis></para>
+    <note class="check-point" id="note-00016">
+    <para id="para-00011"><emphasis effect="italics">While we can list all the subsets of a finite set, it not possible tolist all the possible subsets of an infinite set, as it would take an infinitely long time.</emphasis></para>
+    </note>
     <example id="exam-00001">
-    <title>EXAMPLE 11 – Listing All the Proper Subsets of a Finite Set</title>
+    <title>Listing All the Proper Subsets of a Finite Set</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
     <para id="para-00012">Set L is a set of reading materials available in a shop at the airport, <emphasis effect="italics"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>L</mi><mo>=</mo><mo>{</mo><mi>newspaper, magazine, book</mi><mo>}</mo></mrow></math>.
@@ -84,7 +86,7 @@
     </para>
     </note>
     <example id="exam-00002">
-    <title>EXAMPLE 12 – Determining Whether a Set is a Proper Subset</title>
+    <title>Determining Whether a Set is a Proper Subset</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
     <para id="para-00020">Consider the set of common political parties in the United States, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo>=</mo><mo>{</mo><mi mathvariant="normal">Democratic, Green, Libertarian, Republican</mi><mo>}</mo></mrow></math>. Determine if the following sets are proper subsets of P.</para>
@@ -113,7 +115,7 @@
     </exercise>
     </note>
     <example id="exam-00003">
-    <title>EXAMPLE 13 – Expressing the Relationship between Sets Symbolically</title>
+    <title>Expressing the Relationship between Sets Symbolically</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
     <para id="para-00023">Consider the subsets of a standard deck of cards:
@@ -155,9 +157,11 @@
     <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">Number of Subsets of Set </mi><mi>A</mi><mo>=</mo><msup><mn>2</mn><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></msup></mrow></math>
     </para>
     </note>
-    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">🚦 Note that, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></math><emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">, so this formula works for the empty set, also.</emphasis></para>
+    <note class="check-point" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Note that, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></math><emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">, so this formula works for the empty set, also.</emphasis></para>
+    </note>
     <example id="exam-00004">
-    <title>EXAMPLE 14 – Computing the Number of Subsets of a Set</title>
+    <title>Computing the Number of Subsets of a Set</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <para id="para-00031">Find the number of subsets of each of the following sets.</para>
@@ -197,7 +201,7 @@
     <para id="para-00037">Database design and analysis is a high demand career with a median entry level salary of about $85,000 peryear, according to salary.com.</para>
     </note>
     <example id="exam-00005">
-    <title>EXAMPLE 15 – Writing Equivalent Subsets of an Infinite Set</title>
+    <title>Writing Equivalent Subsets of an Infinite Set</title>
     <exercise id="exer-00009">
     <problem id="prob-00009">
     <para id="para-00038">The multiples of 3 are given by the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">{3, 6, 9, …}</mi></mrow></math>. Write this set using set builder notation by expressing each multiple of three using a formula in terms of a natural number, <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">n</emphasis>.</para>
@@ -215,7 +219,7 @@
     </exercise>
     </note>
     <example id="exam-00006">
-    <title>EXAMPLE 16 – Creating Equivalent Subsets of a Finite Set that are not Equal</title>
+    <title>Creating Equivalent Subsets of a Finite Set that are not Equal</title>
     <exercise id="exer-00011">
     <problem id="prob-00011">
     <para id="para-00041">A fast-food restaurant offers a deal where you can select two options from the following set of four menu items for $6: a chicken sandwich, a fish sandwich, a cheeseburger, or 10 chicken pieces. Javier and his friend Michael are each purchasing lunch using this deal. Create two equivalent, but not equal, subsets that Javier and Michael could choose to have for lunch.</para>
@@ -233,7 +237,7 @@
     </exercise>
     </note>
     <example id="exam-00007">
-    <title>EXAMPLE 17 – Creating Equivalent Subsets of a Finite Set</title>
+    <title>Creating Equivalent Subsets of a Finite Set</title>
     <exercise id="exer-00013">
     <problem id="prob-00013">
     <para id="para-00044">A high school volleyball team at a small school consists of the following players: {Angie, Brenda, Colleen, Estella, Maya, Maria, Penny, Shantelle}. Create two possible equivalent starting line-ups of 6 players that the coach could select for the next game.</para>
