@@ -6,11 +6,11 @@
     <md:uuid>91031584-74b3-4327-ad1f-f12f21835af9</md:uuid>
   </metadata>
   <content>
-    <figure class="unnumbered" id="fig-00001">
+    <figure id="fig-00001">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Photo_11_01_001.jpg"/>
       </media>
-      <caption><emphasis effect="italics">Photo 11.2: Image of President Obama casting his vote.</emphasis>
+      <caption><emphasis effect="italics">Image of President Obama casting his vote.</emphasis>
       </caption>
       </figure>
       <section class="learning-objectives" id="sect-00001">
@@ -671,10 +671,10 @@
       </solution>
       </exercise>
       </example>
-      <figure class="unnumbered" id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Photo_11_01_002.jpg"/></media>
-      <caption><emphasis effect="italics">Photo 11.3: A picture of a kindergarten age child painting or playing with colors</emphasis></caption>
+      <caption><emphasis effect="italics">A picture of a kindergarten age child painting or playing with colors</emphasis></caption>
       </figure>
       <note class="your-turn" id="note-00013">
       <exercise id="exer-00010">
@@ -1171,11 +1171,11 @@
       <para id="para-00115">Condorcet voting methods are named for the <emphasis effect="bold">Marquis de Condorcet</emphasis>, a French philosopher and mathematician known for, among other accomplishments, writing “<emphasis effect="italics">Sur l'admission des femmes au droit de Cité</emphasis>” (On the Admission of Women to the Rights of Citizenship), in <emphasis effect="italics">1789,</emphasis> the first published essay on the political rights of women.</para>
       <para id="para-00116"><link url="https://openstax.org/r/of_women_to_the_rights_of_citizenship">For more details visit:</link></para>
       <para id="para-00117">If you include a Condorcet voting method in the constitution of Imaginaria, the election supervisors may want to use a pairwise comparison matrix like the one in Figure 11.23. It’s a tool used to list the numberof wins associated with each pairing of two candidates. Each candidate will receive a point for each win and a half a point for each tie. Each pairing is listed twice, once for the number of wins ofa candidate over a particular challenger and once for the number of wins of the challenger over that candidate.</para>
-      <figure class="unnumbered" id="fig-00019">
+      <figure id="fig-00019">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_023.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.23 Pairwise Comparison Matrix for Three Candidates</emphasis>
+      <caption><emphasis effect="italics">Pairwise Comparison Matrix for Three Candidates</emphasis>
       </caption>
       </figure>
       </note>
@@ -1249,11 +1249,11 @@
       </problem>
       <solution id="sol-00009">
       <para id="para-00124">There are four candidates on the ballots. We will need a row and a column for each candidate in addition to the headings, so we will draw a five by five matrix.</para>
-      <figure class="unnumbered" id="fig-00021">
+      <figure id="fig-00021">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_025.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.25 Pairwise Comparison Matrix for Four Candidates</emphasis>
+      <caption><emphasis effect="italics">Pairwise Comparison Matrix for Four Candidates</emphasis>
       </caption>
       </figure>
       <list list-type="enumerated" number-style="lower-alpha" id="list-00018">
@@ -1264,19 +1264,19 @@
       <item>A over D: Similarly, A scores 225 points.</item>
       <item>B over A: B is preferred to A in columns 1 and 2. So, B scores <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>95</mn><mo>+</mo><mn>90</mn><mo>=</mo><mn>185</mn></mrow></math>points.</item></list>
       <para id="para-00125" xmlns="http://cnx.rice.edu/cnxml">Continuing in this way, we complete the pairwise comparison matrix (Figure 11.26).</para>
-      <figure class="unnumbered" id="fig-00022">
+      <figure id="fig-00022">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_026.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.26 Pairwise Comparison Matrix for Four Candidates with Vote Counts</emphasis></caption>
+      <caption><emphasis effect="italics">Pairwise Comparison Matrix for Four Candidates with Vote Counts</emphasis></caption>
       </figure></item>
       <item><para id="para-00126">Step 1 — Losing pairings are crossed off with an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><menclose notation="box"><mo>×</mo></menclose></mrow></math>. In the event of a tie, we will draw a slash,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mtext>\</mtext><mo>)</mo></mrow></mrow></math>. (See Figure 11.27)</para>
       <para id="para-00127" xmlns="http://cnx.rice.edu/cnxml">Step 2 — Determine the number of points for each candidate by analyzing their row of wins. Each win is 1 point, each loss, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><menclose notation="box"><mo>×</mo></menclose></mrow></math>, is 0 points, and each tie, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mtext>\</mtext><mo>)</mo></mrow></mrow></math>, is half a point. Construct an additional column for each candidate’s points (See Figure 11.27).</para>
-      <figure class="unnumbered" id="fig-00023" xmlns="http://cnx.rice.edu/cnxml">
+      <figure id="fig-00023" xmlns="http://cnx.rice.edu/cnxml">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_027.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.27 Pairwise Comparison Matrix for Four Candidates with Pairwise Winners and Points Column Added</emphasis></caption>
+      <caption><emphasis effect="italics">Pairwise Comparison Matrix for Four Candidates with Pairwise Winners and Points Column Added</emphasis></caption>
       </figure>
       <para id="para-00128">Step 3 – The winner by the pairwise comparison method is option A with 3 points.</para></item>
       <item>Option A was not the winner by the Hare method.</item>
@@ -1350,11 +1350,11 @@
       </problem>
       <solution id="sol-00010">
       <para id="para-00134">Construct the comparison matrix (Figure 11.31).</para>
-      <figure class="unnumbered" id="fig-00025">
+      <figure id="fig-00025">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_031.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.31 Rock, Paper, Scissors Pairwise Comparison Matri</emphasis>
+      <caption><emphasis effect="bold">Rock, Paper, Scissors Pairwise Comparison Matri</emphasis>
       </caption>
       </figure>
       <para id="para-00135">There is a tie! There is no winner.</para>
@@ -1362,11 +1362,11 @@
       </exercise>
       </example>
       <para id="para-00136">Example 10 illustrates the answer to the first key question. The pairwise comparison method does not always result in a winner. For example, much like the game of Rock, Paper, Scissors, it is possible for a cyclic pattern to emerge in which each candidate beats the next until the last candidate who beats the first (Figure 11.32).</para>
-      <figure class="unnumbered" id="fig-00026">
+      <figure id="fig-00026">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_032.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.32 Rock, Paper, Scissors Cyclic Outcome</emphasis></caption>
+      <caption><emphasis effect="bold">Rock, Paper, Scissors Cyclic Outcome</emphasis></caption>
       </figure>
       <note class="your-turn" id="note-00026">
       <exercise id="exer-00020">
@@ -1423,11 +1423,11 @@
       <problem id="prob-00023">
       <para id="para-00148">Suppose that Person A/B/C were just about to give up on their game of Rock, Paper, Scissors when they werejoined by Person D who reminded them that their updated version, Rock, Paper, Scissors, Lizard, Spock was a far superior game with the added rules that Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, and Scissors decapitates Lizard (Figure 11.34).
       </para>
-      <figure class="unnumbered" id="fig-00027">
+      <figure id="fig-00027">
       <media alt="Insert Alt Text">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_034.jpg"/>
       </media>
-      <caption><emphasis effect="bold">Figure 11.34 Rock, Paper, Scissors, Lizard Spock Dominance</emphasis></caption></figure>
+      <caption><emphasis effect="bold">Rock, Paper, Scissors, Lizard Spock Dominance</emphasis></caption></figure>
       <para id="para-00149">Person D encourages their friends to hold a new election. This time, for the sake of simplicity, the groupdecides to use approval voting to determine the best move in the game. The summary of approval ballots is givenin Figure 11.35.</para>
       <table summary="." class="unnumbered" id="table-00021">
       <title>Figure 11.35 Approval Ballots for Rock, Paper, Scissors, Lizard, Spock
