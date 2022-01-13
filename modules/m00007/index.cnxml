@@ -416,8 +416,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_086.jpg"/>
   </media>
-  <caption><emphasis effect="italics">Proportions related to the “68” part of the 68-95-99.7 Rule.</emphasis><!--<newline/>
-  <emphasis effect="italics">Tech 8.86: Same as Tech 8.85, except the “68%” label and its arrow are replaced by a vertical blue line under the curve at x=100, two blue labels reading “34%” on either side of that line, and two blue double-headed arrows under those labels, running from 90 to 100 and 100 to 110:</emphasis>--></caption>
   </figure>
   </para>
   <para id="para-00047">So, just the “68” part of the 68-95-99.7 Rule gives us four other proportions in addition to the 68% in the rule. Similarly, the “95” and “99.7” parts each give us four more proportions:
@@ -425,26 +423,18 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_087.jpg"/>
   </media>
-  <caption><emphasis effect="italics">Proportions related to the “95” part of the 68-95-99.7 Rule.</emphasis><!--<newline/>
-  <emphasis effect="italics">Tech 8.87: Similar to 9.86, except the blue shading now goes from 80 to 120 (with red shading everywhere else), the blue labels each read “47.5%”, and the red labels read “2.5%”:</emphasis>-->
-  </caption>
   </figure>
   </para>
   <figure id="fig-00026">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_088.jpg"/>
   </media>
-  <caption><emphasis effect="italics">Proportions related to the “95” part of the 68-95-99.7 Rule.</emphasis><!--<newline/>
-  <emphasis effect="italics">Tech 8.88: Like Tech 8.87, except the blue shading now goes from 70 to 130 (with red shading everywhere else), the blue labels each read “49.85%”, and the red labels read “0.15%”:</emphasis>-->
-  </caption>
   </figure> 
   <para id="para-00048">We can put all these together to find even more complicated proportions. For example, since the proportion between 100 and 120 is 47.5% and the proportion between 100 and 110 is 34%, we can subtract to find that the proportion between 110 and 120 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>47.5</mn><mo>-</mo><mn>34</mn><mo>=</mo><mn>13.5</mn><mi>%</mi></mrow></math>:</para>
   <figure class="unnumbered" id="fig-00027" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_089.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.89: The same graph as the previous art, but with blue shading from 100 to 110, red shading from 110 to 120, blue label “34%” in or above the blue region, with blue double-headed arrow spanning blue region, red label “13.5%” in or above the red region, with red double-headed arrow spanning red region, and black label “47.5%” centered on the colored regions (at roughly x=110) with black double-headed arrow spanning both regions:</emphasis>
-  </caption>-->
   </figure>
   <example id="exam-00006">
   <title>Finding Other Proportions Using the 68-95-99.7 Rule</title>
@@ -463,8 +453,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_090.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.90: Graph of the pdf of a normal distribution with mean 80 and standard deviation 3 on the domain 68&lt;x&lt;92. Vertical black lines run from the axis to the graph at 71, 74, 77, 80, 83, 86, and 89:</emphasis>
-  </caption>-->
   </figure>
   <list list-type="enumerated" number-style="arabic" id="list-00013">
   <item>The data that are above 86 are here:</item>
@@ -473,8 +461,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_091.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.91: The same as 8.90, but with the area under the curve to the right of 86 shaded:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00051">That’s the right tail consisting of data more than two standard deviations above the mean; as we saw above in Figure 9.2, that proportion is 2.5%.</para>
   <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00014">
@@ -484,16 +470,12 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_092.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.92: The same as 8.90, but with the area between 74 and 77 shaded:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00052">These are data that are more than one but less than two standard deviations below the mean. From Figure 9.2, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from Figure 9.1, we know that 34% of the data is less than one standard deviation below the mean:</para>
   <figure class="unnumbered" id="fig-00031">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_093.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.93: The same as 8.92, except drop the black lines, add red shading between 77 and 80, and add labels and double-headed arrows to the shaded regions: 13.5% to the blue, 34% to the red, and 47.5% to the union of the two:</emphasis>
-  </caption>-->
   </figure> 
   <para id="para-00053">Subtracting, we see that the proportion of data between 74 and 77 is 13.5%.</para>
   <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00015">
@@ -503,16 +485,12 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_094.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.94: same as 9.90, but with blue shading between 74 and 83:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00054">Let’s break region into two pieces at the mean:</para>
   <figure class="unnumbered" id="fig-00033">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_095.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.95: Same as 9.90, but drop the vertical lines, shade 74&lt;x&lt;80 in blue, and shade 80&lt;x&lt;83 in red:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00055">From Figure 9.2, we know the blue (leftmost) region represents 47.5% of the data. And, using Figure 9.1, we get that the red (rightmost) region covers 34% of the data. Adding those together, the proportion we want is 81.5%.</para>
   </solution>
