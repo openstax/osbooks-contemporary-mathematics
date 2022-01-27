@@ -584,7 +584,7 @@
   <solution id="sol-00017">
   <list list-type="enumerated" number-style="arabic" id="list-00038">
     <item>Using Google Sheets, we get the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>178.097</mn><mi>x</mi><mo>-</mo><mn>58.543</mn></mrow></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is the proportion of field goals made and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> is the number of wins.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Since 42% corresponds to a proportion of 0.42, we’ll plug 0.42 into the regression equation for $x$, which gives us <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.42</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>16.26</mn></mrow></math>.  We would predict that a team that makes 42% of its shots would win about 16 games.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since 42% corresponds to a proportion of 0.42, we’ll plug 0.42 into the regression equation for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>, which gives us <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.42</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>16.26</mn></mrow></math>.  We would predict that a team that makes 42% of its shots would win about 16 games.</item>
     <item xmlns="http://cnx.rice.edu/cnxml">The New York Liberty made 41.4% of their shots, so we expect they would have <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.414</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>15.19</mn></mrow></math>wins.  In fact, they had only 10 wins, so they underperformed expectations by over 5 wins.</item>
     <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the expected increase in the response that corresponds to a one unit increase in the explanatory variable.  If we simply go with that interpretation, we would get a sentence like “We expect an increase in proportion of field goals made of 1 would result in an additional 178 wins.”  That sentence doesn’t make much sense for a couple of reasons; first, since proportions must be between 0 and 1, the proportion of made field goals can’t be increased by 1 and still make sense.  Second, the total number of games played is only 34, so no team could get an additional 178 wins!  So, we’ll have to change the units.  Since the proportions of made field goals are often expressed as a percentage, we could try to use that.  If we express the slope as a fraction with 1 in the denominator (remember, the denominator represents the proportion of field goals made), then convert the denominator to a percentage and simplify, we get <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mn>1</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mrow><mn>100</mn><mi>%</mi></mrow></mfrac></mstyle><mo>˜</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1.78</mn></mrow><mrow><mn>1</mn><mi>%</mi></mrow></mfrac></mstyle></mrow></math>.  So, an increase in field goal percentage of 1% would result in an expected increase of 1.78 wins.</item>
   </list>
@@ -608,19 +608,19 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_08_011.jpg"/>
   </media>
-  <caption>Picture of Francis Galton</caption>
+  <caption>Picture of Francis Galton (Photo Credit: Wikimedia/Sir_Francis_Galton)</caption>
   </figure>
   <figure class="unnumbered" id="fig-00033">
   <media alt="A portrait of Karl Pearson.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_08_012.jpg"/>
   </media>
-  <caption>Picture of Karl Pearson</caption>
+  <caption>Picture of Karl Pearson (Photo Credit: Wikimedia/Karl Pearson)</caption>
   </figure>
   <figure class="unnumbered" id="fig-00034">
   <media alt="A portrait of Ronald Fisher.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_08_013.jpg"/>
   </media>
-  <caption>Picture of Ronald Fisher</caption>
+  <caption>Picture of Ronald Fisher (Photo Credit: Wikimedia/Ronald Fisher)</caption>
   </figure>
   <para id="para-00087">Francis Galton, Karl Pearson, and Ronald Fisher are among the founders of the field of statistics, but they also had discriminatory views, and some of their work had very negative outcomes. Galton (1822 – 1911) came up with the formula for the standard deviation, and he devised a machine (called the <emphasis effect="italics">quincunx</emphasis> or <emphasis effect="italics">bean machine</emphasis>) that verified the connection we noted earlier between the coin flipping experiment and the normal distribution. He also was a pioneer in linear regression.</para>
   <para id="para-00088">Pearson (1857 – 1936) expanded on Galton’s work with regression, deriving the formula for the correlation coefficient that is used today. (In fact, it’s often called the Pearson correlation.) He popularized (and, according to some sources, invented) the histogram as a visualization tool. He is also remembered for his development of the theory of hypothesis testing, one of the most important tools in scientific data analysis.</para>
