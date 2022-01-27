@@ -10,7 +10,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_102.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.102: Scatter plot using data in Tech8.102, with contrasting color regression line y=1.0503x-2.2731 plotted on top, as below:</emphasis></caption>-->
   </figure>
   <section class="learning-objectives" id="sect-00001">
   <title>Learning Objectives</title>
@@ -155,28 +154,24 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_103.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.103: A set of coordinate axes. The range of x-values should run 65 to 95; the y-values should run 70 to 100.</emphasis></caption>-->
   </figure>
   <para id="para-00016">Our first point is (88, 84). So, we’ll locate 88 on the horizontal axis, 84 on the vertical axis, and identify the point that’s directly above the first location and horizontally level with the second:</para>
   <figure class="unnumbered" id="fig-00003">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_104.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.104: Same as Tech 8.103, but add red label “88” at 88 on the horizontal axis and a red dashed vertical line at x=88. Add blue label “84” at 84 on vertical axis, and blue dashed horizontal line at y=84. Add black dot at (88,84):</emphasis></caption>-->
   </figure>
   <para id="para-00017">Repeat this process to place the other four points on the graph:</para>
   <figure class="unnumbered" id="fig-00004">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_105.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.105: Same as Tech 8.103, but with points at (88,84), (71,80), (75,77), (94,95), and (68,73):</emphasis></caption>-->
   </figure>
   <para id="para-00018">Finally, label the axes:</para>
   <figure class="unnumbered" id="fig-00005">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_106.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.106: Same as Tech 8.105, but add label “Midterm” to horizontal axis and “Final” to vertical axis</emphasis></caption>-->
   </figure>
   </solution>
   </exercise>
@@ -207,7 +202,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_108.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.108: Scatter plot using data in Tech8.108. GA on horizontal axis, GF on vertical axis.</emphasis></caption>-->
   </figure>
   </solution>
   </exercise>
@@ -227,57 +221,49 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_110.jpg"/>
   </media>
-  <caption><emphasis effect="italics">a: Curved pattern</emphasis><!--<newline/>
-    <emphasis effect="italics">Tech 8.110: Scatterplot using the data in Tech8.110, overlaid with the plot of</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>10</mn></mrow></mfrac><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math> <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">in a contrasting color.</emphasis>--></caption>
+  <caption><emphasis effect="italics">a: Curved pattern</emphasis></caption>
   </figure>
   <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_111.jpg"/>
   </media>
-  <caption><emphasis effect="italics">b: No curved pattern</emphasis><!--<newline/>
-    <emphasis effect="italics">Tech 8.111: Scatterplot using the data in Tech8.111.</emphasis>--></caption>
+  <caption><emphasis effect="italics">b: No curved pattern</emphasis></caption>
   </figure>
   <figure id="fig-00011">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_112.jpg"/>
   </media>
-  <caption><emphasis effect="italics">c: Curved pattern</emphasis><!--<newline/>
-    <emphasis effect="italics">Tech 8.112: Scatterplot using the data in Tech8.112, overlaid with the plot of</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>80</mn><mo>-</mo><mn>30</mn><mi>sin</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>30</mn><mo stretchy="false">)</mo><mo>/</mo><mn>15</mn><mo stretchy="false">)</mo></mrow></math><emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">in a contrasting color.</emphasis>--></caption>
+  <caption><emphasis effect="italics">c: Curved pattern</emphasis></caption>
   </figure>
   <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_113.jpg"/>
   </media>
-  <caption><emphasis effect="italics">d: No curved pattern</emphasis><!--<newline/>
-    <emphasis effect="italics">Tech 8.113: Scatterplot using the data in Tech8.113</emphasis>--></caption>
+  <caption><emphasis effect="italics">d: No curved pattern</emphasis></caption>
   </figure>
   <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italics">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
   <figure class="unnumbered" id="fig-00013">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_114.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.114: same as Tech 8.113 except the points whose x-values are within 2 of 50 or 80 are colored green:</emphasis></caption>-->
   </figure>
   <para id="para-00028">Now, we can mentally estimate the middle of each group of points. Let's add our mental averages to the plot as red, starred points:</para>
   <figure class="unnumbered" id="fig-00014">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_115.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.115: same as Tech 8.114 except we add red points at (50, 200) and (80, 108). Maybe make those points a different shape as well to highlight the fact that they don’t necessarily belong to the original data:</emphasis></caption>-->
   </figure>
   <para id="para-00029">Since those two red, starred points occur at different heights, we can conclude that there’s likely a relationship worth exploring. Here’s another example:</para>
   <figure class="unnumbered" id="fig-00015">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_116.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.116: Scatter plot using data in Tech8.116:</emphasis></caption>-->
   </figure>
   <para id="para-00030">Let’s look again at the points near 50 and near 80, and estimate the middles of those clusters:</para>
   <figure class="unnumbered" id="fig-00016">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_117.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.117: same as Tech 8.116, except the points whose x-values are within 2 of 50 or 80 are colored green and we add differently-shaped red points at (50,155) and (80, 160):</emphasis></caption>-->
   </figure>
   <para id="para-00031">Notice that there’s not much vertical distance between our two starred points. This tells us that there’s not a strong relationship between these two data sets.</para>
   <para id="para-00032">Another way to assess whether there is a relationship between two data sets in a scatter plot is to see if the points seem to be clustered around a line (specifically, a line that’s not horizontal). The stronger the clustering around that line is, the stronger the relationship.</para>
@@ -298,8 +284,7 @@
   </media>
   <caption><emphasis effect="italics">Classifying the strength and direction of linear relationships.</emphasis><newline/>
     <emphasis effect="italics">a: Perfect negative relationship</emphasis><newline/>
-    <!--<emphasis effect="italics">Tech 8.118: Scatter plot using data in Tech8.118:</emphasis>-->
-    <emphasis effect="italics">b: Strong negative relationship</emphasis><newline/>
+      <emphasis effect="italics">b: Strong negative relationship</emphasis><newline/>
     <emphasis effect="italics">c: Weak negative relationship</emphasis><newline/>
     <emphasis effect="italics">d: No relationship</emphasis><newline/>
     <emphasis effect="italics">e: Weak positive relationship</emphasis><newline/>
@@ -333,7 +318,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_125.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.125: Scatter plot using data in Tech8.125</emphasis></caption>-->
   </figure>
   </item>
   </list>
@@ -343,7 +327,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_126.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.126: Scatter plot using data in Tech8.126</emphasis></caption>-->
   </figure>
   </item>
   </list>
@@ -353,7 +336,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_127.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.127: Scatter plot using data in Tech8.127</emphasis></caption>-->
   </figure>
   </item>
   </list>
@@ -363,7 +345,6 @@
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_128.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.128: Scatter plot using data in Tech8.128</emphasis></caption>-->
   </figure>
   </item>
   </list>
@@ -714,8 +695,6 @@
   </problem>
   </exercise>
   </section>
-<!--  <section id="sect-00012" xmlns="http://cnx.rice.edu/cnxml">
-  <title>Chapter Summary</title> -->
   <section id="sect-00040">
   <title>Module 8 – Scatter Plots, Correlation, and Regression Lines</title>
   <section class="key-terms" id="sect-00041">
