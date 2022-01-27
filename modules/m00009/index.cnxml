@@ -7,7 +7,7 @@
   </metadata>
   <content>
   <figure class="unnumbered" id="fig-00001">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 20 to 120, in increments of 20. The y-axis ranges from 0 to 160, in increments of 40. The points are scattered along a line from 40 to 110 on the horizontal axis and 20 to 120 on the vertical axis. The line represents the best line of fit and it passes through the following points: (20, 20), (40, 40), (60, 60), (80, 80), (100, 100), and (120, 122). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_102.jpg"/>
   </media>
   </figure>
@@ -21,7 +21,7 @@
   <item>Compute the correlation coefficient.</item>
   <item>Estimate and interpret regression lines.</item>
   </list>
-</section>
+  </section>
   <para id="para-00002">One of the most powerful tools statistics gives us is the ability to explore relationships between two data sets containing quantitative values, and then use that relationship to make predictions. For example, a student may want to know how well she can expect to score on an upcoming final exam. She has access to data on previous students in this class, including both midterm and final exam scores. It seems reasonable to expect that there is a relationship between those two data sets: if a student did well on the midterm, they were probably more likely to do well on the final than the average student. Similarly, if a student did poorly on the midterm, they probably also did poorly on the final exam. Of course, that relationship isn’t set in stone; a student’s performance on a midterm exam doesn’t cement their performance on the final! A student might use a poor result on the midterm as motivation to study more for the final. A student with a really good grade on the midterm might be overconfident going into the final, and as a result doesn’t prepare adequately. The statistical method of <emphasis effect="italics">regression</emphasis> can find a formula that does the best job of predicting a score on the final exam based on the student’s score on the midterm, as well as give a measure of the confidence of that prediction! In this module, we’ll discover how to use regression to make these predictions. First, though, we need to lay some graphical groundwork.</para>
   <section id="sect-00002">
   <title>Relationships Between Quantitative Data Sets</title>
@@ -151,25 +151,25 @@
   </table>
   <para id="para-00015">Next, let’s make the axes. On the horizontal axis, make sure the range of values is sufficient to cover all of the explanatory data. For our data, that’s 68 to 94. Similarly, the vertical axis should cover all of the response data (73 to 95):</para>
   <figure class="unnumbered" id="fig-00002">
-  <media alt="Insert Alt Text">
+  <media alt="A blank coordinate plane. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_103.jpg"/>
   </media>
   </figure>
   <para id="para-00016">Our first point is (88, 84). So, we’ll locate 88 on the horizontal axis, 84 on the vertical axis, and identify the point that’s directly above the first location and horizontally level with the second:</para>
   <figure class="unnumbered" id="fig-00003">
-  <media alt="Insert Alt Text">
+  <media alt="A coordinate plane plots a point. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5. A horizontal dotted line is drawn at 84. A vertical dotted line is drawn at 88. The two dotted lines intersect at the point (88, 84).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_104.jpg"/>
   </media>
   </figure>
   <para id="para-00017">Repeat this process to place the other four points on the graph:</para>
   <figure class="unnumbered" id="fig-00004">
-  <media alt="Insert Alt Text">
+  <media alt="Five points are plotted on a coordinate plane. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5. The points are as follows: (68, 73), (72, 80), (75, 77), (88, 84), and (94, 95). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_105.jpg"/>
   </media>
   </figure>
   <para id="para-00018">Finally, label the axes:</para>
   <figure class="unnumbered" id="fig-00005">
-  <media alt="Insert Alt Text">
+  <media alt="Five points are plotted on a coordinate plane.The horizontal axis representing midterm ranges from 65 to 95, in increments of 5. The vertical axis representing final ranges from 70 to 100, in increments of 5. The points are as follows: (68, 73), (72, 80), (75, 77), (88, 84), and (94, 95). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_106.jpg"/>
   </media>
   </figure>
@@ -199,7 +199,7 @@
   <solution id="sol-00005">
   <para id="para-00024">Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection). Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.” Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case). Now, click on the variable under “Series” and select the one that should go on the vertical axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
   <figure class="unnumbered" id="fig-00007">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot titled, GF versus GA. The horizontal axis representing GA ranges from 180 to 320, in increments of 20. The vertical axis representing GF ranges from 190 to 330, in increments of 20. The points are scattered throughout and it lies from 200 to 300 on the horizontal axis and 200 to 290 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_108.jpg"/>
   </media>
   </figure>
@@ -218,50 +218,50 @@
   <title>Reading and Interpreting Scatter Plots</title>
   <para id="para-00026">Scatter plots give us information about the existence and strength of a relationship between two data sets. To break that information down, there are a series of questions we might ask to help us. First: Is there a curved pattern in the data? If the answer is “yes,” then we can stop; none of the linear regression techniques from here to the end of this module are appropriate. Figure 9.4 shows several examples of scatterplots that can help us identify these curved patterns.</para>
   <figure id="fig-00009">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot represents a curved pattern. The x-axis ranges from 20 to 120, in increments of 20. The y-axis ranges from negative 100 to 500, in increments of 100. The scatter plot shows points scattered along a curve that passes through the following points: (20, 90), (40, 20), (50, 0), (80, 100), (100, 250), and (120, 500). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_110.jpg"/>
   </media>
   <caption><emphasis effect="italics">a: Curved pattern</emphasis></caption>
   </figure>
   <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot represents no curved pattern. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 140, in increments of 20. The points are scattered throughout and it lies from 30 to 100 on the horizontal axis and 10 to 120 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_111.jpg"/>
   </media>
   <caption><emphasis effect="italics">b: No curved pattern</emphasis></caption>
   </figure>
   <figure id="fig-00011">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot represents a curved pattern. The x-axis ranges from 30 to 100, in increments of 10. The y-axis ranges from 40 to 120, in increments of 10. The scatter plot shows points scattered along a curve that passes through the following points: (30, 80), (40, 60), (55, 50), (70, 65), (90, 102), (100, 110), and (100, 105). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_112.jpg"/>
   </media>
   <caption><emphasis effect="italics">c: Curved pattern</emphasis></caption>
   </figure>
   <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot represents no curved pattern. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are as follows: (35, 250), (40, 220), (50, 200), (60, 175), (70, 150), (80, 125), (90, 75), and (100, 50). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_113.jpg"/>
   </media>
   <caption><emphasis effect="italics">d: No curved pattern</emphasis></caption>
   </figure>
   <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italics">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
   <figure class="unnumbered" id="fig-00013">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are highlighted in red and the points are as follows: (50, 290), (48, 195), (48, 200), (49.5, 225), (50, 203), (78, 145), (79, 130), (80, 120), (81, 120), (81, 70), (82, 90), (82.5, 90), (82, 100), and (82, 120). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_114.jpg"/>
   </media>
   </figure>
   <para id="para-00028">Now, we can mentally estimate the middle of each group of points. Let's add our mental averages to the plot as red, starred points:</para>
   <figure class="unnumbered" id="fig-00014">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are highlighted in red and the points are as follows: (50, 290), (48, 195), (48, 200), (49.5, 225), (50, 203), (78, 145), (79, 130), (80, 120), (81, 120), (81, 70), (82, 90), (82.5, 90), (82, 100), and (82, 120). Asterisks are marked at (50, 200) and (80, 120). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_115.jpg"/>
   </media>
   </figure>
   <para id="para-00029">Since those two red, starred points occur at different heights, we can conclude that there’s likely a relationship worth exploring. Here’s another example:</para>
   <figure class="unnumbered" id="fig-00015">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout and it lies from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_116.jpg"/>
   </media>
   </figure>
   <para id="para-00030">Let’s look again at the points near 50 and near 80, and estimate the middles of those clusters:</para>
   <figure class="unnumbered" id="fig-00016">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout and it lies from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis. Some of the points are marked in red: (48, 120), (48, 140), (50, 150), (50, 155), (48, 190), (51, 195), (82, 75), (80, 125), (81, 130), (80, 160), (81, 160), (82, 140), (81, 195), (81, 200), and (78, 210). Asterisks are marked at (50, 150) and (80, 170). Note all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_117.jpg"/>
   </media>
   </figure>
@@ -274,7 +274,7 @@
   </note>
   <para id="para-00036">Let’s look at some scatter plots and classify the depicted relationships.</para>
   <figure id="fig-00017">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 210 to 290, in increments of 10. The points are arranged in linear decreasing order in a single row. Some of the points are as follows: (32, 288), (40, 280), (60, 260), (70, 250), (90, 230), and (100, 220). Note: all values are approximate. A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 200 to 300, in increments of 20. The points are arranged in linear decreasing order in multiple rows. Some of the points are as follows: (32, 287), (40, 281), (60, 260), (70, 245), (90, 230), and (100, 225). Note: all values are approximate. A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 150 to 350, in increments of 50. The points are scattered throughout. Most points lie from 30 to 100 on the horizontal axis and 200 to 300 on the vertical axis. A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout. Most points lie from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis. A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered at the center of the graph. Most points lie from 50 to 90 on the horizontal axis and 340 to 440 on the vertical axis. A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered in linear increasing order in a single row. Some of the points are as follows: (27, 345), (40, 360), (60, 380), (70, 390), (80, 400), and (100, 420). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_118.jpg"/>
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_119.jpg"/>
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_120.jpg"/>
@@ -283,12 +283,12 @@
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_123.jpg"/>
   </media>
   <caption><emphasis effect="italics">Classifying the strength and direction of linear relationships.</emphasis><newline/>
-    <emphasis effect="italics">a: Perfect negative relationship</emphasis><newline/>
-      <emphasis effect="italics">b: Strong negative relationship</emphasis><newline/>
-    <emphasis effect="italics">c: Weak negative relationship</emphasis><newline/>
-    <emphasis effect="italics">d: No relationship</emphasis><newline/>
-    <emphasis effect="italics">e: Weak positive relationship</emphasis><newline/>
-    <emphasis effect="italics">g: Perfect positive relationship</emphasis>
+  <emphasis effect="italics">a: Perfect negative relationship</emphasis><newline/>
+  <emphasis effect="italics">b: Strong negative relationship</emphasis><newline/>
+  <emphasis effect="italics">c: Weak negative relationship</emphasis><newline/>
+  <emphasis effect="italics">d: No relationship</emphasis><newline/>
+  <emphasis effect="italics">e: Weak positive relationship</emphasis><newline/>
+  <emphasis effect="italics">g: Perfect positive relationship</emphasis>
   </caption>
   </figure>
   <para id="para-00037">The strength and direction (positive or negative) of a linear relationship can also be measured with a statistic called the <term id="term-00008">correlation coefficient</term> (denoted <emphasis effect="italics">r</emphasis>). Positive values of <emphasis effect="italics">r</emphasis> indicate a positive relationship, while negative values of <emphasis effect="italics">r</emphasis> indicate a negative relationship. Values of <emphasis effect="italics">r</emphasis> close to 0 indicate a weak relationship, while values close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math> correspond to a very strong relationship.</para>
@@ -315,7 +315,7 @@
   <list list-type="enumerated" number-style="arabic" id="list-00007">
   <item>
   <figure class="unnumbered" id="fig-00024">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot shows points arranged in a parabolic path. The x-axis ranges from 30 to 20, in increments of 10. The y-axis ranges from negative 10 to 60, in increments of 10. The points are scattered in the form of an open upward parabola. Some of the points are as follows: (negative 20, 45), (negative 10, 10), (0, 0), (10, 10), and (15, 22). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_125.jpg"/>
   </media>
   </figure>
@@ -324,7 +324,7 @@
   <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00008">
   <item>
   <figure class="unnumbered" id="fig-00025">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot shows points arranged in increasing order. The x-axis ranges from 30 to 20, in increments of 10. The y-axis ranges from negative 100 to 150, in increments of 50. The points are scattered in increasing order. Some of the points are as follows: (negative 20, negative 50), (negative 10, 0), (0, 40), (10, 75), and (15, 100). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_126.jpg"/>
   </media>
   </figure>
@@ -333,7 +333,7 @@
   <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00009">
   <item>
   <figure class="unnumbered" id="fig-00026">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot shows points arranged in decreasing order. The x-axis ranges from 30 to 20, in increments of 10. The y-axis ranges from negative 20 to 20, in increments of 10. The points are scattered in decreasing order. Some of the points are as follows: (negative 20, 10), (negative 10, 5), (0, 0), (10, negative 5), and (15, negative 15). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_127.jpg"/>
   </media>
   </figure>
@@ -342,7 +342,7 @@
   <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00010">
   <item>
   <figure class="unnumbered" id="fig-00027">
-  <media alt="Insert Alt Text">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 20, in increments of 10. The y-axis ranges from 0 to 40, in increments of 5. The points are scattered throughout and the points lie from negative 20 to 15 on the horizontal axis and 0 to 30 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_128.jpg"/>
   </media>
   </figure>
@@ -367,12 +367,12 @@
   <item>No, there’s no curved pattern.</item>
   <item>Since the points tend downward as we move from left to right, this is a negative relationship. The points are not tightly grouped around a line, but the pattern is clear. It looks like it has approximately the same strength as the plot in Figure 9.5e, just with the opposite sign. So, we might guess that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.6</mn></mrow></math>.</item>
   </list></item>
-<item xmlns="http://cnx.rice.edu/cnxml"><list list-type="enumerated" number-style="lower-alpha" id="list-00004">
-<item>No, there’s no curved pattern.</item>
-<item>Since the points don’t really tend upward or downward as we move from left to right, there is no real relationship here. Thus,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>≈</mo><mn>0</mn></mrow></math>.</item>
-</list></item>
-</list>
-</solution>
+  <item xmlns="http://cnx.rice.edu/cnxml"><list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+  <item>No, there’s no curved pattern.</item>
+  <item>Since the points don’t really tend upward or downward as we move from left to right, there is no real relationship here. Thus,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>˜</mo><mn>0</mn></mrow></math>.</item>
+  </list></item>
+  </list>
+  </solution>
   </exercise>
   </example>
   <note class="your-turn" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
@@ -434,7 +434,7 @@
   <title>Finding the Equation of the Regression Line from Statistics</title>
   <exercise id="exer-00011">
   <problem id="prob-00011">
-  <para id="para-00058">Suppose you have data sets <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> with the following statistics: <emphasis effect="italics">x</emphasis> has mean 21 and standard deviation 4, <emphasis effect="italics">y</emphasis> has mean 8 and standard deviation 2, and their correlation coefficient is ‒0.4. What’s the equation of the regression line?</para>
+  <para id="para-00058">Suppose you have data sets <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> with the following statistics: <emphasis effect="italics">x</emphasis> has mean 21 and standard deviation 4, <emphasis effect="italics">y</emphasis> has mean 8 and standard deviation 2, and their correlation coefficient is -0.4. What’s the equation of the regression line?</para>
   </problem>
   <solution id="sol-00011">
   <para id="para-00059">We’re given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mn>21</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo>=</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.4</mn></mrow></math>. Let's start with the formula for the equation of the regression line:
@@ -541,7 +541,7 @@
   <list list-type="enumerated" number-style="arabic" id="list-00034">
   <item>Using Google Sheets, we find that the regression line equation is <emphasis effect="italics">y</emphasis> = 0.884<emphasis effect="italics">x</emphasis> – 456, where <emphasis effect="italics">y</emphasis> is the number of runs scored and <emphasis effect="italics">x</emphasis> is the number of hits.</item>
   <item>Plugging 1500 into the equation of the regression line, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1500</mn><mo>-</mo><mn>456</mn><mo>=</mo><mn>870</mn></mrow></math>. We would predict that a team with 1500 hits would score 870 runs.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">The Royals had 1356 hits, so we would predict their run total to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1356</mn><mo>-</mo><mn>456</mn><mo>≈</mo><mn>743</mn></mrow></math>. They actually scored 691 runs, so they underperformed expectations by 52 runs (743 – 691).</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The Royals had 1356 hits, so we would predict their run total to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.884</mn><mo>×</mo><mn>1356</mn><mo>-</mo><mn>456</mn><mo>˜</mo><mn>743</mn></mrow></math>. They actually scored 691 runs, so they underperformed expectations by 52 runs (743 – 691).</item>
   <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the predicted change in the response that corresponds to a one unit increase in the explanatory variable. So, we expect one additional hit to result in 0.884 more runs. Since 0.884 runs doesn’t really make sense, we can get a better interpretation by multiplying through by ten or one hundred: Ten additional hits will result in almost nine additional runs, or a hundred additional hits will yield on average just over 88 additional runs.</item>
   </list>
   </solution>
@@ -583,10 +583,10 @@
   </problem>
   <solution id="sol-00017">
   <list list-type="enumerated" number-style="arabic" id="list-00038">
-    <item>Using Google Sheets, we get the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>178.097</mn><mi>x</mi><mo>−</mo><mn>58.543</mn></mrow></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is the proportion of field goals made and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> is the number of wins.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Since 42% corresponds to a proportion of 0.42, we’ll plug 0.42 into the regression equation for $x$, which gives us <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.42</mn><mo>−</mo><mn>58.543</mn><mo>≈</mo><mn>16.26</mn></mrow></math>.  We would predict that a team that makes 42% of its shots would win about 16 games.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The New York Liberty made 41.4% of their shots, so we expect they would have <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.414</mn><mo>−</mo><mn>58.543</mn><mo>≈</mo><mn>15.19</mn></mrow></math>wins.  In fact, they had only 10 wins, so they underperformed expectations by over 5 wins.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the expected increase in the response that corresponds to a one unit increase in the explanatory variable.  If we simply go with that interpretation, we would get a sentence like “We expect an increase in proportion of field goals made of 1 would result in an additional 178 wins.”  That sentence doesn’t make much sense for a couple of reasons; first, since proportions must be between 0 and 1, the proportion of made field goals can’t be increased by 1 and still make sense.  Second, the total number of games played is only 34, so no team could get an additional 178 wins!  So, we’ll have to change the units.  Since the proportions of made field goals are often expressed as a percentage, we could try to use that.  If we express the slope as a fraction with 1 in the denominator (remember, the denominator represents the proportion of field goals made), then convert the denominator to a percentage and simplify, we get <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mn>1</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mrow><mn>100</mn><mi>%</mi></mrow></mfrac></mstyle><mo>≈</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1.78</mn></mrow><mrow><mn>1</mn><mi>%</mi></mrow></mfrac></mstyle></mrow></math>.  So, an increase in field goal percentage of 1% would result in an expected increase of 1.78 wins.</item>
+    <item>Using Google Sheets, we get the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>178.097</mn><mi>x</mi><mo>-</mo><mn>58.543</mn></mrow></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is the proportion of field goals made and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> is the number of wins.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since 42% corresponds to a proportion of 0.42, we’ll plug 0.42 into the regression equation for $x$, which gives us <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.42</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>16.26</mn></mrow></math>.  We would predict that a team that makes 42% of its shots would win about 16 games.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The New York Liberty made 41.4% of their shots, so we expect they would have <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.414</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>15.19</mn></mrow></math>wins.  In fact, they had only 10 wins, so they underperformed expectations by over 5 wins.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the expected increase in the response that corresponds to a one unit increase in the explanatory variable.  If we simply go with that interpretation, we would get a sentence like “We expect an increase in proportion of field goals made of 1 would result in an additional 178 wins.”  That sentence doesn’t make much sense for a couple of reasons; first, since proportions must be between 0 and 1, the proportion of made field goals can’t be increased by 1 and still make sense.  Second, the total number of games played is only 34, so no team could get an additional 178 wins!  So, we’ll have to change the units.  Since the proportions of made field goals are often expressed as a percentage, we could try to use that.  If we express the slope as a fraction with 1 in the denominator (remember, the denominator represents the proportion of field goals made), then convert the denominator to a percentage and simplify, we get <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mn>1</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mrow><mn>100</mn><mi>%</mi></mrow></mfrac></mstyle><mo>˜</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1.78</mn></mrow><mrow><mn>1</mn><mi>%</mi></mrow></mfrac></mstyle></mrow></math>.  So, an increase in field goal percentage of 1% would result in an expected increase of 1.78 wins.</item>
   </list>
   </solution>
   </exercise>
@@ -611,13 +611,13 @@
   <caption>Picture of Francis Galton</caption>
   </figure>
   <figure class="unnumbered" id="fig-00033">
-  <media alt="Insert Alt Text">
+  <media alt="A portrait of Karl Pearson.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_08_012.jpg"/>
   </media>
   <caption>Picture of Karl Pearson</caption>
   </figure>
   <figure class="unnumbered" id="fig-00034">
-  <media alt="Insert Alt Text">
+  <media alt="A portrait of Ronald Fisher.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_08_013.jpg"/>
   </media>
   <caption>Picture of Ronald Fisher</caption>
@@ -714,14 +714,14 @@
   <list bullet-style="none" id="list-00114">
   <item>If one variable affects the value of another variable, we say the first is an explanatory variable and the second is a response variable.</item>
   <item>Scatter plots place a point in the <emphasis effect="italics">xy</emphasis> plane for each unit in the data set. The <emphasis effect="italics">x</emphasis>-value is the value of the explanatory variable, and the <emphasis effect="italics">y</emphasis>-value is the value of the response variable.</item>
-  <item>The correlation coefficient <emphasis effect="italics">r</emphasis> gives us information about the strength and direction of the relationship between two variables.  If <emphasis effect="italics">r</emphasis> is positive, the relationship is positive: an increase in the value of the explanatory variable tends to correspond to an <emphasis effect="bold">increase</emphasis> in the value of the response variable. If <emphasis effect="italics">r</emphasis> is negative, the relationship is negative: an increase in the value of the explanatory variable tends to correspond to a <emphasis effect="bold">decrease</emphasis> in the value of the response variable. Values of <emphasis effect="italics">r</emphasis> that are close to 0 indicate weak relationships, while values close to −1 or indicate strong relationships.</item>
+  <item>The correlation coefficient <emphasis effect="italics">r</emphasis> gives us information about the strength and direction of the relationship between two variables.  If <emphasis effect="italics">r</emphasis> is positive, the relationship is positive: an increase in the value of the explanatory variable tends to correspond to an <emphasis effect="bold">increase</emphasis> in the value of the response variable. If <emphasis effect="italics">r</emphasis> is negative, the relationship is negative: an increase in the value of the explanatory variable tends to correspond to a <emphasis effect="bold">decrease</emphasis> in the value of the response variable. Values of <emphasis effect="italics">r</emphasis> that are close to 0 indicate weak relationships, while values close to -1 or indicate strong relationships.</item>
   <item>The regression line for a relationship between two variables is the line that best represents the data. It can be used to predict values of the response variable for a given value of the explanatory variable.</item>
   </list>
   </section>
   <section class="formula-review" id="sect-00043">
   <title>Formulas</title>
   <para id="para-00188">If a line has slope <emphasis effect="italics">m</emphasis> and passes through a point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></math>, then the point-slope form of the equation of the line is: <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></math></equation></para>
-<para id="para-00071" xmlns="http://cnx.rice.edu/cnxml">Suppose <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> are explanatory and response data sets that have a linear relationship. If their means are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>y</mi><mo>¯</mo></mover></math> respectively, their standard deviations are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow></math> respectively, and their correlation coefficient is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>, then the equation of the regression line is:
+  <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml">Suppose <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> are explanatory and response data sets that have a linear relationship. If their means are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>x</mi><mo>¯</mo></mover></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mover accent="true"><mi>y</mi><mo>¯</mo></mover></math> respectively, their standard deviations are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow></math> respectively, and their correlation coefficient is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math>, then the equation of the regression line is:
       <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo>.</mo></mrow></math></equation></para>
   </section>
   <section class="eoc-videos" id="sect-00044" xmlns="http://cnx.rice.edu/cnxml">
