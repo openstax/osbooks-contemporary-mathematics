@@ -7,7 +7,7 @@
   </metadata>
   <content>
   <figure class="unnumbered" id="fig-00001">
-  <media alt="Insert Alt Text">
+  <media alt="A combinational graph titled, results of 100 flips. The combinational graph includes a histogram and a normal distribution curve. The horizontal axis representing the number of heads ranges from 30 to 70, in increments of 10. The vertical axis representing frequency ranges from 0 to 800, in increments of 200. The histogram shows bars of varying heights. A normal distribution curve is drawn across the heights of the bars and it infers the following data. The curve begins at (30, 0), has a peak value at (48, 780), and ends at (70, 0).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_063.jpg"/>
   </media>
   </figure>
@@ -28,37 +28,29 @@
   <title>Moving Toward Normality</title>
   <para id="para-00004">Let’s take a look at a histogram for the data set in our module opener:</para>
   <figure class="unnumbered" id="fig-00002">
-  <media alt="Insert Alt Text">
+  <media alt="A histogram titled, results of 10 coin flips. The horizontal axis representing the number of heads ranges from 40 to 55, in increments of 1. The vertical axis representing frequency ranges from 0 to 2, in increments of 1. The histogram infers the following data. 40 to 41: 1. 42 to 43: 1. 47 to 48: 1. 50 to 51: 1. 51 to 52: 1. 52 to 53: 2. 53 to 54: 1. 54 to 55: 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_064.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.64: Histogram of the data in Tech8.64, with bins of width 1, like this:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00005">This is interesting, but the data seem pretty sparce. There were no trials where you saw between 43 and 47 heads, for example. Those results don’t seem impossible; we just didn’t flip enough times to give them a chance to pop up. So, let’s do this again, but this time well repeat our 100-flip experiment 100 times. I won’t bother showing you all 100 results, but here’s the histogram:
   <figure class="unnumbered" id="fig-00003">
-  <media alt="Insert Alt Text">
+  <media alt="A histogram titled, results of 100 coin flips. The horizontal axis representing the number of heads ranges from 35 to 71, in increments of 1. The vertical axis representing frequency ranges from 0 to 15, in increments of 5. The histogram infers the following data. 35 to 36: 1. 37 to 38: 1. 39 to 40: 1. 40 to 41: 1. 41 to 42: 1. 42 to 43: 3. 43 to 44: 1. 44 to 45: 6. 45 to 46: 4. 46 to 47: 7. 47 to 48: 10. 48 to 49: 6. 49 to 50: 7. 50 to 51: 13. 51 to 52: 5. 52 to 53: 5. 53 to 54: 7. 54 to 55: 5. 55 to 56: 3. 56 to 57: 4. 57 to 58: 2. 58 to 59: 2. 59 to 60: 2. 61 to 62: 2. 62 to 63: 1. 70 to 71: 1. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_065.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.65: Histogram using data in Tech8.65, bins of width 1, like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00006">From the histogram, we see that most of the trials resulted in between, say, 44 and 56 heads. There were some more unusual results: one trial resulted in 70 heads, which seems really unlikely (though still possible!). But we’re starting to maybe get a sense of the distribution. More data would help, though. Let’s simulate another 900 trials! Here is the histogram for those 1000 (original 100 plus the next 900) trials:
   <figure class="unnumbered" id="fig-00004">
-  <media alt="Insert Alt Text">
+  <media alt="A histogram titled, results of 1000 coin flips. The horizontal axis representing the number of heads ranges from 35 to 71, in increments of 1. The vertical axis representing frequency ranges from 0 to 100, in increments of 25. The histogram infers the following data. 35 to 36: 2. 37 to 38: 4. 38 to 39: 3. 39 to 40: 9. 40 to 41: 12. 41 to 42: 10. 42 to 43: 24. 43 to 44: 33. 44 to 45: 40. 45 to 46: 55. 46 to 47: 50. 47 to 48: 73. 48 to 49: 71. 49 to 50: 83. 50 to 51: 81. 51 to 52: 85. 52 to 53: 75. 53 to 54: 58. 54 to 55: 52. 55 to 56: 38. 56 to 57: 45. 57 to 58: 27. 58 to 59: 24. 59 to 60: 13. 60 to 61: 13. 61 to 62: 13. 62 to 63: 5. 63 to 64: 3. 64 to 65: 2. 65 to 66: 2. 66 to 67: 2. 68 to 69: 2. 70 to 71: 2. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_066.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.66: Histogram using data in Tech8.66, bins of width 1, like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00007">We can still see that 70 is a really unusual observation, though we came close in another trial (one that had 68 heads). Now, the distribution is coming more into focus: it looks quite symmetric and bell-shaped. Let’s just go ahead and take this thought experiment to an extreme conclusion: 10,000 trials.</para>
   <figure class="unnumbered" id="fig-00005">
-  <media alt="Insert Alt Text">
+  <media alt="A histogram titled, results of 10,000 coin flips. The horizontal axis representing the number of heads ranges from 30 to 70, in increments of 1. The vertical axis representing frequency ranges from 0 to 1000, in increments of 250. The histogram infers the following data. 30 to 31: 5. 33 to 34: 5. 34 to 35: 5. 35 to 36: 10. 36 to 37: 15. 37 to 38: 15. 38 to 39: 35. 39 to 40: 60. 40 to 41: 100. 41 to 42: 160. 42 to 43: 245. 43 to 44: 270. 44 to 45: 320. 45 to 46: 530. 46 to 47: 540. 47 to 48: 620. 48 to 49: 710. 49 to 50: 820. 50 to 51: 800. 51 to 52: 790. 52 to 53: 680. 53 to 54: 660. 54 to 55: 620. 55 to 56: 470. 56 to 57: 440. 57 to 58: 310. 58 to 59: 230. 59 to 60: 200. 60 to 61: 150. 61 to 62: 120. 62 to 63: 100. 63 to 64: 50. 64 to 65: 40. 65 to 66: 10. 66 to 67: 10. 67 to 68: 8. 68 to 69: 8. 69 to 70: 5. 70 to 71: 5. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_067.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.67: Histogram using data in Tech8.63, bins with width 1, like this. Note that this is the same as Tech 8.63, without the curve overlaid:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00008">The distribution is pretty clear now. Distributions that are symmetric and bell-shaped like this pop up in all sorts of natural phenomena, such as the heights of people in a population, the circumferences of eggs of a particular bird species, and the numbers of leaves on mature trees of a particular species. All of these have bell-shaped distributions. Additionally, the results of many types of repeated experiments generally follow this same pattern, as we saw with the coin-flipping example; this fact is the basis for much of the work done by statisticians. It’s a fact that’s important enough to have its own name: the Central Limit Theorem.</para>
   <note class="people-mathematics" id="note-00001">
@@ -70,11 +62,9 @@
   <title> The Normal Distribution</title>
   <para id="para-00010">In the coin flipping example above, the distribution of the number of heads for 10,000 trials was close to perfectly symmetric and bell-shaped:
   <figure class="unnumbered" id="fig-00006">
-  <media alt="Insert Alt Text">
+  <media alt="A combinational graph titled, results of 100 flips. The combinational graph includes a histogram and a normal distribution curve. The horizontal axis representing the number of heads ranges from 30 to 70, in increments of 10. The vertical axis representing frequency ranges from 0 to 800, in increments of 200. The histogram shows bars of varying heights. A normal distribution curve is drawn across the heights of the bars and it infers the following data. The curve begins at (30, 0), has a peak value at (48, 780), and ends at (70, 0).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_068.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.68: Tech 8.63 again</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00011">Because distributions with this shape appear so often, we have a special name for them: <term id="term-00001">normal distributions</term>.</para>
@@ -87,21 +77,17 @@
   <problem id="prob-00001">
   <para id="para-00014">This graph shows three normal distributions. What are their means?</para>
   <figure class="unnumbered" id="fig-00007">
-  <media alt="Insert Alt Text">
+  <media alt="A graph shows three normal distribution curves. The horizontal axis ranges from negative 1 to 5, in increments of 1. The three curves are described as follows. The first curve (red) begins at negative 1, has a peak value at 1, and ends at 3. The second curve (blue) begins at 0, has a peak value at 2, and ends at 4. The third curve (yellow) begins at 1, has a peak value at 3, and ends at 5. The three curves overlap each other and their peaks are of equal height.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_069.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.69: a graph showing three normal pdfs in three colors. Red is normal with mean 1, blue is normal with mean 2, yellow is normal with mean 3. All have standard deviation 0.5. There is no y-axis. The result should look like this:</emphasis>
-  </caption>-->
   </figure>
   </problem>
   <solution id="sol-00001">
   <para id="para-00015">Take a look at the three curves on the graph. Since the mean of a normal distribution occurs at the peak, we should look for the highest point on each distribution. Let’s draw a line from each curve's peak down to the axis, so we can see where these peaks occur:</para>
   <figure class="unnumbered" id="fig-00008">
-  <media alt="Insert Alt Text">
+  <media alt="A graph shows three normal distribution curves. The horizontal axis ranges from negative 1 to 5, in increments of 1. The three curves are described as follows. The first curve (red) begins at negative 1, has a peak value at 1, and ends at 3. The second curve (blue) begins at 0, has a peak value at 2, and ends at 4. The third curve (yellow) begins at 1, has a peak value at 3, and ends at 5. The three curves overlap each other and their peaks are of equal height. A vertical dashed line is drawn from each peak to the horizontal axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_070.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.70: The same as 8.69, but with a red dotted line segment going from the peak of the red curve down to the axis (at x = 1), a blue dotted line segment going from the peak of the blue curve down to the axis (at x = 2), and a yellow dotted line segment going from the peak of the yellow curve down to the axis (at x = 3).</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00016">The peak of the red (leftmost) distribution occurs over the number 1 on the horizontal axis. Thus, the mean of the red distribution is 1. Similarly, the mean of the blue (middle) distribution is 2, and the mean of the yellow (rightmost) distribution is 3.</para>
   </solution>
@@ -120,48 +106,38 @@
   <problem id="prob-00003">
   <para id="para-00019">This graph shows three distributions, all with mean 2. What are their standard deviations?</para>
   <figure class="unnumbered" id="fig-00010">
-  <media alt="Insert Alt Text">
+  <media alt="A graph shows three normal distribution curves. The horizontal axis ranges from negative 4 to 10, in increments of 2. The three curves are described as follows. The first curve (red) begins before negative 4, has a peak value at 2, and ends at 10. The second curve (blue) begins before negative 4, has a peak value at 2, and ends at 10. The third curve (yellow) begins before negative 4, has a peak value at 2, and ends after 10. The first curve has the highest peak and the third curve has the lowest peak.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_072.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.72: a graph showing three normal pdfs in three colors. Red is normal with mean 2 and standard deviation 1, blue is normal with mean 2 and standard deviation 2, yellow is normal with mean 2 and standard deviation 3. There is no y-axis. The result should look like this:</emphasis>
-  </caption>-->
   </figure>
   </problem>
   <solution id="sol-00003">
   <para id="para-00020">Identifying the standard deviation from a graph can be a little bit tricky. Let’s focus in on the yellow (lowest peaked) curve:
   <figure class="unnumbered" id="fig-00011">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from negative 5 to 10, in increments of 1. The curve begins before negative 5, has a peak value at 2, and ends at 10.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_073.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.73: A graph showing the pdf of a normal distribution with mean 2 and standard deviation 3 on the domain -6 to 10. Graph should be yellow. No y-axis. Like this:</emphasis>
-  </caption>-->
   </figure>
   </para> 
   <para id="para-00021">Notice that the graph curves downward in the middle, and curves upwards on the ends. Here, I’ve highlighted in red, the part that curves downward and in green, the part that curves upward:
   <figure class="unnumbered" id="fig-00012">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from negative 5 to 10, in increments of 1. The curve begins before negative 5, has a peak value at 2, and ends at 10. On the curve, from negative 1 to 5 is highlighted and it represents inflection points.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_074.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.74: A graph showing the pdf of a normal distribution with mean 2 and standard deviation 3 on the domain -6 to 10. Graph should be green. No y-axis. Between -1 and 5, the graph should be overlaid with a thicker graph in red with opacity chosen so that the original graph can be seen through the thick graph; the effect should be like going over the graph with a red highlighter. Between -6 and -1 and between 5 and 10, the same should be done except in yellow, like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00022">The places where the graph changes from curving up to curving down (or vice versa) are called <emphasis effect="italics">inflection points</emphasis>. Let’s identify where those occur by dropping a line straight down from each:
   <figure class="unnumbered" id="fig-00013">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from negative 5 to 10, in increments of 1. The curve begins before negative 5, has a peak value at 2, and ends at 10. On the curve, from negative 1 to 5 is highlighted and it represents inflection points. Dashed vertical lines are drawn from negative 1, 2, and 5 to meet the curve.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_075.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.75: The same as Tech 8.74, but with green dashed lines going from the axis to the graph at x=-1 and x=5, and a red dashed line going from the axis to the graph at x=2, like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00023">We can estimate that the inflection points occur at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></math>; the mean is at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math> (as shown by the middle dotted line). The difference between the mean and the location of either inflection point is the standard deviation; since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>-</mo><mn>2</mn><mo>=</mo><mn>2</mn><mo>-</mo><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>, we conclude that the standard deviation of the green distribution is 3. Now, looking at the other two graphs, let's first identify the inflection points:
   <figure class="unnumbered" id="fig-00014" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
+  <media alt="A graph shows two normal distribution curves. The horizontal axis ranges from negative 5 to 10, in increments of 1. The two curves are described as follows. The first curve (red) begins at negative 5, has a peak value at 2, and ends at 10. The second curve (blue) begins at negative 5, has a peak value at 2, and ends at 10. The first curve (red) has a higher peak than the second curve (blue).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_076.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.76: a graph showing the normal pdf with mean 2 and standard deviation 1 in red, the normal pdf with mean 2 and standard deviation 2 in blue, red points on the red graph above x=1 and x=3, with a red dotted line from each straight down to the axis, and blue points on the blue graph above x=0 and x=4 with a blue dotted line from each straight down to the axis, like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00024">The red (tallest peaked) distribution has inflection points at 1 and 3, and the mean is 2. Thus, the standard deviation of the red distribution is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>-</mo><mn>2</mn><mo>=</mo><mn>2</mn><mo>-</mo><mn>1</mn><mo>=</mo><mn>1</mn></mrow></math>. The blue (lower peaked) distribution has inflection points at 0 and 4, and its mean is also 2. So, the standard deviation of the blue distribution is 2.</para>
@@ -182,21 +158,17 @@
   <problem id="prob-00005">
   <para id="para-00028">Using the graph, identify the mean and standard deviation of the normal distribution.</para>
   <figure class="unnumbered" id="fig-00016">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 45 to 70, in increments of 1. The curve begins at 45, has a peak value at 55, and ends at 70.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_078.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.78: Graph of the pdf of a normal distribution with mean 55 and standard deviation 3, on 45&lt;x&lt;70. No y-axis. Like this:</emphasis> 
-  </caption>-->
   </figure>
   </problem>
   <solution id="sol-00005">
   <para id="para-00029">Let’s start by putting dots on the graph at the peak and at the inflection points, then drop lines from those points straight down to the axis:</para>
   <figure class="unnumbered" id="fig-00017">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 45 to 70, in increments of 1. The curve begins at 45, has a peak value at 55, and ends at 70. Dashed vertical lines are drawn from 52, 55, and 58 to meet the curve.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_079.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.79: Same graph as in Tech 8.78, but add: blue dots on the graph above x=52 and x=58, dotted blue lines from those dots straight down to the axis, a red dot on the graph above x=55, and a dotted red line from that point straight down to the axis, like this:</emphasis>
-  </caption>-->
   </figure> 
   <para id="para-00030">From the red (middle) line, we can see that the mean of this distribution is 55. The blue (outermost) lines are each 3 units away from the mean (at 52 and 58), so the standard deviation is 3.</para>
   </solution>
@@ -214,31 +186,25 @@
   <title>Properties of Normal Distributions: The 68-95-99.7 Rule</title>
   <para id="para-00033">The most important property of normal distributions is tied to its standard deviation. If a data set is perfectly normally distributed, then 68% of the data values will fall within one standard deviation of the mean. For example, suppose we have a set of data that follows the normal distribution with mean 400 and standard deviation 100. Then 68% of the data would fall between the values of 300 (one standard deviation <emphasis effect="italics">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>300</mn></mrow></math>) and 500 (one standard deviation <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>+</mo><mn>100</mn><mo>=</mo><mn>500</mn></mrow></math>). Here’s what that looks like on the histogram; the shaded area represents 68% of the total area under the graph and above the axis:</para>
   <figure class="unnumbered" id="fig-00019" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 300 to 500 is shaded and marked 68 percent. The regions to the left and right of the shaded region are marked 16 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_081.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.81: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=300 and x=500 is shaded in a lighter version of the color of the graph. The label “68%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “16%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
-  </caption>-->
   </figure>
   <para id="para-00034">Since 68% of the area is in the shaded region, this means that 100% ‒ 68% = 32% of the area is found in the unshaded regions. We know that the distribution is symmetric, so that 32% must be divided evenly into the two unshaded tails: 16% in each.</para>
   <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Of course, data sets in the real world are never perfect; when dealing with actual data that seem to follow a symmetric, bell-shaped distribution, we’ll equivocate a little and say that <emphasis effect="italics">approximately</emphasis> 68% of the data fall within one standard deviation of the mean.</para>
   <para id="para-00036">The rule for one standard deviation can be extended to two standard deviations. Approximately 95% of a normally distributed data set will fall within 2 standard deviations of the mean. If the mean is 400 and the standard deviation is 100, that means 95% of the data would fall between 200 (two standard deviations <emphasis effect="italics">below</emphasis> the mean: 400 – 2 x 100 = 200) and 600 (two standard deviations <emphasis effect="italics">above</emphasis> the mean: 400 + 2 x 100 = 600). Here’s what that looks like on the histogram:
   <figure class="unnumbered" id="fig-00020">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 200 to 600 is shaded and marked 95 percent. The regions to the left and right of the shaded region are marked 2.5 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_082.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.82: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=200 and x=600 is shaded in a lighter version of the color of the graph. The label “95%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “2.5%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00037">As before, since 95% of the data are in the shaded area, that leaves 5% of the data to go into the unshaded tails. Since the histogram is symmetric, half of the 5% (that’s 2.5%) is in each.</para>
   <para id="para-00038">We can even take this one step further: 99.7% of normally distributed data fall within 3 standard deviations of the mean. In this example, we’d see 99.7% of the data between 100 (calculated as 400 – 3 x 100 = 100) and 700 (calculated as 400 + 3 x 100 = 700). On the histogram, it looks like this (you may have to squint a bit to find the unshaded bits in the tails):
   <figure class="unnumbered" id="fig-00021">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 100 to 700 is shaded and marked 99.7 percent. The regions to the left and right of the shaded region are marked 0.15 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_083.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.83: Graph of the pdf of a normal distribution with mean 400 and standard deviation 100, on 0&lt;x&lt;800. No y-axis. The area under the graph and between x=100 and x=700 is shaded in a lighter version of the color of the graph. The label “99.7%” appears right in the middle of that shaded region. Outside the curve and on either side, labels of “0.15%” appear, with arrows pointing to the respective unshaded regions. Like this:</emphasis>
-  </caption>-->
   </figure>
   </para>
   <para id="para-00039">This observation is formally known as the <term id="term-00002">68-95-99.7 Rule</term>.</para>
@@ -395,44 +361,40 @@
   </note>
   <para id="para-00044">There are more problems we can solve using the 68-95-99.7 Rule. but first we must understand what the rule implies. Remember, the rule says that 68% of the data falls within one standard deviation of the mean. Thus, with normally distributed data with mean 100 and standard deviation 10, we have this distribution:
   <figure class="unnumbered" id="fig-00022">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. The region from 90 to 110 is shaded in blue and marked 68 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_084.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.84: The graph of a normal pdf with mean 100 and standard deviation 10 in blue, no vertical axis. The area under the curve between 90 and 110 should be shaded light blue, with a label right in the middle reading “68%” above a double-headed arrow running from 90 to 110. Label and arrow should also be blue:</emphasis>
-  </caption>-->
   </figure>
   </para> 
   <para id="para-00045">Since we know that 68% of the data lie within one standard deviation of the mean, the implication is that 32% of the data must fall <emphasis effect="italics">beyond</emphasis> one standard deviation away from the mean. Since the histogram is symmetric, we can conclude that half of the 32% (or 16%) is more than one standard deviation <emphasis effect="italics">above</emphasis> the mean and the other half is more than one standard deviation <emphasis effect="italics">below</emphasis> the mean:
   <figure class="unnumbered" id="fig-00023">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. The region from 90 to 110 is shaded in blue and marked 68 percent. The region to the left and right of the shaded region inside the curve is shaded in red. The region from 60 to 90 is marked 16 percent. The region from 110 to 140 is marked 16 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_085.jpg"/>
   </media>
-  <!--<caption><emphasis effect="italics">Tech 8.85: Same as 9.84, except the rest of the area under the curve is shaded a light red, with two labels reading “16%” at the ends along with red double-headed arrows running from 60 to 90 and from 110 to 140:</emphasis>
-  </caption>-->
   </figure>
   </para> 
   <para id="para-00046">Further, we know that the middle 68% can be split in half at the peak of the histogram, leaving 34% on either side:
   <figure id="fig-00024">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. A vertical line is drawn at 100. The region from 90 to 100 and 100 to 110 are shaded in blue and marked 34 percent, each. The region to the left and right of the shaded region inside the curve is shaded in red. The region from 60 to 90 is marked 16 percent. The region from 110 to 140 is marked 16 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_086.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00047">So, just the “68” part of the 68-95-99.7 Rule gives us four other proportions in addition to the 68% in the rule. Similarly, the “95” and “99.7” parts each give us four more proportions:
   <figure id="fig-00025">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. A vertical line is drawn at 100. The region from 80 to 120 is shaded in blue. The region from 80 to 100 and 100 to 120 are marked 47.5 percent, each. The region to the left and right of the shaded region inside the curve is shaded in red. The region from 60 to 80 is marked 2.5 percent. The region from 120 to 140 is marked 2.5 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_087.jpg"/>
   </media>
   </figure>
   </para>
   <figure id="fig-00026">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. A vertical line is drawn at 100. The region from 70 to 130 is shaded in blue. The region from 70 to 100 and 100 to 130 is marked 49.85 percent, each. The region to the left and right of the shaded region inside the curve is shaded. The region from 60 to 70 is marked 0.15 percent. The region from 130 to 140 is marked 0.15 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_088.jpg"/>
   </media>
   </figure> 
   <para id="para-00048">We can put all these together to find even more complicated proportions. For example, since the proportion between 100 and 120 is 47.5% and the proportion between 100 and 110 is 34%, we can subtract to find that the proportion between 110 and 120 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>47.5</mn><mo>-</mo><mn>34</mn><mo>=</mo><mn>13.5</mn><mi>%</mi></mrow></math>:</para>
   <figure class="unnumbered" id="fig-00027" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. A vertical line is drawn at 100. The region from 100 to 110 is shaded in blue. The region from 110 to 120 is shaded in red. The total shaded region from 100 to 120 is marked 47.5 percent. The shaded region from 100 to 110 is marked 34 percent. The shaded region from 110 to 120 is marked 13.5 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_089.jpg"/>
   </media>
   </figure>
@@ -450,7 +412,7 @@
   <solution id="sol-00011">
   <para id="para-00050">Let’s start by graphing the histogram, and marking off sections that are multiples of the standard deviation away from the mean:</para>
   <figure class="unnumbered" id="fig-00028">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_090.jpg"/>
   </media>
   </figure>
@@ -458,7 +420,7 @@
   <item>The data that are above 86 are here:</item>
   </list>
   <figure class="unnumbered" id="fig-00029">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86. The region to the right of the line at 86 is shaded in blue.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_091.jpg"/>
   </media>
   </figure>
@@ -467,13 +429,13 @@
   <item>Let’s shade in the relevant part of the histogram:</item>
   </list>
   <figure class="unnumbered" id="fig-00030">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86. The region in between lines, 74 and 77 is shaded in blue.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_092.jpg"/>
   </media>
   </figure>
   <para id="para-00052">These are data that are more than one but less than two standard deviations below the mean. From Figure 9.2, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from Figure 9.1, we know that 34% of the data is less than one standard deviation below the mean:</para>
   <figure class="unnumbered" id="fig-00031">
-  <media alt="Insert Alt Text">
+  <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. The region from 74 to 77 is shaded in blue. The region from 77 to 80 is shaded in red. The total shaded region from 74 to 80 is marked 47.5 percent. The shaded region from 74 to 77 is marked 13.5 percent. The shaded region from 77 to 80 is marked 34 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_093.jpg"/>
   </media>
   </figure> 
