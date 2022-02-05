@@ -22,7 +22,7 @@
   <item>Estimate and interpret regression lines.</item>
   </list>
   </section>
-  <para id="para-00002">One of the most powerful tools statistics gives us is the ability to explore relationships between two data sets containing quantitative values, and then use that relationship to make predictions. For example, a student may want to know how well she can expect to score on an upcoming final exam. She has access to data on previous students in this class, including both midterm and final exam scores. It seems reasonable to expect that there is a relationship between those two data sets: if a student did well on the midterm, they were probably more likely to do well on the final than the average student. Similarly, if a student did poorly on the midterm, they probably also did poorly on the final exam. Of course, that relationship isn’t set in stone; a student’s performance on a midterm exam doesn’t cement their performance on the final! A student might use a poor result on the midterm as motivation to study more for the final. A student with a really good grade on the midterm might be overconfident going into the final, and as a result doesn’t prepare adequately. The statistical method of <emphasis effect="italics">regression</emphasis> can find a formula that does the best job of predicting a score on the final exam based on the student’s score on the midterm, as well as give a measure of the confidence of that prediction! In this module, we’ll discover how to use regression to make these predictions. First, though, we need to lay some graphical groundwork.</para>
+  <para id="para-00002">One of the most powerful tools statistics gives us is the ability to explore relationships between two data sets containing quantitative values, and then use that relationship to make predictions. For example, a student may want to know how well she can expect to score on an upcoming final exam. She has access to data on previous students in this class, including both midterm and final exam scores. It seems reasonable to expect that there is a relationship between those two data sets: if a student did well on the midterm, they were probably more likely to do well on the final than the average student. Similarly, if a student did poorly on the midterm, they probably also did poorly on the final exam. Of course, that relationship isn’t set in stone; a student’s performance on a midterm exam doesn’t cement their performance on the final! A student might use a poor result on the midterm as motivation to study more for the final. A student with a really good grade on the midterm might be overconfident going into the final, and as a result doesn’t prepare adequately. The statistical method of <emphasis effect="italics">regression</emphasis> can find a formula that does the best job of predicting a score on the final exam based on the student’s score on the midterm, as well as give a measure of the confidence of that prediction! In this section, we’ll discover how to use regression to make these predictions. First, though, we need to lay some graphical groundwork.</para>
   <section id="sect-00002">
   <title>Relationships Between Quantitative Data Sets</title>
   <para id="para-00003">Before we can evaluate a relationship between two data sets, we must first decide if we feel that one might depend on the other. In our exam example, it is appropriate to say that the score on the final depends on the score on the midterm, rather than the other way around: if the midterm depended on the final, then we’d need to know the final score <emphasis effect="italics">first</emphasis>, which doesn’t make sense. Here’s another example: if we collected data on home purchases in a certain area, and noted down both the sale price of the house and the annual household income of the purchaser, we might expect a relationship between those two. Which depends on the other? In this case, sale price depends on income: people who have a higher income can afford a more expensive house. If it were the other way around, people could buy a new, more expensive house and then expect a raise! (This is very bad advice.)</para>
@@ -216,7 +216,7 @@
   </section>
   <section id="sect-00004">
   <title>Reading and Interpreting Scatter Plots</title>
-  <para id="para-00026">Scatter plots give us information about the existence and strength of a relationship between two data sets. To break that information down, there are a series of questions we might ask to help us. First: Is there a curved pattern in the data? If the answer is “yes,” then we can stop; none of the linear regression techniques from here to the end of this module are appropriate. Figure 9.4 shows several examples of scatterplots that can help us identify these curved patterns.</para>
+  <para id="para-00026">Scatter plots give us information about the existence and strength of a relationship between two data sets. To break that information down, there are a series of questions we might ask to help us. First: Is there a curved pattern in the data? If the answer is “yes,” then we can stop; none of the linear regression techniques from here to the end of this section are appropriate. Figure 9.4 shows several examples of scatterplots that can help us identify these curved patterns.</para>
   <figure id="fig-00009">
   <media alt="A scatter plot represents a curved pattern. The x-axis ranges from 20 to 120, in increments of 20. The y-axis ranges from negative 100 to 500, in increments of 100. The scatter plot shows points scattered along a curve that passes through the following points: (20, 90), (40, 20), (50, 0), (80, 100), (100, 250), and (120, 500). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_110.jpg"/>
@@ -561,7 +561,7 @@
   <para id="para-00078">Statistics and regression are used by Hollywood movie producers to decide what movies to make, and to predict how much money they’ll earn at the box office. According to thisisstatistics.org (<link url="https://openstax.org/r/statisticians-for-movies">https://openstax.org/r/statisticians-for-movies</link>), not only do producers use statistics to identify the next potential blockbuster, but they’ve also pinned down how much money awards add to the bottom line. (An Academy Award is worth about $3 million!) In addition, studios use their streaming services to gather data about their customers and the types of movies they watch; this data helps them learn what kinds of entertainment their customers want more of.</para>
   </note>
   <note class="work-out" id="note-00020">
-  <para id="para-00079">This module has demonstrated many pairs of related quantitative data sets. Think about some quantitative variables that you can ask your classmates about, which might be related. Once you have some ideas, collect the data from your classmates. Then analyze the data by creating a scatter plot, finding the equation of the regression line (if appropriate), and interpreting it.</para>
+  <para id="para-00079">This section has demonstrated many pairs of related quantitative data sets. Think about some quantitative variables that you can ask your classmates about, which might be related. Once you have some ideas, collect the data from your classmates. Then analyze the data by creating a scatter plot, finding the equation of the regression line (if appropriate), and interpreting it.</para>
   </note>
   </section>
   </section>
@@ -836,7 +836,7 @@
   <section class="chapter-test" id="sect-00055">
   <title>Chapter Test</title>
   <section id="sect-00056">
-  <title>Module 8.1</title>
+  <title>8.1 Gathering and Organizing Data</title>
   <exercise id="exer-00077">
   <problem id="prob-00077">
   <para id="para-00208"><link class="os-embed" url="#exercise/CM-C08-M8-033"/></para>
@@ -849,7 +849,7 @@
   </exercise>
   </section>
   <section id="sect-00057">
-  <title>Module 8.2</title>
+  <title>8.2 Visualizing Data</title>
   <exercise id="exer-00079">
   <problem id="prob-00079">
   <para id="para-00211"><link class="os-embed" url="#exercise/CM-C08-M8-035"/></para>
@@ -862,7 +862,7 @@
   </exercise>
   </section>
   <section id="sect-00058">
-  <title>Module 8.3</title>
+  <title>8.3 Mean, Median and Mode</title>
   <exercise id="exer-00081">
   <problem id="prob-00081">
   <para id="para-00213"><link class="os-embed" url="#exercise/CM-C08-M8-037"/></para>
@@ -875,7 +875,7 @@
   </exercise>
   </section>
   <section id="sect-00059">
-  <title>Module 8.4</title>
+  <title>8.4 Range and Standard Deviation</title>
   <exercise id="exer-00083">
   <problem id="prob-00083">
   <para id="para-00217"><link class="os-embed" url="#exercise/CM-C08-M8-039"/></para>
@@ -883,7 +883,7 @@
   </exercise>
   </section>
   <section id="sect-00060">
-  <title>Module 8.5</title>
+  <title>8.5 Percentiles</title>
   <exercise id="exer-00084">
   <problem id="prob-00084">
   <para id="para-00219"><link class="os-embed" url="#exercise/CM-C08-M8-040"/></para>
@@ -891,7 +891,7 @@
   </exercise>
   </section>
   <section id="sect-00061">
-  <title>Module 8.6</title>
+  <title>8.6 The Normal Distribution</title>
   <exercise id="exer-00085">
   <problem id="prob-00085">
   <para id="para-00220"><link class="os-embed" url="#exercise/CM-C08-M8-041"/></para>
@@ -899,7 +899,7 @@
   </exercise>
   </section>
   <section id="sect-00062">
-  <title>Module 8.7</title>
+  <title>8.7 Applications of the Normal Distribution</title>
   <exercise id="exer-00086">
   <problem id="prob-00086">
   <para id="para-00221"><link class="os-embed" url="#exercise/CM-C08-M8-042"/></para>
@@ -907,7 +907,7 @@
   </exercise>
   </section>
   <section id="sect-00063">
-  <title>Module 8.8</title>
+  <title>8.8 Scatter Plots, Correlation, and Regression Lines</title>
   <exercise id="exer-00087">
   <problem id="prob-00087">
   <para id="para-00222"><link class="os-embed" url="#exercise/CM-C08-M8-043"/></para>
