@@ -156,19 +156,19 @@
   </media>
   </figure>
   <para id="para-00016">Our first point is (88, 84). So, we’ll locate 88 on the horizontal axis, 84 on the vertical axis, and identify the point that’s directly above the first location and horizontally level with the second:</para>
-  <figure class="unnumbered" id="fig-00003">
+  <figure id="fig-00003">
   <media alt="A coordinate plane plots a point. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5. A horizontal dotted line is drawn at 84. A vertical dotted line is drawn at 88. The two dotted lines intersect at the point (88, 84).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_104.jpg"/>
   </media>
   </figure>
   <para id="para-00017">Repeat this process to place the other four points on the graph:</para>
-  <figure class="unnumbered" id="fig-00004">
+  <figure id="fig-00004">
   <media alt="Five points are plotted on a coordinate plane. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5. The points are as follows: (68, 73), (72, 80), (75, 77), (88, 84), and (94, 95). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_105.jpg"/>
   </media>
   </figure>
   <para id="para-00018">Finally, label the axes:</para>
-  <figure class="unnumbered" id="fig-00005">
+  <figure id="fig-00005">
   <media alt="Five points are plotted on a coordinate plane.The horizontal axis representing midterm ranges from 65 to 95, in increments of 5. The vertical axis representing final ranges from 70 to 100, in increments of 5. The points are as follows: (68, 73), (72, 80), (75, 77), (88, 84), and (94, 95). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_106.jpg"/>
   </media>
@@ -198,7 +198,7 @@
   </problem>
   <solution id="sol-00005">
   <para id="para-00024">Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection). Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.” Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case). Now, click on the variable under “Series” and select the one that should go on the vertical axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
-  <figure class="unnumbered" id="fig-00007">
+  <figure id="fig-00007">
   <media alt="A scatter plot titled, GF versus GA. The horizontal axis representing GA ranges from 180 to 320, in increments of 20. The vertical axis representing GF ranges from 190 to 330, in increments of 20. The points are scattered throughout and it lies from 200 to 300 on the horizontal axis and 200 to 290 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_108.jpg"/>
   </media>
@@ -242,13 +242,13 @@
   <caption><emphasis effect="italics">d: No curved pattern</emphasis></caption>
   </figure>
   <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italics">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
-  <figure class="unnumbered" id="fig-00013">
+  <figure id="fig-00013">
   <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are highlighted in red and the points are as follows: (50, 290), (48, 195), (48, 200), (49.5, 225), (50, 203), (78, 145), (79, 130), (80, 120), (81, 120), (81, 70), (82, 90), (82.5, 90), (82, 100), and (82, 120). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_114.jpg"/>
   </media>
   </figure>
   <para id="para-00028">Now, we can mentally estimate the middle of each group of points. Let's add our mental averages to the plot as red, starred points:</para>
-  <figure class="unnumbered" id="fig-00014">
+  <figure id="fig-00014">
   <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are highlighted in red and the points are as follows: (50, 290), (48, 195), (48, 200), (49.5, 225), (50, 203), (78, 145), (79, 130), (80, 120), (81, 120), (81, 70), (82, 90), (82.5, 90), (82, 100), and (82, 120). Asterisks are marked at (50, 200) and (80, 120). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_115.jpg"/>
   </media>
