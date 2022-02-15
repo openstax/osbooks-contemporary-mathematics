@@ -254,13 +254,13 @@
   </media>
   </figure>
   <para id="para-00029">Since those two red, starred points occur at different heights, we can conclude that there’s likely a relationship worth exploring. Here’s another example:</para>
-  <figure class="unnumbered" id="fig-00015">
+  <figure id="fig-00015">
   <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout and it lies from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_116.jpg"/>
   </media>
   </figure>
   <para id="para-00030">Let’s look again at the points near 50 and near 80, and estimate the middles of those clusters:</para>
-  <figure class="unnumbered" id="fig-00016">
+  <figure id="fig-00016">
   <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout and it lies from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis. Some of the points are marked in red: (48, 120), (48, 140), (50, 150), (50, 155), (48, 190), (51, 195), (82, 75), (80, 125), (81, 130), (80, 160), (81, 160), (82, 140), (81, 195), (81, 200), and (78, 210). Asterisks are marked at (50, 150) and (80, 170). Note all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_117.jpg"/>
   </media>
@@ -274,26 +274,55 @@
   </note>
   <para id="para-00036">Let’s look at some scatter plots and classify the depicted relationships.</para>
   <figure id="fig-00017">
-  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 210 to 290, in increments of 10. The points are arranged in linear decreasing order in a single row. Some of the points are as follows: (32, 288), (40, 280), (60, 260), (70, 250), (90, 230), and (100, 220). Note: all values are approximate. A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 200 to 300, in increments of 20. The points are arranged in linear decreasing order in multiple rows. Some of the points are as follows: (32, 287), (40, 281), (60, 260), (70, 245), (90, 230), and (100, 225). Note: all values are approximate. A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 150 to 350, in increments of 50. The points are scattered throughout. Most points lie from 30 to 100 on the horizontal axis and 200 to 300 on the vertical axis. A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout. Most points lie from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis. A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered at the center of the graph. Most points lie from 50 to 90 on the horizontal axis and 340 to 440 on the vertical axis. A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered in linear increasing order in a single row. Some of the points are as follows: (27, 345), (40, 360), (60, 380), (70, 390), (80, 400), and (100, 420). Note: all values are approximate.">
+  <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 210 to 290, in increments of 10. The points are arranged in linear decreasing order in a single row. Some of the points are as follows: (32, 288), (40, 280), (60, 260), (70, 250), (90, 230), and (100, 220). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_118.jpg"/>
-  <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_119.jpg"/>
-  <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_120.jpg"/>
-  <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_121.jpg"/>
-  <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_122.jpg"/>
-  <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_123.jpg"/>
-  <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_124.jpg"/>
   </media>
-  <caption><emphasis effect="italics">Classifying the strength and direction of linear relationships.</emphasis><newline/>
-  <emphasis effect="italics">a: Perfect negative relationship</emphasis><newline/>
-  <emphasis effect="italics">b: Strong negative relationship</emphasis><newline/>
-  <emphasis effect="italics">c: Weak negative relationship</emphasis><newline/>
-  <emphasis effect="italics">d: No relationship</emphasis><newline/>
-  <emphasis effect="italics">e: Weak positive relationship</emphasis><newline/>
-  <emphasis effect="italics">f: Strong positive relationship</emphasis><newline/>
-  <emphasis effect="italics">g: Perfect positive relationship</emphasis>
+  <caption><emphasis effect="italics">Classifying the strength and direction of linear relationships. Perfect negative relationship</emphasis><newline/>
   </caption>
   </figure>
-  <para id="para-00037">The strength and direction (positive or negative) of a linear relationship can also be measured with a statistic called the <term id="term-00008">correlation coefficient</term> (denoted <emphasis effect="italics">r</emphasis>). Positive values of <emphasis effect="italics">r</emphasis> indicate a positive relationship, while negative values of <emphasis effect="italics">r</emphasis> indicate a negative relationship. Values of <emphasis effect="italics">r</emphasis> close to 0 indicate a weak relationship, while values close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math> correspond to a very strong relationship.</para>
+  <figure id="fig-00006">
+    <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 200 to 300, in increments of 20. The points are arranged in linear decreasing order in multiple rows. Some of the points are as follows: (32, 287), (40, 281), (60, 260), (70, 245), (90, 230), and (100, 225). Note: all values are approximate.">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_119.jpg"/>
+    </media>
+    <caption><emphasis effect="italics">Strong negative relationship</emphasis><newline/>
+    </caption>
+    </figure>
+    <figure id="fig-00008">
+      <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout. Most points lie from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis.">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_120.jpg"/>
+      </media>
+      <caption><emphasis effect="italics">Weak negative relationship</emphasis><newline/>
+      </caption>
+      </figure>
+      <figure id="fig-00018">
+        <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 250, in increments of 50. The points are scattered throughout. Most points lie from 30 to 105 on the horizontal axis and 50 to 250 on the vertical axis.">
+        <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_121.jpg"/>
+        </media>
+        <caption><emphasis effect="italics">No relationship</emphasis><newline/>
+        </caption>
+        </figure>
+        <figure id="fig-00019">
+          <media alt="A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered at the center of the graph. Most points lie from 50 to 90 on the horizontal axis and 340 to 440 on the vertical axis.">
+          <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_122.jpg"/>
+          </media>
+          <caption><emphasis effect="italics">Weak positive relationship</emphasis><newline/>
+          </caption>
+          </figure>
+          <figure id="fig-00020">
+            <media alt="A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered in linear increasing order in a single row. Some of the points are as follows: (27, 345), (40, 360), (60, 380), (70, 390), (80, 400), and (100, 420). Note: all values are approximate.">
+            <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_123.jpg"/>
+            </media>
+            <caption><emphasis effect="italics">Strong positive relationship</emphasis>
+            </caption>
+            </figure>
+            <figure id="fig-00021">
+              <media alt="A scatter plot.">
+              <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_124.jpg"/>
+              </media>
+              <caption><emphasis effect="italics">Perfect positive relationship</emphasis>
+              </caption>
+              </figure>
+                                           <para id="para-00037">The strength and direction (positive or negative) of a linear relationship can also be measured with a statistic called the <term id="term-00008">correlation coefficient</term> (denoted <emphasis effect="italics">r</emphasis>). Positive values of <emphasis effect="italics">r</emphasis> indicate a positive relationship, while negative values of <emphasis effect="italics">r</emphasis> indicate a negative relationship. Values of <emphasis effect="italics">r</emphasis> close to 0 indicate a weak relationship, while values close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math> correspond to a very strong relationship.</para>
   <note class="definition" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
   <para id="para-00038">The <emphasis effect="bold">correlation coefficient</emphasis> (denoted <emphasis effect="italics">r</emphasis>) is a number between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math> that quantifies the strength and direction of the linear relationship between two data sets.</para>
   </note>
