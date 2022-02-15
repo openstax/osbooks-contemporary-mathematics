@@ -201,7 +201,7 @@
   </para>
   <para id="para-00037">As before, since 95% of the data are in the shaded area, that leaves 5% of the data to go into the unshaded tails. Since the histogram is symmetric, half of the 5% (that’s 2.5%) is in each.</para>
   <para id="para-00038">We can even take this one step further: 99.7% of normally distributed data fall within 3 standard deviations of the mean. In this example, we’d see 99.7% of the data between 100 (calculated as 400 – 3 x 100 = 100) and 700 (calculated as 400 + 3 x 100 = 700). On the histogram, it looks like this (you may have to squint a bit to find the unshaded bits in the tails):
-  <figure class="unnumbered" id="fig-00021">
+  <figure id="fig-00021">
   <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 100 to 700 is shaded and marked 99.7 percent. The regions to the left and right of the shaded region are marked 0.15 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_083.jpg"/>
   </media>
@@ -360,14 +360,14 @@
   </exercise>
   </note>
   <para id="para-00044">There are more problems we can solve using the 68-95-99.7 Rule. but first we must understand what the rule implies. Remember, the rule says that 68% of the data falls within one standard deviation of the mean. Thus, with normally distributed data with mean 100 and standard deviation 10, we have this distribution:
-  <figure class="unnumbered" id="fig-00022">
+  <figure id="fig-00022">
   <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. The region from 90 to 110 is shaded in blue and marked 68 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_084.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00045">Since we know that 68% of the data lie within one standard deviation of the mean, the implication is that 32% of the data must fall <emphasis effect="italics">beyond</emphasis> one standard deviation away from the mean. Since the histogram is symmetric, we can conclude that half of the 32% (or 16%) is more than one standard deviation <emphasis effect="italics">above</emphasis> the mean and the other half is more than one standard deviation <emphasis effect="italics">below</emphasis> the mean:
-  <figure class="unnumbered" id="fig-00023">
+  <figure id="fig-00023">
   <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. The region from 90 to 110 is shaded in blue and marked 68 percent. The region to the left and right of the shaded region inside the curve is shaded in red. The region from 60 to 90 is marked 16 percent. The region from 110 to 140 is marked 16 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_085.jpg"/>
   </media>
@@ -393,7 +393,7 @@
   </media>
   </figure>
   <para id="para-00048">We can put all these together to find even more complicated proportions. For example, since the proportion between 100 and 120 is 47.5% and the proportion between 100 and 110 is 34%, we can subtract to find that the proportion between 110 and 120 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>47.5</mn><mo>-</mo><mn>34</mn><mo>=</mo><mn>13.5</mn><mi>%</mi></mrow></math>:</para>
-  <figure class="unnumbered" id="fig-00027" xmlns="http://cnx.rice.edu/cnxml">
+  <figure id="fig-00027" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A normal distribution curve. The horizontal axis ranges from 60 to 140, in increments of 5. The curve begins at 60, has a peak value at 100, and ends at 140. A vertical line is drawn at 100. The region from 100 to 110 is shaded in blue. The region from 110 to 120 is shaded in red. The total shaded region from 100 to 120 is marked 47.5 percent. The shaded region from 100 to 110 is marked 34 percent. The shaded region from 110 to 120 is marked 13.5 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_089.jpg"/>
   </media>
@@ -411,7 +411,7 @@
   </problem>
   <solution id="sol-00011">
   <para id="para-00050">Let’s start by graphing the histogram, and marking off sections that are multiples of the standard deviation away from the mean:</para>
-  <figure class="unnumbered" id="fig-00028">
+  <figure id="fig-00028">
   <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_090.jpg"/>
   </media>
@@ -419,7 +419,7 @@
   <list list-type="enumerated" number-style="arabic" id="list-00013">
   <item>The data that are above 86 are here:</item>
   </list>
-  <figure class="unnumbered" id="fig-00029">
+  <figure id="fig-00029">
   <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86. The region to the right of the line at 86 is shaded in blue.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_091.jpg"/>
   </media>
@@ -428,13 +428,13 @@
   <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00014">
   <item>Let’s shade in the relevant part of the histogram:</item>
   </list>
-  <figure class="unnumbered" id="fig-00030">
+  <figure id="fig-00030">
   <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86. The region in between lines, 74 and 77 is shaded in blue.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_092.jpg"/>
   </media>
   </figure>
   <para id="para-00052">These are data that are more than one but less than two standard deviations below the mean. From Figure 9.2, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from Figure 9.1, we know that 34% of the data is less than one standard deviation below the mean:</para>
-  <figure class="unnumbered" id="fig-00031">
+  <figure id="fig-00031">
   <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. The region from 74 to 77 is shaded in blue. The region from 77 to 80 is shaded in red. The total shaded region from 74 to 80 is marked 47.5 percent. The shaded region from 74 to 77 is marked 13.5 percent. The shaded region from 77 to 80 is marked 34 percent.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_093.jpg"/>
   </media>
@@ -443,13 +443,13 @@
   <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00015">
   <item>Let’s shade in the area under the histogram that corresponds to the data we’re looking at:</item>
   </list>
-  <figure class="unnumbered" id="fig-00032">
+  <figure id="fig-00032">
   <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86. The region from 74 to 83 is shaded in blue.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_094.jpg"/>
   </media>
   </figure>
   <para id="para-00054">Let’s break region into two pieces at the mean:</para>
-  <figure class="unnumbered" id="fig-00033">
+  <figure id="fig-00033">
   <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. The region from 74 to 80 is shaded in blue. The region from 80 to 83 is shaded in red.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_095.jpg"/>
   </media>
@@ -542,7 +542,7 @@
   <title> Using Google Sheets to Find Normal Percentiles</title>
   <para id="para-00070">The 68-95-99.7 Rule is great when we’re dealing with whole-number <emphasis effect="italics">z</emphasis>-scores.. However, if the <emphasis effect="italics">z</emphasis>-score is not a whole number, the Rule isn’t going to help us. Luckily, we can use technology to help us out. We’ll talk here about the built-in functions in Google Sheets, but other tools work similarly.</para>
   <para id="para-00071">Let’s say we’re working with normally distributed data with mean 40 and standard deviation 7, and we want to know at what percentile a data value of 50 would fall. That corresponds to finding the proportion of the data that are less than 50. If we create our histogram and mark off whole-number multiples of the standard deviation like we did before, we’ll see why the 68-95-99.7 Rule isn’t going to help:</para>
-  <figure class="unnumbered" id="fig-00034">
+  <figure id="fig-00034">
   <media alt="A normal distribution curve. The horizontal axis ranges from 20 to 60, in increments of 2. The curve begins before 20, has a peak value at 40, and ends after 60. Five vertical lines are drawn at 26, 33, 40, 47, and 54. The region to the left of 50 is shaded in blue.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_096.jpg"/>
   </media>
