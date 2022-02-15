@@ -27,27 +27,27 @@
   <section id="sect-00002">
   <title>Moving Toward Normality</title>
   <para id="para-00004">Let’s take a look at a histogram for the data set in our section opener:</para>
-  <figure class="unnumbered" id="fig-00002">
+  <figure id="fig-00002">
   <media alt="A histogram titled, results of 10 coin flips. The horizontal axis representing the number of heads ranges from 40 to 55, in increments of 1. The vertical axis representing frequency ranges from 0 to 2, in increments of 1. The histogram infers the following data. 40 to 41: 1. 42 to 43: 1. 47 to 48: 1. 50 to 51: 1. 51 to 52: 1. 52 to 53: 2. 53 to 54: 1. 54 to 55: 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_064.jpg"/>
   </media>
   </figure>
   <para id="para-00005">This is interesting, but the data seem pretty sparce. There were no trials where you saw between 43 and 47 heads, for example. Those results don’t seem impossible; we just didn’t flip enough times to give them a chance to pop up. So, let’s do this again, but this time well repeat our 100-flip experiment 100 times. I won’t bother showing you all 100 results, but here’s the histogram:
-  <figure class="unnumbered" id="fig-00003">
+  <figure id="fig-00003">
   <media alt="A histogram titled, results of 100 coin flips. The horizontal axis representing the number of heads ranges from 35 to 71, in increments of 1. The vertical axis representing frequency ranges from 0 to 15, in increments of 5. The histogram infers the following data. 35 to 36: 1. 37 to 38: 1. 39 to 40: 1. 40 to 41: 1. 41 to 42: 1. 42 to 43: 3. 43 to 44: 1. 44 to 45: 6. 45 to 46: 4. 46 to 47: 7. 47 to 48: 10. 48 to 49: 6. 49 to 50: 7. 50 to 51: 13. 51 to 52: 5. 52 to 53: 5. 53 to 54: 7. 54 to 55: 5. 55 to 56: 3. 56 to 57: 4. 57 to 58: 2. 58 to 59: 2. 59 to 60: 2. 61 to 62: 2. 62 to 63: 1. 70 to 71: 1. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_065.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00006">From the histogram, we see that most of the trials resulted in between, say, 44 and 56 heads. There were some more unusual results: one trial resulted in 70 heads, which seems really unlikely (though still possible!). But we’re starting to maybe get a sense of the distribution. More data would help, though. Let’s simulate another 900 trials! Here is the histogram for those 1000 (original 100 plus the next 900) trials:
-  <figure class="unnumbered" id="fig-00004">
+  <figure id="fig-00004">
   <media alt="A histogram titled, results of 1000 coin flips. The horizontal axis representing the number of heads ranges from 35 to 71, in increments of 1. The vertical axis representing frequency ranges from 0 to 100, in increments of 25. The histogram infers the following data. 35 to 36: 2. 37 to 38: 4. 38 to 39: 3. 39 to 40: 9. 40 to 41: 12. 41 to 42: 10. 42 to 43: 24. 43 to 44: 33. 44 to 45: 40. 45 to 46: 55. 46 to 47: 50. 47 to 48: 73. 48 to 49: 71. 49 to 50: 83. 50 to 51: 81. 51 to 52: 85. 52 to 53: 75. 53 to 54: 58. 54 to 55: 52. 55 to 56: 38. 56 to 57: 45. 57 to 58: 27. 58 to 59: 24. 59 to 60: 13. 60 to 61: 13. 61 to 62: 13. 62 to 63: 5. 63 to 64: 3. 64 to 65: 2. 65 to 66: 2. 66 to 67: 2. 68 to 69: 2. 70 to 71: 2. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_066.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00007">We can still see that 70 is a really unusual observation, though we came close in another trial (one that had 68 heads). Now, the distribution is coming more into focus: it looks quite symmetric and bell-shaped. Let’s just go ahead and take this thought experiment to an extreme conclusion: 10,000 trials.</para>
-  <figure class="unnumbered" id="fig-00005">
+  <figure id="fig-00005">
   <media alt="A histogram titled, results of 10,000 coin flips. The horizontal axis representing the number of heads ranges from 30 to 70, in increments of 1. The vertical axis representing frequency ranges from 0 to 1000, in increments of 250. The histogram infers the following data. 30 to 31: 5. 33 to 34: 5. 34 to 35: 5. 35 to 36: 10. 36 to 37: 15. 37 to 38: 15. 38 to 39: 35. 39 to 40: 60. 40 to 41: 100. 41 to 42: 160. 42 to 43: 245. 43 to 44: 270. 44 to 45: 320. 45 to 46: 530. 46 to 47: 540. 47 to 48: 620. 48 to 49: 710. 49 to 50: 820. 50 to 51: 800. 51 to 52: 790. 52 to 53: 680. 53 to 54: 660. 54 to 55: 620. 55 to 56: 470. 56 to 57: 440. 57 to 58: 310. 58 to 59: 230. 59 to 60: 200. 60 to 61: 150. 61 to 62: 120. 62 to 63: 100. 63 to 64: 50. 64 to 65: 40. 65 to 66: 10. 66 to 67: 10. 67 to 68: 8. 68 to 69: 8. 69 to 70: 5. 70 to 71: 5. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_067.jpg"/>
   </media>
