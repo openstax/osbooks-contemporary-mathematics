@@ -185,7 +185,7 @@
   <section id="sect-00004">
   <title>Properties of Normal Distributions: The 68-95-99.7 Rule</title>
   <para id="para-00033">The most important property of normal distributions is tied to its standard deviation. If a data set is perfectly normally distributed, then 68% of the data values will fall within one standard deviation of the mean. For example, suppose we have a set of data that follows the normal distribution with mean 400 and standard deviation 100. Then 68% of the data would fall between the values of 300 (one standard deviation <emphasis effect="italics">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>300</mn></mrow></math>) and 500 (one standard deviation <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>+</mo><mn>100</mn><mo>=</mo><mn>500</mn></mrow></math>). Here’s what that looks like on the histogram; the shaded area represents 68% of the total area under the graph and above the axis:</para>
-  <figure class="unnumbered" id="fig-00019" xmlns="http://cnx.rice.edu/cnxml">
+  <figure id="fig-00019" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 300 to 500 is shaded and marked 68 percent. The regions to the left and right of the shaded region are marked 16 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_081.jpg"/>
   </media>
@@ -193,7 +193,7 @@
   <para id="para-00034">Since 68% of the area is in the shaded region, this means that 100% ‒ 68% = 32% of the area is found in the unshaded regions. We know that the distribution is symmetric, so that 32% must be divided evenly into the two unshaded tails: 16% in each.</para>
   <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Of course, data sets in the real world are never perfect; when dealing with actual data that seem to follow a symmetric, bell-shaped distribution, we’ll equivocate a little and say that <emphasis effect="italics">approximately</emphasis> 68% of the data fall within one standard deviation of the mean.</para>
   <para id="para-00036">The rule for one standard deviation can be extended to two standard deviations. Approximately 95% of a normally distributed data set will fall within 2 standard deviations of the mean. If the mean is 400 and the standard deviation is 100, that means 95% of the data would fall between 200 (two standard deviations <emphasis effect="italics">below</emphasis> the mean: 400 – 2 x 100 = 200) and 600 (two standard deviations <emphasis effect="italics">above</emphasis> the mean: 400 + 2 x 100 = 600). Here’s what that looks like on the histogram:
-  <figure class="unnumbered" id="fig-00020">
+  <figure id="fig-00020">
   <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 200 to 600 is shaded and marked 95 percent. The regions to the left and right of the shaded region are marked 2.5 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_082.jpg"/>
   </media>
