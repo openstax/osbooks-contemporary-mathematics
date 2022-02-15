@@ -203,55 +203,55 @@
   </problem>
           <solution id="sol-00003">
   <para id="para-00020">To start, we’ll draw axes with the origin (the point where the axes meet) at the bottom left:
-          <figure class="unnumbered" id="fig-00001">
+          <figure id="fig-00001">
   <media alt="A blank bar chart with horizontal and vertical axes.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_001.jpg"/>
   </media>
   </figure></para>
   <para id="para-00021">Next, we’ll place our categories evenly-spaced along the bottom of the horizontal axis. The order doesn’t really matter, but if the categories have some sort of natural order (like in this case, where the responses are labelled A to E), it’s best to maintain that order. Here are the labeled axes:
-          <figure class="unnumbered" id="fig-00002">
+          <figure id="fig-00002">
   <media alt="A bar chart. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis is blank.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_002.jpg"/>
   </media>
   </figure></para>
   <para id="para-00022">Now, we have a decision to make: Will we use frequencies to define the height of our rectangles, or will we use proportions? Let’s try it both ways. First, let’s use frequencies. Notice that our frequencies run from zero to 14; this will correspond to the scale we put on the vertical axis. If we put a tick mark for every whole number between 0 and 14, the result will be pretty crowded; let’s instead put a mark on the multiples of 3 or 5:
-          <figure class="unnumbered" id="fig-00003">
+          <figure id="fig-00003">
   <media alt="A bar chart. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis representing frequency ranges from 3 to 15, in increments of 3.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_003.jpg"/>
   </media>
   </figure></para>
   <para id="para-00023">Now, let’s draw in the first rectangle. The frequency associated with “A” is 14. So we’ll go to 14 on the vertical axis, and place a mark at that height above the “A” label:
-          <figure class="unnumbered" id="fig-00004">
+          <figure id="fig-00004">
   <media alt="A bar chart plots a horizontal dashed line. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis representing frequency ranges from 3 to 15, in increments of 3. The bar chart infers the following data. A: 14.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_004.jpg"/>
   </media>
   </figure></para>
   <para id="para-00024">Then, draw vertical lines straight down from the edges of your mark to make a rectangle:
-          <figure class="unnumbered" id="fig-00005">
+          <figure id="fig-00005">
   <media alt="A bar chart shows a vertical bar. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis representing frequency ranges from 3 to 15, in increments of 3. The bar chart infers the following data. A: 14.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_005.jpg"/>
   </media>
   </figure></para>
   <para id="para-00025">Finally, we can build the rest of the rectangles, making sure that the bases all have the same length and the rectangles don’t touch. Notice that, since the frequency for “D” is zero, that category has no rectangle (but we’ll leave a space there so the reader can see that there is a category with frequency zero). Here’s the result:
-          <figure class="unnumbered" id="fig-00006">
+          <figure id="fig-00006">
   <media alt="A bar chart plots frequency versus responses. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis representing frequency ranges from 3 to 15, in increments of 3. The bar graph infers the following data. A: 14; B: 4; C: 6; E: 4.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_006.jpg"/>
   </media>
   </figure></para>
   <para id="para-00026">That’s it! Now, let’s use proportions instead of frequencies. We'll label the vertical axis with evenly-spaced numbers that run the full range of the percentages in our table: 0% to 50%. We can divide that into five equal parts (so that each has width 10%), and use that to label our vertical axis:
-          <figure class="unnumbered" id="fig-00007">
+          <figure id="fig-00007">
   <media alt="A bar chart. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis representing percent ranges from 10 percent to 50 percent, in increments of 10.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_007.jpg"/>
   </media>
   </figure></para>
   <para id="para-00027">Then, we can fill in the rectangles just as we did before. The height of the “A” rectangle is 50%, the “B” rectangle goes up to 14.3%, “C” goes to 21.4%, there is no rectangle for “D” (since its proportion is 0%), and the “E” rectangle also goes up to 14.3%:
-          <figure class="unnumbered" id="fig-00008">
+          <figure id="fig-00008">
   <media alt="A bar chart plots percent versus responses on question 1. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis representing percent ranges from 10 percent to 50 percent, in increments of 10. The graph infers the following data. A: 50; B: 14.3; C: 21.4; E: 14.3. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_008.jpg"/>
   </media>
   </figure></para>
   <para id="para-00028">Notice that the rectangles are basically identical in our two final bar charts. That’s no coincidence! Bar charts that use proportions and those that use frequencies will always look identical (which is why it doesn’t really matter much which option you choose). Here’s why: look at the bars for “B” and “C”. The frequencies for these are 4 and 6 respectively. Notice that 6 is 50% bigger than 4 (since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>6</mn><mo>=</mo><mn>1.5</mn><mo>×</mo><mn>4</mn></mrow></math>), which means that the “C” bar will be 50% higher than the “B” bar. Now look at the same bars using proportions: since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>21.4</mn><mi>%</mi><mo>=</mo><mn>1.5</mn><mo>×</mo><mn>14.3</mn><mi>%</mi></mrow></math>, the bar for “C” will be 50% higher than the bar for “B.” The same relationships hold for the other bars, too.
-  <figure class="unnumbered" id="fig-00009" xmlns="http://cnx.rice.edu/cnxml">
+  <figure id="fig-00009" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A bar chart plots frequency and percent versus responses on question 1. The horizontal axis representing response on question 1 ranges from A to E. The vertical axis on the left representing frequency ranges from 3 to 15, in increments of 3. The vertical axis on the right representing percent ranges from 10 percent to 50 percent, in increments of 10. The graph infers the following data. A: 14, 50 percent; B: 4, 14.3 percent; C: 6, 21.4 percent; E: 4, 14.3 percent. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_009.jpg"/>
   </media>
@@ -274,7 +274,7 @@
   <example id="exam-00003"><title>Reading Bar Graphs</title>
   <exercise id="exer-00005">
   <problem id="prob-00005"><para id="para-00033">The bar graph shown gives data on 2020 model year cars available in the United States. Analyze the graph to answer the following questions.</para>
-  <figure class="unnumbered" id="fig-00011">
+  <figure id="fig-00011">
   <media alt="A bar graph titled, 2020 model year cars available in the US. The horizontal axis represents cars. The vertical axis representing percent ranges from 0 to 50, in increments of 5. The graph infers the following data. Hatchback: 4; Minivan: 6; Sedan: 34; Sports: 10; SUV: 44; Wagon: 4. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_011.jpg"/>
   </media>
@@ -343,12 +343,12 @@
   </problem>
   <solution id="sol-00007">
   <para id="para-00047">First, enter the chart above into a new sheet in Google Sheets. Next, click and drag to select the full table (including the header row). Click on the “Insert” menu, then select “Chart.” The result may be a pie chart by default; if it isn’t, you can change it to a pie chart using the “Chart type” drop-down menu in the Chart Editor.</para>
-  <figure class="unnumbered" id="fig-00013">
+  <figure id="fig-00013">
   <media alt="A pie chart titled, 2020 model year cars available in the US. The circle graph infers the following data. SUV: 43.6 percentage; Sedan: 33.6 percentage; Sports: 10.0 percentage; Minivan: 5.5 percentage; Hatchback: 3.6 percentage; Wagon: 3.6 percentage.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_013.jpg"/>
   </media>
   </figure>
-  <para id="para-00048">I chose to use a legend to identify the categories, as well as label the slices with the relevant percentages.</para>
+  <para id="para-00048">You can choose to use a legend to identify the categories, as well as label the slices with the relevant percentages.</para>
   </solution>
   </exercise>
   </example>
