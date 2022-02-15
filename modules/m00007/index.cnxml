@@ -76,7 +76,7 @@
   <exercise id="exer-00001">
   <problem id="prob-00001">
   <para id="para-00014">This graph shows three normal distributions. What are their means?</para>
-  <figure class="unnumbered" id="fig-00007">
+  <figure id="fig-00007">
   <media alt="A graph shows three normal distribution curves. The horizontal axis ranges from negative 1 to 5, in increments of 1. The three curves are described as follows. The first curve (red) begins at negative 1, has a peak value at 1, and ends at 3. The second curve (blue) begins at 0, has a peak value at 2, and ends at 4. The third curve (yellow) begins at 1, has a peak value at 3, and ends at 5. The three curves overlap each other and their peaks are of equal height.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_069.jpg"/>
   </media>
@@ -84,7 +84,7 @@
   </problem>
   <solution id="sol-00001">
   <para id="para-00015">Take a look at the three curves on the graph. Since the mean of a normal distribution occurs at the peak, we should look for the highest point on each distribution. Let’s draw a line from each curve's peak down to the axis, so we can see where these peaks occur:</para>
-  <figure class="unnumbered" id="fig-00008">
+  <figure id="fig-00008">
   <media alt="A graph shows three normal distribution curves. The horizontal axis ranges from negative 1 to 5, in increments of 1. The three curves are described as follows. The first curve (red) begins at negative 1, has a peak value at 1, and ends at 3. The second curve (blue) begins at 0, has a peak value at 2, and ends at 4. The third curve (yellow) begins at 1, has a peak value at 3, and ends at 5. The three curves overlap each other and their peaks are of equal height. A vertical dashed line is drawn from each peak to the horizontal axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_070.jpg"/>
   </media>
@@ -105,7 +105,7 @@
   <exercise id="exer-00003">
   <problem id="prob-00003">
   <para id="para-00019">This graph shows three distributions, all with mean 2. What are their standard deviations?</para>
-  <figure class="unnumbered" id="fig-00010">
+  <figure id="fig-00010">
   <media alt="A graph shows three normal distribution curves. The horizontal axis ranges from negative 4 to 10, in increments of 2. The three curves are described as follows. The first curve (red) begins before negative 4, has a peak value at 2, and ends at 10. The second curve (blue) begins before negative 4, has a peak value at 2, and ends at 10. The third curve (yellow) begins before negative 4, has a peak value at 2, and ends after 10. The first curve has the highest peak and the third curve has the lowest peak.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_072.jpg"/>
   </media>
@@ -113,28 +113,28 @@
   </problem>
   <solution id="sol-00003">
   <para id="para-00020">Identifying the standard deviation from a graph can be a little bit tricky. Let’s focus in on the yellow (lowest peaked) curve:
-  <figure class="unnumbered" id="fig-00011">
+  <figure id="fig-00011">
   <media alt="A normal distribution curve. The horizontal axis ranges from negative 5 to 10, in increments of 1. The curve begins before negative 5, has a peak value at 2, and ends at 10.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_073.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00021">Notice that the graph curves downward in the middle, and curves upwards on the ends. Here, I’ve highlighted in red, the part that curves downward and in green, the part that curves upward:
-  <figure class="unnumbered" id="fig-00012">
+  <figure id="fig-00012">
   <media alt="A normal distribution curve. The horizontal axis ranges from negative 5 to 10, in increments of 1. The curve begins before negative 5, has a peak value at 2, and ends at 10. On the curve, from negative 1 to 5 is highlighted and it represents inflection points.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_074.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00022">The places where the graph changes from curving up to curving down (or vice versa) are called <emphasis effect="italics">inflection points</emphasis>. Let’s identify where those occur by dropping a line straight down from each:
-  <figure class="unnumbered" id="fig-00013">
+  <figure id="fig-00013">
   <media alt="A normal distribution curve. The horizontal axis ranges from negative 5 to 10, in increments of 1. The curve begins before negative 5, has a peak value at 2, and ends at 10. On the curve, from negative 1 to 5 is highlighted and it represents inflection points. Dashed vertical lines are drawn from negative 1, 2, and 5 to meet the curve.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_075.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00023">We can estimate that the inflection points occur at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></math>; the mean is at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math> (as shown by the middle dotted line). The difference between the mean and the location of either inflection point is the standard deviation; since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>-</mo><mn>2</mn><mo>=</mo><mn>2</mn><mo>-</mo><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>, we conclude that the standard deviation of the green distribution is 3. Now, looking at the other two graphs, let's first identify the inflection points:
-  <figure class="unnumbered" id="fig-00014" xmlns="http://cnx.rice.edu/cnxml">
+  <figure id="fig-00014" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A graph shows two normal distribution curves. The horizontal axis ranges from negative 5 to 10, in increments of 1. The two curves are described as follows. The first curve (red) begins at negative 5, has a peak value at 2, and ends at 10. The second curve (blue) begins at negative 5, has a peak value at 2, and ends at 10. The first curve (red) has a higher peak than the second curve (blue).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_076.jpg"/>
   </media>
@@ -157,7 +157,7 @@
   <exercise id="exer-00005">
   <problem id="prob-00005">
   <para id="para-00028">Using the graph, identify the mean and standard deviation of the normal distribution.</para>
-  <figure class="unnumbered" id="fig-00016">
+  <figure id="fig-00016">
   <media alt="A normal distribution curve. The horizontal axis ranges from 45 to 70, in increments of 1. The curve begins at 45, has a peak value at 55, and ends at 70.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_078.jpg"/>
   </media>
@@ -165,7 +165,7 @@
   </problem>
   <solution id="sol-00005">
   <para id="para-00029">Let’s start by putting dots on the graph at the peak and at the inflection points, then drop lines from those points straight down to the axis:</para>
-  <figure class="unnumbered" id="fig-00017">
+  <figure id="fig-00017">
   <media alt="A normal distribution curve. The horizontal axis ranges from 45 to 70, in increments of 1. The curve begins at 45, has a peak value at 55, and ends at 70. Dashed vertical lines are drawn from 52, 55, and 58 to meet the curve.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_079.jpg"/>
   </media>
