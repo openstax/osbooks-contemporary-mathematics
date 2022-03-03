@@ -227,11 +227,11 @@
       <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">WEBSITE: <link url="https://openstax.org//r/Scientific_Calculator">Scientific Calculator</link></emphasis></para>
       <para id="para-00042">The order of operations for algebraic and arithmetic operations states that all multiplication must be applied prior to any addition. Paratheses are used to indicate what operation, addition or multiplication, should be done first. Adding parentheses can change and/or clarify the order. The parentheses in the expression, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math> indicate that 3 should be multiplied by 2 to get 6, and then 1 should be added to 6 to get 7.<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>7.</mn></mrow></math></para>
       <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">As with algebraic expressions, there is a set of rules that must be applied to compound logical statements in order for them to be evaluated with consistent results. This set of rules is called, <term id="term-00008">the dominance of connectives.</term> When evaluating compound logical statements connectives are evaluated from least dominant to most dominant.</para>
-      <para id="para-00044">Parentheses are the least dominant connective. So, any expression inside parentheses must be evaluated first.  As many paratheses as needed may be added to any statement to specify the order that each connective should be evaluated. Negations are evaluated next. Conjunctions and disjunction are evaluated after negations from left to right because they have equal dominance. After all conjunctions and disjunctions are evaluated, conditionals are evaluated. Lastly, the most dominant connective, the biconditional is evaluated. If a statement includes multiple connectives of equal dominance, they are evaluated left to right.</para>
       <note class="definition" id="note-00011">
-      <para id="para-00045">The <emphasis effect="bold">dominance of connectives</emphasis> is the order in which you must apply logical connectives when evaluating compound logical statements.</para>
+        <para id="para-00045">The <emphasis effect="bold">dominance of connectives</emphasis> is the order in which you must apply logical connectives when evaluating compound logical statements.</para>
       </note>
-      <figure class="unnumbered" id="fig-00003">
+        <para id="para-00044">Parentheses are the least dominant connective. So, any expression inside parentheses must be evaluated first.  As many paratheses as needed may be added to any statement to specify the order that each connective should be evaluated. Negations are evaluated next. Conjunctions and disjunction are evaluated after negations from left to right because they have equal dominance. After all conjunctions and disjunctions are evaluated, conditionals are evaluated. Lastly, the most dominant connective, the biconditional is evaluated. If a statement includes multiple connectives of equal dominance, they are evaluated left to right. See <link target-id="fig-00003" document="m00018">Figure 2.X</link> for a visual breakdown of the dominance of connectives.</para>
+      <figure id="fig-00003">
       <media alt="Insert Alt Text">
       <image mime-type="image/jpg" src="../../media/CS_Figure_02_02_TA_003.jpg"/>
       </media>
@@ -257,7 +257,7 @@
       <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
       <item>Because negation is the least dominant connective, it should be evaluated first. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> Because conjunction and disjunction have the same dominance, they are evaluated left to right. The conjunction is evaluated next as indicated by the additional set of parentheses. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> The only remaining connective is the disjunction, so it is evaluated last as indicated by the third set of parentheses. The complete solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml">Negation has the lowest dominance, so it is evaluated first. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>→</mo><mi mathvariant="normal"/><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>.</mo></mrow></math> The remaining connectives are the conditional and the conjunction, because conjunction has a lower precedence then the conditional it is evaluated next, as indicated by the second set of parentheses, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> The last step is to evaluate the conditional as indicated by the third set of parentheses, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml">This statement is known as DeMorgan’s Law for the negation of a disjunction. It is always true. DeMorgan’s laws will be explored in more detail in section 6 of this chapter.  The negations on the right side of the biconditional are evaluated prior to the conjunction. Then the disjunction on the left side of the biconditional is evaluated, followed by the negation of the disjunction on the left.  Lastly, the biconditional will be evaluated. Each side of the biconditional must be evaluated completely before the biconditional is evaluated. It does not matter which side you begin with. The final solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">This statement is known as DeMorgan’s Law for the negation of a disjunction. It is always true. DeMorgan’s laws will be explored in more detail in Section 6 of this chapter.  The negations on the right side of the biconditional are evaluated prior to the conjunction. Then the disjunction on the left side of the biconditional is evaluated, followed by the negation of the disjunction on the left.  Lastly, the biconditional will be evaluated. Each side of the biconditional must be evaluated completely before the biconditional is evaluated. It does not matter which side you begin with. The final solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
       </list>
       </solution>
       </exercise>
@@ -271,13 +271,13 @@
       </note>
       <note class="work-out" id="note-00014">
       <title>Logic Terms and Properties – Matching Game</title>
-      <para id="para-00052">Materials: For every groups of 4 students, 30 cards (Pokémon or playing cards), 30 individual clear plastic gaming card sleeves, 30 card size pieces of paper. Prepare list of 60 questions and answers ahead of time related to definitions and problems in sections 1 and 2. Provide each group of 4 students 20 questions with their associated answers.  Instruct each group to select 15 of the 20 questions and create one card with the question and one card with the answer for each problem selected by placing each problem and answer in a separate card sleeve. Once 15 problem and 15 answer cards are created have students shuffle the set of cards.</para>
+      <para id="para-00052">Materials: For every groups of 4 students, 30 cards (Pokémon or playing cards), 30 individual clear plastic gaming card sleeves, 30 card size pieces of paper. Prepare list of 60 questions and answers ahead of time related to definitions and problems in Sections 1 and 2. Provide each group of 4 students 20 questions with their associated answers.  Instruct each group to select 15 of the 20 questions and create one card with the question and one card with the answer for each problem selected by placing each problem and answer in a separate card sleeve. Once 15 problem and 15 answer cards are created have students shuffle the set of cards.</para>
       <para id="para-00053">To play the game. Have groups exchange their deck of cards with another group, so that no team is initially playing with the deck that they created. Split each 4 person group into 2 teams of 2 students. One team lays deck out on their desk face down in a 5 by 6 grid after shuffling the cards, the other team will go first. Each player will take a turn flipping two cards to the face up position in an attempt to match the question with the correct answer. If a team makes a match, they get to flip another 2 cards, if they do not get a match, they flip the cards face down, and the next team flips two cards over. Play continues in this manner until all question cards are matched with their corresponding answer card. The team with the most set of matching cards wins.</para>
       </note>
-      <para id="para-00054">In the first section of this chapter, we evaluated the truth value of negations. In the following sections we will discuss how to evaluate conjunctions, disjunctions, conditionals, and biconditionals, then use truth tables and our knowledge of the dominance of connectives to evaluate compound logical statements.</para>
+      <para id="para-00054">In the first section of this chapter, you evaluated the truth value of negations. In the following sections you will discuss how to evaluate conjunctions, disjunctions, conditionals, and biconditionals, then use truth tables and your knowledge of the dominance of connectives to evaluate compound logical statements.</para>
       </section>
       <section id="sect-00006" class="check-understanding">
-      <title>[Check Your Understanding]</title>
+      <title>Check Your Understanding</title>
       <exercise id="exer-00009">
       <problem id="prob-00009">
       <para id="para-00055"><link class="os-embed" url="#exercise/CM-C02-M2-Q005"/></para>
@@ -332,8 +332,6 @@
       </problem>
       </exercise>
       </section>
-      <section id="sect-00008">
-      <title>Summary</title>
       <section class="key-terms" id="sect-00009">
       <title>Key Terms</title>
       <para id="para-00065">Compound statement</para>
@@ -374,10 +372,9 @@
       </item>
       </list>
       </section>
-      <section class="eoc-video" id="sect-00011">
-        <title>video</title>
+      <section class="eoc-videos" id="sect-00011">
+      <title>video</title>
       <para id="para-00077"><link url="https://openstax.org/r/Compound_Statements">Logic Part 1B: Compound Statements, Connectives and Symbols</link></para>
-      </section>
       </section>
   </content>
 </document>
