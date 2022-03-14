@@ -442,7 +442,7 @@
   <title>Finding the Median Using a Frequency Distribution</title>
   <exercise id="exer-00009">
   <problem id="prob-00009">
-  <para id="para-00045">In Example 8.3, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Here’s the result:
+  <para id="para-00045">In Example 8.3, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Let's review that data again:
   <table summary="." class="unnumbered" id="table-00012">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -499,10 +499,7 @@
   </section>
   <section id="sect-00004">
   <title>The Mean</title>
-  <para id="para-00051">Recall our example of ways we could identify the “average” height of an individual. The last method we posited was also the most complicated. It involved a game where the player guesses a height, then figures out how far off that guess is from every single person’s height. Those differences get squared and added together to get a score. Our next measure of centrality gives the lowest possible score. Verifying that fact is way, way beyond what we are covering in this book. Fortunately, though, we don’t have to work all that hard to compute this measure: the <emphasis effect="italic">mean</emphasis>.</para>
-  <note class="definition" id="note-00009">
-  <para id="para-00052">Given a data set containing <emphasis effect="italic">n</emphasis> total values, the <emphasis effect="bold">mean</emphasis> of the data set is defined as the sum of all the data values, divided by <emphasis effect="italic">n</emphasis>.</para>
-  </note>
+  <para id="para-00051">Recall our example of ways we could identify the “average” height of an individual. The last method we posited was also the most complicated. It involved a game where the player guesses a height, then figures out how far off that guess is from every single person’s height. Those differences get squared and added together to get a score. Our next measure of centrality gives the lowest possible score. Given a data set containing n total values, the <term id="term-00004">mean</term> of the data set is the sum of all the data values, divided by <emphasis effect="italic">n</emphasis>.</para>
   <para id="para-00053">This is a computation you have likely done before. In many places, including spreadsheet programs like Microsoft Excel and Google Sheets, this number is called the <emphasis effect="italic">average</emphasis>. For statisticians, though, the word <emphasis effect="italic">average</emphasis> has too many possible meanings, so they prefer the one we’ll use: mean.</para>
   <example id="exam-00006">
   <title>Finding the Mean</title>
@@ -527,7 +524,7 @@
   <title>Finding the Mean Using a Frequency Distribution</title>
   <exercise id="exer-00013">
   <problem id="prob-00013">
-  <para id="para-00058">Earlier, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Here’s the result:
+  <para id="para-00058">Refer again to the frequency distribution of the number of siblings people who attended a conflict resolution class reported:
   <table summary="." class="unnumbered" id="table-00014">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -570,7 +567,10 @@
   <para id="para-00059">What is the mean of the number of siblings?</para>
   </problem>
   <solution id="sol-00013">
-  <para id="para-00060">We compute the mean by adding up all the data values and then dividing by the number of data values on the list. Adding up the frequencies, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>30</mn></mrow></math> data values in our list. Now, to find the sum of all the data values, we could simply reconstruct the raw data and add up all the numbers there. But, there’s an easier way: Remember that repeatedly adding a number to itself is the definition of multiplication. So, for example, since there are six 2s in our data, the sum of all those 2s must be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>. Let’s add a column to our distribution for these products:
+  <para id="para-00060"><emphasis effect="bold">Step 1:</emphasis> We compute the mean by adding up all the data values and then dividing by the number of data values on the list.</para>
+  <para id="para-00006"><emphasis effect="bold">Step 2:</emphasis> Adding up the frequencies, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>30</mn></mrow></math> data values in our list.</para>
+  <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now, to find the sum of all the data values, we could simply reconstruct the raw data and add up all the numbers there. But, there’s an easier way: Remember that repeatedly adding a number to itself is the definition of multiplication. So, for example, since there are six 2s in our data, the sum of all those 2s must be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math>.</para>
+  <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Let’s add a column to our distribution for these products:
   <table summary="." class="unnumbered" id="table-00015" xmlns="http://cnx.rice.edu/cnxml">
   <tgroup cols="3">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -618,7 +618,7 @@
   </tgroup>
   </table>
   </para>
-  <para id="para-00061">So, the sum of all our data values is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>47</mn></mrow></math>. The mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>47</mn></mrow><mrow><mn>30</mn></mrow></mfrac><mo>≈</mo><mn>1.567</mn></mrow></math>.</para>
+  <para id="para-00061"><emphasis effect="bold">Step 5:</emphasis> So, the sum of all our data values is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>47</mn></mrow></math>. The mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>47</mn></mrow><mrow><mn>30</mn></mrow></mfrac><mo>≈</mo><mn>1.567</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
@@ -638,10 +638,10 @@
   <title>Using Google Sheets to Compute Measures of Centrality</title>
   <exercise id="exer-00015">
   <problem id="prob-00015">
-  <para id="para-00068">The dataset ‘InState’ contains the in-state tuitions of every college and university in the country that reported that data to the Department of Education (data accessed at data.ed.gov). Find the mode, median, and mean of those in-state tuition values.</para>
+  <para id="para-00068">The dataset <link>‘InState’</link> contains the in-state tuitions of every college and university in the country that reported that data to the Department of Education. Find the mode, median, and mean of those in-state tuition values.</para>
   </problem>
   <solution id="sol-00015">
-  <para id="para-00069">To find the mode, we select an empty cell type “=MODE(”,click on the header of the column to insert a reference to the column into our formula, and then close the parentheses. When we hit the enter key, our formula is replaced with the mode: $13,380. We can find the median and mean using the same process, except using the functions “MEDIAN” and “AVERAGE” in place of “MODE”. We find that the median is $11,207 and the mean is $15,476.79.</para>
+  <para id="para-00069">Step 1: To find the mode, we select an empty cell type “=MODE(”,click on the header of the column to insert a reference to the column into our formula, and then close the parentheses. When we hit the enter key, our formula is replaced with the mode: $13,380. We can find the median and mean using the same process, except using the functions “MEDIAN” and “AVERAGE” in place of “MODE”. We find that the median is $11,207 and the mean is $15,476.79.</para>
   </solution>
   </exercise>
   </example>
