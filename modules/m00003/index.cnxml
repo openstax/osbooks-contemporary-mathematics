@@ -794,50 +794,69 @@
   <section id="sect-00007">
   <title>Histograms</title>
   <para id="para-00074"><term id="term-00006">Histograms</term> are visualizations that can be used for any set of quantitative data, no matter how big or spread out. They differ from a categorical bar chart in that the horizontal axis is labeled with numbers (not ranges of numbers), and the bars are drawn so that they touch each other. The heights of the bars reflect the frequencies in each bin. Unlike with stem-and-leaf plots, we cannot recreate the original data set from a histogram. However, histograms are easy to make with technology and are great for identifying the distribution of our data. Let’s first create one histogram by hand to help us better understand how histograms work.</para>
-  <note class="definition" id="note-00016">
-  <para id="para-00075">A <emphasis effect="bold">histogram</emphasis> is a type of bar chart for quantitative data built using a binned frequency distribution.</para>
-  </note>
   <example id="exam-00007"><title>More Stem-and-Leaf Plots</title>
   <exercise id="exer-00013">
-  <problem id="prob-00013"><para id="para-00076">The following table (data from basketball-reference.com) gives the number of free throws made per game in the 2019 WNBA season. Construct a stem-and-leaf plot for this dataset.</para>
-  <table class="unnumbered" frame="none" id="table-00019" summary=".">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-        <row><entry>Team</entry>
-        <entry>FT/G</entry></row>
-        </thead>
-        <tbody>
-        <row><entry>Washington Mystics</entry>
-        <entry>14.4</entry></row>
-        <row><entry>Chicago Sky</entry>
-        <entry>14.6</entry></row>
-        <row><entry>Las Vegas Aces</entry>
-        <entry>16.7</entry></row>
-        <row><entry>Connecticut Sun</entry>
-        <entry>13</entry></row>
-        <row><entry>Los Angeles Sparks</entry>
-        <entry>12.3</entry></row>
-        <row><entry>Minnesota Lynx</entry>
-        <entry>12.1</entry></row>
-        <row><entry>Indiana Fever</entry>
-        <entry>13.9</entry></row>
-        <row><entry>New York Liberty</entry>
-        <entry>13.4</entry></row>
-        <row><entry>Phoenix Mercury</entry>
-        <entry>15.5</entry></row>
-        <row><entry>Seattle Storm</entry>
-        <entry>12.1</entry></row>
-        <row><entry>Dallas Wings</entry>
-        <entry>13.5</entry></row>
-        <row><entry>Atlanta Dream</entry>
-        <entry>13.5</entry></row></tbody>
-        </tgroup>
-        </table>
+  <problem id="prob-00013"><para id="para-00076">The following table gives the number of free throws made per game in the 2019 WNBA season. Construct a stem-and-leaf plot for this dataset.</para>
+    <table summary="." id="table-00008">
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <tfoot>
+      <row>
+        <entry namest="c1" nameend="c4">(source: www.basketball-reference.com)</entry>
+      </row>
+    </tfoot>
+      <tbody>
+      <row>
+      <entry>Team</entry>
+      <entry>FT/G</entry>
+      <entry>Team</entry>
+      <entry>FT/G</entry>
+      </row>
+      <row>
+      <entry>Washington Mystics</entry>
+      <entry>14.4</entry>
+      <entry>Indiana Fever</entry>
+      <entry>13.9</entry>
+      </row>
+      <row>
+      <entry>Chicago Sky</entry>
+      <entry>14.6</entry>
+      <entry>New York Liberty</entry>
+      <entry>13.4</entry>
+      </row>
+      <row>
+      <entry>Las Vegas Aces</entry>
+      <entry>16.7</entry>
+      <entry>Phoenix Mercury</entry>
+      <entry>15.5</entry>
+      </row>
+      <row>
+      <entry>Connecticut Sun</entry>
+      <entry>13</entry>
+      <entry>Seattle Storm</entry>
+      <entry>12.1</entry>
+      </row>
+      <row>
+      <entry>Los Angeles Sparks</entry>
+      <entry>12.3</entry>
+      <entry>Dallas Wings</entry>
+      <entry>13.5</entry>
+      </row>
+      <row>
+      <entry>Minnesota Lynx</entry>
+      <entry>12.1</entry>
+      <entry>Atlanta Dream</entry>
+      <entry>13.5</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
   </problem>
   <solution id="sol-00013">
-  <para id="para-00078">First, we must put the data in order:</para>
+  <para id="para-00078"><emphasis effect="bold">Step 1:</emphasis> First, we must put the data in order:</para>
   <table class="unnumbered" frame="none" id="table-00020" summary=".">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
