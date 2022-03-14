@@ -641,7 +641,8 @@
   <para id="para-00068">The dataset <link>‘InState’</link> contains the in-state tuitions of every college and university in the country that reported that data to the Department of Education. Find the mode, median, and mean of those in-state tuition values.</para>
   </problem>
   <solution id="sol-00015">
-  <para id="para-00069">Step 1: To find the mode, we select an empty cell type “=MODE(”,click on the header of the column to insert a reference to the column into our formula, and then close the parentheses. When we hit the enter key, our formula is replaced with the mode: $13,380. We can find the median and mean using the same process, except using the functions “MEDIAN” and “AVERAGE” in place of “MODE”. We find that the median is $11,207 and the mean is $15,476.79.</para>
+  <para id="para-00069"><emphasis effect="bold">Step 1:</emphasis> To find the mode, we select an empty cell type “=MODE(”,click on the header of the column to insert a reference to the column into our formula, and then close the parentheses. When we hit the enter key, our formula is replaced with the mode: $13,380.</para>
+  <para id="para-00019"><emphasis effect="bold">Step 2:</emphasis> We can find the median and mean using the same process, except using the functions “MEDIAN” and “AVERAGE” in place of “MODE”. We find that the median is $11,207 and the mean is $15,476.79.</para>
   </solution>
   </exercise>
   </example>
@@ -655,7 +656,9 @@
   </section>
   <section id="sect-00005">
   <title>Which is Better: Mode, Median, or Mean?</title>
-  <para id="para-00074">If the mode, median, and mean all purport to measure the same thing (centrality), why do we need all three? The answer is complicated, as each measure has its own strengths and weaknesses. The mode is simple to compute, but there may be more than one. Further, if no data value appears more than once, the mode is entirely unhelpful. As for the mean and median, the main difference between these two measures is how each is affected by extreme values. Consider this example: the mean and median of 1, 2, 3, 4, 5 are both 3. But what if the dataset is instead 1, 2, 3, 4, 10? The median is still 3, but the mean is now 4. What this example shows is that the mean is sensitive to extreme values, while the median isn’t. This knowledge can help us decide which of the two is more relevant for a given data set. If it is important that the really high or really low values are reflected in the measure of centrality, then the mean is the better option. If very high or low values are not important, however, then we should stick with the median. The decision between mean and median only really matters if the data are skewed; if the data are symmetric, then the mean and median are going to be approximately equal, and the distinction between them is irrelevant. If the data are skewed, the mean gets pulled in the direction of the skew (i.e., if the data are right-skewed, then the mean will be bigger than the median; if the data are left-skewed, the opposite relation is true).</para>
+  <para id="para-00074">If the mode, median, and mean all purport to measure the same thing (centrality), why do we need all three? The answer is complicated, as each measure has its own strengths and weaknesses. The mode is simple to compute, but there may be more than one. Further, if no data value appears more than once, the mode is entirely unhelpful. As for the mean and median, the main difference between these two measures is how each is affected by extreme values.</para>
+  <para id="para-00020">Consider this example: the mean and median of 1, 2, 3, 4, 5 are both 3. But what if the dataset is instead 1, 2, 3, 4, 10? The median is still 3, but the mean is now 4. What this example shows is that the mean is sensitive to extreme values, while the median isn’t. This knowledge can help us decide which of the two is more relevant for a given data set. If it is important that the really high or really low values are reflected in the measure of centrality, then the mean is the better option. If very high or low values are not important, however, then we should stick with the median.</para>
+  <para id="para-00023">The decision between mean and median only really matters if the data are skewed. If the data are symmetric, then the mean and median are going to be approximately equal, and the distinction between them is irrelevant. If the data are skewed, the mean gets pulled in the direction of the skew (i.e., if the data are right-skewed, then the mean will be bigger than the median; if the data are left-skewed, the opposite relation is true).</para>
   <example id="exam-00009">
   <title>Which Measure of Centrality Should I Use?</title>
   <exercise id="exer-00017">
@@ -724,6 +727,26 @@
   <problem id="prob-00025">
   <para id="para-00103"><link class="os-embed" url="#exercise/CM-C08-M3-016"/></para>
   </problem>
+  </exercise>
+  <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00034"><link class="os-embed" url="#exercise/CM-C08-M3-021"/></para>
+    </problem>
+  </exercise>
+  <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00043"><link class="os-embed" url="#exercise/CM-C08-M3-022"/></para>
+    </problem>
+  </exercise>
+  <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C08-M3-023"/></para>
+    </problem>
+  </exercise>
+  <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C08-M3-024"/></para>
+    </problem>
   </exercise>
   <exercise id="exer-00030">
   <problem id="prob-00030">
