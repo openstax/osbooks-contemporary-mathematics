@@ -992,44 +992,56 @@
   <section id="sect-00008">
   <title>Bar Charts for Labeled Data</title>
   <para id="para-00096">Sometimes we have quantitative data where each value is labeled according to the source of the data. For example, in the Your Turn above, you looked at in-state tuition data. Every value you used to create that histogram was associated with a school; the schools are the labels. In a previous Your Turn, you found a histogram of the wins of every Major League Baseball team in 2019. Each of those win totals had a label: the team. If we’re interested in visualizing differences among the different teams, or schools, or whatever the labels are, we create a different version of the bar graph known as a <emphasis effect="bold">bar chart for labeled data</emphasis>.</para>
-  <note class="definition" id="note-00019">
-  <para id="para-00097">In a <emphasis effect="bold">bar chart for labeled data</emphasis> each data value gets its own bar; that value determines the height of the bar. On the horizontal axis, the bars are labeled with the data labels.</para>
-  </note>
   <para id="para-00098">These graphs are made in Google Sheets in exactly the same way as regular bar graphs. The only change is that the vertical axis will be labeled with the units for your quantitative data instead of just “Frequency.”</para>
   <example id="exam-00009"><title>Building a Bar Chart for Labeled Data</title>
   <exercise id="exer-00017">
-  <problem id="prob-00017"><para id="para-00099">The following table shows the gross domestic product (GDP) for the United States for the years 2010 to 2019 (data from data.worldbank.org):</para>
-  <table class="unnumbered" frame="none" id="table-00023" summary=".">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-  <row><entry>Year</entry>
-  <entry>GDP (in $ trillions)</entry></row>
-  </thead>
-  <tbody>
-  <row><entry>2010</entry>
-  <entry>14.992</entry></row>
-  <row><entry>2011</entry>
-  <entry>15.543</entry></row>
-  <row><entry>2012</entry>
-  <entry>16.197</entry></row>
-  <row><entry>2013</entry>
-  <entry>16.785</entry></row>
-  <row><entry>2014</entry>
-  <entry>17.527</entry></row>
-  <row><entry>2015</entry>
-  <entry>18.225</entry></row>
-  <row><entry>2016</entry>
-  <entry>18.715</entry></row>
-  <row><entry>2017</entry>
-  <entry>19.519</entry></row>
-  <row><entry>2018</entry>
-  <entry>20.580</entry></row>
-  <row><entry>2019</entry>
-  <entry>21.433</entry></row></tbody>
-  </tgroup>
-  </table>
+  <problem id="prob-00017"><para id="para-00099">The following table shows the gross domestic product (GDP) for the United States for the years 2010 to 2019:</para>
+    <table class="unnumbered" summary="." id="table-00011">
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <tfoot>
+      <row>
+      <entry namest="c1" nameend="c4"/>
+      </row>
+      </tfoot>
+      <tbody>
+      <row>
+      <entry>Year</entry>
+      <entry>GDP (in $ trillions)</entry>
+      <entry>Year</entry>
+      <entry>GDP (in $ trillions)</entry>
+      </row>
+      <row><entry>2010</entry>
+      <entry>14.992</entry>
+      <entry>2015</entry>
+      <entry>18.225</entry>
+      </row>
+      <row><entry>2011</entry>
+      <entry>15.543</entry>
+      <entry>2016</entry>
+      <entry>18.715</entry>
+      </row>
+      <row><entry>2012</entry>
+      <entry>16.197</entry>
+      <entry>2017</entry>
+      <entry>19.519</entry>
+      </row>
+      <row><entry>2013</entry>
+      <entry>16.785</entry>
+      <entry>2018</entry>
+      <entry>20.580</entry>
+      </row>
+      <row><entry>2014</entry>
+      <entry>17.527</entry>
+      <entry>2019</entry>
+      <entry>21.433</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
   <para id="para-00100">Construct a visualization of these data to explore the change in GDP over time.</para>
   </problem>
   <solution id="sol-00017">
