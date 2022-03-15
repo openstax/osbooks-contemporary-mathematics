@@ -129,99 +129,97 @@
   </tbody>
   </tgroup>
   </table>
-<para id="para-00027"><emphasis effect="bold">Step 3</emphasis>: Square the differences. Let’s add a column to our table for those values:</para>
+<para id="para-00027"><emphasis effect="bold">Step 3:</emphasis> Square the differences. Let’s add a row to our table for those values:</para>
 <table class="unnumbered" summary="." id="table-00002">
-<tgroup cols="3">
-<colspec colnum="1" colname="c1" colwidth="1*"/>
-<colspec colnum="2" colname="c2" colwidth="1*"/>
-<colspec colnum="3" colname="c3" colwidth="1*"/>
-<tbody>
-<row>
-<entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
-</row>
-<row xmlns="http://cnx.rice.edu/cnxml">
-<entry>5</entry>
-<entry>-10</entry>
-<entry>100</entry>
-</row>
-<row>
-<entry>20</entry>
-<entry>5</entry>
-<entry>25</entry>
-</row>
-<row>
-<entry>8</entry>
-<entry>-7</entry>
-<entry>49</entry>
-</row>
-<row>
-<entry>10</entry>
-<entry>-5</entry>
-<entry>25</entry>
-</row>
-<row>
-<entry>35</entry>
-<entry>20</entry>
-<entry>400</entry>
-</row>
-<row>
-<entry>12</entry>
-<entry>-3</entry>
-<entry>9</entry>
-</row></tbody>
-</tgroup>
-</table>
-<para id="para-00028"><emphasis effect="bold">Step 4</emphasis>: Add up those squares:</para>
+  <tgroup cols="7">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <colspec colnum="5" colname="c5" colwidth="1*"/>
+  <colspec colnum="6" colname="c6" colwidth="1*"/>
+  <colspec colnum="7" colname="c7" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml">5</entry>
+  <entry>20</entry>
+  <entry>8</entry>
+  <entry>10</entry>
+  <entry>35</entry>
+  <entry>12</entry>
+  </row>
+  <row>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml">-10</entry>
+  <entry>5</entry>
+  <entry>-7</entry>
+  <entry>-5</entry>
+  <entry>20</entry>
+  <entry>-3</entry>
+  </row>
+  <row>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml">100</entry>
+  <entry>25</entry>
+  <entry>49</entry>
+  <entry>25</entry>
+  <entry>400</entry>
+  <entry>9</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+<para id="para-00028"><emphasis effect="bold">Step 4:</emphasis> Add up those squares:</para>
 <table class="unnumbered" summary="." id="table-00003">
-<tgroup cols="3">
-<colspec colnum="1" colname="c1" colwidth="1*"/>
-<colspec colnum="2" colname="c2" colwidth="1*"/>
-<colspec colnum="3" colname="c3" colwidth="1*"/>
-<tbody>
-<row>
-<entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
-<entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
-</row>
-<row xmlns="http://cnx.rice.edu/cnxml">
-<entry>5</entry>
-<entry>-10</entry>
-<entry>100</entry>
-</row>
-<row>
-<entry>20</entry>
-<entry>5</entry>
-<entry>25</entry>
-</row>
-<row>
-<entry>8</entry>
-<entry>-7</entry>
-<entry>49</entry>
-</row>
-<row>
-<entry>10</entry>
-<entry>-5</entry>
-<entry>25</entry>
-</row>
-<row>
-<entry>35</entry>
-<entry>20</entry>
-<entry>400</entry>
-</row>
-<row>
-<entry>12</entry>
-<entry>-3</entry>
-<entry>9</entry>
-</row>
-<row>
-<entry/>
-<entry>Sum:</entry>
-<entry>608</entry>
-</row></tbody>
-</tgroup>
-</table>
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <tbody>
+  <row>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
+  </row>
+  <row xmlns="http://cnx.rice.edu/cnxml">
+  <entry>5</entry>
+  <entry>-10</entry>
+  <entry>100</entry>
+  </row>
+  <row>
+  <entry>20</entry>
+  <entry>5</entry>
+  <entry>25</entry>
+  </row>
+  <row>
+  <entry>8</entry>
+  <entry>-7</entry>
+  <entry>49</entry>
+  </row>
+  <row>
+  <entry>10</entry>
+  <entry>-5</entry>
+  <entry>25</entry>
+  </row>
+  <row>
+  <entry>35</entry>
+  <entry>20</entry>
+  <entry>400</entry>
+  </row>
+  <row>
+  <entry>12</entry>
+  <entry>-3</entry>
+  <entry>9</entry>
+  </row>
+  <row>
+  <entry/>
+  <entry>Sum:</entry>
+  <entry>608</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
 <para id="para-00029"><emphasis effect="bold">Step 5</emphasis>: Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
 <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6</emphasis>: Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
 <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Thus, the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
