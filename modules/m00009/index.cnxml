@@ -146,25 +146,25 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00015">Next, let’s make the axes. On the horizontal axis, make sure the range of values is sufficient to cover all of the explanatory data. For our data, that’s 68 to 94. Similarly, the vertical axis should cover all of the response data (73 to 95):</para>
+  <para id="para-00015"><emphasis effect="bold">Step 2:</emphasis> Next, let’s make the axes. On the horizontal axis, make sure the range of values is sufficient to cover all of the explanatory data. For our data, that’s 68 to 94. Similarly, the vertical axis should cover all of the response data (73 to 95):</para>
   <figure id="fig-00002">
   <media alt="A blank coordinate plane. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_103.jpg"/>
   </media>
   </figure>
-  <para id="para-00016">Our first point is (88, 84). So, we’ll locate 88 on the horizontal axis, 84 on the vertical axis, and identify the point that’s directly above the first location and horizontally level with the second:</para>
+  <para id="para-00016"><emphasis effect="bold">Step 3:</emphasis> Our first point is (88, 84). So, we’ll locate 88 on the horizontal axis, 84 on the vertical axis, and identify the point that’s directly above the first location and horizontally level with the second:</para>
   <figure id="fig-00003">
   <media alt="A coordinate plane plots a point. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5. A horizontal dotted line is drawn at 84. A vertical dotted line is drawn at 88. The two dotted lines intersect at the point (88, 84).">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_104.jpg"/>
   </media>
   </figure>
-  <para id="para-00017">Repeat this process to place the other four points on the graph:</para>
+  <para id="para-00017"><emphasis effect="bold">Step 4:</emphasis> Repeat this process to place the other four points on the graph:</para>
   <figure id="fig-00004">
   <media alt="Five points are plotted on a coordinate plane. The horizontal axis ranges from 65 to 95, in increments of 5. The vertical axis ranges from 70 to 100, in increments of 5. The points are as follows: (68, 73), (72, 80), (75, 77), (88, 84), and (94, 95). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_105.jpg"/>
   </media>
   </figure>
-  <para id="para-00018">Finally, label the axes:</para>
+  <para id="para-00018"><emphasis effect="bold">Step 5:</emphasis> Finally, label the axes:</para>
   <figure id="fig-00005">
   <media alt="Five points are plotted on a coordinate plane.The horizontal axis representing midterm ranges from 65 to 95, in increments of 5. The vertical axis representing final ranges from 70 to 100, in increments of 5. The points are as follows: (68, 73), (72, 80), (75, 77), (88, 84), and (94, 95). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_106.jpg"/>
@@ -180,7 +180,7 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00020">For large data sets, it’s impractical to create scatter plots manually. Luckily, Google Sheets automates this process for us. This video will show you how:</para>
+  <para id="para-00020">For large data sets, it’s impractical to create scatter plots manually. Luckily, Google Sheets automates this process for us. This video will show you how.</para>
   <note class="video" id="note-00005">
   <para id="para-00021"><link url="https://openstax.org/r/Scatter-Plots">Scatter Plots in Google Sheets</link></para>
   </note>
@@ -188,17 +188,21 @@
   <title>Creating Scatter Plots in Google Sheets</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
-  <para id="para-00022">The data set NHL19 (found at ESPN.com) gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA). Use Google Sheets to create a scatter plot for GF vs. GA.</para>
+  <para id="para-00022">The data set <link>“NHL19”</link> gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA). Use Google Sheets to create a scatter plot for GF vs. GA.</para>
   <note class="check-point" id="note-00006">
   <para id="para-00023">When we talk about plotting one set versus another, the first is the response and the second is explanatory.</para>
   </note>
   </problem>
   <solution id="sol-00005">
-  <para id="para-00024">Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection). Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.” Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case). Now, click on the variable under “Series” and select the one that should go on the vertical axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
+  <para id="para-00024"><emphasis effect="bold">Step 1:</emphasis> Open the data set in Google Sheets, and click and drag to select the data we want to visualize (in this case, we want the columns for GF and GA; make sure you include those labels in the selection).</para>
+  <para id="para-00034"><emphasis effect="bold">Step 2:</emphasis> Next, click on the “Insert” menu, then click “Chart.” Sheets will automatically choose a chart format; if the result isn’t a scatterplot, click on the drop-down menu under “Chart type” in the Chart Editor on the right side of the window and select “Scatter chart.”</para>
+  <para id="para-00035"><emphasis effect="bold">Step 3:</emphasis> Next, check that the correct choices were made for the horizontal and vertical axes. In this case, we want to see GF on the vertical axis and GA on the horizontal axis. If Sheets made the wrong choice, we can fix it in the Chart Editor by clicking on the name of the data set under “X-axis” to open up a dropdown menu, then selecting the variable that should go on the horizontal axis (GA in this case).</para>
+  <para id="para-00036"><emphasis effect="bold">Step 4:</emphasis> Now, click on the variable under “Series” and select the one that should go on the vertical axis (GF). If you had to make that change, the axis labels in the graph may also need changing; those labels can be fixed using the “Customize” tab in the Chart Editor under “Chart &amp; axis titles.” Your result should look like this:</para>
   <figure id="fig-00007">
   <media alt="A scatter plot titled, GF versus GA. The horizontal axis representing GA ranges from 180 to 320, in increments of 20. The vertical axis representing GF ranges from 190 to 330, in increments of 20. The points are scattered throughout and it lies from 200 to 300 on the horizontal axis and 200 to 290 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_108.jpg"/>
   </media>
+  <caption>(data source: www.nhl.com)</caption>
   </figure>
   </solution>
   </exercise>
@@ -213,32 +217,32 @@
   </section>
   <section id="sect-00004">
   <title>Reading and Interpreting Scatter Plots</title>
-  <para id="para-00026">Scatter plots give us information about the existence and strength of a relationship between two data sets. To break that information down, there are a series of questions we might ask to help us. First: Is there a curved pattern in the data? If the answer is “yes,” then we can stop; none of the linear regression techniques from here to the end of this section are appropriate. Figure 9.4 shows several examples of scatterplots that can help us identify these curved patterns.</para>
+  <para id="para-00026">Scatter plots give us information about the existence and strength of a relationship between two data sets. To break that information down, there are a series of questions we might ask to help us. First: Is there a curved pattern in the data? If the answer is “yes,” then we can stop; none of the linear regression techniques from here to the end of this section are appropriate. <link target-id="fig-00009" document="m00009">Figures 8.73</link>-<link target-id="fig-00012" document="m00009">8.76</link> show several examples of scatterplots that can help us identify these curved patterns.</para>
   <figure id="fig-00009">
   <media alt="A scatter plot represents a curved pattern. The x-axis ranges from 20 to 120, in increments of 20. The y-axis ranges from negative 100 to 500, in increments of 100. The scatter plot shows points scattered along a curve that passes through the following points: (20, 90), (40, 20), (50, 0), (80, 100), (100, 250), and (120, 500). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_110.jpg"/>
   </media>
-  <caption>a: Curved pattern</caption>
+  <caption>Curved pattern</caption>
   </figure>
   <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A scatter plot represents no curved pattern. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 140, in increments of 20. The points are scattered throughout and it lies from 30 to 100 on the horizontal axis and 10 to 120 on the vertical axis.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_111.jpg"/>
   </media>
-  <caption>b: No curved pattern</caption>
+  <caption>No curved pattern</caption>
   </figure>
   <figure id="fig-00011">
   <media alt="A scatter plot represents a curved pattern. The x-axis ranges from 30 to 100, in increments of 10. The y-axis ranges from 40 to 120, in increments of 10. The scatter plot shows points scattered along a curve that passes through the following points: (30, 80), (40, 60), (55, 50), (70, 65), (90, 102), (100, 110), and (100, 105). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_112.jpg"/>
   </media>
-  <caption>c: Curved pattern</caption>
+  <caption>Curved pattern</caption>
   </figure>
   <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A scatter plot represents no curved pattern. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are as follows: (35, 250), (40, 220), (50, 200), (60, 175), (70, 150), (80, 125), (90, 75), and (100, 50). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_113.jpg"/>
   </media>
-  <caption>d: No curved pattern</caption>
+  <caption>No curved pattern</caption>
   </figure>
-  <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italics">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at Figure 9.4.d, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
+  <para id="para-00027">Once we have confirmed that there is no curved pattern in our data, we can move to the next question: Is there a linear relationship? To answer this, we must look at different values of the explanatory variable and determine whether the corresponding response values are different, <emphasis effect="italics">on average</emphasis>? It's important to look at the values “on average” because, in general, our scatter plots won’t include just one corresponding response point for each value of the explanatory variable (i.e., there may be multiple response values for each explanatory value). So, we mentally try to look for the center of those points. Let’s look again at <link target-id="fig-00012" document="m00009">Figure 8.76</link>, but consider some different values for the explanatory variable. Let’s highlight the points whose x-values are around 50 and those that are around 80:</para>
   <figure id="fig-00013">
   <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 0 to 300, in increments of 50. The points are scattered in linear decreasing order. Some of the points are highlighted in red and the points are as follows: (50, 290), (48, 195), (48, 200), (49.5, 225), (50, 203), (78, 145), (79, 130), (80, 120), (81, 120), (81, 70), (82, 90), (82.5, 90), (82, 100), and (82, 120). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_114.jpg"/>
@@ -264,17 +268,12 @@
   </figure>
   <para id="para-00031">Notice that there’s not much vertical distance between our two starred points. This tells us that there’s not a strong relationship between these two data sets.</para>
   <para id="para-00032">Another way to assess whether there is a relationship between two data sets in a scatter plot is to see if the points seem to be clustered around a line (specifically, a line that’s not horizontal). The stronger the clustering around that line is, the stronger the relationship.</para>
-  <para id="para-00033">Once we’ve established that there’s a relationship worth exploring, it’s time to start quantifying that relationship. A linear relationship between two data sets is <term id="term-00006">positive</term> if the values of the response tend to increase, on average, as the values of the explanatory variable increase. If the values of the response <emphasis effect="italics">decrease</emphasis> with increasing values of the explanatory variable, then we say the relationship is <term id="term-00007">negative</term>. The strength of the relationship is determined by how closely the scatterplot follows a single straight line: the closer the points are to that line, the stronger the relationship.</para>
-  <note class="definition" id="note-00008">
-  <para id="para-00034">In a <emphasis effect="bold">positive linear relationship</emphasis>, as the values of the explanatory variable increase, the values of the response tend to also increase, on average.</para>
-  <para id="para-00035">In a <emphasis effect="bold">negative linear relationship</emphasis>, as the values of the explanatory variable increase, the values of the response tend to decrease, on average.</para>
-  </note>
-  <para id="para-00036">Let’s look at some scatter plots and classify the depicted relationships.</para>
+  <para id="para-00033">Once we’ve established that there’s a relationship worth exploring, it’s time to start quantifying that relationship. Two data sets have a <term id="term-00006">positive linear relationship</term> if the values of the response tend to increase, on average, as the values of the explanatory variable increase. If the values of the response <emphasis effect="italics">decrease</emphasis> with increasing values of the explanatory variable, then there is a <term id="term-00007">negative linear relationship</term> between the two data sets. The strength of the relationship is determined by how closely the scatterplot follows a single straight line: the closer the points are to that line, the stronger the relationship. The scatterplots in Figures 8.82-8.88 depict varying strengths and directions of linear relationships.</para>
   <figure id="fig-00017">
   <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 210 to 290, in increments of 10. The points are arranged in linear decreasing order in a single row. Some of the points are as follows: (32, 288), (40, 280), (60, 260), (70, 250), (90, 230), and (100, 220). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_118.jpg"/>
   </media>
-  <caption>Classifying the strength and direction of linear relationships. Perfect negative relationship</caption>
+  <caption>Perfect negative relationship</caption>
   </figure>
   <figure id="fig-00006">
     <media alt="A scatter plot. The x-axis ranges from 30 to 110, in increments of 10. The y-axis ranges from 200 to 300, in increments of 20. The points are arranged in linear decreasing order in multiple rows. Some of the points are as follows: (32, 287), (40, 281), (60, 260), (70, 245), (90, 230), and (100, 225). Note: all values are approximate.">
@@ -299,40 +298,28 @@
           <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_122.jpg"/>
           </media>
           <caption>Weak positive relationship</caption>
-          </figure>
-          <figure id="fig-00020">
+        </figure>
+        <figure id="fig-00020">
             <media alt="A scatter plot. The x-axis ranges from 20 to 110, in increments of 10. The y-axis ranges from 300 to 500, in increments of 20. The points are scattered in linear increasing order in a single row. Some of the points are as follows: (27, 345), (40, 360), (60, 380), (70, 390), (80, 400), and (100, 420). Note: all values are approximate.">
             <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_123.jpg"/>
             </media>
             <caption>Strong positive relationship</caption>
-            </figure>
-            <figure id="fig-00021">
+        </figure>
+        <figure id="fig-00021">
               <media alt="A scatter plot.">
               <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_124.jpg"/>
               </media>
               <caption>Perfect positive relationship</caption>
               </figure>
-                                           <para id="para-00037">The strength and direction (positive or negative) of a linear relationship can also be measured with a statistic called the <term id="term-00008">correlation coefficient</term> (denoted <emphasis effect="italics">r</emphasis>). Positive values of <emphasis effect="italics">r</emphasis> indicate a positive relationship, while negative values of <emphasis effect="italics">r</emphasis> indicate a negative relationship. Values of <emphasis effect="italics">r</emphasis> close to 0 indicate a weak relationship, while values close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math> correspond to a very strong relationship.</para>
-  <note class="definition" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00038">The <emphasis effect="bold">correlation coefficient</emphasis> (denoted <emphasis effect="italics">r</emphasis>) is a number between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math> that quantifies the strength and direction of the linear relationship between two data sets.</para>
-  </note>
-  <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">Looking back at Figure 9.5, the correlation coefficients for those relationships are:</para>
-  <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
-  <item>-1</item>
-  <item>-0.97</item>
-  <item>-0.55</item>
-  <item>-0.03</item>
-  <item>0.61</item>
-  <item>0.97</item>
-  <item>1</item>
-  </list>
-  <para id="para-00040">There’s no firm rule that establishes a cutoff value of <emphasis effect="italics">r</emphasis> to divide strong relationships from weak ones, but <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>0.7</mn></mrow></math> is often given as the dividing line (i.e., if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>></mo><mn>0.7</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mo>-</mo><mn>0.7</mn></mrow></math> the relationship is strong, and if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>0.7</mn><mo>&lt;</mo><mi>r</mi><mo>&lt;</mo><mn>0.7</mn></mrow></math> the relationship is weak). The formula for computing <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is very complicated; it’s almost never done by hand. Google Sheets will do the computation for you using the CORREL function. The syntax works like this: if your explanatory values are in cells A2 to A50 and the corresponding response values are in B2 to B50, then you can find the correlation coefficient by entering “=CORREL(A2:A50, B2:B50)”. (Note that the order doesn’t matter for correlation coefficients; “=CORREL(B2:B50, A2:A50)” will give the same result.)</para>
+    <para id="para-00037">The strength and direction (positive or negative) of a linear relationship can also be measured with a statistic called the <term id="term-00008">correlation coefficient</term> (denoted <emphasis effect="italics">r</emphasis>). Positive values of <emphasis effect="italics">r</emphasis> indicate a positive relationship, while negative values of <emphasis effect="italics">r</emphasis> indicate a negative relationship. Values of <emphasis effect="italics">r</emphasis> close to 0 indicate a weak relationship, while values close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>1</mn></mrow></math> correspond to a very strong relationship. Looking again at Figures 8.82-8.88, the correlation coefficients for each, in sequential order, are: ‒1, ‒0.97, ‒0.55, ‒0.03, 0.61, 0.97, and 1.</para>
+  <para id="para-00040" xmlns="http://cnx.rice.edu/cnxml">There’s no firm rule that establishes a cutoff value of <emphasis effect="italics">r</emphasis> to divide strong relationships from weak ones, but <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>±</mo><mn>0.7</mn></mrow></math> is often given as the dividing line (i.e., if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>></mo><mn>0.7</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>&lt;</mo><mo>-</mo><mn>0.7</mn></mrow></math> the relationship is strong, and if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>0.7</mn><mo>&lt;</mo><mi>r</mi><mo>&lt;</mo><mn>0.7</mn></mrow></math> the relationship is weak).</para>
+  <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">The formula for computing <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is very complicated; it’s almost never done by hand. Google Sheets will do the computation for you using the CORREL function. The syntax works like this: if your explanatory values are in cells A2 to A50 and the corresponding response values are in B2 to B50, then you can find the correlation coefficient by entering “=CORREL(A2:A50, B2:B50)”. (Note that the order doesn’t matter for correlation coefficients; “=CORREL(B2:B50, A2:A50)” will give the same result.)</para>
   <para id="para-00041">Let’s put all of this together in an example.</para>
   <example id="exam-00004">
   <title>Interpreting Scatter Plots</title>
   <exercise id="exer-00007">
   <problem id="prob-00007">
-  <para id="para-00042">Consider these four scatter plots:</para>
+  <para id="para-00042">Consider the four scatter plots below:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00007">
   <item>
   <figure id="fig-00024">
@@ -382,11 +369,11 @@
   </list></item>
   <item><list list-type="enumerated" number-style="lower-alpha" id="list-00015">
   <item>No, there’s no curved pattern.</item>
-  <item>Since the points tend upward as we move from left to right, this is a positive relationship. The points seem pretty closely grouped around a line, so it’s fairly strong. Comparing this scatterplot to those in Figure 8.5, we can see that the relationship is stronger than the one in 8.5e (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.61</mn></mrow></math> ) but not as strong as the one in 8.5f (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.97</mn></mrow></math>). So, the value of the correlation coefficient is somewhere between the two.; We might guess that<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.9</mn></mrow></math>.</item>
+  <item>Since the points tend upward as we move from left to right, this is a positive relationship. The points seem pretty closely grouped around a line, so it’s fairly strong. Comparing this scatterplot to those in <link target-id="fig-00017" document="m00009">Figures 8.81</link>-<link target-id="fig-00021" document="m00009">8.87</link>, we can see that the relationship is stronger than the one in <link target-id="fig-00019" document="m00009">8.85</link> (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.61</mn></mrow></math> ) but not as strong as the one in <link target-id="fig-00020" document="m00009" xmlns="http://cnx.rice.edu/cnxml">8.86</link> (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.97</mn></mrow></math>). So, the value of the correlation coefficient is somewhere between the two.; We might guess that<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.9</mn></mrow></math>.</item>
   </list></item>
   <item xmlns="http://cnx.rice.edu/cnxml"><list list-type="enumerated" number-style="lower-alpha" id="list-00017">
   <item>No, there’s no curved pattern.</item>
-  <item>Since the points tend downward as we move from left to right, this is a negative relationship. The points are not tightly grouped around a line, but the pattern is clear. It looks like it has approximately the same strength as the plot in Figure 9.5e, just with the opposite sign. So, we might guess that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.6</mn></mrow></math>.</item>
+  <item>Since the points tend downward as we move from left to right, this is a negative relationship. The points are not tightly grouped around a line, but the pattern is clear. It looks like it has approximately the same strength as the plot in <link target-id="fig-00019" document="m00009">Figure 8.85</link>, just with the opposite sign. So, we might guess that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.6</mn></mrow></math>.</item>
   </list></item>
   <item xmlns="http://cnx.rice.edu/cnxml"><list list-type="enumerated" number-style="lower-alpha" id="list-00004">
   <item>No, there’s no curved pattern.</item>
@@ -407,15 +394,13 @@
   <title>Finding the Correlation Coefficient</title>
   <exercise id="exer-00009">
   <problem id="prob-00009">
-  <para id="para-00045">The data that were plotted in the previous example can be found in the data set “correlationcoefficient1”. All of them share the same values for the explanatory variable <emphasis effect="italics">x</emphasis>. The four responses are labeled <emphasis effect="italics">y1</emphasis> through <emphasis effect="italics">y4</emphasis>. Compute the correlation coefficients for each, if appropriate, using Google Sheets. Round to the nearest hundredth.</para>
+  <para id="para-00045">The data that were plotted in the previous example can be found in the data set <link>“correlationcoefficient1”</link>. All of them share the same values for the explanatory variable <emphasis effect="italics">x</emphasis>. The four responses are labeled <emphasis effect="italics">y1</emphasis> through <emphasis effect="italics">y4</emphasis>. Compute the correlation coefficients for each, if appropriate, using Google Sheets. Round to the nearest hundredth.</para>
   </problem>
   <solution id="sol-00009">
-  <list list-type="enumerated" number-style="arabic" id="list-00031">
-  <item>There is a curved pattern in the data, so the correlation coefficient isn’t meaningful.</item>
-  <item>Using “=CORREL(A2:A101, C2:C101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.89</mn></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Using “=CORREL(A2:A101, D2:D101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.66</mn></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Using “=CORREL(A2:A101, E2:E101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.04</mn></mrow></math>.</item>
-  </list>
+  <para id="para-00039"><emphasis effect="bold">Step 1:</emphasis> There is a curved pattern in the data, so the correlation coefficient isn’t meaningful.</para>
+  <para id="para-00049"><emphasis effect="bold">Step 2:</emphasis> Using “=CORREL(A2:A101, C2:C101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>0.89</mn></mrow></math>.</para>
+  <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Using “=CORREL(A2:A101, D2:D101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.66</mn></mrow></math>.</para>
+  <para id="para-00081" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Using “=CORREL(A2:A101, E2:E101)” we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.04</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
@@ -427,16 +412,13 @@
   </exercise>
   </note>
   <note class="work-out" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00047">Billy Beane, the former general manager of the Oakland A’s baseball team, famously took his low budget team to unprecedented heights by using statistics to identify undervalued players; his story is recounted in the book <emphasis effect="italics">Moneyball</emphasis> (which was later made into a movie, with Brad Pitt playing Beane). You can do the same thing: Take a look at team statistics in the sport of your choice (<link url="https://openstax.org/r/sports-reference">https://openstax.org/r/sports-reference</link> is a great starting point) and try to identify a statistic that’s most closely related to winning (meaning that it has the highest correlation coefficient with team wins).</para>
+  <para id="para-00047">Billy Beane, the former general manager of the Oakland A’s baseball team, famously took his low budget team to unprecedented heights by using statistics to identify undervalued players; his story is recounted in the book <emphasis effect="italics">Moneyball</emphasis> (which was later made into a movie, with Brad Pitt playing Beane). You can do the same thing: Take a look <link url="https://openstax.org/r/sports-reference">at team statistics in the sport of your choice</link> and try to identify a statistic that’s most closely related to winning (meaning that it has the highest correlation coefficient with team wins).</para>
   </note>
   </section>
   </section>
   <section id="sect-00005">
   <title>Linear Regression</title>
   <para id="para-00048">The final step in our analysis of the relationship between two data sets is to find and use the equation of the regression line. For a given set of explanatory and response data, the <term id="term-00009">regression line</term> (also called the <emphasis effect="bold">least-squares line</emphasis> or <term id="term-00010">line of best fit</term>) is the line that does the best job of approximating the data.</para>
-  <note class="definition" id="note-00013">
-  <para id="para-00049">For a given set of explanatory and response data, the <emphasis effect="bold">regression line</emphasis> (also called the <emphasis effect="bold">least-squares line</emphasis> or <emphasis effect="bold">line of best fit</emphasis>) is the line that does the best job of approximating the data.</para>
-  </note>
   <para id="para-00050">What does it mean to say that a particular line does the “best job” of approximating the data? The way that statisticians characterize this “best line” is rather technical, but we’ll include it for the sake of satisfying your curiosity (and backing up the claim of "best"). Imagine drawing a line that looks like it does a pretty good job of approximating the data. Most of the points in the scatter plot will probably not fall exactly on the line; the distance above or below the line a given point falls is called that point’s <emphasis effect="italics">residual</emphasis>. We could compute the residuals for every point in the scatter plot. If you take all those residuals and square them, then add the results together, you get a statistic called the <emphasis effect="italics">sum of squared errors</emphasis> for the line (the name tells you what it is: “sum” because we’re adding, “squared” because we’re squaring, and “errors” is another word for “residuals”). The line that we choose to be the “best” is the one that has the smallest possible sum of squared errors. The implied minimization (“smallest”) is where the “least” in “least squares” comes from; the “squares” comes from the fact that we’re minimizing the sum of <emphasis effect="italics">squared</emphasis> errors. Here ends the super technical part.</para>
   <section id="sect-00006">
   <title>Finding the Equation of the Regression Line</title>
@@ -458,12 +440,11 @@
   <para id="para-00058">Suppose you have data sets <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> with the following statistics: <emphasis effect="italics">x</emphasis> has mean 21 and standard deviation 4, <emphasis effect="italics">y</emphasis> has mean 8 and standard deviation 2, and their correlation coefficient is -0.4. What’s the equation of the regression line?</para>
   </problem>
   <solution id="sol-00011">
-  <para id="para-00059">We’re given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mn>21</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo>=</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.4</mn></mrow></math>. Let's start with the formula for the equation of the regression line:
+  <para id="para-00059"><emphasis effect="bold">Step 1:</emphasis> We’re given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mn>21</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>x</mi></msub><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo>=</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mo>-</mo><mn>0.4</mn></mrow></math>. Let's start with the formula for the equation of the regression line:
       <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>s</mi><mi>y</mi></msub></mrow><mrow><msub><mi>s</mi><mi>x</mi></msub></mrow></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>y</mi><mo>¯</mo></mover></mrow></math></equation></para>
-  <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">Plugging in our values gives us:
+  <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Plugging in our values gives us:
       <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.4</mn><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo>-</mo><mn>21</mn><mo stretchy="false">)</mo><mo>+</mo><mn>8</mn></mrow></math></equation></para>
-  <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">We can rearrange the equation as follows:</para>
-  <para id="para-00062">Our final regression line equation is:
+  <para id="para-00062" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Our final regression line equation is:
       <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.2</mn><mi>x</mi><mo>+</mo><mn>12.2</mn></mrow></math></equation></para>
   </solution>
   </exercise>
@@ -484,7 +465,7 @@
   <title>Finding the Equation of the Regression Line Using Google Sheets</title>
   <exercise id="exer-00013">
   <problem id="prob-00013">
-  <para id="para-00068">In a previous example, we considered the relationship between goals scored (GF) and goals against (GA) using the data set “NHL19”. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
+  <para id="para-00068">In <link target-id="exam-00003" document="m00009">Example 8.46</link>, we considered the relationship between goals scored (GF) and goals against (GA) using the data set <link>“NHL19”</link>. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
   </problem>
   <solution id="sol-00013">
   <para id="para-00069">Once we have recreated the scatter plot, we find the equation of the regression line by clicking the three dots at the top right of the plot, selecting “Edit chart,” then clicking on “Customize” and “Series.” We add the regression line by checking the box next to “Trendline,” and then we show the equation by selecting “Use Equation” in the drop-down menu under “Label.” The equation of the tangent line is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.0554</mn><mi>x</mi><mo>+</mo><mn>261</mn></mrow></math>.</para>
@@ -502,7 +483,7 @@
   <section id="sect-00007" xmlns="http://cnx.rice.edu/cnxml">
   <title>Using the Equation of the Regression Line</title>
   <para id="para-00072">Once we’ve found the equation of the regression line, what do we do with it? We’ll look at two possible applications: making predictions and interpreting the slope.</para>
-  <para id="para-00073">We can use the equation of the regression line to predict the response value for a given explanatory value. All we have to do is plug that explanatory value into the formula and see what response value results. This is useful in two ways: first, it can be used to make a guess about an unknown data value (like one that hasn’t been observed yet). Second, it can be used to evaluate performance. In a previous example, we created a scatter plot of final exam scores vs. midterm exam scores. Here are the data we used:</para>
+  <para id="para-00073">We can use the equation of the regression line to predict the response value for a given explanatory value. All we have to do is plug that explanatory value into the formula and see what response value results. This is useful in two ways: first, it can be used to make a guess about an unknown data value (like one that hasn’t been observed yet). Second, it can be used to evaluate performance. In <link target-id="exam-00002" document="m00009">Example 8.45</link>, we created a scatter plot of final exam scores vs. midterm exam scores using this data:</para>
   <table class="unnumbered" summary="." id="table-00004">
   <tgroup cols="3">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -544,13 +525,13 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00074">The equation of the regression line is <emphasis effect="italics">y</emphasis> = 0.687 <emphasis effect="italics">x</emphasis> + 27.4, where <emphasis effect="italics">y</emphasis> is the final exam score and <emphasis effect="italics">x</emphasis> is the midterm exam score. If Frank scored 85 on the midterm, then our prediction for his final exam score is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mn>85</mn><mo>+</mo><mn>27.4</mn><mo>=</mo><mn>85.795</mn></mrow></math>. To use the regression line to evaluate performance, we use a data value we’ve already observed. For example, Allison scored 88 on the midterm. The regression line predicts that someone who scores an 88 on the midterm will get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mn>88</mn><mo>+</mo><mn>27.4</mn><mo>=</mo><mn>87.856</mn></mrow></math>on the final. Allison actually scored 84 on the final, meaning she underperformed expectations by almost 4 points (87.856 – 84).</para>
+  <para id="para-00074">The equation of the regression line is <emphasis effect="italics">y</emphasis> = 0.687 <emphasis effect="italics">x</emphasis> + 27.4, where <emphasis effect="italics">y</emphasis> is the final exam score and <emphasis effect="italics">x</emphasis> is the midterm exam score. If Frank scored 85 on the midterm, then our prediction for his final exam score is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mn>85</mn><mo>+</mo><mn>27.4</mn><mo>=</mo><mn>85.795</mn></mrow></math>. To use the regression line to evaluate performance, we use a data value we’ve already observed. For example, Allison scored 88 on the midterm. The regression line predicts that someone who scores an 88 on the midterm will get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mn>88</mn><mo>+</mo><mn>27.4</mn><mo>=</mo><mn>87.856</mn></mrow></math> on the final. Allison actually scored 84 on the final, meaning she underperformed expectations by almost 4 points (87.856 – 84).</para>
   <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml">The second application of the equation of the regression line is interpreting the slope of the line to describe the relationship between the explanatory and response data sets. For the exam data in the previous paragraph, the slope of the regression line is 0.687. Recall that the slope of a line can be computed by finding two points on the line and dividing the difference in the <emphasis effect="italics">y</emphasis>-values of those points by the difference in the <emphasis effect="italics">x</emphasis> values. Keeping that in mind, we can interpretour slope as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>=</mo><mfrac><mrow><mtext>difference in final scores</mtext></mrow><mrow><mtext>difference in midterm scores</mtext></mrow></mfrac></mrow></math> . Multiplying both sides of that equation by the denominator of the fraction, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.687</mn><mo>×</mo><mtext>difference in midterm scores</mtext><mo>=</mo><mtext>difference in final scores</mtext></mrow></math>. Thus, a one-point increase in the midterm score would result in a predicted increase in the final score of 0.687 points. A ten-point drop in the midterm score would give us a decrease in the predicted final score of 6.87 points. In general, the slope gives us the predicted change in the response that corresponds to a one unit increase in the explanatory variable.</para>
   <example id="exam-00008" xmlns="http://cnx.rice.edu/cnxml">
   <title>Applying the Equation of the Regression Line</title>
   <exercise id="exer-00015">
   <problem id="prob-00015">
-  <para id="para-00076">The data in “MLB2019Off” gives offensive team stats for the 2019 Major League Baseball season (data from <link url="https://openstax.org/r/baseball-reference">https://openstax.org/r/baseball-reference</link>). Use that data set to answer these questions:</para>
+  <para id="para-00076">The data in <link>“MLB2019Off”</link> gives offensive team stats for the 2019 Major League Baseball season. Use that data set to answer the following questions:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00033">
   <item>What is the equation of the regression line for runs (R) vs. hits (H)?</item>
   <item>How many runs would we expect a team to score if the team got 1500 hits in a season?</item>
@@ -577,7 +558,7 @@
   </note>
   <note class="who-knew" id="note-00019">
   <title>MATH AND THE MOVIES</title>
-  <para id="para-00078">Statistics and regression are used by Hollywood movie producers to decide what movies to make, and to predict how much money they’ll earn at the box office. According to thisisstatistics.org (<link url="https://openstax.org/r/statisticians-for-movies">https://openstax.org/r/statisticians-for-movies</link>), not only do producers use statistics to identify the next potential blockbuster, but they’ve also pinned down how much money awards add to the bottom line. (An Academy Award is worth about $3 million!) In addition, studios use their streaming services to gather data about their customers and the types of movies they watch; this data helps them learn what kinds of entertainment their customers want more of.</para>
+  <para id="para-00078">Statistics and regression are used by Hollywood movie producers to decide what movies to make, and to predict how much money they’ll earn at the box office. According to <link url="https://openstax.org/r/American-Statistical-Association">the American Statistical Association</link>, not only do producers use statistics to identify the next potential blockbuster, but they’ve also pinned down how much money awards add to the bottom line. (An Academy Award is worth about $3 million!) In addition, studios use their streaming services to gather data about their customers and the types of movies they watch; this data helps them learn what kinds of entertainment their customers want more of.</para>
   </note>
   <note class="work-out" id="note-00020">
   <para id="para-00079">This section has demonstrated many pairs of related quantitative data sets. Think about some quantitative variables that you can ask your classmates about, which might be related. Once you have some ideas, collect the data from your classmates. Then analyze the data by creating a scatter plot, finding the equation of the regression line (if appropriate), and interpreting it.</para>
@@ -587,14 +568,11 @@
   <section id="sect-00008">
   <title>Extrapolation</title>
   <para id="para-00080">A very common misuse of regression techniques involves <term id="term-00011">extrapolation</term>, which involves making a prediction about something that doesn't belong in the data set.</para>
-  <note class="definition" id="note-00021">
-  <para id="para-00081"><emphasis effect="bold">Extrapolation</emphasis> is the act of using a regression line to make a prediction about something that doesn’t belong in the original data set.</para>
-  </note>
   <example id="exam-00009">
   <title>More Applying the Equation of the Regression Line</title>
   <exercise id="exer-00017">
   <problem id="prob-00017">
-  <para id="para-00082">The data in “WNBA2019” gives team statistics from the 2019 WNBA season (data from basketball-reference.com).  Use that data set to answer these questions about team wins (W) and the proportion of team field goals made (FG%, the number of shots made divided by the number of shots attempted.  Even though this column is labeled using a percent sign, the values are not expressed as percentages):</para>
+  <para id="para-00082">The data in <link>“WNBA2019”</link> gives team statistics from the 2019 WNBA season.  Use that data set to answer these questions about team wins (W) and the proportion of team field goals made (FG%, the number of shots made divided by the number of shots attempted.  Even though this column is labeled using a percent sign, the values are not expressed as percentages):</para>
   <list list-type="enumerated" number-style="arabic" id="list-00037">
     <item>What is the equation of the regression line for wins vs. proportion of made field goals?</item>
     <item>How many wins would we expect for a team that makes 42% of its shots?</item>
@@ -607,7 +585,10 @@
     <item>Using Google Sheets, we get the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>178.097</mn><mi>x</mi><mo>-</mo><mn>58.543</mn></mrow></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> is the proportion of field goals made and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> is the number of wins.</item>
     <item xmlns="http://cnx.rice.edu/cnxml">Since 42% corresponds to a proportion of 0.42, we’ll plug 0.42 into the regression equation for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>, which gives us <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.42</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>16.26</mn></mrow></math>.  We would predict that a team that makes 42% of its shots would win about 16 games.</item>
     <item xmlns="http://cnx.rice.edu/cnxml">The New York Liberty made 41.4% of their shots, so we expect they would have <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>178.097</mn><mo>×</mo><mn>0.414</mn><mo>-</mo><mn>58.543</mn><mo>˜</mo><mn>15.19</mn></mrow></math>wins.  In fact, they had only 10 wins, so they underperformed expectations by over 5 wins.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The slope gives us the expected increase in the response that corresponds to a one unit increase in the explanatory variable.  If we simply go with that interpretation, we would get a sentence like “We expect an increase in proportion of field goals made of 1 would result in an additional 178 wins.”  That sentence doesn’t make much sense for a couple of reasons; first, since proportions must be between 0 and 1, the proportion of made field goals can’t be increased by 1 and still make sense.  Second, the total number of games played is only 34, so no team could get an additional 178 wins!  So, we’ll have to change the units.  Since the proportions of made field goals are often expressed as a percentage, we could try to use that.  If we express the slope as a fraction with 1 in the denominator (remember, the denominator represents the proportion of field goals made), then convert the denominator to a percentage and simplify, we get <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mn>1</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mrow><mn>100</mn><mi>%</mi></mrow></mfrac></mstyle><mo>˜</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1.78</mn></mrow><mrow><mn>1</mn><mi>%</mi></mrow></mfrac></mstyle></mrow></math>.  So, an increase in field goal percentage of 1% would result in an expected increase of 1.78 wins.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1: </emphasis> The slope gives us the expected increase in the response that corresponds to a one unit increase in the explanatory variable.  If we simply go with that interpretation, we would get a sentence like “We expect an increase in proportion of field goals made of 1 would result in an additional 178 wins.”  However, that sentence doesn't make much sense. Let's consider why.<newline/>
+    <emphasis effect="bold">Step 2:</emphasis> First, proportions must be between 0 and 1, the proportion of made field goals can’t be increased by 1 and still make sense.  Second, the total number of games played is only 34, so no team could get an additional 178 wins!  So, we’ll have to change the units.<newline/>
+    <emphasis effect="bold">Step 3:</emphasis> Since the proportions of made field goals are often expressed as a percentage, we could try to use that.  If we express the slope as a fraction with 1 in the denominator (remember, the denominator represents the proportion of field goals made), then convert the denominator to a percentage and simplify, we get <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mn>1</mn></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mn>178.097</mn></mrow><mrow><mn>100</mn><mi>%</mi></mrow></mfrac></mstyle><mo>˜</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1.78</mn></mrow><mrow><mn>1</mn><mi>%</mi></mrow></mfrac></mstyle></mrow></math>.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <emphasis effect="bold">Step 4:</emphasis> So, an increase in field goal percentage of 1% would result in an expected increase of 1.78 wins.</item>
   </list>
   </solution>
   </exercise>
@@ -622,14 +603,14 @@
   </section>
   <section id="sect-00009">
   <title>Correlation Does Not Imply Causation</title>
-  <para id="para-00085">One of the most common fallacies about statistics has to do with the relationship between two data sets. In the data set “Public” (data from data.ed.gov), we find that the correlation coefficient between the 75<sup>th</sup> percentile math SAT score and the 75<sup>th</sup> percentile verbal SAT score is 0.92, which is really strong. The slope of the regression line that predicts the verbal score from the math score is 0.729, which we might interpret as follows: “If the 75<sup>th</sup> percentile math SAT score goes up by 10 points, we’d expect the corresponding verbal SAT score to go up by just over 7 points.” Does the increasing math score <emphasis effect="italics">cause</emphasis> the increase in the verbal score? Probably not… What’s really going on is that there’s a third variable that’s affecting them both: to raise the SAT math score by 10 points, a school will recruit students who do better on the SAT in general; these students will also naturally have higher SAT verbal scores. This third variable is sometimes called a <emphasis effect="italics">lurking variable</emphasis> or a <emphasis effect="italics">confounding variable</emphasis>. Unless all possible lurking variables are ruled out, we cannot conclude that one thing causes another.</para>
+  <para id="para-00085">One of the most common fallacies about statistics has to do with the relationship between two data sets. In the data set <link>“Public”</link>, we find that the correlation coefficient between the 75<sup>th</sup> percentile math SAT score and the 75<sup>th</sup> percentile verbal SAT score is 0.92, which is really strong. The slope of the regression line that predicts the verbal score from the math score is 0.729, which we might interpret as follows: “If the 75<sup>th</sup> percentile math SAT score goes up by 10 points, we’d expect the corresponding verbal SAT score to go up by just over 7 points.” Does the increasing math score <emphasis effect="italics">cause</emphasis> the increase in the verbal score? Probably not. What’s really going on is that there’s a third variable that’s affecting them both: to raise the SAT math score by 10 points, a school will recruit students who do better on the SAT in general; these students will also naturally have higher SAT verbal scores. This third variable is sometimes called a <emphasis effect="italics">lurking variable</emphasis> or a <emphasis effect="italics">confounding variable</emphasis>. Unless all possible lurking variables are ruled out, we cannot conclude that one thing causes another.</para>
   <note class="people-mathematics" id="note-00023">
   <title>Francis Galton, Karl Pearson, and Ronald Fisher</title>
   <figure id="fig-00032">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_08_011.jpg"/>
   </media>
-  <caption>(a) Francis Galton (b) Karl Pearson, (c) Ronald Fisher. (Photo Credit: (a, b, c) Wikimedia Commons)</caption>
+  <caption>Francis Galton (a), Karl Pearson (b), and Ronald Fisher (c) are important historical figures. (credit a: "Sir Francis Galton" by Octavius Oakley/National Portrait Gallery, London, CC BY-NC-ND 3.0; credit b: modification of work by Karl Pearson/National Portrait Gallery, London, CC BY-NC-ND 3.0; credit c: modification of "Sir Ronald Aylmer Fisher" by Walter Stoneman/National Portrait Gallery, London/CC BY-NC-ND 3.0)</caption>
   </figure>
   <para id="para-00087">Francis Galton, Karl Pearson, and Ronald Fisher are among the founders of the field of statistics, but they also had discriminatory views, and some of their work had very negative outcomes. Galton (1822 – 1911) came up with the formula for the standard deviation, and he devised a machine (called the <emphasis effect="italics">quincunx</emphasis> or <emphasis effect="italics">bean machine</emphasis>) that verified the connection we noted earlier between the coin flipping experiment and the normal distribution. He also was a pioneer in linear regression.</para>
   <para id="para-00088">Pearson (1857 – 1936) expanded on Galton’s work with regression, deriving the formula for the correlation coefficient that is used today. (In fact, it’s often called the Pearson correlation.) He popularized (and, according to some sources, invented) the histogram as a visualization tool. He is also remembered for his development of the theory of hypothesis testing, one of the most important tools in scientific data analysis.</para>
@@ -644,9 +625,8 @@
   </note>
   <note class="who-knew" id="note-00024">
   <title>Using Data For Good</title>
-  <para id="para-00097">Statistics can also be used for good. Dr. Talithia Williams talks about using data and statistics to make informed health decisions in her TED talk, found here:</para>
-  <para id="para-00098">VIDEO: <link url="https://openstax.org/r/TED-Talk_talithia_williams">Dr. Talithia Williams’ TED Talk</link></para>
-  <para id="para-00099">She also talks about how she uses her statistical skills for the greater good of mankind in her interview with thisisstatistics.org, found here: <link url="https://openstax.org/r/collecting-data-affect-change-interview-statisticiantalithia-williams">https://openstax.org/r/collecting-data-affect-change-interview-statisticiantalithia-williams</link></para>
+  <para id="para-00097">Statistics can also be used for good. Dr. Talithia Williams talks about using data and statistics to make informed health decisions in her <link url="https://openstax.org/r/TED-Talk_talithia_williams">TED talk</link>.</para>
+  <para id="para-00099">She also talks about how she uses her statistical skills for the greater good of mankind in <link url="https://openstax.org/r/collecting-data-affect-change-interview-statisticiantalithia-williams">her interview</link> with the American Statistical Association.</para>
   </note>
   </section>
   <section id="sect-00010" class="check-understanding">
