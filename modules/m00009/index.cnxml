@@ -10,6 +10,7 @@
   <media alt="A scatter plot. The x-axis ranges from 20 to 120, in increments of 20. The y-axis ranges from 0 to 160, in increments of 40. The points are scattered along a line from 40 to 110 on the horizontal axis and 20 to 120 on the vertical axis. The line represents the best line of fit and it passes through the following points: (20, 20), (40, 40), (60, 60), (80, 80), (100, 100), and (120, 122). Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_08_102.jpg"/>
   </media>
+  <caption>A scatter plot is a visualization of the relationship between quantitative data sets.</caption>
   </figure>
   <section class="learning-objectives" id="sect-00001">
   <title>Learning Objectives</title>
@@ -22,15 +23,14 @@
   <item>Estimate and interpret regression lines.</item>
   </list>
   </section>
-  <para id="para-00002">One of the most powerful tools statistics gives us is the ability to explore relationships between two data sets containing quantitative values, and then use that relationship to make predictions. For example, a student may want to know how well she can expect to score on an upcoming final exam. She has access to data on previous students in this class, including both midterm and final exam scores. It seems reasonable to expect that there is a relationship between those two data sets: if a student did well on the midterm, they were probably more likely to do well on the final than the average student. Similarly, if a student did poorly on the midterm, they probably also did poorly on the final exam. Of course, that relationship isn’t set in stone; a student’s performance on a midterm exam doesn’t cement their performance on the final! A student might use a poor result on the midterm as motivation to study more for the final. A student with a really good grade on the midterm might be overconfident going into the final, and as a result doesn’t prepare adequately. The statistical method of <emphasis effect="italics">regression</emphasis> can find a formula that does the best job of predicting a score on the final exam based on the student’s score on the midterm, as well as give a measure of the confidence of that prediction! In this section, we’ll discover how to use regression to make these predictions. First, though, we need to lay some graphical groundwork.</para>
+  <para id="para-00002">One of the most powerful tools statistics gives us is the ability to explore relationships between two data sets containing quantitative values, and then use that relationship to make predictions. For example, a student who wants to know how well they can expect to score on an upcoming final exam may consider reviewing the data on midterm and final exam scores for students who have previously taken the class. It seems reasonable to expect that there is a relationship between those two data sets: if a student did well on the midterm, they were probably more likely to do well on the final than the average student. Similarly, if a student did poorly on the midterm, they probably also did poorly on the final exam.</para>
+  <para id="para-00005">Of course, that relationship isn’t set in stone; a student’s performance on a midterm exam doesn’t cement their performance on the final! A student might use a poor result on the midterm as motivation to study more for the final. A student with a really good grade on the midterm might be overconfident going into the final, and as a result doesn’t prepare adequately.</para>
+  <para id="para-00006">The statistical method of <emphasis effect="italics">regression</emphasis> can find a formula that does the best job of predicting a score on the final exam based on the student’s score on the midterm, as well as give a measure of the confidence of that prediction! In this section, we’ll discover how to use regression to make these predictions. First, though, we need to lay some graphical groundwork.</para>
   <section id="sect-00002">
   <title>Relationships Between Quantitative Data Sets</title>
-  <para id="para-00003">Before we can evaluate a relationship between two data sets, we must first decide if we feel that one might depend on the other. In our exam example, it is appropriate to say that the score on the final depends on the score on the midterm, rather than the other way around: if the midterm depended on the final, then we’d need to know the final score <emphasis effect="italics">first</emphasis>, which doesn’t make sense. Here’s another example: if we collected data on home purchases in a certain area, and noted down both the sale price of the house and the annual household income of the purchaser, we might expect a relationship between those two. Which depends on the other? In this case, sale price depends on income: people who have a higher income can afford a more expensive house. If it were the other way around, people could buy a new, more expensive house and then expect a raise! (This is very bad advice.)</para>
+  <para id="para-00003">Before we can evaluate a relationship between two data sets, we must first decide if we feel that one might depend on the other. In our exam example, it is appropriate to say that the score on the final depends on the score on the midterm, rather than the other way around: if the midterm depended on the final, then we’d need to know the final score <emphasis effect="italics">first</emphasis>, which doesn’t make sense.</para>
+  <para id="para-00011">Here’s another example: if we collected data on home purchases in a certain area, and noted down both the sale price of the house and the annual household income of the purchaser, we might expect a relationship between those two. Which depends on the other? In this case, sale price depends on income: people who have a higher income can afford a more expensive house. If it were the other way around, people could buy a new, more expensive house and then expect a raise! (This is very bad advice.)</para>
   <para id="para-00004">It's worth noting that not every pair of related data sets has clear dependence. For example, consider the percent of a country’s budget devoted to the military and the percent earmarked for public health. These data sets are generally related: as one goes up, the other goes down. However, in this case, there’s not a preferred choice for dependence, as each could be seen as depending on the other. When exploring the relationship between two data sets, if one set seems to depend on the other, we’ll say that data set contains values of the <term id="term-00001">response variable</term> (or <term id="term-00002">dependent variable</term>). The data set that the response variable depends on contains values of what we call the <term id="term-00003">explanatory variable</term> (or <term id="term-00004">independent variable</term>). If no dependence relationship can be identified, then we can assign either data set to either role.</para>
-  <note class="definition" id="note-00001">
-  <para id="para-00005">A data set that depends on another contains values of the <emphasis effect="bold">response variable</emphasis>, or <emphasis effect="bold">dependent variable</emphasis>.</para>
-  <para id="para-00006">A dataset that a response variable depends on contains values of the <emphasis effect="bold">explanatory variable</emphasis>, or <emphasis effect="bold">independent variable.</emphasis></para>
-  </note>
   <example id="exam-00001">
   <title>Identifying Explanatory and Response Variables</title>
   <exercise id="exer-00001">
@@ -62,9 +62,6 @@
   <section id="sect-00003">
   <title>Creating Scatter Plots</title>
   <para id="para-00010">A <term id="term-00005">scatter plot</term> is a visualization of the relationship between two quantitative sets of data. The scatter plot is created by turning the data sets into ordered pairs: the first coordinate contains data values from the explanatory data set, and the second coordinate contains the <emphasis effect="italics">corresponding</emphasis> data values from the response data set. These ordered pairs are then plotted in the <emphasis effect="italics">xy</emphasis>-plane. Let's return to our exam example to put this into practice.</para>
-  <note class="definition" id="note-00003">
-  <para id="para-00011">A <emphasis effect="bold">scatter plot</emphasis> visualizes the relationship between two quantitative sets of data by turning the data sets into ordered pairs, which are then plotted in the <emphasis effect="italics">xy</emphasis>-plane.</para>
-  </note>
   <example id="exam-00002">
   <title>Creating Scatter Plots by Hand</title>
   <exercise id="exer-00003">
@@ -114,7 +111,7 @@
   <para id="para-00013">Create a scatter plot to visualize the data.</para>
   </problem>
   <solution id="sol-00003">
-  <para id="para-00014">Since it makes more sense to think of the final exam score as being dependent on the midterm exam score, we’ll let the final grade be the response. So, let’s think of these two data sets as a set of ordered pairs, midterm first, final second</para>
+  <para id="para-00014"><emphasis effect="bold">Step 1:</emphasis> Since it makes more sense to think of the final exam score as being dependent on the midterm exam score, we’ll let the final grade be the response. So, let’s think of these two data sets as a set of ordered pairs, midterm first, final second</para>
   <table class="unnumbered" summary="." id="table-00002">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
