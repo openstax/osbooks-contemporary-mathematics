@@ -16,10 +16,10 @@
   <title>Learning Objectives</title>
   <para id="para-00001">After completing this section, you should be able to:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00001">
-  <item>Describe the characteristics of the normal distribution</item>
-  <item>Apply the 68-95-99.7 percent groups to normal distribution data sets</item>
-  <item>Use the normal distribution to calculate a <emphasis effect="italics">z</emphasis>-score</item>
-  <item>Find and interpret percentiles and quartiles</item>
+  <item>Describe the characteristics of the normal distribution.</item>
+  <item>Apply the 68-95-99.7 percent groups to normal distribution data sets.</item>
+  <item>Use the normal distribution to calculate a <emphasis effect="italics">z</emphasis>-score.</item>
+  <item>Find and interpret percentiles and quartiles.</item>
   </list>
 </section>
   <para id="para-00002">Many data sets that result from natural phenomena tend to have histograms that are symmetric and bell-shaped. Imagine finding yourself with a whole lot of time on your hands, and nothing to keep you entertained but a coin, a pencil, and paper. You decide to flip that coin 100 times and record the number of heads. With nothing else to do, you repeat the experiment ten times total. Using a computer to simulate this series of experiments, here’s a sample for the number of heads in each trial:</para>
@@ -33,7 +33,7 @@
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_064.jpg"/>
   </media>
   </figure>
-  <para id="para-00005">This is interesting, but the data seem pretty sparce. There were no trials where you saw between 43 and 47 heads, for example. Those results don’t seem impossible; we just didn’t flip enough times to give them a chance to pop up. So, let’s do this again, but this time well repeat our 100-flip experiment 100 times. I won’t bother showing you all 100 results, but here’s the histogram:
+  <para id="para-00005">This is interesting, but the data seem pretty sparse. There were no trials where you saw between 43 and 47 heads, for example. Those results don’t seem impossible; we just didn’t flip enough times to give them a chance to pop up. So, let’s do it again, but this time we'll perform 100 coin flips 100 times. Rather than review all 100 results, which could be overwhelming, let's instead visualize the resulting histogram.
   <figure id="fig-00003">
   <media alt="A histogram titled, results of 100 coin flips. The horizontal axis representing the number of heads ranges from 35 to 71, in increments of 1. The vertical axis representing frequency ranges from 0 to 15, in increments of 5. The histogram infers the following data. 35 to 36: 1. 37 to 38: 1. 39 to 40: 1. 40 to 41: 1. 41 to 42: 1. 42 to 43: 3. 43 to 44: 1. 44 to 45: 6. 45 to 46: 4. 46 to 47: 7. 47 to 48: 10. 48 to 49: 6. 49 to 50: 7. 50 to 51: 13. 51 to 52: 5. 52 to 53: 5. 53 to 54: 7. 54 to 55: 5. 55 to 56: 3. 56 to 57: 4. 57 to 58: 2. 58 to 59: 2. 59 to 60: 2. 61 to 62: 2. 62 to 63: 1. 70 to 71: 1. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_065.jpg"/>
