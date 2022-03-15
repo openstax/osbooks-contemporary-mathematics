@@ -220,8 +220,8 @@
   </tbody>
   </tgroup>
   </table>
-<para id="para-00029"><emphasis effect="bold">Step 5</emphasis>: Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
-<para id="para-00030" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6</emphasis>: Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
+<para id="para-00029"><emphasis effect="bold">Step 5:</emphasis> Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
+<para id="para-00030" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6:</emphasis> Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
 <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Thus, the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
 </solution>
 </exercise>
@@ -241,7 +241,7 @@
 <title>Finding the Standard Deviation with Google Sheets</title>
 <exercise id="exer-00007">
 <problem id="prob-00007">
-<para id="para-00036">The data in “AvgSAT” contains the average SAT score for students attending every institution of higher learning in the US for which data is available (data from data.ed.gov). What is the standard deviation of these average SAT scores?</para>
+<para id="para-00036">The data in <link>“AvgSAT”</link> contains the average SAT score for students attending every institution of higher learning in the US for which data is available. What is the standard deviation of these average SAT scores?</para>
 </problem>
 <solution id="sol-00007">
 <para id="para-00037">To find the standard deviation, we click in an empty cell in our spreadsheet and then type “=STDEV(”. Next, click on the letter at the top of the column containing our data; this will put a reference to that column into our formula. Then close the parentheses with and hit the enter key. The formula is replaced with the result: 125.517.</para>
