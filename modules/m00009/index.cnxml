@@ -188,7 +188,7 @@
   <title>Creating Scatter Plots in Google Sheets</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
-  <para id="para-00022">The data set <link>“NHL19”</link> gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA). Use Google Sheets to create a scatter plot for GF vs. GA.</para>
+  <para id="para-00022">The data set <link url="https://openstax.org/r/Chapter8_Data-Sets">“NHL19”</link> gives the results of the 2018-2019 National Hockey League season. The columns are team, wins (W), losses (L), overtime losses (OTL), total points (PTS), goals scored by the team (GF), goals scored against the team (GA), and goal differential (the difference in GF and GA). Use Google Sheets to create a scatter plot for GF vs. GA.</para>
   <note class="check-point" id="note-00006">
   <para id="para-00023">When we talk about plotting one set versus another, the first is the response and the second is explanatory.</para>
   </note>
@@ -394,7 +394,7 @@
   <title>Finding the Correlation Coefficient</title>
   <exercise id="exer-00009">
   <problem id="prob-00009">
-  <para id="para-00045">The data that were plotted in the previous example can be found in the data set <link>“correlationcoefficient1”</link>. All of them share the same values for the explanatory variable <emphasis effect="italics">x</emphasis>. The four responses are labeled <emphasis effect="italics">y1</emphasis> through <emphasis effect="italics">y4</emphasis>. Compute the correlation coefficients for each, if appropriate, using Google Sheets. Round to the nearest hundredth.</para>
+  <para id="para-00045">The data that were plotted in the previous example can be found in the data set <link url="https://openstax.org/r/Chapter8_Data-Sets">“correlationcoefficient1”</link>. All of them share the same values for the explanatory variable <emphasis effect="italics">x</emphasis>. The four responses are labeled <emphasis effect="italics">y1</emphasis> through <emphasis effect="italics">y4</emphasis>. Compute the correlation coefficients for each, if appropriate, using Google Sheets. Round to the nearest hundredth.</para>
   </problem>
   <solution id="sol-00009">
   <para id="para-00039"><emphasis effect="bold">Step 1:</emphasis> There is a curved pattern in the data, so the correlation coefficient isn’t meaningful.</para>
@@ -465,7 +465,7 @@
   <title>Finding the Equation of the Regression Line Using Google Sheets</title>
   <exercise id="exer-00013">
   <problem id="prob-00013">
-  <para id="para-00068">In <link target-id="exam-00003" document="m00009">Example 8.46</link>, we considered the relationship between goals scored (GF) and goals against (GA) using the data set <link>“NHL19”</link>. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
+  <para id="para-00068">In <link target-id="exam-00003" document="m00009">Example 8.46</link>, we considered the relationship between goals scored (GF) and goals against (GA) using the data set <link url="https://openstax.org/r/Chapter8_Data-Sets">“NHL19”</link>. Recreate the scatter plot in Google Sheets, and use it to find the equation of the regression line.</para>
   </problem>
   <solution id="sol-00013">
   <para id="para-00069">Once we have recreated the scatter plot, we find the equation of the regression line by clicking the three dots at the top right of the plot, selecting “Edit chart,” then clicking on “Customize” and “Series.” We add the regression line by checking the box next to “Trendline,” and then we show the equation by selecting “Use Equation” in the drop-down menu under “Label.” The equation of the tangent line is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>0.0554</mn><mi>x</mi><mo>+</mo><mn>261</mn></mrow></math>.</para>
@@ -531,7 +531,7 @@
   <title>Applying the Equation of the Regression Line</title>
   <exercise id="exer-00015">
   <problem id="prob-00015">
-  <para id="para-00076">The data in <link>“MLB2019Off”</link> gives offensive team stats for the 2019 Major League Baseball season. Use that data set to answer the following questions:</para>
+  <para id="para-00076">The data in <link url="https://openstax.org/r/Chapter8_Data-Sets">“MLB2019Off”</link> gives offensive team stats for the 2019 Major League Baseball season. Use that data set to answer the following questions:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00033">
   <item>What is the equation of the regression line for runs (R) vs. hits (H)?</item>
   <item>How many runs would we expect a team to score if the team got 1500 hits in a season?</item>
@@ -572,7 +572,7 @@
   <title>More Applying the Equation of the Regression Line</title>
   <exercise id="exer-00017">
   <problem id="prob-00017">
-  <para id="para-00082">The data in <link>“WNBA2019”</link> gives team statistics from the 2019 WNBA season.  Use that data set to answer these questions about team wins (W) and the proportion of team field goals made (FG%, the number of shots made divided by the number of shots attempted.  Even though this column is labeled using a percent sign, the values are not expressed as percentages):</para>
+  <para id="para-00082">The data in <link url="https://openstax.org/r/Chapter8_Data-Sets">“WNBA2019”</link> gives team statistics from the 2019 WNBA season.  Use that data set to answer these questions about team wins (W) and the proportion of team field goals made (FG%, the number of shots made divided by the number of shots attempted.  Even though this column is labeled using a percent sign, the values are not expressed as percentages):</para>
   <list list-type="enumerated" number-style="arabic" id="list-00037">
     <item>What is the equation of the regression line for wins vs. proportion of made field goals?</item>
     <item>How many wins would we expect for a team that makes 42% of its shots?</item>
@@ -603,7 +603,7 @@
   </section>
   <section id="sect-00009">
   <title>Correlation Does Not Imply Causation</title>
-  <para id="para-00085">One of the most common fallacies about statistics has to do with the relationship between two data sets. In the data set <link>“Public”</link>, we find that the correlation coefficient between the 75<sup>th</sup> percentile math SAT score and the 75<sup>th</sup> percentile verbal SAT score is 0.92, which is really strong. The slope of the regression line that predicts the verbal score from the math score is 0.729, which we might interpret as follows: “If the 75<sup>th</sup> percentile math SAT score goes up by 10 points, we’d expect the corresponding verbal SAT score to go up by just over 7 points.” Does the increasing math score <emphasis effect="italics">cause</emphasis> the increase in the verbal score? Probably not. What’s really going on is that there’s a third variable that’s affecting them both: to raise the SAT math score by 10 points, a school will recruit students who do better on the SAT in general; these students will also naturally have higher SAT verbal scores. This third variable is sometimes called a <emphasis effect="italics">lurking variable</emphasis> or a <emphasis effect="italics">confounding variable</emphasis>. Unless all possible lurking variables are ruled out, we cannot conclude that one thing causes another.</para>
+  <para id="para-00085">One of the most common fallacies about statistics has to do with the relationship between two data sets. In the data set <link url="https://openstax.org/r/Chapter8_Data-Sets">“Public”</link>, we find that the correlation coefficient between the 75<sup>th</sup> percentile math SAT score and the 75<sup>th</sup> percentile verbal SAT score is 0.92, which is really strong. The slope of the regression line that predicts the verbal score from the math score is 0.729, which we might interpret as follows: “If the 75<sup>th</sup> percentile math SAT score goes up by 10 points, we’d expect the corresponding verbal SAT score to go up by just over 7 points.” Does the increasing math score <emphasis effect="italics">cause</emphasis> the increase in the verbal score? Probably not. What’s really going on is that there’s a third variable that’s affecting them both: to raise the SAT math score by 10 points, a school will recruit students who do better on the SAT in general; these students will also naturally have higher SAT verbal scores. This third variable is sometimes called a <emphasis effect="italics">lurking variable</emphasis> or a <emphasis effect="italics">confounding variable</emphasis>. Unless all possible lurking variables are ruled out, we cannot conclude that one thing causes another.</para>
   <note class="people-mathematics" id="note-00023">
   <title>Francis Galton, Karl Pearson, and Ronald Fisher</title>
   <figure id="fig-00032">
