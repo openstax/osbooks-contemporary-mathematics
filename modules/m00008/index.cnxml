@@ -97,7 +97,7 @@
       <media alt="A histogram titled, average SAT scores at US institutions. The horizontal axis representing average SAT ranges from 750 to 1600, in increments of 50. The vertical axis representing frequency ranges from 0 to 300, in increments of 100. The histogram infers the following data. 750 to 800: 4. 800 to 850: 5. 850 to 900: 15. 900 to 950: 25. 950 to 1000: 85. 1000 to 1050: 170. 1050 to 1100: 230. 1100 to 1150: 275. 1150 to 1200: 230. 1200 to 1250: 110. 1250 to 1300: 70. 1300 to 1350: 50. 1350 to 1400: 40. 1400 to 1450: 40. 1450 to 1500: 20. 1500 to 1550: 25. 1550 to 1600: 5. Note: all values are approximate.">
       <image mime-type="image/jpg" src="../../media/CS_Figure_08_07_100.jpg"/>
       </media>
-      <caption><link url="https://openstax.org/r/data_ed_gov"/></caption>
+      <caption>(data source: https://data.ed.gov)</caption>
       </figure>
       </para>
       <para id="para-00015">This distribution is fairly symmetric (it’s just a little right-skewed) and bell-shaped, so we can use normal distribution techniques to analyze the data.</para>
@@ -110,7 +110,7 @@
       </problem>
       <solution id="sol-00005">
       <list list-type="enumerated" id="list-00011">
-      <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.174
+      <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.174.
       </item>
       <item>Using the STDEV function, we get that the standard deviation is 125.517.</item>
       <item>Entering “=NORM.DIST(1250, 1141, 125.517, TRUE)” into Google Sheets, we estimate that the University at Buffalo is at the 81<sup>st</sup> percentile.</item>
