@@ -360,7 +360,7 @@
   <media alt="A pie chart titled, 2020 model year cars available in the US. The circle graph infers the following data. SUV: 43.6 percentage; Sedan: 33.6 percentage; Sports: 10.0 percentage; Minivan: 5.5 percentage; Hatchback: 3.6 percentage; Wagon: 3.6 percentage.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_013.jpg"/>
   </media>
-  <caption><link url="https://openstax.org/r/consumerreports_cars"/></caption>
+  <caption>(data source: https://www.consumerreports.org/cars)</caption>
   </figure>
   <para id="para-00048">You can choose to use a legend to identify the categories, as well as label the slices with the relevant percentages.</para>
   </solution>
@@ -379,7 +379,7 @@
   <media alt="A portrait of Florence Nightingale.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_08_02_006.jpg"/>
   </media>
-  <caption>Florence Nightingale's significant contribution to the field of statistical graphics cannot be understated. (credit: "Florence Nightingale" by Library of Congress Prints and Photographs <link url="https://openstax.org/r/consumerreports_cars/r/public_domain">Division</link></caption>
+  <caption>Florence Nightingale's significant contribution to the field of statistical graphics cannot be understated. (credit: "Florence Nightingale" by Library of Congress Prints and Photographs Division/http://hdl.loc.gov/loc.pnp/pp.print, public domain)</caption>
   </figure>
   <para id="para-00052">Nightingale is also remembered for her contributions in statistics, especially in the ways we visualize data. She developed a version of the pie chart that is today known as a <emphasis effect="italic">polar area diagram</emphasis>, which she used to visualize the causes of death among the soldiers in the war, highlighting the number of preventable deaths the British Army suffered in that conflict.</para>
   <para id="para-00053">In 1859, the Royal Statistical Society honored her for her contributions to the discipline by electing her to join the organization. She was the first woman to be so honored. She was later named an honorary member of the American Statistical Association.</para>
@@ -633,18 +633,15 @@
       <colspec colnum="2" colname="c2" colwidth="1*"/>
       <colspec colnum="3" colname="c3" colwidth="1*"/>
       <colspec colnum="4" colname="c4" colwidth="1*"/>
-      <tfoot>
-      <row>
-      <entry namest="c1" nameend="c4">(source: <link url="www.basketball-reference.com">www.basketball-reference.com</link>)</entry>
-      </row>
-    </tfoot>
-      <tbody>
-      <row>
+    <thead>
+    <row>
       <entry>Team</entry>
       <entry>FT/G</entry>
       <entry>Team</entry>
       <entry>FT/G</entry>
       </row>
+    </thead>
+    <tbody>
       <row>
       <entry>Washington Mystics</entry>
       <entry>14.4</entry>
@@ -682,25 +679,22 @@
       <entry>13.5</entry>
       </row>
       </tbody>
-      </tgroup>
+      </tgroup><caption>(source: <link url="www.basketball-reference.com">www.basketball-reference.com</link>)</caption>
       </table>
   </problem>
   <solution id="sol-00013">
   <para id="para-00078"><emphasis effect="bold">Step 1:</emphasis> First, we must put the data in order:</para>
-  <table class="unnumbered" summary="." id="table-00010">
+  <table summary="." id="table-00010">
     <tgroup cols="2">
     <colspec colnum="1" colname="c1" colwidth="1*"/>
     <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <tfoot>
-    <row>
-    <entry namest="c1" nameend="c2">(source: <link url="www.basketball-reference.com">www.basketball-reference.com</link>)</entry>
-    </row>
-    </tfoot>
-    <tbody>
+    <thead>
     <row>
     <entry>Team</entry>
     <entry>FT/G</entry>
     </row>
+    </thead>
+    <tbody>
     <row>
     <entry>Minnesota Lynx</entry>
     <entry>12.1</entry>
@@ -750,7 +744,7 @@
     <entry>16.7</entry>
     </row>
     </tbody>
-    </tgroup>
+    </tgroup><caption>(source: <link url="www.basketball-reference.com">www.basketball-reference.com</link>)</caption>
     </table>
 <para id="para-00079"><emphasis effect="bold">Step 2:</emphasis> Next, we need to decide which digit(s) will represent the stems and which will be the leaves. In this case, the data range from 12.1 to 16.7, so it makes sense to have stems 12, 13, 14, 15, and 16, with leaves being the tenths digit (the first after the decimal). Note that one data value, corresponding to the Connecticut Sun, has no tenths digit given. To make our plot, we’ll replace that 13 with 13.0. Now, we can place our stems:</para>
   <table class="unnumbered" frame="none" id="table-00021" summary=".">
@@ -806,7 +800,7 @@
   <media alt="A histogram titled, average SAT scores at US institutions. The horizontal axis representing average SAT ranges from 750 to 1600, in increments of 50. The vertical axis representing frequency ranges from 0 to 300, in increments of 100. The histogram infers the following data. 750 to 800: 4. 800 to 850: 5. 850 to 900: 15. 900to 950: 25. 950 to 1000: 85. 1000 to 1050: 170. 1050 to 1100: 230. 1100 to 1150: 275. 1150 to 1200: 275. 1200 to 1250: 110. 1250 to 1300: 70. 1300 to 1350: 50. 1350 to 1400: 40. 1400 to 1450: 40. 1450 to 1500: 20. 1500 to 1550: 20. 1550 to 1600: 5. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_02_020.jpg"/>
   </media>
-  <caption>(data source: <link url="https://openstax.org/r/data_ed_gov">https://data.ed.gov</link>)</caption>
+  <caption>(data source: https://data.ed.gov)</caption>
   </figure>
   <para id="para-00092">The data are fairly symmetric, but slightly right-skewed.</para>
   </solution>
@@ -832,18 +826,15 @@
       <colspec colnum="2" colname="c2" colwidth="1*"/>
       <colspec colnum="3" colname="c3" colwidth="1*"/>
       <colspec colnum="4" colname="c4" colwidth="1*"/>
-      <tfoot>
-      <row>
-      <entry namest="c1" nameend="c4">data.worldbank.org</entry>
-      </row>
-      </tfoot>
-      <tbody>
+    <thead>
       <row>
       <entry>Year</entry>
       <entry>GDP (in $ trillions)</entry>
       <entry>Year</entry>
       <entry>GDP (in $ trillions)</entry>
       </row>
+    </thead>
+    <tbody>
       <row><entry>2010</entry>
       <entry>14.992</entry>
       <entry>2015</entry>
@@ -870,7 +861,7 @@
       <entry>21.433</entry>
       </row>
       </tbody>
-      </tgroup>
+      </tgroup><caption>(source: https://data.worldbank.org)</caption>
       </table>
   <para id="para-00100">Construct a visualization of these data to explore the change in GDP over time.</para>
   </problem>
