@@ -23,7 +23,7 @@
 <para id="para-00002">Measures of centrality like the mean can give us only part of the picture that a data set paints. For example, let’s say you’ve just gotten the results of a standardized test back, and your score was 138. The mean score on the test is 120. So, your score is above average! But how good is it <emphasis effect="italic">really</emphasis>? If all the scores were between 100 and 140, then you know your score must be among the best. But if the scores ranged from 0 to 200, then maybe 140 is good, but not great (though still above average). Knowing information about how the data are spread out can help us put a particular data value in better context. In this section, we’ll look at two numbers that help us describe the spread in the data: the range and the standard deviation. These numbers are called measures of dispersion.</para>
 <section id="sect-00002">
 <title> The Range</title>
-<para id="para-00003">Our first measure of dispersion is the <emphasis effect="bold">range</emphasis>, or the difference between the maximum and minimum values in the set It’s the measure we used in the standardized test example above.</para>
+<para id="para-00003">Our first measure of dispersion is the <emphasis effect="bold">range</emphasis>, or the difference between the maximum and minimum values in the set. It’s the measure we used in the standardized test example above.</para>
 <para id="para-00005">Let’s look at a couple of examples.</para>
 <example id="exam-00001">
 <title>Finding the Range</title>
@@ -55,8 +55,8 @@
 <para id="para-00013">The data in <link url="https://openstax.org/r/Chapter8_Data-Sets">“AvgSAT”</link> contains the average SAT score for students attending every institution of higher learning in the US for which data is available. What is the range of these average SAT scores?</para>
 </problem>
 <solution id="sol-00003">
-<para id="para-00014"><emphasis effect="bold">Step 1:</emphasis> To find the maximum, click on an empty cell in the spreadsheet, type “=MAX(”, and then click on the letter that marks the top of the column containing the AvgSAT data. That inserts a reference to the column into our function. Then we close the parentheses and hit the enter key. The formula is replaced with the maximum value in our data: 1566.
-<emphasis effect="bold">Step 2:</emphasis> Using the same process (but with “MIN” instead of “MAX”), we find the minimum value is 785. 
+<para id="para-00014"><emphasis effect="bold">Step 1:</emphasis> To find the maximum, click on an empty cell in the spreadsheet, type “=MAX(”, and then click on the letter that marks the top of the column containing the AvgSAT data. That inserts a reference to the column into our function. Then we close the parentheses and hit the enter key. The formula is replaced with the maximum value in our data: 1566.<newline/>
+<emphasis effect="bold">Step 2:</emphasis> Using the same process (but with “MIN” instead of “MAX”), we find the minimum value is 785.<newline/>
 <emphasis effect="bold">Step 3:</emphasis> So, the range is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1566</mn><mo>-</mo><mn>785</mn><mo>=</mo><mn>781</mn></mrow></math>.</para>
 </solution>
 </exercise>
@@ -170,56 +170,7 @@
   </tbody>
   </tgroup>
   </table>
-<para id="para-00028"><emphasis effect="bold">Step 4:</emphasis> Add up those squares:</para>
-<table class="unnumbered" summary="." id="table-00003">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <colspec colnum="3" colname="c3" colwidth="1*"/>
-  <tbody>
-  <row>
-  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover></mrow></math></entry>
-  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mover accent="true"><mi>x</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math></entry>
-  </row>
-  <row xmlns="http://cnx.rice.edu/cnxml">
-  <entry>5</entry>
-  <entry>-10</entry>
-  <entry>100</entry>
-  </row>
-  <row>
-  <entry>20</entry>
-  <entry>5</entry>
-  <entry>25</entry>
-  </row>
-  <row>
-  <entry>8</entry>
-  <entry>-7</entry>
-  <entry>49</entry>
-  </row>
-  <row>
-  <entry>10</entry>
-  <entry>-5</entry>
-  <entry>25</entry>
-  </row>
-  <row>
-  <entry>35</entry>
-  <entry>20</entry>
-  <entry>400</entry>
-  </row>
-  <row>
-  <entry>12</entry>
-  <entry>-3</entry>
-  <entry>9</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>Sum:</entry>
-  <entry>608</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
+<para id="para-00028"><emphasis effect="bold">Step 4:</emphasis> Add up those squares: 100 + 25 + 49 + 25 + 400 + 9 = 608.</para>
 <para id="para-00029"><emphasis effect="bold">Step 5:</emphasis> Divide the sum by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>. Since we have 6 data values, that gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>608</mn></mrow><mrow><mn>6</mn><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>121.6</mn></mrow></math>.</para>
 <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6:</emphasis> Take the square root of the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mrow><mn>121.6</mn></mrow></msqrt><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
 <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Thus, the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>≈</mo><mn>11.027</mn></mrow></math>.</para>
