@@ -259,8 +259,7 @@
       <section id="sect-00003">
       <title>Construct Truth Tables to Analyze all Possible Outcomes</title>
       <para id="para-00023">A single logical statement <emphasis effect="italic">p</emphasis> has two possible true values, true or false. In truth tables, true values will be represented with a capital T and a false value will be represented with a capital F.  In computer science and some other fields, you may see a true value represented by the binary digit 1 and a false value represented as a 0.</para>
-      <table summary="." id="table-00004">
-      <title>Truth Table for a Single Logical Statement</title>
+      <table class="unnumbered" summary="." id="table-00004">
       <tgroup cols="1">
       <colspec colnum="1" colname="c1" colwidth="1*"/>
       <thead>
@@ -282,8 +281,7 @@
       </tgroup>
       </table>
       <para id="para-00024">In Section 1, you learned that the negation of a statement will always have the opposite truth value of the original statement, so that if a statement <emphasis effect="italic">p</emphasis> is false, then its negation ~<emphasis effect="italic">p</emphasis> is true, and if a statement <emphasis effect="italic">p</emphasis> is true, then its negation ~<emphasis effect="italic">p</emphasis> is false. To create a truth table for the negation of statement <emphasis effect="italic">p</emphasis>, add a column with a heading of ~<emphasis effect="italic">p</emphasis>, and for each row, input the truth value with the opposite value of the value listed in the column for <emphasis effect="italic">p</emphasis>, as depicted in the table.</para>
-      <table summary="." id="table-00005">
-      <title>Truth Table for the Negation of <emphasis effect="italic">p</emphasis></title>
+      <table class="unnumbered" summary="." id="table-00005">
       <tgroup cols="2">
       <colspec colnum="1" colname="c1" colwidth="1*"/>
       <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -308,11 +306,8 @@
       </tbody>
       </tgroup>
       </table>
-      <para id="para-00025">Conjunctions and disjunctions are compound statements formed by combining two logical statements with the connectives “and” and “or” respectively.  How does that change the number of possible outcomes and thus determine the number of rows in our truth table? Because each proposition <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> have two possible outcomes, true or false, the <term id="term-00003">multiplication principle</term> or <term id="term-00002">fundamental counting principle</term> for counting possible outcome states that there will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> possible outcomes, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mi mathvariant="normal">TT, TF, FT, FF</mi></mrow> <mo>}</mo></mrow><mo>.</mo></mrow></math></para>
-      <note class="definition" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00026">The <emphasis effect="bold">multiplication principle</emphasis> or <emphasis effect="bold">fundamental counting principle</emphasis> state that the number of ways you can select an item from a group of <emphasis effect="italic">n</emphasis> items and another item from a group with <emphasis effect="italic">m</emphasis> items is equal to the product of <emphasis effect="italic">m</emphasis> and <emphasis effect="italic">n</emphasis>.</para>
-      </note>
-      <para id="para-00027">The tree diagram and table  in <link target-id="fig-00002" document="m00019">Figure 2.X</link> demonstrate the four possible outcomes for two propositions <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis>.</para>
+      <para id="para-00025">Conjunctions and disjunctions are compound statements formed by combining two logical statements with the connectives “and” and “or” respectively.  How does that change the number of possible outcomes and thus determine the number of rows in our truth table? The <emphasis effect="bold">multiplication principle,</emphasis> also known as the <emphasis effect="italic">fundamental counting principle</emphasis>, states that the number of ways you can select an item from a group of <emphasis effect="italic">n</emphasis> items and another item from a group with <emphasis effect="italic">m</emphasis> items is equal to the product of <emphasis effect="italic">>m</emphasis> and <emphasis effect="italic">n</emphasis>. Because each proposition <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> have two possible outcomes, true or false, the multiplication principle states that there will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> possible outcomes, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo> <mrow><mi mathvariant="normal">TT, TF, FT, FF</mi></mrow> <mo>}</mo></mrow><mo>.</mo></mrow></math></para>
+      <para id="para-00027" xmlns="http://cnx.rice.edu/cnxml">The tree diagram and table  in <link target-id="fig-00002" document="m00019">Figure 2.X</link> demonstrate the four possible outcomes for two propositions <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis>.</para>
       <figure id="fig-00002">
       <media alt="Insert Alt Text">
       <image mime-type="image/jpg" src="../../media/CS_Figure_02_03_TA_004.jpg"/>
