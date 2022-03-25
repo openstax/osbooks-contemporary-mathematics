@@ -30,10 +30,10 @@
    <section id="sect-00002">
    <title>Common Logical Connectives</title>
    <para id="para-00007">Understanding the following group of logical connectives, along with their properties, symbols, and names, will be key to applying the topics presented in this chapter. The chapter will discuss each connective introduced here in more detail.</para>
-   <para id="para-00008">The joining of two logical statements with the word ‘and’ or ‘but’ forms a compound statement called a <term id="term-00003">conjunction</term>. In logic for a conjunction to be true, all the independent logical statements that make it up, must be true. The symbol for a conjunction is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>?</mo></math>. Consider the compound statement, “Derek Jeter played professional baseball for the New York Yankees, and he was a shortstop.” If <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> represents the statement, “Derrick Jeter played professional baseball for the New York Yankees,” and if <emphasis effect="italic">q</emphasis> represents the statement, “Derrick Jeter was a short stop,” then the conjunction will be written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+   <para id="para-00008">The joining of two logical statements with the word ‘and’ or ‘but’ forms a compound statement called a <term id="term-00003">conjunction</term>. In logic for a conjunction to be true, all the independent logical statements that make it up, must be true. The symbol for a conjunction is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math>. Consider the compound statement, “Derek Jeter played professional baseball for the New York Yankees, and he was a shortstop.” If <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> represents the statement, “Derrick Jeter played professional baseball for the New York Yankees,” and if <emphasis effect="italic">q</emphasis> represents the statement, “Derrick Jeter was a short stop,” then the conjunction will be written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>.</mo></mrow></math></para>
    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">The joining of two logical statements with the word “or” forms a compound statement called a <term id="term-00004">disjunction</term>. Unless otherwise specified, the ‘<emphasis effect="italic">or</emphasis>’ statement or disjunction is an inclusive <emphasis effect="italic">or</emphasis> statement, which means the compound statement formed by joining two independent clauses with the word “or” will be true, if a least one of the clauses are true. Consider the compound statement, The office manager ordered cake for for an employee’s birthday or they ordered ice cream.” This is a disjunction because it combines the independent clause, “The office manager ordered cake for an employee’s birthday,” with the independent clause, “The office manager ordered ice cream,” using the connective, “<emphasis effect="italic">or.</emphasis>” This disjunction is true if the office manager ordered only cake, only ice cream, or they ordered both cake and ice cream. Inclusive or means you can have one, or the other, or both!</para>
    <para id="para-00012">Joining two logical statements with the word “implies” or phrase “if <emphasis effect="italic">first statement</emphasis>, then<emphasis effect="italic"> second statement,”</emphasis> is called a <term id="term-00005">conditional</term> or <term id="term-00006">implication</term>. The clause associated with the if statement is also called the <emphasis effect="bold">hypothesis</emphasis> or <emphasis effect="bold">antecedent</emphasis>, while the clause following the then statement or the word implies is call the <emphasis effect="bold">conclusion</emphasis> or <emphasis effect="bold">consequent</emphasis>. The conditional statement is like a one-way contract or promise. The only time the conditional statement is false, is if the hypothesis is true and the conclusion is false. Consider the following conditional statement, “If Pedro does his homework, then he can play video games.” The hypothesis/antecedent is the statement following the word if. It is “Pedro does/did his homework.” The conclusion/consequent is the statement following the word then. It is “Pedro can play his video games.”</para>
-   <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Joining two logical statements with the connective phrase “if and only if” is called a <term id="term-00007">biconditional</term>. The connective phrase if and only if is represented by the symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>?</mo><mo>.</mo></mrow></math> In the biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is called the hypothesis or antecedent and <emphasis effect="italic">q</emphasis> is called the conclusion or consequent. For a biconditional statement to be true, the truth values of <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> must match. They must both be true, or both be false.</para>
+   <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Joining two logical statements with the connective phrase “if and only if” is called a <term id="term-00007">biconditional</term>. The connective phrase if and only if is represented by the symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>↔</mo><mo>.</mo></mrow></math> In the biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is called the hypothesis or antecedent and <emphasis effect="italic">q</emphasis> is called the conclusion or consequent. For a biconditional statement to be true, the truth values of <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> must match. They must both be true, or both be false.</para>
    <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">The table below lists the most common connectives used in logic, along with the symbolic form, and the common name used to describe the connective.</para>
    <table class="unnumbered" summary="." id="table-00001">
    <tgroup cols="3">
@@ -51,13 +51,12 @@
    <row>
    <entry>and
    but</entry>
-   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>?</mo></math></entry>
+   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math></entry>
    <entry xmlns="http://cnx.rice.edu/cnxml">conjunction</entry>
    </row>
    <row><entry>or</entry>
-   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>?</mo></math></entry>
-   <entry xmlns="http://cnx.rice.edu/cnxml">disjunction,
-   inclusive or</entry>
+   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∨</mo></math></entry>
+   <entry xmlns="http://cnx.rice.edu/cnxml">disjunction, inclusive or</entry>
    </row>
    <row>
    <entry>not</entry>
@@ -67,12 +66,12 @@
    <row>
    <entry>if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>…</mo></math>, then
    implies</entry>
-   <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>?</mo></math></entry>
+   <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math></entry>
    <entry xmlns="http://cnx.rice.edu/cnxml">conditional, implication</entry>
    </row>
    <row>
    <entry>if and only if</entry>
-   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>?</mo></math></entry>
+   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math></entry>
    <entry xmlns="http://cnx.rice.edu/cnxml">biconditional</entry>
    </row>
    </tbody>
@@ -107,9 +106,9 @@
    </problem>
    <solution id="sol-00001">
    <list list-type="enumerated" number-style="arabic" id="list-00003">
-   <item>A compound statement formed with the connective word “or” is called a disjunction and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>?</mo></mrow></math> symbol.</item>
-   <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective word “implies” or phrase “<emphasis effect="italic">if … then”</emphasis> is called a conditional statement or implication and is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>?</mo></mrow></math> symbol.</item>
-   <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective words ‘but’ or ‘and’ is called a conjunction and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>?</mo></mrow></math> symbol.</item>
+   <item>A compound statement formed with the connective word “or” is called a disjunction and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∨</mo></mrow></math> symbol.</item>
+   <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective word “implies” or phrase “<emphasis effect="italic">if … then”</emphasis> is called a conditional statement or implication and is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>→</mo></mrow></math> symbol.</item>
+   <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective words ‘but’ or ‘and’ is called a conjunction and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo></mrow></math> symbol.</item>
    </list>
    </solution>
    </exercise>
@@ -128,11 +127,11 @@
    <list list-type="enumerated" id="list-00004">
    <item>Identify and label all independent affirmative logical statements with a lower case letter, such as <emphasis effect="italic">p, q,</emphasis> or <emphasis effect="italic">r</emphasis>.</item>
    <item>Identify and label any negative logical statements with a lowercase letter preceded by the negation symbol, such as <emphasis effect="italic">~p, ~q,</emphasis> or <emphasis effect="italic">~r</emphasis>.</item>
-   <item>Replace the connective words with the symbols that represent them, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>?</mo><mo>,</mo><mo>?</mo><mo>,</mo><mo>?</mo><mo>,</mo><mi mathvariant="normal"> or</mi><mo>?</mo><mo>.</mo></mrow></math></item>
+   <item>Replace the connective words with the symbols that represent them, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo><mo>,</mo><mo>∨</mo><mo>,</mo><mo>→</mo><mo>,</mo><mi mathvariant="normal"> or</mi><mo>↔</mo><mo>.</mo></mrow></math></item>
    </list>
    <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">Consider the previous example of your friend trying to get their driver’s license.</para>
    <para id="para-00026">Your friend passed the written test, but they did not pass the road test.</para>
-   <para id="para-00027">Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend passed the written test.” And let ~<emphasis effect="italic">q</emphasis> represent the statement, “My friend did not pass the road test.” Because the connective <emphasis effect="italic">but</emphasis> is logically equivalent to the word <emphasis effect="italic">and</emphasis>, the symbol for <emphasis effect="italic">but</emphasis> is the same as the symbol for <emphasis effect="italic">and</emphasis>, replace <emphasis effect="italic">but</emphasis> with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>?</mo><mo>.</mo></mrow></math> The compound statement is symbolically written as:</para>
+   <para id="para-00027">Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend passed the written test.” And let ~<emphasis effect="italic">q</emphasis> represent the statement, “My friend did not pass the road test.” Because the connective <emphasis effect="italic">but</emphasis> is logically equivalent to the word <emphasis effect="italic">and</emphasis>, the symbol for <emphasis effect="italic">but</emphasis> is the same as the symbol for <emphasis effect="italic">and</emphasis>, replace <emphasis effect="italic">but</emphasis> with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo><mo>.</mo></mrow></math> The compound statement is symbolically written as:</para>
    <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>?</mo><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math></para>
    <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">My friend passed the written test, but they did not pass the road test.</para>
    <note class="check-point" id="note-00017">
