@@ -36,7 +36,7 @@
     </media>
     <caption>Not all roses are red. (credit: Karolina Grabowska/Pexels.com)</caption>
     </figure>
-    <para id="para-00010">An example of logical statement with a false truth value is, “All roses are red.” It is a logical statement because it has the form of a complete sentence and makes a claim that can be determined to be either true or false. It is a false statement because not all roses are red: some roses are red, but there are also roses that are pink, yellow, and white.	Requests, questions, or directives may be complete sentences, but they are not logical statements because they cannot be determined to be true or false. For example, suppose someone said to you, “Please, sit down over there.” This request does not make a claim and it cannot be identified as true or false; therefore, it is not a logical statement.</para>
+    <para id="para-00010">An example of logical statement with a false truth value is, “All roses are red.” It is a logical statement because it has the form of a complete sentence and makes a claim that can be determined to be either true or false. It is a false statement because not all roses are red: some roses are red, but there are also roses that are pink, yellow, and white. Requests, questions, or directives may be complete sentences, but they are not logical statements because they cannot be determined to be true or false. For example, suppose someone said to you, “Please, sit down over there.” This request does not make a claim and it cannot be identified as true or false; therefore, it is not a logical statement.</para>
     <example id="exam-00001">
     <title>Identifying Logical Statements</title>
     <exercise id="exer-00001">
@@ -300,20 +300,20 @@
     <tbody>
     <row>
     <entry>Form: All A are B.<newline/>
-    Means: A is a subset of B,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>?</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> All zebras have stripes. (true)</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">Form: Some A are not B.<newline/> Means: A is not a subset of B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>?</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some zebras do not have stripes. (false)</entry>
+    Means: A is a subset of B,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> All zebras have stripes. (true)</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">Form: Some A are not B.<newline/> Means: A is not a subset of B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>⊄</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some zebras do not have stripes. (false)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Form: Some A are B.<newline/> Means: A intersect B is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>n</mo><mi>B</mi><mo>?</mo><mo>Ø</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some fish are sharks. (true)</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">Form: No A are B.<newline/> Means: A intersect B is empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>n</mo><mi>B</mi><mo>=</mo><mo>Ø</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> No fish are sharks. (false)</entry>
+    <entry>Form: Some A are B.<newline/> Means: A intersect B is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>≠</mo><mo>∅</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some fish are sharks. (true)</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">Form: No A are B.<newline/> Means: A intersect B is empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo>∅</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> No fish are sharks. (false)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Form: No A are B.<newline/> Means: A intersect B is empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>n</mo><mi>B</mi><mo>=</mo><mo>Ø</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> No trees are evergreens. (False)</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">Form: Some A are B.<newline/> Means: A intersect B is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>n</mo><mi>B</mi><mo>?</mo><mo>Ø</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some trees are evergreens. (True)</entry>
+    <entry>Form: No A are B.<newline/> Means: A intersect B is empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo>∅</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> No trees are evergreens. (False)</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">Form: Some A are B.<newline/> Means: A intersect B is not empty, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>≠</mo><mo>∅</mo><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some trees are evergreens. (True)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Form: Some A are not B.<newline/> Means: A is not a subset of B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>?</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some horses are not mustangs. (True)</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">Form: All A are B.<newline/> Means: A is a subset of B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>?</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> All horses are mustangs. (False)</entry>
+    <entry>Form: Some A are not B.<newline/> Means: A is not a subset of B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>⊄</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> Some horses are not mustangs. (True)</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">Form: All A are B.<newline/> Means: A is a subset of B, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi><mo>.</mo></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/> All horses are mustangs. (False)</entry>
     </row>
     </tbody>
     </tgroup>
