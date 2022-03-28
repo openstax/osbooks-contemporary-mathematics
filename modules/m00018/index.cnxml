@@ -238,9 +238,9 @@
    </problem>
    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
    <list list-type="enumerated" number-style="arabic" id="list-00010">
-   <item>Because negation is the least dominant connective, evaluated it first. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> Because conjunction and disjunction have the same dominance, evaluate them left to right. Evaluate the conjunction next as indicated by the additional set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi><mo>.</mo></mrow></math> The only remaining connective is the disjunction, so it is evaluated last as indicated by the third set of parentheses. The complete solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml">Negation has the lowest dominance, so it is evaluated first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>?</mo><mi mathvariant="normal"/><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi><mo>.</mo></mrow></math> The remaining connectives are the conditional and the conjunction, because conjunction has a lower precedence then the conditional it is evaluated next, as indicated by the second set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>?</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> The last step is to evaluate the conditional as indicated by the third set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>q</mi><mo>?</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml">This statement is known as DeMorgan’s Law for the negation of a disjunction. It is always true. Module 6 of this chapter will explore  DeMorgan’s Laws in more detail. Evaluate the negations on the right side of the biconditional prior to the conjunction. Then, evaluate the disjunction on the left side of the biconditional, followed by the negation of the disjunction on the left side. Lastly, after completely evaluating each side of the biconditional, evaluate the biconditional. It does not matter which side you begin with. The final solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>?</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>?</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>?</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+   <item>Because negation is the least dominant connective, evaluated it first. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> Because conjunction and disjunction have the same dominance, evaluate them left to right. Evaluate the conjunction next as indicated by the additional set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> The only remaining connective is the disjunction, so it is evaluated last as indicated by the third set of parentheses. The complete solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+   <item xmlns="http://cnx.rice.edu/cnxml">Negation has the lowest dominance, so it is evaluated first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>→</mo><mi mathvariant="normal"/><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>.</mo></mrow></math> The remaining connectives are the conditional and the conjunction, because conjunction has a lower precedence then the conditional it is evaluated next, as indicated by the second set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> The last step is to evaluate the conditional as indicated by the third set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+   <item xmlns="http://cnx.rice.edu/cnxml">This statement is known as DeMorgan’s Law for the negation of a disjunction. It is always true. Module 6 of this chapter will explore  DeMorgan’s Laws in more detail. Evaluate the negations on the right side of the biconditional prior to the conjunction. Then, evaluate the disjunction on the left side of the biconditional, followed by the negation of the disjunction on the left side. Lastly, after completely evaluating each side of the biconditional, evaluate the biconditional. It does not matter which side you begin with. The final solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
    </list>
    </solution>
    </exercise>
@@ -321,26 +321,39 @@
    <list bullet-style="none" id="list-00014">
    <item>Compound statement</item>
    <item>Connective</item>
-   <item>Negation</item>
    <item>Conjunction</item>
    <item>Disjunction</item>
    <item>Conditional</item>
+   <item>Implication</item>
    <item>Hypothesis</item>
    <item>Antecedent</item>
    <item>Conclusion</item>
    <item>Consequent</item>
-   <item>Biconditional</item>
+   <item>Biconditional statement</item>
    <item>Dominance of connectives</item>
    </list>
    </section>
    <section class="key-concepts" id="sect-00010">
    <title>Key Concepts</title>
    <list id="list-00011">
-   <item>Every member of a subset of a set is also a member of the set containing it. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>?</mo><mi>B</mi></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml">A proper subset of a set does not contain all the members of the set containing it. There is a least one member of set B that is not a member of set A. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>?</mo><mi>B</mi></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml">The number subsets of a finite set A with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math> members is equal to 2 raised to the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math> power.</item>
-   <item xmlns="http://cnx.rice.edu/cnxml">The empty set is a subset of every set and must be included when listing all the subsets of a set.</item>
-   <item>Understand how to create and distinguish between equivalent subsets of finite and infinite sets that are not equal to the original set.</item>
+   <item>Learn and associate names and symbols of logical connectives
+    <list id="list-00012">
+      <item>Negation</item>
+      <item>Conjunction</item>
+      <item>Disjunction</item>
+      <item>Conditional</item>
+      <item>Biconditional</item>
+    </list></item>
+   <item xmlns="http://cnx.rice.edu/cnxml">Translate compound statements into symbolic form</item>
+   <item xmlns="http://cnx.rice.edu/cnxml">Translate compound statements in symbolic form with parentheses into words</item>
+   <item xmlns="http://cnx.rice.edu/cnxml">Apply the dominance of connectives
+    <list id="list-00013">
+      <item>Parentheses</item>
+      <item>Negations</item>
+      <item>Disjunctions/Conjunctions, left to right</item>
+      <item>Conditionals</item>
+      <item>Biconditionals</item>
+    </list></item>
    </list>
    </section>
    <section class="eoc-videos" id="sect-00011">
