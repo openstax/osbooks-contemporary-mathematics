@@ -620,10 +620,64 @@
       <section class="key-concepts" id="sect-00010">
       <title>Key Concepts</title>
       <list id="list-00012">
-      <item>Apply the law of detachment to determine the conclusion of a pair of statements.</item>
-      <item>Apply the law of denying the consequent to determine the conclusion for pairs of statements.</item>
-      <item>Apply the chain rule to determine valid conclusions for pairs of true statements.</item>
-      </list>
+        <item>A logical argument uses a series of facts or premises to justify a conclusion or claim. It is valid if its conclusion follows from the premises, and it is sound if it is valid, and all of its premises are true.</item>
+<item>The law of detachment<emphasis effect="bold"> </emphasis>is a valid form of a conditional argument that asserts that if both the conditional, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math><emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml"> </emphasis>is true and the hypothesis, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>is true, then the conclusion <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math> must also be true.
+<table class="unnumbered" summary="." id="table-00008" xmlns="http://cnx.rice.edu/cnxml">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<thead>
+<row><entry>Law of Detachment</entry></row>
+</thead>
+<tbody>
+<row><entry>Premise:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
+<row xmlns="http://cnx.rice.edu/cnxml"><entry>Premise:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></entry></row>
+<row xmlns="http://cnx.rice.edu/cnxml"><entry>Conclusion:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>∴</mo><mi mathvariant="normal"> </mi><mi>q</mi></mrow></math></entry></row></tbody>
+</tgroup>
+</table>
+</item>
+<item xmlns="http://cnx.rice.edu/cnxml">Know how to apply the law of detachment to determine the conclusion of a pair of statements.</item>
+<item>The<emphasis effect="bold"> </emphasis>law of denying the consequent<emphasis effect="bold"> </emphasis>is a valid form of a conditional argument that asserts that if both the conditional, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math><emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml"> </emphasis>is true and the negation of the conclusion, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>q</mi></mrow></math> is true, then the negation of the hypothesis <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>p</mi></mrow></math> must also be true.
+<table class="unnumbered" summary="." id="table-00009" xmlns="http://cnx.rice.edu/cnxml">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<thead>
+<row><entry>Law of Denying the Consequent</entry></row>
+</thead>
+<tbody>
+<row><entry>Premise:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
+<row xmlns="http://cnx.rice.edu/cnxml"><entry>Premise:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry></row>
+<row xmlns="http://cnx.rice.edu/cnxml"><entry>Conclusion:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>∴</mo><mi mathvariant="normal"> </mi><mo>~</mo><mi>p</mi></mrow></math></entry></row></tbody>
+</tgroup>
+</table></item>
+<item xmlns="http://cnx.rice.edu/cnxml">Know how to apply the law of denying the consequent to determine the conclusion for pairs of statements.</item>
+<item>The chain rule for conditional arguments is a valid form of a conditional argument that asserts that if the premises of the argument have the form, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math><emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml"> </emphasis>and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>q</mi><mo>→</mo><mi>r</mi></mrow></math>, then it follows that <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>r</mi><mo>.</mo></mrow></math>
+<table class="unnumbered" summary="." id="table-00010" xmlns="http://cnx.rice.edu/cnxml">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<thead>
+<row><entry>Chain Rule for Conditional Arguments</entry></row>
+</thead>
+<tbody>
+<row><entry>Premise:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
+<row xmlns="http://cnx.rice.edu/cnxml"><entry>Premise:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>q</mi><mo>→</mo><mi>r</mi></mrow></math></entry></row>
+<row xmlns="http://cnx.rice.edu/cnxml"><entry>Conclusion:</entry>
+<entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>∴</mo><mi mathvariant="normal"> </mi><mi>p</mi><mo>→</mo><mi>r</mi></mrow></math></entry></row></tbody>
+</tgroup>
+</table>
+</item>
+<item xmlns="http://cnx.rice.edu/cnxml">Know how to apply the chain rule to determine valid conclusions for pairs of true statements.</item>
+</list>
       </section>
       <section class="eoc-videos" id="sect-00011">
       <title>Video</title>
