@@ -1,13 +1,375 @@
 <document xmlns="http://cnx.rice.edu/cnxml">
-  <title>Module 10 Arithmetic Sequences</title>
+  <title>Arithmetic Sequences</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-    <md:title>Module 10 Arithmetic Sequences</md:title>
+    <md:title>Arithmetic Sequences</md:title>
     <md:content-id>m00049</md:content-id>
     <md:uuid>976b6847-a9e4-4a60-b3f1-509815b87656</md:uuid>
   </metadata>
-  <content class="introduction">
-    <section id="sect-00001">
-      <para id="para-00001">Placeholder Text</para>
+  <content>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Identify arithmetic sequences.</item>
+    <item>Find a given term in an arithmetic sequence.</item>
+    <item>Find the nth term of an arithmetic sequence.</item>
+    <item>Find the sum of a finite arithmetic sequence.</item>
+    <item>Use arithmetic sequences to solve real world applications</item>
+    </list>
     </section>
-</content>
-</document>
+    <para id="para-00002">As we saw in the previous module, we are adding about 2.5 quintillion bytes of data per day. If there are 550 quintillion bytes of data today, then there will be 552.5 quintillion bytes tomorrow, and 555 quintillion bytes in two days. Each day, there will be 2.5 quintillion more. This is an example of an arithmetic sequence. Each day, the amount of data increases by the same amount, 2.5 quintillion. There are many situations where this concept of fixed increases come into play, such as raises or table arrangements.</para>
+    <section id="sect-00002">
+    <title>Identifying Arithmetic Sequences</title>
+    <para id="para-00003">A <term id="term-00001">sequence</term> of numbers is just that, a list of numbers in order. It can be a short list, such as the number of points earned on each assignment in a class, such as {10, 10, 8, 9, 10, 6, 10}. Or it can be a longer list, even infinitely long, such as the list of prime numbers. For example, here’s a sequence of numbers, specifically, the squares of the first 12 natural numbers.
+    {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144}</para>
+    <note class="definition" id="note-00001">
+    <para id="para-00004">A <emphasis effect="bold">sequence</emphasis> is a list of numbers, in order. If the sequence of numbers comes to an end, it is a finite sequence. If the sequence continues forever, it is an infinite sequence.</para>
+    </note>
+    <para id="para-00005">Each value in the sequence is called a <term id="term-00002">term</term>. Terms in the list are often referred to by their location in the sequence. For this sequence, {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144}, the first term of the sequence is 1, the fourth term is 16, and so on. In the sequence of assignment scores, {10, 10, 8, 9, 10, 6, 10}, the first term is 10 and the third term is 8.</para>
+    <note class="definition" id="note-00002">
+    <para id="para-00006">A <emphasis effect="bold">term</emphasis> in a sequence is a number in the sequence. The term is often referred to by its location, as in the nth term.</para>
+    </note>
+    <para id="para-00007">The notation we use with sequences is a letter, which represents a term in the sequence, and a subscript, which indicates what place the term is in the sequence. For the sequence {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144}, we will use the letter <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> as a value in the sequence, and so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>5</mn></msub></mrow></math> would be the term in the sequence at the fifth position. That number is 25, so we can write <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>5</mn></msub><mo>=</mo><mn>25</mn></mrow></math>.</para>
+    <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">In this module, we focus on a special kind of sequence, one referred to as an <term id="term-00003">arithmetic sequence</term>. Arithmetic sequences have terms that increase by a fixed number or decrease by a fixed number, called the <term id="term-00004">constant difference</term>. This means the next term is always the previous term plus or minus a specified, constant value. Another way to say this is that the difference between any consecutive terms of the sequence is always the same value.</para>
+    <note class="definition" id="note-00003">
+    <para id="para-00009">A sequence is an <emphasis effect="bold">arithmetic sequence</emphasis> if the difference between consecutive terms of the sequence is always the same value, provided that value is not 0.</para>
+    <para id="para-00010">In an arithmetic sequence, the amount by which consecutive terms differ is called the <emphasis effect="bold">constant difference</emphasis>, and is denoted by <emphasis effect="italic">d</emphasis>.</para>
+    </note>
+    <para id="para-00011">To see a constant difference, look at the following sequence: {7, 15, 23, 31, 39, 47, 55, 63, 71, 79, 87}. You can see here that each term of the sequence is the previous term plus 8. Eight is the constant difference here. As an image, here’s what it looks like:</para>
+    <figure class="unnumbered" id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_10_001.jpg"/>
+    </media>
+    </figure>
+    <example id="exam-00001">
+    <title>Identifying Arithmetic Sequences</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00012">Determine if the following sequences are arithmetic sequences or not. Explain your reasoning.</para>
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>19</mn><mo>,</mo><mn>22</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>...</mn><mo>}</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>20</mn><mo>,</mo><mn>40</mn><mo>,</mo><mn>80</mn><mo>,</mo><mn>160</mn><mo>,</mo><mn>320</mn><mo>,</mo><mn>640</mn><mo>}</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>7</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>−</mo><mn>5</mn><mo>,</mo><mo>−</mo><mn>11</mn><mo>,</mo><mo>−</mo><mn>17</mn><mo>,</mo><mo>−</mo><mn>23</mn><mo>,</mo><mo>−</mo><mn>29</mn><mo>,</mo><mo>−</mo><mn>34</mn><mo>,</mo><mo>−</mo><mn>40</mn><mo>}</mo></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+    <item>In this sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>19</mn><mo>,</mo><mn>22</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>...</mn><mo>}</mo></mrow></math>, every term is the previous term plus... The ellipsis indicates that the pattern continues, which means keep adding 3 to the previous term to get the new term. Therefore, this is an infinite arithmetic sequence.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">In this sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>20</mn><mo>,</mo><mn>40</mn><mo>,</mo><mn>80</mn><mo>,</mo><mn>160</mn><mo>,</mo><mn>320</mn><mo>,</mo><mn>640</mn><mo>}</mo></mrow></math>, terms increase by various amounts, for instance from term 1 to term 2, the sequence increases by 20, but from term 2 to term 3 the sequence increases by 40. So, this is not an arithmetic sequence.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">In this sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>7</mn><mo>,</mo><mn>1</mn><mo>,</mo><mo>−</mo><mn>5</mn><mo>,</mo><mo>−</mo><mn>11</mn><mo>,</mo><mo>−</mo><mn>17</mn><mo>,</mo><mo>−</mo><mn>23</mn><mo>,</mo><mo>−</mo><mn>29</mn><mo>,</mo><mo>−</mo><mn>34</mn><mo>,</mo><mo>−</mo><mn>40</mn><mo>}</mo></mrow></math>, every term is the previous term minus 6, so this is an arithmetic sequence.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CM-C03-M10-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00014">Arithmetic sequences can be expressed with an easy formula. When we know the first term of an arithmetic sequence, which we label <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math>, and we know the constant difference, which is denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>, we can find any other term of the arithmetic sequence. The formula for the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>i</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term of an arithmetic sequence is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
+    <note class="formula" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00015">If we have an arithmetic sequence with first term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math> and constant difference <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">d</emphasis>, then the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>i</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term of the arithmetic sequence is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
+    </note>
+    <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">Let’s examine the formula with this arithmetic sequence: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>13</mn><mo>,</mo><mn>16</mn><mo>,</mo><mn>19</mn><mo>,</mo><mn>22</mn><mo>,</mo><mn>25</mn><mo>,</mo><mn>...</mn><mo>}</mo></mrow></math>. In this sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>4</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow></math>. Table 4.6 shows the values calculated.</para>
+    <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title><emphasis effect="bold">TABLE 4.6 Terms in an Arithmetic Sequence</emphasis></title>
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>, place in sequence</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>i</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">Value of term</entry>
+    <entry>Term written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>1</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">4</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>0</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>2</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>2</mn></msub></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">7</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>1</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>3</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>3</mn></msub></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">10</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>4</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>4</mn></msub></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">13</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>3</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>5</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>5</mn></msub></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">16</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>4</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"/>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">We can see how the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>i</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term can be directly calculated. In this sequence, the formula is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> where the first term, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math>, is 4 and the constant difference <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math> is 3. We can then determine the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>47</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term of this sequence: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mrow><mn>47</mn></mrow></msub><mo>=</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mo stretchy="false">(</mo><mn>47</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>46</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>138</mn><mo>=</mo><mn>142</mn></mrow></math></para>
+    <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title> Calculating a Term in an Arithmetic Sequence</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00018">Identify <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math> for the following arithmetic sequence. Use this information to determine the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term.</para>
+    <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mo>{</mo><mn>18</mn><mo>,</mo><mn>31</mn><mo>,</mo><mn>44</mn><mo>,</mo><mn>57</mn><mo>,</mo><mn>70</mn><mo>,</mo><mn>83</mn><mo>,</mo><mn>...</mn><mo>}</mo></mrow></math></equation>
+    </problem>
+    <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00019">Inspecting the sequence shows that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>18</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>13</mn></mrow></math>. We use those values in the formula, with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>=</mo><mn>60</mn></mrow></math>.</para>
+    <equation id="eq-00002" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>a</mi><mrow><mn>60</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>13</mn><mo>×</mo><mo stretchy="false">(</mo><mn>60</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>18</mn><mo>+</mo><mn>13</mn><mo>×</mo><mn>59</mn><mo>=</mo><mn>18</mn><mo>+</mo><mn>767</mn><mo>=</mo><mn>785</mn></mrow></math>
+    </equation>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CM-C03-M10-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00007">
+    <para id="para-00021"><link url="https://openstax.org/r/Arithmetic_Sequences">Arithmetic Sequences</link></para>
+    </note>
+    <para id="para-00022">If we know two terms of the sequence it is possible to determine the general form of an arithmetic sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
+    <note class="formula" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00023">If we have the ith term of an arithmetic sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow></math>,and the jth term of the sequence, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>j</mi></msub></mrow></math>, then the constant difference is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mfrac><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>−</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><mrow><mi>j</mi><mo>−</mo><mi>i</mi></mrow></mfrac></mrow></math> and the first term of the sequence is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><mi>d</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
+    </note>
+    <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <title> Determining First Term and Constant Difference Using Two Terms</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00024">A sequence is known to be arithmetic. Two of its terms are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>7</mn></msub><mo>=</mo><mn>56</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mrow><mn>19</mn></mrow></msub><mo>=</mo><mn>104</mn></mrow></math>. Use that information to find the constant difference, the first term, and then the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>50</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term of the sequence.</para>
+    </problem>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00025">To find the constant difference, use <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mfrac><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>−</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><mrow><mi>j</mi><mo>−</mo><mi>i</mi></mrow></mfrac></mrow></math>. The location of the terms is given by the subscript of the two <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> terms, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>=</mo><mn>7</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>j</mi><mo>=</mo><mn>19</mn></mrow></math>. So, the constant difference can be calculated as such:</para>
+    <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>d</mi><mo>=</mo><mfrac><mrow><mn>104</mn><mo>−</mo><mn>56</mn></mrow><mrow><mn>19</mn><mo>−</mo><mn>7</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>48</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>=</mo><mn>4</mn></mrow></math>.</equation></para>
+    <para id="para-00027" xmlns="http://cnx.rice.edu/cnxml">The constant difference of 4 is then used to find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math>.</para>
+    <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><mi>d</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><msub><mi>a</mi><mn>7</mn></msub><mo>−</mo><mn>4</mn><mo stretchy="false">(</mo><mn>7</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>56</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>32</mn></mrow></math>.</equation></para>
+    <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">So <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>4</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>32</mn></mrow></math>.</para>
+    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">With this information, the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>50</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term can be found.</para>
+    <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>a</mi><mrow><mn>50</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>32</mn><mo>+</mo><mn>4</mn><mo>×</mo><mo stretchy="false">(</mo><mn>50</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>32</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>49</mn><mo>=</mo><mn>32</mn><mo>+</mo><mn>196</mn><mo>=</mo><mn>228</mn></mrow></math>.</equation>
+    <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>50</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mrow><mn>50</mn></mrow></msub><mo>=</mo><mn>228</mn></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C03-M10-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00010">
+    <para id="para-00033"><link url="https://openstax.org/r/Finding_the_First_Term_and_Constant_Difference_for_an_Arithmetic_Sequence">Finding the First Term and Constant Difference for an Arithmetic Sequence</link></para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Finding the Sum of a Finite Arithmetic Sequence</title>
+    <para id="para-00034">Sometimes you want to determine the sum of the numbers of a finite arithmetic sequence. The formula for this is fairly straightforward.</para>
+    <note class="formula" id="note-00011">
+    <para id="para-00035">The sum of the first <emphasis effect="italic">n</emphasis> terms of a finite arithmetic sequence, written <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>n</mi></msub></mrow></math>, with first and last term <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>n</mi></msub></mrow></math>, respectively, then the sum of those <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis> terms is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>.</para>
+    </note>
+    <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <title> Finding the Sum of a Finite Arithmetic Sequence</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00036">What is the sum of the first 60 terms of an arithmetic sequence with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>4.5</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>2.5</mn></mrow></math>.</para>
+    </problem>
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00037">The formula requires the first and last terms of the sequence. The first term is given, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>4.5</mn></mrow></math>. The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term is needed. Using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mi>i</mi></msub><mo>+</mo><mi>d</mi><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> provides the value for the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term.</para>
+    <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>a</mi><mrow><mn>60</mn></mrow></msub><mo>=</mo><mn>4.5</mn><mo>+</mo><mn>2.5</mn><mo stretchy="false">(</mo><mn>60</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4.5</mn><mo>+</mo><mn>2.5</mn><mo>×</mo><mn>59</mn><mo>=</mo><mn>4.5</mn><mo>+</mo><mn>147.5</mn><mo>=</mo><mn>152</mn></mrow></math>.</equation>
+    <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">Applying the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math> provides the sum of the first 60 terms.</para>
+    <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>s</mi><mrow><mn>60</mn></mrow></msub><mo>=</mo><mn>60</mn><mrow><mo>(</mo><mrow><mfrac><mrow><mn>4.5</mn><mo>+</mo><mn>152</mn></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>60</mn><mo>×</mo><mfrac><mrow><mn>156.5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4695</mn></mrow></math>.</equation>
+    <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">The sum of the first 60 terms is 4695.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00012">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C03-M10-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00013">
+    <para id="para-00041"><link url="https://openstax.org/r/Finding_the_Sum_of_a_Finite_Arithmetic_Sequence">Finding the Sum of a Finite Arithmetic Sequence</link></para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Using Arithmetic Sequences to Solve Real World Applications</title>
+    <para id="para-00042">Applications of arithmetic sequences occur any time some quantity increases by a fixed amount at each step. For instance, if someone practices chess each week and increases the amount of time studies each week. The first week the person practices for 3 hours, and vows to practice 30 more minutes each week. Since the amount of time practicing increases by a fixed number each week, this would qualify as an arithmetic sequence.</para>
+    <example id="exam-00005">
+    <title>Applying an Arithmetic Sequence</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00043">Jordan has just watched <emphasis effect="italic">The Queen’s Gambit</emphasis> and decided to hone their skills in chess. To really improve at the game, Jordan decides to practice for 3 hours the first week, and increase their time spent practicing by 30 minutes each week. How many hours will Jordan practice chess in week 20?</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00044">Jordan’s practice scheme is an arithmetic sequence, as it increases by a fixed amount each week. The first week there are 3 hours of practice. This means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></mrow></math>. Jordan increases the time spent practicing by 30 minutes, or half an hour, each week. This means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>0.5</mn></mrow></math>. Using those values, and that we want to know the amount of time Jordan will study in week 20, we determine the time in week 20 using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
+    <equation id="eq-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>a</mi><mrow><mn>20</mn></mrow></msub><mo>=</mo><mn>3</mn><mo>+</mo><mn>0.5</mn><mo>×</mo><mo stretchy="false">(</mo><mn>20</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>+</mo><mn>0.5</mn><mo>×</mo><mn>19</mn><mo>=</mo><mn>3</mn><mo>+</mo><mn>9.5</mn><mo>=</mo><mn>12.5</mn></mrow></math></equation>
+    <para id="para-00045" xmlns="http://cnx.rice.edu/cnxml">So, Jordan will practice 12.5 hours in week 20.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00046"><link class="os-embed" url="#exercise/CM-C03-M10-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00006">
+    <title> Sum of a Finite Arithmetic Sequence</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00047">Let’s check back in on Jordan. Recall, Jordan had just watched <emphasis effect="italic">The Queen’s Gambit</emphasis> and decided to hone their skills, practicing for 3 hours the first week, and increasing the time spent practicing by 30 minutes each week. How many hours total will Jordan have practiced chess after 30 weeks of practice?</para>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00048">To calculate the total amount of time that Jordan practiced, we need to use <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math>. The formula requires the first and last terms of the sequence. Since Jordan practiced 3 hours in the first week, the first term is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></mrow></math>. Since we want the total practice time after 30 weeks, we need the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term. Since the constant difference is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>0.5</mn></mrow></math>, the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow></math> term is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mrow><mn>30</mn></mrow></msub><mo>=</mo><mn>3</mn><mo>+</mo><mn>0.5</mn><mo stretchy="false">(</mo><mn>30</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>+</mo><mn>0.5</mn><mo>×</mo><mn>29</mn><mo>=</mo><mn>3</mn><mo>+</mo><mn>14.5</mn><mo>=</mo><mn>17.5</mn></mrow></math>.</para>
+    <para id="para-00049" xmlns="http://cnx.rice.edu/cnxml">Applying the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow></math> provides the sum of the first 30 terms.</para>
+    <equation id="eq-00009" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>s</mi><mrow><mn>30</mn></mrow></msub><mo>=</mo><mn>30</mn><mrow><mo>(</mo><mrow><mfrac><mrow><mn>3</mn><mo>+</mo><mn>17.5</mn></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><mn>60</mn><mo>×</mo><mfrac><mrow><mn>20.5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>615</mn></mrow></math>.</equation>
+    <para id="para-00050" xmlns="http://cnx.rice.edu/cnxml">This means that Jordan practiced a total of 615 hours after 30 weeks.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00015">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C03-M10-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00016">
+    <title>The fibonacci sequence</title>
+    <para id="para-00052">Not all sequences are arithmetic. One special sequence is the <term id="term-00005">Fibonacci Sequence</term>.</para>
+    <note class="definition" id="note-00017">
+    <para id="para-00053">The <emphasis effect="bold">Fibonacci Sequence</emphasis> is the sequence that has as its first two terms 1 and 1. Every term thereafter is the sum of the previous two terms. The first 9 terms of the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, and 34.</para>
+    </note>
+    </note>
+    <para id="para-00054">Notice that each term is the sum of the previous two terms. This sequence is found in nature, architecture, and even music! In nature, the Fibonacci Sequence describes the spirals of sunflower seeds, certain galaxy spirals, and flower petals. In music, the band Tool used the Fibonacci Sequence in the song “Lateralus”. The Fibonacci Sequence even relates to architecture, as it is closely related to the golden ratio.</para>
+    <note class="video" id="note-00018">
+    <para id="para-00055"><link url="https://openstax.org/r/Fibonacci_Sequence_and_“Lateralus”">Fibonacci Sequence and “Lateralus”</link></para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00005">
+    <title>check your understanding</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C03-M10-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C03-M10-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C03-M10-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C03-M10-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00060"><link class="os-embed" url="#exercise/CM-C03-M10-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C03-M10-Q012"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00006">
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C03-M10-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C03-M10-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00064"><link class="os-embed" url="#exercise/CM-C03-M10-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C03-M10-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00066"><link class="os-embed" url="#exercise/CM-C03-M10-Q017"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00007">
+    <title>Module 10 – Arithmetic Sequences</title>
+    <section class="key-terms" id="sect-00008">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00004">
+    <item>Sequence</item>
+    <item>Term of a sequence</item>
+    <item>Arithmetic sequence</item>
+    <item>First term</item>
+    <item>Constant difference</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00009">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00005">
+    <item>Sequence</item>
+    <item>Terms of a sequence</item>
+    <item>Arithmetic sequence</item>
+    <item>Finding an arbitrary term in an arithmetic sequence</item>
+    <item>Constant difference</item>
+    <item>Finding the sum of a finite arithmetic sequence</item>
+    <item>Applying arithmetic sequences</item>
+    </list>
+    </section>
+    <section class="formula-review" id="sect-00010">
+    <title>Formulas</title>
+    <para id="para-00067">
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mi>i</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>d</mi><mo>×</mo><mrow><mo>(</mo><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi><mo>=</mo><mfrac><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>−</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><mrow><mi>j</mi><mo>−</mo><mi>i</mi></mrow></mfrac></math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><mi>d</mi><mrow><mo>(</mo><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>s</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mrow><mo>(</mo><mrow><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></math></para>
+    </section>
+    <section class="eoc-videos" id="sect-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Videos</title>
+    <para id="para-00068"><link url="https://openstax.org/r/Arithmetic_Sequences">Arithmetic Sequences</link></para>
+    <para id="para-00069"><link url="https://openstax.org/r/Finding_the_First_Term_and_Constant_Difference_for_an_Arithmetic_Sequence">Finding the First Term and Constant Difference for an Arithmetic Sequence</link></para>
+    <para id="para-00070"><link url="https://openstax.org/r/Finding_the_Sum_of_a_Finite_Arithmetic_Sequence">Finding the Sum of a Finite Arithmetic Sequence</link></para>
+    </section>
+    </section>
+    </content>
+    </document>
