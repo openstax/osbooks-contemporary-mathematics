@@ -5,9 +5,1150 @@
     <md:content-id>m00030</md:content-id>
     <md:uuid>17741f5b-fdd4-47e3-93b9-b141a1b746b6</md:uuid>
   </metadata>
-  <content class="introduction">
-    <section id="sect-00001">
-      <para id="para-00001">Placeholder Text</para>
+  <content>
+    <section class="learning-objectives" id="sect-00001">
+    <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+    <list list-type="enumerated" id="list-00001">
+    <item>Apply divisibility rules.</item>
+    <item>Define and identify numbers that are prime or composite.</item>
+    <item>Find the prime factorization of composite numbers.</item>
+    <item>Find the greatest common divisor.</item>
+    <item>Use the greatest common divisor to solve application problems.</item>
+    <item>Find the least common multiple.</item>
+    <item>Use the least common multiple to solve application problems.</item>
+    </list>
     </section>
-</content>
-</document>
+    <figure class="unnumbered" id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_001.jpg"/>
+    </media>
+    <caption>A laptop showing a lock on the screen that shows it is on a secured network.</caption>
+    </figure>
+    <para id="para-00002">Encryption is used to secure online banking, for secure online shopping, and for browsing as privately as possible using VPNs (Virtual Private Networks). Since prime numbers are now the basis for encryption, and we need encryption for secure exchange of information, they are a very big deal in mathematics. For a prime to be useful for encryption, though, it has to be a large prime number. Encryption uses a composite number that is the product of two very large primes. In order to break the encryption, one must determine the two primes that were used to form the composite number. If the two prime numbers used are sufficiently large, even the fastest computer cannot determine those two prime numbers in a reasonable amount of time. It appears that it would take a computer 300 trillion years to crack the current encryption standard, which is probably too long for anyone to wait. This module covers prime and composite numbers.</para>
+    <section id="sect-00002">
+    <title>Applying Divisibility Rules</title>
+    <para id="para-00003">The counting numbers are referred to as the natural numbers. This set of numbers, {1,2,3,4…} is denoted with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℕ</mi></math>.</para>
+    <note class="definition" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title>The Natural Numbers</title>
+    <para id="para-00004">The natural numbers denoted <emphasis effect="italic">ℕ</emphasis>, is the set {1, 2, 3, 4…}</para>
+    </note>
+    <para id="para-00005">Another important set of numbers is the integers. The integers are the natural numbers, along with 0, and the negatives of the natural numbers. This set is often written as {…,-3,-2,-1,0,1,2,3…}. We denote the integers with the symbol <emphasis effect="italic">ℤ</emphasis>.</para>
+    <note class="definition" id="note-00002">
+    <title>The Integers</title>
+    <para id="para-00006">The integers, denoted <emphasis effect="italic">ℤ</emphasis>, is the set {…,-3,-2,-1,0,1,2,3,…}.</para>
+    </note>
+    <para id="para-00007">We should notice that <emphasis effect="italic">ℕ</emphasis> is a proper subset of <emphasis effect="italic">ℤ</emphasis>, or, <emphasis effect="italic">ℕ ⊂ ℤ</emphasis>. All the ideas of this module apply to the natural numbers, while only some apply to all the integers.</para>
+    <para id="para-00008">There are many occasions when separating items into equal groups comes into play, be it sharing or creating gift bags, or ensuring an equal distribution of whole items. Francis, a pre-school art teacher, has 15 students in one of their classes. Francis has 225 sheets of construction paper and wants to provide each student with an equal number of pieces. For Francis to know if they will use all the construction paper, Francis is really asking if 225 can be evenly divided into fifteen groups.</para>
+    <note class="definition" id="note-00003">
+    <title>DIVISIBILITY</title>
+    <para id="para-00009">The integer n is divisible by m if n can be written as m times another integer. Equivalently, this means there is no remainder when n is divided by m. On a calculator, this means there is no decimal part.</para>
+    </note>
+    <example id="exam-00001">
+    <title>Determining if a Number Divides Another Number</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">Determine if 36 is divisible by 4.</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00011">We could divide 36 by 4 and see if there is a remainder, or we could see if we can write 36 as 4 times another integer. If we divide 36 by 4, we see <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mo>÷</mo><mn>4</mn><mo>=</mo><mn>9</mn></mrow></math> with no remainder. , We see that 36 is divisible by 4. We can write 36 as 4 times another integer, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mo>=</mo><mn>4</mn><mo>×</mo><mn>9</mn></mrow></math>. By the definition of divisibility, 36 is divisible by 4.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CM-C03-M1-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00013">You can quickly check if a number is divisible by 2, 3, 4, 5, 6, 9, 10 and 12. Each has an easy to identify feature, or rule, that indicates the divisibility by those numbers. Table 4.1 shows a list of the rules you can apply to quickly determine if a number is divisible by 2, 3, 4, 5, 6, 9, 10 and 12.</para>
+    <table summary="." id="table-00001">
+    <title>TABLE 4.1 Divisibility Rules</title>
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>Divisor</entry>
+    <entry>Rule</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>Last digit is even</entry>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>Add the digits of the number together. If that sum is divisible by 3, then so is the original number</entry>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>Look at only the last two digits. If this number is divisible by 4, so is the original number</entry>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>Look at only the last digit. If it is a 5 or a 0, then the original number is divisible by 5</entry>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>If the number passes the rule for divisibility by 2 and for 3, then the number is divisible by 6</entry>
+    </row>
+    <row>
+    <entry>9</entry>
+    <entry>Add the digits of the number together. If that number is divisible by 9, then so is the original number</entry>
+    </row>
+    <row>
+    <entry>10</entry>
+    <entry>Look at only the last digit. If it is a 0, then the original number is divisible by 10</entry>
+    </row>
+    <row>
+    <entry>12</entry>
+    <entry>If the number passes the rule for 3 and 4, the number is divisible by 12</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <example id="exam-00002">
+    <title>Using Divisibility Rules</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00014">Using divisibility rules, determine if 245 is divisible by 5.</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00015">Since the last digit is a 5, the number 245 is divisible by 5 because the rule states if the last digit of the number is a 5 or a 0, then the original number is divisible by 5.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CM-C03-M1-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Using Divisibility Rules</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00017">Using divisibility rules, determine if 25983 is divisible by 9.</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00018">The divisibility rule for 9 is when the digits of the number are added, the sum is divisible by 9. So, we calculate the sum of the digits.</para>
+    <para id="para-00019"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>27</mn></mrow></math>. Since 27 is divisible by 9, so is the original number 25983.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CM-C03-M1-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00004">
+    <title>Using Divisibility Rules</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00021">Can 298 coins be stacked into 6 stacks with an equal number of coins in each stack?</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00022">In order for the coins to be in equal sized stacks, 298 would need to be divisible by 6. The divisibility rule for 6 is that the number passes the divisibility rules for both 2 and 3. Since the last digit is even, 298 is divisible by 2. To determine if 298 is divisible by 3, we first add the digits of the number: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>9</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>19</mn></mrow></math>. Since 19 is not divisible by 3, neither is 298. Because 298 is not divisible by 3, it is also not divisible by 6, which means they cannot be put into 6 equal stacks of coins.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C03-M1-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Using Divisibility Rules</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00024">Using divisibility rules, determine if 4259 is divisible by 10</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00025">The divisibility rule for 10 is that the last digit of the number is 0. Since the last digit of 4259 is not 0, 4259 is not divisible by 10.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00008">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00026"><link class="os-embed" url="#exercise/CM-C03-M1-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00006">
+    <title>Using Divisibility Rules</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00027">Using divisibility rules, determine if 936276 is divisible by 4.</para>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00028">The divisibility rule for 4 is to check the last two digits of the number. If the number formed by the last two digits of the original number is divisible by 4, then so is the original number. The last two digits make the number 76. 76 is divisible by 4, since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>76</mn><mo>=</mo><mn>4</mn><mo>×</mo><mn>19</mn></mrow></math>. Since 76 is divisible by 4, so is 936276.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C03-M1-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00010">
+    <para id="para-00030"><link url="https://openstax.org/r/Divisibility_Rules">Divisibility Rules</link></para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Prime and Composite Numbers</title>
+    <para id="para-00031">Sometimes, a natural number has only two unique divisors, 1 and itself. For instance, 7 and 19 are prime. Such numbers are called <term id="term-00001">prime</term>. In other words, there is no way to divide a prime number into groups with an equal number of things, unless there is only one group, or those groups have one item per group. Other natural numbers have more than two unique divisors, such as 4, or 26. These numbers are called <term id="term-00002">composite</term>. The number 1 is special, it is neither prime nor composite.</para>
+    <note class="definition" id="note-00011">
+    <para id="para-00032">A natural number is <emphasis effect="bold">prime</emphasis> if it has only two unique proper divisors, 1 and itself.</para>
+    <para id="para-00033">A natural number is <emphasis effect="bold">composite</emphasis> if it has more than two unique proper divisors.</para>
+    </note>
+    <para id="para-00034">To determine if a number is prime or composite, you have to determine if the number has any divisors other than 1 and itself. The divisibility rules are useful here and can quickly show you if a number has a divisor on that list.</para>
+    <para id="para-00035">However, if none of those divide the number, you still have to check all other possible prime divisors. What are the prime numbers that are possibly divisors of the number you are checking? You need only check the prime numbers up to the square root of the number in question. For instance, if you want to know if 2217 is prime, you need to determine if any primes up to the square root of 2117 (which is 46.0 when rounded to one decimal place) divide 2217. If any of those primes are divisors of the number in question, then the number is composite. If none of those primes work, then the number is itself prime.</para>
+    <para id="para-00036">We can check divisibility with whatever tool we wish. Divisibility rules are quick for some prime divisors (2 and 5 come to mind) but aren't quick for other values (like 11). In place of divisibility rules, we could just use a calculator. If the prime number divides the number evenly (that is, there is no decimal or fractional part) then the number is divisible by that prime. Table 4.2 shows a quick list of the prime numbers up to 50. There are 15 prime numbers less than 50.</para>
+    <table summary="." id="table-00002">
+    <title>TABLE 4.2 PRIME NUMBERS LESS THAN 50</title>
+    <tgroup cols="5">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>5</entry>
+    <entry>7</entry>
+    <entry>11</entry>
+    </row>
+    <row>
+    <entry>13</entry>
+    <entry>17</entry>
+    <entry>19</entry>
+    <entry>23</entry>
+    <entry>29</entry>
+    </row>
+    <row>
+    <entry>31</entry>
+    <entry>37</entry>
+    <entry>41</entry>
+    <entry>43</entry>
+    <entry>47</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <example id="exam-00007">
+    <title>Determining if a Number if Prime or Composite</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00037">Determine if 2117 is prime or composite.</para>
+    </problem>
+    <solution id="sol-00007">
+    <para id="para-00038">The square root of 2117 is 46.0 (rounded to one decimal place). So, we need to check if 2117 is divisible by any prime up to 46. We can tell 2117 is not divisible by 2, as the last digit isn't even. Nor is it divisible by 5 (the last digit isn't 0 or 5). If we add the digits of 2117, we get 11, which is not divisible by 3, which means 2117 is also not divisible by 3. Now we repeat the process for all the primes up to 46. To check if 7 divides 2117, we could use a calculator. When we divide 2117 by 7, the result is 302.428571428. Since there is a decimal part, 2117 is not divisible by 7.</para>
+    <para id="para-00039">Similarly, dividing 2117 by 11 using a calculator results in 192.454545454. Again, there is a decimal part, so 2117 is not divisible by 11.</para>
+    <para id="para-00040">The next prime number is 13. Using the calculator to divide 2117 by 13 results in 162.846. Since there isthere is a decimal part, 2117 is not divisible by 13.</para>
+    <para id="para-00041">The next prime number is 17. Using the calculator to divide 2117 by 17 results in 124.529. Since there is a decimal part, 2117 is not divisible by 17.</para>
+    <para id="para-00042">Next, we check 19. Using the calculator to divide 2117 by 19 results in 111.421. Since there is a decimal part, 2117 is not divisible by 19.</para>
+    <para id="para-00043">The next prime number is 23. Using the calculator to divide 2117 by 23 results in 92.043, so 2117 is not divisible by 23.</para>
+    <para id="para-00044">The next prime is 29. Using the calculator to divide 2117 by 29 results in 73. Since there is no decimal part, 2117 is divisible by 29. This means that 2117 is not a prime number, but rather, a composite number. Writing 2117 as the product of 29 and another natural number, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2117</mn><mo>=</mo><mn>29</mn><mo>×</mo><mn>73</mn></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C03-M1-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00008">
+    <title>Determining if a Number if Prime or Composite</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00046">Determine if 423 is prime or composite.</para>
+    </problem>
+    <solution id="sol-00008">
+    <para id="para-00047">The square root of 423 is 20.57 (rounded to two decimal places). So, we need to check if 423 is divisible by any prime up to 20. We can tell 423 is not divisible by 2, as the last digit isn't even. Nor is it divisible by 5 (the last digit isn't 0 or 5). To check if 423 is divisible by three, we use the divisibility rule for 3. When we take the sum of the digits of 423, the result is 9. Since 9 is divisible by 3, so is 423. Since 423 is divisible by 3, 423 is a composite number. Writing 423 as the product of 3 and another natural number, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>423</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>141</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00048"><link class="os-embed" url="#exercise/CM-C03-M1-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00009">
+    <title>Determining if a Number if Prime or Composite</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00049">Determine if 1034 is prime or composite</para>
+    </problem>
+    <solution id="sol-00009">
+    <para id="para-00050">A quick inspection of 1034 shows it is divisible by 2 since the last digit is even, and so 1034 is a composite number.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C03-M1-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00010">
+    <title>Determining if a Number if Prime or Composite</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00052">Determine if 2917 is prime or composite.</para>
+    </problem>
+    <solution id="sol-00010">
+    <para id="para-00053">The square root of 2917 is 50.01 (rounded to two decimal places). So, we need to check if 2917 is divisible by any prime up to 50. We can tell 2917 is not divisible by 2, as the last digit isn't even. Nor is it divisible by 5 (the last digit isn't 0 or 5). Using the divisibility rule for 3, we take the sum of the digits of 2917, which is 19. Since 19 is not divisible by 3, neither is 2917. We then check the rest of the primes up to 50 using a calculator. When 2917 is divided by every prime number up to 50, the result has a decimal part. This mean no prime up to 50 divides 2917, so 2917 is a prime number.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00015">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C03-M1-Q010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00016">
+    <title>ILLEGAL PRIMES</title>
+    <para id="para-00055">Large primes are a hot commodity. Using two very large primes (some have more than 22 million digits!) is necessary for secure encryption. Anyone who has a new prime that is large enough can use that prime to create a new encryption. Of course, whoever discovers a large prime could sell the prime to a security company. That these primes are useful for encryption has made it necessary to protect that intellectual property. So much so that at least one prime number was declared illegal.</para>
+    </note>
+    <note class="video" id="note-00017">
+    <para id="para-00056"><link url="https://openstax.org/r/Illegal_Prime_Number">Illegal Prime Number</link></para>
+    </note>
+    <note class="people-mathematics" id="note-00018">
+    <title>Sophie Germain</title>
+    <figure class="unnumbered" id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_002.jpg"/>
+    </media>
+    <caption>CS_Photo_03_01_002: Picture of Sophie Germain</caption>
+    </figure>
+    <para id="para-00057">Born into a wealthy French family in 1776, Sophie Germain discovered and fell in love with mathematics by browsing her father’s books. Clandestine study, hard, tenacious work, and a mathematical mindset did not lead to college, however, as her gender precluded her from attending. She did manage, through friends, to obtain problems sets and submit brilliant solutions under the name Monsieur LaBlanc. One of her great interests was number theory, which is the study of properties of integers. One of her theorems, titled 'Sophie Germain’s Theorem', partially solved one of the great mathematical mysteries, Fermat’s Last Theorem, and involved her discovery of what are now known as Sophie Germain Primes. A Sophie Germain Prime is a prime number that can be written in the form 2p+1, where p is a prime number. For instance, 23 is prime. 2(23)+1= 47, which is prime, so 47 is a Sophie Germain Prime. It should be noted that 2p+1, where p is a prime number, may or may not be prime (check for p=7!).</para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Finding the Prime Factorization of Composite Numbers</title>
+    <para id="para-00058">Before we can start with prime factorization, let’s remind ourselves what it means to factor a number. We factor a number by identifying two (or more) numbers that, when multiplied, result in the original number. For instance, 3 and 24, when multiplied, give 72. So, 72 can be factored into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>24</mn></mrow></math>. Notice that we could have factored the 72 differently, say as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>6</mn><mo>×</mo><mn>12</mn></mrow></math>, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>36</mn></mrow></math>, or even as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>.</para>
+    <para id="para-00059" xmlns="http://cnx.rice.edu/cnxml">Finding the <term id="term-00003">prime factorization</term> of a composite number is to write the number as the product of all of its prime divisors. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Notice that when we multiply out the right-hand side, we get 80. Also, all the numbers being multiplied on the right-hand side are primes. You should notice that sometimes primes repeat themselves in the factorization. When prime factors do repeat, we may write the prime factorization using <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">exponents</term>, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup><mo>×</mo><mn>5</mn></mrow></math>. In that expression, the 2 is raised to the 4<sup xmlns="http://cnx.rice.edu/cnxml">th</sup> power. The 4 is the exponent and the 2 is the base.</para>
+    <note class="definition" id="note-00019">
+    <para id="para-00060">In the exponent notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math>, the number represented by a is called the <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">base</emphasis>. For example, in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>4</mn></msup></mrow></math>, 2 is the base.</para>
+    <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">In the exponent notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math>, the number represented by b is called the exponent. For example, in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>4</mn></msup></mrow></math>, 4 is the <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">exponent</emphasis>.</para>
+    <para id="para-00062">The expression <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math> is often read as “a raised t the bth power”. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>4</mn></msup></mrow></math> could be read as two raised to the fourth power.</para>
+    </note>
+    <note class="definition" id="note-00020" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00063">Expressing a number as the product of all of its prime factors is the <emphasis effect="bold">prime factorization</emphasis> of the number.</para>
+    </note>
+    <para id="para-00064">One has to wonder if finding the prime factorization could result in different factorizations. The <emphasis effect="bold">Fundamental Theorem of Arithmetic</emphasis> tells us that there is only one prime factorization for a given natural number.</para>
+    <note class="definition" id="note-00021">
+    <title>Fundamental Theorem of Arithmetic</title>
+    <para id="para-00065">Every natural number, other than 1, can be expressed in exactly one way, apart from the arrangement, as a product of primes.</para>
+    </note>
+    <para id="para-00066">The process of finding the prime factorization of a number is iterative, which means you do a step, then you repeat it until you cannot do the step any longer. The step we use is to identify one prime factor of the number, then write the number as the prime factor times another factor. You repeat this step on the other, newly found, factor. This step is repeated until no more primes can be factored from the remaining factor. This is easier to see and explain with an example.</para>
+    <example id="exam-00011">
+    <title>Finding the Prime Factorization</title>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00067">Find the prime factorization of 140.</para>
+    </problem>
+    <solution id="sol-00011">
+    <para id="para-00068">First, identify a prime number that divides 140. 140 is even (the last digit is even), so 2 divides 140. We then factor the 2 out of the 140 giving us</para>
+    <para id="para-00069"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>140</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>70</mn></mrow></math>.</para>
+    <para id="para-00070" xmlns="http://cnx.rice.edu/cnxml">The other factor is 70, so we find a prime factor of 70. 70 is also even, so 2 divides 70. We factor the 2 out of the 70 and the factorization is now</para>
+    <para id="para-00071"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>140</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>35</mn><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><mn>35</mn></mrow></math>.</para>
+    <para id="para-00072" xmlns="http://cnx.rice.edu/cnxml">Notice that we expressed the two factors of 2 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>2</mn></msup></mrow></math>.</para>
+    <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml">We now look to the remaining factor, 35. The last digit of 35 is 5, so 5 is a factor of 35. We factor the 5 out of the 35. The factorization is now</para>
+    <para id="para-00074"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>140</mn><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><mn>5</mn><mo>×</mo><mn>7</mn></mrow></math>.</para>
+    <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml">The remaining factor is 7. Since 7 is prime, the process is complete. The prime factorization of 140 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><mn>5</mn><mo>×</mo><mn>7</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00022" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C03-M1-Q011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <section id="sect-00005">
+    <title>Factor Trees</title>
+    <para id="para-00077">A useful tool for helping with prime factorization is a <emphasis effect="bold">factor tree</emphasis>. To create a factor tree for the natural number n (n is not 1), perform the following steps:</para>
+    <para id="para-00078">Step 1: If n is prime, the factor tree is just n.</para>
+    <para id="para-00079">Step 2: Identify two divisors of n, call them a and b.</para>
+    <para id="para-00080">Step 3: Write the number n down, and draw two branches extending down (or right) of the number n.</para>
+    <para id="para-00081">Step 4: Label the end of one branch a, the other as b. See the figure below.</para>
+    <figure class="unnumbered" id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_001.jpg"/>
+    </media>
+    <caption>Line tree with a, n, and b</caption>
+    </figure>
+    <para id="para-00082">Step 5: If a and b are prime, the tree is complete. When a number at this step is a prime number, we refer to it as a leaf of the tree diagram.</para>
+    <para id="para-00083">Step 6: If either a or b are composite, repeat steps 1 through 4 for a and b.</para>
+    <para id="para-00084">Step 7: The process stops when the leaves are all prime.</para>
+    <para id="para-00085">Step 8: The prime factorization is then the product of the all the leaves.</para>
+    <para id="para-00086">This is best seen in an example.</para>
+    <example id="exam-00012">
+    <title>Finding the Prime Factorization</title>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00087">Find the prime factorization of 66.</para>
+    </problem>
+    <solution id="sol-00012">
+    <para id="para-00088">Since 66 is even, 2 is a factor. When we factor out the 2, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>33</mn></mrow></math>. The factor tree is now:</para>
+    <figure class="unnumbered" id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_002.jpg"/>
+    </media>
+    <caption>Line tree with 2, 66, and 33</caption>
+    </figure>
+    <para id="para-00089">Since 2 is a factor, that branch is done, and 2 is a leaf. The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree, which is now:</para>
+    <figure class="unnumbered" id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_003.jpg"/>
+    </media>
+    <caption>Line tree with 2, 66, 33, 3, and 11</caption>
+    </figure>
+    <para id="para-00090">Since the 2, 3 and 11 are all prime, the factor tree is done. The prime factorization of 66 is the product of the leaves, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>11</mn></mrow></math>. the factorization is complete.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00023" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00091"><link class="os-embed" url="#exercise/CM-C03-M1-Q012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00024">
+    <para id="para-00092"><link url="https://openstax.org/r/Prime_Factorization">Using a Factor Tree to Find the Prime Factorization</link></para>
+    </note>
+    <example id="exam-00013">
+    <title>Finding the Prime Factorization</title>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00093">Find the prime factorization of 135.</para>
+    </problem>
+    <solution id="sol-00013">
+    <para id="para-00094">The number 135 is divisible by 3, and so 3 is a factor of 135. When we factor out the 3, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>.Using the factor tree,</para>
+    <figure class="unnumbered" id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_004.jpg"/>
+    </media>
+    <caption>Line tree with 3, 135, and 45</caption>
+    </figure>
+    <para id="para-00095">45 is also divisible by 3, so we factor out a 3 from 45. The other factor is 15. The factor tree is now:</para>
+    <figure class="unnumbered" id="fig-00007">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_005.jpg"/>
+    </media>
+    <caption>Line tree with 3, 135, 45, 3, and 15</caption>
+    </figure>
+    <para id="para-00096">15 is also divisible by 3 and can be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is now</para>
+    <figure class="unnumbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_006.jpg"/>
+    </media>
+    <caption><emphasis effect="underscore">Line tree with 3, 135, 45, 3, 15, 5, and 5</emphasis></caption>
+    </figure>
+    <para id="para-00097">All the leaves are prime, so the process is complete. The prime factorization of 135 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>3</mn><mn>3</mn></msup><mo>×</mo><mn>5</mn></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00025" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00098"><link class="os-embed" url="#exercise/CM-C03-M1-Q013"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00014">
+    <title>Identifying Prime Factors</title>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00099">How many different prime factors does 10241 have?</para>
+    </problem>
+    <solution id="sol-00014">
+    <para id="para-00100">To know how many different prime factors 10,241 has, we need the prime factorization of 10241. Using divisibility rules, we see that the number 10,241 is not divisible by 2, or by 3 (the sum of the digits is 8), or by 5. However, it is divisible by 7. After factoring the 7, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>10</mn><mo>,</mo><mn>241</mn><mo>=</mo><mn>7</mn><mo>×</mo><mn>1463</mn></mrow></math>. 1463 is also divisible by 7. After factoring the 7, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>10</mn><mo>,</mo><mn>241</mn><mo>=</mo><mn>7</mn><mo>×</mo><mn>7</mn><mo>×</mo><mn>209</mn><mo>=</mo><msup><mn>7</mn><mn>2</mn></msup><mo>×</mo><mn>209</mn></mrow></math>. The number 209 is not divisible by 7. The next prime to check is 11. 11 does divide 1463. After factoring the 11, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>10</mn><mo>,</mo><mn>241</mn><mo>=</mo><msup><mn>7</mn><mn>2</mn></msup><mo>×</mo><mn>11</mn><mo>×</mo><mn>19</mn></mrow></math>. Since 19 is prime, the prime factorization of 10,241 is complete. We see that 10,241 has 3 different prime factors, 7, 11, and 19.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00026" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00101"><link class="os-embed" url="#exercise/CM-C03-M1-Q014"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00027">
+    <para id="para-00102"><link url="https://openstax.org/r/Prime_Factorization_of_168">Finding the Prime Factorization of 168</link></para>
+    </note>
+    <note class="tech-check" id="note-00028">
+    <title>Using Wolfram Alpha to Find Prime Factorizations</title>
+    <para id="para-00103">The Wolfram Alpha website is a powerful resource available free to use online. The website is <link url="https://openstax.org/r/wolframalpha">https://www.wolframalpha.com/</link>. It is designed, as much as
+    is possible and though AI, to understand natural language requests. For instance, typing the question “What is the prime factorization of 543390” gets a rather quick answer of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>59</mn><mo>×</mo><mn>307</mn></mrow></math>. So, if you want to find the prime factorization of a number, you can simply ask Wolfram Alpha to find the prime factorization of the number.</para>
+    </note>
+    </section>
+    </section>
+    <section id="sect-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding the Greatest Common Divisor</title>
+    <para id="para-00104">Two numbers often have more than one divisor in common (all pairs of natural numbers have the common divisor 1). When listing the common divisors, it’s often the case that the largest is of interest. This divisor is called the <term id="term-00005">greatest common divisor</term> and is denoted <emphasis effect="bold">GCD</emphasis>.</para>
+    <note class="definition" id="note-00029">
+    <para id="para-00105">The <emphasis effect="bold">greatest common divisor</emphasis> (GCD) of a set of numbers is the largest number that divides each of those numbers. This is also sometimes referred to as the greatest common factor (GCF).</para>
+    </note>
+    <para id="para-00106">For instance, 6 is the greatest common divisor of 12 and 18. We can see this by listing all the divisors of each number, and by inspection select the largest value that shows up in each list.</para>
+    <table class="unnumbered" frame="none" summary="." id="table-00003">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>The divisors of 12</entry>
+    <entry>1, 2, 3, 4, 6, 12</entry>
+    </row>
+    <row>
+    <entry>The divisors of 18</entry>
+    <entry>1, 2, 3, 6, 9</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00107">It is easy to see that 6 is the largest value that appears in both lists.</para>
+    <example id="exam-00015">
+    <title>Finding the Greatest Common Divisor Using Lists</title>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00108">Find the greatest common divisor of 1400 and 250 by listing all divisors of each number.</para>
+    </problem>
+    <solution id="sol-00015">
+    <para id="para-00109">We create a list of all the divisors of 1400 and of 250 and choose the largest one.</para>
+    <para id="para-00110">The divisors of 1400 are</para>
+    <para id="para-00111">1, 2, 4, 5, 7, 8, 10, 14, 20, 25, 28, 35, 40, 50,56, 70, 100, 140, 175, 200, 280, 350, 700, 1400.</para>
+    <para id="para-00112">The divisors of 250 are</para>
+    <para id="para-00113">1, 2, 5, 10, 25, 50, 125, 250.</para>
+    <para id="para-00114">The largest value that appears on both lists is 50, so the greatest common divisor of 1400 and 250 is 50.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00030">
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00115"><link class="os-embed" url="#exercise/CM-C03-M1-Q015"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00116">Listing all the divisors of the numbers in the set will always work, but for some relatively small numbers, the set of all divisors can become pretty big, and finding them all can be a chore. Another approach to finding the greatest common divisor is to use the prime factorization of the numbers. To do so, use the following steps.</para>
+    <list bullet-style="none" id="list-00002">
+    <item>Step 1 Find the prime factorization of the numbers.</item>
+    <item>Step 2 Identify the prime factors that appear in every number’s prime factorization. These are called the common prime factors.</item>
+    <item>Step 3 Identify the smallest exponent of each prime factor identified in Step 2 in the prime factorizations.</item>
+    <item>Step 4 Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3. The result is the greatest common divisor.</item>
+    </list>
+    <example id="exam-00016">
+    <title>Finding the Greatest Common Divisor Using Prime Factorization</title>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00117">Find the greatest common divisor of 1400 and 250 by using their prime factorizations.</para>
+    </problem>
+    <solution id="sol-00016">
+    <para id="para-00118">Step 1 - Find the prime factorizations of the numbers.</para>
+    <list bullet-style="none" id="list-00003">
+    <item>The prime factorization of 1400 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>×</mo><msup><mn>5</mn><mn>2</mn></msup><mo>×</mo><mn>7</mn></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The prime factorization of 250 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>250</mn><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup></mrow></math>.</item>
+    </list>
+    <para id="para-00119" xmlns="http://cnx.rice.edu/cnxml">Step 2 - Identify the prime factors that appear in every number’s prime factorization.</para>
+    <list bullet-style="none" id="list-00004">
+    <item>The common prime factors are 2 and 5.</item>
+    </list>
+    <para id="para-00120">Step 3 - Identify the smallest exponent of each prime identified in Step 2 in the prime factorizations.</para>
+    <list bullet-style="none" id="list-00005">
+    <item>The exponent of common prime factor 2 in the prime factorization of 1400 is 3, and in the prime factorization of 250 is 1. The smallest of those exponents is 1.</item>
+    <item>The exponent of the common prime factor 5 in the prime factorization of 1400 is 2 and is in the prime factorization of 250 is 3. The smallest of these exponents is 2.</item>
+    </list>
+    <para id="para-00121">Step 4 - Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00006">
+    <item>This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>1</mn></msup><mo>×</mo><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>50</mn></mrow></math>. The greatest common divisor of 1400 and 250 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>50</mn></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <para id="para-00122" xmlns="http://cnx.rice.edu/cnxml">Notice that the answer matches the one we found in Example 15.</para>
+    <note class="your-turn" id="note-00031">
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00123"><link class="os-embed" url="#exercise/CM-C03-M1-Q016"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00017">
+    <title>Finding the Greatest Common Divisor Using Prime Factorization</title>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00124">Find the greatest common divisor of 600 and 784 by using their prime factorizations.</para>
+    </problem>
+    <solution id="sol-00017">
+    <para id="para-00125">Step 1 - Find the prime factorizations of the numbers.</para>
+    <list bullet-style="none" id="list-00007">
+    <item>The prime factorization of 600 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>×</mo><mn>3</mn><mo>×</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The prime factorization of 784 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>×</mo><msup><mn>7</mn><mn>2</mn></msup></mrow></math>.</item>
+    </list>
+    <para id="para-00126" xmlns="http://cnx.rice.edu/cnxml">Step 2 - Identify the prime factors that appear in every number’s prime factorization.</para>
+    <list bullet-style="none" id="list-00008">
+    <item>There is only one common prime factor, 2.</item>
+    </list>
+    <para id="para-00127">Step 3 - Identify the smallest exponent of each prime from identified in Step 2 in the prime factorizations.</para>
+    <list bullet-style="none" id="list-00009">
+    <item>The exponent of 2 in the prime factorization of 600 is 3. The exponent of 2 in the prime factorization of 784 is 4. So, the smallest exponent of 2 is 3.</item>
+    </list>
+    <para id="para-00128">Step 4 - Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00010">
+    <item>This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo><mn>8</mn></mrow></math>. The greatest common divisor of 600 and 784 is 8.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00032" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00129"><link class="os-embed" url="#exercise/CM-C03-M1-Q017"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="people-mathematics" id="note-00033">
+    <title>Srinivasa Ramanujan</title>
+    <figure class="unnumbered" id="fig-00009">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_003.jpg"/>
+    </media>
+    <caption>A photo of Srinivasa Ramanujan</caption>
+    </figure>
+    <para id="para-00130">Ramanujan was born in southern India in 1887, during British rule. He was a self-taught mathematician, who, while in high school, began working through a two-volume text of mathematical theorems and results. His work included examination of the distribution of primes. He eventually came to the attention of British mathematicians, G.H. Hardy. During one visit, Hardy mentioned to Ramanujan that his taxicab number was 1729, remarking that 1729 appeared to be a rather dull number. To which Ramanujan responded, “it is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.”</para>
+    </note>
+    <note class="tech-check" id="note-00034">
+    <title>Using Desmos to Find the GCD</title>
+    <para id="para-00131">To find the GCD of a set of numbers in Desmos, type gcd(first_number,second_number…) and Desmos will display the GCD of the numbers, as the numbers are typed!</para>
+    </note>
+    <note class="video" id="note-00035">
+    <para id="para-00132"><link url="https://openstax.org/r/Using_Desmos_to_Find_the_GCD">Using Desmos to Find the GCD</link></para>
+    </note>
+    </section>
+    <section id="sect-00007">
+    <title>Applications of the Greatest Common Divisor</title>
+    <para id="para-00133">The greatest common divisor has uses that are related to other mathematics (reducing fractions) but also in everyday applications. We’ll look at two such applications, which have very similar underlying structures. In each case, something must divide the groups or measurements equally.</para>
+    <example id="exam-00018">
+    <title>Calculating Floor Tile Size</title>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00134">Suppose you have a rectangular room that is 570 cm wide and 450 cm long. You wish to cover the floor of the room with square tiles. What’s the largest size square tile that can be used to cover this floor?</para>
+    </problem>
+    <solution id="sol-00018">
+    <para id="para-00135">Using squares means that the length and width of the tiles are equal. To ensure we are using full tiles, the side length of the square tiles must divide the length of the room and the width of the room. Since we want the largest square tiles, we need the GCD of the width and length of the room, or, the GCD of 570 and 450.</para>
+    <para id="para-00136">Step 1 - Find the prime factorizations of the numbers.</para>
+    <list bullet-style="none" id="list-00011">
+    <item>The prime factorization of 570 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>19</mn></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The prime factorization of 450 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></math>.</item>
+    </list>
+    <para id="para-00137" xmlns="http://cnx.rice.edu/cnxml">Step 2 - Identify the prime factors that appear in every number’s prime factorization</para>
+    <list bullet-style="none" id="list-00012">
+    <item>The common prime factors are 2, 3, and 5.</item>
+    </list>
+    <para id="para-00138">Step 3 - Identify the smallest exponent of each prime identified in Step 2 in the prime factorizations.</para>
+    <list bullet-style="none" id="list-00013">
+    <item>The exponents of 2 in the prime factorizations of 570 and 450 are 1 and 1. So the smallest exponent for 2 is 1.</item>
+    <item>The exponents of 3 in the prime factorizations of 570 and 450 are 1 and 2, so the smallestsmallest exponent for 3 is 1.</item>
+    <item>The exponents of 5 in the prime factorizations of 570 and 450 are 1 and 2, so the smallest exponent for 5 is 1.</item>
+    </list>
+    <para id="para-00139">Step 4 - Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00014">
+    <item>This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>1</mn></msup><mo>×</mo><msup><mn>3</mn><mn>1</mn></msup><mo>×</mo><msup><mn>5</mn><mn>1</mn></msup><mo>=</mo><mn>30</mn></mrow></math>. The GCD of 450 and 570 is 30, so the largest size square tile that can be used to cover the floor is 30cm by 30cm.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00036" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00140"><link class="os-embed" url="#exercise/CM-C03-M1-Q018"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00019">
+    <title>Organizing Books Per Shelf</title>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00141">Suppose you want to organize books onto shelves, and you want the shelves to hold the same number of books. Each shelf will only contain one genre of book. You have 24 sci-fi, 42 fantasy, and 30 horror books. How many books can go on each shelf?</para>
+    </problem>
+    <solution id="sol-00019">
+    <para id="para-00142">Since we want shelves that hold an equal number of books, and a shelf can only hold one genre of book, we need a number that will equally divide 24, 42, and 30. So, we need the GCD of the number of books of each genre, or, the GCD of 24, 42, and 30.</para>
+    <para id="para-00143">Step 1 - Find the prime factorizations of the numbers.</para>
+    <list bullet-style="none" id="list-00015">
+    <item>The prime factorization of 24 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>3</mn></msup><mo>×</mo><mn>3</mn></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The prime factorization of 42 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>7</mn></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The prime factorization of 30 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>.</item>
+    </list>
+    <para id="para-00144" xmlns="http://cnx.rice.edu/cnxml">Step 2 - Identify the prime factors that appear in every number’s prime factorization.</para>
+    <list bullet-style="none" id="list-00016">
+    <item>The common prime factors are 2 and 3.</item>
+    </list>
+    <para id="para-00145">Step 3 - Identify the smallest exponent of each prime identified in Step 2 in the prime factorizations.</para>
+    <list bullet-style="none" id="list-00017">
+    <item>The smallest exponent of 2 and 3 in the factorizations is 1.</item>
+    </list>
+    <para id="para-00146">Step 4 - Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00018">
+    <item>This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>1</mn></msup><mo>×</mo><msup><mn>3</mn><mn>1</mn></msup><mo>=</mo><mn>6</mn></mrow></math>. The GCD of 24, 42, and 30 is 6, so the largest number of books that can go on a shelf is 6.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00037" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00147"><link class="os-embed" url="#exercise/CM-C03-M1-Q019"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00038">
+    <para id="para-00148"><link url="https://openstax.org/r/Applying_the_GCD">Applying the GCD</link></para>
+    </note>
+    </section>
+    <section id="sect-00008">
+    <title>Finding the Least Common Multiple</title>
+    <para id="para-00149">The flip side to a divisor of a number is a <term id="term-00006">multiple</term> of a number. For example, 5 is a divisor of 45 and so 45 is a multiple of 5. More generally, if the number a divides the number b, then b is a multiple of a.</para>
+    <note class="definition" id="note-00039">
+    <para id="para-00150">If a divides b, then b is a <emphasis effect="bold">multiple</emphasis> of a.</para>
+    </note>
+    <para id="para-00151">This drives the idea of the least common multiple of a set of numbers. A common multiple of a set of numbers is a multiple of each of those numbers. For instance, 45 is a common multiple of 9 and 5, because 45 is a multiple of 9 (9 divides 45) and 45 is also a multiple of 5 (5 divides 45). The <term id="term-00007">least common multiple</term> (LCM) of a set of number is the smallest positive common multiple of that set of numbers.</para>
+    <note class="definition" id="note-00040">
+    <para id="para-00152">The <emphasis effect="bold">least common multiple</emphasis> (LCM) of a set of numbers is the smallest of the common multiples of those numbers.</para>
+    </note>
+    <para id="para-00153">There are (at least) three ways to find the LCM of a set of numbers, and we will explore two of them. One way is to create a list of multiples of each number in the set, and then identify the smallest multiple that appears in those lists.</para>
+    <example id="exam-00020">
+    <title>Finding the Least Common Multiple Using Lists</title>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00154">Find the LCM of 24 and 90 by listing multiples and choosing the smallest common multiple.</para>
+    </problem>
+    <solution id="sol-00020">
+    <para id="para-00155">First, create a list of the multiples of each number. The first 15 multiples:</para>
+    <para id="para-00156">for 24: 24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 264, 288, 312, 336, 360.</para>
+    <para id="para-00157">for 90: 90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990, 1080, 1170, 1260, 1350.</para>
+    <para id="para-00158">There is one multiple common to these lists, which is 360. So, 360 is the LCM of 24 and 90.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00041">
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00159"><link class="os-embed" url="#exercise/CM-C03-M1-Q020"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00160">The second method we can use is to find the prime factorizations of the number in the set to build the LCM of the numbers based on the prime divisors of the numbers. The LCM can be built from the prime factorization of the numbers in the set in a similar way as when finding the greatest common divisor. Here are the steps for using the prime factorization process for finding the LCM.</para>
+    <list bullet-style="none" id="list-00019">
+    <item>Step 1 Find the prime factorization of each number.</item>
+    <item>Step 2 Identify each prime that is present in any of the prime factorizations.</item>
+    <item>Step 3 Identify the largest exponent of each prime identified in Step 2 in the prime factorizations.</item>
+    <item>Step 4 Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3.</item>
+    </list>
+    <example id="exam-00021">
+    <title>Finding the Least Common Multiple Using Prime Factorization</title>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00161">Use the prime factorizations of 24 and 90 to identify their LCM.</para>
+    </problem>
+    <solution id="sol-00021">
+    <para id="para-00162">Step 1 Find the prime factorization of each number.</para>
+    <list bullet-style="none" id="list-00020">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>24</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup><mo>×</mo><mn>3</mn></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>90</mn><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><mn>5</mn></mrow></math></item>
+    </list>
+    <para id="para-00163" xmlns="http://cnx.rice.edu/cnxml">Step 2 Identify each prime that is present in any of the prime factorizations.</para>
+    <list bullet-style="none" id="list-00021">
+    <item>The prime numbers present in the prime factorizations are 2, 3, and 5</item>
+    </list>
+    <para id="para-00164">Step 3 Identify the largest exponent of each prime identified in Step 2 in the prime factorizations.</para>
+    <table class="unnumbered" frame="none" summary="." id="table-00004">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>Prime</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>Largest exponent</entry>
+    <entry>3</entry>
+    <entry>2</entry>
+    <entry>1</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00165">Step 4 Compute the LCM by multiplying the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00022">
+    <item>The LCM for 24 and 90 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><msup><mn>5</mn><mn>1</mn></msup><mo>=</mo><mn>360</mn></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00042" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00166"><link class="os-embed" url="#exercise/CM-C03-M1-Q021"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00022">
+    <title>Finding the Least Common Multiple Using Prime Factorization</title>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00167">Use the prime factorizations of 36, 66, and 250 to identify the LCM.</para>
+    </problem>
+    <solution id="sol-00022">
+    <para id="para-00168">Step 1 Find the prime factorization of each number.</para>
+    <list bullet-style="none" id="list-00023">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>11</mn></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>250</mn><mo>=</mo><mn>2</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup></mrow></math></item>
+    </list>
+    <para id="para-00169" xmlns="http://cnx.rice.edu/cnxml">Step 2 Identify each prime that is present in any of the prime factorizations.</para>
+    <list bullet-style="none" id="list-00024">
+    <item>The prime numbers present in the prime factorizations are 2, 3, 5, and 11</item>
+    </list>
+    <para id="para-00170">Step 3 Identify the largest exponent of each prime identified in Step 2 in the prime factorizations.</para>
+    <table class="unnumbered" frame="none" summary="." id="table-00005">
+    <tgroup cols="5">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>Prime</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>5</entry>
+    <entry>11</entry>
+    </row>
+    <row>
+    <entry>Largest exponent</entry>
+    <entry>2</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>1</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00171">Step 4 Compute the LCM by multiplying the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00025">
+    <item>The LCM for 36, 66, and 250 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>11</mn><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup><mo>×</mo><msup><mrow><mn>11</mn></mrow><mn>1</mn></msup><mo>=</mo><mn>49500</mn></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00043" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00172"><link class="os-embed" url="#exercise/CM-C03-M1-Q022"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00173">Using lists of multiples for this example would be quite long. Frequently, as in this example, the prime factorization process is much quicker. In practice, you can use either listing or prime factorization to find the LCM.</para>
+    <example id="exam-00023">
+    <title>Finding the Least Common Multiple Using Both Methods</title>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00174">Find the LCM of 20, 36, and 45 using lists and prime factorization.</para>
+    </problem>
+    <solution id="sol-00023">
+    <para id="para-00175">First, use listing. List the multiples:</para>
+    <table class="unnumbered" frame="none" summary="." id="table-00006">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>20</entry>
+    <entry>20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220</entry>
+    </row>
+    <row>
+    <entry>36</entry>
+    <entry>36, 72, 108, 144, 180, 216, 252, 288, 324, 360</entry>
+    </row>
+    <row>
+    <entry>45</entry>
+    <entry>45, 90, 135, 180, 225, 270, 315, 360, 405, 450, 495, 540</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00176">The smallest value that appears on all lists is 180, so 180 is the LCM of 20, 36, and 45.</para>
+    <para id="para-00177">Second, find the prime factorizations of 20, 36, and 45.</para>
+    <para id="para-00178">Step 1: Find the prime factorization of each number.</para>
+    <list bullet-style="none" id="list-00026">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><mn>5</mn></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>45</mn><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><mn>5</mn></mrow></math></item>
+    </list>
+    <para id="para-00179" xmlns="http://cnx.rice.edu/cnxml">Step 2: Identify each prime that is present in any of the prime factorizations.</para>
+    <list bullet-style="none" id="list-00027">
+    <item>The prime numbers present in the prime factorizations are 2, 3, 5.</item>
+    </list>
+    <para id="para-00180">Step 3 Identify the largest exponent of each prime identified in Step 2 in the prime factorizations.</para>
+    <table class="unnumbered" summary="." id="table-00007">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>Prime</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>Largest exponent</entry>
+    <entry>2</entry>
+    <entry>2</entry>
+    <entry>1</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00181">Step 4: Compute the LCM by multiplying the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
+    <list bullet-style="none" id="list-00028">
+    <item>The LCM for 20, 36, and 45 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><msup><mn>5</mn><mn>1</mn></msup><mo>=</mo><mn>180</mn></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00044" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00182"><link class="os-embed" url="#exercise/CM-C03-M1-Q023"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00045">
+    <para id="para-00183"><link url="https://openstax.org/r/Finding_the_LCM">Finding the LCM</link></para>
+    </note>
+    <note class="tech-check" id="note-00046">
+    <title>Using Desmos to Find the LCM</title>
+    <para id="para-00184">To find the LCM of a set of numbers in Desmos, type lcm(first_number,second_number…) and Desmos will display the GCD of the numbers, as the numbers are typed!</para>
+    </note>
+    <note class="video" id="note-00047">
+    <para id="para-00185"><link url="https://openstax.org/r/Using_Desmos_to_find_the_LCM">Using Desmos to find the LCM</link></para>
+    </note>
+    </section>
+    <section id="sect-00009">
+    <title>Applications of the Least Common Multiple</title>
+    <para id="para-00186">Some applications of LCM involve events that repeat at fixed intervals, such as visits to a location. Other applications involve getting things to be of equal magnitude when using parts that are different sizes. In each case, we may be looking to determine when two processes 'line up'.</para>
+    <example id="exam-00024">
+    <title>Determining Scheduling Overlap Using the Least Common Multiple</title>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00187">Two students, Jennifer, and Amelia, meet one day at an assisted living facility where they volunteer. Jennifer volunteers every 6 days. Amelia volunteers every 10 days. How many days will it be until they are both volunteering on the same day again?</para>
+    </problem>
+    <solution id="sol-00024">
+    <para id="para-00188">If we list the days that each student will volunteer, it becomes clear that we could solve this problem using the LCM of 6 and 10. Jennifer will be at the assisted living facility 6, 12, 18, 24, 30, 36, 42, and 48 days later. Amelia will be at the assisted living facility 10, 20, 30, 40, 50 and 60 days later. The smallest number appearing on both lists is 30. Jennifer and Amelia will once more be volunteering together 30 days later.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00048">
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00189"><link class="os-embed" url="#exercise/CM-C03-M1-Q024"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00025">
+    <title>Determining the Minimum Height Using the LCM</title>
+    <exercise id="exer-00049">
+    <problem id="prob-00049">
+    <para id="para-00190">A team building exercise has teams build a house of cards as high as possible. However, the cards for different teams are of different sizes. Team 1 uses 10cm by 10cm cards, while Team 2 uses 8cm by 8cm cards. What is the minimum height when the two teams will be tied? Ignore the width of the cards.</para>
+    </problem>
+    <solution id="sol-00025">
+    <para id="para-00191">This is an example where we want to put together objects with different sizes. We want to know the minimum height when they are tied, or when the houses of cards line up the first time. The heights of the towers built using the 10cm by 10cm cards will be 10, 20, 30, 40, 50, and 60 cm tall. When the 8 by 8 cards are used, the tower will be 8, 16, 24, 32, 40, 48, and 56 cm tall. The smallest number appearing on both lists is 40. The first time they are tied is when the two towers are 40 cm tall.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00049">
+    <exercise id="exer-00050">
+    <problem id="prob-00050">
+    <para id="para-00192"><link class="os-embed" url="#exercise/CM-C03-M1-Q025"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00050">
+    <para id="para-00193"><link url="https://openstax.org/r/Application_of_LCM">Application of LCM</link></para>
+    </note>
+    <note class="work-out" id="note-00051">
+    <title>Prime Number Lifecycles – Cicadas</title>
+    <exercise id="exer-00051">
+    <problem id="prob-00051">
+    <para id="para-00194">Cicadas are known to have life cycles of 13 or 17 years, which are prime numbers. Why would a prime number life cycle be an evolutionary advantage? To figure this out, we have to explore how common multiples work with prime numbers.</para>
+    <para id="para-00195">In the following pairs, one number is a prime and the other is not. Determine the LCM of these following pairs of numbers:</para>
+    <list bullet-style="none" id="list-00029">
+    <item>7 and 6</item>
+    <item>11 and 15</item>
+    <item>5 and 8</item>
+    </list>
+    <para id="para-00196">What have you noticed about the LCM and the two numbers? Make a conjecture regarding the LCM of a prime number and another number. Test this conjecture with a few examples of your own making.</para>
+    <para id="para-00197">Suppose a predator of cicadas has a life cycle of 3 years. How many years will it take for the life cycles to match up, that is, how many years until the cicadas are available to the predator?</para>
+    <para id="para-00198">Explain why the predator might have a survival problem based on the answer to the previous question.</para>
+    </problem>
+    <solution id="sol-00026">
+    <para id="para-00199">The LCMs are 42, 165 and 40.</para>
+    <para id="para-00200">Conjecture that the LCM of a prime and a composite that does not have the prime as a factor is the product of the numbers.</para>
+    <para id="para-00201">(It is likely that the students will not notice the exception given the list of pairs, so they may conjecture that the LCM of a prime and a composite is the product of the numbers, which is inaccurate, since the LCM of a prime number and a composite that has the prime as a factor is the composite number itself).</para>
+    <para id="para-00202">For cicadas with a 13 year lifecycle, it will take 39 years. For cicadas with a lifecycle of 17 years, it will take 51 years.</para>
+    <para id="para-00203">The predator will not have access to its food source for at least 39 years, and so without a varied diet, will likely die out due to lack of food.</para>
+    </solution>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00010">
+    <title>[Check Your Understanding]</title>
+    <exercise id="exer-00052">
+    <problem id="prob-00052">
+    <para id="para-00204"><link class="os-embed" url="#exercise/CM-C03-M1-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00053">
+    <problem id="prob-00053">
+    <para id="para-00205"><link class="os-embed" url="#exercise/CM-C03-M1-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00054">
+    <problem id="prob-00054">
+    <para id="para-00206"><link class="os-embed" url="#exercise/CM-C03-M1-Q028"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00055">
+    <problem id="prob-00055">
+    <para id="para-00207"><link class="os-embed" url="#exercise/CM-C03-M1-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00056">
+    <problem id="prob-00056">
+    <para id="para-00208"><link class="os-embed" url="#exercise/CM-C03-M1-Q030"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00011">
+    <title>Exercises</title>
+    <exercise id="exer-00057">
+    <problem id="prob-00057">
+    <para id="para-00209"><link class="os-embed" url="#exercise/CM-C03-M1-Q031"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00058">
+    <problem id="prob-00058">
+    <para id="para-00210"><link class="os-embed" url="#exercise/CM-C03-M1-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00059">
+    <problem id="prob-00059">
+    <para id="para-00211"><link class="os-embed" url="#exercise/CM-C03-M1-Q033"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00060">
+    <problem id="prob-00060">
+    <para id="para-00212"><link class="os-embed" url="#exercise/CM-C03-M1-Q034"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00061">
+    <problem id="prob-00061">
+    <para id="para-00213"><link class="os-embed" url="#exercise/CM-C03-M1-Q035"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00062">
+    <problem id="prob-00062">
+    <para id="para-00214"><link class="os-embed" url="#exercise/CM-C03-M1-Q036"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00063">
+    <problem id="prob-00063">
+    <para id="para-00215"><link class="os-embed" url="#exercise/CM-C03-M1-Q037"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00064">
+    <problem id="prob-00064">
+    <para id="para-00216"><link class="os-embed" url="#exercise/CM-C03-M1-Q038"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00065">
+    <problem id="prob-00065">
+    <para id="para-00217"><link class="os-embed" url="#exercise/CM-C03-M1-Q039"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00066">
+    <problem id="prob-00066">
+    <para id="para-00218"><link class="os-embed" url="#exercise/CM-C03-M1-Q040"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00012">
+    <title>Module 1 – Prime and Composite Numbers</title>
+    <section class="key-terms" id="sect-00013">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00030">
+    <item>Natural numbers</item>
+    <item>Factor of a number</item>
+    <item>Multiple of a number</item>
+    <item>Prime number</item>
+    <item>Composite number</item>
+    <item>Prime factorization</item>
+    <item>Greatest common divisor (GCD)</item>
+    <item>Least common multiple (LCM)</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00014">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00031">
+    <item>Identify prime and composite numbers.</item>
+    <item>Be able to find the prime factorization of a number.</item>
+    <item>Be able to calculate the greatest common divisor of a set of numbers.</item>
+    <item>Be able to find the least common multiple of a set of numbers.</item>
+    <item>Use the GCD or LCM in applications.</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00015">
+    <title>Videos</title>
+    <para id="para-00219"><link url="https://openstax.org/r/Divisibility_Rules">Divisibility Rules</link></para>
+    <para id="para-00220"><link url="https://openstax.org/r/Illegal_Prime_Number">illegal Prime Number</link></para>
+    <para id="para-00221"><link url="https://openstax.org/r/Using_a_Factor_Tree_to_Find_the_Prime_Factorization">Using a Factor Tree to Find the Prime Factorization</link></para>
+    <para id="para-00222"><link url="https://openstax.org/r/Finding_the_Prime_Factorization_of_168">Finding the Prime Factorization of 168</link></para>
+    <para id="para-00223"><link url="https://openstax.org/r/Using_Desmos_to_find_the_GCD">Using Desmos to find the GCD</link></para>
+    <para id="para-00224"><link url="https://openstax.org/r/Applying_the_GCD">Applying the GCD</link></para>
+    <para id="para-00225"><link url="https://openstax.org/r/Finding_the_LCM">Finding the LCM</link></para>
+    <para id="para-00226"><link url="https://openstax.org/r/Using_Desmos_to_find _the_LCM">Using Desmos to find the LCM</link></para>
+    <para id="para-00227"><link url="https://openstax.org/r/Application_of_LCM">Application of LCM</link></para>
+    </section>
+    </section>
+    </content>
+    </document>
