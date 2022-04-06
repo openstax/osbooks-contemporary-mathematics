@@ -18,7 +18,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_03_07_008.jpg"/>
     </media>
-    <caption><emphasis effect="bold">CS_Photo_03_07_008: A woman making an online purchase with their credit card on her cellphone.</emphasis></caption>
+    <caption>A woman making an online purchase with their credit card on her cellphone.</caption>
     </figure>
     <para id="para-00002">Online shopping requires you to enter your credit card number, which is then sent electronically to the vendor. Using an ATM involves sliding you bank card into a reader, which then reads, sends, and verifies your card. Swiping or tapping for a purchase in a brick and mortar store is how your card sends its information to the machine, which is then communicated to the store’s computer and your credit card company. This information is read, recorded, and transferred many times. Each instance provides one more opportunity for error to creep into the process, a misrecorded digit, transposed digits, or missing digits. Fortunately, these card numbers have a built-in error checking system which relies on modular arithmetic, which is often referred to as clock arithmetic. In this Module, we explore clock, or modular, arithmetic.</para>
     <note class="video" id="note-00001">
@@ -35,7 +35,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_001.jpg"/>
     </media>
-    <caption><emphasis effect="bold">A clock with 3:00 indicated, an arrow going around the clock on full time, labeled as 12 hours later, landing back on 3:00.</emphasis></caption>
+    <caption>A clock with 3:00 indicated, an arrow going around the clock on full time, labeled as 12 hours later, landing back on 3:00.</caption>
     </figure>
     <para id="para-00007">What do 2, 14, 26 and 38 have in common in relation to 12? When they are divided by 12, they each have a remainder of 2. That's the key. When you add a number of hours to a specific time on the clock, first divide the number of hours being added by 12 and determine the remainder. Add that remainder to the time on the clock to know what time it will be. A good visualization of this is to wrap a number line around the clock, with the zero at the starting time. Then each time 12 on the number line passes, the number line passes the starting spot on the clock. This is referred to as <term id="term-00002">modulo 12</term> arithmetic. Even though the process above says to divide the number being added by 12 first the perform the addition, the result will be the same if you add the numbers first, then divide by 12 and determine the remainder.</para>
     <note class="definition" id="note-00003">
