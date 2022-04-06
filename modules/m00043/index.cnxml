@@ -5,9 +5,355 @@
     <md:content-id>m00043</md:content-id>
     <md:uuid>0e424591-ed1d-485b-8c2a-cc58dacf0177</md:uuid>
   </metadata>
-  <content class="introduction">
-    <section id="sect-00001">
-      <para id="para-00001">Placeholder Text</para>
+  <content>
+    <section class="learning-objectives" id="sect-00001">
+    <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+    <list list-type="enumerated" id="list-00001">
+    <item>Simplify expressions using order of operations.</item>
+    <item>Simplify expressions using order of operations involving grouping symbols.</item>
+    </list>
+    </section>
+    <figure class="unnumbered" id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_03_03_005.jpg"/>
+    </media>
+    <caption>A photo with multiple calculations shown with many different operations</caption>
+    </figure>
+    <para id="para-00002">Calculates else sure someone be rules expect explicit we what that needs to need make, we to that them what be calculate to calculated first.</para>
+    <para id="para-00003">I am sure you read that sentence and couldn't make heads or tails of it. Seems like it might concern calculations, but maybe it concerns needs? You may even be attempting to unscramble the sentence as you read it, placing words in the order you might expect them to appear in. The reason that the sentences make no sense is that the words don't follow the order you expect them to follow. Unscrambled, the sentence was intended to be “To be sure that someone else calculates when we expect them to calculate, we need rules that make explicit what needs to be calculated first.”</para>
+    <para id="para-00004">Just as when we don't follow the sentence structure in English the sentence makes no sense, if we don't follow the rules for order of operations, arithmetic expressions make no sense. Just a simple expression would be problematic if we didn't have some rules to tell us what to calculate first. For instance, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>+</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></math> can be calculated in many ways. You could get 5,184. Or, you could get 80. Or, 96. The issue is that without following a set of rules for calculation, the same expression will give various results. In case you are curious, using the appropriate order of operations, we find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>+</mo><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>44</mn></mrow></math>.</para>
+    <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Simplify Expressions Using Order of Operations</title>
+    <para id="para-00005">The order in which mathematical operations is performed is a convention that makes it easier for anyone to correctly calculate. They follow the acronym EMDAS:</para>
+    <list bullet-style="none" id="list-00002">
+    <item>E	Exponents</item>
+    <item>M/D Multiplication and division</item>
+    <item>A/S Addition and Subtraction</item>
+    </list>
+    <para id="para-00006">So, what does EMDAS tell us to do? In an equation, moving left to right, we begin by calculating all the exponents first. Once the exponents have been calculated, we again move left to right, calculating the multiplications and divisions, one at a time. Multiplication and division hold the same position in the ordering, so when you encounter one or the other at this step, do it. Once the multiplications and divisions have been calculated, we again move left to right, calculating the additions and subtractions, one at a time. Addition and subtractions hold the same position in the ordering, so when you encounter one or the other at this step, do it. We’ll explore this as we work an example.</para>
+    <example id="exam-00001">
+    <title>Using Two Order of Operations</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007">Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>21</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>13</mn></mrow></math></para>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00008">There are no exponents in this expression, so the next operations to check are multiplication and division. Moving left to right, the first multiplication encountered is 4 multiplied by 13. We perform that operation first.</para>
+    <para id="para-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>21</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>13</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>21</mn><mo>−</mo><mn>52</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">The only operation remaining is the subtraction.</para>
+    <para id="para-00011"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>21</mn><mo>−</mo><mn>52</mn><mo>=</mo><mo>−</mo><mn>31</mn></mrow></math></para>
+    <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">So <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>21</mn><mo>−</mo><mn>4</mn><mo>×</mo><mn>13</mn><mo>=</mo><mo>−</mo><mn>31</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CM-C03-M3-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Using Two Order of Operations</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00014">Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mn>8</mn><mn>3</mn></msup></mrow></math></para>
+    </problem>
+    <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00015">Moving left to right, we see there is an exponent. We perform the exponent first.</para>
+    <para id="para-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mn>8</mn><mn>3</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mrow><mo>(</mo><mrow><mn>8</mn><mo>×</mo><mn>8</mn><mo>×</mo><mn>8</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo>×</mo><mn>512</mn></mrow></math></para>
+    <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">The only operation remaining is the multiplication.</para>
+    <para id="para-00018"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>512</mn><mo>=</mo><mn>2048</mn></mrow></math></para>
+    <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">So <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mn>8</mn><mn>3</mn></msup><mo>=</mo><mn>2048</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CM-C03-M3-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Using Three Order of Operations</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00021">Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><mn>4</mn></mrow></math>.</para>
+    </problem>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00022">To calculate this, move left to right, and compute all the exponents first. The only exponent we see is the squaring of the 3, so that is calculated first.</para>
+    <para id="para-00023"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>4</mn></mrow></math></para>
+    <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">Since the exponents are all calculated, now calculate all the multiplications and divisions moving left to right. The only multiplication or division present is 9 times 4.</para>
+    <para id="para-00025"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>36</mn></mrow></math></para>
+    <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml">Finally, moving left to right, perform the additions and subtractions. There is only one such operation, 2 plus 36.</para>
+    <para id="para-00027"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>36</mn><mo>=</mo><mn>38</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00028"><link class="os-embed" url="#exercise/CM-C03-M3-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00029">Even if the expression being calculated gets more complicated, we perform the operations in those orders: EMDAS.</para>
+    <note class="video" id="note-00004">
+    <para id="para-00030"><link url="https://openstax.org/r/Order_of_Operations_1">Order of Operations 1</link></para>
+    </note>
+    <example id="exam-00004">
+    <title>Using Eight Order of Operations</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00031">Correctly apply order of operations to compute the following:</para>
+    <para id="para-00032"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>−</mo><mn>25</mn><mo>×</mo><mn>6</mn><mo>/</mo><mn>10</mn><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup></mrow></math></para>
+    </problem>
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00033">To do so, calculate the exponents first, moving left to right. There are two occurrences of exponents in the expression, 3 squared and 2 cubed.</para>
+    <para id="para-00034"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>−</mo><mn>25</mn><mo>×</mo><mn>6</mn><mo>/</mo><mn>10</mn><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>=</mo><mn>4</mn><mo>−</mo><mn>25</mn><mo>×</mo><mn>6</mn><mo>/</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mrow></math></para>
+    <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Now that the exponents are calculated, perform the multiplication and division, moving left to right. The first is the product of 25 and 6.</para>
+    <para id="para-00036"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>−</mo><mn>25</mn><mo>×</mo><mn>6</mn><mo>/</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>−</mo><mn>150</mn><mo>/</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00037" xmlns="http://cnx.rice.edu/cnxml">Next is the 150 divided by 10.</para>
+    <para id="para-00038"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>−</mo><mn>150</mn><mo>/</mo><mn>10</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>−</mo><mn>15</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">Next is 15 multiplied by 9.</para>
+    <para id="para-00040"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>−</mo><mn>15</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>−</mo><mn>135</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml">Finally, multiply the 7 and 8.</para>
+    <para id="para-00042"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>−</mo><mn>135</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>−</mo><mn>135</mn><mo>+</mo><mn>56</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">As all the multiplications and divisions have been calculated, the additions and subtractions are performed, moving left to right</para>
+    <para id="para-00044"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>−</mo><mn>135</mn><mo>+</mo><mn>56</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo>−</mo><mn>131</mn><mo>+</mo><mn>56</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo>−</mo><mn>131</mn><mo>+</mo><mn>56</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo>−</mo><mn>75</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00045" xmlns="http://cnx.rice.edu/cnxml">The computed value is −75.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00046"><link class="os-embed" url="#exercise/CM-C03-M3-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00006">
+    <para id="para-00047"><link url="https://openstax.org/r/Order_of_Operations_2">Order of Operations 2</link></para>
+    </note>
+    <example id="exam-00005">
+    <title>Using 6 Order of Operations</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00048">Correctly apply the rules for order of operations to accurately compute the following:</para>
+    <para id="para-00049"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>10</mn><mo>−</mo><mn>3</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup><mo>/</mo><mn>15</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn></mrow></math></para>
+    </problem>
+    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00050">Calculating <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>10</mn><mo>−</mo><mn>3</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup><mo>/</mo><mn>15</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn></mrow></math></para>
+    <para id="para-00051" xmlns="http://cnx.rice.edu/cnxml">Exponents first, moving left to right:</para>
+    <para id="para-00052"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>10</mn><mo>−</mo><mn>3</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup><mo>/</mo><mn>15</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>10</mn><mo>−</mo><mn>3</mn><mo>×</mo><mn>125</mn><mo>/</mo><mn>15</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00053" xmlns="http://cnx.rice.edu/cnxml">Next, multiplication and division moving left to right:</para>
+    <para id="para-00054"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>10</mn><mo>−</mo><mn>3</mn><mo>×</mo><mn>125</mn><mo>/</mo><mn>15</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn><mo>=</mo><mn>10</mn><mo>−</mo><mn>375</mn><mo>/</mo><mn>15</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>10</mn><mo>−</mo><mn>25</mn><mo>+</mo><mn>56</mn><mo>/</mo><mn>4</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>10</mn><mo>−</mo><mn>25</mn><mo>+</mo><mn>14</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00055" xmlns="http://cnx.rice.edu/cnxml">Finally, addition and subtraction moving left to right:</para>
+    <para id="para-00056"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>10</mn><mo>−</mo><mn>25</mn><mo>+</mo><mn>14</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo>−</mo><mn>15</mn><mo>+</mo><mn>14</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr></mtable></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C03-M3-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00006">
+    <title>Using Order of Operations</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00058">
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><msup><mn>2</mn><mn>4</mn></msup><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>/</mo><msup><mn>2</mn><mn>3</mn></msup></mrow></math></para>
+    </problem>
+    <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00059">To begin calculating <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><msup><mn>2</mn><mn>4</mn></msup><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>/</mo><msup><mn>2</mn><mn>3</mn></msup></mrow></math>, do the exponents first, moving left to right:</para>
+    <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><msup><mn>2</mn><mn>4</mn></msup><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><msup><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mn>2</mn></msup><mo>/</mo><msup><mn>2</mn><mn>3</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>16</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><msup><mn>12</mn><mn>2</mn></msup><mo>/</mo><msup><mn>2</mn><mn>3</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>16</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><msup><mn>2</mn><mn>3</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>16</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><mn>8</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">Next, do the multiplication and division moving left to right:</para>
+    <para id="para-00062"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>/</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>16</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>×</mo><mn>3</mn><mo>−</mo><mn>9</mn><mo>×</mo><mn>16</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12</mn><mo stretchy="false">)</mo><mo>−</mo><mn>9</mn><mo>×</mo><mn>16</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12</mn><mo stretchy="false">)</mo><mo>−</mo><mn>144</mn><mo>/</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12</mn><mo stretchy="false">)</mo><mo>−</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>×</mo><mn>144</mn><mo>/</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12</mn><mo stretchy="false">)</mo><mo>−</mo><mn>12</mn><mo>+</mo><mn>1296</mn><mo>/</mo><mn>8</mn></mtd></mtr><mtr><mtd><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12</mn><mo stretchy="false">)</mo><mo>−</mo><mn>12</mn><mo>+</mo><mn>162</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00063" xmlns="http://cnx.rice.edu/cnxml">Finally, addition and subtraction moving left to right:</para>
+    <para id="para-00064"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>12</mn><mo stretchy="false">)</mo><mo>−</mo><mn>12</mn><mo>+</mo><mn>162</mn><mo>=</mo><mo stretchy="false">(</mo><mo>−</mo><mn>24</mn><mo stretchy="false">)</mo><mo>+</mo><mn>162</mn><mo>=</mo><mn>138</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C03-M3-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Using Order of Operations Involving Grouping Symbols</title>
+    <para id="para-00066">We have examined how to use order of operations, denoted by EMDAS, to correctly calculate expressions. However, there may be expressions where a multiplication should happen before an exponent, or a subtraction before a division. To indicate an operation should be performed out of order, the operation is placed inside parentheses. When parentheses are present, the operations inside the parentheses are performed first. Adding the parentheses to our list, we now have PEMDAS, as shown below.</para>
+    <table class="unnumbered" frame="none" summary="." id="table-00001">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>P</entry>
+    <entry>Parentheses</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry>E</entry>
+    <entry>Exponents</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry>M/D</entry>
+    <entry>Multiplication and division</entry>
+    <entry>(division is just the multiplication by the reciprocal)</entry>
+    </row>
+    <row>
+    <entry>A/S</entry>
+    <entry>Addition and Subtraction</entry>
+    <entry>(subtraction is just the addition of the negative)</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00067">As said above, parentheses indicate that some operation or operations will be performed outside the standard order of operation rules. For instance, perhaps you want to multiply 4 and 7 before squaring. To indicate that the multiplication happens before the exponent, the multiplication is placed inside parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>×</mo><mn>7</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></math>.</para>
+    <para id="para-00068" xmlns="http://cnx.rice.edu/cnxml">This means operations inside the parenthesis take precedence, or, happen before other operations. Now the first step in calculating arithmetic expressions using order of operations is to perform operations inside parentheses first. Inside the parentheses, you follow the order of operation rules EMDAS.</para>
+    <example id="exam-00007">
+    <title>Prioritizing Parentheses in Order of Operations</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00069">Correctly apply the rules for order of operations to accurately compute the following:</para>
+    <para id="para-00070"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>10</mn><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup></mrow></math></para>
+    </problem>
+    <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00071">To calculate this, perform all calculations within the parentheses before all other operations.</para>
+    <para id="para-00072"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>10</mn><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup><mo>=</mo><mn>7</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup></mrow></math></para>
+    <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml">Since all parentheses have been cleared, we move left to right, and compute all the exponents next.</para>
+    <para id="para-00074"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup><mo>=</mo><mn>7</mn><mo>×</mo><mn>125</mn></mrow></math></para>
+    <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml">Now perform all multiplication and divisions moving left to right.</para>
+    <para id="para-00076"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7</mn><mo>×</mo><mn>125</mn><mo>=</mo><mn>875</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00077"><link class="os-embed" url="#exercise/CM-C03-M3-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00078">Be aware that there can be more than one set of parentheses, and parentheses within parentheses. When one set of parentheses is inside another set, do the innermost set first, and then work outward.</para>
+    <note class="video" id="note-00010">
+    <para id="para-00079"><link url="https://openstax.org/r/Order_of_Operations_3">Order of Operations 3</link></para>
+    </note>
+    <example id="exam-00008">
+    <title>Working Innermost Parentheses in Order of Operations</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00080">Correctly apply the rules for order of operations to accurately compute the following:</para>
+    <para id="para-00081"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>×</mo><mn>4</mn><mo stretchy="false">)</mo><mo>/</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>8</mn><mo stretchy="false">)</mo></mrow></math></para>
+    </problem>
+    <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00082">To calculate this, perform all calculations within the parentheses before other operations. Evaluate the innermost parentheses first. We can work separate parentheses expressions at the same time. The innermost set of parentheses has the 2+5 inside. The 3+8 is in a separate set of parentheses, so that addition can occur at the same time as the 2+5.</para>
+    <para id="para-00083"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo>−</mo><msup><mo stretchy="false">(</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo stretchy="false">)</mo><mn>2</mn></msup><mo>×</mo><mn>4</mn><mo stretchy="false">)</mo><mo>/</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>8</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo>−</mo><msup><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mn>2</mn></msup><mo>×</mo><mn>4</mn><mo stretchy="false">)</mo><mo>/</mo><mo stretchy="false">(</mo><mn>11</mn><mo stretchy="false">)</mo></mtd></mtr></mtable></math></para>
+    <para id="para-00084" xmlns="http://cnx.rice.edu/cnxml">Now that those parentheses have been handled, we move on to the next set of parentheses. Applying order of operation rules inside that set of parentheses, the exponent is evaluated first, then the multiplication, then the addition.</para>
+    <para id="para-00085"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo>−</mo><msup><mn>7</mn><mn>2</mn></msup><mo>×</mo><mn>4</mn><mo stretchy="false">)</mo><mo>/</mo><mn>11</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo>−</mo><mn>49</mn><mo>×</mo><mn>4</mn><mo stretchy="false">)</mo><mo>/</mo><mn>11</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>187</mn><mo>/</mo><mn>11</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00086" xmlns="http://cnx.rice.edu/cnxml">Since all parentheses have been cleared, we apply the EMDAS rules to finish the calculation.</para>
+    <para id="para-00087"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>187</mn><mo>/</mo><mn>11</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>374</mn><mo>/</mo><mn>11</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>34</mn><mo>=</mo><mn>38</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00088"><link class="os-embed" url="#exercise/CM-C03-M3-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00012">
+    <para id="para-00089"><link url="https://openstax.org/r/Order_of_Operations_4">Order of Operations 4</link></para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00004">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00090"><link class="os-embed" url="#exercise/CM-C03-M3-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00091"><link class="os-embed" url="#exercise/CM-C03-M3-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00092"><link class="os-embed" url="#exercise/CM-C03-M3-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00093"><link class="os-embed" url="#exercise/CM-C03-M3-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00094"><link class="os-embed" url="#exercise/CM-C03-M3-Q013"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00005">
+    <title>Exercises</title>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00095"><link class="os-embed" url="#exercise/CM-C03-M3-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00096"><link class="os-embed" url="#exercise/CM-C03-M3-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C03-M3-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00098"><link class="os-embed" url="#exercise/CM-C03-M3-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00099"><link class="os-embed" url="#exercise/CM-C03-M3-Q018"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00006">
+    <title>Module 3 – Order of Operations</title>
+    <section class="key-terms" id="sect-00007">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00003">
+    <item>Order of operations</item>
+    <item>PEMDAS</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00008">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00004">
+    <item>Understand and apply order of operations to integer expressions</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00009">
+    <title>Videos</title>
+    <para id="para-00100"><link url="https://openstax.org/r/Order_of_Operations_1">Order of Operations 1</link></para>
+    <para id="para-00101"><link url="https://openstax.org/r/Order_of_Operations_2">Order of Operations 2</link></para>
+    <para id="para-00102"><link url="https://openstax.org/r/Order_of_Operations_3">Order of Operations 3</link></para>
+    <para id="para-00103"><link url="https://openstax.org/r/Order_of_Operations_4">Order of Operations 4</link></para>
+    </section>
     </section>
     </content>
     </document>
