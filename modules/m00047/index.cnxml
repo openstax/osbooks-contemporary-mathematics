@@ -18,7 +18,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_03_07_008.jpg"/>
     </media>
-    <caption>A woman making an online purchase with their credit card on her cellphone.</caption>
+    <caption>someone making an online purchase with their credit card</caption>
     </figure>
     <para id="para-00002">Online shopping requires you to enter your credit card number, which is then sent electronically to the vendor. Using an ATM involves sliding you bank card into a reader, which then reads, sends, and verifies your card. Swiping or tapping for a purchase in a brick and mortar store is how your card sends its information to the machine, which is then communicated to the store’s computer and your credit card company. This information is read, recorded, and transferred many times. Each instance provides one more opportunity for error to creep into the process, a misrecorded digit, transposed digits, or missing digits. Fortunately, these card numbers have a built-in error checking system which relies on modular arithmetic, which is often referred to as clock arithmetic. In this Module, we explore clock, or modular, arithmetic.</para>
     <note class="video" id="note-00001">
@@ -32,7 +32,6 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_001.jpg"/>
     </media>
-    <caption>A clock with 3:00 indicated, an arrow going around the clock on full time, labeled as 12 hours later, landing back on 3:00.</caption>
     </figure>
     <para id="para-00006">What do 2, 14, 26 and 38 have in common in relation to 12? When they are divided by 12, they each have a remainder of 2. That's the key. When you add a number of hours to a specific time on the clock, first divide the number of hours being added by 12 and determine the remainder. Add that remainder to the time on the clock to know what time it will be. A good visualization of this is to wrap a number line around the clock, with the zero at the starting time. Then each time 12 on the number line passes, the number line passes the starting spot on the clock. This is referred to as <term id="term-00002">modulo 12</term> arithmetic. Even though the process above says to divide the number being added by 12 first the perform the addition, the result will be the same if you add the numbers first, then divide by 12 and determine the remainder.</para>
     <note class="check-point" id="note-00002">
@@ -106,7 +105,7 @@
     <para id="para-00030">If it's 3:00, what time will it be in 89 hours?</para>
     </problem>
     <solution id="sol-00002">
-    <para id="para-00031">To find that future time, we may determine the value of 89 (mod 12), either by long division or by using a calculator, such as Desmos. The add the result to 3:00. Entering <emphasis effect="bold">mod(89,12)</emphasis> in Desmos results in 5.Adding 5 hours, which was 89 (mod12),to 3:00 results in 8:00.</para>
+    <para id="para-00031">To find that future time, we may determine the value of 89 (mod 12), either by long division or by using a calculator, such as Desmos. The add the result to 3:00. Entering <emphasis effect="bold">mod(89,12)</emphasis> in Desmos results in 5. Adding 5 hours, which was 89 (mod12),to 3:00 results in 8:00.</para>
     </solution>
     </exercise>
     </example>
@@ -130,7 +129,6 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_002.jpg"/>
     </media>
-    <caption>Insert a picture with a clock reading 4:00, an arrow winding counterclockwise from 4:00 to 9:00, and label that arrow with -7 divide 67 by 12 and use the remainder. The remainder when 67 is divided by 12 is 7. So, subtract 7 hours from 4:00, resulting in 9:00.</caption>
     </figure>
     </solution>
     </exercise>
@@ -190,7 +188,7 @@
     <para id="para-00045">Your family has a cat, and no one wants to empty the litterbox. However, it has to be done daily. The six of you agree to take turns, so everyone has to empty the litterbox every six days. You empty the box on a Thursday. What day will you empty the box for the tenth time?</para>
     </problem>
     <solution id="sol-00006">
-    <para id="para-00046">The first time you emptied the litter box was on a Thursday. So, the tenth time you empty the litterboxlitterbox will be 9 times later (you've already had your first turn, so nine turns left!). This will happen 54 (9 times 6) days later. Finding the value of 54 modulo 7, using division to determine the remainder or using a calculator to find the value of 54 modulo 7 gives the answer 5. Five days after a Thursday is Tuesday.</para>
+    <para id="para-00046">The first time you emptied the litter box was on a Thursday. So the tenth time you empty the litterbox will be 9 times later (you've already had your first turn, so nine turns left!). This will happen 54 (9 times 6) days later. Finding the value of 54 modulo 7, using division to determine the remainder or using a calculator to find the value of 54 modulo 7 gives the answer 5. Five days after a Thursday is Tuesday.</para>
     </solution>
     </exercise>
     </example>
