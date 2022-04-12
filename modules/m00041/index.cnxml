@@ -28,8 +28,8 @@
     <section id="sect-00002">
     <title>Applying Divisibility Rules</title>
     <para id="para-00003">The counting numbers are referred to as the natural numbers. This set of numbers, {1,2,3,4…} is denoted with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ℕ</mi></math>.</para>
-    <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml">Another important set of numbers is the integers. The integers are the natural numbers, along with 0, and the negatives of the natural numbers. This set is often written as {…,-3,-2,-1,0,1,2,3…}. We denote the integers with the symbol <emphasis effect="italic">ℤ</emphasis>.</para>
-    <para id="para-00005">We should notice that <emphasis effect="italic">ℕ</emphasis> is a proper subset of <emphasis effect="italic">ℤ</emphasis>, or, <emphasis effect="italic">ℕ ⊂ ℤ</emphasis>. All the ideas of this module apply to the natural numbers, while only some apply to all the integers.</para>
+    <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml">Another important set of numbers is the integers. The integers are the natural numbers, along with 0, and the negatives of the natural numbers. This set is often written as {…,-3,-2,-1,0,1,2,3…}. We denote the integers with the symbol ℤ.</para>
+    <para id="para-00005">We should notice that ℕ is a proper subset of ℤ, or, ℕ ⊂ ℤ. All the ideas of this module apply to the natural numbers, while only some apply to all the integers.</para>
     <para id="para-00006">There are many occasions when separating items into equal groups comes into play, be it sharing or creating gift bags, or ensuring an equal distribution of whole items. Francis, a pre-school art teacher, has 15 students in one of their classes. Francis has 225 sheets of construction paper and wants to provide each student with an equal number of pieces. For Francis to know if they will use all the construction paper, Francis is really asking if 225 can be evenly divided into fifteen groups.</para>
     <example id="exam-00001">
     <title>Determining if a Number Divides Another Number</title>
@@ -193,9 +193,9 @@
     <section id="sect-00003">
     <title>Prime and Composite Numbers</title>
     <para id="para-00028">Sometimes, a natural number has only two unique divisors, 1 and itself. For instance, 7 and 19 are prime. Such numbers are called <term id="term-00001">prime</term>. In other words, there is no way to divide a prime number into groups with an equal number of things, unless there is only one group, or those groups have one item per group. Other natural numbers have more than two unique divisors, such as 4, or 26. These numbers are called <term id="term-00002">composite</term>. The number 1 is special, it is neither prime nor composite.</para>
-    <para id="para-00029">To determine if a number is prime or composite, you have to determine if the number has any divisors other than 1 and itself. The divisibility rules are useful here and can quickly show you if a number has a divisor on that list.</para>
+    <para id="para-00029">To determine if a number is prime or composite, you have to determine if the number has any divisors other than 1 and itself. The divisibility rules are useful here, and can quickly show you if a number has a divisor on that list.</para>
     <para id="para-00030">However, if none of those divide the number, you still have to check all other possible prime divisors. What are the prime numbers that are possibly divisors of the number you are checking? You need only check the prime numbers up to the square root of the number in question. For instance, if you want to know if 2217 is prime, you need to determine if any primes up to the square root of 2117 (which is 46.0 when rounded to one decimal place) divide 2217. If any of those primes are divisors of the number in question, then the number is composite. If none of those primes work, then the number is itself prime.</para>
-    <para id="para-00031">We can check divisibility with whatever tool we wish. Divisibility rules are quick for some prime divisors (2 and 5 come to mind) but aren't quick for other values (like 11). In place of divisibility rules, we could just use a calculator. If the prime number divides the number evenly (that is, there is no decimal or fractional part) then the number is divisible by that prime. Table 4.2 shows a quick list of the prime numbers up to 50. There are 15 prime numbers less than 50.</para>
+    <para id="para-00031">We can check divisibility with whatever tool we wish. Divisibility rules are quick for some prime divisors (2 and 5 come to mind) but aren't quick for other values (like 11). In place of divisibility rules, we could just use a calculator. If the prime number divides the number evenly (that is, there is no decimal or fractional part) then the number is divisible by that prime. Table 3.2 shows a quick list of the prime numbers up to 50. There are 15 prime numbers less than 50.</para>
     <table summary="." id="table-00002">
     <title>PRIME NUMBERS LESS THAN 50</title>
     <tgroup cols="5">
@@ -367,12 +367,11 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_001.jpg"/>
     </media>
-    <caption>Line tree with a, n, and b</caption>
     </figure>
     <para id="para-00072">Step 5: If a and b are prime, the tree is complete. When a number at this step is a prime number, we refer to it as a leaf of the tree diagram.</para>
     <para id="para-00073">Step 6: If either a or b are composite, repeat steps 1 through 4 for a and b.</para>
-    <para id="para-00074">Step 7: The process stops when the leaves are all prime.</para>
-    <para id="para-00075">Step 8: The prime factorization is then the product of the all the leaves.</para>
+    <para id="para-00074">Step 7: The process stops when the leafs are all prime.</para>
+    <para id="para-00075">Step 8: The prime factorization is then the product of the all the leafs.</para>
     <para id="para-00076">This is best seen in an example.</para>
     <example id="exam-00012">
     <title>Finding the Prime Factorization</title>
@@ -386,16 +385,14 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_002.jpg"/>
     </media>
-    <caption>Line tree with 2, 66, and 33</caption>
     </figure>
     <para id="para-00079">Since 2 is a factor, that branch is done, and 2 is a leaf. The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree, which is now:</para>
     <figure class="numbered" id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_003.jpg"/>
     </media>
-    <caption>Line tree with 2, 66, 33, 3, and 11</caption>
     </figure>
-    <para id="para-00080">Since the 2, 3 and 11 are all prime, the factor tree is done. The prime factorization of 66 is the product of the leaves, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>11</mn></mrow></math>. the factorization is complete.</para>
+    <para id="para-00080">Since the 2, 3 and 11 are all prime, the factor tree is done. The prime factorization of 66 is the product of the leafs, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>11</mn></mrow></math>. the factorization is complete.</para>
     </solution>
     </exercise>
     </example>
@@ -416,28 +413,25 @@
     <para id="para-00083">Find the prime factorization of 135.</para>
     </problem>
     <solution id="sol-00013">
-    <para id="para-00084">The number 135 is divisible by 3, and so 3 is a factor of 135. When we factor out the 3, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>.Using the factor tree,</para>
+    <para id="para-00084">The number 135 is divisible by 3, and so 3 is a factor of 135. When we factor out the 3, the factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>. Using the factor tree,</para>
     <figure class="numbered" id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_004.jpg"/>
     </media>
-    <caption>Line tree with 3, 135, and 45</caption>
     </figure>
     <para id="para-00085">45 is also divisible by 3, so we factor out a 3 from 45. The other factor is 15. The factor tree is now:</para>
     <figure class="numbered" id="fig-00007">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_005.jpg"/>
     </media>
-    <caption>Line tree with 3, 135, 45, 3, and 15</caption>
     </figure>
-    <para id="para-00086">15 is also divisible by 3 and can be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is now</para>
+    <para id="para-00086">15 is also divisible by 3, and can be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is now</para>
     <figure class="numbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_006.jpg"/>
     </media>
-    <caption><emphasis effect="underscore">Line tree with 3, 135, 45, 3, 15, 5, and 5</emphasis></caption>
     </figure>
-    <para id="para-00087">All the leaves are prime, so the process is complete. The prime factorization of 135 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>3</mn><mn>3</mn></msup><mo>×</mo><mn>5</mn></mrow></math>.</para>
+    <para id="para-00087">All the leafs are prime, so the process is complete. The prime factorization of 135 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>3</mn><mn>3</mn></msup><mo>×</mo><mn>5</mn></mrow></math>.</para>
     </solution>
     </exercise>
     </example>
@@ -504,7 +498,7 @@
     <para id="para-00097">Find the greatest common divisor of 1400 and 250 by listing all divisors of each number.</para>
     </problem>
     <solution id="sol-00015">
-    <para id="para-00098">We create a list of all the divisors of 1400 and of 250 and choose the largest one.</para>
+    <para id="para-00098">We create a list of all the divisors of 1400 and of 250, and choose the largest one.</para>
     <para id="para-00099">The divisors of 1400 are</para>
     <para id="para-00100">1, 2, 4, 5, 7, 8, 10, 14, 20, 25, 28, 35, 40, 50,56, 70, 100, 140, 175, 200, 280, 350, 700, 1400.</para>
     <para id="para-00101">The divisors of 250 are</para>
@@ -546,7 +540,7 @@
     <para id="para-00109">Step 3 - Identify the smallest exponent of each prime identified in Step 2 in the prime factorizations.</para>
     <list bullet-style="none" id="list-00005">
     <item>The exponent of common prime factor 2 in the prime factorization of 1400 is 3, and in the prime factorization of 250 is 1. The smallest of those exponents is 1.</item>
-    <item>The exponent of the common prime factor 5 in the prime factorization of 1400 is 2 and is in the prime factorization of 250 is 3. The smallest of these exponents is 2.</item>
+    <item>The exponent of the common prime factor 5 in the prime factorization of 1400 is 2, and is in the prime factorization of 250 is 3. The smallest of these exponenets is 2.</item>
     </list>
     <para id="para-00110">Step 4 - Multiply the prime factors identified in Step 2 raised to the powers identified in Step 3.</para>
     <list bullet-style="none" id="list-00006">
@@ -605,7 +599,7 @@
     </media>
     <caption>A photo of Srinivasa Ramanujan</caption>
     </figure>
-    <para id="para-00119">Ramanujan was born in southern India in 1887, during British rule. He was a self-taught mathematician, who, while in high school, began working through a two-volume text of mathematical theorems and results. His work included examination of the distribution of primes. He eventually came to the attention of British mathematicians, G.H. Hardy. During one visit, Hardy mentioned to Ramanujan that his taxicab number was 1729, remarking that 1729 appeared to be a rather dull number. To which Ramanujan responded, “it is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.”</para>
+    <para id="para-00119">Ramanujan was born in southern India in 1887, during British rule. He was a self-taught mathematician, who, while in high school, began working through a two-volume text of mathematical theorems and results. His work included examination of the distribution of primes. He eventually came to the attention of British mathematicians, G.H. Hardy. During one visit, Hardy mentioned to Ramanujan that his taxi cab number was 1729, remarking that 1729 appeared to be a rather dull number. To which Ramanujan responded, “it is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.”</para>
     </note>
     <note class="tech-check" id="note-00026">
     <title>Using Desmos to Find the GCD</title>
@@ -986,9 +980,9 @@
     </problem>
     <solution id="sol-00026">
     <para id="para-00186">The LCMs are 42, 165 and 40.</para>
-    <para id="para-00187">Conjecture that the LCM of a prime and a composite that does not have the prime as a factor is the product of the numbers.</para>
-    <para id="para-00188">(It is likely that the students will not notice the exception given the list of pairs, so they may conjecture that the LCM of a prime and a composite is the product of the numbers, which is inaccurate, since the LCM of a prime number and a composite that has the prime as a factor is the composite number itself).</para>
-    <para id="para-00189">For cicadas with a 13 year lifecycle, it will take 39 years. For cicadas with a lifecycle of 17 years, it will take 51 years.</para>
+    <para id="para-00187">Cojecture that the LCM of a prime and a composite that does not have the prime as a factor is the product of the numbers.</para>
+    <para id="para-00188">(It is likely that the students will not notice the exception given the list of pairs, so they may conjecture that the LCM of a prime and a compsite is the product of the numbers, which is inaccurate, since the LCM of a prime number and a composite that has the prime as a factor is the composite number itself).</para>
+    <para id="para-00189">For cicadas with a 13 year lifescycle, it will take 39 years. For cicadas with a lifecycle of 17 years, it will take 51 years.</para>
     <para id="para-00190">The predator will not have access to its food source for at least 39 years, and so without a varied diet, will likely die out due to lack of food.</para>
     </solution>
     </exercise>
