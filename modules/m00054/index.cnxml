@@ -6,8 +6,830 @@
     <md:uuid>de9bb9b0-9922-4cd0-a1e3-2e4b349ce971</md:uuid>
   </metadata>
   <content>
-    <section id="sect-00001">
-      <para id="para-00001">Placeholder Text</para>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Convert another base to base 10.</item>
+    <item>Write numbers in different base systems.</item>
+    <item>Convert base 10 to other bases.</item>
+    <item>Determine errors in converting between bases.</item>
+    </list>
     </section>
-</content>
-</document>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_04_03_001.jpg"/>
+    </media>
+    <caption>Any picture suggestive of computers and binary arithmetic</caption>
+    </figure>
+    <para id="para-00002">In our system of numbers, we use base 10, but using base 10 was not a given within other systems. There were other systems that used bases other than 10, as we saw with the Mayans and the Babylonians. The base 10 system comes down to grouping objects in sets of ten, but grouping in sets of ten only happens if the culture values grouping by that many. We feel ten is natural because we have ten fingers. There are other systems using other grouping values, such as four or twenty.</para>
+    <para id="para-00003">One good reason for examining other bases is to remind ourselves how we had to learn arithmetic when we were young, memorizing rules for our base ten system. We had to learn why those arithemetic rules made sense. Another good reason for learning other base systems is due to computers; their circuitry instead use base 2. In this section, we explore other base systems and how to convert between them.</para>
+    <section id="sect-00002">
+    <title>Conversion of Another Base into Base 10 and Other Bases</title>
+    <para id="para-00004">We saw in Section 1 that our Hindu-Arabic system uses <term id="term-00001">base 10</term>. We’ve already worked with bases other than base 10: the Babylonian system was base 60, while the Mayan system was base 20.</para>
+    <para id="para-00005">To explore how our base 10 system is used, answer the following question: What’s the following quantity: 4,572? You probably said four thousand five hundred seventy two (no, there is no ‘and’ between hundred and seventy). But why do you think that 4 means four thousand? A very young person when learning their numbers might say that’s a four five seven and two. But you added the context of thousands to the four. Why?</para>
+    <para id="para-00006">Place value, that’s why. You learned early on that where the numeral was gave it different meanings. Ten thousands, thousands, hundreds, tens, and ones. So you translate that symbol string (4,572) into “four thousand five hundred seventy two”. As we saw in Section 1, expanding a Hindu-Arabic number involved writing the number using each digit times its appropriate power of 10. So we could write 4,572 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>1000</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>100</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>.</para>
+    <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">One possible reason we use base 10 is that we have ten fingers, and in the cultures where the Hindu-Arabic system developed, that became the standard. Other cultures may have used other ways of organizing numbers, perhaps using 20 by including toes, or using 60 because 60 has many divisors. Mathematically though, base 10 is an awkward base to work in since ten has limited divisors. But we think it is easy and simple because that’s what we’ve been taught to use. So from early on, you’ve learned the base 10 system. Using a base 10 system means we need ten symbols to make our numbering system work: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</para>
+    <para id="para-00008">Now imagine that we all only had six fingers instead of ten and our counting system was based on those six fingers. We would be counting in groups of six, not groups of ten. How would this change how we work with quantity? First, we’d need only six symbols. Let’s use 0, 1, 2, 3, 4, 5. Second, our place values would be based on powers of six, not powers of ten. For instance, the number 3,024 in base six would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup></mrow></math>. That is how you can translate a base 6 number into a base 10 number. When we calculate that expression we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>216</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>648</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>664</mn></mrow></math>.</para>
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">664 is what the base 6 number 3,024 equals in base ten.</para>
+    <para id="para-00010">From now on, if we are using a base 6 number, we will follow it with the subscript 6, like the following:</para>
+    <list bullet-style="none" id="list-00002">
+    <item>3,024<sub>6</sub> means the number is in base 6.</item>
+    </list>
+    <para id="para-00011">A base 10 number gets no subscript (it’s the standard). So 3,024 is a base 10 number, A base 13 number would be 4,672<sub>13</sub>.</para>
+    <para id="para-00012">So a base 6 system uses only the symbols 0, 1, 2, 3, 4, and 5. Also, the place values use powers of 6. However, we still don’t know how to count in base 6. In order to do so, we’d have to know how to represent the quantities larger than five in base six. Let’s review how our base 10 system works by counting from 0 to 100, which shows how larger values are represented. In writing the base ten numbers, you start with these first ten values:</para>
+    <table class="unnumbered" summary="." id="table-00001">
+    <tgroup cols="10">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    <entry>7</entry>
+    <entry>8</entry>
+    <entry>9</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00013">But you’ve run out of symbols. So we use two digits:</para>
+    <table class="unnumbered" summary="." id="table-00002">
+    <tgroup cols="10">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>10</entry>
+    <entry>11</entry>
+    <entry>12</entry>
+    <entry>13</entry>
+    <entry>14</entry>
+    <entry>15</entry>
+    <entry>16</entry>
+    <entry>17</entry>
+    <entry>18</entry>
+    <entry>19</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00014">The one out front means you’ve run out of digits one time.</para>
+    <para id="para-00015">But now you’ve run out twice. Continuing with those numbers give:</para>
+    <table class="unnumbered" summary="." id="table-00003">
+    <tgroup cols="10">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>20</entry>
+    <entry>21</entry>
+    <entry>22</entry>
+    <entry>23</entry>
+    <entry>24</entry>
+    <entry>25</entry>
+    <entry>26</entry>
+    <entry>27</entry>
+    <entry>28</entry>
+    <entry>29</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00016">And so on,</para>
+    <table class="unnumbered" summary="." id="table-00004">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>30</entry>
+    <entry>31</entry>
+    <entry>32</entry>
+    <entry>33</entry>
+    <entry>34</entry>
+    <entry>etc.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00017">Eventually, you hit the nineties,</para>
+    <table class="unnumbered" summary="." id="table-00005">
+    <tgroup cols="10">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>90</entry>
+    <entry>91</entry>
+    <entry>92</entry>
+    <entry>93</entry>
+    <entry>94</entry>
+    <entry>95</entry>
+    <entry>96</entry>
+    <entry>97</entry>
+    <entry>98</entry>
+    <entry>99</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00018">And you’ve run out of the digits again! So, we say we’ve run out of digits in the tens place one time...hence…</para>
+    <table class="unnumbered" summary="." id="table-00006">
+    <tgroup cols="10">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>100</entry>
+    <entry>101</entry>
+    <entry>102</entry>
+    <entry>103</entry>
+    <entry>104</entry>
+    <entry>105</entry>
+    <entry>106</entry>
+    <entry>107</entry>
+    <entry>108</entry>
+    <entry>109.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00019">That’s the pattern we use in base 10. We write out the symbols until we’ve used all the symbols, then add a digit in front that counts how many times we’ve used the digits. Knowing the numbers, or being able to count higher and higher, is necessary to understand how all the arithmetic works, as it all goes back to counting.</para>
+    <para id="para-00020">The counting pattern is the same for any other base, including base 6. So let’s start:</para>
+    <table class="unnumbered" summary="." id="table-00007">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00021">But we’ve run out of symbols! Just like in base ten, we use a second digit, where the first digit will tell us we’ve run out of symbols one time.</para>
+    <table class="unnumbered" summary="." id="table-00008">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>10</entry>
+    <entry>11</entry>
+    <entry>12</entry>
+    <entry>13</entry>
+    <entry>14</entry>
+    <entry>15</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00022">And we use the same pattern:</para>
+    <table class="unnumbered" summary="." id="table-00009">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>20</entry>
+    <entry>21</entry>
+    <entry>22</entry>
+    <entry>23</entry>
+    <entry>24</entry>
+    <entry>25</entry>
+    </row>
+    <row>
+    <entry>30</entry>
+    <entry>31</entry>
+    <entry>32</entry>
+    <entry>33</entry>
+    <entry>34</entry>
+    <entry>35</entry>
+    </row>
+    <row>
+    <entry>40</entry>
+    <entry>41</entry>
+    <entry>42</entry>
+    <entry>43</entry>
+    <entry>44</entry>
+    <entry>45</entry>
+    </row>
+    <row>
+    <entry>50</entry>
+    <entry>51</entry>
+    <entry>52</entry>
+    <entry>53</entry>
+    <entry>54</entry>
+    <entry>55</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00023">But we’ve run out of symbols for that front digit. So we indicate it the same way as in base 10…by adding a third digit in front, indicating we’ve run out of symbols once in the second place:</para>
+    <table class="unnumbered" summary="." id="table-00010">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>100</entry>
+    <entry>101</entry>
+    <entry>102</entry>
+    <entry>103</entry>
+    <entry>104</entry>
+    <entry>105</entry>
+    </row>
+    <row>
+    <entry>110</entry>
+    <entry>111</entry>
+    <entry>etc.</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00024">The symbol pattern is the same, but truncated. We only use the six symbols. So that is how we represent base 6. Being able to write out these numbers is important when working with addition in the base.</para>
+    <example id="exam-00001">
+    <title>Determining Digits of a Base with Less Than 10 Digits</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00025">What are the digits used for base 7?</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00026">Since this is base 7, we need only 7 symbols: 0, 1, 2, 3, 4, 5, 6</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C04-M3-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Determining Digits of a Base with More Than 10 Digits</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00028">What are the digits used for base 14?</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00029">Since this is base 14, we need 14 symbols. We don’t have single character numbers for 10, 11, 12, and 13, so, in a fit of inspired creativity, we use capital letters A, B, C, D to represent those quantities. So the digits in base 14 are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00030"><link class="os-embed" url="#exercise/CM-C04-M3-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00003">
+    <title>Using Base 12</title>
+    <para id="para-00031">As mentioned in the text, working in base 10 is mathematically awkward. 10 has only two natural number divisors, 2 and 5. This means dividing into groups is not easy. However, 12, or a dozen, has many more divisors, 2, 3, 4,and 6. The Dozenal Society recognizes this more mathematically pleasant detail. It advocates for a switch to using base 12 for numbers. Their argument is based on the divisibility of the number 12. But has there ever been a society that used such a system? The answer is yes. A dialect of the Gwandara language in Nigeria uses the base 12 system. It is unlikely, though, that the Dozenal society will achieve their goal, as the base 10 system is so entrenched in our society.</para>
+    </note>
+    <example id="exam-00003">
+    <title>Converting from One Base into Another</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00032">Convert 3601<sub>7</sub> into base 10.</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00033">In base 7, the place values are powers of 7. Since there are four digits, the highest power of 7 that is used is 3. This yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>3601</mn></mrow><mn>7</mn></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>7</mn><mn>3</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>7</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>7</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>343</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>49</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1029</mn><mo>+</mo><mn>294</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1324</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="video" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00034"><link url="https://openstax.org/r/Convert_Base_6_to_Base_10">Convert Base 6 to Base 10</link></para>
+    </note>
+    <note class="your-turn" id="note-00005">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C04-M3-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00004">
+    <title>Converting from Base 14 to Base 10</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00036">Convert 4B7<sub>14</sub> into base 10.</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00037">In base 14, the place values are powers of 14. Since there are three digits, the highest power of 14 is 2. Also recall that in base 14, 10 is represented by A, 11 is represented by B, 12 is represented by C, and 13 is represented by D. Using that, we convert to base 10:</para>
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mi mathvariant="normal">B</mi><msub><mn>7</mn><mrow><mn>14</mn></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">B</mi><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>196</mn><mo>+</mo><mn>11</mn><mo>×</mo><mn>14</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>784</mn><mo>+</mo><mn>154</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>945</mn></mrow></math></equation>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C04-M3-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Converting from Base 12 to Base 10</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00039">Convert A16<sub>12</sub> into base 10.</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00040">In base 12, the place values are powers of 12. Since there are three digits, the highest power of 12 is 2. Also recall that in base 12, 10 is represented by A and 11 is represented by B. Using that, we convert to base 10:</para>
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">A</mi><msub><mrow><mn>16</mn></mrow><mrow><mn>14</mn></mrow></msub><mo>=</mo><mn>10</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>10</mn><mo>×</mo><mn>144</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>12</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>1440</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>1458</mn></mrow></math></equation>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C04-M3-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00006">
+    <title>Converting from Base 2 to Base 10</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00042">Convert 1011<sub>2</sub> into base 10.</para>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00043">In base 2, the place values are powers of 2. Since there are four digits, the highest power of 2 is 3. Using that, we convert to base 10:</para>
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mrow><mn>1011</mn></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn><mo>×</mo><mn>8</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>8</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>11</mn></mrow></math></equation>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C04-M3-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00009">
+    <title>Before Napoleon</title>
+    <para id="para-00045">Before Napoleon’s France, which adopted the base 10 system, a modified base 12 system was often used in Europe. Twelve is easily divisible into groups of 2, 3, 4, and 6, which makes it easier to work with. Even our numbering system retains a bit of this. You have likely noticed that we use the words thirteen, fourteen, fifteen, and so on to indicate ten and three, ten and four, ten and five, and so one. Even the twenties reinforce this idea, as in twenty one, and twenty two. However, two numbers don’t follow this pattern, namely eleven and twelve. If they followed the same rules, they’d be one teen and two teen. We even have a special word for 12, that is, a dozen. However, etymologically speaking, the words eleven and twelve are likely derived by referencing the number 10. These two numbers may date back to the Old English words <emphasis effect="italic">endleofan</emphasis> and <emphasis effect="italic">twelf</emphasis>, which can be traced back further to <emphasis effect="italic">ain lif</emphasis> and <emphasis effect="italic">twa lif</emphasis>. The word <emphasis effect="italic">lif</emphasis> here may be the base word for “to leave”. This would suggest <emphasis effect="italic">ain lif</emphasis> is one left after ten, and <emphasis effect="italic">twa lif</emphasis> is two left after ten, or, eleven and twelve.</para>
+    </note>
+    <example id="exam-00007">
+    <title>Writing Numbers in Base Systems Other Than Base 10</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00046">Write the numbers in Base 7 up to 100<sub>7</sub>.</para>
+    </problem>
+    <solution id="sol-00007">
+    <para id="para-00047">Using the patterns we indicated earlier, we begin with the first seven digits.</para>
+    <list bullet-style="none" id="list-00003">
+    <item>0, 1, 2, 3, 4, 5, 6</item>
+    </list>
+    <para id="para-00048">Since we’ve run out of digits, we start with 10, indicating we’ve run out of symbols once.</para>
+    <list bullet-style="none" id="list-00004">
+    <item>10, 11, 12, 13, 14, 15, 16</item>
+    </list>
+    <para id="para-00049">Continuing in the same way, we get</para>
+    <list bullet-style="none" id="list-00005">
+    <item>20, 21, 22, 23, 24, 25, 26</item>
+    <item>30, 31, 32, 33, 34, 35, 36</item>
+    <item>40, 41, 42, 43, 44, 45, 46</item>
+    <item>50, 51, 52, 53, 54, 55, 56</item>
+    <item>60, 61, 62, 63, 64, 65, 66</item>
+    </list>
+    <para id="para-00050">Now, all the digits have been used in the leading digits. Since the digits have all been used in that leading digit, we use 100, as in base 10.</para>
+    <list bullet-style="none" id="list-00006">
+    <item>100</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00010">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C04-M3-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00008">
+    <title>Writing Numbers in Bases With more than 10 Symbols</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00052">Write the numbers in Base 14 up to 100<sub>14</sub>.</para>
+    </problem>
+    <solution id="sol-00008">
+    <para id="para-00053">Using the patterns we indicated earlier, we begin with the first fourteen digits.</para>
+    <list bullet-style="none" id="list-00007">
+    <item>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D</item>
+    </list>
+    <para id="para-00054">Since we’ve run out of digits, we start with 10, indicating we’ve run out of symbols once.</para>
+    <list bullet-style="none" id="list-00008">
+    <item>10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D</item>
+    </list>
+    <para id="para-00055">Continuing in the same way, we get</para>
+    <list bullet-style="none" id="list-00009">
+    <item>20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2A, 2B, 2C, 2D</item>
+    <item>30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3A, 3B, 3C, 3D</item>
+    <item>40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4A, 4B, 4C, 4D</item>
+    <item>50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5A, 5B, 5C, 5D</item>
+    <item>60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6A, 6B, 6C, 6D</item>
+    <item>70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7A, 7B, 7C, 7D</item>
+    <item>80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8A, 8B, 8C, 8D</item>
+    <item>90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9A, 9B, 9C, 9D</item>
+    <item>A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, AA, AB, AC, AD</item>
+    <item>B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, BA, BB, BC, BD</item>
+    <item>C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, CA, CB, CC, CD</item>
+    <item>D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, DA, DB, DC, DD</item>
+    <item>100</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00011">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C04-M3-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00057">Base 2 is important in the digital age, as it is the system used by computers. It is the simplest base to work with, but has the drawback that the numbers in base two may use many, many digits. In this, Section 4 and Section 5, we will look at base 2 in each situation.</para>
+    <example id="exam-00009">
+    <title>Writing Numbers in Base 2</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00058">Write the numbers in Base 2 up to 100<sub>2</sub>.</para>
+    </problem>
+    <solution id="sol-00009">
+    <para id="para-00059">Base 2 uses only two symbols, 0 and 1. Following the pattern established above, the numbers in base 2 up to 100<sub>2</sub> are 0, 1, 10, 11, and 100.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="who-knew" id="note-00012"><title>Early Hawaiian Numeration System</title>
+    <para id="para-00060">Before the British arrived in Hawaii, people there used a system that combined two different bases. Objects were initially grouped into collections of four, and a collection of four was referred to as <emphasis effect="italic">kauna</emphasis>. A person could have two <emphasis effect="italic">kauna</emphasis> and three ‘ones’ (in Hindu-Arabic, 11). Or they could have eight <emphasis effect="italic">kauna</emphasis> and one ‘ones’ (In Hindu-Arabic, 33). However, sets of four were grouped in collections of ten. A set of ten <emphasis effect="italic">kauna</emphasis> was <emphasis effect="italic">ka’au</emphasis>. The collections of <emphasis effect="italic">ka’au</emphasis> were grouped by 10 also. Which meant that 10 <emphasis effect="italic">ka’au</emphasis> (this is 40 in Hindu Arabic) would be <emphasis effect="italic">lau</emphasis> (or 400 in Hindu-Arabic). What this shows is that the Hawaiian culture developed a system that used base 4 combined with base 10.</para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Conversion of Base 10 into Another Base</title>
+    <para id="para-00061">Converting from base 10 into another base uses repeated division, recording the <term id="term-00002">remainder</term> at each step. Then, the number in the new base is the remainders starting from the last remainder found. To be accurate in what we’re saying, we need to remind ourselves of some terminology associated with division. When integers are divided, the one being divided is the <term id="term-00003">dividend</term>, and the one that is dividing the dividend is the <term id="term-00004">divisor</term>. The <term id="term-00005">quotient</term> is the largest natural number that can be multiplied by the divisor where the product is less than the dividend.</para>
+    <para id="para-00062">To convert a base 10 number <emphasis effect="italic">n</emphasis> into base <emphasis effect="italic">d</emphasis>, we divide <emphasis effect="italic">n</emphasis> by <emphasis effect="italic">d</emphasis>, recording the remainder. Then we divide the quotient from that step by the base <emphasis effect="italic">d</emphasis>, and record the remainder again. We continue this process until the quotient is 0. Then, the base <emphasis effect="italic">d</emphasis> number has digits that start with the last remainder and use each remainder in reverse order.</para>
+    <example id="exam-00010">
+    <title>Converting from Base 10 into a Lower Base</title>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00063">Convert 298 to base 6.</para>
+    </problem>
+    <solution id="sol-00010">
+    <para id="para-00064">We divide 298 by 6, and record the remainder. Then we divide the quotient from that step by 6, and record the remainder again. We continue this process until the quotient is 0. Then, the base 6 number has digits that start with the last remainder and use each remainder in reverse order.</para>
+    <para id="para-00065">When we divide 298 by 6, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>49</mn><mi>r</mi><mn>4</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>298</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 49, the remainder is 4.</para>
+    <para id="para-00066" xmlns="http://cnx.rice.edu/cnxml">Now we divide the quotient, 49, by 6. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>8</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>49</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 8, the remainder is 1.</para>
+    <para id="para-00067" xmlns="http://cnx.rice.edu/cnxml">Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>1</mn><mi>r</mi><mn>2</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>8</mn></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 1, the remainder is 2.</para>
+    <para id="para-00068" xmlns="http://cnx.rice.edu/cnxml">Finally, we perform the operation on the quotient 1, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>1</mn></menclose></mtd></mtr></mtable></mrow></math> giving us a quotient of 0 and remainder of 1.</para>
+    <para id="para-00069" xmlns="http://cnx.rice.edu/cnxml">The base 6 number has digits equal to the remainders in reverse order, 1214<sub>6</sub>. So 298 in base 10 when converted to base 6 is 1214<sub>6</sub>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00013">
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00070"><link class="os-embed" url="#exercise/CM-C04-M3-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00014">
+    <para id="para-00071"><link url="https://openstax.org/r/Converting_from_Base_10_to_Another_Base">Converting from Base 10 to Another Base</link></para>
+    </note>
+    <example id="exam-00011">
+    <title>Converting from Base 10 into a Higher Base</title>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00072">Convert 45,134 to base 13.</para>
+    </problem>
+    <solution id="sol-00011">
+    <para id="para-00073">We divide 45,134 by 13, and record the remainder. Then we divide the quotient from that step by 13, and record the remainder again. We continue this process until the quotient is 0. Then, the base 13 number has digits that start with the last remainder and use each remainder in reverse order. It is at this step that we’ll convert to the base 13 digits, which are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C.</para>
+    <para id="para-00074">When we divide 45,134 by 13, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>3471</mn><mi>r</mi><mn>11</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>45134</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 3471, the remainder is 11.</para>
+    <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml">Now we divide the quotient, 3471, by 13. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>267</mn><mi>r</mi><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>3471</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 267, the remainder is 0.</para>
+    <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>20</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>267</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 20, the remainder is 7.</para>
+    <para id="para-00077" xmlns="http://cnx.rice.edu/cnxml">Again, and we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>1</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>20</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 1, the remainder is 7.</para>
+    <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml">Finally, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>1</mn></menclose></mtd></mtr></mtable></mrow></math>, with quotient 0 and remainder 1.</para>
+    <para id="para-00079" xmlns="http://cnx.rice.edu/cnxml">The base 13 number has digits equal to the remainders in reverse order, which were 1, 7, 7, 0, and 11. The 11 is written as B in base 13. So 45,134 in base 10 when converted to base 13 is 1770B<sub>13</sub>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00015">
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C04-M3-Q0010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00012">
+    <title>Converting from Base 10 into Base 2</title>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00081">Convert 100 to base 2.</para>
+    </problem>
+    <solution id="sol-00012">
+    <para id="para-00082">Following the pattern above, we divide 100 by 2, and record the remainder. Then we divide the quotient from that step by 2, and record the remainder again. We continue this process until the quotient is 0. Following this process, the remainders are, in order, 0, 0, 1, 0, 0, 1, 1. Writing those in reverse order gives the number in base 2, 1100100<sub>2</sub>.</para>
+    <para id="para-00083">Notice that 100 in base two took 7 digits.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00016">
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00084"><link class="os-embed" url="#exercise/CM-C04-M3-Q0011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Converting from Hindu-Arabic numbers to Mayan numbers</title>
+    <para id="para-00085">To convert from a Hindu-Arabic number to a Mayan number involves two distinct processes. First, the number must be converted to base 20, using the process described and demonstrated above. Next, that base 20 number has to be written using Mayan numerals. For reference, the Mayan numerals and their values are below.</para>
+    <figure class="unnumbered" id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_symbol_04_MTable.jpg"/>
+    </media>
+    </figure>
+    <example id="exam-00013">
+    <title>Converting from Base 10 into the Mayan System</title>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00086">Convert the following into Mayan numbers:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00010">
+    <item>51</item>
+    <item>653</item>
+    </list>
+    </problem>
+    <solution id="sol-00013">
+    <list list-type="enumerated" number-style="arabic" id="list-00011">
+    <item>The Mayan system is base 20, so we must use 20 in the process from above. The first division has a quotient of 2 and remainder of 11. The 11 serves as the ‘ones’ digit. Dividing that quotient, 2, by 20 has a quotient of 0 with a remainder of 2. The 2 becomes the ‘twenties’ digit of the number. So in base 20, the number would be 2 followed by 11. The Mayan symbols for 2 and 11 are <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M02.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media>. Writing these vertically, with the ‘ones’ digit on top, as appropriate for Mayan numbers, results in <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M02.jpg"/></media></item>
+    <item>The Mayan system is base 20, so we must use 20 in the process from above. The first division, 673 divided by 20, has a quotient of 32 and remainder of 13. Dividing that quotient, 32, by 20 has a quotient of 1 with a remainder of 12. Dividing that quotient, 1, by 20 has a quotient of 0 and a remainder of 1. Since there are three remainders here, this is a three digit number. The 1 is the ’20-squared” digit, the 12 is the ‘twenties’ digit, and the 13 is the ‘ones’ digit. So in base 20, the number would be 1followed by 12 followed by 13. The Mayan symbols for 1, 12 and 13 are, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M01.jpg"/></media>, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media>, and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M13.jpg"/></media>. Writing these vertically, as appropriate for Mayan numbers, would result in <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M01.jpg"/></media></item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00017">
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00087"><link class="os-embed" url="#exercise/CM-C04-M3-Q0012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00018">
+    <title>Other Languages, Other Bases</title>
+    <para id="para-00088">There have been base systems that use bases other than 10. Some bases used were 20, 12, and 27! To see more on the languages that used other bases, visit this site:</para>
+    <para id="para-00089"><link url="https://openstax.org/r/mentalfloss.com/article/31879/12">https://www.mentalfloss.com/article/31879/12-mind-blowing-number-systems-other-languages</link></para>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Errors in Converting Between Bases</title>
+    <para id="para-00090">There are some common errors that are made when converting between bases. Often, it comes down to using an ‘illegal’ symbol in the new base.</para>
+    <example id="exam-00014">
+    <title>Detecting an Illegal Symbol When Converting Between Bases</title>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00091">A base 10 number is converted to base 7 and the result was 2081<sub>7</sub>. Was an error committed? How do you know?</para>
+    </problem>
+    <solution id="sol-00014">
+    <para id="para-00092">The result has the digit 8 in it. In base 7, 8 is an illegal symbol. Based on that, an error was committed.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00019">
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00093"><link class="os-embed" url="#exercise/CM-C04-M3-Q0013"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00094">When converting from base 10 to another base, an illegal symbol will be used if a mistake was made in the division process used to find the number in the new base. Since the digits are based on the remainders, any remainder that is an illegal symbol would indicate an error.</para>
+    <example id="exam-00015">
+    <title>Detecting an Error in Division When Converting Between Bases</title>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00095">When changing from base 10 to base 8, the division process resulted in the following remainders: 1, 0, 9, 2, 4. Was an error committed? How do you know?</para>
+    </problem>
+    <solution id="sol-00015">
+    <para id="para-00096">The remainders include 9, which in base 8 is an illegal symbol.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00020">
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C04-M3-Q0014"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00098">Another possible way to detect an error in converting between bases is to count the number of digits. When converting from a higher base to a lower base, the number of digits cannot get smaller. Similarly, when converting from a lower base to a higher base, the number of digits cannot get bigger. So if a base 10 number is converted to a base 3 number, the number of digits in the new base 3 numbers cannot be less than the number of digits in the base 10 number. Similarly, if a base 7 number is converted to base 10, the number of digits in the base 10 number cannot be more than the number of digits in the original base 7 number.</para>
+    <example id="exam-00016">
+    <title>Detecting an Error in Number of Digits When Converting Between Bases</title>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00099">A 5-digit base 10 number is converted to a base 5 number. The base 5 number has 4 digits. Was an error committed? How do you know?</para>
+    </problem>
+    <solution id="sol-00016">
+    <para id="para-00100">Since 10 is larger than 5, the base 5 number cannot have less digits than the base 10 number. Since it did, we know an error has been made.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00021">
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00101"><link class="os-embed" url="#exercise/CM-C04-M3-Q0015"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00006">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00102"><link class="os-embed" url="#exercise/CM-C04-M3-Q0016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00103"><link class="os-embed" url="#exercise/CM-C04-M3-Q0017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00104"><link class="os-embed" url="#exercise/CM-C04-M3-Q0018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00105"><link class="os-embed" url="#exercise/CM-C04-M3-Q0019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00106"><link class="os-embed" url="#exercise/CM-C04-M3-Q0020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C04-M3-Q0021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00108"><link class="os-embed" url="#exercise/CM-C04-M3-Q0022"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00007">
+    <title>Exercises</title>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00109"><link class="os-embed" url="#exercise/CM-C04-M3-Q0023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00110"><link class="os-embed" url="#exercise/CM-C04-M3-Q0024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00111"><link class="os-embed" url="#exercise/CM-C04-M3-Q0025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00112"><link class="os-embed" url="#exercise/CM-C04-M3-Q0026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00113"><link class="os-embed" url="#exercise/CM-C04-M3-Q0027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00114"><link class="os-embed" url="#exercise/CM-C04-M3-Q0028"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00115"><link class="os-embed" url="#exercise/CM-C04-M3-Q0029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00116"><link class="os-embed" url="#exercise/CM-C04-M3-Q0030"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00117"><link class="os-embed" url="#exercise/CM-C04-M3-Q0031"/></para>
+    </problem>
+    </exercise>
+    <para id="para-00118">The Babylonian system used base 60. To convert from Hindu Arabic numbers into Babylonian numbers, the process for converting from base 10 to a different base would be done first. Then, the results found in the conversion process would be changed to Babylonian numerals. This process is similar to the one for Mayan numbers.</para>
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00119"><link class="os-embed" url="#exercise/CM-C04-M3-Q0032"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00008">
+    <title>Section 5-3</title>
+    <section class="key-terms" id="sect-00009">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00012">
+    <item>Base system</item>
+    <item>Dividend</item>
+    <item>Divisor</item>
+    <item>Quotient</item>
+    <item>Remainder</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00010">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00013">
+    <item>Write out the numbers in a given base</item>
+    <item>Know the symbols used in bases other than base 10</item>
+    <item>Know how to convert from a number written in a base other than 10 into a base 10 number</item>
+    <item>Know how to convert from a base 10 number into a base other than 10.</item>
+    <item>Recognize common errors when converting between bases.</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00011">
+    <title>Videos</title>
+    <para id="para-00120"><link url="https://openstax.org/r/Convert_Base_6_to_Base_10">Convert Base 6 to Base 10</link></para>
+    <para id="para-00121"><link url="https://openstax.org/r/Converting_from_Base_10_to_Another_Base">Converting from Base 10 to Another Base</link></para>
+    </section>
+    </section>
+    </content>
+    </document>
