@@ -5,431 +5,425 @@
     <md:content-id>m00053</md:content-id>
     <md:uuid>5d7efbc8-a0f5-41a2-84a6-efd0e08beefd</md:uuid>
   </metadata>
-<content>
-<section class="learning-objectives" id="sect-00001">
-<title>Learning Objectives</title>
-<para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
-<list list-type="enumerated" number-style="arabic" id="list-00001">
-<item>Understand and convert Babylonian numerals to Hindu-Arabic numerals.</item>
-<item>Understand and convert Mayan numerals to Hindu-Arabic numerals.</item>
-<item>Understand and convert between Roman numerals and Hindu-Arabic numerals.</item>
-</list>
-</section>
-<figure class="unnumbered" id="fig-00001">
-<media alt="Insert Alt Text">
-<image mime-type="image/jpg" src="../../media/CS_Photo_04_02_002b.jpg"/>
-</media>
-<caption><emphasis effect="italic">Photo 5.2: A picture of a babylonian tablet with numbers.</emphasis></caption>
-</figure>
-<para id="para-00002">Each culture throughout history had to develop its own method of counting and recording quantity. The system used in Australia would necessarily differ from the system developed in Babylon which would, in turn, differ from the system developed in sub-Sharan Africa. These differences arose due to cultural differences. In nearly all societies, knowing the difference between one and two would be useful. But it might not be useful to know the difference between 145 and 167, as those quantities never had a practical use. For example, a shepherd with a flock of more than 100 likely manage that many sheep, so that quantity may have never been encountered. This can even be seen in our use of the term few, which is an inexact quantity that most would agree means more than two. However, as societies became more complex, as commerce arose, as military bodies developed, so did the need for a system to handle large numbers. No matter the system, the issues of representing multiple values and how many symbols to use had to be addressed. In this module, we explore how the Babylonians, Mayans and Romans addressed these issues.</para>
-<section id="sect-00002">
-<title>Understand and Convert Babylonian Numerals to Hindu-Arabic Numerals</title>
-<para id="para-00003">The Babylonians used a mix of an <term id="term-00001">additive system</term> and a <term id="term-00002">positional system</term>.</para>
-<note class="definition" id="note-00001">
-<para id="para-00004">A system of numbers that multiplies a ‘digit’ by a number raised to a power, based on the position of the ‘digit’, is a <emphasis effect="bold">positional system</emphasis>.</para>
-</note>
-<note class="definition" id="note-00002">
-<para id="para-00005">A number system where the value of repeated instances of a symbol is added the number of times the symbol appears is an <emphasis effect="bold">additive system</emphasis>.</para>
-</note>
-<para id="para-00006">The Babylonian place values didn’t use powers of 10, but instead powers of 60. They didn’t use 60 different symbols though. For the value 1, they used the following symbol: <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media>. For values up to 9, that symbol would be repeated, so three would be written as <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media>. To represent the quantity ten, they used <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media>. For 20, 30, 40, and 50, they repeated the symbol for ten however many times it was needed, so 40 would be written <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media>. When they reached 60, the moved to the next place value. The complete list of the Babylonian numerals up to 59 is in Table 5.1.</para>
-<table class="numbered" summary="." id="table-00001">
-<title>TABLE 4.1: Babylonian Numerals</title>
-<tgroup cols="1">
-<colspec colnum="1" colname="c1" colwidth="1pt"/>
-<tbody>
-<row>
-<entry>
-<figure class="unnumbered" id="fig-00002">
-<media alt="Insert Alt Text">
-<image mime-type="image/jpg" src="../../media/CS_symbol_04_BTable.jpg"/>
-</media>
-</figure></entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<para id="para-00007">You can see how Babylonians repeated the symbols to indicate multiples of a value. The number 6 is 6 of the symbol for 1 grouped together. The symbol for 30 is three of the symbols for ten grouped together. However, their system doesn’t go past 59. To go past 59, they used place values. As opposed to the Hindu-Arabic system, which was based on powers of 10, the Babylonian positional system was based on powers of 60. You should also notice there is no symbol for zero, which has some impact on the number system. Since the Babylonian number system lacked a zero, they didn’t have a place holder when a power of 60 was absent. Without a zero, 101, 110, and 11 all look the same. However, there is some evidence that the Babylonians left a small space between ‘digits’ where we would use a 0, allowing them to represent the absence of that place value.</para>
-<para id="para-00008">To summarize, the Babylonian system of numbers used repeating a symbol to indicate more than one, used place values, and lacked a zero.</para>
-<note class="who-knew" id="note-00003">
-<title>Invention of 0</title>
-<para id="para-00009">The idea of zero is not a natural one. Most cultures failed to recognize the need for a zero. If someone asked a farmer in 300 B.C.E. how many cows they had, but they had none, they would not answer “zero”. They’d say “I don’t have any” and be done with it. It wasn’t until roughly 3 B.C.E. that zero appeared in Mesopotamia. It was independently discovered (or invented!) in the Mayan culture around 4 C.E. it made its appearance in India in the 400s C.E., and began to spread at that point. It wasn’t developed earlier mostly because positional systems were not yet fully developed. Once positional systems arose, the need to represent a missing power had to be addressed.</para>
-</note>
-<para id="para-00010">So how do we convert from Babylonian numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from Table 5.1, and then place values based on powers of 60. If you have <emphasis effect="italic">n</emphasis> digits in the Babylonian number, you multiply the first ‘digit’ by 60 raised to one less than the number of ‘digits’. You then continue through the ‘digits’, multiplying each by 60 raised to a power that is one smaller. However, be careful of spaces, since they represent a zero in that place.</para>
-<example id="exam-00001">
-<title>Converting a Two Digit Babylonian Number to Hindu-Arabic Numbers</title>
-<exercise id="exer-00001">
-<problem id="prob-00001">
-<para id="para-00011">Convert the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media> into a Hindu-Arabic number.</para>
-</problem>
-<solution id="sol-00001">
-<para id="para-00012"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media> has two digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media>, represents 4 in the Babylonian system. This is multiplied by 60 to the first power (just as would happen in a two digit number), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media>, which represents 27 in the Babylonian system. This is multiplied by 60 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>27</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>27</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>240</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>267</mn></mrow></math>. So the Babylonian number <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media> equals 267 in the Hindu-Arabic number system.</para>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00004">
-<exercise id="exer-00002">
-<problem id="prob-00002">
-<para id="para-00013"><link class="os-embed" url="#exercise/CM-C04-M2-Q001"/></para>
-</problem>
-</exercise>
-</note>
-<example id="exam-00002">
-<title>Converting a Three Digit Babylonian Number to Hindu-Arabic Numbers</title>
-<exercise id="exer-00003">
-<problem id="prob-00003">
-<para id="para-00014">Convert the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media> into a Hindu-Arabic number.</para></problem>
-<solution id="sol-00002">
-<para id="para-00015"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media> has three digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media>, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media>, represents 13 in the Babylonian system. This is multiplied by 60 to the second power (since there are 3 digits), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media>, which represents 8 in the Babylonian system, is multiplied by 60 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup></mrow></math>. The last digit is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media>, representing 54, which is multiplied by 60 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>54</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>54</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>13</mn><mo>×</mo><mn>3600</mn><mo>+</mo><mn>8</mn><mo>×</mo><mn>60</mn><mo>+</mo><mn>54</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>46,800</mn><mo>+</mo><mn>480</mn><mo>+</mo><mn>54</mn><mo>=</mo><mn>47,334</mn></mrow></math>. So the Babylonian number <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media> equals 47,334 in the Hindu-Arabic number system.</para>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00005">
-<exercise id="exer-00004">
-<problem id="prob-00004">
-<para id="para-00016"><link class="os-embed" url="#exercise/CM-C04-M2-Q002"/></para>
-</problem>
-</exercise>
-</note>
-<example id="exam-00003">
-<title>Converting a Four Digit Babylonian Number to Hindu-Arabic Numbers</title>
-<exercise id="exer-00005">
-<problem id="prob-00005">
-<para id="para-00017">Convert the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media> into a Hindu-Arabic number.</para>
-</problem>
-<solution id="sol-00003">
-<para id="para-00018">It appears that <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media> has three digits, but there is a space in between <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media>. Remember, the Babylonian system has no 0, it instead employs a space where we expect a zero. This means this is a four digit number. The first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media>, represents 12 in the Babylonian system. This is multiplied by 60 to the third power since there are four digits, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup></mrow></math>. The next symbol is a blank, which for us is a 0, representing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>, giving us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media>, which represents 42 in the Babylonian system, is multiplied by 60 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup></mrow></math>. The last Babylonian digit, <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media>, represents 39 in the Babylonian system. This is multiplied by 60 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>39</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>12</mn><mo>×</mo><msup><mn>60</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><msup><mn>60</mn><mn>1</mn></msup><mo>+</mo><mn>39</mn><mo>×</mo><msup><mn>60</mn><mn>0</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>12</mn><mo>×</mo><mn>216,000</mn><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><mn>60</mn><mo>+</mo><mn>39</mn><mo>×</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>2,592,000</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>2,520</mn><mo>+</mo><mn>39</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>2,594,559</mn></mtd></mtr></mtable></math></para>
-<para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">So the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media> equals 2,594,559 in the Hindu-Arabic number system.</para>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00006">
-<exercise id="exer-00006">
-<problem id="prob-00006">
-<para id="para-00020"><link class="os-embed" url="#exercise/CM-C04-M2-Q003"/></para>
-</problem>
-</exercise>
-</note>
-<note class="who-knew" id="note-00007">
-<title>The Legacy of Babylonian System</title>
-<para id="para-00021">The Babylonian system can still be seen today. An hour is 60 minutes, and a minute is 60 seconds. Additionally, when measuring angles in degrees, each degree can be split into 60 minutes (1/60<sup>th</sup> of a degree) and 60 seconds (1/60<sup>th</sup> of a minute).</para>
-</note>
-<note class="video" id="note-00008">
-<para id="para-00022"><link url="https://openstax.org/r/Converting_Between_Babylonian_and_Hindu-Arabic_Numbers">Converting Between Babylonian and Hindu-Arabic Numbers</link></para>
-</note>
-</section>
-<section id="sect-00003">
-<title>Understand and Convert Mayan Numerals to Hindu-Arabic Numerals</title>
-<para id="para-00023">The Mayans employed a positional system just as we do and the Babylonians did, but they based their position values on powers of 20 and they had a dedicated symbol for zero. Similar to the Babylonians, the Mayans would repeat symbols to indicate certain values. A single dot was a 1, two dots were a 2, up to four dots. Then a five was a horizontal bar. The horizontal bars could be used three times, since the fourth horizontal bar would make a 20, which was a new position in the number. The zero was a special picture, which appears like a turtle lying on its back. The shell would then be ‘empty’, so maybe that’s why the symbol was 0. The complete list is provided in Table 2. Another feature of Mayan numbers was that they were written vertically. The powers of 20 increased from bottom to top.</para>
-<table class="numbered" summary="." id="table-00002">
-<title>TABLE 4.2: Mayan Numerals</title>
-<tgroup cols="1">
-<colspec colnum="1" colname="c1" colwidth="1*"/>
-<tbody>
-<row>
-<entry>
-<figure class="unnumbered" id="fig-00003">
-<media alt="Insert Alt Text">
-<image mime-type="image/jpg" src="../../media/CS_symbol_04_MTable.jpg"/>
-</media>
-</figure>
-</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<para id="para-00024">To summarize, the Mayan system of numbers used repeating symbola to indicate more than one, used place values, and employed a zero.</para>
-<para id="para-00025">So how do we convert from Mayan numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from Table 5.2 and then place values based on powers of 20.. If you have <emphasis effect="italic">n</emphasis> digits in the Mayan number, you multiply the first ‘digit’ by 20 raised to one less than the number of ‘digits’. You then continue through the ‘digits’, multiplying each by 20 raised to a power that is one smaller than the previous power. Fortunately, there is an explicit 0, so there is no ambiguity about numbers like 110, 101, and 11.</para>
-<example id="exam-00004">
-<title>Converting a Two Digit Mayan Number to Hindu-Arabic Numbers</title>
-<exercise id="exer-00007">
-<problem id="prob-00007">
-<para id="para-00026">Convert the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media> into a Hindu-Arabic number.</para>
-</problem>
-<solution id="sol-00004">
-<para id="para-00027"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media> has two digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media>, represents 15 in the Mayan system. This is multiplied by 20 to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media>, which represents 9 in the Mayan system. This is multiplied by 20 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>9</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>9</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>300</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>309</mn></mrow></math>. So <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media> equals 309 in the Hindu-Arabic number system.</para>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00009">
-<exercise id="exer-00008">
-<problem id="prob-00008">
-<para id="para-00028"><link class="os-embed" url="#exercise/CM-C04-M2-Q004"/></para>
-</problem>
-</exercise>
-</note>
-<example id="exam-00005">
-<title>Converting a Three Digit Mayan Number to Hindu-Arabic Numbers</title>
-<exercise id="exer-00009">
-<problem id="prob-00009">
-<para id="para-00029">Convert the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media> into a Hindu-Arabic number.</para>
-</problem>
-<solution id="sol-00005">
-<para id="para-00030"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media> has three digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media>, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media>, represents 6 in the Mayan system. This is multiplied by 20 to the second power (since there are 3 digits), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media>, which represents 8 in the Mayan system, is multiplied by 20 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup></mrow></math>. The last digit is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media>, representing 4, which is multiplied by 20 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>6</mn><mo>×</mo><mn>400</mn><mo>+</mo><mn>8</mn><mo>×</mo><mn>20</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>2,400</mn><mo>+</mo><mn>160</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>2,564</mn></mrow></math>. So the Mayan number <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media> equals 2,564 in the Hindu-Arabic number system.</para>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00010">
-<exercise id="exer-00010">
-<problem id="prob-00010">
-<para id="para-00031"><link class="os-embed" url="#exercise/CM-C04-M2-Q005"/></para>
-</problem>
-</exercise>
-</note>
-<example id="exam-00006">
-<title>Converting a Four Digit Mayan Number to Hindu-Arabic Numbers</title>
-<exercise id="exer-00011">
-<problem id="prob-00011">
-<para id="para-00032">Convert the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media> into a Hindu-Arabic number.</para>
-</problem>
-<solution id="sol-00006">
-<para id="para-00033"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media> has four digits, so the first power of 20 that is used is 3. The first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media>, represents 8 in the Mayan system. This is multiplied by 20 to the third power (since there are four digits), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media>, which is a 0, representing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup></mrow></math>, giving us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media>, which represents 16 in the Mayan system, is multiplied by 20 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup></mrow></math>. The last Mayan digit, <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media>, represents 5 in the Mayan system. This is multiplied by 20 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mn>8</mn><mo>×</mo><msup><mn>20</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>20</mn><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>×</mo><msup><mn>20</mn><mn>1</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mn>20</mn><mn>0</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>8</mn><mo>×</mo><mn>8000</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>400</mn><mo>+</mo><mn>16</mn><mo>×</mo><mn>20</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>64,000</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>320</mn><mo>+</mo><mn>5</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>64,325</mn></mtd></mtr></mtable></math></equation></para>
-<para id="para-00034" xmlns="http://cnx.rice.edu/cnxml">So the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media> equals 64,325 in the Hindu-Arabic number system.</para>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00011">
-<exercise id="exer-00012">
-<problem id="prob-00012">
-<para id="para-00035"><link class="os-embed" url="#exercise/CM-C04-M2-Q006"/></para>
-</problem>
-</exercise>
-</note>
-<note class="who-knew" id="note-00012">
-<title>The Mayan Calendar</title>
-<para id="para-00036">The Mayans used this base 20 system for everyday situations. But their culturally important, and extremely accurate, calendar system used a slightly different system. For their calendars, they used a system where the place values were 1, 20, then 20*18, then 20*18*18. The reason for this is 20*18 is 360, which is closer to the number of days in a year. Had they used a purely base 20 system for their calendar, they’d be very far off with 400 days in a year.</para>
-<para id="para-00037">Three hundred sixty days still left the Mayans a bit short, as there are 365 days in a year (ignoring leap years). The Mayan calendar also included five days, called Wayeb days, which brings their calendar to 365 days. As it happens, Wayeb is the Mayan god of misfortune, so these five days were considered the bad luck days.</para>
-</note>
-</section>
-<section id="sect-00004">
-<title>Understand and Convert Between Roman Numerals and Hindu-Arabic Numerals</title>
-<para id="para-00038">The Mayan and Babylonian systems shared two features, one of which we are familiar with (place value) and one which we don’t use (repeated symbols). The Roman system used repeated symbols, but does not employ a place value. It also lacks a zero. The Roman system is built on the following symbols in Table 3.</para>
-<table class="numbered" summary="." id="table-00003">
-<title>TABLE 4.3: Roman Numerals</title>
-<tgroup cols="2">
-<colspec colnum="1" colname="c1" colwidth="1pt"/>
-<colspec colnum="2" colname="c2" colwidth="1pt"/>
-<thead>
-<row>
-<entry>Roman Numeral</entry>
-<entry>Hindu-Arabic Value</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>I</entry>
-<entry>1</entry>
-</row>
-<row>
-<entry>V</entry>
-<entry>5</entry>
-</row>
-<row>
-<entry>X</entry>
-<entry>10</entry>
-</row>
-<row>
-<entry>L</entry>
-<entry>50</entry>
-</row>
-<row>
-<entry>C</entry>
-<entry>100</entry>
-</row>
-<row>
-<entry>D</entry>
-<entry>500</entry>
-</row>
-<row>
-<entry>M</entry>
-<entry>1000</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<para id="para-00039">As in the Mayan and Babylonian systems, a symbol may be repeated to indicate a larger value. However, at 4, they did not use IIII. They instead used IV. Since the I came before the V, the number stands for “one before five”. A similar process was used for nine, which was written IX, or “one before ten”. The value 40 was written XL, or “ten before fifty”, while 49 was written XLIX, or “forty plus nine”.</para>
-<para id="para-00040">The following are the rules for writing and reading Roman numerals.</para>
-<list list-type="bulleted" id="list-00002">
-<item>The representations for bigger values precede those for smaller values.</item>
-<item>Up to three symbols may be grouped together, for example, III for 3, or XXX for 30, or CC for 200.</item>
-<item>A larger value followed by a smaller value indicated addition, for example, VII for 7, XIII for 13, LV for 55, and MCC for 1200.</item>
-<item>I can be placed before V to indicate 4, or before X, to indicate 9. These are the only ways I is used as a subtraction.</item>
-<item>X can be placed before L to indicate 40, and before C to indicate 90. These are the only ways X is used as a subtraction.</item>
-<item>C can be placed before D to indicate 400, and before M to indicate 900. These are the only ways C is used as a subtraction.</item>
-<item>If multiple symbols are used, and a subtraction involving that symbol, the subtraction part comes after the multiple symbols. For example, XXIX for 29, and CCXC for 290.</item>
-</list>
-<note class="who-knew" id="note-00013">
-<title>Legacy of Roman Numerals</title>
-<para id="para-00041">The Roman numbering system is still used today in some situations. Many cornerstones of buildings have the year written in Roman numerals. Movie titles often represent the year the movie was produced as Roman numerals. The most recognizable might be that the Super Bowl is numbered using Roman numerals.</para>
-</note>
-<example id="exam-00007">
-<title>Converting Roman Numerals to Hindu-Arabic Numbers</title>
-<exercise id="exer-00013">
-<problem id="prob-00013">
-<para id="para-00042">Convert the following Roman numerals into Hindu-Arabic numerals.</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00003">
-<item>XXVII</item>
-<item>XXXIV</item>
-<item>MMCMXLVIII</item>
-</list>
-</problem>
-<solution id="sol-00007">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00004">
-<item>The numeral XXVII begins with two X’s, which is then followed by a V. So the two X’s combine to be 20. The V is followed by two I’s, so the V indicates the addition of 5. The two I’s that follow indicate addition of two. That ends the symbols, so the value is 20 plus 5 plus 2, or 27 in Hindu-Arabic numerals.</item>
-<item>The numeral XXXIV begins with three X’s, which is then followed by an I. So the three X’s combine to be 30. The I is followed by a V, which indicates 4. That ends the symbols, so the value is 30 plus 4, or 34 in Hindu-Arabic numerals.</item>
-<item>The numeral MMCMXLVIII begins with two M’s, which is then followed by a C. So the two M’s combine to make 2000. The C is followed by an M, which indicates 900. The CM is followed by XL, which indicates 40. The L is followed by V, which indicates 5. The V is followed by three I’s, indicating 3. Adding those values yields 2948.</item>
-</list>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00014">
-<exercise id="exer-00014">
-<problem id="prob-00014">
-<para id="para-00043"><link class="os-embed" url="#exercise/CM-C04-M2-Q007"/></para>
-</problem>
-</exercise>
-</note>
-<note class="video" id="note-00015">
-<para id="para-00044"><link url="https://openstax.org/r/Converting_From_Roman_Numbers_to_Hindu-Arabic_Numbers">Converting From Roman Numbers to Hindu-Arabic Numbers</link></para>
-</note>
-<para id="para-00045">Of course, we can convert from Hindu-Arabic numerals to Roman numerals too.</para>
-<example id="exam-00008">
-<title>Converting Hindu-Arabic Numbers to Roman Numerals</title>
-<exercise id="exer-00015">
-<problem id="prob-00015">
-<para id="para-00046">Convert the following Hindu-Arabic numerals into Roman numerals:</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00005">
-<item>38</item>
-<item>94</item>
-<item>846</item>
-<item>2,987</item>
-</list>
-</problem>
-<solution id="sol-00008">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00006">
-<item>Thirty is represented as three X’s, and the 8 is represented with VIII, so 38 in Roman numerals is XXXVIII.</item>
-<item>Ninety is represented by XC, and four is represented by IV, so 94 in Roman numerals is XCIV.</item>
-<item>The number is less than 900 and more than 500, so the first symbol to be used is D, which is 500. To get to 800, we need 300 more, which is represented with three C’s. Forty is represented with XL, and the six. The Roman numerals is DCCCXLVI.</item>
-<item>The two thousand is represented by two M’s. The 900 is represented by CM. The 80 is represented by LXXX (50 plus 30). Finally, the 7 is represented by VII. We have that 2,987 in Roman numerals is MMCMLXXXVII.</item>
-</list>
-</solution>
-</exercise>
-</example>
-<note class="your-turn" id="note-00016">
-<exercise id="exer-00016">
-<problem id="prob-00016">
-<para id="para-00047"><link class="os-embed" url="#exercise/CM-C04-M2-Q008"/></para>
-</problem>
-</exercise>
-</note>
-<note class="video" id="note-00017">
-<para id="para-00048"><link url="https://openstax.org/r/Converting-From_Hindu-Arabic_Numbers_to_Roman_Numbers">Converting From Hindu-Arabic Numbers to Roman Numbers</link></para>
-</note>
-</section>
-<section class="check-understanding" id="sect-00005">
-<title>Check Your Understanding</title>
-<exercise id="exer-00017">
-<problem id="prob-00017">
-<para id="para-00049"><link class="os-embed" url="#exercise/CM-C04-M2-Q009"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00018">
-<problem id="prob-00018">
-<para id="para-00050"><link class="os-embed" url="#exercise/CM-C04-M2-Q0010"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00019">
-<problem id="prob-00019">
-<para id="para-00051"><link class="os-embed" url="#exercise/CM-C04-M2-Q0011"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00020">
-<problem id="prob-00020">
-<para id="para-00052"><link class="os-embed" url="#exercise/CM-C04-M2-Q0012"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00021">
-<problem id="prob-00021">
-<para id="para-00053"><link class="os-embed" url="#exercise/CM-C04-M2-Q0013"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00022">
-<problem id="prob-00022">
-<para id="para-00054"><link class="os-embed" url="#exercise/CM-C04-M2-Q0014"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00023">
-<problem id="prob-00023">
-<para id="para-00055"><link class="os-embed" url="#exercise/CM-C04-M2-Q0015"/></para>
-</problem>
-</exercise>
-</section>
-<section id="sect-00006">
-<title>Exercises</title>
-<exercise id="exer-00024">
-<problem id="prob-00024">
-<para id="para-00056"><link class="os-embed" url="#exercise/CM-C04-M2-Q0016"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00025">
-<problem id="prob-00025">
-<para id="para-00057"><link class="os-embed" url="#exercise/CM-C04-M2-Q0017"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00026">
-<problem id="prob-00026">
-<para id="para-00058"><link class="os-embed" url="#exercise/CM-C04-M2-Q0018"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00027">
-<problem id="prob-00027">
-<para id="para-00059"><link class="os-embed" url="#exercise/CM-C04-M2-Q0019"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00028">
-<problem id="prob-00028">
-<para id="para-00060"><link class="os-embed" url="#exercise/CM-C04-M2-Q0020"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00029">
-<problem id="prob-00029">
-<para id="para-00061"><link class="os-embed" url="#exercise/CM-C04-M2-Q0021"/></para>
-</problem>
-</exercise>
-<exercise id="exer-00030">
-<problem id="prob-00030">
-<para id="para-00062"><link class="os-embed" url="#exercise/CM-C04-M2-Q0022"/></para>
-</problem>
-</exercise>
-</section>
-<section id="sect-00007">
-<title>Module 5-2</title>
-<section class="key-terms" id="sect-00008">
-<title>Key Terms</title>
-<list bullet-style="none" id="list-00007">
-<item>Additive System of Numbers</item>
-<item>Positional System of Numbers</item>
-<item>Babylonian Numbers</item>
-<item>Mayan Numbers</item>
-<item>Roman Numbers</item>
-</list>
-</section>
-<section class="key-concepts" id="sect-00009">
-<title>Key Concepts</title>
-<list list-type="bulleted" id="list-00008">
-<item>Know what additive systems are</item>
-<item>Know what positional systems are</item>
-<item>Know how to convert between Babylonian Numbers and Hindu-Arabic numbers</item>
-<item>Know how to convert between Mayan Numbers and Hindu-Arabic numbers</item>
-<item>Know how to convert between Roman Numbers and Hindu-Arabic numbers</item>
-</list>
-</section>
-<section class="eoc-videos" id="sect-00010">
-<title>Videos</title>
-<para id="para-00063"><link url="https://openstax.org/r/Converting_Between_Babylonian_and_Hindu-Arabic_Numbers">Converting Between Babylonian and Hindu-Arabic numbers</link></para>
-<para id="para-00064"><link url="https://openstax.org/r/Converting_Mayan_Numbers_to_Hindu-Arabic_Numbers">Converting Mayan Numbers to Hindu-Arabic Numbers</link></para>
-<para id="para-00065"><link url="https://openstax.org/r/Converting_From_Roman_Numbers_to_Hindu-Arabic_Numbers">Converting From Roman Numbers to Hindu-Arabic Numbers</link></para>
-<para id="para-00066"><link url="https://openstax.org/r/Converting-From_Hindu-Arabic_Numbers_to_Roman_Numbers">Converting From Hindu-Arabic Numbers to Roman Numbers</link></para>
-</section>
-</section>
-</content>
-</document>
+  <content>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Understand and convert Babylonian numerals to Hindu-Arabic numerals.</item>
+    <item>Understand and convert Mayan numerals to Hindu-Arabic numerals.</item>
+    <item>Understand and convert between Roman numerals and Hindu-Arabic numerals.</item>
+    </list>
+    </section>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_04_02_002b.jpg"/>
+    </media>
+    <caption>A picture of a babylonian tablet with numbers.</caption>
+    </figure>
+    <para id="para-00002">Each culture throughout history had to develop its own method of counting and recording quantity. The system used in Australia would necessarily differ from the system developed in Babylon which would, in turn, differ from the system developed in sub-Sharan Africa. These differences arose due to cultural differences. In nearly all societies, knowing the difference between one and two would be useful. But it might not be useful to know the difference between 145 and 167, as those quantities never had a practical use. For example, a shepherd with a flock of more than 100 likely manage that many sheep, so that quantity may have never been encountered. This can even be seen in our use of the term few, which is an inexact quantity that most would agree means more than two. However, as societies became more complex, as commerce arose, as military bodies developed, so did the need for a system to handle large numbers. No matter the system, the issues of representing multiple values and how many symbols to use had to be addressed. In this section, we explore how the Babylonians, Mayans and Romans addressed these issues.</para>
+    <section id="sect-00002">
+    <title>Understand and Convert Babylonian Numerals to Hindu-Arabic Numerals</title>
+    <para id="para-00003">The Babylonians used a mix of an <term id="term-00001">additive system</term> and a <term id="term-00002">positional system</term>.</para>
+    <para id="para-00004">The Babylonian place values didn’t use powers of 10, but instead powers of 60. They didn’t use 60 different symbols though. For the value 1, they used the following symbol: <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media>. For values up to 9, that symbol would be repeated, so three would be written as <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.jpg"/></media>. To represent the quantity ten, they used <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media>. For 20, 30, 40, and 50, they repeated the symbol for ten however many times it was needed, so 40 would be written <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.jpg"/></media>. When they reached 60, the moved to the next place value. The complete list of the Babylonian numerals up to 59 is in Table 5.1.</para>
+    <table class="numbered" summary="." id="table-00001">
+    <title>Table 4.1: Babylonian Numerals</title>
+    <tgroup cols="1">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>
+    <figure class="unnumbered" id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_symbol_04_BTable.jpg"/>
+    </media>
+    </figure></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00005">You can see how Babylonians repeated the symbols to indicate multiples of a value. The number 6 is 6 of the symbol for 1 grouped together. The symbol for 30 is three of the symbols for ten grouped together. However, their system doesn’t go past 59. To go past 59, they used place values. As opposed to the Hindu-Arabic system, which was based on powers of 10, the Babylonian positional system was based on powers of 60. You should also notice there is no symbol for zero, which has some impact on the number system. Since the Babylonian number system lacked a zero, they didn’t have a place holder when a power of 60 was absent. Without a zero, 101, 110, and 11 all look the same. However, there is some evidence that the Babylonians left a small space between ‘digits’ where we would use a 0, allowing them to represent the absence of that place value.</para>
+    <para id="para-00006">To summarize, the Babylonian system of numbers used repeating a symbol to indicate more than one, used place values, and lacked a zero.</para>
+    <note class="who-knew" id="note-00001">
+    <title>Invention of 0</title>
+    <para id="para-00007">The idea of zero is not a natural one. Most cultures failed to recognize the need for a zero. If someone asked a farmer in 300 B.C.E. how many cows they had, but they had none, they would not answer “zero”. They’d say “I don’t have any” and be done with it. It wasn’t until roughly 3 B.C.E. that zero appeared in Mesopotamia. It was independently discovered (or invented!) in the Mayan culture around 4 C.E. it made its appearance in India in the 400s C.E., and began to spread at that point. It wasn’t developed earlier mostly because positional systems were not yet fully developed. Once positional systems arose, the need to represent a missing power had to be addressed.</para>
+    </note>
+    <para id="para-00008">So how do we convert from Babylonian numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from Table 5.1, and then place values based on powers of 60. If you have <emphasis effect="italic">n</emphasis> digits in the Babylonian number, you multiply the first ‘digit’ by 60 raised to one less than the number of ‘digits’. You then continue through the ‘digits’, multiplying each by 60 raised to a power that is one smaller. However, be careful of spaces, since they represent a zero in that place.</para>
+    <example id="exam-00001">
+    <title>Converting a Two Digit Babylonian Number to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00009">Convert the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media> into a Hindu-Arabic number.</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00010"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media> has two digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media>, represents 4 in the Babylonian system. This is multiplied by 60 to the first power (just as would happen in a two digit number), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media>, which represents 27 in the Babylonian system. This is multiplied by 60 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>27</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>27</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>240</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>267</mn></mrow></math>. So the Babylonian number <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B04.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B27.jpg"/></media> equals 267 in the Hindu-Arabic number system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CM-C04-M2-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Converting a Three Digit Babylonian Number to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00012">Convert the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media> into a Hindu-Arabic number.</para></problem>
+    <solution id="sol-00002">
+    <para id="para-00013"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media> has three digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media>, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media>, represents 13 in the Babylonian system. This is multiplied by 60 to the second power (since there are 3 digits), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media>, which represents 8 in the Babylonian system, is multiplied by 60 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup></mrow></math>. The last digit is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media>, representing 54, which is multiplied by 60 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>54</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>54</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>13</mn><mo>×</mo><mn>3600</mn><mo>+</mo><mn>8</mn><mo>×</mo><mn>60</mn><mo>+</mo><mn>54</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>46,800</mn><mo>+</mo><mn>480</mn><mo>+</mo><mn>54</mn><mo>=</mo><mn>47,334</mn></mrow></math>. So the Babylonian number <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B13.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B54.jpg"/></media> equals 47,334 in the Hindu-Arabic number system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CM-C04-M2-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Converting a Four Digit Babylonian Number to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00015">Convert the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media> into a Hindu-Arabic number.</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00016">It appears that <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media> has three digits, but there is a space in between <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media>. Remember, the Babylonian system has no 0, it instead employs a space where we expect a zero. This means this is a four digit number. The first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media>, represents 12 in the Babylonian system. This is multiplied by 60 to the third power since there are four digits, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup></mrow></math>. The next symbol is a blank, which for us is a 0, representing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>, giving us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media>, which represents 42 in the Babylonian system, is multiplied by 60 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup></mrow></math>. The last Babylonian digit, <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media>, represents 39 in the Babylonian system. This is multiplied by 60 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>39</mn><mo>×</mo><msup><mrow><mn>60</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>12</mn><mo>×</mo><msup><mn>60</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><msup><mn>60</mn><mn>1</mn></msup><mo>+</mo><mn>39</mn><mo>×</mo><msup><mn>60</mn><mn>0</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>12</mn><mo>×</mo><mn>216,000</mn><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>42</mn><mo>×</mo><mn>60</mn><mo>+</mo><mn>39</mn><mo>×</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>2,592,000</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>2,520</mn><mo>+</mo><mn>39</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>2,594,559</mn></mtd></mtr></mtable></math></para>
+    <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">So the Babylonian number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B12.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B42.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B39.jpg"/></media> equals 2,594,559 in the Hindu-Arabic number system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CM-C04-M2-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00005">
+    <title>The Legacy of Babylonian System</title>
+    <para id="para-00019">The Babylonian system can still be seen today. An hour is 60 minutes, and a minute is 60 seconds. Additionally, when measuring angles in degrees, each degree can be split into 60 minutes (1/60<sup>th</sup> of a degree) and 60 seconds (1/60<sup>th</sup> of a minute).</para>
+    </note>
+    <note class="video" id="note-00006">
+    <para id="para-00020"><link url="https://openstax.org/r/Converting_Between_Babylonian_and_Hindu-Arabic_Numbers">Converting Between Babylonian and Hindu-Arabic Numbers</link></para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Understand and Convert Mayan Numerals to Hindu-Arabic Numerals</title>
+    <para id="para-00021">The Mayans employed a positional system just as we do and the Babylonians did, but they based their position values on powers of 20 and they had a dedicated symbol for zero. Similar to the Babylonians, the Mayans would repeat symbols to indicate certain values. A single dot was a 1, two dots were a 2, up to four dots. Then a five was a horizontal bar. The horizontal bars could be used three times, since the fourth horizontal bar would make a 20, which was a new position in the number. The zero was a special picture, which appears like a turtle lying on its back. The shell would then be ‘empty’, so maybe that’s why the symbol was 0. The complete list is provided in Table 2. Another feature of Mayan numbers was that they were written vertically. The powers of 20 increased from bottom to top.</para>
+    <table class="numbered" summary="." id="table-00002">
+    <title>Table 4.2: Mayan Numerals</title>
+    <tgroup cols="1">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <tbody>
+    <row>
+    <entry>
+    <figure class="unnumbered" id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_symbol_04_MTable.jpg"/>
+    </media>
+    </figure>
+    </entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00022">To summarize, the Mayan system of numbers used repeating symbola to indicate more than one, used place values, and employed a zero.</para>
+    <para id="para-00023">So how do we convert from Mayan numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from Table 5.2 and then place values based on powers of 20.. If you have <emphasis effect="italic">n</emphasis> digits in the Mayan number, you multiply the first ‘digit’ by 20 raised to one less than the number of ‘digits’. You then continue through the ‘digits’, multiplying each by 20 raised to a power that is one smaller than the previous power. Fortunately, there is an explicit 0, so there is no ambiguity about numbers like 110, 101, and 11.</para>
+    <example id="exam-00004">
+    <title>Converting a Two Digit Mayan Number to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00024">Convert the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media> into a Hindu-Arabic number.</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00025"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media> has two digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media>, represents 15 in the Mayan system. This is multiplied by 20 to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media>, which represents 9 in the Mayan system. This is multiplied by 20 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>9</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>9</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>300</mn><mo>+</mo><mn>9</mn><mo>=</mo><mn>309</mn></mrow></math>. So <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M15.jpg"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M09.jpg"/></media> equals 309 in the Hindu-Arabic number system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00026"><link class="os-embed" url="#exercise/CM-C04-M2-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Converting a Three Digit Mayan Number to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00027">Convert the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media> into a Hindu-Arabic number.</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00028"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media> has three digits, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media>, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> and <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media>. So the first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media>, represents 6 in the Mayan system. This is multiplied by 20 to the second power (since there are 3 digits), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media>, which represents 8 in the Mayan system, is multiplied by 20 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup></mrow></math>. The last digit is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media>, representing 4, which is multiplied by 20 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>6</mn><mo>×</mo><mn>400</mn><mo>+</mo><mn>8</mn><mo>×</mo><mn>20</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>2,400</mn><mo>+</mo><mn>160</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>2,564</mn></mrow></math>. So the Mayan number <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M06.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M04.jpg"/></media> equals 2,564 in the Hindu-Arabic number system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00008">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C04-M2-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00006">
+    <title>Converting a Four Digit Mayan Number to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00030">Convert the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media> into a Hindu-Arabic number.</para>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00031"><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media> has four digits, so the first power of 20 that is used is 3. The first symbol, <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media>, represents 8 in the Mayan system. This is multiplied by 20 to the third power (since there are four digits), which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media>, which is a 0, representing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup></mrow></math>, giving us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup></mrow></math>. The next symbol is <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media>, which represents 16 in the Mayan system, is multiplied by 20 raised to the first power, which gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup></mrow></math>. The last Mayan digit, <media alt="Insert Alt Text" xmlns="http://cnx.rice.edu/cnxml"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media>, represents 5 in the Mayan system. This is multiplied by 20 raised to 0, which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>20</mn></mrow><mn>0</mn></msup></mrow></math>. Calculating that yields <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mn>8</mn><mo>×</mo><msup><mn>20</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>20</mn><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>×</mo><msup><mn>20</mn><mn>1</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mn>20</mn><mn>0</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>8</mn><mo>×</mo><mn>8000</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>400</mn><mo>+</mo><mn>16</mn><mo>×</mo><mn>20</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>64,000</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>320</mn><mo>+</mo><mn>5</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>64,325</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00032" xmlns="http://cnx.rice.edu/cnxml">So the Mayan number <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M08.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M00.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M16.jpg"/></media> <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M05.jpg"/></media> equals 64,325 in the Hindu-Arabic number system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00033"><link class="os-embed" url="#exercise/CM-C04-M2-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00010">
+    <title>The Mayan Calendar</title>
+    <para id="para-00034">The Mayans used this base 20 system for everyday situations. But their culturally important, and extremely accurate, calendar system used a slightly different system. For their calendars, they used a system where the place values were 1, 20, then 20*18, then 20*18*18. The reason for this is 20*18 is 360, which is closer to the number of days in a year. Had they used a purely base 20 system for their calendar, they’d be very far off with 400 days in a year.</para>
+    <para id="para-00035">Three hundred sixty days still left the Mayans a bit short, as there are 365 days in a year (ignoring leap years). The Mayan calendar also included five days, called Wayeb days, which brings their calendar to 365 days. As it happens, Wayeb is the Mayan god of misfortune, so these five days were considered the bad luck days.</para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Understand and Convert Between Roman Numerals and Hindu-Arabic Numerals</title>
+    <para id="para-00036">The Mayan and Babylonian systems shared two features, one of which we are familiar with (place value) and one which we don’t use (repeated symbols). The Roman system used repeated symbols, but does not employ a place value. It also lacks a zero. The Roman system is built on the following symbols in Table 3.</para>
+    <table class="numbered" summary="." id="table-00003">
+    <title>Table 4.3: Roman Numerals</title>
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <thead>
+    <row>
+    <entry>Roman Numeral</entry>
+    <entry>Hindu-Arabic Value</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>I</entry>
+    <entry>1</entry>
+    </row>
+    <row>
+    <entry>V</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>X</entry>
+    <entry>10</entry>
+    </row>
+    <row>
+    <entry>L</entry>
+    <entry>50</entry>
+    </row>
+    <row>
+    <entry>C</entry>
+    <entry>100</entry>
+    </row>
+    <row>
+    <entry>D</entry>
+    <entry>500</entry>
+    </row>
+    <row>
+    <entry>M</entry>
+    <entry>1000</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00037">As in the Mayan and Babylonian systems, a symbol may be repeated to indicate a larger value. However, at 4, they did not use IIII. They instead used IV. Since the I came before the V, the number stands for “one before five”. A similar process was used for nine, which was written IX, or “one before ten”. The value 40 was written XL, or “ten before fifty”, while 49 was written XLIX, or “forty plus nine”.</para>
+    <para id="para-00038">The following are the rules for writing and reading Roman numerals.</para>
+    <list list-type="bulleted" id="list-00002">
+    <item>The representations for bigger values precede those for smaller values.</item>
+    <item>Up to three symbols may be grouped together, for example, III for 3, or XXX for 30, or CC for 200.</item>
+    <item>A larger value followed by a smaller value indicated addition, for example, VII for 7, XIII for 13, LV for 55, and MCC for 1200.</item>
+    <item>I can be placed before V to indicate 4, or before X, to indicate 9. These are the only ways I is used as a subtraction.</item>
+    <item>X can be placed before L to indicate 40, and before C to indicate 90. These are the only ways X is used as a subtraction.</item>
+    <item>C can be placed before D to indicate 400, and before M to indicate 900. These are the only ways C is used as a subtraction.</item>
+    <item>If multiple symbols are used, and a subtraction involving that symbol, the subtraction part comes after the multiple symbols. For example, XXIX for 29, and CCXC for 290.</item>
+    </list>
+    <note class="who-knew" id="note-00011">
+    <title>Legacy of Roman Numerals</title>
+    <para id="para-00039">The Roman numbering system is still used today in some situations. Many cornerstones of buildings have the year written in Roman numerals. Movie titles often represent the year the movie was produced as Roman numerals. The most recognizable might be that the Super Bowl is numbered using Roman numerals.</para>
+    </note>
+    <example id="exam-00007">
+    <title>Converting Roman Numerals to Hindu-Arabic Numbers</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00040">Convert the following Roman numerals into Hindu-Arabic numerals.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>XXVII</item>
+    <item>XXXIV</item>
+    <item>MMCMXLVIII</item>
+    </list>
+    </problem>
+    <solution id="sol-00007">
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>The numeral XXVII begins with two X’s, which is then followed by a V. So the two X’s combine to be 20. The V is followed by two I’s, so the V indicates the addition of 5. The two I’s that follow indicate addition of two. That ends the symbols, so the value is 20 plus 5 plus 2, or 27 in Hindu-Arabic numerals.</item>
+    <item>The numeral XXXIV begins with three X’s, which is then followed by an I. So the three X’s combine to be 30. The I is followed by a V, which indicates 4. That ends the symbols, so the value is 30 plus 4, or 34 in Hindu-Arabic numerals.</item>
+    <item>The numeral MMCMXLVIII begins with two M’s, which is then followed by a C. So the two M’s combine to make 2000. The C is followed by an M, which indicates 900. The CM is followed by XL, which indicates 40. The L is followed by V, which indicates 5. The V is followed by three I’s, indicating 3. Adding those values yields 2948.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00012">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C04-M2-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00013">
+    <para id="para-00042"><link url="https://openstax.org/r/Converting_From_Roman_Numbers_to_Hindu-Arabic_Numbers">Converting From Roman Numbers to Hindu-Arabic Numbers</link></para>
+    </note>
+    <para id="para-00043">Of course, we can convert from Hindu-Arabic numerals to Roman numerals too.</para>
+    <example id="exam-00008">
+    <title>Converting Hindu-Arabic Numbers to Roman Numerals</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00044">Convert the following Hindu-Arabic numerals into Roman numerals:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>38</item>
+    <item>94</item>
+    <item>846</item>
+    <item>2,987</item>
+    </list>
+    </problem>
+    <solution id="sol-00008">
+    <list list-type="enumerated" number-style="arabic" id="list-00006">
+    <item>Thirty is represented as three X’s, and the 8 is represented with VIII, so 38 in Roman numerals is XXXVIII.</item>
+    <item>Ninety is represented by XC, and four is represented by IV, so 94 in Roman numerals is XCIV.</item>
+    <item>The number is less than 900 and more than 500, so the first symbol to be used is D, which is 500. To get to 800, we need 300 more, which is represented with three C’s. Forty is represented with XL, and the six. The Roman numerals is DCCCXLVI.</item>
+    <item>The two thousand is represented by two M’s. The 900 is represented by CM. The 80 is represented by LXXX (50 plus 30). Finally, the 7 is represented by VII. We have that 2,987 in Roman numerals is MMCMLXXXVII.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C04-M2-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00015">
+    <para id="para-00046"><link url="https://openstax.org/r/Converting-From_Hindu-Arabic_Numbers_to_Roman_Numbers">Converting From Hindu-Arabic Numbers to Roman Numbers</link></para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00005">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C04-M2-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00048"><link class="os-embed" url="#exercise/CM-C04-M2-Q0010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C04-M2-Q0011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C04-M2-Q0012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C04-M2-Q0013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C04-M2-Q0014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C04-M2-Q0015"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00006">
+    <title>Exercises</title>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C04-M2-Q0016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00055"><link class="os-embed" url="#exercise/CM-C04-M2-Q0017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C04-M2-Q0018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C04-M2-Q0019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C04-M2-Q0020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C04-M2-Q0021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00060"><link class="os-embed" url="#exercise/CM-C04-M2-Q0022"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00007">
+    <title>Section 5-2</title>
+    <section class="key-terms" id="sect-00008">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00007">
+    <item>Additive System of Numbers</item>
+    <item>Positional System of Numbers</item>
+    <item>Babylonian Numbers</item>
+    <item>Mayan Numbers</item>
+    <item>Roman Numbers</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00009">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00008">
+    <item>Know what additive systems are</item>
+    <item>Know what positional systems are</item>
+    <item>Know how to convert between Babylonian Numbers and Hindu-Arabic numbers</item>
+    <item>Know how to convert between Mayan Numbers and Hindu-Arabic numbers</item>
+    <item>Know how to convert between Roman Numbers and Hindu-Arabic numbers</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00010">
+    <title>Videos</title>
+    <para id="para-00061"><link url="https://openstax.org/r/Converting_Between_Babylonian_and_Hindu-Arabic_Numbers">Converting Between Babylonian and Hindu-Arabic numbers</link></para>
+    <para id="para-00062"><link url="https://openstax.org/r/Converting_Mayan_Numbers_to_Hindu-Arabic_Numbers">Converting Mayan Numbers to Hindu-Arabic Numbers</link></para>
+    <para id="para-00063"><link url="https://openstax.org/r/Converting_From_Roman_Numbers_to_Hindu-Arabic_Numbers">Converting From Roman Numbers to Hindu-Arabic Numbers</link></para>
+    <para id="para-00064"><link url="https://openstax.org/r/Converting-From_Hindu-Arabic_Numbers_to_Roman_Numbers">Converting From Hindu-Arabic Numbers to Roman Numbers</link></para>
+    </section>
+    </section>
+    </content>
+    </document>
