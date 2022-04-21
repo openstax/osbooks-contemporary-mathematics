@@ -1274,7 +1274,7 @@
       <item>B over A: B is preferred to A in columns 1 and 2. So, B scores <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>95</mn><mo>+</mo><mn>90</mn><mo>=</mo><mn>185</mn></mrow></math> points.</item></list>
       <para id="para-00125" xmlns="http://cnx.rice.edu/cnxml">Continuing in this way, we complete the pairwise comparison matrix (Figure 11.26).</para>
       <figure id="fig-00022">
-      <media alt="Insert Alt Text">
+      <media alt="A table with vote counts for candidates shows the comparison between four options Option A, Option B, Option C, and Option D. The data given in the table are as follows: The table shows four rows and five columns. The column headers are Runner and Opponent, Option A, Option B, Option C, and Option D. Column one shows Option A wins, Option B wins, Option C wins, and Option D wins. Column two shows Nil, B A 185, C A 185, and D A 185. Column three shows A B 225, Nil, C B 90, and D B 95. Column four shows A C 225, B C 320, Nil, and D C 210. Column five shows A D 225, B D 315, C D 200, and Nil.">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_026.jpg"/>
       </media>
       <caption>Pairwise Comparison Matrix for Four Candidates with Vote Counts</caption>
@@ -1282,7 +1282,7 @@
       <item><para id="para-00126">Step 1 — Losing pairings are crossed off with an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><menclose notation="box"><mo>×</mo></menclose></mrow></math>. In the event of a tie, we will draw a slash,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mtext>\</mtext><mo>)</mo></mrow></mrow></math>. (See Figure 11.27)</para>
       <para id="para-00127" xmlns="http://cnx.rice.edu/cnxml">Step 2 — Determine the number of points for each candidate by analyzing their row of wins. Each win is 1 point, each loss, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><menclose notation="box"><mo>×</mo></menclose></mrow></math>, is 0 points, and each tie, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mtext>\</mtext><mo>)</mo></mrow></mrow></math>, is half a point. Construct an additional column for each candidate’s points (See Figure 11.27).</para>
       <figure id="fig-00023" xmlns="http://cnx.rice.edu/cnxml">
-      <media alt="Insert Alt Text">
+      <media alt="A table with vote counts for candidates shows the comparison between four options Option A, Option B, Option C, and Option D. The data given in the table are as follows: The table shows four rows and six columns. The column headers are Runner and Opponent, Option A, Option B, Option C, Option D, and Points. Column one shows Option A wins, Option B wins, Option C wins, and Option D wins. Column two shows Nil, B A 185, CA 185, and D A 185. Column three shows A B 225, Nil, C B 90, and D B 95. Column four shows A C 225, B C 320, Nil, and D C 210. Column five shows A D 225, B D 315, C D 200, and Nil. Column six shows 3, 2, 0, and 1. The last three rows on column two are struck off. The last two rows on column three are struck off. The third row on column five is struck off.">
       <image mime-type="image/png" src="../../media/CS_Figure_11_01_027.jpg"/>
       </media>
       <caption>Figure 11.27 Pairwise Comparison Matrix for Four Candidates with Pairwise Winners and Points Column Added</caption>
