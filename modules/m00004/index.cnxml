@@ -149,7 +149,7 @@
   <title>The Median</title>
   <para id="para-00022">Let's revisit our example of trying to identify the height of the “average” person. If we lined everyone up in order by height and found the person right in the middle, that person’s height is called the <term id="term-00002">median</term>, or the value that is greater than and less than no more than half of the values.</para>
   <para id="para-00024">This is one of those definitions that is more complicated than the concept it’s trying to describe (to account for some technicalities that we don’t need to worry about). So, let’s look at a really simple example. Consider the following list of numbers: 11, 12, 13, 13, 14. Is the first number on the list, 11, the median? There are no values less than 11 (that’s 0%), and there are four values greater than 11 (that’s 80%). Since more than 50% of the data are greater than 11, the definition is violated; it’s not the median. Here’s a chart with the rest of the data, with red shading to show where the definition is violated:
-  <table summary="." class="unnumbered" id="table-00005">
+  <table summary="." id="table-00005">
   <tgroup cols="5">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
   <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -167,38 +167,38 @@
   </thead>
   <tbody>
   <row>
-  <entry>11</entry>
-  <entry>0</entry>
-  <entry>0%</entry>
-  <entry>4</entry>
-  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle mathcolor="#C31427"><mn>80</mn><mo>%</mo></mstyle></mrow></math></entry>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>11</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>%</mo></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle mathcolor="#C31427"><mn>80</mn><mo>%</mo></mstyle></mrow></math></entry>
   </row>
   <row xmlns="http://cnx.rice.edu/cnxml">
-  <entry>12</entry>
-  <entry>1</entry>
-  <entry>20%</entry>
-  <entry>3</entry>
-  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle mathcolor="#C31427"><mn>60</mn><mo>%</mo></mstyle></mrow></math></entry>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>%</mo></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle mathcolor="#C31427"><mn>60</mn><mo>%</mo></mstyle></mrow></math></entry>
   </row>
   <row xmlns="http://cnx.rice.edu/cnxml">
-  <entry>13</entry>
-  <entry>2</entry>
-  <entry>40%</entry>
-  <entry>1</entry>
-  <entry>20%</entry>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>40</mn><mo>%</mo></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>%</mo></mrow></math></entry>
   </row>
-  <row>
-  <entry>14</entry>
-  <entry>4</entry>
-  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle mathcolor="#C31427"><mn>80</mn><mo>%</mo></mstyle></mrow></math></entry>
-  <entry xmlns="http://cnx.rice.edu/cnxml">0</entry>
-  <entry>0%</entry>
+  <row xmlns="http://cnx.rice.edu/cnxml">
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>14</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle mathcolor="#C31427"><mn>80</mn><mo>%</mo></mstyle></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn></mrow></math></entry>
+  <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>%</mo></mrow></math></entry>
   </row>
   </tbody>
   </tgroup>
   </table>
   </para>
-  <para id="para-00025">Only 13 has no violations, so it’s the median according to the definition. In practice, we find the median just like we described in the average height example: by lining up all the data values in order from smallest to largest and picking the value in the middle. For our easy example (with data values 11, 12, 13, 13, 14), that first 13 is right in the middle; there are two values to the left and two values to the right. If there’s not one value right in the middle, we pick the two closest, then choose the number exactly between them. For example, let’s say we have the data 41, 44, 46, 53. Since there are an even number of data values in our list, we can’t pick the one right in the middle. The two closest to the middle are 44 and 46, so we’ll choose the number halfway between those to be the median: 45. As this example shows, the median (unlike the mode) doesn’t have to be a number in our original set of data.</para>
+  <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">Only 13 has no violations, so it’s the median according to the definition. In practice, we find the median just like we described in the average height example: by lining up all the data values in order from smallest to largest and picking the value in the middle. For our easy example (with data values 11, 12, 13, 13, 14), that first 13 is right in the middle; there are two values to the left and two values to the right. If there’s not one value right in the middle, we pick the two closest, then choose the number exactly between them. For example, let’s say we have the data 41, 44, 46, 53. Since there are an even number of data values in our list, we can’t pick the one right in the middle. The two closest to the middle are 44 and 46, so we’ll choose the number halfway between those to be the median: 45. As this example shows, the median (unlike the mode) doesn’t have to be a number in our original set of data.</para>
   <para id="para-00026">In the examples we’ve looked at so far, it’s been pretty easy to identify which number is right in the middle. If we had a very large dataset, though, it might be harder. Fortunately, we have some formulas to help us with that.</para>
   <note class="formula" id="note-00005">
   <para id="para-00027">Suppose we have a set of data with <emphasis effect="italic">n</emphasis> values, ordered from smallest to largest. If <emphasis effect="italic">n</emphasis> is odd, then the median is the data value at position <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow></math>. If <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis> is even, then we find the values at positions <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac><mo>+</mo><mn>1</mn></mrow></math>. If those values are named a and b, then the median is defined to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mn>2</mn></mfrac></mrow></math>.</para>
