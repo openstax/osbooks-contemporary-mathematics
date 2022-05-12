@@ -28,17 +28,24 @@
   <section id="sect-00002">
   <title>Conversion of Another Base into Base 10 and Other Bases</title>
   <para id="para-00004">We saw in <link target-id="sect-00001" document="m00052">Section 4.1</link> that our Hindu-Arabic system uses <term id="term-00001">base 10</term>, which is a system using place values of digits that depend on powers of 10 (or, are based on powers of 10). We’ve already worked with bases other than base 10: The Babylonian system was base 60, while the Mayan system was base 20.</para>
-  <para id="para-00005">To explore how our base 10 system is used, answer the following question: What’s the following quantity: 4,572? You probably said four thousand five hundred seventy two (no, there is no “and” between hundred and seventy). But why do you think that 4 means four thousand? A very young person when learning their numbers might say that’s a four five seven and two. But you added the context of thousands to the four. Why?</para>
-  <para id="para-00006">Place value, that’s why. You learned early on that where the numeral was gave it different meanings. Ten thousands, thousands, hundreds, tens, and ones. So you translate that symbol string (4,572) into “four thousand five hundred seventy two”. As we saw in Section 1, expanding a Hindu-Arabic number involved writing the number using each digit times its appropriate power of 10. So we could write 4,572 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>1000</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>100</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>.</para>
-  <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">One possible reason we use base 10 is that we have ten fingers, and in the cultures where the Hindu-Arabic system developed, that became the standard. Other cultures may have used other ways of organizing numbers, perhaps using 20 by including toes, or using 60 because 60 has many divisors. Mathematically though, base 10 is an awkward base to work in since ten has limited divisors. But we think it is easy and simple because that’s what we’ve been taught to use. So from early on, you’ve learned the base 10 system. Using a base 10 system means we need ten symbols to make our numbering system work: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</para>
-  <para id="para-00008">Now imagine that we all only had six fingers instead of ten and our counting system was based on those six fingers. We would be counting in groups of six, not groups of ten. How would this change how we work with quantity? First, we’d need only six symbols. Let’s use 0, 1, 2, 3, 4, 5. Second, our place values would be based on powers of six, not powers of ten. For instance, the number 3,024 in base six would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup></mrow></math>. That is how you can translate a base 6 number into a base 10 number. When we calculate that expression we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>216</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>648</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>664</mn></mrow></math>.</para>
-  <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">664 is what the base 6 number 3,024 equals in base ten.</para>
+  <para id="para-00005">To explore how our base 10 system is used, answer the following question: What’s the following quantity: 4,572? You probably said four thousand five hundred seventy-two (no, there is no “and” between hundred and seventy). But why do you think that 4 means four thousand? A very young person when learning their numbers might say that’s a four five seven and two. But you added the context of thousands to the four. Why?</para>
+  <para id="para-00006">Place value, that’s why. You learned early on that where the numeral was gave it different meanings. Ten thousands, thousands, hundreds, tens, and ones. So, you translate that symbol string (4,572) into “four thousand five hundred seventy-two.”</para>
+  <para id="para-00123">As we saw in <link target-id="sect-00001" document="m00052">Section 4.1</link>, expanding a Hindu-Arabic number involved writing the number using each digit times its appropriate power of 10. So, we could write 4,572 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>1000</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>100</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>.</para>
+  <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">One possible reason we use base 10 is that we have 10 fingers, and in the cultures where the Hindu-Arabic system developed, that became the standard. Other cultures may have used other ways of organizing numbers, perhaps using 20 by including toes, or using 60 because 60 has many divisors. Mathematically though, base 10 is an awkward base to work in since 10 has limited divisors. But we think it is easy and simple because that’s what we’ve been taught to use. So, from early on, you’ve learned the base 10 system.</para>
+  <para id="para-00124">Using a base 10 system means we need 10 symbols to make our numbering system work: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</para>
+  <para id="para-00008">Now imagine that we all only had 6 fingers instead of 10 and our counting system was based on those 6 fingers. We would be counting in groups of 6, not groups of 10. How would this change how we work with quantity?</para>
+  <para id="para-00125">First, we’d need only six symbols. Let’s use 0, 1, 2, 3, 4, 5.</para>
+  <para id="para-00126">Second, our place values would be based on powers of 6, not powers of 10. For instance, the number 3,024 in base 6 would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup></mrow></math>.</para>
+  <para id="para-00127" xmlns="http://cnx.rice.edu/cnxml">That is how you can translate a base 6 number into a base 10 number. When we calculate that expression we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>216</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>648</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>664</mn></mrow></math>.</para>
+  <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">664 is what the base 6 number 3,024 equals in base 10.</para>
   <para id="para-00010">From now on, if we are using a base 6 number, we will follow it with the subscript 6, like the following:</para>
   <list bullet-style="none" id="list-00002">
   <item>3,024<sub>6</sub> means the number is in base 6.</item>
   </list>
-  <para id="para-00011">A base 10 number gets no subscript (it’s the standard). So 3,024 is a base 10 number, A base 13 number would be 4,672<sub>13</sub>.</para>
-  <para id="para-00012">So a base 6 system uses only the symbols 0, 1, 2, 3, 4, and 5. Also, the place values use powers of 6. However, we still don’t know how to count in base 6. In order to do so, we’d have to know how to represent the quantities larger than five in base six. Let’s review how our base 10 system works by counting from 0 to 100, which shows how larger values are represented. In writing the base ten numbers, you start with these first ten values:</para>
+  <para id="para-00011">A base 10 number gets no subscript (it’s the standard). So, 3,024 is a base 10 number.</para>
+  <para id="para-00128">A base 13 number would be 4,672<sub>13</sub>.</para>
+  <para id="para-00012">So, a base 6 system uses only the symbols 0, 1, 2, 3, 4, and 5. Also, the place values use powers of 6. However, we still don’t know how to count in base 6. In order to do so, we’d have to know how to represent the quantities larger than five in base 6. Let’s review how our base 10 system works by counting from 0 to 100, which shows how larger values are represented.</para>
+  <para id="para-00129">In writing the base 10 numbers, you start with these first 10 values:</para>
   <table class="unnumbered" summary="." id="table-00001">
   <tgroup cols="10">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -97,7 +104,7 @@
   </tgroup>
   </table>
   <para id="para-00014">The one out front means you’ve run out of digits one time.</para>
-  <para id="para-00015">But now you’ve run out twice. Continuing with those numbers give:</para>
+  <para id="para-00015">But now you’ve run out twice. Continuing with those numbers gives:</para>
   <table class="unnumbered" summary="." id="table-00003">
   <tgroup cols="10">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -147,7 +154,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00017">Eventually, you hit the nineties,</para>
+  <para id="para-00017">Eventually, you hit the 90s,</para>
   <table class="unnumbered" summary="." id="table-00005">
   <tgroup cols="10">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -206,7 +213,7 @@
   </tgroup>
   </table>
   <para id="para-00019">That’s the pattern we use in base 10. We write out the symbols until we’ve used all the symbols, then add a digit in front that counts how many times we’ve used the digits. Knowing the numbers, or being able to count higher and higher, is necessary to understand how all the arithmetic works, as it all goes back to counting.</para>
-  <para id="para-00020">The counting pattern is the same for any other base, including base 6. So let’s start:</para>
+  <para id="para-00020">The counting pattern is the same for any other base, including base 6. So, let’s start:</para>
   <table class="unnumbered" summary="." id="table-00007">
   <tgroup cols="6">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -227,7 +234,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00021">But we’ve run out of symbols! Just like in base ten, we use a second digit, where the first digit will tell us we’ve run out of symbols one time.</para>
+  <para id="para-00021">But we’ve run out of symbols! Just like in base 10, we use a second digit, where the first digit will tell us we’ve run out of symbols one time.</para>
   <table class="unnumbered" summary="." id="table-00008">
   <tgroup cols="6">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -293,7 +300,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00023">But we’ve run out of symbols for that front digit. So we indicate it the same way as in base 10…by adding a third digit in front, indicating we’ve run out of symbols once in the second place:</para>
+  <para id="para-00023">But we’ve run out of symbols for that front digit. So, we indicate it the same way as in base 10…by adding a third digit in front, indicating we’ve run out of symbols once in the second place:</para>
   <table class="unnumbered" summary="." id="table-00010">
   <tgroup cols="6">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -322,7 +329,8 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00024">The symbol pattern is the same, but truncated. We only use the six symbols. So that is how we represent base 6. Being able to write out these numbers is important when working with addition in the base.</para>
+  <para id="para-00024">The symbol pattern is the same, but truncated. We only use the six symbols.</para>
+  <para id="para-00130">So that is how we represent base 6. Being able to write out these numbers is important when working with addition in the base.</para>
   <example id="exam-00001">
   <title>Determining Digits of a Base with Less Than 10 Digits</title>
   <exercise id="exer-00001">
@@ -348,7 +356,7 @@
   <para id="para-00028">What are the digits used for base 14?</para>
   </problem>
   <solution id="sol-00002">
-  <para id="para-00029">Since this is base 14, we need 14 symbols. We don’t have single character numbers for 10, 11, 12, and 13, so, in a fit of inspired creativity, we use capital letters A, B, C, D to represent those quantities. So the digits in base 14 are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D.</para>
+  <para id="para-00029">Since this is base 14, we need 14 symbols. We don’t have single character numbers for 10, 11, 12, and 13, so, in a fit of inspired creativity, we use capital letters A, B, C, D to represent those quantities. So, the digits in base 14 are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D.</para>
   </solution>
   </exercise>
   </example>
@@ -361,7 +369,7 @@
   </note>
   <note class="who-knew" id="note-00003">
   <title>Using Base 12</title>
-  <para id="para-00031">As mentioned in the text, working in base 10 is mathematically awkward. 10 has only two natural number divisors, 2 and 5. This means dividing into groups is not easy. However, 12, or a dozen, has many more divisors, 2, 3, 4,and 6. The Dozenal Society recognizes this more mathematically pleasant detail. It advocates for a switch to using base 12 for numbers. Their argument is based on the divisibility of the number 12. But has there ever been a society that used such a system? The answer is yes. A dialect of the Gwandara language in Nigeria uses the base 12 system. It is unlikely, though, that the Dozenal society will achieve their goal, as the base 10 system is so entrenched in our society.</para>
+  <para id="para-00031">As mentioned in the text, working in base 10 is mathematically awkward. Ten has only two natural number divisors: 2 and 5. This means dividing into groups is not easy. However, 12, or a dozen, has many more divisors, 2, 3, 4, and 6. The Dozenal Society recognizes this more mathematically pleasant detail. It advocates for a switch to using base 12 for numbers. Their argument is based on the divisibility of the number 12. But has there ever been a society that used such a system? The answer is yes. A dialect of the Gwandara language in Nigeria uses the base 12 system. It is unlikely, though, that the Dozenal society will achieve their goal, as the base 10 system is so entrenched in our society.</para>
   </note>
   <example id="exam-00003">
   <title>Converting from One Base into Another</title>
@@ -370,12 +378,12 @@
   <para id="para-00032">Convert 3601<sub>7</sub> into base 10.</para>
   </problem>
   <solution id="sol-00003">
-  <para id="para-00033">In base 7, the place values are powers of 7. Since there are four digits, the highest power of 7 that is used is 3. This yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>3601</mn></mrow><mn>7</mn></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>7</mn><mn>3</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>7</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>7</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>343</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>49</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1029</mn><mo>+</mo><mn>294</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1324</mn></mrow></math></para>
+  <para id="para-00033">In base 7, the place values are powers of 7. Since there are four digits, the highest power of 7 that is used is 3. This yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>3601</mn></mrow><mn>7</mn></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>7</mn><mn>3</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>7</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>7</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>343</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>49</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1029</mn><mo>+</mo><mn>294</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1324</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
   <note class="video" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00034"><link url="https://openstax.org/r/Convert_Base_6_to_Base_10">Convert Base 6 to Base 10</link></para>
+  <para id="para-00034"><link url="https://openstax.org/r/Convert_Base_6_to_Base_10">Convert Base 7 to Base 10</link></para>
   </note>
   <note class="your-turn" id="note-00005">
   <exercise id="exer-00006">
@@ -443,7 +451,7 @@
   </note>
   <note class="who-knew" id="note-00009">
   <title>Before Napoleon</title>
-  <para id="para-00045">Before Napoleon’s France, which adopted the base 10 system, a modified base 12 system was often used in Europe. Twelve is easily divisible into groups of 2, 3, 4, and 6, which makes it easier to work with. Even our numbering system retains a bit of this. You have likely noticed that we use the words thirteen, fourteen, fifteen, and so on to indicate ten and three, ten and four, ten and five, and so one. Even the twenties reinforce this idea, as in twenty one, and twenty two. However, two numbers don’t follow this pattern, namely eleven and twelve. If they followed the same rules, they’d be one teen and two teen. We even have a special word for 12, that is, a dozen. However, etymologically speaking, the words eleven and twelve are likely derived by referencing the number 10. These two numbers may date back to the Old English words <emphasis effect="italic">endleofan</emphasis> and <emphasis effect="italic">twelf</emphasis>, which can be traced back further to <emphasis effect="italic">ain lif</emphasis> and <emphasis effect="italic">twa lif</emphasis>. The word <emphasis effect="italic">lif</emphasis> here may be the base word for “to leave”. This would suggest <emphasis effect="italic">ain lif</emphasis> is one left after ten, and <emphasis effect="italic">twa lif</emphasis> is two left after ten, or, eleven and twelve.</para>
+  <para id="para-00045">Before Napoleon’s France, which adopted the base 10 system, a modified base 12 system was often used in Europe. Twelve is easily divisible into groups of 2, 3, 4, and 6, which makes it easier to work with. Even our numbering system retains a bit of this. You have likely noticed that we use the words <emphasis effect="italics">thirteen</emphasis>, <emphasis effect="italics">fourteen</emphasis>, <emphasis effect="italics">fifteen</emphasis>, and so on to indicate ten and three, ten and four, ten and five, and so one. Even the 20s reinforce this idea, as in twenty-one, and twenty-two. However, two numbers don’t follow this pattern, namely 11 and 12. If they followed the same rules, they’d be one teen and two teen. We even have a special word for 12; that is, a dozen. However, etymologically speaking, the words <emphasis effect="italics">eleven</emphasis> and <emphasis effect="italics">twelve</emphasis> are likely derived by referencing the number 10. These two numbers may date back to the Old English words <emphasis effect="italic">endleofan</emphasis> and <emphasis effect="italic">twelf</emphasis>, which can be traced back further to <emphasis effect="italic">ain lif</emphasis> and <emphasis effect="italic">twa lif</emphasis>. The word <emphasis effect="italic">lif</emphasis> here may be the base word for “to leave”. This would suggest <emphasis effect="italic">ain lif</emphasis> is one left after 10, and <emphasis effect="italic">twa lif</emphasis> is two left after 10, or, 11 and 12.</para>
   </note>
   <example id="exam-00007">
   <title>Writing Numbers in Base Systems Other Than Base 10</title>
