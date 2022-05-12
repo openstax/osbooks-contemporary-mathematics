@@ -575,7 +575,7 @@
   </exercise>
   </note>
   <note class="video" id="note-00014">
-  <para id="para-00071"><link url="https://openstax.org/r/Converting_from_Base_10_to_Another_Base">Converting from Base 10 to Another Base</link></para>
+  <para id="para-00071"><link url="https://openstax.org/r/Base_10_to_Another_Base">Converting from Base 10 to Another Base</link></para>
   </note>
   <example id="exam-00011">
   <title>Converting from Base 10 into a Higher Base</title>
@@ -585,12 +585,12 @@
   </problem>
   <solution id="sol-00011">
   <para id="para-00073">We divide 45,134 by 13, and record the remainder. Then we divide the quotient from that step by 13, and record the remainder again. We continue this process until the quotient is 0. Then, the base 13 number has digits that start with the last remainder and use each remainder in reverse order. It is at this step that we’ll convert to the base 13 digits, which are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C.</para>
-  <para id="para-00074">When we divide 45,134 by 13, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>3471</mn><mi>r</mi><mn>11</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>45134</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 3471, the remainder is 11.</para>
-  <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml">Now we divide the quotient, 3471, by 13. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>267</mn><mi>r</mi><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>3471</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 267, the remainder is 0.</para>
-  <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>20</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>267</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 20, the remainder is 7.</para>
-  <para id="para-00077" xmlns="http://cnx.rice.edu/cnxml">Again, and we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>1</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>20</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 1, the remainder is 7.</para>
-  <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml">Finally, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>1</mn></menclose></mtd></mtr></mtable></mrow></math>, with quotient 0 and remainder 1.</para>
-  <para id="para-00079" xmlns="http://cnx.rice.edu/cnxml">The base 13 number has digits equal to the remainders in reverse order, which were 1, 7, 7, 0, and 11. The 11 is written as B in base 13. So 45,134 in base 10 when converted to base 13 is 1770B<sub>13</sub>.</para>
+  <para id="para-00074"><emphasis effect="bold">Step 1:</emphasis> When we divide 45,134 by 13, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>3471</mn><mi>r</mi><mn>11</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>45134</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 3,471 and the remainder is 11.</para>
+  <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Now we divide the quotient, 3,471, by 13. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>267</mn><mi>r</mi><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>3471</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 267 and the remainder is 0.</para>
+  <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>20</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>267</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 20 and the remainder is 7.</para>
+  <para id="para-00077" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Again, and we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>1</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>20</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 1 and the remainder is 7.</para>
+  <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Finally, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>1</mn></menclose></mtd></mtr></mtable></mrow></math>, with quotient 0 and a remainder 1.</para>
+  <para id="para-00079" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6:</emphasis> The base 13 number has digits equal to the remainders in reverse order, which were 1, 7, 7, 0, and 11. The 11 is written as B in base 13. So, 45,134 in base 10 when converted to base 13 is 1770B<sub>13</sub>.</para>
   </solution>
   </exercise>
   </example>
@@ -608,8 +608,12 @@
   <para id="para-00081">Convert 100 to base 2.</para>
   </problem>
   <solution id="sol-00012">
-  <para id="para-00082">Following the pattern above, we divide 100 by 2, and record the remainder. Then we divide the quotient from that step by 2, and record the remainder again. We continue this process until the quotient is 0. Following this process, the remainders are, in order, 0, 0, 1, 0, 0, 1, 1. Writing those in reverse order gives the number in base 2, 1100100<sub>2</sub>.</para>
-  <para id="para-00083">Notice that 100 in base two took 7 digits.</para>
+  <para id="para-00082">Following the pattern above:</para>
+  <para id="para-00131"><emphasis effect="bold">Step 1:</emphasis> We divide 100 by 2, and record the remainder.</para>
+  <para id="para-00132"><emphasis effect="bold">Step 2:</emphasis> Then we divide the quotient from that step by 2, and record the remainder again.</para>
+  <para id="para-00133"><emphasis effect="bold">Step 3:</emphasis> We continue this process until the quotient is 0.</para>
+  <para id="para-00134">Following this process, the remainders are, in order, 0, 0, 1, 0, 0, 1, 1. Writing those in reverse order gives the number in base 2, 1100100<sub>2</sub>.</para>
+  <para id="para-00083">Notice that 100 in base 2 took seven digits.</para>
   </solution>
   </exercise>
   </example>
