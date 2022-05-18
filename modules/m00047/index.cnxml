@@ -61,7 +61,7 @@
   <item>To find the value 539 modulo 12:<newline/>
   <para id="para-00013"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 539 is divided by 12 using long division. We first look to the first two digits of 539, 53. The largest multiple of 12 that is less than or equal to 53 is 48, which is the product of 12 and 4.
   <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
-  <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Performing the subtraction results in 5.
+  <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Performing the subtraction results in 5.
   <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mn>5</mn></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now, the 9 is brought down.
   <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
@@ -97,7 +97,12 @@
   <note class="tech-check" id="note-00004">
   <title>Using Desmos to Determine the Value of a Number module 12</title>
   <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <emphasis effect="italic">n</emphasis> modulo 12, type <emphasis effect="bold">mod(<emphasis effect="italic">n</emphasis>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the Figure 3.55.</para>
-  <!--FIGURE ###-->
+  <figure id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_003.jpg"/>
+    </media>
+    <caption>Display of 539 modulo 12</caption>
+    </figure>
   <para id="para-00028">Clock arithmetic is modulo 12 arithmetic but applied to time. As time is divided into 12 hours that repeat a cycle, we use modulo 12 for clock arithmetic.</para>
   </note>
   <note class="video" id="note-00005">
