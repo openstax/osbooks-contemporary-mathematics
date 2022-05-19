@@ -213,14 +213,12 @@
   <note class="who-knew" id="note-00011">
   <title>The Luhn Algorithm</title>
   <para id="para-00048">As mentioned in the Section 7 opener, credit card and bank card numbers have a built-in error checking system that relies on modular arithmetic. One such error checking system is the <emphasis effect="bold">Luhn algorithm</emphasis>. To use the Luhn algorithm, the card must include a <emphasis effect="bold">check digit</emphasis>, typically the last digit in the card number. That digit is intentionally chosen to ensure that the Luhn algorithm yields a number that is equal to 0 (mod 10), which means the process yields a number that has a 0 at the end. This card numbering system is used only to check that a number is valid. The algorithm is as follows:</para>
-  <list bullet-style="none" id="list-00004">
-  <item>Start with the right-most digit that is NOT the check digit.</item>
-  <item>The first number to the left of the check digit is doubled.</item>
-  <item>If this results in a 2-digit number, subtract 9 from the result.</item>
-  <item>Repeat the doubling and possible subtraction for every second digit after the first one doubled.</item>
-  <item>Add the resulting numbers and the check digit.</item>
-  <item>If the total is equal to 0 (mod 10), then the number is valid as far as the Luhn algorithm can determine.</item>
-  </list>
+  <para id="para-00062">Start with the right-most digit that is NOT the check digit.</para>
+  <para id="para-00063">The first number to the left of the check digit is doubled.</para>
+  <para id="para-00064">If this results in a 2-digit number, subtract 9 from the result.</para>
+  <para id="para-00065">Repeat the doubling and possible subtraction for every second digit after the first one doubled.</para>
+  <para id="para-00066">Add the resulting numbers and the check digit.</para>
+  <para id="para-00067">If the total is equal to 0 (mod 10), then the number is valid as far as the Luhn algorithm can determine.</para>
   </note>
   <para id="para-00049">Use the Luhn algorithm to check to see if the following card numbers are valid. In each card number, the final digit is the check digit.</para>
   <list list-type="enumerated" number-style="arabic" id="list-00005">
