@@ -19,13 +19,14 @@
   </media>
   <caption>Any photo of division or multiplication on a screen behind an instructor.</caption>
   </figure>
-  <para id="para-00002">Just as in section 4, once we decide on a system for counting, we need to establish rules for combining the numbers we’re using. This includes the rules for multiplication and division. We are familiar with those operations in base 10. How do they change if we instead use a different base? A larger base? A smaller one?</para>
-  <para id="para-00003">In this section, we use multiplication and division in bases other than ten by referencing the processes of base 10, but applied to a new base system.</para>
+  <para id="para-00002">Just as in <link target-id="sect-00001" document="m00055">Section 4.4</link>, once we decide on a system for counting, we need to establish rules for combining the numbers we’re using. This includes the rules for multiplication and division. We are familiar with those operations in base 10. How do they change if we instead use a different base? A larger base? A smaller one?</para>
+  <para id="para-00003">In this section, we use multiplication and division in bases other than 10 by referencing the processes of base 10, but applied to a new base system.</para>
   <section id="sect-00002">
   <title>Multiplication in Bases Other Than 10</title>
   <para id="para-00004">Multiplication is a way of representing repeated additions, regardless of what base is being used. However, different bases have different addition rules. In order to create the multiplication tables for a base other than 10, we need to rely on addition and the addition table for the base. So let’s look at multiplication in base 6.</para>
-  <para id="para-00005">Multiplication still has the same meaning as it does in base 10, in that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn></math> is 4 added to itself 6 times, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn></math>.</para>
-  <para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">So let’s apply that to base 6. It should be clear that 0 multiplied by anything, regardless of base, will give 0, and that 1 multiplied by anything, regardless of base, will be the value of ‘anything’. So we start with the table below:</para>
+  <para id="para-00005">Multiplication still has the same meaning as it does in base 10, in that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn></math> is 4 added to itself six times, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn></math>.</para>
+  <para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">So, let’s apply that to base 6. It should be clear that 0 multiplied by anything, regardless of base, will give 0, and that 1 multiplied by anything, regardless of base, will be the value of “anything.”</para>
+  <para id="para-00155"><emphasis effect="bold">Step 1:</emphasis> So, we start with the table below:</para>
   <table class="unnumbered" summary="." id="table-00001">
   <tgroup cols="7">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -102,7 +103,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00007">Notice 2*2 = 4 is there. But we didn’t hit a problematic number there (4 works fine in both base 10 and base 6). But what is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>? If we use the repeated addition concept, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math> = 2 + 2 + 2 = 4 + 2. According to the base 6 addition table, 4 + 2 = 10. So we add that to our table:</para>
+  <para id="para-00007"><emphasis effect="bold">Step 2:</emphasis> Notice <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>*</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> is there. But we didn’t hit a problematic number there (4 works fine in both base 10 and base 6). But what is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>? If we use the repeated addition concept, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>2</mn></mrow></math>. According to the base 6 addition table (<link target-id="table-00006" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Table 4.4</link>), <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>. So, we add that to our table:</para>
   <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
   <tgroup cols="7">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -179,7 +180,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00008">Next, we need to fill in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>. Using repeated addition, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>= 2 + 2 + 2 + 2 = 10 + 2 = 12 (if we use our base 6 addition rules). So we add THAT to our table:</para>
+  <para id="para-00008"><emphasis effect="bold">Step 3:</emphasis> Next, we need to fill in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>. Using repeated addition, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math> (if we use our base 6 addition rules). So, we add that to our table:</para>
   <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
   <tgroup cols="7">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -256,7 +257,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00009">Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math> = 2 + 2 + 2 + 2 + 2 + 2 = 12 + 2 = 14. And so we add that to our table:</para>
+  <para id="para-00009"><emphasis effect="bold">Step 4:</emphasis> Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo> </mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>14</mn></mrow></math>. And so we add that to our table:</para>
   <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
   <tgroup cols="7">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -333,9 +334,9 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00010">A similar analysis will give us the remainder of the entries. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn></mrow></math> demonstrated: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn></mrow></math> = 4 + 4 + 4 + 4 + 4 = 12 + 12 + 4 = 24 + 4 = 32.</para>
-  <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from section 4, namely that 4 + 4 = 12, and then applying the addition processes we’ve always known, but with the base 6 table. In the end, our multiplication table is as follows:</para>
-  <table class="unnumbered" summary="." id="table-00005">
+  <para id="para-00010"><emphasis effect="bold">Step 4:</emphasis> A similar analysis will give us the remainder of the entries. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn></mrow></math> demonstrated: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo> </mo><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>24</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>32</mn></mrow></math>.</para>
+  <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Section 4.4</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></math>, and then applying the addition processes we’ve always known, but with the base 6 table. In the end, our multiplication table is as follows:</para>
+  <table class="unnumbered" summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
   <tgroup cols="7">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
   <colspec colnum="2" colname="c2" colwidth="1pt"/>
