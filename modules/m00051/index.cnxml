@@ -384,40 +384,40 @@
   </section>
   <section id="sect-00016">
   <title>Design Your Own Shift Cypher</title>
-  <para id="para-00069">A cypher is a message written in such a way as to mask its contents. Changing a message into its cypher form is called encryption. Decryption or deciphering is the process of changing a cyphertext message back into the original (legible) message. One process of encryption is to scramble the letters, symbols, and punctuation of a message according to a mathematical rule. One rule that could be used for such a cypher is addition in a chosen modulus. In this project, you will create such a cypher, encrypt a message, then decrypt the message.</para>
-  <para id="para-00070">Step 1: Choose the letters, symbols, and punctuation marks you want to allow in your messages. This 
+  <para id="para-00069">A cypher is a message written in such a way as to mask its contents. Changing a message into its cypher form is called encryption. Decryption or deciphering is the process of changing a cyphertext message back into the original (legible) message. One process of encryption is to scramble the letters, symbols, and punctuation of a message according to a mathematical rule. One rule that could be used for such a cypher is addition in a chosen modulus. In this project, you will create such a cypher, encrypt a message, and then decrypt the message.</para>
+  <para id="para-00070"><emphasis effect="bold">Step 1:</emphasis> Choose the letters, symbols, and punctuation marks you want to allow in your messages. This 
    should include at least the uppercase letters and a space character. This is your character set.</para>
-  <para id="para-00071">Step 2: Count the number of characters you will use. Label this number <emphasis effect="italic">n</emphasis>.</para>
-  <para id="para-00072">Step 3: Pair each character of your character set an integer from 0 to (<emphasis effect="italic">n</emphasis> – 1). Do not assign more than one character to an integer.</para>
-  <para id="para-00073">Step 4: Choose an integer between 1 and (<emphasis effect="italic">n-1</emphasis>). This will be the number used to create the cypher. Label this number <emphasis effect="italic">s</emphasis>.</para>
-  <para id="para-00074">Step 5: Write a message using your character set.</para>
-  <para id="para-00075">Step 6: Replace every character in your message by the integer with which it was paired in Step 3.</para>
-  <para id="para-00076">Step 7: For every number, <emphasis effect="italic">x</emphasis>, from step 7, perform the addition <emphasis effect="italic">x</emphasis> + <emphasis effect="italic">s</emphasis> (mod <emphasis effect="italic">n</emphasis>).</para>
-  <para id="para-00077">Step 8: Replace every number found in Step 7 with the character with which it was paired in Step 3. This is your cyphertext.</para>
+  <para id="para-00071"><emphasis effect="bold">Step 2:</emphasis> Count the number of characters you will use. Label this number <emphasis effect="italic">n</emphasis>.</para>
+  <para id="para-00072"><emphasis effect="bold">Step 3:</emphasis> Pair each character of your character set an integer from 0 to (<emphasis effect="italic">n</emphasis> – 1). Do not assign more than one character to an integer.</para>
+  <para id="para-00073"><emphasis effect="bold">Step 4:</emphasis> Choose an integer between 1 and (<emphasis effect="italic">n-1</emphasis>). This will be the number used to create the cypher. Label this number <emphasis effect="italic">s</emphasis>.</para>
+  <para id="para-00074"><emphasis effect="bold">Step 5:</emphasis> Write a message using your character set.</para>
+  <para id="para-00075"><emphasis effect="bold">Step 6:</emphasis> Replace every character in your message by the integer with which it was paired in Step 3.</para>
+  <para id="para-00076"><emphasis effect="bold">Step 7:</emphasis> For every number, <emphasis effect="italic">x</emphasis>, from step 7, perform the addition <emphasis effect="italic">x</emphasis> + <emphasis effect="italic">s</emphasis> (mod <emphasis effect="italic">n</emphasis>).</para>
+  <para id="para-00077"><emphasis effect="bold">Step 8:</emphasis> Replace every number found in Step 7 with the character with which it was paired in Step 3. This is your cyphertext.</para>
   <para id="para-00078">Decrypting your cyphertext</para>
   <para id="para-00079">To decrypt your cyphertext, reverse the steps above.</para>
-  <para id="para-00080">Step 1 Replace the cyphertext characters with the paired values.</para>
-  <para id="para-00081">Step 2 For each value <emphasis effect="italic">x,</emphasis> perform the <emphasis effect="italic">subtraction</emphasis> <emphasis effect="italic">x</emphasis> – <emphasis effect="italic">s</emphasis> (mod n).</para>
-  <para id="para-00082">Step 3 Replace the numbers from Step 2 with their paired characters from the character set.</para>
+  <para id="para-00080"><emphasis effect="bold">Step 1:</emphasis> Replace the cyphertext characters with the paired values.</para>
+  <para id="para-00081"><emphasis effect="bold">Step 2:</emphasis> For each value <emphasis effect="italic">x,</emphasis> perform the <emphasis effect="italic">subtraction</emphasis> <emphasis effect="italic">x</emphasis> – <emphasis effect="italic">s</emphasis> (mod n).</para>
+  <para id="para-00082"><emphasis effect="bold">Step 3:</emphasis> Replace the numbers from Step 2 with their paired characters from the character set.</para>
   <para id="para-00083">The message is then deciphered.</para>
   </section>
   <section id="sect-00017">
   <title>Design Your Own Cypher Using Multiplication</title>
   <para id="para-00084">A cypher is a message written in such a way as to mask its contents. Changing a message into its cypher form is called encryption. Decryption or deciphering is the process of changing a cyphertext message back into theoriginal (legible) message. One process of encryption is to scramble the letters, symbols, and punctuation of a message according to a mathematical rule. One rule that could be used for such a cypher is multiplication in a chosen modulus. In this project, you will create such a cypher, encrypt a message, then decrypt the message.</para>
-  <para id="para-00085">Step 1: Choose the letters, symbols, and punctuation marks you want to allow in your messages. This shouldinclude at least the uppercase letters and a space character. This is your character set.</para>
-  <para id="para-00086">Step 2: Count the number of characters you will use. Label this number <emphasis effect="italic">n</emphasis>.</para>
-  <para id="para-00087">Step 3: Pair each character of your character set an integer from 0 to (<emphasis effect="italic">n</emphasis> – 1). Do not assign more than one character to an integer.</para>
-  <para id="para-00088">Step 4: Choose an integer, labeled <emphasis effect="italic">s</emphasis>, between 1 and (<emphasis effect="italic">n-1</emphasis>) so that GCF(<emphasis effect="italic">n</emphasis>,<emphasis effect="italic">s</emphasis>) = 1. This will be the number used to create the cypher.</para>
-  <para id="para-00089">Step 5: Write a message using your character set.</para>
-  <para id="para-00090">Step 6: Replace every character in your message by the integer with which it was paired in Step 3.</para>
-  <para id="para-00091">Step 7: For every number, <emphasis effect="italic">x</emphasis>, from step 7, perform the multiplication <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mi>s</mi></mrow></math> (mod <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis>).</para>
-  <para id="para-00092">Step 8: Replace every number found in Step 7 with the character with which it was paired in Step 3. This is your cyphertext.</para>
+  <para id="para-00085"><emphasis effect="bold">Step 1:</emphasis> Choose the letters, symbols, and punctuation marks you want to allow in your messages. This shouldinclude at least the uppercase letters and a space character. This is your character set.</para>
+  <para id="para-00086"><emphasis effect="bold">Step 2:</emphasis> Count the number of characters you will use. Label this number <emphasis effect="italic">n</emphasis>.</para>
+  <para id="para-00087"><emphasis effect="bold">Step 3:</emphasis> Pair each character of your character set an integer from 0 to (<emphasis effect="italic">n</emphasis> – 1). Do not assign more than one character to an integer.</para>
+  <para id="para-00088"><emphasis effect="bold">Step 4:</emphasis> Choose an integer, labeled <emphasis effect="italic">s</emphasis>, between 1 and (<emphasis effect="italic">n-1</emphasis>) so that GCF(<emphasis effect="italic">n</emphasis>,<emphasis effect="italic">s</emphasis>) = 1. This will be the number used to create the cypher.</para>
+  <para id="para-00089"><emphasis effect="bold">Step 5:</emphasis> Write a message using your character set.</para>
+  <para id="para-00090"><emphasis effect="bold">Step 6:</emphasis> Replace every character in your message by the integer with which it was paired in Step 3.</para>
+  <para id="para-00091"><emphasis effect="bold">Step 7:</emphasis> For every number, <emphasis effect="italic">x</emphasis>, from step 7, perform the multiplication <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>−</mo><mi>s</mi></mrow></math> (mod <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">n</emphasis>).</para>
+  <para id="para-00092"><emphasis effect="bold">Step 8:</emphasis> Replace every number found in Step 7 with the character with which it was paired in Step 3. This is your cyphertext.</para>
   <para id="para-00093">Decrypting your cyphertext</para>
   <para id="para-00094">Before Beginning to decrypt in this cypher, you need to know the <emphasis effect="bold">multiplicative inverse</emphasis> of the value you chose as <emphasis effect="italic">s</emphasis>.</para>
-  <para id="para-00095">Step 1 The multiplicative inverse of <emphasis effect="italic">s</emphasis> is the number that, when multiplied by <emphasis effect="italic">s</emphasis> in your modulus, equals 1. To find this, you will have to multiply <emphasis effect="italic">s</emphasis> and every number between 2 and (<emphasis effect="italic">n</emphasis> – 1) until the product is 1 (mod n). Once this number is found, the message can be decrypted. Call this number <emphasis effect="italic">r</emphasis>.</para>
-  <para id="para-00096">Step 2 To decrypt your cyphertext, replace the cyphertext characters with the paired values.</para>
-  <para id="para-00097">Step 3 For each of the value, <emphasis effect="italic">x,</emphasis> perform the multiplication <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>×</mo><mi>r</mi><mo stretchy="false">(</mo><mi>mod</mi><mi>n</mi><mo stretchy="false">)</mo></mrow></math>.</para>
-  <para id="para-00098" xmlns="http://cnx.rice.edu/cnxml">Step 4 Replace the numbers from Step 3 with their paired characters from the character set.</para>
+  <para id="para-00095"><emphasis effect="bold">Step 1:</emphasis> The multiplicative inverse of <emphasis effect="italic">s</emphasis> is the number that, when multiplied by <emphasis effect="italic">s</emphasis> in your modulus, equals 1. To find this, you will have to multiply <emphasis effect="italic">s</emphasis> and every number between 2 and (<emphasis effect="italic">n</emphasis> – 1) until the product is 1 (mod n). Once this number is found, the message can be decrypted. Call this number <emphasis effect="italic">r</emphasis>.</para>
+  <para id="para-00096"><emphasis effect="bold">Step 2:</emphasis> To decrypt your cyphertext, replace the cyphertext characters with the paired values.</para>
+  <para id="para-00097"><emphasis effect="bold">Step 3:</emphasis> For each of the value, <emphasis effect="italic">x,</emphasis> perform the multiplication <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>×</mo><mi>r</mi><mo stretchy="false">(</mo><mi>mod</mi><mi>n</mi><mo stretchy="false">)</mo></mrow></math>.</para>
+  <para id="para-00098" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Replace the numbers from Step 3 with their paired characters from the character set.</para>
   <para id="para-00099">The message is then deciphered.</para>
   </section>
   <section class="chapter-test" id="sect-00018">
