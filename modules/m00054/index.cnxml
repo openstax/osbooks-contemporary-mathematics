@@ -29,21 +29,16 @@
   <title>Conversion of Another Base into Base 10 and Other Bases</title>
   <para id="para-00004">We saw in <link target-id="sect-00001" document="m00052">Section 4.1</link> that our Hindu-Arabic system uses <term id="term-00001">base 10</term>, which is a system using place values of digits that depend on powers of 10 (or, are based on powers of 10). We’ve already worked with bases other than base 10: The Babylonian system was base 60, while the Mayan system was base 20.</para>
   <para id="para-00005">To explore how our base 10 system is used, answer the following question: What’s the following quantity: 4,572? You probably said four thousand five hundred seventy-two (no, there is no “and” between hundred and seventy). But why do you think that 4 means four thousand? A very young person when learning their numbers might say that’s a four five seven and two. But you added the context of thousands to the four. Why?</para>
-  <para id="para-00006">Place value, that’s why. You learned early on that where the numeral was gave it different meanings. Ten thousands, thousands, hundreds, tens, and ones. So, you translate that symbol string (4,572) into “four thousand five hundred seventy-two.”</para>
-  <para id="para-00123">As we saw in <link target-id="sect-00001" document="m00052">Section 4.1</link>, expanding a Hindu-Arabic number involved writing the number using each digit times its appropriate power of 10. So, we could write 4,572 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>1000</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>100</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>.</para>
+  <para id="para-00006">Place value, that’s why. You learned early on that where the numeral was gave it different meanings. Ten thousands, thousands, hundreds, tens, and ones. So, you translate that symbol string (4,572) into “four thousand five hundred seventy-two.” As we saw in <link target-id="sect-00001" document="m00052">Section 4.1</link>, expanding a Hindu-Arabic number involved writing the number using each digit times its appropriate power of 10. So, we could write 4,572 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>+</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>1000</mn><mo>+</mo><mn>5</mn><mo>×</mo><mn>100</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>1</mn></mrow></math>.</para>
   <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">One possible reason we use base 10 is that we have 10 fingers, and in the cultures where the Hindu-Arabic system developed, that became the standard. Other cultures may have used other ways of organizing numbers, perhaps using 20 by including toes, or using 60 because 60 has many divisors. Mathematically though, base 10 is an awkward base to work in since 10 has limited divisors. But we think it is easy and simple because that’s what we’ve been taught to use. So, from early on, you’ve learned the base 10 system.</para>
   <para id="para-00124">Using a base 10 system means we need 10 symbols to make our numbering system work: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</para>
   <para id="para-00008">Now imagine that we all only had 6 fingers instead of 10 and our counting system was based on those 6 fingers. We would be counting in groups of 6, not groups of 10. How would this change how we work with quantity?</para>
-  <para id="para-00125">First, we’d need only six symbols. Let’s use 0, 1, 2, 3, 4, 5.</para>
-  <para id="para-00126">Second, our place values would be based on powers of 6, not powers of 10. For instance, the number 3,024 in base 6 would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup></mrow></math>.</para>
-  <para id="para-00127" xmlns="http://cnx.rice.edu/cnxml">That is how you can translate a base 6 number into a base 10 number. When we calculate that expression we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>216</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>648</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>664</mn></mrow></math>.</para>
+  <para id="para-00125">First, we’d need only six symbols. Let’s use 0, 1, 2, 3, 4, 5. Second, our place values would be based on powers of 6, not powers of 10. For instance, the number 3,024 in base 6 would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup></mrow></math>.
+  That is how you can translate a base 6 number into a base 10 number. When we calculate that expression we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>216</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>648</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>664</mn></mrow></math>.</para>
   <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">664 is what the base 6 number 3,024 equals in base 10.</para>
   <para id="para-00010">From now on, if we are using a base 6 number, we will follow it with the subscript 6, like the following:</para>
-  <list bullet-style="none" id="list-00002">
-  <item>3,024<sub>6</sub> means the number is in base 6.</item>
-  </list>
-  <para id="para-00011">A base 10 number gets no subscript (it’s the standard). So, 3,024 is a base 10 number.</para>
-  <para id="para-00128">A base 13 number would be 4,672<sub>13</sub>.</para>
+  <para id="para-00089">3,024<sub>6</sub> means the number is in base 6.</para>
+  <para id="para-00011">A base 10 number gets no subscript (it’s the standard). So, 3,024 is a base 10 number. A base 13 number would be 4,672<sub>13</sub>.</para>
   <para id="para-00012">So, a base 6 system uses only the symbols 0, 1, 2, 3, 4, and 5. Also, the place values use powers of 6. However, we still don’t know how to count in base 6. In order to do so, we’d have to know how to represent the quantities larger than five in base 6. Let’s review how our base 10 system works by counting from 0 to 100, which shows how larger values are represented.</para>
   <para id="para-00129">In writing the base 10 numbers, you start with these first 10 values:</para>
   <table class="unnumbered" summary="." id="table-00001">
@@ -74,7 +69,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00013">But you’ve run out of symbols. So we use two digits:</para>
+  <para id="para-00013">But you’ve run out of symbols. So, we use two digits:</para>
   <table class="unnumbered" summary="." id="table-00002">
   <tgroup cols="10">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -329,8 +324,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00024">The symbol pattern is the same, but truncated. We only use the six symbols.</para>
-  <para id="para-00130">So that is how we represent base 6. Being able to write out these numbers is important when working with addition in the base.</para>
+  <para id="para-00024">The symbol pattern is the same, but truncated. We only use the six symbols. So that is how we represent base 6. Being able to write out these numbers is important when working with addition in the base.</para>
   <example id="exam-00001">
   <title>Determining Digits of a Base with Less Than 10 Digits</title>
   <exercise id="exer-00001">
@@ -378,7 +372,7 @@
   <para id="para-00032">Convert 3601<sub>7</sub> into base 10.</para>
   </problem>
   <solution id="sol-00003">
-  <para id="para-00033">In base 7, the place values are powers of 7. Since there are four digits, the highest power of 7 that is used is 3. This yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>3601</mn></mrow><mn>7</mn></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>7</mn><mn>3</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>7</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>7</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>343</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>49</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1029</mn><mo>+</mo><mn>294</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1324</mn></mrow></math>.</para>
+  <para id="para-00033">In base 7, the place values are powers of 7. Since there are four digits, the highest power of 7 that is used is 3. This yields <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>3,601</mn></mrow><mn>7</mn></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>7</mn><mn>3</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>7</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>7</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>343</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>49</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>7</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1029</mn><mo>+</mo><mn>294</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>1324</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
@@ -400,7 +394,7 @@
   </problem>
   <solution id="sol-00004">
   <para id="para-00037">In base 14, the place values are powers of 14. Since there are three digits, the highest power of 14 is 2. Also recall that in base 14, 10 is represented by A, 11 is represented by B, 12 is represented by C, and 13 is represented by D. Using that, we convert to base 10:</para>
-  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mi mathvariant="normal">B</mi><msub><mn>7</mn><mrow><mn>14</mn></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">B</mi><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>196</mn><mo>+</mo><mn>11</mn><mo>×</mo><mn>14</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>784</mn><mo>+</mo><mn>154</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>945</mn></mrow></math></equation>
+  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>4</mn><mi mathvariant="normal">B</mi><msub><mn>7</mn><mrow><mn>14</mn></mrow></msub><mo>=</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">B</mi><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mrow><mn>14</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>4</mn><mo>×</mo><mn>196</mn><mo>+</mo><mn>11</mn><mo>×</mo><mn>14</mn><mo>+</mo><mn>7</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>784</mn><mo>+</mo><mn>154</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>945</mn></mrow></math>.</equation>
   </solution>
   </exercise>
   </example>
@@ -419,7 +413,7 @@
   </problem>
   <solution id="sol-00005">
   <para id="para-00040">In base 12, the place values are powers of 12. Since there are three digits, the highest power of 12 is 2. Also recall that in base 12, 10 is represented by A and 11 is represented by B. Using that, we convert to base 10:</para>
-  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">A</mi><msub><mrow><mn>16</mn></mrow><mrow><mn>14</mn></mrow></msub><mo>=</mo><mn>10</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>10</mn><mo>×</mo><mn>144</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>12</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>1440</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>1458</mn></mrow></math></equation>
+  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">A</mi><msub><mrow><mn>16</mn></mrow><mrow><mn>14</mn></mrow></msub><mo>=</mo><mn>10</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>1</mn></msup><mo>+</mo><mn>6</mn><mo>×</mo><msup><mrow><mn>12</mn></mrow><mn>0</mn></msup><mo>=</mo><mn>10</mn><mo>×</mo><mn>144</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>12</mn><mo>+</mo><mn>6</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>1440</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>1458</mn></mrow></math>.</equation>
   </solution>
   </exercise>
   </example>
@@ -438,7 +432,7 @@
   </problem>
   <solution id="sol-00006">
   <para id="para-00043">In base 2, the place values are powers of 2. Since there are four digits, the highest power of 2 is 3. Using that, we convert to base 10:</para>
-  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mrow><mn>1011</mn></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn><mo>×</mo><mn>8</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>8</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>11</mn></mrow></math></equation>
+  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mrow><mn>1011</mn></mrow><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn><mo>×</mo><mn>8</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>8</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>11</mn></mrow></math>.</equation>
   </solution>
   </exercise>
   </example>
@@ -451,7 +445,7 @@
   </note>
   <note class="who-knew" id="note-00009">
   <title>Before Napoleon</title>
-  <para id="para-00045">Before Napoleon’s France, which adopted the base 10 system, a modified base 12 system was often used in Europe. Twelve is easily divisible into groups of 2, 3, 4, and 6, which makes it easier to work with. Even our numbering system retains a bit of this. You have likely noticed that we use the words <emphasis effect="italics">thirteen</emphasis>, <emphasis effect="italics">fourteen</emphasis>, <emphasis effect="italics">fifteen</emphasis>, and so on to indicate ten and three, ten and four, ten and five, and so one. Even the 20s reinforce this idea, as in twenty-one, and twenty-two. However, two numbers don’t follow this pattern, namely 11 and 12. If they followed the same rules, they’d be one teen and two teen. We even have a special word for 12; that is, a dozen. However, etymologically speaking, the words <emphasis effect="italics">eleven</emphasis> and <emphasis effect="italics">twelve</emphasis> are likely derived by referencing the number 10. These two numbers may date back to the Old English words <emphasis effect="italic">endleofan</emphasis> and <emphasis effect="italic">twelf</emphasis>, which can be traced back further to <emphasis effect="italic">ain lif</emphasis> and <emphasis effect="italic">twa lif</emphasis>. The word <emphasis effect="italic">lif</emphasis> here may be the base word for “to leave”. This would suggest <emphasis effect="italic">ain lif</emphasis> is one left after 10, and <emphasis effect="italic">twa lif</emphasis> is two left after 10, or, 11 and 12.</para>
+  <para id="para-00045">Before Napoleon’s France, which adopted the base 10 system, a modified base 12 system was often used in Europe. Twelve is easily divisible into groups of 2, 3, 4, and 6, which makes it easier to work with. Even our numbering system retains a bit of this. You have likely noticed that we use the words <emphasis effect="italics">thirteen</emphasis>, <emphasis effect="italics">fourteen</emphasis>, <emphasis effect="italics">fifteen</emphasis>, and so on to indicate 10 and 3, 10 and 4, 10 and 5, and so one. Even the 20s reinforce this idea, as in twenty-one, and twenty-two. However, two numbers don’t follow this pattern, namely 11 and 12. If they followed the same rules, they’d be one teen and two teen. We even have a special word for 12; that is, a dozen. However, etymologically speaking, the words <emphasis effect="italics">eleven</emphasis> and <emphasis effect="italics">twelve</emphasis> are likely derived by referencing the number 10. These two numbers may date back to the Old English words <emphasis effect="italic">endleofan</emphasis> and <emphasis effect="italic">twelf</emphasis>, which can be traced back further to <emphasis effect="italic">ain lif</emphasis> and <emphasis effect="italic">twa lif</emphasis>. The word <emphasis effect="italic">lif</emphasis> here may be the base word for “to leave”. This would suggest <emphasis effect="italic">ain lif</emphasis> is one left after 10, and <emphasis effect="italic">twa lif</emphasis> is two left after 10, or, 11 and 12.</para>
   </note>
   <example id="exam-00007">
   <title>Writing Numbers in Base Systems Other Than Base 10</title>
@@ -465,21 +459,15 @@
   <item>0, 1, 2, 3, 4, 5, 6</item>
   </list>
   <para id="para-00048"><emphasis effect="bold">Step 2:</emphasis> Since we’ve run out of digits, we start with 10, indicating we’ve run out of symbols once.</para>
-  <list bullet-style="none" id="list-00004">
-  <item>10, 11, 12, 13, 14, 15, 16</item>
-  </list>
-  <para id="para-00049"><emphasis effect="bold">Step 3:</emphasis> Continuing in the same way, we get</para>
-  <list bullet-style="none" id="list-00005">
-  <item>20, 21, 22, 23, 24, 25, 26</item>
-  <item>30, 31, 32, 33, 34, 35, 36</item>
-  <item>40, 41, 42, 43, 44, 45, 46</item>
-  <item>50, 51, 52, 53, 54, 55, 56</item>
-  <item>60, 61, 62, 63, 64, 65, 66</item>
-  </list>
+  <para id="para-00120">10, 11, 12, 13, 14, 15, 16</para>
+  <para id="para-00049"><emphasis effect="bold">Step 3:</emphasis> Continuing in the same way, we get:</para>
+  <para id="para-00121">20, 21, 22, 23, 24, 25, 26</para>
+  <para id="para-00123">30, 31, 32, 33, 34, 35, 36</para>
+  <para id="para-00126">40, 41, 42, 43, 44, 45, 46</para>
+  <para id="para-00127">50, 51, 52, 53, 54, 55, 56</para>
+  <para id="para-00128">60, 61, 62, 63, 64, 65, 66</para>
   <para id="para-00050">Now, all the digits have been used in the leading digits. Since the digits have all been used in that leading digit, we use 100, as in base 10.</para>
-  <list bullet-style="none" id="list-00006">
-  <item>100</item>
-  </list>
+  <para id="para-00130">100</para>
   </solution>
   </exercise>
   </example>
@@ -498,29 +486,23 @@
   </problem>
   <solution id="sol-00008">
   <para id="para-00053"><emphasis effect="bold">Step 1:</emphasis> Using the patterns we indicated earlier, we begin with the first 14 digits.</para>
-  <list bullet-style="none" id="list-00007">
-  <item>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D</item>
-  </list>
+   <para id="para-00135">0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D</para>
   <para id="para-00054"><emphasis effect="bold">Step 2:</emphasis> Since we’ve run out of digits, we start with 10, indicating we’ve run out of symbols once.</para>
-  <list bullet-style="none" id="list-00008">
-  <item>10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D</item>
-  </list>
-  <para id="para-00055"><emphasis effect="bold">Step 3:</emphasis> Continuing in the same way, we get</para>
-  <list bullet-style="none" id="list-00009">
-  <item>20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2A, 2B, 2C, 2D</item>
-  <item>30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3A, 3B, 3C, 3D</item>
-  <item>40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4A, 4B, 4C, 4D</item>
-  <item>50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5A, 5B, 5C, 5D</item>
-  <item>60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6A, 6B, 6C, 6D</item>
-  <item>70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7A, 7B, 7C, 7D</item>
-  <item>80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8A, 8B, 8C, 8D</item>
-  <item>90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9A, 9B, 9C, 9D</item>
-  <item>A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, AA, AB, AC, AD</item>
-  <item>B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, BA, BB, BC, BD</item>
-  <item>C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, CA, CB, CC, CD</item>
-  <item>D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, DA, DB, DC, DD</item>
-  <item>100</item>
-  </list>
+  <para id="para-00136">10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D</para>
+  <para id="para-00055"><emphasis effect="bold">Step 3:</emphasis> Continuing in the same way, we get:</para>
+  <para id="para-00137">20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 2A, 2B, 2C, 2D</para>
+  <para id="para-00138">30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 3A, 3B, 3C, 3D</para>
+  <para id="para-00139">40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 4A, 4B, 4C, 4D</para>
+  <para id="para-00140">50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 5A, 5B, 5C, 5D</para>
+  <para id="para-00141">60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 6A, 6B, 6C, 6D</para>
+  <para id="para-00142">70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 7A, 7B, 7C, 7D</para>
+  <para id="para-00143">80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 8A, 8B, 8C, 8D</para>
+  <para id="para-00144">90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 9A, 9B, 9C, 9D</para>
+  <para id="para-00145">A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, AA, AB, AC, AD</para>
+  <para id="para-00146">B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, BA, BB, BC, BD</para>
+  <para id="para-00147">C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, CA, CB, CC, CD</para>
+  <para id="para-00148">0, D1, D2, D3, D4, D5, D6, D7, D8, D9, DA, DB, DC, DD</para>
+  <para id="para-00149">100</para>
   </solution>
   </exercise>
   </example>
@@ -539,7 +521,7 @@
   <para id="para-00058">Write the numbers in base 2 up to 100<sub>2</sub>.</para>
   </problem>
   <solution id="sol-00009">
-  <para id="para-00059">Base 2 uses only two symbols, 0 and 1. Following the pattern established previously, the numbers in base 2 up to 100<sub>2</sub> are 0, 1, 10, 11, and 100.</para>
+  <para id="para-00059">Base 2 uses only two symbols: 0 and 1. Following the pattern established previously, the numbers in base 2 up to 100<sub>2</sub> are 0, 1, 10, 11, and 100.</para>
   </solution>
   </exercise>
   </example>
@@ -559,10 +541,10 @@
   </problem>
   <solution id="sol-00010">
   <para id="para-00064">We divide 298 by 6, and record the remainder. Then we divide the quotient from that step by 6, and record the remainder again. We continue this process until the quotient is 0. Then, the base 6 number has digits that start with the last remainder and use each remainder in reverse order.</para>
-  <para id="para-00065"><emphasis effect="bold">Step 1:</emphasis> When we divide 298 by 6, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>49</mn><mi>r</mi><mn>4</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>298</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 49 and the remainder is 4.</para>
+  <para id="para-00065"><emphasis effect="bold">Step 1:</emphasis> When we divide 298 by 6, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>49</mn><mi>r</mi><mn>4</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>6</mn><menclose notation="longdiv"><mrow><mn>298</mn></mrow></menclose></mrow></mtd></mtr></mtable></mrow></math>. The quotient is 49 and the remainder is 4.</para>
   <para id="para-00066" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Now we divide the quotient, 49, by 6. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>8</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>49</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 8 and the remainder is 1.</para>
   <para id="para-00067" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>1</mn><mi>r</mi><mn>2</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>8</mn></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 1 and the remainder is 2.</para>
-  <para id="para-00068" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Finally, we perform the operation on the quotient 1, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>1</mn></menclose></mtd></mtr></mtable></mrow></math> giving us a quotient of 0 and a remainder of 1.</para>
+  <para id="para-00068" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Finally, we perform the operation on the quotient 1, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>6</mn><menclose notation="longdiv"><mn>1</mn></menclose></mrow></mtd></mtr></mtable></mrow></math> giving us a quotient of 0 and a remainder of 1.</para>
   <para id="para-00069" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> The base 6 number has digits equal to the remainders in reverse order, 1214<sub>6</sub>. So, 298 in base 10 when converted to base 6 is 1214<sub>6</sub>.</para>
   </solution>
   </exercise>
@@ -586,10 +568,10 @@
   <solution id="sol-00011">
   <para id="para-00073">We divide 45,134 by 13, and record the remainder. Then we divide the quotient from that step by 13, and record the remainder again. We continue this process until the quotient is 0. Then, the base 13 number has digits that start with the last remainder and use each remainder in reverse order. It is at this step that we’ll convert to the base 13 digits, which are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C.</para>
   <para id="para-00074"><emphasis effect="bold">Step 1:</emphasis> When we divide 45,134 by 13, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>3471</mn><mi>r</mi><mn>11</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>45134</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 3,471 and the remainder is 11.</para>
-  <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Now we divide the quotient, 3,471, by 13. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>267</mn><mi>r</mi><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>3471</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 267 and the remainder is 0.</para>
-  <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>20</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>267</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 20 and the remainder is 7.</para>
-  <para id="para-00077" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Again, and we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>1</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mrow><mn>20</mn></mrow></menclose></mtd></mtr></mtable></mrow></math>. The quotient is 1 and the remainder is 7.</para>
-  <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Finally, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mtable><mtr><mtd columnalign="right"><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd columnalign="right"><menclose notation="longdiv"><mn>1</mn></menclose></mtd></mtr></mtable></mrow></math>, with quotient 0 and a remainder 1.</para>
+  <para id="para-00075" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Now we divide the quotient, 3,471, by 13. This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>267</mn><mi>r</mi><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>13</mn><menclose notation="longdiv"><mrow><mn>3471</mn></mrow></menclose></mrow></mtd></mtr></mtable></mrow></math>. The quotient is 267 and the remainder is 0.</para>
+  <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Repeating, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>20</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>13</mn><menclose notation="longdiv"><mrow><mn>267</mn></mrow></menclose></mrow></mtd></mtr></mtable></mrow></math>. The quotient is 20 and the remainder is 7.</para>
+  <para id="para-00077" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Again, and we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>1</mn><mi>r</mi><mn>7</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>13</mn><menclose notation="longdiv"><mrow><mn>20</mn></mrow></menclose></mrow></mtd></mtr></mtable></mrow></math>. The quotient is 1 and the remainder is 7.</para>
+  <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Finally, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>0</mn><mi>r</mi><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>13</mn><menclose notation="longdiv"><mn>1</mn></menclose></mrow></mtd></mtr></mtable></mrow></math>, with quotient 0 and a remainder 1.</para>
   <para id="para-00079" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6:</emphasis> The base 13 number has digits equal to the remainders in reverse order, which were 1, 7, 7, 0, and 11. The 11 is written as B in base 13. So, 45,134 in base 10 when converted to base 13 is 1770B<sub>13</sub>.</para>
   </solution>
   </exercise>
@@ -612,7 +594,7 @@
   <para id="para-00131"><emphasis effect="bold">Step 1:</emphasis> We divide 100 by 2, and record the remainder.</para>
   <para id="para-00132"><emphasis effect="bold">Step 2:</emphasis> Then we divide the quotient from that step by 2, and record the remainder again.</para>
   <para id="para-00133"><emphasis effect="bold">Step 3:</emphasis> We continue this process until the quotient is 0.</para>
-  <para id="para-00134">Following this process, the remainders are, in order, 0, 0, 1, 0, 0, 1, 1. Writing those in reverse order gives the number in base 2, 1100100<sub>2</sub>.</para>
+  <para id="para-00134"><emphasis effect="bold">Step 4:</emphasis> Following this process, the remainders are, in order, 0, 0, 1, 0, 0, 1, 1. Writing those in reverse order gives the number in base 2, 1100100<sub>2</sub>.</para>
   <para id="para-00083">Notice that 100 in base 2 took seven digits.</para>
   </solution>
   </exercise>
@@ -646,7 +628,7 @@
   <solution id="sol-00013">
   <list list-type="enumerated" number-style="arabic" id="list-00011">
   <item>The Mayan system is base 20, so we must use 20 in the process from above. The first division has a quotient of 2 and remainder of 11. The 11 serves as the “ones” digit. Dividing that quotient, 2, by 20 has a quotient of 0 with a remainder of 2. The 2 becomes the “twenties” digit of the number. So, in base 20, the number would be 2 followed by 11. The Mayan symbols for 2 and 11 are <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M02.jpg"/></media> and <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media>. Writing these vertically, with the “ones” digit on top, as appropriate for Mayan numbers, results in <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media> <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M02.jpg"/></media></item>
-  <item>The Mayan system is base 20, so we must use 20 in the process from above. The first division, 673 divided by 20, has a quotient of 32 and remainder of 13. Dividing that quotient, 32, by 20 has a quotient of 1 with a remainder of 12. Dividing that quotient, 1, by 20 has a quotient of 0 and a remainder of 1. Since there are three remainders here, this is a three-digit number. The 1 is the “20-squared” digit, the 12 is the “twenties” digit, and the 13 is the “ones” digit. So, in base 20, the number would be 1 followed by 12 followed by 13. The Mayan symbols for 1, 12 and 13 are <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M01.jpg"/></media>, <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media>, and <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M13.jpg"/></media>. Writing these vertically, as appropriate for Mayan numbers, would result in <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M13.jpg"/></media> <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media> <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M01.jpg"/></media></item>
+  <item>The Mayan system is base 20, so we must use 20 in the process from above. The first division, 673 divided by 20, has a quotient of 32 and remainder of 13. Dividing that quotient, 32, by 20 has a quotient of 1 with a remainder of 12. Dividing that quotient, 1, by 20 has a quotient of 0 and a remainder of 1. Since there are three remainders here, this is a three-digit number. The 1 is the “20-squared” digit, the 12 is the “twenties” digit, and the 13 is the “ones” digit. So, in base 20, the number would be 1 followed by 12 followed by 13.. The Mayan symbols for 1, 12 and 13 are <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M01.jpg"/></media>, <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media>, and <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M13.jpg"/></media>. Writing these vertically, as appropriate for Mayan numbers, would result in <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M13.jpg"/></media> <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M11.jpg"/></media> <media class="inline" alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_M01.jpg"/></media></item>
   </list>
   </solution>
   </exercise>
@@ -816,15 +798,16 @@
   </exercise>
   </section>
   <section id="sect-00008">
-  <title>Section 5-3</title>
+  <title>Section 4.3</title>
   <section class="key-terms" id="sect-00009">
   <title>Key Terms</title>
   <list bullet-style="none" id="list-00012">
   <item>Base system</item>
-  <item>Dividend</item>
-  <item>Divisor</item>
-  <item>Quotient</item>
-  <item>Remainder</item>
+  <item>base 10</item>
+  <item>remainder</item>
+  <item>dividend</item>
+  <item>dividend</item>
+  <item>quotient</item>
   </list>
   </section>
   <section class="key-concepts" id="sect-00010">
