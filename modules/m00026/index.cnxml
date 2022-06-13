@@ -20,7 +20,7 @@
   <item>Compare and contrast fairness of voting using head-to-head criterion.</item>
   <item>Compare and contrast fairness of voting using monotonicity criterion.</item>
   <item>Compare and contrast fairness of voting using irrelevant alternatives criterion.</item>
-  <item>Apply Arrow's Impossibility Theorem when evaluating voting fairness.</item>
+  <item>Apply Arrow’s Impossibility Theorem when evaluating voting fairness.</item>
   </list>
   </section>
   <para id="para-00002">Now that we’ve covered a variety of voting methods and discussed their differences and similarities, you might be leaning toward one method over another. You will need to convince the other founders of Imaginaria that your preference will be the best for the country. Before your collaborators approve the inclusion of a voting method in the constitution, they will want to know that the voting method is a fair method. In this section, we will formally define the characteristics of a fair system. We will analyze each voting previously discussed to determine which characteristics of fairness they have, and which they do not. In order to guarantee one ideal, we must often sacrifice others.</para>
@@ -37,7 +37,7 @@
   <title>Roommates Choose Fast Food</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
-  <para id="para-00007">It’s final exams week and seven college students are starving. They must get food, but from which drive through? Their preferences are listed in the table below. The majority have listed McDonald's as their top choice. Let’s calculate what the results of the election will be using various voting methods.</para>
+  <para id="para-00007">It’s final exams week and seven college students are starving. They must get food, but from which drive through? Their preferences are listed in the table below. The majority have listed McDonald’s as their top choice. Let’s calculate what the results of the election will be using various voting methods.</para>
   <table summary="." class="unnumbered" id="table-00001">
   <tgroup cols="8">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -62,7 +62,7 @@
   </thead>
   <tbody>
   <row>
-  <entry>(M) McDonald's</entry>
+  <entry>(M) McDonald’s</entry>
   <entry>1</entry>
   <entry>1</entry>
   <entry>1</entry>
@@ -116,17 +116,15 @@
   </table>
   <list list-type="enumerated" number-style="arabic" id="list-00003">
   <item>Which restaurant is the winner using the plurality voting method?</item>
-  <item>Which restaurant is the winner using the ranked-choice voting method?
-  </item>
+  <item>Which restaurant is the winner using the ranked-choice voting method?</item>
   <item>Does the majority criterion apply? If so, for which of voting method(s), if any, did the majority criterion fail?</item>
   </list>
   </problem>
   <solution id="sol-00001">
   <para id="para-00009">
   <list list-type="enumerated" number-style="arabic" id="list-00004">
-  <item>For plurality voting, we only need to count the first-place votes for each candidate. In this case, McDonald's
-  has four first place votes, which is a majority and wins the election automatically.</item>
-  <item>For ranked-choice voting, McDonald's also wins because it has a majority at the end of Round 1.</item>
+  <item>For plurality voting, we only need to count the first-place votes for each candidate. In this case, McDonald’s has four first place votes, which is a majority and wins the election automatically.</item>
+  <item>For ranked-choice voting, McDonald’s also wins because it has a majority at the end of Round 1.</item>
   <item>The majority criterion does apply because one candidate had a majority of the first-place votes. The majority criterion did not fail by either method, because in each case the majority candidate won.</item>
   </list>
   </para>
@@ -145,7 +143,7 @@
   <title>Roommates Choose Fast Food</title>
   <exercise id="exer-00003">
   <problem id="prob-00003">
-  <para id="para-00013">Those seven college students are starving again! Their preferences haven't changed, as shown below. Let’s calculate if the results change when we use different voting methods.
+  <para id="para-00013">Those seven college students are starving again! Their preferences haven’t changed, as shown below. Let’s calculate if the results change when we use different voting methods.
   <table summary="." class="unnumbered" id="table-00002">
   <tgroup cols="8">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -170,7 +168,7 @@
   </thead>
   <tbody>
   <row>
-  <entry>(M) McDonald's</entry>
+  <entry>(M) McDonald’s</entry>
   <entry>1</entry>
   <entry>1</entry>
   <entry>1</entry>
@@ -231,9 +229,9 @@
   </problem>
   <solution id="sol-00002">
   <list list-type="enumerated" number-style="arabic" id="list-00006">
-  <item>For pairwise comparison, notice that McDonald's is a Condorcet candidate because it wins every pairwise comparison. So, McDonald's is the winner.</item>
-  <item>For the Borda count, we must calculate the Borda score for each candidate: McDonald's is 16, Burger King is 21, Taco Bell is 13, Pollo Tropical is 12, Pizza Hut is 8. The winner is Burger King!</item>
-  <item>Yes, the majority criterion applies because McDonald's has the majority of first place votes. The majority criterion only fails using the Borda method.</item>
+  <item>For pairwise comparison, notice that McDonald’s is a Condorcet candidate because it wins every pairwise comparison. So, McDonald’s is the winner.</item>
+  <item>For the Borda count, we must calculate the Borda score for each candidate: McDonald’s is 16, Burger King is 21, Taco Bell is 13, Pollo Tropical is 12, Pizza Hut is 8. The winner is Burger King!</item>
+  <item>Yes, the majority criterion applies because McDonald’s has the majority of first place votes. The majority criterion only fails using the Borda method.</item>
   </list>
   </solution>
   </exercise>
@@ -245,7 +243,7 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00015"><link target-id="exam-00002" document="m00026" xmlns="http://cnx.rice.edu/cnxml">Example 11.17</link> demonstrates a concept that we also saw in section 1—the Borda method frequently favors the compromise candidate over the divisive candidate. This can happen even when the divisive candidate has a majority, as it did in this example. Although a majority of the voters were in favor of McDonald's, a significant minority was strongly opposed to McDonald's, ranking it last. Since the Borda score includes all rankings, this strong opposition has an impact on the outcome of the election.</para>
+  <para id="para-00015"><link target-id="exam-00002" document="m00026" xmlns="http://cnx.rice.edu/cnxml">Example 11.17</link> demonstrates a concept that we also saw in section 1—the Borda method frequently favors the compromise candidate over the divisive candidate. This can happen even when the divisive candidate has a majority, as it did in this example. Although a majority of the voters were in favor of McDonald’s, a significant minority was strongly opposed to McDonald’s, ranking it last. Since the Borda score includes all rankings, this strong opposition has an impact on the outcome of the election.</para>
   <para id="para-00017">Pairwise comparison will always satisfy the majority criterion because the candidate with the majority of first-place votes wins each pairwise matchup. While it is possible for the majority candidate to win by the Borda count method, it is not guaranteed. So, the Borda method fails the majority criterion. A summary of each voting method as it relates to the majority criterion is found in the following table.</para>
   <table summary="." class="unnumbered" id="table-00003">
   <tgroup cols="2">
@@ -277,7 +275,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00018">If you prefer the Borda method, you might argue that its failure to satisfy the majority criterion is actually one of its strengths. As we saw in <link target-id="exam-00001" document="m00026" xmlns="http://cnx.rice.edu/cnxml">Examples 11.16</link> and <link target-id="exam-00002" document="m00026" xmlns="http://cnx.rice.edu/cnxml">11.17</link>, the majority have the power to vote for their own benefit at the expense of the minority. While four students were very enthusiastic about McDonald's, three students were strongly opposed to McDonald's. It is reasonable to say that the better option would be Burger King, the compromise candidate, which everyone ranked highly and no one strongly opposed. The Borda method is designed to favor a candidate that is acceptable to the population as a whole. In this way, the Borda method avoids a downfall of strict majority rule known as the <emphasis effect="bold">tyranny of the majority</emphasis>, which occurs when a minority of a population is treated unfairly because their situation is different from the situation of the majority.</para>
+  <para id="para-00018">If you prefer the Borda method, you might argue that its failure to satisfy the majority criterion is actually one of its strengths. As we saw in <link target-id="exam-00001" document="m00026" xmlns="http://cnx.rice.edu/cnxml">Examples 11.16</link> and <link target-id="exam-00002" document="m00026" xmlns="http://cnx.rice.edu/cnxml">11.17</link>, the majority have the power to vote for their own benefit at the expense of the minority. While four students were very enthusiastic about McDonald’s, three students were strongly opposed to McDonald’s. It is reasonable to say that the better option would be Burger King, the compromise candidate, which everyone ranked highly and no one strongly opposed. The Borda method is designed to favor a candidate that is acceptable to the population as a whole. In this way, the Borda method avoids a downfall of strict majority rule known as the <emphasis effect="bold">tyranny of the majority</emphasis>, which occurs when a minority of a population is treated unfairly because their situation is different from the situation of the majority.</para>
   <para id="para-00020">The people of Imaginaria should know that the power of the majority to vote their will has serious implications for other groups. For example, according to the UCLA School of Law Williams Institute, the LGBTQ+ community in the United States makes up approximately 4.5 percent of the population. When elections occur that include issues that affect the LGBTQ+ community, members of the LGBTQ+ community depend on the 95.5 percent of the population who do not identify as LGBTQ+ to consider their perspectives when voting on issues such as same-sex marriage, the use of public restrooms by transgender people, and adoption by same-sex couples.</para>
   <note class="people-mathematics" id="note-00005">
   <para id="para-00021">In his book, <emphasis effect="italic">Democracy and Its Critics</emphasis>, Robert Dahl wrote, “If a majority is not entitled to do so, then it is thereby deprived of its rights; but if a majority is entitled to do so, then it can deprive the minority of its rights.” Dahl was a renowned political theorist, but he is also considered to be a mathematician since his work utilizes ideas from an area of mathematics known as Game Theory (Mathematics Genealogy Project, NDSU Department of Mathematics with the American Mathematical Society).</para>
@@ -377,7 +375,7 @@
   </problem>
   <solution id="sol-00004">
   <list list-type="enumerated" number-style="arabic" id="list-00007">
-  <item>V wins 33 first place votes; S, 36; D, 31; and T, 0. So candidate S, “Put into savings,” has a plurality and wins. Since the Condorcet candidate D didn't win, the Condorcet criterion is violated.</item>
+  <item>V wins 33 first place votes; S, 36; D, 31; and T, 0. So candidate S, “Put into savings,” has a plurality and wins. Since the Condorcet candidate D didn’t win, the Condorcet criterion is violated.</item>
   <item>Use the steps outlined in section 1 for determining the winner of an election by ranked-choice voting, the application of the Hare method in which instant runoffs are used.
   <para id="para-00034"><emphasis effect="bold">Step 1:</emphasis> The number of votes needed to achieve a majority is 51.</para>
   <para id="para-00035"><emphasis effect="bold">Step 2:</emphasis> As illustrated in part a, no candidate has a majority of first-place votes; so the candidate with the fewest votes, T, must be eliminated.</para>
@@ -459,7 +457,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00039"><emphasis effect="bold">Step 6:</emphasis> Repeat the process from Step 2 one last time. Count the first-place votes for each candidate: V has 33, S has 67. Candidate S, “Put into savings,” has a majority and wins. Since the Condorcet candidate D candidate D, “Pay off debt,” didn't win, the Condorcet criterion is violated.</para>
+  <para id="para-00039"><emphasis effect="bold">Step 6:</emphasis> Repeat the process from Step 2 one last time. Count the first-place votes for each candidate: V has 33, S has 67. Candidate S, “Put into savings,” has a majority and wins. Since the Condorcet candidate D candidate D, “Pay off debt,” didn’t win, the Condorcet criterion is violated.</para>
  </item>
   <item>Calculate the Borda score for each candidate.
   <para id="para-00097">V: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>33</mn><mo stretchy="false">(</mo><mn>4</mn><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>32</mn><mo stretchy="false">(</mo><mn>4</mn><mo>-</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>31</mn><mo stretchy="false">(</mo><mn>4</mn><mo>-</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>4</mn><mo stretchy="false">(</mo><mn>4</mn><mo>-</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>170</mn></mrow></math></para>
@@ -714,7 +712,7 @@
   <section id="sect-00005">
   <title>Irrelevant Alternatives Criterion</title>
   <para id="para-00057">We have covered a lot about voting fairness, but there is one more fairness criterion that you and the other Imaginarians should know. Consider this well-known anecdote that is sometimes attributed to the American philosopher Sidney Morgenbesser:</para>
-  <para id="para-00058">A man is told by his waiter that the dessert options this evening are blueberry pie or apple pie. The man orders the apple pie. The waiter returns and tells him that there is also a third option, cherry pie. The man says, “In that case, I would like the blueberry pie.” (<emphasis effect="italic">Gaming the Vote: Why Elections Aren't Fair (and What We Can Do About It)</emphasis>, William Pound stone, p. 50, ISBN0-8090-4893-0</para>
+  <para id="para-00058">A man is told by his waiter that the dessert options this evening are blueberry pie or apple pie. The man orders the apple pie. The waiter returns and tells him that there is also a third option, cherry pie. The man says, “In that case, I would like the blueberry pie.” (<emphasis effect="italic">Gaming the Vote: Why Elections Aren’t Fair (and What We Can Do About It)</emphasis>, William Pound stone, p. 50, ISBN0-8090-4893-0</para>
   <para id="para-00059">This story illustrates the concept of the Irrelevant Alternatives Criterion, also known as the <emphasis effect="bold">Independence of Irrelevant Alternatives Criterion (IIA</emphasis><emphasis effect="bold">),</emphasis> which means that the introduction or removal of a third candidate should not change or reverse the rankings of the original two candidates relative to one another. In particular, if a losing candidate is removed from the race or if a new candidate is added, the winner of the race should not change.</para>
   <example id="exam-00007">
   <title>Apple, Blueberry, or Cherry?</title>
@@ -959,7 +957,7 @@
   <note class="who-knew" id="note-00016">
   <para id="para-00070"><emphasis effect="bold">Electronic Voting: Does Your Vote Count?</emphasis></para>
   <para id="para-00071">In order for an election to be fair, voting must be accessible to everyone and every vote must be counted. When hundreds of thousands to millions of votes must be collected and counted in a short period of time, deciding it can be challenging to be on counting procedures that are accurate and secure. Electronic voting machines or even Internet voting can speed up the process, but how reliable are these methods? This has been a subject for debate for years.</para>
-  <para id="para-00072">In a press release on August 3, 2007, California Secretary of State Debra Bowen explained the results of an extensive review of electronic voting systems in her state. She said that transparency and auditability were key. She went on to say, “I think voters and counties are the victims of a federal certification process that hasn't done an adequate job of ensuring that the systems made available to them are secure, accurate, reliable and accessible. Congress enacted the Help America Vote Act, which pushed many counties into buying electronic systems that—as we’ve seen for some time and we saw again in the independent UC review—were not properly reviewed or tested to ensure that they protected the integrity of the vote.” Secretary Bowden subsequently ordered that voting machines must have tighter security to be used in California. (DB07:042, Secretary of State Debra Bowen Moves to Strengthen Voter Confidence in Election Security Following Top-to-Bottom Review of Voting Systems, <link url="https://openstax.org/r/gov/elections">https://sos.ca.gov/elections</link>. In some instances, the use of electronic voting in parliamentary elections has been discontinued completely for security reasons. For example, according the National Democratic Institute, the Netherlands returned to all paper ballots and hand counting in 2006. Will you use voting machines or Internet voting in Imaginaria?</para>
+  <para id="para-00072">In a press release on August 3, 2007, California Secretary of State Debra Bowen explained the results of an extensive review of electronic voting systems in her state. She said that transparency and auditability were key. She went on to say, “I think voters and counties are the victims of a federal certification process that hasn’t done an adequate job of ensuring that the systems made available to them are secure, accurate, reliable and accessible. Congress enacted the Help America Vote Act, which pushed many counties into buying electronic systems that—as we’ve seen for some time and we saw again in the independent UC review—were not properly reviewed or tested to ensure that they protected the integrity of the vote.” Secretary Bowden subsequently ordered that voting machines must have tighter security to be used in California. (DB07:042, Secretary of State Debra Bowen Moves to Strengthen Voter Confidence in Election Security Following Top-to-Bottom Review of Voting Systems, <link url="https://openstax.org/r/gov/elections">https://sos.ca.gov/elections</link>. In some instances, the use of electronic voting in parliamentary elections has been discontinued completely for security reasons. For example, according the National Democratic Institute, the Netherlands returned to all paper ballots and hand counting in 2006. Will you use voting machines or Internet voting in Imaginaria?</para>
   <para id="para-00073">So far, every one of the voting methods we have analyzed has failed one or more of the fairness criteria in one election or another.</para>
   <table summary="." class="unnumbered" frame="all" id="table-00015">
   <tgroup cols="5">
