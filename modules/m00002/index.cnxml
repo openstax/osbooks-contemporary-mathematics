@@ -6,23 +6,23 @@
   <md:uuid>bba797da-6a1a-4809-b77e-bf7d6e8758c5</md:uuid>
   </metadata>
   <content>
-    <figure id="fig-00002">
-      <media alt="A hand is shown holding a pen as it ticks off a box on a survey sheet.">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_08_01_003.jpg"/>
-      </media>
-      <caption>Surveys are commonly used to gather data. (Credit: “survey” by Donnell King/Flickr, CC0 1.0 Public Domain Dedication)</caption>
-    </figure>
-<section class="learning-objectives" id="sect-00001">
+   <figure id="fig-00002">
+    <media alt="A hand is shown holding a pen as it ticks off a box on a survey sheet.">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_08_01_003.jpg"/>
+    </media>
+    <caption>Surveys are commonly used to gather data. (Credit: “survey” by Donnell King/Flickr, CC0 1.0 Public Domain Dedication)</caption>
+   </figure>
+ <section class="learning-objectives" id="sect-00001">
   <title>Learning Objectives</title>
   <para id="para-00001">After completing this section, you should be able to:</para>
   <list list-type="enumerated" id="list-00001">
   <item>Distinguish among sampling techniques.</item>
   <item>Organize data using an appropriate method.</item>
   </list>
-</section>
-<para id="para-00002">When a polling organization wants to try to establish which candidate will win an upcoming election, the first steps are to write questions for the survey and to choose which people will be asked to respond to the survey. These can seem like simple steps, but they have far-reaching implications in the analysis the pollsters will later carry out. The process by which <term id="term-00001">samples</term> (or groups of <term id="term-00002">units</term> from which we collect data) are chosen can strongly affect the <term id="term-00003">data</term> that are collected. Units are anything that can be measured or surveyed (such as people, animals, objectives, or experiments) and data are observations made on units.</para>
+ </section>
+ <para id="para-00002">When a polling organization wants to try to establish which candidate will win an upcoming election, the first steps are to write questions for the survey and to choose which people will be asked to respond to the survey. These can seem like simple steps, but they have far-reaching implications in the analysis the pollsters will later carry out. The process by which <term id="term-00001">samples</term> (or groups of <term id="term-00002">units</term> from which we collect data) are chosen can strongly affect the <term id="term-00003">data</term> that are collected. Units are anything that can be measured or surveyed (such as people, animals, objectives, or experiments) and data are observations made on units.</para>
   <para id="para-00006">One of the most famous failures of good sampling occurred in the first half of the twentieth century. <emphasis effect="italic">The Literary Digest</emphasis> was among the most respected magazines of the early twentieth century. Despite the name, the <emphasis effect="italic">Digest</emphasis> was a weekly newsmagazine. Starting in 1916, the <emphasis effect="italic">Digest</emphasis> conducted a poll to try to predict the winner of each US Presidential election. For the most part, their results were good; they correctly predicted the outcome of all five elections between 1916 and 1932. In 1936, the incumbent President Franklin Delano Roosevelt faced Kansas governor Alf Landon, and once again the <emphasis effect="italic">Digest</emphasis> ran their famous poll, with results published the week before the election. Their conclusion? Landon would win in a landslide, 57% to 43%. Once the actual votes had been counted, though, Roosevelt ended up with 61% of the popular vote, 18% more than the poll predicted. What went wrong?</para>
-  <para id="para-00007">The short answer is that the people who were chosen to receive the survey (over ten million of them!) were not a good representation of the <term id="term-00004">population</term> of voting adults. The sample was chosen using the <emphasis effect="italic">Digest's</emphasis> own base of subscribers as well as publicly-available lists of people that were likely adults (and therefore eligible to vote), mostly phone books and vehicle registration records. The pollsters then mailed every single person on these lists a survey. Around a quarter of those surveys were returned; this constituted the sample that was used to make the <emphasis effect="italic">Digest</emphasis>’s disastrously incorrect prediction. However, the <emphasis effect="italic">Digest</emphasis> made an error in failing to consider that the election was happening during the Great Depression, and only the wealthy had disposable income to spend on telephone lines, automobiles, and magazine subscriptions. Thus, only the wealthy were sent the <emphasis effect="italic">Digest</emphasis>’s survey. Since Roosevelt was extremely popular among poorer voters, many of Roosevelt’s supporters were excluded from the <emphasis effect="italic">Digest</emphasis>’s sample.</para>
+  <para id="para-00007">The short answer is that the people who were chosen to receive the survey (over ten million of them!) were not a good representation of the <term id="term-00004">population</term> of voting adults. The sample was chosen using the <emphasis effect="italic">Digest's</emphasis> own base of subscribers as well as publicly available lists of people that were likely adults (and therefore eligible to vote), mostly phone books and vehicle registration records. The pollsters then mailed every single person on these lists a survey. Around a quarter of those surveys were returned; this constituted the sample that was used to make the <emphasis effect="italic">Digest</emphasis>’s disastrously incorrect prediction. However, the <emphasis effect="italic">Digest</emphasis> made an error in failing to consider that the election was happening during the Great Depression, and only the wealthy had disposable income to spend on telephone lines, automobiles, and magazine subscriptions. Thus, only the wealthy were sent the <emphasis effect="italic">Digest</emphasis>’s survey. Since Roosevelt was extremely popular among poorer voters, many of Roosevelt’s supporters were excluded from the <emphasis effect="italic">Digest</emphasis>’s sample.</para>
   <para id="para-00008">Another more complicated factor was the low response rate; only around 25% of the surveys were returned. This created what’s called a non-response bias.</para>
   <section id="sect-00002">
   <title>Sampling and Gathering Data</title>
@@ -30,8 +30,8 @@
   <para id="para-00011">A <term id="term-00005">simple random sample</term> is chosen in a way that every unit in the population has an equal chance of being selected, and the chances of a unit being selected do not depend on the units already chosen. An example of this is choosing a group of people by drawing names out of a hat (assuming the names are well-mixed in the hat).</para>
   <para id="para-00013">A <term id="term-00006">systematic random sample</term> is selected from an ordered list of the population (for example, names sorted alphabetically or students listed by student ID). First, we decide what proportion of the population will be in our sample. We want to express that proportion as a fraction with 1 in the numerator. Let’s call that number D. Next, we’ll choose a random number between one and D. The unit at that position will go into our sample. We’ll find the rest of our sample by choosing every D<sup>th</sup> unit in the list, starting with our random number.</para>
   <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">To walk through an example, let’s say we want to sample 2% of the population: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>%</mi><mo>=</mo><mfrac><mn>2</mn><mrow><mn>100</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>50</mn></mrow></mfrac></mrow></math>. (Note: If the number in the denominator isn’t a whole number, we can just round it off. This part of the process doesn’t have to be precise.) We can then use a random number generator to find a random number between 1 and 50; let's use 31. In our example, our sample would then be the units in the list at positions 31, 81 (31 + 50), 131 (81 + 50), and so forth.</para>
-  <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">A <term id="term-00007">stratified sample</term> is one chosen so that particular groups in the population are certain to be represented. Let’s say you are studying the population of students in a large high school (where the grades run from 9<sup>th</sup> to 12<sup>th</sup>), and you want to choose a sample of 12 students. If you use a simple or systematic random sample, there’s a pretty good chance that you’ll miss one grade completely. (This will happen around 12% of the time, in fact.) In a stratified sample, you would first divide the population into groups (the <emphasis effect="italic">strata</emphasis>), then take a random sample within each <emphasis effect="italic">stratum</emphasis> (that’s the singular form of “strata”). In the high school example, we could divide the population into grades, then take a random sample of three students within each grade. That would get us to the 12 students we need while ensuring coverage of each grade.</para>
-  <para id="para-00018">A <term id="term-00008">cluster sample</term> is a sample where clusters of units are chosen at random, instead of choosing individual units. For example, if we need a sample of college students, we may take a list of all the course sections being offered at the college, choose three of them at random (the sections are the clusters), and then survey all the students in those sections. A sample like this one has the advantage of convenience: if the survey needs to be administered in person, many of your sample units will be located in one place at the same time.</para>
+  <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">A <term id="term-00007">stratified sample</term> is one chosen so that particular groups in the population are certain to be represented. Let’s say you are studying the population of students in a large high school (where the grades run from 9th to 12th), and you want to choose a sample of 12 students. If you use a simple or systematic random sample, there’s a pretty good chance that you’ll miss one grade completely. (This will happen around 12% of the time, in fact.) In a stratified sample, you would first divide the population into groups (the <emphasis effect="italic">strata</emphasis>), then take a random sample within each <emphasis effect="italic">stratum</emphasis> (that’s the singular form of “strata”). In the high school example, we could divide the population into grades, then take a random sample of three students within each grade. That would get us to the 12 students we need while ensuring coverage of each grade.</para>
+  <para id="para-00018">A <term id="term-00008">cluster sample</term> is a sample where clusters of units are chosen at random, instead of choosing individual units. For example, if we need a sample of college students, we may take a list of all the course sections being offered at the college, choose three of them at random (the sections are the clusters), and then survey all the students in those sections. A sample like this one has the advantage of convenience: If the survey needs to be administered in person, many of your sample units will be located in one place at the same time.</para>
   <example id="exam-00001">
   <title>Random Sampling </title>
   <exercise id="exer-00001">
@@ -43,7 +43,7 @@
   <item>A quality control engineer at a factory that makes smartphones wants to figure out the proportion of devices that are faulty before they are shipped out. The phones are currently packed in boxes for shipping, each of which holds 20 devices. The engineer wants to sample 100 phones, so he selects five crates at random and tests every phone in those five crates.</item>
   <item>A newspaper reporter wants to write a story on public perceptions on a project that will widen a congested street. She stands on the side of the street in question and interviews the first five people she sees there.</item>
   <item>An executive at a streaming video service wants to know if her subscribers would support a second season of a new show. She gets a list of all the subscribers who have watched at least one episode of the show, and uses a random number generator to select a sample of 50 people from the list.</item>
-  <item>An agent for a state’s Department of Revenue is in charge of selecting 100 tax returns for audit. He has a list of all of the returns eligible for audit (about 12,000 in all), sorted by the taxpayer’s ID number. He asks a computer to give him a random number between 1 and 120; it gives him 15. The agent chooses the 15<sup>th</sup>, 135<sup>th</sup>, 255<sup>th</sup>, 375<sup>th</sup>, and every 120<sup>th</sup> return after that to be audited.</item>
+  <item>An agent for a state’s Department of Revenue is in charge of selecting 100 tax returns for audit. He has a list of all of the returns eligible for audit (about 12,000 in all), sorted by the taxpayer’s ID number. He asks a computer to give him a random number between 1 and 120; it gives him 15. The agent chooses the 15th, 135th, 255th, 375th, and every 120th return after that to be audited.</item>
   </list>
   </para>
   </problem>
@@ -76,12 +76,13 @@
   </media>
   <caption>George Gallup was a founder of survey sampling techniques, and his legacy lives on to this day. (credit: "George Gallup at the National Press Club, Washington, D.C., 1969" by Bernard Gotfryd/Library of Congress Prints &amp; Photographs Division, public domain)</caption>
   </figure>
-  <para id="para-00023">George Gallup (1901 – 1984) rose to fame in 1936 when his prediction of the percentage of the vote going to each candidate in that year’s U.S. Presidential election was more accurate than the one published in <emphasis effect="italic">Literary Digest</emphasis>, and he did so using a sample that was much smaller than the <emphasis effect="italic">Digest</emphasis>. He even took it one step farther, predicting with high accuracy the erroneous results of the poll that the <emphasis effect="italic">Literary Digest</emphasis> would end up publishing! Gallup’s theories on public opinion polling essentially created that field. In 1948, Gallup’s reputation took a bit of a hit, when he famously, but incorrectly, predicted that Thomas Dewey would beat incumbent Harry Truman in that year’s Presidential election. Over the following decades, however, public trust in Gallup’s polls recovered and even steadily increased. The <link url="https://openstax.org/r/Gallup">company Gallup founded</link> continues to conduct daily public opinion polls, as well as provides consulting services for businesses.</para>
+  <para id="para-00023">George Gallup (1901–1984) rose to fame in 1936 when his prediction of the percentage of the vote going to each candidate in that year’s U.S. Presidential election was more accurate than the one published in <emphasis effect="italic">Literary Digest</emphasis>, and he did so using a sample that was much smaller than the <emphasis effect="italic">Digest</emphasis>. He even took it one step farther, predicting with high accuracy the erroneous results of the poll that the <emphasis effect="italic">Literary Digest</emphasis> would end up publishing! Gallup’s theories on public opinion polling essentially created that field. In 1948, Gallup’s reputation took a bit of a hit, when he famously, but incorrectly, predicted that Thomas Dewey would beat incumbent Harry Truman in that year’s Presidential election. Over the following decades, however, public trust in Gallup’s polls recovered and even steadily increased. The <link url="https://openstax.org/r/Gallup">company Gallup founded</link> continues to conduct daily public opinion polls, as well as provides consulting services for businesses.</para>
   </note>
   </section>
   <section id="sect-00003">
   <title> Organizing Data</title>
-  <para id="para-00024">Once data have been collected, we turn our attention to analysis. Before we analyze, though, it’s useful to reorganize the data into a format that makes the analysis easier. For example, if our data were collected using a paper survey, our <emphasis effect="italic">raw data</emphasis> are all broken down by respondent (represented by an individual response sheet). To perform an analysis on all the responses to an individual question, we need to first group all the responses to each question together. The way we organize the data depends on the type of data we’ve collected. There are two broad types of data: <term id="term-00009">categorical</term> and <term id="term-00010">quantitative</term>. Categorical data classifies the unit into a group (or category). Examples of categorical data include a response to a yes-or-no question, or the color of a person’s eyes. Quantitative data is a numerical measure of a property of a unit. Examples of quantitative data include the time it takes for a rat to run through a maze or a person’s daily calorie intake. We’ll look at each type of data in turn when considering how best to organize.</para>
+  <para id="para-00024">Once data have been collected, we turn our attention to analysis. Before we analyze, though, it’s useful to reorganize the data into a format that makes the analysis easier. For example, if our data were collected using a paper survey, our <emphasis effect="italic">raw data</emphasis> are all broken down by respondent (represented by an individual response sheet). To perform an analysis on all the responses to an individual question, we need to first group all the responses to each question together. The way we organize the data depends on the type of data we’ve collected.</para>
+ <para id="para-00005">There are two broad types of data: categorical and quantitative. <emphasis effect="bold"> Categorical data</emphasis> classifies the unit into a group (or category). Examples of categorical data include a response to a yes-or-no question, or the color of a person’s eyes. <emphasis effect="bold">Quantitative data</emphasis> is a numerical measure of a property of a unit. Examples of quantitative data include the time it takes for a rat to run through a maze or a person’s daily calorie intake. We’ll look at each type of data in turn when considering how best to organize.</para>
   <section id="sect-00004">
   <title> Categorical Data Organization</title>
   <para id="para-00027">The best way to organize categorical data is using a <term id="term-00011">categorical frequency distribution</term>. A categorical frequency distribution is a table with two columns. The first contains all the categories present in the data, each listed once. The second contains the <emphasis effect="italic">frequencies</emphasis> of each category, which are just a count of how often each category appears in the data.</para>
@@ -122,7 +123,7 @@
   <entry>A</entry>
   <entry>A</entry>
   <entry>C</entry>
-</row>
+ </row>
   <row>
   <entry>E</entry>
   <entry>A</entry>
@@ -138,8 +139,8 @@
   <entry>A</entry>
   <entry>C</entry>
   <entry>C</entry>
-</row>
-</tbody>
+ </row>
+ </tbody>
   </tgroup>
   </table>
   </para>
@@ -147,7 +148,7 @@
   </problem>
   <solution id="sol-00003">
   <para id="para-00031"><emphasis effect="bold">Step 1:</emphasis> For each possible response, count the number of times that response appears in the data. In the responses for this class, “A” appears 14 times, “B” 4 times, “C” 6 times, “D” 0 times, and “E” 4 times.</para>
-  <para id="para-00032"><emphasis effect="bold">Step 2:</emphasis> Make a table with two columns. The first column should be labelled so that the reader knows what the responses mean, and the second should be labeled “Frequency.”
+  <para id="para-00032"><emphasis effect="bold">Step 2:</emphasis> Make a table with two columns. The first column should be labeled so that the reader knows what the responses mean, and the second should be labeled “Frequency.”
   <table class="unnumbered" summary="." id="table-00002">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -196,7 +197,7 @@
   </section>
   <section id="sect-00005">
   <title>Quantitative Data</title>
-  <para id="para-00036">If the data we have collected are quantitative, we have a couple of options for organization, depending on the responses. If there are just a few possible responses, we can create a frequency distribution just like the ones we made for categorical data above. For example, if we’re surveying a group of high school students and we ask for each student’s age, we’ll likely only get whole-number responses between 13 and 19. Since there are only around seven (and likely fewer) possible responses, a frequency distribution like those above is appropriate.</para>
+  <para id="para-00036">We have a couple of options available for organizing quantitative data. If there are just a few possible responses, we can create a frequency distribution just like the ones we made for categorical data above. For example, if we’re surveying a group of high school students and we ask for each student’s age, we’ll likely only get whole-number responses between 13 and 19. Since there are only around seven (and likely fewer) possible responses, a frequency distribution like those above is appropriate.</para>
   <example id="exam-00003">
   <title>Creating a Quantitative Frequency Distribution</title>
   <exercise id="exer-00005">
@@ -253,15 +254,15 @@
   <entry>2</entry>
   <entry>1</entry>
   <entry>5</entry>
-</row>
- </tbody>
+ </row>
+  </tbody>
   </tgroup>
   </table>
   </para>
   <para id="para-00038">Create a frequency distribution to organize the responses.</para>
   </problem>
   <solution id="sol-00005">
-  <para id="para-00039"><emphasis effect="bold">Step 1:</emphasis> Count the number of times you see each unique response: “0” appears five times, “1” appears thirteen times, “2” appears six times, “3” appears three times, “4” appears twice, and “5” appears once.</para>
+  <para id="para-00039"><emphasis effect="bold">Step 1:</emphasis> Count the number of times you see each unique response: “0” appears 5 times, “1” appears 13 times, “2” appears 6 times, “3” appears 3 times, “4” appears twice, and “5” appears once.</para>
   <para id="para-00040"><emphasis effect="bold">Step 2:</emphasis> Make a table with two columns. The first column should be labeled so that the reader knows what the responses mean, and the second should be labeled “Frequency.” Then fill in the results of our count.
   <table class="unnumbered" summary="." id="table-00006">
   <tgroup cols="4">
@@ -271,9 +272,9 @@
   <colspec colnum="4" colname="c4" colwidth="1*"/>
   <thead>
   <row>
-  <entry>Number of siblings</entry>
+  <entry>Number of Siblings</entry>
   <entry>Frequency</entry>
-  <entry>Number of siblings</entry>
+  <entry>Number of Siblings</entry>
   <entry>Frequency</entry>
   </row>
   </thead>
@@ -296,11 +297,11 @@
   <entry>5</entry>
   <entry>1</entry>
   </row>
- </tbody>
+  </tbody>
   </tgroup>
   </table>
   </para>
-  <para id="para-00041"><emphasis effect="bold">Step 3:</emphasis> Check your work. If you add up your counts, you should get the same number as the total number of responses. Looking back at the raw data, there were thirty responses, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>30</mn></mrow></math>.</para>
+  <para id="para-00041"><emphasis effect="bold">Step 3:</emphasis> Check your work. If you add up your counts, you should get the same number as the total number of responses. Looking back at the raw data, there were 30 responses, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>+</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>30</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
@@ -311,11 +312,11 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00044">If there are many possible responses, a frequency distribution table like the ones we’ve seen so far isn’t really useful; there will likely be many responses with a frequency of one, which means the table will be no better than looking at the raw data. In these cases, we can create a <term id="term-00012">binned frequency distribution</term>. A binned frequency distribution groups the data into ranges of values called <emphasis effect="italic">bins</emphasis>, then records the number of responses in each bin.</para>
-  <para id="para-00046">For example, if we have height data for individuals measured in centimeters, we might create bins like 150-155 cm, 155-160 cm, and so forth (making sure that every data value falls into a bin). We must be careful, though; in this scenario, it’s not clear which bin would contain a response of 155 cm. Usually, responses on the edge of a bin are placed in the higher bin, but it’s good practice to make that clear. In cases where responses are rounded off, you can avoid this issue by leaving a gap between the bins that couldn’t contain any responses. In our example, if the measurements were all rounded off to the nearest centimeter, we could make bins like 150-154 cm, 155-159 cm, etc. (since a response like 154.2 isn’t possible). We’ll use this method going forward. How do we decide what the boundaries of our bins should be? There’s no one right way to do that, but there are some guidelines that can be helpful.</para>
+  <para id="para-00044">When there are many possible responses, we can create a <term id="term-00012">binned frequency distribution</term>. A binned frequency distribution groups the data into ranges of values called <emphasis effect="italic">bins</emphasis>, then records the number of responses in each bin.</para>
+  <para id="para-00046">For example, if we have height data for individuals measured in centimeters, we might create bins like 150–155 cm, 155–160 cm, and so forth (making sure that every data value falls into a bin). We must be careful, though; in this scenario, it’s not clear which bin would contain a response of 155 cm. Usually, responses on the edge of a bin are placed in the higher bin, but it’s good practice to make that clear. In cases where responses are rounded off, you can avoid this issue by leaving a gap between the bins that couldn’t contain any responses. In our example, if the measurements were all rounded off to the nearest centimeter, we could make bins like 150–154 cm, 155–159 cm, etc. (since a response like 154.2 isn’t possible). We’ll use this method going forward. How do we decide what the boundaries of our bins should be? There’s no one right way to do that, but there are some guidelines that can be helpful.</para>
   <list list-type="enumerated" id="list-00006">
-  <item>Every data value should fall into exactly one bin. For example, if the lowest value in our data is 42, the lowest bin should not be 45-49.</item>
-  <item>Every bin should have the same width. Note that if we shift the upper limits of our bins down a bit to avoid ambiguity (like described above), we can’t simply subtract the lower limit from the upper limit to get the bin width; instead, we subtract the lower limit of the bin from the lower limit of the <emphasis effect="italic">next</emphasis> bin. For example, if we’re looking at GPAs rounded to the nearest hundredth, we might choose bins like 2.00-2.24, 2.25-2.49, 2.50-2.74, etc. These bins all have a width of 0.25.</item>
+  <item>Every data value should fall into exactly one bin. For example, if the lowest value in our data is 42, the lowest bin should not be 45–49.</item>
+  <item>Every bin should have the same width. Note that if we shift the upper limits of our bins down a bit to avoid ambiguity (like described above), we can’t simply subtract the lower limit from the upper limit to get the bin width; instead, we subtract the lower limit of the bin from the lower limit of the <emphasis effect="italic">next</emphasis> bin. For example, if we’re looking at GPAs rounded to the nearest hundredth, we might choose bins like 2.00–2.24, 2.25–2.49, 2.50–2.74, etc. These bins all have a width of 0.25.</item>
   <item>If the minimum or maximum value of the data falls right on the boundary between two bins, then it’s OK to bend the rule just a little in order to avoid having an additional bin containing just that one value. We’ll see an example of this in just a moment.</item>
   <item>If we have too many or too few bins, it can be difficult to get a good sense of the distribution. Seven or eight bins is ideal, but that’s not a firm rule; anything between five and twelve is fine. We often choose the number of bins so that the widths are round numbers.</item>
   </list>
@@ -381,7 +382,7 @@
   <entry>2.88</entry>
   <entry>3.34</entry>
   <entry>1.51</entry>
-
+ 
   <entry>3.63</entry>
   <entry>3.45</entry>
   <entry>1.89</entry>
@@ -397,10 +398,14 @@
   <para id="para-00048">Create a binned frequency distribution for the data.</para>
   </problem>
   <solution id="sol-00007">
-  <para id="para-00049"><emphasis effect="bold">Step 1:</emphasis> You must ensure that the maximum and minimum values are included in your bins, so you should first identify those values. Looking at the dataset, you can see that the lowest value is 1.20, and the highest is 4.00.</para>
-  <para id="para-00003"><emphasis effect="bold">Step 2:</emphasis> Next, you'll want to get a rough idea of the widths for your bins. You should aim for seven or eight bins, give or take a couple. For eight bins, the minimum width can be found by taking the difference between the largest and smallest data values and dividing by the number of bins: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mtext>maximum</mtext><mo>-</mo><mtext>minimum</mtext></mrow><mrow><mtext># of bins</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4.00</mn><mo>-</mo><mn>1.20</mn></mrow><mn>8</mn></mfrac><mo>=</mo><mn>0.35</mn></mrow></math>. If we use 0.35 for our widths, starting at our minimum value of 1.20, we’ll get bins with these boundaries: 1.20, 1.55, 1.90, 2.25, 2.60, 2.95, 3.30, 3.65, 4.00.</para>
-  <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> While these bins are technically fine, you shouldn't forget to consider the context of the values. Because these are GPAs, there are natural breaks at 2.00 and 3.00 that are important. (People like whole numbers!) Since 0.35 is very close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>, let’s use that for our bin width instead, and make sure that whole numbers fall on the boundaries. That means our first bin needs to start at 1.00 and go up to 1.33 to make sure our minimum value is included. The next bin will run from 1.34 to 1.66, and so forth.</para>
-  <para id="para-00050" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Now that we've decided on our bins, we start our distribution table by filling in the bins:
+  <para id="para-00049"><emphasis effect="bold">Step 1: Identify the max and min values in your bins.</emphasis> Looking at the dataset, you can see that the lowest value is 1.20, and the highest is 4.00.</para>
+  <para id="para-00003"><emphasis effect="bold">Step 2: Get a rough idea of bin widths.</emphasis> Aim for seven or eight bins, give or take a couple. For eight bins, the minimum width can be found by taking the difference between the largest and smallest data values and dividing by the number of bins:</para> 
+ <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mtext>maximum</mtext><mo>-</mo><mtext>minimum</mtext></mrow><mrow><mtext># of bins</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4.00</mn><mo>-</mo><mn>1.20</mn></mrow><mn>8</mn></mfrac><mo>=</mo><mn>0.35</mn><mtext>.</mtext></mrow></math></equation>
+ <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">If we use 0.35 for our widths, starting at our minimum value of 1.20, we’ll get bins with these boundaries: 1.20, 1.55, 1.90, 2.25, 2.60, 2.95, 3.30, 3.65, 4.00.</para>
+  <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3: Consider the context of the values.</emphasis>
+  Because these are GPAs, there are natural breaks at 2.00 and 3.00 that are important. (People like whole numbers!) Since 0.35 is very close to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>, let’s use that for our bin width instead, and make sure that whole numbers fall on the boundaries. That means our first bin needs to start at 1.00 and go up to 1.33 to make sure our minimum value is included. The next bin will run from 1.34 to 1.66, and so forth.</para>
+  <para id="para-00050" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4: Create the distribution table.</emphasis> We
+  start our distribution table by filling in the bins:
   <table class="unnumbered" summary="." id="table-00010">
   <tgroup cols="6">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -411,93 +416,93 @@
   <colspec colnum="6" colname="c6" colwidth="1*"/>
   <thead>
   <row>
-  <entry>GPA range</entry>
+  <entry>GPA Range</entry>
   <entry>Frequency</entry>
-  <entry>GPA range</entry>
+  <entry>GPA Range</entry>
   <entry>Frequency</entry>
-  <entry>GPA range</entry>
+  <entry>GPA Range</entry>
   <entry>Frequency</entry>
   </row>
   </thead>
   <tbody>
   <row>
-  <entry>1.00-1.33</entry>
+  <entry>1.00–1.33</entry>
   <entry/>
-  <entry>2.00-2.33</entry>
+  <entry>2.00–2.33</entry>
   <entry/>
-  <entry>3.00-3.33</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry>1.34-1.66</entry>
-  <entry/>
-  <entry>2.34-2.66</entry>
-  <entry/>
-  <entry>3.34-3.66</entry>
+  <entry>3.00–3.33</entry>
   <entry/>
   </row>
   <row>
-  <entry>1.67-1.99</entry>
+  <entry>1.34–1.66</entry>
   <entry/>
-  <entry>2.67-2.99</entry>
+  <entry>2.34–2.66</entry>
   <entry/>
-  <entry>3.67-4.00</entry>
+  <entry>3.34–3.66</entry>
+  <entry/>
+  </row>
+  <row>
+  <entry>1.67–1.99</entry>
+  <entry/>
+  <entry>2.67–2.99</entry>
+  <entry/>
+  <entry>3.67–4.00</entry>
   <entry/>
   </row>
   </tbody>
   </tgroup>
   </table>
   </para>
-  <para id="para-00051">Notice that the last bin doesn’t follow the pattern; since our maximum data value is right on the upper boundary of that last bin, this is a case where we can bend that rule just a little to avoid creating a bin for 4.00-4.33 (which wouldn’t really make sense in the context of these GPAs anyway, since 4.00 is the maximum possible GPA).</para>
-  <para id="para-00052"><emphasis effect="bold">Step 5:</emphasis> We can finish the table by counting the number of data values that fall in each bin, and recording them in the frequency column:
+  <para id="para-00051">Notice that the last bin doesn’t follow the pattern; since our maximum data value is right on the upper boundary of that last bin, this is a case where we can bend that rule just a little to avoid creating a bin for 4.00–4.33 (which wouldn’t really make sense in the context of these GPAs anyway, since 4.00 is the maximum possible GPA).</para>
+  <para id="para-00052"><emphasis effect="bold">Step 5: Complete the table with the frequencies.</emphasis> Finish the table by counting the number of data values that fall in each bin, and recording them in the frequency column:
   <table class="unnumbered" summary="." id="table-00011">
   <tgroup cols="6">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <colspec colnum="6" colname="c6" colwidth="1*"/>
+   <colspec colnum="1" colname="c1" colwidth="1*"/>
+   <colspec colnum="2" colname="c2" colwidth="1*"/>
+   <colspec colnum="3" colname="c3" colwidth="1*"/>
+   <colspec colnum="4" colname="c4" colwidth="1*"/>
+   <colspec colnum="5" colname="c5" colwidth="1*"/>
+   <colspec colnum="6" colname="c6" colwidth="1*"/>
   <thead>
   <row>
-  <entry>GPA range</entry>
+  <entry>GPA Range</entry>
   <entry>Frequency</entry>
-  <entry>GPA range</entry>
+  <entry>GPA Range</entry>
   <entry>Frequency</entry>
-  <entry>GPA range</entry>
+  <entry>GPA Range</entry>
   <entry>Frequency</entry>
   </row>
   </thead>
   <tbody>
   <row>
-  <entry>1.00-1.33</entry>
+  <entry>1.00–1.33</entry>
   <entry>1</entry>
-  <entry>2.00-2.33</entry>
+  <entry>2.00–2.33</entry>
   <entry>2</entry>
-  <entry>3.00-3.33</entry>
+  <entry>3.00–3.33</entry>
   <entry>6</entry>
   </row>
   <row>
-  <entry>1.34-1.66</entry>
+  <entry>1.34–1.66</entry>
   <entry>2</entry>
-  <entry>2.34-2.66</entry>
+  <entry>2.34–2.66</entry>
   <entry>4</entry>
-  <entry>3.34-3.66</entry>
+  <entry>3.34–3.66</entry>
   <entry>7</entry>
   </row>
   <row>
-  <entry>1.67-1.99</entry>
+  <entry>1.67–1.99</entry>
   <entry>5</entry>
-  <entry>2.67-2.99</entry>
+  <entry>2.67–2.99</entry>
   <entry>8</entry>
-  <entry>3.67-4.00</entry>
+  <entry>3.67–4.00</entry>
   <entry>7</entry>
   </row>
   </tbody>
   </tgroup>
   </table>
   </para>
-  <para id="para-00053"><emphasis effect="bold">Step 6:</emphasis> It’s a good idea to double-check your work by adding up the frequencies to make sure all the data values are included. We started with forty-two data values, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>42</mn></mrow></math>.</para>
+  <para id="para-00053"><emphasis effect="bold">Step 6: Check your work. </emphasis> Add up the frequencies to make sure all the data values are included. We started with forty-two data values, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>42</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
@@ -586,29 +591,29 @@
   </exercise>
   </section>
   <section class="key-terms" id="sect-00014">
-    <title>Key Terms</title>
-    <list bullet-style="none" id="list-00100">
-    <item>sample</item>
-    <item>units</item>
-    <item>data</item>
-    <item>population</item>
-    <item>simple random sample</item>
-    <item>systematic random sample</item>
-    <item>stratified sample</item>
-    <item>cluster sample</item>
-    <item>quantitative data</item>
-    <item>categorical data</item>
-    <item>categorical frequency Distribution</item>
-    <item>binned frequency distribution</item>
-    </list>
-    </section>
-    <section class="key-concepts" id="sect-00015">
-    <title>Key Concepts</title>
-    <list bullet-style="none" id="list-00101">
-    <item>Categorical data places units into groups (categories), while quantitative data is a numerical measure of a property of a unit.</item>
-    <item>The sampling method for a study depends on the way that randomization is used to select units for the sample.</item>
-    <item>Frequency distributions help to summarize data by counting the number of units that fall into a particular category or range of quantitative values.</item>
-    </list>
-    </section>
+   <title>Key Terms</title>
+   <list bullet-style="none" id="list-00100">
+   <item>sample</item>
+   <item>units</item>
+   <item>data</item>
+   <item>population</item>
+   <item>simple random sample</item>
+   <item>systematic random sample</item>
+   <item>stratified sample</item>
+   <item>cluster sample</item>
+   <item>quantitative data</item>
+   <item>categorical data</item>
+   <item>categorical frequency Distribution</item>
+   <item>binned frequency distribution</item>
+   </list>
+   </section>
+   <section class="key-concepts" id="sect-00015">
+   <title>Key Concepts</title>
+   <list bullet-style="none" id="list-00101">
+   <item>Categorical data places units into groups (categories), while quantitative data is a numerical measure of a property of a unit.</item>
+   <item>The sampling method for a study depends on the way that randomization is used to select units for the sample.</item>
+   <item>Frequency distributions help to summarize data by counting the number of units that fall into a particular category or range of quantitative values.</item>
+   </list>
+   </section>
   </content>
   </document>
