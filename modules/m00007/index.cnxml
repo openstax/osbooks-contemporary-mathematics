@@ -17,17 +17,17 @@
   <para id="para-00001">After completing this section, you should be able to:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00001">
   <item>Describe the characteristics of the normal distribution.</item>
-  <item>Apply the 68-95-99.7 percent groups to normal distribution data sets.</item>
+  <item>Apply the 68-95-99.7 percent groups to normal distribution datasets.</item>
   <item>Use the normal distribution to calculate a <emphasis effect="italics">z</emphasis>-score.</item>
   <item>Find and interpret percentiles and quartiles.</item>
   </list>
-</section>
-  <para id="para-00002">Many data sets that result from natural phenomena tend to have histograms that are symmetric and bell-shaped. Imagine finding yourself with a whole lot of time on your hands, and nothing to keep you entertained but a coin, a pencil, and paper. You decide to flip that coin 100 times and record the number of heads. With nothing else to do, you repeat the experiment ten times total. Using a computer to simulate this series of experiments, here’s a sample for the number of heads in each trial:</para>
+ </section>
+  <para id="para-00002">Many datasets that result from natural phenomena tend to have histograms that are symmetric and bell-shaped. Imagine finding yourself with a whole lot of time on your hands, and nothing to keep you entertained but a coin, a pencil, and paper. You decide to flip that coin 100 times and record the number of heads. With nothing else to do, you repeat the experiment ten times total. Using a computer to simulate this series of experiments, here’s a sample for the number of heads in each trial:</para>
   <para id="para-00032">54, 51, 40, 42, 53, 50, 52, 52, 47, 54</para>
   <para id="para-00003">It makes sense that we’d get somewhere around 50 heads when we flip the coin 100 times, and it makes sense that the result won’t <emphasis effect="italics">always</emphasis> be exactly 50 heads. In our results, we can see numbers that were generally near 50 and not always 50, like we thought.</para>
   <section id="sect-00002">
   <title>Moving Toward Normality</title>
-  <para id="para-00004">Let’s take a look at a histogram for the data set in our section opener:</para>
+  <para id="para-00004">Let’s take a look at a histogram for the dataset in our section opener:</para>
   <figure id="fig-00002">
   <media alt="A histogram titled, results of 10 coin flips. The horizontal axis representing the number of heads ranges from 40 to 55, in increments of 1. The vertical axis representing frequency ranges from 0 to 2, in increments of 1. The histogram infers the following data. 40 to 41: 1. 42 to 43: 1. 47 to 48: 1. 50 to 51: 1. 51 to 52: 1. 52 to 53: 2. 53 to 54: 1. 54 to 55: 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_064.jpg"/>
@@ -47,7 +47,7 @@
   </media>
   </figure>
   </para>
-  <para id="para-00007">We can still see that 70 is a really unusual observation, though we came close in another trial (one that had 68 heads). Now, the distribution is coming more into focus: it looks quite symmetric and bell-shaped. Let’s just go ahead and take this thought experiment to an extreme conclusion: 10,000 trials.</para>
+  <para id="para-00007">We can still see that 70 is a really unusual observation, though we came close in another trial (one that had 68 heads). Now, the distribution is coming more into focus: It looks quite symmetric and bell-shaped. Let’s just go ahead and take this thought experiment to an extreme conclusion: 10,000 trials.</para>
   <figure id="fig-00005">
   <media alt="A histogram titled, results of 10,000 coin flips. The horizontal axis representing the number of heads ranges from 30 to 70, in increments of 1. The vertical axis representing frequency ranges from 0 to 1000, in increments of 250. The histogram infers the following data. 30 to 31: 5. 33 to 34: 5. 34 to 35: 5. 35 to 36: 10. 36 to 37: 15. 37 to 38: 15. 38 to 39: 35. 39 to 40: 60. 40 to 41: 100. 41 to 42: 160. 42 to 43: 245. 43 to 44: 270. 44 to 45: 320. 45 to 46: 530. 46 to 47: 540. 47 to 48: 620. 48 to 49: 710. 49 to 50: 820. 50 to 51: 800. 51 to 52: 790. 52 to 53: 680. 53 to 54: 660. 54 to 55: 620. 55 to 56: 470. 56 to 57: 440. 57 to 58: 310. 58 to 59: 230. 59 to 60: 200. 60 to 61: 150. 61 to 62: 120. 62 to 63: 100. 63 to 64: 50. 64 to 65: 40. 65 to 66: 10. 66 to 67: 10. 67 to 68: 8. 68 to 69: 8. 69 to 70: 5. 70 to 71: 5. Note: all values are approximate.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_067.jpg"/>
@@ -56,7 +56,7 @@
   <para id="para-00008">The distribution is pretty clear now. Distributions that are symmetric and bell-shaped like this pop up in all sorts of natural phenomena, such as the heights of people in a population, the circumferences of eggs of a particular bird species, and the numbers of leaves on mature trees of a particular species. All of these have bell-shaped distributions. Additionally, the results of many types of repeated experiments generally follow this same pattern, as we saw with the coin-flipping example; this fact is the basis for much of the work done by statisticians. It’s a fact that’s important enough to have its own name: the Central Limit Theorem.</para>
   <note class="people-mathematics" id="note-00001">
   <title>John Kerrich</title>
-  <para id="para-00009">Having enough time on your hands to actually perform this coin-flipping experiment may sound far-fetched, but the English mathematician John Kerrich found himself in just such a situation. While he was studying abroad in Denmark in 1940, that country was invaded by the Germans. Kerrich was captured and placed in an internment camp, where he remained for the duration of the war. Kerrich knew that he had all kinds of time on his hands. He also studied statistics, so he knew what should happen <emphasis effect="italics">theoretically</emphasis> if he flipped a coin many, many times. He also knew of nobody who had ever <emphasis effect="italics">tested</emphasis> that theory with an actual, large-scale experiment. So, he did it: while he was incarcerated, Kerrich flipped a regular coin 10,000 times and recorded the results. Sure enough, the theory held up!</para>
+  <para id="para-00009">Having enough time on your hands to actually perform this coin-flipping experiment may sound far-fetched, but the English mathematician John Kerrich found himself in just such a situation. While he was studying abroad in Denmark in 1940, that country was invaded by the Germans. Kerrich was captured and placed in an internment camp, where he remained for the duration of the war. Kerrich knew that he had all kinds of time on his hands. He also studied statistics, so he knew what should happen <emphasis effect="italics">theoretically</emphasis> if he flipped a coin many, many times. He also knew of nobody who had ever <emphasis effect="italics">tested</emphasis> that theory with an actual, large-scale experiment. So, he did it: While he was incarcerated, Kerrich flipped a regular coin 10,000 times and recorded the results. Sure enough, the theory held up!</para>
   </note>
   </section>
   <section id="sect-00003">
@@ -183,24 +183,24 @@
   </section>
   <section id="sect-00004">
   <title>Properties of Normal Distributions: The 68-95-99.7 Rule</title>
-  <para id="para-00033">The most important property of normal distributions is tied to its standard deviation. If a data set is perfectly normally distributed, then 68% of the data values will fall within one standard deviation of the mean. For example, suppose we have a set of data that follows the normal distribution with mean 400 and standard deviation 100. This means 68% of the data would fall between the values of 300 (one standard deviation <emphasis effect="italics">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>300</mn></mrow></math>) and 500 (one standard deviation <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>+</mo><mn>100</mn><mo>=</mo><mn>500</mn></mrow></math>). Looking at the histogram below, the shaded area represents 68% of the total area under the graph and above the axis:</para>
+  <para id="para-00033">The most important property of normal distributions is tied to its standard deviation. If a dataset is perfectly normally distributed, then 68% of the data values will fall within one standard deviation of the mean. For example, suppose we have a set of data that follows the normal distribution with mean 400 and standard deviation 100. This means 68% of the data would fall between the values of 300 (one standard deviation <emphasis effect="italics">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>-</mo><mn>100</mn><mo>=</mo><mn>300</mn></mrow></math>) and 500 (one standard deviation <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mo>+</mo><mn>100</mn><mo>=</mo><mn>500</mn></mrow></math>). Looking at the histogram below, the shaded area represents 68% of the total area under the graph and above the axis:</para>
   <figure id="fig-00019" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 300 to 500 is shaded and marked 68 percent. The regions to the left and right of the shaded region are marked 16 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_081.jpg"/>
   </media>
   </figure>
-  <para id="para-00034">Since 68% of the area is in the shaded region, this means that 100% ‒ 68% = 32% of the area is found in the unshaded regions. We know that the distribution is symmetric, so that 32% must be divided evenly into the two unshaded tails: 16% in each.</para>
-  <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Of course, data sets in the real world are never perfect; when dealing with actual data that seem to follow a symmetric, bell-shaped distribution, we’ll equivocate a little and say that <emphasis effect="italics">approximately</emphasis> 68% of the data fall within one standard deviation of the mean.</para>
-  <para id="para-00036">The rule for one standard deviation can be extended to two standard deviations. Approximately 95% of a normally distributed data set will fall within 2 standard deviations of the mean. If the mean is 400 and the standard deviation is 100, that means 95% of the data would fall between 200 (two standard deviations <emphasis effect="italics">below</emphasis> the mean: 400 – 2 x 100 = 200) and 600 (two standard deviations <emphasis effect="italics">above</emphasis> the mean: 400 + 2 x 100 = 600). We can visualize this in the following histogram:
-  <figure id="fig-00020">
+  <para id="para-00034">Since 68% of the area is in the shaded region, this means that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mi>%</mi><mtext> </mtext><mo>−</mo><mtext> </mtext><mn>68</mn><mi>%</mi><mtext> </mtext><mo>=</mo><mtext> </mtext><mn>32</mn><mi>%</mi></mrow></math> of the area is found in the unshaded regions. We know that the distribution is symmetric, so that 32% must be divided evenly into the two unshaded tails: 16% in each.</para>
+  <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Of course, datasets in the real world are never perfect; when dealing with actual data that seem to follow a symmetric, bell-shaped distribution, we’ll equivocate a little and say that <emphasis effect="italics">approximately</emphasis> 68% of the data fall within one standard deviation of the mean.</para>
+  <para id="para-00036">The rule for one standard deviation can be extended to two standard deviations. Approximately 95% of a normally distributed dataset will fall within 2 standard deviations of the mean. If the mean is 400 and the standard deviation is 100, that means 95% of the data would fall between 200 (two standard deviations <emphasis effect="italics">below</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mtext> </mtext><mo>–</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mi>x</mi><mtext> </mtext><mn>100</mn><mtext> </mtext><mo>=</mo><mtext> </mtext><mn>200</mn></mrow></math>) and 600 (two standard deviations <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">above</emphasis> the mean: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mi>x</mi><mtext> </mtext><mn>100</mn><mtext> </mtext><mo>=</mo><mtext> </mtext><mn>600</mn></mrow></math>). We can visualize this in the following histogram:
+  <figure id="fig-00020" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 200 to 600 is shaded and marked 95 percent. The regions to the left and right of the shaded region are marked 2.5 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_082.jpg"/>
   </media>
   </figure>
   </para>
   <para id="para-00037">As before, since 95% of the data are in the shaded area, that leaves 5% of the data to go into the unshaded tails. Since the histogram is symmetric, half of the 5% (that’s 2.5%) is in each.</para>
-  <para id="para-00038">We can even take this one step further: 99.7% of normally distributed data fall within 3 standard deviations of the mean. In this example, we’d see 99.7% of the data between 100 (calculated as 400 – 3 x 100 = 100) and 700 (calculated as 400 + 3 x 100 = 700). We can see this in the histogram below, although you may need to squint to find the unshaded bits in the tails!
-  <figure id="fig-00021">
+  <para id="para-00038">We can even take this one step further: 99.7% of normally distributed data fall within 3 standard deviations of the mean. In this example, we’d see 99.7% of the data between 100 (calculated as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mtext> </mtext><mo>–</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mi>x</mi><mtext> </mtext><mn>100</mn><mtext> </mtext><mo>=</mo><mtext> </mtext><mn>100</mn></mrow></math>) and 700 (calculated as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>400</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mi>x</mi><mtext> </mtext><mn>100</mn><mtext> </mtext><mo>=</mo><mtext> </mtext><mn>700</mn></mrow></math>). We can see this in the histogram below, although you may need to squint to find the unshaded bits in the tails!
+  <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A normal distribution curve. The horizontal axis ranges from 0 to 800, in increments of 50. The curve begins at 0, has a peak value at 400, and ends at 800. The region from 100 to 700 is shaded and marked 99.7 percent. The regions to the left and right of the shaded region are marked 0.15 percent, each.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_083.jpg"/>
   </media>
@@ -229,7 +229,7 @@
   <colspec colnum="5" colname="c5" colwidth="1*"/>
   <colspec colnum="6" colname="c6" colwidth="1*"/>
   <colspec colnum="7" colname="c7" colwidth="1*"/>
-<thead>
+ <thead>
   <row>
   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>mean</mtext><mo>-</mo><mn>3</mn><mo>×</mo><mtext>SD</mtext></mrow></math></entry>
   <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>mean</mtext><mo>-</mo><mn>2</mn><mo>×</mo><mtext>SD</mtext></mrow></math></entry>
@@ -239,9 +239,9 @@
   <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>mean</mtext><mo>+</mo><mn>2</mn><mo>×</mo><mtext>SD</mtext></mrow></math></entry>
   <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>mean</mtext><mo>+</mo><mn>3</mn><mo>×</mo><mtext>SD</mtext></mrow></math></entry>
   </row>
-</thead>
-<tbody xmlns="http://cnx.rice.edu/cnxml">
-<row xmlns="http://cnx.rice.edu/cnxml">
+ </thead>
+ <tbody xmlns="http://cnx.rice.edu/cnxml">
+ <row xmlns="http://cnx.rice.edu/cnxml">
   <entry>2</entry>
   <entry>4</entry>
   <entry>6</entry>
@@ -466,15 +466,15 @@
   </section>
   <section id="sect-00005">
   <title>Standardized Scores</title>
-  <para id="para-00057"> When we want to apply the 68-95-99.7 Rule, we must first figure out how many standard deviations above or below the mean our data fall. This calculation is common enough that it has its own name: the <term id="term-00003">standardized score</term>. Values above the mean have positive standardized scores, while those below the mean have negative standardized scores. Since it's common to use the letter <emphasis effect="italics">z</emphasis> to represent a standard score, this value is also often referred to as a <emphasis effect="italics">z</emphasis>-score.</para>
+  <para id="para-00057"> When we want to apply the 68-95-99.7 Rule, we must first figure out how many standard deviations above or below the mean our data fall. This calculation is common enough that it has its own name: the <term id="term-00003">standardized score</term>. Values above the mean have positive standardized scores, while those below the mean have negative standardized scores. Since it's common to use the letter <emphasis effect="italics">z</emphasis> to represent a standard score, this value is also often referred to as a <emphasis effect="bold"><emphasis effect="italics">z</emphasis>-score</emphasis>.</para>
   <para id="para-00059">So far, we’ve only really considered <emphasis effect="italics">z</emphasis>-scores that are whole numbers, but in general they can be any number at all. For example, if we have data that are normally distributed with mean 80 and standard deviation 6, the value 85 is five units above the mean, which is less than one standard deviation. Dividing by the standard deviation, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math>. Since 85 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math> of one standard deviation above the mean, we’d say that the standardized score for 85 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math> (which is positive, since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>85</mn><mo>></mo><mn>80</mn></mrow></math>). This calculation describes the way we compute standardized scores.</para>
   <note class="formula" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00060">If <emphasis effect="italics">x</emphasis> is a member of a normally distributed data set with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is<equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>σ</mi></mfrac><mo>.</mo></mrow></math></equation></para>
+  <para id="para-00060">If <emphasis effect="italics">x</emphasis> is a member of a normally distributed dataset with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is<equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>σ</mi></mfrac><mo>.</mo></mrow></math></equation></para>
   <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml">If you know a <emphasis effect="italics">z</emphasis>-score but not the original data value <emphasis effect="italics">x</emphasis>, you can find it by solving the previous equation for <emphasis effect="italics">x</emphasis>:<equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi><mo>.</mo></mrow></math></equation></para>
   </note>
   <note class="check-point" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
   <para id="para-00062">The symbols <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>μ</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math> are the Greek letters <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">mu</emphasis> and <emphasis effect="italics">sigma</emphasis>. They are the analogues of the English letters <emphasis effect="italics">m</emphasis> and <emphasis effect="italics">s</emphasis>, which stand for <emphasis effect="italics">mean</emphasis> and <emphasis effect="italics">standard deviation</emphasis>.</para>
-  <para id="para-00063">If you convert every data value in a data set into its <emphasis effect="italics">z</emphasis>-score, the resulting set of data will have mean 0 and standard deviation 1. This is why we call these <emphasis effect="italics">standardized scores</emphasis>: the normal distribution with mean 0 and standard deviation 1 is often called the <emphasis effect="italics">standard normal distribution</emphasis>.</para>
+  <para id="para-00063">If you convert every data value in a dataset into its <emphasis effect="italics">z</emphasis>-score, the resulting set of data will have mean 0 and standard deviation 1. This is why we call these <emphasis effect="italics">standardized scores</emphasis>: the normal distribution with mean 0 and standard deviation 1 is often called the <emphasis effect="italics">standard normal distribution</emphasis>.</para>
   </note>
   <example id="exam-00007">
   <title>Standardizing Data</title>
@@ -516,7 +516,7 @@
   </list>
   </problem>
   <solution id="sol-00015">
-  <para id="para-00068">We’ll use the formula previously introduced to convert <emphasis effect="italics">z</emphasis>-scores into <emphasis effect="italics">x</emphasis> values. In this case, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>µ</mi><mo>=</mo><mn>10</mn></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>2</mn></mrow></math>:</para>
+  <para id="para-00068">We’ll use the formula previously introduced to convert <emphasis effect="italics">z</emphasis>-scores into <emphasis effect="italics">x</emphasis>-values. In this case, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>µ</mi><mo>=</mo><mn>10</mn></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>σ</mi><mo>=</mo><mn>2</mn></mrow></math>:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00023" xmlns="http://cnx.rice.edu/cnxml">
   <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi><mo>=</mo><mn>10</mn><mo>+</mo><mn>1.4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>12.8</mn></mrow></math></item>
   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi><mo>=</mo><mn>10</mn><mo>+</mo><mo stretchy="false">(</mo><mo>-</mo><mn>0.9</mn><mo stretchy="false">)</mo><mo>×</mo><mn>2</mn><mo>=</mo><mn>8.2</mn></mrow></math></item>
@@ -542,14 +542,14 @@
   <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_096.jpg"/>
   </media>
   </figure>
-  <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at <link target-id="fig-00019" document="m00007">Figures 8.53</link> and <link target-id="fig-00020" document="m00007">Figure 8.54</link>, the best we can say is that 50 is between the 84<sup>th</sup> and 99.5<sup>th</sup> percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
+  <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at <link target-id="fig-00019" document="m00007">Figures 8.53</link> and <link target-id="fig-00020" document="m00007">Figure 8.54</link>, the best we can say is that 50 is between the 84th and 99.5th percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00026">
   <item>Click in an empty cell in your worksheet.</item>
   <item>Type “=NORM.DIST(“</item>
   <item>Inside the parentheses, we must enter a list of four things, separated by commas: the data value, the mean, the standard deviation, and the word “TRUE”. These have to be entered in this order!</item>
   <item>Close the parentheses, and hit Enter. The result is then displayed in the cell; convert it to a percent to get the percentile.</item>
   </list>
-  <para id="para-00073">So, for our example, we should type “=NORM.DIST(50, 40, 7, TRUE)” into an empty cell, and hit Enter. The result is 0.9234362745; converting to a percent and rounding, we can conclude that 50 is at the 92<sup>nd</sup> percentile. Let’s walk through a few more examples.</para>
+  <para id="para-00073">So, for our example, we should type “=NORM.DIST(50, 40, 7, TRUE)” into an empty cell, and hit Enter. The result is 0.9234362745; converting to a percent and rounding, we can conclude that 50 is at the 92nd percentile. Let’s walk through a few more examples.</para>
   <example id="exam-00009">
   <title>Using Google Sheets to Find Percentiles</title>
   <exercise id="exer-00017">
@@ -563,9 +563,9 @@
   </problem>
   <solution id="sol-00017">
   <list list-type="enumerated" number-style="arabic" id="list-00028">
-  <item>By entering “=NORM.DIST(30, 28, 4, TRUE)” we find that 30 is at the 69<sup>th</sup> percentile.</item>
-  <item>By entering “=NORM.DIST(23, 28, 4, TRUE)” we find that 23 is at the 11<sup>th</sup> percentile.</item>
-  <item>By entering “=NORM.DIST(35, 28, 4, TRUE)” we find that 35 is at the 96<sup>th</sup> percentile.</item>
+  <item>By entering “=NORM.DIST(30, 28, 4, TRUE)” we find that 30 is at the 69th percentile.</item>
+  <item>By entering “=NORM.DIST(23, 28, 4, TRUE)” we find that 23 is at the 11th percentile.</item>
+  <item>By entering “=NORM.DIST(35, 28, 4, TRUE)” we find that 35 is at the 96th percentile.</item>
   </list>
   </solution>
   </exercise>
@@ -577,30 +577,30 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00076">Google Sheets can also help us go the other direction: If we want to find the data value that corresponds to a given percentile, we can use the NORM.INV function. For example, if we have normally distributed data with mean 150 and standard deviation 25, we can find the data value at the 30<sup>th</sup> percentile as follows:</para>
+  <para id="para-00076">Google Sheets can also help us go the other direction: If we want to find the data value that corresponds to a given percentile, we can use the NORM.INV function. For example, if we have normally distributed data with mean 150 and standard deviation 25, we can find the data value at the 30th percentile as follows:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00031">
   <item>Click on an empty cell in your worksheet.</item>
   <item>Type “=NORM.INV(“</item>
   <item>Inside the parentheses, we’ll enter a list of three numbers, separated by commas: the percentile in question expressed as a decimal, the mean, and the standard deviation. These must be entered in this order!</item>
   <item>Close the parentheses and hit Enter. The desired data value will be in the cell!</item>
   </list>
-  <para id="para-00077">In our example, we want the 30<sup>th</sup> percentile; converting 30% to a decimal gives us 0.3. So, we’ll type “=NORM.INV(0.3, 150, 25)” to get 136.8899872; let’s round that off to 137.</para>
+  <para id="para-00077">In our example, we want the 30th percentile; converting 30% to a decimal gives us 0.3. So, we’ll type “=NORM.INV(0.3, 150, 25)” to get 136.8899872; let’s round that off to 137.</para>
   <example id="exam-00010">
   <title>Using Google Sheets to Find the Data Value Corresponding to a Percentile</title>
   <exercise id="exer-00019">
   <problem id="prob-00019">
   <para id="para-00078">Suppose we have data that are normally distributed with mean 47 and standard deviation 9. Find the data values (rounded to the nearest tenth) corresponding to these percentiles:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00032">
-  <item>75<sup>th</sup> (that’s the third quartile)</item>
-  <item>12<sup>th</sup></item>
-  <item>90<sup>th</sup></item>
+  <item>75th (that’s the third quartile)</item>
+  <item>12th</item>
+  <item>90th</item>
   </list>
   </problem>
   <solution id="sol-00019">
   <list list-type="enumerated" number-style="arabic" id="list-00033">
-  <item>By entering “=NORM.INV(0.75, 47, 9)” we find that 53.1 is at the 75<sup>th</sup> percentile.</item>
-  <item>By entering “=NORM.INV(0.12, 47, 9)” we find that 36.4 is at the 12<sup>th</sup> percentile.</item>
-  <item>By entering “=NORM.INV(0.9, 47, 9)” we find that 58.5 is at the 90<sup>th</sup> percentile.</item>
+  <item>By entering “=NORM.INV(0.75, 47, 9)” we find that 53.1 is at the 75th percentile.</item>
+  <item>By entering “=NORM.INV(0.12, 47, 9)” we find that 36.4 is at the 12th percentile.</item>
+  <item>By entering “=NORM.INV(0.9, 47, 9)” we find that 58.5 is at the 90th percentile.</item>
   </list>
   </solution>
   </exercise>
@@ -663,17 +663,17 @@
   <section class="key-concepts" id="sect-00036">
   <title>Key Concepts</title>
   <list bullet-style="none" id="list-00111">
-  <item>Normally-distributed data follow a bell-shaped, symmetrical distribution.</item>
-  <item>The mean of normally-distributed data falls at the peak of the distribution. The standard deviation of normally-distributed data is the distance from the peak to either of the inflection points.</item>
-  <item>Data that are normally-distributed follow the 68-95-99.7 Rule, which says that approximately 68% of the data fall within one standard deviation of the mean, 95% fall within two standard deviations, and 99.7% fall within three standard deviations.</item>
-  <item>The z-score for a data value is the number of standard deviations that value falls above (or below, if the z-score is negative) the mean.</item>
+  <item>Normally distributed data follow a bell-shaped, symmetrical distribution.</item>
+  <item>The mean of normally distributed data falls at the peak of the distribution. The standard deviation of normally-distributed data is the distance from the peak to either of the inflection points.</item>
+  <item>Data that are normally distributed follow the 68-95-99.7 Rule, which says that approximately 68% of the data fall within one standard deviation of the mean, 95% fall within two standard deviations, and 99.7% fall within three standard deviations.</item>
+  <item>The <emphasis effect="italic">z</emphasis>-score for a data value is the number of standard deviations that value falls above (or below, if the <emphasis effect="italic">z</emphasis>-score is negative) the mean.</item>
   <item>We can use the normal distribution to estimate percentiles.</item>
   </list>
   </section>
   <section class="formula-review" id="sect-00037">
   <title>Formulas</title>
-  <para id="para-00186">If <emphasis effect="italics">x</emphasis> is a member of a normally distributed data set with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>σ</mi></mfrac><mo>.</mo></mrow></math></equation></para>
+  <para id="para-00186">If <emphasis effect="italics">x</emphasis> is a member of a normally distributed dataset with mean <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>µ</mi></math> and standard deviation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>σ</mi></math>, then the standardized score for <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>σ</mi></mfrac><mo>.</mo></mrow></math></equation></para>
   <para id="para-00187" xmlns="http://cnx.rice.edu/cnxml">If you know a <emphasis effect="italics">z</emphasis>-score but not the original data value <emphasis effect="italics">x</emphasis>, you can find it by solving the previous equation for <emphasis effect="italics">x</emphasis>:<equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>x</mi><mo>=</mo><mi>µ</mi><mo>+</mo><mi>z</mi><mo>×</mo><mi>σ</mi><mo>.</mo></mrow></math></equation></para>
   </section>
-</content>
+ </content>
   </document>
