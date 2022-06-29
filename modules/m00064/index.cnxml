@@ -1,316 +1,329 @@
 <document xmlns="http://cnx.rice.edu/cnxml">
   <title>Credit Cards</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-    <md:title>Credit Cards</md:title>
-    <md:content-id>m00064</md:content-id>
-    <md:uuid>fc999142-28bf-4d96-b5a0-ea293fe23c90</md:uuid>
+  <md:title>Credit Cards</md:title>
+  <md:content-id>m00064</md:content-id>
+  <md:uuid>fc999142-28bf-4d96-b5a0-ea293fe23c90</md:uuid>
   </metadata>
   <content>
-    <figure id="fig-00001">
-    <media alt="A pile of different credit cards.">
-    <image mime-type="image/jpg" src="../../media/CS_Photo_06_08_001.jpg"/>
-    </media>
-    <caption>spec instructions</caption>
-    </figure>
-    <section class="learning-objectives" id="sect-00001">
-    <title>Learning Objectives</title>
-    <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
-    <list list-type="enumerated" number-style="arabic" id="list-00001">
-    <item>Distinguish between the three types of credit cards.</item>
-    <item>Compare and contrast the benefits and drawbacks of credit cards.</item>
-    <item>Compute minimum monthly payment, balance due, and interest for a credit card.</item>
-    </list>
-    </section>
-    <para id="para-00002">It seems almost unimaginable that one could survive in today’s society without at least one credit card. You should consider it a privilege to be extended credit, and possibly a curse if that privilege is abused. In this section, we will talk about the different types of credit cards and their advantages and disadvantages. The more knowledge you have about the credit card industry, the better you will be able to manage your credit accounts, and that knowledge may cause you to make major adjustments to your lifestyle.</para>
-    <section id="sect-00002">
-    <title>Types of Credit Cards</title>
-    <para id="para-00003">All credit cards are not equal, but they all represent consumers borrowing money, usually from a bank, to pay for the things they need or want. There are basically three types of credit cards: Bank-issued credit cards,store-issued credit cards, and travel/entertainment credit cards. We will look at all three and explain the goodand the bad qualities of each.</para>
-    <para id="para-00004"><emphasis effect="bold">Bank-Issued Credit Cards</emphasis></para>
-    <para id="para-00005">Perhaps the most popular credit card type is the bank-issued credit card, like Visa or MasterCard. These types of cards are an example of revolving credit, meaning that additional credit is extended before the previousbalance is paid. Bank-issued cards are considered the most convenient, as they can be used to purchase anything,including apparel, furniture, groceries, fuel for your automobile, meals, hotel bills, and so on, just as if youwere paying with cash. Perhaps the biggest advantage of having a credit card is you do not have to carry cash around.</para>
-    <para id="para-00006">You can order practically anything on your phone or the Internet with a credit card. Additionally, most bank-issued credit cards offer rewards programs and rebates. With some cards, you earn points on certain purchases, which can then be transferred to cash. These benefits can save you a lot of money. Some cards even offer you extended warranties on purchases. On many cards, you are permitted to take a cash advance, as well.</para>
-    <para id="para-00007">You usually receive monthly statements and have 21 days to pay the minimum amount due. Your statement willgive you your current balance, the minimum payment due, and the due date. Missing a due date is one of the worstthings you can do financially and this is by far the biggest downfall of owning a credit card. Not only are you subject to late fees, but if you are late more than once there is a high probability that you will be reported to the credit bureaus, which can destroy your credit rating in no time. <link target-id="fig-00003" document="m00063" xmlns="http://cnx.rice.edu/cnxml">Figure 7.3</link> shows an excerpt from an actual statement from a Chase Bank Visa Card. Specifically pay attention to the Late Payment Penalty and Minimum Payment Warning statements. <link target-id="fig-00003" document="m00063" xmlns="http://cnx.rice.edu/cnxml">Figure 7.3</link> shows an example based on the current $668.45 balance stating that if no other purchases are made and you continue making only the minimum payment, it will take 19 months to pay off the balance and you will pay $754.00. You can’t say you were not warned.</para>
-    <figure id="fig-00002">
-    <media alt="A screenshot of Chase. The screenshot shows the calendar for May 2021. The date, 6 is highlighted. New balance: 668.25 dollars. Minimum payment due: 40.00 dollars. Payment due date: 05/06/21. Late payment warning: if we do not receive your minimum payment by the date listed above, you may have to pay a late fee of up to 40.00 dollars and your APR's will be subject to increase to a maximum penalty APR of 29.99 percent. Minimum payment warning: if you make only the minimum payment each period, you will pay more in interest and it will take you longer to pay off your balance, for example. If you make no additional charges using this card and each month you pay only the minimum payment. You will pay off the balance shown on this statement in about 19 months and you will end up paying an estimated total of 754 dollars.">
+  <figure id="fig-00001">
+  <media alt="A pile of different credit cards.">
+  <image mime-type="image/jpg" src="../../media/CS_Photo_06_08_001.jpg"/>
+  </media>
+  <caption>(credit: Pixabay/Pexels)</caption>
+  </figure>
+  <section class="learning-objectives" id="sect-00001">
+  <title>Learning Objectives</title>
+  <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+  <list list-type="enumerated" number-style="arabic" id="list-00001">
+  <item>Distinguish between the three types of credit cards.</item>
+  <item>Compare and contrast the benefits and drawbacks of credit cards.</item>
+  <item>Compute minimum monthly payment, balance due, and interest for a credit card.</item>
+  </list>
+  </section>
+  <para id="para-00002">It seems almost unimaginable that one could survive in today’s society without at least one credit card. You should consider it a privilege to be extended credit, and possibly a curse if that privilege is abused. In this section, we will talk about the different types of credit cards and their advantages and disadvantages. The more knowledge you have about the credit card industry, the better you will be able to manage your credit accounts, and that knowledge may cause you to make major adjustments to your lifestyle.</para>
+  <section id="sect-00002">
+  <title>Types of Credit Cards</title>
+  <para id="para-00003">All credit cards are not equal, but they all represent consumers borrowing money, usually from a bank, to pay for the things they need or want. There are basically three types of credit cards: Bank-issued credit cards, store-issued credit cards, and travel/entertainment credit cards. We will look at all three and explain the good and the bad qualities of each.</para>
+  <section id="sect-00005">
+  <title>Bank-Issued Credit Cards</title>
+  <para id="para-00005">Perhaps the most popular credit card type is the <term id="term-00001">bank-issued credit card</term>, like Visa or MasterCard. These types of cards are an example of revolving credit, meaning that additional credit is extended before the previous balance is paid. Bank-issued cards are considered the most convenient, as they can be used to purchase anything, including apparel, furniture, groceries, fuel for your automobile, meals, hotel bills, and so on, just as if you were paying with cash. Perhaps the biggest advantage of having a credit card is you do not have to carry cash around.</para>
+  <para id="para-00006">You can order practically anything on your phone or the Internet with a credit card. Additionally, most bank-issued credit cards offer rewards programs and rebates. With some cards, you earn points on certain purchases, which can then be transferred to cash. These benefits can save you a lot of money. Some cards even offer you extended warranties on purchases. On many cards, you are permitted to take a cash advance, as well.</para>
+  <para id="para-00007">You usually receive monthly statements and have 21 days to pay the minimum amount due. Your statement will give you your current balance, the minimum payment due, and the due date. Missing a due date is one of the worst things you can do financially and this is by far the biggest downfall of owning a credit card. Not only are you subject to late fees, but if you are late more than once there is a high probability that you will be reported to the credit bureaus, which can destroy your credit rating in no time. <link target-id="fig-00002" document="m00063" xmlns="http://cnx.rice.edu/cnxml">Figure 6.15</link> shows an excerpt from an actual statement from a Chase Bank Visa Card. Specifically pay attention to the Late Payment Penalty and Minimum Payment Warning statements. <link target-id="fig-00002" document="m00063" xmlns="http://cnx.rice.edu/cnxml">Figure 6.15</link> shows an example based on the current $668.25 balance stating that if no other purchases are made and you continue making only the minimum payment, it will take 19 months to pay off the balance and you will pay $754.00. You can’t say you were not warned.</para>
+  <figure id="fig-00002">
+  <media alt="A screenshot of Chase. The screenshot shows the calendar for May 2021. The date, 6 is highlighted. New balance: 668.25 dollars. Minimum payment due: 40.00 dollars. Payment due date: 05/06/21. Late payment warning: if we do not receive your minimum payment by the date listed above, you may have to pay a late fee of up to 40.00 dollars and your APR's will be subject to increase to a maximum penalty APR of 29.99 percent. Minimum payment warning: if you make only the minimum payment each period, you will pay more in interest and it will take you longer to pay off your balance, for example. If you make no additional charges using this card and each month you pay only the minimum payment. You will pay off the balance shown on this statement in about 19 months and you will end up paying an estimated total of 754 dollars.">
     <image mime-type="image/png" src="../../media/CS_Figure_06_08_001.png"/>
-    </media>
-    <caption>Credit Card Statement</caption>
-    </figure>
-    <para id="para-00008">It is critical that you examine your statement every month because it is always a possibility that your account may have been compromised. If you should notice fraudulent charges on your statement, notifying the creditcard company is usually enough to have those charges removed. The card with the fraudulent charges will be cancelled and a new card with a new account number will be sent to you.</para>
-    <para id="para-00009">It can be difficult to get along these days without at least one credit card. Most hotels and rental car agencies require that you use a credit card. There are even a number of retailers and restaurants that no longer accept cash. Nothing contributes more to a good credit rating than a solid history of making credit card payments on time. Without a decent credit score, you cannot buy or even lease a home, purchase an automobile on time, or purchase anything on time. If you own your business, a poor credit score can destroy it.</para>
-    <para id="para-00010">Use caution as you shop around for a credit card that suits you. Pay attention to the interest rate and read the small print regarding late fees. On the other hand, make sure you understand their rewards programs and rebates as well. Make sure that the rewards offered are appropriate for your lifestyle. If not, then select another, as there are plenty to choose from. Another piece of advice from the experts is to never take cash advances as the interest rates are even higher than credit purchases.</para>
-    <para id="para-00011"><emphasis effect="bold">Store Credit Cards</emphasis></para>
-    <para id="para-00012">Store credit cards are issued by retailers. You can hardly walk into a store these days without being offered a discount on purchases if you apply for the store credit card. These cards can only be used in that store or family of stores that issues the card. However, if a store credit card is associated with Visa, MasterCard, orAmerican Express, then the card can be used the same way that the bank-issued cards are used. It is called cobranding. The logo of the bank-issued card will be present on the store card. Many stores offer both types.</para>
-    <para id="para-00013">Store credit cards usually charge higher interest rates than bank-issued cards. Currently, store credit cards have an APR (annual percentage rate) of 24.15%. Bank-issued cards have an average 20.09% APR. Any rewards offered by store credit cards are usually limited to purchases made in their own store, and it does take longer toaccumulate enough rewards or points to redeem them. Whereas cobranded credit cards offer opportunities to earn rewards on all purchases, regardless of whether purchases are made in the issuing store or not.</para>
-    <para id="para-00014">Store credit cards usually offer lower credit limits, at least in the beginning. After you have proven to be a responsible credit card owner, credit limits can be raised. Nevertheless, store credit cards are a good choice for those new to the credit card industry. If you consistently make on-time payments, it is an excellent wayto get started building your credit history.</para>
-    <para id="para-00015"><emphasis effect="bold">Travel/Entertainment Cards</emphasis></para>
-    <para id="para-00016">This is the third type of credit card. The travel and entertainment cards first and foremost offer unlimited credit, but they must be paid in full every month. They generally charge high annual fees and impose expensive penalties should your payment be late. On the other hand, they typically have longer grace periods and offer many and various kinds of rewards. At one time, Diner’s Club was the premier entertainment card. To be accepted into the Diner’s Club and be rewarded with a charge card meant you were special.</para>
-    <para id="para-00017">An American Express card is held with the same reverence as Diner’s Club. It was a privilege to ownone of these cards. Now, Diner’s Club is in its phase-out stage, they accept no new applications, but it has been replaced by the Chase Sapphire Preferred Card and a few others as well. There is a lot of competition going on to replace Diner’s Club.</para>
-    <para id="para-00018">The following is a copy of what these travel/entertainment cards offer. This passage is taken directly from the Chase Ultimate Rewards Plus web site:</para>
-    <figure id="fig-00003">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_figure_06_08_002.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00019">Another thing worth mentioning here and something that appears to be an unusual offering is part of the American Express Gold and higher level cards. You can actually open a savings account, buy a CD, or apply for a personal or business loan from American Express. The company boasts a higher interest rate than what is paid on traditional savings accounts and CDs.</para>
-    </section>
-    <section id="sect-00003">
-    <title>Average Daily Balance</title>
-    <para id="para-00020">Most credit card companies compute interest using the Average Daily Balance method.</para>
-    <example id="exam-00001">
-    <title>Computing Average Daily Balance, Finance Charge, and Balance</title>
-    <exercise id="exer-00001">
-    <problem id="prob-00001">
-    <para id="para-00021">Suppose your credit card company charges an annual interest rate of 19.2%, or 1.6% a month on the average daily balance. Your billing period for May goes from May 1 to May 30, and on May 1 your previous balance was $450.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00002">
-    <item>Compute the average daily balance for the next billing cycle (May 30).</item>
-    <item>Compute the finance charge that will appear on the next bill.</item>
-    <item>Compute the balance on May 30.</item>
-    </list>
-    <para id="para-00022">Here is a list of the activity on your card for May:</para>
-    <table class="unnumbered" summary="." id="table-00001">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <tbody>
-    <row>
-    <entry>May 1</entry>
-    <entry>Billing Date Balance</entry>
-    <entry>$450.21</entry>
-    </row>
-    <row>
-    <entry>May 10</entry>
-    <entry>Payment</entry>
-    <entry>$120.00</entry>
-    </row>
-    <row>
-    <entry>May 15</entry>
-    <entry>Groceries</entry>
-    <entry> $83.43</entry>
-    </row>
-    <row>
-    <entry>May 26</entry>
-    <entry>Auto Parts</entry>
-    <entry> $45.12</entry>
-    </row>
-    <row>
-    <entry>May 30</entry>
-    <entry>Shoes</entry>
-    <entry> $98.23</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </problem>
-    <solution id="sol-00001">
-    <list list-type="enumerated" number-style="arabic" id="list-00003">
-    <item>To compute your average daily balance, make a table showing all transactions for the billing cycle including a running balance.
-    <table class="unnumbered" summary="." id="table-00002">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry>Date</entry>
-    <entry>Running Balance</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>May 1</entry>
-    <entry>$450.21</entry>
-    </row>
-    <row>
-    <entry>May 10</entry>
-    <entry>$450.21 – $120.00 = $330.21</entry>
-    </row>
-    <row>
-    <entry>May 15</entry>
-    <entry>$330.21 + $83.43 = $413.64</entry>
-    </row>
-    <row>
-    <entry>May 26</entry>
-    <entry>$413.64 + $45.12 = $458.76</entry>
-    </row>
-    <row>
-    <entry>May 30</entry>
-    <entry>$458.76 + $98.23 = $556.99</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00023">The next step is to make another table that lists the running balances and the number of days until the balance changed. Multiply the number of days by each balance.</para>
-    <table class="unnumbered" summary="." id="table-00003">
-    <tgroup cols="4">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry>Date</entry>
-    <entry>Running Balance</entry>
-    <entry>Number of days until Balance Changed</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>Running</mtext></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>Balance</mtext></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>·</mtext><mrow><mo>(</mo><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>Number</mtext></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>of Days</mtext></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row>
-    <entry>May 1</entry>
-    <entry>$450.21</entry>
-    <entry>9</entry>
-    <entry>$4051.89</entry>
-    </row>
-    <row>
-    <entry>May 10</entry>
-    <entry>$330.21</entry>
-    <entry>5</entry>
-    <entry>$1651.05</entry>
-    </row>
-    <row>
-    <entry>May 15</entry>
-    <entry>$413.64</entry>
-    <entry>11</entry>
-    <entry>$4550.04</entry>
-    </row>
-    <row>
-    <entry>May 26</entry>
-    <entry>$458.76</entry>
-    <entry>4</entry>
-    <entry>$1835.04</entry>
-    </row>
-    <row>
-    <entry>May 30</entry>
-    <entry>$556.99</entry>
-    <entry>2</entry>
-    <entry>$1113.98</entry>
-    </row>
-    <row>
-    <entry/>
-    <entry>Totals</entry>
-    <entry>31</entry>
-    <entry>$13202.00</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00024">The average daily balance <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>=</mo><mfrac><mrow><mtext>Sum of daily balances</mtext></mrow><mrow><mtext>Days in billing cycle</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>$</mi><mn>13202</mn></mrow><mrow><mn>31</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>425.87</mn></mrow></math></para></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The interest charge for May comes to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>425.87</mn><mo stretchy="false">(</mo><mn>0.016</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>6.81.</mn></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The balance on May 31 will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>556.99</mn><mo>+</mo><mi>$</mi><mn>6.81</mn><mo>=</mo><mi>$</mi><mn>563.80.</mn></mrow></math></item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00002">
-    <problem id="prob-00002">
-    <para id="para-00025"><link class="os-embed" url="#exercise/CM-C06-M8-Q001"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section class="section-exercises" id="sect-00004">
-    <title>Exercises</title>
-    <exercise id="exer-00003">
-    <problem id="prob-00003">
-    <para id="para-00026"><link class="os-embed" url="#exercise/CM-C06-M8-Q002"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00004">
-    <problem id="prob-00004">
-    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C06-M8-Q003"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00005">
-    <problem id="prob-00005">
-    <para id="para-00028"><link class="os-embed" url="#exercise/CM-C06-M8-Q004"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00006">
-    <problem id="prob-00006">
-    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M8-Q005"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00007">
-    <problem id="prob-00007">
-    <para id="para-00030"><link class="os-embed" url="#exercise/CM-C06-M8-Q006"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00008">
-    <problem id="prob-00008">
-    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C06-M8-Q007"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00009">
-    <problem id="prob-00009">
-    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C06-M8-Q008"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00010">
-    <problem id="prob-00010">
-    <para id="para-00033"><link class="os-embed" url="#exercise/CM-C06-M8-Q009"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00011">
-    <problem id="prob-00011">
-    <para id="para-00034"><link class="os-embed" url="#exercise/CM-C06-M8-Q010"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00012">
-    <problem id="prob-00012">
-    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C06-M8-Q011"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00013">
-    <problem id="prob-00013">
-    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C06-M8-Q012"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00014">
-    <problem id="prob-00014">
-    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C06-M8-Q013"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00015">
-    <problem id="prob-00015">
-    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M8-Q014"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00016">
-    <problem id="prob-00016">
-    <para id="para-00039"><link class="os-embed" url="#exercise/CM-C06-M8-Q015"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00017">
-    <problem id="prob-00017">
-    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C06-M8-Q016"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00018">
-    <problem id="prob-00018">
-    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C06-M8-Q017"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00019">
-    <problem id="prob-00019">
-    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C06-M8-Q018"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00020">
-    <problem id="prob-00020">
-    <para id="para-00043"><link class="os-embed" url="#exercise/CM-C06-M8-Q019"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00021">
-    <problem id="prob-00021">
-    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C06-M8-Q020"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00022">
-    <problem id="prob-00022">
-    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C06-M8-Q021"/></para>
-    </problem>
-    </exercise>
-    </section>
-    </content>
-    </document>
+  </media>
+  <caption>Credit Card Statement (credit: Pixabay/Pexels)</caption>
+  </figure>
+  <para id="para-00008">It is critical that you examine your statement every month because it is always a possibility that your account may have been compromised. If you should notice fraudulent charges on your statement, notifying the credit card company is usually enough to have those charges removed. The card with the fraudulent charges will be canceled and a new card with a new account number will be sent to you.</para>
+  <para id="para-00009">It can be difficult to get along these days without at least one credit card. Most hotels and rental car agencies require that you use a credit card. There are even a number of retailers and restaurants that no longer accept cash. Nothing contributes more to a good credit rating than a solid history of making credit card payments on time. Without a decent credit score, you cannot buy or even lease a home, purchase an automobile on time, or purchase anything on time. If you own your business, a poor credit score can destroy it.</para>
+  <para id="para-00010">Use caution as you shop around for a credit card that suits you. Pay attention to the interest rate and read the small print regarding late fees. On the other hand, make sure you understand their rewards programs and rebates as well. Make sure that the rewards offered are appropriate for your lifestyle. If not, then select another, as there are plenty to choose from. Another piece of advice from the experts is to never take cash advances as the interest rates are even higher than credit purchases.</para>
+  </section>
+  <section id="sect-00006">
+  <title>Store Credit Cards</title>
+  <para id="para-00012"><term id="term-00002">Store credit cards</term> are issued by retailers. You can hardly walk into a store these days without being offered a discount on purchases if you apply for the store credit card. These cards can only be used in that store or family of stores that issues the card. However, if a store credit card is associated with Visa, MasterCard, or American Express, then the card can be used the same way that the bank-issued cards are used. It is called cobranding. The logo of the bank-issued card will be present on the store card. Many stores offer both types.</para>
+  <para id="para-00013">Store credit cards usually charge higher interest rates than bank-issued cards. Currently, store credit cards have an APR (annual percentage rate) of 24.15%. Bank-issued cards have an average 20.09% APR. Any rewards offered by store credit cards are usually limited to purchases made in their own store, and it does take longer to accumulate enough rewards or points to redeem them, Whereas cobranded credit cards offer opportunities to earn rewards on all purchases, regardless of whether purchases are made in the issuing store or not.</para>
+  <para id="para-00014">Store credit cards usually offer lower credit limits, at least in the beginning. After you have proven to be a responsible credit card owner, credit limits can be raised. Nevertheless, store credit cards are a good choice for those new to the credit card industry. If you consistently make on-time payments, it is an excellent way to get started building your credit history.</para>
+  </section>
+  <section id="sect-00007">
+  <title>Travel/Entertainment Credit Card</title>
+  <para id="para-00016">This is the third type of credit card. The <term id="term-00003">travel and entertainment cards</term> first and foremost offer unlimited credit, but they must be paid in full every month. They generally charge high annual fees and impose expensive penalties should your payment be late. On the other hand, they typically have longer grace periods and offer many and various kinds of rewards. At one time, Diner’s Club was the premier entertainment card. To be accepted into the Diner’s Club and be rewarded with a charge card meant you were special.</para>
+  <para id="para-00017">Today, an American Express card is held with the same reverence as Diner’s Club was in the past. It was a privilege to own one of these cards. Now, Diner’s Club is in its phase-out stage, they accept no new applications, but it has been replaced by the Chase Sapphire Preferred Card and a few others as well. There is a lot of competition going on to replace Diner’s Club, as shown by the Chase Sapphire Preferred Card's travel rewards and benefits.</para>
+  <para id="para-00018">Another thing worth mentioning here and something that appears to be an unusual offering is part of the American Express Gold and higher-level cards. You can actually open a savings account, buy a CD, or apply for a personal or business loan from American Express. The company boasts a higher interest rate than what is paid on traditional savings accounts and CDs.</para>
+  <figure id="fig-00003">
+  <media alt="Insert Alt Text">
+  <image mime-type="image/jpg" src="../../media/CS_figure_06_08_002.jpg"/>
+  </media>
+  </figure>
+  <para id="para-00019">Another thing worth mentioning here and something that appears to be an unusual offering is part of the American Express Gold and higher level cards. You can actually open a savings account, buy a CD, or apply for a personal or business loan from American Express. The company boasts a higher interest rate than what is paid on traditional savings accounts and CDs.</para>
+  </section>
+  </section>
+  <section id="sect-00003">
+  <title>Average Daily Balance</title>
+  <para id="para-00020">Most credit card companies compute interest using the Average Daily Balance method.</para>
+  <example id="exam-00001">
+  <title>Computing Average Daily Balance, Finance Charge, and Balance</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001">
+  <para id="para-00021">Suppose your credit card company charges an annual interest rate of 19.2%, or 1.6% a month on the average daily balance. Your billing period for May goes from May 1 to May 30, and on May 1 your previous balance was $450.</para>
+  <list list-type="enumerated" number-style="arabic" id="list-00002">
+  <item>Compute the average daily balance for the next billing cycle (May 30).</item>
+  <item>Compute the finance charge that will appear on the next bill.</item>
+  <item>Compute the balance on May 30.</item>
+  </list>
+  <para id="para-00022">Here is a list of the activity on your card for May:</para>
+  <table class="unnumbered" summary="." id="table-00001">
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Date</entry>
+  <entry>Activity</entry>
+  <entry>Amount</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>May 1</entry>
+  <entry>Billing Date Balance</entry>
+  <entry>$450.21</entry>
+  </row>
+  <row>
+  <entry>May 10</entry>
+  <entry>Payment</entry>
+  <entry>$120.00</entry>
+  </row>
+  <row>
+  <entry>May 15</entry>
+  <entry>Groceries</entry>
+  <entry> $83.43</entry>
+  </row>
+  <row>
+  <entry>May 26</entry>
+  <entry>Auto Parts</entry>
+  <entry> $45.12</entry>
+  </row>
+  <row>
+  <entry>May 30</entry>
+  <entry>Shoes</entry>
+  <entry> $98.23</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  <solution id="sol-00001">
+  <list list-type="enumerated" number-style="arabic" id="list-00003">
+  <item>To compute your average daily balance, make a table showing all the transactions for the billing cycle including a running balance.
+  <table class="unnumbered" summary="." id="table-00002">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Date</entry>
+  <entry>Running Balance</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>May 1</entry>
+  <entry>$450.21</entry>
+  </row>
+  <row>
+  <entry>May 10</entry>
+  <entry>$450.21 – $120.00 = $330.21</entry>
+  </row>
+  <row>
+  <entry>May 15</entry>
+  <entry>$330.21 + $83.43 = $413.64</entry>
+  </row>
+  <row>
+  <entry>May 26</entry>
+  <entry>$413.64 + $45.12 = $458.76</entry>
+  </row>
+  <row>
+  <entry>May 30</entry>
+  <entry>$458.76 + $98.23 = $556.99</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00023">The next step is to make another table that lists the running balances and the number of days until the balance changed. Multiply the number of days by each balance.</para>
+  <table class="unnumbered" summary="." id="table-00003">
+  <tgroup cols="4">
+  <colspec colnum="1" colname="c1" colwidth="1*"/>
+  <colspec colnum="2" colname="c2" colwidth="1*"/>
+  <colspec colnum="3" colname="c3" colwidth="1*"/>
+  <colspec colnum="4" colname="c4" colwidth="1*"/>
+  <thead>
+  <row>
+  <entry>Date</entry>
+  <entry>Running Balance</entry>
+  <entry>Number of days until Balance Changed</entry>
+  <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>Running</mtext></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>Balance</mtext></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mtext>•</mtext><mrow><mo>(</mo><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>Number</mtext></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>of Days</mtext></mrow></mtd></mtr></mtable></mrow><mo>)</mo></mrow></mrow></math></entry>
+  </row>
+  </thead>
+  <tbody xmlns="http://cnx.rice.edu/cnxml">
+  <row>
+  <entry>May 1</entry>
+  <entry>$450.21</entry>
+  <entry>9</entry>
+  <entry>$4,051.89</entry>
+  </row>
+  <row>
+  <entry>May 10</entry>
+  <entry>$330.21</entry>
+  <entry>5</entry>
+  <entry>$1,651.05</entry>
+  </row>
+  <row>
+  <entry>May 15</entry>
+  <entry>$413.64</entry>
+  <entry>11</entry>
+  <entry>$4,550.04</entry>
+  </row>
+  <row>
+  <entry>May 26</entry>
+  <entry>$458.76</entry>
+  <entry>4</entry>
+  <entry>$1,835.04</entry>
+  </row>
+  <row>
+  <entry>May 30</entry>
+  <entry>$556.99</entry>
+  <entry>2</entry>
+  <entry>$1,113.98</entry>
+  </row>
+  <row>
+  <entry/>
+  <entry>Totals</entry>
+  <entry>31</entry>
+  <entry>$13,202.00</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00024">The average daily balance <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>=</mo><mfrac><mrow><mtext>Sum of daily balances</mtext></mrow><mrow><mtext>Days in billing cycle</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>$</mi><mn>13202</mn></mrow><mrow><mn>31</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>425.87</mn></mrow></math></para></item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The interest charge for May comes to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>425.87</mn><mo stretchy="false">(</mo><mn>0.016</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>6.81.</mn></mrow></math></item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The balance on May 31 will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>556.99</mn><mo>+</mo><mi>$</mi><mn>6.81</mn><mo>=</mo><mi>$</mi><mn>563.80.</mn></mrow></math></item>
+  </list>
+  </solution>
+  </exercise>
+  </example>
+  <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00002">
+  <problem id="prob-00002">
+  <para id="para-00025"><link class="os-embed" url="#exercise/CM-C06-M8-Q001"/></para>
+  </problem>
+  </exercise>
+  </note>
+  </section>
+  <section class="section-exercises" id="sect-00004">
+  <title>Exercises</title>
+  <exercise id="exer-00003">
+  <problem id="prob-00003">
+  <para id="para-00026"><link class="os-embed" url="#exercise/CM-C06-M8-Q002"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00004">
+  <problem id="prob-00004">
+  <para id="para-00027"><link class="os-embed" url="#exercise/CM-C06-M8-Q003"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00005">
+  <problem id="prob-00005">
+  <para id="para-00028"><link class="os-embed" url="#exercise/CM-C06-M8-Q004"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00006">
+  <problem id="prob-00006">
+  <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M8-Q005"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00007">
+  <problem id="prob-00007">
+  <para id="para-00030"><link class="os-embed" url="#exercise/CM-C06-M8-Q006"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00008">
+  <problem id="prob-00008">
+  <para id="para-00031"><link class="os-embed" url="#exercise/CM-C06-M8-Q007"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00009">
+  <problem id="prob-00009">
+  <para id="para-00032"><link class="os-embed" url="#exercise/CM-C06-M8-Q008"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00010">
+  <problem id="prob-00010">
+  <para id="para-00033"><link class="os-embed" url="#exercise/CM-C06-M8-Q009"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00011">
+  <problem id="prob-00011">
+  <para id="para-00034"><link class="os-embed" url="#exercise/CM-C06-M8-Q010"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00012">
+  <problem id="prob-00012">
+  <para id="para-00035"><link class="os-embed" url="#exercise/CM-C06-M8-Q011"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00013">
+  <problem id="prob-00013">
+  <para id="para-00036"><link class="os-embed" url="#exercise/CM-C06-M8-Q012"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00014">
+  <problem id="prob-00014">
+  <para id="para-00037"><link class="os-embed" url="#exercise/CM-C06-M8-Q013"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00015">
+  <problem id="prob-00015">
+  <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M8-Q014"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00016">
+  <problem id="prob-00016">
+  <para id="para-00039"><link class="os-embed" url="#exercise/CM-C06-M8-Q015"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00017">
+  <problem id="prob-00017">
+  <para id="para-00040"><link class="os-embed" url="#exercise/CM-C06-M8-Q016"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00018">
+  <problem id="prob-00018">
+  <para id="para-00041"><link class="os-embed" url="#exercise/CM-C06-M8-Q017"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00019">
+  <problem id="prob-00019">
+  <para id="para-00042"><link class="os-embed" url="#exercise/CM-C06-M8-Q018"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00020">
+  <problem id="prob-00020">
+  <para id="para-00043"><link class="os-embed" url="#exercise/CM-C06-M8-Q019"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00021">
+  <problem id="prob-00021">
+  <para id="para-00044"><link class="os-embed" url="#exercise/CM-C06-M8-Q020"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00022">
+  <problem id="prob-00022">
+  <para id="para-00045"><link class="os-embed" url="#exercise/CM-C06-M8-Q021"/></para>
+  </problem>
+  </exercise>
+  </section>
+  </content>
+  </document>
