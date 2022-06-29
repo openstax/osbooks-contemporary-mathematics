@@ -1,223 +1,223 @@
 <document xmlns="http://cnx.rice.edu/cnxml">
   <title>Sales Tax</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-    <md:title>Sales Tax</md:title>
-    <md:content-id>m00058</md:content-id>
-    <md:uuid>5b2eeed1-542b-4235-a730-853ba0de7dae</md:uuid>
+  <md:title>Sales Tax</md:title>
+  <md:content-id>m00058</md:content-id>
+  <md:uuid>5b2eeed1-542b-4235-a730-853ba0de7dae</md:uuid>
   </metadata>
   <content>
-      <figure id="fig-00001">
-      <media alt="A saleswoman interacts with a young couple in a car dealership showroom and gives a pen and a form to them.">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_06_02_001.jpg"/>
-      </media>
-      <caption>XXX (Credit:"buy a balloon, get a car" by frankieleon/Flickr, CC BY 2.0)</caption>
-      </figure>
-      <section class="learning-objectives" id="sect-00001">
-      <title>Learning Objectives</title>
-      <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
-      <list list-type="enumerated" number-style="arabic" id="list-00001">
-      <item>Compute sales tax.</item>
-      <item>Solve application problems involving sales tax.</item>
-      </list>
-      </section>
-      <section id="sect-00002">
-      <title>Computing Sales Tax</title>
-      <para id="para-00002">When a tax on goods and services is paid by the consumer to the state, city or county, it is called a sales tax. Tax rates vary from state to state and can make a huge impact on your pocketbook. The state sales tax may affect your daily life. For example, suppose you want to buy a car. You live in Chicago, and the sticker price of the car you want is $32,549 at your local dealership. Then, you find that the final price, including sales tax, is $35,885.27. You decide to visit a friend in Indianapolis that weekend. You visit an Indianapolis dealership that has the exact same car you want. It has the same sticker price of $32,549. However, at this dealership, the final price including sales tax is $34,827.43. That is a difference of over $1,057. The difference is caused by the tax rate in the two different states.</para>
-      <para id="para-00003"><emphasis effect="bold">Penny Picher Series</emphasis></para>
-      <para id="para-00004">If the tax rate in a neighboring state is lower than in your state, and you think that purchasing a high-ticket item like an automobile in your neighboring state will save you money, think again.</para>
-      <para id="para-00005">When you register your plates in your home state, you will find that they cost an additional amount over the standard price. The extra sales tax you would have paid on your new car had you purchased it in your home state is added on to the cost of registration. This is a no-win situation.</para>
-      <para id="para-00006">Calculating a sales tax rate is the same regardless of where you live. To find out how much of the final price is sales tax, we subtract the sticker price from the total price, which in the car purchase example, comes to $3336.27 for the Chicago deal, and $2278.43 for the Indianapolis deal. Then, use this equation: Letting <emphasis effect="italic">x</emphasis> = the tax rate, we have</para>
-      <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>3336.27</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>3336.27</mn></mrow><mrow><mn>32549</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.1025</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>10.25</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
-      <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">That is a 10.25% sales tax rate for Chicago.</para>
-      <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>2278.43</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>2278.43</mn></mrow><mrow><mn>32549</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.07</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>7</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
-      <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">While the sales tax rate in Indianapolis is 7%.</para>
-      <para id="para-00009">There are two ways to determine the final price of an item including sales tax if you know the tax rate:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00002">
-      <item>Multiply the original amount by the tax rate and then add the tax to the item.</item>
-      <item>Multiply the original amount by 1 plus the tax rate, and the result is the final price.</item>
-      </list>
-      <para id="para-00010">Continuing with the same example and using method 1 to find the total price including sales tax for the Chicago deal we have</para>
-      <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>10.25</mn><mi>%</mi><mo>=</mo><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>0.1025</mn></mtd></mtr><mtr><mtd><mo>=</mo><mi>$</mi><mn>3336.27</mn></mtd></mtr><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>+</mo><mi>$</mi><mn>3336.27</mn><mo>=</mo><mi>$</mi><mn>35885.27</mn></mtd></mtr></mtable></math></equation>
-      <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">For the Indianapolis deal and using method 2, we have</para>
-      <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>7</mn><mi>%</mi><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>1.07</mn></mtd></mtr><mtr><mtd><mo>=</mo><mi>$</mi><mn>34</mn><mo>,</mo><mn>825.29</mn></mtd></mtr></mtable></math></equation>
-      <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">In any case, regardless of what it is you are purchasing, you can find either the amount of sales tax or the tax rate using these same methods.</para>
-      <example id="exam-00001">
-      <title>Computing Sales Tax</title>
-      <exercise id="exer-00001">
-      <problem id="prob-00001">
-      <list list-type="enumerated" number-style="arabic" id="list-00003">
-      <item>If the sales tax rate is 5.5%, how much tax will you pay on something that costs $123.00?</item>
-      <item>How much more will you pay if the sale tax rate is 6% on an item costing $123.00?</item>
-      <item>Find the sales tax rate on a purchase of $130.00 if the total amount is $139.75?</item>
-      <item>Find the sales tax rate on a purchase of $499.00 if the total price is $523.95?</item>
-      </list>
-      </problem>
-      <solution id="sol-00001">
-      <list list-type="enumerated" number-style="arabic" id="list-00004">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>123</mn><mo stretchy="false">(</mo><mn>.055</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6.77</mn><mo>,</mo></mrow></math> or $6.77</item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>123</mn><mo stretchy="false">(</mo><mn>0.06</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7.38</mn><mo>,</mo></mrow></math> or $7.38.<newline xmlns="http://cnx.rice.edu/cnxml"/>
-      <para id="para-00013">$7.38 - $6.77=$0.61 more.</para></item>
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>139.75</mn><mo>−</mo><mn>130</mn><mo>=</mo><mn>9.75</mn></mrow></math>
-      <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable rowspacing="0.3em"><mtr><mtd columnalign="right"><mn>130</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>9.75</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>9.75</mn></mrow><mrow><mn>130</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.075</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7.5</mn><mi>%</mi></mtd></mtr></mtable></math></equation></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>523.95</mn><mo>−</mo><mi>$</mi><mn>499</mn><mo>=</mo><mi>$</mi><mn>24.95</mn></mrow></math>
-      <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable rowspacing="0.3em"><mtr><mtd columnalign="right"><mn>499</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>24.95</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>24.95</mn></mrow><mrow><mn>499</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.05</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn><mi>%</mi></mtd></mtr></mtable></math></equation></item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="Your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00002">
-      <problem id="prob-00002">
-      <para id="para-00014"><link class="os-embed" url="#exercise/CM-C06-M2-Q001"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <para id="para-00015">If you know the final price and you know the tax rate, can you find the original amount? Of course, you can. Suppose that you are going to purchase an item with an original price of $60.00. The sales tax rate is 6%. Tofind the total amount in one step, using method 2). Multiply: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>60</mn><mo stretchy="false">(</mo><mn>1.06</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>61.60.</mn></mrow></math> Now, if you know the final price is $61.60, and you know the tax rate is 6%, we just reverse the process to find the original price. Then,</para>
-      <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>1.06</mn><mi>x</mi><mo>=</mo><mn>61.60</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>61.60</mn></mrow><mrow><mn>1.06</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>60.00</mn></mtd></mtr></mtable></math></equation>
-      <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Determining the Original Price</title>
-      <exercise id="exer-00003">
-      <problem id="prob-00003">
-      <para id="para-00016">Find the original price of an item that has a total cost of $4860 if the sales tax in this state is 8%.</para>
-      </problem>
-      <solution id="sol-00002">
-      <para id="para-00017">We have that</para>
-      <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>1.08</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>4860</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>4860</mn></mrow><mrow><mn>1.08</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>4500</mn></mtd></mtr></mtable></math></equation>
-      </solution>
-      </exercise>
-      </example>
-      <note class="Your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00004">
-      <problem id="prob-00004">
-      <para id="para-00018"><link class="os-embed" url="#exercise/CM-C06-M2-Q002"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00003">
-      <title>Calculating Sales Tax with a Discount</title>
-      <exercise id="exer-00005">
-      <problem id="prob-00005">
-      <para id="para-00019">Suppose you intend to buy a new computer and find what you want at a 15% discount. The sales tax rate is 6%. The initial cost of the computer is $1550. How much will you end up paying for the computer?</para>
-      </problem>
-      <solution id="sol-00003">
-      <para id="para-00020">First, we want to calculate the discount:</para>
-      <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>1550</mn><mo stretchy="false">(</mo><mn>0.15</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>232.5</mn></mtd></mtr><mtr><mtd><mi>$</mi><mn>1550</mn><mo>−</mo><mi>$</mi><mn>232.5</mn><mo>=</mo><mi>$</mi><mn>1317.5.</mn></mtd></mtr></mtable></math></equation>
-      <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">The cost of the computer with the discount is $1317.50. Next, calculate the sales tax. We have</para>
-      <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>$</mi><mn>1317.5</mn><mo stretchy="false">(</mo><mn>0.06</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>79.05.</mn></mrow></math></equation>
-      <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">The sales tax is $79.05. Then, the total cost of the computer is cost of the computer with the discount plus the sales tax: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>1317.5</mn><mo>+</mo><mi>$</mi><mn>79.05</mn><mo>=</mo><mi>$</mi><mn>1396.55.</mn></mrow></math></para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="Your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00006">
-      <problem id="prob-00006">
-      <para id="para-00023"><link class="os-embed" url="#exercise/CM-C06-M2-Q003"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section class="section-exercises" id="sect-00003">
-      <title>Exercises</title>
-      <exercise id="exer-00007">
-      <problem id="prob-00007">
-      <para id="para-00024"><link class="os-embed" url="#exercise/CM-C06-M2-Q004"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00008">
-      <problem id="prob-00008">
-      <para id="para-00025"><link class="os-embed" url="#exercise/CM-C06-M2-Q005"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00009">
-      <problem id="prob-00009">
-      <para id="para-00026"><link class="os-embed" url="#exercise/CM-C06-M2-Q006"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00010">
-      <problem id="prob-00010">
-      <para id="para-00027"><link class="os-embed" url="#exercise/CM-C06-M2-Q007"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00011">
-      <problem id="prob-00011">
-      <para id="para-00028"><link class="os-embed" url="#exercise/CM-C06-M2-Q008"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00012">
-      <problem id="prob-00012">
-      <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M2-Q009"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00013">
-      <problem id="prob-00013">
-      <para id="para-00030"><link class="os-embed" url="#exercise/CM-C06-M2-Q010"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00014">
-      <problem id="prob-00014">
-      <para id="para-00031"><link class="os-embed" url="#exercise/CM-C06-M2-Q011"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00015">
-      <problem id="prob-00015">
-      <para id="para-00032"><link class="os-embed" url="#exercise/CM-C06-M2-Q012"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00016">
-      <problem id="prob-00016">
-      <para id="para-00033"><link class="os-embed" url="#exercise/CM-C06-M2-Q013"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00017">
-      <problem id="prob-00017">
-      <para id="para-00034"><link class="os-embed" url="#exercise/CM-C06-M2-Q014"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00018">
-      <problem id="prob-00018">
-      <para id="para-00035"><link class="os-embed" url="#exercise/CM-C06-M2-Q015"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00019">
-      <problem id="prob-00019">
-      <para id="para-00036"><link class="os-embed" url="#exercise/CM-C06-M2-Q016"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00020">
-      <problem id="prob-00020">
-      <para id="para-00037"><link class="os-embed" url="#exercise/CM-C06-M2-Q017"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00021">
-      <problem id="prob-00021">
-      <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M2-Q018"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00022">
-      <problem id="prob-00022">
-      <para id="para-00039"><link class="os-embed" url="#exercise/CM-C06-M2-Q019"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00023">
-      <problem id="prob-00023">
-      <para id="para-00040"><link class="os-embed" url="#exercise/CM-C06-M2-Q020"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00024">
-      <problem id="prob-00024">
-      <para id="para-00041"><link class="os-embed" url="#exercise/CM-C06-M2-Q021"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00025">
-      <problem id="prob-00025">
-      <para id="para-00042"><link class="os-embed" url="#exercise/CM-C06-M2-Q022"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00026">
-      <problem id="prob-00026">
-      <para id="para-00043"><link class="os-embed" url="#exercise/CM-C06-M2-Q023"/></para>
-      </problem>
-      </exercise>
-      </section>
-      </content>
-      </document>
+  <figure id="fig-00001">
+  <media alt="A saleswoman interacts with a young couple in a car dealership showroom and gives a pen and a form to them.">
+  <image mime-type="image/jpg" src="../../media/CS_Photo_06_02_001.jpg"/>
+  </media>
+  <caption>(credit: Antoni Shkraba/Pexels) (Credit:"buy a balloon, get a car" by frankieleon/Flickr, CC BY 2.0)</caption>
+  </figure>
+  <section class="learning-objectives" id="sect-00001">
+  <title>Learning Objectives</title>
+  <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+  <list list-type="enumerated" number-style="arabic" id="list-00001">
+  <item>Compute sales tax.</item>
+  <item>Solve application problems involving sales tax.</item>
+  </list>
+  </section>
+  <section id="sect-00002">
+  <title>Computing Sales Tax</title>
+  <para id="para-00002">When a tax on goods and services is paid by the consumer to the state, city, or county, it is called a <emphasis effect="bold">sales tax</emphasis>. Tax rates vary from state to state and can make a huge impact on your pocketbook. The state sales tax may affect your daily life. For example, suppose you want to buy a car. You live in Chicago, and the sticker price of the car you want is $32,549 at your local dealership. Then, you find that the final price, including sales tax, is $35,885.27. You decide to visit a friend in Indianapolis that weekend. You visit an Indianapolis dealership that has the exact same car you want. It has the same sticker price of $32,549. However, at this dealership, the final price including sales tax is $34,827.43. That is a difference of over $1,057. The difference is caused by the tax rate in the two different states.</para>
+  <para id="para-00003"><emphasis effect="bold">Penny Picher Series</emphasis></para>
+  <para id="para-00004">If the tax rate in a neighboring state is lower than in your state, and you think that purchasing a high-ticket item like an automobile in your neighboring state will save you money, think again.</para>
+  <para id="para-00005">When you register your plates in your home state, you will find that they cost an additional amount over the standard price. The extra sales tax you would have paid on your new car had you purchased it in your home state is added on to the cost of registration. This is a no-win situation.</para>
+  <para id="para-00006">Calculating a sales tax rate is the same regardless of where you live. To find out how much of the final price is sales tax, we subtract the sticker price from the total price, which in the car purchase example comes to $3,336.27 for the Chicago deal, and $2,278.43 for the Indianapolis deal. Then, use this equation: Letting <emphasis effect="italic">x</emphasis> = the tax rate, we have</para>
+  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>3336.27</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>3336.27</mn></mrow><mrow><mn>32549</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.1025</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>10.25</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
+  <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">That is a 10.25% sales tax rate for Chicago.</para>
+  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>2278.43</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>2278.43</mn></mrow><mrow><mn>32549</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.07</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>7</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
+  <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">While the sales tax rate in Indianapolis is 7%.</para>
+  <para id="para-00009">There are two ways to determine the final price of an item including sales tax if you know the tax rate:</para>
+  <para id="para-00044"><emphasis effect="bold">Method 1:</emphasis> Multiply the original amount by the tax rate and then add the tax to the item.</para>
+  <para id="para-00045"><emphasis effect="bold">Method 2:</emphasis> Multiply the original amount by 1 plus the tax rate, and the result is the final price.</para>
+  <para id="para-00010">Continuing with the same example and using method 1 to find the total price including sales tax for the Chicago deal we have</para>
+  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>10.25</mn><mi>%</mi><mo>=</mo><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>0.1025</mn></mtd></mtr><mtr><mtd><mo>=</mo><mi>$</mi><mn>3336.27</mn></mtd></mtr><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>+</mo><mi>$</mi><mn>3336.27</mn><mo>=</mo><mi>$</mi><mn>35885.27</mn></mtd></mtr></mtable></math></equation>
+  <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">For the Indianapolis deal and using method 2, we have</para>
+  <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>7</mn><mi>%</mi><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>1.07</mn></mtd></mtr><mtr><mtd><mo>=</mo><mi>$</mi><mn>34</mn><mo>,</mo><mn>825.29</mn></mtd></mtr></mtable></math></equation>
+  <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">In any case, regardless of what it is you are purchasing, you can find either the amount of sales tax or the tax rate using these same methods.</para>
+  <example id="exam-00001">
+  <title>Computing Sales Tax</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001">
+  <list list-type="enumerated" number-style="arabic" id="list-00003">
+  <item>If the sales tax rate is 5.5%, how much tax will someone pay on something that costs $123.00?</item>
+  <item>How much more will someone pay if the sale tax rate is 6% on an item costing $123.00?</item>
+  <item>Find the sales tax rate on a purchase of $130.00 if the total amount is $139.75.</item>
+  <item>Find the sales tax rate on a purchase of $499.00 if the total price is $523.95.</item>
+  </list>
+  </problem>
+  <solution id="sol-00001">
+  <list list-type="enumerated" number-style="arabic" id="list-00004">
+  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>123</mn><mo stretchy="false">(</mo><mn>.055</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6.77</mn><mo>,</mo></mrow></math> or $6.77</item>
+  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>123</mn><mo stretchy="false">(</mo><mn>0.06</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7.38</mn><mo>,</mo></mrow></math> or $7.38.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+  <para id="para-00013">$7.38 - $6.77=$0.61 more.</para></item>
+  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>139.75</mn><mo>−</mo><mn>130</mn><mo>=</mo><mn>9.75</mn></mrow></math>
+  <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable rowspacing="0.3em"><mtr><mtd columnalign="right"><mn>130</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>9.75</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>9.75</mn></mrow><mrow><mn>130</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.075</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7.5</mn><mi>%</mi></mtd></mtr></mtable></math></equation></item>
+  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>523.95</mn><mo>−</mo><mi>$</mi><mn>499</mn><mo>=</mo><mi>$</mi><mn>24.95</mn></mrow></math>
+  <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable rowspacing="0.3em"><mtr><mtd columnalign="right"><mn>499</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>24.95</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>24.95</mn></mrow><mrow><mn>499</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.05</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn><mi>%</mi></mtd></mtr></mtable></math></equation></item>
+  </list>
+  </solution>
+  </exercise>
+  </example>
+  <note class="Your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00002">
+  <problem id="prob-00002">
+  <para id="para-00014"><link class="os-embed" url="#exercise/CM-C06-M2-Q001"/></para>
+  </problem>
+  </exercise>
+  </note>
+  <para id="para-00015">If you know the final price and you know the tax rate, can you find the original amount? Of course, you can. Suppose that you are going to purchase an item with an original price of $60.00. The sales tax rate is 6%. To find the total amount in one step, using Method 2 multiply: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>60</mn><mo stretchy="false">(</mo><mn>1.06</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>61.60.</mn></mrow></math> Now, if you know the final price is $61.60, and you know the tax rate is 6%, we just reverse the process to find the original price. Then,</para>
+  <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>1.06</mn><mi>x</mi><mo>=</mo><mn>61.60</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>61.60</mn></mrow><mrow><mn>1.06</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>60.00</mn></mtd></mtr></mtable></math></equation>
+  <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+  <title>Determining the Original Price</title>
+  <exercise id="exer-00003">
+  <problem id="prob-00003">
+  <para id="para-00016">Find the original price of an item that has a total cost of $4,860 if the sales tax in this state is 8%.</para>
+  </problem>
+  <solution id="sol-00002">
+  <para id="para-00017">We have that</para>
+  <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>1.08</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>4860</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>4860</mn></mrow><mrow><mn>1.08</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>4500</mn></mtd></mtr></mtable></math></equation>
+  </solution>
+  </exercise>
+  </example>
+  <note class="Your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00004">
+  <problem id="prob-00004">
+  <para id="para-00018"><link class="os-embed" url="#exercise/CM-C06-M2-Q002"/></para>
+  </problem>
+  </exercise>
+  </note>
+  <example id="exam-00003">
+  <title>Calculating Sales Tax with a Discount</title>
+  <exercise id="exer-00005">
+  <problem id="prob-00005">
+  <para id="para-00019">Suppose you intend to buy a new computer and find what you want at a 15% discount. The sales tax rate is 6%. The initial cost of the computer is $1,550. How much will you end up paying for the computer?</para>
+  </problem>
+  <solution id="sol-00003">
+  <para id="para-00020"><emphasis effect="bold">Step 1:</emphasis> First, calculate the discount:</para>
+  <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>1550</mn><mo stretchy="false">(</mo><mn>0.15</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>232.5</mn></mtd></mtr><mtr><mtd><mi>$</mi><mn>1550</mn><mo>−</mo><mi>$</mi><mn>232.5</mn><mo>=</mo><mi>$</mi><mn>1317.5.</mn></mtd></mtr></mtable></math></equation>
+  <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">The cost of the computer with the discount is $1,317.50.</para>
+   <para id="para-00046"><emphasis effect="bold">Step 2:</emphasis> Next, calculate the sales tax.</para>
+  <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>$</mi><mn>1317.5</mn><mo stretchy="false">(</mo><mn>0.06</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>79.05.</mn></mrow></math></equation>
+  <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">The sales tax is $79.05.</para>
+  <para id="para-00047"><emphasis effect="bold">Step 3:</emphasis> Then, the total cost of the computer is the cost of the computer with the discount plus the sales tax: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>1317.5</mn><mo>+</mo><mi>$</mi><mn>79.05</mn><mo>=</mo><mi>$</mi><mn>1396.55.</mn></mrow></math></para>
+  </solution>
+  </exercise>
+  </example>
+  <note class="Your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+  <exercise id="exer-00006">
+  <problem id="prob-00006">
+  <para id="para-00023"><link class="os-embed" url="#exercise/CM-C06-M2-Q003"/></para>
+  </problem>
+  </exercise>
+  </note>
+  </section>
+  <section class="section-exercises" id="sect-00003">
+  <title>Exercises</title>
+  <exercise id="exer-00007">
+  <problem id="prob-00007">
+  <para id="para-00024"><link class="os-embed" url="#exercise/CM-C06-M2-Q004"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00008">
+  <problem id="prob-00008">
+  <para id="para-00025"><link class="os-embed" url="#exercise/CM-C06-M2-Q005"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00009">
+  <problem id="prob-00009">
+  <para id="para-00026"><link class="os-embed" url="#exercise/CM-C06-M2-Q006"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00010">
+  <problem id="prob-00010">
+  <para id="para-00027"><link class="os-embed" url="#exercise/CM-C06-M2-Q007"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00011">
+  <problem id="prob-00011">
+  <para id="para-00028"><link class="os-embed" url="#exercise/CM-C06-M2-Q008"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00012">
+  <problem id="prob-00012">
+  <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M2-Q009"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00013">
+  <problem id="prob-00013">
+  <para id="para-00030"><link class="os-embed" url="#exercise/CM-C06-M2-Q010"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00014">
+  <problem id="prob-00014">
+  <para id="para-00031"><link class="os-embed" url="#exercise/CM-C06-M2-Q011"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00015">
+  <problem id="prob-00015">
+  <para id="para-00032"><link class="os-embed" url="#exercise/CM-C06-M2-Q012"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00016">
+  <problem id="prob-00016">
+  <para id="para-00033"><link class="os-embed" url="#exercise/CM-C06-M2-Q013"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00017">
+  <problem id="prob-00017">
+  <para id="para-00034"><link class="os-embed" url="#exercise/CM-C06-M2-Q014"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00018">
+  <problem id="prob-00018">
+  <para id="para-00035"><link class="os-embed" url="#exercise/CM-C06-M2-Q015"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00019">
+  <problem id="prob-00019">
+  <para id="para-00036"><link class="os-embed" url="#exercise/CM-C06-M2-Q016"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00020">
+  <problem id="prob-00020">
+  <para id="para-00037"><link class="os-embed" url="#exercise/CM-C06-M2-Q017"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00021">
+  <problem id="prob-00021">
+  <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M2-Q018"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00022">
+  <problem id="prob-00022">
+  <para id="para-00039"><link class="os-embed" url="#exercise/CM-C06-M2-Q019"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00023">
+  <problem id="prob-00023">
+  <para id="para-00040"><link class="os-embed" url="#exercise/CM-C06-M2-Q020"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00024">
+  <problem id="prob-00024">
+  <para id="para-00041"><link class="os-embed" url="#exercise/CM-C06-M2-Q021"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00025">
+  <problem id="prob-00025">
+  <para id="para-00042"><link class="os-embed" url="#exercise/CM-C06-M2-Q022"/></para>
+  </problem>
+  </exercise>
+  <exercise id="exer-00026">
+  <problem id="prob-00026">
+  <para id="para-00043"><link class="os-embed" url="#exercise/CM-C06-M2-Q023"/></para>
+  </problem>
+  </exercise>
+  </section>
+  </content>
+  </document>
