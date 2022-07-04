@@ -6,6 +6,12 @@
   <md:uuid>ae50f851-5a6d-413f-81a1-ffa213607a1b</md:uuid>
   </metadata>
   <content>
+  <figure class="numbered" id="fig-00001">
+  <media alt="A girl and a boy each showing 4 fingers. The boy is placing his hand on his face.">
+  <image mime-type="image/jpg" src="../../media/CS_Photo_03_06_007.jpg"/>
+  </media>
+  <caption> A photo of Arthur Benjamin at his TED talk</caption>
+  </figure>
   <section class="learning-objectives" id="sect-00001">
   <title>Learning Objectives</title>
   <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
@@ -15,32 +21,27 @@
   <item>Recognize properties of real numbers.</item>
   </list>
   </section>
-  <figure class="numbered" id="fig-00001">
-  <media alt="A girl and a boy each showing 4 fingers. The boy is placing his hand on his face.">
-  <image mime-type="image/jpg" src="../../media/CS_Photo_03_06_007.jpg"/>
-  </media>
-  <caption>caption and credit to come</caption>
-  </figure>
   <para id="para-00002">Have you ever been impressed by the speed at which someone can do math in their head? Most of us at one time or another have witnessed a person speed through mental math, an impressive feat that often bests calculators. One such person is Neelkantha Bhanu Prakash. As of September 20, 2020, he is considered the world’s fastest human calculator. He currently holds four world records. How does someone do that, though? Have they memorized lots of arithmetic facts? Are they simply brilliant?</para>
   <para id="para-00003">The answer isn't simple so much as it is about knowledge. Real numbers behave in some very regular ways, following rules that can be learned. In this section, those rules are explored.</para>
+<note class="video" id="note-00006">
   <para id="para-00004"><link url="https://openstax.org/r/Arthur_Benjamin_TED_talk,_Faster_than_a_Calculator">Arthur Benjamin TED Talk, Faster Than a Calculator</link></para>
+</note>
   <section id="sect-00002">
   <title>Defining and Identifying Real Numbers</title>
-  <para id="para-00005"><emphasis effect="bold">Real numbers</emphasis> are the rational and irrational numbers combined.</para>
-  <para id="para-00006">The real numbers represent the collection of all physical distances that exist, along with 0 and the negatives of those physical distances. For example, if you take a measure of three units, and divide that distance into eight (8) equal lengths, the distance you have formed is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math> units. Also, if you draw a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">right triangle</emphasis> (a triangle with one angle equal to 90 degrees) with one side length of 1, and the other side length of 3, the long side of the triangle will have length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>10</mn></mrow></msqrt></math> units, as shown in Figure 3-40.</para>
+  <para id="para-00005"><emphasis effect="bold">Real numbers</emphasis> are the rational and irrational numbers combined. The real numbers represent the collection of all physical distances that exist, along with 0 and the negatives of those physical distances. For example, if you take a measure of three units, and divide that distance into eight (8) equal lengths, the distance you have formed is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac></mrow></math> units. Also, if you draw a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">right triangle</emphasis> (a triangle with one angle equal to 90 degrees) with one side length of 1, and the other side length of 3, the long side of the triangle will have length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>10</mn></mrow></msqrt></math> units, as shown in <link target-id="fig-00002" document="m00046" xmlns="http://cnx.rice.edu/cnxml">Figure 3.29</link>.</para>
   <figure class="numbered" id="fig-00002" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A right triangle. The legs measure 1 and 3. The hypotenuse measures square root of 10.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_001.jpg"/>
   </media>
-  <caption>Right triangle</caption>
+  <caption><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>10</mn></mrow></msqrt></math></caption>
   </figure>
   <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">Of course, if we name something the real numbers, there must be numbers that aren't real. Otherwise, they’d just be called the numbers. One such not real number, one that cannot be a length, is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mo>−</mo><mn>1</mn></mrow></msqrt></math>. It is part of a collection of numbers called the complex numbers, it is denoted with the letter <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>. As an extension, the square root of any negative number is not a real number, but instead a complex number.</para>
-  <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">To determine if a number is real or not, check to see if there are any negatives under a square root or any <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi><mo>'</mo><mi>s</mi></math>. If there are any present, the number is not real.</para>
+  <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">To determine if a number is real, check to see if there are any negatives under a square root or any <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi><mo>'</mo><mi>s</mi></math>. If there are any present, the number is not real.</para>
   <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
-  <title> Identifying Real Numbers</title>
+  <title>Identifying Real Numbers</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
-  <para id="para-00009">Determine if each of the following are real numbers.</para>
+  <para id="para-00009">Determine if each of the following are real numbers:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00002">
   <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mfrac><mrow><mn>4</mn><msqrt><mn>3</mn></msqrt></mrow><mn>7</mn></mfrac></math></item>
   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13.3381</mn></math></item>
@@ -50,7 +51,7 @@
   <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
   <list list-type="enumerated" number-style="arabic" id="list-00003">
   <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mfrac><mrow><mn>4</mn><msqrt><mn>3</mn></msqrt></mrow><mn>7</mn></mfrac></math> is a real number, as there are no negatives under the square roots, nor is there any factor of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13.3381</mn></math> is a rational number, and so is a real number.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13.3381</mn></math> is a rational number, and so it is a real number.</item>
   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>17</mn><msqrt><mrow><mo>−</mo><mn>8</mn></mrow></msqrt></math> is not a real number, as there is a negative number under the square root.</item>
   </list>
   </solution>
@@ -98,7 +99,7 @@
   <entry>Integers</entry>
   <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>ℤ</mtext></math></entry>
   <entry xmlns="http://cnx.rice.edu/cnxml">The natural numbers, their negatives, and 0</entry>
-  <entry>{…,-3, -2, -1, 0, 1, 2, 3…}</entry>
+  <entry>{…,−3, −2, −1, 0, 1, 2, 3…}</entry>
   </row>
   <row>
   <entry>Rational Numbers</entry>
@@ -121,14 +122,14 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00012">When we categorize numbers using these sets, we use the smallest set that they belong to. For instance, − 7 is an integer, and a rational number, and a real number. The smallest set to which − 7 belongs is integer, so we’d say it belongs to the integers.</para>
+  <para id="para-00012">When we categorize numbers using these sets, we use the smallest set that they belong to. For instance, −7 is an integer, and a rational number, and a real number. The smallest set to which −7 belongs is integer, so we’d say it belongs to the integers.</para>
   <para id="para-00013">We can also represent the relationships between the different sets of real numbers using set notation. All natural numbers are integers, but there are integers that are not natural numbers, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>ℕ</mtext><mo>⊂</mo><mtext>ℤ</mtext></mrow></math>. Similarly, every integer is a rational number, but there are rational numbers that are not integers, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>ℤ</mtext><mo>⊂</mo><mtext>ℚ</mtext></mrow></math>. The same is true of the rational numbers and the real numbers, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>ℚ</mtext><mo>⊂</mo><mtext>ℝ</mtext></mrow></math>.</para>
-  <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">There is no agreed-upon symbol for the irrational numbers. If we represent the irrationals as the set A, we should note that the following are true: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>ℚ</mtext><mo>∪</mo><mi>A</mi><mo>=</mo><mi>ℝ</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℚ</mi><mo>∩</mo><mi>A</mi><mo>=</mo><mo>∅</mo></mrow></math>. Recall that this means the irrationals are the complement of the rational numbers in the universal set of real numbers.</para>
+  <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">There is no agreed-upon symbol for the irrational numbers. If we represent the irrationals as the set A, we should note that the following are true: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>ℚ</mtext><mo>∪</mo><mi>A</mi><mo>=</mo><mtext>ℝ</mtext></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>ℚ</mtext><mo>∩</mo><mi>A</mi><mo>=</mo><mo>∅</mo></mrow></math>. Recall that this means the irrationals are the complement of the rational numbers in the universal set of real numbers.</para>
   <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
   <title>Categorizing Numbers</title>
   <exercise id="exer-00003">
   <problem id="prob-00003">
-  <para id="para-00015">Identify all subsets of the real numbers to which the following real numbers belong.</para>
+  <para id="para-00015">Identify all subsets of the real numbers to which the following real numbers belong:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00004">
   <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn></math></item>
   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo><mn>14.223</mn></math></item>
@@ -137,7 +138,7 @@
   </problem>
   <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
   <list list-type="enumerated" number-style="arabic" id="list-00005">
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn></math> is a natural number, integer, rational number</item>
+  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>14</mn></math> is a natural number, integer, and rational number.</item>
   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>−</mo><mn>14.223</mn></math> is a rational number.</item>
   <item xmlns="http://cnx.rice.edu/cnxml"> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msqrt><mrow><mn>17</mn></mrow></msqrt></math> is an irrational number.</item>
   </list>
@@ -152,16 +153,16 @@
   </exercise>
   </note>
   <example id="exam-00003">
-  <title> Categorizing Numbers within a Venn Diagram</title>
+  <title>Categorizing Numbers within a Venn Diagram</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
-  <para id="para-00017">Place the following numbers correctly into the Venn diagram (Figure 3.41).</para>
+  <para id="para-00017">Place the following numbers correctly in the Venn diagram (<link target-id="fig-00003" document="m00046">Figure 3.30</link>).</para>
   <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mspace width="1em"/><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mspace width="1em"/><mo>−</mo><mn>10</mn><mspace width="1em"/><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac><mspace width="1em"/><mn>41</mn><mspace width="1em"/><mfrac><mn>1</mn><mrow><mn>20</mn></mrow></mfrac><mspace width="1em"/><mn>4</mn><mi>π</mi></mrow></math></equation>
   <figure class="numbered" id="fig-00003" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_008.jpg"/>
   </media>
-  <caption>Venn diagram</caption>
+  <caption/>
   </figure>
   </problem>
   <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
@@ -170,42 +171,42 @@
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R. The oval, R reads, negative 4 times square root of 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_002.jpg"/>
   </media>
-  <caption>Venn diagram showing. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></math></caption>
+  <caption/>
   </figure>
-  <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">Since − 10 is an integer, it belongs in the integers but outside the natural numbers.</para>
+  <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">Since −10 is an integer, it belongs in the integers but outside the natural numbers.</para>
   <figure class="numbered" id="fig-00005">
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R. The oval, Z reads, negative 10. The oval, R reads, negative 4 times square root of 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_003.jpg"/>
   </media>
-  <caption>Venn diagram showing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></math> and − 10</caption>
+  <caption/>
   </figure>
   <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac></mrow></math> is a rational number, it belongs in the rational numbers but not in the integers.</para>
   <figure class="numbered" id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R. The oval, Z reads, negative 10. The oval, Q reads, 37 over 150. The oval, R reads, negative 4 times square root of 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_004.jpg"/>
   </media>
-  <caption> Venn diagram showing. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>,</mo><mo>−</mo><mn>10</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac></mrow></math></caption>
+  <caption/>
   </figure>
   <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">Since 41 is a natural number, it belongs in the natural numbers circle.</para>
   <figure class="numbered" id="fig-00007">
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R. The oval, N reads, 41. The oval, Z reads, negative 10. The oval, Q reads, 37 over 150. The oval, R reads, negative 4 times square root of 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_005.jpg"/>
   </media>
-  <caption> Venn diagram showing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>,</mo><mo>−</mo><mn>10</mn><mo>,</mo><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac></mrow></math>, and 41</caption>
+  <caption/>
   </figure>
   <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math> is a rational number, it belongs in the rational numbers but not in the integers.</para>
   <figure class="numbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R. The oval, N reads, 41. The oval, Z reads, negative 10 and 1 over 20. The oval, Q reads, 37 over 150. The oval, R reads, negative 4 times square root of 2.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_006.jpg"/>
   </media>
-  <caption>Venn diagram showing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>,</mo><mo>−</mo><mn>10</mn><mo>,</mo><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac></mrow></math>,41, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math></caption>
+  <caption/>
   </figure>
   <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml">Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mi>π</mi></mrow></math> is irrational, it belongs in the real numbers, but outside the rational numbers.</para>
   <figure class="numbered" xmlns="http://cnx.rice.edu/cnxml" id="fig-00009">
   <media alt="A Venn diagram shows four concentric ovals. The ovals are labeled from inner to outer as follows: N, Z, Q, and R. The oval, N reads, 41. The oval, Z reads, negative 10 and 1 over 20. The oval, Q reads, 37 over 150. The oval, R reads, negative 4 times square root of 2 and 4 pi.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_06_007.jpg"/>
   </media>
-  <caption>Venn diagram showing <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>,</mo><mo>−</mo><mn>10</mn><mo>,</mo><mfrac><mrow><mn>37</mn></mrow><mrow><mn>150</mn></mrow></mfrac></mrow></math>, 41, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mi>π</mi></mrow></math></caption>
+  <caption/>
   </figure>
   </solution>
   </exercise>
@@ -258,7 +259,7 @@
   <entry xmlns="http://cnx.rice.edu/cnxml">Doesn't matter which pair of numbers is added first</entry>
   </row>
   <row>
-  <entry>Associative property of multiplication <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo><mo>+</mo><mi>c</mi></math></entry>
+  <entry>Associative property of multiplication <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>×</mo><mo stretchy="false">(</mo><mi>b</mi><mo>×</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>×</mo><mi>b</mi><mo stretchy="false">)</mo><mo>×</mo><mi>c</mi></math></entry>
   <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn><mo>×</mo><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><mn>5</mn>
   <mo stretchy="false">)</mo><mo>×</mo><mn>7</mn></math></entry>
   <entry xmlns="http://cnx.rice.edu/cnxml">Doesn't matter which pair of numbers is multiplied first</entry>
@@ -286,7 +287,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00028">The names of the properties are suggestive. The <emphasis effect="bold">commutative properties</emphasis>,for example, suggest commuting, or moving. <emphasis effect="bold">Associative properties</emphasis> suggest which items are associated with others, or, if order matters in the computation. The <emphasis effect="bold">distributive property</emphasis> addresses how a number is distributed across parentheses.</para>
+  <para id="para-00028">The names of the properties are suggestive. The <emphasis effect="bold">commutative properties</emphasis>, for example, suggest commuting, or moving. <emphasis effect="bold">Associative properties</emphasis> suggest which items are associated with others, or if order matters in the computation. The <emphasis effect="bold">distributive property</emphasis> addresses how a number is distributed across parentheses.</para>
   <example id="exam-00004">
   <title>Identifying Properties of Real Numbers</title>
   <exercise id="exer-00007">
@@ -333,7 +334,7 @@
   <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn><mo>×</mo><mn>13</mn><mo>×</mo><mn>50</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>50</mn><mo>×</mo><mn>13</mn><mo>=</mo><mn>100</mn><mo>×</mo><mn>13</mn><mo>=</mo><mn>1300</mn></math></equation></item>
   <item xmlns="http://cnx.rice.edu/cnxml">Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>40</mn></math>, so that becomes the addition to do first. Use the commutative property of addition to change the order in which the numbers are added.<newline xmlns="http://cnx.rice.edu/cnxml"/>
   <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn><mo>+</mo><mn>84</mn><mo>+</mo><mn>27</mn><mo>=</mo><mn>13</mn><mo>+</mo><mn>27</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>40</mn><mo>+</mo><mn>84</mn><mo>=</mo><mn>124</mn></math></equation></item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>×</mo><mn>11</mn><mo>=</mo><mn>99</mn></mrow></math>. Using that, the problem can be changed to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtr><mtd><mn>99</mn><mo>×</mo><mn>16</mn></mtd></mtr></math>. That, however, doesn't look easy at all. But <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>99</mn><mo>×</mo><mn>16</mn><mo>=</mo><mo stretchy="false">(</mo><mn>100</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></math>. Using the distributive property, we rewrite and expand this, as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>99</mn><mo>×</mo><mn>16</mn><mo>=</mo><mo stretchy="false">(</mo><mn>100</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>×</mo><mn>16</mn><mo>=</mo><mn>100</mn><mo>×</mo><mn>16</mn><mo>−</mo><mn>1</mn><mo>×</mo><mn>16</mn><mo>=</mo><mn>1600</mn><mo>−</mo><mn>16</mn></mrow></math>. The last step is subtraction, so the final answer is 1,584. So, multiplying by 99 is the same as multiplying by 100, and then subtracting the other number once.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>×</mo><mn>11</mn><mo>=</mo><mn>99</mn></mrow></math>. Using that, the problem can be changed to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtr><mtd><mn>99</mn><mo>×</mo><mn>16</mn></mtd></mtr></math>. That, however, doesn't look easy at all. But <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>99</mn><mo>=</mo><mo stretchy="false">(</mo><mn>100</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></math>. Using the distributive property, we rewrite and expand this as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>99</mn><mo>×</mo><mn>16</mn><mo>=</mo><mo stretchy="false">(</mo><mn>100</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>×</mo><mn>16</mn><mo>=</mo><mn>100</mn><mo>×</mo><mn>16</mn><mo>−</mo><mn>1</mn><mo>×</mo><mn>16</mn><mo>=</mo><mn>1600</mn><mo>−</mo><mn>16</mn></mrow></math>. The last step is subtraction, so the final answer is 1,584. So, multiplying by 99 is the same as multiplying by 100, and then subtracting the other number once.</item>
   </list>
   </solution>
   </exercise>
@@ -345,9 +346,15 @@
   </problem>
   </exercise>
   </note>
+<note class="video" id="note-00007">
   <para id="para-00034"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers_1">Properties of the Real Numbers 1</link></para>
+</note>
+<note class="video" id="note-00008">
   <para id="para-00035"><link url="https://openstax.org/r/Properties_of_the-Real_Numbers_2">Properties of the Real Numbers 2</link></para>
+</note>
+<note class="video" id="note-00009">
   <para id="para-00036"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers_3">Properties of the Real Numbers 3</link></para>
+</note>
   </section>
   <section class="check-understanding" id="sect-00005">
   <title>Check Your Understanding</title>
@@ -373,11 +380,6 @@
   <para id="para-00040"><link class="os-embed" url="#exercise/CM-C03-M6-Q009"/></para>
   </problem>
   </exercise>
-  <exercise id="exer-00015">
-  <problem id="prob-00015">
-  <para id="para-00041"><link class="os-embed" url="#exercise/CM-C03-M6-Q010"/></para>
-  </problem>
-  </exercise>
   <exercise id="exer-00016">
   <problem id="prob-00016">
   <para id="para-00042"><link class="os-embed" url="#exercise/CM-C03-M6-Q011"/></para>
@@ -394,8 +396,6 @@
   </problem>
   </exercise>
   </section>
-  <section id="sect-00007">
-  <title>Module 6 – Real Numbers</title>
   <section class="key-terms" id="sect-00008">
   <title>Key Terms</title>
   <list bullet-style="none" id="list-00010">
@@ -446,7 +446,6 @@
   <para id="para-00048"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers_#1">Properties of the Real Numbers #1</link></para>
   <para id="para-00049"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers-#2">Properties of the Real Numbers #2</link></para>
   <para id="para-00050"><link url="https://openstax.org/r/Properties_of_the_Real_Numbers-#3">Properties of the Real Numbers #3</link></para>
-  </section>
   </section>
   </content>
   </document>
