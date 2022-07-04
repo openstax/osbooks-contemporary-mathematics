@@ -6,6 +6,12 @@
   <md:uuid>5cc525d7-a218-44ce-9183-5913f6238fae</md:uuid>
   </metadata>
   <content>
+  <figure class="numbered" id="fig-00001">
+  <media alt="A woman using her smartphone as she sits at a table with a cup beside her. She is also holding a credit card.">
+  <image mime-type="image/jpg" src="../../media/CS_Photo_03_07_008.jpg"/>
+  </media>
+  <caption>caption and credit to come (Credit: modification of work “Senior couple at home checking finance on credit card from above” by Nenad Stojkovic/Flickr, CC BY 2.0)</caption>
+  </figure>
   <section class="learning-objectives" id="sect-00001">
   <title>Learning Objectives</title>
   <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
@@ -14,19 +20,13 @@
   <item>Apply clock arithmetic to calculate real-world applications.</item>
   </list>
   </section>
-  <figure class="numbered" id="fig-00001">
-  <media alt="A woman using her smartphone as she sits at a table with a cup beside her. She is also holding a credit card.">
-  <image mime-type="image/jpg" src="../../media/CS_Photo_03_07_008.jpg"/>
-  </media>
-  <caption>caption and credit to come</caption>
-  </figure>
   <para id="para-00002">Online shopping requires you to enter your credit card number, which is then sent electronically to the vendor. Using an ATM involves sliding your bank card into a reader, which then reads, sends, and verifies your card. Swiping or tapping for a purchase in a brick–and-mortar store is how your card sends its information to the machine, which is then communicated to the store’s computer and your credit card company. This information is read, recorded, and transferred many times. Each instance provides one more opportunity for error to creep into the process, a misrecorded digit, transposed digits, or missing digits. Fortunately, these card numbers have a built-in error checking system that relies on modular arithmetic, which is often referred to as clock arithmetic. In this section, we explore clock, or modular, arithmetic.</para>
   <note class="video" id="note-00001">
   <para id="para-00003"><link url="https://openstax.org/r/Determining the_Day_of_the_Week_for_Any_Date_in_History">Determining the Day of the Week for Any Date in History</link></para>
   </note>
   <section id="sect-00002">
   <title>Adding, Subtracting, and Multiplying Using Clock Arithmetic</title>
-  <para id="para-00004">When we do arithmetic, numbers can become larger and larger. But when we work with time, specifically with clocks, the numbers cycle back on themselves. It will never be 49 o’clock. Once 12 o’clock is reached, we go back to 1 and repeat the numbers. If it's 11 AM and someone says, "See you in four hours," you know that 11 AM plus 4 hours is 3 PM, not 15 AM (ignoring military time for now). Math worked on the clock, where numbers restart after passing 12, is called <term id="term-00001">clock arithmetic</term>.</para>
+  <para id="para-00004">When we do arithmetic, numbers can become larger and larger. But when we work with time, specifically with clocks, the numbers cycle back on themselves. It will never be 49 o’clock. Once 12 o’clock is reached, we go back to 1 and repeat the numbers. If it's 11 AM and someone says, “See you in four hours,” you know that 11 AM plus 4 hours is 3 PM, not 15 AM (ignoring military time for now). Math worked on the clock, where numbers restart after passing 12, is called <term id="term-00001">clock arithmetic</term>.</para>
   <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (Figure 3.54). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
   <figure class="numbered" id="fig-00002">
   <media alt="An analog clock with the hour hand pointing to 3. A clockwise arrow around the clock is labeled 12 hours later.">
@@ -34,7 +34,7 @@
   </media>
   <caption>Clock showing 3:00 , with arrow going around the clock one full time, or 12 hours</caption>
   </figure>
-  <para id="para-00006">What do 2, 14, 26, and 38 have in common in relation to 12? When they are divided by 12, they each have a remainder of 2. That's the key. When you add a number of hours to a specific time on the clock, first divide the number of hours being added by 12 and determine the remainder. Add that remainder to the time on the clock to know what time it will be. A good visualization of this is to wrap a number line around the clock, with the 0 at the starting time. Then each time 12 on the number line passes, the number line passes the starting spot on the clock. This is referred to as <term id="term-00002">modulo 12</term> arithmetic. Even though the process says to divide the number being added by 12, first perform the addition; the result will be the same if you add the numbers first, and then divide by 12 and determine the remainder. In general terms, let <emphasis effect="italic">n</emphasis> be a positive integer. Then <emphasis effect="italic">n</emphasis> modulo 12, written ( <emphasis effect="italic">n</emphasis> mod 12), is the remainder when <emphasis effect="italic">n</emphasis> is divided by 12. If that remainder is <emphasis effect="italic">x</emphasis>, we would write <emphasis effect="italic">n</emphasis> = <emphasis effect="italic">x</emphasis> (mod 12).</para>
+  <para id="para-00006">What do 2, 14, 26, and 38 have in common in relation to 12? When they are divided by 12, they each have a remainder of 2. That's the key. When you add a number of hours to a specific time on the clock, first divide the number of hours being added by 12 and determine the remainder. Add that remainder to the time on the clock to know what time it will be. A good visualization of this is to wrap a number line around the clock, with the 0 at the starting time. Then each time 12 on the number line passes, the number line passes the starting spot on the clock. This is referred to as <term id="term-00002">modulo 12</term> arithmetic. Even though the process says to divide the number being added by 12, first perform the addition; the result will be the same if you add the numbers first, and then divide by 12 and determine the remainder. In general terms, let <emphasis effect="italic">n</emphasis> be a positive integer. Then <emphasis effect="italic">n</emphasis> modulo 12, written (<emphasis effect="italic">n</emphasis> mod 12), is the remainder when <emphasis effect="italic">n</emphasis> is divided by 12. If that remainder is <emphasis effect="italic">x</emphasis>, we would write <emphasis effect="italic">n</emphasis> = <emphasis effect="italic">x</emphasis> (mod 12).</para>
   <note class="check-point" id="note-00002">
   <para id="para-00007"><emphasis effect="italic">Caution: 12 mod 12 is 0. So, if a mod 12 problem ends at 0, that would be 12 on the clock.</emphasis></para>
   </note>
@@ -42,7 +42,7 @@
   <title>Determining the Value of a Number modulo 12</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
-  <para id="para-00008">Find the value of the following numbers modulo 12.</para>
+  <para id="para-00008">Find the value of the following numbers modulo 12:</para>
   <list list-type="enumerated" number-style="arabic" id="list-00002">
   <item>34</item>
   <item>539</item>
@@ -54,33 +54,33 @@
   <list list-type="enumerated" number-style="arabic" id="list-00003">
   <item>To find the value 34 modulo 12:<newline/>
   <para id="para-00010"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 34 is divided by 12 using long division. The largest multiple of 12 that is less than or equal to 34 is 24, which is the product of 12 and 2.
-  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder accentunder="true"><mrow><mn>24</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Performing the subtraction yields 10.
-  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>89</mn></mrow></menclose></mrow><mn>7</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>84</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>10</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>89</mn></mrow></menclose></mrow><mn>7</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>84</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="1.78em"/><mn>10</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">Since that subtraction resulted in a number less than 12, that is the remainder, 10. The value of 34 modulo 12 is 10, or 34 = 10 (mod 12).</para></item>
   <item>To find the value 539 modulo 12:<newline/>
   <para id="para-00013"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 539 is divided by 12 using long division. We first look to the first two digits of 539, 53. The largest multiple of 12 that is less than or equal to 53 is 48, which is the product of 12 and 4.
-  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="0.68em"/><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Performing the subtraction results in 5.
-  <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mn>5</mn></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><mspace width="0.68em"/><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="1.48em"/><mn>5</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now, the 9 is brought down.
-  <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mn>4</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><mspace width="0.68em"/><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="2.38em"/><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> The largest multiple of 12 that is less than or equal to 59 is once more 48 itself, which is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>12</mn><mo>×</mo><mn>4</mn></math>.
-  <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mrow><mn>44</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mtd></mtr></mtable></math></equation></para>
+  <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mrow><mn>44</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><mspace width="0.80em"/><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="2.38em"/><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mn>48</mn><mspace width="0.34em"/></mrow><mo stretchy="true">_</mo></munder></mtd></mtr></mtable></math></equation></para>
   <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Finishing the process, the 48 is subtracted from the 59, yielding 11.
-  <equation id="eq-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mrow><mn>44</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder><mrow><mn>48</mn></mrow><mrow><mn>11</mn></mrow></munder></mtd></mtr></mtable></math></equation></para>
+  <equation id="eq-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>539</mn></mrow></menclose></mrow><mrow><mn>44</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><mspace width="0.80em"/><munder accentunder="true"><mrow><mn>48</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="2.38em"/><mn>59</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder><mrow><munder accentunder="true"><mrow><mn>48</mn><mspace width="0.34em"/></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>11</mn><mspace width="0.50em"/></mrow></munder></mtd></mtr></mtable></math></equation></para>
   <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">We've used all the digits of 539, and the last subtraction resulted in a number less than 12, so that number, 11, is the remainder. The value of 539 modulo 12 is 11, or, 539 = 11 (mod 12).</para></item>
   <item>To find the value 156 modulo 12:<newline/>
   <para id="para-00019"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 156 is divided by 12 using long division. We first look to the first two digits of 156, 15. The largest multiple of 12 that is less than or equal to 15 is 12 itself, which is the product of 12 and 1.
-  <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mn>1</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mn>1</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="0.80em"/><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Performing the subtraction results in 3.
-  <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mn>1</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mn>3</mn></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mn>1</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.30em"/><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder><mspace width="0.50em"/></mrow><mn>3</mn></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now, the 6 is brought down.
-  <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mn>1</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>36</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+  <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mn>1</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.80em"/><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder><mspace width="0.85em"/></mrow><mrow><mn>36</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
   <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> The largest multiple of 12 that is less than or equal to 36 is 36 itself, which is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>12</mn><mo>×</mo><mn>3</mn></math>.
-  <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mrow><mn>13</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>36</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mn>36</mn></mrow><mo stretchy="true">_</mo></munder></mtd></mtr></mtable></math></equation></para>
+  <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mrow><mn>13</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.35em"/><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder><mspace width="0.65em"/></mrow><mrow><mn>36</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mn>36</mn></mrow><mo stretchy="true">_</mo></munder><mspace width="0.50em"/></mtd></mtr></mtable></math></equation></para>
   <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Finishing the process, the 36 is subtracted from the 36, yielding 0.
-  <equation id="eq-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mrow><mn>13</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mn>36</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder><mrow><munder accentunder="true"><mrow><mn>36</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mn>0</mn></munder></mtd></mtr></mtable></math></equation></para></item>
+  <equation id="eq-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>156</mn></mrow></menclose></mrow><mrow><mn>13</mn></mrow></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="0.80em"/><munder><mrow><munder accentunder="true"><mrow><mn>12</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="1.20em"/><mn>36</mn></mrow></munder></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><munder><mrow><munder accentunder="true"><mrow><mn>36</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mn>0</mn></munder><mspace width="0.50em"/></mtd></mtr></mtable></math></equation></para></item>
   </list>
   <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">We've used all the digits of 156, and the last subtraction resulted in a number less than 12, so that number, 0, is the remainder. The value of 156 modulo 12 is 0, or, 156 = 0 (mod 12).</para>
   <para id="para-00025">We should note here that, had we been speaking of time, the 0 would be interpreted as 12:00.</para>
@@ -96,7 +96,7 @@
   </note>
   <note class="tech-check" id="note-00004">
   <title>Using Desmos to Determine the Value of a Number module 12</title>
-  <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <emphasis effect="italic">n</emphasis> modulo 12, type <emphasis effect="bold">mod(<emphasis effect="italic">n</emphasis>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the Figure 3.55.</para>
+  <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <emphasis effect="italic">n</emphasis> modulo 12, type <emphasis effect="bold">mod(<emphasis effect="italic">n</emphasis>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.40</link>.</para>
   <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_003.jpg"/>
@@ -134,7 +134,7 @@
   <para id="para-00034">If it is 4:00 now, what time was it 67 hours ago?</para>
   </problem>
   <solution id="sol-00003">
-  <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in -3:00. We know, though, that time is not represented with negative times. This value, -3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the Figure 3.56.</para>
+  <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047">Figure 3.41</link>.</para>
   <figure class="numbered" id="fig-00003">
   <media alt="An analog clock with the hour hand pointing to 4. A counterclockwise arrow around the clock is labeled negative 7 hours.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_002.jpg"/>
@@ -172,7 +172,7 @@
   </note>
   </section>
   <section id="sect-00003">
-  <title>Calculating Real- World Applications with Clock Arithmetic</title>
+  <title>Calculating Real-World Applications with Clock Arithmetic</title>
   <example id="exam-00005">
   <title>Applying Clock Arithmetic</title>
   <exercise id="exer-00009">
@@ -210,22 +210,24 @@
   </problem>
   </exercise>
   </note>
-  <note class="who-knew" id="note-00011">
+  <note class="work-out" id="note-00011">
   <title>The Luhn Algorithm</title>
-  <para id="para-00048">As mentioned in the Section 3.7 opener, credit card and bank card numbers have a built-in error checking system that relies on modular arithmetic. One such error checking system is the <emphasis effect="bold">Luhn algorithm</emphasis>. To use the Luhn algorithm, the card must include a <emphasis effect="bold">check digit</emphasis>, typically the last digit in the card number. That digit is intentionally chosen to ensure that the Luhn algorithm yields a number that is equal to 0 (mod 10), which means the process yields a number that has a 0 at the end. This card numbering system is used only to check that a number is valid. The algorithm is as follows:</para>
-  <para id="para-00062">Start with the right-most digit that is NOT the check digit.</para>
-  <para id="para-00063">The first number to the left of the check digit is doubled.</para>
-  <para id="para-00064">If this results in a 2-digit number, subtract 9 from the result.</para>
-  <para id="para-00065">Repeat the doubling and possible subtraction for every second digit after the first one doubled.</para>
-  <para id="para-00066">Add the resulting numbers and the check digit.</para>
+  <para id="para-00048">As mentioned in the <link target-id="sect-00001" document="m00047">Section 3.7</link>	 opener, credit card and bank card numbers have a built-in error checking system that relies on modular arithmetic. One such error checking system is the <emphasis effect="bold">Luhn algorithm</emphasis>. To use the Luhn algorithm, the card must include a <emphasis effect="bold">check digit</emphasis>, typically the last digit in the card number. That digit is intentionally chosen to ensure that the Luhn algorithm yields a number that is equal to 0 (mod 10), which means the process yields a number that has a 0 at the end. This card numbering system is used only to check that a number is valid. The algorithm is as follows:</para>
+<list list-type="bulleted" id="list-00004">
+  <item>Start with the right-most digit that is NOT the check digit.</item>
+  <item>The first number to the left of the check digit is doubled.</item>
+  <item>If this results in a 2-digit number, subtract 9 from the result.</item>
+  <item>Repeat the doubling and possible subtraction for every second digit after the first one doubled.</item>
+  <item>Add the resulting numbers and the check digit.</item>
+</list>
   <para id="para-00067">If the total is equal to 0 (mod 10), then the number is valid as far as the Luhn algorithm can determine.</para>
-  </note>
-  <para id="para-00049">Use the Luhn algorithm to check to see if the following card numbers are valid. In each card number, the final digit is the check digit.</para>
+  <para id="para-00049">Use the Luhn algorithm to check if the following card numbers are valid. In each card number, the final digit is the check digit.</para>
   <list list-type="enumerated" number-style="arabic" id="list-00005">
   <item>7812 9855 7122 6543</item>
   <item>4901 3348 1132 7725</item>
   <item>If the first 15 digits of a credit card number are 1234 8765 3578 231, what must the check digit be in order for the credit card to be valid as far as the Luhn algorithm can determine?</item>
   </list>
+  </note>
   </section>
   <section class="check-understanding" id="sect-00004">
   <title>Check Your Understanding</title>
@@ -282,8 +284,6 @@
   </problem>
   </exercise>
   </section>
-  <section id="sect-00006">
-  <title>Section 7 – Clock Arithmetic</title>
   <section class="key-terms" id="sect-00007">
   <title>Key Terms</title>
   <list bullet-style="none" id="list-00006">
@@ -314,7 +314,6 @@
   <title>Videos</title>
   <para id="para-00060"><link url="https://openstax.org/r/Determining_the_Day_of_the_Week_for_Any_Date_in_History">Determining the Day of the Week for Any Date in History</link></para>
   <para id="para-00061"><link url="https://openstax.org/r/Clock_Arithmetic">Clock Arithmetic</link></para>
-  </section>
   </section>
   </content>
   </document>
