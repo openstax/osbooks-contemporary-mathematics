@@ -1,0 +1,213 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>The Multiplication Rule for Counting</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>The Multiplication Rule for Counting</md:title>
+    <md:content-id>m00085</md:content-id>
+    <md:uuid>b5e580f0-a790-41e0-a8b8-00aca1ad4932</md:uuid>
+  </metadata>
+  <content>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_07_01_001.jpg"/>
+    </media>
+    <caption>[credit TK poker table] (credit: Anna Shvets/Pexels)(Credit: modification of work "Pair of Aces - Poker" by Poker Photos/Flickr, CC BY 2.0)
+    </caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Apply the Multiplication Rule for Counting to solve problems.</item>
+    </list>
+    </section>
+    <para id="para-00002">One of the first bits of mathematical knowledge that children learn is how to count objects by pointing to them in turn and saying: “one, two, three, …” That’s a useful skill, but when the number of things that we need to count grows large, that method becomes onerous (or, for <emphasis effect="italic">very</emphasis> large numbers, impossible for humans to accomplish in a typical human lifespan). So, mathematicians have developed short cuts to counting big numbers. These techniques fall under the mathematical discipline of <term id="term-00001">combinatorics</term>, which is devoted to counting.</para>
+    <section id="sect-00002">
+    <title>Multiplication as a Combinatorial Short Cut</title>
+    <para id="para-00003">One of the first combinatorial short cuts to counting that students learn in school has to do with areas of rectangles. If we have a set of objects to be counted that can be physically arranged into a rectangular shape, then we can use multiplication to do the counting for us. Consider this set of objects:</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_01_001.png"/>
+    </media>
+    </figure>
+    <para id="para-00004">Certainly we can count them by pointing and running through the numbers, but it’s more efficient to group them.</para>
+    <figure id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_01_002.png"/>
+    </media>
+    </figure>
+    <para id="para-00005">If we group the balls by 4s, we see that we have 6 groups (or, we can see this arrangement as 4 groups of 6 balls). Since multiplication is repeated addition (i.e., <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn></mrow></math>), we can use this grouping to quickly see that there are 24 balls.</para>
+    <para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">Let’s generalize this idea a little bit. Let’s say that we’re visiting a bakery that offers customized cupcakes. For the cake, we have three choices: vanilla, chocolate, and strawberry. Each cupcake can be topped with one of four types of frosting: vanilla, chocolate, lemon, and strawberry. How many different cupcake combinations are possible? We can think of laying out all the possibilities in a grid, with cake choices defining the rows and frosting choices defining the columns:</para>
+    <figure id="fig-00004">
+    <media alt="A rectangular grid with 3 rows and 4 columns. The row headers representing the cakes show vanilla, chocolate, and strawberry. The column headers representing the frostings show vanilla, chocolate, lemon, and strawberry. Data from the grid are as follows. Row 1: vanilla cake with vanilla frosting, vanilla cake with chocolate frosting, vanilla cake with lemon frosting, and vanilla cake with strawberry frosting. Row 2: chocolate cake with vanilla frosting, chocolate cake with chocolate frosting, chocolate cake with lemon frosting, and chocolate cake with strawberry frosting. Row 3: strawberry cake with vanilla frosting, strawberry cake with chocolate frosting, strawberry cake with lemon frosting, and strawberry cake with strawberry frosting.">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_01_003.png"/>
+    </media>
+    </figure>
+    <para id="para-00007">Since there are 3 rows (cakes) and 4 columns (frostings), we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></math> possible combinations. This is the reasoning behind the <term id="term-00002" xmlns="http://cnx.rice.edu/cnxml">Multiplication Rule for Counting</term>, which is also known as the Fundamental Counting Principle. This rule says that if there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> ways to accomplish one task and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> ways to accomplish a second task, then there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>×</mo><mi>m</mi></mrow></math> ways to accomplish both tasks. We can tack on additional tasks by multiplying the number of ways to accomplish those tasks to our previous product.</para>
+    <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Using the Multiplication Rule for Counting</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00008">Every card in a standard deck of cards has two identifying characteristics: a suit (clubs, diamonds, hearts, or spades; these are indicated by these symbols, respectively: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♣</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>◆</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♡</mo></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♠</mo></math>) and a rank (ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, and king; the letters A, J, Q, and K are used to represent the words). Each possiblepair of suit and rank appears exactly once in the deck. How many cards are in the standard deck?</para>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00009">Since there are 4 suits and 13 ranks, the number of cards must be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>13</mn><mo>=</mo><mn>52</mn></mrow></math> <link target-id="fig-00001" document="m00085" xmlns="http://cnx.rice.edu/cnxml">(Figure 7.6).</link>
+    <!--<figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_07_01_006.jpg"/>
+    </media>
+    <caption>Standard Deck of Cards, Sorted by Rank and Suit</caption>
+    </figure>-->
+    </para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CM-C07-M1-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Using the Multiplication Rule for Counting for 4 Groups</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00011">The University Combinatorics Club has 31 members: 8 seniors, 7 juniors, 5 sophomores, and 11 first-years. How many possible 4-person committees can be formed by selecting 1 member from each class?</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00012">Since we have 8 choices for the senior, 7 choices for the junior, 5 for the sophomore, and 11 for the first-year, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><mn>7</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>11</mn><mo>=</mo><mn>3080</mn></mrow></math> different ways to fill out the committee.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CM-C07-M1-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Using the Multiplication Rule for Counting for More Groups</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00014">The standard license plates for vehicles in a certain state consist of 6 characters: 3 letters followed by 3 digits. How many license plates can be made using this format?</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00015">Since there are 26 different letters and 10 different digits, the total number of possible license plates is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>26</mn><mo>×</mo><mn>26</mn><mo>×</mo><mn>26</mn><mo>×</mo><mn>10</mn><mo>×</mo><mn>10</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>17</mn><mo>,</mo><mn>576</mn><mo>,</mo><mn>000</mn></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CM-C07-M1-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>check your understanding</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CM-C07-M1-Q004"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CM-C07-M1-Q005"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CM-C07-M1-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CM-C07-M1-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C07-M1-Q008"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="exercises" id="sect-00004">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00022"><link class="os-embed" url="#exercise/CM-C07-M1-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C07-M1-Q0010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00024"><link class="os-embed" url="#exercise/CM-C07-M1-Q0011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00025"><link class="os-embed" url="#exercise/CM-C07-M1-Q0012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00026"><link class="os-embed" url="#exercise/CM-C07-M1-Q0013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C07-M1-Q0014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00028"><link class="os-embed" url="#exercise/CM-C07-M1-Q0015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C07-M1-Q0016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00030"><link class="os-embed" url="#exercise/CM-C07-M1-Q0017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C07-M1-Q0018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C07-M1-Q0019"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00005">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00002">
+    <item>combinatorics</item>
+    <item>Multiplication Rule for Counting (Fundamental Counting Principle)</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00006">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00003">
+    <item>The Multiplication Rule for Counting is used to count large sets.</item>
+    </list>
+    </section>
+    <section class="formula-review" id="sect-00007">
+    <title>Formulas</title>
+    <list bullet-style="bulleted" id="list-00004">
+    <item>x</item>
+    </list>
+    </section>   
+  </content>
+</document>
