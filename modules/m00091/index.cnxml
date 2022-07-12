@@ -5,7 +5,219 @@
     <md:content-id>m00091</md:content-id>
     <md:uuid>c17b3588-9c20-440a-98a3-7d0486faaf81</md:uuid>
   </metadata>
-  <content>
-    <para id="para-00001"/>
+    <content>
+      <figure id="fig-00001">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_07_07_001.jpg"/>
+      </media>
+      <caption>[credit TK lottery ticket] (credit: Waldemar Brandt/ Pexels)</caption>
+      </figure>
+      <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Compute odds.</item>
+      <item>Determine odds from probabilities.</item>
+      <item>Determine probabilities from odds.</item>
+      </list>
+      </section>
+      <para id="para-00002">A particular lottery instant-win game has 2 million tickets available. Of those, 500,000 win a prize. If there are 500,000 winners, then it follows that there are 1,500,000 losing tickets. When we evaluate the risk associated with a game like this, it can be useful to compare the number of ways to win the game to the number of ways to lose. In the case of this game, we would compare the 500,000 wins to the 1,500,000 losses. There are, therefore, 3 losing tickets for every winning ticket. Comparisons of this type are the focus of this section.</para>
+      <section id="sect-00002">
+      <title>Computing Odds</title>
+      <para id="para-00003">The ratio of the number of equally likely outcomes in an event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> to the number of equally likely outcomes <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">not</emphasis> in the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>′</mo></mrow></math> is called the <term id="term-00001" xmlns="http://cnx.rice.edu/cnxml">odds for</term> (or <term id="term-00002">odds in favor</term> of) the event. The opposite ratio (the number of outcomes not in the event to the number in the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>′</mo></mrow></math> to the number in the event <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">E</emphasis> is called the <term id="term-00003">odds against</term> the event.</para>
+      <note class="check-point" id="note-00001">
+      <para id="para-00004"><emphasis effect="italic">Both odds and probabilities are calculated as ratios. To avoid confusion, we will always use fractions, decimals, or percents for probabilities, and we’ll use colons to indicate odds. The rules for simplifying fractions apply to odds, too. Thus, the odds for winning a prize in the game described in the section opener are</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>500</mn><mo>,</mo><mn>000</mn><mo>:</mo><mn>1</mn><mo>,</mo><mn>500</mn><mo>,</mo><mn>000</mn><mo>=</mo><mn>1</mn><mo>:</mo><mn>3</mn></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">and the odds against winning a prize are</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>:</mo><mn>1</mn></mrow></math>.<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">These would often be described in words as “the odds of winning are one to three in favor” or “the odds of winning are three to one against.”</emphasis>.</para>
+      </note>
+      <note class="check-point" id="note-00002">
+      <para id="para-00005"><emphasis effect="italic">Notice that, while probabilities must always be between zero and one inclusive, odds can be any (non-negative) number, as we’ll see in the next example.</emphasis></para>
+      </note>
+      <example id="exam-00001">
+      <title>Computing Odds</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <list list-type="enumerated" number-style="arabic" id="list-00002">
+      <item>If you roll a fair 6-sided die, what are the odds for rolling a 5 or higher?</item>
+      <item>If you roll two fair 6-sided dice, what are the odds against rolling a sum of 7?</item>
+      <item>If you draw a card at random from a standard deck, what are the odds for drawing a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♡</mo></math>?</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">If you draw 2 cards at random from a standard deck, what are the odds against them both being <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♠</mo></math>?</item>
+      </list>
+      </problem>
+      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00003">
+      <item>The sample space for this experiment is {1, 2, 3, 4, 5, 6}. Two of those outcomes are in the event “roll a five or higher,” while four are not. So, the odds for rolling a five or higher are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>:</mo><mn>4</mn><mo>=</mo><mn>1</mn><mo>:</mo><mn>2</mn></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">In <link target-id="exam-00003" document="m00089" xmlns="http://cnx.rice.edu/cnxml">Example 7.18</link>, we found the sample space for this experiment using the following table:
+      <figure id="fig-00002">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_07_07_027.png"/>
+      </media>
+      </figure>
+      <para id="para-00006">There are 6 outcomes in the event “roll a sum of 7,” and there are 30 outcomes not in the event. So, the odds against rolling a 7 are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>30</mn><mo>:</mo><mn>6</mn><mo>=</mo><mn>5</mn><mo>:</mo><mn>1</mn></mrow></math>.</para>
+      </item>
+      <item xmlns="http://cnx.rice.edu/cnxml">There are 13 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♡</mo></math> in a standard deck, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>52</mn><mo>−</mo><mn>13</mn><mo>=</mo><mn>39</mn></mrow></math> others. So, the odds in favor of drawing a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♡</mo></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>13</mn><mo>:</mo><mn>39</mn><mo>=</mo><mn>1</mn><mo>:</mo><mn>3</mn></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">There are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>13</mn></mrow></msub><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mn>78</mn></mrow></math> ways to draw 2 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♠</mo></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>52</mn></mrow></msub><msub><mi>C</mi><mn>2</mn></msub><mo>−</mo><mn>78</mn><mo>=</mo><mn>1248</mn></mrow></math> ways to draw 2 cards that are <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">not</emphasis> both <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♠</mo></math>. So, the odds against drawing 2 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>♠</mo></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1248</mn><mo>:</mo><mn>78</mn><mo>=</mo><mn>16</mn><mo>:</mo><mn>1</mn></mrow></math>.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00007"><link class="os-embed" url="#exercise/CM-C07-M7-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title>Odds as a Ratio of Probabilities</title>
+      <para id="para-00008">We can also think of odds as a ratio of probabilities. Consider again the instant-win game from the section opener, with 500,000 winning tickets out of 2,000,000 total tickets. If a player buys one ticket, the probability of winning is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>500</mn><mo>,</mo><mn>000</mn></mrow><mrow><mn>2</mn><mo>,</mo><mn>000</mn><mo>,</mo><mn>000</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>, and the probability of losing is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>. Notice that the ratio of the probability of winning to the probability of losing is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>:</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>1</mn><mo>:</mo><mn>3</mn></mrow></math>, which matches the odds in favor of winning.</para>
+      <note class="formula" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00009">For an event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math>,
+      <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mtext>odds for</mtext><mo rspace="0.28em">⁢</mo><mi>E</mi><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mi>P</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mtext>odds against</mtext><mo rspace="0.28em">⁢</mo><mi>E</mi><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>:</mo><mi>n</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>:</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>:</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math></equation></para>
+      </note>
+      <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">We can use these formulas to convert probabilities to odds, and vice versa.</para>
+      <example id="exam-00002">
+      <title>Converting Probabilities to Odds</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00011">Given the following probabilities of an event, find the corresponding odds for and odds against that event.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00004">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mn>17</mn><mi>%</mi></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00005">
+      <item>Using the formula, we have:
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mtext>odds for</mtext><mo rspace="0.28em">⁢</mo><mi>E</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>:</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>:</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>3</mn><mo>:</mo><mn>2.</mn></mtd></mtr></mtable></math>
+      <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">(Note that in the last step, we simplified by multiplying both terms in the ratio by 5.)</para>
+      <para id="para-00013">Since the odds for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>:</mo><mn>2</mn></mrow></math>, the odds against <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> must be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>:</mo><mn>3</mn></mrow></math>.</para>
+      </item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Again, we’ll use the formula:
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mtext>odds for</mtext><mo rspace="0.28em">⁢</mo><mi>E</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.17</mn><mo>:</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mn>0.17</mn></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.17</mn><mo>:</mo><mn>0.83</mn></mtd></mtr><mtr><mtd><mo>≈</mo><mn>1</mn><mo>:</mo><mn>4.88.</mn></mtd></mtr></mtable></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow/></math>
+      <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">(In the last step, we simplified by dividing both terms in the ratio by 0.17.)</para>
+      <para id="para-00015">It follows that the odds against <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> are approximately <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.88</mn><mo>:</mo><mn>1</mn></mrow></math>.</para>
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00016"><link class="os-embed" url="#exercise/CM-C07-M7-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00017">Now, let’s convert odds to probabilities. Let’s say the odds for an event are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow></math>. Then, using the <link target-id="exam-00002" document="m00091" xmlns="http://cnx.rice.edu/cnxml">Example 7.26</link> formula above, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>:</mo><mi>B</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow></math>. Converting to fractions and solving for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>, we get:</para>
+      <equation id="eq-00002" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mfrac><mi>A</mi><mi>B</mi></mfrac><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mfrac></mtd></mtr><mtr><mtd><mi>A</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mi>B</mi><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mi>A</mi><mo>−</mo><mi>A</mi><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mi>B</mi><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mi>A</mi><mo>=</mo><mi>A</mi><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>+</mo><mi>B</mi><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mfrac><mi>A</mi><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>.</mo></mtd></mtr></mtable></math></equation>
+      <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">Let’s put this result in a formula we can use.</para>
+      <note class="formula" id="note-00006">
+      <para id="para-00019">If the odds in favor of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mi>A</mi><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow></mfrac></mrow></math>.</para>
+      </note>
+      <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Converting Odds to Probabilities</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00020">Find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math> if…:</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <item>The odds of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>:</mo><mn>1</mn></mrow></math> in favor.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">The odds of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>:</mo><mn>1</mn></mrow></math> against.</item>
+      </list>
+      </problem>
+      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00007">
+      <item>Using the formula we just found, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">If the odds against are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>:</mo><mn>1</mn></mrow></math>, then the odds for are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>:</mo><mn>6</mn></mrow></math>. Thus, using the formula, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mn>6</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>7</mn></mfrac></mrow></math>.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00021"><link class="os-embed" url="#exercise/CM-C07-M7-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="check-point" id="note-00008">
+      <para id="para-00022"><emphasis effect="italic">Some places, particularly state lottery websites, will use the words “odds” and “probability” interchangeably. Never assume that the word “odds” is being used correctly! Compute one of the odds/probabilities yourself to make sure you know how the word is being used!</emphasis></para>
+      </note>
+      </section>
+      <section class="check-understanding" id="sect-00004">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00023"><link class="os-embed" url="#exercise/CM-C07-M7-Q004"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00024"><link class="os-embed" url="#exercise/CM-C07-M7-Q005"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00025"><link class="os-embed" url="#exercise/CM-C07-M7-Q006"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00026"><link class="os-embed" url="#exercise/CM-C07-M7-Q007"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00027"><link class="os-embed" url="#exercise/CM-C07-M7-Q008"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00005">
+      <title>Exercises</title>
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00028"><link class="os-embed" url="#exercise/CM-C07-M7-Q009"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00029"><link class="os-embed" url="#exercise/CM-C07-M7-Q010"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00030"><link class="os-embed" url="#exercise/CM-C07-M7-Q011"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00031"><link class="os-embed" url="#exercise/CM-C07-M7-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00032"><link class="os-embed" url="#exercise/CM-C07-M7-Q013"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-terms" id="sect-00006">
+      <title>Key Terms</title>
+      <list bullet-style="bulleted" id="list-00008">
+      <item>odds (for/against)</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00007">
+      <title>Key Concepts</title>
+      <list bullet-style="bulleted" id="list-00009">
+      <item>Odds are computed as the ratio of the probability of an event to the probability of its compliment.</item>
+      </list>
+      <section class="formula-review" id="sect-00008">
+      <title>Formulas</title>
+      <list bullet-style="bulleted" id="list-00010">
+      <item>For an event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math>,
+      <equation id="eq-00003" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mtext>odds for</mtext><mo rspace="0.28em">⁢</mo><mi>E</mi><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mi>P</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>:</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mtext>odds against</mtext><mo rspace="0.28em">⁢</mo><mi>E</mi><mo>=</mo><mi>n</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>:</mo><mi>n</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><msup><mi>E</mi><mo>′</mo></msup><mo stretchy="false">)</mo><mo>:</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>:</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math></equation>
+      </item>
+      <item xmlns="http://cnx.rice.edu/cnxml">If the odds in favor of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mi>A</mi><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow></mfrac></mrow></math>.</item></list>
+      </section>
+      </section>      
   </content>
 </document>
