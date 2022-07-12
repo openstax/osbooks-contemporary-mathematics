@@ -6,6 +6,140 @@
     <md:uuid>ef695a74-50c5-41a2-b843-0499142ba4ec</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001"/>
+      <figure id="fig-00001">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_07_06_001.jpg"/>
+      </media>
+      <caption>[ping-pong balls with numbers] (credit: Pavel Danilyuk/Pexels) (Credit: "Redundant Bingo Balls" by Greg Clarke/Flickr, CC BY 2.0)</caption>
+      </figure>
+      <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Calculate probabilities with permutations.</item>
+      <item>Calculate probabilities with combinations.</item>
+      </list>
+      </section>
+      <para id="para-00002">In our earlier discussion of theoretical probabilities, the first step we took was to write out the samplespace for the experiment in question. For many experiments, that method just isn’t practical. For example, we might want to find the probability of drawing a particular 5-card poker hand. Since there are 52 cards in a deck and the order of cards doesn’t matter, the sample space for this experiment has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>52</mn></mrow></msub><msub><mi>C</mi><mn>5</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>598</mn><mo>,</mo><mn>960</mn></mrow></math> possible 5 -card hands. Even if we had the patience and space to write them all out, sorting through the results to find the outcomes that fall in our event would be just as tedious. Luckily, the formula for theoretical probabilities doesn’t require us to know every outcome in the sample space; we just need to know how many outcomes there are. In this section, we’ll apply the techniques we learned earlier in the chapter (the Multiplication Rule for Counting, permutations, and combinations) to compute probabilities.</para>
+      <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Using Permutations to Compute Probabilities</title>
+      <para id="para-00003">Recall that we can use permutations to count how many ways there are to put a number of items from a list in order. If we’re looking at an experiment whose sample space looks like an ordered list, then permutations can help us to find the right probabilities.</para>
+      <example id="exam-00001">
+      <title>Using Permutations to Compute Probabilities</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <list list-type="enumerated" number-style="arabic" id="list-00002">
+      <item>In horse racing, an exacta bet is one where the player tries to predict the top two finishers in particular race in order. If there are 9 horses in a race, and a player decided to make an exacta bet at random, what is the probability that they win?</item>
+      <item>You are in a club with 10 people, 3 of whom are close friends of yours. If the officers of this club are chosen at random, what is the probability that you are named president and one of your friends is named vice president?</item>
+      <item>A bag contains slips of paper with letters written on them as follows: A, A, B, B, B, C, C, D, D, D, D, E. If you draw 3 slips, what is the probability that the letters will spell out (in order) the word BAD?</item>
+      </list>
+      </problem>
+      <solution id="sol-00001">
+      <list list-type="enumerated" number-style="arabic" id="list-00003">
+      <item>Since order matters for this situation, we’ll use permutations. How many different exacta bets can be made? Since there are 9 horses and we must select 2 in order, we know there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mn>9</mn></msub><msub><mi>P</mi><mn>2</mn></msub><mo>=</mo><mn>56</mn></mrow></math> possible outcomes. That’s the size of our sample space, so it will go in the denominator of the probability. Since only one of those outcomes is a winner, the numerator of the probability is 1. So, the probability of randomly selecting the winning exacta bet is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>56</mn></mrow></mfrac></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">There are 10 people in the club, and 2 will be chosen to be officers. Since the order matters, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>10</mn></mrow></msub><msub><mi>P</mi><mn>2</mn></msub><mo>=</mo><mn>90</mn></mrow></math> different ways to select officers. Next, we must figure out how many outcomes are in our event. We’ll use the Multiplication Rule for Counting to find that number. There is only one choice for president in our event, and there are 3 choices for vice president. So, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>3</mn></mrow></math> outcomes in the event. Thus, the probability that you will serve as president with one of your friends as vice president is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mrow><mn>90</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>30</mn></mrow></mfrac></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">There are 12 slips of paper in the bag, and 3 will be drawn. So, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>12</mn></mrow></msub><msub><mi>P</mi><mn>3</mn></msub><mo>=</mo><mn>1320</mn></mrow></math> possible outcomes. Now, we’ll compute the number of outcomes in our event. The first letter drawn must be a B, and there are 3 of those. Next must come an A (two of those) and then a D (four of those). Thus, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>24</mn></mrow></math> outcomes in our event. So, the probability that the letters drawn spell out the word BAD is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>24</mn></mrow><mrow><mn>1320</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>55</mn></mrow></mfrac></mrow></math>.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00004"><link class="os-embed" url="#exercise/CM-C07-M6-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title>Combinations to Computer Probabilities</title>
+      <para id="para-00005">If the sample space of our experiment is one in which order doesn’t matter, then we can use combinations to find the number of outcomes in that sample space.</para>
+      <example id="exam-00002">
+      <title>Using Combinations to Compute Probabilities</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <list list-type="enumerated" number-style="arabic" id="list-00004">
+      <item>Palmetto Cash 5 is a game offered by the South Carolina Education Lottery. Players choose 5 numbers from the whole numbers between 1 and 38 (inclusive); the player wins the jackpot of $100,000 if the randomizer selects those numbers in any order. If you buy one ticket for this game, what is the probability that you win the top prize by choosing all 5 winning numbers?</item>
+      <item>There’s a second prize in the Palmetto Cash 5 game that a player wins if 4 of the player's 5 numbers are among the 5 winning numbers. What’s the probability of winning the second prize?</item>
+      <item><emphasis effect="italic">Scrabble</emphasis> is a word-building board game. Players make hands of 7 letters by selecting tiles with single letters printed on them blindly from a bag (2 tiles have nothing printed on them; these blanks can stand for any letter). Players use the letters in their hands to spell out words on the board. Initially, there are 100 tiles in the bag. Of those, 44 are (or could be) vowels (9 As, 12 Es, 9 Is, 8 Os, 4 Us, and 2 blanks; we’ll treat Y as a consonant). What is the probability that your initial hand has no vowels?</item>
+      </list>
+      </problem>
+      <solution id="sol-00002">
+      <list list-type="enumerated" number-style="arabic" id="list-00005">
+      <item>There are 38 numbers to choose from, and the order of the 5 we pick doesn’t matter. So, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>38</mn></mrow></msub><msub><mi>C</mi><mn>5</mn></msub><mo>=</mo><mn>501</mn><mo>,</mo><mn>492</mn></mrow></math> outcomes in the sample space. Only one outcome is in our winning event, so the probability of winning is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>501</mn><mo>,</mo><mn>492</mn></mrow></mfrac></mrow></math>.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">As in Exercise 1 of this example,, there are 501,492 outcomes in the sample space. The tricky part here is figuring out how many outcomes are in our event. To qualify, the outcome must contain 4 of the 5 winning numbers, plus one losing number. There are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mn>5</mn></msub><msub><mi>C</mi><mn>4</mn></msub><mo>=</mo><mn>5</mn></mrow></math> ways to choose the four winning numbers, and there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>38</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>33</mn></mrow></math> losing numbers. So, using the Multiplication Rule for Counting, there are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>×</mo><mn>33</mn><mo>=</mo><mn>165</mn></mrow></math> outcomes in our event. Thus, the probability of winning the second prize is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>165</mn></mrow><mrow><mn>501</mn><mo>,</mo><mn>492</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>55</mn></mrow><mrow><mn>167</mn><mo>,</mo><mn>164</mn></mrow></mfrac></mrow></math>, which is about 0.00033.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">The number of possible starting hands is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>100</mn></mrow></msub><msub><mi>C</mi><mn>7</mn></msub><mo>=</mo><mn>16</mn><mo>,</mo><mn>007</mn><mo>,</mo><mn>560</mn><mo>,</mo><mn>800</mn></mrow></math>. There are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mo>−</mo><mn>44</mn><mo>=</mo><mn>56</mn></mrow></math> consonants in the bag, so the number of all-consonant hands is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>56</mn></mrow></msub><msub><mi>C</mi><mn>7</mn></msub><mo>=</mo><mn>231</mn><mo>,</mo><mn>917</mn><mo>,</mo><mn>400</mn></mrow></math>. Thus, the probability of drawing all consonants is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>231</mn><mo>,</mo><mn>917</mn><mo>,</mo><mn>40</mn></mrow><mrow><mn>16</mn><mo>,</mo><mn>007</mn><mo>,</mo><mn>560</mn><mo>,</mo><mn>800</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>32</mn><mo>,</mo><mn>139</mn></mrow><mrow><mn>2</mn><mo>,</mo><mn>425</mn><mo>,</mo><mn>388</mn></mrow></mfrac><mo>≈</mo><mn>0.0145</mn></mrow></math>.
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00006"><link class="os-embed" url="#exercise/CM-C07-M6-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section class="check-understanding" id="sect-00004">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00007"><link class="os-embed" url="#exercise/CM-C07-M6-Q003"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00005">
+      <title>Exercises</title>
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00008"><link class="os-embed" url="#exercise/CM-C07-M6-Q004"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00009"><link class="os-embed" url="#exercise/CM-C07-M6-Q005"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00010"><link class="os-embed" url="#exercise/CM-C07-M6-Q006"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00011"><link class="os-embed" url="#exercise/CM-C07-M6-Q007"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00012"><link class="os-embed" url="#exercise/CM-C07-M6-Q008"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00013"><link class="os-embed" url="#exercise/CM-C07-M6-Q009"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-terms" id="sect-00006">
+      <title>Key Terms</title>
+      <list bullet-style="bulleted" id="list-00006">
+      <item>xxx</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00007">
+      <title>Key Concepts</title>
+      <list bullet-style="bulleted" id="list-00007">
+      <item>We use permutations and combinations to count the number of equally likely outcomes in an event and in a sample space, which allows us to compute theoretical probabilities.</item>
+      </list>
+      </section>
+      <section class="formula-review" id="sect-00008">
+      <title>Formulas</title>
+      <list bullet-style="bulleted" id="list-00008">
+      <item>xxx</item>
+      </list>
+      </section>      
   </content>
 </document>
