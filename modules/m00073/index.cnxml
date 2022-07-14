@@ -37,7 +37,7 @@
       <title>Converting Between Fahrenheit and Celsius Temperatures</title>
       <para id="para-00007">Understanding how to convert between Fahrenheit and Celsius temperatures is an essential skill in understanding metric temperatures. You likely know that below 32°F means freezing temperatures and perhaps that the same holds true for 0°C. While it may be difficult to recall that water boils at 212°F, knowing that it boils at 100°C is a fairly easy thing to remember.</para>
       <para id="para-00008">But what about all the temperatures in-between? What is the temperature in degrees Celsisus on a scorching summer day? What about a cool autumn afternoon? If a recipe instructs you to preheat the oven to 350°F, what Celsius temperature do you set the oven at?</para>
-      <para id="para-00009"><link>Figure 9.20</link> lists common temperatures on both scales, because we don’t use Celsius temperatures daily it’s difficult to remember them. Fortunately, we don’t have to. Instead, we can convert temperatures from Fahrenheit to Celsius and from Celsius to Fahrenheit using a simple algebraic expression.</para>
+      <para id="para-00009"><link target-id="fig-00002" document="m00073">Figure 9.20</link> lists common temperatures on both scales, because we don’t use Celsius temperatures daily it’s difficult to remember them. Fortunately, we don’t have to. Instead, we can convert temperatures from Fahrenheit to Celsius and from Celsius to Fahrenheit using a simple algebraic expression.</para>
       <figure id="fig-00002">
       <media alt="Insert Alt Text">
       <image mime-type="image/jpg" src="../../media/CS_Figure_09_05_001.png"/>
@@ -45,7 +45,7 @@
       <caption>Common Temperatures (credit: XX)</caption>
       </figure>
       <note class="formula" id="note-00004">
-      <para id="para-00010">The formulas used to convert temperatures from Fahrenheit to Celsius or from Celsius to Fahrenheit are outlined in <link>Table 9.3</link>.</para>
+      <para id="para-00010">The formulas used to convert temperatures from Fahrenheit to Celsius or from Celsius to Fahrenheit are outlined in <link target-id="table-00001" document="m00073">Table 9.3</link>.</para>
       <table class="numbered" summary="." id="table-00001">
       <title>Temperature Conversion Formulas</title>
       <tgroup cols="2">
@@ -70,10 +70,10 @@
       <title>Converting Temperatures from Fahrenheit to Celsius</title>
       <exercise id="exer-00001">
       <problem id="prob-00001">
-      <para id="para-00011">A recipe calls for the oven to be set to 392 °F. What is the temperature in Celsius?</para>
+      <para id="para-00011">A recipe calls for the oven to be set to 392°F. What is the temperature in Celsius?</para>
       </problem>
       <solution id="sol-00001">
-      <para id="para-00012">Use the formula in <link>Table 9.3</link> to convert from Fahrenheit to Celsius.</para>
+      <para id="para-00012">Use the formula in <link target-id="table-00001" document="m00073">Table 9.3</link> to convert from Fahrenheit to Celsius.</para>
       <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable align="center"><mtr><mtd><mrow><mi mathvariant="normal">C</mi><mo>=</mo><mfrac><mn>5</mn><mn>9</mn></mfrac><mo stretchy="false">(</mo><mi mathvariant="normal">F</mi><mo>−</mo><mn>32</mn><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">C</mi><mo>=</mo><mfrac><mn>5</mn><mn>9</mn></mfrac><mo stretchy="false">(</mo><mn>392</mn><mo>−</mo><mn>32</mn><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">C</mi><mo>=</mo><mfrac><mn>5</mn><mn>9</mn></mfrac><mo stretchy="false">(</mo><mn>360</mn><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">C</mi><mo>=</mo><mn>200</mn></mrow></mtd></mtr></mtable></mrow></math></equation>
       <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml">So, 392°F is equivalent to 200°C.</para>
       </solution>
@@ -113,7 +113,7 @@
       <para id="para-00019">A manufacturer requires a vaccine to be stored in a refrigerator at temperatures between 36°F and 46°F. The refrigerator in the local pharmacy cools to 3°C. Can the vaccine be stored safely in the pharmacy’s refrigerator?</para>
       </problem>
       <solution id="sol-00003">
-      <para id="para-00020">Use the formula in <link>Table 9.3</link> to convert from Celsius to Fahrenheit.</para>
+      <para id="para-00020">Use the formula in <link target-id="table-00001" document="m00073">Table 9.3</link> to convert from Celsius to Fahrenheit.</para>
       <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable align="center"><mtr><mtd><mrow><mi mathvariant="normal">F</mi><mo>=</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mi mathvariant="normal">C</mi><mo>+</mo><mn>32</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">F</mi><mo>=</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mn>32</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">F</mi><mo>=</mo><mn>5.4</mn><mo>+</mo><mn>32</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi mathvariant="normal">F</mi><mo>=</mo><mn>37.4</mn></mrow></mtd></mtr></mtable></mrow></math></equation>
       <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">Then, compare the temperatures.</para>
       <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>36</mn><mo rspace="0.28em">⁢</mo><mmultiscripts><mi mathvariant="normal">F</mi><mprescripts/><none/><mo>∘</mo></mmultiscripts><mo>&lt;</mo><mn>37.4</mn><mo rspace="0.28em">⁢</mo><mmultiscripts><mi mathvariant="normal">F</mi><mprescripts/><none/><mo>∘</mo></mmultiscripts><mo>&lt;</mo><mn>46</mn><mo rspace="0.28em">⁢</mo><mmultiscripts><mi mathvariant="normal">F</mi><mprescripts/><none/><mo>∘</mo></mmultiscripts></mrow></math></equation>
@@ -131,7 +131,7 @@
       </section>
       <section id="sect-00003">
       <title>Reasonable Values for Temperature</title>
-      <para id="para-00024">While knowing the exact temperature is important in most cases, sometimes an approximation will do. When trying to assess the reasonableness of values for temperature, there is a quicker way to convert temperatures for an approximation using mental math. These simpler formulas are listed in <link>Table 9.4</link>.</para>
+      <para id="para-00024">While knowing the exact temperature is important in most cases, sometimes an approximation will do. When trying to assess the reasonableness of values for temperature, there is a quicker way to convert temperatures for an approximation using mental math. These simpler formulas are listed in <link target-id="table-00002" document="m00073">Table 9.4</link>.</para>
       <table class="numbered" summary="." id="table-00002">
       <title>Estimate Temperature Conversion</title>
       <tgroup cols="2">
@@ -421,9 +421,9 @@
       </section>
       <section class="formula-review" id="sect-00010">
       <title>Formulas</title>
-      <para id="para-00076">You can convert between metric weight units using conversion factors shown in <link>Figure 9.10</link>.</para>
-      <para id="para-00077">The formulas used to convert temperatures from Fahrenheit to Celsius or from Celsius to Fahrenheit are shown in <link>Table 9.3</link>.</para>
-      <para id="para-00078">You can approximate temperatures between systems using mental math. These simpler formulas are shown in <link>Table 9.4</link>.</para>
+      <para id="para-00076">You can convert between metric weight units using conversion factors shown in <link target-id="fig-00002" document="m00073">Figure 9.10</link>.</para>
+      <para id="para-00077">The formulas used to convert temperatures from Fahrenheit to Celsius or from Celsius to Fahrenheit are shown in <link target-id="table-00001" document="m00073">Table 9.3</link>.</para>
+      <para id="para-00078">You can approximate temperatures between systems using mental math. These simpler formulas are shown in <link target-id="table-00002" document="m00073">Table 9.4</link>.</para>
       </section>
       <section class="projects" id="sect-00011">
       <title>Projects</title>
