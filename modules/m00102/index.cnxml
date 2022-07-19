@@ -8,1081 +8,1082 @@
   <content>
     <figure id="fig-00001">
       <code/>
-    <!--<media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Photo_05_06_001.jpg"/>
-    </media>-->
-    <caption>(Credit: "Gateway Arch - St. Louis - Missouri" by Sam valadi/Flickr, CC BY 2.0)</caption>
-    </figure>
-    <section class="learning-objectives" id="sect-00001">
-    <title>Learning Objectives</title>
-    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
-    <list list-type="enumerated" number-style="arabic" id="list-00001">
-    <item>Multiply binomials.</item>
-    <item>Factor trinomials.</item>
-    <item>Solve quadratic equations by graphing.</item>
-    <item>Solve quadratic equations by factoring.</item>
-    <item>Solve quadratic equations using square root method.</item>
-    <item>Solve quadratic equations using the quadratic formula.</item>
-    <item>Solve real world applications modeled by quadratic equations.</item>
-    </list>
-    </section>
-    <para id="para-00002">In this section, we will discuss quadratic equations. There are several real-world scenarios that can be represented by the graph of a quadratic equation. Think of the Arch in St. Louis, Missouri. Both ends of the arc are 630 feet apart and the arch is 630 feet tall. You can plot these points on a coordinate system and create a parabola to graph the quadratic equation.</para>
-    <section id="sect-00002">
-    <title>Identify Polynomials, Monomials, Binomials and Trinomials</title>
-    <para id="para-00003">You have learned that a term is a constant, or the product of a constant and one or more variables. When it is of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mi>m</mi></msup></mrow></math> where a is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> constant and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mi>m</mi></msup></mrow></math> is a positive whole number, it is called a <term id="term-00001" xmlns="http://cnx.rice.edu/cnxml">monomial</term>. Some examples of monomial are 8,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mi>y</mi><mn>3</mn></msup></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>11</mn><mi>z</mi></mrow></math>.</para>
-    <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml">A monomial or two or more monomials combined by addition or subtraction is a <term id="term-00002">polynomial</term>. ome examples include: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>+</mo><mn>11</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mi>y</mi><mn>2</mn></msup><mo>–</mo><mn>7</mn><mi>y</mi><mo>+</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>9</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></math>. Some polynomials have special names, based on the number of terms. A <term id="term-00003" xmlns="http://cnx.rice.edu/cnxml">monomial</term> is a polynomial with exactly one term (examples: 14, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><msup><mi>y</mi><mn>2</mn></msup></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>5</mn></msup></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>–</mo><mn>13</mn></mrow></math>). A <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">binomial</term> has exactly two terms (examples: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>+</mo><mtext> </mtext><mn>7</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mi>b</mi><mo>–</mo><mn>5</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>–</mo><mn>16</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>–</mo><mn>9</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></math>), and a trinomial has exactly three terms (examples: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>y</mi><mo>–</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><msup><mi>m</mi><mn>4</mn></msup><mo>–</mo><msup><mi>m</mi><mn>3</mn></msup><mo>+</mo><mn>8</mn><mi>m</mi></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>1</mn></mrow></math>). There are no special names for polynomials with more than three terms</para>
-    <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">Notice that every monomial, binomial, and trinomial is also a polynomial. They are just special members of the “family” of polynomials and so they have special names. We use the words monomial, binomial, and trinomial when referring to these special polynomials and just call all the rest polynomials.</para>
-    </section>
-    <section id="sect-00003">
-    <title>Multiply Binomials</title>
-    <para id="para-00006">Recall multiplying algebraic expressions from <link target-id="sect-00001" document="m00098" xmlns="http://cnx.rice.edu/cnxml">Section 5.1.</link> In this section, we will continue that work and multiply binomials as well. We can use an area model to do multiplication.</para>
-    <example id="exam-00001">
-    <title>Multiply Binomials</title>
-    <exercise id="exer-00001">
-    <problem id="prob-00001">
-    <para id="para-00007">Multiply <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00008"><emphasis effect="bold">Step 1:</emphasis> Use the distributive property:
-    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></math></equation></para>
-    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">In the area model multiply each term on the side by each term on the top (think of it as a multiplication table).</para>
-    <figure id="fig-00002">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_001.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00010"><emphasis effect="bold">Step 2:</emphasis> After we multiply, we get the following equation:
-    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></equation></para>
-    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Combine the like terms to arrive at:
-    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></equation></para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00002">
-    <problem id="prob-00002">
-    <para id="para-00012"><link class="os-embed" url="#exercise/CM-C05-M6-Q001"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <example id="exam-00002">
-    <title>Multiplying More Complex Binomials</title>
-    <exercise id="exer-00003">
-    <problem id="prob-00003">
-    <para id="para-00013">Multiply <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><mi>x</mi><mo>–</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00014"><emphasis effect="bold">Step 1:</emphasis> Use the Distributive Property:
-    <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><mi>x</mi></mrow><mo>)</mo></mrow><mo>–</mo><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mn>5</mn><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mn>7</mn><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><mi>x</mi></mrow><mo>)</mo></mrow><mo>–</mo><mrow><mo>(</mo><mn>7</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>5</mn><mo>)</mo></mrow></mrow></math></equation></para>
-    <figure id="fig-00003" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_002.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00015"><emphasis effect="bold">Step 2:</emphasis> After multiplying, get the following equation:
-    <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>21</mn><mi>x</mi><mo>−</mo><mn>35</mn></mrow></math></equation></para>
-    <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Combine the like terms to arrive at:
-    <equation id="eq-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>11</mn><mi>x</mi><mo>−</mo><mn>35</mn></mrow></math></equation></para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00004">
-    <problem id="prob-00004">
-    <para id="para-00017"><link class="os-embed" url="#exercise/CM-C05-M6-Q002"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="who-knew" id="note-00003">
-    <title>They Are Teaching Multiplication of Binomials in Elementary School</title>
-    <para id="para-00018">Manipulatives are often used in elementary school for students to experience a hands-on way to experience the mathematics they are learning. Base Ten Blocks, or Dienes Blocks, are often used to introduce place value and the operation of whole numbers. When multiplying two-digit numbers, students can make an array to visualize the Distributive Property. **Figure 5.XX** shows the value of each Base Ten Block and **Figure 5.XX shows how to multiply 17 and 23 using an area model and Base Ten Blocks. You can see how this helps students visualize the multiplication using the Distributive Property. Consider how <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>10</mn><mo>+</mo><mn>7</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>20</mn><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math> can easily extend to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>10</mn><mo>+</mo><mi>x</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>20</mn><mo>+</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math> in algebra!</para>
-    <figure id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_003.jpg"/>
-    </media>
-    <caption>The Value of Cach Base Ten Block</caption>
-    </figure>
-    <figure id="fig-00005">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_004.jpg"/>
-    </media>
-    <caption>How to Multiply 17 and 23 Using an Area Model and Base Ten Blocks</caption>
-    </figure>
-    </note>
-    </section>
-    <section id="sect-00004">
-    <title>Factoring Trinomials</title>
-    <para id="para-00019">We’ve just covered how to multiply binomials. Now you will need to “undo” this multiplication-to start with the product and end up with the factors. Let us review at an example of multiplying binomials to refresh your memory.</para>
-    <equation id="eq-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></equation>
-    <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">To factor the trinomial means to start with the product, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>, and end with the factors, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math>. You need to think about where each of the terms in the trinomial came from. The first term came from multiplying the first term in each binomial. So, to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math> in the product, each binomial must start with an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></para>
-    <equation id="eq-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mtd></mtr><mtr><mtd><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mtd></mtr></mtable></math></equation>
-    <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">The last term in the trinomial came from multiplying the last term in each binomial. So, the last terms must multiply to 6. What two numbers multiply to 6? The factors of 6 could be 1 and 6, or 2 and 3. How do you know which pair to use? Consider the middle term. It came from adding the outer and inner terms. So the numbers that must have a product of 6 will need a sum of 5.</para>
-    <para id="para-00022">We’ll test both possibilities and summarize the results in the following table, which will be very helpful when you work with numbers that can be factored in many different ways.</para>
-    <table class="unnumbered" summary="." id="table-00001">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry>Factors of 6</entry>
-    <entry>Sum of Factors</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>1, 6</entry>
-    <entry><equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>7</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>2, 3</entry>
-    <entry><equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></math></equation></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml">We see that 2 and 3 are the numbers that multiply to 6 and add to 5. We have the factors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>. They are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></para>
-    <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mtd><mtd><mrow><mtext>product</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mrow><mtext>factors</mtext></mrow></mtd></mtr></mtable></mrow></math></equation>
-    <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">You can check if the factors are correct by multiplying. Looking back, we started with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>, which is of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>5</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>=</mo><mn>6</mn></mrow></math>. We factored it into two binomials of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>m</mi></mrow><mo>)</mo></mrow></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
-    <equation id="eq-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mtd><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>m</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></equation>
-    <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">To get the correct factors, we found two number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> whose product is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> and sum is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>. With the area model, start with an empty box and then put in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math> your term and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>.</para>
-    <figure id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_005.jpg"/>
-    </media>
-    <caption/>
-    </figure>
-    <para id="para-00026">Continue by putting in two terms that add up to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mi>x</mi><mo>:</mo><mn>2</mn><mi>x</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mn>3</mn><mi>x</mi></mrow></math></para>
-    <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_006.jpg"/>
-    </media>
-    <caption/>
-    </figure>
-    <para id="para-00027">Then you find the terms of the binomials on the top and side:
-    <figure id="fig-00008">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_006.jpg"/>
-    </media>
-    <caption/>
-    </figure>
-    </para>
-    <example id="exam-00003">
-    <title>Factoring Trinomials</title>
-    <exercise id="exer-00005">
-    <problem id="prob-00005">
-    <para id="para-00028">Factor <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00029">The numbers that must have a product of 12 will need a sum of 7. We will summarize the results in a table below.</para>
-    <table class="unnumbered" summary="." id="table-00002">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <thead>
-    <row>
-    <entry>Factors of 12</entry>
-    <entry>Sum of Factors</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>1,12</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>12</mn><mo>=</mo><mn>13</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>2,6</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>3,4</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>7</mn></mrow></math></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">We see that 3 and 4 are the numbers that multiply to 12 and add to 7. The factors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00006">
-    <problem id="prob-00006">
-    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C05-M6-Q003"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <example id="exam-00004">
-    <title>Factoring More Complex Trinomials</title>
-    <exercise id="exer-00007">
-    <problem id="prob-00007">
-    <para id="para-00032">Factor <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>28</mn></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00033">The numbers that must have a product of 28 will need a sum of -11. We will summarize the results in a table.</para>
-    <table class="unnumbered" summary="." id="table-00003">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry>Factors of 28</entry>
-    <entry>Sum of Factors</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>1, 28</entry>
-    <entry><equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>28</mn><mi mathvariant="normal"/><mo>=</mo><mn>29</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>2, 14</entry>
-    <entry><equation id="eq-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>16</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>4, 7</entry>
-    <entry><equation id="eq-00015"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>11</mn></mrow></math>
-    </equation></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00034" xmlns="http://cnx.rice.edu/cnxml">We see that 4 and 7 are the numbers that multiply to 28 and add to 11. But we needed -11, so we will need to use -4 and -7 because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>7</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>28</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mo>–</mo><mn>7</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>–</mo><mn>11</mn></mrow></math>. The factors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>28</mn></mrow></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>7</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00008">
-    <problem id="prob-00008">
-    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C05-M6-Q004"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="video" id="note-00006">
-    <para id="para-00036"><link url="https://openstax.org/r/Factoring_with_the_Box">Factoring with the Box Method (Area Model)</link></para>
-    </note>
-    </section>
-    <section id="sect-00005">
-    <title>Solving Quadratic Equations by Graphing</title>
-    <para id="para-00037">We have already solved and graphed linear equations in Section 5.5., equations of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>=</mo><mi>c</mi></mrow></math>. In linear equations, the variables have no exponents. <term id="term-00005" xmlns="http://cnx.rice.edu/cnxml">Quadratic equations</term> are equations in which the variable is squared. The following are some examples of quadratic equations:</para>
-    <equation id="eq-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>106</mn></mrow></mtd><mtd><mrow><mn>4</mn><msup><mi>u</mi><mn>2</mn></msup><mo>–</mo><mn>81</mn><mo>=</mo><mn>0</mn></mrow></mtd><mtd><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>42</mn></mrow></mtd></mtr></mtable></mrow></math></equation>
-    <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">The last equation does not appear to have the variable squared, but when we simplify the expression on the left, we will get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow></math>. The general form of a quadratic equation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> are real numbers, with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></math>. Remember that a solution of an equation is a value of a variable that makes a true statement when substituted into the equation. The solutions of quadratic equations are the values of the variables that make the quadratic equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math> true.</para>
-    <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">To solve quadratic equations, we need methods different than the ones we used in solving linear equations. We will start by solving a quadratic equation from its graph. Just like we started graphing linear equations by plotting points, we will do the same for quadratic equations. Let us look first at graphing the quadratic equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>. We will choose integer values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> between 2 and 2 and find their <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> values, as shown in the table below.</para>
-    <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <tbody>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>y</mi><mo>=</mo><msup><mi>x</mi><mstyle mathvariant="bold" mathsize="normal"><mn>2</mn></mstyle></msup></mtd></mtr><mtr><mtd><mrow/></mtd></mtr></mtable></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold">x</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold">>y</mi></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>0</entry>
-    <entry>0</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>1</entry>
-    </row>
-    <row>
-    <entry>–1</entry>
-    <entry>1</entry>
-    </row>
-    <row>
-    <entry>2</entry>
-    <entry>4</entry>
-    </row>
-    <row>
-    <entry>–2</entry>
-    <entry>4</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00040">Notice when we let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo/><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>1</mn></mrow></math>. we got the same value for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>.</para>
-    <equation id="eq-00017" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><msup><mn>1</mn><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow></math></equation>
-    <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml">The same thing happened when we let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi><mo>=</mo><mo>–</mo><mn>2</mn></math>. Now, we will plot the points to show the graph of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>. See **Figure 5.XX.**</para>
-    <figure id="fig-00009" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_008.jpg"/>
-    </media>
-    <caption>The graph is not a line. This figure is called a parabola. Every quadratic equation has a graph that looks like this. The solution to the quadratic <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math> is 0 because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mstyle mathvariant="bold" mathsize="normal"><mn>2</mn></mstyle></msup><mo>=</mo><mstyle mathvariant="bold" mathsize="normal"><mn>0</mn></mstyle></mrow></math> at 0.</caption>
-    </figure>
-    <example id="exam-00005" xmlns="http://cnx.rice.edu/cnxml">
-    <title>Graphing a Quadratic Equation</title>
-    <exercise id="exer-00009">
-    <problem id="prob-00009">
-    <para id="para-00042">Graph <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></math> and list the solutions to the quadratic equation.</para>
-    </problem>
-    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00043">We will graph the equation by plotting points.</para>
-    <para id="para-00044"><emphasis effect="bold">Step 1:</emphasis> Choose integer values for x, substitute them into the equation, and solve for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>.</para>
-    <para id="para-00045" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Record the values of the ordered pairs in the chart.</para>
-    <table class="unnumbered" summary="." id="table-00005">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry namest="c1" nameend="c2"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>0</entry>
-    <entry>-1</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>0</entry>
-    </row>
-    <row>
-    <entry>-1</entry>
-    <entry>0</entry>
-    </row>
-    <row>
-    <entry>2</entry>
-    <entry>3</entry>
-    </row>
-    <row>
-    <entry>-2</entry>
-    <entry>3</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00046"><emphasis effect="bold">Step 3:</emphasis> Plot the points and then connect them with a smooth curve. The result will be the graph of the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></math>. The solutions are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></math>.</para>
-    <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_009.jpg"/>
-    </media>
-    </figure>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00007">
-    <exercise id="exer-00010">
-    <problem id="prob-00010">
-    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C05-M6-Q005"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <example id="exam-00006">
-    <title>Solving a Quadratic Equation From Its Graph</title>
-    <exercise id="exer-00011">
-    <problem id="prob-00011">
-    <para id="para-00048">Find the solutions of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></math> from its graph.</para>
-    <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_011.jpg"/>
-    </media>
-    </figure>
-    </problem>
-    <solution id="sol-00006">
-    <para id="para-00049">The solutions of a quadratic equations are the values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> that makeW the equation a true statement when set equal to zero (i.e. when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>). <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></math> at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></math>.</para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00012">
-    <problem id="prob-00012">
-    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C05-M6-Q006"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00006">
-    <title>Solving Quadratic Equations by Factoring</title>
-    <para id="para-00051">Another way of solving quadratic equations is by factoring. We will use the <term id="term-00006">Zero Product Property</term> that says that if the product of two quantities is zero, it must be that at least one of the quantities is zero. The only way to get a product equal to zero is to multiply by zero itself.</para>
-    <example id="exam-00007">
-    <title>Solving a Quadratic Equationby Factoring</title>
-    <exercise id="exer-00013">
-    <problem id="prob-00013">
-    <para id="para-00052">Solve <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>−</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>.
-    </para>
-    <!--<figure/>-->
-    </problem>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00014">
-    <problem id="prob-00014">
-    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C05-M6-Q007"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <!--<example>
-    <title>Solve Another Quadratic Equation by Factoring</title>
-    <exercise>
-    <problem>
-    <para>Solve <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></math>.</para>
-    </problem>
-    <solution>
-    <figure>
-    </solution>
-    </exercise>
-    </example>-->
-    <note class="your-turn" id="note-00010">
-    <exercise id="exer-00015">
-    <problem id="prob-00015">
-    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C05-M6-Q008"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="video" id="note-00011">
-    <para id="para-00055"><link url="https://openstax.org/r/Zero_Propert"/>Solving Quadratics with the Zero Propert<link/></para>
-    </note>
-    <note class="check-point" id="note-00012">
-    <para id="para-00056"><emphasis effect="italic">Be careful to write the quadratic equation in standard form first. The equation must be set equal to zero in order for you to use the Zero Product Property! Often students start in Step 2 resulting in an incorrect solution. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>=</mo><mo>−</mo><mn>7</mn></mrow></math> cannot be factored to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math> and then solved by setting each factor equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>–</mo><mn>7</mn></mrow></math>.</emphasis></para>
-    <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="italic">The correct way to solve this quadratic equation is to set it equal to zero FIRST: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>+</mo><mn>7</mn><mo>=</mo><mo>–</mo><mn>7</mn><mo>+</mo><mn>7</mn></mrow></math>  which becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></math>, then continue to factor. See the table below for the correct way to apply the Zero Product Property.</emphasis></para>
-    <table class="unnumbered" summary="." id="table-00006" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="5">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <tbody>
-    <row>
-    <entry/>
-    <entry namest="c2" nameend="c3"><equation id="eq-00018"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
-    <entry namest="c4" nameend="c5" xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00019"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 1</emphasis></entry>
-    <entry namest="c2" nameend="c3">Skipped</entry>
-    <entry namest="c4" nameend="c5"><equation id="eq-00020"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>+</mo><mn>7</mn><mo>=</mo><mo>–</mo><mn>7</mn><mo>+</mo><mn>7</mn></mtd></mtr><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>8</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 2</emphasis></entry>
-    <entry namest="c2" nameend="c3"><equation id="eq-00021"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
-    <entry namest="c4" nameend="c5" xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00022"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 3</emphasis></entry>
-    <entry><equation id="eq-00023"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>–</mo><mn>3</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00024"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00025"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>–</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00026"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 4</emphasis></entry>
-    <entry><equation id="eq-00027"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>4</mn></mrow></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00028"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>12</mn></mrow></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00029"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00030"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>4</mn></mrow></math></equation></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 5</emphasis></entry>
-    <entry><equation id="eq-00031"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>–</mo><mn>15</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>16</mn><mo>–</mo><mn>8</mn><mo>–</mo><mn>15</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>=</mo><mo>–</mo><mn>7</mn></mtd></mtr></mtable></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00032"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>12</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mrow><mo>–</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>–</mo><mn>15</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>144</mn><mo>–</mo><mn>24</mn><mo>–</mo><mn>1</mn><mo>=</mo><mn>105</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>≠</mo><mo>–</mo><mn>7</mn></mtd></mtr></mtable></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00033"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>–</mo><mn>8</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>–</mo><mn>8</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></equation></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00034"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>–</mo><mn>18</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>16</mn><mo>–</mo><mn>8</mn><mo>–</mo><mn>8</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></equation></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </note>
-    </section>
-    <section id="sect-00007" xmlns="http://cnx.rice.edu/cnxml">
-    <title>Solving Quadratic Equations Using the Square Root Property</title>
-    <para id="para-00058">We just solved some quadratic equations by factoring. Let us use factoring to solve the quadratic equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>.</para>
-    <table class="unnumbered" summary="." id="table-00007" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <tbody>
-    <row>
-    <entry><emphasis effect="bold">Step 1:</emphasis> Put the equation in standard form.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>9</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 2:</emphasis> Factor the left side.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 3:</emphasis> Use the Zero Product Property.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>3</mn><mtext> </mtext><mo>=</mo><mn>0</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>–</mo><mn>3</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 4:</emphasis> Solve each equation.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>3</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 5:</emphasis> Combine the two solutions into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>±</mo></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>3</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00059">The solution is read as “<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> is equal to positive or negative 3.”</para>
-    <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">What happens when we have an equation like <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>7</mn></mrow></math>?  Since 7 is not a perfect square, we cannot solve the equation by factoring. These equations are all of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mi>k</mi></mrow></math>. We define the square root of a number in this way: If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><mi>m</mi></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is a square root of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math>. This leads to the <term id="term-00007" xmlns="http://cnx.rice.edu/cnxml">Square Root Property</term>.</para>
-    <example id="exam-00008">
-    <title>Using the Square Root Property to Solve a Quadratic Equation</title>
-    <exercise id="exer-00016">
-    <problem id="prob-00016">
-    <para id="para-00061">Solve using the square Root Property: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>169</mn></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
-    <table class="unnumbered" summary="." id="table-00008">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <colspec colnum="3" colname="c3" colwidth="1pt"/>
-    <tbody>
-    <row>
-    <entry><emphasis effect="bold">Step 1:</emphasis> Use the Square Root Property.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>±</mo><msqrt><mrow><mn>169</mn></mrow></msqrt></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 2:</emphasis> Simplify the radical.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>13</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 3:</emphasis> Rewrite to show the two solutions.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>13</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>13</mn></mrow></math></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00017">
-    <problem id="prob-00017">
-    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C05-M6-Q009"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <example id="exam-00009">
-    <title>Using the Square Root Property to Solve Another Quadratic Equation</title>
-    <exercise id="exer-00018">
-    <problem id="prob-00018">
-    <para id="para-00063">Solve using the Square Root Property: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>144</mn><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00064">
-    <table class="unnumbered" summary="." id="table-00009">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <colspec colnum="3" colname="c3" colwidth="1pt"/>
-    <tbody>
-    <row>
-    <entry><emphasis effect="bold">Step 1:</emphasis> Solve for <emphasis effect="italic">q</emphasis>.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>25</mn></mrow><mrow><mn>144</mn></mrow></mfrac></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 2:</emphasis> Use the Square Root Property.</entry>
-    <entry/>
-    <entry/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 3:</emphasis> Simplify the radical.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>=</mo><mo>±</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 4:</emphasis> Rewrite to show the two solutions.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>=</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>=</mo><mo>−</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00019">
-    <problem id="prob-00019">
-    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C05-M6-Q010"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00008">
-    <title>Solving Quadratic Equations Using the Quadratic Formula</title>
-    <para id="para-00066">This last method we will look at for solving quadratic equations is the <term id="term-00008">quadratic formula</term>. This method works for all quadratic equations, even the quadratic equations we could not factor! To use the quadratic formula, we substitute the values of <emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, and c into the expression on the right side of the formula. Then, we do all the math to simplify the expression. The result gives the solution(s) to the quadratic equation.</para>
-    <example id="exam-00010">
-    <title>Solving a Quadratic Equation Using the Quadratic Formula</title>
-    <exercise id="exer-00020">
-    <problem id="prob-00020">
-    <para id="para-00067">Solve using the quadratic formula: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></math>.</para>
-    </problem>
-    <solution id="sol-00009" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00068">
-    <table class="unnumbered" summary="." id="table-00010">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <tbody>
-    <row>
-    <entry/>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>This equation is in standard form.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 1:</emphasis> Identify the <emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, and <emphasis effect="italic">c</emphasis> values.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>b</mi><mo>=</mo><mo>−</mo><mn>6</mn><mo>,</mo><mi>c</mi><mo>=</mo><mn>5</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 2:</emphasis> Write the quadratic formula.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 3:</emphasis> Then substitute in the values of <emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow><mo>=</mo><mrow><mfrac><mrow><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>6</mn><mo stretchy="false">)</mo><mo>±</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>4.1.5</mn></mrow></msqrt></mrow><mrow><mn>2.1</mn></mrow></mfrac></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 4:</emphasis> Simplify.</entry>
-    <entry><para id="para-00069"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>±</mo><msqrt><mrow><mn>36</mn><mo>−</mo><mn>20</mn></mrow></msqrt></mrow><mn>2</mn></mfrac></mrow></math></para>
-    <para id="para-00070" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>±</mo><msqrt><mrow><mn>16</mn></mrow></msqrt></mrow><mn>2</mn></mfrac></mrow></math></para>
-    <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>±</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mrow></math></para></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 5:</emphasis> Rewrite to show two solutions.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>+</mo><mn>4</mn></mrow><mn>2</mn></mfrac><mo>,</mo><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>−</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 6:</emphasis> Simplify.</entry>
-    <entry><para id="para-00072"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>10</mn></mrow><mn>2</mn></mfrac><mo>,</mo><mi>x</mi><mo>=</mo><mfrac><mn>2</mn><mn>2</mn></mfrac></mrow></math></para>
-    <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>5</mn><mo>,</mo><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math></para></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><para id="para-00074"><emphasis effect="bold">Step 7:</emphasis> Check.</para>
-    <para id="para-00075"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></mtd><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>−</mo><mn>6</mn><mo>•</mo><mn>5</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd><mtd><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>−</mo><mn>6</mn><mo>•</mo><mn>1</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>25</mn><mo>−</mo><mn>30</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd><mtd><mrow><mn>1</mn><mo>−</mo><mn>6</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn><mo>=</mo><mn>0</mn><mo>✓</mo></mrow></mtd><mtd><mrow><mn>0</mn><mo>=</mo><mn>0</mn><mo>✓</mo></mrow></mtd></mtr></mtable></mrow></math></para>
-    </entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00015" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00021">
-    <problem id="prob-00021">
-    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C05-M6-Q011"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <!--<example>
-    <title>Solving Another Quadratic Equation Using the Quadratic Formula</title>
-    <exercise>
-    <problem>
-    <para>Solve using the quadratic formula: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn><mi>x</mi><mo>&#x2212;</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></math>.</para>
-    </problem>
-    <solution>
-    <figure/>
-    </solution>
-    </exercise>
-    </example>-->
-    <note class="your-turn" id="note-00016">
-    <exercise id="exer-00022">
-    <problem id="prob-00022">
-    <para id="para-00077"><link class="os-embed" url="#exercise/CM-C05-M6-Q012"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="video" id="note-00017">
-    <para id="para-00078"><link url="https://openstax.org/r/Sovling_Quadratics"/>Sovling Quadratics with the Quadratic Formula<link/></para>
-    </note>
-    </section>
-    <section id="sect-00009">
-    <title>Solving Real-World Applications Modeled by Quadratic Equations</title>
-    <para id="para-00079">There are problem solving strategies that will work well for applications that translate to quadratic equations. Here’s a problem-solving strategy to solve word problems:</para>
-    <para id="para-00080"><emphasis effect="bold">Step 1:</emphasis> Read the problem. Make sure all the words and ideas are understood.</para>
-    <para id="para-00081"><emphasis effect="bold">Step 2:</emphasis> Identify what we are looking for.</para>
-    <para id="para-00082"><emphasis effect="bold">Step 3:</emphasis> Name what we are looking for. Choose a variable to represent that quantity.</para>
-    <para id="para-00083"><emphasis effect="bold">Step 4:</emphasis> Translate into an equation. It may be helpful to restate the problem in one sentence with all the important information. Then, translate the English sentence into an algebra equation.</para>
-    <para id="para-00084"><emphasis effect="bold">Step 5:</emphasis> Solve the equation using good algebra techniques.</para>
-    <para id="para-00085"><emphasis effect="bold">Step 6:</emphasis> Check the answer in the problem and make sure it makes sense.</para>
-    <para id="para-00086"><emphasis effect="bold">Step 7:</emphasis> Answer the question with a complete sentence.</para>
-    <example id="exam-00011">
-    <title>Finding Consecutive Integers</title>
-    <exercise id="exer-00023">
-    <problem id="prob-00023">
-    <para id="para-00087">The product of two consecutive integers is 132. Find the integers.</para>
-    </problem>
-    <solution id="sol-00010">
-    <para id="para-00088">
-    <table class="unnumbered" summary="." id="table-00011">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <tbody>
-    <row>
-    <entry><emphasis effect="bold">Step 1:</emphasis> Read the problem.</entry>
-    <entry/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 2:</emphasis> Identify what we are looking for.</entry>
-    <entry>We are looking for two consecutive integers.</entry>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 3:</emphasis> Name what we are looking for.</entry>
-    <entry><para id="para-00089">Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo></mrow></math> the first integer</para>
-    <para id="para-00090" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>+</mo><mn>1</mn><mo>=</mo></mrow></math> the next consecutive integer.</para></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 4:</emphasis> Translate into an equation. Restate the problem in a sentence.</entry>
-    <entry><para id="para-00091"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>132</mn></mrow></math></para>
-    <para id="para-00092" xmlns="http://cnx.rice.edu/cnxml">The product of the two consecutive integers is 132. The first integer times the next integer is 132.</para></entry>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 5:</emphasis> Solve the equation.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo>=</mo><mn>132</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Bring all the terms to one side.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo>−</mo><mn>132</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Factor the trinomial.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>−</mo><mn>11</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><para id="para-00093">Use the zero product property.</para>
-    <para id="para-00094">Solve the equations.</para></entry>
-    <entry><para id="para-00095"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>11</mn><mo>=</mo><mn>0</mn><mi>n</mi><mo>+</mo><mn>12</mn><mo>=</mo><mn>0</mn></mrow></math></para>
-    <para id="para-00096" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>11</mn><mo>,</mo><mi>n</mi><mo>=</mo><mo>−</mo><mn>12</mn></mrow></math></para></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>There are two values for <emphasis effect="italic">n</emphasis> that are solutions to this problem. So, there are two sets of consecutive integers that will work.</entry>
-    </row>
-    <row>
-    <entry>If the first integer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>11</mn></mrow></math>, then the next integer is 12. If the first integer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mo>−</mo><mn>12</mn></mrow></math>, then the next integer is −11.</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 6:</emphasis> Check the answer.</entry>
-    <entry>The consecutive integers are 11,12 and −11,−12. The product of 11 and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>=</mo><mn>132</mn></mrow></math> and the product of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>11</mn><mrow><mo>(</mo><mrow><mo>−</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>132</mn></mrow></math>. Both pairs of consecutive integers are solutions.</entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 7:</emphasis> Answer the question.</entry>
-    <entry> The consecutive integers are 11,12, and −11,−12.</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00018">
-    <exercise id="exer-00024">
-    <problem id="prob-00024">
-    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C05-M6-Q013"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <para id="para-00098">Were you surprised by the pair of negative integers that is one of the solutions? In some applications, negative solutions will result from the algebra, but will not be realistic for the situation.</para>
-    <example id="exam-00012">
-    <title>Finding Length and Width of a Garden</title>
-    <exercise id="exer-00025">
-    <problem id="prob-00025">
-    <para id="para-00099">A rectangular garden has an area 15 square feet. The length of the garden is 2 feet more than the width. Find the length and width of the garden.</para>
-    </problem>
-    <solution id="sol-00011">
-    <para id="para-00100">
-    <table class="unnumbered" summary="." id="table-00012">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <colspec colnum="3" colname="c3" colwidth="1pt"/>
-    <tbody>
-    <row>
-    <entry><emphasis effect="bold">Step 1:</emphasis> Read the problem. In problems involving geometric figures, a sketch can help you visualize the situation.</entry>
-    <entry namest="c2" nameend="c3">
-    <figure id="fig-00012">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_013.jpg"/>
-    </media></figure></entry>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 2:</emphasis> Identify what you are looking for.</entry>
-    <entry namest="c2" nameend="c3">We are looking for the length and width.</entry>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 3:</emphasis> Name what you are looking for. The length is 2 feet more than width.</entry>
-    <entry namest="c2" nameend="c3"><para id="para-00101">Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>=</mo></mrow></math> the width of the garden.</para>
-    <para id="para-00102" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>+</mo><mn>2</mn><mo>=</mo></mrow></math> the length of the garden.</para></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><para id="para-00103"><emphasis effect="bold">Step 4:</emphasis> Translate into an equation.</para>
-    <para id="para-00104">Restate the important information in a sentence.</para></entry>
-    <entry namest="c2" nameend="c3">The area of the rectangular garden is 15 square feet.</entry>
-    </row>
-    <row>
-    <entry>Use the formula for the area of a rectangle.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>L</mi><mo>×</mo><mi>W</mi></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Substitute in the variables.</entry>
-    <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>=</mo><mrow><mo>(</mo><mrow><mi>W</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mi>W</mi></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry><emphasis effect="bold">Step 5:</emphasis> Solve the equation. Distribute first.</entry>
-    <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>=</mo><msup><mi>W</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>W</mi></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Get zero on one side.</entry>
-    <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><msup><mi>W</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>W</mi><mo>−</mo><mn>15</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Factor the trinomial.</entry>
-    <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mo>(</mo><mrow><mi>W</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>W</mi><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Use the Zero Product Property.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><mi>W</mi><mo>+</mo><mn>5</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><mi>W</mi><mo>−</mo><mn>3</mn></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Solve each equation.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>5</mn><mo>=</mo><mi>W</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>=</mo><mi>W</mi></mrow></math></entry>
-    </row>
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>W</mi></math> is the width of the garden, it does not make sense for it to be negative. We eliminate that value for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>W</mi></math>.</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>=</mo><mn>3</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">Width is 3 feet.</entry>
-    </row>
-    <row>
-    <entry>Find the value of the length.</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>+</mo><mn>2</mn><mo>=</mo></mrow></math> length.</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry/>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mo>−</mo><mn>2</mn></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"/>
-    </row>
-    <row>
-    <entry/>
-    <entry>5</entry>
-    <entry>Length is 5 feet.</entry>
-    </row>
-    <row>
-    <entry><para id="para-00105"><emphasis effect="bold">Step 6:</emphasis> Check the answer.</para>
-    <para id="para-00106">Does the answer make sense?</para></entry>
-    <entry/>
-    <entry/>
-    </row>
-    <row>
-    <entry>
-    <figure id="fig-00013">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_014.jpg"/>
-    </media>
-    </figure></entry>
-    <entry/>
-    <entry/>
-    </row>
-    <row>
-    <entry/>
-    <entry namest="c2" nameend="c3">Yes, this makes sense.</entry>
-    </row>
-    <row>
-    <entry><emphasis effect="bold">Step 7:</emphasis> Answer the question.</entry>
-    <entry namest="c2" nameend="c3">The width of the garden is 3 feet and the length is 5 feet.</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </para>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00019">
-    <exercise id="exer-00026">
-    <problem id="prob-00026">
-    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C05-M6-Q014"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="work-out" id="note-00020">
-    <title>Completing the Square</title>
-    <para id="para-00108">Recall the two methods used to solve quadratic equations of the form  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>:</mo></mrow></math> by factoring and by using the quadratic formula. There are, however, many different methods for solving quadratic equations that were developed throughout history. Egyptian, Mesopotamian, Chinese, Indian, and Greek mathematicians all solved various types of quadratic equations, as did Arab mathematicians of the ninth through the twelfth centuries. It is one of these Arab mathematicians' methods that we wish to investigate with this activity.</para>
-    <para id="para-00109" xmlns="http://cnx.rice.edu/cnxml">Muhammad ibn Musa al-Khwarizmi was employed as a scholar at the House of Wisdom in Baghdad, located in present day Iraq. One of the many accomplishments of Al-Khwarizmi was his book on the topic of algebra. In that book, he asks, “What must be the square which, when increased by ten of its own roots, amounts to 39?” Al-Khwarizmi, like many Arab mathematicians of his time, was well versed in Euclid's Elements. Like Euclid, he viewed algebra very geometrically, and thus had a geometric approach to solving a problem like the one above. In his approach, he used a method which today we refer to as <emphasis effect="italic">completing the square</emphasis>.</para>
-    <para id="para-00110">His description of the solution method for the above problem is: halve the number of roots, which in the present instance yields 5. This you multiply by itself; the product is 25. Add this to 39; the sum is 64. Now take the root of this which is 8, and subtract from it half the number of the roots, which is 5; the remainder is 3. This is the root of the square which you sought for. Thus the square is 9.</para>
-    <table class="unnumbered" summary="." id="table-00013">
-    <tgroup cols="2">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <tbody>
-    <row>
-    <entry><para id="para-00111">So, what does all of this mean? Al-Khwarizmi would start with a square of unknown length of side (we will label the side length <emphasis effect="italic">x</emphasis>). So, this square has area <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math></para>
-    <para id="para-00112" xmlns="http://cnx.rice.edu/cnxml">He would then proceed to halve the number of roots (i.e., there are 10 roots by which the square is increasing) to get 5; this he would add to the first square. The area of the two new pieces added into the original square are both <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mi>x</mi></mrow></math>.  At this point, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>=</mo><mn>39</mn></mrow></math>.</para>
-    <para id="para-00113" xmlns="http://cnx.rice.edu/cnxml">Now Al-Khwarizmi needed to “complete the square” by adding into the drawing a small square. This square has an area of 25.</para></entry>
-    <entry><para id="para-00114"><figure id="fig-00014">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_015.jpg"/>
-    </media>
-    </figure></para>
-    <para id="para-00115"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></para>
-    <para id="para-00116" xmlns="http://cnx.rice.edu/cnxml"><figure id="fig-00015">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_016.jpg"/>
-    </media>
-    </figure></para>
-    <para id="para-00117"><figure id="fig-00016">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_017.jpg"/>
-    </media>
-    </figure></para></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <para id="para-00118"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>39</mn><mo>+</mo><mn>25</mn></mrow></math>, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>64</mn></mrow></math>.</para>
-    <para id="para-00119" xmlns="http://cnx.rice.edu/cnxml">Notice that the completed square has side length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></math>, so the large square has area <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></math>. (Notice algebraically that the left half of the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>64</mn></mrow></math> factors to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><mn>64.</mn><mo stretchy="false">)</mo></mrow></math> This means the area of large square equals 64. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><mn>64</mn></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></mrow></math>; so <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> must be equal to 3 or -13 to make this true. Note that Al-Kwarizmi would not have considered the possibility of a negative solution, since he approached the solution geometrically, and negative distances do not exist.</para>
-    </note>
-    </section>
-    <section class="check-understanding" id="sect-00010">
-    <title>Check Your Understanding</title>
-    <exercise id="exer-00027">
-    <problem id="prob-00027">
-    <para id="para-00120"><link class="os-embed" url="#exercise/CM-C05-M6-Q015"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00028">
-    <problem id="prob-00028">
-    <para id="para-00121"><link class="os-embed" url="#exercise/CM-C05-M6-Q016"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00029">
-    <problem id="prob-00029">
-    <para id="para-00122"><link class="os-embed" url="#exercise/CM-C05-M6-Q027"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00030">
-    <problem id="prob-00030">
-    <para id="para-00123"><link class="os-embed" url="#exercise/CM-C05-M6-Q028"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00031">
-    <problem id="prob-00031">
-    <para id="para-00124"><link class="os-embed" url="#exercise/CM-C05-M6-Q029"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00032">
-    <problem id="prob-00032">
-    <para id="para-00125"><link class="os-embed" url="#exercise/CM-C05-M6-Q030"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00033">
-    <problem id="prob-00033">
-    <para id="para-00126"><link class="os-embed" url="#exercise/CM-C05-M6-Q031"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00034">
-    <problem id="prob-00034">
-    <para id="para-00127"><link class="os-embed" url="#exercise/CM-C05-M6-Q032"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00035">
-    <problem id="prob-00035">
-    <para id="para-00128"><link class="os-embed" url="#exercise/CM-C05-M6-Q033"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="section-exercises" id="sect-00011">
-    <title>Exercises</title>
-    <exercise id="exer-00036">
-    <problem id="prob-00036">
-    <para id="para-00129"><link class="os-embed" url="#exercise/CM-C05-M6-Q017"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00037">
-    <problem id="prob-00037">
-    <para id="para-00130"><link class="os-embed" url="#exercise/CM-C05-M6-Q018"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00038">
-    <problem id="prob-00038">
-    <para id="para-00131"><link class="os-embed" url="#exercise/CM-C05-M6-Q019"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00039">
-    <problem id="prob-00039">
-    <para id="para-00132"><link class="os-embed" url="#exercise/CM-C05-M6-Q020"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00040">
-    <problem id="prob-00040">
-    <para id="para-00133"><link class="os-embed" url="#exercise/CM-C05-M6-Q021"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00041">
-    <problem id="prob-00041">
-    <para id="para-00134"><link class="os-embed" url="#exercise/CM-C05-M6-Q022"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00042">
-    <problem id="prob-00042">
-    <para id="para-00135"><link class="os-embed" url="#exercise/CM-C05-M6-Q023"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00043">
-    <problem id="prob-00043">
-    <para id="para-00136"><link class="os-embed" url="#exercise/CM-C05-M6-Q024"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00044">
-    <problem id="prob-00044">
-    <para id="para-00137"><link class="os-embed" url="#exercise/CM-C05-M6-Q025"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00045">
-    <problem id="prob-00045">
-    <para id="para-00138"><link class="os-embed" url="#exercise/CM-C05-M6-Q026"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="key-terms" id="sect-00012">
-    <title>Key Terms</title>
-    <list bullet-style="none" id="list-00002">
-    <item>Monomial</item>
-    <item>polynomial</item>
-    <item>binomial</item>
-    <item>trinomial</item>
-    <item>quadratic equation</item>
-    <item>Zero Product Property</item>
-    </list>
-    </section>
-    <section class="key-concepts" id="sect-00013">
-    <title>Key Concepts</title>
-    <list bullet-style="bulleted" id="list-00003">
-    <item>A quadratic equation is an algebraic equation where the highest power (degree) of the equation is two.</item>
-    <item>To solve a quadratic equation is to find the value(s) that when substituted in for the variables, will make the equation equal to zero.</item>
-    <item>There can be two, one, or no solutions to any quadratic equation.</item>
-    <item>There are several methods to solve a quadratic equation. These methods include factoring quadratic equations, graphic quadratic equations, using the square root method, and using the quadratic formula.</item>
-    </list>
-    </section>
+      <!--<media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_05_06_001.jpg"/>
+      </media>-->
+      <caption>(Credit: "Gateway Arch - St. Louis - Missouri" by Sam valadi/Flickr, CC BY 2.0)</caption>
+      </figure>
+      <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Multiply binomials.</item>
+      <item>Factor trinomials.</item>
+      <item>Solve quadratic equations by graphing.</item>
+      <item>Solve quadratic equations by factoring.</item>
+      <item>Solve quadratic equations using square root method.</item>
+      <item>Solve quadratic equations using the quadratic formula.</item>
+      <item>Solve real world applications modeled by quadratic equations.</item>
+      </list>
+      </section>
+      <para id="para-00002">In this section, we will discuss quadratic equations. There are several real-world scenarios that can be represented by the graph of a quadratic equation. Think of the Arch in St. Louis, Missouri. Both ends of the arc are 630 feet apart and the arch is 630 feet tall. You can plot these points on a coordinate system and create a parabola to graph the quadratic equation.</para>
+      <section id="sect-00002">
+      <title>Identify Polynomials, Monomials, Binomials and Trinomials</title>
+      <para id="para-00003">You have learned that a term is a constant, or the product of a constant and one or more variables. When it is of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mi>m</mi></msup></mrow></math> where a is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> constant and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mi>m</mi></msup></mrow></math> is a positive whole number, it is called a <term id="term-00001" xmlns="http://cnx.rice.edu/cnxml">monomial</term>. Some examples of monomial are 8,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mi>y</mi><mn>3</mn></msup></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>11</mn><mi>z</mi></mrow></math>.</para>
+      <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml">A monomial or two or more monomials combined by addition or subtraction is a <term id="term-00002">polynomial</term>. ome examples include: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>+</mo><mn>11</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mi>y</mi><mn>2</mn></msup><mo>–</mo><mn>7</mn><mi>y</mi><mo>+</mo><mn>2</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>9</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></math>. Some polynomials have special names, based on the number of terms. A <term id="term-00003" xmlns="http://cnx.rice.edu/cnxml">monomial</term> is a polynomial with exactly one term (examples: 14, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><msup><mi>y</mi><mn>2</mn></msup></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>9</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>5</mn></msup></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>–</mo><mn>13</mn></mrow></math>). A <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">binomial</term> has exactly two terms (examples: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>+</mo><mtext> </mtext><mn>7</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mi>b</mi><mo>–</mo><mn>5</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>–</mo><mn>16</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>–</mo><mn>9</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></math>), and a trinomial has exactly three terms (examples: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>y</mi><mo>–</mo><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><msup><mi>m</mi><mn>4</mn></msup><mo>–</mo><msup><mi>m</mi><mn>3</mn></msup><mo>+</mo><mn>8</mn><mi>m</mi></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>1</mn></mrow></math>). There are no special names for polynomials with more than three terms</para>
+      <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">Notice that every monomial, binomial, and trinomial is also a polynomial. They are just special members of the “family” of polynomials and so they have special names. We use the words monomial, binomial, and trinomial when referring to these special polynomials and just call all the rest polynomials.</para>
+      </section>
+      <section id="sect-00003">
+      <title>Multiply Binomials</title>
+      <para id="para-00006">Recall multiplying algebraic expressions from **Section 5.1.** In this section, we will continue that work and multiply binomials as well. We can use an area model to do multiplication.</para>
+      <example id="exam-00001">
+      <title>Multiply Binomials</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00007">Multiply <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00008"><emphasis effect="bold">Step 1:</emphasis> Use the distributive property:
+      <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></math></equation></para>
+      <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">In the area model multiply each term on the side by each term on the top (think of it as a multiplication table).</para>
+      <figure id="fig-00002">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_001.jpg"/>
+      </media>
+      </figure>
+      <para id="para-00010"><emphasis effect="bold">Step 2:</emphasis> After we multiply, we get the following equation:
+      <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></equation></para>
+      <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Combine the like terms to arrive at:
+      <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></equation></para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00012"><link class="os-embed" url="#exercise/CM-C05-M6-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00002">
+      <title>Multiplying More Complex Binomials</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00013">Multiply <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><mi>x</mi><mo>–</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00014"><emphasis effect="bold">Step 1:</emphasis> Use the Distributive Property:
+      <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><mi>x</mi></mrow><mo>)</mo></mrow><mo>–</mo><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mn>5</mn><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mn>7</mn><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>3</mn><mi>x</mi></mrow><mo>)</mo></mrow><mo>–</mo><mrow><mo>(</mo><mn>7</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>5</mn><mo>)</mo></mrow></mrow></math></equation></para>
+      <figure id="fig-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_002.jpg"/>
+      </media>
+      </figure>
+      <para id="para-00015"><emphasis effect="bold">Step 2:</emphasis> After multiplying, get the following equation:
+      <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>21</mn><mi>x</mi><mo>-</mo><mn>35</mn></mrow></math></equation></para>
+      <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Combine the like terms to arrive at:
+      <equation id="eq-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>11</mn><mi>x</mi><mo>-</mo><mn>35</mn></mrow></math></equation></para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00017"><link class="os-embed" url="#exercise/CM-C05-M6-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="who-knew" id="note-00003">
+      <title>They Are Teaching Multiplication of Binomials in Elementary School</title>
+      <para id="para-00018">Manipulatives are often used in elementary school for students to experience a hands-on way to experience the mathematics they are learning. Base Ten Blocks, or Dienes Blocks, are often used to introduce place value and the operation of whole numbers. When multiplying two-digit numbers, students can make an array to visualize the Distributive Property. **Figure 5.XX** shows the value of each Base Ten Block and **Figure 5.XX shows how to multiply 17 and 23 using an area model and Base Ten Blocks. You can see how this helps students visualize the multiplication using the Distributive Property. Consider how <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>10</mn><mo>+</mo><mn>7</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>20</mn><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math> can easily extend to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>10</mn><mo>+</mo><mi>x</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>20</mn><mo>+</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></math> in algebra!</para>
+      <figure id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_003.jpg"/>
+      </media>
+      <caption>The Value of Cach Base Ten Block</caption>
+      </figure>
+      <figure id="fig-00005">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_004.jpg"/>
+      </media>
+      <caption>How to Multiply 17 and 23 Using an Area Model and Base Ten Blocks</caption>
+      </figure>
+      </note>
+      </section>
+      <section id="sect-00004">
+      <title>Factoring Trinomials</title>
+      <para id="para-00019">We’ve just covered how to multiply binomials. Now you will need to “undo” this multiplication-to start with the product and end up with the factors. Let us review at an example of multiplying binomials to refresh your memory.</para>
+      <equation id="eq-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></equation>
+      <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">To factor the trinomial means to start with the product, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>, and end with the factors, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math>. You need to think about where each of the terms in the trinomial came from. The first term came from multiplying the first term in each binomial. So, to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math> in the product, each binomial must start with an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></para>
+      <equation id="eq-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mtd></mtr><mtr><mtd><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mtd></mtr></mtable></math></equation>
+      <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">The last term in the trinomial came from multiplying the last term in each binomial. So, the last terms must multiply to 6. What two numbers multiply to 6? The factors of 6 could be 1 and 6, or 2 and 3. How do you know which pair to use? Consider the middle term. It came from adding the outer and inner terms. So the numbers that must have a product of 6 will need a sum of 5.</para>
+      <para id="para-00022">We’ll test both possibilities and summarize the results in the following table, which will be very helpful when you work with numbers that can be factored in many different ways.</para>
+      <table class="unnumbered" summary="." id="table-00001">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry>Factors of 6</entry>
+      <entry>Sum of Factors</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>1, 6</entry>
+      <entry><equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>7</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>2, 3</entry>
+      <entry><equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></math></equation></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml">We see that 2 and 3 are the numbers that multiply to 6 and add to 5. We have the factors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>. They are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></para>
+      <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mtd><mtd><mrow><mtext>product</mtext></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mrow><mtext>factors</mtext></mrow></mtd></mtr></mtable></mrow></math></equation>
+      <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">You can check if the factors are correct by multiplying. Looking back, we started with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math>, which is of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>5</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>=</mo><mn>6</mn></mrow></math>. We factored it into two binomials of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>m</mi></mrow><mo>)</mo></mrow></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
+      <equation id="eq-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></mtd><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></mtd><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>m</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mi>n</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></equation>
+      <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">To get the correct factors, we found two number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> whose product is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> and sum is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>. With the area model, start with an empty box and then put in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math> your term and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>.</para>
+      <figure id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_005.jpg"/>
+      </media>
+      <caption/>
+      </figure>
+      <para id="para-00026">Continue by putting in two terms that add up to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mi>x</mi><mo>:</mo><mn>2</mn><mi>x</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mn>3</mn><mi>x</mi></mrow></math></para>
+      <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_006.jpg"/>
+      </media>
+      <caption/>
+      </figure>
+      <para id="para-00027">Then you find the terms of the binomials on the top and side:
+      <figure id="fig-00008">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_006.jpg"/>
+      </media>
+      <caption/>
+      </figure>
+      </para>
+      <example id="exam-00003">
+      <title>Factoring Trinomials</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00028">Factor <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00029">The numbers that must have a product of 12 will need a sum of 7. We will summarize the results in a table below.</para>
+      <table class="unnumbered" summary="." id="table-00002">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <thead>
+      <row>
+      <entry>Factors of 12</entry>
+      <entry>Sum of Factors</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>1,12</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>12</mn><mo>=</mo><mn>13</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>2,6</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>8</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>3,4</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>7</mn></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">We see that 3 and 4 are the numbers that multiply to 12 and add to 7. The factors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00031"><link class="os-embed" url="#exercise/CM-C05-M6-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00004">
+      <title>Factoring More Complex Trinomials</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00032">Factor <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>28</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00033">The numbers that must have a product of 28 will need a sum of -11. We will summarize the results in a table.</para>
+      <table class="unnumbered" summary="." id="table-00003">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry>Factors of 28</entry>
+      <entry>Sum of Factors</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>1, 28</entry>
+      <entry><equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>28</mn><mi mathvariant="normal"/><mo>=</mo><mn>29</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>2, 14</entry>
+      <entry><equation id="eq-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>16</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>4, 7</entry>
+      <entry><equation id="eq-00015"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>11</mn></mrow></math>
+      </equation></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00034" xmlns="http://cnx.rice.edu/cnxml">We see that 4 and 7 are the numbers that multiply to 28 and add to 11. But we needed -11, so we will need to use -4 and -7 because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>7</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>28</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mo>–</mo><mn>7</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>–</mo><mn>11</mn></mrow></math>. The factors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>28</mn></mrow></math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>7</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00035"><link class="os-embed" url="#exercise/CM-C05-M6-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="video" id="note-00006">
+      <para id="para-00036"><link url="https://openstax.org/r/Factoring_with_the_Box">Factoring with the Box Method (Area Model)</link></para>
+      </note>
+      </section>
+      <section id="sect-00005">
+      <title>Solving Quadratic Equations by Graphing</title>
+      <para id="para-00037">We have already solved and graphed linear equations in **Section 5.5**, equations of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>=</mo><mi>c</mi></mrow></math>. In linear equations, the variables have no exponents. <term id="term-00005" xmlns="http://cnx.rice.edu/cnxml">Quadratic equations</term> are equations in which the variable is squared. The following are some examples of quadratic equations:</para>
+      <equation id="eq-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn></mrow></mtd><mtd><mrow><mn>3</mn><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>106</mn></mrow></mtd><mtd><mrow><mn>4</mn><msup><mi>u</mi><mn>2</mn></msup><mo>–</mo><mn>81</mn><mo>=</mo><mn>0</mn></mrow></mtd><mtd><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>42</mn></mrow></mtd></mtr></mtable></mrow></math></equation>
+      <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">The last equation does not appear to have the variable squared, but when we simplify the expression on the left, we will get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow></math>. The general form of a quadratic equation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> are real numbers, with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>?</mo><mn>0</mn></mrow></math>. Remember that a solution of an equation is a value of a variable that makes a true statement when substituted into the equation. The solutions of quadratic equations are the values of the variables that make the quadratic equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math> true.</para>
+      <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">To solve quadratic equations, we need methods different than the ones we used in solving linear equations. We will start by solving a quadratic equation from its graph. Just like we started graphing linear equations by plotting points, we will do the same for quadratic equations. Let us look first at graphing the quadratic equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>. We will choose integer values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> between 2 and 2 and find their <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> values, as shown in the table below.</para>
+      <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>y</mi><mo>=</mo><msup><mi>x</mi><mstyle mathvariant="bold" mathsize="normal"><mn>2</mn></mstyle></msup></mtd></mtr><mtr><mtd><mrow/></mtd></mtr></mtable></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold">x</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold">>y</mi></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>0</entry>
+      <entry>0</entry>
+      </row>
+      <row>
+      <entry>1</entry>
+      <entry>1</entry>
+      </row>
+      <row>
+      <entry>–1</entry>
+      <entry>1</entry>
+      </row>
+      <row>
+      <entry>2</entry>
+      <entry>4</entry>
+      </row>
+      <row>
+      <entry>–2</entry>
+      <entry>4</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00040">Notice when we let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>1</mn></mrow></math>. we got the same value for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>.</para>
+      <equation id="eq-00017" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><msup><mn>1</mn><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></mtd><mtd><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow></math></equation>
+      <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml">The same thing happened when we let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi><mo>=</mo><mo>–</mo><mn>2</mn></math>. Now, we will plot the points to show the graph of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>. See **Figure 5.XX.**</para>
+      <figure id="fig-00009" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_008.jpg"/>
+      </media>
+      <caption>The graph is not a line. This figure is called a parabola. Every quadratic equation has a graph that looks like this. The solution to the quadratic <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math> is 0 because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mstyle mathvariant="bold" mathsize="normal"><mn>2</mn></mstyle></msup><mo>=</mo><mstyle mathvariant="bold" mathsize="normal"><mn>0</mn></mstyle></mrow></math> at 0.</caption>
+      </figure>
+      <example id="exam-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Graphing a Quadratic Equation</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00042">Graph <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></math> and list the solutions to the quadratic equation.</para>
+      </problem>
+      <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00043">We will graph the equation by plotting points.</para>
+      <para id="para-00044"><emphasis effect="bold">Step 1:</emphasis> Choose integer values for x, substitute them into the equation, and solve for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>.</para>
+      <para id="para-00045" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Record the values of the ordered pairs in the chart.</para>
+      <table class="unnumbered" summary="." id="table-00005">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry namest="c1" nameend="c2"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>0</entry>
+      <entry>-1</entry>
+      </row>
+      <row>
+      <entry>1</entry>
+      <entry>0</entry>
+      </row>
+      <row>
+      <entry>-1</entry>
+      <entry>0</entry>
+      </row>
+      <row>
+      <entry>2</entry>
+      <entry>3</entry>
+      </row>
+      <row>
+      <entry>-2</entry>
+      <entry>3</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00046"><emphasis effect="bold">Step 3:</emphasis> Plot the points and then connect them with a smooth curve. The result will be the graph of the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></math>. The solutions are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn></mrow></math>.</para>
+      <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_009.jpg"/>
+      </media>
+      </figure>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00007">
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00047"><link class="os-embed" url="#exercise/CM-C05-M6-Q005"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00006">
+      <title>Solving a Quadratic Equation From Its Graph</title>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00048">Find the solutions of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></math> from its graph.</para>
+      <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_011.jpg"/>
+      </media>
+      </figure>
+      </problem>
+      <solution id="sol-00006">
+      <para id="para-00049">The solutions of a quadratic equations are the values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> that makeW the equation a true statement when set equal to zero (i.e. when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>). <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></math> at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>-</mo><mn>4</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn></mrow></math>.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00050"><link class="os-embed" url="#exercise/CM-C05-M6-Q006"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00006">
+      <title>Solving Quadratic Equations by Factoring</title>
+      <para id="para-00051">Another way of solving quadratic equations is by factoring. We will use the <term id="term-00006">Zero Product Property</term> that says that if the product of two quantities is zero, it must be that at least one of the quantities is zero. The only way to get a product equal to zero is to multiply by zero itself.</para>
+      <example id="exam-00007">
+      <title>Solving a Quadratic Equationby Factoring</title>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00052">Solve <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+      </para>
+      <!--<figure/>-->
+      </problem>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00053"><link class="os-embed" url="#exercise/CM-C05-M6-Q007"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <!--<example>
+      <title>Solve Another Quadratic Equation by Factoring</title>
+      <exercise>
+      <problem>
+      <para>Solve <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>&#x2212;</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></math>.</para>
+      </problem>
+      <solution>
+      <figure>
+      </solution>
+      </exercise>
+      </example>-->
+      <note class="your-turn" id="note-00010">
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00054"><link class="os-embed" url="#exercise/CM-C05-M6-Q008"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="video" id="note-00011">
+      <para id="para-00055"><link url="https://openstax.org/r/Zero_Propert">Solving Quadratics with the Zero Propert
+      </link></para>
+      </note>
+      <note class="check-point" id="note-00012">
+      <para id="para-00056"><emphasis effect="italic">Be careful to write the quadratic equation in standard form first. The equation must be set equal to zero in order for you to use the Zero Product Property! Often students start in Step 2 resulting in an incorrect solution. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>=</mo><mo>-</mo><mn>7</mn></mrow></math> cannot be factored to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math> and then solved by setting each factor equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>–</mo><mn>7</mn></mrow></math>.</emphasis></para>
+      <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="italic">The correct way to solve this quadratic equation is to set it equal to zero FIRST: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>+</mo><mn>7</mn><mo>=</mo><mo>–</mo><mn>7</mn><mo>+</mo><mn>7</mn></mrow></math>  which becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo> </mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></math>, then continue to factor. See the table below for the correct way to apply the Zero Product Property.</emphasis></para>
+      <table class="unnumbered" summary="." id="table-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="5">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry/>
+      <entry namest="c2" nameend="c3"><equation id="eq-00018"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
+      <entry namest="c4" nameend="c5" xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00019"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 1</emphasis></entry>
+      <entry namest="c2" nameend="c3">Skipped</entry>
+      <entry namest="c4" nameend="c5"><equation id="eq-00020"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>15</mn><mo>+</mo><mn>7</mn><mo>=</mo><mo>–</mo><mn>7</mn><mo>+</mo><mn>7</mn></mtd></mtr><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>–</mo><mn>8</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 2</emphasis></entry>
+      <entry namest="c2" nameend="c3"><equation id="eq-00021"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
+      <entry namest="c4" nameend="c5" xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00022"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>–</mo><mn>2</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 3</emphasis></entry>
+      <entry><equation id="eq-00023"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>–</mo><mn>3</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00024"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mo>–</mo><mn>7</mn></mrow></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00025"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>–</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00026"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 4</emphasis></entry>
+      <entry><equation id="eq-00027"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>4</mn></mrow></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00028"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>12</mn></mrow></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00029"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00030"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>4</mn></mrow></math></equation></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 5</emphasis></entry>
+      <entry><equation id="eq-00031"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>–</mo><mn>15</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>16</mn><mo>–</mo><mn>8</mn><mo>–</mo><mn>15</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>=</mo><mo>–</mo><mn>7</mn></mtd></mtr></mtable></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00032"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>12</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mrow><mo>–</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>–</mo><mn>15</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>144</mn><mo>–</mo><mn>24</mn><mo>–</mo><mn>1</mn><mo>=</mo><mn>105</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>?</mo><mo>–</mo><mn>7</mn></mtd></mtr></mtable></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00033"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>–</mo><mn>8</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>–</mo><mn>8</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></equation></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00034"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mrow><mo>–</mo><mn>4</mn></mrow><mo>)</mo></mrow><mo>–</mo><mn>18</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>=</mo><mn>16</mn><mo>–</mo><mn>8</mn><mo>–</mo><mn>8</mn></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></equation></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </note>
+      </section>
+      <section id="sect-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Solving Quadratic Equations Using the Square Root Property</title>
+      <para id="para-00058">We just solved some quadratic equations by factoring. Let us use factoring to solve the quadratic equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn></mrow></math>.</para>
+      <table class="unnumbered" summary="." id="table-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Put the equation in standard form.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>–</mo><mn>9</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 2:</emphasis> Factor the left side.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>-</mo><mn>3</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 3:</emphasis> Use the Zero Product Property.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>3</mn><mtext> </mtext><mo>=</mo><mn>0</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>–</mo><mn>3</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 4:</emphasis> Solve each equation.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>–</mo><mn>3</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 5:</emphasis> Combine the two solutions into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>±</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>3</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00059">The solution is read as “<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> is equal to positive or negative 3.”</para>
+      <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">What happens when we have an equation like <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>7</mn></mrow></math>?  Since 7 is not a perfect square, we cannot solve the equation by factoring. These equations are all of the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mi>k</mi></mrow></math>. We define the square root of a number in this way: If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><mi>m</mi></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is a square root of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math>. This leads to the <term id="term-00007" xmlns="http://cnx.rice.edu/cnxml">Square Root Property</term>.</para>
+      <example id="exam-00008">
+      <title>Using the Square Root Property to Solve a Quadratic Equation</title>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00061">Solve using the square Root Property: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>169</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <table class="unnumbered" summary="." id="table-00008">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Use the Square Root Property.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>±</mo><msqrt><mrow><mn>169</mn></mrow></msqrt></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 2:</emphasis> Simplify the radical.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>13</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 3:</emphasis> Rewrite to show the two solutions.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>13</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>-</mo><mn>13</mn></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00062"><link class="os-embed" url="#exercise/CM-C05-M6-Q009"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00009">
+      <title>Using the Square Root Property to Solve Another Quadratic Equation</title>
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00063">Solve using the Square Root Property: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>144</mn><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00064">
+      <table class="unnumbered" summary="." id="table-00009">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Solve for <emphasis effect="italic">q</emphasis>.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>25</mn></mrow><mrow><mn>144</mn></mrow></mfrac></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 2:</emphasis> Use the Square Root Property.</entry>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 3:</emphasis> Simplify the radical.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>=</mo><mo>±</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 4:</emphasis> Rewrite to show the two solutions.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>=</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>=</mo><mo>-</mo><mfrac><mn>5</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00019">
+      <problem id="prob-00019">
+      <para id="para-00065"><link class="os-embed" url="#exercise/CM-C05-M6-Q010"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00008">
+      <title>Solving Quadratic Equations Using the Quadratic Formula</title>
+      <para id="para-00066">This last method we will look at for solving quadratic equations is the <term id="term-00008">quadratic formula</term>. This method works for all quadratic equations, even the quadratic equations we could not factor! To use the quadratic formula, we substitute the values of <emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, and c into the expression on the right side of the formula. Then, we do all the math to simplify the expression. The result gives the solution(s) to the quadratic equation.</para>
+      <example id="exam-00010">
+      <title>Solving a Quadratic Equation Using the Quadratic Formula</title>
+      <exercise id="exer-00020">
+      <problem id="prob-00020">
+      <para id="para-00067">Solve using the quadratic formula: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00009" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00068">
+      <table class="unnumbered" summary="." id="table-00010">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>This equation is in standard form.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 1:</emphasis> Identify the <emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, and <emphasis effect="italic">c</emphasis> values.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>b</mi><mo>=</mo><mo>-</mo><mn>6</mn><mo>,</mo><mi>c</mi><mo>=</mo><mn>5</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 2:</emphasis> Write the quadratic formula.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 3:</emphasis> Then substitute in the values of <emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow><mo>=</mo><mrow><mfrac><mrow><mo>-</mo><mo stretchy="false">(</mo><mo>-</mo><mn>6</mn><mo stretchy="false">)</mo><mo>±</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mo>-</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>-</mo><mn>4.1.5</mn></mrow></msqrt></mrow><mrow><mn>2.1</mn></mrow></mfrac></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 4:</emphasis> Simplify.</entry>
+      <entry><para id="para-00069"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>±</mo><msqrt><mrow><mn>36</mn><mo>-</mo><mn>20</mn></mrow></msqrt></mrow><mn>2</mn></mfrac></mrow></math></para>
+      <para id="para-00070" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>±</mo><msqrt><mrow><mn>16</mn></mrow></msqrt></mrow><mn>2</mn></mfrac></mrow></math></para>
+      <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>±</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mrow></math></para></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 5:</emphasis> Rewrite to show two solutions.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>+</mo><mn>4</mn></mrow><mn>2</mn></mfrac><mo>,</mo><mi>x</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>-</mo><mn>4</mn></mrow><mn>2</mn></mfrac></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 6:</emphasis> Simplify.</entry>
+      <entry><para id="para-00072"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>10</mn></mrow><mn>2</mn></mfrac><mo>,</mo><mi>x</mi><mo>=</mo><mfrac><mn>2</mn><mn>2</mn></mfrac></mrow></math></para>
+      <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>5</mn><mo>,</mo><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math></para></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><para id="para-00074"><emphasis effect="bold">Step 7:</emphasis> Check.</para>
+      <para id="para-00075"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></mtd><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>-</mo><mn>6</mn><mo>•</mo><mn>5</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd><mtd><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>-</mo><mn>6</mn><mo>•</mo><mn>1</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>25</mn><mo>-</mo><mn>30</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd><mtd><mrow><mn>1</mn><mo>-</mo><mn>6</mn><mo>+</mo><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>0</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>0</mn><mo>=</mo><mn>0</mn><mo>?</mo></mrow></mtd><mtd><mrow><mn>0</mn><mo>=</mo><mn>0</mn><mo>?</mo></mrow></mtd></mtr></mtable></mrow></math></para>
+      </entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00015" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00021">
+      <problem id="prob-00021">
+      <para id="para-00076"><link class="os-embed" url="#exercise/CM-C05-M6-Q011"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <!--<example>
+      <title>Solving Another Quadratic Equation Using the Quadratic Formula</title>
+      <exercise>
+      <problem>
+      <para>Solve using the quadratic formula: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn><mi>x</mi><mo>&#x2212;</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></math>.</para>
+      </problem>
+      <solution>
+      <figure/>
+      </solution>
+      </exercise>
+      </example>-->
+      <note class="your-turn" id="note-00016">
+      <exercise id="exer-00022">
+      <problem id="prob-00022">
+      <para id="para-00077"><link class="os-embed" url="#exercise/CM-C05-M6-Q012"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="video" id="note-00017">
+      <para id="para-00078"><link url="https://openstax.org/r/Sovling_Quadratics">Sovling Quadratics with the Quadratic Formula</link></para>
+      </note>
+      </section>
+      <section id="sect-00009">
+      <title>Solving Real-World Applications Modeled by Quadratic Equations</title>
+      <para id="para-00079">There are problem solving strategies that will work well for applications that translate to quadratic equations. Here’s a problem-solving strategy to solve word problems:</para>
+      <para id="para-00080"><emphasis effect="bold">Step 1:</emphasis> Read the problem. Make sure all the words and ideas are understood.</para>
+      <para id="para-00081"><emphasis effect="bold">Step 2:</emphasis> Identify what we are looking for.</para>
+      <para id="para-00082"><emphasis effect="bold">Step 3:</emphasis> Name what we are looking for. Choose a variable to represent that quantity.</para>
+      <para id="para-00083"><emphasis effect="bold">Step 4:</emphasis> Translate into an equation. It may be helpful to restate the problem in one sentence with all the important information. Then, translate the English sentence into an algebra equation.</para>
+      <para id="para-00084"><emphasis effect="bold">Step 5:</emphasis> Solve the equation using good algebra techniques.</para>
+      <para id="para-00085"><emphasis effect="bold">Step 6:</emphasis> Check the answer in the problem and make sure it makes sense.</para>
+      <para id="para-00086"><emphasis effect="bold">Step 7:</emphasis> Answer the question with a complete sentence.</para>
+      <example id="exam-00011">
+      <title>Finding Consecutive Integers</title>
+      <exercise id="exer-00023">
+      <problem id="prob-00023">
+      <para id="para-00087">The product of two consecutive integers is 132. Find the integers.</para>
+      </problem>
+      <solution id="sol-00010">
+      <para id="para-00088">
+      <table class="unnumbered" summary="." id="table-00011">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Read the problem.</entry>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 2:</emphasis> Identify what we are looking for.</entry>
+      <entry>We are looking for two consecutive integers.</entry>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 3:</emphasis> Name what we are looking for.</entry>
+      <entry><para id="para-00089">Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo></mrow></math> the first integer</para>
+      <para id="para-00090" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>+</mo><mn>1</mn><mo>=</mo></mrow></math> the next consecutive integer.</para></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 4:</emphasis> Translate into an equation. Restate the problem in a sentence.</entry>
+      <entry><para id="para-00091"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>132</mn></mrow></math></para>
+      <para id="para-00092" xmlns="http://cnx.rice.edu/cnxml">The product of the two consecutive integers is 132. The first integer times the next integer is 132.</para></entry>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 5:</emphasis> Solve the equation.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo>=</mo><mn>132</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Bring all the terms to one side.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo>-</mo><mn>132</mn><mo>=</mo><mn>0</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Factor the trinomial.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>-</mo><mn>11</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><para id="para-00093">Use the zero product property.</para>
+      <para id="para-00094">Solve the equations.</para></entry>
+      <entry><para id="para-00095"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>11</mn><mo>=</mo><mn>0</mn><mi>n</mi><mo>+</mo><mn>12</mn><mo>=</mo><mn>0</mn></mrow></math></para>
+      <para id="para-00096" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>11</mn><mo>,</mo><mi>n</mi><mo>=</mo><mo>-</mo><mn>12</mn></mrow></math></para></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>There are two values for <emphasis effect="italic">n</emphasis> that are solutions to this problem. So, there are two sets of consecutive integers that will work.</entry>
+      </row>
+      <row>
+      <entry>If the first integer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>11</mn></mrow></math>, then the next integer is 12. If the first integer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mo>-</mo><mn>12</mn></mrow></math>, then the next integer is -11.</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 6:</emphasis> Check the answer.</entry>
+      <entry>The consecutive integers are 11,12 and -11,-12. The product of 11 and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo>=</mo><mn>132</mn></mrow></math> and the product of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>11</mn><mrow><mo>(</mo><mrow><mo>-</mo><mn>12</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>132</mn></mrow></math>. Both pairs of consecutive integers are solutions.</entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 7:</emphasis> Answer the question.</entry>
+      <entry> The consecutive integers are 11,12, and -11,-12.</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00018">
+      <exercise id="exer-00024">
+      <problem id="prob-00024">
+      <para id="para-00097"><link class="os-embed" url="#exercise/CM-C05-M6-Q013"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00098">Were you surprised by the pair of negative integers that is one of the solutions? In some applications, negative solutions will result from the algebra, but will not be realistic for the situation.</para>
+      <example id="exam-00012">
+      <title>Finding Length and Width of a Garden</title>
+      <exercise id="exer-00025">
+      <problem id="prob-00025">
+      <para id="para-00099">A rectangular garden has an area 15 square feet. The length of the garden is 2 feet more than the width. Find the length and width of the garden.</para>
+      </problem>
+      <solution id="sol-00011">
+      <para id="para-00100">
+      <table class="unnumbered" summary="." id="table-00012">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Read the problem. In problems involving geometric figures, a sketch can help you visualize the situation.</entry>
+      <entry namest="c2" nameend="c3">
+      <figure id="fig-00012">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_013.jpg"/>
+      </media></figure></entry>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 2:</emphasis> Identify what you are looking for.</entry>
+      <entry namest="c2" nameend="c3">We are looking for the length and width.</entry>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 3:</emphasis> Name what you are looking for. The length is 2 feet more than width.</entry>
+      <entry namest="c2" nameend="c3"><para id="para-00101">Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>=</mo></mrow></math> the width of the garden.</para>
+      <para id="para-00102" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>+</mo><mn>2</mn><mo>=</mo></mrow></math> the length of the garden.</para></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><para id="para-00103"><emphasis effect="bold">Step 4:</emphasis> Translate into an equation.</para>
+      <para id="para-00104">Restate the important information in a sentence.</para></entry>
+      <entry namest="c2" nameend="c3">The area of the rectangular garden is 15 square feet.</entry>
+      </row>
+      <row>
+      <entry>Use the formula for the area of a rectangle.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>L</mi><mo>×</mo><mi>W</mi></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Substitute in the variables.</entry>
+      <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>=</mo><mrow><mo>(</mo><mrow><mi>W</mi><mo>+</mo><mn>2</mn></mrow><mo>)</mo></mrow><mi>W</mi></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 5:</emphasis> Solve the equation. Distribute first.</entry>
+      <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15</mn><mo>=</mo><msup><mi>W</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>W</mi></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Get zero on one side.</entry>
+      <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><msup><mi>W</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>W</mi><mo>-</mo><mn>15</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Factor the trinomial.</entry>
+      <entry namest="c2" nameend="c3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mo>(</mo><mrow><mi>W</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mi>W</mi><mo>-</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Use the Zero Product Property.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><mi>W</mi><mo>+</mo><mn>5</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn><mo>=</mo><mi>W</mi><mo>-</mo><mn>3</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Solve each equation.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>-</mo><mn>5</mn><mo>=</mo><mi>W</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>=</mo><mi>W</mi></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>W</mi></math> is the width of the garden, it does not make sense for it to be negative. We eliminate that value for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>W</mi></math>.</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>=</mo><mn>3</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Width is 3 feet.</entry>
+      </row>
+      <row>
+      <entry>Find the value of the length.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi><mo>+</mo><mn>2</mn><mo>=</mo></mrow></math> length.</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mo>-</mo><mn>2</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      <row>
+      <entry/>
+      <entry>5</entry>
+      <entry>Length is 5 feet.</entry>
+      </row>
+      <row>
+      <entry><para id="para-00105"><emphasis effect="bold">Step 6:</emphasis> Check the answer.</para>
+      <para id="para-00106">Does the answer make sense?</para></entry>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry>
+      <figure id="fig-00013">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_014.jpg"/>
+      </media>
+      </figure></entry>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry/>
+      <entry namest="c2" nameend="c3">Yes, this makes sense.</entry>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Step 7:</emphasis> Answer the question.</entry>
+      <entry namest="c2" nameend="c3">The width of the garden is 3 feet and the length is 5 feet.</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00019">
+      <exercise id="exer-00026">
+      <problem id="prob-00026">
+      <para id="para-00107"><link class="os-embed" url="#exercise/CM-C05-M6-Q014"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="work-out" id="note-00020">
+      <title>Completing the Square</title>
+      <para id="para-00108">Recall the two methods used to solve quadratic equations of the form  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>:</mo></mrow></math> by factoring and by using the quadratic formula. There are, however, many different methods for solving quadratic equations that were developed throughout history. Egyptian, Mesopotamian, Chinese, Indian, and Greek mathematicians all solved various types of quadratic equations, as did Arab mathematicians of the ninth through the twelfth centuries. It is one of these Arab mathematicians' methods that we wish to investigate with this activity.</para>
+      <para id="para-00109" xmlns="http://cnx.rice.edu/cnxml">Muhammad ibn Musa al-Khwarizmi was employed as a scholar at the House of Wisdom in Baghdad, located in present day Iraq. One of the many accomplishments of Al-Khwarizmi was his book on the topic of algebra. In that book, he asks, “What must be the square which, when increased by ten of its own roots, amounts to 39?” Al-Khwarizmi, like many Arab mathematicians of his time, was well versed in Euclid's Elements. Like Euclid, he viewed algebra very geometrically, and thus had a geometric approach to solving a problem like the one above. In his approach, he used a method which today we refer to as <emphasis effect="italic">completing the square</emphasis>.</para>
+      <para id="para-00110">His description of the solution method for the above problem is: halve the number of roots, which in the present instance yields 5. This you multiply by itself; the product is 25. Add this to 39; the sum is 64. Now take the root of this which is 8, and subtract from it half the number of the roots, which is 5; the remainder is 3. This is the root of the square which you sought for. Thus the square is 9.</para>
+      <table class="unnumbered" summary="." id="table-00013">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry><para id="para-00111">So, what does all of this mean? Al-Khwarizmi would start with a square of unknown length of side (we will label the side length <emphasis effect="italic">x</emphasis>). So, this square has area <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math></para>
+      <para id="para-00112" xmlns="http://cnx.rice.edu/cnxml">He would then proceed to halve the number of roots (i.e., there are 10 roots by which the square is increasing) to get 5; this he would add to the first square. The area of the two new pieces added into the original square are both <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mi>x</mi></mrow></math>.  At this point, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>=</mo><mn>39</mn></mrow></math>.</para>
+      <para id="para-00113" xmlns="http://cnx.rice.edu/cnxml">Now Al-Khwarizmi needed to “complete the square” by adding into the drawing a small square. This square has an area of 25.</para></entry>
+      <entry><para id="para-00114"><figure id="fig-00014">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_015.jpg"/>
+      </media>
+      </figure></para>
+      <para id="para-00115"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></para>
+      <para id="para-00116" xmlns="http://cnx.rice.edu/cnxml"><figure id="fig-00015">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_016.jpg"/>
+      </media>
+      </figure></para>
+      <para id="para-00117"><figure id="fig-00016">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_05_06_017.jpg"/>
+      </media>
+      </figure></para></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00118"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>39</mn><mo>+</mo><mn>25</mn></mrow></math>, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>64</mn></mrow></math>.</para>
+      <para id="para-00119" xmlns="http://cnx.rice.edu/cnxml">Notice that the completed square has side length <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></math>, so the large square has area <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></math>. (Notice algebraically that the left half of the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>25</mn><mo>=</mo><mn>64</mn></mrow></math> factors to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><mn>64.</mn><mo stretchy="false">)</mo></mrow></math> This means the area of large square equals 64. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><mn>64</mn></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></mrow></math>; so <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> must be equal to 3 or -13 to make this true. Note that Al-Kwarizmi would not have considered the possibility of a negative solution, since he approached the solution geometrically, and negative distances do not exist.</para>
+      </note>
+      </section>
+      <section class="check-understanding" id="sect-00010">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00027">
+      <problem id="prob-00027">
+      <para id="para-00120"><link class="os-embed" url="#exercise/CM-C05-M6-Q015"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00028">
+      <problem id="prob-00028">
+      <para id="para-00121"><link class="os-embed" url="#exercise/CM-C05-M6-Q016"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00029">
+      <problem id="prob-00029">
+      <para id="para-00122"><link class="os-embed" url="#exercise/CM-C05-M6-Q027"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00030">
+      <problem id="prob-00030">
+      <para id="para-00123"><link class="os-embed" url="#exercise/CM-C05-M6-Q028"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00031">
+      <problem id="prob-00031">
+      <para id="para-00124"><link class="os-embed" url="#exercise/CM-C05-M6-Q029"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00032">
+      <problem id="prob-00032">
+      <para id="para-00125"><link class="os-embed" url="#exercise/CM-C05-M6-Q030"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00033">
+      <problem id="prob-00033">
+      <para id="para-00126"><link class="os-embed" url="#exercise/CM-C05-M6-Q031"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00034">
+      <problem id="prob-00034">
+      <para id="para-00127"><link class="os-embed" url="#exercise/CM-C05-M6-Q032"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00035">
+      <problem id="prob-00035">
+      <para id="para-00128"><link class="os-embed" url="#exercise/CM-C05-M6-Q033"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00011">
+      <title>Exercises</title>
+      <exercise id="exer-00036">
+      <problem id="prob-00036">
+      <para id="para-00129"><link class="os-embed" url="#exercise/CM-C05-M6-Q017"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00037">
+      <problem id="prob-00037">
+      <para id="para-00130"><link class="os-embed" url="#exercise/CM-C05-M6-Q018"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00038">
+      <problem id="prob-00038">
+      <para id="para-00131"><link class="os-embed" url="#exercise/CM-C05-M6-Q019"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00039">
+      <problem id="prob-00039">
+      <para id="para-00132"><link class="os-embed" url="#exercise/CM-C05-M6-Q020"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00040">
+      <problem id="prob-00040">
+      <para id="para-00133"><link class="os-embed" url="#exercise/CM-C05-M6-Q021"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00041">
+      <problem id="prob-00041">
+      <para id="para-00134"><link class="os-embed" url="#exercise/CM-C05-M6-Q022"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00042">
+      <problem id="prob-00042">
+      <para id="para-00135"><link class="os-embed" url="#exercise/CM-C05-M6-Q023"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00043">
+      <problem id="prob-00043">
+      <para id="para-00136"><link class="os-embed" url="#exercise/CM-C05-M6-Q024"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00044">
+      <problem id="prob-00044">
+      <para id="para-00137"><link class="os-embed" url="#exercise/CM-C05-M6-Q025"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00045">
+      <problem id="prob-00045">
+      <para id="para-00138"><link class="os-embed" url="#exercise/CM-C05-M6-Q026"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-terms" id="sect-00012">
+      <title>Key Terms</title>
+      <list bullet-style="none" id="list-00002">
+      <item>Monomial</item>
+      <item>polynomial</item>
+      <item>binomial</item>
+      <item>trinomial</item>
+      <item>quadratic equation</item>
+      <item>Zero Product Property</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00013">
+      <title>Key Concepts</title>
+      <list bullet-style="bulleted" id="list-00003">
+      <item>A quadratic equation is an algebraic equation where the highest power (degree) of the equation is two.</item>
+      <item>To solve a quadratic equation is to find the value(s) that when substituted in for the variables, will make the equation equal to zero.</item>
+      <item>There can be two, one, or no solutions to any quadratic equation.</item>
+      <item>There are several methods to solve a quadratic equation. These methods include factoring quadratic equations, graphic quadratic equations, using the square root method, and using the quadratic formula.</item>
+      </list>
+      </section>
     </content>
     </document>
