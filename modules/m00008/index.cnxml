@@ -6,171 +6,171 @@
       <md:uuid>c83b9507-7035-41c0-b507-680261d853af</md:uuid>
       </metadata>
       <content>
-      <figure id="fig-00001">
-      <media alt="A hand is holding a pencil and filling in the scantron sheet.">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_08_07_009.jpg"/>
-      </media>
-      <caption>Standardized test results generally adhere to the normal distribution. (Credit: “Taking a Test” by Marco Verch Professional Photographer/Flickr, CC BY 2.0)</caption>
-      </figure>
-      <section class="learning-objectives" id="sect-00001">
-      <title>Learning Objectives</title>
-      <para id="para-00001">After completing this section, you should be able to:</para>
-      <list list-type="enumerated" id="list-00001">
-      <item>Apply the normal distribution to real-world scenarios.</item>
-      </list>
-    </section>
-      <para id="para-00002">As we saw in <link document="m00007">Section 8.6</link>, the word “standardized” is closely associated with the normal distribution. This is why tests like college entrance exams, state achievement tests for K–12 students, and Advanced Placement tests are often called “standardized tests”: scores are assigned in a way that forces them to follow a normal distribution, with a mean and standard deviation that are consistent from year to year. It also allows people like college admissions officers to directly compare an applicant who took the ACT (a college entrance exam) to an applicant who instead chose to take the SAT (a different college entrance exam). The ability to compare individuals from different groups like this is one of the benefits of using the normal distribution. We’ll explore some of those benefits and other real-world uses of the normal distribution in this section.</para>
-      <section id="sect-00002">
-      <title>College Entrance Exams</title>
-      <para id="para-00003">There are two good ways to compare two data values from different groups: using <emphasis effect="italic">z</emphasis>-scores and using percentiles. The two methods will always give consistent results (meaning that we won’t find, for example, that the first value is better using <emphasis effect="italic">z</emphasis>-scores but the second value is better using percentiles), so use whichever method is more comfortable for you.</para>
-      <example id="exam-00001">
-      <title>Evaluating College Entrance Exam Scores</title>
-      <exercise id="exer-00001">
-      <problem id="prob-00001">
-      <para id="para-00004">According to the <link url="https://openstax.org/r/nces_ed_gov">Digest of Education Statistics</link>, composite scores on the SAT have mean 1060 and standard deviation 195, while composite scores on the ACT have mean 21 and standard deviation 5.</para>
-      <list list-type="enumerated" id="list-00002">
-      <item>At what percentile would an SAT score of 990 fall?</item>
-      <item>What is the <emphasis effect="italic">z</emphasis>-score of an ACT score of 27?</item>
-      <item>Which is better: a score of 1450 on the SAT or 29 on the ACT?</item>
-      </list>
-      </problem>
-      <solution id="sol-00001">
-      <list list-type="enumerated" id="list-00003">
-      <item>Using Google Sheets, we can answer this question with the formula “=NORM.DIST(990, 1060, 195, TRUE)”. A score of 990 would fall at the 36th percentile.</item>
-      <item>Using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>s</mi></mfrac></mrow></math>, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>27</mn><mo>-</mo><mn>21</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>1.2</mn></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00005">Let’s compare the values using both percentiles and <emphasis effect="italic">z</emphasis>-values:</para>
-      <para id="para-00006"><emphasis effect="bold">Percentiles: </emphasis>Using “=NORM.DIST(1450, 1060, 195, TRUE)” we find that an SAT score of 1450 is at the 98th percentile. Meanwhile, by entering “=NORM.DIST(29, 21, 5, TRUE)” we see that an ACT score of 29 is around the 95th percentile. Since it’s at a higher percentile, we can conclude that an SAT score of 1450 is better than an ACT score of 29.</para>
-      <para id="para-00007"><emphasis effect="bold"><emphasis effect="italic">z</emphasis>-scores:</emphasis> Using the formula, we see that the <emphasis effect="italic">z</emphasis>-score for an SAT score of 1450 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>1450</mn><mo>-</mo><mn>1060</mn></mrow><mrow><mn>195</mn></mrow></mfrac><mo>=</mo><mn>2</mn></mrow></math>, while the <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">z</emphasis>-score for an ACT score of 29 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>29</mn><mo>-</mo><mn>21</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>1.6</mn></mrow></math>. Since it has a higher <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">z</emphasis>-score, an SAT score of 1450 is better than an ACT score of 29.</para></item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00001">
-      <exercise id="exer-00002">
-      <problem id="prob-00002">
-      <para id="para-00008"><link class="os-embed" url="#exercise/CM-C08-M7-001"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section id="sect-00003">
-      <title>Coin flipping</title>
-      <para id="para-00009">In the opening of <link document="m00007">Section 8.6</link>, we saw that the number of heads we get when we flip a coin 100 times is distributed normally. It can be shown that if <emphasis effect="italic">n</emphasis> is the number of flips, then the mean of that distribution is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mi>n</mi></msqrt></mrow><mn>2</mn></mfrac></mrow></math> (as long as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>20</mn></mrow></math>). So, for 100 flips, the mean of the distribution is 50 and the standard deviation is 5.
-      In that opening example, one of our early runs gave us 70 heads in 100 flips, which we noted seemed unusual. Using the normal distribution, we can identify exactly how unusual that really is. Using Google Sheets, the formula “=NORM.DIST(70, 50, 5, TRUE)” gives us 0.999968, which is the 99.997th percentile! How is that useful? Suppose you need to test whether a coin is fair, and so you flip it 100 times. While we might be suspicious if we get 70 heads out of the 100 flips, we now have a numerical measure for how unusual that is: If the coin were fair, we would expect to see 70 heads (or more) only <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mo>-</mo><mn>99.9968</mn><mo>=</mo><mn>0.0032</mn><mi>%</mi></mrow></math> of the time. That’s really unlikely! Analysis like this is related to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hypothesis testing</emphasis>, an important application of statistics in the sciences and social sciences.</para>
-      <example id="exam-00002">
-      <title>Flipping a Coin</title>
-      <exercise id="exer-00003">
-      <problem id="prob-00003">
-      <para id="para-00011">Let’s say we flip a coin 64 times and count the number of heads.</para>
-      <list list-type="enumerated" id="list-00006">
-      <item>What would be the mean of the corresponding distribution?</item>
-      <item>What would be the standard deviation of the corresponding distribution?</item>
-      <item>Suppose we got 25 heads, which seems a little low. At what percentile would 25 heads fall?</item>
-      </list>
-      </problem>
-      <solution id="sol-00003">
-      <list list-type="enumerated" id="list-00007">
-      <item>Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>64</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>32</mn></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Again using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, we get a standard deviation of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mrow><mn>64</mn></mrow></msqrt></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Using “=NORM.DIST(25, 32, 4, TRUE)”, we see that 25 heads is at the 4th percentile. Reading and Interpreting Scatter Plots</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00002">
-      <exercise id="exer-00004">
-      <problem id="prob-00004">
-      <para id="para-00012"><link class="os-embed" url="#exercise/CM-C08-M7-002"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section id="sect-00004">
-      <title>Analyzing Data That Are Normally Distributed</title>
-      <para id="para-00013">Whenever we’re working with a dataset that has a distribution that looks symmetric and bell-shaped, we can use techniques associated with the normal distribution to analyze the data.</para>
-      <example id="exam-00003">
-      <title>Using Normal Techniques to Analyze Data</title>
-      <exercise id="exer-00005">
-      <problem id="prob-00005">
-      <para id="para-00014">The data in <link url="https://openstax.org/r/Chapter8_Data-Sets">“AvgSAT”</link> contains the average SAT score for students attending every institution of higher learning in the United States for which data is available. In <link target-id="exam-00008" document="m00003">Example 8.12</link>, we created a histogram for these data:
-      <figure id="fig-00003">
-      <media alt="A histogram titled, average SAT scores at US institutions. The horizontal axis representing average SAT ranges from 750 to 1600, in increments of 50. The vertical axis representing frequency ranges from 0 to 300, in increments of 100. The histogram infers the following data. 750 to 800: 4. 800 to 850: 5. 850 to 900: 15. 900 to 950: 25. 950 to 1000: 85. 1000 to 1050: 170. 1050 to 1100: 230. 1100 to 1150: 275. 1150 to 1200: 230. 1200 to 1250: 110. 1250 to 1300: 70. 1300 to 1350: 50. 1350 to 1400: 40. 1400 to 1450: 40. 1450 to 1500: 20. 1500 to 1550: 25. 1550 to 1600: 5. Note: all values are approximate.">
-      <image mime-type="image/jpg" src="../../media/CM_Figure_09_02_020.png"/>
-      </media>
-      <caption>(data source: https://data.ed.gov)</caption>
-      </figure>
-      </para>
-      <para id="para-00015">This distribution is fairly symmetric (it’s just a little right-skewed) and bell-shaped, so we can use normal distribution techniques to analyze the data.</para>
-      <list list-type="enumerated" id="list-00010">
-      <item>What is the mean of these average SAT scores?</item>
-      <item>What is the standard deviation of these SAT scores?</item>
-      <item>Using the answers to the previous two questions, use NORM.DIST in Google Sheets to estimate at what percentile the University at Buffalo in New York (average SAT: 1250) falls.</item>
-      <item>Use PERCENTRANK to find the actual percentile of the University at Buffalo, and see how close the estimate in the previous question came.</item>
-      </list>
-      </problem>
-      <solution id="sol-00005">
-      <list list-type="enumerated" id="list-00011">
-      <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.174.
-      </item>
-      <item>Using the STDEV function, we get that the standard deviation is 125.517.</item>
-      <item>Entering “=NORM.DIST(1250, 1141, 125.517, TRUE)” into Google Sheets, we estimate that the University at Buffalo is at the 81<sup>st</sup> percentile.</item>
-      <item>Using PERCENTRANK, we find that the actual percentile is the 84th. These are close!</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00003">
-      <exercise id="exer-00006">
-      <problem id="prob-00006">
-      <para id="para-00016"><link class="os-embed" url="#exercise/CM-C08-M7-003"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="who-knew" id="note-00004">
-      <title>Political Meddling Exposed</title>
-      <para id="para-00019">The normal distribution pops up in some unusual places. Recently, a team at Duke University has been using statistics to help identify partisan gerrymandering, where electoral districts have been carefully drawn in a way that benefits one political party over another. In their analysis, they found that hypothetical election results in randomly drawn districts are normally distributed. By using techniques similar to the ones we used above, they can quantify precisely how biased a particular electoral map is by finding the percentile rank of the actual election result on the normal distribution of the hypothetical results. You can find out more about their work <link url="https://openstax.org/r/quantifying-gerrymandering">here.</link></para>
-      </note>
-      </section>
-      <section id="sect-00005" class="check-understanding">
-      <title>Check Your Understanding</title>
-      <exercise id="exer-00007">
-      <problem id="prob-00007">
-      <para id="para-00020"><link class="os-embed" url="#exercise/CM-C08-M7-004"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00010">
-      <problem id="prob-00010">
-      <para id="para-00027"><link class="os-embed" url="#exercise/CM-C08-M7-005"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00013">
-      <problem id="prob-00013">
-      <para id="para-00034"><link class="os-embed" url="#exercise/CM-C08-M7-006"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="section-exercises" id="sect-00006">
-      <exercise id="exer-00017">
-      <problem id="prob-00017">
-      <para id="para-00043"><link class="os-embed" url="#exercise/CM-C08-M7-007"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00025">
-      <problem id="prob-00025">
-      <para id="para-00060"><link class="os-embed" url="#exercise/CM-C08-M7-008"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00032">
-      <problem id="prob-00032">
-      <para id="para-00075"><link class="os-embed" url="#exercise/CM-C08-M7-009"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="key-concepts" id="sect-00039">
-      <title>Key Concepts</title>
-      <list bullet-style="none" id="list-00112">
-      <item>We can use <emphasis effect="italic">z</emphasis>-scores to compare data values from different datasets.</item>
-      </list>
-      </section>
-      </content>
+        <figure id="fig-00001">
+          <media alt="A hand is holding a pencil and filling in the scantron sheet.">
+          <image mime-type="image/jpg" src="../../media/CS_Photo_08_07_009.jpg"/>
+          </media>
+          <caption>Standardized test results generally adhere to the normal distribution. (credit: “Taking a Test” by Marco Verch Professional Photographer/Flickr, CC BY 2.0)</caption>
+          </figure>
+          <section class="learning-objectives" id="sect-00001">
+          <title>Learning Objectives</title>
+          <para id="para-00001">After completing this section, you should be able to:</para>
+          <list list-type="enumerated" id="list-00001">
+          <item>Apply the normal distribution to real-world scenarios.</item>
+          </list>
+        </section>
+          <para id="para-00002">As we saw in <link target-id="sect-00001" document="m00007">The Normal Distribution</link>, the word “standardized” is closely associated with the normal distribution. This is why tests like college entrance exams, state achievement tests for K–12 students, and Advanced Placement tests are often called “standardized tests”: scores are assigned in a way that forces them to follow a normal distribution, with a mean and standard deviation that are consistent from year to year. Standardization also allows people like college admissions officers to directly compare an applicant who took the ACT (a college entrance exam) to an applicant who instead chose to take the SAT (a different college entrance exam). Standardization allows us to compare individuals from different groups; this is among the most important applications of the normal distribution. We’ll explore this and other real-world uses of the normal distribution in this section.</para>
+          <section id="sect-00002">
+          <title>College Entrance Exams</title>
+          <para id="para-00003">There are two good ways to compare two data values from different groups: using <emphasis effect="italic">z</emphasis>-scores and using percentiles. The two methods will always give consistent results (meaning that we won’t find, for example, that the first value is better using <emphasis effect="italic">z</emphasis>-scores but the second value is better using percentiles), so use whichever method is more comfortable for you.</para>
+          <example id="exam-00001">
+          <title>Evaluating College Entrance Exam Scores</title>
+          <exercise id="exer-00001">
+          <problem id="prob-00001">
+          <para id="para-00004">According to the <link url="https://openstax.org/r/nces_ed_gov">Digest of Education Statistics</link>, composite scores on the SAT have mean 1060 and standard deviation 195, while composite scores on the ACT have mean 21 and standard deviation 5.</para>
+          <list list-type="enumerated" id="list-00002">
+          <item>At what percentile would an SAT score of 990 fall?</item>
+          <item>What is the <emphasis effect="italic">z</emphasis>-score of an ACT score of 27?</item>
+          <item>Which is better: a score of 1450 on the SAT or 29 on the ACT?</item>
+          </list>
+          </problem>
+          <solution id="sol-00001">
+          <list list-type="enumerated" id="list-00003">
+          <item>Using Google Sheets, we can answer this question with the formula “=NORM.DIST(990, 1060, 195, TRUE)”. A score of 990 would fall at the 36th percentile.</item>
+          <item>Using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi>µ</mi></mrow><mi>s</mi></mfrac></mrow></math>, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>27</mn><mo>-</mo><mn>21</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>1.2</mn></mrow></math>.</item>
+          <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00005">Let’s compare the values using both percentiles and <emphasis effect="italic">z</emphasis>-values:</para>
+          <para id="para-00006"><emphasis effect="bold">Percentiles:</emphasis> Using “=NORM.DIST(1450, 1060, 195, TRUE)” we find that an SAT score of 1450 is at the 98th percentile. Meanwhile, by entering “=NORM.DIST(29, 21, 5, TRUE)” we see that an ACT score of 29 is around the 95th percentile. Since it’s at a higher percentile, we can conclude that an SAT score of 1450 is better than an ACT score of 29.</para>
+          <para id="para-00007"><emphasis effect="bold"><emphasis effect="italic">z</emphasis>-scores:</emphasis> Using the formula, we see that the <emphasis effect="italic">z</emphasis>-score for an SAT score of 1450 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>1450</mn><mo>-</mo><mn>1060</mn></mrow><mrow><mn>195</mn></mrow></mfrac><mo>=</mo><mn>2</mn></mrow></math>, while the <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">z</emphasis>-score for an ACT score of 29 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>29</mn><mo>-</mo><mn>21</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>1.6</mn></mrow></math>. Since it has a higher <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">z</emphasis>-score, an SAT score of 1450 is better than an ACT score of 29.</para></item>
+          </list>
+          </solution>
+          </exercise>
+          </example>
+          <note class="your-turn" id="note-00001">
+          <exercise id="exer-00002">
+          <problem id="prob-00002">
+          <para id="para-00008"><link class="os-embed" url="#exercise/CM-C08-M7-001"/></para>
+          </problem>
+          </exercise>
+          </note>
+          </section>
+          <section id="sect-00003">
+          <title>Coin flipping</title>
+          <para id="para-00009">In the opening of <link target-id="sect-00001" document="m00007">The Normal Distribution</link>, we saw that the number of heads we get when we flip a coin 100 times is distributed normally. It can be shown that if <emphasis effect="italic">n</emphasis> is the number of flips, then the mean of that distribution is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow></math> and the standard deviation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mi>n</mi></msqrt></mrow><mn>2</mn></mfrac></mrow></math> (as long as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>20</mn></mrow></math>). So, for 100 flips, the mean of the distribution is 50 and the standard deviation is 5.
+          In that opening example, one of our early runs gave us 70 heads in 100 flips, which we noted seemed unusual. Using the normal distribution, we can identify exactly how unusual that really is. Using Google Sheets, the formula “=NORM.DIST(70, 50, 5, TRUE)” gives us 0.999968, which is the 99.997th percentile! How is that useful? Suppose you need to test whether a coin is fair, and so you flip it 100 times. While we might be suspicious if we get 70 heads out of the 100 flips, we now have a numerical measure for how unusual that is: If the coin were fair, we would expect to see 70 heads (or more) only <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mo>-</mo><mn>99.9968</mn><mo>=</mo><mn>0.0032</mn><mi>%</mi></mrow></math> of the time. That’s really unlikely! Analysis like this is related to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hypothesis testing</emphasis>, an important application of statistics in the sciences and social sciences.</para>
+          <example id="exam-00002">
+          <title>Flipping a Coin</title>
+          <exercise id="exer-00003">
+          <problem id="prob-00003">
+          <para id="para-00011">Let’s say we flip a coin 64 times and count the number of heads.</para>
+          <list list-type="enumerated" id="list-00006">
+          <item>What would be the mean of the corresponding distribution?</item>
+          <item>What would be the standard deviation of the corresponding distribution?</item>
+          <item>Suppose we got 25 heads, which seems a little low. At what percentile would 25 heads fall?</item>
+          </list>
+          </problem>
+          <solution id="sol-00003">
+          <list list-type="enumerated" id="list-00007">
+          <item>Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, the mean is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>64</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>32</mn></mrow></math>.</item>
+          <item xmlns="http://cnx.rice.edu/cnxml">Again using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>64</mn></mrow></math>, we get a standard deviation of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><msqrt><mrow><mn>64</mn></mrow></msqrt></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn></mrow></math>.</item>
+          <item xmlns="http://cnx.rice.edu/cnxml">Using “=NORM.DIST(25, 32, 4, TRUE)”, we see that 25 heads is at the 4th percentile. Reading and Interpreting Scatter Plots</item>
+          </list>
+          </solution>
+          </exercise>
+          </example>
+          <note class="your-turn" id="note-00002">
+          <exercise id="exer-00004">
+          <problem id="prob-00004">
+          <para id="para-00012"><link class="os-embed" url="#exercise/CM-C08-M7-002"/></para>
+          </problem>
+          </exercise>
+          </note>
+          </section>
+          <section id="sect-00004">
+          <title>Analyzing Data That Are Normally Distributed</title>
+          <para id="para-00013">Whenever we’re working with a dataset that has a distribution that looks symmetric and bell-shaped, we can use techniques associated with the normal distribution to analyze the data.</para>
+          <example id="exam-00003">
+          <title>Using Normal Techniques to Analyze Data</title>
+          <exercise id="exer-00005">
+          <problem id="prob-00005">
+          <para id="para-00014">The data in <link url="https://openstax.org/r/Chapter8_Data-Sets">“AvgSAT”</link> contains the average SAT score for students attending every institution of higher learning in the United States for which data is available. In <link target-id="exam-00008" document="m00003">Example 8.12</link>, we created a histogram for these data:
+          <figure id="fig-00003">
+          <media alt="A histogram titled, average SAT scores at US institutions. The horizontal axis representing average SAT ranges from 750 to 1600, in increments of 50. The vertical axis representing frequency ranges from 0 to 300, in increments of 100. The histogram infers the following data. 750 to 800: 4. 800 to 850: 5. 850 to 900: 15. 900 to 950: 25. 950 to 1000: 85. 1000 to 1050: 170. 1050 to 1100: 230. 1100 to 1150: 275. 1150 to 1200: 230. 1200 to 1250: 110. 1250 to 1300: 70. 1300 to 1350: 50. 1350 to 1400: 40. 1400 to 1450: 40. 1450 to 1500: 20. 1500 to 1550: 25. 1550 to 1600: 5. Note: all values are approximate.">
+          <image mime-type="image/jpg" src="../../media/CM_Figure_09_02_020.png"/>
+          </media>
+          <caption>(data source: https://data.ed.gov)</caption>
+          </figure>
+          </para>
+          <para id="para-00015">This distribution is fairly symmetric (it’s just a little right-skewed) and bell-shaped, so we can use normal distribution techniques to analyze the data.</para>
+          <list list-type="enumerated" id="list-00010">
+          <item>What is the mean of these average SAT scores?</item>
+          <item>What is the standard deviation of these SAT scores?</item>
+          <item>Using the answers to the previous two questions, use NORM.DIST in Google Sheets to estimate at what percentile the University at Buffalo in New York (average SAT: 1250) falls.</item>
+          <item>Use PERCENTRANK to find the actual percentile of the University at Buffalo, and see how close the estimate in the previous question came.</item>
+          </list>
+          </problem>
+          <solution id="sol-00005">
+          <list list-type="enumerated" id="list-00011">
+          <item>Using the AVERAGE function in Google Sheets, we find that the mean is 1141.174.
+          </item>
+          <item>Using the STDEV function, we get that the standard deviation is 125.517.</item>
+          <item>Entering “=NORM.DIST(1250, 1141, 125.517, TRUE)” into Google Sheets, we estimate that the University at Buffalo is at the 81st percentile.</item>
+          <item>Using PERCENTRANK, we find that the actual percentile is the 84th. These are close!</item>
+          </list>
+          </solution>
+          </exercise>
+          </example>
+          <note class="your-turn" id="note-00003">
+          <exercise id="exer-00006">
+          <problem id="prob-00006">
+          <para id="para-00016"><link class="os-embed" url="#exercise/CM-C08-M7-003"/></para>
+          </problem>
+          </exercise>
+          </note>
+          <note class="who-knew" id="note-00004">
+          <title>Political Meddling Exposed</title>
+          <para id="para-00019">The normal distribution pops up in some unusual places. Recently, a team at Duke University has been using statistics to help identify partisan gerrymandering, where electoral districts have been carefully drawn in a way that benefits one political party over another. In their analysis, they found that hypothetical election results in randomly drawn districts are normally distributed. By using techniques similar to the ones we used above, they can quantify precisely how biased a particular electoral map is by finding the percentile rank of the actual election result on the normal distribution of the hypothetical results. You can find out more about their work <link url="https://openstax.org/r/quantifying-gerrymandering">here.</link></para>
+          </note>
+          </section>
+          <section id="sect-00005" class="check-understanding">
+          <title>Check Your Understanding</title>
+          <exercise id="exer-00007">
+          <problem id="prob-00007">
+          <para id="para-00020"><link class="os-embed" url="#exercise/CM-C08-M7-004"/></para>
+          </problem>
+          </exercise>
+          <exercise id="exer-00010">
+          <problem id="prob-00010">
+          <para id="para-00027"><link class="os-embed" url="#exercise/CM-C08-M7-005"/></para>
+          </problem>
+          </exercise>
+          <exercise id="exer-00013">
+          <problem id="prob-00013">
+          <para id="para-00034"><link class="os-embed" url="#exercise/CM-C08-M7-006"/></para>
+          </problem>
+          </exercise>
+          </section>
+          <section class="section-exercises" id="sect-00006">
+          <exercise id="exer-00017">
+          <problem id="prob-00017">
+          <para id="para-00043"><link class="os-embed" url="#exercise/CM-C08-M7-007"/></para>
+          </problem>
+          </exercise>
+          <exercise id="exer-00025">
+          <problem id="prob-00025">
+          <para id="para-00060"><link class="os-embed" url="#exercise/CM-C08-M7-008"/></para>
+          </problem>
+          </exercise>
+          <exercise id="exer-00032">
+          <problem id="prob-00032">
+          <para id="para-00075"><link class="os-embed" url="#exercise/CM-C08-M7-009"/></para>
+          </problem>
+          </exercise>
+          </section>
+          <section class="key-concepts" id="sect-00039">
+          <title>Key Concepts</title>
+          <list bullet-style="none" id="list-00112">
+          <item>We can use <emphasis effect="italic">z</emphasis>-scores to compare data values from different datasets.</item>
+          </list>
+          </section>
+        </content>
       </document>
