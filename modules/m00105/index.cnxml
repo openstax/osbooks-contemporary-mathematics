@@ -1,0 +1,891 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Graphing Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Graphing Functions</md:title>
+    <md:content-id>m00105</md:content-id>
+    <md:uuid>240fa88f-7202-49a8-b741-8c80ee7fa5ff</md:uuid>
+  </metadata>
+  <content>
+    <figure id="fig-00001">
+      <code/>
+      <!-- <media alt="Insert Alt Text">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_05_08_001.jpg"/>
+      </media>-->
+      <caption>Photo Credit: Mali Maeder/Pexels</caption>
+      </figure>
+      <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold">After completing this module, you should be able to:</emphasis></para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Graph functions using intercepts.</item>
+      <item>Compute slope.</item>
+      <item>Graph functions using slope and <emphasis effect="italic">y</emphasis>-intercept.</item>
+      <item>Graph horizontal and vertical lines.</item>
+      <item>Interpret graphs of functions.</item>
+      <item>Model applications using slope and <emphasis effect="italic">y</emphasis>-intercept.</item>
+      </list>
+      <para id="para-00002">In this section, we will expand our knowledge of graphing by graphing linear functions. There are several real-world scenarios that can be represented by graphs of linear functions. Imagine a chairlift going up at a ski resort. The journey a skier takes travelling up the chairlift could be represented as a linear function with a positive slope. The journey a skier takes down the slopes could be represented by a linear function with a negative slope.</para>
+      </section>
+      <section id="sect-00002">
+      <title>Graphing Functions Using Intercepts</title>
+      <para id="para-00003">Every linear equation can be represented by a unique line that shows all the solutions of the equation. We have seen that when graphing a line by plotting points, you can use any three solutions to graph. This means that two people graphing the line might use different sets of three points. At first glance, their two lines might not appear to be the same, since they would have different points labeled. But if all the work was done correctly, the lines should be exactly the same. One way to recognize that they are indeed the same line is to look at where the line crosses the <emphasis effect="italic">x</emphasis>-axis and the <emphasis effect="italic">y</emphasis>-axis. These points are called the <emphasis effect="bold">intercepts</emphasis> of a line. Let us review the graphs of the lines in Figure 5.XX.</para>
+      <figure id="fig-00002">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_001.png"/>
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_002.png"/>
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_003.png"/>
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_004.png"/>
+      </media>
+      </figure>
+      <para id="para-00004">The table below lists where each of these lines crosses the <emphasis effect="italic">x</emphasis>- and <emphasis effect="italic">y</emphasis>-axis. Do you see a pattern? For each line, the <emphasis effect="italic">y</emphasis>-coordinate of the point where the line crosses the <emphasis effect="italic">x</emphasis>-axis is zero. The point where the line crosses the <emphasis effect="italic">x</emphasis>-axis has the form (<emphasis effect="italic">a</emphasis>, 0) and is called the <emphasis effect="italic">x</emphasis>-intercept of the line. The <emphasis effect="italic">x</emphasis>-intercept occurs when <emphasis effect="italic">y</emphasis> is zero. In each line, the <emphasis effect="italic">x</emphasis>-coordinate of the point where the line crosses the <emphasis effect="italic">y</emphasis>-axis is zero. The point where the line crosses the <emphasis effect="italic">y</emphasis>-axis has the form (0, <emphasis effect="italic">b</emphasis>) and is called the <emphasis effect="italic">y</emphasis>-intercept of the line. The <emphasis effect="italic">y</emphasis>-intercept occurs when <emphasis effect="italic">x</emphasis> is zero.</para>
+      <table class="unnumbered" summary="." id="table-00001">
+      <tgroup cols="5">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Figure</emphasis></entry>
+      <entry><emphasis effect="bold">The line crosses the <emphasis effect="italic">x-</emphasis>axis at:</emphasis></entry>
+      <entry><emphasis effect="bold">Ordered Pair for this Point</emphasis></entry>
+      <entry><emphasis effect="bold">The line crosses the <emphasis effect="italic">y</emphasis>-axis at:</emphasis></entry>
+      <entry><emphasis effect="bold">Ordered Pair for This Point</emphasis>[SR1]</entry></row>
+      <row><entry>Figure (a)</entry>
+      <entry>3</entry>
+      <entry>(3, 0)</entry>
+      <entry>6</entry>
+      <entry>(0, 6)</entry></row>
+      <row><entry>Figure (b)</entry>
+      <entry>4</entry>
+      <entry>(4, 0)</entry>
+      <entry>–3</entry>
+      <entry>(0, –3)</entry></row>
+      <row><entry>Figure (c)</entry>
+      <entry>5</entry>
+      <entry>(5, 0)</entry>
+      <entry>–5</entry>
+      <entry>(0, –5)</entry></row>
+      <row><entry>Figure (d)</entry>
+      <entry>0</entry>
+      <entry>(0, 0)</entry>
+      <entry>0</entry>
+      <entry>(0, 0)</entry></row>
+      <row><entry>General Figure</entry>
+      <entry><emphasis effect="italic">a</emphasis></entry>
+      <entry>(<emphasis effect="italic">a</emphasis>, 0)</entry>
+      <entry><emphasis effect="italic">b</emphasis></entry>
+      <entry>(0, <emphasis effect="italic">b</emphasis>)</entry></row></tbody>
+      </tgroup>
+      </table>
+      <example id="exam-00001">
+      <title>Finding <emphasis effect="italic">x</emphasis>- and <emphasis effect="italic">y</emphasis>-Intercepts</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00005">Find the <emphasis effect="italic">x</emphasis>-intercept and <emphasis effect="italic">y</emphasis>-intercept on the (a) and (b) graphs in Figure 5.XX.</para>
+      <figure id="fig-00003">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_005.png"/>
+      </media>
+      <caption>(a)</caption>
+      </figure>
+      <figure id="fig-00004">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_006.png"/>
+      </media>
+      <caption>(b)</caption>
+      </figure>
+      </problem>
+      <solution id="sol-00001">
+      <para id="para-00006">In Figure 5.XX(a), The graph crosses the <emphasis effect="italic">x</emphasis>-axis at the point (4, 0). The <emphasis effect="italic">x</emphasis>-intercept is (4, 0). The graph crosses the <emphasis effect="italic">y</emphasis>-axis at the point (0, 2). The <emphasis effect="italic">y</emphasis>-intercept is (0, 2). In Figure 5.XX(b) The graph crosses the <emphasis effect="italic">x</emphasis>-axis at the point (2, 0). The <emphasis effect="italic">x</emphasis>-intercept is (2, 0). The graph crosses the <emphasis effect="italic">y</emphasis>-axis at the point (0, –6). The <emphasis effect="italic">y</emphasis>-intercept is (0, -–).</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00001">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00007"><link class="os-embed" url="#exercise/CM-C05-M8-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00002">
+      <title>Graphing a Function Using Intercepts</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00008">Find the intercepts of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>8</mn></mrow></math>. Then graph the function using the intercepts.</para>
+      </problem>
+      <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00009">Let <emphasis effect="italic">y</emphasis> = 0 to find the <emphasis effect="italic">x</emphasis>-intercept, and let <emphasis effect="italic">x</emphasis> = 0 to find the <emphasis effect="italic">y</emphasis>-intercept.</para>
+      <table class="unnumbered" summary="." id="table-00002">
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <colspec colnum="4" colname="c4" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>8</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>8</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>To find the <emphasis effect="italic">x</emphasis>-intercept, let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>.</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>0</mn><mo>=</mo><mn>8</mn></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">To find the <emphasis effect="italic">y</emphasis>-intercept, let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>.</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>+</mo><mi>y</mi><mo>=</mo><mn>8</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Simplify.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mrow><mn>2</mn><mi>x</mi><mo>=</mo><mn>8</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></mtd></mtr></mtable></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">Simplify.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>8</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>The <emphasis effect="italic">x</emphasis>-intercept is:</entry>
+      <entry>(4,0)</entry>
+      <entry>The y-intercept is:</entry>
+      <entry>(0,8)</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00010">Plot the intercepts to get the below graph.</para>
+      <para id="para-00011"><figure id="fig-00005">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_008.png"/>
+      </media>
+      </figure></para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00012"><link class="os-embed" url="#exercise/CM-C05-M8-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title>Computing Slope</title>
+      <para id="para-00013">When graphing linear equations, you may notice that some lines tilt up as they go from left to right and some lines tilt down. Some lines are very steep and some lines are flatter. In mathematics, the measure of the steepness of a line is called the <emphasis effect="bold">slope</emphasis> of the line. To find the slope of a line, we locate two points on the line whose coordinates are integers. Then we sketch a right triangle where the two points are vertices of the triangle and one side is horizontal and one side is vertical. Next, we measure or calculate the distance along the vertical and horizontal sides of the triangle. The vertical distance is called the <emphasis effect="bold">rise</emphasis> and the horizontal distance is called the <emphasis effect="bold">run</emphasis>.</para>
+      <para id="para-00014">We can assign a numerical value to the slope of a line by finding the ratio of the rise and run. The rise is the amount the vertical distance changes while the run measures the horizontal change, as shown in this illustration. Slope (Figure 5.XX) is a rate of change.</para>
+      <figure id="fig-00006">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_010.png"/>
+      </media>
+      <caption/>
+      </figure>
+      <note class="formula" id="note-00003">
+      <para id="para-00015">To calculated calculate slope (m), use the formula</para>
+      <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac></mrow></math></equation>,
+      <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">where the rise measures the vertical change and the run measures the horizontal change.</para>
+      </note>
+      <para id="para-00017">The concept of slope has many applications in the real world. In construction, the pitch of a roof, the slant of plumbing pipes, and the steepness of stairs are all applications of slope. As you ski or jog down a hill, you definitely experience slope.</para>
+      <example id="exam-00003">
+      <title>Finding the Slope from a Graph</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00018">Find the slope of the line shown.</para>
+      <figure id="fig-00007">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_011.png"/>
+      </media>
+      </figure>
+      </problem>
+      <solution id="sol-00003">
+      <para id="para-00019"><emphasis effect="bold">Step 1:</emphasis> Locate two points on the graph whose coordinates are integers, such as (0, 5) and (3, 3). Starting at (0, 5), sketch a right triangle to (3, 3) as shown in this graph.</para>
+      <figure id="fig-00008">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_012.png"/>
+      </media>
+      </figure>
+      <para id="para-00020"><emphasis effect="bold">Step 2:</emphasis> Count the rise; since it goes down, it is negative. The rise is –2.</para>
+      <para id="para-00021"><emphasis effect="bold">Step 3:</emphasis> Count the run.	The run is 3.</para>
+      <para id="para-00022"><emphasis effect="bold">Step 4:</emphasis> Use the slope formula<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac></mrow></math> ubstitute the values of the rise and run. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>2</mn></mrow><mn>3</mn></mfrac></mrow></math></para>
+      <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml">The slope of the line is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></math>.</para>
+      <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">The solution is <emphasis effect="italic">y</emphasis> decreases by 2 units as <emphasis effect="italic">x</emphasis> increases by 3 units.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00004">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00025"><link class="os-embed" url="#exercise/CM-C05-M8-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00026">Sometimes we will need to find the slope of a line between two points when we don’t have a graph to measure the rise and the run. We could plot the points on grid paper, then count out the rise and the run, but there is a way to find the slope without graphing. First, we need to introduce some algebraic notation.</para>
+      <para id="para-00027">We have seen that an ordered pair (<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>) gives the coordinates of a point. But when we work with slopes, we use two points. How can the same symbol (<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>) be used to represent two different points? Mathematicians use subscripts to distinguish such points. For example, (<emphasis effect="italic">x</emphasis><sub>1</sub>, <emphasis effect="italic">y</emphasis><sub>1</sub>) would be said aloud as “<emphasis effect="italic">x</emphasis> sub 1, <emphasis effect="italic">y</emphasis> sub 1” and (<emphasis effect="italic">x</emphasis><sub>2</sub>, <emphasis effect="italic">y</emphasis><sub>2</sub>) read “<emphasis effect="italic">x</emphasis> sub 2, <emphasis effect="italic">y</emphasis> sub 2.” The “sub” is a short way of saying “subscript.” We will use (<emphasis effect="italic">x</emphasis><sub>1</sub>, <emphasis effect="italic">y</emphasis><sub>1</sub>) to identify the first point and (<emphasis effect="italic">x</emphasis><sub>2</sub>, <emphasis effect="italic">y</emphasis><sub>2</sub>) to identify the second point in our slope equation. If we had more than two points, (if we were finding more than one slope), we could use (<emphasis effect="italic">x</emphasis><sub>3</sub>, <emphasis effect="italic">y</emphasis><sub>3</sub>), (<emphasis effect="italic">x</emphasis><sub>4</sub>, <emphasis effect="italic">y</emphasis><sub>4</sub>), and so on.</para>
+      <para id="para-00028">Let’s review how the rise and run relate to the coordinates of the two points by taking another look at the slope of the line between the points (2, 3) and (7, 6), as shown in the following graph.</para>
+      <figure class="numbered" id="fig-00009">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_014.png"/>
+      </media>
+      </figure>
+      <para id="para-00029">On the graph, we count the rise of 3 and the run of 5. Notice on the graph that that (<emphasis effect="italic">x</emphasis><sub>1</sub>, <emphasis effect="italic">y</emphasis><sub>1</sub>) is the point (2, 3) and (<emphasis effect="italic">x</emphasis><sub>2</sub>, <emphasis effect="italic">y</emphasis><sub>2</sub>) is the point (7, 6). The rise can be found by subtracting the <emphasis effect="italic">y</emphasis>-coordinates, 6 and 3, and the run can be found by subtracting the <emphasis effect="italic">x</emphasis>-coordinates 7 and 2.</para>
+      <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mo>−</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow></math></equation>
+      <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">We have shown that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow></math> is really another version of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac></mrow></math>. We can use this formula to find the slope of a line.</para>
+      <note class="formula" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00031">To find the slope of the line between two points (<emphasis effect="italic">x</emphasis><sub>1</sub>, <emphasis effect="italic">y</emphasis><sub>1</sub>) and (<emphasis effect="italic">x</emphasis><sub>2</sub>, <emphasis effect="italic">y</emphasis><sub>2</sub>), use the formula</para>
+      <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow></math></equation>
+      </note>
+      <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Finding the Slope of the Line Using Points</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00032">Use the slope formula to find the slope of the line through the points (–2, –3) and (–7, 4).</para>
+      </problem>
+      <solution id="sol-00004">
+      <para id="para-00033">We’ll call (–2, –3) point 1 and (–7, 4) point 2.</para>
+      <para id="para-00034"><emphasis effect="bold">Step 1:</emphasis> Use the slope formula: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow></math></para>
+      <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Substitute the values: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>7</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mfrac></mrow></math></para>
+      <para id="para-00036" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Simplify: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mn>7</mn><mrow><mo>−</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac><mn>7</mn><mn>5</mn></mfrac></mrow></math></para>
+      <para id="para-00037" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Verify the slope on the graph below.</para>
+      <figure id="fig-00010">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_015.png"/>
+      </media>
+      </figure>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00006">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00038"><link class="os-embed" url="#exercise/CM-C05-M8-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00004">
+      <title>Graphing Functions Using Slope and <emphasis effect="italic">y</emphasis>-Intercept</title>
+      <para id="para-00039">We have graphed linear equations by plotting points and using intercepts. Once we see how an equation in slope–intercept form and its graph are related, we will have one more method we can use to graph lines. Review the graph of the equation <emphasis effect="italic">y</emphasis> = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi></mrow></math> + 3 in Figure 5.XX and find its slope and <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">y</emphasis>-intercept.</para>
+      <figure class="numbered" id="fig-00011">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_016.png"/>
+      </media>
+      <caption>Graph of the equation 1/2<emphasis effect="italic">x</emphasis> + 3.</caption>
+      </figure>
+      <para id="para-00040">The vertical and horizontal lines in the graph show us the rise is 1 and the run is 2, respectively.</para>
+      <para id="para-00041">Substituting into the slope formula: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></para>
+      <para id="para-00042" xmlns="http://cnx.rice.edu/cnxml">The <emphasis effect="italic">y</emphasis>-intercept is (0, 3). Look at the equation of this line.</para>
+      <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>3</mn></mrow></math></equation>
+      <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">Look at the slope and <emphasis effect="italic">y</emphasis>-intercept.</para>
+      <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>slope</mtext><mspace width="0.28em"/><mi>m</mi><mspace width="0.28em"/><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext>and</mtext><mspace width="0.28em"/><mi>y</mi><mo>-</mo><mtext>intercept</mtext><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math></equation>
+      <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">When a linear equation is solved for <emphasis effect="italic">y</emphasis>, the coefficient of the <emphasis effect="italic">x</emphasis> term is the slope and the constant term is the <emphasis effect="italic">y</emphasis>-coordinate of the <emphasis effect="italic">y</emphasis>-intercept. We say that the equation y = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi></mrow></math> + 3 is in <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">slope–intercept form</emphasis>. Sometimes the slope–intercept form is called the <emphasis effect="italic">y</emphasis>-form.</para>
+      <example id="exam-00005">
+      <title>Finding the Slope and <emphasis effect="italic">y</emphasis>-Intercept of a Line</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00045">Identify the slope and <emphasis effect="italic">y</emphasis>-intercept of the line from the equation:</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00002">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac><mi>x</mi><mo>−</mo><mn>2</mn></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>9</mn></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00046">
+      <list list-type="enumerated" number-style="arabic" id="list-00003">
+      <item>We compare our equation to the slope–intercept form of the equation.
+      <table class="unnumbered" summary="." id="table-00003">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Write the slope–intercept form of the equation of the line.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 2:</emphasis> Write the equation of the line.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac><mi>x</mi><mo>−</mo><mn>2</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 3:</emphasis> Identify the slope.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 4:</emphasis> Identify the <emphasis effect="italic">y</emphasis>-intercept.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>−</mo><mtext>intercept is</mtext> <mspace width="0.28em"/> <mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item xmlns="http://cnx.rice.edu/cnxml">When an equation of a line is not given in slope–intercept form, our first step will be to solve the equation for <emphasis effect="italic">y</emphasis>.
+      <table class="unnumbered" summary="." id="table-00004">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Step 1:</emphasis> Solve for <emphasis effect="italic">y</emphasis>.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>9</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 2:</emphasis> Subtract <emphasis effect="italic">x</emphasis> from each side.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>9</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 3:</emphasis> Divide both sides by 3.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>3</mn><mi>y</mi></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac><mrow><mo>−</mo><mi>x</mi><mo>+</mo><mn>9</mn></mrow><mn>3</mn></mfrac></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 4:</emphasis> Simplify.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>3</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 5:</emphasis> Write the slope–intercept form of the equation of the line.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 6:</emphasis> Write the equation of the line.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>3</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 7:</emphasis> Identify the slope.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Step 8:</emphasis> Identify the <emphasis effect="italic">y</emphasis>-intercept.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>−</mo><mtext>intercept is</mtext><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      </list>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00047"><link class="os-embed" url="#exercise/CM-C05-M8-Q005"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00006">
+      <title>Graphing the Slope and <emphasis effect="italic">y</emphasis>-Intercept</title>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00048">Graph the line of the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn></mrow></math> using its slope and <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">y</emphasis>-intercept.</para>
+      </problem>
+      <solution id="sol-00006">
+      <para id="para-00049">The equation is in slope–intercept form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow></math>. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn></mrow></math>.</para>
+      <para id="para-00050" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Identify the slope and <emphasis effect="italic">y</emphasis>-intercept. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></math>, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">y</emphasis>-intercept is (0, 4).</para>
+      <para id="para-00051"><emphasis effect="bold">Step 2:</emphasis> Plot the <emphasis effect="italic">y</emphasis>-intercept on the coordinate system.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00004">
+      <item>Identify the rise over the run. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>=</mo><mfrac><mrow><mo>−</mo><mn>1</mn></mrow><mn>1</mn></mfrac></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Count out the rise and run to mark the second point. rise −1, run 1</item>
+      </list>
+      <figure id="fig-00012">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_017.png"/>
+      </media>
+      </figure>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00008">
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00052"><link class="os-embed" url="#exercise/CM-C05-M8-Q006"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00005">
+      <title>Graphing Horizontal and Vertical Lines</title>
+      <para id="para-00053">Some linear equations have only one variable. They may have just <emphasis effect="italic">x</emphasis> without the <emphasis effect="italic">y</emphasis>, or just <emphasis effect="italic">y</emphasis> without an <emphasis effect="italic">x</emphasis>. This changes how we make a table of values to get the points to plot. Let us consider the equation <emphasis effect="italic">x</emphasis> = –3. This equation has only one variable, <emphasis effect="italic">x</emphasis>. The equation says that <emphasis effect="italic">x</emphasis> is always equal to –3, so its value does not depend on <emphasis effect="italic">y</emphasis>. No matter what the value of <emphasis effect="italic">y</emphasis> is, the value of <emphasis effect="italic">x</emphasis> is always –3. To make a table of values, write –3 in for all the <emphasis effect="italic">x</emphasis>-values. Then choose any values for <emphasis effect="italic">y</emphasis>. Since <emphasis effect="italic">x</emphasis> does not depend on <emphasis effect="italic">y</emphasis>, you can choose any numbers you like. But to fit the points on our coordinate graph, we will use 1, 2, and 3 for the <emphasis effect="italic">y</emphasis>-coordinates in the table below.</para>
+      <table class="unnumbered" summary="." id="table-00005">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="italic">x</emphasis> = –3</entry>
+      </row>
+      <row>
+      <entry><emphasis effect="italic">x</emphasis></entry>
+      <entry><emphasis effect="italic">y</emphasis></entry>
+      <entry>(<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>)</entry>
+      </row>
+      <row>
+      <entry>–3</entry>
+      <entry>1</entry>
+      <entry>(–3, 1)</entry>
+      </row>
+      <row>
+      <entry>–3</entry>
+      <entry>2</entry>
+      <entry>(–3, 2)</entry>
+      </row>
+      <row>
+      <entry>–3</entry>
+      <entry>3</entry>
+      <entry>(–3, 3)</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00054">Plot the points from the table and connect them with a straight line. Notice that we have graphed a vertical line.</para>
+      <figure id="fig-00013">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_019.png"/>
+      </media>
+      <caption>Graph of <emphasis effect="italic">x</emphasis> = –3</caption>
+      </figure>
+      <para id="para-00055">What is the slope? If we take the two points (–3, 3) and (–3, 1) then the rise is 2 and the run is 0.</para>
+      <para id="para-00056">Using the slope formula we get: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>0</mn></mfrac></mrow></math></para>
+      <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">The slope is <emphasis effect="bold">undefined</emphasis> since division by zero is undefined. We say that the slope of the vertical line <emphasis effect="italic">x</emphasis> = –3 is undefined. The slope of any <emphasis effect="bold">vertical line</emphasis> <emphasis effect="italic">x</emphasis> = <emphasis effect="italic">a</emphasis> (where <emphasis effect="italic">a</emphasis> is any number) will be undefined.</para>
+      <para id="para-00058">What if the equation has <emphasis effect="italic">y</emphasis> but no <emphasis effect="italic">x</emphasis>? Let’s graph the equation <emphasis effect="italic">y</emphasis> = 4. This time the <emphasis effect="italic">y</emphasis>-value is a constant, so in this equation, <emphasis effect="italic">y</emphasis> does not depend on <emphasis effect="italic">x</emphasis>. Fill in 4 for all the <emphasis effect="italic">y</emphasis> values in the table below and then choose any values for <emphasis effect="italic">x</emphasis>. We will use 0, 2, and 4 for the <emphasis effect="italic">x</emphasis>-coordinates.</para>
+      <table class="unnumbered" summary="." id="table-00006">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="italic">y</emphasis> = 4</entry>
+      </row>
+      <row><entry><emphasis effect="italic">x</emphasis></entry>
+      <entry><emphasis effect="italic">y</emphasis></entry>
+      <entry>(<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>)</entry>
+      </row>
+      <row>
+      <entry>0</entry>
+      <entry>4</entry>
+      <entry>(0, 4)</entry>
+      </row>
+      <row><entry>2</entry>
+      <entry>4</entry>
+      <entry>(2, 4)</entry>
+      </row>
+      <row>
+      <entry>4</entry>
+      <entry>4</entry>
+      <entry>(4, 4)</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00059">In Figure 5.XX, we have graphed a horizontal line passing through the <emphasis effect="italic">y</emphasis>-axis at 4.</para>
+      <figure id="fig-00014">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_020.png"/>
+      </media>
+      <caption>Graph of <emphasis effect="italic">y</emphasis> = 4</caption>
+      </figure>
+      <para id="para-00060">What is the slope? If we take the two points (2, 4) and (4, 4) then the rise is 0 and the run is 2. Using the slope formula, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi mathvariant="italic">rise</mi></mrow><mrow><mi mathvariant="italic">run</mi></mrow></mfrac><mo>=</mo><mfrac><mn>0</mn><mn>2</mn></mfrac><mo>=</mo><mn>0</mn></mrow></math>. The slope of the horizontal line <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">y</emphasis> = 4 is 0. The slope of any <emphasis effect="bold">horizontal line</emphasis> <emphasis effect="italic">y</emphasis> = <emphasis effect="italic">b</emphasis> (where <emphasis effect="italic">b</emphasis> is any number) will be 0. When the <emphasis effect="italic">y</emphasis>-coordinates are the same, the rise is 0.</para>
+      <example id="exam-00007">
+      <title>Graphing A Vertical Line</title>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00061">Graph: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00062">The equation has only one variable, <emphasis effect="italic">x</emphasis>, and <emphasis effect="italic">x</emphasis> is always equal to 2. We create a table where <emphasis effect="italic">x</emphasis> is always 2 and then put in any values for <emphasis effect="italic">y</emphasis>. The graph is a vertical line passing through the <emphasis effect="italic">x</emphasis>-axis at 2.</para>
+      <table class="unnumbered" summary="." id="table-00007">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="italic">x</emphasis> = 2</entry>
+      </row>
+      <row>
+      <entry><emphasis effect="italic">x</emphasis></entry>
+      <entry><emphasis effect="italic">y</emphasis></entry>
+      <entry>(<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>)</entry></row>
+      <row>
+      <entry>2</entry>
+      <entry>1</entry>
+      <entry>(2, 1)</entry>
+      </row>
+      <row>
+      <entry>2</entry>
+      <entry>2</entry>
+      <entry>(2, 2)</entry>
+      </row>
+      <row>
+      <entry>2</entry>
+      <entry>3</entry>
+      <entry>(2, 3)</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <figure id="fig-00015">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_021.png"/>
+      </media>
+      </figure>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00009">
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00063"><link class="os-embed" url="#exercise/CM-C05-M8-Q007"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00008">
+      <title>Graphing A Horizontal Line</title>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00064">Graph: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></math>.</para>
+      </problem>
+      <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00065">The equation <emphasis effect="italic">y</emphasis> = –1 has only one variable, <emphasis effect="italic">y</emphasis>. The value of <emphasis effect="italic">y</emphasis> is constant. All the ordered pairs in the next table have the same <emphasis effect="italic">y</emphasis>-coordinate. The graph is a horizontal line passing through the <emphasis effect="italic">y</emphasis>-axis at –1.</para>
+      <table class="unnumbered" summary="." id="table-00008">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="italic">y</emphasis> = −1</entry>
+      </row>
+      <row>
+      <entry><emphasis effect="italic">x</emphasis></entry>
+      <entry><emphasis effect="italic">y</emphasis></entry>
+      <entry>(<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>)</entry>
+      </row>
+      <row>
+      <entry>0</entry>
+      <entry>–1</entry>
+      <entry>(0, –1)</entry>
+      </row>
+      <row>
+      <entry>3</entry>
+      <entry>-–1</entry>
+      <entry>(3, –1)</entry>
+      </row>
+      <row>
+      <entry>–3</entry>
+      <entry>–1</entry>
+      <entry>(-3, –1)</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <figure id="fig-00016">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_023.png"/>
+      </media>
+      </figure>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00010">
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00066"><link class="os-embed" url="#exercise/CM-C05-M8-Q008"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <para id="para-00067">The table below summarizes all the methods we have used to graph lines.</para>
+         <figure id="fig-00017">
+      <code/>
+      </figure>
+      </section>
+      <section id="sect-00006">
+      <title>Interpreting Graphs of Functions</title>
+      <para id="para-00068">An important yet often overlooked area in algebra involves interpreting graphs. Oftentimes in math classes, students are given mathematical functions and can make graphs to represent them. But the interpretation of graphs is a more applicable skill to the real world. Being able to “read” a graph—understanding its domain and range, what the intercepts mean, and what the slope (or curve) means—’hat's a real-world skill.</para>
+      <example id="exam-00009">
+      <title>Interpreting a Graph</title>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00069">In Figure 5.XX the <emphasis effect="italic">x</emphasis>-axis on the graph represents the 120-minute bike ride Juan went on. The <emphasis effect="italic">y</emphasis>-axis represents how far away he was from his home.</para>
+      <figure id="fig-00018">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_025.png"/>
+      </media>
+      </figure>
+      <list list-type="enumerated" number-style="arabic" id="list-00005">
+      <item>Interpret the <emphasis effect="italic">x</emphasis>- and <emphasis effect="italic">y</emphasis>-intercept.</item>
+      <item>For each segment, find the slope.</item>
+      <item>Create an interpretation of this graph (i.e., make up a story that goes with it).</item>
+      </list>
+      </problem>
+      <solution id="sol-00009">
+      <para id="para-00070">
+      <list list-type="enumerated" number-style="arabic" id="list-00006">
+      <item>(0, 0) is the <emphasis effect="italic">x</emphasis>- and <emphasis effect="italic">y</emphasis>-intercept and represents Juan at home before his bike ride. The distance from home is 0 miles and 0 minutes have passed.</item>
+      <item>In the first 30 minutes, the slope is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle scriptlevel="+1"><mfrac><mn>1</mn><mn>5</mn></mfrac></mstyle></mrow></math> and indicates Juan is traveling 1 mile for every 5 minutes. Between 30 and 60 minutes, the slope is 0 and indicates that he’s not riding the bike (the distance is not increasing). Then between 60 and 90 minutes, the slope is<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle scriptlevel="+1"><mfrac><mn>1</mn><mn>5</mn></mfrac></mstyle></mrow></math> again. Finally, the slope is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mstyle scriptlevel="+1"><mfrac><mn>4</mn><mrow><mn>15</mn></mrow></mfrac></mstyle><mo>,</mo></mrow></math> meaning Juan is getting 4 miles closer to home every 15 minutes.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Answers will vary. Juan left his house for a bike ride. After 30 minutes, he was 6 miles from home and he stopped for ice cream at his local ice-cream truck. He enjoyed his ice cream for 30 minutes. He then jumped back on his bike and rode to his friend’s house. He arrived there 30 minutes later. His friend’s house was 12 miles from his home. His friend was not home so he immediately turned around and quickly rode home in 45 minutes.</item>
+      </list>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00011">
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00071"><link class="os-embed" url="#exercise/CM-C05-M8-Q009"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00007">
+      <title>Modeling Applications Using Slope and <emphasis effect="italic">y</emphasis>-Intercept</title>
+      <para id="para-00072">Many real-world applications are modeled by linear equations. We will review a few applications here so you can understand how equations written in slope–intercept form relate to real-world situations. Usually when a linear equation model uses real-world data, different letters are used for the variables instead of using only <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">y</emphasis>. The variable names often remind us of what quantities are being measured. Also, we often need to extend the axes in our rectangular coordinate system to bigger positive and negative numbers to accommodate the data in the application.</para>
+      <example id="exam-00010">
+      <title>Converting Temperature</title>
+      <exercise id="exer-00019">
+      <problem id="prob-00019">
+      <para id="para-00073">The equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mi>C</mi><mo>+</mo><mn>32</mn></mrow></math> is used to convert temperatures from degrees CelsI (<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">C</emphasis>) to degrees Fahrenheit (<emphasis effect="italic">F</emphasis>).</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00007">
+      <item>Find the Fahrenheit temperature for a Celsius temperature of 0°.</item>
+      <item>Find the Fahrenheit temperature for a Celsius temperature of 20°.</item>
+      <item>Interpret the slope and <emphasis effect="italic">F</emphasis>-intercept of the equation.</item>
+      <item>Graph the equation.</item>
+      </list>
+      </problem>
+      <solution id="sol-00010">
+      <list list-type="enumerated" number-style="arabic" id="list-00008">
+      <item>Find the Fahrenheit temperature for a Celsius temperature of 0°. 
+      <table class="unnumbered" summary="." id="table-00009">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry>Find <emphasis effect="italic">F</emphasis> when <emphasis effect="italic">C</emphasis> = 0.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mn>32</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Simplify.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mn>32</mn></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Find the Fahrenheit temperature for a Celsius temperature of 20°.
+      <table class="unnumbered" summary="." id="table-00010">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry>Find <emphasis effect="italic">F</emphasis> when <emphasis effect="italic">C</emphasis> = 20.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>=</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mo stretchy="false">(</mo><mn>20</mn><mo stretchy="false">)</mo><mo>+</mo><mn>32</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Simplify.</entry>
+      <entry><emphasis effect="italic">F</emphasis> = 36 + 32</entry>
+      </row>
+      <row>
+      <entry>Simplify.</entry>
+      <entry><emphasis effect="italic">F</emphasis> = 68</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item>Interpret the slope and <emphasis effect="italic">F</emphasis>-intercept of the equation.
+      <para id="para-00074">Even though this equation uses <emphasis effect="italic">F</emphasis> and <emphasis effect="italic">C</emphasis>, it is still in slope–intercept form.</para>
+      <para id="para-00075"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>F</mi><mo>=</mo><mi>m</mi><mi>C</mi><mo>+</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>F</mi><mo>=</mo><mfrac><mn>9</mn><mn>5</mn></mfrac><mi>C</mi><mo>+</mo><mn>32</mn></mtd></mtr></mtable></math></para>
+      <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">The slope <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mstyle scriptlevel="+1"><mfrac><mn>9</mn><mn>5</mn></mfrac></mstyle></mrow></math> means that the temperature Fahrenheit (<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">F</emphasis>) increases 9 degrees when the temperature CIius (<emphasis effect="italic">C</emphasis>) increases 5 degrees.</para>
+      <para id="para-00077">The <emphasis effect="italic">F</emphasis>-intercept means that when the temperature is 0° on the Celsius scale, it is 32° on the Fahrenheit scale.</para>
+      </item>
+      <item>Graph the equation.
+      <para id="para-00078">We will need to use a larger scale than our usual. Start at the <emphasis effect="italic">F</emphasis>-intercept (0, 32), and then count out the rise of 9 and the run of 5 to get a second point as shown in the graph.</para>
+      <figure id="fig-00019">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_027.png"/>
+      </media>
+      </figure>
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00012">
+      <exercise id="exer-00020">
+      <problem id="prob-00020">
+      <para id="para-00079"><link class="os-embed" url="#exercise/CM-C05-M8-Q010"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00011">
+      <title>Calculating Driving Costs</title>
+      <exercise id="exer-00021">
+      <problem id="prob-00021">
+      <para id="para-00080">Sam drives a delivery van. The equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mn>0.5</mn><mi>m</mi><mo>+</mo><mn>60</mn></mrow></math> models the relation between his weekly cost, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">C</emphasis>, in dollars and the number of miles, <emphasis effect="italic">m</emphasis>, that he drives.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00009">
+      <item>Find Sam’s cost for a week when he drives 0 miles.</item>
+      <item>Find the cost for a week when he drives 250 miles.</item>
+      <item>Interpret the slope and <emphasis effect="italic">C</emphasis>-intercept of the equation.</item>
+      <item>Graph the equation.</item>
+      </list>
+      </problem>
+      <solution id="sol-00011">
+      <para id="para-00081">
+      <list list-type="enumerated" number-style="arabic" id="list-00010">
+      <item>Find Sam’s cost for a week when he drives 0 miles.
+      <table class="unnumbered" summary="." id="table-00011">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry>Find <emphasis effect="italic">C</emphasis> when <emphasis effect="italic">m</emphasis> = 0.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mn>0.5</mn><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>+</mo><mn>60</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Simplify.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mn>60</mn></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00082" xmlns="http://cnx.rice.edu/cnxml">Sam’s costs are $60 when he drives 0 miles.</para>
+      </item>
+      <item>Find the cost for a week when he drives 250 miles.
+      <table class="unnumbered" summary="." id="table-00012">
+      <tgroup cols="2">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry>Find <emphasis effect="italic">C</emphasis> when <emphasis effect="italic">m</emphasis> = 250.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mn>0.5</mn><mrow><mo>(</mo><mrow><mn>250</mn></mrow><mo>)</mo></mrow><mo>+</mo><mn>60</mn></mrow></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>Simplify.</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>=</mo><mn>185</mn></mrow></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00083" xmlns="http://cnx.rice.edu/cnxml">Sam’s costs are $185 when he drives 250 miles.</para>
+      </item>
+      <item>Interpret the slope and <emphasis effect="italic">C</emphasis>-intercept of the equation.
+      <para id="para-00084"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>C</mi><mo>=</mo><mn>0.5</mn><mi>p</mi><mo>+</mo><mn>60</mn></mtd></mtr></mtable></math></para>
+      <para id="para-00085" xmlns="http://cnx.rice.edu/cnxml">The slope, 0.5, means that the weekly cost, <emphasis effect="italic">C</emphasis>, increases by $0.50 when the number of miles driven, <emphasis effect="italic">m</emphasis>, increases by 1. The <emphasis effect="italic">C</emphasis>-intercept means that when the number of miles driven is 0, the weekly cost is $60.</para>
+      </item>
+      <item>Graph the equation.
+      <para id="para-00086">We’ll need to use a larger scale than usual. Start at the <emphasis effect="italic">C</emphasis>-intercept (0, 60). To count out the slope <emphasis effect="italic">m</emphasis> = 0.5, we rewrite it as an equivalent fraction that will make our graphing easier.</para>
+      <equation id="eq-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>0.5</mn><mo>=</mo><mfrac><mn>5</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>50</mn></mrow><mrow><mn>100</mn></mrow></mfrac></mrow></math></equation>
+      <para id="para-00087" xmlns="http://cnx.rice.edu/cnxml">So to graph the next point go up 50 from the intercept of 60 and then to the right 100. The second point will be (100, 110).</para>
+      <figure id="fig-00020">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_05_08_029.png"/>
+      </media>
+      </figure>
+      </item>
+      </list>
+      </para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00013">
+      <exercise id="exer-00022">
+      <problem id="prob-00022">
+      <para id="para-00088"><link class="os-embed" url="#exercise/CM-C05-M8-Q011"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="tech-check" id="note-00014">
+      <para id="para-00089">Desmos has several activities to help with graphing. The “Marbleslides” activities are among the most fun. <link url="https://openstax.org/r/Marbleslides">“Marbleslides: Lines”</link> and <link url="https://openstax.org/r/Parabolas">“Marbleslides: Parabolas”</link> are activities designed to get students thinking about linear and quadratic functions. Teachers will need a Desmos account to assign the activity for student use. Once they have assigned the activity to their students, teachers need to share the code for the activity with their students. Students <link url="https://openstax.org/r/will_input_the">will input the code to work</link> on the activity.</para>
+      </note>
+      </section>
+      <section class="check-understanding" id="sect-00008">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00023">
+      <problem id="prob-00023">
+      <para id="para-00090"><link class="os-embed" url="#exercise/CM-C05-M8-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00024">
+      <problem id="prob-00024">
+      <para id="para-00091"><link class="os-embed" url="#exercise/CM-C05-M8-Q013"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00025">
+      <problem id="prob-00025">
+      <para id="para-00092"><link class="os-embed" url="#exercise/CM-C05-M8-Q027"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00026">
+      <problem id="prob-00026">
+      <para id="para-00093"><link class="os-embed" url="#exercise/CM-C05-M8-Q028"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="exercises" id="sect-00009">
+      <exercise id="exer-00027">
+      <problem id="prob-00027">
+      <para id="para-00094"><link class="os-embed" url="#exercise/CM-C05-M8-Q029"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00028">
+      <problem id="prob-00028">
+      <para id="para-00095"><link class="os-embed" url="#exercise/CM-C05-M8-Q014"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00029">
+      <problem id="prob-00029">
+      <para id="para-00096"><link class="os-embed" url="#exercise/CM-C05-M8-Q015"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00030">
+      <problem id="prob-00030">
+      <para id="para-00097"><link class="os-embed" url="#exercise/CM-C05-M8-Q016"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00031">
+      <problem id="prob-00031">
+      <para id="para-00098"><link class="os-embed" url="#exercise/CM-C05-M8-Q017"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00032">
+      <problem id="prob-00032">
+      <para id="para-00099"><link class="os-embed" url="#exercise/CM-C05-M8-Q018"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00033">
+      <problem id="prob-00033">
+      <para id="para-00100"><link class="os-embed" url="#exercise/CM-C05-M8-Q019"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00034">
+      <problem id="prob-00034">
+      <para id="para-00101"><link class="os-embed" url="#exercise/CM-C05-M8-Q020"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-terms" id="sect-00010">
+      <title>Key Terms</title>
+      <list bullet-style="none" id="list-00011">
+      <item>Intercepts of a Line</item>
+      <item>Slope</item>
+      <item>Slope-intercept form</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00011">
+      <title>Key Concepts</title>
+      <list bullet-style="none" id="list-00012">
+      <item>Graph line using intercepts</item>
+      <item>Compute slope</item>
+      <item>Graph functions using slope and <emphasis effect="italic">y</emphasis>-intercept</item>
+      </list>
+      </section>
+      <section class="formula-review" id="sect-00012">
+      <title>Formulas</title>
+      <list bullet-style="none" id="list-00013">
+      <item>Slope of a line</item>
+      </list>
+      </section>
+      </content>
+      </document>
