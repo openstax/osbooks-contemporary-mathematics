@@ -6,943 +6,897 @@
    <md:uuid>461e16d4-3f6a-4430-86ab-578e2035da57</md:uuid>
   </metadata>
   <content>
-   <figure id="fig-00001">
-    <media alt="A hand is shown typing on a laptop while coding appears on the screen.">
-    <image mime-type="image/jpg" src="../../media/CS_Photo_02_04_001.jpg"/>
-    </media>
-    <caption>If-then statements use logic to execute directions. (credit: Lukas/Pexels.com , Pexels License)</caption>
-    </figure>
-   <section class="learning-objectives" id="sect-00001">
-    <title>Learning Objectives</title>
-    <para id="para-00001">After completing this section, you should be able to:</para>
-    <list list-type="enumerated" id="list-00001">
-    <item>Use and apply the conditional to construct a truth table.</item>
-    <item>Use and apply the biconditional to construct a truth table.</item>
-    <item>Use truth tables to determine the validity of conditional and biconditional statements.</item>
-    </list>
-   </section>
-    <para id="para-00002">Computer languages use <emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> or <emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">else</emphasis> statements as decision statements. If the hypothesis is true, then do something. Or, if the hypothesis is true, then do something, otherwise do something else. For example, the following lines of code provide the structure of an if-then-else decision statement in the c programming language.</para>
-    <code display="block" xmlns="http://cnx.rice.edu/cnxml">
-    #include &lt;stdio.h> /* This is a comment, stdio.h is a built-in library of functions <newline/>that provides the printf function among other */
-    int main () { /* Another comment, open the main section of the program, */
-    /* local variable definition */
-    inti = 3; /* The variable i is assigned the value 3. */
-     /* Check to see if i is less than 1 */
-     if( i&lt;1 ) { /* if the value of the variable i is less than 1, write the message: <newline/>“Hello World!” on the screen */
-    printf("Hello World!\n" );
-    } else { /* This piece of code will only get executed if i is greater than or equal to 1. */
-        printf("Logic tells us Spock is from Vulcan.\n" );
+    <figure id="fig-00001">
+      <media alt="A hand is shown typing on a laptop while coding appears on the screen.">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_02_04_001.jpg"/>
+      </media>
+      <caption>If-then statements use logic to execute directions. (credit: “Coding” by Carlos Varela/Flickr, CC BY 2.0)</caption>
+      </figure>
+     <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001">After completing this section, you should be able to:</para>
+      <list list-type="enumerated" id="list-00001">
+      <item>Use and apply the conditional to construct a truth table.</item>
+      <item>Use and apply the biconditional to construct a truth table.</item>
+      <item>Use truth tables to determine the validity of conditional and biconditional statements.</item>
+      </list>
+     </section>
+      <para id="para-00002">Computer languages use <emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> or <emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">else</emphasis> statements as decision statements. If the hypothesis is true, then do something. Or, if the hypothesis is true, then do something, otherwise do something else. For example, the following lines of code provide the structure of an if-then-else decision statement in the c programming language.</para>
+      <code display="block" xmlns="http://cnx.rice.edu/cnxml">
+      #include &lt;stdio.h> /* This is a comment, stdio.h is a built-in library of functions 
+  <newline/>that provides the printf function among other */
+      int main () { /* Another comment, open the main section of the program, */
+      /* local variable definition */
+      inti = 3; /* The variable i is assigned the value 3. */
+       /* Check to see if i is less than 1 */
+       if( i&lt;1 ) { /* if the value of the variable i is less than 1, write the message: <newline/>
+  “Hello World!” on the screen */
+      printf("Hello World!\n" );
+      } else { /* This piece of code will only get executed if i is greater than or equal to 1. */
+          printf("Logic tells us Spock is from Vulcan.\n" );
+        }
+      return 0; /* exit the program with return code of 0 */
       }
-    return 0; /* exit the program with return code of 0 */
-    }
-   </code>
-    <para id="para-00015">In this program, the variable <emphasis effect="italic">i</emphasis> is assigned the value 3, then the <emphasis effect="italic">if</emphasis> statement, checks to see whether or not <emphasis effect="italic">i</emphasis> is less than 1. It evaluates <emphasis effect="italic">i</emphasis> &lt; 1 as 3 &lt; 1, which is false. Because the condition is false, it will not write the message “Hello World!” to the screen; instead, it will execute the statement following the else, and write the message: “Logic tells us Spock is from Vulcan.” to the screen.</para>
-    <note class="who-knew" id="note-00001">
-    <para id="para-00016">The Countess of Lovelace, Ada Lovelace, is credited with writing the first computer program. She wrote an algorithm to work with Charles Babbage’s Analytical Engine that could compute the Bernoulli numbers in 1843. In doing so, she became the first person to write a program for a machine that would produce more than just a simple calculation. The computer programming language ADA is named after her.</para>
-    <para id="para-00017">Reference: Posamentier, Alfred and Spreitzer Christian, “Chapter 34 Ada Lovelace: English (1815-1852)” pp. 272-278, <emphasis effect="italic">Math Makers: the lives and works of 50 famous mathematicians</emphasis>, Prometheus Books, 2019.</para>
-    </note>
-    <section id="sect-00002">
-    <title>Use and Apply the Conditional to Construct a Truth Table</title>
-       <para id="para-00019">A <term id="term-00001">conditional</term> is a logical statement of the form if <emphasis effect="italic">p</emphasis>, then <emphasis effect="italic">q</emphasis>. The conditional statement in logic is a promise or contract. The only time the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> is false is when the contract or promise is broken.</para>
-    <para id="para-00003" xmlns="http://cnx.rice.edu/cnxml">For example, consider the following scenario. A child’s parent says, “If you do your homework, then you can play your video games.” The child really wants to play their video games, so they get started right away, finish within an hour, and then show their parent the completed homework. The parent thanks the child for doing a great job on their homework and allows them to play video games. Both the parent and child are happy. The contract was satisfied; true implies true is true. Now, suppose the child does not start their homework right away, and then struggles to complete it. They eventually finish and show it to their parent. The parent again thanks the child for completing their homework, but then informs the child that it is too late in the evening to play video games, and that they must begin to get ready for bed. Now, the child is really upset. They held up their part of the contract, but they did not receive the promised reward. The contract was broken; true implies false is false.</para>
-     <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">So, what happens if the child does not do their homework? In this case, the hypothesis is false. No contract has been entered, therefore, no contract can be broken. If the conclusion is false, the child does not get to play video games and might not be happy, but this outcome is expected because the child did not complete their end of the bargain. They did not complete their homework. False implies false is true. The last option is not as intuitive. If the parent lets the child play video games, even if they did not do their homework, neither parent nor child are going to be upset. False implies true is true. The truth table for the conditional statement below summarizes these results.</para>
-    <table class="unnumbered" summary="." id="table-00001">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-    </row>
-   </thead>
-   <tbody xmlns="http://cnx.rice.edu/cnxml">
-   <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <note class="check-point" id="note-00012">
-    <para id="para-00021"><emphasis effect="italic">Notice that the only time the conditional statement,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">is false is when the hypothesis, p, is true and the conclusion, q, is false.</emphasis></para>
-    </note>
-    <note class="video" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00023"><link url="https://openstax.org/r/Conditional_and_Tautologies">Logic Part 8: The Conditional and Tautologies</link></para>
-    </note>
-    <example id="exam-00001">
-    <title>Constructing Truth Tables for Conditional Statements</title>
-    <exercise id="exer-00001">
-    <problem id="prob-00001">
-    <para id="para-00024">Assume both of the following statements are true: <emphasis effect="italic">p</emphasis>: My sibling washed the dishes, and <emphasis effect="italic">q</emphasis>: My parents paid them $5.00. Create a truth table to determine the truth value of each of the following conditional statements.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00002">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></item>
-    </list>
-    </problem>
-    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
-    <list list-type="enumerated" number-style="arabic" id="list-00003">
-    <item>Because <emphasis effect="italic">p</emphasis> is true and <emphasis effect="italic">q</emphasis> is true, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is, “If my sibling washed the dishes, then my parents paid them $5.00.” My sibling did wash the dishes since <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true, and the parents did pay the sibling $5.00, so the contract was entered and completed. The conditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>→</mo><mtext>T</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
-    <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math> translates to the statement, “If my sibling washed the dishes, then my parents did not pay them $5.00.” <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true, but ~<emphasis effect="italic">q</emphasis> is false. The sibling completed their end of the contract, but they did not get paid. The contract was broken by the parents. The conditional statement is false, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>→</mo><mtext>F</mtext><mo>=</mo><mtext>F</mtext><mtext>.</mtext></mrow></math>
-    <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="4">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> translates to the statement, “If my sibling did not wash the dishes, then my parents paid them $5.00.” ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is false, but <emphasis effect="italic">q</emphasis> is true. The sibling did not do the dishes. No contract was entered, so it could not be broken. The parents decided to pay them $5.00 anyway. The conditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>F</mtext><mo>→</mo><mtext>T</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
-    <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="4">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00004">
-    <exercise id="exer-00002">
-    <problem id="prob-00002">
-    <para id="para-00025"><link class="os-embed" url="#exercise/CM-C02-M4-Q001"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <example id="exam-00002">
-    <title>Determining Validity of Conditional Statements</title>
-    <exercise id="exer-00003">
-    <problem id="prob-00003">
-    <para id="para-00026">Construct a truth table to analyze all possible outcomes for each of the following statements then determine if they are valid or not valid.</para>
-    <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></item>
-    </list>
-    </problem>
-    <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
-    <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
-    <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis>, the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
-    <table class="unnumbered" summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="5">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mi> </mi><mo>~</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mi>p</mi><mo>)</mo></mrow><mo>→</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, ~<emphasis effect="italic">p</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis>, the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
-    <table class="unnumbered" summary="." id="table-00006" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="5">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi> </mi><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00005">
-    <exercise id="exer-00004">
-    <problem id="prob-00004">
-    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C02-M4-Q002"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00003">
-    <title>Use and Apply the Biconditional to Construct a Truth Table</title>
-    <para id="para-00028">The biconditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math>, is a two way contract; it is equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> A biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> is true whenever the truth value of the hypothesis matches the truth value of the conclusion, otherwise it is false.</para>
-    <note class="work-out" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
-    <title>Truth Table for the Biconditional Statement</title>
-    <para id="para-00030">What are the possible outcomes of a biconditional statement?</para>
-    <para id="para-00031">Use your knowledge of the conditional statement and the dominance of connectives to construct a truth table for the statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></para>
-    <para id="para-00032" xmlns="http://cnx.rice.edu/cnxml">Answer:</para>
-    <table class="unnumbered" summary="." id="table-00007">
-    <tgroup cols="5">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mtext> </mtext><mo>∧</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </note>
-    <para id="para-00033">The truth table for the biconditional is summarized below.</para>
-    <table class="unnumbered" summary="." id="table-00008">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry>
-    </row>
-   </thead>
-   <tbody xmlns="http://cnx.rice.edu/cnxml">
-   <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <note class="video" id="note-00008">
-    <para id="para-00034"><link url="https://openstax.org/r/omKzui0Fytk">Logic Part 11B Biconditional and Summary of Truth Value Rules in Logic</link></para>
-    </note>
-    <example id="exam-00003">
-    <title>Constructing Truth Tables forBiconditional Statements</title>
-    <exercise id="exer-00005">
-    <problem id="prob-00005">
-    <para id="para-00035">Assume both of the following statements are true: <emphasis effect="italic">p</emphasis>: The plumber fixed the leak, and <emphasis effect="italic">q</emphasis>: The homeowner paid the plumber $150.00. Create a truth table to determine the truth value of each of the following biconditional statements.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00006">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
-    </list>
-    </problem>
-    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
-    <list list-type="enumerated" number-style="arabic" id="list-00007">
-    <item>Because <emphasis effect="italic">p</emphasis> is true and <emphasis effect="italic">q</emphasis> is true, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is “The plumber fixed the leak if and only if the homeowner paid them $150.00.” Because both <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis> are true, the leak was fixed and the plumber was paid, meaning both parties satisfied their end of the bargain. The biconditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>↔</mo><mtext>T</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
-    <table class="unnumbered" summary="." id="table-00009" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math> translates to the statement, “The plumber fixed the leak if and only if the homeowner did not pay them $150.” If the plumber fixed the leak and the homeowner did not pay them, the homeowner will have broken their end of the contract. The biconditional statement is false, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>↔</mo><mtext>F</mtext><mo>=</mo><mtext>F</mtext><mtext>.</mtext></mrow></math>
-    <table class="unnumbered" summary="." id="table-00010" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="4">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math> translates to the statement, “The plumber did not fix the leak if and only if the homeowner did not pay them $150.” In this case, neither party—the plumber nor the homeowner—entered into the contract. The leak was not repaired, and the plumber was not paid. No agreement was broken. The biconditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>F</mtext><mo>↔</mo><mtext>F</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
-    <table class="unnumbered" summary="." id="table-00011" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="5">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00009">
-    <exercise id="exer-00006">
-    <problem id="prob-00006">
-    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C02-M4-Q003"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="check-point" id="note-00013">
-    <para id="para-00037"><emphasis effect="italic">The biconditional,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">is true whenever the truth values of p and q match, otherwise it is false.</emphasis></para>
-    </note>
-    <note class="video" id="note-00010">
-    <para id="para-00038"><link url="https://openstax.org/r/AQB3svnxxiw">Logic Part 13: Truth Tables to Determine if Argument is Valid or Invalid</link></para>
-    </note>
-    <example id="exam-00004">
-    <title>Determining Validity of Biconditional Statements</title>
-    <exercise id="exer-00007">
-    <problem id="prob-00007">
-    <para id="para-00039">Construct a truth table to analyze all possible outcomes for each of the following statements, then determine if they are valid or not valid.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00008">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>↔</mo><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>↔</mo><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>↔</mo><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>r</mi><mo>↔</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo>∧</mo><mi>r</mi></mrow></math></item>
-    </list>
-    </problem>
-    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <list list-type="enumerated" number-style="arabic" id="list-00009">
-    <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>↔</mo><mtext> </mtext><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q,</emphasis> the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
-    <table class="unnumbered" summary="." id="table-00012" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="6">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <colspec colnum="6" colname="c6" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>↔</mo><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q,</emphasis> the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
-    <table class="unnumbered" summary="." id="table-00013" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="6">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <colspec colnum="6" colname="c6" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis>, ~<emphasis effect="italic">p</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis> the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is valid because the last column is all true.
-    <table class="unnumbered" summary="." id="table-00014" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="7">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <colspec colnum="6" colname="c6" colwidth="1*"/>
-    <colspec colnum="7" colname="c7" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi mathvariant="bold">q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>r</mi><mtext> </mtext><mo>↔</mo><mtext> </mtext><mi>p</mi><mo>∧</mo><mi>q</mi><mo>∧</mo><mi>r</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mtext> </mtext><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q,</emphasis> <emphasis effect="italic">r</emphasis>, ~<emphasis effect="italic">r,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mtext> </mtext><mo>~</mo><mi>r</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mtext> </mtext><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are three basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q,</emphasis> and <emphasis effect="italic">r</emphasis>, the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
-    <table class="unnumbered" summary="." id="table-00015" xmlns="http://cnx.rice.edu/cnxml">
-    <tgroup cols="8">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <colspec colnum="4" colname="c4" colwidth="1*"/>
-    <colspec colnum="5" colname="c5" colwidth="1*"/>
-    <colspec colnum="6" colname="c6" colwidth="1*"/>
-    <colspec colnum="7" colname="c7" colwidth="1*"/>
-    <colspec colnum="8" colname="c8" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>r</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mo>~</mo><mi>r</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    </row>
-    </thead>
-    <tbody xmlns="http://cnx.rice.edu/cnxml">
-    <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">T</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    <row>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry>T</entry>
-    <entry>F</entry>
-    <entry><emphasis effect="bold">F</emphasis></entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    </item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00011">
-    <exercise id="exer-00008">
-    <problem id="prob-00008">
-    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C02-M4-Q004"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00004" class="check-understanding">
-    <title>Check Your Understanding</title>
-    <exercise id="exer-00009">
-    <problem id="prob-00009">
-    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C02-M4-Q005"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00010">
-    <problem id="prob-00010">
-    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C02-M4-Q006"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00011">
-    <problem id="prob-00011">
-    <para id="para-00043"><link class="os-embed" url="#exercise/CM-C02-M4-Q007"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00012">
-    <problem id="prob-00012">
-    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C02-M4-Q008"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00013">
-    <problem id="prob-00013">
-    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C02-M4-Q009"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00014">
-    <problem id="prob-00014">
-    <para id="para-00046"><link class="os-embed" url="#exercise/CM-C02-M4-Q010"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="section-exercises" id="sect-00005">
-    <title>Exercises</title>
-    <exercise id="exer-00015">
-    <problem id="prob-00015">
-    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C02-M4-Q011"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00016">
-    <problem id="prob-00016">
-    <para id="para-00048"><link class="os-embed" url="#exercise/CM-C02-M4-Q012"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00017">
-    <problem id="prob-00017">
-    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C02-M4-Q013"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="key-concepts" id="sect-00008">
-    <title>Key Concepts</title>
-    <list id="list-00011">
-    <item>The conditional statement, if p then q, is like a contract. The only time it is false is when the contract has been broken. That is, when p is true, and q is false.
-     <table class="unnumbered" summary="." id="table-00016">
+     </code>
+      <para id="para-00015">In this program, the variable <emphasis effect="italic">i</emphasis> is assigned the value 3, then the <emphasis effect="italic">if</emphasis> statement, checks to see whether <emphasis effect="italic">i</emphasis> is less than 1. It evaluates <emphasis effect="italic">i</emphasis> &lt; 1 as 3 &lt; 1, which is false. Because the condition is false, it will not write the message “Hello World!” to the screen; instead, it will execute the statement following the else, and write the message: “Logic tells us Spock is from Vulcan.” to the screen.</para>
+      <note class="who-knew" id="note-00001">
+      <para id="para-00016">The Countess of Lovelace, Ada Lovelace, is credited with writing the first computer program. She wrote an algorithm to work with Charles Babbage’s Analytical Engine that could compute the Bernoulli numbers in 1843. In doing so, she became the first person to write a program for a machine that would produce more than just a simple calculation. The computer programming language ADA is named after her.</para>
+      <para id="para-00017">Reference: Posamentier, Alfred and Spreitzer Christian, “Chapter 34 Ada Lovelace: English (1815-1852)” pp. 272-278, <emphasis effect="italic">Math Makers: The Lives and Works of 50 Famous Mathematicians</emphasis>, Prometheus Books, 2019.</para>
+      </note>
+      <section id="sect-00002">
+      <title>Use and Apply the Conditional to Construct a Truth Table</title>
+         <para id="para-00019">A <term id="term-00001">conditional</term> is a logical statement of the form if <emphasis effect="italic">p</emphasis>, then <emphasis effect="italic">q</emphasis>. The conditional statement in logic is a promise or contract. The only time the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> is false is when the contract or promise is broken.</para>
+      <para id="para-00003" xmlns="http://cnx.rice.edu/cnxml">For example, consider the following scenario. A child’s parent says, “If you do your homework, then you can play your video games.” The child really wants to play their video games, so they get started right away, finish within an hour, and then show their parent the completed homework. The parent thanks the child for doing a great job on their homework and allows them to play video games. Both the parent and child are happy. The contract was satisfied; true implies true is true.</para>
+  <para id="para-00004">Now, suppose the child does not start their homework right away, and then struggles to complete it. They eventually finish and show it to their parent. The parent again thanks the child for completing their homework, but then informs the child that it is too late in the evening to play video games, and that they must begin to get ready for bed. Now, the child is really upset. They held up their part of the contract, but they did not receive the promised reward. The contract was broken; true implies false is false.</para>
+       <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">So, what happens if the child does not do their homework? In this case, the hypothesis is false. No contract has been entered, therefore, no contract can be broken. If the conclusion is false, the child does not get to play video games and might not be happy, but this outcome is expected because the child did not complete their end of the bargain. They did not complete their homework. False implies false is true. The last option is not as intuitive. If the parent lets the child play video games, even if they did not do their homework, neither parent nor child are going to be upset. False implies true is true. The truth table for the conditional statement below summarizes these results.</para>
+      <table class="unnumbered" summary="." id="table-00001">
       <tgroup cols="3">
       <colspec colnum="1" colname="c1" colwidth="1*"/>
       <colspec colnum="2" colname="c2" colwidth="1*"/>
       <colspec colnum="3" colname="c3" colwidth="1*"/>
       <thead>
-      <row><entry namest="c1" nameend="c3">Conditional</entry></row>
-      <row><entry><emphasis effect="italic">p</emphasis></entry>
-       <entry><emphasis effect="italic">q</emphasis></entry>
-       <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
-      </thead>
-      <tbody xmlns="http://cnx.rice.edu/cnxml">
-      <row><entry>T</entry>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      </row>
+     </thead>
+     <tbody xmlns="http://cnx.rice.edu/cnxml">
+     <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry></row>
-      <row><entry>T</entry>
-      <entry>F</entry>
-      <entry><emphasis effect="bold">F</emphasis></entry></row>
-      <row><entry>F</entry>
       <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry></row>
-      <row><entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
       <entry>F</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry></row>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
       </tbody>
       </tgroup>
-      </table></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The biconditional statement, p if and only if q, it true whenever p and q have matching true values, otherwise it is false.
-     <table class="unnumbered" summary="." id="table-00017">
+      </table>
+      <note class="check-point" id="note-00012">
+      <para id="para-00021"><emphasis effect="italic">Notice that the only time the conditional statement,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">is false is when the hypothesis, p, is true and the conclusion, q, is false.</emphasis></para>
+      </note>
+      <note class="video" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00023"><link url="https://openstax.org/r/Conditional_and_Tautologies">Logic Part 8: The Conditional and Tautologies</link></para>
+      </note>
+      <example id="exam-00001">
+      <title>Constructing Truth Tables for Conditional Statements</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00024">Assume both of the following statements are true: <emphasis effect="italic">p</emphasis>: My sibling washed the dishes, and <emphasis effect="italic">q</emphasis>: My parents paid them $5.00. Create a truth table to determine the truth value of each of the following conditional statements.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00002">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00003">
+      <item>Because <emphasis effect="italic">p</emphasis> is true and <emphasis effect="italic">q</emphasis> is true, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is, “If my sibling washed the dishes, then my parents paid them $5.00.” My sibling did wash the dishes, since <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true, and the parents did pay the sibling $5.00, so the contract was entered and completed. The conditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>→</mo><mtext>T</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
+      <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
       <tgroup cols="3">
       <colspec colnum="1" colname="c1" colwidth="1*"/>
       <colspec colnum="2" colname="c2" colwidth="1*"/>
       <colspec colnum="3" colname="c3" colwidth="1*"/>
       <thead>
-      <row><entry namest="c1" nameend="c3">Biconditional</entry></row>
-      <row><entry><emphasis effect="italic">p</emphasis></entry>
-      <entry><emphasis effect="italic">q</emphasis></entry>
-      <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry></row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      </row>
       </thead>
       <tbody xmlns="http://cnx.rice.edu/cnxml">
-      <row><entry>T</entry>
+      <row xmlns="http://cnx.rice.edu/cnxml">
       <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry></row>
-      <row><entry>T</entry>
-      <entry>F</entry>
-      <entry><emphasis effect="bold">F</emphasis></entry></row>
-      <row><entry>F</entry>
       <entry>T</entry>
-      <entry><emphasis effect="bold">F</emphasis></entry></row>
-      <row><entry>F</entry>
-      <entry>F</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry></row>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
       </tbody>
       </tgroup>
-      </table></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Know how to construct truth tables involving conditional and biconditional statements.</item>
-    <item>Use truth tables to analyze conditional and biconditional statements and determine their validity.</item>
-    </list>
-    </section>
-    <section class="eoc-videos" id="sect-00009">
-    <title>Video</title>
-    <para id="para-00050"><link url="https://openstax.org/r/Conditional_and_Tautologies">Logic Part 8: The Conditional and Tautologies</link></para>
-    <para id="para-00051"><link url="https://openstax.org/r/omKzui0Fytk">Logic Part 11B Biconditional and Summary of Truth Value Rules in Logic</link></para>
-    <para id="para-00052"><link url="https://openstax.org/r/AQB3svnxxiw">Logic Part 13: Truth Tables to Determine if Argument is Valid or Invalid</link></para>
-    </section>
-  </content>
+      </table>
+      </item>
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math> translates to the statement, “If my sibling washed the dishes, then my parents did not pay them $5.00.” <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true, but ~<emphasis effect="italic">q</emphasis> is false. The sibling completed their end of the contract, but they did not get paid. The contract was broken by the parents. The conditional statement is false, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>→</mo><mtext>F</mtext><mo>=</mo><mtext>F</mtext><mtext>.</mtext></mrow></math>
+      <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> translates to the statement, “If my sibling did not wash the dishes, then my parents paid them $5.00.” ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is false, but <emphasis effect="italic">q</emphasis> is true. The sibling did not do the dishes. No contract was entered, so it could not be broken. The parents decided to pay them $5.00 anyway. The conditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>F</mtext><mo>→</mo><mtext>T</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
+      <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00004">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00025"><link class="os-embed" url="#exercise/CM-C02-M4-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00002">
+      <title>Determining Validity of Conditional Statements</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00026">Construct a truth table to analyze all possible outcomes for each of the following statements then determine whether they are valid.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00004">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00005">
+      <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis>, the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
+      <table class="unnumbered" summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="5">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mi> </mi><mo>~</mo><mi>q</mi></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mi>p</mi><mo>)</mo></mrow><mo>→</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, ~<emphasis effect="italic">p</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis>, the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
+      <table class="unnumbered" summary="." id="table-00006" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="5">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi> </mi><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00005">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00027"><link class="os-embed" url="#exercise/CM-C02-M4-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title>Use and Apply the Biconditional to Construct a Truth Table</title>
+      <para id="para-00028">The biconditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math>, is a two way contract; it is equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> A biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> is true whenever the truth value of the hypothesis matches the truth value of the conclusion, otherwise it is false.</para>
+      <note class="work-out" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <title>Truth Table for the Biconditional Statement</title>
+      <para id="para-00030">What are the possible outcomes of a biconditional statement?</para>
+      <para id="para-00031">Use your knowledge of the conditional statement and the dominance of connectives to construct a truth table for the statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></para>
+      </note>
+      <para id="para-00033" xmlns="http://cnx.rice.edu/cnxml">The truth table for the biconditional is summarized below.</para>
+      <table class="unnumbered" summary="." id="table-00008">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry>
+      </row>
+     </thead>
+     <tbody xmlns="http://cnx.rice.edu/cnxml">
+     <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <note class="video" id="note-00008">
+      <para id="para-00034"><link url="https://openstax.org/r/omKzui0Fytk">Logic Part 11B Biconditional and Summary of Truth Value Rules in Logic</link></para>
+      </note>
+      <example id="exam-00003">
+      <title>Constructing Truth Tables for Biconditional Statements</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00035">Assume both of the following statements are true: <emphasis effect="italic">p</emphasis>: The plumber fixed the leak, and <emphasis effect="italic">q</emphasis>: The homeowner paid the plumber $150.00. Create a truth table to determine the truth value of each of the following biconditional statements.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00006">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00007">
+      <item>Because <emphasis effect="italic">p</emphasis> is true and <emphasis effect="italic">q</emphasis> is true, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is “The plumber fixed the leak if and only if the homeowner paid them $150.00.” Because both <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis> are true, the leak was fixed and the plumber was paid, meaning both parties satisfied their end of the bargain. The biconditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>↔</mo><mtext>T</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
+      <table class="unnumbered" summary="." id="table-00009" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math> translates to the statement, “The plumber fixed the leak if and only if the homeowner did not pay them $150.” If the plumber fixed the leak and the homeowner did not pay them, the homeowner will have broken their end of the contract. The biconditional statement is false, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>T</mtext><mo>↔</mo><mtext>F</mtext><mo>=</mo><mtext>F</mtext><mtext>.</mtext></mrow></math>
+      <table class="unnumbered" summary="." id="table-00010" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="4">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math> translates to the statement, “The plumber did not fix the leak if and only if the homeowner did not pay them $150.” In this case, neither party—the plumber nor the homeowner—entered into the contract. The leak was not repaired, and the plumber was not paid. No agreement was broken. The biconditional statement is true, as indicated by the truth table representing this case: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>F</mtext><mo>↔</mo><mtext>F</mtext><mo>=</mo><mtext>T</mtext><mtext>.</mtext></mrow></math>
+      <table class="unnumbered" summary="." id="table-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="5">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00009">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00036"><link class="os-embed" url="#exercise/CM-C02-M4-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="check-point" id="note-00013">
+      <para id="para-00037"><emphasis effect="italic">The biconditional,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">is true whenever the truth values of p and q match, otherwise it is false.</emphasis></para>
+      </note>
+      <note class="video" id="note-00010">
+      <para id="para-00038"><link url="https://openstax.org/r/AQB3svnxxiw">Logic Part 13: Truth Tables to Determine if Argument is Valid or Invalid</link></para>
+      </note>
+      <example id="exam-00004">
+      <title>Determining Validity of Biconditional Statements</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00039">Construct a truth table to analyze all possible outcomes for each of the following statements, then determine whether they are valid.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00008">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>↔</mo><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>↔</mo><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>↔</mo><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>r</mi><mo>↔</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo>∧</mo><mi>r</mi></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00009">
+      <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>↔</mo><mtext> </mtext><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q,</emphasis> the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
+      <table class="unnumbered" summary="." id="table-00012" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="6">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <colspec colnum="6" colname="c6" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>↔</mo><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q,</emphasis> the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
+      <table class="unnumbered" summary="." id="table-00013" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="6">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <colspec colnum="6" colname="c6" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>,</mo></mrow></math> ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis>, ~<emphasis effect="italic">p</emphasis>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are only two basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis> the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is valid because the last column is all true.
+      <table class="unnumbered" summary="." id="table-00014" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="7">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <colspec colnum="6" colname="c6" colwidth="1*"/>
+      <colspec colnum="7" colname="c7" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi mathvariant="bold">q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      <item>Applying the dominance of connectives, the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>r</mi><mtext> </mtext><mo>↔</mo><mtext> </mtext><mi>p</mi><mo>∧</mo><mi>q</mi><mo>∧</mo><mi>r</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mtext> </mtext><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> So, the columns of the truth table will include <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q,</emphasis> <emphasis effect="italic">r</emphasis>, ~<emphasis effect="italic">r,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mtext> </mtext><mo>~</mo><mi>r</mi><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mtext> </mtext><mo>↔</mo><mtext> </mtext><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> Because there are three basic propositions, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis>, <emphasis effect="italic">q,</emphasis> and <emphasis effect="italic">r</emphasis>, the table will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>=</mo><mn>8</mn></mrow></math> rows of truth values to account for all the possible outcomes. The statement is not valid because the last column is not all true.
+      <table class="unnumbered" summary="." id="table-00015" xmlns="http://cnx.rice.edu/cnxml">
+      <tgroup cols="8">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <colspec colnum="6" colname="c6" colwidth="1*"/>
+      <colspec colnum="7" colname="c7" colwidth="1*"/>
+      <colspec colnum="8" colname="c8" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>r</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mo>~</mo><mi>r</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+      </row>
+      </thead>
+      <tbody xmlns="http://cnx.rice.edu/cnxml">
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">T</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      <row>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry>T</entry>
+      <entry>F</entry>
+      <entry><emphasis effect="bold">F</emphasis></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      </item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00011">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00040"><link class="os-embed" url="#exercise/CM-C02-M4-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00004" class="check-understanding">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00041"><link class="os-embed" url="#exercise/CM-C02-M4-Q005"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00042"><link class="os-embed" url="#exercise/CM-C02-M4-Q006"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00043"><link class="os-embed" url="#exercise/CM-C02-M4-Q007"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00044"><link class="os-embed" url="#exercise/CM-C02-M4-Q008"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00045"><link class="os-embed" url="#exercise/CM-C02-M4-Q009"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00046"><link class="os-embed" url="#exercise/CM-C02-M4-Q010"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00005">
+      <title>Exercises</title>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00047"><link class="os-embed" url="#exercise/CM-C02-M4-Q011"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00048"><link class="os-embed" url="#exercise/CM-C02-M4-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00049"><link class="os-embed" url="#exercise/CM-C02-M4-Q013"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-concepts" id="sect-00008">
+      <title>Key Concepts</title>
+      <list id="list-00011">
+      <item>The conditional statement, if p then q, is like a contract. The only time it is false is when the contract has been broken. That is, when p is true, and q is false.
+       <table class="unnumbered" summary="." id="table-00016">
+        <tgroup cols="3">
+        <colspec colnum="1" colname="c1" colwidth="1*"/>
+        <colspec colnum="2" colname="c2" colwidth="1*"/>
+        <colspec colnum="3" colname="c3" colwidth="1*"/>
+        <thead>
+        <row><entry namest="c1" nameend="c3">Conditional</entry></row>
+        <row><entry><emphasis effect="italic">p</emphasis></entry>
+         <entry><emphasis effect="italic">q</emphasis></entry>
+         <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
+        </thead>
+        <tbody xmlns="http://cnx.rice.edu/cnxml">
+        <row><entry>T</entry>
+        <entry>T</entry>
+        <entry><emphasis effect="bold">T</emphasis></entry></row>
+        <row><entry>T</entry>
+        <entry>F</entry>
+        <entry><emphasis effect="bold">F</emphasis></entry></row>
+        <row><entry>F</entry>
+        <entry>T</entry>
+        <entry><emphasis effect="bold">T</emphasis></entry></row>
+        <row><entry>F</entry>
+        <entry>F</entry>
+        <entry><emphasis effect="bold">T</emphasis></entry></row>
+        </tbody>
+        </tgroup>
+        </table></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">The biconditional statement, p if and only if q, it true whenever p and q have matching true values, otherwise it is false.
+       <table class="unnumbered" summary="." id="table-00017">
+        <tgroup cols="3">
+        <colspec colnum="1" colname="c1" colwidth="1*"/>
+        <colspec colnum="2" colname="c2" colwidth="1*"/>
+        <colspec colnum="3" colname="c3" colwidth="1*"/>
+        <thead>
+        <row><entry namest="c1" nameend="c3">Biconditional</entry></row>
+        <row><entry><emphasis effect="italic">p</emphasis></entry>
+        <entry><emphasis effect="italic">q</emphasis></entry>
+        <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry></row>
+        </thead>
+        <tbody xmlns="http://cnx.rice.edu/cnxml">
+        <row><entry>T</entry>
+        <entry>T</entry>
+        <entry><emphasis effect="bold">T</emphasis></entry></row>
+        <row><entry>T</entry>
+        <entry>F</entry>
+        <entry><emphasis effect="bold">F</emphasis></entry></row>
+        <row><entry>F</entry>
+        <entry>T</entry>
+        <entry><emphasis effect="bold">F</emphasis></entry></row>
+        <row><entry>F</entry>
+        <entry>F</entry>
+        <entry><emphasis effect="bold">T</emphasis></entry></row>
+        </tbody>
+        </tgroup>
+        </table></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Know how to construct truth tables involving conditional and biconditional statements.</item>
+      <item>Use truth tables to analyze conditional and biconditional statements and determine their validity.</item>
+      </list>
+      </section>
+      <section class="eoc-videos" id="sect-00009">
+      <title>Video</title>
+      <para id="para-00050"><link url="https://openstax.org/r/Conditional_and_Tautologies">Logic Part 8: The Conditional and Tautologies</link></para>
+      <para id="para-00051"><link url="https://openstax.org/r/omKzui0Fytk">Logic Part 11B Biconditional and Summary of Truth Value Rules in Logic</link></para>
+      <para id="para-00052"><link url="https://openstax.org/r/AQB3svnxxiw">Logic Part 13: Truth Tables to Determine if Argument is Valid or Invalid</link></para>
+      </section>
+    </content>
  </document>
