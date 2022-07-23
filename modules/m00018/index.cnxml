@@ -6,381 +6,411 @@
    <md:uuid>2ad57439-01e5-4a1e-b493-2a901f4c8972</md:uuid>
   </metadata>
   <content>
-   <figure id="fig-00001">
-    <media alt="Two people are in a car, where one person holds the steering wheel and the other adjusts the rear-view mirror.">
-    <image mime-type="image/jpg" src="../../media/CS_Photo_02_02_001.jpg"/>
-    </media>
-    <caption>A person seeking their driver's license must pass two tests. A compound statement can be used to explain performance on both tests at once. (credit: Kindel Media/Pexels.com , Pexels License)</caption>
-    </figure>
-   <section class="learning-objectives" id="sect-00001">
-    <title>Learning Objectives</title>
-    <para id="para-00001">After completing this section, you should be able to:</para>
-    <list list-type="enumerated" id="list-00001">
-    <item>Translate compound statements into symbolic form.</item>
-    <item>Translate compound statements in symbolic form with parentheses into words.</item>
-    <item> Apply the dominance of connectives.</item>
-    </list>
-   </section>
-    <para id="para-00002">Suppose your friend is trying to get a license to drive. In most places, they will need to pass some form of written test proving their knowledge of the laws and rules for driving safely. After passing the written test, your friend must also pass a road test to demonstrate that they can perform the physical task of driving safely within the rules of the law.</para>
-    <para id="para-00004">Consider the statement: "My friend passed the written test, but they did not pass the road test." This is an example of a <term id="term-00001">compound statement</term>, a statement formed by using a <term id="term-00002">connective</term> to join two independent clauses or logical statements. The statement, “My friend passed the written test,” is an independent clause because it is a complete thought or idea that can stand on its own. The second independent clause in this compound statement is, “My friend  did not pass the road test.” The word "but" is the connective used to join these two statements together, forming a compound statement. So, did your friend acquire their driving license?.</para>
- <para id="para-00006">This section introduces common logical connectives and their symbols , and allows you to practice translating compound statements between words and symbols. It also explores the order of operations, or dominance of connectives, when a single compound statement uses multiple connectives.</para>
-    <section id="sect-00002">
-    <title>Common Logical Connectives</title>
-    <para id="para-00007">Understanding the following logical connectives, along with their properties, symbols, and names, will be key to applying the topics presented in this chapter. The chapter will discuss each connective introduced here in more detail.</para>
-    <para id="para-00008">The joining of two logical statements with the word "and" or "but" forms a compound statement called a <term id="term-00003">conjunction</term>. In logic, for a conjunction to be true, all the independent logical statements that make it up must be true. The symbol for a conjunction is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math>. Consider the compound statement, “Derek Jeter played professional baseball for the New York Yankees, and he was a shortstop.” If <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> represents the statement, “Derrick Jeter played professional baseball for the New York Yankees,” and if <emphasis effect="italic">q</emphasis> represents the statement, “Derrick Jeter was a short stop,” then the conjunction will be written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>.</mo></mrow></math></para>
-    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">The joining of two logical statements with the word “or” forms a compound statement called a <term id="term-00004">disjunction</term>. Unless otherwise specified, a disjunction is an inclusive <emphasis effect="italic">or</emphasis> statement, which means the compound statement formed by joining two independent clauses with the word “or” will be true if a least one of the clauses is true. Consider the compound statement, "The office manager ordered cake for for an employee’s birthday or they ordered ice cream.” This is a disjunction because it combines the independent clause, “The office manager ordered cake for an employee’s birthday,” with the independent clause, “The office manager ordered ice cream,” using the connective, “or.” This disjunction is true if the office manager ordered only cake, only ice cream, or they ordered both cake and ice cream. Inclusive "or" means you can have one, or the other, or both!</para>
-    <para id="para-00012">Joining two logical statements with the word “implies,” or using the phrase “if <emphasis effect="italic">first statement</emphasis>, then<emphasis effect="italic"> second statement,”</emphasis> is called a <term id="term-00005">conditional</term> or <emphasis effect="italic">implication</emphasis>. The clause associated with the "if" statement is also called the <emphasis effect="bold">hypothesis</emphasis> or <emphasis effect="italic">antecedent</emphasis>, while the clause following the "then" statement or the word "implies" is called the <emphasis effect="bold">conclusion</emphasis> or <emphasis effect="italic">consequent</emphasis>. The conditional statement is like a one-way contract or promise. The only time the conditional statement is false, is if the hypothesis is true and the conclusion is false. Consider the following conditional statement, “If Pedro does his homework, then he can play video games.” The hypothesis/antecedent is the statement following the word "if," which is “Pedro does/did his homework.” The conclusion/consequent is the statement following the word "then," which is “Pedro can play his video games.”</para>
-    <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Joining two logical statements with the connective phrase “if and only if” is called a <term id="term-00007">biconditional</term>. The connective phrase "if and only if" is represented by the symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>↔</mo><mo>.</mo></mrow></math> In the biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is called the hypothesis or antecedent and <emphasis effect="italic">q</emphasis> is called the conclusion or consequent. For a biconditional statement to be true, the truth values of <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> must match. They must both be true, or both be false.</para>
-    <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">The table below lists the most common connectives used in logic, along with their symbolic forms, and the common names used to describe each connective.</para>
-    <table class="unnumbered" summary="." id="table-00001">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1*"/>
-    <colspec colnum="2" colname="c2" colwidth="1*"/>
-    <colspec colnum="3" colname="c3" colwidth="1*"/>
-    <thead>
-    <row>
-    <entry>Connective</entry>
-    <entry>Symbol</entry>
-    <entry>Name</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>and
-    but</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">conjunction</entry>
-    </row>
-    <row><entry>or</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∨</mo></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">disjunction, inclusive or</entry>
-    </row>
-    <row>
-    <entry>not</entry>
-    <entry>~</entry>
-    <entry>negation</entry>
-    </row>
-    <row>
-    <entry>if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>…</mo></math>, then
-    implies</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">conditional, implication</entry>
-    </row>
-    <row>
-    <entry>if and only if</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml">biconditional</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
-    <note class="check-point" id="note-00016">
-    <para id="para-00017"><emphasis effect="italic">These connectives, along with their names, symbols, and properties, will be used throughout this chapter and should be memorized.</emphasis></para>
-    </note>
-    <note class="tech-check" id="note-00006">
-    <title>Quizlet</title>
-    <para id="para-00018">WEBSITE: <link url="https://openstax.org/r/Quizlet">Quizlet.com</link></para>
-    <para id="para-00019">Statistical studies have shown that one of the most effective ways to memorize new facts and definitions is through the use of flash cards. Quizlets allow you to create digital flash cards, or access flash cards already created and shared by others, to study.</para>
-    <para id="para-00020">Quizlets are accessible directly in a browser or via smart phone applications available for both Android and Apple based phones and tablets. See <link target-id="fig-00002" document="m00018">Figure 2.7</link> for a snapshot of the Quizlet app's page in the Google Play store.</para>
-    <figure id="fig-00002">
-    <media alt="A screenshot of an application named Quizlet on the Google play store.">
-    <image mime-type="image/jpg" src="../../media/CS_Photo_02_02_002.jpg"/>
-    </media>
-    <caption>(credit: Quizlet/Google Play)</caption>
-    </figure>
-    <para id="para-00021"><emphasis effect="bold">WEBSITE:</emphasis> <link url="https://openstax.org/r/Sets_and_Venn_Diagrams">1C - Sets and Venn Diagrams</link></para>
-    </note>
-    <example id="exam-00001">
-    <title>Associate Connectives with Symbols and Names</title>
-    <exercise id="exer-00001">
-    <problem id="prob-00001">
-    <para id="para-00022">For each of the following connectives, write its name and associated symbol.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00002">
-    <item>or</item>
-    <item>implies</item>
-    <item>but</item>
-    </list>
-    </problem>
-    <solution id="sol-00001">
-    <list list-type="enumerated" number-style="arabic" id="list-00003">
-    <item>A compound statement formed with the connective word “or” is called a disjunction, and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∨</mo></mrow></math> symbol.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective word “implies” or phrase “<emphasis effect="italic">if … then”</emphasis> is called a conditional statement or implication and is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>→</mo></mrow></math> symbol.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective words ‘but’ or ‘and’ is called a conjunction, and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo></mrow></math> symbol.</item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00002">
-    <problem id="prob-00002">
-    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C02-M2-Q001"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00003">
-    <title> Translating Compound Statements to Symbolic Form</title>
-    <para id="para-00024">To translate a compound statement into symbolic form, we take	 the following steps.</para>
-    <list list-type="enumerated" id="list-00004">
-    <item>Identify and label all independent affirmative logical statements with a lower case letter, such as <emphasis effect="italic">p, q,</emphasis> or <emphasis effect="italic">r</emphasis>.</item>
-    <item>Identify and label any negative logical statements with a lowercase letter preceded by the negation symbol, such as <emphasis effect="italic">~p, ~q,</emphasis> or <emphasis effect="italic">~r</emphasis>.</item>
-    <item>Replace the connective words with the symbols that represent them, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo><mo>,</mo><mo>∨</mo><mo>,</mo><mo>→</mo><mo>,</mo><mi mathvariant="normal"> or</mi><mo>↔</mo><mo>.</mo></mrow></math></item>
-    </list>
-    <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">Consider the previous example of your friend trying to get their driver’s license. Your friend passed the written test, but they did not pass the road test. Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend passed the written test.” And, let ~<emphasis effect="italic">q</emphasis> represent the statement, “My friend did not pass the road test.” Because the connective <emphasis effect="italic">but</emphasis> is logically equivalent to the word <emphasis effect="italic">and</emphasis>, the symbol for <emphasis effect="italic">but</emphasis> is the same as the symbol for <emphasis effect="italic">and</emphasis>; replace <emphasis effect="italic">but</emphasis> with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo><mo>.</mo></mrow></math> The compound statement is symbolically written as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math>. My friend passed the written test, but they did not pass the road test.</para>
-    <note class="check-point" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00030"><emphasis effect="italic">When translating English statements into symbolic form, do not assume that every connective “and” means you are dealing with a compound statement. The statement, “The stripes on the U.S. flag are red and white,” is a simple statement. The word “white” doesn’t express a complete thought, so it is not an independent clause and does not get its own symbol. This statement should be represented by a single letter, such as s: The stripes on the U.S. flag are red and white.</emphasis></para>
-    </note>
-    <example id="exam-00002">
-    <title>Translating Compound Statements into Symbolic Form</title>
-    <exercise id="exer-00003">
-    <problem id="prob-00003">
-    <para id="para-00031">Let <emphasis effect="italic">p</emphasis> represent the statement, “It is a warm sunny day,” and let <emphasis effect="italic">q</emphasis> represent the statement, “the family will go to the beach.” Write the symbolic form of each of the following compound statements.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00005">
-    <item>If it is a warm sunny day, then the family will go to the beach.</item>
-    <item>The family will go to the beach, and it is a warm sunny day.</item>
-    <item>The family will not go to the beach if and only if it is not a warm sunny day.</item>
-    <item>The family not go to the beach, or it is a warm sunny day.</item>
-    </list>
-    </problem>
-    <solution id="sol-00002">
-    <list list-type="enumerated" number-style="arabic" id="list-00006">
-    <item>Replace “it is a warm sunny day” with <emphasis effect="italic">p</emphasis>. Replace “the family will go to the beach.” with <emphasis effect="italic">q</emphasis>. Next. Next, because the connective is <emphasis effect="italics">if …, then</emphasis> place the conditional symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math>, between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"> Replace “The family will go to the beach” with <emphasis effect="italic">q</emphasis>. Replace “it is a warm sunny day.” with <emphasis effect="italic">p</emphasis>. Next, because the connective is <emphasis effect="italic">and</emphasis>, place the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math> symbol between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis> and <emphasis effect="italic">p</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>∧</mo><mi>p</mi><mo>.</mo></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Replace “The family will not go to the beach. with ~<emphasis effect="italic">q</emphasis>. Replace “it is not a warm sunny day” with ~<emphasis effect="italic">p</emphasis>. Next, because the connective is <emphasis effect="italic">if and only if</emphasis>, place the biconditional symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math> between ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis> and ~<emphasis effect="italic">p</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>↔</mo><mi mathvariant="normal"/><mo>~</mo><mi>p</mi><mo>.</mo></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Replace “The family will not go to the beach” with ~<emphasis effect="italic">q</emphasis>. Replace “it is a warm sunny day” with <emphasis effect="italic">p</emphasis>. Next, because the connective is, place the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∨</mo></math> symbol between ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis> and <emphasis effect="italic">p</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>∨</mo><mi>p</mi><mo>.</mo></mrow></math></item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00004">
-    <problem id="prob-00004">
-    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C02-M2-Q002"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00004">
-    <title> Translating Compound Statements in Symbolic Form with Parentheses into Words</title>
-    <para id="para-00033">When parentheses are written in a logical argument, they group a compound statement together just like when calculating numerical or algebraic expressions. Any statement in parentheses should be treated as a single component of the expression. If multiple parentheses are present, work with the inner most parentheses first.</para>
-    <para id="para-00034">Consider your friend’s struggles to get their license to drive. Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend passed the written test,” let <emphasis effect="italic">q</emphasis> represent the statement, “My friend passed the road test,” and let <emphasis effect="italic">r</emphasis> represent the statement, “My friend received a driver’s license.” The statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi></mrow></math> can be translated into words as follows: the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math> is grouped together to form the hypothesis of the conditional statement and <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is the conclusion. The conditional statement has the form “<emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>.</mo></mrow></math>” Therefore, the written form of this statement is: “If my friend passed the written test and they passed the road test, then my friend  received a driver’s license.”</para>
-    <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Sometimes a compound statement within parentheses may need to be negated as a group. To accomplish this, add the phrase, “it is not the case that” before the translation of the phrase in parentheses. For example, using <emphasis effect="italic">p</emphasis>, <emphasis effect="italic">q</emphasis>, and <emphasis effect="italic">r</emphasis> of your friend obtaining a license, let’s translate the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo><mo>→</mo><mi mathvariant="normal"/><mo>~</mo><mi>r</mi></mrow></math> into words.</para>
-   <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">In this case, the hypothesis of the conditional statement is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math> and the conclusion is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>r</mi><mo>.</mo></mrow></math> To negate the hypothesis, add the phrase “it is not the case” before translating what is in parentheses. The translation of the hypothesis is the sentence, “It is not the case that my friend passed the written test and they passed the road test,” and the translation of the conclusion is, “My friend did not receive a driver’s license.” So, a translation of the complete conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi mathvariant="normal"/><mo>~</mo><mi>r</mi></mrow></math> is: “If it is not the case that my friend passed the written test and the road test, then my friend did not receive a driver’s license.”</para>
-    <note class="check-point" id="note-00018" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00036" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="italic">Please note that it is acceptable to interchange proper names with pronouns and remove repeated phrases to make the written statement more readable, as long the meaning of the logical statement is not changed.</emphasis></para>
-    </note>
-    <note class="video" id="note-00009">
-    <para id="para-00037"><link url="https://openstax.org/r/Compound_Statements">Logic Part 1B: Compound Statements, Connectives and Symbols</link></para>
-    </note>
-    <example id="exam-00003">
-    <title>Translating Compound Statements in Symbolic Form with Parentheses into Words</title>
-    <exercise id="exer-00005">
-    <problem id="prob-00005">
-    <para id="para-00038">Let <emphasis effect="italic">p</emphasis> represent the statement, “My child finished their homework,” let <emphasis effect="italic">q</emphasis> represent the statement, “My child cleaned her room,” let <emphasis effect="italic">r</emphasis> represent the statement, “Sophie played video games,” and let <emphasis effect="italic">s</emphasis> represent the statement, “My child streamed a movie.” Translate each of the following symbolic statements into words.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00007">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>∨</mo><mi>s</mi></mrow><mo>)</mo></mrow></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>∨</mo><mi>s</mi></mrow><mo>)</mo></mrow><mi mathvariant="normal"/><mo>↔</mo><mi mathvariant="normal"/><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></item>
-    </list>
-    </problem>
-    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
-    <list list-type="enumerated" number-style="arabic" id="list-00008">
-    <item>Replace ~ with “It is not the case”, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math> with “and”. One possible translation is: “It is not the case that my child finished their homework and cleaned their room.”</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The hypothesis of the conditional statement is, “My child finished their homework and cleaned their room.” The conclusion of the conditional statement is, “My child played video games or streamed a movie.” One possible translation of the entire statement is: “If my child finished their homework and cleaned their room, then they played video games or streamed a movie.”</item>
-    <item>The hypothesis of the biconditional statement is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></math> and is written in words as: “It is not the case that my child played video games or streamed a movie.” The conclusion of the biconditional statement is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math>, which translates to: “It is not the case that my child finished their homework and cleaned their room.” Because the biconditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math> translates to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">if and only if</emphasis>, one possible translation of the statement is: “It is not the case that my child played video games or streamed a movie if and only if it is not the case that my child finished their homework and cleaned their room.”</item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00010">
-    <exercise id="exer-00006">
-    <problem id="prob-00006">
-    <para id="para-00039"><link class="os-embed" url="#exercise/CM-C02-M2-Q003"/></para>
-    </problem>
-    </exercise>
-    </note>
-    </section>
-    <section id="sect-00005">
-    <title> The Dominance of Connectives</title>
-    <para id="para-00040">The order of operations for working with algebraic and arithmetic expressions provides a set of rules that allow consistent results. For example, if you were presented with the problem <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>, and you were not familiar with the order of operation, you might assume that you calculate the problem from left to right. If you did so, you would add 1 and 3 to get 4, and then multiply this answer by 2 to get 8, resulting in an incorrect answer. Try inputting this expression into a scientific calculator. If you do, the calculator should return a value of 7, not 8.</para>
-    <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">WEBSITE: <link url="https://openstax.org/r/Scientific_Calculator">Scientific Calculator</link></emphasis></para>
-    <para id="para-00042">The order of operations for algebraic and arithmetic operations states that all multiplication must be applied prior to any addition. Paratheses are used to indicate which operation—addition or multiplication—should be done first. Adding parentheses can change and/or clarify the order. The parentheses in the expression <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math> indicate that 3 should be multiplied by 2 to get 6, and then 1 should be added to 6 to get 7:<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>7.</mn></mrow></math></para>
-    <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">As with algebraic expressions, there is a set of rules that must be applied to compound logical statements in order  to  evaluate them with consistent results. This set of rules is called <term id="term-00008">the dominance of connectives.</term> When evaluating compound logical statements, connectives are evaluated from least dominant to most dominant.</para>
-     <para id="para-00044">Parentheses are the least dominant connective. So, any expression inside parentheses must be evaluated first. Add as many paratheses as needed to any statement to specify the order to evaluate each connective. Next, we evaluate negations. Then, we evaluate conjunctions and disjunctions from left to right we because they have equal dominance. After evaluating all conjunctions and disjunctions, we evaluate conditionals. Lastly, we evaluate the most dominant connective, the biconditional. If a statement includes multiple connectives of equal dominance, then we will evaluate them from left to right. See <link target-id="fig-00003" document="m00018">Figure 2.8</link> for a visual breakdown of the dominance of connectives.</para>
-    <figure id="fig-00003">
+    <figure id="fig-00001">
+      <media alt="Two people are in a car, where one person holds the steering wheel and the other adjusts the rear-view mirror.">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_02_02_001.jpg"/>
+      </media>
+      <caption>A person seeking their driver's license must pass two tests. A compound statement can be used to explain performance on both tests at once. (credit: modification of work “Drivers License -Teen driver” by State Farm/Flickr, CC BY 2.0)</caption>
+      </figure>
+     <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001">After completing this section, you should be able to:</para>
+      <list list-type="enumerated" id="list-00001">
+      <item>Translate compound statements into symbolic form.</item>
+      <item>Translate compound statements in symbolic form with parentheses into words.</item>
+      <item> Apply the dominance of connectives.</item>
+      </list>
+     </section>
+      <para id="para-00002">Suppose your friend is trying to get a license to drive. In most places, they will need to pass some form of written test proving their knowledge of the laws and rules for driving safely. After passing the written test, your friend must also pass a road test to demonstrate that they can perform the physical task of driving safely within the rules of the law.</para>
+      <para id="para-00004">Consider the statement: "My friend passed the written test, but they did not pass the road test." This is an example of a <term id="term-00001">compound statement</term>, a statement formed by using a <term id="term-00002">connective</term> to join two independent clauses or logical statements. The statement, “My friend passed the written test,” is an independent clause because it is a complete thought or idea that can stand on its own. The second independent clause in this compound statement is, “My friend  did not pass the road test.” The word "but" is the connective used to join these two statements together, forming a compound statement. So, did your friend acquire their driving license?.</para>
+   <para id="para-00006">This section introduces common logical connectives and their symbols, and allows you to practice translating compound statements between words and symbols. It also explores the order of operations, or dominance of connectives, when a single compound statement uses multiple connectives.</para>
+      <section id="sect-00002">
+      <title>Common Logical Connectives</title>
+      <para id="para-00007">Understanding the following logical connectives, along with their properties, symbols, and names, will be key to applying the topics presented in this chapter. The chapter will discuss each connective introduced here in more detail.</para>
+      <para id="para-00008">The joining of two logical statements with the word "and" or "but" forms a compound statement called a <term id="term-00003">conjunction</term>. In logic, for a conjunction to be true, all the independent logical statements that make it up must be true. The symbol for a conjunction is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math>. Consider the compound statement, “Derek Jeter played professional baseball for the New York Yankees, and he was a shortstop.” If <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> represents the statement, “Derrick Jeter played professional baseball for the New York Yankees,” and if <emphasis effect="italic">q</emphasis> represents the statement, “Derrick Jeter was a short stop,” then the conjunction will be written symbolically as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+      <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">The joining of two logical statements with the word “or” forms a compound statement called a <term id="term-00004">disjunction</term>. Unless otherwise specified, a disjunction is an inclusive <emphasis effect="italics">or</emphasis> statement, which means the compound statement formed by joining two independent clauses with the word <emphasis effect="italics">or</emphasis> will be true if a least one of the clauses is true. Consider the compound statement, "The office manager ordered cake for for an employee’s birthday or they ordered ice cream.” This is a disjunction because it combines the independent clause, “The office manager ordered cake for an employee’s birthday,” with the independent clause, “The office manager ordered ice cream,” using the connective, <emphasis effect="italic">or</emphasis>. This disjunction is true if the office manager ordered only cake, only ice cream, or they ordered both cake and ice cream. Inclusive <emphasis effect="italic">or</emphasis> means you can have one, or the other, or both!</para>
+      <para id="para-00012">Joining two logical statements with the word <emphasis effect="italics">implies</emphasis>, or using the phrase “if <emphasis effect="italics">first statement</emphasis>, then<emphasis effect="italic"> second statement,”</emphasis> is called a <term id="term-00005">conditional</term> or <emphasis effect="italic">implication</emphasis>. The clause associated with the "if" statement is also called the <emphasis effect="bold">hypothesis</emphasis> or <emphasis effect="italic">antecedent</emphasis>, while the clause following the "then" statement or the word <emphasis effect="italics">implies</emphasis> is called the <emphasis effect="bold">conclusion</emphasis> or <emphasis effect="italic">consequent</emphasis>. The conditional statement is like a one-way contract or promise. The only time the conditional statement is false, is if the hypothesis is true and the conclusion is false. Consider the following conditional statement, “If Pedro does his homework, then he can play video games.” The hypothesis/antecedent is the statement following the word <emphasis effect="italics">if</emphasis>, which is “Pedro does/did his homework.” The conclusion/consequent is the statement following the word <emphasis effect="italics">then</emphasis>, which is “Pedro can play his video games.”</para>
+      <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Joining two logical statements with the connective phrase “if and only if” is called a <term id="term-00007">biconditional</term>. The connective phrase "if and only if" is represented by the symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>↔</mo><mo>.</mo></mrow></math> In the biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is called the hypothesis or antecedent and <emphasis effect="italic">q</emphasis> is called the conclusion or consequent. For a biconditional statement to be true, the truth values of <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> must match. They must both be true, or both be false.</para>
+      <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">The table below lists the most common connectives used in logic, along with their symbolic forms, and the common names used to describe each connective.</para>
+      <table class="unnumbered" summary="." id="table-00001">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry>Connective</entry>
+      <entry>Symbol</entry>
+      <entry>Name</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>and<newline/>
+      but</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">conjunction</entry>
+      </row>
+      <row><entry>or</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∨</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">disjunction, inclusive or</entry>
+      </row>
+      <row>
+      <entry>not</entry>
+      <entry>~</entry>
+      <entry>negation</entry>
+      </row>
+      <row>
+      <entry>if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>…</mo></math>, then
+      implies</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">conditional, implication</entry>
+      </row>
+      <row>
+      <entry>if and only if</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">biconditional</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <note class="check-point" id="note-00016">
+      <para id="para-00017"><emphasis effect="italics">These connectives, along with their names, symbols, and properties, will be used throughout this chapter and should be memorized.</emphasis></para>
+      </note>
+      <note class="tech-check" id="note-00006">
+      <title>Quizlet</title>
+      <para id="para-00018"><link url="https://openstax.org/r/Quizlet">Quizlet.com</link></para>
+      <para id="para-00019">Statistical studies have shown that one of the most effective ways to memorize new facts and definitions is through the use of flash cards. Quizlets allow you to create digital flash cards, or access flash cards already created and shared by others, to study.</para>
+      <para id="para-00020">Quizlets are accessible directly in a browser or via smart phone applications available for both Android and Apple based phones and tablets. See <link target-id="fig-00002" document="m00018">Figure 2.7</link> for a snapshot of the Quizlet app's page in the Google Play store.</para>
+      <figure id="fig-00002">
+      <media alt="A screenshot of an application named Quizlet on the Google play store.">
+      <image mime-type="image/jpg" src="../../media/CS_Photo_02_02_002.jpg"/>
+      </media>
+      <caption>(credit: Quizlet/Google Play)</caption>
+      </figure>
+      <para id="para-00021"><link url="https://openstax.org/r/Sets_and_Venn_Diagrams">1C - Sets and Venn Diagrams</link></para>
+      </note>
+      <example id="exam-00001">
+      <title>Associate Connectives with Symbols and Names</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00022">For each of the following connectives, write its name and associated symbol.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00002">
+      <item>or</item>
+      <item>implies</item>
+      <item>but</item>
+      </list>
+      </problem>
+      <solution id="sol-00001">
+      <list list-type="enumerated" number-style="arabic" id="list-00003">
+      <item>A compound statement formed with the connective word <emphasis effect="italics">or</emphasis> is called a disjunction, and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∨</mo></mrow></math> symbol.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective word <emphasis effect="italics">implies</emphasis> or phrase “<emphasis effect="italic">if … then”</emphasis> is called a conditional statement or implication and is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>→</mo></mrow></math> symbol.</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">A compound statement formed with the connective words <emphasis effect="italics">but</emphasis> or <emphasis effect="italics">and</emphasis> is called a conjunction, and it is represented by the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo></mrow></math> symbol.</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00023"><link class="os-embed" url="#exercise/CM-C02-M2-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title> Translating Compound Statements to Symbolic Form</title>
+      <para id="para-00024">To translate a compound statement into symbolic form, we take  the following steps.</para>
+      <list list-type="enumerated" id="list-00004">
+      <item>Identify and label all independent affirmative logical statements with a lower case letter, such as <emphasis effect="italic">p, q,</emphasis> or <emphasis effect="italic">r</emphasis>.</item>
+      <item>Identify and label any negative logical statements with a lowercase letter preceded by the negation symbol, such as <emphasis effect="italic">~p, ~q,</emphasis> or <emphasis effect="italic">~r</emphasis>.</item>
+      <item>Replace the connective words with the symbols that represent them, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo><mo>,</mo><mo>∨</mo><mo>,</mo><mo>→</mo><mo>,</mo><mi mathvariant="normal"> or</mi><mo>↔</mo><mo>.</mo></mrow></math></item>
+      </list>
+      <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">Consider the previous example of your friend trying to get their driver’s license. Your friend passed the written test, but they did not pass the road test. Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend passed the written test.” And, let ~<emphasis effect="italic">q</emphasis> represent the statement, “My friend did not pass the road test.” Because the connective <emphasis effect="italic">but</emphasis> is logically equivalent to the word <emphasis effect="italic">and</emphasis>, the symbol for <emphasis effect="italic">but</emphasis> is the same as the symbol for <emphasis effect="italic">and</emphasis>; replace <emphasis effect="italic">but</emphasis> with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>∧</mo><mo>.</mo></mrow></math> The compound statement is symbolically written as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi></mrow></math>. My friend passed the written test, but they did not pass the road test.</para>
+      <note class="check-point" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00030"><emphasis effect="italic">When translating English statements into symbolic form, do not assume that every connective “and” means you are dealing with a compound statement. The statement, “The stripes on the U.S. flag are red and white,” is a simple statement. The word “white” doesn’t express a complete thought, so it is not an independent clause and does not get its own symbol. This statement should be represented by a single letter, such as s: The stripes on the U.S. flag are red and white.</emphasis></para>
+      </note>
+      <example id="exam-00002">
+      <title>Translating Compound Statements into Symbolic Form</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00031">Let <emphasis effect="italic">p</emphasis> represent the statement, “It is a warm sunny day,” and let <emphasis effect="italic">q</emphasis> represent the statement, “the family will go to the beach.” Write the symbolic form of each of the following compound statements.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00005">
+      <item>If it is a warm sunny day, then the family will go to the beach.</item>
+      <item>The family will go to the beach, and it is a warm sunny day.</item>
+      <item>The family will not go to the beach if and only if it is not a warm sunny day.</item>
+      <item>The family not go to the beach, or it is a warm sunny day.</item>
+      </list>
+      </problem>
+      <solution id="sol-00002">
+      <list list-type="enumerated" number-style="arabic" id="list-00006">
+      <item>Replace “it is a warm sunny day” with <emphasis effect="italic">p</emphasis>. Replace “the family will go to the beach.” with <emphasis effect="italic">q</emphasis>. Next. Next, because the connective is <emphasis effect="italics">if …, then</emphasis> place the conditional symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math>, between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"> Replace “The family will go to the beach” with <emphasis effect="italic">q</emphasis>. Replace “it is a warm sunny day.” with <emphasis effect="italic">p</emphasis>. Next, because the connective is <emphasis effect="italic">and</emphasis>, place the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math> symbol between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis> and <emphasis effect="italic">p</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>∧</mo><mi>p</mi><mo>.</mo></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Replace “The family will not go to the beach. with ~<emphasis effect="italics">q</emphasis>. Replace “it is not a warm sunny day” with ~<emphasis effect="italic">p</emphasis>. Next, because the connective is <emphasis effect="italics">or</emphasis>, <emphasis effect="italic">if and only if</emphasis>, place the biconditional symbol, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math> between ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis> and ~<emphasis effect="italic">p</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>↔</mo><mi mathvariant="normal"/><mo>~</mo><mi>p</mi><mo>.</mo></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Replace “The family will not go to the beach” with ~<emphasis effect="italic">q</emphasis>. Replace “it is a warm sunny day” with <emphasis effect="italic">p</emphasis>. Next, because the connective is, place the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∨</mo></math> symbol between ~<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">q</emphasis> and <emphasis effect="italic">p</emphasis>. The compound statement is written symbolically as: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>∨</mo><mi>p</mi><mo>.</mo></mrow></math></item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00032"><link class="os-embed" url="#exercise/CM-C02-M2-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00004">
+      <title> Translating Compound Statements in Symbolic Form with Parentheses into Words</title>
+      <para id="para-00033">When parentheses are written in a logical argument, they group a compound statement together just like when calculating numerical or algebraic expressions. Any statement in parentheses should be treated as a single component of the expression. If multiple parentheses are present, work with the inner most parentheses first.</para>
+      <para id="para-00034">Consider your friend’s struggles to get their license to drive. Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend passed the written test,” let <emphasis effect="italic">q</emphasis> represent the statement, “My friend passed the road test,” and let <emphasis effect="italic">r</emphasis> represent the statement, “My friend received a driver’s license.” The statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi></mrow></math> can be translated into words as follows: the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow></math> is grouped together to form the hypothesis of the conditional statement and <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is the conclusion. The conditional statement has the form “<emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>.</mo></mrow></math>” Therefore, the written form of this statement is: “If my friend passed the written test and they passed the road test, then my friend  received a driver’s license.”</para>
+      <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">Sometimes a compound statement within parentheses may need to be negated as a group. To accomplish this, add the phrase, “it is not the case that” before the translation of the phrase in parentheses. For example, using <emphasis effect="italic">p</emphasis>, <emphasis effect="italic">q</emphasis>, and <emphasis effect="italic">r</emphasis> of your friend obtaining a license, let’s translate the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo><mo>→</mo><mi mathvariant="normal"/><mo>~</mo><mi>r</mi></mrow></math> into words.</para>
+     <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">In this case, the hypothesis of the conditional statement is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math> and the conclusion is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>r</mi><mo>.</mo></mrow></math> To negate the hypothesis, add the phrase “it is not the case” before translating what is in parentheses. The translation of the hypothesis is the sentence, “It is not the case that my friend passed the written test and they passed the road test,” and the translation of the conclusion is, “My friend did not receive a driver’s license.” So, a translation of the complete conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi mathvariant="normal"/><mo>~</mo><mi>r</mi></mrow></math> is: “If it is not the case that my friend passed the written test and the road test, then my friend did not receive a driver’s license.”</para>
+      <note class="check-point" id="note-00018" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00036" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="italic">It is acceptable to interchange proper names with pronouns and remove repeated phrases to make the written statement more readable, as long the meaning of the logical statement is not changed.</emphasis></para>
+      </note>
+      <note class="video" id="note-00009">
+      <para id="para-00037"><link url="https://openstax.org/r/Compound_Statements">Logic Part 1B: Compound Statements, Connectives and Symbols</link></para>
+      </note>
+      <example id="exam-00003">
+      <title>Translating Compound Statements in Symbolic Form with Parentheses into Words</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00038">Let <emphasis effect="italic">p</emphasis> represent the statement, “My child finished their homework,” let <emphasis effect="italic">q</emphasis> represent the statement, “My child cleaned her room,” let <emphasis effect="italic">r</emphasis> represent the statement, “Sophie played video games,” and let <emphasis effect="italic">s</emphasis> represent the statement, “My child streamed a movie.” Translate each of the following symbolic statements into words.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00007">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>∨</mo><mi>s</mi></mrow><mo>)</mo></mrow></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>r</mi><mo>∨</mo><mi>s</mi></mrow><mo>)</mo></mrow><mi mathvariant="normal"/><mo>↔</mo><mi mathvariant="normal"/><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00008">
+      <item>Replace ~ with “It is not the case,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math> with “and.” One possible translation is: “It is not the case that my child finished their homework and cleaned their room.”</item>
+      <item xmlns="http://cnx.rice.edu/cnxml">The hypothesis of the conditional statement is, “My child finished their homework and cleaned their room.” The conclusion of the conditional statement is, “My child played video games or streamed a movie.” One possible translation of the entire statement is: “If my child finished their homework and cleaned their room, then they played video games or streamed a movie.”</item>
+      <item>The hypothesis of the biconditional statement is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>r</mi><mo>∨</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></math> and is written in words as: “It is not the case that my child played video games or streamed a movie.” The conclusion of the biconditional statement is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math>, which translates to: “It is not the case that my child finished their homework and cleaned their room.” Because the biconditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math> translates to <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">if and only if</emphasis>, one possible translation of the statement is: “It is not the case that my child played video games or streamed a movie if and only if it is not the case that my child finished their homework and cleaned their room.”</item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00010">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00039"><link class="os-embed" url="#exercise/CM-C02-M2-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00005">
+      <title> The Dominance of Connectives</title>
+      <para id="para-00040">The order of operations for working with algebraic and arithmetic expressions provides a set of rules that allow consistent results. For example, if you were presented with the problem <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>, and you were not familiar with the order of operation, you might assume that you calculate the problem from left to right. If you did so, you would add 1 and 3 to get 4, and then multiply this answer by 2 to get 8, resulting in an incorrect answer. Try inputting this expression into a scientific calculator. If you do, the calculator should return a value of 7, not 8.</para>
+      <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml"><link url="https://openstax.org/r/Scientific_Calculator">Scientific Calculator</link></para>
+      <para id="para-00042">The order of operations for algebraic and arithmetic operations states that all multiplication must be applied prior to any addition. Paratheses are used to indicate which operation—addition or multiplication—should be done first. Adding parentheses can change and/or clarify the order. The parentheses in the expression <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow><mo>)</mo></mrow></mrow></math> indicate that 3 should be multiplied by 2 to get 6, and then 1 should be added to 6 to get 7: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>7.</mn></mrow></math></para>
+      <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">As with algebraic expressions, there is a set of rules that must be applied to compound logical statements in order  to  evaluate them with consistent results. This set of rules is called <term id="term-00008">the dominance of connectives.</term> When evaluating compound logical statements, connectives are evaluated from least dominant to most dominant as follows:</para>
+  <list list-type="enumerated" number-style="arabic" id="list-00012">
+  <item>Parentheses are the least dominant connective. So, any expression inside parentheses must be evaluated first. Add as many parentheses as needed to any statement to specify the order to evaluate each connective.</item>
+  <item>Next, we evaluate negations.</item>
+  <item>Then, we evaluate conjunctions and disjunctions from left to right, because they have equal dominance.</item>
+  <item>After evaluating all conjunctions and disjunctions, we evaluate conditionals.</item>
+  <item>Lastly, we evaluate the most dominant connective, the biconditional. If a statement includes multiple connectives of equal dominance, then we will evaluate them from left to right.</item>
+  </list>
+  <para id="para-00005">See <link target-id="fig-00003" document="m00018">Figure 2.8</link> for a visual breakdown of the dominance of connectives.</para>
+      <figure id="fig-00003">
+      <media alt="A table with four columns shows Dominance, Connective, Symbol, and Evaluate. The dominance column on the table shows a downward vertical arrow from least dominant to most dominant. The connective column on the table shows Parentheses, Negation, Disjunction or Conjunction, Conditional, and Biconditional. The Symbol column on the table shows an open bracket and a closed bracket, equivalent, an upward circumflex and a downward circumflex, a right side arrow, and a double-sided arrow. The Evaluate column on the table shows First, a downward arrow, Left to right or add parentheses to specify order because or slash and have equal dominance. a downward arrow, and last.">
+      <image mime-type="image/jpg" src="../../media/CS_Figure_02_02_TA_003.jpg"/>
+      </media>
+      </figure>
+      <para id="para-00046">Let’s revisit your friend’s struggles to get their driver’s license. Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend  passed the written test,” let <emphasis effect="italic">q</emphasis> represent the statement, “My friend passed the road test,” and let <emphasis effect="italics">r</emphasis> represent the statement, “My friend received a driver’s license.” Let's use the dominance of connectives to determine how the compound statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></math> should be evaluated.</para>
+   <para id="para-00003" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> There are no parentheses, which is least dominant of all connectives, so we can skip over that.</para>
+  <para id="para-00009"><emphasis effect="bold">Step 2:</emphasis> Because negation is the next least dominant, we should evaluate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math> first. We could add parentheses to the statement to make it clearer which connecting needs to be evaluated first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi><mo>.</mo></mrow></math></para>
+  <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Next, we evaluate the conjunction, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math>. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi><mo>.</mo></mrow></math></para>
+  <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Finally, we evaluate the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>→</mo><mo>,</mo></mrow></math> as this is the most dominant connective in this compound statement.</para>
+      <note class="who-knew" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
+      <para id="para-00047">When using spreadsheet applications, like Microsoft Excel or Google Sheets, have you noticed that core functions, such as sum, average, or rate, have the same name and syntax for use? This is not a coincidence. Various standards organizations have developed requirements that software developers must implement to meet the conditions set by governments and large customers worldwide. The OpenDocument Format OASIS Standard enables transferring data between different office productivity applications and was approved by the International Standards Organization (ISO) and IEC on May 6, 2006.</para>
+      <para id="para-00048">Prior to adopting these standards, a government entity, business, or individual could lose access to their own data simply because it was saved in a format no longer supported by a proprietary software product—even data they were required by law to preserve, or data they simply wished to maintain access to.</para>
+      <para id="para-00049">The rules for applying the dominance of connectives help maintain understanding and consistency when writing and interpreting compound logical statements and arguments.</para>
+      </note>
+      <example id="exam-00004">
+      <title>Applying the Dominance of Connectives</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00050">For each of the following compound logical statements, add parentheses to indicate the order to evaluate the statement. Recall that parentheses are evaluated innermost first.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00009">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>∨</mo><mi>r</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>→</mo><mi mathvariant="normal"/><mo>~</mo><mi>p</mi><mo>∧</mo><mi>r</mi></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false">)</mo><mi mathvariant="normal"/><mo>↔</mo><mi mathvariant="normal"/><mo>~</mo><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math></item>
+      </list>
+      </problem>
+      <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <list list-type="enumerated" number-style="arabic" id="list-00010">
+      <item>Because negation is the least dominant connective, we evaluate it first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> Because conjunction and disjunction have the same dominance, we evaluate them left to right. So, we evaluate the conjunction next, as indicated by the additional set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> The only remaining connective is the disjunction, so it is evaluated last, as indicated by the third set of parentheses. The complete solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Negation has the lowest dominance, so it is evaluated first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>→</mo><mi mathvariant="normal"/><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>.</mo></mrow></math> The remaining connectives are the conditional and the conjunction. Because conjunction has a lower precedence than the conditional, it is evaluated next, as indicated by the second set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> The last step is to evaluate the conditional, as indicated by the third set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+  <item xmlns="http://cnx.rice.edu/cnxml">This statement is known as De Morgan’s Law for the negation of a disjunction. It is always true. <link target-id="sect-00001" document="m00022">Section 2.6</link> of this chapter will explore De Morgan’s Laws in more detail.
+  <list list-type="bulleted" id="list-00015">
+  <item>First, we evaluate the negations on the right side of the biconditional prior to the conjunction.</item>
+  <item>Then, we evaluate the disjunction on the left side of the biconditional, followed by the negation of the disjunction on the left side.</item>
+  <item>Lastly, after completely evaluating each side of the biconditional, we evaluate the biconditional. It does not matter which side you begin with.</item>
+  </list>
+  The final solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
+      </list>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00051"><link class="os-embed" url="#exercise/CM-C02-M2-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="work-out" id="note-00014">
+      <title>Logic Terms and Properties – Matching Game</title>
+      <para id="para-00052">Materials: For every group of four students, include 30 cards (game, trading, or playing cards), 30 individual clear plastic gaming card sleeves, and 30 card-size pieces of paper. Prepare a list of 60 questions and answers ahead of time related to definitions and problems in Sections 1 and 2. Provide each group of four students with 20 questions and their associated answers. Instruct each group to select 15 of the 20 questions, and then, for each problem selected, create one card with the question and one card with the answer. Instruct the groups to then place each problem and answer in a separate card sleeve. Once they create 15 problem cards and 15 answer cards, have students shuffle the set of cards.</para>
+      <para id="para-00053">To play the game, groups should exchange their card decks to ensure no team begins playing with the deck that they created. Split each four-person group into teams of two students. After shuffling the cards, one team lays cards face down on their desk in a five-by-six grid. The other team will go first.</para>
+     <para id="para-00013">Each player will have a turn to try matching the question with the correct answer by flipping two cards to the face up position. If a team makes a match, they get to flip another two cards; if they do not get a match, they flip the cards face down and it is the other team’s turn to flip over two cards. The game continues in this manner until teams match all question cards with their corresponding answer cards. The team with the most set of matching cards wins.</para>
+      </note>
+      <para id="para-00054">In the first module of this chapter, we evaluated the truth value of negations. In the following modules, we will discuss how to evaluate conjunctions, disjunctions, conditionals, and biconditionals, and then evaluate compound logical statements using truth tables and our knowledge of the dominance of connectives.</para>
+      </section>
+      <section id="sect-00006" class="check-understanding">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00055"><link class="os-embed" url="#exercise/CM-C02-M2-Q005"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00056"><link class="os-embed" url="#exercise/CM-C02-M2-Q006"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00057"><link class="os-embed" url="#exercise/CM-C02-M2-Q007"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00058"><link class="os-embed" url="#exercise/CM-C02-M2-Q008"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00059"><link class="os-embed" url="#exercise/CM-C02-M2-Q009"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00007">
+      <title>Exercises</title>
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00060"><link class="os-embed" url="#exercise/CM-C02-M2-Q010"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00061"><link class="os-embed" url="#exercise/CM-C02-M2-Q011"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00062"><link class="os-embed" url="#exercise/CM-C02-M2-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00063"><link class="os-embed" url="#exercise/CM-C02-M2-Q013"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00064"><link class="os-embed" url="#exercise/CM-C02-M2-Q014"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-terms" id="sect-00009">
+      <title>Key Terms</title>
+      <list bullet-style="none" id="list-00014">
+      <item>compound statement</item>
+      <item>connective</item>
+      <item>conjunction</item>
+      <item>disjunction</item>
+      <item>conditional</item>
+      <item>hypothesis</item>
+      <item>conclusion</item>
+      <item>biconditional</item>
+      <item>dominance of connectives</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00010">
+      <title>Key Concepts</title>
+      <list id="list-00011">
+      <item>Logical connectives are used to form compound logical statements by using words such as <emphasis effect="italic">and, or, and if … then</emphasis>.</item>
+      <item>A disjunction joins two logical statements with the <emphasis effect="italic">or</emphasis> connective. In, logic <emphasis effect="italic">or</emphasis> is inclusive. For an <emphasis effect="italic">or</emphasis> statement to be true at least one statement must be true, but both may also be true.</item>
+      <item>A conditional statement has the form if <emphasis effect="italic">p</emphasis>, then <emphasis effect="italic">q</emphasis>, where <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> are logical statements. The only time the conditional statement is false is when <emphasis effect="italic">p</emphasis> is true, and <emphasis effect="italic">q</emphasis> is false.</item>
+      <item>A conditional statement has the form if <emphasis effect="italic">p</emphasis>, then <emphasis effect="italic">q</emphasis>, where <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> are logical statements. The only time the conditional statement is false is when <emphasis effect="italic">p</emphasis> is true, and <emphasis effect="italic">q</emphasis> is false.</item>
+      <item>The biconditional statement is formed using the connective <emphasis effect="italic">if and only if</emphasis> for the biconditional statement to be true, the true values of <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis>, must match. If <emphasis effect="italic">p</emphasis> is true then <emphasis effect="italic">q</emphasis> must be true, if <emphasis effect="italic">p</emphasis> is false, then <emphasis effect="italic">q</emphasis> must be false.</item>
+      <item>Translate compound statements between words and symbolic form.
+      <table class="unnumbered" summary="." id="table-00002">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <thead>
+      <row>
+      <entry>Connective</entry>
+      <entry>Symbol</entry>
+      <entry>Name</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry>and<newline/>
+      but</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">conjunction</entry>
+      </row>
+      <row><entry>or</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∨</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">disjunction, inclusive or</entry>
+      </row>
+      <row>
+      <entry>not</entry>
+      <entry>~</entry>
+      <entry>negation</entry>
+      </row>
+      <row>
+      <entry>if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>…</mo></math>, then
+      implies</entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">conditional, implication</entry>
+      </row>
+      <row>
+      <entry>if and only if</entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>↔</mo></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">biconditional</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+  </item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The dominance of connectives explains the order in which compound logical statements containing multiple connectives should be interpreted.</item>
+  <item xmlns="http://cnx.rice.edu/cnxml">The dominance of connectives should be applied in the following order
+  <list id="list-00013">
+    <item>Parentheses</item>
+    <item>Negations</item>
+    <item>Disjunctions/Conjunctions, left to right</item>
+    <item>Conditionals</item>
+    <item>Biconditionals</item>
+  </list>
+  <figure id="fig-00004">
     <media alt="A table with four columns shows Dominance, Connective, Symbol, and Evaluate. The dominance column on the table shows a downward vertical arrow from least dominant to most dominant. The connective column on the table shows Parentheses, Negation, Disjunction or Conjunction, Conditional, and Biconditional. The Symbol column on the table shows an open bracket and a closed bracket, equivalent, an upward circumflex and a downward circumflex, a right side arrow, and a double-sided arrow. The Evaluate column on the table shows First, a downward arrow, Left to right or add parentheses to specify order because or slash and have equal dominance. a downward arrow, and last.">
-    <image mime-type="image/jpg" src="../../media/CS_Figure_02_02_TA_003.jpg"/>
-    </media>
-    </figure>
-    <para id="para-00046">Let’s revisit your friend’s struggles to get their driver’s license. Let <emphasis effect="italic">p</emphasis> represent the statement, “My friend  passed the written test,” let <emphasis effect="italic">q</emphasis> represent the statement, “My friend passed the road test,” and let <emphasis effect="italic">r</emphasis> represent the statement, “My friend received a driver’s license.” Let's use the dominance of connectives to determine how the compound statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></math> should be evaluated.</para>
- <para id="para-00003" xmlns="http://cnx.rice.edu/cnxml"> There are no parentheses, which is least dominant of all connectives, so we can skip over that. Because negation is the next least dominant, we should evaluate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math> first. We could add parentheses to the statement to make it clearer which connecting needs to be evaluated first:  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>→</mo><mi>r</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi><mo>.</mo></mrow></math> Next, we evaluate the conjunction, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∧</mo></math>. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi></mrow></math> is equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>→</mo><mi>r</mi><mo>.</mo></mrow></math> Finally, we evaluate the conditional, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>→</mo><mo>,</mo></mrow></math> as this is the most dominant connective in this compound statement.</para>
-    <note class="who-knew" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
-    <para id="para-00047">When using spreadsheet applications, like Microsoft Excel or Google Sheets, have you noticed that core functions, such as sum, average, or rate, have the same name and syntax for use? This is not a coincidence. Various standards organizations have developed requirements that software developers must implement to meet the conditions set by governments and large customers worldwide. The OpenDocument Format OASIS Standard enables transferring data between different office productivity applications and was approved by the International Standards Organization (ISO) and IEC on May 6, 2006.</para>
-    <para id="para-00048">Prior to adopting these standards, a government entity, business, or individual could lose access to their own data simply because it was saved in a format no longer supported by a proprietary software product. —even data they were required by law to preserve, or data they simply wished to maintain access to.</para>
-    <para id="para-00049">The rules for applying the dominance of connectives help maintain understanding and consistency when writing and interpreting compound logical statements and arguments.</para>
-    </note>
-    <example id="exam-00004">
-    <title>Applying the Dominance of Connectives</title>
-    <exercise id="exer-00007">
-    <problem id="prob-00007">
-    <para id="para-00050">For each of the following compound logical statements, add parentheses to indicate the order to evaluate the statement. Recall that parentheses are evaluated innermost first.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00009">
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mo>~</mo><mi>q</mi><mo>∨</mo><mi>r</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>→</mo><mi mathvariant="normal"/><mo>~</mo><mi>p</mi><mo>∧</mo><mi>r</mi></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false">)</mo><mi mathvariant="normal"/><mo>↔</mo><mi mathvariant="normal"/><mo>~</mo><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math></item>
-    </list>
-    </problem>
-    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
-    <list list-type="enumerated" number-style="arabic" id="list-00010">
-    <item>Because negation is the least dominant connective, we evaluate it first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> Because conjunction and disjunction have the same dominance, we evaluate them left to right. So, we evaluate the conjunction next, as indicated by the additional set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi><mo>.</mo></mrow></math> The only remaining connective is the disjunction, so it is evaluated last, as indicated by the third set of parentheses. The complete solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>∨</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Negation has the lowest dominance, so it is evaluated first: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mi mathvariant="normal"/><mo>→</mo><mi mathvariant="normal"/><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi><mo>.</mo></mrow></math> The remaining connectives are the conditional and the conjunction. Because conjunction has a lower precedence thean the conditional, it is evaluated next, as indicated by the second set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math> The last step is to evaluate the conditional, as indicated by the third set of parentheses: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>q</mi><mo>→</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">This statement is known as DeMorgan’s Law for the negation of a disjunction. It is always true. Section 6 of this chapter will explore  DeMorgan’s Laws in more detail. First, we evaluate the negations on the right side of the biconditional prior to the conjunction. Then, we evaluate the disjunction on the left side of the biconditional, followed by the negation of the disjunction on the left side. Lastly, after completely evaluating each side of the biconditional, we evaluate the biconditional. It does not matter which side you begin with. The final solution is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mrow><mo>(</mo><mrow><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></item>
-    </list>
-    </solution>
-    </exercise>
-    </example>
-    <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
-    <exercise id="exer-00008">
-    <problem id="prob-00008">
-    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C02-M2-Q004"/></para>
-    </problem>
-    </exercise>
-    </note>
-    <note class="work-out" id="note-00014">
-    <title>Logic Terms and Properties – Matching Game</title>
-    <para id="para-00052">Materials: For every group of four students, include 30 cards (game, trading, or playing cards), 30 individual clear plastic gaming card sleeves, and 30 card-size pieces of paper. Prepare a list of 60 questions and answers ahead of time related to definitions and problems in Sections 1 and 2. Provide each group of four students with 20 questions and their associated answers. Instruct each group to select 15 of the 20 questions, and then, for each problem selected, create one card with the question and one card with the answer. Instruct the groups to then place each problem and answer in a separate card sleeve. Once they create 15 problem cards and 15 answer cards, have students shuffle the set of cards.</para>
-    <para id="para-00053">To play the game, groups should exchange their card decks to ensure no team begins playing with the deck that they created. Split each four-person group into teams of two students. After shuffling the cards, one team lays cards face down on their desk in a five-by-six grid. The other team will go first.</para>
-   <para id="para-00013">Each player will have a turn to try matching the question with the correct answer by flipping two cards to the face up position. If a team makes a match, they get to flip another two cards; if they do not get a match, they flip the cards face down and it is the other team’s turn to flip over two cards. The game continues in this manner until teams match all question cards with their corresponding answer cards. The team with the most set of matching cards wins.</para>
-    </note>
-    <para id="para-00054">In the first module of this chapter, we evaluated the truth value of negations. In the following modules, we will discuss how to evaluate conjunctions, disjunctions, conditionals, and biconditionals, and then evaluate compound logical statements using truth tables and our knowledge of the dominance of connectives.</para>
-    </section>
-    <section id="sect-00006" class="check-understanding">
-    <title>Check Your Understanding</title>
-    <exercise id="exer-00009">
-    <problem id="prob-00009">
-    <para id="para-00055"><link class="os-embed" url="#exercise/CM-C02-M2-Q005"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00010">
-    <problem id="prob-00010">
-    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C02-M2-Q006"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00011">
-    <problem id="prob-00011">
-    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C02-M2-Q007"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00012">
-    <problem id="prob-00012">
-    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C02-M2-Q008"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00013">
-    <problem id="prob-00013">
-    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C02-M2-Q009"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="section-exercises" id="sect-00007">
-    <title>Exercises</title>
-    <exercise id="exer-00014">
-    <problem id="prob-00014">
-    <para id="para-00060"><link class="os-embed" url="#exercise/CM-C02-M2-Q010"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00015">
-    <problem id="prob-00015">
-    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C02-M2-Q011"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00016">
-    <problem id="prob-00016">
-    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C02-M2-Q012"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00017">
-    <problem id="prob-00017">
-    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C02-M2-Q013"/></para>
-    </problem>
-    </exercise>
-    <exercise id="exer-00018">
-    <problem id="prob-00018">
-    <para id="para-00064"><link class="os-embed" url="#exercise/CM-C02-M2-Q014"/></para>
-    </problem>
-    </exercise>
-    </section>
-    <section class="key-terms" id="sect-00009">
-    <title>Key Terms</title>
-    <list bullet-style="none" id="list-00014">
-    <item>Compound statement</item>
-    <item>Connective</item>
-    <item>Conjunction</item>
-    <item>Disjunction</item>
-    <item>Conditional</item>
-    <item>Hypothesis</item>
-    <item>Conclusion</item>
-    <item>Biconditional</item>
-    <item>Dominance of connectives</item>
-    </list>
-    </section>
-    <section class="key-concepts" id="sect-00010">
-    <title>Key Concepts</title>
-    <list id="list-00011">
-    <item>Logical connectives are used to form compound logical statements by using words such as and, or, and if … then.</item>
-    <item>A disjunction joins two logical statements with the “or” connective. In, logic ‘or’ is inclusive. For a or statement to be true at least one statement must be true, but both may also be true.</item>
-    <item>A conditional statement has the form if p, then q, where p and q are logical statements. The only time the conditional statement is false is when p is true, and q is false.</item>
-    <item>A conditional statement has the form if p, then q, where p and q are logical statements. The only time the conditional statement is false is when p is true, and q is false.</item>
-    <item>The biconditional statement is formed using the connective “if and only if” for the biconditional statement to be true, the true values of p and q, must match. If p is true then q must be true, if p is false, then q must be false.</item>
-    <item>Translate compound statements between words and symbolic form.
-     <table summary="." id="table-00002">
-       <tgroup cols="3">
-       <colspec colnum="1" colname="c1" colwidth="1*"/>
-       <colspec colnum="2" colname="c2" colwidth="1*"/>
-       <colspec colnum="3" colname="c3" colwidth="1*"/>
-       <thead>
-       <row><entry>Connective</entry>
-       <entry>Symbol</entry>
-       <entry>Name</entry></row>
-       </thead>
-       <tbody>
-       <row><entry>and<newline/>but</entry>
-       <entry/>
-       <entry>conjunction</entry></row>
-       <row><entry>or</entry>
-       <entry/>
-       <entry>disjunction,<newline/>inclusive or</entry></row>
-       <row><entry>not</entry>
-       <entry>~</entry>
-       <entry>negation</entry></row>
-       <row><entry>if …, then<newline/>implies</entry>
-       <entry> </entry>
-       <entry>conditional, implication</entry></row>
-       <row><entry>if and only if</entry>
-       <entry/>
-       <entry>biconditional</entry></row>
-       </tbody>
-       </tgroup><caption>Common Logical Connectives and Their Symbols</caption>
-       </table></item>
-       <item xmlns="http://cnx.rice.edu/cnxml">The dominance of connectives explains the order in which compound logical statements containing multiple connectives should be interpreted.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">The dominance of connectives should be applied in the following order
-     <list id="list-00013">
-       <item>Parentheses</item>
-       <item>Negations</item>
-       <item>Disjunctions/Conjunctions, left to right</item>
-       <item>Conditionals</item>
-       <item>Biconditionals</item>
-     </list>
-     <figure id="fig-00004">
-       <media alt="A table with four columns shows Dominance, Connective, Symbol, and Evaluate. The dominance column on the table shows a downward vertical arrow from least dominant to most dominant. The connective column on the table shows Parentheses, Negation, Disjunction or Conjunction, Conditional, and Biconditional. The Symbol column on the table shows an open bracket and a closed bracket, equivalent, an upward circumflex and a downward circumflex, a right side arrow, and a double-sided arrow. The Evaluate column on the table shows First, a downward arrow, Left to right or add parentheses to specify order because or slash and have equal dominance. a downward arrow, and last.">
-       <image mime-type="image/jpg" src="../../media/CS_Figure_02_02_TA_003.jpg"/>
-       </media>
-       </figure></item>
-    </list>
-    </section>
-    <section class="eoc-videos" id="sect-00011">
-    <title>video</title>
-    <para id="para-00077"><link url="https://openstax.org/r/Compound_Statements">Logic Part 1B: Compound Statements, Connectives and Symbols</link></para>
-    </section>
+      <image mime-type="image/jpg" src="../../media/CS_Figure_02_02_TA_003.jpg"/>
+  </media>
+  </figure></item>
+      </list>
+      </section>
+  <section class="eoc-videos" id="sect-00011">
+  <title>video</title>
+  <para id="para-00077"><link url="https://openstax.org/r/Compound_Statements">Logic Part 1B: Compound Statements, Connectives and Symbols</link></para>
+  </section>
   </content>
  </document>
