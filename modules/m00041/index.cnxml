@@ -10,10 +10,10 @@
       <media alt="A laptop is placed on a table. The screen shows a lock symbol with a message that reads “secured.”">
       <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_001.jpg"/>
       </media>
-      <caption>A laptop showing a lock on the screen that shows it is on a secured network. (Credit: “Data Security” by Blogtrepreneur/Flickr, CC BY 2.0)</caption>
+      <caption>A laptop showing a lock on the screen that shows it is on a secured network. (credit: “Data Security” by Blogtrepreneur/Flickr, CC BY 2.0)</caption>
     </figure>
   <section class="learning-objectives" id="sect-00001">
-  <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+  <para id="para-00001">After completing this section, you should be able to:</para>
   <list list-type="enumerated" id="list-00001">
   <item>Apply divisibility rules.</item>
   <item>Define and identify numbers that are prime or composite.</item>
@@ -24,15 +24,19 @@
   <item>Use the least common multiple to solve application problems.</item>
   </list>
   </section>
-  <para id="para-00002">Encryption is used to secure online banking, for secure online shopping, and for browsing as privately as possible using VPNs (Virtual Private Networks). Since prime numbers are now the basis for encryption, and we need encryption for secure exchange of information, they are a very big deal in mathematics. For a prime to be useful for encryption, though, it has to be a large prime number. Encryption uses a composite number that is the product of two very large primes. To break the encryption, one must determine the two primes that were used to form the composite number. If the two prime numbers used are sufficiently large, even the fastest computer cannot determine those two prime numbers in a reasonable amount of time. It appears that it would take a computer 300 trillion years to crack the current encryption standard, which is probably too long for anyone to wait. This section covers prime and composite numbers.</para>
+  <para id="para-00002">Encryption needed for secure exchange of information (online banking or shopping, for instance) is based on prime numbers. Encryption uses a composite number that is the product of two very large prime numbers. To break the encryption, the two primes that were used to form the composite number need to be determined. If the two prime numbers used are sufficiently large, even the fastest computer cannot determine those two prime numbers in a reasonable amount of time. It appears that it would take a computer 300 trillion years to crack the current encryption standard, which is probably too long for anyone to wait. This section covers prime and composite numbers.</para>
   <section id="sect-00002">
   <title>Applying Divisibility Rules</title>
-  <para id="para-00003">The counting numbers are referred to as the <emphasis effect="bold">natural numbers</emphasis>. This set of numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>…</mo></mrow><mo>}</mo></mrow></mrow></math>, is denoted with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ℕ</mi></mrow></math>.</para>
-  <para id="para-00004" xmlns="http://cnx.rice.edu/cnxml">Another important set of numbers is the <emphasis effect="bold">integers</emphasis>. The integers are the natural numbers, along with 0, and the negatives of the natural numbers. This set is often written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mrow><mo>…</mo><mo>,</mo><mo>−</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo></mrow><mo>}</mo></mrow></mrow></math>. We denote the integers with the symbol ℤ.</para>
-  <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">Notice that ℕ is a proper subset of ℤ, or, ℕ ⊂ ℤ. All the ideas of this section apply to the natural numbers, while only some apply to all the integers.</para>
-  <para id="para-00006">There are many occasions when separating items into equal groups comes into play, be it sharing or creating gift bags, to ensure an equal distribution of whole items. <emphasis effect="bold">Divisibility</emphasis> is when the integer <emphasis effect="italics">n</emphasis> is divisible by <emphasis effect="italics">m</emphasis>, if <emphasis effect="italics">n</emphasis> can be written as <emphasis effect="italics">m</emphasis> times another integer. Equivalently, there is no remainder when <emphasis effect="italics">n</emphasis> is divided by <emphasis effect="italics">m</emphasis> . For example, Francis, a preschool art teacher, has 15 students in one class. Francis has 225 sheets of construction paper and wants to provide each student with an equal number of pieces. To know if he will use all the construction paper, Francis is really asking if 225 can be evenly divided into 15 groups.</para>
+<para id="para-00034"> </para>
+<para id="para-00035">Before we begin our investigation of divisibility, we need to know some facts about important sets of numbers:</para>
+  <list bullet-style="bulleted" id="list-00002">
+  <item id="para-00003">The counting numbers are referred to as the <emphasis effect="bold">natural numbers</emphasis>. This set of numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mo>…</mo></mrow><mo>}</mo></mrow></mrow></math>, is denoted with the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">ℕ</mi></mrow></math>.</item>
+  <item id="para-00004" xmlns="http://cnx.rice.edu/cnxml">Another important set of numbers is the <emphasis effect="bold">integers</emphasis>. The integers are the natural numbers, along with 0, and the negatives of the natural numbers. This set is often written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mrow><mo>…</mo><mo>,</mo><mo>−</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo></mrow><mo>}</mo></mrow></mrow></math>. We denote the integers with the symbol ℤ.</item>
+  <item id="para-00005" xmlns="http://cnx.rice.edu/cnxml">Notice that ℕ is a proper subset of ℤ, or, ℕ ⊂ ℤ. All the ideas of this section apply to the natural numbers, while only some apply to all the integers.</item>
+</list>
+  <para id="para-00006"><emphasis effect="bold">Divisibility</emphasis> is when the integer <emphasis effect="italics">n</emphasis> is divisible by <emphasis effect="italics">m</emphasis>, if <emphasis effect="italics">n</emphasis> can be written as <emphasis effect="italics">m</emphasis> times another integer. Equivalently, there is no remainder when <emphasis effect="italics">n</emphasis> is divided by <emphasis effect="italics">m</emphasis>. There are many occasions when separating items into equal groups comes into play to ensure an equal distribution of whole items. For example, Francis, a preschool art teacher, has 15 students in one class. Francis has 225 sheets of construction paper and wants to provide each student with an equal number of pieces. To know if he will use all the construction paper, Francis is really asking if 225 can be evenly divided into 15 groups.</para>
   <example id="exam-00001">
-  <title>Determining If a Number Divides Another Number</title>
+  <title>Determining if a Number Divides Another Number</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
   <para id="para-00007">Determine if 36 is divisible by 4.</para>
@@ -49,7 +53,7 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00010">You can quickly check if a number is divisible by 2, 3, 4, 5, 6, 9, 10, and 12. Each has an easy-to-identify feature, or rule, that indicates the divisibility by those numbers. The table below lists the rules you can apply to quickly determine if a number is divisible by 2, 3, 4, 5, 6, 9, 10, and 12.</para>
+  <para id="para-00010">You can quickly check if a number is divisible by 2, 3, 4, 5, 6, 9, 10, and 12. Each has an easy-to-identify feature, or rule, that indicates the divisibility by those numbers, as shown in the following table.</para>
   <table summary="." class="unnumbered" id="table-00001">
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1pt" align="left"/>
@@ -194,7 +198,7 @@
   <title>Prime and Composite Numbers</title>
   <para id="para-00028">Sometimes, a natural number has only two unique divisors, 1 and itself. For instance, 7 and 19 are <term id="term-00001">prime</term>. In other words, there is no way to divide a prime number into groups with an equal number of things, unless there is only one group, or those groups have one item per group. Other natural numbers have more than two unique divisors, such as 4, or 26. These numbers are called <term id="term-00002">composite</term>. The number 1 is special; it is neither prime nor composite.</para>
   <para id="para-00029">To determine if a number is prime or composite, you have to determine if the number has any divisors other than 1 and itself. The divisibility rules are useful here, and can quickly show you if a number has a divisor on that list.</para>
-  <para id="para-00030">However, if none of those divide the number, you still have to check all other possible prime divisors. What are the prime numbers that are possibly divisors of the number you are checking? You need only check the prime numbers up to the square root of the number in question. For instance, if you want to know if 2,217 is prime, you need to determine if any primes up to the square root of 2,117 (which is 46.0 when rounded to one decimal place) divide 2,217. If any of those primes are divisors of the number in question, then the number is composite. If none of those primes work, then the number is itself prime.</para>
+  <para id="para-00030">However, if none of those divide the number, you still have to check all other possible prime divisors. What are the prime numbers that are possibly divisors of the number you are checking? You need only check the prime numbers up to the square root of the number in question. For instance, if you want to know if 2,117 is prime, you need to determine if any primes up to the square root of 2,117 (which is 46.0 when rounded to one decimal place) divide 2,217. If any of those primes are divisors of the number in question, then the number is composite. If none of those primes work, then the number is itself prime.</para>
   <para id="para-00031">We can check divisibility with whatever tool we wish. Divisibility rules are quick for some prime divisors (2 and 5 come to mind) but aren't quick for other values (like 11). In place of divisibility rules, we could just use a calculator. If the prime number divides the number evenly (that is, there is no decimal or fractional part), then the number is divisible by that prime. The table below is a quick list of the prime numbers up to 50. There are 15 prime numbers less than 50.</para>
   <table summary="." class="unnumbered" id="table-00002">
   <tgroup cols="5">
@@ -236,17 +240,15 @@
   </problem>
   <solution id="sol-00007">
   <para id="para-00033">The square root of 2,117 is 46.0 (rounded to one decimal place). So, we need to check if 2,117 is divisible by any prime up to 46.</para>
-  <para id="para-00059"><emphasis effect="bold">Step 1:</emphasis> Check 2. We can tell 2,117 is not divisible by 2, as the last digit isn't even.</para>
-  <para id="para-00061"><emphasis effect="bold">Step 2:</emphasis> Check 5. It is not divisible by 5 (the last digit isn't 0 or 5).</para>
-  <para id="para-00064"><emphasis effect="bold">Step 3:</emphasis> Check 3. Add the digits of 2,117 to get 11, which is not divisible by 3. So, 2,117 is also not divisible by 3.</para>
+<para id="para-00036">First we’ll use the rules of divisibility we learned earlier:</para>
+  <list bullet-style="bulleted" id="list-00003">
+  <item>We can tell 2,117 is not divisible by 2, as the last digit isn't even.</item>
+  <item>2,117 is not divisible by 5 (the last digit isn't 0 or 5).</item>
+  <item>Add the digits of 2,117 to get 11, which is not divisible by 3. So, 2,117 is also not divisible by 3.</item>
+</list>
   <para id="para-00215">Now we repeat the process for all the primes up to 46.</para>
-  <para id="para-00216"><emphasis effect="bold">Step 1:</emphasis> Check 7. To check if 7 divides 2,117, we could use a calculator. When we divide 2,117 by 7, the result is 302.428571428. Since there is a decimal part, 2,117 is not divisible by 7.</para>
-  <para id="para-00034"><emphasis effect="bold">Step 2:</emphasis> Check the next prime number: 11. Similarly, dividing 2,117 by 11 using a calculator results in 192.454545454. Again, there is a decimal part, so 2,117 is not divisible by 11.</para>
-  <para id="para-00035"><emphasis effect="bold">Step 3:</emphasis> Check the next prime number: 13. Using the calculator to divide 2,117 by 13 results in 162.846. Since there is a decimal part, 2,117 is not divisible by 13.</para>
-  <para id="para-00036"><emphasis effect="bold">Step 4:</emphasis> Check the next prime number: 17. Using the calculator to divide 2,117 by 17 results in 124.529. Since there is a decimal part, 2,117 is not divisible by 17.</para>
-  <para id="para-00037"><emphasis effect="bold">Step 5:</emphasis> Check the next prime number: 19. Using the calculator to divide 2,117 by 19 results in 111.421. Since there is a decimal part, 2,117 is not divisible by 19.</para>
-  <para id="para-00038"><emphasis effect="bold">Step 6:</emphasis> Check the next prime number: 23. Using the calculator to divide 2,117 by 23 results in 92.043, so 2,117 is not divisible by 23.</para>
-  <para id="para-00039"><emphasis effect="bold">Step 7:</emphasis> Check the next prime: 29. Using the calculator to divide 2,117 by 29 results in 73. Since there is no decimal part, 2,117 is divisible by 29.</para>
+<para id="para-00037">Using a calculator, we find that 2,117 divided by the prime numbers 7, 11, 13, 17, 19, and 23 results in a remainder, a decimal part. So, we know that 2,117 is not divisible by these prime numbers. (You should check these results yourself.)</para>
+  <para id="para-00039">Moving on, we check the next prime: 29. Using the calculator to divide 2,117 by 29 results in 73. Since there is no decimal part, 2,117 is divisible by 29.</para>
   <para id="para-00217">This means that 2,117 is not a prime number, but rather, a composite number. Writing 2,117 as the product of 29 and another natural number, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2,117</mn><mo>=</mo><mn>29</mn><mo>×</mo><mn>73</mn></mrow></math>.</para>
   </solution>
   </exercise>
@@ -259,7 +261,7 @@
   </exercise>
   </note>
   <example id="exam-00008">
-  <title>Determining If a Number Is Prime or Composite</title>
+  <title>Determining if a Number Is Prime or Composite</title>
   <exercise id="exer-00015">
   <problem id="prob-00015">
   <para id="para-00041">Determine if 423 is prime or composite.</para>
@@ -281,7 +283,7 @@
   </exercise>
   </note>
   <example id="exam-00009">
-  <title>Determining If a Number Is Prime or Composite</title>
+  <title>Determining if a Number Is Prime or Composite</title>
   <exercise id="exer-00017">
   <problem id="prob-00017">
   <para id="para-00044">Determine if 1,034 is prime or composite</para>
@@ -310,7 +312,7 @@
   <para id="para-00223"><emphasis effect="bold">Step 2:</emphasis> Check 5. It is it divisible by 5 (the last digit isn't 0 or 5).</para>
   <para id="para-00250"><emphasis effect="bold">Step 3:</emphasis> Check 3. Using the divisibility rule for 3, we take the sum of the digits of 2,917, which is 19. Since 19 is not divisible by 3, neither is 2,917.</para>
   <para id="para-00224"><emphasis effect="bold">Step 4:</emphasis> Check the rest of the primes up to 50 using a calculator. When 2,917 is divided by every prime number up to 50, the result has a decimal part.</para>
-  <para id="para-00225">Since no prime up to 50 divides 2,917, 2,917 is a prime number.</para>
+  <para id="para-00225">Since no prime up to 50 divides 2,917, it is a prime number.</para>
   </solution>
   </exercise>
   </example>
@@ -334,7 +336,7 @@
   <media alt="A portrait of Sophie Germain.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_002.jpg"/>
   </media>
-  <caption>Picture of Sophie Germain</caption>
+  <caption>Sophie Germain (credit: “Sophie Germain at 14 years,” Illustration from histoire du socialisme, approx. 1880, Wikimedia Commons, public domain)</caption>
   </figure>
   <para id="para-00052">Born into a wealthy French family in 1776, Sophie Germain discovered and fell in love with mathematics by browsing her father’s books. Clandestine study, hard and tenacious work, and a mathematical mindset did not lead to college, however, as her gender precluded her from attending. She did manage, through friends, to obtain problem sets and submit brilliant solutions under the name Monsieur LaBlanc. One of her great interests was number theory, which is the study of properties of integers. One of her theorems, titled “Sophie Germain’s Theorem,” partially solved one of the great mathematical mysteries, Fermat’s Last Theorem, and involved her discovery of what are now known as Sophie Germain Primes. A Sophie Germain Prime is a prime number that can be written in the form 2<emphasis effect="italics">p</emphasis> +1, where <emphasis effect="italics">p</emphasis> is a prime number. For instance, 23 is prime: 2(23) + 1= 47, which is prime, so 47 is a Sophie Germain Prime. It should be noted that 2<emphasis effect="italics">p</emphasis> +1, where <emphasis effect="italics">p</emphasis> is a prime number, may or may not be prime (check for <emphasis effect="italics">p</emphasis> =7!).</para>
   </note>
@@ -342,13 +344,13 @@
   <section id="sect-00004">
   <title>Finding the Prime Factorization of Composite Numbers</title>
   <para id="para-00053">Before we can start with prime factorization, let’s remind ourselves what it means to factor a number. We factor a number by identifying two (or more) numbers that, when multiplied, result in the original number. For instance, 3 and 24, when multiplied, give 72. So, 72 can be factored into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>24</mn></mrow></math>. Notice that we could have factored the 72 differently, say as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>6</mn><mo>×</mo><mn>12</mn></mrow></math>, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>36</mn></mrow></math>, or even as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>.</para>
-  <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">Finding the <term id="term-00003">prime factorization</term> of a composite number is to write the number as the product of all of its prime factors. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Notice that when we multiply out the right-hand side, we get 80. Also, all the numbers being multiplied on the right-hand side are primes. You should notice that sometimes primes repeat themselves in the factorization. When prime factors do repeat, we may write the prime factorization using <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">exponents</term>, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup><mo>×</mo><mn>5</mn></mrow></math>. In that expression, the 2 is raised to the 4<sup xmlns="http://cnx.rice.edu/cnxml">th</sup> power. The 4 is the exponent, and the 2 is the <emphasis effect="bold">base</emphasis>. More generally, in the exponent notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math>, the number represented by <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the base, and the number represented by <emphasis effect="italics">b</emphasis> is the exponent.</para>
+  <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">Finding the <term id="term-00003">prime factorization</term> of a composite number means writing the number as the product of all of its prime factors. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Notice that all the numbers being multiplied on the right-hand side are prime numbers. Sometimes prime numbers repeat themselves in the factorization. When prime factors do repeat, we may write the prime factorization using <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">exponents</term>, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup><mo>×</mo><mn>5</mn></mrow></math>. In that expression, the 2 is raised to the 4<sup xmlns="http://cnx.rice.edu/cnxml">th</sup> power. The 4 is the exponent, and the 2 is the <emphasis effect="bold">base</emphasis>. More generally, in the exponent notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math>, the number represented by <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the base, and the number represented by <emphasis effect="italics">b</emphasis> is the exponent.</para>
   <para id="para-00055">One has to wonder if finding the prime factorization could result in different factorizations. The <emphasis effect="bold">Fundamental Theorem of Arithmetic</emphasis> tells us that there is only one prime factorization for a given natural number.</para>
   </section>
   <section id="sect-00016">
   <title>Fundamental Theorem of Arithmetic</title>
   <para id="para-00294">Every natural number, other than 1, can be expressed in exactly one way, apart from the arrangement, as a product of primes.</para>
-  <para id="para-00056">The process of finding the prime factorization of a number is iterative, which means you do a step, then you repeat it until you cannot do the step any longer. The step we use is to identify one prime factor of the number, then write the number as the prime factor times another factor. You repeat this step on the other, newly found, factor. This step is repeated until no more primes can be factored from the remaining factor. This is easier to see and explain with an example.</para>
+  <para id="para-00056">The process of finding the prime factorization of a number is iterative, which means we do a step, then repeat it until we cannot do the step any longer. The step we use is to identify one prime factor of the number, then write the number as the prime factor times another factor. We repeat this step on the other, newly found, factor. This step is repeated until no more primes can be factored from the remaining factor. This is easier to see and explain with an example.</para>
   <example id="exam-00011">
   <title>Finding the Prime Factorization</title>
   <exercise id="exer-00021">
@@ -378,7 +380,7 @@
   <para id="para-00068"><emphasis effect="bold">Step 1:</emphasis> If <emphasis effect="italics">n</emphasis> is prime, the factor tree is just <emphasis effect="italic">n</emphasis>.</para>
   <para id="para-00069"><emphasis effect="bold">Step 2:</emphasis> Identify two divisors of <emphasis effect="italic">n</emphasis>, call them <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b.</emphasis></para>
   <para id="para-00070"><emphasis effect="bold">Step 3:</emphasis> Write the number <emphasis effect="italic">n</emphasis> down, and draw two branches extending down (or right) of the number <emphasis effect="italic">n</emphasis>.</para>
-  <para id="para-00071"><emphasis effect="bold">Step 4:</emphasis> Label the end of one branch <emphasis effect="italic">a</emphasis>, the other as <emphasis effect="italic">b</emphasis>. See the figure below.</para>
+  <para id="para-00071"><emphasis effect="bold">Step 4:</emphasis> Label the end of one branch <emphasis effect="italic">a</emphasis>, the other as <emphasis effect="italic">b</emphasis>. See <link target-id="fig-00003" document="m00041">Figure 3.3</link>.</para>
   <figure class="numbered" id="fig-00003">
   <media alt="A tree diagram shows two branches extending down from a node labeled 66 to 2 and 33.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_001.png"/>
@@ -397,14 +399,14 @@
   </problem>
   <solution id="sol-00012">
   <para id="para-00078">Since 66 is even, 2 is a factor. .</para>
-  <para id="para-00226"><emphasis effect="bold">Step 1:</emphasis> Factor out the 2. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>33</mn></mrow></math>. The factor tree is now:</para>
+  <para id="para-00226"><emphasis effect="bold">Step 1:</emphasis> Factor out the 2. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>33</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00004" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.4</link>.</para>
   <figure class="numbered" id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A tree diagram shows two branches extending down from a node labeled 66 to 2 and 33. Two other branches are extending down from 33 to 3 and 11.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_002.jpg"/>
   </media>
   </figure>
   <para id="para-00079">Since 2 is a factor, that branch is done, and 2 is a leaf.</para>
-  <para id="para-00227"><emphasis effect="bold">Step 2:</emphasis> The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree, which is now:</para>
+  <para id="para-00227"><emphasis effect="bold">Step 2:</emphasis> The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree (<link target-id="fig-00005" document="m00041">Figure 3.5</link>).</para>
   <figure class="numbered" id="fig-00005">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_003.jpg"/>
@@ -433,21 +435,21 @@
   </problem>
   <solution id="sol-00013">
   <para id="para-00084">The number 135 is divisible by 3, and so 3 is a factor of 135.</para>
-  <para id="para-00229"><emphasis effect="bold">Step 1:</emphasis> Factor out the 3. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>. Using the factor tree,</para>
+  <para id="para-00229"><emphasis effect="bold">Step 1:</emphasis> Factor out the 3. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>. Using the factor tree (<link target-id="fig-00006" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.6</link>),</para>
   <figure class="numbered" id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_004.jpg"/>
   </media>
   </figure>
   <para id="para-00085">45 is also divisible by 3.</para>
-  <para id="para-00230"><emphasis effect="bold">Step 2:</emphasis> Factor out a 3 from 45. The other factor is 15. The factor tree is now:</para>
+  <para id="para-00230"><emphasis effect="bold">Step 2:</emphasis> Factor out a 3 from 45. The other factor is 15. The factor tree is shown in <link target-id="fig-00007" document="m00041">Figure 3.7</link>.</para>
   <figure class="numbered" id="fig-00007">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45. Two other branches are extending down from 45 to 3 and 15.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_005.jpg"/>
   </media>
   </figure>
   <para id="para-00086">15 is also divisible by 3.</para>
-  <para id="para-00231"><emphasis effect="bold">Step 3:</emphasis> Write 15 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is now:</para>
+  <para id="para-00231"><emphasis effect="bold">Step 3:</emphasis> Write 15 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00008" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.8</link>.</para>
   <figure class="numbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45. Two other branches are extending down from 45 to 3 and 15. Two other branches are extending down from 15 to 3 and 5.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_006.jpg"/>
@@ -606,7 +608,7 @@
   <media alt="A photo of Srinivasa Ramanujan.">
   <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_003.jpg"/>
   </media>
-  <caption>A photo of Srinivasa Ramanujan</caption>
+  <caption>Srinivasa Ramanujan (credit: Srinivasa Ramanujan, photo by Konrad Jacobs/Oberwolfach Photo Collection/public domain)</caption>
   </figure>
   <para id="para-00119">Ramanujan was born in southern India in 1887, during British rule. He was a self-taught mathematician, who, while in high school, began working through a two-volume text of mathematical theorems and results. His work included examination of the distribution of primes. He eventually came to the attention of British mathematicians, G.H. Hardy. During one visit, Hardy mentioned to Ramanujan that his taxicab number was 1,729, remarking that 1,729 appeared to be a rather dull number. To which Ramanujan responded, “It is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.”</para>
   </note>
@@ -897,7 +899,7 @@
   </section>
   <section id="sect-00009">
   <title>Applications of the Least Common Multiple</title>
-  <para id="para-00173">Some applications of LCM involve events that repeat at fixed intervals, such as visits to a location. Other applications involve getting things to be of equal magnitude when using parts that are different sizes. In each case, we may be looking to determine when two processes “line up.”</para>
+  <para id="para-00173">Some applications of LCM involve events that repeat at fixed intervals, such as visits to a location. Other applications involve getting things to be of equal magnitude when using parts that are different sizes (see <link target-id="exam-00025" document="m00041">Example 3.25</link>, for instance). In each case, we may be looking to determine when two processes “line up.”</para>
   <example id="exam-00024">
   <title>Determining Scheduling Overlap Using the Least Common Multiple</title>
   <exercise id="exer-00047">
@@ -908,7 +910,7 @@
   <para id="para-00175">If we list the days that each student will volunteer, it becomes clear that we could solve this problem using the LCM of 6 and 10.</para>
   <para id="para-00247">João will be at the assisted living facility 6, 12, 18, 24, 30, 36, 42, and 48 days later.</para>
   <para id="para-00284">Amelia will be at the assisted living facility 10, 20, 30, 40, 50, and 60 days later.</para>
-  <para id="para-00285">The smallest number appearing on both lists is 30. Jennifer and Amelia will once more be volunteering together 30 days later.</para>
+  <para id="para-00285">The smallest number appearing on both lists is 30. João and Amelia will once more be volunteering together 30 days later.</para>
   </solution>
   </exercise>
   </example>
@@ -945,22 +947,8 @@
   <exercise id="exer-00051">
   <problem id="prob-00051">
   <para id="para-00181">Cicadas are known to have life cycles of 13 or 17 years, which are prime numbers. Why would a prime number life cycle be an evolutionary advantage? To figure this out, we have to explore how common multiples work with prime numbers.</para>
-  <para id="para-00182">In the following pairs, one number is a prime and the other is not. Determine the LCM of these following pairs of numbers:</para>
-  <para id="para-00291">7 and 6</para>
-  <para id="para-00292">11 and 15</para>
-  <para id="para-00293">5 and 8</para>
-  <para id="para-00183">What have you noticed about the LCM and the two numbers? Make a conjecture regarding the LCM of a prime number and another number. Test this conjecture with a few examples of your own making.</para>
-  <para id="para-00184">Suppose a predator of cicadas has a life cycle of 3 years. How many years will it take for the life cycles to match up, that is, how many years until the cicadas are available to the predator?</para>
-  <para id="para-00185">Explain why the predator might have a survival problem based on the answer to the previous question.</para>
+  <para id="para-00182">Make a conjecture regarding the LCM of a prime number and another number. Test this conjecture with a few examples of your own making.</para>
   </problem>
-  <solution id="sol-00026">
-  <para id="para-00186">The LCMs are 42, 165, and 40.</para>
-  <para id="para-00187">Conjecture that the LCM of a prime and a composite that does not have the prime as a factor is the product of the numbers.</para>
-  <para id="para-00188">(It is likely that the students will not notice the exception given the list of pairs, so they may conjecture that the LCM of a prime and a compsite is the product of the numbers, which is inaccurate, since the LCM of a prime number and a composite that has the prime as a factor is the composite number itself).</para>
-  <para id="para-00189">For cicadas with a 13-year life cycle, it will take 39 years.</para>
-  <para id="para-00248">For cicadas with a life cycle of 17 years, it will take 51 years.</para>
-  <para id="para-00190">The predator will not have access to its food source for at least 39 years and, without a varied diet, will likely die out due to lack of food.</para>
-  </solution>
   </exercise>
   </note>
   </section>
@@ -1048,24 +1036,26 @@
   <section class="key-terms" id="sect-00013">
   <title>Key Terms</title>
   <list bullet-style="none" id="list-00030">
-  <item>Natural numbers</item>
-  <item>Factor of a number</item>
-  <item>Multiple of a number</item>
-  <item>Prime number</item>
-  <item>Composite number</item>
-  <item>Prime factorization</item>
-  <item>Greatest common divisor (GCD)</item>
-  <item>Least common multiple (LCM)</item>
+  <item>natural numbers</item>
+  <item>factor of a number</item>
+  <item>multiple of a number</item>
+  <item>prime number</item>
+  <item>composite number</item>
+  <item>prime factorization</item>
+  <item>greatest common divisor (GCD)</item>
+  <item>least common multiple (LCM)</item>
   </list>
   </section>
   <section class="key-concepts" id="sect-00014">
   <title>Key Concepts</title>
   <list list-type="bulleted" id="list-00031">
-  <item>Identify prime and composite numbers.</item>
-  <item>Be able to find the prime factorization of a number.</item>
-  <item>Be able to calculate the greatest common divisor of a set of numbers.</item>
-  <item>Be able to find the least common multiple of a set of numbers.</item>
-  <item>Use the GCD or LCM in applications.</item>
+  <item>The natural numbers can be categorized as 1, prime numbers, and composite numbers.</item>
+  <item>Prime numbers have as their only factors 1 and themselves.</item>
+  <item>Composite numbers have at least three distinct factors.</item>
+  <item>Composite numbers can be written in their prime factorization form, which is found by repeatedly factoring prime factors from the number.</item>
+  <item>The greatest common divisor (GCD) of a set of numbers is the largest integer that divides all of the numbers in the set. The prime factorizations of the numbers can be used to identify the greatest common divisor.</item>
+  <item>The least common multiple (LCM) of a set of numbers is the smallest integer that is divisible by all of the numbers in the set. The prime factorizations of the numbers can be used to identify the least common multiple.</item>
+  <item>There are various ways that the GCD and LCM are applied.</item>
   </list>
   </section>
   <section class="eoc-videos" id="sect-00015">
