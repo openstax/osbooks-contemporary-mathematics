@@ -380,7 +380,7 @@
   <para id="para-00068"><emphasis effect="bold">Step 1:</emphasis> If <emphasis effect="italics">n</emphasis> is prime, the factor tree is just <emphasis effect="italic">n</emphasis>.</para>
   <para id="para-00069"><emphasis effect="bold">Step 2:</emphasis> Identify two divisors of <emphasis effect="italic">n</emphasis>, call them <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b.</emphasis></para>
   <para id="para-00070"><emphasis effect="bold">Step 3:</emphasis> Write the number <emphasis effect="italic">n</emphasis> down, and draw two branches extending down (or right) of the number <emphasis effect="italic">n</emphasis>.</para>
-  <para id="para-00071"><emphasis effect="bold">Step 4:</emphasis> Label the end of one branch <emphasis effect="italic">a</emphasis>, the other as <emphasis effect="italic">b</emphasis>. See <link target-id="fig-00003" document="m00041">Figure 3.3</link>.</para>
+  <para id="para-00071"><emphasis effect="bold">Step 4:</emphasis> Label the end of one branch <emphasis effect="italic">a</emphasis>, the other as <emphasis effect="italic">b</emphasis>. See <link target-id="fig-00003" document="m00041">Figure 3.4</link>.</para>
   <figure class="numbered" id="fig-00003">
   <media alt="A tree diagram shows two branches extending down from a node labeled 66 to 2 and 33.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_001.png"/>
@@ -399,14 +399,14 @@
   </problem>
   <solution id="sol-00012">
   <para id="para-00078">Since 66 is even, 2 is a factor. .</para>
-  <para id="para-00226"><emphasis effect="bold">Step 1:</emphasis> Factor out the 2. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>33</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00004" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.4</link>.</para>
+  <para id="para-00226"><emphasis effect="bold">Step 1:</emphasis> Factor out the 2. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>66</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>33</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00004" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.5</link>.</para>
   <figure class="numbered" id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A tree diagram shows two branches extending down from a node labeled 66 to 2 and 33. Two other branches are extending down from 33 to 3 and 11.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_002.jpg"/>
   </media>
   </figure>
   <para id="para-00079">Since 2 is a factor, that branch is done, and 2 is a leaf.</para>
-  <para id="para-00227"><emphasis effect="bold">Step 2:</emphasis> The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree (<link target-id="fig-00005" document="m00041">Figure 3.5</link>).</para>
+  <para id="para-00227"><emphasis effect="bold">Step 2:</emphasis> The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree (<link target-id="fig-00005" document="m00041">Figure 3.6</link>).</para>
   <figure class="numbered" id="fig-00005">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_003.jpg"/>
@@ -435,21 +435,21 @@
   </problem>
   <solution id="sol-00013">
   <para id="para-00084">The number 135 is divisible by 3, and so 3 is a factor of 135.</para>
-  <para id="para-00229"><emphasis effect="bold">Step 1:</emphasis> Factor out the 3. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>. Using the factor tree (<link target-id="fig-00006" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.6</link>),</para>
+  <para id="para-00229"><emphasis effect="bold">Step 1:</emphasis> Factor out the 3. The factorization is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>135</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>45</mn></mrow></math>. Using the factor tree (<link target-id="fig-00006" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.7</link>),</para>
   <figure class="numbered" id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Insert Alt Text">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_004.jpg"/>
   </media>
   </figure>
   <para id="para-00085">45 is also divisible by 3.</para>
-  <para id="para-00230"><emphasis effect="bold">Step 2:</emphasis> Factor out a 3 from 45. The other factor is 15. The factor tree is shown in <link target-id="fig-00007" document="m00041">Figure 3.7</link>.</para>
+  <para id="para-00230"><emphasis effect="bold">Step 2:</emphasis> Factor out a 3 from 45. The other factor is 15. The factor tree is shown in <link target-id="fig-00007" document="m00041">Figure 3.8</link>.</para>
   <figure class="numbered" id="fig-00007">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45. Two other branches are extending down from 45 to 3 and 15.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_005.jpg"/>
   </media>
   </figure>
   <para id="para-00086">15 is also divisible by 3.</para>
-  <para id="para-00231"><emphasis effect="bold">Step 3:</emphasis> Write 15 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00008" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.8</link>.</para>
+  <para id="para-00231"><emphasis effect="bold">Step 3:</emphasis> Write 15 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00008" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.9</link>.</para>
   <figure class="numbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45. Two other branches are extending down from 45 to 3 and 15. Two other branches are extending down from 15 to 3 and 5.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_006.jpg"/>
