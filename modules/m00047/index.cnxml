@@ -27,7 +27,7 @@
       <section id="sect-00002">
       <title>Adding, Subtracting, and Multiplying Using Clock Arithmetic</title>
       <para id="para-00004">When we do arithmetic, numbers can become larger and larger. But when we work with time, specifically with clocks, the numbers cycle back on themselves. It will never be 49 o’clock. Once 12 o’clock is reached, we go back to 1 and repeat the numbers. If it's 11 AM and someone says, “See you in four hours,” you know that 11 AM plus 4 hours is 3 PM, not 15 AM (ignoring military time for now). Math worked on the clock, where numbers restart after passing 12, is called <term id="term-00001">clock arithmetic</term>.</para>
-      <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (<link target-id="fig-00002" document="m00047">Figure 3.41</link>). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
+      <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (<link target-id="fig-00002" document="m00047">Figure 3.42</link>). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
       <figure class="numbered" id="fig-00002">
       <media alt="An analog clock with the hour hand pointing to 3. A clockwise arrow around the clock is labeled 12 hours later.">
       <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_001.jpg"/>
@@ -98,7 +98,7 @@
       </note>
       <note class="tech-check" id="note-00004">
       <title>Using Desmos to Determine the Value of a Number module 12</title>
-      <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <emphasis effect="italic">n</emphasis> modulo 12, type <emphasis effect="bold">mod(<emphasis effect="italic">n</emphasis>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.42</link>.</para>
+      <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <emphasis effect="italic">n</emphasis> modulo 12, type <emphasis effect="bold">mod(<emphasis effect="italic">n</emphasis>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.43</link>.</para>
       <figure id="fig-00004">
         <media alt="Insert Alt Text">
         <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_003.jpg"/>
@@ -136,7 +136,7 @@
       <para id="para-00034">If it is 4:00 now, what time was it 67 hours ago?</para>
       </problem>
       <solution id="sol-00003">
-      <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047">Figure 3.43</link>.</para>
+      <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047">Figure 3.44</link>.</para>
       <figure class="numbered" id="fig-00003">
       <media alt="An analog clock with the hour hand pointing to 4. A counterclockwise arrow around the clock is labeled negative 7 hours.">
       <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_002.jpg"/>
