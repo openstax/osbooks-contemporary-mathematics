@@ -6,6 +6,313 @@
     <md:uuid>311c4d5d-2a52-4588-829f-00dcad5e546c</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001"/>
-  </content>
-</document>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_12_01_001.jpg"/>
+    </media>
+    <caption>Graph showing people connected and maybe indicating a cell phone such as the one given herefrom creative commons about network digital marketing.</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Identify parts of a graph.</item>
+    <item>Model applications of graph basics.</item>
+    </list>
+    </section>
+    <para id="para-00002">When you hear the word <emphasis effect="italic">graph</emphasis> what comes to mind? You might think of the <emphasis effect="italic">xy</emphasis>-coordinate system you learned about in an algebra class, or you mightthink of the line graphs and bar charts that are used to display data in news reports. The graphs we discuss in this chapter are probably very different from what you think of as a graph. They look like a bunch of dots connected by short line segments. The dots represent a group of objects and the line segments represent the connections, or relationships, between them. The objects might be bus stops, computers, Snapchat accounts, family members, or any other objects that have direct connections to each other. The connections can be physical or virtual, formal or casual, scientific or social. Regardless of the kind of connections, the purpose of the graph is to help us visualize the structure of the entire network to better understand the interactions of the objects within it.</para>
+    <section id="sect-00002">
+    <title>Parts of a Graph</title>
+    <para id="para-00003">In a <term id="term-00001">graph</term>, the objects are represented with dots and their connections are represented with lines like those in Figure 12.1. Figure 12.1 displays a <term id="term-00002">simple graph</term> or graph labeled <emphasis effect="italic">G</emphasis> and <term id="term-00003">a multigraph</term> labeled <emphasis effect="italic">H</emphasis>. The dots are called <term id="term-00004">vertices</term>, A vertex is one object of a set of objects, some of which may be connected. We often label vertices with letters. For example, Graph <emphasis effect="italic">G</emphasis> has vertices <emphasis effect="italic">a, b, c</emphasis>, and <emphasis effect="italic">d</emphasis>, and Multigraph <emphasis effect="italic">H</emphasis> has vertices, <emphasis effect="italic">e, f, g</emphasis>, and <emphasis effect="italic">h</emphasis>. The line segment or connection joining two vertices is an <term id="term-00005">edge</term>. <emphasis effect="italic">H</emphasis> is considered a multigraph because it has a double edge between <emphasis effect="italic">f</emphasis> and <emphasis effect="italic">h</emphasis>, and a double edge between <emphasis effect="italic">h</emphasis> and <emphasis effect="italic">g</emphasis>. Another reason <emphasis effect="italic">H</emphasis> is called a multigraph is that it has a <term id="term-00006">loop</term> connecting vertex <emphasis effect="italic">e</emphasis> to itself; a loop is an edge that joins a vertex to itself. Loops and double edges are not allowed in a simple graph.</para>
+    <para id="para-00004">To sum up, a simple graph is a collection of vertices and any edges that may connect them such that every edge connects two vertices with no loops and no two vertices joined by more than one edge. A multigraph is a graph in which there may be loops or pairs of vertices that are joined by more than one edge. In this chapter, most of our work will be with simple graphs, which we will call graphs for convenience.</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_001.png"/>
+    </media>
+    <caption>A Graph and a Multigraph</caption>
+    </figure>
+    <para id="para-00005">It is not necessary for the edges in a graph to be straight. In fact, you can draw an edge any way you want. In graph theory, the focus is on which vertices are connected, not how the connections are drawn (see Figure 12.2). In a graph, each edge can be named by the two letters of the associated vertices. The four edges in graph<emphasis effect="italic">X</emphasis> in Figure 12.2 are <emphasis effect="italic">ab, ac, ad</emphasis>, and <emphasis effect="italic">ae</emphasis>. The order of the letters is not important when you name the edge of a graph. For example, <emphasis effect="italic">ab</emphasis> refers to the same edge as <emphasis effect="italic">ba</emphasis>.</para>
+    <note class="check-point" id="note-00001">
+    <para id="para-00006"><emphasis effect="italic">A graph may have vertices that are not joined to other vertices by edges such asvertex f in Graph X in Figure 12.2, but any edge must have a vertex at each end.</emphasis></para>
+    </note>
+    <figure id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_002.png"/>
+    </media>
+    <caption>Different Representations of the Same Graph</caption>
+    </figure>
+    <example id="exam-00001">
+    <title>Identifying Edges and Vertices</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007">Name all the vertices and edges of graph <emphasis effect="italic">F</emphasis> in Figure 12.3.</para>
+    <figure id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_003.png"/>
+    </media>
+    <caption>Graph <emphasis effect="italic">F</emphasis></caption>
+    </figure>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00008">The vertices are <emphasis effect="italic">v, w, x, y</emphasis>, and <emphasis effect="italic">z</emphasis>. The edges are <emphasis effect="italic">vw, vx, wx, wz, xy</emphasis>, and <emphasis effect="italic">xz</emphasis>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="check-point" id="note-00002">
+    <para id="para-00009"><emphasis effect="italic">When listing the vertices and edges in a graph, work in alphabetical order to avoid accidentally listing the same item twice. When you are finished, count the number of vertices or edges you listed and compare that to the number of vertices or edges on the graph to ensure you didn’t miss any.</emphasis>
+    </para>
+    </note>
+    <note class="your-turn" id="note-00003">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00010"><link class="os-embed" url="#exercise/CM-C12-M1-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00011">Since the purpose of a graph is to represent the connections between objects, it is very important to know if two vertices share a common edge. The two vertices at either end of a given edge are referred to as <term id="term-00007">neighboring</term>, or <term id="term-00008">adjacent</term>. For example, in Figure 12.3, vertices <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">w</emphasis> are adjacent, but vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">w</emphasis> are not.</para>
+    <example id="exam-00002">
+    <title>Identifying Vertices That Are Not Adjacent</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00012">Name all the pairs of vertices of graph <emphasis effect="italic">F</emphasis> in Figure 12.3 that are <emphasis effect="italic">not</emphasis> adjacent.</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00013">The pairs of vertices that are not adjacent in graph <emphasis effect="italic">F</emphasis> are <emphasis effect="italic">v</emphasis> and <emphasis effect="italic">y, v</emphasis> and <emphasis effect="italic">z, w</emphasis> and <emphasis effect="italic">y</emphasis>, and <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">z</emphasis>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CM-C12-M1-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="people-mathematics" id="note-00005">
+    <title>Sergey Brin and Laurence Page</title>
+    <para id="para-00015">The “Google boys,” Sergey Brin and Laurence Page, transformed the World Wide Web in 1998 when they used the mathematics of graph theory to create an algorithm called Page Rank, which is known as the Google Search Engine today. The two computer scientists identified webpages as vertices and hyperlinks on those pages as edges because hyperlinks connect one website to the next. The number of edges influences the ranking of a website on the Google Search Engine because the websites with more links to “credible sources” are ranked higher. <link url="https://openstax.org/r/The_Graph_Theory"/>("Page Rank: The Graph Theory-based Backbone of Google,"<link/> September 20, 2011, Cornell University, Networks Blog,)</para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Analyzing Geographical Maps with Graphs</title>
+    <!--<figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_**.png"/>
+    </media>
+    <caption>[caption TK] (credit: XX)</caption>
+    </figure>-->
+    <para id="para-00016">When graphs are used to model and analyze real world applications, the number of edges that meet at a particular vertex is important. For example, a graph may represent the direct flight connections for a particular airport as in Figure 12.5. Representing the connections with a graph rather than a map shifts the focus away from the physical distances and toward which airports are connected. In Figure 12.5, the vertices are the airports, and the edges are the direct flight paths. The number of flight connections between a particular airport and other South Florida airports is the number of edges meeting at a particular vertex. For example, Key West has directflights to three of the five airports on the graph. In graph theory terms, we would say that vertex EYW has <term id="term-00009">degree</term> 3. The degree of a vertex is the number of edges that connect to that vertex.</para>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_005.png"/>
+    </media>
+    <caption>Direct Flights between South Florida Airports</caption>
+    </figure>
+    <example id="exam-00003">
+    <title>Determining the Degree of a Vertex</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00017">Determine the degree of each vertex of graph <emphasis effect="italic">J</emphasis> in Figure 12.6. If graph <emphasis effect="italic">J</emphasis> represents direct flights between a set of airports, do any of the airports have direct flights to two or more of the other cities on the graph?</para>
+    <figure id="fig-00006">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_006.png"/>
+    </media>
+    <caption>Graph <emphasis effect="italic">J</emphasis></caption>
+    </figure>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00018">For each vertex, count the number of edges that meet at that vertex. This value is the degree of the vertex. In Figure 12.7, the dashed edges indicate the edges meet at the marked vertex.</para>
+    <figure id="fig-00007">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_007.png"/>
+    </media>
+    <caption>Degrees of Vertices of Graph <emphasis effect="italic">J</emphasis></caption>
+    </figure>
+    <para id="para-00019">Vertex <emphasis effect="italic">a</emphasis> has degree 3, vertex <emphasis effect="italic">b</emphasis> has degree 1, vertices <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">d</emphasis> each have degree 2, and vertex <emphasis effect="italic">e</emphasis> has degree 0. Airports <emphasis effect="italic">a, c, </emphasis> and <emphasis effect="italic"> d</emphasis> have direct flights to 2 or more of the other airports.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CM-C12-M1-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00021">Graphs are also used to analyze regional boundaries. The states of Utah, Colorado, Arizona, and New Mexicoall meet at a single point known as the “four corners,” which is shown in the map in Figure 12.8.
+    </para>
+    <figure id="fig-00008">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_008.png"/>
+    </media>
+    <caption>Map of the Four Corners</caption>
+    </figure>
+    <para id="para-00022">In Figure 12.9, each vertex represents one of these states, and each edge represents a shared border. States like Utah and New Mexico that meet at only a single point are <emphasis effect="italic">not</emphasis> considered to have a shared border. By representing this map as a graph, where the connections are shared borders,we shift our perspective from physical attributes such as shape, size and distance, toward the existence of the relationship of having a shared boundary.</para>
+    <figure id="fig-00009">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_009.png"/>
+    </media>
+    <caption>Graph of the Shared Boundaries of Four Corners States</caption>
+    </figure>
+    <example id="exam-00004">
+    <title>Graphing the Midwestern States</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00023">A map of the Midwest is given in Figure 12.10. Create a graph of the region in which each vertex represents a state and each edge represents a shared border.</para>
+    <figure id="fig-00010">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_010.png"/>
+    </media>
+    <caption>Map of Midwestern States</caption>
+    </figure>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00024"><emphasis effect="bold">Step 1:</emphasis> For each state, draw and label a vertex as in Figure 12.11.</para>
+    <figure id="fig-00011">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_011.png"/>
+    </media>
+    <caption>Vertex Assigned to Each Midwestern State</caption>
+    </figure>
+    <para id="para-00025"><emphasis effect="bold">Step 2:</emphasis> Draw edges between any two states that share a common land border as in Figure 12.12.</para>
+    <figure id="fig-00012">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_012.png"/>
+    </media>
+    <caption>Edge Assigned to Each Pair of Midwestern States with Common Border</caption>
+    </figure>
+    <para id="para-00026">The graph is given in Figure 12.13.</para>
+    <figure id="fig-00013">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_01_013.png"/>
+    </media>
+    <caption>Final Graph Representing Common Boundaries Between Midwestern States</caption>
+    </figure>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C12-M1-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00008">
+    <para id="para-00028"><link url="https://openstax.org/r/Graph_Theory"/>Graph Theory: Create a Graph to Represent Common Boundaries on a Map<link/></para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Graphs of Social Interactions</title>
+    <para id="para-00029">Geographical maps are just one of many real world scenarios which graphs can depict. Any scenario in which objects are connected to each other can be represented with a graph, and the connections don’t have to be physical. Just think about all the connections you have to people around the world through social media! Who is in your network of Tweeter followers? Whose Snap Chat network are you connected to?</para>
+    <example id="exam-00005">
+    <title>Graphing Chloe’s <emphasis effect="italic">Roblox</emphasis><sup>TM</sup> Friends</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00030">Chloe is interested to know how many people in her network of <emphasis effect="italic">Roblox</emphasis> friends are also friends with each other so she polls them. Explain how a graph or multigraph might be drawn to model this scenario by identifying the objects that could be represented by vertices and the connections that could be represented by edges. Indicate whether a graph or a multigraph would be a better model.</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00031">The objects that are represented with vertices are <emphasis effect="italic">Roblox</emphasis> friends. A <emphasis effect="italic">Roblox</emphasis> friendship between two friends will be represented as an edge between a pair of vertices. This is best represented as a graph because it is not possible for two friends to be linked twice in <emphasis effect="italic">Roblox</emphasis>, they are either friends or they are not. Also, a player cannot be a friend to oneself, so there is no need for a loop.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C12-M1-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00010">
+    <title>Using Graph Theory to Reduce Internet Fraud</title>
+    <para id="para-00033">Could graphs be used to reduce Internet fraud? At least one researcher thinks so. Graph theory is used every day to analyze our behavior, particularly on social network sites. Alex Buetel, a computer scientist from Carnegie Mellon University in Pittsburgh, Pennsylvania, published a research paper in 2016 that discussed the possibilities of distinguishing the normal interactions from those that might be fraudulent using graph theory. Buetel wrote, “To more effectively model and detect abnormal behavior, we model <emphasis effect="italic">how</emphasis> fraudsters work, catching previously undetected fraud on Facebook, Twitter, and Tencent Weibo and improving classification accuracy by up to 68%.” In the same paper, the researcher discusses how similar techniques can be used to model many other applications and even, “predict <emphasis effect="italic">why</emphasis> you like a particular movie.” (Alex Beutel, “<link url="https://openstax.org/r/reports_archive"/>User Behavior Modeling with Large-Scale Graph Analysis,<link/>” May 2016, CMU-CS-16-105, Computer Science Department, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA)</para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00005">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00034"><link class="os-embed" url="#exercise/CM-C12-M1-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C12-M1-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C12-M1-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C12-M1-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C12-M1-Q010"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00006">
+    <title>Exercises</title>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00039"><link class="os-embed" url="#exercise/CM-C12-M1-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C12-M1-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C12-M1-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C12-M1-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00043"><link class="os-embed" url="#exercise/CM-C12-M1-Q015"/></para>
+    </problem>
+    </exercise> 
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C12-M1-Q016"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00007">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00002">
+    <item>Vertex</item>
+    <item>Edge</item>
+    <item>Loop</item>
+    <item>graph (simple graph)</item>
+    <item>multigraph</item>
+    <item>adjacent (neighboring)</item>
+    <item>degree</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00008">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00003">
+    <item>Graphs and multigraphs represent objects as vertices and the relationships between the objects as edges.</item>
+    <item>The degree of a vertex is the number of edges that meet it and the degree can be zero.</item> 
+    <item>An edge must have a vertex at each end.</item> 
+    <item>Multigraphs may contain loops and double edges, but simple graphs may not.</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00009">
+    <title>Videos</title>
+    <para id="para-00045"><link url="https://openstax.org/r/Graph_Theory">Graph Theory: Create a Graph to Represent Common Boundaries on a Map</link></para>
+    </section>
+    </content>
+    </document>
