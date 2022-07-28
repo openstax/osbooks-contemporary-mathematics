@@ -5,6 +5,317 @@
     <md:content-id>m00114</md:content-id>
     <md:uuid>def9a53d-b8b7-4999-b559-9af7efc89a5c</md:uuid>
   </metadata>
-  <content><para id="para-00001"/>
-  </content>
-</document>
+  <content>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_13_03_001.jpg"/>
+    </media>
+    <caption>[caption TK] (Credit: modification of work “Women wearing face masks in Copenhagen” by Kristoffer Trolle/Flickr, CC BY 2.0)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Compute the mathematical factors utilized in concentrations/dosages of drugs.</item>
+    <item>Describe the history of validating effectiveness of a new drug.</item>
+    <item>Describe how mathematical modeling is used to track the spread of a virus.</item>
+    </list>
+    </section>
+    <para id="para-00002">The pandemic that rocked the world starting in 2020 turned attention to finding a cure for the Covid-19 strain into a world race and dominated conversations from major news channels to households around the globe. News reports decreeing the number of new cases and deaths locally as well as around the world were part of the daily news for over a year and progress on vaccines soon followed. How was a vaccine able to be found so quickly? Is the vaccine safe? Is the vaccine effective? These and other questions have been raised through communities near and far and some remain debatable. However, we can educate ourselves on the foundations of these discussions and be more equipped to analyze new information related to these questions as it becomes available.</para>
+    <section id="sect-00002">
+    <title>Concentrations and Dosages of Drugs</title>
+    <para id="para-00003">Consider any drug and the recommended dosage varies based on several factors such as age, weight, and degree of illness of a person. Hospitals and medical dispensaries do not stock every possible needed concentration of medicines. Drugs that are delivered in liquid form for intravenous (IV) methods in particular can be easily adjusted to meet the needs of a patient. Whether administering anesthesia prior to an operation or administering a vaccine, calculation of the concentration of a drug is needed to ensure the desired amount of medicine is delivered.</para>
+    <para id="para-00004">The formula to determine the volume needed of a drug in liquid form is a relatively simple formula. The volume needed is calculated based on the required dosage of the drug with respect to the concentration of the drug. For drugs in liquid form, the concentration is noted as the amount of the drug per the volume of the solution that the drug is suspended in which is commonly measured in g/mL or mg/mL.</para>
+    <para id="para-00005">Suppose a doctor writes a prescription for 6 mg of a drug, which a nurse calculates when retrieving the needed prescription from their secure pharmaceutical storage space. On the shelves, the drug is available in liquid form as 2 mg per mL. This means that 1 mg of the drug is found in 0.5 mL of the solution. Multiplying 6 mg by 0.5 mL yields 3 mL, which is the volume of the prescription per single dose.</para>
+    <note class="formula" id="note-00001">
+    <para id="para-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Volume needed</mtext><mo>=</mo><mo stretchy="false">(</mo><mtext>medicine dosage required</mtext><mo stretchy="false">)</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mtext>weight of drug by volume</mtext><mo stretchy="false">)</mo></mrow></math>.</para>
+    </note>
+    <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">A common calculation for the weight of a liquid drug is measured in grams of a drug per 100 mL of solution and is also called the percentage weight by volume measurement and labeled as % w/v or simply w/v.</para>
+    <note class="check-point" id="note-00002">
+    <para id="para-00008"><emphasis effect="italic">Note that the units for a desired dose of a drug and the units for a solution containing the drug or pill form of the drug must be the same. If they are not the same, the units must first be converted to be measured in the same units.</emphasis></para>
+    </note>
+    <para id="para-00009">Suppose you visit your doctor with symptoms of an upset stomach and unrelenting heartburn. One possible recourse is sodium bicarbonate, which aids in reducing stomach acid.</para>
+    <example id="exam-00001">
+    <title>Calculating the Quantity in a Mixture</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">How much sodium bicarbonate is there in a 250 mL solution of 1.58% w/v sodium bicarbonate?</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00011"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.58</mn><mi>%</mi><mspace width="0.28em"/><mtext>w</mtext><mo>/</mo><mtext>v</mtext><mo>=</mo><mn>1.58</mn><mspace width="0.28em"/><mtext>g</mtext></mrow></math> sodium bicarbonate in 100 mL; If there is 250 mL of the solution, we have 2.5 times as much sodium bicarbonate as in 100 mL. Thus, we multiply 1.58 by 2.5 to yield 3.95 g sodium bicarbonate in 250 mL solution.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CM-C13-M3-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Calculating the Quantity of Pills Needed</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00013">A doctor prescribes 25.5 mg of a drug to take orally per day and pills are available in 8.5 mg. How many pills will be needed each day?</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00014">The prescription and the pills are in the same units which means no conversions are needed. We can divide the units of the drug prescribed by the units in each pill: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>25.5</mn><mo>/</mo><mn>8.5</mn><mo>=</mo><mn>3</mn></mrow></math>. So, 3 pills will be needed each day.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00015"><link class="os-embed" url="#exercise/CM-C13-M3-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Calculating the Drug Dose in Milligrams, Based on Patient Weight</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00016">A patient is prescribed 2 mg/kg of a drug to be delivered intramuscularly, divided into 3 doses per day. If the patient weighs 45 kg, how many milligrams of the drug should be given per dose?</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00017"><emphasis effect="bold">Step 1:</emphasis> Calculate the total daily dose of the drug based on the patient’s weight (measured in kilograms):</para>
+    <para id="para-00018"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mspace width="0.28em"/><mtext>mg</mtext><mo>/</mo><mtext>kg</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>45</mn><mspace width="0.28em"/><mtext>kg</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>90</mn><mspace width="0.28em"/><mtext>mg</mtext></mrow></math></para>
+    <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Divide the total daily dose by the number of doses per day:</para>
+    <para id="para-00020"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>90</mn><mspace width="0.28em"/><mtext>mg</mtext><mo>/</mo><mn>3</mn><mo>=</mo><mn>30</mn><mspace width="0.28em"/><mtext>mg</mtext></mrow></math></para>
+    <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">The patient should receive 30 mg of the drug in each dose.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00022"><link class="os-embed" url="#exercise/CM-C13-M3-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="check-point" id="note-00006">
+    <para id="para-00023"><emphasis effect="italic">Note that the units for a patient’s weight must be compatible with the units used in the medicine measurement. If they are not the same, the units must first be converted to be measured in the same units.</emphasis></para>
+    </note>
+    <example id="exam-00004">
+    <title>Calculating the Drug Dose in Milliliters, Based on Patient Weight</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00024">A patient is prescribed 2 mg/kg of a drug to be delivered intramuscularly, divided into 3 doses per day. If the drug is available in 20 mg/mL and the patient weighs 60 kg, how many milliliters of the drug should be given per dose?</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00025"><emphasis effect="bold">Step 1:</emphasis> Calculate the total daily dose of the drug (measured in milligrams) based on the patient’s weight (measured in kilograms):</para>
+    <para id="para-00026"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mspace width="0.28em"/><mtext>mg</mtext><mo>/</mo><mtext>kg</mtext><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>60</mn><mspace width="0.28em"/><mtext>kg</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>120</mn><mspace width="0.28em"/><mtext>mg</mtext></mrow></math></para>
+    <para id="para-00027" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Calculate the volume in each dose:</para>
+    <para id="para-00028"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>120</mn><mspace width="0.28em"/><mtext>mg daily total</mtext><mo stretchy="false">)</mo><mo>/</mo><mo stretchy="false">(</mo><mn>3</mn><mspace width="0.28em"/><mtext>doses a day</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>40</mn><mspace width="0.28em"/><mtext>mg per dose</mtext></mrow></math></para>
+    <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Calculate the volume based on the strength of the stock:</para>
+    <para id="para-00030"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mo stretchy="false">(</mo><mtext>prescribed dose needed</mtext><mo stretchy="false">)</mo><mo>/</mo><mo stretchy="false">(</mo><mtext>stock dose</mtext><mo stretchy="false">)</mo><mo>=</mo><mtext>volume</mtext></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mn>40</mn><mspace width="0.28em"/><mtext>mg per dose</mtext><mo stretchy="false">)</mo><mo>/</mo><mo stretchy="false">(</mo><mn>20</mn><mspace width="0.28em"/><mtext>mg</mtext><mo>/</mo><mtext>mL</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mspace width="0.28em"/><mtext>mL</mtext></mtd></mtr></mtable></math></para>
+    <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">The patient should receive 2 mL of the stock drug in each dose.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C13-M3-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew" id="note-00008">
+    <title>Math Statistics from the CDC</title>
+    <para id="para-00033">The Centers for Disease Control and Prevention (CDC) states that about half the U.S. population in 2019 used at least one prescription drug each month, and about 25% of people used three or more prescription drugs in a month. The resulting overall collective impact of the pharmaceutical industry in the United States exceeded $1.3 trillion a year prior to the 2020 pandemic.</para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Validating Effectiveness of a New Vaccine</title>
+    <para id="para-00034">The process to develop a new vaccine and be able to offer it to the public typically takes 10 to 15 years. In the United States, the system typically involves both public and private participation in a process. During the 1900s, several vaccines were successfully developed, including the following: polio vaccine in the 1950s and chickenpox vaccine in the 1990s. Both of these vaccines took years to be developed, tested, and available to the public. Knowing the typical timeline for a vaccine to move from development to administration, it is not surprising that some people wondered how a vaccine for Covid-19 was released in less than a year’s time.</para>
+    <para id="para-00035">Lesser known is that research on coronavirus vaccines has been in process for approximately 10 years. Back in 2012, concern over the Middle Eastern respiratory syndrome (MERS) broke out and scientists from all over the world began working on researching coronaviruses and how to combat them. It was discovered that the foundation for the virus is a spike protein, which, when delivered as part of a vaccine, causes the human body to generate antibodies and is the platform for coronavirus vaccines.</para>
+    <para id="para-00036">When the Covid-19 pandemic broke out, Operation Warp Speed, fueled by the U.S. federal government and private sector, poured unprecedented human resources into applying the previous 10 years of research and development into targeting a specific vaccine for the Covid-19 strain.</para>
+    <note class="people-mathematics" id="note-00009">
+    <title>Shibo Jiang</title>
+    <figure id="fig-00002">
+    <code/>
+    <!--<media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/**"/>
+    </media>-->
+    <caption>Shibo Jiang (credit: final TK)</caption>
+    </figure>
+    <para id="para-00037">Dr. Shibo Jiang, MD, PhD, is co-director the Center for Vaccine Development at the Texas Children’s Hospital and head of a virology group at the New York Blood Center. Together with his colleagues, Jiang has been working on vaccines and treatments for a range of viruses and infections including influenzas, HIV, Sars, HP,V and more recently Covid-19. His work has been recognized around the world and is marked with receiving grants amounting to over $20 million from U.S. sources as well as the same from foundations in China, producing patents in the United States and China for his antiviral products to combat world concerns.</para>
+    <para id="para-00038">Jiang has been a voice for caution in the search for a vaccine for Covid-19, emphasizing the need for caution to ensure safety in the development and deployment of a vaccine. His work and that of his colleagues for over 10 years on other coronaviruses paved the way for the vaccines that have been shared to combat the Covid-19 pandemic.</para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Mathematical Modeling to Track the Spread of a Vaccine</title>
+    <para id="para-00039">With a large number of people receiving a Covid-19 vaccine, the concern at this time is how to create an affordable vaccine to reach people all over the world. If a world solution is not found, those without access to a vaccine will serve as incubators to variants that might be resistant to the existing vaccines.</para>
+    <para id="para-00040">As we work to vaccinate the world, attention continues with tracking the spread of the Covid-19 and its multiple variants. <emphasis effect="bold">Mathematical modeling</emphasis> is the process of creating a representation of the behavior of a system using mathematical language. Digital mathematical modeling plays a key role in analyzing the vast amounts of data reported from a variety of sources such as hospitals and apps on cell phones.</para>
+    <para id="para-00041">When attempting to represent an observed quantitative data set, mathematical models can aid in finding patterns and concentrations as well as aid in predicting growth or decline of the system. Mathematical models can also be useful to determine strengths and vulnerabilities of a system, which can be helpful in arresting the spread of a virus.</para>
+    <para id="para-00042">Chapter 12 on graph theory explores one such method of mathematical modeling using paths and circuits. Cell phones have been helpful in tracking the spread of the Covid-19 virus using apps regulated by regional government public health authorities to collect data on the network of people exposed to an individual who tests positive for the Covid-19 virus.</para>
+    <note class="people-mathematics" id="note-00010">
+    <title>Gladys West</title>
+    <figure id="fig-00003">
+    <code/>
+    <!--<media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/**"/>
+    </media>-->
+    <caption>Gladys West (credit: final TK)</caption>
+    </figure>
+    <para id="para-00043">Dr. Gladys West is a mathematician and hidden figure with a rich résumé of accomplishments spanning Air Force applications and work at NASA. Born in 1930, West rose and excelled both academically and in her professional life at a time when Black females were not embraced in STEM positions. One of her many accomplishments is the Global Positioning System (GPS) used on cell phones for driving directions.</para>
+    <para id="para-00044">West began work as a human computer, someone who computes mathematical computations by hand. Considering the time and complexity of some calculations, she became involved in programming computers to crunch computations. Eventually, West created a mathematical model of the earth with detail and precision that made GPS possible, which is utilized in an array of devices from satellites to cell phones. The next time you tag a photo or obtain driving directions, you are tapping into the mathematical modeling of the earth that West is credited with developing.</para>
+    </note>
+    <para id="para-00045">Consider the following graph (Figure 13.13):</para>
+    <figure id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_13_01_001.png"/>
+    </media>
+    <caption>Contact Tracing for Math 111 Section 1</caption>
+    </figure>
+    <para id="para-00046">At the center of the graph, we find Alyssa, whom we will consider positive for a virus. Utilizing the technology of phone apps voluntarily installed on each of the individuals in the graph, tracking of the spread of the virus among the 6 individuals that Alyssa had direct contact with can be implemented, namely Suad, Rocio, Braeden, Soren, and Sandra.</para>
+    <para id="para-00047">Let’s look at José’s exposure risk as it relates to Alyssa. There are multiple paths connecting José with Alyssa. One path includes the following individuals: José to Mikaela to Nate to Sandra to Alyssa. This path contains a length of 4 units, or people, in the contact tracing line. There are 2 more paths connecting José to Alyssa. A second path of the same length consists of José to Lucia to Rocio to Braeden to Alyssa. Path 3 is the shortest and consists of José to Lucia to Rocio to Alyssa. Tracking the spread of positive cases in the line between Alyssa and José aids in monitoring the spread of the infection.</para>
+    <para id="para-00048">Now consider the complexity of tracking a pandemic across the nation. Graphs such as the one above are not practical to be drawn on paper but can be managed by computer programs capable of computing large volumes of data. In fact, a computer-generated mathematical model of contact tracing would look more like a sphere with paths on the exterior as well as on the interior. Mathematical modeling of contact tracing is complex and feasible through the use of technology.</para>
+    <example id="exam-00005">
+    <title>Using Mathematical Modeling</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00049">For the following exercises, use the sample contact tracing graph to identify paths (Figure 13.14).</para>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_13_01_002.png"/>
+    </media>
+    <caption>Contact Tracing for ECON 250 Section 1</caption>
+    </figure>
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item>How many people have a path of length 2 from Jeffrey?</item>
+    <item>Find 2 paths between Kayla and Rohan.</item>
+    <item>Find the shortest path between Yara and Kalani. State the length and people in the path.</item>
+    </list>
+    </problem>
+    <solution id="sol-00005">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>5 (Lura, Naomi, Kalani, Vega, Yara)</item>
+    <item>Answers will vary. Two possible answers are as follows:
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+    <item>Kayla, Jeffrey, Rohan</item>
+    <item>Kayla, Lura, Yara, Lev, Vega, Uma, Kalani, Rohan</item>
+    </list></item>
+    <item>Length is 4. People in path = Yara, Lev, Vega, Uma, Kalani</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00011">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C13-M3-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00005">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C13-M3-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C13-M3-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C13-M3-Q008"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00006">
+    <title>Exercises</title>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C13-M3-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00055"><link class="os-embed" url="#exercise/CM-C13-M3-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C13-M3-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C13-M3-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C13-M3-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C13-M3-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00060"><link class="os-embed" url="#exercise/CM-C13-M3-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C13-M3-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C13-M3-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C13-M3-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00064"><link class="os-embed" url="#exercise/CM-C13-M3-Q019"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00007">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00005">
+    <item>concentrations/dosages of drugs</item>
+    <item>mathematical modeling</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00008">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00006">
+    <item>Computing volumes of prescription drugs in liquid and pill form</item>
+    <item>Validation of the effectiveness of a new drug</item>
+    <item>Mathematical modeling used to describe and track the spread of a virus</item>
+    </list>
+    </section>
+    <section class="formula-review" id="sect-00009">
+    <title>Formula</title>
+    <para id="para-00065"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Volume needed</mtext><mo>=</mo><mo stretchy="false">(</mo><mtext>medicine dosage required</mtext><mo stretchy="false">)</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mtext>weight of drug by volume</mtext><mo stretchy="false">)</mo></mrow></math>.</para>
+    </section>
+    <section class="projects" id="sect-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Project</title>
+    <para id="para-00066"><emphasis effect="bold">Vaccine Validation</emphasis></para>
+    <para id="para-00067">Validation of vaccines is a topic that exploded in the news when the Covid-19 pandemic spread across the world. As governments and organizations looked for a vaccine to curb the spread and minimize the severity of infection, concern was expressed by some for what appeared to be a quick discovery for a Covid-19 vaccine.</para>
+    <para id="para-00068">Conduct an Internet search to explore the following questions. Pay special attention to the sources you select to ensure that they are credible sources.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00007">
+    <item>Research the term <emphasis effect="italic">efficacy rates</emphasis>. Express what efficacy means in your own words.</item>
+    <item>Using a minimum of two sources, compose a well-developed paragraph describing what validation of a vaccine means.</item>
+    <item>Using a minimum of two sources, compose a well-developed paragraph sharing the steps in validating a vaccine.</item>
+    <item>Using a minimum of two sources, compose a well-developed paragraph describing how a vaccine is determined to be validated.</item>
+    <item>Using your research for Questions 1–3, write a summary paragraph sharing your reflections on the validation of the Covid-19 vaccine or on validating a vaccine in general. What key components did you learn? What would you like to learn more about related to validating a vaccine?</item>
+    </list>
+    </section>
+    </content>
+    </document>
