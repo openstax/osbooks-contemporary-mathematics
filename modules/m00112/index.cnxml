@@ -5,6 +5,443 @@
     <md:content-id>m00112</md:content-id>
     <md:uuid>91247c69-d5b4-432f-8825-8e17ed9ee042</md:uuid>
   </metadata>
-  <content><para id="para-00001"/>
-  </content>
-</document>
+  <content>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_13_01_001.jpg"/>
+    </media>
+    <caption>[caption TK] (Credit: “Sunflower Surprise” by frankieleon/Flickr, CC BY 2.0)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Identify and describe the golden ratio.</item>
+    <item>Identify and describe the Fibonacci sequence and its application to nature.</item>
+    <item>Apply the golden ratio and the Fibonacci sequence relationship.</item>
+    <item>Identify and compute golden rectangles.</item>
+    </list>
+    </section>
+    <para id="para-00002"><emphasis effect="italic">Art is the expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.</emphasis></para>
+    <para id="para-00003"><emphasis effect="italic">Oxford Dictionary</emphasis></para>
+    <para id="para-00004">Art, like other disciplines, is an area that combines talent and experience with education. While not everyone considers themselves well skilled to create art, there are mathematical relationships commonly found in artistic masterpieces that drive what is considered attractive to the eye. Nature is full of examples of these mathematical relationships.</para>
+    <para id="para-00005">Enroll in a cake decorating class and, when you learn how to create flowers out of icing, you will likely be directed as to the number of petals to use. Depending on the desired size of a rose flower, the recommendation for the number of petals to use is commonly 5, 8, or 13 petals. If learning to draw portraits, you may be surprised to learn that eyes are approximately halfway between the top of a person’s head and their chin. Studying architecture, we find examples of buildings that contain golden rectangles and ratios that add to the beautifying of the design. The Parthenon (Figure 13.3), which was built around 400 BC, as well as modern-day structures such the Washington Monument are two examples containing these relationships. These seemingly unrelated examples and many more highlight mathematical relationships that we associate with beauty in artistic form.</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_13_01_002.jpg"/>
+    </media>
+    <caption>[caption TK] (Credit: “Parthénon” by Julien Maury/Flickr, Public Domain Mark 1.0)</caption>
+    </figure>
+    <section id="sect-00002">
+    <title>Golden Ratio</title>
+    <para id="para-00006">The <term id="term-00001">golden ratio</term>, also known as the golden proportion, is a ratio aspect that can be found in beauty from nature to human anatomy as well as in golden rectangles that are commonly found in building structures. The golden ratio is expressed in nature from plants to parts of animal bodies of creatures such as the starfish, honeybees, seashells, and more. It is commonly noted by the Greek letter ϕ (pronounced “fee’). <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ϕ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math>, which has a decimal value approximately equal to 1.618.</para>
+    <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">Consider Figure 13.3: Note how the building is balanced in dimension and has a natural shape. The overall structure does not appear as if it is too wide or too tall in comparison to the other dimensions.</para>
+    <figure id="fig-00003">
+    <code/>
+    <!--<media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/**"/>
+    </media>-->
+    <caption>[caption TK] (credit: final TK)</caption>
+    </figure>
+    <para id="para-00008">The golden ratio has been used by artists through the years and can be found in art dating back to 3,000 BC. Leonardo da Vinci is considered one of the artists who mastered the mathematics of the golden ratio, which is prevalent in his artwork such as <emphasis effect="italic">Virtuvian Man.</emphasis> This famous masterpiece highlights the golden ratio in the proportions of an ideal body shape.</para>
+    <para id="para-00009">The golden ratio is approximated in several physical measurements of the human body and parts exhibiting the golden ratio are simply called golden. The ratio of a person’s height to the length from their belly button to the floor is ϕ or approximately 1.618. The bones in our fingers (excluding the thumb), are golden as they form a ratio that approximates ϕ. The human face also includes several ratios and those faces that are considered attractive commonly exhibit golden ratios.</para>
+    <example id="exam-00001">
+    <title>Using Golden Ratio and a Person’s Height</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">If a person’s height is 5 ft 6 in, what is the approximate length from their belly button to the floor rounded to the nearest inch, assuming the ratio is golden?</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00011"><emphasis effect="bold">Step 1:</emphasis> Convert the height to inches</para>
+    <para id="para-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mspace width="0.28em"/><mtext>ft</mtext><mspace width="0.28em"/><mn>6</mn><mspace width="0.28em"/><mtext>in</mtext><mo>=</mo><mn>66</mn><mspace width="0.28em"/><mtext>in</mtext></mrow></math></para>
+    <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Calculate the length from the belly button to the floor, <emphasis effect="italic">L</emphasis>.</para>
+    <para id="para-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mn>66</mn><mo>/</mo><mi>L</mi><mo>=</mo><mn>1.618</mn></mtd></mtr><mtr><mtd><mi>L</mi><mo>=</mo><mn>40.8</mn><mspace width="0.28em"/><mtext>in</mtext></mtd></mtr></mtable></math></para>
+    <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml">The length from the person’s belly button to the floor would be approximately 41 in.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00016"><link class="os-embed" url="#exercise/CM-C13-M1-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Fibonacci Sequence and Application to Nature</title>
+    <figure id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_13_01_004.jpg"/>
+    </media>
+    <caption>[caption TK] (Credit: “rilke4” by monchoohcnom/Flickr, Public Domain Mark 1.0)</caption>
+    </figure>
+    <para id="para-00017">The <term id="term-00002">Fibonacci sequence</term> can be found occurring naturally in a wide array of elements in our environment from the number of petals on a rose flower to the spirals on a pine cone to the spines on a head of lettuce and more. The Fibonacci sequence can be found in artistic renderings of nature to develop aesthetically pleasing and realistic artistic creations such as in sculptures, paintings, landscape, building design, and more. It is the sequence of numbers beginning with 1, 1, and each subsequent term is the sum of the previous two terms in the sequence (1, 1, 2, 3, 5, 8, 13, …).</para>
+    <para id="para-00018">The petal counts on some flowers are represented in the Fibonacci sequence. A daisy is sometimes associated with plucking petals to answer the question “They love me, they love me not.” Interestingly, a daisy found growing wild typically contains 13, 21, or 34 petals and it is noted that these numbers are part of the Fibonacci sequence. The number of petals aligns with the spirals in the flower family.</para>
+    <example id="exam-00002">
+    <title>Applying the Fibonacci Sequence to Rose Petals</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00019">Suppose you were creating a rose out of icing, assuming a Fibonacci sequence in the petals, how many petals would be in the row following a row containing 13 petals?</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00020">The number of petals on a rose is often modeled with the numbers in the Fibonacci sequence, which is 1, 1, 2, 3, 5, 8, 13,…, where the next number in the sequence is the sum of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>+</mo><mn>13</mn><mo>=</mo><mn>21</mn></mrow></math>. There would be 21 petals on the next row of the icing rose.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C13-M1-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Golden Ratio and the Fibonacci Sequence Relationship</title>
+    <para id="para-00022">Mathematicians for years have explored patterns and applications to the world around us and continue to do so today. One such pattern can be found in ratios of two adjacent terms of the Fibonacci sequence.</para>
+    <para id="para-00023">Recall that the Fibonacci sequence = 1, 1, 3, 5, 8, 13,… with 5 and 8 being one example of adjacent terms. When computing the ratio of the larger number to the preceding number such as 8/5 or 13/8, it is fascinating to find the golden ratio emerge. As larger numbers from the Fibonacci sequence are utilized in the ratio, the value more closely approaches ϕ, the golden ratio.</para>
+    <example id="exam-00003">
+    <title>Finding Golden Ratio in Adjacent Fibonacci Terms</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00024">The 24th Fibonacci number is 46,368 and the 25th is 75,025. Show that the ratio of the 25th and 24th Fibonacci numbers is approximately ϕ. Round your answer to the nearest ten thousandth.</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00025"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>75,025</mn><mo>/</mo><mn>46,368</mn><mo>=</mo><mn>1.618</mn></mrow></math>; The ratio of the 25th and 24th term is approximately equal to the value of ϕ rounded to the nearest ten thousandth, 1.618.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00026"><link class="os-embed" url="#exercise/CM-C13-M1-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_13_01_005.jpg"/>
+    </media>
+    <caption>[caption TK] (Credit: “Giza Pyramids” by Vincent Brown/Flickr, CC BY 2.0)</caption>
+    </figure>
+    </section>
+    <section id="sect-00005">
+    <title>Golden Rectangles</title>
+    <para id="para-00027">Turning our attention to man-made elements, the golden ratio can be found in architecture and artwork dating back to the ancient pyramids in Egypt (Figure 13.6) to modern-day buildings such as the UN headquarters. The ancient Greeks used <emphasis effect="bold">golden rectangles</emphasis>—any rectangles where the ratio of the length to the width is the golden ratio—to create aesthetically pleasing as well as solid structures, with examples of the golden rectangle often being used multiple times in the same building such as the Parthenon. Golden rectangles can be found in twentieth-century buildings as well, such as the Washington Monument.</para>
+    <para id="para-00028">Looking at another man-made element, artists paintings often contain golden rectangles. Well-known paintings such as Leonardo da Vinci’s <emphasis effect="italic">The Last Supper</emphasis> and the <emphasis effect="italic">Vitruvian Man</emphasis> contain multiple golden rectangles as does many of da Vinci’s masterpieces.</para>
+    <para id="para-00029">Whether framing a painting or designing a building, the golden rectangle has been widely utilized by artists and are considered to be the most visually pleasing rectangles.</para>
+    <example id="exam-00004">
+    <title>Finding Golden Rectangle in Frames</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00030">A frame has dimensions of 8 in by 6 in. Calculate the ratio of the sides rounded to the nearest ten-thousandth and determine if the size approximates a golden rectangle.</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00031">8/6 = 1.333; A golden rectangle’s ratio is approximately 1.618. The frame dimensions are close to a golden rectangle.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C13-M1-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="people-mathematics" id="note-00005">
+    <title>M.C. Escher</title>
+    <figure id="fig-00006">
+    <code/>
+    <!--<media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/**"/>
+    </media>-->
+    <caption>M.C. Escher (credit: final TK)</caption>
+    </figure>
+    <para id="para-00033">Mauritis Cornelis Escher is a Dutch-born world-famous graphic artist and his work can be found in murals, stamps, wallpaper designs, illustrations in books, and even carpets. Over his lifetime, M.C. Escher created hundreds of lithographs and wood engravings as well as more than 2,000 sketches.</para>
+    <para id="para-00034">Escher’s work is characterized with infusion of geometric designs that obey most of the mathematical rules. If you study his work closely, you can see where he breaks a mathematical relationship to create famous illusions such as soldiers marching around the top of a square turret where the soldiers appear to be always going uphill but are contained on a single set of stairs in a square. Look closely and the golden ratio as well as golden rectangles abound in Escher’s work.</para>
+    <para id="para-00035">Like many famous people, M.C. Escher did not find success in his early school years. Before finding success, Escher failed his final school exam and quit a short stint in architecture. Finding a graphic arts teacher who recognized Escher’s talent he completed art school and enjoyed traveling through Italy, where he found much of his inspiration for his work.</para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00006">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C13-M1-Q005"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C13-M1-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C13-M1-Q007"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00007">
+    <title>Exercises</title>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00039"><link class="os-embed" url="#exercise/CM-C13-M1-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C13-M1-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C13-M1-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C13-M1-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00043"><link class="os-embed" url="#exercise/CM-C13-M1-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C13-M1-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C13-M1-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00046"><link class="os-embed" url="#exercise/CM-C13-M1-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C13-M1-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00048"><link class="os-embed" url="#exercise/CM-C13-M1-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C13-M1-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C13-M1-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C13-M1-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C13-M1-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C13-M1-Q022"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C13-M1-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00055"><link class="os-embed" url="#exercise/CM-C13-M1-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C13-M1-Q025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C13-M1-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C13-M1-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C13-M1-Q028"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00008">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00002">
+    <item>golden ratio</item>
+    <item>Φ</item>
+    <item>Fibonacci sequence</item>
+    <item>golden rectangle</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00009">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00003">
+    <item>Know the value of the golden ratio, ϕ</item>
+    <item>Recognize the Fibonacci sequence and be able to find subsequent terms</item>
+    <item>State some naturally occurring applications of the Fibonacci sequence</item>
+    <item>State some naturally occurring applications of the golden ratio</item>
+    <item>Be able to determine if a rectangle is golden</item>
+    <item>State some artistic applications of the golden rectangle</item>
+    </list>
+    </section>
+    <section class="projects" id="sect-00010">
+    <title>project</title>
+    <para id="para-00060"><emphasis effect="bold">Lucas Sequence and Fibonacci Sequence</emphasis></para>
+    <para id="para-00061">The Lucas numbers bear some similarity to the Fibonacci numbers and exhibit a stronger link to the golden ration. Edouard Lucas is credited with naming the Fibonacci numbers and the Lucas numbers were so named in his honor. The Lucas numbers play a role in finding prime numbers that are utilized in encrypting data for actions such as using your debit card to obtain money at a cash machine or when making a credit card purchase for point of sale as well as when shopping online.</para>
+    <para id="para-00062">Complete the following questions to explore numbers in the Lucas sequence as well as their relationships to the numbers in the Fibonacci sequence.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>Conduct an Internet search to find out what a Lucas number is and how the Lucas numbers are related to the Fibonacci numbers.<newline/>
+    Answer: Answers will vary.</item>
+    <item>What are the first two numbers in the Lucas sequence?<newline/>
+    Answer: 2, 1</item>
+    <item>Describe how the next number in the Lucas sequence is determined and compare this to how the next number is determined in the Fibonacci sequence.<newline/>
+    Answer: Add the two previous numbers to obtain the next number in the Lucas sequence. The same pattern for finding the next number is used with the Fibonacci sequence.</item>
+    <item>Complete the following table listing the first 10 terms in the Fibonacci and Lucas sequence:
+    <table summary="." id="table-00001">
+    <title>First Ten Fibonacci and Lucas Numbers (Incomplete)</title>
+    <tgroup cols="11">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <colspec colnum="11" colname="c11" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Term</emphasis></entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    <entry>7</entry>
+    <entry>8</entry>
+    <entry>9</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Fibonacci Numbers</emphasis></entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry/>
+    <entry>5</entry>
+    <entry/>
+    <entry>13</entry>
+    <entry/>
+    <entry>34</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Lucas Numbers</emphasis></entry>
+    <entry/>
+    <entry/>
+    <entry>3</entry>
+    <entry/>
+    <entry>7</entry>
+    <entry/>
+    <entry>18</entry>
+    <entry/>
+    <entry>47</entry>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table><newline/>
+    Answer: 
+    <table summary="." id="table-00002">
+    <title>First Ten Fibonacci and Lucas Numbers (Complete)</title>
+    <tgroup cols="11">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <colspec colnum="11" colname="c11" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Term</emphasis></entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    <entry>7</entry>
+    <entry>8</entry>
+    <entry>9</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Fibonacci Numbers</emphasis></entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry><emphasis effect="bold">3</emphasis></entry>
+    <entry>5</entry>
+    <entry><emphasis effect="bold">8</emphasis></entry>
+    <entry>13</entry>
+    <entry><emphasis effect="bold">21</emphasis></entry>
+    <entry>34</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Lucas Numbers</emphasis></entry>
+    <entry><emphasis effect="bold">2</emphasis></entry>
+    <entry><emphasis effect="bold">1</emphasis></entry>
+    <entry>3</entry>
+    <entry><emphasis effect="bold">4</emphasis></entry>
+    <entry>7</entry>
+    <entry><emphasis effect="bold">11</emphasis></entry>
+    <entry>18</entry>
+    <entry><emphasis effect="bold">29</emphasis></entry>
+    <entry>47</entry>
+    <entry><emphasis effect="bold">76</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table></item>
+    <item>Interestingly, many patterns can be found in looking at the relationships in the Fibonacci and Lucas numbers. Look closely at the chart in question 3 to discover one such pattern. Observe the Fibonacci numbers in the third and fifth terms and compare with the Lucas number in the fourth term of the sequence. Describe the pattern found. Does this pattern continue in the table?<newline/>
+    Answer: Adding the third and fifth terms of the Fibonacci numbers results in the fourth number in the Lucas sequence. This pattern continues throughout the two sequence.</item>
+    <item>Research the Fibonacci or the Lucas numbers to find an application in our world distinct from what has been shared in this project and section. Write a paragraph sharing the findings of your research.<newline/>
+    Answer: Answers will vary.</item>
+    </list>
+    </section>
+    </content>
+    </document>
