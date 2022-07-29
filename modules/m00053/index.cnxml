@@ -24,10 +24,9 @@
   <para id="para-00002">Each culture throughout history had to develop its own method of counting and recording quantity. The system used in Australia would necessarily differ from the system developed in Babylon which would, in turn, differ from the system developed in sub-Saharan Africa. These differences arose due to cultural differences. In nearly all societies, knowing the difference between one and two would be useful. But it might not be useful to know the difference between 145 and 167, as those quantities never had a practical use. For example, a shepherd with a flock of more than 100 likely manage that many sheep, so that quantity may have never been encountered. This can even be seen in our use of the term few, which is an inexact quantity that most would agree means more than two. However, as societies became more complex, as commerce arose, as military bodies developed, so did the need for a system to handle large numbers. No matter the system, the issues of representing multiple values and how many symbols to use had to be addressed. In this section, we explore how the Babylonians, Mayans, and Romans addressed these issues.</para>
   <section id="sect-00002">
   <title>Understand and Convert Babylonian Numerals to Hindu-Arabic Numerals</title>
-  <para id="para-00003">The Babylonians used a mix of an <term id="term-00001">additive system of numbers</term> and a <emphasis effect="bold">positional system of numbers</emphasis>. An additive system is a number system where the value of repeated instances of a symbol is added the number of times the symbol appears. A positional system is a system of numbers that multiplies a “digit” by a number raised to a power, based on the position of the "digit."</para>
+  <para id="para-00003">The Babylonians used a mix of an <term id="term-00001">additive system of numbers</term> and a <emphasis effect="bold">positional system of numbers</emphasis>. An additive system is a number system where the value of repeated instances of a symbol is added the number of times the symbol appears. A positional system is a system of numbers that multiplies a “digit” by a number raised to a power, based on the position of the “digit.”</para>
   <para id="para-00004">The Babylonian place values didn’t use powers of 10, but instead powers of 60. They didn’t use 60 different symbols though. For the value 1, they used the following symbol: <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.png"/></media>. For values up to 9, that symbol would be repeated, so three would be written as <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.png"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.png"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B00.png"/></media>. To represent the quantity 10, they used <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.png"/></media>. For 20, 30, 40, and 50, they repeated the symbol for 10 however many times it was needed, so 40 would be written <media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.png"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.png"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.png"/></media><media alt="Insert Alt Text"><image mime-type="image/jpg" src="../../media/CS_symbol_04_B10.png"/></media>. When they reached 60, they moved to the next place value. The complete list of the Babylonian numerals up to 59 is in <link target-id="table-00001" document="m00053">Table 4.1</link>.</para>
   <table class="numbered" summary="." id="table-00001">
-  <title>Babylonian Numerals</title>
   <tgroup cols="1">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
   <tbody>
@@ -40,14 +39,14 @@
   </figure></entry>
   </row>
   </tbody>
-  </tgroup>
+  </tgroup><caption>Babylonian Numerals</caption>
   </table>
   <para id="para-00005">You can see how Babylonians repeated the symbols to indicate multiples of a value. The number 6 is 6 of the symbol for 1 grouped together. The symbol for 30 is three of the symbols for 10 grouped together. However, their system doesn’t go past 59. To go past 59, they used place values. As opposed to the Hindu-Arabic system, which was based on powers of 10, the Babylonian positional system was based on powers of 60. You should also notice there is no symbol for 0, which has some impact on the number system. Since the Babylonian number system lacked a 0, they didn’t have a placeholder when a power of 60 was absent. Without a 0, 101, 110, and 11 all look the same. However, there is some evidence that the Babylonians left a small space between "digits" where we would use a 0, allowing them to represent the absence of that place value. To summarize, the <emphasis effect="bold">Babylonian system of numbers</emphasis> used repeating a symbol to indicate more than one, used place values, and lacked a 0.</para>
   <note class="who-knew" id="note-00001">
   <title>Invention of 0</title>
   <para id="para-00007">The idea of 0 is not a natural one. Most cultures failed to recognize the need for a 0. If someone asked a farmer in 300 B.C.E. how many cows they had, but they had none, they would not answer "zero." They’d say “I don’t have any” and be done with it. It wasn’t until roughly 3 B.C.E. that 0 appeared in Mesopotamia. It was independently discovered (or invented!) in the Mayan culture around 4 C.E. it made its appearance in India in the 400s C.E., and began to spread at that point. It wasn’t developed earlier mostly because positional systems were not yet fully developed. Once positional systems arose, the need to represent a missing power had to be addressed.</para>
   </note>
-  <para id="para-00008">So how do we convert from Babylonian numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from <link target-id="table-00001" document="m00053">Table 4.1</link>, and then place values based on powers of 60. If you have <emphasis effect="italic">n</emphasis> digits in the Babylonian number, you multiply the first “digit” by 60 raised to one less than the number of "digits." You then continue through the "digits," multiplying each by 60 raised to a power that is one smaller. However, be careful of spaces, since they represent a zero in that place.</para>
+  <para id="para-00008">So how do we convert from Babylonian numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from <link target-id="table-00001" document="m00053">Table 4.1</link>, and then place values based on powers of 60. If you have <emphasis effect="italic">n</emphasis> digits in the Babylonian number, you multiply the first “digit” by 60 raised to one less than the number of “digits.” You then continue through the “digits,” multiplying each by 60 raised to a power that is one smaller. However, be careful of spaces, since they represent a zero in that place.</para>
   <example id="exam-00001">
   <title>Converting Two-Digit Babylonian Numbers to Hindu-Arabic Numbers</title>
   <exercise id="exer-00001">
@@ -127,7 +126,6 @@
   <title>Understand and Convert Mayan Numerals to Hindu-Arabic Numerals</title>
   <para id="para-00021">The Mayans employed a positional system just as we do and the Babylonians did, but they based their position values on powers of 20 and they had a dedicated symbol for zero. Similar to the Babylonians, the Mayans would repeat symbols to indicate certain values. A single dot was a 1, two dots were a 2, up to four dots. Then a five was a horizontal bar. The horizontal bars could be used three times, since the fourth horizontal bar would make a 20, which was a new position in the number. The 0 was a special picture, which appears like a turtle lying on its back. The shell would then be "empty," so maybe that’s why the symbol was 0. The complete list is provided in <link target-id="table-00002" document="m00053">Table 4.2</link>. Another feature of Mayan numbers was that they were written vertically. The powers of 20 increased from bottom to top.</para>
   <table class="numbered" summary="." id="table-00002">
-  <title>Mayan Numerals</title>
   <tgroup cols="1">
   <colspec colnum="1" colname="c1" colwidth="1*"/>
   <tbody>
@@ -141,7 +139,7 @@
   </entry>
   </row>
   </tbody>
-  </tgroup>
+  </tgroup><caption>Mayan Numerals</caption>
   </table>
   <para id="para-00022">To summarize, the <emphasis effect="bold"> Mayan system of numbers </emphasis> used repeating symbol to indicate more than one, used place values, and employed a 0. So how do we convert from Mayan numbers to Hindu-Arabic numbers? To do so, we need to use the symbols from <link target-id="table-00002" document="m00053">Table 4.2</link> and then place values based on powers of 20. If you have <emphasis effect="italic">n</emphasis> digits in the Mayan number, you multiply the first “digit” by 20 raised to one less than the number of “digits.” You then continue through the “digits,” multiplying each by 20 raised to a power that is one smaller than the previous power. Fortunately, there is an explicit 0, so there is no ambiguity about numbers like 110, 101, and 11.</para>
   <example id="exam-00004">
@@ -225,7 +223,6 @@
   <title>Understand and Convert Between Roman Numerals and Hindu-Arabic Numerals</title>
   <para id="para-00036">The Mayan and Babylonian systems shared two features, one of which we are familiar with (place value) and one which we don’t use (repeated symbols). The <emphasis effect="bold"> Roman system of numbers </emphasis> used repeated symbols, but does not employ a place value. It also lacks a 0. The Roman system is built on the following symbols in <link target-id="table-00003" document="m00053">Table 4.3</link>.</para>
   <table class="numbered" summary="." id="table-00003">
-  <title>Roman Numerals</title>
   <tgroup cols="2">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
   <colspec colnum="2" colname="c2" colwidth="1pt"/>
@@ -265,7 +262,7 @@
   <entry>1000</entry>
   </row>
   </tbody>
-  </tgroup>
+  </tgroup><caption>Roman Numerals</caption>
   </table>
   <para id="para-00037">As in the Mayan and Babylonian systems, a symbol may be repeated to indicate a larger value. However, at 4, they did not use IIII. They instead used IV. Since the I came before the V, the number stands for “one before five.” A similar process was used for 9, which was written IX, or “one before ten.” The value 40 was written XL, or “ten before fifty,” while 49 was written XLIX, or “forty plus nine.”</para>
   <para id="para-00038">The following are the rules for writing and reading Roman numerals.</para>
