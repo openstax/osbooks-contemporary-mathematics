@@ -6,6 +6,865 @@
     <md:uuid>2606813f-260c-4610-a668-7d4de5b8b236</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001"/>
-  </content>
-</document>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_12_10_001.jpg"/>
+    </media>
+    <caption>[caption TK] (credit: xxx)</caption>
+    </figure>
+    <section class="learning-objectives">
+    <title>Learning Objectives</title>
+    <para><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Describe and identify trees.</item>
+    <item>Determine a spanning tree for a connected graph.</item>
+    <item>Find the minimum spanning tree for a weighted graph.</item>
+    <item>Solve application problems involving trees.</item>
+    </list>
+    </section>
+    <para>We saved the best for last! In this last section, we will discuss arguably the most fun kinds of graphs, trees. Have you every researched your family tree? Family trees are a perfect example of the kind of trees we study in graph theory. One of the characteristics of a family tree graph is that it never loops back around, because no one is their own grandparent!</para>
+    <section>
+    <title>What Is A Tree?</title>
+    <para>Whether we are talking about a family tree or a tree in a forest, none of the branches ever loops back around and rejoins the trunk. Here are some graphs that have the same characteristic. Each of the graphs in Figure 12.244 is a <term>tree</term>, which is a connected <term>acyclic</term> graph. An acyclic graph has no cyclic subgraphs.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_244.png"/>
+    </media>
+    <caption>Graphs T, P, and S</caption>
+    </figure>
+    <para>Let&#x2019;s practice determining whether a graph is a tree. To do this, check if a graph is connected and has no cycles.</para>
+    <example>
+    <title>Identifying Trees</title>
+    <exercise>
+    <problem>
+    <para>Identify any trees in Figure 12.245. If a graph is not a tree, explain how you know.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_245.png"/>
+    </media>
+    <caption>Graphs M, N, and P</caption>
+    </figure>
+    </problem>
+    <solution>
+    <list bullet-style="bulleted">
+    <item>Graph M is not a tree because it contains the cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>.</item>
+    <item>Graph N is not a tree because it is not connected. It has two components, one with vertices <emphasis effect="italic">h, i, j</emphasis>, and another with vertices <emphasis effect="italic">k, l, m</emphasis>.</item>
+    <item>Graph P is a tree. It has no cycles and it is connected.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section>
+    <title>Types of Trees</title>
+    <para>Mathematicians have had a lot of fun naming graphs that are trees or that contain trees. For example, the graph in Figure 12.247 is not a tree, but it contains two components, one containing vertices <emphasis effect="italic">a</emphasis> through <emphasis effect="italic">d</emphasis>, and the other containing vertices <emphasis effect="italic">e</emphasis> through <emphasis effect="italic">g</emphasis>, each of which would be a tree on its own. This type of structure is called a <term>forest</term>. There are also interesting names for trees with certain characteristics.</para>
+    <list bullet-style="bulleted">
+    <item>A <emphasis effect="bold">path graph or linear graph </emphasis> is a tree graph which has exactly two vertices of degree 1 such that the only other vertices form a single path between them, which means that it can be drawn as a straight line.</item>
+    <item>A <emphasis effect="bold">star tree</emphasis> is a tree that has exactly one vertex of degree greater than 1 called a <emphasis effect="bold">root,</emphasis> and all other vertices are adjacent to it.</item>
+    <item>A <emphasis effect="bold">starlike tree</emphasis> is a tree that has a single <emphasis effect="bold">root </emphasis> and several paths attached to it.</item>
+    <item>A <emphasis effect="bold">caterpillar tree</emphasis> is a tree which has a central path which can have vertices of any degree, with each vertex not on the central path being adjacent to a vertex on the central path and having a degree of one.</item>
+    <item>A <emphasis effect="bold">lobster tree</emphasis> is a tree which has a central path which can have vertices of any degree, with paths consisting of either one or two edges attached to the central path.</item>
+    </list>
+    <para>Examples of each of these types of structures are given in Figure 12.248.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_247.png"/>
+    </media>
+    <caption>Forest Graph F</caption>
+    </figure>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_248a.png"/>
+    </media>
+    <caption>Six Types of Trees</caption>
+    </figure>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_248b.png"/>
+    </media>
+    </figure>
+    <example>
+    <title>Identifying Types of Trees</title>
+    <exercise>
+    <problem>
+    <para>Each graph in Figure 12.249 is one of the special types of trees we have been discussing. Identify the type of tree.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_249.png"/>
+    </media>
+    <caption>Graphs Q and W</caption>
+    </figure>
+    </problem>
+    <solution>
+    <para>Graph U has a central path <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>&#x2192;</mo><mi>b</mi><mo>&#x2192;</mo><mi>d</mi><mo>&#x2192;</mo><mi>f</mi><mo>&#x2192;</mo><mi>i</mi><mo>&#x2192;</mo><mi>l</mi><mo>&#x2192;</mo><mi>o</mi><mo>&#x2192;</mo><mi>q</mi></mrow></math>. Each vertex that is not on the path has degree 1 and is adjacent to a vertex that is on the path. So, U is a caterpillar tree.</para>
+    <para>Graph V is a path graph because it is a single path connecting exactly two vertices of degree one, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>&#x2192;</mo><mi>s</mi><mo>&#x2192;</mo><mo>&#x2192;</mo><mi>u</mi><mo>&#x2192;</mo><mi>v</mi><mo>&#x2192;</mo><mi>w</mi></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section>
+    <title>Characteristics of Trees</title>
+    <para>As we study trees, it is helpful to be familiar with some of their characteristics. For example, if you add an edge to a tree graph between any two existing vertices, you will create a cycle, and the resulting graph is no longer a tree. Some examples are shown in Figure 12.250. Adding edge <emphasis effect="italic">bj</emphasis>to graph T creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic">rt</emphasis> to graph P creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic">tv</emphasis> to graph S creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>t</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_250.png"/>
+    </media>
+    <caption>Adding an Edges to Trees</caption>
+    </figure>
+    <para>It is also true that removing an edge from a tree graph will increase the number of components and the graph will no longer be connected. In fact, you can see in Figure 12.251 that removing one or more edges can create a forest! Removing edge <emphasis effect="italic">qr</emphasis> from graph P creates a graph with two components, one with vertices <emphasis effect="italic">o, p</emphasis> and <emphasis effect="italic">q</emphasis>, and the other with vertices <emphasis effect="italic">r, s</emphasis>, and <emphasis effect="italic">t</emphasis>. Removing edge <emphasis effect="italic">uw</emphasis> from graph S creates two components, one with just vertex <emphasis effect="italic">w</emphasis> and the other with the rest of the vertices. When two edges were removed from graph T, edge <emphasis effect="italic">bf</emphasis> and edge <emphasis effect="italic">cd</emphasis>, creates a graph with three components as shown in Figure 12.251.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_251.png"/>
+    </media>
+    <caption>Removing Edges from Trees</caption>
+    </figure>
+    <para>A very useful characteristic of tree graphs is that the number of edges is always one less than the number of vertices. This is not the case for graphs in general. In fact, any connected graph in which the number of edges is one less than the number of vertices is guaranteed to be a tree. Some examples are given in Figure 12.252.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_252.png"/>
+    </media>
+    <caption>Number of Vertices and Edges in Trees Versus Other Graphs</caption>
+    </figure>
+    <note class="formula">
+    <para>The number of edges in a tree graph with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> vertices is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></math>.</para>
+    <para>A connected graph with n vertices and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></math> edges is a tree graph.</para>
+    </note>
+    <example>
+    <title>Exploring Characteristics of Trees</title>
+    <exercise>
+    <problem>
+    <para>Use graphs I and J in Figure 12.253 to answer each question.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_253.png"/>
+    </media>
+    <caption>Graphs I and J</caption>
+    </figure>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Which vertices are in each of the components that remain when edge <emphasis effect="italic">be</emphasis>is removed from graph I?</item>
+    <item>Determine the number of edges and the number of vertices in graph J. Explain how this confirms that graph J is a tree.</item>
+    <item>What kind of cycle is created if edge <emphasis effect="italic">im</emphasis> is added to graph J?</item>
+    </list>
+    </problem>
+    <solution>
+    <list list-type="enumerated" number-style="arabic">
+    <item>When edge <emphasis effect="italic">be</emphasis> is removed, there are two components that remain. One component includes vertices <emphasis effect="italic">a, b</emphasis>, and <emphasis effect="italic">c</emphasis>. The other component includes vertices <emphasis effect="italic">d, e</emphasis>, and <emphasis effect="italic">f</emphasis>.</item>
+    <item>There are 7 vertices and 6 edges in graph J. This confirms that graph J is a tree because the number of edges is one less than the number of vertices.</item>
+    <item>The pentagon <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>i</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>l</mi><mo>,</mo><mi>m</mi></mrow><mo>)</mo></mrow></mrow></math> is created when edge <emphasis effect="italic">im</emphasis> is added to graph J.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew">
+    <title>Graph Theory in the Movies</title>
+    <para>In the 1997 film <emphasis effect="italic">Good Will Hunting</emphasis>, the main character, Will, played by Matt Damon, solves what is supposed to be an exceptionally difficult graph theory problem, &#x201C;Draw all the homeomorphically irreducible trees of size <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>10</mn></mrow></math>.&#x201D; That sounds terrifying! But don&#x2019;t panic. Watch this great Numberphile video to see why this is actually a problem you can do at home!</para>
+    </note>
+    <note class="video">
+    <para><link url="https://openstax.org/r/Hunting _Numberphile">The problem in <emphasis effect="italic">Good Will Hunting</emphasis> by Numberphile</link></para>
+    </note>
+    </section>
+    <section>
+    <title>Spanning Trees</title>
+    <para>Suppose that you planned to set up your own computer network with 4 devices. One option is to use a &#x201C;mesh topology&#x201D; like the one in Figure 12.246, in which each device is connected directly to every other device in the network.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_246.png"/>
+    </media>
+    <caption>Common Network Configurations</caption>
+    </figure>
+    <para>The mesh topology for four devices could be represented by the complete graph A<sub>1</sub> in Figure 12.254 where the vertices represent the devices, and the edges represent network connections. However, the devices could be networked using fewer connections. Graphs A<sub>2</sub>, A<sub>3,</sub> and A<sub>4</sub> of Figure 12.254 show configurations in which 3 of the 6 edges have been removed. Each of the graphs A<sub>2</sub>, A<sub>3</sub> and A<sub>4</sub> in Figure 12.254 is a tree because it is connected and contains no cycles. Since graphs A<sub>2</sub>, A<sub>3</sub> and A<sub>4</sub> are also subgraphs of graph A<sub>1</sub> that include every vertex of the original graph, they are also known as <term>spanning trees</term>.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_254.png"/>
+    </media>
+    <caption>Network Configurations for 4 Devices</caption>
+    </figure>
+    <para>By definition, spanning trees must span the whole graph by visiting all the vertices. Since spanning trees are subgraphs, they may only have edges between vertices that were adjacent in the original graph. Since spanning trees are trees, they are connected and they are acyclic. So, when deciding whether a graph is a spanning tree, check the following characteristics:</para>
+    <list bullet-style="bulleted">
+    <item>All vertices are included.</item>
+    <item>No vertices are adjacent that were not adjacent in the original graph.</item>
+    <item>The graph is connected.</item>
+    <item>There are no cycles.</item>
+    </list>
+    <example>
+    <title>Identifying Spanning Trees</title>
+    <exercise>
+    <problem>
+    <para>Use Figure 12.255 to determine which of graphs M<sub>1</sub>, M<sub>2</sub>, M<sub>3,</sub> and M<sub>4, </sub> are spanning trees of Q.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_255.png"/>
+    </media>
+    <caption>Graphs Q, M<sub>1</sub>, M<sub>2</sub>, M<sub>3,</sub> and M<sub>4</sub></caption>
+    </figure>
+    </problem>
+    <solution>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Graph M<sub>1</sub> is not a spanning tree of graph Q because it has a cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>.</item>
+    <item>Graph M<sub>2</sub> is a spanning tree of graph Q because it has all the original vertices, no vertices are adjacent in M<sub>2 </sub> that weren&#x2019;t adjacent in graph Q, graph M<sub>2</sub> is connected and it contains no cycles.</item>
+    <item>Graph M<sub>3</sub> is not a spanning tree of graph Q because vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">f</emphasis> are adjacent in graph M<sub>3</sub> but not in graph Q.</item>
+    <item>Graph M<sub>4</sub> is not a spanning tree of graph Q because it is not connected.</item>
+    </list>
+    <para>So, only graph M<sub>2</sub> is a spanning tree of graph Q.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section>
+    <title>Constructing a Spanning Tree Using Paths</title>
+    <para>Suppose that you wanted to find a spanning tree within a graph. One approach is to find paths within the graph. You can start at any vertex, go any direction, and create a path through the graph stopping only when you can&#x2019;t continue without backtracking as shown in Figure 12.257.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_257.png"/>
+    </media>
+    <caption>First Phase to Construct a Spanning Tree</caption>
+    </figure>
+    <para>Once you have stopped, pick a vertex along the path you drew as a starting point for another path. Make sure to visit only vertices you have not visited before as shown in Figure 12.258.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_258.png"/>
+    </media>
+    <caption>Intermediate Phase to Construct a Spanning Tree</caption>
+    </figure>
+    <para>Repeat this process until all vertices have been visited as shown in Figure 12.359.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_259.png"/>
+    </media>
+    <caption>Final Phase to Construct a Spanning Tree</caption>
+    </figure>
+    <para>The end result is a tree that spans the entire graph as shown in Figure 12.260.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_260.png"/>
+    </media>
+    <caption>The Resulting Spanning Tree</caption>
+    </figure>
+    <para>Notice that this subgraph is a tree because it is connected and acyclic. It also visits every vertex of the original graph, so it is a spanning tree. However, it is not the only spanning tree for this graph. By making different turns, we could create any number of distinct spanning trees.</para>
+    <example>
+    <title>Constructing Spanning Trees</title>
+    <exercise>
+    <problem>
+    <para>Construct two distinct spanning trees for the graph in Figure 12.261.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_261.png"/>
+    </media>
+    <caption>Graph L</caption>
+    </figure>
+    </problem>
+    <solution>
+    <para>Two possible solutions are given in Figure 12.262 and Figure 12.263.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_262.png"/>
+    </media>
+    <caption>First Spanning Tree for Graph L</caption>
+    </figure>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_263.png"/>
+    </media>
+    <caption>Second Spanning Tree for Graph L</caption>
+    </figure>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section>
+    <title>Revealing Spanning Trees</title>
+    <para>Another approach to finding a spanning tree in a connected graph involves removing unwanted edges to reveal a spanning tree. Consider graph D in Figure 12.266.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_266.png"/>
+    </media>
+    <caption>Graph D</caption>
+    </figure>
+    <para>Graph D has 10 vertices. A spanning tree of graph D must have 9 edges, because any tree with 10 vertices has 9 edges. Graph D has 13 edges so 4 need to be removed. To determine which 4 edges to remove, remember that trees do not have cycles. There are 4 triangles in graph D which we need to break up. We can accomplish this by removing 1 edge from each of the triangles. There are many ways this can be done. Two of these ways are shown in Figure 12.267.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_267a.png"/>
+    </media>
+    <caption>Removing Four Edges from Graph D</caption>
+    </figure>
+    <figure>
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_12_10_267b.png"/>
+      </media>
+      <caption>Removing Four Edges from Graph D</caption>
+      </figure>
+    <note class="video">
+    <para><link url="https://openstax.org/r/Spanning_Trees_in_Graph_Theory">Spanning Trees in Graph Theory</link></para>
+    </note>
+    <example>
+    <title>Removing Edges to Find Spanning Trees</title>
+    <exercise>
+    <problem>
+    <para>Use the graph in Figure 12.268 to answer each question.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_268.png"/>
+    </media>
+    <caption>Graph V</caption>
+    </figure>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Determine the number of edges that must be removed to reveal a spanning tree.</item>
+    <item>Name all the undirected cycles in graph V.</item>
+    <item>Find two distinct spanning trees of graph V.</item>
+    </list>
+    </problem>
+    <solution>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Graph V has 9 vertices so a spanning tree for the graph must have 8 edges. Since graph V has 11 edges, 3 edges must be removed to reveal a spanning tree.</item>
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>g</mi></mrow><mo>)</mo></mrow></mrow></math></item>
+    <item>To find the first spanning tree, remove edge <emphasis effect="italic">ac</emphasis> which will break up both of the triangles, remove edge <emphasis effect="italic">cf </emphasis> which will break up the quadrilateral, and remove <emphasis effect="italic">be</emphasis> which will break up the pentagon, to give us the spanning tree shown in Figure 12.269.
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_269.png"/>
+    </media>
+    <caption>Spanning Tree Formed Removing <emphasis effect="italic">ac, cf</emphasis>, and <emphasis effect="italic">be</emphasis></caption>
+    </figure>
+    <para>To find another spanning tree, remove <emphasis effect="italic">ad</emphasis> which will break up <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, remove <emphasis effect="italic">af</emphasis> to break up <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, and remove <emphasis effect="italic">hi</emphasis> to break up <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>g</mi></mrow><mo>)</mo></mrow></mrow></math>. This will give us the spanning tree in Figure 12.270.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_270.png"/>
+    </media>
+    <caption>Spanning Tree Formed Removing <emphasis effect="italic">ad</emphasis>, <emphasis effect="italic">af</emphasis>, and <emphasis effect="italic">hi</emphasis></caption>
+    </figure>
+  </item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="who-knew">
+    <title>Chains of Affection</title>
+    <para>Here is a strange question to ask in a math class: Have you ever dated your ex&#x2019;s new partner&#x2019;s ex? Research suggests that your answer is probably no. When researchers Peter S. Bearman, James Moody, and Katherine Stovel attempted to compare the structure of heterosexual romantic networks at a typical midwestern highschool to simulated networks, they found something surprising. The actual social networks were more like spanning trees than other possible models because there were very few short cycles. In particular, there were almost no four-cycles.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_295.png"/>
+    </media>
+    <caption>Chains of Affection</caption>
+    </figure>
+    <para>&#x201C;&#x2026;the prohibition against dating (from a female perspective) one&#x2019;s old boyfriend&#x2019;s current girlfriend&#x2019;s old boyfriend &#x2013; accounts for the structure of the romantic network at [the highschool].&#x201D;</para>
+    <para>In their article &#x201C;Chains of Affection: The Structure of Adolescent Romantic and Sexual Networks,&#x201D; the researchers went on to explain the implications for the transmission of sexually transmitted diseases. In particular, social structures based on tree graphs are less dense and more likely to fragment. This information can impact social policies on disease prevention. (Peter S. Bearman, James Moody, and Katherine Stovel, &#x201C;Chains of Affection: The Structure of Adolescent Romantic and Sexual Networks,&#x201D; <emphasis effect="italic">American Journal of Sociology</emphasis> Volume 110, Number 1, pp. 44-91, 2004)</para>
+    </note>
+    </section>
+    <section>
+    <title>Kruskal&#x2019;s Algorithm</title>
+    <para>In many applications of spanning trees, the graphs are weighted and we want to find the spanning tree of least possible weight. For example, the graph might represent a computer network, and the weights might represent the cost involved in connecting two devices. So, finding a spanning tree with the lowest possible total weight, or <term>minimum spanning tree</term>, means saving money! The method that we will use to find a minimum spanning tree of a weighted graph is called <term>Kruskal&#x2019;s algorithm</term>. The steps for Kruskal&#x2019;s algorithm are:</para>
+    <para><emphasis effect="bold">Step 1:</emphasis> Choose any edge with the minimum weight of all edges.</para>
+    <para><emphasis effect="bold">Step 2:</emphasis> Choose another edge of minimum weight from the remaining edges. The second edge does not have to be connected to the first edge.</para>
+    <para><emphasis effect="bold">Step 3:</emphasis> Choose another edge of minimum weight from the remaining edges, but do not select any edge that creates a cycle in the subgraph you are creating.</para>
+    <para><emphasis effect="bold">Step 4:</emphasis> Repeat step 3 until all the vertices of the original graph are included and you have a spanning tree.</para>
+    <note class="video">
+    <para><link url="https://openstax.org/r/Trees_in_Graph_Theory">Use Kruskal&#x0027;s Algorithm to find Minimum Spanning Trees in Graph Theory</link></para>
+    </note>
+    <example>
+    <title>Using Kruskal&#x2019;s Algorithm</title>
+    <exercise>
+    <problem>
+    <para>A computer network will be set up with 6 devices. The vertices in the graph in Figure 12.271 represent the devices, and the edges represent the cost of a connection. Find the network configuration that will cost the least. What is the total cost?</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_271.png"/>
+    </media>
+    <caption>Graph of Network Connection Costs</caption>
+    </figure>
+    </problem>
+    <solution>
+    <para>A minimum spanning tree will correspond to the network configuration of least cost. We will use Kruskal&#x2019;s algorithm to find one. Since the graph has 6 vertices, the spanning tree will have 6 vertices and 5 edges.</para>
+    <para><emphasis effect="bold">Step 1:</emphasis> Choose an edge of least weight. We have sorted the weights into numerical order. The least is $100. The only edge of this weight is edge AF as shown in Figure 12.272.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_272.png"/>
+    </media>
+    <caption>Step 1 Select Edge <emphasis effect="italic">AF</emphasis></caption>
+    </figure>
+    <para><emphasis effect="bold">Step 2:</emphasis> Choose the edge of least weight of the remaining edges, which is <emphasis effect="italic">BD</emphasis> with $120. Notice that the two selected edges do not need to be adjacent to each other as shown in Figure12.273.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_273.png"/>
+    </media>
+    <caption>Step 2 Select Edge <emphasis effect="italic">BD</emphasis></caption>
+    </figure>
+    <para><emphasis effect="bold">Step 3:</emphasis> Select the lowest weight edge of the remaining edges, which is <emphasis effect="italic">DF</emphasis> with $150 and it does not form a cycle as shown in Figure 12.274.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_274.png"/>
+    </media>
+    <caption>Step 3 Select Edge <emphasis effect="italic">DF</emphasis></caption>
+    </figure>
+    <para><emphasis effect="bold">Repeat Step 3:</emphasis> Select the lowest weight edge of the remaining edges, which is <emphasis effect="italic">BE</emphasis> with $160 and it does not form a cycle as shown in Figure 12.275. This gives us 4 edges so we only need to repeat step 3 once more to get the fifth edge.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_275.png"/>
+    </media>
+    <caption>Repeat Step 3 Select Edge <emphasis effect="italic">DF</emphasis></caption>
+    </figure>
+    <para><emphasis effect="bold">Repeat Step 3:</emphasis> The lowest weight of the remaining edges is $170. Both <emphasis effect="italic">BF</emphasis> and <emphasis effect="italic">CE</emphasis> have a weight of $170, but <emphasis effect="italic">BF</emphasis> would create cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy='false'>(</mo><mi>b</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi><mo stretchy='false'>)</mo></mrow></math> and there cannot be a cycle in a spanning tree as shown in Figure 12.276.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_276.png"/>
+    </media>
+    <caption>Repeat Step 3 Do Not Select Edge BF</caption>
+    </figure>
+    <para>So, we will select <emphasis effect="italic">CE</emphasis> which will complete the spanning tree as shown in Figure 12.277.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_277.png"/>
+    </media>
+    <caption>Repeat Step 3 Select Edge <emphasis effect="italic">CE</emphasis></caption>
+    </figure>
+    <para>The minimum spanning tree is shown in Figure 12.278. This is the configuration of the network of least cost. The spanning tree has a total weight of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x0024;</mi><mn>100</mn><mo>+</mo><mi>&#x0024;</mi><mn>120</mn><mo>+</mo><mi>&#x0024;</mi><mn>150</mn><mo>+</mo><mi>&#x0024;</mi><mn>160</mn><mo>+</mo><mi>&#x0024;</mi><mn>170</mn><mo>=</mo><mi>&#x0024;</mi><mn>700</mn></mrow></math> which is the total cost of this network configuration.</para>
+    <figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_278.png"/>
+    </media>
+    <caption>Final Minimum Spanning Tree</caption>
+    </figure>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section class="check-understanding">
+    <title>Check Your Understanding</title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q008"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises">
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q018"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms">
+    <title>Key Terms</title>
+    <list bullet-style="none">
+    <item>acyclic</item>
+    <item>tree</item>
+    <item>Forest</item>
+    <item>path graph or linear graph</item> 
+    <item>star tree</item>
+    <item>root</item>
+    <item>starlike tree</item>
+    <item>caterpillar tree</item>
+    <item>lobster tree</item>
+    <item>spanning tree</item>
+    <item>minimum spanning tree</item>
+    </list>
+    </section>
+    <section class="key-concepts">
+    <title>Key Concepts</title>
+    <list list-type="bulleted">
+    <item>A brute force algorithm always finds the ideal solution but can be impractical whereas a greedy algorithm is efficient but usually does not lead to the ideal solution.</item> 
+    <item>A Hamilton cycle of lowest weight is a solution to the traveling salesman problem.</item> 
+    <item>The brute force method finds a Hamilton cycle of lowest weight in a complete graph.</item> 
+    <item>The nearest neighbor method is a greedy algorithm that finds a Hamilton cycle of relatively low weight in a complete graph.</item>
+    </list>
+    </section>
+    <section class="eoc-videos">
+    <title>Videos</title>
+    <para><link url="https://openstax.org/r/Hunting _Numberphile">The problem in <emphasis effect="italic">Good Will Hunting</emphasis> by Numberphile</link></para>
+    <para><link url="https://openstax.org/r/Spanning_Trees_in_Graph_Theory">Spanning Trees in Graph Theory</link></para>
+    <para><link url="https://openstax.org/r/Trees_in_Graph_Theory">Use Kruskal's Algorithm to find Minimum Spanning Trees in Graph Theory</link></para>
+    </section>
+    <section class="formula-review" id="sect-00043">
+    <title>Formulas</title>
+    <list bullet-style="bulleted">
+    <item>"	The number of edges in a tree graph with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> vertices is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></math>. A connected graph with n vertices and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></math> edges is a tree graph.</item>
+    </list>
+    </section>
+    <section class="projects">
+    <title>Projects</title>
+    <para><emphasis effect="bold">Everyone Gets a Turn! &#x2013; Graph Colorings</emphasis></para>
+    <para>Let&#x2019;s put your knowledge of graph colorings to work! Your task is to plan a field day following these steps.</para>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Select between 7 and 10 activities for your field day. You can look online for ideas.</item>
+    <item>Create a survey asking for the participants to select the three to five events in which they would most like to participate. Survey between 7 and 10 people.</item>
+    <item>Use the results of your survey to create a graph in which each vertex represents one of the events. A pair of vertices will be adjacent if there is at least one participant who would like to participate in both events.</item> 
+    <item>Find a minimum coloring for the graph. Explain how you found it and how you know the chromatic number of the graph.</item>
+    <item>Use your solution to part d to determine the minimum number of timeslots you must use to ensure that everyone has the opportunity to participate in their top three events.</item> 
+    <item>Find the complement of the graph you created in Exercise 3. Explain what the edges in this graph represent.</item> 
+    </list>
+    <para><emphasis effect="bold">A Beautiful Day in the Neighborhood &#x2013; Euler Circuits</emphasis>.</para>
+    <para>Let&#x2019;s apply what you have learned to the community in which you live. Using resources such as your county&#x2019;s property appraiser&#x2019;s website, create a detailed graph of your neighborhood in which vertices represent turns and intersections. Represent a large enough part of your community to include no fewer than 10 intersections or turns. Then use your graph to answer the following questions.</para>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Label the edges of your graph.</item> 
+    <item>Determine if your graph is Eulerian. Explain how you know. If it is not, eulerize it.</item> 
+    <item>Find an Euler circuit for your graph. Give the sequence of vertices that you found.</item> 
+    <item>What does the Euler circuit you found in part c represent for your community?</item>
+    <item>Describe an application for which this Euler circuit might be used.</item> 
+    </list>
+    <para><emphasis effect="bold">Dream Vacation &#x2013; Hamilton Cycles and Paths</emphasis>.</para>
+    <para>Where in the world would you like to travel most: the Eiffel Tower in Paris, a Broadway musical in New York city, a bike tour of Amsterdam, the Tenerife whale and dolphin cruises in the Canary Islands, the Giza Pyramid in Cairo, or maybe the Jokhang Temple in Tibet? Let's plan your dream vacation!</para>
+    <list list-type="enumerated" number-style="arabic">
+    <item>Which 4 destinations are at the top of your bucket list?</item>
+    <item>Draw a complete weighted graph with 5 vertices representing the 4 destinations and your home city, and the weights representing the cost of travel between cities.</item>
+    <item>Use a website (such as <link url="https://openstax.org/r/travelocity">Travelocity</link>) to find the best airfare between each pair of cities. List the airlines and flight numbers along with the prices. Include cost for ground transportation from the nearest airport if there is no airport at the destination you want to visit.</item> 
+    <item>Use the nearest neighbor algorithm to find a Hamilton cycle of low weight beginning and ending in your hometown. What is the weight of this circuit and what does it represent?</item>
+    <item>Use the brute force method to find a Hamilton cycle of lowest weight beginning and ending in your hometown. What is the weight of this circuit? Is it the same or different from the weight of the Hamilton cycle you found in Exercise 4?</item>
+    <item>Suppose that instead of returning home, you planned to move to your favorite location on the list, but you wanted to stop at the other three destinations once along the way. Where would you move? List all Hamilton paths between your hometown and your favorite location.</item>
+    <item>Find the weights of all the Hamilton paths you found in Exercise 6.</item> 
+    </list>
+    </section>
+    <section class="chapter-review">
+    <title>Chapter Review</title>
+    <section>
+    <title><link document="m00109">12.1 Graph Basics</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q021"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00110">12.2 Graph Structures</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q022"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00111">12.3 Comparing Graphs</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q025"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00117">12.4 Navigating Graphs</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q028"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00119">12.5 Euler Circuits</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q030"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00120">12.6 Euler Trails</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q031"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q033"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00121">12.7 Hamilton Cycles</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q034"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q035"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q036"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q037"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00122">12.8 Hamilton Paths</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q038"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q039"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q040"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00123">12.9 Traveling Salesman Problem</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q041"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q042"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q043"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q044"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q045"/></para>
+    </problem>
+    </exercise>
+  </section>
+  <section>
+    <title><link document="m00124">12.10 Trees</link></title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q046"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q047"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q048"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q049"/></para>
+    </problem>
+    </exercise>
+    </section>
+    </section>
+    <section class="chapter-test">
+    <title>Chapter Test</title>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q050"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q051"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q052"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q053"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q054"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q055"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q056"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q057"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q058"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q059"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q060"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q061"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q062"/></para>
+    </problem>
+    </exercise>
+    <exercise>
+    <problem>
+    <para><link class="os-embed" url="#exercise/CM-C12-M10-Q063"/></para>
+    </problem>
+    </exercise>
+    </section>
+    </content>
+    </document>    
