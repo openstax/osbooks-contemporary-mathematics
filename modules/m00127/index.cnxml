@@ -6,6 +6,498 @@
     <md:uuid>750d3784-ab18-44d9-852f-fbd8834c7484</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001"/>
+    <figure id="fig-00001">
+      <code/>
+      <!--<media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/**"/>
+      </media>-->
+      <caption>[caption TK] (credit: David Underland/Pexels)</caption>
+      </figure>
+      <section class="learning-objectives" id="sect-00001">
+      <title>Learning Objectives</title>
+      <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+      <list list-type="enumerated" number-style="arabic" id="list-00001">
+      <item>Identify triangles by their sides.</item>
+      <item>Identify triangles by their angles.</item>
+      <item>Determine if triangles are congruent.</item>
+      <item>Determine if triangles are similar.</item>
+      <item>Find the missing side of similar triangles.</item>
+      </list>
+      </section>
+      <para id="para-00002">How were the ancient Greeks able to calculate the radius of the earth? How did soldiers gauge their target? How was it possible centuries ago to estimate the height of a sail at sea? Triangles have always played a significant role in how we find heights of objects too high to measure or distances between objects too far away to calculate. In particular, the concept of similar triangles has countless applications in the real world, and we shall explore some of those applications in this section. Technology has given us instruments that allow us to find measurements of distant objects with little effort. However, it is all based on the properties of triangles discovered centuries ago. In this section, we will explore the various types of triangles and their special properties, as well as how to measure interior and exterior angles. We will also explore congruence theorems and similarity.</para>
+      <section id="sect-00002">
+      <title>Identifying Triangles</title>
+      <para id="para-00003">Joining any three noncollinear points with line segments produces a triangle. For example, given points <emphasis effect="italic">A, B,</emphasis> and <emphasis effect="italic">C</emphasis>, connected by the line segments<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo stretchy="true">¯</mo></mover><mo>,</mo><mover accent="true"><mrow><mi>B</mi><mi>C</mi><mo>,</mo></mrow><mo stretchy="true">¯</mo></mover></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>A</mi><mi>C</mi></mrow><mo stretchy="true">¯</mo></mover><mo>,</mo></mrow></math> we have a triangle, as shown in Figure 10.18.</para>
+      <figure id="fig-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_015.png"/>
+      </media>
+      <caption>Triangle</caption>
+      </figure>
+      <para id="para-00004">Triangles are classified by their angles and their sides. All angles in an acute triangle measure <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&lt;</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> One of the angles in a right triangle measures <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> symbolized by □. One angle in an obtuse triangle measures between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> Sides that have equal length are indicated by the same hash marks. Table 10.2 illustrates the shapes of the basic triangles, their names, and their properties.</para>
+      <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">A few other facts to remember as we move forward:</para>
+      <list bullet-style="bulleted" id="list-00002">
+      <item>The points where the line segments meet are called the <emphasis effect="bold">vertices</emphasis> (plural for <emphasis effect="bold">vertex</emphasis>).</item>
+      <item>We often refer to sides of a triangle by the angle they are opposite. In other words, side <emphasis effect="italic">a</emphasis> is opposite angle <emphasis effect="italic">A</emphasis>, side <emphasis effect="italic">b</emphasis> is opposite angle <emphasis effect="italic">B</emphasis>, and side <emphasis effect="italic">c</emphasis> is opposite angle <emphasis effect="italic">C</emphasis>.</item>
+      </list>
+      <table summary="." id="table-00001">
+      <title>Types of Triangles</title>
+      <tgroup cols="1">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><figure class="unumbered" id="fig-00003">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_TB003.png"/>
+      </media>
+      <caption/>
+      </figure></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table>
+      <para id="para-00006">We want to add a special note about right triangles here, as they are referred to more than any other triangle. The side opposite the right angle is its longest side and is called the <emphasis effect="bold">hypotenuse</emphasis>, and the sides adjacent to the right angle are called the legs.</para>
+      <para id="para-00007">One of the most important properties of triangles is that the sum of the interior angles equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> Euclid discovered and proved this property using parallel lines. The completed sketch is shown in Figure 10.19. This is how the proof goes:</para>
+      <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Start with a straight line <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo stretchy="true">↔</mo></mover></mrow></math> and a point <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">C</emphasis> not on the line.</para>
+      <para id="para-00009"><emphasis effect="bold">Step 2:</emphasis> Draw a line through point <emphasis effect="italic">C</emphasis> parallel to the line <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo stretchy="true">↔</mo></mover></mrow></math>.</para>
+      <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Construct two transversals (a line crossing the parallel lines), one angled to the right and one angled to the left, to intersect the parallel lines.</para>
+      <para id="para-00011"><emphasis effect="bold">Step 4:</emphasis> Because of the property that alternate interior angles inside parallel lines are equal, we have that
+      <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>∡</mo><mn>2</mn><mo>=</mo><mi>m</mi><mo>∢</mo><mn>1</mn><mspace width="1em"/><mtext>and</mtext><mspace width="1em"/><mi>m</mi><mo>∡</mo><mn>3</mn><mo>=</mo><mi>m</mi><mo>∡</mo><mn>4.</mn></mrow></math></equation></para>
+      <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>2</mn><mo>+</mo><mi>m</mi><mo>∡</mo><mn>5</mn><mo>+</mo><mi>m</mi><mo>∡</mo><mn>4</mn><mo>=</mo><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup></mrow></math> by the straight angle property.</para>
+      <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6:</emphasis> Therefore, by substitution, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>1</mn><mo>=</mo><mi>m</mi><mo>∡</mo><mn>2</mn><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>3</mn><mo>=</mo><mi>m</mi><mo>∡</mo><mn>4</mn><mo>,</mo></mrow></math> we have that
+      <equation id="eq-00002" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>m</mi><mo>∡</mo><mn>1</mn><mo>+</mo><mi>m</mi><mo>∡</mo><mn>3</mn><mo>+</mo><mi>m</mi><mo>∢</mo><mn>5</mn><mo>=</mo><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mtext>.</mtext></mrow></math></equation></para>
+      <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Therefore, the sum of the interior angles of a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>triangle</mtext><mo>=</mo><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></para>
+      <figure id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_016.png"/>
+      </media>
+      <caption>Sum of Interior Angles</caption>
+      </figure>
+      <example id="exam-00001">
+      <title>Finding Measures of Angles Inside a Triangle</title>
+      <exercise id="exer-00001">
+      <problem id="prob-00001">
+      <para id="para-00015">Find the measure of each angle in the triangle shown (Figure 10.XX). We know that the sum of the angles must equal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></para>
+      <figure id="fig-00005" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN001.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00001">
+      <para id="para-00016"><emphasis effect="bold">Step 1:</emphasis> As the sum of the interior angles equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> we can use algebra to find the measures:
+      <equation id="eq-00003" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>+</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>17</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>62</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>180</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>5</mn><mi>x</mi><mo>−</mo><mn>45</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>180</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>5</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>225</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>225</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>45</mn></mtd></mtr></mtable></math></equation></para>
+      <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Now that we have the value of <emphasis effect="italic">x,</emphasis> we can substitute 45 into the other two expressions to find the measure of those angles:
+      <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mrow><mo>(</mo><mrow><mi>x</mi><mo>+</mo><mn>17</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>45</mn><mo>+</mo><mn>17</mn><mo>=</mo><msup><mrow><mn>62</mn></mrow><mo>∘</mo></msup></mrow></mtd></mtr><mtr><mtd><mrow><mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>62</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo stretchy="false">(</mo><mn>45</mn><mo stretchy="false">)</mo><mo>−</mo><mn>62</mn><mo>=</mo><mn>135</mn><mo>−</mo><mn>62</mn><mo>=</mo><msup><mrow><mn>73</mn></mrow><mo>∘</mo></msup></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+      <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Then,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mi>x</mi><mo>=</mo><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>17</mn><mo stretchy="false">)</mo><mo>=</mo><msup><mrow><mn>62</mn></mrow><mo>∘</mo></msup></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mo stretchy="false">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>62</mn><mo stretchy="false">)</mo><mo>=</mo><msup><mrow><mn>73</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00002">
+      <problem id="prob-00002">
+      <para id="para-00019"><link class="os-embed" url="#exercise/CM-C10-M3-Q001"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00002">
+      <title>Finding Angle Measures</title>
+      <exercise id="exer-00003">
+      <problem id="prob-00003">
+      <para id="para-00020">Find the measure of angles numbered 1–5 in Figure 10.XX.</para>
+      <figure id="fig-00006">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN003.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00002">
+      <para id="para-00021">The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>1</mn><mo>=</mo><msup><mrow><mn>119</mn></mrow><mo>∘</mo></msup></mrow></math> because it is supplementary with the unknown angle of the adjacent triangle. The unknown angle measures <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>61</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>2</mn><mo>=</mo><msup><mrow><mn>61</mn></mrow><mo>∘</mo></msup></mrow></math> because of vertical angles. The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>5</mn><mo>=</mo><msup><mrow><mn>59</mn></mrow><mo>∘</mo></msup></mrow></math> because the angle that is supplementary to the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>134</mn></mrow><mo>∘</mo></msup></mrow></math> measures <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>46</mn></mrow><mo>∘</mo></msup></mrow></math>, and angle 5 is the unknown angle in that triangle. The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>4</mn><mo>=</mo><msup><mrow><mn>59</mn></mrow><mo>∘</mo></msup></mrow></math> by vertical angles. Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mn>3</mn><mo>=</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> as it is the third angle in the triangle with angles measuring <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>59</mn></mrow><mo>∘</mo></msup></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>61</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00004">
+      <problem id="prob-00004">
+      <para id="para-00022"><link class="os-embed" url="#exercise/CM-C10-M3-Q002"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00003">
+      <title>Congruence</title>
+      <para id="para-00023">If two triangles have equal angles and their sides lengths are equal, the triangles are congruent. In other words, if you can pick up one triangle and place it on top of the other triangle and they coincide, even if you have to rotate one, they are congruent.</para>
+      <example id="exam-00003">
+      <title>Determining If Triangles Are Congruent</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00024">Is the triangle <emphasis effect="italic">ABC</emphasis> (Figure 10.XXa) congruent to triangle <emphasis effect="italic">DEF</emphasis> (Figure 10.XXb)?</para>
+      <figure id="fig-00007">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN005.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00003">
+      <para id="para-00025">Triangle <emphasis effect="italic">ABC</emphasis> is congruent to triangle <emphasis effect="italic">DEF.</emphasis> Angles <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">C</emphasis> are congruent to angles <emphasis effect="italic">D</emphasis> and <emphasis effect="italic">F</emphasis>, which implies that angle <emphasis effect="italic">B</emphasis> is congruent to angle <emphasis effect="italic">E</emphasis>. Side <emphasis effect="italic">AB</emphasis> is congruent to side <emphasis effect="italic">DE</emphasis>, and side <emphasis effect="italic">CB</emphasis> is congruent to side <emphasis effect="italic">FE</emphasis>, which implies that side <emphasis effect="italic">AC</emphasis> is congruent to side <emphasis effect="italic">DF</emphasis>.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00003">
+      <exercise id="exer-00006">
+      <problem id="prob-00006">
+      <para id="para-00026"><link class="os-embed" url="#exercise/CM-C10-M3-Q003"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00004">
+      <title>The Congruence Theorems</title>
+      <para id="para-00027">The following theorems are tools you can use to prove that two triangles are congruent. We use the symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≅</mo></math> to define congruence. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>≅</mo><mi>Δ</mi><mi>D</mi><mi>E</mi><mi>F</mi></mrow></math>.</para>
+      <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Side-Side-Side (SSS).</emphasis> If three sides of one triangle are equal to the corresponding sides of the second triangle, then the triangles are congruent. See Figure 10.20.</para>
+      <figure id="fig-00008">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN007.png"/>
+      </media>
+      <caption>Side-Side-Side (SSS)</caption>
+      </figure>
+      <para id="para-00029">We have that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>D</mi><mi>F</mi></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><mi>R</mi><mi>T</mi></mrow><mo stretchy="true">¯</mo></mover></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>E</mi><mi>F</mi></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><mi>S</mi><mi>T</mi></mrow><mo stretchy="true">¯</mo></mover><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mtext>DE</mtext></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><mtext>RS</mtext></mrow><mo stretchy="true">¯</mo></mover><mtext>,</mtext></mrow></math> then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Δ</mi><mi>D</mi><mi>E</mi><mi>F</mi><mo>≅</mo><mi>Δ</mi><mi>R</mi><mi>S</mi><mi>T</mi><mo>.</mo></mrow></math></para>
+      <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Side-Angle-Side (SAS).</emphasis> If two sides of a triangle and the angle between them are equal to the corresponding two sides and included angle of the second triangle, then the triangles are congruent. See Figure 10.21. We see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>B</mi><mi>C</mi></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mi>B</mi><mo>=</mo><mi>m</mi><mo>∡</mo><msup><mi>B</mi><mo>′</mo></msup></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>≅</mo><mi>Δ</mi><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup></mrow></math>.</para>
+      <figure id="fig-00009" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_018.png"/>
+      </media>
+      <caption>Side-Angle-Side (SAS)</caption>
+      </figure>
+      <para id="para-00031"><emphasis effect="bold">Angle-Side-Angle (ASA).</emphasis> If two angles and the side between them in one triangle are congruent to the two corresponding angles and the side between them in a second triangle, then the two triangles are congruent. See Figure 10.22. Notice that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mtext>A</mtext><mo>≅</mo><mi>m</mi><mo>∡</mo><mtext>F</mtext></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mtext>C</mtext><mo>≅</mo><mi>m</mi><mo>∡</mo><mtext>D</mtext></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mtext>AC</mtext></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><mtext>DF</mtext></mrow><mo stretchy="true">¯</mo></mover></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Δ</mi><mtext>ABC</mtext><mo>≅</mo><mi>Δ</mi><mtext>DEF</mtext><mo>.</mo></mrow></math></para>
+      <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_019.png"/>
+      </media>
+      <caption>Angle-Side-Angle (ASA)</caption>
+      </figure>
+      <para id="para-00032"><emphasis effect="bold">Angle-Angle-Side (AAS).</emphasis> If two angles and a nonincluded side of one triangle are congruent to two angles and the nonincluded corresponding side of a second triangle, then the triangles are congruent.</para>
+      <para id="para-00033">See Figure 10.23. We see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mi>X</mi><mo>≅</mo><mi>m</mi><msup><mi>X</mi><mo>′</mo></msup></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>∡</mo><mi>Z</mi><mo>≅</mo><mi>m</mi><mo>∡</mo><msup><mi>Z</mi><mo>′</mo></msup></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>X</mi><mi>Y</mi></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><msup><mi>X</mi><mo>′</mo></msup><msup><mi>Y</mi><mo>′</mo></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Δ</mi><mi>X</mi><mi>Y</mi><mi>Z</mi><mo>≅</mo><mi>Δ</mi><msup><mi>X</mi><mo>′</mo></msup><msup><mi>Y</mi><mo>′</mo></msup><msup><mi>Z</mi><mo>′</mo></msup></mrow></math>.</para>
+      <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_020.png"/>
+      </media>
+      <caption>Angle-Angle-Side (AAS)</caption>
+      </figure>
+      <example id="exam-00004">
+      <title>Identifying Congruence Theorems</title>
+      <exercise id="exer-00007">
+      <problem id="prob-00007">
+      <para id="para-00034">What congruence theorem is illustrated in Figure 10.XX?</para>
+      <figure id="fig-00012">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN008.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00004">
+      <para id="para-00035">AAS: Two angles and a non-included side in one triangle are congruent to the corresponding angles and side in the second triangle.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00004">
+      <exercise id="exer-00008">
+      <problem id="prob-00008">
+      <para id="para-00036"><link class="os-embed" url="#exercise/CM-C10-M3-Q004"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00005">
+      <title>Determining the Congruence Theorem</title>
+      <exercise id="exer-00009">
+      <problem id="prob-00009">
+      <para id="para-00037">What congruence theorem is illustrated in Figure 10.XX?</para>
+      <figure id="fig-00013">
+      <code/>
+      <!--<media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/**"/>
+      </media>-->
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00005">
+      <para id="para-00038">The SSS theorem.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00005">
+      <exercise id="exer-00010">
+      <problem id="prob-00010">
+      <para id="para-00039"><link class="os-embed" url="#exercise/CM-C10-M3-Q005"/></para>
+      </problem>
+      </exercise>
+      </note>
+      </section>
+      <section id="sect-00005">
+      <title>Similarity</title>
+      <para id="para-00040">If two triangles have the same angle measurements and are the same shape but differ in size, the two triangles are similar. The lengths of the sides of one triangle will be proportional to the corresponding sides of the second triangle. Note that a single fraction <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow></math> is called a ratio, but two fractions equal to each other is called a proportion, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>.</mo></mrow></math> This rule of similarity applies to all shapes as well as triangles. Another way to view similarity is by applying a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">scaling factor</emphasis>, which is the ratio between corresponding measurements between an object and a representation of the object, to one image that produces the second, similar image.</para>
+      <para id="para-00041">For example, why are the two images in Figure 10.24 are similar? These two images have the same proportions between elements. Therefore, they are similar.</para>
+      <figure id="fig-00014">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_021.png"/>
+      </media>
+      <caption>Similarity</caption>
+      </figure>
+      <example id="exam-00006">
+      <title>Determining If Triangles Are Similar</title>
+      <exercise id="exer-00011">
+      <problem id="prob-00011">
+      <para id="para-00042">Are the two triangles shown in Figure 10.XX similar?</para>
+      <figure id="fig-00015">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN013.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00006">
+      <para id="para-00043">We will look at the proportions within each triangle. In triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>α</mi></math> (alpha), the side opposite the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>57</mn></mrow><mo>∘</mo></msup></mrow></math> angle measures 7, and the side opposite the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>33</mn></mrow><mo>∘</mo></msup></mrow></math> angle measures 4. Then, the measures of the corresponding sides in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>β</mi></math> (beta) measures 3.5 and 2, respectively. We have
+      <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mn>4</mn><mn>7</mn></mfrac><mo>=</mo><mn>0.5714</mn><mspace width="2em"/><mfrac><mn>2</mn><mrow><mn>3.5</mn></mrow></mfrac><mo>=</mo><mn>0.5714.</mn></mrow></math></equation></para>
+      <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">This is the proportion <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>4</mn><mn>7</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mrow><mn>3.5</mn></mrow></mfrac></mrow></math>. The scaling factor is 0.5714.</para>
+      <para id="para-00045" xmlns="http://cnx.rice.edu/cnxml">Let’s try another correspondence. In triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>α</mi></math>, the hypotenuse measures 8.06 and the side opposite the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>57</mn></mrow><mo>∘</mo></msup></mrow></math> angle measures 7. In triangle<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>β</mi></math>, the hypotenuse measure 4.03 and the side opposite the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>57</mn></mrow><mo>∘</mo></msup></mrow></math> angle measures 3.5. We have
+      <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mn>7</mn><mrow><mn>8.06</mn></mrow></mfrac><mo>=</mo><mn>0.8685</mn><mspace width="2em"/><mfrac><mrow><mn>3.5</mn></mrow><mrow><mn>4.03</mn></mrow></mfrac><mo>=</mo><mn>0.8685.</mn></mrow></math></equation></para>
+      <para id="para-00046" xmlns="http://cnx.rice.edu/cnxml">Now, let’s look at the proportions between triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>α</mi></math> and triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>β</mi><mo>.</mo></mrow></math> The side measuring 2 in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>β</mi></math> corresponds to the side measuring 4 in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>α</mi></math>, the side measuring 3.5 in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>β</mi></math> corresponds to the side measuring 7 in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>α</mi><mo>,</mo></mrow></math> and the hypotenuse in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>β</mi></math> corresponds to the hypotenuse in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>α</mi><mo>.</mo></mrow></math> We have
+      <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mn>2</mn><mn>4</mn></mfrac><mo>=</mo><mn>0.5</mn><mspace width="2em"/><mfrac><mrow><mn>3.5</mn></mrow><mn>7</mn></mfrac><mo>=</mo><mn>0.5</mn><mspace width="2em"/><mfrac><mrow><mn>4.03</mn></mrow><mrow><mn>8.06</mn></mrow></mfrac><mo>=</mo><mn>0.5</mn></mrow></math></equation></para>
+      <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml">Thus, the corresponding angles are equal and the proportions between each pair of corresponding sides equals 0.5. In other words, the scaling factor is 0.5. Therefore, the triangles are similar.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00006">
+      <exercise id="exer-00012">
+      <problem id="prob-00012">
+      <para id="para-00048"><link class="os-embed" url="#exercise/CM-C10-M3-Q006"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00007">
+      <title>Proving Similarity</title>
+      <exercise id="exer-00013">
+      <problem id="prob-00013">
+      <para id="para-00049">In Figure 10.XX, is triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>δ</mi><mo stretchy="false">(</mo><mi mathvariant="italic">delta</mi><mo stretchy="false">)</mo></mrow></math> similar to triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ε</mi><mo stretchy="false">(</mo><mi mathvariant="italic">epsilon</mi><mo stretchy="false">)</mo></mrow></math>? Find the lengths of sides <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> and <emphasis effect="italic">y</emphasis> as part of your answer.</para>
+      <figure id="fig-00016">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN015.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00007">
+      <para id="para-00050">We can see that all three angles in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>δ</mi></math> are equal to the corresponding angles in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ε</mi></math>. That is enough to determine similarity. However, we want to find the values of <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> and <emphasis effect="italic">y</emphasis> to prove similarity.</para>
+      <para id="para-00051"><emphasis effect="bold">Step 1:</emphasis> We have to do is set up the proportions between the corresponding sides. We have the side that measures 2.375 in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>δ</mi></math> corresponding to the side measuring 1.069 in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ε</mi></math>. We have the hypotenuse/side in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>δ</mi></math> measuring 6 corresponding to the hypotenuse/side labeled <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">y</emphasis> in triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>ε</mi></math>. And, finally, the side labeled <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> in triangle<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>δ</mi></math> corresponds to the side measuring 2.475 in triangle<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ε</mi><mo>.</mo></mrow></math></para>
+      <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml">Each proportion should be equal. We start with the proportion of the shorter sides. Thus,
+      <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mn>1.069</mn></mrow><mrow><mn>2.375</mn></mrow></mfrac><mo>=</mo><mn>0.45.</mn></mrow></math></equation></para>
+      <para id="para-00053" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> We solve for <emphasis effect="italic">y</emphasis> using the first proportion. Set the two ratios equal to each other, cross-multiply, and solve for <emphasis effect="italic">y</emphasis>. We have
+      <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mfrac><mrow><mn>1.069</mn></mrow><mrow><mn>2.375</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>y</mi><mn>6</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1.069</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo stretchy="false">(</mo><mn>2.375</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mn>6.414</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2.375</mn><mi>y</mi></mtd></mtr><mtr><mtd columnalign="right"><mfrac><mrow><mn>6.414</mn></mrow><mrow><mn>2.375</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2.7</mn><mo>=</mo><mi>y</mi></mtd></mtr></mtable></math></equation></para>
+      <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>2.7</mn></mrow></math>.</para>
+      <para id="para-00055" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Checking that length in the proportion factor of 0.45, we have
+      <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mi>y</mi><mn>6</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2.7</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>0.45.</mn></mrow></math></equation></para>
+      <para id="para-00056" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Solving for <emphasis effect="italic">x</emphasis>, we will use the same proportion we used to solve for <emphasis effect="italic">y.</emphasis> We have
+      <equation id="eq-00011"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mfrac><mrow><mn>1.069</mn></mrow><mrow><mn>2.375</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>2.475</mn></mrow><mi>x</mi></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>1.069</mn><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2.475</mn><mo stretchy="false">(</mo><mn>2.375</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mn>1.069</mn><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5.878</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>5.878</mn></mrow><mrow><mn>1.069</mn></mrow></mfrac><mo>=</mo><mn>5.5</mn></mtd></mtr><mtr><mtd columnalign="right"><mfrac><mrow><mn>2.475</mn></mrow><mi>x</mi></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>2.475</mn></mrow><mrow><mn>5.5</mn></mrow></mfrac><mo>=</mo><mn>0.45.</mn></mtd></mtr></mtable></math></equation></para>
+      <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> We test the proportions. We have the following:
+      <equation id="eq-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mfrac><mrow><mn>2.7</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2.475</mn></mrow><mrow><mn>5.5</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1.069</mn></mrow><mrow><mn>2.375</mn></mrow></mfrac><mo>=</mo><mn>0.45</mn></mrow></math></equation></para>
+      <para id="para-00058" xmlns="http://cnx.rice.edu/cnxml">The proportions are all equal. Therefore, we have proven the property of similarity between triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>δ</mi></math> and triangle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>ε</mi><mo>.</mo></mrow></math></para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+      <exercise id="exer-00014">
+      <problem id="prob-00014">
+      <para id="para-00059"><link class="os-embed" url="#exercise/CM-C10-M3-Q007"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00008">
+      <title>Applying Similar Triangles</title>
+      <exercise id="exer-00015">
+      <problem id="prob-00015">
+      <para id="para-00060">A boy who is 5 ft tall is standing 50 ft away from the base of a tree (Figure 10.XX). The tree casts a 57-foot shadow. The boy casts a 7-foot shadow. What is the height of the tree?</para>
+      <figure id="fig-00017">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN017.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00008">
+      <para id="para-00061">We can see the big triangle outlined in a darker color, and the smaller triangle where the boy is standing outlined in a lighter color. These two triangles are similar because the smaller triangle fits inside the larger triangle at the smallest angle. It would fit inside the larger triangle at either of the other two angles as well. That all angles are equal is one of the criteria for similar triangles, so we can solve using proportions. We have
+      <equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mfrac><mn>5</mn><mn>7</mn></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>x</mi><mrow><mn>57</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>5</mn><mo stretchy="false">(</mo><mn>57</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right"><mfrac><mrow><mn>285</mn></mrow><mn>7</mn></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>x</mi><mo>=</mo><mn>40.7</mn></mtd></mtr></mtable></math></equation></para>
+      <para id="para-00062" xmlns="http://cnx.rice.edu/cnxml">The tree is 40.7 feet tall.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00008">
+      <exercise id="exer-00016">
+      <problem id="prob-00016">
+      <para id="para-00063"><link class="os-embed" url="#exercise/CM-C10-M3-Q008"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <example id="exam-00009">
+      <title>Finding Missing Lengths</title>
+      <exercise id="exer-00017">
+      <problem id="prob-00017">
+      <para id="para-00064">At a certain time of day, a radio tower casts a shadow of 180 ft long (Figure 10.XX). At the same time, a 9 ft truck casts a shadow 15 ft long. How high is the tower?</para>
+      <figure id="fig-00018">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_UN019.png"/>
+      </media>
+      <caption/>
+      </figure>
+      </problem>
+      <solution id="sol-00009">
+      <para id="para-00065">These are similar triangles and the problem can be solved by using proportions. We have that
+      <equation id="eq-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mfrac><mi>x</mi><mrow><mn>180</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>9</mn><mrow><mn>15</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>9</mn><mo stretchy="false">(</mo><mn>180</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>15</mn><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>1620</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>15</mn><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>108</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>x</mi></mtd></mtr></mtable></math></equation></para>
+      <para id="para-00066" xmlns="http://cnx.rice.edu/cnxml">The height of the tower is 108 ft.</para>
+      </solution>
+      </exercise>
+      </example>
+      <note class="your-turn" id="note-00009">
+      <exercise id="exer-00018">
+      <problem id="prob-00018">
+      <para id="para-00067"><link class="os-embed" url="#exercise/CM-C10-M3-Q009"/></para>
+      </problem>
+      </exercise>
+      </note>
+      <note class="people-mathematics" id="note-00010">
+      <title>Thales of Miletus</title>
+      <para id="para-00068">Thales of Miletus, sixth century BC, is considered one of the greatest mathematicians and philosophers of all time. Thales is credited with being the first to discover that the two angles at the base of an isosceles triangle are equal, and that the two angles formed by intersecting lines are equal—that is, vertical or opposite angles, are equal. Thales is also known for devising a method for measuring the height of the pyramids by similar right triangles. Figure 10.25 shows his method. He measured the length of the shadow cast by the pyramid at the precise time when his own shadow ended at the same place.</para>
+      <figure id="fig-00019">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_022.png"/>
+      </media>
+      <caption>Thales and Similarity</caption>
+      </figure>
+      <para id="para-00069">He equated the vertical height of the pyramid with his own height; the horizontal distance from the pyramid to the tip of its shadow with the distance from himself and the tip of his own shadow; and finally, the length of the shadow cast off the top of the pyramid with length of his own shadow cast off the top of his head. Using proportions, as shown in Figure 10.25, he essentially discovered the properties of similarity for right triangles. That is, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>△</mo><mi>A</mi><mi>B</mi><mi>C</mi></mrow></math> is similar to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>△</mo><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup><mo>.</mo></mrow></math> Note that to be similar, all corresponding angles between the two triangles must be equal, and the proportions from one side to another side within each triangle, as well as the proportions of the corresponding sides between the two triangles must be equal.</para>
+      <para id="para-00070" xmlns="http://cnx.rice.edu/cnxml">Thales is also credited with discovering a method of determining the distance of a ship from the shoreline. Here is how he did it, as illustrated in Figure 10.26.</para>
+      <figure id="fig-00020">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_10_03_023.png"/>
+      </media>
+      <caption>Thales and Similar Triangles</caption>
+      </figure>
+      <para id="para-00071">Thales walked along the shoreline pointing a stick at the ship until it formed a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> angle to the shore. Then he walked along the shot and placed the stick in the ground at point <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">C</emphasis>. He continued walking until he reached point <emphasis effect="italic">D</emphasis>. Then, he turned and walked away from the shore at a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> angle until the stick he placed in the ground at point <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">C</emphasis> lined up with the ship, point <emphasis effect="italic">E</emphasis>. This is how he created similar triangles and estimated the distance of the ship to the shore by using proportions.</para>
+      </note>
+      </section>
+      <section class="check-understanding" id="sect-00006">
+      <title>Check Your Understanding</title>
+      <exercise id="exer-00019">
+      <problem id="prob-00019">
+      <para id="para-00072"><link class="os-embed" url="#exercise/CM-C10-M3-Q010"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00020">
+      <problem id="prob-00020">
+      <para id="para-00073"><link class="os-embed" url="#exercise/CM-C10-M3-Q011"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00021">
+      <problem id="prob-00021">
+      <para id="para-00074"><link class="os-embed" url="#exercise/CM-C10-M3-Q012"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00022">
+      <problem id="prob-00022">
+      <para id="para-00075"><link class="os-embed" url="#exercise/CM-C10-M3-Q013"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00023">
+      <problem id="prob-00023">
+      <para id="para-00076"><link class="os-embed" url="#exercise/CM-C10-M3-Q014"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="section-exercises" id="sect-00007">
+      <exercise id="exer-00024">
+      <problem id="prob-00024">
+      <para id="para-00077"><link class="os-embed" url="#exercise/CM-C10-M3-Q015"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00025">
+      <problem id="prob-00025">
+      <para id="para-00078"><link class="os-embed" url="#exercise/CM-C10-M3-Q016"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00026">
+      <problem id="prob-00026">
+      <para id="para-00079"><link class="os-embed" url="#exercise/CM-C10-M3-Q017"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00027">
+      <problem id="prob-00027">
+      <para id="para-00080"><link class="os-embed" url="#exercise/CM-C10-M3-Q018"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00028">
+      <problem id="prob-00028">
+      <para id="para-00081"><link class="os-embed" url="#exercise/CM-C10-M3-Q019"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00029">
+      <problem id="prob-00029">
+      <para id="para-00082"><link class="os-embed" url="#exercise/CM-C10-M3-Q020"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00030">
+      <problem id="prob-00030">
+      <para id="para-00083"><link class="os-embed" url="#exercise/CM-C10-M3-Q021"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00031">
+      <problem id="prob-00031">
+      <para id="para-00084"><link class="os-embed" url="#exercise/CM-C10-M3-Q022"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00032">
+      <problem id="prob-00032">
+      <para id="para-00085"><link class="os-embed" url="#exercise/CM-C10-M3-Q023"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00033">
+      <problem id="prob-00033">
+      <para id="para-00086"><link class="os-embed" url="#exercise/CM-C10-M3-Q024"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00034">
+      <problem id="prob-00034">
+      <para id="para-00087"><link class="os-embed" url="#exercise/CM-C10-M3-Q025"/></para>
+      </problem>
+      </exercise>
+      <exercise id="exer-00035">
+      <problem id="prob-00035">
+      <para id="para-00088"><link class="os-embed" url="#exercise/CM-C10-M3-Q026"/></para>
+      </problem>
+      </exercise>
+      </section>
+      <section class="key-terms" id="sect-00008">
+      <title>Key Terms</title>
+      <list bullet-style="bulleted" id="list-00003">
+      <item>acute</item>
+      <item>obtuse</item>
+      <item>isosceles</item>
+      <item>equilateral</item>
+      <item>hypotenuse</item>
+      <item>congruence</item>
+      <item>similarity</item>
+      <item>scaling factor</item>
+      </list>
+      </section>
+      <section class="key-concepts" id="sect-00009">
+      <title>Key Concepts</title>
+      <list bullet-style="bulleted" id="list-00004">
+      <item>The sum of the interior angles of a triangle equal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Two triangles are congruent when the corresponding angles have the same measure and the corresponding side lengths are equal.</item>
+      <item>The congruence theorems include the following: SAS, two sides and the included angle of one triangle are congruent to the same in a second triangle; ASA, two angles and the included side of one triangle are congruent to the same in a second triangle; SSS, all three side lengths of one triangle are congruent to the same in a second triangle; AAS, two angles and the non-included side of one triangle are congruent to the same in a second triangle.</item>
+      <item>Two shapes are similar when the proportions between corresponding angles, sides or features of two shapes are equal, regardless of size.</item>
+      </list>
+      </section>
   </content>
 </document>
