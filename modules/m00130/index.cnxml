@@ -6,6 +6,691 @@
     <md:uuid>cd32f7e3-ce8d-4d08-85b9-9793b458cf9c</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001"/>
-  </content>
-</document>
+    <figure id="fig-00001">
+    <code/>
+    <!--<media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_10_06_001.jpg"/>
+    </media>-->
+    <caption>[caption TK] (credit: Pixabay/Pexels)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Calculate the area of triangles.</item>
+    <item>Calculate the area of quadrilaterals.</item>
+    <item>Calculate the area of polygons.</item>
+    <item>Calculate the area of circles.</item>
+    </list>
+    </section>
+    <para id="para-00002">Some areas carry more importance than other areas. Did you know that in a baseball game, when the player hits the ball and runs to first base that he must run within a 6-ft wide path? If he veers off slightly to the right, he is out. In other words, a few inches can be the difference in winning or losing a game. Another example is real estate. On Manhattan Island, one square foot of real estate is worth far more than real estate in practically any other area of the country. In other words, we place a value on area. As the context changes, so does the value.</para>
+    <para id="para-00003">Area refers to a region measured in square units, like a square mile or a square foot. For example, to purchase tile for a kitchen floor, you would need to know how many square feet are needed because tile is sold by the square foot. Carpeting is sold by the square yard. As opposed to linear measurements like perimeter, which in in linear units. For example, fencing is sold in linear units, a linear foot or yard. Linear dimensions refer to an outline or a boundary. Square units refer to the area within that boundary. Different items may have different units, but either way, you must know the linear dimensions to calculate the area.</para>
+    <para id="para-00004">Many geometric shapes have formulas for calculating areas, such as triangles, regular polygons, and circles. To calculate areas for many irregular curves or shapes, we need calculus. However, in this section, we will only look at geometric shapes that have known area formulas. The notation for area, as mentioned, is in square units and we write sq in or sq cm, or use an exponent, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mtext>in</mtext><mn>2</mn></msup></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mtext>cm</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> Note that linear measurements have no exponent above the units or we can say that the exponent is 1.</para>
+    <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Area of Triangles</title>
+    <para id="para-00005">The formula for the area of a triangle is given as follows.</para>
+    <note class="formula" id="note-00001">
+    <para id="para-00006">The area of a triangle is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> represents the base and <emphasis effect="italic">h</emphasis> represents the height.</para>
+    </note>
+    <para id="para-00007">For example, consider the triangle in Figure 10.48.</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_044.png"/>
+    </media>
+    <caption>Triangle 1</caption>
+    </figure>
+    <para id="para-00008">The base measures 4 cm and the height measures 5 cm. Using the formula, we can calculate the area. Thus,
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>20</mn><mo stretchy="false">)</mo><mo>=</mo><mn>10</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup></mrow></math></equation></para>
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">In Figure 10.49, the triangle has a base equal to 7 cm and a height equal to 3.5 cm. Notice that we can only find the height by dropping a perpendicular to the base. The area is then
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>3.5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>12.25</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></equation></para>
+    <figure id="fig-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_045.png"/>
+    </media>
+    <caption>Triangle 2</caption>
+    </figure>
+    <example id="exam-00001">
+    <title>Finding the Area of a Triangle</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">Find the area of this triangle that has a base of 4 cm and the height is 6 cm (Figure 10.XX).</para>
+    <figure id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN001.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00011">Using the formula, we have
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mn>24</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>12</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mtext>.</mtext></mrow></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00012"><link class="os-embed" url="#exercise/CM-C10-M6-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Area of Quadrilaterals</title>
+    <para id="para-00013">A quadrilateral is a four-sided polygon with four vertices. Some quadrilaterals have either one or two sets of parallel sides. The set of quadrilaterals include the square, the rectangle, the parallelogram, the trapezoid, and the rhombus. The most common quadrilaterals are the square and the rectangle.</para>
+    <section id="sect-00004">
+    <title>Square</title>
+    <para id="para-00014">In Figure 10.50, a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mspace width="0.28em"/><mtext>in</mtext><mo>×</mo><mn>12</mn><mspace width="0.28em"/><mtext>in</mtext></mrow></math> grid is represented with twelve <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mspace width="0.28em"/><mtext>in</mtext><mo>×</mo><mn>1</mn><mspace width="0.28em"/><mtext>in</mtext></mrow></math> squares across each row, and twelve <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mspace width="0.28em"/><mtext>in</mtext><mo>×</mo><mn>1</mn><mspace width="0.28em"/><mtext>in</mtext></mrow></math> squares down each column. If you count the little squares, the sum equals 144 squares. Of course, you do not have to count little squares to find area—we have a formula. Thus, the formula for the area of a square, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><mtext>length of a side</mtext></mrow></math>, is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>s</mi><mo>⋅</mo><mi>s</mi></mrow></math>. The area of the square in Figure 10.50 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>12</mn><mspace width="0.28em"/><mtext>in</mtext><mo>×</mo><mn>12</mn><mspace width="0.28em"/><mtext>in</mtext><mo>=</mo><mn>144</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    <figure id="fig-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_046.png"/>
+    </media>
+    <caption>Area of a Square</caption>
+    </figure>
+    <note class="formula" id="note-00003">
+    <para id="para-00015">The formula for the area of a square is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>s</mi><mo>⋅</mo><mi>s</mi></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    </note>
+    </section>
+    </section>
+    <section id="sect-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Rectangle</title>
+    <para id="para-00016">Similarly, the area for a rectangle is found by multiplying length times width. The rectangle in Figure 10.51 has width equal to 5 in and length equal to 12 in. The area is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>5</mn><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo><mo>=</mo><mn>60</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    <figure id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_047.png"/>
+    </media>
+    <caption>Area of a Rectangle</caption>
+    </figure>
+    <note class="formula" id="note-00004">
+    <para id="para-00017">The area of a rectangle is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi><mo>.</mo></mrow></math></para>
+    </note>
+    <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">Many everyday applications require the use of the perimeter and area formulas. Suppose you are remodeling your home and you want to replace all the flooring. You need to know how to calculate the area of the floor to purchase the correct amount of tile, or hardwood, or carpet. If you want to paint the rooms, you need to calculate the area of the walls and the ceiling to know how much paint to buy, and the list goes on. Can you think of other situations where you might need to calculate area?</para>
+    <example id="exam-00002">
+    <title>Finding the Area of a Rectangle</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00019">You have a garden with an area of 196 square feet. How wide can the garden be if the length is 28 feet?</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00020">The area of a rectangular region is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi><mo>.</mo></mrow></math> Letting the width equal <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">w</emphasis>, we have
+    <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>196</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>28</mn><mi>w</mi></mtd></mtr><mtr><mtd columnalign="right"><mfrac><mrow><mn>196</mn></mrow><mrow><mn>28</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>w</mi><mo>=</mo><mn>7</mn><mspace width="0.28em"/><mtext>ft</mtext><mo>.</mo></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C10-M6-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Determining the Cost of Floor Tile</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00022">Jennifer is planning to install vinyl floor tile in her rectangular-shaped basement, which measures 29 ft by 16 ft. How many boxes of floor tile should she buy and how much will it cost if one box costs $50 and covers <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>?</mo></mrow></math></para>
+    </problem>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00023">The area of the basement floor is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>29</mn><mo stretchy="false">(</mo><mn>16</mn><mo stretchy="false">)</mo><mo>=</mo><mn>464</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> We will divide this area by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mspace width="0.28em"/><mtext>ft</mtext><mo>.</mo></mrow></math> Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>464</mn></mrow><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mn>23.2</mn><mo>.</mo></mrow></math> Therefore, Jennifer will have to buy 24 boxes of tile at a cost $1200.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00024"><link class="os-embed" url="#exercise/CM-C10-M6-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Parallelogram</title>
+    <para id="para-00025">The area of a parallelogram can be found using the formula for the area of a triangle. Notice in Figure 10.52, if we cut a diagonal across the parallelogram from one vertex to the opposite vertex, we have two triangles. If we multiply the area of a triangle by 2, we have the area of a parallelogram. Then,
+    <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2</mn><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>b</mi><mi>h</mi></mtd></mtr></mtable></math></equation></para>
+    <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_048.png"/>
+    </media>
+    <caption>Area of a Parallelogram</caption>
+    </figure>
+    <note class="formula" id="note-00007">
+    <para id="para-00026">The area of a parallelogram is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>b</mi><mi>h</mi><mo>.</mo></mrow></math></para>
+    </note>
+    <para id="para-00027" xmlns="http://cnx.rice.edu/cnxml">For example, if we have a parallelogram with the base be equal to 10 inches and the height equal to 5 inches, the area will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>50</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding the Area of a Parallelogram</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00028">In the parallelogram (Figure 10.XX), if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mi>B</mi><mo>=</mo><mn>10</mn><mo>,</mo><mi>A</mi><mi>D</mi><mo>=</mo><mn>15</mn><mo>,</mo></mrow></math> find the exact area of the parallelogram.</para>
+    <figure id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN003.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00029">Using the formula of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> we have
+    <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mn>10</mn><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo><mo>=</mo><mn>150</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00030"><link class="os-embed" url="#exercise/CM-C10-M6-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Finding the Area of a Parallelogram Park</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00031">The boundaries of a city park form a parallelogram (Figure 10.XX). The park takes up one city block, which is contained by two sets of parallel streets. Each street measures 55 yd long. The perpendicular distance between streets is 39 yd. How much sod, sold by the square foot, should the city purchase to cover the entire park and how much will it cost? The sod is sold for $0.50 per square foot, installation is $1.50 per square foot, and the cost of the equipment for the day is $100.</para>
+    <figure id="fig-00009">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN005.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00032"><emphasis effect="bold">Step 1:</emphasis> As sod is sold by the square foot, the first thing we have to do is translate the measurements of the park from yards to feet. There are 3 ft to a yard, so 55 yd is equal to 165 ft, and 39 yd is equal to 117 ft.</para>
+    <para id="para-00033"><emphasis effect="bold">Step 2:</emphasis> The park has the shape of a parallelogram, and the formula for the area is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>b</mi><mi>h</mi></mrow></math>:
+    <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mn>165</mn><mo stretchy="false">(</mo><mn>117</mn><mo stretchy="false">)</mo><mo>=</mo><mn>19</mn><mo>,</mo><mn>305</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></equation></para>
+    <para id="para-00034" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The city needs to purchase <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>19</mn><mo>,</mo><mn>305</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup></mrow></math> of sod. The cost will be $0.50 per square foot for the sod and $1.50 per square foot for installation, plus $100 for equipment:
+    <equation id="eq-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>19</mn><mo>,</mo><mn>305</mn><mo stretchy="false">(</mo><mi>$</mi><mn>0.50</mn><mo stretchy="false">)</mo><mo>+</mo><mn>19305</mn><mo stretchy="false">(</mo><mi>$</mi><mn>1.50</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>$</mi><mn>9652.5</mn><mo>+</mo><mi>$</mi><mn>28</mn><mo>,</mo><mn>957.5</mn><mo>+</mo><mi>$</mi><mn>100</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>$</mi><mn>38</mn><mo>,</mo><mn>710.00</mn></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C10-M6-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00007">
+    <title>Trapezoid</title>
+    <para id="para-00036">Another quadrilateral is the trapezoid. A trapezoid has one set of parallel sides or bases. The formula for the area of a trapezoid with parallel bases <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis> and height <emphasis effect="italic">h</emphasis> is given here.</para>
+    <note class="formula" id="note-00010">
+    <para id="para-00037">The formula for the area of a trapezoid is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>h</mi><mrow><mo>(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></para>
+    </note>
+    <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">For example, find the area of the trapezoid in Figure 10.53 that has base <emphasis effect="italic">a</emphasis> equal to 8 cm, base <emphasis effect="italic">b</emphasis> equal to 6 cm, and height equal to 6 cm.</para>
+    <figure id="fig-00010">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_049.png"/>
+    </media>
+    <caption>Area of a Trapezoid</caption>
+    </figure>
+    <para id="para-00039">The area is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo><mrow><mo>(</mo><mrow><mn>6</mn><mo>+</mo><mn>8</mn></mrow><mo>)</mo></mrow><mo>=</mo><mn>42</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup></mrow></math>.</para>
+    <example id="exam-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding the Area of a Trapezoid</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00040"><emphasis effect="italic">ABCD</emphasis> (Figure 10.XX) is a regular trapezoid with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover accent="true"><mrow><mi>A</mi><mi>B</mi></mrow><mo stretchy="true">¯</mo></mover><mrow><mo>‖</mo><mrow><mover accent="true"><mrow><mi>C</mi><mi>D</mi></mrow><mo stretchy="true">¯</mo></mover><mo>.</mo></mrow></mrow></mrow></math> Find the exact perimeter of <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">ABCD</emphasis>, and then find the area.</para>
+    <figure id="fig-00011">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN006.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00041">The perimeter is the measure of the boundary of the shape, so we just add up the lengths of the sides. We have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo>=</mo><mn>31</mn><mo>+</mo><mn>13.5</mn><mo>+</mo><mn>11</mn><mo>+</mo><mn>13.5</mn><mo>=</mo><mn>69</mn><mspace width="0.28em"/><mtext>in</mtext><mo>.</mo></mrow></math> Then, the area of the trapezoid using the formula is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>11</mn><mo>+</mo><mn>31</mn><mo stretchy="false">)</mo><mo>=</mo><mn>210</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C10-M6-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <section id="sect-00008">
+    <title>Rhombus</title>
+    <para id="para-00043">The rhombus has two sets of parallel sides. To find the area of a rhombus, there are two formulas we can use. One involves determining the measurement of the diagonals.</para>
+    <note class="formula" id="note-00012">
+    <para id="para-00044">The area of a rhombus is found using one of these formulas:
+    <list bullet-style="bulleted" id="list-00002">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>d</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo></mrow></math> where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></math> are the diagonals.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> is the base and <emphasis effect="italic">h</emphasis> is the height.</item>
+    </list></para>
+    </note>
+    <para id="para-00045">For example, if the area of a rhombus is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>220</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mo>,</mo></mrow></math> and the measure of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>11</mn><mo>,</mo></mrow></math> find the measure of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>.</mo></mrow></math> To solve this problem, we input the known values into the formula and solve for the unknown. See Figure 10.54.</para>
+    <figure id="fig-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_050.png"/>
+    </media>
+    <caption>Area of a Rhombus</caption>
+    </figure>
+    <para id="para-00046">We have that
+    <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>220</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>11</mn><msub><mi>d</mi><mn>1</mn></msub></mrow><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>220</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>11</mn><msub><mi>d</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="right"><mfrac><mrow><mn>440</mn></mrow><mrow><mn>11</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>40</mn></mtd></mtr></mtable></math></equation></para>
+    <example id="exam-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding the Area of a Rhombus</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00047">Find the measurement of the diagonal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></math> if the area of the rhombus is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>240</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mo>,</mo></mrow></math> and the measure of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>24</mn><mspace width="0.28em"/><mtext>cm</mtext><mo>.</mo></mrow></math></para>
+    </problem>
+    <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00048">Use the formula with the known values. Thus,
+    <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>240</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><msub><mi>d</mi><mn>1</mn></msub><mo stretchy="false">(</mo><mn>24</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>240</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>d</mi><mn>1</mn></msub><mo stretchy="false">(</mo><mn>24</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mfrac><mrow><mn>480</mn></mrow><mrow><mn>24</mn></mrow></mfrac></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>20</mn></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C10-M6-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00008">
+    <title>Finding the Area of a Rhombus</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00050">You notice a little boy flying a rhombus-shaped kite on the beach. When it falls to the ground, it falls on a beach towel measuring <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mspace width="0.28em"/><mtext>in</mtext></mrow></math> by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mspace width="0.28em"/><mtext>in</mtext><mo>.</mo></mrow></math> You notice that one of the diagonals of the kite is the same length as the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mspace width="0.28em"/><mtext>in</mtext></mrow></math> width of the towel. The second diagonal appears to be 2 in longer. What it the area of the kite (Figure 10.XX)?</para>
+    <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN008.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00008">
+    <para id="para-00051">Using the formula, we have
+    <equation id="eq-00011"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>d</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>36</mn><mo stretchy="false">(</mo><mn>38</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mn>684</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C10-M6-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    </section>
+    <section id="sect-00009">
+    <title>Area of Polygons</title>
+    <para id="para-00053">To find the area of a regular polygon, we need to learn about a few more elements. First, the apothem <emphasis effect="italic">a</emphasis> of a regular polygon is a line segment that starts at the center and is perpendicular to a side. The radius <emphasis effect="italic">r</emphasis> of a regular polygon is also a line segment that starts at the center but extends to a vertex. See Figure 10.55.</para>
+    <figure id="fig-00014">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_051.png"/>
+    </media>
+    <caption>Apothem and Radius of a Polygon</caption>
+    </figure>
+    <note class="formula" id="note-00015">
+    <para id="para-00054">The area of a regular polygon is found with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>p</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the apothem and <emphasis effect="italic">p</emphasis> is the<emphasis effect="italic"/> perimeter.</para>
+    </note>
+    <para id="para-00055">For example, consider the regular hexagon shown in Figure 10.56 with side length of 4 cm, and the apothem measures <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>.</mo></mrow></math></para>
+    <figure id="fig-00015" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_052a.png"/>
+    </media>
+    <caption>Area of a Hexagon</caption>
+    </figure>
+    <para id="para-00056">We have the perimeter, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mn>6</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mn>24</mn><mspace width="0.28em"/><mtext>cm</mtext><mo>.</mo></mrow></math> We have the apothem as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>.</mo></mrow></math> Then, the area is
+    <equation id="eq-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mo>)</mo></mrow><mo stretchy="false">(</mo><mn>24</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>24</mn><msqrt><mn>3</mn></msqrt><mo>=</mo><mn>41.57</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup></mtd></mtr></mtable></math></equation></para>
+    <example id="exam-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding the Area of a Regular Octagon</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00057">Find the area of a regular octagon with the apothem equal to 18 cm and a side length equal to 13 cm (Figure 10.XX).</para>
+    <figure id="fig-00016">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN009.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00009">
+    <para id="para-00058">Using the formula, we have the perimeter <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mn>8</mn><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo><mo>=</mo><mn>104</mn><mspace width="0.28em"/><mtext>cm</mtext><mo>.</mo></mrow></math> Then, the area is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>104</mn><mo stretchy="false">)</mo><mo>=</mo><mn>936</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00059"><link class="os-embed" url="#exercise/CM-C10-M6-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <section id="sect-00010">
+    <title>Changing Units</title>
+    <para id="para-00060">Often, we have the need to change the units of one or more items in a problem to find a solution. For example, suppose you are purchasing new carpet for a room measured in feet, but carpeting is sold in terms of yards. You will have to convert feet to yards to purchase the correct amount of carpeting. Or, you may need to convert centimeters to inches, or feet to meters. In each case, it is essential to use the correct equivalency.</para>
+    <example id="exam-00010">
+    <title>Changing Units</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00061">Carpeting comes in units of square yards. Your living room measures 21 ft wide by 24 ft long. How much carpeting do you buy?</para>
+    </problem>
+    <solution id="sol-00010">
+    <para id="para-00062">We must convert feet to yards. As there are 3 ft in 1 yd, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>21</mn><mspace width="0.28em"/><mtext>ft</mtext><mo>=</mo><mn>7</mn><mspace width="0.28em"/><mtext>yds</mtext></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>24</mn><mspace width="0.28em"/><mtext>ft</mtext><mo>=</mo><mn>8</mn><mspace width="0.28em"/><mtext>yds</mtext><mo>.</mo></mrow></math> Then, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7</mn><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo><mo>=</mo><mn>56</mn><mspace width="0.28em"/><msup><mtext>yd</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C10-M6-Q010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    </section>
+    <section id="sect-00011">
+    <title>Area of Circles</title>
+    <para id="para-00064">Just as the circumference of a circle includes the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>π</mi><mo>,</mo></mrow></math> so does the formula for the area of a circle. Recall that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>π</mi></math> is a non-terminating, non-repeating decimal number: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>3.14159</mn><mo>…</mo></mrow></math>. It represents the ratio of the circumference to the diameter, so it is a critical number in the calculation of circumference and area.</para>
+    <note class="formula" id="note-00018" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00065">The area of a circle is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is the radius.</para>
+    </note>
+    <para id="para-00066">For example, to find the of the circle with radius equal to 3 cm, as shown in Figure 10.57, is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    <figure id="fig-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_052b.png"/>
+    </media>
+    <caption>Circle with Radius 3</caption>
+    </figure>
+    <para id="para-00067">We have
+    <equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>π</mi><msup><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>9</mn><mi>π</mi><mo>=</mo><mn>28.27</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup></mtd></mtr></mtable></math></equation></para>
+    <example id="exam-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding the Area of a Circle</title>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00068">Find the area of a circle with diameter of 16 cm.</para>
+    </problem>
+    <solution id="sol-00011">
+    <para id="para-00069">The formula for the area of a circle is given in terms of the radius, so we cut the diameter in half. Then, the area is
+    <equation id="eq-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>201.1</mn><mspace width="0.28em"/><msup><mtext>cm</mtext><mn>2</mn></msup><mtext>.</mtext></mrow></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00019" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00070"><link class="os-embed" url="#exercise/CM-C10-M6-Q011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00012">
+    <title>Determining the Better Value for Pizza</title>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00071">You decide to order a pizza (Figure 10.XX) to share with your friend for dinner. The price for an 8-in diameter pizza is $7.99. The price for 16-in diameter pizza is $13.99. Which one do you think is the better value?</para>
+    <figure id="fig-00018">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/pizza.jpg"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00012">
+    <para id="para-00072">The area of the 8-in diameter pizza is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>50.3</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> The area of the 16-in diameter pizza is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>201.1</mn><mspace width="0.28em"/><msup><mtext>in</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> Next, we divide the cost of each pizza by its area in square inches. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>13.99</mn></mrow><mrow><mn>201.1</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>0.07</mn></mrow></math> per square inch and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>7.99</mn></mrow><mrow><mn>50.3</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>0.16</mn></mrow></math> per square inch. So clearly, the 16-inpizza is the better value.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00020" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00073"><link class="os-embed" url="#exercise/CM-C10-M6-Q012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00013">
+    <title>Applying Area to the Real World</title>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00074">You want to purchase a tinted film, sold by the square foot, for the window in Figure 10.XX. (This problem should look familiar as we saw it earlier when calculating circumference.) The bottom part of the window is a rectangle, and the top part is a semicircle. Find the area and calculate the amount of film to purchase.</para>
+    <figure id="fig-00019">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN011.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00013">
+    <para id="para-00075">First, the rectangular portion has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>5</mn><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>50</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup></mrow></math>. For the top part, we have a semicircle with a diameter of 5 ft, so the radius is 2.5 ft. We want one half of the area of a circle with radius 2.5 ft, so the area of the top semicircle part is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>π</mi><msup><mrow><mo stretchy="false">(</mo><mn>2.5</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>9.8</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> Add the area of the rectangle to the area of the semicircle. Then, the total area to be covered with the window film is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mn>50</mn><mo>+</mo><mn>9.8</mn><mo>=</mo><mn>59.8</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00021" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C10-M6-Q013"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00012">
+    <title>Area within Area</title>
+    <para id="para-00077">Suppose you want to install a round hot tub on your backyard patio. How would you calculate the space needed for the hot tub? Or, let’s say that you want to purchase a new dining room table, but you are not sure if you have enough space for it. These are common issues people face every day. So, let’s take a look at how we solve these problems.</para>
+    <example id="exam-00014">
+    <title>Finding the Area within an Area</title>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00078">The patio in your backyard measures 20 ft by 10 ft (Figure 10.XX). On one-half of the patio, you have a 4-ft diameter table with six chairs taking up an area of approximately 36 sq feet. On the other half of the patio, you want to install a hot tub measuring 6 ft in diameter. How much room will the table with six chairs and the hot tub take up? How much area is left over?</para>
+    <figure id="fig-00020">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN013.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00014">
+    <para id="para-00079">The hot tub has a radius of 3 ft. That area is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>9</mn><mi>π</mi><mo>=</mo><mn>28.27</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> The total square feet taken up with the table and chairs and the hot tub is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mo>+</mo><mn>28.27</mn><mo>=</mo><mn>64.27</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> The area left over is equal to the total area of the patio, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>200</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup></mrow></math> minus the area for the table and chairs and the hot tub. Thus, the area left over is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>200</mn><mo>−</mo><mn>64.27</mn><mo>=</mo><mn>135.7</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00022" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C10-M6-Q014"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00015">
+    <title>Finding the Cost of Fertilizing an Area</title>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00081">A sod farmer wants to fertilize a rectangular plot of land 150 ft by 240 ft. A bag of fertilizer covers <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5000</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup></mrow></math> and costs $200. How much will it cost to fertilize the entire plot of land?</para>
+    </problem>
+    <solution id="sol-00015" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00082">The plot of land is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36</mn><mo>,</mo><mn>000</mn><mspace width="0.28em"/><msup><mtext>ft</mtext><mn>2</mn></msup><mo>.</mo></mrow></math> It will take 7.2 bags of fertilizer to cover the land area. Therefore, the farmer will have to purchase 8 bags of fertilizer at $200 a bag, which comes to $1600.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00023" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00083"><link class="os-embed" url="#exercise/CM-C10-M6-Q015"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="people-mathematics" id="note-00024">
+    <title>Heron of Alexandria</title>
+    <figure id="fig-00021">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_10_06_002.jpg"/>
+    </media>
+    <caption>Heron of Alexandrie (credit: Wikimedia Commons/CC-BY-SA)</caption>
+    </figure>
+    <para id="para-00084">Heron of Alexandria, born around 20 A.D., was an inventor, a scientist, and an engineer. He is credited with the invention of the Aeolipile, one of the first steam engines centuries before the industrial revolution. Heron was the father of the vending machine. He talked about the idea of inserting a coin into a machine for it to perform a specific action in his book, <emphasis effect="italic">Mechanics and Optics</emphasis>. His contribution to the field of mathematics was enormous. <emphasis effect="italic">Metrica</emphasis>, a series of three books, was devoted to methods of finding the area and volume of three-dimensional objects like pyramids, cylinders, cones, and prisms. He also discovered and developed the procedures for finding square roots and cubic roots. However, he is probably best known for Heron’s formula, which is used for finding the area of a triangle based on the lengths of its sides. Given a triangle <emphasis effect="italic">ABC</emphasis> (Figure 10.XX).</para>
+    <figure id="fig-00022">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_06_UN016.png"/>
+    </media>
+    <caption/>
+    </figure>
+    <para id="para-00085">Heron’s formula is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><msqrt><mrow><mi>s</mi><mo stretchy="false">(</mo><mi>s</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>s</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>s</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></msqrt><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">s</emphasis> is the semi-perimeter calculated as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mn>2</mn></mfrac><mo>.</mo></mrow></math></para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00086"><link class="os-embed" url="#exercise/CM-C10-M6-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00087"><link class="os-embed" url="#exercise/CM-C10-M6-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00088"><link class="os-embed" url="#exercise/CM-C10-M6-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00089"><link class="os-embed" url="#exercise/CM-C10-M6-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00090"><link class="os-embed" url="#exercise/CM-C10-M6-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00091"><link class="os-embed" url="#exercise/CM-C10-M6-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00092"><link class="os-embed" url="#exercise/CM-C10-M6-Q022"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00014">
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00093"><link class="os-embed" url="#exercise/CM-C10-M6-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00094"><link class="os-embed" url="#exercise/CM-C10-M6-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00095"><link class="os-embed" url="#exercise/CM-C10-M6-Q025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00096"><link class="os-embed" url="#exercise/CM-C10-M6-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C10-M6-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00098"><link class="os-embed" url="#exercise/CM-C10-M6-Q028"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00099"><link class="os-embed" url="#exercise/CM-C10-M6-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00100"><link class="os-embed" url="#exercise/CM-C10-M6-Q030"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00101"><link class="os-embed" url="#exercise/CM-C10-M6-Q031"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00102"><link class="os-embed" url="#exercise/CM-C10-M6-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00103"><link class="os-embed" url="#exercise/CM-C10-M6-Q033"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00049">
+    <problem id="prob-00049">
+    <para id="para-00104"><link class="os-embed" url="#exercise/CM-C10-M6-Q034"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00050">
+    <problem id="prob-00050">
+    <para id="para-00105"><link class="os-embed" url="#exercise/CM-C10-M6-Q035"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00051">
+    <problem id="prob-00051">
+    <para id="para-00106"><link class="os-embed" url="#exercise/CM-C10-M6-Q036"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00052">
+    <problem id="prob-00052">
+    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C10-M6-Q037"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00053">
+    <problem id="prob-00053">
+    <para id="para-00108"><link class="os-embed" url="#exercise/CM-C10-M6-Q038"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00054">
+    <problem id="prob-00054">
+    <para id="para-00109"><link class="os-embed" url="#exercise/CM-C10-M6-Q039"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00015">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00003">
+    <item>triangle</item>
+    <item>square</item>
+    <item>rectangle</item>
+    <item>rhombus</item>
+    <item>apothem</item>
+    <item>radius</item>
+    <item>circle</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00016">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00004">
+    <item>The area <emphasis effect="italic">A</emphasis> of a triangle is found with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> is the base and <emphasis effect="italic">h</emphasis> is the height.</item>
+    <item>The area of a parallelogram is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> is the base and <emphasis effect="italic">h</emphasis> is the height.</item>
+    <item>The area of a rectangle is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">l</emphasis> is the length and <emphasis effect="italic">w</emphasis> is the width.</item>
+    <item>The area of a trapezoid is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>h</mi><mrow><mo>(</mo><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">h</emphasis> is the height, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>b</mi><mn>1</mn></msub></mrow></math> is the length of one base, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>b</mi><mn>2</mn></msub></mrow></math> is the length of the other base.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The area of a rhombus is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>d</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo></mrow></math> where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></math> is the length of one diagonal and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></math> is the length of the other diagonal.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The area of a regular polygon is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>p</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the apothem and <emphasis effect="italic">p</emphasis> is the perimeter.</item>
+    <item>The area of a circle is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is the radius.</item>
+    </list>
+    </section>
+    <section class="formula-review" id="sect-00017">
+    <title>Formulas</title>
+    <para id="para-00110">The area of a triangle is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> represents the base and <emphasis effect="italic">h</emphasis> represents the height.</para>
+    <para id="para-00111">The formula for the area of a square is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>s</mi><mo>⋅</mo><mi>s</mi></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><msup><mi>s</mi><mn>2</mn></msup><mo>.</mo></mrow></math></para>
+    <para id="para-00112" xmlns="http://cnx.rice.edu/cnxml">The area of a rectangle is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi><mo>.</mo></mrow></math></para>
+    <para id="para-00113" xmlns="http://cnx.rice.edu/cnxml">The area of a parallelogram is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>b</mi><mi>h</mi><mo>.</mo></mrow></math></para>
+    <para id="para-00114" xmlns="http://cnx.rice.edu/cnxml">The formula for the area of a trapezoid is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>h</mi><mrow><mo>(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math></para>
+    <para id="para-00115" xmlns="http://cnx.rice.edu/cnxml">The area of a rhombus is found using one of these formulas:
+    <list bullet-style="bulleted" id="list-00005">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>d</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo></mrow></math> where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></math> are the diagonals.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> is the base and <emphasis effect="italic">h</emphasis> is the height.</item>
+    </list></para>
+    <para id="para-00116">The area of a regular polygon is found with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>p</mi><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the apothem and <emphasis effect="italic">p</emphasis> is the<emphasis effect="italic"/> perimeter.</para>
+    <para id="para-00117">The area of a circle is given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is the radius.</para>
+    </section>
+    </content>
+    </document>
