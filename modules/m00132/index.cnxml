@@ -6,6 +6,988 @@
     <md:uuid>50fcbdd2-3805-49ba-a1e3-d7db15a6157f</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001"/>
-  </content>
-</document>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Photo_10_08_001.jpg"/>
+    </media>
+    <caption>[caption TK] (credit: Pixabay/Pexels)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Apply the Pythagorean Theorem to find the missing sides of a right triangle.</item>
+    <item>Apply the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> right triangle relationships to find the missing sides of a triangle.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Apply trigonometric ratios to find missing parts of a right triangle.</item>
+    <item>Solve application problems involving trigonometric ratios.</item>
+    </list>
+    </section>
+    <para id="para-00002">This is another excerpt from Raphael’s <emphasis effect="italic">The School of Athens.</emphasis> The man writing in the book represents Pythagoras, the namesake of one of the most widely used formulas in geometry, engineering, architecture, and many other fields, the Pythagorean Theorem. However, there is evidence that the theorem was known as early as 1900–1100 BC by the Babylonians. The Pythagorean Theorem is a formula used for finding the lengths of the sides of right triangles.</para>
+    <para id="para-00003">Born in Greece, Pythagoras lived from 569–500 BC. He initiated a cult-like group called the Pythagoreans, which was a secret society composed of mathematicians, philosophers, and musicians. Pythagoras believed that everything in the world could be explained through numbers. Besides the Pythagorean Theorem, Pythagoras and his followers are credited with the discovery of irrational numbers, the musical scale, the relationship between music and mathematics, and many other concepts that left an immeasurable influence on future mathematicians and scientists.</para>
+    <para id="para-00004">The focus of this section is on right triangles. We will look at how the Pythagorean Theorem is used to find the unknown sides of a right triangle, and we will also study the <emphasis effect="italic">special</emphasis> triangles, those with set ratios between the lengths of sides. By ratios we mean the relationship of one side to another side. When you think about ratios, you should think about fractions. A fraction is a ratio, the ratio of the numerator to the denominator. Finally, we will preview trigonometry. We will learn about the basic trigonometric functions, sine, cosine and tangent, and how they are used to find not only unknown sides but unknown angles, as well, with little information.</para>
+    <section id="sect-00002">
+    <title>Pythagorean Theorem</title>
+    <para id="para-00005">The Pythagorean Theorem is used to find unknown sides of right triangles. The theorem states that the sum of the squares of the two legs of a right triangle equals the square of the hypotenuse (the longest side of the right triangle).</para>
+    <note class="formula" id="note-00001">
+    <para id="para-00006">The Pythagorean Theorem states
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></math></equation>
+    where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> and <emphasis effect="italic">b</emphasis> are two sides (legs) of a right triangle and <emphasis effect="italic">c</emphasis> is the hypotenuse, as shown in Figure 10.63.</para>
+    </note>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_059a.png"/>
+    </media>
+    <caption>Pythagorean Right Triangle</caption>
+    </figure>
+    <para id="para-00007">For example, given that side <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>6</mn><mo>,</mo></mrow></math> and side <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>8</mn><mo>,</mo></mrow></math> we can find the measure of side <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">c</emphasis> using the Pythagorean Theorem. Thus,
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><msup><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mn>8</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>36</mn><mo>+</mo><mn>48</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>100</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><msqrt><mrow><mn>100</mn></mrow></msqrt></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"><mn>10</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>c</mi></mtd></mtr></mtable></math></equation></para>
+    <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Using the Pythagorean Theorem</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00008">Find the length of the missing side of the triangle (Figure 10.XX).</para>
+    <figure id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN001.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00009">Using the Pythagorean Theorem, we have
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo stretchy="false">(</mo><mn>14</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>36</mn><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>196</mn></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>196</mn><mo>−</mo><mn>36</mn></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>160</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>b</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>±</mo><msqrt><mrow><mn>160</mn></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>4</mn><msqrt><mrow><mn>10</mn></mrow></msqrt><mo>=</mo><mn>12.69</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">When we take the square root of a number, the answer is usually both the positive and negative root. However, lengths cannot be negative, which is why we only consider the positive root.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CM-C10-M8-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Distance</title>
+    <para id="para-00012">The applications of the Pythagorean Theorem are countless, but one especially useful application is that of distance. In fact, the distance formula stems directly from the theorem. It works like this:</para>
+    <para id="para-00013">In Figure 10.64, the problem is to find the distance between the points <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><mo>.</mo></mrow></math> We call the length from point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> to point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> side <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis>, and the length from point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> to point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></math> side <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis>. To find side <emphasis effect="italic">c</emphasis>, we use the distance formula and we will explain it relative to the Pythagorean Theorem. The distance formula is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mrow><mo>(</mo><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup></mrow></msqrt><mo>,</mo></mrow></math> such that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math> is a substitute for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> in the Pythagorean Theorem and is equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn><mo>;</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math> is a substitute for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> in the Pythagorean Theorem<emphasis effect="italic"/> and is equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3.</mn></mrow></math> When we plug in these numbers to the distance formula, we have
+    <equation id="eq-00004" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>d</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>36</mn><mo>+</mo><mn>9</mn></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><mn>45</mn></mrow></msqrt><mo>=</mo><mn>3</mn><msqrt><mn>5</mn></msqrt><mo>=</mo><mn>6.7</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>=</mo><mi>c</mi></mrow></math>, the hypotenuse, in the Pythagorean Theorem.</para>
+    <figure id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_060.png"/>
+    </media>
+    <caption>Distance</caption>
+    </figure>
+    <example id="exam-00002">
+    <title>Calculating Distance Using the Distance Formula</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00015">You live on the corner of First Street and Maple Avenue, and work at Star Enterprises on Tenth Street and Elm Drive (Figure 10.XX). You want to calculate how far you walk to work every day and how it compares to the actual distance (as the crow flies). Each block measures 200 ft by 200 ft.</para>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN003.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00016">You travel 7 blocks south and 9 blocks west. If each block measures 200 ft by 200 ft, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo stretchy="false">(</mo><mn>200</mn><mo stretchy="false">)</mo><mo>+</mo><mn>7</mn><mo stretchy="false">(</mo><mn>200</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1800</mn><mspace width="0.28em"/><mtext>ft</mtext><mo>+</mo><mn>1400</mn><mspace width="0.28em"/><mtext>ft</mtext><mo>=</mo><mn>3200</mn><mspace width="0.28em"/><mtext>ft</mtext></mrow></math>.</para>
+    <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">As the crow flies, use the distance formula. We have
+    <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>d</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mn>1800</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mn>1400</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><mn>3240000</mn><mo>+</mo><mn>1960000</mn></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><mn>5200000</mn></mrow></msqrt></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2280.4</mn><mspace width="0.28em"/><mtext>ft</mtext></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00018"><link class="os-embed" url="#exercise/CM-C10-M8-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Calculating Distance with the Pythagorean Theorem</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00019">The city has specific building codes for wheelchair ramps. Every vertical rise of 1 in requires that the horizontal length be 12 inches. You are constructing a ramp at your business. The plan is to make the ramp 130 inches in horizontal length and the slanted distance will measure approximately 132.4 inches (Figure 10.XX). What should the vertical height be?</para>
+    <figure id="fig-00006">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN004.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00020">By the Pythagorean Theorem, we have
+    <equation id="eq-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><msup><mrow><mo stretchy="false">(</mo><mn>130</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo stretchy="false">(</mo><mn>132.4</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>16900</mn><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>17529.76</mn></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>17529.76</mn><mo>−</mo><mn>16900</mn></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>629.8</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>b</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msqrt><mrow><mn>629.8</mn></mrow></msqrt><mo>=</mo><mn>25</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">If you construct the ramp with a 25 in vertical rise, will it fulfill the building code? If not, what will have to change?</para>
+    <para id="para-00022">The building code states 12 in of horizontal length for each 1 in of vertical rise. The vertical rise is 25 in, which means that the horizontal length has to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12</mn><mo stretchy="false">(</mo><mn>25</mn><mo stretchy="false">)</mo><mo>=</mo><mn>300</mn><mspace width="0.28em"/><mtext>in</mtext><mo>.</mo></mrow></math> So, no, this will not pass the code. If you must keep the vertical rise at 25 in, what will the other dimensions have to be? Since we need a minimum of 300 in for the horizontal length. We have
+    <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mrow><mo stretchy="false">(</mo><mn>300</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mn>25</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>90625</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><msqrt><mrow><mn>90625</mn></mrow></msqrt></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>c</mi><mo>=</mo><mn>301</mn><mspace width="0.28em"/><mtext>in</mtext></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml">The new ramp will look like this.</para>
+    <figure id="fig-00007">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN005.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00024"><link class="os-embed" url="#exercise/CM-C10-M8-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>6</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math> Triangles</title>
+    <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml">In geometry, as in all fields of mathematics, there are always special rules for special circumstances. An example is the <emphasis effect="italic">perfect square</emphasis> rule in algebra. When expanding an expression like <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>,</mo></mrow></math> we do not have to expand it the long way, like this
+    <equation id="eq-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mrow><mo>)</mo></mrow><mrow><mo>(</mo><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>10</mn><mi>x</mi><mi>y</mi><mo>+</mo><mn>10</mn><mi>x</mi><mi>y</mi><mo>+</mo><msup><mrow><mo>(</mo><mrow><mn>5</mn><mi>y</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>20</mn><mi>x</mi><mi>y</mi><mo>+</mo><mn>25</mn><msup><mi>y</mi><mn>2</mn></msup><mo>.</mo></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml">If we know the perfect square formula, given as
+    <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>,</mo></mrow></math></equation>
+    we can skip the middle step and just start writing down the answer. This may seem trivial with problems like <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>.</mo></mrow></math> However, what if you have a problem like <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>+</mo><mn>3</mn><mroot><mrow><mn>31.8</mn><mi>c</mi></mrow><mn>3</mn></mroot></mrow><mo>)</mo></mrow></mrow><mn>2</mn></msup><mo>?</mo></mrow></math> That is a different story. Nevertheless, we use the same perfect square formula. The same idea applies in geometry. There are special formulas and procedures to apply in certain types of problems. What is needed is to remember the formula and remember the kind of problems that fit. Sometimes we believe that because a formula is labeled <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">special,</emphasis> we will rarely have use for it. That assumption is incorrect. So, let us identify the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle and find out why it is special. See Figure 10.65.</para>
+    <figure id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_059b.png"/>
+    </media>
+    <caption>The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>6</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math></caption>
+    </figure>
+    <para id="para-00027" xmlns="http://cnx.rice.edu/cnxml">We see that the shortest side is opposite the smallest angle, and the longest side, the hypotenuse, will always be opposite the right angle. There is a set ratio of one side to another side for the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle given as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>:</mo><msqrt><mn>3</mn></msqrt><mo>:</mo><mn>2</mn><mo>,</mo></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>:</mo><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>:</mo><mn>2</mn><mi>x</mi><mo>.</mo></mrow></math> Thus, you only need to know the length of one side to find the other two sides in a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle.</para>
+    <example id="exam-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding Missing Lengths in a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>6</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math> Triangle</title>
+    <exercise id="exer-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <problem id="prob-00007">
+    <para id="para-00028">Find the measures of the missing lengths of the triangle (Figure 10.XX).</para>
+    <figure id="fig-00009">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN007.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00029">We can see that this is a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle because we have a right angle and a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup></mrow></math> angle. The remaining angle, therefore, must equal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> Because this is a special triangle, we have the ratios of the sides to help us identify the missing lengths. Side <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the shortest side, as it is opposite the smallest angle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and we can substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mi>x</mi><mo>.</mo></mrow></math> The ratios are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>:</mo><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>:</mo><mn>2</mn><mi>x</mi><mo>.</mo></mrow></math> We have the hypotenuse equaling 10, which corresponds to side <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">c</emphasis>, and side <emphasis effect="italic">c</emphasis> is equal to 2<emphasis effect="italic">x</emphasis>. Now, we must solve for <emphasis effect="italic">x.</emphasis> Then,
+    <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>10</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Side <emphasis effect="italic">b</emphasis> is equal to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><msqrt><mn>3</mn></msqrt></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><msqrt><mn>3</mn></msqrt><mo>.</mo></mrow></math> The lengths are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>,</mo><mn>5</mn><msqrt><mn>3</mn></msqrt><mo>,</mo><mn>10.</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C10-M8-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Applying <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>6</mn><msup><mn>0</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math> Triangle to the Real World</title>
+    <exercise id="exer-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <problem id="prob-00009">
+    <para id="para-00032">A city worker leans a 40-ft ladder up against a building at a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup></mrow></math> angle to the ground (Figure 10.XX). How far up the building does the ladder reach?</para>
+    <figure id="fig-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN009.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00033">We have a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle, and the hypotenuse is 40 ft. This length is equal to 2<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis>, where <emphasis effect="italic">x</emphasis> is the shortest side. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>=</mo><mn>40</mn></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>20</mn></mrow></math>. The ladder is leaning on the wall 20 ft up from the ground.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00034"><link class="os-embed" url="#exercise/CM-C10-M8-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mn>5</mn><mo>∘</mo></msup><mo>-</mo><mn>4</mn><msup><mn>5</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math> Triangles</title>
+    <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle is another <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">special</emphasis> triangle such that with the measure of one side we can find the measures of all the sides. The two angles adjacent to the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> angle are equal, and each measures <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> If two angles are equal, so are their opposite sides. The ratio among sides is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>:</mo><mn>1</mn><mo>:</mo><msqrt><mn>2</mn></msqrt><mo>,</mo></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>:</mo><mi>x</mi><mo>:</mo><mi>x</mi><msqrt><mn>2</mn></msqrt><mo>,</mo></mrow></math> as shown in Figure 10.66.</para>
+    <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_061.png"/>
+    </media>
+    <caption><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mn>5</mn><mo>∘</mo></msup><mo>-</mo><mn>4</mn><msup><mn>5</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math> Triangles</caption>
+    </figure>
+    <example id="exam-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Finding Missing Lengths of a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><msup><mn>5</mn><mo>∘</mo></msup><mo>-</mo><mn>4</mn><msup><mn>5</mn><mo>∘</mo></msup><mo>-</mo><mn>9</mn><msup><mn>0</mn><mo>∘</mo></msup></mrow></math> Triangle</title>
+    <exercise id="exer-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <problem id="prob-00011">
+    <para id="para-00036">Find the measures of the unknown sides in the triangle (Figure 10.XX).</para>
+    <figure id="fig-00012">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN011.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00037">Because we have a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle, we know that the two legs are equal in length and the hypotenuse is a product of one of the legs and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msqrt><mn>2</mn></msqrt><mo>.</mo></mrow></math> One leg measures 3, so the other leg, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis>, measures 3. Remember the ratio of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>:</mo><mi>x</mi><mo>:</mo><mi>x</mi><msqrt><mn>2</mn></msqrt><mo>.</mo></mrow></math> Then, the hypotenuse, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">c</emphasis>, equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msqrt><mn>2</mn></msqrt><mo>.</mo></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C10-M8-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Trigonometry Functions</title>
+    <para id="para-00039">Trigonometry developed around 200 BC from a need to determine distances and to calculate the measures of angles in the fields of astronomy and surveying. Trigonometry is about the relationships (or ratios) of angle measurements to side lengths in primarily right triangles. However, trigonometry is useful in calculating missing side lengths and angles in other triangles and many applications.</para>
+    <note class="check-point" id="note-00008">
+    <para id="para-00040"><emphasis effect="italic">NOTE: You will need either a scientific calculator or a graphing calculator for this section. It must have the capability to calculate trigonometric functions and express angles in degrees.</emphasis></para>
+    </note>
+    <para id="para-00041">Trigonometry is based on three functions. We title these functions using the following abbreviations:
+    <list bullet-style="bulleted" id="list-00002">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mo>=</mo><mi>sine</mi></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><mo>=</mo><mi>cosine</mi></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>tan</mi><mo>=</mo><mi>tangent</mi></mrow></math></item>
+    </list></para>
+    <para id="para-00042" xmlns="http://cnx.rice.edu/cnxml">Letting <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo>,</mo></mrow></math> which is the hypotenuse of a right triangle, we have Table 10.5. The functions are given in terms of <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis>, <emphasis effect="italic">y</emphasis>, and <emphasis effect="italic">r</emphasis>, and in terms of sides relative to the angle, like opposite, adjacent, and the hypotenuse.</para>
+    <table summary="." id="table-00001">
+    <title>Trigonometric Ratios</title>
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mi>θ</mi><mo>=</mo><mfrac><mi>y</mi><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi></mrow></mfrac></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><mi>θ</mi><mo>=</mo><mfrac><mi>x</mi><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi></mrow></mfrac></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>tan</mi><mi>θ</mi><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></mfrac></mrow></math></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">We will be applying the sine function, cosine function, and tangent function to find side lengths and angle measurements for triangles we cannot solve using any of the techniques we have studied to this point. In Figure 10.67, we have an illustration mainly to identify <emphasis effect="italic">r</emphasis> and the sides labeled <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">y</emphasis>.</para>
+    <figure id="fig-00013">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_062.png"/>
+    </media>
+    <caption>Angle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>θ</mi></math></caption>
+    </figure>
+    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">An angle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>θ</mi></math> sweeps out in a counterclockwise direction from the positive <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x-</emphasis>axis and stops when the angle reaches the desired measurement. That ray extending from the origin that marks <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>θ</mi><mo>∘</mo></msup></mrow></math> is called the terminal side because that is where the angle terminates. Regardless of the information given in the triangle, we can find all missing sides and angles using the trigonometric functions. For example, in Figure 10.68, we will solve for the missing sides.</para>
+    <figure id="fig-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_063.png"/>
+    </media>
+    <caption>Solving for Missing Sides</caption>
+    </figure>
+    <para id="para-00045">Let’s use the trigonometric functions to find the sides <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">y</emphasis>. As long as your calculator mode is set to degrees, you do not have to enter the degree symbol. First, let’s solve for <emphasis effect="italic">y</emphasis>.</para>
+    <para id="para-00046">We have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mi>θ</mi><mo>=</mo><mfrac><mi>y</mi><mi>r</mi></mfrac><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>θ</mi><mo>=</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> Then,
+    <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>sin</mi><msup><mn>60</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>y</mi><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>sin</mi><msup><mn>60</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>1.732</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="right"><msqrt><mn>3</mn></msqrt></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>y</mi></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml">Next, let’s find <emphasis effect="italic">x.</emphasis> This is the cosine function. We have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><mi>θ</mi><mo>=</mo><mfrac><mi>x</mi><mi>r</mi></mfrac><mo>.</mo></mrow></math> Then,
+    <equation id="eq-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>cos</mi><msup><mn>60</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>x</mi><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>cos</mi><msup><mn>60</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>1</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00048" xmlns="http://cnx.rice.edu/cnxml">Now we have all sides, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>,</mo><msqrt><mn>3</mn></msqrt><mo>,</mo><mn>2.</mn></mrow></math> You can also check the sides using the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> ratio of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>:</mo><msqrt><mn>3</mn></msqrt><malignmark/><mo>:</mo><mn>2.</mn></mrow></math> Table 10.6 is a list of common angles, which you should find helpful.</para>
+    <table summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Common Angles</title>
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><msup><mn>0</mn><mo>∘</mo></msup><mo>=</mo><mn>0</mn></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><msup><mn>0</mn><mo>∘</mo></msup><mo>=</mo><mn>1</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>=</mo><mfrac><mrow><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>=</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>=</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>=</mo><mfrac><mrow><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>=</mo><mn>1</mn></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>=</mo><mn>0</mn></mrow></math></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <example id="exam-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Using Trigonometric Functions</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00049">Find the lengths of the missing sides for the triangle (Figure 10.XX).</para>
+    <figure id="fig-00015">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN013.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00007">
+    <para id="para-00050">We have a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup></mrow></math> angle, and the length of the triangle on the <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x-</emphasis>axis is six units.</para>
+    <para id="para-00051"><emphasis effect="bold">Step 1:</emphasis> To find the length of <emphasis effect="italic">r,</emphasis> we can use the cosine function, as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><mi>θ</mi><mo>=</mo><mfrac><mi>x</mi><mi>r</mi></mfrac><mo>.</mo></mrow></math> We manipulate this equation a bit to solve for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r:</emphasis>
+    <equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>cos</mi><mo stretchy="false">(</mo><msup><mn>55</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>6</mn><mi>r</mi></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi><mi>cos</mi><mo stretchy="false">(</mo><msup><mn>55</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>6</mn><mrow><mi>cos</mi><mo stretchy="false">(</mo><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>6</mn><mrow><mn>0.5736</mn></mrow></mfrac><mo>=</mo><mn>10.46</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> We can use the Pythagorean Theorem to find the length of <emphasis effect="italic">y</emphasis>. Prove that your answers are correct by using other trigonometric ratios:
+    <equation id="eq-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mn>10.46</mn><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>y</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>109.4</mn><mo>−</mo><mn>36</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>8.57</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00053" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now that we have <emphasis effect="italic">y</emphasis>, we can use the sine function to prove that <emphasis effect="italic">r</emphasis> is correct. We have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mi>θ</mi><mo>=</mo><mfrac><mi>y</mi><mi>r</mi></mfrac><mo>.</mo></mrow></math>
+    <equation id="eq-00015" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>sin</mi><mo stretchy="false">(</mo><msup><mn>55</mn><mo>∘</mo></msup><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>8.57</mn></mrow><mi>r</mi></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi><mi>sin</mi><mrow><mo>(</mo><mrow><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup></mrow><mo>)</mo></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>8.57</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>r</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>8.57</mn></mrow><mrow><mi>sin</mi><mo stretchy="false">(</mo><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup><mo stretchy="false">)</mo></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>8.57</mn></mrow><mrow><mn>0.819</mn></mrow></mfrac><mo>=</mo><mn>10.46</mn></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C10-M8-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00055">To find angle measurements when we have two side measurements, we use the inverse trigonometric functions symbolized as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>,</mo></mrow></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>,</mo></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>.</mo></mrow></math> The –1 looks like an exponent, but it means inverse. For example, in the previous example, we had <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>6</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>10.46.</mn></mrow></math> To find what angle has these values, enter the values for the inverse cosine function <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mi>x</mi><mi>r</mi></mfrac></mrow><mo>)</mo></mrow></mrow></math> in your calculator:
+    <equation id="eq-00016" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mrow><mi>cos</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mn>6</mn><mrow><mn>10.46</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></equation></para>
+    <para id="para-00056" xmlns="http://cnx.rice.edu/cnxml">You can also use the inverse sine function and enter the values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mi>y</mi><mi>r</mi></mfrac></mrow><mo>)</mo></mrow></mrow></math> in your calculator given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>8.57</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>10.46.</mn></mrow></math> We have
+    <equation id="eq-00017" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mrow><mi>sin</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mrow><mn>8.57</mn></mrow><mrow><mn>10.46</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></equation></para>
+    <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">Finally, we can also use the inverse tangent function. Recall <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>tan</mi><mi>θ</mi><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>.</mo></mrow></math> We have
+    <equation id="eq-00018" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mrow><mi>tan</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mrow><mn>8.57</mn></mrow><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mo>=</mo><msup><mrow><mn>55</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></equation></para>
+    <example id="exam-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Solving for Lengths in a Right Triangle</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00058">Solve for the lengths of a right triangle in which <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>θ</mi><mo>=</mo><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>=</mo><mn>6.</mn></mrow></math> (Figure 10.XX)</para>
+    <figure id="fig-00016" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN015.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00008">
+    <para id="para-00059"><emphasis effect="bold">Step 1:</emphasis> To find side <emphasis effect="italic">a</emphasis>, we use the sine function:
+    <equation id="eq-00019"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>sin</mi><msup><mn>30</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>a</mi><mn>6</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>6</mn><mi>sin</mi><msup><mn>30</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>a</mi><mo>=</mo><mn>3</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> To find <emphasis effect="italic">b</emphasis>, we use the cosine function:
+    <equation id="eq-00020"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>cos</mi><msup><mn>30</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>b</mi><mn>6</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>6</mn><mi>cos</mi><msup><mn>30</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>b</mi><mo>=</mo><mn>5.196</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00061" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Since this is a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle and side <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> should equal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>,</mo></mrow></math> if we input 3 for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis>, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt><mo>.</mo></mrow></math> Put this in your calculator and you will get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt><mo>=</mo><mn>5.196.</mn></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C10-M8-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00009">
+    <title>Finding Altitude</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00063">A small plane takes off from an airport at an angle of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>31.3</mn></mrow><mo>∘</mo></msup></mrow></math> to the ground. About two-thirds of a mile (3520 ft) from the airport is an 1,100-ft peak in the flight path of the plane (Figure 10.XX). If the plane continues that angle of ascent, find its altitude when it is above the peak, and how far it will be above the peak.</para>
+    <figure id="fig-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN017.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00009">
+    <para id="para-00064">To solve this problem, we use the tangent function:
+    <equation id="eq-00021"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>tan</mi><msup><mn>31.3</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>x</mi><mrow><mn>3520</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>3520</mn><mi>tan</mi><msup><mn>31.3</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2140</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00065" xmlns="http://cnx.rice.edu/cnxml">The plane’s altitude when passing over the peak is 2,140 ft, and it is 1,040 ft above the peak.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00011">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00066"><link class="os-embed" url="#exercise/CM-C10-M8-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00010">
+    <title>Finding Unknown Sides and Angles</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00067">Suppose you have two known sides, but do not know the measure of any angles except for the right angle (Figure 10.XX). Find the measure of the unknown angles and the third side.</para>
+    <figure id="fig-00018">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN018.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00010">
+    <para id="para-00068"><emphasis effect="bold">Step 1:</emphasis> We can find the third side using the Pythagorean Theorem:
+    <equation id="eq-00022"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>52</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><msqrt><mrow><mn>13</mn></mrow></msqrt></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>c</mi></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00069" xmlns="http://cnx.rice.edu/cnxml">Now, we have all three sides.</para>
+    <para id="para-00070"><emphasis effect="bold">Step 2:</emphasis> To find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>θ</mi><mo>,</mo></mrow></math> we will first find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mi>θ</mi><mo>.</mo></mrow></math>
+    <equation id="eq-00023" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>sin</mi><mi>θ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>4</mn><mrow><mn>2</mn><msqrt><mrow><mn>13</mn></mrow></msqrt></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>2</mn><mrow><msqrt><mrow><mn>13</mn></mrow></msqrt></mrow></mfrac><mo>.</mo></mtd></mtr></mtable></mrow></math></equation></para>
+    <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml">The angle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>θ</mi></math> is the angle whose sine is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mrow><msqrt><mrow><mn>13</mn></mrow></msqrt></mrow></mfrac><mo>.</mo></mrow></math></para>
+    <para id="para-00072" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> To find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>θ</mi></math>, we use the inverse sine function:
+    <equation id="eq-00024" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>θ</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>sin</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo>(</mo><mrow><mfrac><mn>2</mn><mrow><msqrt><mrow><mn>13</mn></mrow></msqrt></mrow></mfrac></mrow><mo>)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mn>33.7</mn><mo>∘</mo></msup></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> To find the last angle, we just subtract: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>33.7</mn></mrow><mo>∘</mo></msup><mo>=</mo><msup><mrow><mn>56.3</mn></mrow><mo>∘</mo></msup></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C10-M8-Q010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00007">
+    <title>Angle of Elevation and Angle of Depression</title>
+    <para id="para-00075">Other problems that involve trigonometric functions include calculating the <emphasis effect="bold">angle of elevation</emphasis> and the <emphasis effect="bold">angle of depression.</emphasis> These are very common applications in everyday life. The angle of elevation is the angle formed by a horizontal line and the line of sight from an observer to some object at a higher level. The angle of depression is the angle formed by a horizontal line and the line of sight from an observer to an object at a lower level.</para>
+    <example id="exam-00011">
+    <title>Finding the Angle of Elevation</title>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00076">A guy wire of length 110 meters runs from the top of an antenna to the ground (Figure 10.XX). If the angle of elevation of an observer to the top of the antenna is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>43</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> how high is the antenna?</para>
+    <figure id="fig-00019" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN020.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00011">
+    <para id="para-00077">We are looking for the height of the tower. This corresponds to the <emphasis effect="italic">y-</emphasis>value, so we will use the sine function:
+    <equation id="eq-00025"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>sin</mi><msup><mn>43</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>y</mi><mrow><mn>110</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>110</mn><mi>sin</mi><msup><mn>43</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>y</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>75</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>y</mi></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml">The tower is 75 m high.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00013">
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00079"><link class="os-embed" url="#exercise/CM-C10-M8-Q011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00012">
+    <title>Finding Angle of Elevation</title>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00080">You are sitting on the grass flying a kite on a 50-ft string (Figure 10.XX). The angle of elevation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> How high above the ground is the kite?</para>
+    <figure id="fig-00020" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN022.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </problem>
+    <solution id="sol-00012">
+    <para id="para-00081">We can solve this using the sine function, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi></mrow></mfrac><mo>.</mo></mrow></math>
+    <equation id="eq-00026" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>sin</mi><msup><mn>60</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>x</mi><mrow><mn>50</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mn>50</mn><mi>sin</mi><msup><mn>60</mn><mo>∘</mo></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>43.3</mn><mspace width="0.28em"/><mtext>ft</mtext></mtd></mtr></mtable></math></equation></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00082"><link class="os-embed" url="#exercise/CM-C10-M8-Q012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="people-mathematics" id="note-00015">
+    <title>Pythagoras and the Pythagoreans</title>
+    <para id="para-00083">The Pythagorean Theorem is so widely used that most people assume that Pythagoras (570–490 BC) discovered it. The philosopher and mathematician uncovered evidence of the right triangle concepts in the teachings of the Babylonians dating around 1900 BC. However, it was Pythagoras who found countless applications of the theorem leading to advances in geometry, architecture, astronomy, and engineering.</para>
+    <para id="para-00084">Among his accolades, Pythagoras founded a school for the study of mathematics and music. Students were called the Pythagoreans, and the school’s teachings could be classified as a religious indoctrination just as much as an academic experience. Pythagoras believed that spirituality and science coexist, that the intellectual mind is superior to the senses, and that intuition should be honored over observation.</para>
+    <para id="para-00085">Pythagoras was convinced that the universe could be defined by numbers, and that the natural world was based on mathematics. His primary belief was <emphasis effect="italic">All is Number.</emphasis> He even attributed certain qualities to certain numbers, such as the number 8 represented justice and the number 7 represented wisdom. There was a quasi-mythology that surrounded Pythagoras. His followers thought that he was more of a spiritual being, a sort of mystic that was all-knowing and could travel through time and space. Some believed that Pythagoras had mystical powers, although these beliefs were never substantiated.</para>
+    <para id="para-00086">Pythagoras and his followers contributed more ideas to the field of mathematics, music, and astronomy besides the Pythagorean Theorem. The Pythagoreans are credited with the discovery of irrational numbers and of proving that the morning star was the planet Venus and not a star at all. They are also credited with the discovery of the musical scale and that different strings made different sounds based on their length. Some other concepts attributed to the Pythagoreans include the properties relating to triangles other than the right triangle, one of which is that the sum of the interior angles of a triangle equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>180</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> These geometric principles, proposed by the Pythagoreans, were proven 200 years later by Euclid.</para>
+    </note>
+    <note class="who-knew" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Pythagorean Theorem Proof</title>
+    <para id="para-00087">It has been said that there are over 1,000 proofs of the Pythagorean Theorem. In Figure 10.XX, which is one of the more popular proofs, we see that square <emphasis effect="italic">a</emphasis> is attached to side <emphasis effect="italic">a</emphasis>; square <emphasis effect="italic">b</emphasis> is attached to side <emphasis effect="italic">b</emphasis>; and the largest square, square <emphasis effect="italic">c,</emphasis> is attached to side <emphasis effect="italic">c</emphasis>. Side <emphasis effect="italic">a</emphasis> measures 3 cm in length, side <emphasis effect="italic">b</emphasis> measures 4 cm in length, and side <emphasis effect="italic">c</emphasis> measures 5 cm in length. By definition, the area of square <emphasis effect="italic">a</emphasis> measures 9 square units, the area of square <emphasis effect="italic">b</emphasis> measures 16 square units, and the area of square <emphasis effect="italic">c</emphasis> measures 25 square units. Substitute the values given for the areas of the three squares into the Pythagorean Theorem and we have
+    <equation id="eq-00027"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mn>5</mn><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right"><mn>9</mn><mo>+</mo><mn>16</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>25</mn></mtd></mtr></mtable></math></equation></para>
+    <para id="para-00088" xmlns="http://cnx.rice.edu/cnxml">Thus, the sum of the squares of the two legs of a right triangle is equal to the square of the hypotenuse, as stated in the Pythagorean Theorem.</para>
+    <figure id="fig-00021">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_10_08_UN024.png"/>
+    </media>
+    <caption/>
+    </figure>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00008">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00089"><link class="os-embed" url="#exercise/CM-C10-M8-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00090"><link class="os-embed" url="#exercise/CM-C10-M8-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00091"><link class="os-embed" url="#exercise/CM-C10-M8-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00092"><link class="os-embed" url="#exercise/CM-C10-M8-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00093"><link class="os-embed" url="#exercise/CM-C10-M8-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00094"><link class="os-embed" url="#exercise/CM-C10-M8-Q018"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00009">
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00095"><link class="os-embed" url="#exercise/CM-C10-M8-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00096"><link class="os-embed" url="#exercise/CM-C10-M8-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C10-M8-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00098"><link class="os-embed" url="#exercise/CM-C10-M8-Q022"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00099"><link class="os-embed" url="#exercise/CM-C10-M8-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00100"><link class="os-embed" url="#exercise/CM-C10-M8-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00101"><link class="os-embed" url="#exercise/CM-C10-M8-Q025"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00010">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00003">
+    <item>right triangle</item>
+    <item>sine</item>
+    <item>cosine</item>
+    <item>tangent</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00011">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00004">
+    <item>The Pythagorean Theorem is applied to right triangles and is used to find the measure of the legs and the hypotenuse according the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">c</emphasis> is the hypotenuse.</item>
+    <item>To find the measure of the sides of a <emphasis effect="italic">special</emphasis> angle, such as a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>30</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle, use the ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>:</mo><mi>x</mi><msqrt><mn>3</mn></msqrt><mo>:</mo><mn>2</mn><mi>x</mi><mo>,</mo></mrow></math> where each of the three sides is associated with the opposite angle and 2<emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">x</emphasis> is associated with the hypotenuse, opposite the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> angle.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">To find the measure of the sides of the second <emphasis effect="italic">special</emphasis> triangle, the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>45</mn></mrow><mo>∘</mo></msup><mo>−</mo><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> triangle, use the ratio <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>:</mo><mi>x</mi><mo>:</mo><mi>x</mi><msqrt><mn>2</mn></msqrt><mo>,</mo></mrow></math> where each of the three sides is associated with the opposite angle and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><msqrt><mn>2</mn></msqrt></mrow></math> is associated with the hypotenuse, opposite the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> angle.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The primary trigonometric functions are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sin</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi></mrow></mfrac><mo>,</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>cos</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow><mrow><mi>h</mi><mi>y</mi><mi>p</mi></mrow></mfrac><mo>,</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>tan</mi><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>o</mi><mi>p</mi><mi>p</mi></mrow><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></mfrac><mo>.</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Trigonometric functions can be used to find either the length of a side or the measure of an angle in a right triangle, and in applications such as the angle of elevation or the angle of depression formed using right triangles.</item>
+    </list>
+    </section>
+    <section class="formula-review" id="sect-00012">
+    <title>Formula</title>
+    <para id="para-00102">The Pythagorean Theorem states
+    <equation id="eq-00028"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></math></equation>
+    where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> and <emphasis effect="italic">b</emphasis> are two sides (legs) of a right triangle and <emphasis effect="italic">c</emphasis> is the hypotenuse, as shown in Figure 10.63.</para>
+    </section>
+    <section class="projects" id="sect-00013">
+    <title>Project</title>
+    <para id="para-00103">1. XXX</para>
+    </section>
+    <section class="chapter-review" id="sect-00014">
+    <title>Chapter Review</title>
+    <section id="sect-00015">
+    <title>Section 10.1 Points, Lines, and Planes</title>
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00104"><link class="os-embed" url="#exercise/CM-C10-M8-Q026"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00016">
+    <title>Section 10.2 Points, Lines, and Planes</title>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00105"><link class="os-embed" url="#exercise/CM-C10-M8-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00106"><link class="os-embed" url="#exercise/CM-C10-M8-Q028"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C10-M8-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00108"><link class="os-embed" url="#exercise/CM-C10-M8-Q030"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00109"><link class="os-embed" url="#exercise/CM-C10-M8-Q031"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00017">
+    <title>Section 10.3 Triangles</title>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00110"><link class="os-embed" url="#exercise/CM-C10-M8-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00111"><link class="os-embed" url="#exercise/CM-C10-M8-Q033"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00112"><link class="os-embed" url="#exercise/CM-C10-M8-Q034"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00113"><link class="os-embed" url="#exercise/CM-C10-M8-Q035"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00114"><link class="os-embed" url="#exercise/CM-C10-M8-Q036"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00049">
+    <problem id="prob-00049">
+    <para id="para-00115"><link class="os-embed" url="#exercise/CM-C10-M8-Q037"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00050">
+    <problem id="prob-00050">
+    <para id="para-00116"><link class="os-embed" url="#exercise/CM-C10-M8-Q038"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00051">
+    <problem id="prob-00051">
+    <para id="para-00117"><link class="os-embed" url="#exercise/CM-C10-M8-Q039"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00052">
+    <problem id="prob-00052">
+    <para id="para-00118"><link class="os-embed" url="#exercise/CM-C10-M8-Q040"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00018">
+    <title>Section 10.4 Polygons, Perimeter, and Circumference</title>
+    <exercise id="exer-00053">
+    <problem id="prob-00053">
+    <para id="para-00119"><link class="os-embed" url="#exercise/CM-C10-M8-Q041"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00054">
+    <problem id="prob-00054">
+    <para id="para-00120"><link class="os-embed" url="#exercise/CM-C10-M8-Q042"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00055">
+    <problem id="prob-00055">
+    <para id="para-00121"><link class="os-embed" url="#exercise/CM-C10-M8-Q043"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00056">
+    <problem id="prob-00056">
+    <para id="para-00122"><link class="os-embed" url="#exercise/CM-C10-M8-Q044"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00057">
+    <problem id="prob-00057">
+    <para id="para-00123"><link class="os-embed" url="#exercise/CM-C10-M8-Q045"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00058">
+    <problem id="prob-00058">
+    <para id="para-00124"><link class="os-embed" url="#exercise/CM-C10-M8-Q046"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00059">
+    <problem id="prob-00059">
+    <para id="para-00125"><link class="os-embed" url="#exercise/CM-C10-M8-Q047"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00060">
+    <problem id="prob-00060">
+    <para id="para-00126"><link class="os-embed" url="#exercise/CM-C10-M8-Q048"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00061">
+    <problem id="prob-00061">
+    <para id="para-00127"><link class="os-embed" url="#exercise/CM-C10-M8-Q049"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00062">
+    <problem id="prob-00062">
+    <para id="para-00128"><link class="os-embed" url="#exercise/CM-C10-M8-Q050"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00019">
+    <title>Section 10.5 Tessellations</title>
+    <exercise id="exer-00063">
+    <problem id="prob-00063">
+    <para id="para-00129"><link class="os-embed" url="#exercise/CM-C10-M8-Q051"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00064">
+    <problem id="prob-00064">
+    <para id="para-00130"><link class="os-embed" url="#exercise/CM-C10-M8-Q052"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00065">
+    <problem id="prob-00065">
+    <para id="para-00131"><link class="os-embed" url="#exercise/CM-C10-M8-Q053"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00066">
+    <problem id="prob-00066">
+    <para id="para-00132"><link class="os-embed" url="#exercise/CM-C10-M8-Q054"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00067">
+    <problem id="prob-00067">
+    <para id="para-00133"><link class="os-embed" url="#exercise/CM-C10-M8-Q055"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00068">
+    <problem id="prob-00068">
+    <para id="para-00134"><link class="os-embed" url="#exercise/CM-C10-M8-Q056"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00069">
+    <problem id="prob-00069">
+    <para id="para-00135"><link class="os-embed" url="#exercise/CM-C10-M8-Q057"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00020">
+    <title>Section 10.6 Area</title>
+    <exercise id="exer-00070">
+    <problem id="prob-00070">
+    <para id="para-00136"><link class="os-embed" url="#exercise/CM-C10-M8-Q058"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00071">
+    <problem id="prob-00071">
+    <para id="para-00137"><link class="os-embed" url="#exercise/CM-C10-M8-Q059"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00072">
+    <problem id="prob-00072">
+    <para id="para-00138"><link class="os-embed" url="#exercise/CM-C10-M8-Q060"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00073">
+    <problem id="prob-00073">
+    <para id="para-00139"><link class="os-embed" url="#exercise/CM-C10-M8-Q061"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00074">
+    <problem id="prob-00074">
+    <para id="para-00140"><link class="os-embed" url="#exercise/CM-C10-M8-Q062"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00075">
+    <problem id="prob-00075">
+    <para id="para-00141"><link class="os-embed" url="#exercise/CM-C10-M8-Q063"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00076">
+    <problem id="prob-00076">
+    <para id="para-00142"><link class="os-embed" url="#exercise/CM-C10-M8-Q064"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00077">
+    <problem id="prob-00077">
+    <para id="para-00143"><link class="os-embed" url="#exercise/CM-C10-M8-Q065"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00021">
+    <title>Section 10.7 Volume and Surface Area</title>
+    <exercise id="exer-00078">
+    <problem id="prob-00078">
+    <para id="para-00144"><link class="os-embed" url="#exercise/CM-C10-M8-Q066"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00079">
+    <problem id="prob-00079">
+    <para id="para-00145"><link class="os-embed" url="#exercise/CM-C10-M8-Q067"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00080">
+    <problem id="prob-00080">
+    <para id="para-00146"><link class="os-embed" url="#exercise/CM-C10-M8-Q068"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00081">
+    <problem id="prob-00081">
+    <para id="para-00147"><link class="os-embed" url="#exercise/CM-C10-M8-Q069"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00082">
+    <problem id="prob-00082">
+    <para id="para-00148"><link class="os-embed" url="#exercise/CM-C10-M8-Q070"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00083">
+    <problem id="prob-00083">
+    <para id="para-00149"><link class="os-embed" url="#exercise/CM-C10-M8-Q071"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00022">
+    <title>Section 10.8 Right Triangle Trigonometry</title>
+    <exercise id="exer-00084">
+    <problem id="prob-00084">
+    <para id="para-00150"><link class="os-embed" url="#exercise/CM-C10-M8-Q072"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00085">
+    <problem id="prob-00085">
+    <para id="para-00151"><link class="os-embed" url="#exercise/CM-C10-M8-Q073"/></para>
+    </problem>
+    </exercise>
+    </section>
+    </section>
+    <section class="chapter-test" id="sect-00023">
+    <title>Chapter Test</title>
+    <exercise id="exer-00086">
+    <problem id="prob-00086">
+    <para id="para-00152"><link class="os-embed" url="#exercise/CM-C10-M8-Q074"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00087">
+    <problem id="prob-00087">
+    <para id="para-00153"><link class="os-embed" url="#exercise/CM-C10-M8-Q075"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00088">
+    <problem id="prob-00088">
+    <para id="para-00154"><link class="os-embed" url="#exercise/CM-C10-M8-Q076"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00089">
+    <problem id="prob-00089">
+    <para id="para-00155"><link class="os-embed" url="#exercise/CM-C10-M8-Q077"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00090">
+    <problem id="prob-00090">
+    <para id="para-00156"><link class="os-embed" url="#exercise/CM-C10-M8-Q078"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00091">
+    <problem id="prob-00091">
+    <para id="para-00157"><link class="os-embed" url="#exercise/CM-C10-M8-Q079"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00092">
+    <problem id="prob-00092">
+    <para id="para-00158"><link class="os-embed" url="#exercise/CM-C10-M8-Q080"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00093">
+    <problem id="prob-00093">
+    <para id="para-00159"><link class="os-embed" url="#exercise/CM-C10-M8-Q081"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00094">
+    <problem id="prob-00094">
+    <para id="para-00160"><link class="os-embed" url="#exercise/CM-C10-M8-Q082"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00095">
+    <problem id="prob-00095">
+    <para id="para-00161"><link class="os-embed" url="#exercise/CM-C10-M8-Q083"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00096">
+    <problem id="prob-00096">
+    <para id="para-00162"><link class="os-embed" url="#exercise/CM-C10-M8-Q084"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00097">
+    <problem id="prob-00097">
+    <para id="para-00163"><link class="os-embed" url="#exercise/CM-C10-M8-Q085"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00098">
+    <problem id="prob-00098">
+    <para id="para-00164"><link class="os-embed" url="#exercise/CM-C10-M8-Q086"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00099">
+    <problem id="prob-00099">
+    <para id="para-00165"><link class="os-embed" url="#exercise/CM-C10-M8-Q087"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00100">
+    <problem id="prob-00100">
+    <para id="para-00166"><link class="os-embed" url="#exercise/CM-C10-M8-Q088"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00101">
+    <problem id="prob-00101">
+    <para id="para-00167"><link class="os-embed" url="#exercise/CM-C10-M8-Q089"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00102">
+    <problem id="prob-00102">
+    <para id="para-00168"><link class="os-embed" url="#exercise/CM-C10-M8-Q090"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00103">
+    <problem id="prob-00103">
+    <para id="para-00169"><link class="os-embed" url="#exercise/CM-C10-M8-Q091"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00104">
+    <problem id="prob-00104">
+    <para id="para-00170"><link class="os-embed" url="#exercise/CM-C10-M8-Q092"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00105">
+    <problem id="prob-00105">
+    <para id="para-00171"><link class="os-embed" url="#exercise/CM-C10-M8-Q093"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00106">
+    <problem id="prob-00106">
+    <para id="para-00172"><link class="os-embed" url="#exercise/CM-C10-M8-Q094"/></para>
+    </problem>
+    </exercise>
+    </section>
+    </content>
+    </document>
