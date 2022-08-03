@@ -7,490 +7,491 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-      <media alt="Two people sit opposite each other at a table. One speaks with his hands open, while the other listens.">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_02_05_001.jpg"/>
-      </media>
-      <caption>How your logical argument is stated affects the response, just like how you speak when holding a conversation can affect how your words are received. (credit: modification of work by Goelshivi/Flickr, Public Domain Mark 1.0)</caption>
-      </figure>
+    <media alt="Two people sit opposite each other at a table. One speaks with his hands open, while the other listens.">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_02_05_001.jpg"/>
+    </media>
+    <caption>How your logical argument is stated affects the response, just like how you speak when holding a conversation can affect how your words are received. (credit: modification of work by Goelshivi/Flickr, Public Domain Mark 1.0)</caption>
+    </figure>
     <section class="learning-objectives" id="sect-00001">
-      <title>Learning Objectives</title>
-      <para id="para-00001">After completing this section, you should be able to:</para>
-      <list list-type="enumerated" id="list-00001">
-      <item>Determine whether two statements are logically equivalent using a truth table.</item>
-      <item>Compose the converse, inverse, and contrapositive of a conditional statement</item>
-      </list>
+    <title>Learning Objectives</title>
+    <para id="para-00001">After completing this section, you should be able to:</para>
+    <list list-type="enumerated" id="list-00001">
+    <item>Determine whether two statements are logically equivalent using a truth table.</item>
+    <item>Compose the converse, inverse, and contrapositive of a conditional statement</item>
+    </list>
     </section>
-      <para id="para-00002">Have you ever had a conversation with or sent a note to  someone, only to have them misunderstand what you intended to convey? The way you choose to express your ideas can be as, or even more, important than what you are saying. If your goal is to convince someone that what you are saying is correct, you will not want to alienate them by choosing your words poorly.</para>
-      <para id="para-00003">Logical arguments can be stated in many different ways that still ultimately result in the same valid conclusion. Part of the art of constructing a persuasive argument is knowing how to arrange the facts and conclusion to elicit the desired response from the intended audience.</para>
-      <para id="para-00004">In this section, you will learn how to determine whether two statements are <emphasis effect="bold">logically equivalent</emphasis> using truth tables, and then you will apply this knowledge to compose logically equivalent forms of the conditional statement. Developing this skill will provide the additional skills and knowledge needed to construct well-reasoned, persuasive arguments that can be customized to address specific audiences.</para>
-      <note class="check-point" id="note-00007">
-      <para id="para-00008"><emphasis effect="italic">An alternate way to think about logical equivalence is that the truth values have to match. That is, whenever p is true, q is also true, and whenever p is false, q is also false.</emphasis></para>
-      </note>
-      <section id="sect-00002">
-      <title>Determine Logical Equivalence</title>
-      <para id="para-00009">Two statements, <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis>, are logically equivalent when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is a valid argument, or when the last column of the truth table consists of only true values. When a logical statement is always true, it is known as a <term id="term-00001" xmlns="http://cnx.rice.edu/cnxml">tautology</term>. To determine whether two statements <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> and <emphasis effect="italic">q</emphasis> are logically equivalent, construct a truth table for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> and determine whether it valid. If the last column is all true, the argument is a tautology, it is valid, and <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is logically equivalent to <emphasis effect="italic">q</emphasis>; otherwise, <emphasis effect="italic">p</emphasis> is not logically equivalent to <emphasis effect="italic">q</emphasis>.</para>
-      <example id="exam-00001">
-      <title>Determining Logical Equivalence with a Truth Table</title>
-      <exercise id="exer-00001">
-      <problem id="prob-00001">
-      <para id="para-00010">Create a truth table to determine whether the following compound statements are logically equivalent.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00002">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>;</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>;</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></item>
-      </list>
-      </problem>
-      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00003">
-      <item>Construct a truth table for the biconditional formed by using the first statement as the hypothesis and the second statement as the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>
-      <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <tgroup cols="7">
-      <colspec colnum="1" colname="c1" colwidth="1*"/>
-      <colspec colnum="2" colname="c2" colwidth="1*"/>
-      <colspec colnum="3" colname="c3" colwidth="1*"/>
-      <colspec colnum="4" colname="c4" colwidth="1*"/>
-      <colspec colnum="5" colname="c5" colwidth="1*"/>
-      <colspec colnum="6" colname="c6" colwidth="1*"/>
-      <colspec colnum="7" colname="c7" colwidth="1*"/>
-      <thead>
-      <row>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-      </row>
-      </thead>
-      <tbody xmlns="http://cnx.rice.edu/cnxml">
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry>
-      </row>
-      <row>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry><emphasis effect="bold">F</emphasis></entry>
-      </row>
-      <row>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry><emphasis effect="bold">F</emphasis></entry>
-      </row>
-      <row>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
-      <para id="para-00011">Because the last column it not all true, the biconditional is not valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is not logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math>.</para>
-      </item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Construct a truth table for the biconditional formed by using the first statement as the hypothesis and the second statement as the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>
-      <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <tgroup cols="6">
-      <colspec colnum="1" colname="c1" colwidth="1*"/>
-      <colspec colnum="2" colname="c2" colwidth="1*"/>
-      <colspec colnum="3" colname="c3" colwidth="1*"/>
-      <colspec colnum="4" colname="c4" colwidth="1*"/>
-      <colspec colnum="5" colname="c5" colwidth="1*"/>
-      <colspec colnum="6" colname="c6" colwidth="1*"/>
-      <thead>
-      <row>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-      </row>
-      </thead>
-      <tbody xmlns="http://cnx.rice.edu/cnxml">
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry>
-      </row>
-      <row>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry>
-      </row>
-      <row>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry>
-      </row>
-      <row>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry><emphasis effect="bold">T</emphasis></entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
-      <para id="para-00012">Because the last column is true for every entry, the biconditional is valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math>. Symbolically, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>.</mo></mrow></math></para>
-      </item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00002">
-      <problem id="prob-00002">
-      <para id="para-00013"><link class="os-embed" url="#exercise/CM-C02-M5-Q001"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section id="sect-00003">
-      <title>Compose the Converse, Inverse, and Contrapositive of a Conditional Statement</title>
-      <para id="para-00014">The <term id="term-00003">converse</term>, <term id="term-00004">inverse</term>, and <term id="term-00005">contrapositive</term> are variations of the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math>
-      <list list-type="bulleted" id="list-00013" xmlns="http://cnx.rice.edu/cnxml">
-        <item>The converse is if <emphasis effect="italic">q</emphasis>  then <emphasis effect="italic">p,</emphasis>  and it is formed by interchanging the hypothesis and the conclusion. The converse is logically equivalent to the inverse.</item>
-        <item>The inverse is if <emphasis effect="italic">~p</emphasis> then <emphasis effect="italic">~q,</emphasis> and it is formed by negating both the hypothesis and the conclusion. The inverse is logically equivalent to the converse.</item>
-        <item>The contrapositive is if <emphasis effect="italic">~q</emphasis> then <emphasis effect="italic">~p,</emphasis> and it is formed by interchanging and negating both the hypothesis and the conclusion. The contrapositive is logically equivalent to the conditional.</item>
-      </list></para>
-      <para id="para-00005"> The table below shows how these variations are presented symbolically.</para>
-      <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
-      <tgroup cols="8">
-      <colspec colnum="1" colname="c1" colwidth="1*"/>
-      <colspec colnum="2" colname="c2" colwidth="1*"/>
-      <colspec colnum="3" colname="c3" colwidth="1*"/>
-      <colspec colnum="4" colname="c4" colwidth="1*"/>
-      <colspec colnum="5" colname="c5" colwidth="1*"/>
-      <colspec colnum="6" colname="c6" colwidth="1*"/>
-      <colspec colnum="7" colname="c7" colwidth="1*"/>
-      <colspec colnum="8" colname="c8" colwidth="1*"/>
-      <thead>
-      <row>
-      <entry namest="c1" nameend="c4"/>
-      <entry>Conditional</entry>
-      <entry>Contrapositive</entry>
-      <entry>Converse</entry>
-      <entry>Inverse</entry>
-      </row>
-      <row>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math></entry>
-      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
-      </row>
+    <para id="para-00002">Have you ever had a conversation with or sent a note tosomeone, only to have them misunderstand what you intended to convey? The way you choose to express your ideas can be as, or even more, important than what you are saying. If your goal is to convince someone that what you are saying is correct, you will not want to alienate them by choosing your words poorly.</para>
+    <para id="para-00003">Logical arguments can be stated in many different ways that still ultimately result in the same valid conclusion. Part of the art of constructing a persuasive argument is knowing how to arrange the facts and conclusion to elicit the desired response from the intended audience.</para>
+    <para id="para-00004">In this section, you will learn how to determine whether two statements are <emphasis effect="bold">logically equivalent</emphasis> using truth tables, and then you will apply this knowledge to compose logically equivalent forms of the conditional statement. Developing this skill will provide the additional skills and knowledge needed to construct well-reasoned, persuasive arguments that can be customized to address specific audiences.</para>
+    <note class="check-point" id="note-00007">
+    <para id="para-00008"><emphasis effect="italic">An alternate way to think about logical equivalence is that the truth values have to match. That is, whenever <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is true, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> is also true, and whenever <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is false, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> is also false.</emphasis></para>
+    </note>
+    <section id="sect-00002">
+    <title>Determine Logical Equivalence</title>
+    <para id="para-00009">Two statements, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>, are logically equivalent when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is a valid argument, or when the last column of the truth table consists of only true values. When a logical statement is always true, it is known as a <term id="term-00001" xmlns="http://cnx.rice.edu/cnxml">tautology</term>. To determine whether two statements <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> are logically equivalent, construct a truth table for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> and determine whether it valid. If the last column is all true, the argument is a tautology, it is valid, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is logically equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>; otherwise, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is not logically equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>.</para>
+    <example id="exam-00001">
+    <title>Determining Logical Equivalence with a Truth Table</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00010">Create a truth table to determine whether the following compound statements are logically equivalent.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>;</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>;</mo></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>Construct a truth table for the biconditional formed by using the first statement as the hypothesis and the second statement as the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>
+    <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="7">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <colspec colnum="6" colname="c6" colwidth="1*"/>
+    <colspec colnum="7" colname="c7" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    </row>
     </thead>
     <tbody xmlns="http://cnx.rice.edu/cnxml">
     <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      </row>
-      <row>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      </row>
-      <row>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>F</entry>
-      <entry>F</entry>
-      </row>
-      <row>
-      <entry>F</entry>
-      <entry>F</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      <entry>T</entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
-      <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Writing the Converse, Inverse, and Contrapositive of a Conditional Statement</title>
-      <exercise id="exer-00003">
-      <problem id="prob-00003">
-      <para id="para-00018">Use the statements, <emphasis effect="italic">p</emphasis>: Harry is a wizard and <emphasis effect="italic">q</emphasis>: Hermione is a witch, to write the following statements:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00004">
-      <item>Write the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math>, in words.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Write the converse statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math>, in words.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Write the inverse statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math>, in words.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Write the contrapositive statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math>, in words.</item>
-      </list>
-      </problem>
-      <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00005">
-      <item>The conditional statement takes the form, “if <emphasis effect="italic">p</emphasis>, then <emphasis effect="italic">q</emphasis>,” so the conditional statement is: “If Harry is a wizard, then Hermione is a witch.” Remember the <emphasis effect="italic">if</emphasis> … <emphasis effect="italic">then</emphasis> … words are the connectives that form the conditional statement.</item>
-      <item>The converse swaps or interchanges the hypothesis, <emphasis effect="italic">p</emphasis>, with the conclusion, <emphasis effect="italic">q</emphasis>. It has the form, “if <emphasis effect="italic">q</emphasis>, then <emphasis effect="italic">p</emphasis>.” So, the converse is: "If Hermione is a witch, then Harry is a wizard."</item>
-      <item>To construct the inverse of a statement, negate both the hypothesis and the conclusion.  The inverse has the form, “if ~<emphasis effect="italic">p</emphasis>, then ~<emphasis effect="italic">q</emphasis>,” so the inverse is: "If Harry is not a wizard, then Hermione is not a witch." </item>
-      <item>The contrapositive is formed by negating and interchanging both the hypothesis and conclusion. It has the form, “if ~<emphasis effect="italic">q</emphasis>, then ~<emphasis effect="italic">p</emphasis>," so the contrapositive statement is: "If Hermione is not a witch, then Harry is not a wizard."</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00004">
-      <exercise id="exer-00004">
-      <problem id="prob-00004">
-      <para id="para-00019"><link class="os-embed" url="#exercise/CM-C02-M5-Q002"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00003">
-      <title>Identifying the Converse, Inverse, and Contrapositive</title>
-      <exercise id="exer-00005">
-      <problem id="prob-00005">
-      <para id="para-00020">Use the conditional statement, “If all dogs bark, then Lassie likes to bark,” to identify the following.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00006">
-      <item>Write the hypothesis of the conditional statement and label it with a <emphasis effect="italic">p</emphasis>.</item>
-      <item>Write the conclusion of the conditional statement and label it with a <emphasis effect="italic">q</emphasis>.</item>
-      <item>Identify the following statement as the converse, inverse, or contrapositive: “If Lassie likes to bark, then all dogs bark.”</item>
-      <item>Identify the following statement as the converse, inverse, or contrapositive: “If Lassie does not like to bark, then some dogs do not bark.”</item>
-      <item>Which statement is logically equivalent to the conditional statement?</item>
-      </list>
-      </problem>
-      <solution id="sol-00003">
-      <list list-type="enumerated" number-style="arabic" id="list-00007">
-      <item>The hypothesis is the phrase following the <emphasis effect="italics">if</emphasis>. The answer is <emphasis effect="italics">p</emphasis>: All dogs bark. Notice, the word <emphasis effect="italics">if</emphasis> is not included as part of the hypothesis.</item>
-      <item>The conclusion of a conditional statement is the phrase following the <emphasis effect="italics">then</emphasis>. The word <emphasis effect="italics">then</emphasis> is not included when stating the conclusion. The answer is: <emphasis effect="italic">q</emphasis>: Lassie likes to bark.</item>
-      <item>“Lassie likes to bark” is <emphasis effect="italic">q</emphasis> and “All dogs bark” is <emphasis effect="italic">p</emphasis>. So, “If Lassie likes to bark, then all dogs bark,” has the form “if <emphasis effect="italic">q,</emphasis> then <emphasis effect="italic">p,</emphasis>” which is the form of the converse.</item>
-      <item>“Lassie does not like to bark” is ~<emphasis effect="italic">q</emphasis> and “Some dogs do not bark” is ~<emphasis effect="italic">p</emphasis>. The statement, “If Lassie does not like to bark, then some dogs do not bark,” has the form “if ~<emphasis effect="italic">q</emphasis>, then ~<emphasis effect="italic">p,</emphasis>” which is the form of the contrapositive.</item>
-      <item>The contrapositive <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math> is logically equivalent to the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math></item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00006">
-      <problem id="prob-00006">
-      <para id="para-00021"><link class="os-embed" url="#exercise/CM-C02-M5-Q003"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00004">
-      <title>Determining the Truth Value of the Converse, Inverse, and Contrapositive</title>
-      <exercise id="exer-00007">
-      <problem id="prob-00007">
-      <para id="para-00022">Assume the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>:</mo></mrow></math> “If Chadwick Boseman was an actor, then Chadwick Boseman did not star in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>” is false, and use it to answer the following questions.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00008" xmlns="http://cnx.rice.edu/cnxml">
-      <item>Write the converse of the statement in words and determine its truth value.</item>
-      <item>Write the inverse of the statement in words and determine its truth value.</item>
-      <item>Write the contrapositive of the statement in words and determine its truth value.</item>
-      </list>
-      </problem>
-      <solution id="sol-00004">
-      <list list-type="enumerated" number-style="arabic" id="list-00009">
-      <item>The only way the conditional statement can be false is if the hypothesis, <emphasis effect="italics">p</emphasis>: Chadwick Boseman was an actor, is true and the conclusion, <emphasis effect="italic">q</emphasis>: Chadwick Boseman did not star in the movie <emphasis effect="italics">Black Panther</emphasis>, is false. The converse is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi><mo>,</mo></mrow></math> and it is written in words as: “If Chadwick Boseman did not star in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>, then Chadwick Boseman was an actor.” This statement is true, because false <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math> true is true.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">The inverse has the form “<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math>” The written form is: “If Chadwick Boseman was not an actor, then Chadwick Boseman starred in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>.” Because <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is true, and <emphasis effect="italic">q</emphasis> is false, ~<emphasis effect="italic">p</emphasis> is false, and ~<emphasis effect="italic">q</emphasis> is true. This means the inverse is false <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math> true, which is true.  Alternatively, from Question 1, the converse is true, and because the inverse is logically equivalent to the converse it must also be true.</item>
-<item xmlns="http://cnx.rice.edu/cnxml">The contrapositive is logically equivalent to the conditional. Because the conditional is false, the contrapositive is also false.  This can be confirmed by looking at the truth values of the contrapositive statement. The contrapositive has the form “<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math>.” Because <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is false and <emphasis effect="italic">p</emphasis> is true, <emphasis effect="italic">~p</emphasis> is true and <emphasis effect="italic">~p</emphasis> is false. Therefore, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math> is true <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math> false, which is false. The written form of the contrapositive is “If Chadwick Boseman starred in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>, then Chadwick Boseman was not an actor.”</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00008">
-      <problem id="prob-00008">
-      <para id="para-00023"><link class="os-embed" url="#exercise/CM-C02-M5-Q004"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section id="sect-00004" class="check-understanding">
-      <title>Check Your Understanding</title>
-      <exercise id="exer-00009">
-      <problem id="prob-00009">
-      <para id="para-00024"><link class="os-embed" url="#exercise/CM-C02-M5-Q005"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00010">
-      <problem id="prob-00010">
-      <para id="para-00025"><link class="os-embed" url="#exercise/CM-C02-M5-Q006"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00011">
-      <problem id="prob-00011">
-      <para id="para-00026"><link class="os-embed" url="#exercise/CM-C02-M5-Q007"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00012">
-      <problem id="prob-00012">
-      <para id="para-00027"><link class="os-embed" url="#exercise/CM-C02-M5-Q008"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00013">
-      <problem id="prob-00013">
-      <para id="para-00028"><link class="os-embed" url="#exercise/CM-C02-M5-Q009"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="section-exercises" id="sect-00005">
-      <title>Exercises</title>
-      <exercise id="exer-00014">
-      <problem id="prob-00014">
-      <para id="para-00029"><link class="os-embed" url="#exercise/CM-C02-M5-Q010"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00015">
-      <problem id="prob-00015">
-      <para id="para-00030"><link class="os-embed" url="#exercise/CM-C02-M5-Q011"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00016">
-      <problem id="prob-00016">
-      <para id="para-00031"><link class="os-embed" url="#exercise/CM-C02-M5-Q012"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00017">
-      <problem id="prob-00017">
-      <para id="para-00032"><link class="os-embed" url="#exercise/CM-C02-M5-Q013"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00018">
-      <problem id="prob-00018">
-      <para id="para-00033"><link class="os-embed" url="#exercise/CM-C02-M5-Q014"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00019">
-      <problem id="prob-00019">
-      <para id="para-00034"><link class="os-embed" url="#exercise/CM-C02-M5-Q015"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="key-terms" id="sect-00007">
-      <title>Key Terms</title>
-      <list bullet-style="none" id="list-00010">
-      <item>logically equivalent</item>
-      <item>tautology</item>
-      <item>inverse</item>
-      <item>converse</item>
-      <item>contrapositive</item>
-      </list>
-      </section>
-      <section class="key-concepts" id="sect-00008">
-      <title>Key Concepts</title>
-      <list id="list-00011">
-      <item>Two statements <emphasis effect="italic">p</emphasis> and <emphasis effect="italic">q</emphasis> are logically equivalent if the biconditional statement, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math>is a valid argument. That is, the last column of the truth table consists of only true values. In other words, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is a tautology. Symbolically, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is logically equivalent to <emphasis effect="italic">q</emphasis> is written as: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>≡</mo><mi>q</mi><mo>.</mo></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml">A logical statement is a tautology if it is always true.</item>
-      <item>To be valid a local argument must be a tautology. It must always be true.</item>
-      <item>Know the variations of the conditional statement, be able to determine their truth values and compose statements with them.
-      <list id="list-00012">
-        <item>The converse of a conditional statement, if p then q, is the statement formed by interchanging the hypothesis and conclusion. It is the statement if q then p.</item>
-        <item>The inverse of a conditional statement if formed by negating the hypothesis and the conclusion of the conditional statement.</item>
-        <item>The contrapositive negates and interchanges the hypothesis and the conclusion.
-          <table class="unnumbered" summary="." id="table-00004">
-            <tgroup cols="8">
-            <colspec colnum="1" colname="c1" colwidth="1*"/>
-            <colspec colnum="2" colname="c2" colwidth="1*"/>
-            <colspec colnum="3" colname="c3" colwidth="1*"/>
-            <colspec colnum="4" colname="c4" colwidth="1*"/>
-            <colspec colnum="5" colname="c5" colwidth="1*"/>
-            <colspec colnum="6" colname="c6" colwidth="1*"/>
-            <colspec colnum="7" colname="c7" colwidth="1*"/>
-            <colspec colnum="8" colname="c8" colwidth="1*"/>
-            <thead>
-            <row><entry namest="c1" nameend="c4"/>
-            <entry>Conditional</entry>
-            <entry>Contrapositive</entry>
-            <entry>Converse</entry>
-            <entry>Inverse</entry></row>
-            <row><entry><emphasis effect="italic">p</emphasis></entry>
-            <entry><emphasis effect="italic">q</emphasis></entry>
-            <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
-            <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
-            <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
-            <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math></entry>
-            <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math></entry>
-            <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math></entry></row>
-            </thead>
-            <tbody xmlns="http://cnx.rice.edu/cnxml">
-            <row><entry>T</entry>
-            <entry>T</entry>
-            <entry>F</entry>
-            <entry>F</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>T</entry></row>
-            <row><entry>T</entry>
-            <entry>F</entry>
-            <entry>F</entry>
-            <entry>T</entry>
-            <entry>F</entry>
-            <entry>F</entry>
-            <entry>T</entry>
-            <entry>T</entry></row>
-            <row><entry>F</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>F</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>F</entry>
-            <entry>F</entry></row>
-            <row><entry>F</entry>
-            <entry>F</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>T</entry>
-            <entry>T</entry></row>
-            </tbody>
-            </tgroup>
-            </table></item>
-          </list></item>
-          <item>The conditional statement is logically equivalent to the contrapositive.</item>
-          <item>The converse is logically equivalent to the inverse.</item>
-          <item>Know how to construct and use truth tables to determine whether statements are logically equivalent.</item>
-      </list>
-      </section>
-  </content>
-</document>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">F</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry><emphasis effect="bold">F</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00011">Because the last column it not all true, the biconditional is not valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is not logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math>.</para>
+    </item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Construct a truth table for the biconditional formed by using the first statement as the hypothesis and the second statement as the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>.</mo></mrow></math>
+    <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <colspec colnum="6" colname="c6" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow><mo>)</mo></mrow><mo>↔</mo><mrow><mo>(</mo><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    </row>
+    </thead>
+    <tbody xmlns="http://cnx.rice.edu/cnxml">
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry><emphasis effect="bold">T</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00012">Because the last column is true for every entry, the biconditional is valid and the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math> is logically equivalent to the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi></mrow></math>. Symbolically, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mtext> </mtext><mo>≡</mo><mtext> </mtext><mo>~</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo>.</mo></mrow></math></para>
+    </item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CM-C02-M5-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Compose the Converse, Inverse, and Contrapositive of a Conditional Statement</title>
+    <para id="para-00014">The <term id="term-00003">converse</term>, <term id="term-00004">inverse</term>, and <term id="term-00005">contrapositive</term> are variations of the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math>
+    <list list-type="bulleted" id="list-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <item>The converse is if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>, and it is formed by interchanging the hypothesis and the conclusion. The converse is logically equivalent to the inverse.</item>
+    <item>The inverse is if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math> then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math>, and it is formed by negating both the hypothesis and the conclusion. The inverse is logically equivalent to the converse.</item>
+    <item>The contrapositive is if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math> then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math>, and it is formed by interchanging and negating both the hypothesis and the conclusion. The contrapositive is logically equivalent to the conditional.</item>
+    </list></para>
+    <para id="para-00005"> The table below shows how these variations are presented symbolically.</para>
+    <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <colspec colnum="6" colname="c6" colwidth="1*"/>
+    <colspec colnum="7" colname="c7" colwidth="1*"/>
+    <colspec colnum="8" colname="c8" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry namest="c1" nameend="c4"/>
+    <entry>Conditional</entry>
+    <entry>Contrapositive</entry>
+    <entry>Converse</entry>
+    <entry>Inverse</entry>
+    </row>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></entry>
+    </row>
+    </thead>
+    <tbody xmlns="http://cnx.rice.edu/cnxml">
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    </row>
+    <row>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    </row>
+    <row>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Writing the Converse, Inverse, and Contrapositive of a Conditional Statement</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00018">Use the statements, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>: Harry is a wizard and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>: Hermione is a witch, to write the following statements:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>Write the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math>, in words.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Write the converse statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math>, in words.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Write the inverse statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math>, in words.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Write the contrapositive statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math>, in words.</item>
+    </list>
+    </problem>
+    <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>The conditional statement takes the form, “if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>,” so the conditional statement is: “If Harry is a wizard, then Hermione is a witch.” Remember the <emphasis effect="italic">if</emphasis> … <emphasis effect="italic">then</emphasis> … words are the connectives that form the conditional statement.</item>
+    <item>The converse swaps or interchanges the hypothesis, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>, with the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>. It has the form, “if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>.” So, the converse is: "If Hermione is a witch, then Harry is a wizard."</item>
+    <item>To construct the inverse of a statement, negate both the hypothesis and the conclusion.The inverse has the form, “if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math>,” so the inverse is: "If Harry is not a wizard, then Hermione is not a witch." </item>
+    <item>The contrapositive is formed by negating and interchanging both the hypothesis and conclusion. It has the form, “if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math>," so the contrapositive statement is: "If Hermione is not a witch, then Harry is not a wizard."</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00019"><link class="os-embed" url="#exercise/CM-C02-M5-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00003">
+    <title>Identifying the Converse, Inverse, and Contrapositive</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00020">Use the conditional statement, “If all dogs bark, then Lassie likes to bark,” to identify the following.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00006">
+    <item>Write the hypothesis of the conditional statement and label it with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>.</item>
+    <item>Write the conclusion of the conditional statement and label it with a <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>.</item>
+    <item>Identify the following statement as the converse, inverse, or contrapositive: “If Lassie likes to bark, then all dogs bark.”</item>
+    <item>Identify the following statement as the converse, inverse, or contrapositive: “If Lassie does not like to bark, then some dogs do not bark.”</item>
+    <item>Which statement is logically equivalent to the conditional statement?</item>
+    </list>
+    </problem>
+    <solution id="sol-00003">
+    <list list-type="enumerated" number-style="arabic" id="list-00007">
+    <item>The hypothesis is the phrase following the <emphasis effect="italics">if</emphasis>. The answer is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>: All dogs bark. Notice, the word <emphasis effect="italics">if</emphasis> is not included as part of the hypothesis.</item>
+    <item>The conclusion of a conditional statement is the phrase following the <emphasis effect="italics">then</emphasis>. The word <emphasis effect="italics">then</emphasis> is not included when stating the conclusion. The answer is: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>: Lassie likes to bark.</item>
+    <item>“Lassie likes to bark” is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> and “All dogs bark” is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>. So, “If Lassie likes to bark, then all dogs bark,” has the form “if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>,” which is the form of the converse.</item>
+    <item>“Lassie does not like to bark” is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math> and “Some dogs do not bark” is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math>. The statement, “If Lassie does not like to bark, then some dogs do not bark,” has the form “if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math>,” which is the form of the contrapositive.</item>
+    <item>The contrapositive <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math> is logically equivalent to the conditional statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>.</mo></mrow></math></item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C02-M5-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00004">
+    <title>Determining the Truth Value of the Converse, Inverse, and Contrapositive</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00022">Assume the conditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi><mo>:</mo></mrow></math> “If Chadwick Boseman was an actor, then Chadwick Boseman did not star in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>” is false, and use it to answer the following questions.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <item>Write the converse of the statement in words and determine its truth value.</item>
+    <item>Write the inverse of the statement in words and determine its truth value.</item>
+    <item>Write the contrapositive of the statement in words and determine its truth value.</item>
+    </list>
+    </problem>
+    <solution id="sol-00004">
+    <list list-type="enumerated" number-style="arabic" id="list-00009">
+    <item>The only way the conditional statement can be false is if the hypothesis, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>: Chadwick Boseman was an actor, is true and the conclusion, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>: Chadwick Boseman did not star in the movie <emphasis effect="italics">Black Panther</emphasis>, is false. The converse is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>q</mi><mo>→</mo><mi>p</mi><mo>,</mo></mrow></math> and it is written in words as: “If Chadwick Boseman did not star in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>, then Chadwick Boseman was an actor.” This statement is true, because false <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math> true is true.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The inverse has the form “<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi><mo>.</mo></mrow></math>” The written form is: “If Chadwick Boseman was not an actor, then Chadwick Boseman starred in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>.” Because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is true, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> is false, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math> is false, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>q</mi></math> is true. This means the inverse is false <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math> true, which is true. Alternatively, from Question 1, the converse is true, and because the inverse is logically equivalent to the converse it must also be true.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The contrapositive is logically equivalent to the conditional. Because the conditional is false, the contrapositive is also false. This can be confirmed by looking at the truth values of the contrapositive statement. The contrapositive has the form “<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math>.” Because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is false and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is true, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math> is true and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>~</mo><mi>p</mi></math> is false. Therefore, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>p</mi></mrow></math> is true <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>→</mo></math> false, which is false. The written form of the contrapositive is “If Chadwick Boseman starred in the movie <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">Black Panther</emphasis>, then Chadwick Boseman was not an actor.”</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C02-M5-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004" class="check-understanding">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00024"><link class="os-embed" url="#exercise/CM-C02-M5-Q005"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00025"><link class="os-embed" url="#exercise/CM-C02-M5-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00026"><link class="os-embed" url="#exercise/CM-C02-M5-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C02-M5-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00028"><link class="os-embed" url="#exercise/CM-C02-M5-Q009"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00005">
+    <title>Exercises</title>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C02-M5-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00030"><link class="os-embed" url="#exercise/CM-C02-M5-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C02-M5-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C02-M5-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00033"><link class="os-embed" url="#exercise/CM-C02-M5-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00034"><link class="os-embed" url="#exercise/CM-C02-M5-Q015"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00007">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00010">
+    <item>logically equivalent</item>
+    <item>tautology</item>
+    <item>inverse</item>
+    <item>converse</item>
+    <item>contrapositive</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00008">
+    <title>Key Concepts</title>
+    <list id="list-00011">
+    <item>Two statements <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> are logically equivalent if the biconditional statement, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is a valid argument. That is, the last column of the truth table consists of only true values. In other words, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math> is a tautology. Symbolically, <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">p</emphasis> is logically equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> is written as: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>≡</mo><mi>q</mi><mo>.</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">A logical statement is a tautology if it is always true.</item>
+    <item>To be valid a local argument must be a tautology. It must always be true.</item>
+    <item>Know the variations of the conditional statement, be able to determine their truth values and compose statements with them.</item>
+    </list>
+    <list id="list-00012">
+    <item>The converse of a conditional statement, if <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math> then <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math>, is the statement formed by interchanging the hypothesis and conclusion. It is the statement if <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math> then <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>.</item>
+    <item>The inverse of a conditional statement if formed by negating the hypothesis and the conclusion of the conditional statement.</item>
+    <item>The contrapositive negates and interchanges the hypothesis and the conclusion.
+    <table class="unnumbered" summary="." id="table-00004">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <colspec colnum="6" colname="c6" colwidth="1*"/>
+    <colspec colnum="7" colname="c7" colwidth="1*"/>
+    <colspec colnum="8" colname="c8" colwidth="1*"/>
+    <thead>
+    <row><entry namest="c1" nameend="c4"/>
+    <entry>Conditional</entry>
+    <entry>Contrapositive</entry>
+    <entry>Converse</entry>
+    <entry>Inverse</entry></row>
+    <row><entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+    <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>q</mi><mo>→</mo><mo>~</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>q</mi><mo>→</mo><mi>p</mi></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mo>~</mo><mi>q</mi></mrow></math></entry></row>
+    </thead>
+    <tbody xmlns="http://cnx.rice.edu/cnxml">
+    <row><entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry></row>
+    <row><entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry></row>
+    <row><entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>F</entry>
+    <entry>F</entry></row>
+    <row><entry>F</entry>
+    <entry>F</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry>
+    <entry>T</entry></row>
+    </tbody>
+    </tgroup>
+    </table>
+    </item>
+    <item>The conditional statement is logically equivalent to the contrapositive.</item>
+    <item>The converse is logically equivalent to the inverse.</item>
+    <item>Know how to construct and use truth tables to determine whether statements are logically equivalent.</item>
+    </list>
+    </section>
+    </content>
+    </document>    
