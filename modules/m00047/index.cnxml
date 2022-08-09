@@ -10,7 +10,7 @@
       <media alt="A woman using her smartphone as she sits at a table with a cup beside her. She is also holding a credit card.">
       <image mime-type="image/jpg" src="../../media/CS_Photo_03_07_008.jpg"/>
       </media>
-      <caption>caption and credit to come (credit: modification of work “Senior couple at home checking finance on credit card from above” by Nenad Stojkovic/Flickr, CC BY 2.0)</caption>
+      <caption>If a credit card number is entered incorrectly, error checking algorithms will often catch the mistake. (credit: modification of work “Senior couple at home checking finance on credit card from above” by Nenad Stojkovic/Flickr, CC BY 2.0)</caption>
       </figure>
       <section class="learning-objectives" id="sect-00001">
       <title>Learning Objectives</title>
@@ -36,7 +36,7 @@
       </figure>
       <para id="para-00006">What do 2, 14, 26, and 38 have in common in relation to 12? When they are divided by 12, they each have a remainder of 2. That's the key. When you add a number of hours to a specific time on the clock, first divide the number of hours being added by 12 and determine the remainder. Add that remainder to the time on the clock to know what time it will be.</para>
     <para id="para-00048">A good visualization is to wrap a number line around the clock, with the 0 at the starting time. Then each time 12 on the number line passes, the number line passes the starting spot on the clock. This is referred to as <term id="term-00002">modulo 12</term> arithmetic. Even though the process says to divide the number being added by 12, first perform the addition; the result will be the same if you add the numbers first, and then divide by 12 and determine the remainder.</para>
-    <para id="para-00049">In general terms, let <emphasis effect="italic">n</emphasis> be a positive integer. Then <emphasis effect="italic">n</emphasis> modulo 12, written (<emphasis effect="italic">n</emphasis> mod 12), is the remainder when <emphasis effect="italic">n</emphasis> is divided by 12. If that remainder is <emphasis effect="italic">x</emphasis>, we would write <emphasis effect="italic">n</emphasis> = <emphasis effect="italic">x</emphasis> (mod 12).</para>
+    <para id="para-00049">In general terms, let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> be a positive integer. Then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, written (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> mod 12), is the remainder when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is divided by 12. If that remainder is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>, we would write <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mi>x</mi></math> (mod 12).</para>
       <note class="check-point" id="note-00002">
       <para id="para-00007"><emphasis effect="italic">Caution: 12 mod 12 is 0. So, if a mod 12 problem ends at 0, that would be 12 on the clock.</emphasis></para>
       </note>
@@ -56,9 +56,9 @@
       <list list-type="enumerated" number-style="arabic" id="list-00003">
       <item>To find the value 34 modulo 12:<newline/>
       <para id="para-00010"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 34 is divided by 12 using long division. The largest multiple of 12 that is less than or equal to 34 is 24, which is the product of 12 and 2.
-      <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+      <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable rowspacing="0.1em"><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
       <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Performing the subtraction yields 10.
-      <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>89</mn></mrow></menclose></mrow><mn>7</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><munder><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>84</mn></mrow><mo stretchy="true">_</mo></munder></mrow><mrow><mspace width="1.78em"/><mn>10</mn></mrow></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+     <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable rowspacing="0.1em"><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mstyle displaystyle="true"><mo stretchy="true">_</mo></mstyle></munder></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.4em"/><mn>10</mn></mrow></mtd></mtr></mtable></mrow></math></equation></para>
       <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">Since that subtraction resulted in a number less than 12, that is the remainder, 10. The value of 34 modulo 12 is 10, or 34 = 10 (mod 12).</para></item>
       <item>To find the value 539 modulo 12:<newline/>
       <para id="para-00013"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 539 is divided by 12 using long division. We first look to the first two digits of 539, 53. The largest multiple of 12 that is less than or equal to 53 is 48, which is the product of 12 and 4.
@@ -98,7 +98,7 @@
       </note>
       <note class="tech-check" id="note-00004">
       <title>Using Desmos to Determine the Value of a Number module 12</title>
-      <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <emphasis effect="italic">n</emphasis> modulo 12, type <emphasis effect="bold">mod(<emphasis effect="italic">n</emphasis>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.43</link>.</para>
+      <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, type <emphasis effect="bold">mod(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.43</link>.</para>
       <figure id="fig-00004">
         <media alt="Insert Alt Text">
         <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_003.jpg"/>
@@ -193,7 +193,7 @@
       </problem>
       </exercise>
       </note>
-      <para id="para-00044">Clock arithmetic processes can be applied to days of the week. Every 7 days the day of the week repeats, much like every 12 hours the time on the clock repeats. The only difference will be that we work with remainders after dividing by 7. In technical terms, this is referred to as <term id="term-00003">modulo 7</term>. More generally, let <emphasis effect="italic">n</emphasis> be a positive integer. Then <emphasis effect="italic">n</emphasis> modulo 7, written <emphasis effect="italic">n</emphasis> mod 7, is the remainder when <emphasis effect="italic">n</emphasis> is divided by 7. If that value is <emphasis effect="italic">x</emphasis>, we may write <emphasis effect="italic">n</emphasis> = <emphasis effect="italic">x</emphasis> (mod 7).</para>
+      <para id="para-00044">Clock arithmetic processes can be applied to days of the week. Every 7 days the day of the week repeats, much like every 12 hours the time on the clock repeats. The only difference will be that we work with remainders after dividing by 7. In technical terms, this is referred to as <term id="term-00003">modulo 7</term>. More generally, let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> be a positive integer. Then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 7, written <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> mod 7, is the remainder when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is divided by 7. If that value is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>, we may write <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mi>x</mi></math> (mod 7).</para>
       <example id="exam-00006">
       <title>Applying Clock Arithmetic to Days of the Week</title>
       <exercise id="exer-00011">
@@ -290,5 +290,5 @@
       <para id="para-00060"><link url="https://openstax.org/r/Determining_the_Day_of_the_Week_for_Any_Date_in_History">Determining the Day of the Week for Any Date in History</link></para>
       <para id="para-00061"><link url="https://openstax.org/r/Clock_Arithmetic">Clock Arithmetic</link></para>
       </section>
-      </content>
+  </content>
   </document>
