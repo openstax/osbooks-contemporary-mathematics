@@ -10,7 +10,7 @@
       <media alt="A laptop is placed on a table. The screen shows a lock symbol with a message that reads “secured.”">
       <image mime-type="image/jpg" src="../../media/CS_Photo_03_01_001.jpg"/>
       </media>
-      <caption>A laptop showing a lock on the screen that shows it is on a secured network. (credit: “Data Security” by Blogtrepreneur/Flickr, CC BY 2.0)</caption>
+      <caption>Computers are often locked using encryption based on prime numbers. (credit: “Data Security” by Blogtrepreneur/Flickr, CC BY 2.0)</caption>
     </figure>
   <section class="learning-objectives" id="sect-00001">
   <para id="para-00001">After completing this section, you should be able to:</para>
@@ -34,7 +34,7 @@
   <item id="para-00004" xmlns="http://cnx.rice.edu/cnxml">Another important set of numbers is the <emphasis effect="bold">integers</emphasis>. The integers are the natural numbers, along with 0, and the negatives of the natural numbers. This set is often written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mrow><mo>…</mo><mo>,</mo><mo>−</mo><mn>3</mn><mo>,</mo><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>…</mo></mrow><mo>}</mo></mrow></mrow></math>. We denote the integers with the symbol ℤ.</item>
   <item id="para-00005" xmlns="http://cnx.rice.edu/cnxml">Notice that ℕ is a proper subset of ℤ, or, ℕ ⊂ ℤ. All the ideas of this section apply to the natural numbers, while only some apply to all the integers.</item>
 </list>
-  <para id="para-00006"><emphasis effect="bold">Divisibility</emphasis> is when the integer <emphasis effect="italics">n</emphasis> is divisible by <emphasis effect="italics">m</emphasis>, if <emphasis effect="italics">n</emphasis> can be written as <emphasis effect="italics">m</emphasis> times another integer. Equivalently, there is no remainder when <emphasis effect="italics">n</emphasis> is divided by <emphasis effect="italics">m</emphasis>. There are many occasions when separating items into equal groups comes into play to ensure an equal distribution of whole items. For example, Francis, a preschool art teacher, has 15 students in one class. Francis has 225 sheets of construction paper and wants to provide each student with an equal number of pieces. To know if he will use all the construction paper, Francis is really asking if 225 can be evenly divided into 15 groups.</para>
+  <para id="para-00006"><emphasis effect="bold">Divisibility</emphasis> is when the integer <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is divisible by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math>, if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> can be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> times another integer. Equivalently, there is no remainder when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is divided by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math>. There are many occasions when separating items into equal groups comes into play to ensure an equal distribution of whole items. For example, Francis, a preschool art teacher, has 15 students in one class. Francis has 225 sheets of construction paper and wants to provide each student with an equal number of pieces. To know if he will use all the construction paper, Francis is really asking if 225 can be evenly divided into 15 groups.</para>
   <example id="exam-00001">
   <title>Determining if a Number Divides Another Number</title>
   <exercise id="exer-00001">
@@ -161,7 +161,7 @@
   <para id="para-00021">Using divisibility rules, determine if 4,259 is divisible by 10.</para>
   </problem>
   <solution id="sol-00005">
-  <para id="para-00022">The divisibility rule for 10 is that the last digit of the number is 0. Since the last digit of 4,259 is not 0, 4,259 is not divisible by 10.</para>
+  <para id="para-00022">The divisibility rule for 10 is that the last digit of the number is 0. Since the last digit of 4,259 is not 0, then 4,259 is not divisible by 10.</para>
   </solution>
   </exercise>
   </example>
@@ -198,9 +198,9 @@
   <title>Prime and Composite Numbers</title>
   <para id="para-00028">Sometimes, a natural number has only two unique divisors, 1 and itself. For instance, 7 and 19 are <term id="term-00001">prime</term>. In other words, there is no way to divide a prime number into groups with an equal number of things, unless there is only one group, or those groups have one item per group. Other natural numbers have more than two unique divisors, such as 4, or 26. These numbers are called <term id="term-00002">composite</term>. The number 1 is special; it is neither prime nor composite.</para>
   <para id="para-00029">To determine if a number is prime or composite, you have to determine if the number has any divisors other than 1 and itself. The divisibility rules are useful here, and can quickly show you if a number has a divisor on that list.</para>
-  <para id="para-00030">However, if none of those divide the number, you still have to check all other possible prime divisors. What are the prime numbers that are possibly divisors of the number you are checking? You need only check the prime numbers up to the square root of the number in question. For instance, if you want to know if 2,117 is prime, you need to determine if any primes up to the square root of 2,117 (which is 46.0 when rounded to one decimal place) divide 2,217. If any of those primes are divisors of the number in question, then the number is composite. If none of those primes work, then the number is itself prime.</para>
+  <para id="para-00030">However, if none of those divide the number, you still have to check all other possible prime divisors. What are the prime numbers that are possibly divisors of the number you are checking? You need only check the prime numbers up to the square root of the number in question. For instance, if you want to know if 2,117 is prime, you need to determine if any primes up to the square root of 2,117 (which is 46.0 when rounded to one decimal place) divide 2,117. If any of those primes are divisors of the number in question, then the number is composite. If none of those primes work, then the number is itself prime.</para>
   <para id="para-00031">We can check divisibility with whatever tool we wish. Divisibility rules are quick for some prime divisors (2 and 5 come to mind) but aren't quick for other values (like 11). In place of divisibility rules, we could just use a calculator. If the prime number divides the number evenly (that is, there is no decimal or fractional part), then the number is divisible by that prime. The table below is a quick list of the prime numbers up to 50. There are 15 prime numbers less than 50.</para>
-  <table summary="." class="unnumbered" id="table-00002">
+  <table summary="." id="table-00002">
   <tgroup cols="5">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
   <colspec colnum="2" colname="c2" colwidth="1pt"/>
@@ -231,6 +231,7 @@
   </row>
   </tbody>
   </tgroup>
+<caption>Prime Numbers Less than 50</caption>
   </table>
   <example id="exam-00007">
   <title>Determining If a Number Is Prime or Composite</title>
@@ -271,7 +272,7 @@
   <para id="para-00218"><emphasis effect="bold">Step 1:</emphasis> Check 2. We can tell 423 is not divisible by 2, as the last digit isn't even.</para>
   <para id="para-00219"><emphasis effect="bold">Step 2:</emphasis> Check 5. It is not divisible by 5 (the last digit isn't 0 or 5).</para>
   <para id="para-00220"><emphasis effect="bold">Step 3:</emphasis> Check 3. To check if 423 is divisible by 3, we use the divisibility rule for 3. When we take the sum of the digits of 423, the result is 9. Since 9 is divisible by 3, so is 423.</para>
-  <para id="para-00221">Since 423 is divisible by 3, 423 is a composite number. Writing 423 as the product of 3 and another natural number, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>423</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>141</mn></mrow></math>.</para>
+  <para id="para-00221">Since 423 is divisible by 3, then 423 is a composite number. Writing 423 as the product of 3 and another natural number, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>423</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>141</mn></mrow></math>.</para>
   </solution>
   </exercise>
   </example>
@@ -338,13 +339,13 @@
   </media>
   <caption>Sophie Germain (credit: “Sophie Germain at 14 years,” Illustration from histoire du socialisme, approx. 1880, Wikimedia Commons, public domain)</caption>
   </figure>
-  <para id="para-00052">Born into a wealthy French family in 1776, Sophie Germain discovered and fell in love with mathematics by browsing her father’s books. Clandestine study, hard and tenacious work, and a mathematical mindset did not lead to college, however, as her gender precluded her from attending. She did manage, through friends, to obtain problem sets and submit brilliant solutions under the name Monsieur LaBlanc. One of her great interests was number theory, which is the study of properties of integers. One of her theorems, titled “Sophie Germain’s Theorem,” partially solved one of the great mathematical mysteries, Fermat’s Last Theorem, and involved her discovery of what are now known as Sophie Germain Primes. A Sophie Germain Prime is a prime number that can be written in the form 2<emphasis effect="italics">p</emphasis> +1, where <emphasis effect="italics">p</emphasis> is a prime number. For instance, 23 is prime: 2(23) + 1= 47, which is prime, so 47 is a Sophie Germain Prime. It should be noted that 2<emphasis effect="italics">p</emphasis> +1, where <emphasis effect="italics">p</emphasis> is a prime number, may or may not be prime (check for <emphasis effect="italics">p</emphasis> =7!).</para>
+  <para id="para-00052">Born into a wealthy French family in 1776, Sophie Germain discovered and fell in love with mathematics by browsing her father’s books. Clandestine study, hard and tenacious work, and a mathematical mindset did not lead to college, however, as her gender precluded her from attending. She did manage, through friends, to obtain problem sets and submit brilliant solutions under the name Monsieur LaBlanc. One of her great interests was number theory, which is the study of properties of integers. One of her theorems, titled “Sophie Germain’s Theorem,” partially solved one of the great mathematical mysteries, Fermat’s Last Theorem, and involved her discovery of what are now known as Sophie Germain Primes. A Sophie Germain Prime is a prime number that can be written in the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>p</mi><mo>+</mo><mn>1</mn></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is a prime number. For instance, 23 is prime: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>(</mo><mn>23</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>47</mn></mrow></math>, which is prime, so 47 is a Sophie Germain Prime. It should be noted that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>p</mi><mo>+</mo><mn>1</mn></mrow></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is a prime number, may or may not be prime (check for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mn>7</mn></mrow></math>!).</para>
   </note>
   </section>
   <section id="sect-00004">
   <title>Finding the Prime Factorization of Composite Numbers</title>
   <para id="para-00053">Before we can start with prime factorization, let’s remind ourselves what it means to factor a number. We factor a number by identifying two (or more) numbers that, when multiplied, result in the original number. For instance, 3 and 24, when multiplied, give 72. So, 72 can be factored into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>24</mn></mrow></math>. Notice that we could have factored the 72 differently, say as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>6</mn><mo>×</mo><mn>12</mn></mrow></math>, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>36</mn></mrow></math>, or even as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>=</mo><mn>3</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>6</mn></mrow></math>.</para>
-  <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">Finding the <term id="term-00003">prime factorization</term> of a composite number means writing the number as the product of all of its prime factors. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Notice that all the numbers being multiplied on the right-hand side are prime numbers. Sometimes prime numbers repeat themselves in the factorization. When prime factors do repeat, we may write the prime factorization using <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">exponents</term>, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup><mo>×</mo><mn>5</mn></mrow></math>. In that expression, the 2 is raised to the 4<sup xmlns="http://cnx.rice.edu/cnxml">th</sup> power. The 4 is the exponent, and the 2 is the <emphasis effect="bold">base</emphasis>. More generally, in the exponent notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math>, the number represented by <emphasis effect="italics" xmlns="http://cnx.rice.edu/cnxml">a</emphasis> is the base, and the number represented by <emphasis effect="italics">b</emphasis> is the exponent.</para>
+  <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">Finding the <term id="term-00003">prime factorization</term> of a composite number means writing the number as the product of all of its prime factors. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Notice that all the numbers being multiplied on the right-hand side are prime numbers. Sometimes prime numbers repeat themselves in the factorization. When prime factors do repeat, we may write the prime factorization using <term id="term-00004" xmlns="http://cnx.rice.edu/cnxml">exponents</term>, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mo>=</mo><msup><mn>2</mn><mn>4</mn></msup><mo>×</mo><mn>5</mn></mrow></math>. In that expression, the 2 is raised to the 4th power. The 4 is the exponent, and the 2 is the <emphasis effect="bold">base</emphasis>. More generally, in the exponent notation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>a</mi><mi>b</mi></msup></mrow></math>, the number represented by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> is the base, and the number represented by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> is the exponent.</para>
   <para id="para-00055">One has to wonder if finding the prime factorization could result in different factorizations. The <emphasis effect="bold">Fundamental Theorem of Arithmetic</emphasis> tells us that there is only one prime factorization for a given natural number.</para>
   </section>
   <section id="sect-00016">
@@ -376,18 +377,18 @@
   </note>
   <section id="sect-00005">
   <title>Factor Trees</title>
-  <para id="para-00067">A useful tool for helping with prime factorization is a <emphasis effect="bold">factor tree</emphasis>. To create a factor tree for the natural number <emphasis effect="italic">n</emphasis> (<emphasis effect="italic">n</emphasis> is not 1), perform the following steps:</para>
-  <para id="para-00068"><emphasis effect="bold">Step 1:</emphasis> If <emphasis effect="italics">n</emphasis> is prime, the factor tree is just <emphasis effect="italic">n</emphasis>.</para>
-  <para id="para-00069"><emphasis effect="bold">Step 2:</emphasis> Identify two divisors of <emphasis effect="italic">n</emphasis>, call them <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b.</emphasis></para>
-  <para id="para-00070"><emphasis effect="bold">Step 3:</emphasis> Write the number <emphasis effect="italic">n</emphasis> down, and draw two branches extending down (or right) of the number <emphasis effect="italic">n</emphasis>.</para>
-  <para id="para-00071"><emphasis effect="bold">Step 4:</emphasis> Label the end of one branch <emphasis effect="italic">a</emphasis>, the other as <emphasis effect="italic">b</emphasis>. See <link target-id="fig-00003" document="m00041">Figure 3.4</link>.</para>
+  <para id="para-00067">A useful tool for helping with prime factorization is a <emphasis effect="bold">factor tree</emphasis>. To create a factor tree for the natural number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> (where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is not 1), perform the following steps:</para>
+  <para id="para-00068"><emphasis effect="bold">Step 1:</emphasis> If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>>n</mi></math> is prime, the factor tree is just <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</para>
+  <para id="para-00069"><emphasis effect="bold">Step 2:</emphasis> Identify two divisors of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>, call them <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>.</para>
+  <para id="para-00070"><emphasis effect="bold">Step 3:</emphasis> Write the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> down, and draw two branches extending down (or to the right) of the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</para>
+  <para id="para-00071"><emphasis effect="bold">Step 4:</emphasis> Label the end of one branch <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math>, the other as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>. See <link target-id="fig-00003" document="m00041">Figure 3.4</link>.</para>
   <figure class="numbered" id="fig-00003">
   <media alt="A tree diagram shows two branches extending down from a node labeled 66 to 2 and 33.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_001.png"/>
   </media>
   </figure>
-  <para id="para-00072"><emphasis effect="bold">Step 5:</emphasis> If <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis> are prime, the tree is complete. When a number at this step is a prime number, we refer to it as a leaf of the tree diagram.</para>
-  <para id="para-00073"><emphasis effect="bold">Step 6:</emphasis> If either <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis> are composite, repeat Steps 1 through 4 for <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis>.</para>
+  <para id="para-00072"><emphasis effect="bold">Step 5:</emphasis> If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> are prime, the tree is complete. When a number at this step is a prime number, we refer to it as a leaf of the tree diagram.</para>
+  <para id="para-00073"><emphasis effect="bold">Step 6:</emphasis> If either <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> are composite, repeat Steps 1 through 4 for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>.</para>
   <para id="para-00074"><emphasis effect="bold">Step 7:</emphasis> The process stops when the leaves are all prime.</para>
   <para id="para-00075"><emphasis effect="bold">Step 8:</emphasis> The prime factorization is then the product of all the leaves.</para>
   <para id="para-00076">This is best seen in an example.</para>
@@ -406,7 +407,7 @@
   </media>
   </figure>
   <para id="para-00079">Since 2 is a factor, that branch is done, and 2 is a leaf.</para>
-  <para id="para-00227"><emphasis effect="bold">Step 2:</emphasis> The 33, though, is divisible by 3, and is the product of 3 and 11. We add that to the factor tree (<link target-id="fig-00005" document="m00041">Figure 3.6</link>).</para>
+  <para id="para-00227"><emphasis effect="bold">Step 2:</emphasis> The 33, though, is divisible by 3, and is the product of 3 and 11. We attach that to the factor tree (<link target-id="fig-00005" document="m00041">Figure 3.6</link>).</para>
   <figure class="numbered" id="fig-00005">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_003.jpg"/>
@@ -449,7 +450,7 @@
   </media>
   </figure>
   <para id="para-00086">15 is also divisible by 3.</para>
-  <para id="para-00231"><emphasis effect="bold">Step 3:</emphasis> Write 15 as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>5</mn></mrow></math>. The factor tree is shown in <link target-id="fig-00008" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.9</link>.</para>
+  <para id="para-00231"><emphasis effect="bold">Step 3:</emphasis> The factors of 15 are 3 and 5. The factor tree is shown in <link target-id="fig-00008" document="m00041" xmlns="http://cnx.rice.edu/cnxml">Figure 3.9</link>.</para>
   <figure class="numbered" id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A tree diagram shows two branches extending down from a node labeled 135 to 3 and 45. Two other branches are extending down from 45 to 3 and 15. Two other branches are extending down from 15 to 3 and 5.">
   <image mime-type="image/jpg" src="../../media/CS_Figure_03_01_006.jpg"/>
@@ -634,7 +635,7 @@
   <para id="para-00125"><emphasis effect="bold">Step 1:</emphasis> Find the prime factorizations of the numbers.</para>
   <para id="para-00262">The prime factorization of 570 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>19</mn></mrow></math>.</para>
   <para id="para-00263" xmlns="http://cnx.rice.edu/cnxml">The prime factorization of 450 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><msup><mn>3</mn><mn>2</mn></msup><mo>×</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></math>.</para>
-  <para id="para-00126" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Identify the prime factors that appear in every number’s prime factorization</para>
+  <para id="para-00126" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Identify the prime factors that appear in every number’s prime factorization.</para>
   <para id="para-00264">The common prime factors are 2, 3, and 5.</para>
   <para id="para-00127"><emphasis effect="bold">Step 3:</emphasis> Identify the smallest exponent of each prime identified in Step 2 in the prime factorizations.</para>
   <para id="para-00265">The exponents of 2 in the prime factorizations of 570 and 450 are 1 and 1. So the smallest exponent for 2 is 1.</para>
@@ -686,7 +687,7 @@
   </section>
   <section id="sect-00008">
   <title>Finding the Least Common Multiple</title>
-  <para id="para-00138">The flip side to a divisor of a number is a <term id="term-00006">multiple</term> of a number. For example, 5 is a divisor of 45 and so 45 is a multiple of 5. More generally, if the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi></mrow></math> divides the number <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis>, then <emphasis effect="italic">b</emphasis> is a multiple of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi></mrow></math>.</para>
+  <para id="para-00138">The flip side to a divisor of a number is a <term id="term-00006">multiple</term> of a number. For example, 5 is a divisor of 45 and so 45 is a multiple of 5. More generally, if the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi></mrow></math> divides the number <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> is a multiple of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi></mrow></math>.</para>
   <para id="para-00139" xmlns="http://cnx.rice.edu/cnxml">This drives the idea of the least common multiple of a set of numbers. A common multiple of a set of numbers is a multiple of each of those numbers. For instance, 45 is a common multiple of 9 and 5, because 45 is a multiple of 9 (9 divides 45) and 45 is also a multiple of 5 (5 divides 45). The <term id="term-00007">least common multiple</term> (LCM) of a set of number is the smallest positive common multiple of that set of numbers.</para>
   <para id="para-00140">There are (at least) three ways to find the LCM of a set of numbers, and we will explore two of them. One way is to create a list of multiples of each number in the set, and then identify the smallest multiple that appears in those lists.</para>
   <example id="exam-00020">
@@ -700,7 +701,7 @@
   <para id="para-00242"><emphasis effect="bold">Step 1:</emphasis> The first 15 multiples for 24:</para> 
   <para id="para-00143">24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 264, 288, 312, 336, 360.</para>
   <para id="para-00144"><emphasis effect="bold">Step 2:</emphasis> The first 15 multiples for 90:</para>
-  <para id="para-00249">90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990, 1080, 1170, 1260, 1350.</para>
+  <para id="para-00249">90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990, 1,080, 1,170, 1,260, 1,350.</para>
   <para id="para-00145">There is one multiple common to these lists, which is 360. So, 360 is the LCM of 24 and 90.</para>
   </solution>
   </exercise>
@@ -815,7 +816,7 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00160">Using lists of multiples for this example would be quite long. Frequently, as in this example, the prime factorization process is much quicker. In practice, you can use either listing or prime factorization to find the LCM.</para>
+  <para id="para-00160">Using lists for three or more numbers, particularly larger numbers, could take quite a bit of time. Frequently, as in this example, the prime factorization process is much quicker. In practice, you can use either listing or prime factorization to find the LCM.</para>
   <example id="exam-00023">
   <title>Finding the Least Common Multiple Using Both Methods</title>
   <exercise id="exer-00045">
