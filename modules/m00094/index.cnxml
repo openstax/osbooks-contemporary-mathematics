@@ -7,328 +7,337 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-   <media alt="Insert Alt Text">
-   <image mime-type="image/jpg" src="../../media/CS_Photo_07_10_001.jpg"/>
-   </media>
-   <caption>[caption TK baseball game] (credit: Pixabay/Pexels)</caption>
-   </figure>
-   <section class="learning-objectives" id="sect-00001">
-   <title>Learning Objectives</title>
-   <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
-   <list list-type="enumerated" number-style="arabic" id="list-00001">
-   <item>Identify binomial experiments.</item>
-   <item>Use the binomial distribution to analyze binomial experiments.</item>
-   </list>
-   </section>
-   <para id="para-00002">It’s time for the World Series, which determines the champion for this season in Major League Baseball. The scrappy Los Angeles Angels are facing the powerhouse Cincinnati Reds. Computer models put the chances of the Reds winning any single game against the Angels at about 65%. The World Series, as its name implies, isn’t just one game, though: it’s what’s known as a “best-of-seven” contest: the teams play each other repeatedly until one team wins 4 games (which could take up to 7 games total, if each team wins three of the first 6 matchups). If the Reds truly have a 65% chance of winning a single game, then the probability that they win the series should be greater than 65%. Exactly how much bigger?</para>
-   <para id="para-00003">If you have the patience for it, you could use a tree diagram like we used in <link target-id="exam-00003" document="m00093" xmlns="http://cnx.rice.edu/cnxml">Example 7.33</link> to trace out all of the possible outcomes, find all the related probabilities, and add up the ones that result in the Reds winning the series. Such a tree diagram would have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>7</mn></msup><mo>=</mo><mn>128</mn></mrow></math> final nodes, though, so the calculations would be very tedious. Fortunately, we have tools at our disposal that allow us to find these probabilities very quickly. This section will introduce those tools and explain their use.</para>
-   <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
-   <title>Binomial Experiments</title>
-   <para id="para-00004">The tools of this section apply to multistage experiments that satisfy some pretty specific criteria. Before we move on to the analysis, we need to introduce and explain those criteria so that we can recognize experiments that fall into this category. Experiments that satisfy each of these criteria are called <term id="term-00001">binomial experiments</term>. A binomial experiment is an experiment with a fixed number of repeated independent binomial trials, where each trial has the same probability of success.</para>
-   <section id="sect-00003">
-   <title>Repeated Binomial Trials</title>
-   <para id="para-00005">The first criterion involves the structure of the stages. Each stage of the experiment should be a replication of every other stage; we call these replications <emphasis effect="bold">trials</emphasis>. An example of this is flipping a coin 10 times; each of the ten flips is a trial, and they all occur under the same conditions as every other. Further, each trial must have only two possible outcomes. These two outcomes are typically labeled “success” and “failure,” even if there is not a positive or negative connotation associated with those outcomes. Experiments with more than two outcomes in their sample spaces are sometimes reconsidered in a way that forces just two outcomes; all we need to do is completely divide the sample space into two parts that we can label “success” and “failure.” For example, your grade on an exam might be recorded as A, B, C, D, or F, but we could instead think of the grades A, B, C, and D as “success” and a grade of F as “failure.” Trials with only two outcomes are called <term id="term-00002">binomial trials</term> (the word<emphasis effect="italic">binomial</emphasis> derives from Latin and Greek roots that mean “two parts”).</para>
-   </section>
-   <section id="sect-00004">
-   <title>Independent Trials</title>
-   <para id="para-00006">The next criterion that we’ll be looking for is independence of trials. Back in <link target-id="sect-00001" document="m00088" xmlns="http://cnx.rice.edu/cnxml">section 7.4</link>, we said that two stages of an experiment are independent if the outcome of one stage doesn’t affect the other stage. Independence is necessary for the experiments we want to analyze in this section.</para>
-   </section>
-   <section id="sect-00005">
-   <title>Fixed Number of Trials</title>
-   <para id="para-00007">Next, we require that the number of trials in the experiment be decided before the experiment begins. For example, we might say “flip a coin 10 times.” The number of trials there is fixed at 10. However, if we say “flip a coin until you get 5 heads,” then the number of trials could be as low as 5, but theoretically it could be 50 or a 100 (or more)! We can’t apply the tools from this section in cases where the number of trials is indeterminate.</para>
-   </section>
-   <section id="sect-00006">
-   <title>Constant Probability</title>
-   <para id="para-00008">The next criterion needed for binomial experiments is related to the independence of the trials. We must make sure that the probability of success in each trial is the same as the probability of success in every other trial.</para>
-   <example id="exam-00001">
-   <title>Identifying Binomial Experiments</title>
-   <exercise id="exer-00001">
-   <problem id="prob-00001">
-   <para id="para-00009">Decide whether each of the following is a binomial experiment. For those that aren’t, identify which criterion or criteria are violated.</para>
-   <list list-type="enumerated" number-style="arabic" id="list-00002">
-   <item>You roll a standard 6-sided die 10 times and write down the number that appears each time.</item>
-   <item>You roll a standard 6-sided die 10 times and write down whether the die shows a 6 or not.</item>
-   <item>You roll a standard 6-sided die until you get a 6.</item>
-   <item>You roll a standard 6-sided die 10 times. On the first roll, we define “success” as rolling a 4 or greater. After the first roll, we define “success” as rolling a number greater than the result of the previous roll.</item>
-   </list>
-   </problem>
-   <solution id="sol-00001">
-   <list list-type="enumerated" number-style="arabic" id="list-00003">
-   <item>Since we’re noting 1 of 6 possible outcomes, the trials are not binomial. So, this isn’t a binomial experiment.</item>
-   <item>We have 2 possible outcomes (“6” and “not 6”), the trials are independent, the probability of success is the same every time, and the number of trials is fixed. This is a binomial experiment.</item>
-   <item>Since the number of trials isn’t fixed (we don’t know if we’ll get our first 6 after 1 roll or 20 rolls or somewhere in between), this isn’t a binomial experiment.</item>
-   <item>Here, the probability of success might change with every roll (on the first roll, that probability is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>; if the first roll is a 6, the probability of success on the next roll is zero). So, this is not a binomial experiment.</item>
-   </list>
-   </solution>
-   </exercise>
-   </example>
-   <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-   <exercise id="exer-00002">
-   <problem id="prob-00002">
-   <para id="para-00010"><link class="os-embed" url="#exercise/CM-C07-M10-Q001"/></para>
-   </problem>
-   </exercise>
-   </note>
-   </section>
-   </section>
-   <section id="sect-00007">
-   <title>The Binomial Formula</title>
-   <para id="para-00011">If we flip a coin 100 times, you might expect the number of heads to be around 50, but you probably wouldn’t be surprised if the actual number of heads was 47 or 52. What is the probability that the number of heads is exactly 50? Or falls between 45 and 55? It seems unlikely that we would get more than 70 heads. Exactly how unlikely is that?</para>
-   <para id="para-00012">Each of these questions is a question about the number of successes in a binomial experiment (flip a coin 100 times, “success” is flipping heads). We could theoretically use the techniques we’ve seen in earlier section to answer each of these, but the number of calculations we’d have to do is astronomical; just building the tree diagram that represents this situation is more than we could complete in a lifetime; it would have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mrow><mn>100</mn></mrow></msup><mo>≈</mo><mn>1.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>30</mn></mrow></msup></mrow></math> final nodes! To put that number in perspective, if we could draw 1,000 dots every second, and we started at the moment of the Big Bang, we’d currently be about 0.00000003% of the way to drawing out those final nodes. Luckily, there’s a shortcut called the <term id="term-00003" xmlns="http://cnx.rice.edu/cnxml">Binomial Formula</term> that allows us to get around doing all those calculations!</para>
-   <note class="formula" id="note-00002">
-   <para id="para-00013">Binomial Formula: Suppose we have a binomial experiment with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> trials and the probability of success in each trial is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>. Then:</para>
-   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>number of successes is</mtext><mo rspace="0.28em">⁢</mo><mi>a</mi><mo stretchy="false">)</mo><msub><mo>=</mo><mi>n</mi></msub><msub><mi>C</mi><mi>a</mi></msub><mo>×</mo><msup><mi>p</mi><mi>a</mi></msup><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>a</mi></mrow></msup></mrow></math>.
-   </note>
-   <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">We can use this formula to answer one of our questions about 100 coin flips. What is the probability of flipping exactly 50 heads? In this case, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>100</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>50</mn></mrow></math>, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>flip 50 heads</mtext><mo stretchy="false">)</mo><msub><mo>=</mo><mrow><mn>100</mn></mrow></msub><msub><mi>C</mi><mrow><mn>50</mn></mrow></msub><mo>×</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>50</mn></mrow></msup><mo>×</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>100</mn><mo>−</mo><mn>50</mn></mrow></msup></mrow></math>. Unfortunately, many calculators will balk at this calculation; that first factor (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>100</mn></mrow></msub><msub><mi>C</mi><mrow><mn>50</mn></mrow></msub></mrow></math>) is an enormous number, and the other two factors are very close to zero. Even if your calculator can handle numbers that large or small, the arithmetic can create serious errors in rounding off.</para>
-   <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml">Luckily, spreadsheet programs have alternate methods for doing this calculation. In Google Sheets, we can use the BINOMDIST function to do this calculation for us. Open up a new sheet, click in any empty cell, and type “=BINOMDIST(50,100,0.5,FALSE)” followed by the Enter key. The cell will display the probability we seek; it’s about 8%. Let’s break down the syntax of that function in Google Sheets: enter “=BINOMDIST(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>, FALSE)” to find the probability of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> successes in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> trials with probability of success <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>.</para>
-   <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
-   <title>Using the Binomial Formula</title>
-   <exercise id="exer-00003">
-   <problem id="prob-00003">
-   <list list-type="enumerated" number-style="arabic" id="list-00004">
-   <item>Find the probability of rolling a standard 6-sided die 4 times and getting exactly one 6 <emphasis effect="italic">without using technology</emphasis>.</item>
-   <item>Find the probability of rolling a standard 6-sided die 60 times and getting exactly ten 6s using technology.</item>
-   <item>Find the probability of rolling a standard 6-sided die 60 times and getting exactly eight 6s using technology.</item>
-   </list>
-   </problem>
-   <solution id="sol-00002">
-   <list list-type="enumerated" number-style="arabic" id="list-00005">
-   <item>We’ll apply the Binomial Formula, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>:
-   <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mtext>rolling one 6</mtext><mo stretchy="false">)</mo><mo>=</mo><mmultiscripts><msub><mrow><mi>C</mi></mrow><mn>1</mn></msub><mprescripts/><mn>4</mn><none/></mmultiscripts><mo>×</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mn>1</mn></msup><mo>×</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mrow><mn>4</mn><mo>−</mo><mn>1</mn></mrow></msup></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mrow><mn>4</mn><mo>!</mo></mrow><mrow><mn>1</mn><mo>!</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>×</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mn>3</mn></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>4</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>×</mo><mfrac><mrow><msup><mn>5</mn><mn>3</mn></msup></mrow><mrow><msup><mn>6</mn><mn>3</mn></msup></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup></mrow><mrow><msup><mn>6</mn><mn>4</mn></msup></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mrow><mn>500</mn></mrow><mrow><mn>1296</mn></mrow></mfrac><mo>.</mo></mtd></mtr></mtable></math>
-   </equation>
-   </item>
-   <item xmlns="http://cnx.rice.edu/cnxml">Here, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>60</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>10</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>. In Google Sheets, we’ll enter “=BINOMDIST(10, 60, 1/6, FALSE)” to get our result: 0.137.</item>
-   <item xmlns="http://cnx.rice.edu/cnxml">This experiment is the same as in Exercise 2 of this example;we’re simply changing the number of successes from 10 to 8. Making that change in the formula in Google Sheets, we get the probability 0.116.</item>
-   </list>
-   </solution>
-   </exercise>
-   </example>
-   <note class="your-turn" id="note-00003">
-   <exercise id="exer-00004">
-   <problem id="prob-00004">
-   <para id="para-00016"><link class="os-embed" url="#exercise/CM-C07-M10-Q002"/></para>
-   </problem>
-   </exercise>
-   </note>
-   </section>
-   <section id="sect-00008">
-   <title>The Binomial Distribution</title>
-   <para id="para-00017">If we are interested in the probability of more than just a single outcome in a binomial experiment, it’s helpful to think of the Binomial Formula as a function, whose input is the number of successes and whose output is the probability of observing that many successes. Generally, for a small number of trials, we’ll give that function in table form, with a complete list of the possible outcomes in one column and the probability in the other.</para>
-   <para id="para-00018">For example, suppose Kristen is practicing her basketball free throws. Assume Kristen always makes 82% of those shots. If she attempts 5 free throws, then the Binomial Formula gives us these probabilities:</para>
-   <table class="unnumbered" summary="." id="table-00001">
-   <tgroup cols="7">
-   <colspec colnum="1" colname="c1" colwidth="1pt"/>
-   <colspec colnum="2" colname="c2" colwidth="1pt"/>
-   <colspec colnum="3" colname="c3" colwidth="1pt"/>
-   <colspec colnum="4" colname="c4" colwidth="1pt"/>
-   <colspec colnum="5" colname="c5" colwidth="1pt"/>
-   <colspec colnum="6" colname="c6" colwidth="1pt"/>
-   <colspec colnum="7" colname="c7" colwidth="1pt"/>
-   <thead>
-   <row>
-   <entry>Shots Made</entry>
-   <entry>Probability</entry>
-   </row>
-   </thead>
-   <tbody>
-   <row>
-   <entry>0</entry>
-   <entry>0.000189</entry>
-   </row>
-   <row>
-   <entry>1</entry>
-   <entry>0.004304</entry>
-   </row>
-   <row>
-   <entry>2</entry>
-   <entry>0.0392144</entry>
-   </row>
-   <row>
-   <entry>3</entry>
-   <entry>0.1786432</entry>
-   </row>
-   <row>
-   <entry>4</entry>
-   <entry>0.4069096</entry>
-   </row>
-   <row>
-   <entry>5</entry>
-   <entry>0.3707398</entry>
-   </row>
-   </tbody>
-   </tgroup>
-   </table>
-   <para id="para-00019">A table that lists all possible outcomes of an experiment along with the probabilities of those outcomes is an example of a <term id="term-00004">probability density function</term> (PDF). A PDF may also be a formula that you can use to find the probability of any outcome of an experiment.</para>
-   <note class="check-point" id="note-00004">
-   <para id="para-00020"><emphasis effect="italic">Because they refer to the same thing, some sources will refer to the Binomial Formula as the Binomial PDF.</emphasis></para>
-   </note>
-   <para id="para-00021">If we want to know the probability of a range of outcomes, we could add up the corresponding probabilities. Going back to Kristen’s free throws, we can find the probability that she makes 3 or fewer of her 5 attempts by adding up the probabilities associated with the corresponding outcomes (in this case: 0, 1, 2, or 3):</para>
-   <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mtext>makes 3 or fewer</mtext><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>3</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.000189</mn><mo>+</mo><mn>0.004304</mn><mo>+</mo><mn>0.0392144</mn><mo>+</mo><mn>0.1786432</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.2223506</mn></mtd></mtr></mtable></math></equation>
-   <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">The probability that the outcome of an experiment is less than or equal to a given number is called a <emphasis effect="italic">cumulative probability</emphasis>. A table of the cumulative probabilities of all possible outcomes of an experiment is an example of a <term id="term-00005">cumulative distribution function</term> (CDF). A CDF may also be a formula that you can use to find those cumulative probabilities.</para>
-   <note class="check-point" id="note-00005">
-   <para id="para-00023"><emphasis effect="italic">Cumulative probabilities are always associated with events that are defined using</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≤</mo></math>. <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">If other inequalities are used to define the event, we must restate the definition so that it uses the correct inequality.</emphasis></para>
-   </note>
-   <para id="para-00024">Here are the PDF and CDF for Kristen’s free throws:</para>
-   <table class="unnumbered" summary="." id="table-00002">
-   <tgroup cols="7">
-   <colspec colnum="1" colname="c1" colwidth="1pt"/>
-   <colspec colnum="2" colname="c2" colwidth="1pt"/>
-   <colspec colnum="3" colname="c3" colwidth="1pt"/>
-   <colspec colnum="4" colname="c4" colwidth="1pt"/>
-   <colspec colnum="5" colname="c5" colwidth="1pt"/>
-   <colspec colnum="6" colname="c6" colwidth="1pt"/>
-   <colspec colnum="7" colname="c7" colwidth="1pt"/>
-   <thead>
-   <row>
-   <entry>Shots Made</entry>
-   <entry>Probability</entry>
-   <entry>Cumulative</entry>
-   </row>
-   </thead>
-   <tbody>
-   <row>
-   <entry>0</entry>
-   <entry>0.000189</entry>
-   <entry>0.000189</entry>
-   </row>
-   <row>
-   <entry>1</entry>
-   <entry>0.004304</entry>
-   <entry>0.004493</entry>
-   </row>
-   <row>
-   <entry>2</entry>
-   <entry>0.0392144</entry>
-   <entry>0.0437073</entry>
-   </row>
-   <row>
-   <entry>3</entry>
-   <entry>0.1786432</entry>
-   <entry>0.2223506</entry>
-   </row>
-   <row>
-   <entry>4</entry>
-   <entry>0.4069096</entry>
-   <entry>0.6292602</entry>
-   </row>
-   <row>
-   <entry>5</entry>
-   <entry>0.3707398</entry>
-   <entry>1</entry>
-   </row>
-   </tbody>
-   </tgroup>
-   </table>
-   <para id="para-00025">Google Sheets can also compute cumulative probabilities for us; all we need to do is change the “FALSE” in the formulas we used before to “TRUE.”</para>
-   <example id="exam-00003">
-   <title>Using the Binomial CDF</title>
-   <exercise id="exer-00005">
-   <problem id="prob-00005">
-   <para id="para-00026">Suppose we are about to flip a fair coin 50 times. Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> represent the number of heads that result from those flips. Use technology to find the following:</para>
-   <list list-type="enumerated" number-style="arabic" id="list-00006" xmlns="http://cnx.rice.edu/cnxml">
-   <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>22</mn><mo stretchy="false">)</mo></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>&lt;</mo><mn>26</mn><mo stretchy="false">)</mo></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>></mo><mn>28</mn><mo stretchy="false">)</mo></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≥</mo><mn>20</mn><mo stretchy="false">)</mo></mrow></math></item>
-   <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mn>20</mn><mo>&lt;</mo><mi>H</mi><mo>&lt;</mo><mn>25</mn><mo stretchy="false">)</mo></mrow></math></item>
-   </list>
-   </problem>
-   <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
-   <list list-type="enumerated" number-style="arabic" id="list-00007">
-   <item>The event here is defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>22</mn></mrow></math>, which is the inequality we need to have if we want to use the Binomial CDF. In Google Sheets, we’ll enter “=BINOMDIST(22, 50, 0.5, TRUE)” to get our answer: 0.2399.</item>
-   <item xmlns="http://cnx.rice.edu/cnxml">This event uses the wrong inequality, so we need to do some preliminary work. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>&lt;</mo><mn>26</mn></mrow></math>, that means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>25</mn></mrow></math> (because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> has to be a whole number). So, we’ll enter “=BINOMDIST(25, 50, 0.5, TRUE)” to find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>&lt;</mo><mn>26</mn><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>25</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.5561</mn></mrow></math>.</item>
-   <item xmlns="http://cnx.rice.edu/cnxml">The inequality associated with this event is pointing in the wrong direction. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> is the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>></mo><mn>28</mn></mrow></math>, that means that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> contains the outcomes {29, 30, 31, 32, 33, …}. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>′</mo></mrow></math> must contain the outcomes {…, 25, 26, 27, 28}. In other words, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>′</mo></mrow></math> is defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>28</mn></mrow></math>. Since it uses <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≤</mo></math>, we can find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo>′</mo><mo stretchy="false">)</mo></mrow></math> using “=BINOMDIST(28, 50, 0.5, TRUE)”: 0.8389 So, using the formula for probabilities of complements, we have
-   <equation id="eq-00003" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo>′</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.8389</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.1611.</mn></mtd></mtr></mtable></math></equation>
-   </item>
-   <item xmlns="http://cnx.rice.edu/cnxml">As in Exercise 3, this inequality is pointing in the wrong direction. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> is the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≥</mo><mn>20</mn></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> contains the outcomes {20, 21, 22, 23, …}. That means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>′</mo></mrow></math> contains the outcomes {…, 16, 17, 18, 19}, and so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>′</mo></mrow></math> is defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>19</mn></mrow></math>. So, we can find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo>′</mo><mo stretchy="false">)</mo></mrow></math> using “=BINOMDIST(19, 50, 0.5, TRUE)”: 0.0595. Finally, using the formula for probabilities of complements, we get:
-   <equation id="eq-00004" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo>′</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mspace width="2.6em"/><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.0595</mn></mtd></mtr><mtr><mtd><mspace width="2.6em"/><mo>=</mo><mn>0.9405.</mn></mtd></mtr></mtable></math></equation></item>
-   <item xmlns="http://cnx.rice.edu/cnxml">If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>&lt;</mo><mi>H</mi><mo>&lt;</mo><mn>25</mn></mrow></math>, that means we are interested in the outcomes {21, 22, 23, 24}. This doesn’t look like any of the previous situations, but there is a way to find this probability using the Binomial CDF. We need to put everything in terms of “less than or equal to,” so we’ll first note that all of our outcomes are less than or equal to 24. But we don’t want to include values that are less than or equal to 20. So, we have three events: let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>I</mi></math> be the event defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>&lt;</mo><mi>H</mi><mo>&lt;</mo><mn>25</mn></mrow></math> (note that we’re trying to find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>I</mi><mo stretchy="false">)</mo></mrow></math>). Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>J</mi></math> be defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>24</mn></mrow></math>, and let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> be defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>20</mn></mrow></math>. Of these three events, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>J</mi></math> contains the most outcomes. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>J</mi></math> occurs, then either <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>I</mi></math> must have occurred. Moreover, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>I</mi></math> are mutually exclusive. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>J</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>I</mi><mo stretchy="false">)</mo></mrow></math>, by the addition rule. Solving for the probability that we want, we get
-   <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mi>I</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>J</mi><mo stretchy="false">)</mo><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mspace width="2.3em"/><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>24</mn><mo stretchy="false">)</mo><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>20</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mspace width="2.3em"/><mo>=</mo><mn>0.44386</mn><mo>−</mo><mn>0.10132</mn></mtd></mtr><mtr><mtd><mspace width="2.3em"/><mo>=</mo><mn>0.34254.</mn></mtd></mtr></mtable></math></equation></item>
-   </list>
-   </solution>
-   </exercise>
-   </example>
-   <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
-   <exercise id="exer-00006">
-   <problem id="prob-00006">
-   <para id="para-00027"><link class="os-embed" url="#exercise/CM-C07-M10-Q003"/></para>
-   </problem>
-   </exercise>
-   </note>
-   <para id="para-00028">Finally, we can answer the question posed at the beginning of this section. Remember that the Reds are facing the Angels in the World Series, which is won by the team who is first to win 4 games. The Reds have a 65% chance to win any game against the Angels. So, what is the probability that the Reds win the World Series? At first glance, this is not a binomial experiment: the number of games played is not fixed, since the series ends as soon as one team wins 4 games. However, we can extend this situation to a binomial experiment: Let’s assume that 7 games are always played in the World Series, and the winner is the team who wins more games. In a way, this is what happens in reality; it’s as though the first team to lose 4 games (and thus cannot win more than the other team) forfeits the rest of their games. So, we can treat the actual World Series as a binomial experiment with seven trials. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>W</mi></math> is the number of games won by the Reds, the probability that the Reds win the World Series is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>W</mi><mo>≥</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>. Using the techniques from the last example, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Reds win the series</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.8002</mn></mrow></math>.</para>
-   <note class="people-mathematics" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
-   <title>Abraham de Moivre</title>
-   <para id="para-00029">Abraham de Moivre was born in 1667 in France to a Protestant family. Though he was educated in Catholic schools, he remained true to his faith; in 1687, he fled with his brother to London to escape persecution under the reign of King Louis XIV. Once he arrived in England, he supported himself as a freelance math tutor while he conducted his own research. Among his interests was probability; in 1711, he published the first edition of <emphasis effect="italic">The Doctrine of Chances: a method of calculating the probabilities of events in play</emphasis>. This book was the second textbook on probability (after Cardano’s <emphasis effect="italic">Liber de ludo aleae</emphasis>). De Moivre discovered an important connection between the binomial distribution and the<emphasis effect="italic">normal distribution</emphasis> (an important concept in statistics; we’ll explore that distribution and its connection to the binomial distribution in Chapter 9). De Moivre also discovered some properties of a new probability distribution that later became known as the Poisson distribution.</para>
-   </note>
-   </section>
-   <section class="check-understanding" id="sect-00009">
-   <title>Check Your Understanding</title>
-   <exercise id="exer-00007">
-   <problem id="prob-00007">
-   <para id="para-00030"><link class="os-embed" url="#exercise/CM-C07-M10-Q004"/></para>
-   </problem>
-   </exercise>
-   <exercise id="exer-00008">
-   <problem id="prob-00008">
-   <para id="para-00031"><link class="os-embed" url="#exercise/CM-C07-M10-Q005"/></para>
-   </problem>
-   </exercise>
-   </section>
-   <section class="section-exercises" id="sect-00010">
-   <title>Exercises</title>
-   <exercise id="exer-00009">
-   <problem id="prob-00009">
-   <para id="para-00032"><link class="os-embed" url="#exercise/CM-C07-M10-Q006"/></para>
-   </problem>
-   </exercise>
-   <exercise id="exer-00010">
-   <problem id="prob-00010">
-   <para id="para-00033"><link class="os-embed" url="#exercise/CM-C07-M10-Q007"/></para>
-   </problem>
-   </exercise>
-   <exercise id="exer-00011">
-   <problem id="prob-00011">
-   <para id="para-00034"><link class="os-embed" url="#exercise/CM-C07-M10-Q008"/></para>
-   </problem>
-   </exercise>
-   <exercise id="exer-00012">
-   <problem id="prob-00012">
-   <para id="para-00035"><link class="os-embed" url="#exercise/CM-C07-M10-Q009"/></para>
-   </problem>
-   </exercise>
-   <exercise id="exer-00013">
-   <problem id="prob-00013">
-   <para id="para-00036"><link class="os-embed" url="#exercise/CM-C07-M10-Q010"/></para>
-   </problem>
-   </exercise>
-   <exercise id="exer-00014">
-   <problem id="prob-00014">
-   <para id="para-00037"><link class="os-embed" url="#exercise/CM-C07-M10-Q011"/></para>
-   </problem>
-   </exercise>
-   </section>
-   <section class="key-terms" id="sect-00011">
-   <title>Key Terms</title>
-   <list bullet-style="bulleted" id="list-00008">
-   <item>binomial experiment</item>
-   <item>probability density function (PDF)</item>
-   <item>cumulative distribution function (CDF)</item>
-   </list>
-   </section>
-   <section class="key-concepts" id="sect-00012">
-   <title>Key Concepts</title>
-   <list bullet-style="bulleted" id="list-00009">
-   <item>Binomial experiments result when we count the number of successful outcomes in a fixed number of repeated, independent trials with a constant probability of success.</item>
-   <item>The binomial distribution is used to find probabilities associated with binomial experiments.</item>
-   <item>Probability density functions (PDFs) describe the probabilities of individual outcomes in an experiment; cumulative distribution functions (CDFs) give the probabilities of ranges of outcomes.</item>
-   </list>
-   </section>
-   <section class="formula-review" id="sect-00013">
-   <title>Formulas</title>
-   <list bullet-style="bulleted" id="list-00010">
-   <item>Suppose we have a binomial experiment with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> trials and the probability of success in each trial is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>. Then:<newline xmlns="http://cnx.rice.edu/cnxml"/>
-   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>number of successes is </mtext><mi>a</mi><mo stretchy="false">)</mo><msub><mo>=</mo><mi>n</mi></msub><msub><mi>C</mi><mi>a</mi></msub><mo>×</mo><msup><mi>p</mi><mi>a</mi></msup><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>a</mi></mrow></msup></mrow></math></item>
-   </list>
-   </section>
-   </content>   
-</document>
+     <media alt="Insert Alt Text">
+     <image mime-type="image/jpg" src="../../media/CS_Photo_07_10_001.jpg"/>
+     </media>
+     <caption>[caption TK baseball game] (credit: Pixabay/Pexels)</caption>
+     </figure>
+     <section class="learning-objectives" id="sect-00001">
+     <title>Learning Objectives</title>
+     <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+     <list list-type="enumerated" number-style="arabic" id="list-00001">
+     <item>Identify binomial experiments.</item>
+     <item>Use the binomial distribution to analyze binomial experiments.</item>
+     </list>
+     </section>
+     <para id="para-00002">It’s time for the World Series, which determines the champion for this season in Major League Baseball. The scrappy Los Angeles Angels are facing the powerhouse Cincinnati Reds. Computer models put the chances of the Reds winning any single game against the Angels at about 65%. The World Series, as its name implies, isn’t just one game, though: it’s what’s known as a “best-of-seven” contest: the teams play each other repeatedly until one team wins 4 games (which could take up to 7 games total, if each team wins three of the first 6 matchups). If the Reds truly have a 65% chance of winning a single game, then the probability that they win the series should be greater than 65%. Exactly how much bigger?</para>
+     <para id="para-00003">If you have the patience for it, you could use a tree diagram like we used in <link target-id="exam-00003" document="m00093" xmlns="http://cnx.rice.edu/cnxml">Example 7.33</link> to trace out all of the possible outcomes, find all the related probabilities, and add up the ones that result in the Reds winning the series. Such a tree diagram would have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mn>7</mn></msup><mo>=</mo><mn>128</mn></mrow></math> final nodes, though, so the calculations would be very tedious. Fortunately, we have tools at our disposal that allow us to find these probabilities very quickly. This section will introduce those tools and explain their use.</para>
+     <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
+     <title>Binomial Experiments</title>
+     <para id="para-00004">The tools of this section apply to multistage experiments that satisfy some pretty specific criteria. Before we move on to the analysis, we need to introduce and explain those criteria so that we can recognize experiments that fall into this category. Experiments that satisfy each of these criteria are called <term id="term-00001">binomial experiments</term>. A binomial experiment is an experiment with a fixed number of repeated independent binomial trials, where each trial has the same probability of success.</para>
+     <section id="sect-00003">
+     <title>Repeated Binomial Trials</title>
+     <para id="para-00005">The first criterion involves the structure of the stages. Each stage of the experiment should be a replication of every other stage; we call these replications <term id="term-00003">trials</term>. An example of this is flipping a coin 10 times; each of the ten flips is a trial, and they all occur under the same conditions as every other. Further, each trial must have only two possible outcomes. These two outcomes are typically labeled “success” and “failure,” even if there is not a positive or negative connotation associated with those outcomes. Experiments with more than two outcomes in their sample spaces are sometimes reconsidered in a way that forces just two outcomes; all we need to do is completely divide the sample space into two parts that we can label “success” and “failure.” For example, your grade on an exam might be recorded as A, B, C, D, or F, but we could instead think of the grades A, B, C, and D as “success” and a grade of F as “failure.” Trials with only two outcomes are called <term id="term-00002">binomial trials</term> (the word <emphasis effect="italic">binomial</emphasis> derives from Latin and Greek roots that mean “two parts”).</para>
+     </section>
+     <section id="sect-00004">
+     <title>Independent Trials</title>
+     <para id="para-00006">The next criterion that we’ll be looking for is independence of trials. Back in <link target-id="sect-00001" document="m00088" xmlns="http://cnx.rice.edu/cnxml">Tree Diagrams, Tables, and Outcomes</link>, we said that two stages of an experiment are independent if the outcome of one stage doesn’t affect the other stage. Independence is necessary for the experiments we want to analyze in this section.</para>
+     </section>
+     <section id="sect-00005">
+     <title>Fixed Number of Trials</title>
+     <para id="para-00007">Next, we require that the number of trials in the experiment be decided before the experiment begins. For example, we might say “flip a coin 10 times.” The number of trials there is fixed at 10. However, if we say “flip a coin until you get 5 heads,” then the number of trials could be as low as 5, but theoretically it could be 50 or a 100 (or more)! We can’t apply the tools from this section in cases where the number of trials is indeterminate.</para>
+     </section>
+     <section id="sect-00006">
+     <title>Constant Probability</title>
+     <para id="para-00008">The next criterion needed for binomial experiments is related to the independence of the trials. We must make sure that the probability of success in each trial is the same as the probability of success in every other trial.</para>
+     <example id="exam-00001">
+     <title>Identifying Binomial Experiments</title>
+     <exercise id="exer-00001">
+     <problem id="prob-00001">
+     <para id="para-00009">Decide whether each of the following is a binomial experiment. For those that aren’t, identify which criterion or criteria are violated.</para>
+     <list list-type="enumerated" number-style="arabic" id="list-00002">
+     <item>You roll a standard 6-sided die 10 times and write down the number that appears each time.</item>
+     <item>You roll a standard 6-sided die 10 times and write down whether the die shows a 6 or not.</item>
+     <item>You roll a standard 6-sided die until you get a 6.</item>
+     <item>You roll a standard 6-sided die 10 times. On the first roll, we define “success” as rolling a 4 or greater. After the first roll, we define “success” as rolling a number greater than the result of the previous roll.</item>
+     </list>
+     </problem>
+     <solution id="sol-00001">
+     <list list-type="enumerated" number-style="arabic" id="list-00003">
+     <item>Since we’re noting 1 of 6 possible outcomes, the trials are not binomial. So, this isn’t a binomial experiment.</item>
+     <item>We have 2 possible outcomes (“6” and “not 6”), the trials are independent, the probability of success is the same every time, and the number of trials is fixed. This is a binomial experiment.</item>
+     <item>Since the number of trials isn’t fixed (we don’t know if we’ll get our first 6 after 1 roll or 20 rolls or somewhere in between), this isn’t a binomial experiment.</item>
+     <item>Here, the probability of success might change with every roll (on the first roll, that probability is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>; if the first roll is a 6, the probability of success on the next roll is zero). So, this is not a binomial experiment.</item>
+     </list>
+     </solution>
+     </exercise>
+     </example>
+     <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+     <exercise id="exer-00002">
+     <problem id="prob-00002">
+     <para id="para-00010"><link class="os-embed" url="#exercise/CM-C07-M10-Q001"/></para>
+     </problem>
+     </exercise>
+     </note>
+     </section>
+     </section>
+     <section id="sect-00007">
+     <title>The Binomial Formula</title>
+     <para id="para-00011">If we flip a coin 100 times, you might expect the number of heads to be around 50, but you probably wouldn’t be surprised if the actual number of heads was 47 or 52. What is the probability that the number of heads is exactly 50? Or falls between 45 and 55? It seems unlikely that we would get more than 70 heads. Exactly how unlikely is that?</para>
+     <para id="para-00012">Each of these questions is a question about the number of successes in a binomial experiment (flip a coin 100 times, “success” is flipping heads). We could theoretically use the techniques we’ve seen in earlier sections to answer each of these, but the number of calculations we’d have to do is astronomical; just building the tree diagram that represents this situation is more than we could complete in a lifetime; it would have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mrow><mn>100</mn></mrow></msup><mo>≈</mo><mn>1.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>30</mn></mrow></msup></mrow></math> final nodes! To put that number in perspective, if we could draw 1,000 dots every second, and we started at the moment of the Big Bang, we’d currently be about 0.00000003% of the way to drawing out those final nodes. Luckily, there’s a shortcut called the Binomial Formula that allows us to get around doing all those calculations!</para>
+     <note class="formula" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+     <para id="para-00013">Binomial Formula: Suppose we have a binomial experiment with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> trials and the probability of success in each trial is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>. Then:</para>
+     <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>number of successes is</mtext><mo rspace="0.28em">⁢</mo><mi>a</mi><mo stretchy="false">)</mo><msub><mo>=</mo><mi>n</mi></msub><msub><mi>C</mi><mi>a</mi></msub><mo>×</mo><msup><mi>p</mi><mi>a</mi></msup><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>a</mi></mrow></msup></mrow></math>.
+     </note>
+     <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml">We can use this formula to answer one of our questions about 100 coin flips. What is the probability of flipping exactly 50 heads? In this case, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>100</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>50</mn></mrow></math>, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>flip 50 heads</mtext><mo stretchy="false">)</mo><msub><mo>=</mo><mrow><mn>100</mn></mrow></msub><msub><mi>C</mi><mrow><mn>50</mn></mrow></msub><mo>×</mo><msup><mrow><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>50</mn></mrow></msup><mo>×</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>100</mn><mo>−</mo><mn>50</mn></mrow></msup></mrow></math>. Unfortunately, many calculators will balk at this calculation; that first factor (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>100</mn></mrow></msub><msub><mi>C</mi><mrow><mn>50</mn></mrow></msub></mrow></math>) is an enormous number, and the other two factors are very close to zero. Even if your calculator can handle numbers that large or small, the arithmetic can create serious errors in rounding off.</para>
+    <note class="tech-check" id="note-00008" xmlns="http://cnx.rice.edu/cnxml"> 
+    <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml">Luckily, spreadsheet programs have alternate methods for doing this calculation. In Google Sheets, we can use the BINOMDIST function to do this calculation for us. Open up a new sheet, click in any empty cell, and type “=BINOMDIST(50,100,0.5,FALSE)” followed by the Enter key. The cell will display the probability we seek; it’s about 8%. Let’s break down the syntax of that function in Google Sheets: enter “=BINOMDIST(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>, FALSE)” to find the probability of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> successes in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> trials with probability of success <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>.</para>
+    </note>
+     <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+     <title>Using the Binomial Formula</title>
+     <exercise id="exer-00003">
+     <problem id="prob-00003">
+     <list list-type="enumerated" number-style="arabic" id="list-00004">
+     <item>Find the probability of rolling a standard 6-sided die 4 times and getting exactly one 6 <emphasis effect="italic">without using technology</emphasis>.</item>
+     <item>Find the probability of rolling a standard 6-sided die 60 times and getting exactly ten 6s using technology.</item>
+     <item>Find the probability of rolling a standard 6-sided die 60 times and getting exactly eight 6s using technology.</item>
+     </list>
+     </problem>
+     <solution id="sol-00002">
+     <list list-type="enumerated" number-style="arabic" id="list-00005">
+     <item>We’ll apply the Binomial Formula, where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>:
+     <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    
+    <mtable columnspacing="0.3em">
+    <mtr><mtd columnalign="right">
+    <mi>P</mi><mo stretchy="false">(</mo><mtext>rolling one 6</mtext><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mmultiscripts><msub><mrow><mi>C</mi></mrow><mn>1</mn></msub><mprescripts/><mn>4</mn><none/></mmultiscripts><mo>×</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mn>1</mn></msup><mo>×</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mrow><mn>4</mn><mo>−</mo><mn>1</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>4</mn><mo>!</mo></mrow><mrow><mn>1</mn><mo>!</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>!</mo></mrow></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>×</mo><msup><mrow><mo>(</mo><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow><mo>)</mo></mrow><mn>3</mn></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>4</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>×</mo><mfrac><mrow><msup><mn>5</mn><mn>3</mn></msup></mrow><mrow><msup><mn>6</mn><mn>3</mn></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>4</mn><mo>×</mo><msup><mn>5</mn><mn>3</mn></msup></mrow><mrow><msup><mn>6</mn><mn>4</mn></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>500</mn></mrow><mrow><mn>1296</mn></mrow></mfrac><mo>.</mo></mtd></mtr></mtable></math></equation>
+     </item>
+     <item xmlns="http://cnx.rice.edu/cnxml">Here, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>60</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>10</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>. In Google Sheets, we’ll enter “=BINOMDIST(10, 60, 1/6, FALSE)” to get our result: 0.137.</item>
+     <item xmlns="http://cnx.rice.edu/cnxml">This experiment is the same as in Exercise 2 of this example;we’re simply changing the number of successes from 10 to 8. Making that change in the formula in Google Sheets, we get the probability 0.116.</item>
+     </list>
+     </solution>
+     </exercise>
+     </example>
+     <note class="your-turn" id="note-00003">
+     <exercise id="exer-00004">
+     <problem id="prob-00004">
+     <para id="para-00016"><link class="os-embed" url="#exercise/CM-C07-M10-Q002"/></para>
+     </problem>
+     </exercise>
+     </note>
+     </section>
+     <section id="sect-00008">
+     <title>The Binomial Distribution</title>
+     <para id="para-00017">If we are interested in the probability of more than just a single outcome in a binomial experiment, it’s helpful to think of the Binomial Formula as a function, whose input is the number of successes and whose output is the probability of observing that many successes. Generally, for a small number of trials, we’ll give that function in table form, with a complete list of the possible outcomes in one column and the probability in the other.</para>
+     <para id="para-00018">For example, suppose Kristen is practicing her basketball free throws. Assume Kristen always makes 82% of those shots. If she attempts 5 free throws, then the Binomial Formula gives us these probabilities:</para>
+     <table class="unnumbered" summary="." id="table-00001">
+     <tgroup cols="7">
+     <colspec colnum="1" colname="c1" colwidth="1pt"/>
+     <colspec colnum="2" colname="c2" colwidth="1pt"/>
+     <colspec colnum="3" colname="c3" colwidth="1pt"/>
+     <colspec colnum="4" colname="c4" colwidth="1pt"/>
+     <colspec colnum="5" colname="c5" colwidth="1pt"/>
+     <colspec colnum="6" colname="c6" colwidth="1pt"/>
+     <colspec colnum="7" colname="c7" colwidth="1pt"/>
+     <thead>
+     <row>
+     <entry>Shots Made</entry>
+     <entry>Probability</entry>
+     </row>
+     </thead>
+     <tbody>
+     <row>
+     <entry>0</entry>
+     <entry>0.000189</entry>
+     </row>
+     <row>
+     <entry>1</entry>
+     <entry>0.004304</entry>
+     </row>
+     <row>
+     <entry>2</entry>
+     <entry>0.0392144</entry>
+     </row>
+     <row>
+     <entry>3</entry>
+     <entry>0.1786432</entry>
+     </row>
+     <row>
+     <entry>4</entry>
+     <entry>0.4069096</entry>
+     </row>
+     <row>
+     <entry>5</entry>
+     <entry>0.3707398</entry>
+     </row>
+     </tbody>
+     </tgroup>
+     </table>
+     <para id="para-00019">A table that lists all possible outcomes of an experiment along with the probabilities of those outcomes is an example of a <term id="term-00004">probability density function</term> (PDF). A PDF may also be a formula that you can use to find the probability of any outcome of an experiment.</para>
+     <note class="check-point" id="note-00004">
+     <para id="para-00020"><emphasis effect="italic">Because they refer to the same thing, some sources will refer to the Binomial Formula as the Binomial PDF.</emphasis></para>
+     </note>
+     <para id="para-00021">If we want to know the probability of a range of outcomes, we could add up the corresponding probabilities. Going back to Kristen’s free throws, we can find the probability that she makes 3 or fewer of her 5 attempts by adding up the probabilities associated with the corresponding outcomes (in this case: 0, 1, 2, or 3):</para>
+       <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mtable columnspacing="0.3em">
+    <mtr><mtd columnalign="right"><mi>P</mi><mo stretchy="false">(</mo><mtext>makes 3 or fewer</mtext><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mn>3</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.000189</mn><mo>+</mo><mn>0.004304</mn><mo>+</mo><mn>0.0392144</mn><mo>+</mo><mn>0.1786432</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.2223506</mn></mtd></mtr></mtable></math></equation>
+     <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">The probability that the outcome of an experiment is less than or equal to a given number is called a <emphasis effect="italic">cumulative probability</emphasis>. A table of the cumulative probabilities of all possible outcomes of an experiment is an example of a <term id="term-00005">cumulative distribution function</term> (CDF). A CDF may also be a formula that you can use to find those cumulative probabilities.</para>
+     <note class="check-point" id="note-00005">
+     <para id="para-00023"><emphasis effect="italic">Cumulative probabilities are always associated with events that are defined using</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≤</mo></math>. <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">If other inequalities are used to define the event, we must restate the definition so that it uses the correct inequality.</emphasis></para>
+     </note>
+     <para id="para-00024">Here are the PDF and CDF for Kristen’s free throws:</para>
+     <table class="unnumbered" summary="." id="table-00002">
+     <tgroup cols="7">
+     <colspec colnum="1" colname="c1" colwidth="1pt"/>
+     <colspec colnum="2" colname="c2" colwidth="1pt"/>
+     <colspec colnum="3" colname="c3" colwidth="1pt"/>
+     <colspec colnum="4" colname="c4" colwidth="1pt"/>
+     <colspec colnum="5" colname="c5" colwidth="1pt"/>
+     <colspec colnum="6" colname="c6" colwidth="1pt"/>
+     <colspec colnum="7" colname="c7" colwidth="1pt"/>
+     <thead>
+     <row>
+     <entry>Shots Made</entry>
+     <entry>Probability</entry>
+     <entry>Cumulative</entry>
+     </row>
+     </thead>
+     <tbody>
+     <row>
+     <entry>0</entry>
+     <entry>0.000189</entry>
+     <entry>0.000189</entry>
+     </row>
+     <row>
+     <entry>1</entry>
+     <entry>0.004304</entry>
+     <entry>0.004493</entry>
+     </row>
+     <row>
+     <entry>2</entry>
+     <entry>0.0392144</entry>
+     <entry>0.0437073</entry>
+     </row>
+     <row>
+     <entry>3</entry>
+     <entry>0.1786432</entry>
+     <entry>0.2223506</entry>
+     </row>
+     <row>
+     <entry>4</entry>
+     <entry>0.4069096</entry>
+     <entry>0.6292602</entry>
+     </row>
+     <row>
+     <entry>5</entry>
+     <entry>0.3707398</entry>
+     <entry>1</entry>
+     </row>
+     </tbody>
+     </tgroup>
+     </table>
+    <note class="tech-check" id="note-00009"> 
+    <para id="para-00025">Google Sheets can also compute cumulative probabilities for us; all we need to do is change the “FALSE” in the formulas we used before to "TRUE."</para>
+    </note>
+     <example id="exam-00003">
+     <title>Using the Binomial CDF</title>
+     <exercise id="exer-00005">
+     <problem id="prob-00005">
+     <para id="para-00026">Suppose we are about to flip a fair coin 50 times. Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> represent the number of heads that result from those flips. Use technology to find the following:</para>
+     <list list-type="enumerated" number-style="arabic" id="list-00006" xmlns="http://cnx.rice.edu/cnxml">
+     <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>22</mn><mo stretchy="false">)</mo></mrow></math></item>
+     <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>&lt;</mo><mn>26</mn><mo stretchy="false">)</mo></mrow></math></item>
+     <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>></mo><mn>28</mn><mo stretchy="false">)</mo></mrow></math></item>
+     <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≥</mo><mn>20</mn><mo stretchy="false">)</mo></mrow></math></item>
+     <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mn>20</mn><mo>&lt;</mo><mi>H</mi><mo>&lt;</mo><mn>25</mn><mo stretchy="false">)</mo></mrow></math></item>
+     </list>
+     </problem>
+     <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+     <list list-type="enumerated" number-style="arabic" id="list-00007">
+     <item>The event here is defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>22</mn></mrow></math>, which is the inequality we need to have if we want to use the Binomial CDF. In Google Sheets, we’ll enter “=BINOMDIST(22, 50, 0.5, TRUE)” to get our answer: 0.2399.</item>
+     <item xmlns="http://cnx.rice.edu/cnxml">This event uses the wrong inequality, so we need to do some preliminary work. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>&lt;</mo><mn>26</mn></mrow></math>, that means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>25</mn></mrow></math> (because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> has to be a whole number). So, we’ll enter “=BINOMDIST(25, 50, 0.5, TRUE)” to find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>&lt;</mo><mn>26</mn><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>25</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.5561</mn></mrow></math>.</item>
+     <item xmlns="http://cnx.rice.edu/cnxml">The inequality associated with this event is pointing in the wrong direction. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> is the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>></mo><mn>28</mn></mrow></math>, that means that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> contains the outcomes {29, 30, 31, 32, 33, …}. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>′</mo></mrow></math> must contain the outcomes {…, 25, 26, 27, 28}. In other words, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>E</mi><mo>′</mo></mrow></math> is defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>28</mn></mrow></math>. Since it uses <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>≤</mo></math>, we can find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo>′</mo><mo stretchy="false">)</mo></mrow></math> using “=BINOMDIST(28, 50, 0.5, TRUE)”: 0.8389 So, using the formula for probabilities of complements, we have
+     <equation id="eq-00003" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo>′</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.8389</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.1611.</mn></mtd></mtr></mtable></math></equation>
+     </item>
+     <item xmlns="http://cnx.rice.edu/cnxml">As in part 3, this inequality is pointing in the wrong direction. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> is the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≥</mo><mn>20</mn></mrow></math>, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> contains the outcomes {20, 21, 22, 23, …}. That means <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>′</mo></mrow></math> contains the outcomes {…, 16, 17, 18, 19}, and so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>′</mo></mrow></math> is defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>19</mn></mrow></math>. So, we can find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo>′</mo><mo stretchy="false">)</mo></mrow></math> using “=BINOMDIST(19, 50, 0.5, TRUE)”: 0.0595. Finally, using the formula for probabilities of complements, we get:
+     <equation id="eq-00004" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo>′</mo><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mspace width="2.6em"/><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.0595</mn></mtd></mtr><mtr><mtd><mspace width="2.6em"/><mo>=</mo><mn>0.9405.</mn></mtd></mtr></mtable></math></equation></item>
+     <item xmlns="http://cnx.rice.edu/cnxml">If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>&lt;</mo><mi>H</mi><mo>&lt;</mo><mn>25</mn></mrow></math>, that means we are interested in the outcomes {21, 22, 23, 24}. This doesn’t look like any of the previous situations, but there is a way to find this probability using the Binomial CDF. We need to put everything in terms of “less than or equal to,” so we’ll first note that all of our outcomes are less than or equal to 24. But we don’t want to include values that are less than or equal to 20. So, we have three events: let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>I</mi></math> be the event defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20</mn><mo>&lt;</mo><mi>H</mi><mo>&lt;</mo><mn>25</mn></mrow></math> (note that we’re trying to find <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>I</mi><mo stretchy="false">)</mo></mrow></math>). Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>J</mi></math> be defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>24</mn></mrow></math>, and let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> be defined by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>H</mi><mo>≤</mo><mn>20</mn></mrow></math>. Of these three events, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>J</mi></math> contains the most outcomes. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>J</mi></math> occurs, then either <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>I</mi></math> must have occurred. Moreover, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>I</mi></math> are mutually exclusive. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>J</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>I</mi><mo stretchy="false">)</mo></mrow></math>, by the Addition Rule. Solving for the probability that we want, we get
+     <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mi>P</mi><mo stretchy="false">(</mo><mi>I</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>J</mi><mo stretchy="false">)</mo><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mspace width="2.3em"/><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>24</mn><mo stretchy="false">)</mo><mo>−</mo><mi>P</mi><mo stretchy="false">(</mo><mi>H</mi><mo>≤</mo><mn>20</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mspace width="2.3em"/><mo>=</mo><mn>0.44386</mn><mo>−</mo><mn>0.10132</mn></mtd></mtr><mtr><mtd><mspace width="2.3em"/><mo>=</mo><mn>0.34254.</mn></mtd></mtr></mtable></math></equation></item>
+     </list>
+     </solution>
+     </exercise>
+     </example>
+     <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+     <exercise id="exer-00006">
+     <problem id="prob-00006">
+     <para id="para-00027"><link class="os-embed" url="#exercise/CM-C07-M10-Q003"/></para>
+     </problem>
+     </exercise>
+     </note>
+     <para id="para-00028">Finally, we can answer the question posed at the <link target-id="sect-00001" document="m00094" xmlns="http://cnx.rice.edu/cnxml">beginning of this section</link>. Remember that the Reds are facing the Angels in the World Series, which is won by the team who is first to win 4 games. The Reds have a 65% chance to win any game against the Angels. So, what is the probability that the Reds win the World Series? At first glance, this is not a binomial experiment: The number of games played is not fixed, since the series ends as soon as one team wins 4 games. However, we can extend this situation to a binomial experiment: Let’s assume that 7 games are always played in the World Series, and the winner is the team who wins more games. In a way, this is what happens in reality; it’s as though the first team to lose 4 games (and thus cannot win more than the other team) forfeits the rest of their games. So, we can treat the actual World Series as a binomial experiment with seven trials. If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>W</mi></math> is the number of games won by the Reds, the probability that the Reds win the World Series is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>W</mi><mo>≥</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></math>. Using the techniques from the last example, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>Reds win the series</mtext><mo stretchy="false">)</mo><mo>=</mo><mn>0.8002</mn></mrow></math>.</para>
+     <note class="people-mathematics" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+     <title>Abraham de Moivre</title>
+     <para id="para-00029">Abraham de Moivre was born in 1667 in France to a Protestant family. Though he was educated in Catholic schools, he remained true to his faith; in 1687, he fled with his brother to London to escape persecution under the reign of King Louis XIV. Once he arrived in England, he supported himself as a freelance math tutor while he conducted his own research. Among his interests was probability; in 1711, he published the first edition of <emphasis effect="italic">The Doctrine of Chances: A Method of Calculating the Probabilities of Events in Play</emphasis>. This book was the second textbook on probability (after Cardano’s <emphasis effect="italic">Liber de ludo aleae</emphasis>). De Moivre discovered an important connection between the binomial distribution and the<emphasis effect="italic">normal distribution</emphasis> (an important concept in statistics; we’ll explore that distribution and its connection to the binomial distribution in Chapter 8). De Moivre also discovered some properties of a new probability distribution that later became known as the Poisson distribution.</para>
+     </note>
+     </section>
+     <section class="check-understanding" id="sect-00009">
+     <title>Check Your Understanding</title>
+     <exercise id="exer-00007">
+     <problem id="prob-00007">
+     <para id="para-00030"><link class="os-embed" url="#exercise/CM-C07-M10-Q004"/></para>
+     </problem>
+     </exercise>
+     <exercise id="exer-00008">
+     <problem id="prob-00008">
+     <para id="para-00031"><link class="os-embed" url="#exercise/CM-C07-M10-Q005"/></para>
+     </problem>
+     </exercise>
+     </section>
+     <section class="section-exercises" id="sect-00010">
+     <title>Exercises</title>
+     <exercise id="exer-00009">
+     <problem id="prob-00009">
+     <para id="para-00032"><link class="os-embed" url="#exercise/CM-C07-M10-Q006"/></para>
+     </problem>
+     </exercise>
+     <exercise id="exer-00010">
+     <problem id="prob-00010">
+     <para id="para-00033"><link class="os-embed" url="#exercise/CM-C07-M10-Q007"/></para>
+     </problem>
+     </exercise>
+     <exercise id="exer-00011">
+     <problem id="prob-00011">
+     <para id="para-00034"><link class="os-embed" url="#exercise/CM-C07-M10-Q008"/></para>
+     </problem>
+     </exercise>
+     <exercise id="exer-00012">
+     <problem id="prob-00012">
+     <para id="para-00035"><link class="os-embed" url="#exercise/CM-C07-M10-Q009"/></para>
+     </problem>
+     </exercise>
+     <exercise id="exer-00013">
+     <problem id="prob-00013">
+     <para id="para-00036"><link class="os-embed" url="#exercise/CM-C07-M10-Q010"/></para>
+     </problem>
+     </exercise>
+     <exercise id="exer-00014">
+     <problem id="prob-00014">
+     <para id="para-00037"><link class="os-embed" url="#exercise/CM-C07-M10-Q011"/></para>
+     </problem>
+     </exercise>
+     </section>
+     <section class="key-terms" id="sect-00011">
+     <title>Key Terms</title>
+     <list bullet-style="bulleted" id="list-00008">
+     <item>binomial experiment</item>
+     <item>probability density function (PDF)</item>
+     <item>cumulative distribution function (CDF)</item>
+     </list>
+     </section>
+     <section class="key-concepts" id="sect-00012">
+     <title>Key Concepts</title>
+     <list bullet-style="bulleted" id="list-00009">
+     <item>Binomial experiments result when we count the number of successful outcomes in a fixed number of repeated, independent trials with a constant probability of success.</item>
+     <item>The binomial distribution is used to find probabilities associated with binomial experiments.</item>
+     <item>Probability density functions (PDFs) describe the probabilities of individual outcomes in an experiment; cumulative distribution functions (CDFs) give the probabilities of ranges of outcomes.</item>
+     </list>
+     </section>
+     <section class="formula-review" id="sect-00013">
+     <title>Formulas</title>
+     <list bullet-style="bulleted" id="list-00010">
+     <item>Suppose we have a binomial experiment with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> trials and the probability of success in each trial is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>. Then:<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>number of successes is</mtext><mspace width="0.28em"/><mi>a</mi><mo stretchy="false">)</mo><msub><mo>=</mo><mi>n</mi></msub><msub><mi>C</mi><mi>a</mi></msub><mo>×</mo><msup><mi>p</mi><mi>a</mi></msup><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mi>a</mi></mrow></msup></mrow></math></item> 
+     </list>
+     </section>
+     </content> 
+    </document>
