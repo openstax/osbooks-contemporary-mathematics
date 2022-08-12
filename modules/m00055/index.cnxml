@@ -10,7 +10,7 @@
       <media alt="Insert Alt Text">
       <image mime-type="image/jpg" src="../../media/CS_Photo_04_04_001.jpg"/>
       </media>
-      <caption>A picture of base 2 addition table OR a photo of binary numbers in front of a computer programmers image. (Credit: modification of work “Magnifying glass and binary code” by Marco Verch Professional Photographer/Flickr, CC BY 2.0)</caption>
+      <caption>All information in computers is represented by 0's and 1's, including quantity, which means computers use Base 2 for arithmetic. (credit: modification of work “Magnifying glass and binary code” by Marco Verch Professional Photographer/Flickr, CC BY 2.0)</caption>
     </figure>
   <section class="learning-objectives" id="sect-00001">
   <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
@@ -102,7 +102,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00006">Many of the cells are not filled out. The ones filled in are values that never get past 5, which is the largest legal symbol in base 6, so they are acceptable symbols. But what do we do with 5+3? We can’t represent the answer as “8” since “8” is not a symbol available to us. Let’s go back to the list of numbers we have for base 6.</para>
+  <para id="para-00006">Many of the cells are not filled out. The ones filled in are values that never get past 5, which is the largest legal symbol in base 6, so they are acceptable symbols. But what do we do with 5 + 3 in base 6? We can’t represent the answer as “8” since “8” is not a symbol available to us. Let’s go back to the list of numbers we have for base 6.</para>
   <table class="unnumbered" summary="." id="table-00002">
   <tgroup cols="6">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -195,7 +195,7 @@
   </tgroup>
   </table>
   <para id="para-00008">This means that, in base 6, 5 + 1 = 10.</para>
-  <para id="para-00009">So, what is 5 + 2? Well, 5 + 2 = 5 + 1 + 1, so 10 + 1…jump one more space and you land on 11. So, 5 + 2 = 11 in base 6.</para>
+  <para id="para-00009">So, what is 5 + 2 in base 6? Well, 5 + 2 = 5 + 1 + 1, so 10 + 1…jump one more space and you land on 11. So, 5 + 2 = 11 in base 6.</para>
   <table class="unnumbered" summary="." id="table-00005">
   <tgroup cols="1">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -752,7 +752,26 @@
   </tbody>
   </tgroup><caption>Base 2 Addition Table</caption>
   </table>
-  <para id="para-00022">In base 2, the number that follows 1 is 10 (since we’ve run out of symbols!). So, 1<sub>2</sub> + 1<sub>2</sub> = 10<sub>2</sub>. This demonstrates that the rules necessary for base 2 addition are as small as possible:four rules.</para></item>
+  <para id="para-00022">In base 2, the number that follows 1 is 10 (since we’ve run out of symbols!). So, 1<sub>2</sub> + 1<sub>2</sub> = 10<sub>2</sub>. The complete table for base two then is below.
+<table class="unnumbered" summary="." id="table-00036">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" colwidth="1*"/>
+<colspec colnum="2" colname="c2" colwidth="1*"/>
+<colspec colnum="3" colname="c3" colwidth="1*"/>
+<tbody>
+<row><entry>+</entry>
+<entry>0</entry>
+<entry>1</entry></row>
+<row><entry>0</entry>
+<entry>0</entry>
+<entry>1</entry></row>
+<row><entry>1</entry>
+<entry>1</entry>
+<entry>10</entry></row>
+</tbody>
+</tgroup>
+</table>
+<newline/>This demonstrates that the rules necessary for base 2 addition are as small as possible: four rules.</para></item>
   </list>
   </solution>
   </exercise>
@@ -833,7 +852,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00028"><emphasis effect="bold">Step 3:</emphasis> Now, we do the “tens” place (it’s really the sevens place). According to the base 7 addition table in the solution for <link target-id="exam-00002" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example4.29</link>, we have 1 + 3 + 3 = 11. So, like in base 10, we use the 1 and carry the 1.</para>
+  <para id="para-00028"><emphasis effect="bold">Step 3:</emphasis> Now, we do the “tens” place (it’s really the sevens place). According to the base 7 addition table in the solution for <link target-id="exam-00002" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.29</link>, we have 1 + 3 + 3 = 10. So, like in base 10, we use the 0 and carry the 1.</para>
   <table class="unnumbered" summary="." id="table-00017">
   <tgroup cols="4">
   <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -862,7 +881,7 @@
   <row>
   <entry/>
   <entry/>
-  <entry><emphasis effect="bold">1</emphasis></entry>
+  <entry><emphasis effect="bold">0</emphasis></entry>
   <entry>2</entry>
   </row>
   </tbody>
@@ -897,13 +916,13 @@
   <row>
   <entry><emphasis effect="bold">1</emphasis></entry>
   <entry><emphasis effect="bold">3</emphasis></entry>
-  <entry>1</entry>
+  <entry>0</entry>
   <entry>2</entry>
   </row>
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00030">So, 536<sub>7</sub> + 333<sub>7</sub> = 1,312<sub>7</sub>.</para>
+  <para id="para-00030">So, 536<sub>7</sub> + 333<sub>7</sub> = 1302<sub>7</sub>.</para>
   </solution>
   </exercise>
   </example>
@@ -1565,7 +1584,7 @@
   <entry>1A</entry>
   </row>
   </tbody>
-  </tgroup>
+  </tgroup><caption>Base 12 addition table</caption>
   </table>
   <para id="para-00037">Notice that the lower-right entry is 1A<sub>12</sub>, as this is the number one past 19<sub>12</sub>.</para>
   </solution>
@@ -1737,6 +1756,7 @@
   </tgroup>
   </table>
   <para id="para-00048"><emphasis effect="bold">Step 3:</emphasis> Calculate 1001<sub>2</sub> + 11011<sub>2</sub> = 100100<sub>2</sub>.</para>
+<para id="para-00074">So, 1001<sub>2</sub> + 11011<sub>2</sub> = 100100<sub>2</sub>.</para>
   </solution>
   </exercise>
   </example>
@@ -1928,7 +1948,7 @@
   <tbody>
   <row>
   <entry/>
-  <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><menclose notation="horizontalstrike"><mi mathvariant="bold">A</mi></menclose></mrow></math> <emphasis effect="bold">9</emphasis></entry>
+  <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><menclose notation="horizontalstrike"><mi mathvariant="bold">A</mi></menclose></mrow></math> <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">9</emphasis></entry>
   <entry xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">11</emphasis></entry>
   <entry>7</entry>
   </row>
@@ -2005,7 +2025,7 @@
   </tbody>
   </tgroup>
   </table>
-  <para id="para-00064">So, A17<sub>12</sub> −4B3<sub>12</sub> = 524<sub>12</sub>.</para>
+  <para id="para-00064">So, A17<sub>12</sub> − 4B3<sub>12</sub> = 524<sub>12</sub>.</para>
   </solution>
   </exercise>
   </example>
@@ -2039,7 +2059,7 @@
   </problem>
   </exercise>
   </note>
-  <para id="para-00070">The second type of error is using a base 10 rule when the numbers are not in base 10. For instance, if you are working in base 13, 9<sub>13</sub> + 9<sub>13</sub> is not 18<sub>13</sub>, even though 18 is the correct answer in base 10.</para>
+  <para id="para-00070">The second type of error is using a base 10 rule when the numbers are not in base 10. For instance, if you are working in base 13, then 9<sub>13</sub> + 9<sub>13</sub> is not 18<sub>13</sub>, even though 18 is the correct answer in base 10.</para>
   <example id="exam-00010">
   <title>Identifying an Arithmetic Error in a Base Other Than Base 10</title>
   <exercise id="exer-00019">
