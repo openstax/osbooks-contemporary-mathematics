@@ -6,6 +6,652 @@
     <md:uuid>2c1d72ab-4f5d-4a61-8075-f4aa39ecb8cd</md:uuid>
   </metadata>
   <content>
-      <para id="para-00001"/>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_05_09_001.jpg"/>
+    </media>
+    <caption>[caption TK] (credit: modification of work Anne Preble/Unsplash.com)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Determine and show whether an ordered pair is a solution to a system of equations.</item>
+    <item>Solve systems of linear equations using graphical methods.</item>
+    <item>Solve systems of linear equations using substitution.</item>
+    <item>Solve systems of linear equations using elimination.</item>
+    <item>Identify systems with no solution or infinitely many solutions.</item>
+    <item>Solve applications of systems of linear equations.</item>
+    </list>
+    </section>
+    <para id="para-00002">In this section, we will learn how to solve systems of linear equations in two variables. There are several real-world scenarios that can be represented by systems of linear equalities. Suppose two friends, Andrea and Bart, go shopping at a farmers market to buy some vegetables. Andrea buys 2 tomatoes and 4 cucumbers and spends $2.00. Bart buys 4 tomatoes and 5 cucumbers and spends $2.95. What is the price of each vegetable?</para>
+    <section id="sect-00002">
+    <title>Determining If an Ordered Pair Is a Solution to a System of Equations</title>
+    <para id="para-00003">When we solved linear equations in Section 5.2 and Section 5.3, we learned how to solve linear equations with one variable. Now we will work with two or more linear equations grouped together, which is known as a <emphasis effect="bold">system of linear equations</emphasis>.</para>
+    <para id="para-00004">In this section, we will focus our work on systems of two linear equations in two unknowns (variables) and applications of systems of linear equations. An example of a system of two linear equations is shown below. We use a brace to show the two equations are grouped together to form a system of equations.</para>
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">A linear equation in two variables, such as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mrow></math>, has an infinite number of solutions. Its graph is a line. Remember, every point on the line is a solution to the equation and every solution to the equation is a point on the line. To solve a system of two linear equations, we want to find the values of the variables that are solutions to both equations. In other words, we are looking for the ordered pairs (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>) that make both equations true. These are called the <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">solutions of a system of equations</emphasis>.</para>
+    <para id="para-00006">To determine if an ordered pair is a solution to a system of two equations, we substitute the values of the variables into each equation. If the ordered pair makes both equations true, it is a solution to the system.</para>
+    <example id="exam-00001">
+    <title>Determining Whether an Ordered Pair Is a Solution to the System</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007">Determine whether the ordered pair is a solution to the system.</para>
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>−</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>5</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <list list-type="enumerated" number-style="arabic" id="list-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00008">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>−</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>5</mn></mtd></mtr></mtable></mrow></mrow></mrow></math></equation>
+    We substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></math> into both equations. <newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00004" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mrow><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mspace width="0.7em"/></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>2</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mo>−</mo><mn>1</mn><mspace width="0.7em"/></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn><mo>=</mo><mo>−</mo><mn>1</mn><mo>✓</mo></mrow></mtd></mtr></mtable><mspace width="1em"/><mtable columnalign="right"><mtr><mtd><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn><mo>•</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mo>−</mo><mn>5</mn></mrow></mtd></mtr><mtr><mtd><mrow><mn>5</mn><mo>≠</mo><mo>−</mo><mn>5</mn></mrow></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math> does not make both equations true. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>2</mn><mo>,</mo><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math> is not solution.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">We substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></math> into both equations. <newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mrow><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mspace width="0.8em"/></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>4</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mo>−</mo><mn>1</mn><mspace width="0.8em"/></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>1</mn><mo>=</mo><mo>−</mo><mn>1</mn><mo>✓</mo></mrow></mtd></mtr></mtable><mspace width="1em"/><mtable columnalign="right"><mtr><mtd><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn><mspace width="0.8em"/></mrow></mtd></mtr><mtr><mtd><mrow><mn>2</mn><mo>•</mo><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mo>−</mo><mn>5</mn><mspace width="0.8em"/></mrow></mtd></mtr><mtr><mtd><mrow><mo>−</mo><mn>5</mn><mo>=</mo><mo>−</mo><mn>5</mn><mo>✓</mo></mrow></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math> does not make both equations true. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>3</mn></mrow><mo>)</mo></mrow></mrow></math> is not solution.</item>
+    </list>
+    </para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00009"><link class="os-embed" url="#exercise/CM-C05-M9-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Determining Whether an Ordered Pair Is a Solution to the System</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00010">Determine whether the ordered pair is a solution to the system</para>
+    <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <list list-type="enumerated" number-style="arabic" id="list-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item><equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    Substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn></mrow></math> for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>5</mn></mrow></math> for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> into both equations.
+    <equation id="eq-00009" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr><mtd><mo>−</mo><mn>5</mn><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>5</mn><mo>=</mo><mn>3</mn><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>5</mn><mo>=</mo><mo>−</mo><mn>6</mn><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>5</mn><mo>=</mo><mo>−</mo><mn>5</mn></mtd></mtr></mtable></mtd><mtd><mtable columnalign="right"><mtr><mtd><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>−</mo><mn>3</mn><mo stretchy="false">(</mo><mo>−</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>15</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>8</mn><mo>+</mo><mn>15</mn><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mn>7</mn><mo>=</mo><mn>7</mn></mtd></mtr></mtable></mtd></mtr></mtable></math></equation>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mo>−</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow></math> is a solution.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><equation id="eq-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    Substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>4</mn></mrow></math> for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>5</mn></math> for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> into both equations.
+    <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mfrac><mn>3</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mn>3</mn><mo stretchy="false">(</mo><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn><mover><mo>=</mo><mo>?</mo></mover><mo>−</mo><mn>6</mn><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>5</mn><mo>≠</mo><mo>−</mo><mn>5</mn></mtd></mtr></mtable><mspace width="1em"/><mtable columnalign="right"><mtr><mtd><mn>2</mn><mo stretchy="false">(</mo><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo>−</mo><mn>3</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mn>7</mn></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mn>15</mn><mo stretchy="false">)</mo><mover><mo>=</mo><mo>?</mo></mover><mn>7</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>8</mn><mo>−</mo><mn>15</mn><mover><mo>=</mo><mo>?</mo></mover><mn>7</mn></mtd></mtr><mtr><mtd><mo>−</mo><mn>23</mn><mo>≠</mo><mn>7</mn></mtd></mtr></mtable></math></equation>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mn>4</mn><mo>,</mo><mn>5</mn></mrow><mo>)</mo></mrow></mrow></math> is not a solution.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CM-C05-M9-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Solving Systems of Linear Equations Using Graphical Methods</title>
+    <para id="para-00012">We will use three methods to solve a system of linear equations. The first method we will use is graphing. The graph of a linear equation is a line. Each point on the line is a solution to the equation. For a system of two equations, we will graph two lines. Then we can see all the points that are solutions to each equation. And, by finding what points the lines have in common, we will find the solution to the system.</para>
+    <para id="para-00013">Most linear equations in one variable have one solution; but for some equations called <emphasis effect="bold">contradictions</emphasis>, there are no solutions and for other equations called <emphasis effect="bold">identities</emphasis>, all numbers are solutions. Similarly, when we solve a system of two linear equations represented by a graph of two lines in the same plane, there are three possible cases, as shown in <link target-id="fig-00002" document="m00106">Figure 5.153</link>.</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_001.png"/>
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_002.png"/>
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_003.png"/>
+    </media>
+    </figure>
+    <para id="para-00014">Each time we demonstrate a new method, we will use it on the same system of linear equations. At the end you will decide which method was the most convenient way to solve this system.</para>
+    <para id="para-00015">The steps to use to solve a system of linear equations by graphing are shown here.</para>
+    <para id="para-00016"><emphasis effect="bold">Step 1:</emphasis> Graph the first equation.</para>
+    <para id="para-00017"><emphasis effect="bold">Step 2:</emphasis> Graph the second equation on the same rectangular coordinate system.</para>
+    <para id="para-00018"><emphasis effect="bold">Step 3:</emphasis> Determine whether the lines intersect, are parallel, or are the same line.</para>
+    <para id="para-00019"><emphasis effect="bold">Step 4:</emphasis> Identify the solution to the system.</para>
+    <para id="para-00020">If the lines intersect, identify the point of intersection. This is the solution to the system.</para>
+    <para id="para-00021">If the lines are parallel, the system has no solution.</para>
+    <para id="para-00022">If the lines are the same, the system has an infinite number of solutions.</para>
+    <para id="para-00023"><emphasis effect="bold">Step 5:</emphasis> Check the solution in both equations.</para>
+    <example id="exam-00003">
+    <title>Solving a System of Linear Equations by Graphing</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00024">Solve this system of linear equations by graphing.</para>
+    <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    </problem>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <table class="unnumbered" summary="." id="table-00001">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Step 1.</emphasis> Graph the first equation.</entry>
+    <entry><para id="para-00025">To graph the first line, write the equation in slope-intercept form.</para>
+    <para id="para-00026"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="center"><mtr><mtd><mspace width="1em"/><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mstyle mathvariant="bold"><mn>2</mn><mi mathvariant="bold-italic">x</mi><mo>+</mo><mi mathvariant="bold-italic">y</mi></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mi>m</mi><mo>=</mo><mo>-</mo><mn>2</mn><mspace width="2em"/><mi>b</mi><mo>=</mo><mn>7</mn></mtd></mtr></mtable></math></para></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00027"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></para>
+    <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml">
+    <figure class="unnumbered" id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_004.png"/>
+    </media>
+    </figure>
+    </para>
+    </entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Step 2.</emphasis> Graph the second equation on the same rectangular coordinate system.</entry>
+    <entry><para id="para-00029">To graph the second line, use intercepts.</para>
+    <para id="para-00030"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="center"><mtr><mtd><mstyle mathvariant="bold"><mi mathvariant="bold-italic">x</mi><mo>-</mo><mn>2</mn><mi mathvariant="bold-italic">y</mi><mo>=</mo><mn>6</mn></mstyle></mtd></mtr><mtr><mtd><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mo>-</mo><mn>3</mn><mo stretchy="false">)</mo><mspace width="1em"/><mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mtd></mtr></mtable></math></para></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">
+    <figure class="unnumbered" id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_005.png"/>
+    </media>
+    </figure>
+    </entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Step 3.</emphasis> Determine whether the lines intersect, are parallel, or are the same line.</entry>
+    <entry>Look at the graph of the lines.</entry>
+    <entry>The lines intersect.</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Step 4.</emphasis> Identify the solution to the system.
+    <list bullet-style="bulleted" id="list-00006">
+    <item>If the lines intersect, identify the point of intersection. Check to make sure it is a solution to both equations. This is the solution to the system.</item>
+    <item>If the lines are parallel, the system has no solution.</item>
+    <item>If the lines are the same, the system has an infinite number of solutions.</item>
+    </list></entry>
+    <entry><para id="para-00031">Since the lines intersect, find the point of intersection.</para>
+    <para id="para-00032">Check the point in both equations.</para></entry>
+    <entry><para id="para-00033">The lines intersect at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
+    <para id="para-00034" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>8</mn><mo>-</mo><mn>1</mn></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>7</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mo>✓</mo></mtd></mtr><mtr><mtd/><mtd/><mtd/></mtr><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>4</mn><mo>-</mo><mn>2</mn><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>6</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn><mo>✓</mo></mtd></mtr></mtable></math></para>
+    <para id="para-00035" xmlns="http://cnx.rice.edu/cnxml">The solution is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C05-M9-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Solving Systems of Linear Equations Using Substitution</title>
+    <para id="para-00037">We will now solve systems of linear equations by the substitution method. We will use the same system we used for graphing.</para>
+    <equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <para id="para-00038" xmlns="http://cnx.rice.edu/cnxml">We will first solve one of the equations for either <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>. We can choose either equation and solve for either variable—but we’ll try to make a choice that will keep the work easy. Then, we substitute that expression into the other equation. The result is an equation with just one variable—and we know how to solve those!</para>
+    <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml">After we find the value of one variable, we will substitute that value into one of the original equations and solve for the other variable. Finally, we check our solution and make sure it makes both equations true. This process is summarized here:</para>
+    <para id="para-00040"><emphasis effect="bold">Step 1:</emphasis> Solve one of the equations for either variable.</para>
+    <para id="para-00041"><emphasis effect="bold">Step 2:</emphasis> Substitute the expression from Step 1 into the other equation.</para>
+    <para id="para-00042"><emphasis effect="bold">Step 3:</emphasis> Solve the resulting equation.</para>
+    <para id="para-00043"><emphasis effect="bold">Step 4:</emphasis> Substitute the solution in Step 3 into either of the original equations to find the other variable.</para>
+    <para id="para-00044"><emphasis effect="bold">Step 5:</emphasis> Write the solution as an ordered pair.</para>
+    <para id="para-00045"><emphasis effect="bold">Step 6:</emphasis> Check that the ordered pair is a solution to both original equations.</para>
+    <example id="exam-00004">
+    <title>Solving a System of Linear Equations Using Substitution</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00046">Solve this system of linear equations by substitution:</para>
+    <equation id="eq-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    </problem>
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <table class="unnumbered" summary="." id="table-00002">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Step 1.</emphasis> Solve one of the equations for either variable.</entry>
+    <entry>We’ll solve the first equation for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mtable columnalign="left"><mtr><mtd><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mtd></mtr><mtr><mtd><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mstyle mathvariant="bold"><mn>7</mn><mo>−</mo><mn>2</mn><mi mathvariant="bold-italic">x</mi></mstyle></mtd></mtr></mtable></mtd></mtr></mtable></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 2.</emphasis> Substitute the expression from Step 1 into the other equation.</entry>
+    <entry>We replace <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math> in the second equation with the expression <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7</mn><mo>-</mo><mn>2</mn><mi>x</mi></mrow></math>.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="right"><mtr><mtd><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>-</mo><mn>2</mn><mo stretchy="false">(</mo><mstyle mathvariant="bold"><mn>7</mn><mo>-</mo><mn>2</mn><mi mathvariant="bold-italic">x</mi></mstyle><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mtd></mtr></mtable></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 3.</emphasis> Solve the resulting equation.</entry>
+    <entry>Now we have an equation with just 1 variable. We know how to solve this!</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>2</mn><mo stretchy="false">(</mo><mn>7</mn><mo>-</mo><mn>2</mn><mi>x</mi><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>14</mn><mo>+</mo><mn>4</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>5</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>20</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn mathvariant="bold">4</mn></mtd></mtr></mtable></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 4.</emphasis> Substitute the solution from Step 3 into one of the original equations to find the other variable.</entry>
+    <entry>We’ll use the first equation and replace <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> with 4.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mo stretchy="false">(</mo><mn mathvariant="bold">4</mn><mo stretchy="false">)</mo><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>8</mn><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>-</mo><mn>1</mn></mtd></mtr></mtable></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 5.</emphasis> Write the solution as an ordered pair.</entry>
+    <entry>The ordered pair is (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>).</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 6.</emphasis> Check that the ordered pair is a solution to <emphasis effect="bold">both</emphasis> original equations.</entry>
+    <entry>Substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>1</mn></mrow></math> into both equations and make sure they are both true.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00047"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>7</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mo>✓</mo></mtd></mtr></mtable></mtd><mtd><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>4</mn><mo>-</mo><mn>2</mn><mo stretchy="false">(</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>6</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn><mo>✓</mo></mtd></mtr></mtable></mtd></mtr></mtable></mrow></math></para>
+    <para id="para-00048" xmlns="http://cnx.rice.edu/cnxml">Both equations are true.</para>
+    <para id="para-00049"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> is the solution to the system.</para></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C05-M9-Q011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Solving Systems of Linear Equations Using Elimination</title>
+    <para id="para-00051">We have solved systems of linear equations by graphing and by substitution. Graphing works well when the variable coefficients are small, and the solution has integer values. Substitution works well when we can easily solve one equation for one of the variables and not have too many fractions in the resulting expression.</para>
+    <para id="para-00052">The third method of solving systems of linear equations is called the elimination method. When we solved a system by substitution, we started with two equations and two variables and reduced it to one equation with one variable. This is what we’ll do with the elimination method, too, but we’ll have a different way to get there.</para>
+    <para id="para-00053">The elimination method is based on the Addition Property of Equality. The Addition Property of Equality says that when you add the same quantity to both sides of an equation, you still have equality. We will extend the Addition Property of Equality to say that when you add equal quantities to both sides of an equation, the results are equal. For any expressions <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>:</para>
+    <para id="para-00116" xmlns="http://cnx.rice.edu/cnxml">if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>=</mo><mi>b</mi></math></para>
+    <para id="para-00124" xmlns="http://cnx.rice.edu/cnxml">And <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi><mo>=</mo><mi>d</mi></math></para>
+    <para id="para-00140" xmlns="http://cnx.rice.edu/cnxml">then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi><mo>+</mo><mi>c</mi><mo>=</mo><mi>b</mi><mo>+</mo><mi>d</mi></math>.</para>
+    <para id="para-00054" xmlns="http://cnx.rice.edu/cnxml">To solve a system of equations by elimination, we start with both equations in standard form. Then we decide which variable will be easiest to eliminate. How do we decide? We want to have the coefficients of one variable be opposites, so that we can add the equations together and eliminate that variable. Notice how that works when we add these two equations together:</para>
+    <equation id="eq-00015"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>5</mn></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="true">_</mo></munder></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd><mn>5</mn><mi>x</mi><mspace width="1.6em"/><mo>=</mo><mn>5</mn><mspace width="0.2em"/></mtd></mtr></mtable></math></equation>
+    <para id="para-00055" xmlns="http://cnx.rice.edu/cnxml">The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>’s add to zero and we have one equation with one variable. Let us try another one:</para>
+    <equation id="eq-00016" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <para id="para-00056" xmlns="http://cnx.rice.edu/cnxml">This time we do not see a variable that can be immediately eliminated if we add the equations. But if we multiply the first equation by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>2</mn></mrow></math>, we will make the coefficients of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> opposites. We must multiply every term on both sides of the equation by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>2</mn></mrow></math>.</para>
+    <equation id="eq-00017" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mo mathvariant="bold">−</mo><mn mathvariant="bold">2</mn><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo mathvariant="bold">−</mo><mn mathvariant="bold">2</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>2</mn></mtd></mtr></mtable></mrow></mrow></mrow></math></equation>
+    <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">Then rewrite the system of equations.</para>
+    <equation id="eq-00018"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mo mathvariant="bold">−</mo><mn mathvariant="bold">2</mn><mi>x</mi><mo>−</mo><mn mathvariant="bold">8</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo mathvariant="bold">−</mo><mn mathvariant="bold">4</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>2</mn></mtd></mtr></mtable></mrow></mrow></mrow></math></equation>
+    <para id="para-00058" xmlns="http://cnx.rice.edu/cnxml">Now we see that the coefficients of the x terms are opposites, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> will be eliminated when we add these two equations.</para>
+    <equation id="eq-00019" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="right"><mtr><mtd><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mo mathvariant="bold">−</mo><mn mathvariant="bold">2</mn><mi>x</mi><mo>−</mo><mn mathvariant="bold">8</mn><mi>y</mi><mo>=</mo><mo mathvariant="bold">−</mo><mn mathvariant="bold">4</mn></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mspace width="0.1em"/></mrow><mo stretchy="true">_</mo></munder></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd><mo>−</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn><mspace width="0.28em"/></mtd></mtr></mtable></math></equation>
+    <para id="para-00059" xmlns="http://cnx.rice.edu/cnxml">Once we get an equation with just one variable, we solve it. Then we substitute that value into one of the original equations to solve for the remaining variable. And, as always, we check our answer to make sure it is a solution to both of the original equations. Here’s a summary of using the elimination method:</para>
+    <para id="para-00060"><emphasis effect="bold">Step 1:</emphasis> Write both equations in standard form. If any coefficients are fractions, clear them.</para>
+    <para id="para-00061"><emphasis effect="bold">Step 2:</emphasis> Make the coefficients of one variable opposites.</para>
+    <para id="para-00141">Decide which variable you will eliminate.</para>
+    <para id="para-00142">Multiply one or both equations so that the coefficients of that variable are opposites.</para>
+    <para id="para-00062"><emphasis effect="bold">Step 3:</emphasis> Add the equations resulting from Step 2 to eliminate one variable.</para>
+    <para id="para-00063"><emphasis effect="bold">Step 4:</emphasis> Solve for the remaining variable.</para>
+    <para id="para-00064"><emphasis effect="bold">Step 5:</emphasis> Substitute the solution from Step 4 into one of the original equations. Then solve for the other variable.</para>
+    <para id="para-00065"><emphasis effect="bold">Step 6:</emphasis> Write the solution as an ordered pair.</para>
+    <para id="para-00066"><emphasis effect="bold">Step 7:</emphasis> Check that the ordered pair is a solution to both original equations.</para>
+    <example id="exam-00005">
+    <title>Solving a System of Linear Equations Using Elimination</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00067">Solve this system of linear equations by elimination:</para>
+    <equation id="eq-00020"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    </problem>
+    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <table class="unnumbered" summary="." id="table-00003">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Step 1.</emphasis> Write both equations in standard form.
+    <list bullet-style="bulleted" id="list-00007">
+    <item>If any coefficients are fractions, clear them.</item>
+    </list></entry>
+    <entry>Both equations are in standard form, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>y</mi><mo>=</mo><mi>C</mi></mrow></math>. There are no fractions.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 2.</emphasis> Make the coefficients of one variable opposites.
+    <list bullet-style="bulleted" id="list-00008">
+    <item>Decide which variable you will eliminate.</item>
+    <item>Multiply one or both equations so that the coefficients of that variable are opposites.</item>
+    </list></entry>
+    <entry><para id="para-00068">We can eliminate the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>’s by multiplying the first equation by 2.</para>
+    <para id="para-00069" xmlns="http://cnx.rice.edu/cnxml">Multiply both sides of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mrow></math> by 2.</para></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00070"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi mathvariant="bold-italic">y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>-</mo><mn mathvariant="bold">2</mn><mi mathvariant="bold-italic">y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></para>
+    <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn mathvariant="bold">2</mn><mo stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn mathvariant="bold">2</mn><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></para></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 3.</emphasis> Add the equations resulting from Step 2 to eliminate one variable.</entry>
+    <entry>We add the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>’s, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>’s, and constants.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable columnalign="right"><mtr><mtd><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mn mathvariant="bold">4</mn><mi>x</mi><mo>+</mo><mn mathvariant="bold">2</mn><mi>y</mi><mo>=</mo><mn mathvariant="bold">14</mn></mtd></mtr><mtr><mtd><munder accentunder="true"><mrow><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn><mspace width="0.6em"/></mrow><mo stretchy="true">_</mo></munder></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd><mn>5</mn><mi>x</mi><mspace width="2.2em"/><mo>=</mo><mn>20</mn><mspace width="0.28em"/></mtd></mtr></mtable></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 4.</emphasis> Solve for the remaining variable.</entry>
+    <entry>Solve for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 5.</emphasis> Substitute the solution from Step 4 into one of the original equations. Then solve for the other variable.</entry>
+    <entry>Substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math> into the second equation, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mrow></math>. Then solve for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn mathvariant="bold">4</mn><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>-</mo><mn>1</mn></mtd></mtr></mtable></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 6.</emphasis> Write the solution as an ordered pair.</entry>
+    <entry>Write it as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></math>.</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry><emphasis effect="bold">Step 7.</emphasis> Check that the ordered pair is a solution to <emphasis effect="bold">both</emphasis> original equations.</entry>
+    <entry>Substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><mo>-</mo><mn>1</mn></mrow></math> into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mrow></math>. Do they make both equations true? Yes!</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00143"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>2</mn><mo stretchy="false">(</mo><mn mathvariant="bold">4</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mo mathvariant="bold">-</mo><mn mathvariant="bold">1</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>7</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>7</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mo>✓</mo></mtd></mtr></mtable></mtd><mtd><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn mathvariant="bold">4</mn><mo>-</mo><mn>2</mn><mo stretchy="false">(</mo><mo mathvariant="bold">-</mo><mn mathvariant="bold">1</mn><mo stretchy="false">)</mo></mtd><mtd columnalign="center"><mover><mo>=</mo><mo>?</mo></mover></mtd><mtd columnalign="left"><mn>6</mn></mtd></mtr><mtr><mtd columnalign="right"><mn>6</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn><mo>✓</mo></mtd></mtr></mtable></mtd></mtr></mtable></mrow></math></para>
+    <para id="para-00144" xmlns="http://cnx.rice.edu/cnxml">The solution is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math></para>.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00072"><link class="os-embed" url="#exercise/CM-C05-M9-Q012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Identifying Systems with No Solution or Infinitely Many Solutions</title>
+    <para id="para-00073">In all the systems of linear equations so far, the lines intersected, and the solution was one point. In <link target-id="exam-00006" document="m00106">Example 5.86</link> and <link target-id="exam-00007" document="m00106">Examples 5.87</link>, we will look at a system of equations that has no solution and at a system of equations that has an infinite number of solutions.</para>
+    <example id="exam-00006">
+    <title>Solving a System of Linear Equations with No Solution</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00074">Solve the system by a method of your choice:</para>
+    <equation id="eq-00021"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>4</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    </problem>
+    <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00075">Let us solve the system of linear equations by graphing.</para>
+    <equation id="eq-00022"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>4</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">To graph the first equation, we will use its slope and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>-intercept.</para>
+    <equation id="eq-00023" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="bold-italic">y</mi></mtd><mtd columnalign="center"><mo mathvariant="bold">=</mo></mtd><mtd columnalign="left"><mstyle mathvariant="bold"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi mathvariant="bold-italic">x</mi><mo>−</mo><mn>3</mn></mstyle></mtd></mtr><mtr><mtd columnalign="right"><mi>m</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mn>1</mn><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign="right"><mi>b</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>3</mn></mtd></mtr></mtable></mrow></math></equation>
+    <para id="para-00077" xmlns="http://cnx.rice.edu/cnxml">To graph the second equation, we will use the intercepts.</para>
+    <equation id="eq-00024"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mstyle mathvariant="bold"><mi mathvariant="bold-italic">x</mi><mo>−</mo><mn>2</mn><mi mathvariant="bold-italic">y</mi><mo>=</mo><mn>4</mn></mstyle></mrow></math></equation>
+    <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <thead>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math></entry>
+    </row>
+    </thead>
+    <tbody xmlns="http://cnx.rice.edu/cnxml">
+    <row>
+    <entry>0</entry>
+    <entry>−2</entry>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00078">Graph the lines (<link target-id="fig-00005" document="m00106">Figure 5.154</link>).</para>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_007.png"/>
+    </media>
+    </figure>
+    <para id="para-00079">Determine the points of intersection. The lines are parallel. Since no point is on both lines, there is no ordered pair that makes both equations true.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C05-M9-Q013"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00007">
+    <title>Solving a System of Linear Equations with Infinite Solutions</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00081">Solve the system by a method of your choice:</para>
+    <para id="para-00082"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right"><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>9</mn></mtd></mtr></mtable></mrow></mrow></mrow></math></para>
+    </problem>
+    <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00083">Let us solve the system of linear equations by graphing.</para>
+    <para id="para-00084"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>{</mo><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right"><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>9</mn></mtd></mtr></mtable></mrow></mrow></math></para>
+    <para id="para-00085" xmlns="http://cnx.rice.edu/cnxml">Find the slope and y-intercept of the first equation.</para>
+    <para id="para-00086"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>m</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>b</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mo>−</mo><mn>3</mn></mtd></mtr></mtable></mrow></math></para>
+    <para id="para-00087" xmlns="http://cnx.rice.edu/cnxml">Find the intercepts of the second equation.</para>
+    <para id="para-00088"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>−</mo><mn>9</mn></mrow></math></para>
+    <table class="unnumbered" summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <thead>
+    <row>
+    <entry>x</entry>
+    <entry>y</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>0</entry>
+    <entry>−3</entry>
+    </row>
+    <row>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></math></entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">0</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00089">Graph the lines (<link target-id="fig-00006" document="m00106">Figure 5.155</link>).</para>
+    <figure id="fig-00006">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_008.png"/>
+    </media>
+    </figure>
+    <para id="para-00090">The lines are the same! Since every point on the line makes both equations true, there are infinitely many ordered pairs that make both equations true.</para>
+    <para id="para-00145">There are infinitely many solutions to this system.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00091"><link class="os-embed" url="#exercise/CM-C05-M9-Q014"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00092">In the previous example, if you write the second equation in slope-intercept form, you may recognize that the equations have the same slope and same <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>-intercept. Since every point on the line makes both equations true, there are infinitely many ordered pairs that make both equations true. There are infinitely many solutions to the system. We say the two lines are coincident. <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">Coincident lines</emphasis> have the same slope and same <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>y</mi></math>-intercept. A system of equations that has at least one solution is called a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">consistent system</emphasis>. A system with parallel lines has no solution. We call a system of equations like this an <emphasis effect="bold">inconsistent system</emphasis>. It has no solution.</para>
+    <para id="para-00093">We also categorize the equations in a system of equations by calling the equations independent or dependent. If two equations are independent, they each have their own set of solutions. Intersecting lines and parallel lines are independent. If two equations are dependent, all the solutions of one equation are also solutions of the other equation. When we graph two dependent equations, we get coincident lines. Let us sum this up by looking at the graphs of the three types of systems. See <link target-id="fig-00007" document="m00106">Figure 5.156</link> and the table that follows</para>
+    <figure id="fig-00007">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_009.png"/>
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_010.png"/>
+    <image mime-type="image/png" src="../../media/CS_Figure_05_09_011.png"/>
+    </media>
+    <caption/>
+    </figure>
+    <table class="unnumbered" summary="." id="table-00006">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry><emphasis effect="bold">Lines</emphasis></entry>
+    <entry>Intersecting</entry>
+    <entry>Parallel</entry>
+    <entry>Coincident</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Number of Solutions</emphasis></entry>
+    <entry>1 point</entry>
+    <entry>No solution</entry>
+    <entry>Infinitely many</entry></row>
+    <row>
+    <entry><emphasis effect="bold">Consistent/Inconsistent</emphasis></entry>
+    <entry>Consistent</entry>
+    <entry>Inconsistent</entry>
+    <entry>Consistent</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">Dependent/Independent</emphasis></entry>
+    <entry>Independent</entry>
+    <entry>Independent</entry>
+    <entry>Dependent</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <note class="work-out" id="note-00008">
+    <title>Using Matrices and Cramer’s Rule to Solve Systems of Linear Equations</title>
+    <para id="para-00094">An <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> matrix is an array with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> rows and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> columns, where each item in the matrix is a number. Matrices are used for many things, but one thing they can be used for is to represent systems of linear equations. For example, the system of linear equations</para>
+    <equation id="eq-00025" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="right"><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mtd></mtr></mtable></mrow></mrow></math></equation>
+    <para id="para-00095" xmlns="http://cnx.rice.edu/cnxml">can be represented by the following matrix:</para>
+    <equation id="eq-00026"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>7</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mn>6</mn></mtd></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math></equation>
+    <para id="para-00096" xmlns="http://cnx.rice.edu/cnxml">To use Cramer’s Rule, you need to be able to take the determinant of a matrix. The determinant of a 2 by 2 matrix <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>|</mo><mi>A</mi><mo>|</mo></mrow></mrow></math>, is</para>
+    <equation id="eq-00027" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>|</mo><mi>A</mi><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mtable><mtr><mtd><mrow><msub><mi>a</mi><mrow><mn>11</mn></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>a</mi><mrow><mn>12</mn></mrow></msub></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>a</mi><mrow><mn>21</mn></mrow></msub></mrow></mtd><mtd><mrow><msub><mi>a</mi><mrow><mn>22</mn></mrow></msub></mrow></mtd></mtr></mtable></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mrow><mn>11</mn></mrow></msub><mo>×</mo><msub><mi>a</mi><mrow><mn>22</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><msub><mi>a</mi><mrow><mn>21</mn></mrow></msub><mo>×</mo><msub><mi>a</mi><mrow><mn>12</mn></mrow></msub></mrow><mo>)</mo></mrow></mrow></math></equation>
+    <para id="para-00097" xmlns="http://cnx.rice.edu/cnxml">For example, the determinant of the matrix <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>|</mo><mrow><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd></mtr></mtable></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>×</mo><mo>−</mo><mn>2</mn></mrow><mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo><mrow><mn>3</mn><mo>×</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>4</mn><mo>−</mo><mn>3</mn><mo>=</mo><mo>−</mo><mn>7.</mn></mrow></math></para>
+    <para id="para-00098" xmlns="http://cnx.rice.edu/cnxml">Cramer’s Rule involves taking three determinants:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00009">
+    <item>The determinant of the first two columns, denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>|</mo><mi>D</mi><mo>|</mo></mrow></mrow></math>;</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The determinant of the first column and the third column, denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>|</mo><mrow><msub><mi>D</mi><mi>y</mi></msub></mrow><mo>|</mo></mrow></mrow></math>;</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The determinant of the third column and the first column, denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>|</mo><mrow><msub><mi>D</mi><mi>x</mi></msub></mrow><mo>|</mo></mrow></mrow></math>.</item>
+    </list>
+    <para id="para-00099" xmlns="http://cnx.rice.edu/cnxml">Going back to the original matrix <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>[</mo><mrow><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>7</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd><mtd><mn>6</mn></mtd></mtr></mtable></mrow><mo>]</mo></mrow></mrow></math></para>
+    <equation id="eq-00028" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>|</mo><mi>D</mi><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd></mtr></mtable></mrow><mo>|</mo></mrow><mo>=</mo><mo>−</mo><mn>4</mn><mo>−</mo><mn>1</mn><mo>=</mo><mo>−</mo><mn>5</mn></mrow></math></equation>
+    <equation id="eq-00029" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>|</mo><mrow><msub><mi>D</mi><mi>y</mi></msub></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mtable><mtr><mtd><mn>2</mn></mtd><mtd><mn>7</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>6</mn></mtd></mtr></mtable></mrow><mo>|</mo></mrow><mo>=</mo><mn>12</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>5</mn></mrow></math></equation>
+    <equation id="eq-00030" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>|</mo><mrow><msub><mi>D</mi><mi>x</mi></msub></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mtable><mtr><mtd><mn>7</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>6</mn></mtd><mtd><mrow><mo>−</mo><mn>2</mn></mrow></mtd></mtr></mtable></mrow><mo>|</mo></mrow><mo>=</mo><mo>−</mo><mn>14</mn><mo>−</mo><mn>6</mn><mo>=</mo><mo>−</mo><mn>20</mn></mrow></math></equation>
+    <para id="para-00100" xmlns="http://cnx.rice.edu/cnxml">Now Cramer’s Rule for the solution of the system will be:</para>
+    <equation id="eq-00031"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mrow><mo>|</mo><mrow><msub><mi>D</mi><mi>x</mi></msub></mrow><mo>|</mo></mrow></mrow><mrow><mrow><mo>|</mo><mi>D</mi><mo>|</mo></mrow></mrow></mfrac><mo>,</mo><mi>y</mi><mo>=</mo><mfrac><mrow><mrow><mo>|</mo><mrow><msub><mi>D</mi><mi>y</mi></msub></mrow><mo>|</mo></mrow></mrow><mrow><mrow><mo>|</mo><mi>D</mi><mo>|</mo></mrow></mrow></mfrac></mrow></math></equation>
+    <para id="para-00101" xmlns="http://cnx.rice.edu/cnxml">Putting in the values for these determinants, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mrow><mo>|</mo><mrow><mo>−</mo><mn>20</mn></mrow><mo>|</mo></mrow></mrow><mrow><mrow><mo>|</mo><mrow><mo>−</mo><mn>5</mn></mrow><mo>|</mo></mrow></mrow></mfrac><mo>=</mo><mn>4</mn><mo>;</mo><mi>y</mi><mo>=</mo><mfrac><mrow><mrow><mo>|</mo><mn>5</mn><mo>|</mo></mrow></mrow><mrow><mrow><mo>|</mo><mrow><mo>−</mo><mn>5</mn></mrow><mo>|</mo></mrow></mrow></mfrac><mo>=</mo><mo>−</mo><mn>1.</mn></mrow></math> The solution to the system is the ordered pair <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>4</mn><mo>,</mo><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow></mrow></math>.</para>
+    </note>
+    </section>
+    <section id="sect-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Solving Applications of Systems of Linear Equations</title>
+    <para id="para-00102">Systems of linear equations are very useful for solving applications. Some people find setting up word problems with two variables easier than setting them up with just one variable. To solve an application, we will first translate the words into a system of linear equations. Then we will decide the most convenient method to use, and then solve the system.</para>
+    <para id="para-00103"><emphasis effect="bold">Step 1</emphasis>: Read the problem. Make sure all the words and ideas are understood.</para>
+    <para id="para-00104"><emphasis effect="bold">Step 2:</emphasis> Identify what we are looking for.</para>
+    <para id="para-00105"><emphasis effect="bold">Step 3:</emphasis> Name what we are looking for. Choose variables to represent those quantities.</para>
+    <para id="para-00106"><emphasis effect="bold">Step 4:</emphasis> Translate into a system of equations.</para>
+    <para id="para-00107"><emphasis effect="bold">Step 5:</emphasis> Solve the system of equations using good algebra techniques.</para>
+    <para id="para-00108"><emphasis effect="bold">Step 6:</emphasis> Check the answer in the problem and make sure it makes sense.</para>
+    <para id="para-00109"><emphasis effect="bold">Step 7:</emphasis> Answer the question with a complete sentence.</para>
+    <example id="exam-00008">
+    <title>Applying System to a Real-World Application</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00110">Heather has been offered two options for her salary as a trainer at the gym. Option A would pay her $25,000 a year plus $15 for each training session. Option B would pay her $10,000 a year plus $40 for each training session. How many training sessions would make the salary options equal?</para>
+    </problem>
+    <solution id="sol-00008">
+    <para id="para-00111"><emphasis effect="bold">Step 1:</emphasis> Read the problem.</para>
+    <para id="para-00112"><emphasis effect="bold">Step 2:</emphasis> Identify what we are looking for.</para>
+    <para id="para-00113">We are looking for the number of training sessions that would make the pay equal.</para>
+    <para id="para-00114"><emphasis effect="bold">Step 3:</emphasis> Name what we are looking for.</para>
+    <para id="para-00115">Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>s</mi><mo>=</mo><mtext>Heather’s salary</mtext></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mtext>the number of training sessions</mtext></mrow></math></para>
+    <para id="para-00146" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Translate into a system of equations.</para>
+    <para id="para-00117">Option A would pay her $25,000 plus $15 for each training session. <equation id="eq-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>s</mi><mo>=</mo><mn>25, 000</mn><mo>+</mo><mn>15</mn><mi>n</mi></mrow></math></equation></para>
+    <para id="para-00118" xmlns="http://cnx.rice.edu/cnxml">Option B would pay her $10,000 + $40 for each training session. <equation id="eq-00032"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>s</mi><mo>=</mo><mn>10,000</mn><mo>+</mo><mn>40</mn><mi>n</mi></mrow></math></equation></para>
+    <para id="para-00119" xmlns="http://cnx.rice.edu/cnxml">The system is shown. <equation id="eq-00033"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mrow><mo>{</mo><mtable columnalign="left"><mtr><mtd><mi>s</mi><mo>=</mo><mn>25,000</mn><mo>+</mo><mn>15</mn><mi>n</mi></mtd></mtr><mtr><mtd><mi>s</mi><mo>=</mo><mn>10,000</mn><mo>+</mo><mn>40</mn><mi>n</mi></mtd></mtr></mtable></mrow></mrow></math></equation></para>
+    <para id="para-00120" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Solve the system of equations.</para>
+    <para id="para-00121">We will use substitution.</para>
+    <para id="para-00122">Substitute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>25,000</mn><mo>+</mo><mn>15</mn><mi>n</mi></math> for <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">s</emphasis> in the second equation <equation id="eq-00034"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mi>s</mi><mo>=</mo><mn>25, 000</mn><mo>+</mo><mn>15</mn><mi>n</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>s</mi><mo>=</mo><mn>10, 000</mn><mo>+</mo><mn>40</mn><mi>n</mi></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+    <para id="para-00123" xmlns="http://cnx.rice.edu/cnxml">Solve for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>. <equation id="eq-00035" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mstyle mathvariant="bold"><mn>25, 000</mn><mo>+</mo><mn>15</mn><mi mathvariant="bold-italic">n</mi></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>10, 000</mn><mo>+</mo><mn>40</mn><mi>n</mi></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>25,000</mn></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mn>10,000</mn><mo>+</mo><mn>25</mn><mi>n</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>15,000</mn></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mn>25</mn><mi>n</mi></mrow></mtd></mtr><mtr><mtd columnalign="right"><mrow><mn>600</mn></mrow></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>n</mi></mtd></mtr></mtable></mrow></math></equation></para>
+    <para id="para-00125" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 6:</emphasis> Check the answer.</para>
+    <para id="para-00126">Are 600 training sessions a year reasonable?</para>
+    <para id="para-00127">Are the two options equal when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>600</mn></mrow></math>?</para>
+    <para id="para-00128" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 7:</emphasis> Answer the question.</para>
+    <para id="para-00129">The salary options would be equal for 600 training sessions.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00130"><link class="os-embed" url="#exercise/CM-C05-M9-Q015"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00010">
+    <para id="para-00131"><link url="https://openstax.org/r/Practice_with_Solving">Practice with Solving Applications of Systems of Equations</link></para>
+    <para id="para-00132"><link url="https://openstax.org/r/Applications_of_Systems">Applications of Systems of Linear Equations</link></para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00008">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00133"><link class="os-embed" url="#exercise/CM-C05-M9-Q004"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00009">
+    <title>Exercises</title>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00134"><link class="os-embed" url="#exercise/CM-C05-M9-Q005"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00135"><link class="os-embed" url="#exercise/CM-C05-M9-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00136"><link class="os-embed" url="#exercise/CM-C05-M9-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00137"><link class="os-embed" url="#exercise/CM-C05-M9-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00138"><link class="os-embed" url="#exercise/CM-C05-M9-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00139"><link class="os-embed" url="#exercise/CM-C05-M9-Q010"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00010">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00010">
+    <item>system of linear equations</item>
+    <item>solutions of a system of equations</item>
+    <item>contradictions</item>
+    <item>identities</item>
+    <item>coincident lines</item>
+    <item>consistent system of linear equations</item>
+    <item>inconsistent system of linear equations</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00011">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00011">
+    <item>To solve a system of linear equations means finding the point or points where the two linear equations intersect.</item>
+    <item>Two lines can intersect at one point, no points if they are parallel, or every point if they are the same equation.</item>
+    <item>Systems of linear equations can be solved by graphing, by using substitution, or by using the elimination method.</item>
+    </list>
+    </section>
     </content>
-  </document>
+    </document>   
