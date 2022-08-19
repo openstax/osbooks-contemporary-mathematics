@@ -104,7 +104,7 @@
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_025b.png"/>
     </media>
     </subfigure>
-    </figure>		
+    </figure> 
     </solution>
     </exercise>
     </example>
@@ -136,7 +136,7 @@
     <note class="formula" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
     <para id="para-00017">The number of edges in a complete graph with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> vertices is the sum of the whole numbers from 1 to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mo>⋯</mo><mo>+</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
     </note>
-    <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">Suppose that we want to determine how many introductions necessary in a room with 500 strangers. In other words, suppose that we want to determine the number of edges in a complete graph with 500 vertices. Adding up all the numbers from 1 to 499 could take a long time! In the next example, we use the Sum of Degrees Theorem to make the problem more manageable.</para>
+    <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">Suppose that we want to determine how many introductions are necessary in a room with 500 strangers. In other words, suppose that we want to determine the number of edges in a complete graph with 500 vertices. Adding up all the numbers from 1 to 499 could take a long time! In the next example, we use the Sum of Degrees Theorem to make the problem more manageable.</para>
     <example id="exam-00003">
     <title>Using the Sum of Degrees Theorem</title>
     <exercise id="exer-00005">
@@ -194,10 +194,10 @@
     <solution id="sol-00004">
     <list bullet-style="bulleted" id="list-00006">
     <item>Diagram <emphasis effect="italic">J</emphasis> is not a subgraph of Graph <emphasis effect="italic">G</emphasis> because edge <emphasis effect="italic">ec</emphasis> is not in Graph <emphasis effect="italic">G</emphasis>.</item>
-    <item>Diagram <emphasis effect="italic">K</emphasis> is a subgraph of Graph <emphasis effect="italic">G</emphasis> because all of its vertices and edges were part of Graph <emphasis effect="italic">G</emphasis>.</item>
+    <item>Diagram <emphasis effect="italic">K</emphasis> is a subgraph of Graph <emphasis effect="italic">G</emphasis> because all, of its vertices and edges were part of Graph <emphasis effect="italic">G</emphasis>.</item>
     <item>Diagram <emphasis effect="italic">L</emphasis> is not a graph at all because there is a line extending from vertex <emphasis effect="italic">a</emphasis> that does not connect <emphasis effect="italic">a</emphasis> to another vertex. So, Diagram L cannot be a subgraph.</item>
     <item>Diagram <emphasis effect="italic">M</emphasis> is not a subgraph of Graph <emphasis effect="italic">G</emphasis> because it contains a vertex <emphasis effect="italic">f</emphasis>, which is not part of <emphasis effect="italic">G</emphasis>.</item>
-  </list>
+    </list>
     </solution>
     </exercise>
     </example>
@@ -217,9 +217,9 @@
     </media>
     <caption>[caption TK] (credit: XX)</caption>
     </figure>
-    <para id="para-00027">When you think of a cycle in everyday life, you probably think of something that begins and ends the same way. For example, the water cycle (Figure 12.XX) begins with water in a lake or ocean which evaporates into water vapor, condenses into clouds, and then returns to earth as rain or some other form of precipitation which settles into lakes or oceans. A <emphasis effect="bold">cycle</emphasis> in graph theory is similar in that it begins and ends in the same way: It is a series of connected edges that begin and end at the same vertex but otherwise never repeat any vertices.</para>
+    <para id="para-00027">When you think of a cycle in everyday life, you probably think of something that begins and ends the same way. For example, the water cycle (Figure 12.33) begins with water in a lake or ocean which evaporates into water vapor, condenses into clouds, and then returns to earth as rain or some other form of precipitation which settles into lakes or oceans. A <emphasis effect="bold">cycle</emphasis> in graph theory is similar in that it begins and ends in the same way: It is a series of connected edges that begin and end at the same vertex but otherwise never repeat any vertices.</para>
     <para id="para-00028">In a cycle, the number of vertices and edges must be equal, and all vertices must be of degree 2. Cycles are often referred to by the number of vertices. For example, a cycle with 5 vertices can be called a 5-cycle. Cycles can also be named after polygons based on the number of edges. For example a 5-cycle is also called a pentagon. Table 12.1 lists these names for cycles of size 3 through size 10.</para>
-    <table class="unnumbered" summary="." id="table-00001">
+    <table class="numbered" summary="." id="table-00001">
     <tgroup cols="3">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
     <colspec colnum="2" colname="c2" colwidth="1pt"/>
@@ -235,7 +235,7 @@
     <row>
     <entry>triangle</entry>
     <entry>3</entry>
-    <entry><figure id="fig-00012">
+    <entry><figure class="unnumbered" id="fig-00012">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031a.png"/>
     </media>
@@ -244,7 +244,7 @@
     <row>
     <entry>quadrilateral</entry>
     <entry>4</entry>
-    <entry><figure id="fig-00013">
+    <entry><figure class="unnumbered" id="fig-00013">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031b.png"/>
     </media></figure></entry>
@@ -252,7 +252,7 @@
     <row>
     <entry>pentagon</entry>
     <entry>5</entry>
-    <entry><figure id="fig-00014">
+    <entry><figure class="unnumbered" id="fig-00014">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031c.png"/>
     </media></figure></entry>
@@ -260,7 +260,7 @@
     <row>
     <entry>hexagon</entry>
     <entry>6</entry>
-    <entry><figure id="fig-00015">
+    <entry><figure class="unnumbered" id="fig-00015">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031d.png"/>
     </media></figure>
@@ -269,7 +269,7 @@
     <row>
     <entry>heptagon</entry>
     <entry>7</entry>
-    <entry><figure id="fig-00016">
+    <entry><figure class="unnumbered" id="fig-00016">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031e.png"/>
     </media></figure>
@@ -278,7 +278,7 @@
     <row>
     <entry>octagon</entry>
     <entry>8</entry>
-    <entry><figure id="fig-00017">
+    <entry><figure class="unnumbered" id="fig-00017">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031f.png"/>
     </media></figure>
@@ -287,7 +287,7 @@
     <row>
     <entry>nonagon</entry>
     <entry>9</entry>
-    <entry><figure id="fig-00018">
+    <entry><figure class="unnumbered" id="fig-00018">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031g.png"/>
     </media></figure>
@@ -296,7 +296,7 @@
     <row>
     <entry>decagon</entry>
     <entry>10</entry>
-    <entry><figure id="fig-00019">
+    <entry><figure class="unnumbered" id="fig-00019">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_031h.png"/>
     </media></figure>
@@ -306,8 +306,8 @@
     </tgroup>
     <caption>Categories of Cycles</caption>
     </table>
-    <para id="para-00029">There are many more polygon names, including a Megagon that has a million edges and a Googolgon that has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>100</mn></mrow></msup></mrow></math> edges, but usually we just say <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>-gon when the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is past 10. For example, a cycle with 11 edges could be called an 11-gon.</para>
-    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Notice that the 10-cycle, or decagon, appears to cross over itself in Table 12.1. Remember, graphs can be drawn differently but represent the same connections. In Figure 12.32, the same decagon is transformed into a graph that does not appear to overlap itself. We have done this without changing any of the connections so the fundamental structure of the graph has not changed.</para>
+    <para id="para-00029">There are many more polygon names, including a megagon that has a million edges and a g	oogolgon that has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>100</mn></mrow></msup></mrow></math> edges, but usually we just say <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>-gon when the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is past 10. For example, a cycle with 11 edges could be called an 11-gon.</para>
+    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Notice that the 10-cycle, or decagon, appears to cross over itself in <link target-id="table-00001" document="m00110">Table 12.1</link>. Remember, graphs can be drawn differently but represent the same connections. In Figure 12.32, the same decagon is transformed into a graph that does not appear to overlap itself. We have done this without changing any of the connections so the fundamental structure of the graph has not changed.</para>
     <figure id="fig-00020">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_032.png"/>
@@ -370,7 +370,7 @@
     <title>Identifying Triads and Cliques</title>
     <exercise id="exer-00011">
     <problem id="prob-00011">
-    <para id="para-00040">The graphs in Figure 12.21 represent social communities. The vertices are individuals and the edges are social connections. Use the graphs in Figure 12.21 to answer the questions.</para>
+    <para id="para-00040">The graphs in Figure 12.21 represent social communities. The vertices are individuals and the edges are social connections. Use the graphs to answer the questions.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00007">
     <item>Which graph has the most triads? Name the triangles.</item>
     <item>Which graph has the fewest triads? Name the triangles.</item>
@@ -384,7 +384,7 @@
     <item xmlns="http://cnx.rice.edu/cnxml">Graph D has the fewest triads. There are no triangles in the graph.</item>
     <item>More triads means vertices of greater degree which indicates greater resilience. Specifically, if an edge is removed from a closed triad, there the two individuals who are no longer adjacent are still connected by way of the third member of the triad.</item>
     <item>The vertices <emphasis effect="italic">a, e, c,</emphasis> and <emphasis effect="italic">g</emphasis>form a clique with four vertices.</item>
-  </list>
+    </list>
     </solution>
     </exercise>
     </example>
@@ -406,8 +406,7 @@
     <caption>Complete Graphs with Up to Six Vertices</caption>
     </figure>
     <para id="para-00043">Let's list the names of all the triangles in each graph. <emphasis effect="italic"><emphasis effect="bold">Since every pair of vertices is adjacent, any three vertices on a complete graph form a triangle</emphasis></emphasis>. There is only one triangle in the complete graph with 3 vertices, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math>. For the rest of the graphs, it is important that we take an organized approach. Start with the vertex that is first alphabetically, listing any triangles that include that vertex also in alphabetical order. Then, proceed to the next vertex in the alphabet, and list any triangles that include that vertex, except those that are already listed. Keep going in this way as shown in Figure 12.36.</para>
-    <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
-    <title>Figure 12.36 Listing Triangles in Complete Graphs</title>
+    <table class="numbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
     <tgroup cols="5">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
     <colspec colnum="2" colname="c2" colwidth="1pt"/>
@@ -465,8 +464,9 @@
     </row>
     </tbody>
     </tgroup>
+    <caption>Figure 12.36 Listing Triangles in Complete Graphs</caption>
     </table>
-    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Look at the last row in Figure 12.36. Do you see a pattern emerge for counting triangles in a complete graph? Without drawing a complete graph with 7 vertices, we can predict that it will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mn>35</mn></mrow></math> triangles inside it. This pattern also appears in a famous diagram called Pascal’s Triangle by Western mathematicians. Figure 12.37 displays the first 11 rows of Pascal’s Triangle. Row 0 of Pascal’s Triangle only has the number 1 in it. The first andlast entries in each of the other rows are also 1s. Otherwise, all the entries are formed by adding two entriesfrom the previous row. For example, in row 6, entry 1 is 6 which was found by adding 1 and the 5 from the previous row, and entry 2 is 15 which was found by adding the 5 and the 10 from the previous row, as shown in Figure 12.36.</para>
+    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Look at the last row in Figure 12.36. Do you see a pattern emerge for counting triangles in a complete graph? Without drawing a complete graph with 7 vertices, we can predict that it will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mn>35</mn></mrow></math> triangles inside it. This pattern also appears in a famous diagram called Pascal’s Triangle by Western mathematicians. Figure 12.37 displays the first 11 rows of Pascal’s Triangle. Row 0 of Pascal’s Triangle only has the number 1 in it. The first and last entries in each of the other rows are also 1s. Otherwise, all the entries are formed by adding two entries from the previous row. For example, in row 6, entry 1 is 6, which was found by adding 1 and the 5 from the previous row, and entry 2 is 15, which was found by adding the 5 and the 10 from the previous row, as shown in Figure 12.36.</para>
     <figure id="fig-00025" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_037.png"/>
@@ -571,6 +571,7 @@
     </exercise>
     </section>
     <section class="section-exercises" id="sect-00010">
+   <title>Exercise</title>
     <exercise id="exer-00023">
     <problem id="prob-00023">
     <para id="para-00066"><link class="os-embed" url="#exercise/CM-C12-M2-Q016"/></para>
@@ -682,4 +683,4 @@
     <para id="para-00085"><link url="https://openstax.org/r/Wajdi_Mohamed_Ratemi">The Mathematical Secrets of Pascal's Triangle by Wajdi Mohamed Ratemi</link></para>
     </section>
     </content>
-    </document>
+    </document>   
