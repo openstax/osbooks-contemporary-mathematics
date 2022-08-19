@@ -14,16 +14,16 @@
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
-    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <para id="para-00001">After completing this section, you should be able to: </para>
     <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Identify parts of a graph.</item>
     <item>Model applications of graph basics.</item>
     </list>
     </section>
-    <para id="para-00002">When you hear the word <emphasis effect="italic">graph</emphasis> what comes to mind? You might think of the <emphasis effect="italic">xy</emphasis>-coordinate system you learned about in an algebra class, or you mightthink of the line graphs and bar charts that are used to display data in news reports. The graphs we discuss in this chapter are probably very different from what you think of as a graph. They look like a bunch of dots connected by short line segments. The dots represent a group of objects and the line segments represent the connections, or relationships, between them. The objects might be bus stops, computers, Snapchat accounts, family members, or any other objects that have direct connections to each other. The connections can be physical or virtual, formal or casual, scientific or social. Regardless of the kind of connections, the purpose of the graph is to help us visualize the structure of the entire network to better understand the interactions of the objects within it.</para>
+    <para id="para-00002">When you hear the word, <emphasis effect="italic">graph</emphasis>, what comes to mind? You might think of the <emphasis effect="italic">xy</emphasis>-coordinate system you learned about in an algebra class, or you might think of the line graphs and bar charts that are used to display data in news reports. The graphs we discuss in this chapter are probably very different from what you think of as a graph. They look like a bunch of dots connected by short line segments. The dots represent a group of objects and the line segments represent the connections, or relationships, between them. The objects might be bus stops, computers, Snapchat accounts, family members, or any other objects that have direct connections to each other. The connections can be physical or virtual, formal or casual, scientific or social. Regardless of the kind of connections, the purpose of the graph is to help us visualize the structure of the entire network to better understand the interactions of the objects within it.</para>
     <section id="sect-00002">
     <title>Parts of a Graph</title>
-    <para id="para-00003">In a <term id="term-00001">graph</term>, the objects are represented with dots and their connections are represented with lines like those in Figure 12.1. Figure 12.1 displays a <term id="term-00002">simple graph</term> or graph labeled <emphasis effect="italic">G</emphasis> and <term id="term-00003">a multigraph</term> labeled <emphasis effect="italic">H</emphasis>. The dots are called <term id="term-00004">vertices</term>, A vertex is one object of a set of objects, some of which may be connected. We often label vertices with letters. For example, Graph <emphasis effect="italic">G</emphasis> has vertices <emphasis effect="italic">a, b, c</emphasis>, and <emphasis effect="italic">d</emphasis>, and Multigraph <emphasis effect="italic">H</emphasis> has vertices, <emphasis effect="italic">e, f, g</emphasis>, and <emphasis effect="italic">h</emphasis>. The line segment or connection joining two vertices is an <term id="term-00005">edge</term>. <emphasis effect="italic">H</emphasis> is considered a multigraph because it has a double edge between <emphasis effect="italic">f</emphasis> and <emphasis effect="italic">h</emphasis>, and a double edge between <emphasis effect="italic">h</emphasis> and <emphasis effect="italic">g</emphasis>. Another reason <emphasis effect="italic">H</emphasis> is called a multigraph is that it has a <term id="term-00006">loop</term> connecting vertex <emphasis effect="italic">e</emphasis> to itself; a loop is an edge that joins a vertex to itself. Loops and double edges are not allowed in a simple graph.</para>
+    <para id="para-00003">In a <term id="term-00001">graph</term>, the objects are represented with dots and their connections are represented with lines like those in <link target-id="fig-00002" document="m00109">Figure 12.3</link>. <link target-id="fig-00002" document="m00109">Figure 12.3</link> displays a <term id="term-00002">simple graph</term>, or graph labeled <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>G</mi></math> and <term id="term-00003">a multigraph</term> labeled <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math>. The dots are called <term id="term-00004">vertices</term> ; an individual dot is a <emphasis effect="bold">vertex</emphasis>, which is one object of a set of objects, some of which may be connected. We often label vertices with letters. For example, Graph <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>G</mi></math> has vertices <emphasis effect="italic">a, b, c</emphasis>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>, and Multigraph <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> has vertices, <emphasis effect="italic">e, f, g</emphasis>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>h</mi></math>. The line segment or connection joining two vertices is an <term id="term-00005">edge</term>. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> is considered a multigraph because it has a double edge between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>f</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>h</mi></math>, and a double edge between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>h</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>g</mi></math>. Another reason <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> is called a multigraph is that it has a <term id="term-00006">loop</term> connecting vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>e</mi></math> to itself; a loop is an edge that joins a vertex to itself. Loops and double edges are not allowed in a simple graph.</para>
     <para id="para-00004">To sum up, a simple graph is a collection of vertices and any edges that may connect them such that every edge connects two vertices with no loops and no two vertices joined by more than one edge. A multigraph is a graph in which there may be loops or pairs of vertices that are joined by more than one edge. In this chapter, most of our work will be with simple graphs, which we will call graphs for convenience.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
@@ -31,9 +31,9 @@
     </media>
     <caption>A Graph and a Multigraph</caption>
     </figure>
-    <para id="para-00005">It is not necessary for the edges in a graph to be straight. In fact, you can draw an edge any way you want. In graph theory, the focus is on which vertices are connected, not how the connections are drawn (see Figure 12.2). In a graph, each edge can be named by the two letters of the associated vertices. The four edges in graph<emphasis effect="italic">X</emphasis> in Figure 12.2 are <emphasis effect="italic">ab, ac, ad</emphasis>, and <emphasis effect="italic">ae</emphasis>. The order of the letters is not important when you name the edge of a graph. For example, <emphasis effect="italic">ab</emphasis> refers to the same edge as <emphasis effect="italic">ba</emphasis>.</para>
+    <para id="para-00005">It is not necessary for the edges in a graph to be straight. In fact, you can draw an edge any way you want. In graph theory, the focus is on which vertices are connected, not how the connections are drawn (see <link target-id="fig-00003" document="m00109">Figure 12.4</link>). In a graph, each edge can be named by the two letters of the associated vertices. The four edges in Graph <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>X</mi></math> in <link target-id="fig-00003" document="m00109">Figure 12.4</link> are <emphasis effect="italic">ab, ac, ad</emphasis>, and <emphasis effect="italic">ae</emphasis>. The order of the letters is not important when you name the edge of a graph. For example, <emphasis effect="italic">ab</emphasis> refers to the same edge as <emphasis effect="italic">ba</emphasis>.</para>
     <note class="check-point" id="note-00001">
-    <para id="para-00006"><emphasis effect="italic">A graph may have vertices that are not joined to other vertices by edges such asvertex f in Graph X in Figure 12.2, but any edge must have a vertex at each end.</emphasis></para>
+    <para id="para-00006"><emphasis effect="italic">A graph may have vertices that are not joined to other vertices by edges such asvertex f in Graph X in <link target-id="fig-00003" document="m00109">Figure 12.4</link>, but any edge must have a vertex at each end.</emphasis></para>
     </note>
     <figure id="fig-00003">
     <media alt="Insert Alt Text">
@@ -45,7 +45,7 @@
     <title>Identifying Edges and Vertices</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00007">Name all the vertices and edges of graph <emphasis effect="italic">F</emphasis> in Figure 12.3.</para>
+    <para id="para-00007">Name all the vertices and edges of graph <emphasis effect="italic">F</emphasis> in <link target-id="fig-00004" document="m00109">Figure 12.5</link>.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_003.png"/>
@@ -69,12 +69,12 @@
     </problem>
     </exercise>
     </note>
-    <para id="para-00011">Since the purpose of a graph is to represent the connections between objects, it is very important to know if two vertices share a common edge. The two vertices at either end of a given edge are referred to as <term id="term-00007">neighboring</term>, or <term id="term-00008">adjacent</term>. For example, in Figure 12.3, vertices <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">w</emphasis> are adjacent, but vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">w</emphasis> are not.</para>
+    <para id="para-00011">Since the purpose of a graph is to represent the connections between objects, it is very important to know if two vertices share a common edge. The two vertices at either end of a given edge are referred to as <term id="term-00007">neighboring</term>, or <term id="term-00008">adjacent</term>. For example, in <link target-id="fig-00004" document="m00109">Figure 12.5</link>, vertices <emphasis effect="italic">x</emphasis> and <emphasis effect="italic">w</emphasis> are adjacent, but vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">w</emphasis> are not.</para>
     <example id="exam-00002">
     <title>Identifying Vertices That Are Not Adjacent</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00012">Name all the pairs of vertices of graph <emphasis effect="italic">F</emphasis> in Figure 12.3 that are <emphasis effect="italic">not</emphasis> adjacent.</para>
+    <para id="para-00012">Name all the pairs of vertices of graph <emphasis effect="italic">F</emphasis> in <link target-id="fig-00004" document="m00109">Figure 12.5</link> that are <emphasis effect="italic">not</emphasis> adjacent.</para>
     </problem>
     <solution id="sol-00002">
     <para id="para-00013">The pairs of vertices that are not adjacent in graph <emphasis effect="italic">F</emphasis> are <emphasis effect="italic">v</emphasis> and <emphasis effect="italic">y, v</emphasis> and <emphasis effect="italic">z, w</emphasis> and <emphasis effect="italic">y</emphasis>, and <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">z</emphasis>.</para>
@@ -99,9 +99,9 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_01_002.jpg"/>
     </media>
-    <caption>[caption TK] (credit: XX)</caption>
+    <caption>[caption TK] </caption>
     </figure>
-    <para id="para-00016">When graphs are used to model and analyze real world applications, the number of edges that meet at a particular vertex is important. For example, a graph may represent the direct flight connections for a particular airport as in Figure 12.5. Representing the connections with a graph rather than a map shifts the focus away from the physical distances and toward which airports are connected. In Figure 12.5, the vertices are the airports, and the edges are the direct flight paths. The number of flight connections between a particular airport and other South Florida airports is the number of edges meeting at a particular vertex. For example, Key West has directflights to three of the five airports on the graph. In graph theory terms, we would say that vertex EYW has <term id="term-00009">degree</term> 3. The degree of a vertex is the number of edges that connect to that vertex.</para>
+    <para id="para-00016">When graphs are used to model and analyze real world applications, the number of edges that meet at a particular vertex is important. For example, a graph may represent the direct flight connections for a particular airport as in <link target-id="fig-00005" document="m00109">Figure 12.8</link>. Representing the connections with a graph rather than a map shifts the focus away from the physical distances and toward which airports are connected. In <link target-id="fig-00005" document="m00109">Figure 12.8</link>, the vertices are the airports, and the edges are the direct flight paths. The number of flight connections between a particular airport and other South Florida airports is the number of edges meeting at a particular vertex. For example, Key West has direct lights to three of the five airports on the graph. In graph theory terms, we would say that vertex EYW has <term id="term-00009">degree</term> 3. The degree of a vertex is the number of edges that connect to that vertex.</para>
     <figure id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_005.png"/>
@@ -112,7 +112,7 @@
     <title>Determining the Degree of a Vertex</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00017">Determine the degree of each vertex of graph <emphasis effect="italic">J</emphasis> in Figure 12.6. If graph <emphasis effect="italic">J</emphasis> represents direct flights between a set of airports, do any of the airports have direct flights to two or more of the other cities on the graph?</para>
+    <para id="para-00017">Determine the degree of each vertex of Graph <emphasis effect="italic">J</emphasis> in <link target-id="fig-00005" document="m00109">Figure 12.9</link>. If graph <emphasis effect="italic">J</emphasis> represents direct flights between a set of airports, do any of the airports have direct flights to two or more of the other cities on the graph?</para>
     <figure id="fig-00006">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_006.png"/>
@@ -139,7 +139,7 @@
     </problem>
     </exercise>
     </note>
-    <para id="para-00021">Graphs are also used to analyze regional boundaries. The states of Utah, Colorado, Arizona, and New Mexicoall meet at a single point known as the “four corners,” which is shown in the map in Figure 12.8.
+    <para id="para-00021">Graphs are also used to analyze regional boundaries. The states of Utah, Colorado, Arizona, and New Mexico all meet at a single point known as the “Four Corners,” which is shown in the map in Figure 12.8.
     </para>
     <figure id="fig-00008">
     <media alt="Insert Alt Text">
@@ -204,15 +204,15 @@
     </section>
     <section id="sect-00004">
     <title>Graphs of Social Interactions</title>
-    <para id="para-00029">Geographical maps are just one of many real world scenarios which graphs can depict. Any scenario in which objects are connected to each other can be represented with a graph, and the connections don’t have to be physical. Just think about all the connections you have to people around the world through social media! Who is in your network of Tweeter followers? Whose Snap Chat network are you connected to?</para>
+    <para id="para-00029">Geographical maps are just one of many real world scenarios which graphs can depict. Any scenario in which objects are connected to each other can be represented with a graph, and the connections don’t have to be physical. Just think about all the connections you have to people around the world through social media! Who is in your network of Twitter followers? Whose Snapchat network are you connected to?</para>
     <example id="exam-00005">
-    <title>Graphing Chloe’s <emphasis effect="italic">Roblox</emphasis><sup>TM</sup> Friends</title>
+    <title>Graphing Chloe’s <emphasis effect="italic">Roblox</emphasis> Friends</title>
     <exercise id="exer-00009">
     <problem id="prob-00009">
-    <para id="para-00030">Chloe is interested to know how many people in her network of <emphasis effect="italic">Roblox</emphasis> friends are also friends with each other so she polls them. Explain how a graph or multigraph might be drawn to model this scenario by identifying the objects that could be represented by vertices and the connections that could be represented by edges. Indicate whether a graph or a multigraph would be a better model.</para>
+    <para id="para-00030">Roblox is an online gaming platform.Chloe is interested to know how many people in her network of <emphasis effect="italic">Roblox</emphasis> friends are also friends with each other so she polls them. Explain how a graph or multigraph might be drawn to model this scenario by identifying the objects that could be represented by vertices and the connections that could be represented by edges. Indicate whether a graph or a multigraph would be a better model.</para>
     </problem>
     <solution id="sol-00005">
-    <para id="para-00031">The objects that are represented with vertices are <emphasis effect="italic">Roblox</emphasis> friends. A <emphasis effect="italic">Roblox</emphasis> friendship between two friends will be represented as an edge between a pair of vertices. This is best represented as a graph because it is not possible for two friends to be linked twice in <emphasis effect="italic">Roblox</emphasis>, they are either friends or they are not. Also, a player cannot be a friend to oneself, so there is no need for a loop.</para>
+    <para id="para-00031">The objects that are represented with vertices are <emphasis effect="italic">Roblox</emphasis> friends. A <emphasis effect="italic">Roblox</emphasis> friendship between two friends will be represented as an edge between a pair of vertices. This is best represented as a graph because it is not possible for two friends to be linked twice in <emphasis effect="italic">Roblox</emphasis>, they are either friends or they are not. Also, a player cannot be a friend to themself, so there is no need for a loop.</para>
     </solution>
     </exercise>
     </example>
@@ -315,4 +315,4 @@
     <para id="para-00045"><link url="https://openstax.org/r/Graph_Theory">Graph Theory: Create a Graph to Represent Common Boundaries on a Map</link></para>
     </section>
     </content>
-    </document>
+    </document>   
