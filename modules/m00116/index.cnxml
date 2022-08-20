@@ -181,168 +181,503 @@
     <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">Number of games in a single-elimination tournament with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> teams is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.</para>
     </section>
     <section class="projects" id="sect-00010" xmlns="http://cnx.rice.edu/cnxml">
-    <title>Project</title>
-    <para id="para-00030"><emphasis effect="bold">Math and Baseball</emphasis></para>
-    <para id="para-00031">Baseball is known to have one of the largest pools of statistics related to the game and its players. Managers, coaches, and pitchers study the statistics of the players on opposing teams to give their team an edge by knowing what pitches to throw for the best probability to be missed by a batter. In similar fashion, batters study pitchers’ statistics to learn a pitcher’s strength and how to predict what a pitcher will throw and how to best hit against a pitcher.</para>
-    <para id="para-00032">The three primary baseball statistics are batting average, home runs, and runs batted in (RBIs), which are the components of the title of Triple Crown winner that is awarded to players who dominate in these three areas. However, there is a wealth of other statistics to evaluate when studying the performance of a player.</para>
-    <para id="para-00033">Conduct an Internet search to research statistics and how they are calculated in the following categories:
-    <list list-type="enumerated" number-style="upper-alpha" id="list-00008">
-    <item>Batting Statistics
-    <list list-type="enumerated" number-style="arabic" id="list-00009">
-    <item>There are about 30 batting statistics. Select a minimum of 10 batting statistics. Compose an organized list including the name of the statistic, abbreviation, explanation of what it represents, as well as how it is calculated.<newline/>
-    As an example: AB/HR represents <emphasis effect="italic">at bats per home run</emphasis> and is calculated by the number of times a player is at bat divided by home runs.</item>
-    </list></item>
-    <item>Pitching Statistics
-    <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00010">
-    <item>There are about 40 pitching statistics. Select a minimum of 10 pitching statistics. Compose an organized list including the name of the statistic, abbreviation, explanation of what it represents, as well as how it is calculated.<newline/>
-    As an example: K/9 represents <emphasis effect="italic">strikeouts per nine innings</emphasis> and is calculated by the number of strikeouts times nine divided by the number of innings pitched.</item>
-    </list></item>
-    <item>Fielding Statistics
-    <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00011">
-    <item>There are around 10 fielding statistics. Select a minimum of five fielding statistics. Compose an organized list including the name of the statistic, abbreviation, explanation of what it represents, as well as how it is calculated.<newline/>
-    As an example: FP represents <emphasis effect="italic">fielding percentage</emphasis> is calculated by the number of total plays divided by the number of total chances.</item>
-    </list></item>
-    <item>Overall
-    <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00012">
-    <item>Select a player from recent years to evaluate. The player can be one that you have followed, one from a favorite team, or any current player. Find the statistics shared in Questions 1–3 to use in evaluating the potential strengths and weaknesses of the player. Write a short paragraph analyzing your selected player, supported by the statistics from the answers to Questions 1–3.</item>
-    </list></item>
-    </list></para>
-    <para id="para-00034"><emphasis effect="bold">Math and Fantasy Football</emphasis></para>
-    <para id="para-00035">Fantasy football offers spectators an added dimension to football season with a competitive math-based game where the active components are real-life players in the current season. For clarity in this exercise, the actual fantasy football players will be denoted as FFP and actual professional team members will be denoted as players.</para>
-    <para id="para-00036">While some fantasy football leagues have slightly different setups or scoring systems, most share some common elements.</para>
-    <para id="para-00037">Often using a lottery system to determine who picks first, second, and so on, FFPs select 15 current players to comprise their personal fantasy football team. The players selected can be from any professional teams and a FFP can utilize any team recognized by their league. FFPs can elect to keep the same players on their team for the whole league play or trade for any player not selected by another FFP in their league.</para>
-    <para id="para-00038">At the start of each week during football season, each fantasy football player selects their roster of actual players to comprise their roster of starting players. Typically, a starting roster consists of the following players:
-    <table class="unnumbered" summary="." id="table-00001">
-    <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1pt"/>
-    <colspec colnum="2" colname="c2" colwidth="1pt"/>
-    <colspec colnum="3" colname="c3" colwidth="1pt"/>
-    <thead>
-    <row>
-    <entry>Number to Select</entry>
-    <entry>Position Abbreviation</entry>
-    <entry>Position Title</entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>1</entry>
-    <entry>QB</entry>
-    <entry>Quarterback</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>K</entry>
-    <entry>Kicker</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>TE</entry>
-    <entry>Tight End</entry>
-    </row>
-    <row>
-    <entry>2</entry>
-    <entry>RB</entry>
-    <entry>Running Back</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>D/ST</entry>
-    <entry>Defense</entry>
-    </row>
-    <row>
-    <entry>2</entry>
-    <entry>WR</entry>
-    <entry>Wide receiver</entry>
-    </row>
-    <row>
-    <entry>1</entry>
-    <entry>RB or WR</entry>
-    <entry>Flex</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table></para>
-    <para id="para-00039">As actual professional games are played, points are tallied based on your league’s scoring system. The points the team members on your starting roster make during the week are computed and whichever FFP has the highest score for the week wins that week.</para>
-    <para id="para-00040">The FFPs with the best records of wins versus losses enters fantasy football playoffs to determine the ultimate league champion and collects the pot.</para>
-    <para id="para-00041">The above overview of fantasy football describes the basic game play. The fun comes in understanding and analyzing the math behind the scoring.
-    <list list-type="enumerated" number-style="arabic" id="list-00013">
-    <item>Talk to people you know who have played fantasy football in the past and interview them. Inquire about how they select players and how league(s) they have played in have computed the weekly scoring.
-    <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
-    <item>Was a league manager recruited to manage the record keeping of scores?</item>
-    <item>Was an online scoring system utilized or did the fantasy football use a streamlined or specialized scoring system?</item>
-    <item>What strategies were used to select the team of 15 players and who would be on the weekly starting roster?</item>
-    <item>Were any online resources utilized to aid in choosing which players to select?</item>
-    <item>How was math utilized to select team members or who to place as a starter each week? Be as specific as possible, citing examples when available.</item>
-    </list></item>
-    <item>Conduct an Internet research to find two different resources that a FFP could utilize when selecting players for their team or for their starting roster. Describe the math involved in the resources.</item>
-    <item>Conduct an Internet research to learn more about the scoring utilized by fantasy football leagues. Write a short paragraph sharing how the use of math and knowledge of football statistics is used and how they are calculated to aid a FFP in selecting their team and starting roster.</item>
-    </list></para>
-    <para id="para-00042"><emphasis effect="bold">Math and Hockey</emphasis></para>
-    <para id="para-00043">Hockey is full of math from obvious components such as scoring and statistics to the shape of the rink and the angles involved in puck movement.</para>
-    <para id="para-00044">Collegiate and professional hockey games are 60 minutes long and are divided into three periods of 20 (60/3) minutes each. At any one time, there are five players and one goalie on the ice for each team. If a player is called on a penalty and is placed in the penalty box, that team now has four players, which is 20% less players on the ice competing against five opponents. In some instances, a team may have two players in the penalty box at one time, resulting in three players, or 40% less players on the ice compared to a full team. Being one player down for a 2-minute penalty or potentially 5 minutes for a major penalty leads to an imbalance on the ice and calls for a quick change of offense and defense strategy.</para>
-    <list list-type="enumerated" number-style="upper-alpha" id="list-00015">
-    <item>Rink Composition—North American<newline/>
-    An ice rink is comprised of various geometrical shapes, each with precise dimensions.
-    <list list-type="enumerated" number-style="arabic" id="list-00016">
-    <item>Research the dimensions of a hockey rink and draw an accurate scale model on graph paper. Be sure to include the scale for your model and indicate all units.<newline/>
-    Answer:
-    <figure id="fig-00004">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/png" src="../../media/CS_Figure_13_05_003.png"/>
-    </media>
-    </figure></item>
-    <item>List the shapes and the numbers of each kind of hockey rink. You should find four different shapes, some with multiple dimensions.<newline/>
-    Answer: A North American ice hockey rink is comprised of the following shapes:
-    <list bullet-style="bulleted" id="list-00017">
-    <item>Rectangle: A center rectangle measuring 50 feet long by 44 feet wide. Each width end of the center rectangle contains a side rectangle 30 feet long by 44 feet wide.</item>
-    <item>Trapezoid: At the end of each of the side rectangles, is what is referred to as a trapezoid, with length 11 feet narrowing to a width of 6 feet. Mathematically, the trapezoid is not a geometric trapezoid as the non-parallel sides are curved rather than straight.</item>
-    <item>Circle: There are five face-off circles, each with a radius of 15 feet.</item>
-    <item>Semi-circle: There are three semi-circles, two in front of each goal post with a radius of 4 feet and one in the middle of the ice rink.</item>
-    </list></item>
-    <item>Describe the shape and dimensions of a hockey puck using geometric vocabulary.<newline/>
-    Answer: A hockey puck is in the shape of a short right circular cylinder with a height of 1 inch and diameter of 3 inches.</item>
-    </list></item>
-    <item>Statistics<newline/>
-    Using an Internet search, select two top hockey players from the same league to answer the following questions:
-    <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00018">
-    <item>Write a paragraph sharing a minimum of five statistics for each player you have selected. Describe how each of the statistics are calculated and what each statistic means.</item>
-    <item>Write a paragraph comparing the two players and determine who you believe is the better player. Support your choice.</item>
-    </list></item>
-    <item>Scoring<newline/>
-    The basics of scoring in ice hockey is simple, the team with the most goals is the winner. But, how to score the most goals involves much math!
-    <list list-type="enumerated" number-style="arabic" start-value="6" id="list-00019">
-    <item>Research one of the following components involved in hockey puck movement on the ice and write a paragraph summarizing your findings. Be specific and detailed in your summary.
-    <list list-type="enumerated" number-style="lower-alpha" id="list-00020">
-    <item>Angles</item>
-    <item>Velocity vectors</item>
-    <item>Angle of incident and angle of return</item>
-    <item>Speed and acceleration (player as well as puck movement)</item>
-    </list></item>
-    </list></item>
-    </list>
-    <para id="para-00045"><emphasis effect="bold">Math and Soccer</emphasis></para>
-    <para id="para-00046">As the world’s most popular sport, you’ll be excited to confirm that soccer is full of mathematics ranging from scoring and statistics to footwork, angles, and field shape.</para>
-    <para id="para-00047">Soccer requires understanding of mathematical concepts and equations as well as skill, fitness, and game knowledge. One such example is angles, which you all will remember from your geometry class. While players are not carrying protractors and measuring angles during play, mental calculation of angles is a constant in any successful player’s thinking. A goalie is not physically able to cover the entire open net region and a player must calculate an angle to kick the ball consistent with the net opening while predicting the ability of the goalie to stop the ball from entering the net.</para>
-    <list list-type="enumerated" number-style="arabic" id="list-00021">
-    <item>Research angles as they apply to soccer play. Provide two examples of different plays indicating angle of a player’s body, angle of foot striking the ball, and angle to the net. Include relevant dimensions. Adding a diagram that may aid in clarity is an option.</item>
-    </list>
-    <para id="para-00048">There are multiple geometric shapes found on a soccer field, including rectangles, a circle, and quarter-circles.</para>
-    <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00022">
-    <item>Draw a scale model of a soccer field including dimensions with labels.<newline/>
-    Answer: 
-    <figure id="fig-00005">
-    <media alt="Insert Alt Text">
-    <image mime-type="image/png" src="../../media/CS_Figure_13_05_004.png"/>
-    </media>
-    </figure>
-    </item>
-    </list>
-    <para id="para-00049">Using an Internet search, select two top soccer players from the same league to answer the following questions:
-    <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00023">
-    <item>Write a paragraph sharing a minimum of five statistics for each player you have selected. Describe how each of the statistics are calculated and what each statistic means.</item>
-    <item>Write a paragraph comparing the two players and determine who you believe is the better player. Support your choice.</item>
-    </list></para>
+      <title>project</title>
+      <section id="sect-00018">
+      <title>Lucas Sequence and Fibonacci Sequence</title>
+      <para id="para-00061">The Lucas numbers bear some similarity to the Fibonacci numbers and exhibit a stronger link to the golden ratio. Edouard Lucas is credited with naming the Fibonacci numbers and the Lucas numbers were so named in his honor. The Lucas numbers play a role in finding prime numbers that are utilized in encrypting data for actions such as using your debit card to obtain money at a cash machine or when making a credit card purchase for point of sale as well as when shopping online.</para>
+      <para id="para-00062">Complete the following questions to explore numbers in the Lucas sequence as well as their relationships to the numbers in the Fibonacci sequence.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00008">
+      <item>Conduct an Internet search to find out what a Lucas number is and how the Lucas numbers are related to the Fibonacci numbers.<newline/>
+      Answers will vary.</item>
+      <item>What are the first two numbers in the Lucas sequence?<newline/>
+      2, 1</item>
+      <item>Describe how the next number in the Lucas sequence is determined and compare this to how the next number is determined in the Fibonacci sequence.<newline/>
+      Add the two previous numbers to obtain the next number in the Lucas sequence. The same pattern for finding the next number is used with the Fibonacci sequence.</item>
+      <item>Complete the following table listing the first 10 terms in the Fibonacci and Lucas sequence:
+      <table summary="." id="table-00001">
+      <tgroup cols="11">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <colspec colnum="4" colname="c4" colwidth="1pt"/>
+      <colspec colnum="5" colname="c5" colwidth="1pt"/>
+      <colspec colnum="6" colname="c6" colwidth="1pt"/>
+      <colspec colnum="7" colname="c7" colwidth="1pt"/>
+      <colspec colnum="8" colname="c8" colwidth="1pt"/>
+      <colspec colnum="9" colname="c9" colwidth="1pt"/>
+      <colspec colnum="10" colname="c10" colwidth="1pt"/>
+      <colspec colnum="11" colname="c11" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Term</emphasis></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>0</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>5</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>6</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>7</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>8</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>9</mn></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Fibonacci Numbers</emphasis></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>0</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>5</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>34</mn></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Lucas Numbers</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>7</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>18</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>47</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"/>
+      </row>
+      </tbody>
+      </tgroup>
+      </table><newline/>
+      Answer: 
+      <table summary="." id="table-00002">
+      <tgroup cols="11">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <colspec colnum="4" colname="c4" colwidth="1pt"/>
+      <colspec colnum="5" colname="c5" colwidth="1pt"/>
+      <colspec colnum="6" colname="c6" colwidth="1pt"/>
+      <colspec colnum="7" colname="c7" colwidth="1pt"/>
+      <colspec colnum="8" colname="c8" colwidth="1pt"/>
+      <colspec colnum="9" colname="c9" colwidth="1pt"/>
+      <colspec colnum="10" colname="c10" colwidth="1pt"/>
+      <colspec colnum="11" colname="c11" colwidth="1pt"/>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Term</emphasis></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>0</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>5</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>6</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>7</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>8</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>9</mn></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Fibonacci Numbers</emphasis></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>0</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">3</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>5</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">8</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>13</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">21</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>34</mn></math></entry>
+      </row>
+      <row xmlns="http://cnx.rice.edu/cnxml">
+      <entry><emphasis effect="bold">Lucas Numbers</emphasis></entry>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>3</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">4</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>7</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">11</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>18</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">29</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>47</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn mathvariant="blod">76</mn></math></entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table></item>
+      <item xmlns="http://cnx.rice.edu/cnxml">Interestingly, many patterns can be found in looking at the relationships in the Fibonacci and Lucas numbers. Look closely at the chart in question 3 to discover one such pattern. Observe the Fibonacci numbers in the third and fifth terms and compare with the Lucas number in the fourth term of the sequence. Describe the pattern found. Does this pattern continue in the table?<newline/>
+      Answer: Adding the third and fifth terms of the Fibonacci numbers results in the fourth number in the Lucas sequence. This pattern continues throughout the two sequence.</item>
+      <item>Research the Fibonacci or the Lucas numbers to find an application in our world distinct from what has been shared in this project and section. Write a paragraph sharing the findings of your research.<newline/>
+      Answer: Answers will vary.</item>
+      </list>
+      </section>
+      <section id="sect-00019">
+      <title>Solar Array for a Residence</title>
+      <para id="para-00030">One of the first steps in adding solar to a residence is determining the size of a system to achieve the desired output. In this project, we will explore the solar needs of a residence and estimate needs of a solar array to supply electrical output to meet various percentages of electrical need.</para> 
+      <para id="para-00034"><emphasis effect="bold">Step 1:</emphasis> Obtain an electric bill from your apartment/home. Find the average monthly or yearly usage if listed or call the electric company to inquire. If an electric bill is not available, use the Internet to find an average monthly or yearly electric usage for your area.</para>
+      <para id="para-00042"><emphasis effect="bold">Step 2:</emphasis> Determine a daily and hourly usage. Divide the average monthly usage by 30 or the yearly average by 365. Divide again by 24 to calculate an average hourly electric usage, which will yield the average kilowatt-hours for how much electrical power your is being utilized in an hour.</para>
+      <para id="para-00045"><emphasis effect="bold">Step 3:</emphasis> Multiply your average hourly use (kilowatts) by 1,000 to convert to watts.</para>
+      <para id="para-00053"><emphasis effect="bold">Step 4:</emphasis> Use the Internet to determine the average daily peak hours of sunlight where you live.</para>
+      <para id="para-00093"><emphasis effect="bold">Step 5:</emphasis> Divide your average hourly watts (Step 3) by the average daily peak hours (Step 4) to calculate the average energy needed for a solar array to produce every hour.</para>
+      <para id="para-00094"><emphasis effect="bold">Step 6:</emphasis> Determine the average energy needed in a solar array per hour to meet each of the following:
+      <list list-type="enumerated" number-style="arabic" id="list-00009">
+      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mi>%</mi></mrow></math> coverage of average energy (Step 5)</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80</mn><mi>%</mi></mrow></math> coverage of average energy</item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>50</mn><mi>%</mi></mrow></math> coverage of average energy</item>
+      </list></para>
+      <para id="para-00095" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 7:</emphasis> Using the values computed in Step 6, compute the residential savings based on an average cost of 12 cents per watt.</para>
+      </section>
+      <section id="sect-00020">
+      <title>Vaccine Validation</title>
+      <para id="para-00067">Validation of vaccines is a topic that exploded in the news when the Covid-19 pandemic spread across the world. As governments and organizations looked for a vaccine to curb the spread and minimize the severity of infection, concern was expressed by some for what appeared to be a quick discovery for a Covid-19 vaccine.</para>
+      <para id="para-00068">Conduct an Internet search to explore the following questions. Pay special attention to the sources you select to ensure that they are credible sources.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00010">
+      <item>Research the term <emphasis effect="italic">efficacy rates</emphasis>. Express what efficacy means in your own words.</item>
+      <item>Using a minimum of two sources, compose a well-developed paragraph describing what validation of a vaccine means.</item>
+      <item>Using a minimum of two sources, compose a well-developed paragraph sharing the steps in validating a vaccine.</item>
+      <item>Using a minimum of two sources, compose a well-developed paragraph describing how a vaccine is determined to be validated.</item>
+      <item>Using your research for Questions 1–3, write a summary paragraph sharing your reflections on the validation of the Covid-19 vaccine or on validating a vaccine in general. What key components did you learn? What would you like to learn more about related to validating a vaccine?</item>
+      </list>
+      </section>
+      <section id="sect-00021">
+      <title>Frequency and Ultrasonic Sounds</title>
+       <para id="para-00096">Ultrasonic sounds have been utilized for a variety of reasons, from purportedly repelling rodents and other animals as well as a variety of other applications. Using an Internet search, complete the following questions to explore some of these applications and examine the validity of various claims.</para>
+      <section id="sect-00022">
+      <title>Repelling Insects, Rodents, and Small Animals</title>
+      <para id="para-00097">Some radio stations purport to play a high pitch sound dually with their music to aid in deterring insects and other annoying bugs to aid in providing a bug-reduced listening environment. To deter small rodents, some products claim to emit ultrasonic sounds that drive away mice and other similar pests.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00011">
+      <item>Research the science behind ultrasonic pest controls, paying attention to the source of the information that you find. Compare the information found on advertisements, reviews, and scientific articles.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00012">
+      <item>What frequency ranges do ultrasonic pest deterrent devices utilize and how do these frequencies compare to the audible range that humans can hear?</item>
+      <item>Write a short paragraph comparing the claims in the advertisements with independent reviews and scientific articles.</item>
+      <item>What do you conclude about ultrasonic pest controls and why?</item>
+      </list></item>
+      </list>
+      </section>
+      <section id="sect-00023">
+      <title>Disbursing Teenagers</title>
+       <para id="para-00098">Some business owners and communities have turned to products such as the “mosquito” sonic deterrent device to discourage groups of teenagers from loitering around storefronts and community landmarks, citing a public nuisance issue and public safety concerns.</para>
+      <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00013">
+      <item>Research the science behind ultrasonic deterrent devices as they apply to dispensing teenagers. Compare the information found on advertisements, reviews, and scientific articles.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
+      <item>What frequency ranges do ultrasonic teenager deterrent devices utilize and how do these frequencies compare to the audible range that adults can hear?</item>
+      <item>Write a short paragraph comparing the claims in advertisements with independent reviews and scientific articles.</item>
+      <item>What are some of the ethical debates surrounding the use of ultrasonic teenager deterrent devices?</item>
+      <item>What do you conclude about business owners or communities using ultrasonic teenager deterrent devices and why?</item>
+      </list></item>
+      </list>
+      </section>
+      <section id="sect-00024">
+      <title>Jewelry Cleaner</title>
+      <para id="para-00099">Use of pastes and liquid chemicals to clean jewelry can be harsh on stones as well as metals. So how can we safely obtain the sparkling clean look at home that jewelry stores provide? Some would say the answer is to use an ultrasonic jewelry cleaner, but do these really work?</para>
+      <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00015">
+      <item>Research the science behind ultrasonic jewelry cleaners, including the phrase “cavitation process” in your search. Compare the information found on advertisements, reviews, and scientific articles.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00016">
+      <item>Write a short paragraph detailing how ultrasonic jewelry cleaners work and what role the cavitation process plays in the claims for ultrasonic cleaning.</item>
+      <item>Do ultrasonic jewelry cleaners utilize low or high frequencies? How do these frequencies compare to the audible range that humans can hear?</item>
+      <item>Write a short paragraph comparing the claims in the advertisements with independent reviews and scientific articles.</item>
+      <item>What do you conclude about ultrasonic jewelry cleaners and why?</item>
+      </list></item>
+      </list>
+      </section>
+      <section id="sect-00025">
+      <title>Specialized Ringtones</title>
+      <para id="para-00100">As the use of cell phones has become commonplace and families grow towards each member having their own cell phone, specialized ringtones have become popular and can aid in identifying who is calling just by the ringtone.</para>
+      <para id="para-00101">Ever hear of ringtones that can be heard by teens but often not their teachers? The banning of cell phone use by K–12 students during class time as been implemented across a wide array of schools and some students have purportedly found ways to get around teachers hearing a cell phone ring through the use of ultrasonic ringtones.</para>
+      <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00017">
+      <item>Research the science behind ultrasonic ringtones. Compare the information found on advertisements, reviews, and scientific articles.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00018">
+      <item>Do ultrasonic ringtones utilize low or high frequencies?</item>
+      <item>Write a short paragraph detailing how ultrasonic ringtones work. How do these frequencies compare to the audible range that adults can hear? Include ages that are purported to hear and not hear the ringtones as well as the frequency ranges utilized.</item>
+      <item>Write a short paragraph comparing the claims in the advertisements with independent reviews and scientific articles.</item>
+      <item>What do you conclude about ultrasonic ringtones and why?</item>
+      </list></item>
+      </list>
+      </section>
+      </section>
+      <section id="sect-00026">
+      <title>Streaming Services and Math</title>
+      <para id="para-00102">With the ability to stream music virtually anywhere you are, it is not surprising that Google Play Music, Apple Music, and a slew of other companies such as Spotify, Amazon Music, YouTube Music, Sound Cloud, Pandora, Deezer Music, Tidal, Napster, and Bandcamp have invested heavily to bring streaming service to users worldwide. Streaming services have expanded to offer virtually every genre of music with vast libraries to meet diverse user requests.</para>
+      <para id="para-00056">Considering all of the choices available for streaming music, there is a wide array of options for subscribing. Conduct an Internet research to review your current streaming choices, if any, and evaluate competitors’ products.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00019">
+      <item>In this project, you will explore options for music streaming service subscriptions. Select a minimum of five streaming services listed above that you are not currently utilizing and determine the below components. Format your findings in an easy-to-read format such as a table similar to the one shown below.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00020">
+      <item>Monthly subscription cost</item>
+      <item>Available features
+      <table class="unnumbered" summary="." id="table-00003">
+      <tgroup cols="6">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <colspec colnum="4" colname="c4" colwidth="1pt"/>
+      <colspec colnum="5" colname="c5" colwidth="1pt"/>
+      <colspec colnum="6" colname="c6" colwidth="1pt"/>
+      <thead>
+      <row>
+      <entry>Available Features</entry>
+      <entry>Service Choice 1:</entry>
+      <entry>Service Choice 2:</entry>
+      <entry>Service Choice 3:</entry>
+      <entry>Service Choice 4:</entry>
+      <entry>Service Choice 5:</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry><emphasis effect="bold">Able to stream unlimited music</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Able to purchase individual songs</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Able to purchase individual whole albums</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Ability to create personalized play lists</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Ability to select specific songs to play</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Ability to listen</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      <row>
+      <entry><emphasis effect="bold">Other =</emphasis></entry>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      <entry/>
+      </row>
+      </tbody>
+      </tgroup>
+      </table></item>
+      </list></item>
+      <item>Premium cost per month, if available = ______
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00021">
+      <item>Feature(s) offered with premium monthly subscription = ______</item>
+      </list></item>
+      <item>What is (are) your current music streaming services, if any?
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00022">
+      <item>What is your current monthly service charge(s)?</item>
+      <item>What features does your current streaming service offer?</item>
+      </list></item>
+      <item>Write a paragraph summarizing your findings and include if your current streaming service(s) meets your needs or if research for this project has you considering changing streaming services. Support your rationale.</item>
+      </list>
+      </section>
+      <section id="sect-00027">
+      <title>Math and Baseball</title>
+      <para id="para-00031">Baseball is known to have one of the largest pools of statistics related to the game and its players. Managers, coaches, and pitchers study the statistics of the players on opposing teams to give their team an edge by knowing what pitches to throw for the best probability to be missed by a batter. In similar fashion, batters study pitchers’ statistics to learn a pitcher’s strength and how to predict what a pitcher will throw and how to best hit against a pitcher.</para>
+      <para id="para-00032">The three primary baseball statistics are batting average, home runs, and runs batted in (RBIs), which are the components of the title of Triple Crown winner that is awarded to players who dominate in these three areas. However, there is a wealth of other statistics to evaluate when studying the performance of a player.</para>
+      <para id="para-00033">Conduct an Internet search to research statistics and how they are calculated in the following categories:</para>
+      <section id="sect-00028">
+      <title>Batting Statistics</title>
+      <list list-type="enumerated" number-style="arabic" id="list-00023">
+      <item>There are about 30 batting statistics. Select a minimum of 10 batting statistics. Compose an organized list including the name of the statistic, abbreviation, explanation of what it represents, as well as how it is calculated.<newline/>
+      As an example: AB/HR represents <emphasis effect="italic">at bats per home run</emphasis> and is calculated by the number of times a player is at bat divided by home runs.</item>
+      </list>
+      </section>
+      <section id="sect-00029">
+      <title>Pitching Statistics</title>
+      <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00024">
+      <item>There are about 40 pitching statistics. Select a minimum of 10 pitching statistics. Compose an organized list including the name of the statistic, abbreviation, explanation of what it represents, as well as how it is calculated.<newline/>
+      As an example: K/9 represents <emphasis effect="italic">strikeouts per nine innings</emphasis> and is calculated by the number of strikeouts times nine divided by the number of innings pitched.</item>
+      </list>
+      </section>
+      <section id="sect-00030">
+       <title>Fielding Statistics</title>
+       <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00025">
+       <item>There are around 10 fielding statistics. Select a minimum of five fielding statistics. Compose an organized list including the name of the statistic, abbreviation, explanation of what it represents, as well as how it is calculated.<newline/>
+      As an example: FP represents <emphasis effect="italic">fielding percentage</emphasis> is calculated by the number of total plays divided by the number of total chances.</item>
+      </list>
+      </section>
+      <section id="sect-00031">
+      <title>Overall</title>
+      <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00026">
+      <item>Select a player from recent years to evaluate. The player can be one that you have followed, one from a favorite team, or any current player. Find the statistics shared in Questions 1–3 to use in evaluating the potential strengths and weaknesses of the player. Write a short paragraph analyzing your selected player, supported by the statistics from the answers to Questions 1–3.</item>
+      </list>
+      </section>
+      </section>
+      <section id="sect-00032">
+      <title>Math and Fantasy Football</title>
+      <para id="para-00035">Fantasy football offers spectators an added dimension to football season with a competitive math-based game where the active components are real-life players in the current season. For clarity in this exercise, the actual fantasy football players will be denoted as FFP and actual professional team members will be denoted as players.</para>
+      <para id="para-00036">While some fantasy football leagues have slightly different setups or scoring systems, most share some common elements.</para>
+      <para id="para-00037">Often using a lottery system to determine who picks first, second, and so on, FFPs select 15 current players to comprise their personal fantasy football team. The players selected can be from any professional teams and a FFP can utilize any team recognized by their league. FFPs can elect to keep the same players on their team for the whole league play or trade for any player not selected by another FFP in their league.</para>
+      <para id="para-00038">At the start of each week during football season, each fantasy football player selects their roster of actual players to comprise their roster of starting players. Typically, a starting roster consists of the following players:
+      <table class="unnumbered" summary="." id="table-00004">
+      <tgroup cols="3">
+      <colspec colnum="1" colname="c1" colwidth="1pt"/>
+      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="3" colname="c3" colwidth="1pt"/>
+      <thead>
+      <row>
+      <entry>Number to Select</entry>
+      <entry>Position Abbreviation</entry>
+      <entry>Position Title</entry>
+      </row>
+      </thead>
+      <tbody>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">QB</entry>
+      <entry>Quarterback</entry>
+      </row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">K</entry>
+      <entry>Kicker</entry>
+      </row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">TE</entry>
+      <entry>Tight End</entry>
+      </row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">RB</entry>
+      <entry>Running Back</entry>
+      </row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">D/ST</entry>
+      <entry>Defense</entry>
+      </row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>2</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">WR</entry>
+      <entry>Wide receiver</entry>
+      </row>
+      <row>
+      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>1</mn></math></entry>
+      <entry xmlns="http://cnx.rice.edu/cnxml">RB or WR</entry>
+      <entry>Flex</entry>
+      </row>
+      </tbody>
+      </tgroup>
+      </table></para>
+      <para id="para-00039">As actual professional games are played, points are tallied based on your league’s scoring system. The points the team members on your starting roster make during the week are computed and whichever FFP has the highest score for the week wins that week.</para>
+      <para id="para-00040">The FFPs with the best records of wins versus losses enters fantasy football playoffs to determine the ultimate league champion and collects the pot.</para>
+      <para id="para-00041">The above overview of fantasy football describes the basic game play. The fun comes in understanding and analyzing the math behind the scoring.
+      <list list-type="enumerated" number-style="arabic" id="list-00027">
+      <item>Talk to people you know who have played fantasy football in the past and interview them. Inquire about how they select players and how league(s) they have played in have computed the weekly scoring.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00028">
+      <item>Was a league manager recruited to manage the record keeping of scores?</item>
+      <item>Was an online scoring system utilized or did the fantasy football use a streamlined or specialized scoring system?</item>
+      <item>What strategies were used to select the team of 15 players and who would be on the weekly starting roster?</item>
+      <item>Were any online resources utilized to aid in choosing which players to select?</item>
+      <item>How was math utilized to select team members or who to place as a starter each week? Be as specific as possible, citing examples when available.</item>
+      </list></item>
+      <item>Conduct an Internet research to find two different resources that a FFP could utilize when selecting players for their team or for their starting roster. Describe the math involved in the resources.</item>
+      <item>Conduct an Internet research to learn more about the scoring utilized by fantasy football leagues. Write a short paragraph sharing how the use of math and knowledge of football statistics is used and how they are calculated to aid a FFP in selecting their team and starting roster.</item>
+      </list></para>
+      </section>
+      <section id="sect-00033">
+      <title>Math and Hockey</title>
+      <para id="para-00043">Hockey is full of math from obvious components such as scoring and statistics to the shape of the rink and the angles involved in puck movement.</para>
+      <para id="para-00044">Collegiate and professional hockey games are 60 minutes long and are divided into three periods of 20 (60/3) minutes each. At any one time, there are five players and one goalie on the ice for each team. If a player is called on a penalty and is placed in the penalty box, that team now has four players, which is 20% less players on the ice competing against five opponents. In some instances, a team may have two players in the penalty box at one time, resulting in three players, or 40% less players on the ice compared to a full team. Being one player down for a 2-minute penalty or potentially 5 minutes for a major penalty leads to an imbalance on the ice and calls for a quick change of offense and defense strategy.</para>
+      <section id="sect-00034">
+      <title>Rink Composition—North American</title>
+      <para id="para-00103">An ice rink is comprised of various geometrical shapes, each with precise dimensions.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00029">
+      <item>Research the dimensions of a hockey rink and draw an accurate scale model on graph paper. Be sure to include the scale for your model and indicate all units.<newline/>
+      Answer:
+      <figure id="fig-00004">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_13_05_003.png"/>
+      </media>
+      </figure></item>
+      <item>List the shapes and the numbers of each kind of hockey rink. You should find four different shapes, some with multiple dimensions.<newline/>
+      Answer: A North American ice hockey rink is comprised of the following shapes:
+      <list bullet-style="bulleted" id="list-00030">
+      <item>Rectangle: A center rectangle measuring 50 feet long by 44 feet wide. Each width end of the center rectangle contains a side rectangle 30 feet long by 44 feet wide.</item>
+      <item>Trapezoid: At the end of each of the side rectangles, is what is referred to as a trapezoid, with length 11 feet narrowing to a width of 6 feet. Mathematically, the trapezoid is not a geometric trapezoid as the non-parallel sides are curved rather than straight.</item>
+      <item>Circle: There are five face-off circles, each with a radius of 15 feet.</item>
+      <item>Semi-circle: There are three semi-circles, two in front of each goal post with a radius of 4 feet and one in the middle of the ice rink.</item>
+      </list></item>
+      <item>Describe the shape and dimensions of a hockey puck using geometric vocabulary.<newline/>
+      Answer: A hockey puck is in the shape of a short right circular cylinder with a height of 1 inch and diameter of 3 inches.</item>
+      </list>
+      </section>
+      <section id="sect-00035">
+      <title>Statistics</title>
+      <para id="para-00104">Using an Internet search, select two top hockey players from the same league to answer the following questions:</para>
+      <list list-type="enumerated" number-style="arabic" start-value="4" id="list-00031">
+      <item>Write a paragraph sharing a minimum of five statistics for each player you have selected. Describe how each of the statistics are calculated and what each statistic means.</item>
+      <item>Write a paragraph comparing the two players and determine who you believe is the better player. Support your choice.</item>
+       </list>
+      </section>
+      </section>
+      <section id="sect-00036">
+       <title>Scoring</title>
+      <para id="para-00105">The basics of scoring in ice hockey is simple, the team with the most goals is the winner. But, how to score the most goals involves much math!</para>
+      <list list-type="enumerated" number-style="arabic" start-value="6" id="list-00032">
+      <item>Research one of the following components involved in hockey puck movement on the ice and write a paragraph summarizing your findings. Be specific and detailed in your summary.
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00033">
+      <item>Angles</item>
+      <item>Velocity vectors</item>
+      <item>Angle of incident and angle of return</item>
+      <item>Speed and acceleration (player as well as puck movement)</item>
+      </list>
+      </item>
+       </list>
+      </section>
+      </section>
+      <section id="sect-00037">
+      <title>Math and Soccer</title>
+      <para id="para-00046">As the world’s most popular sport, you’ll be excited to confirm that soccer is full of mathematics ranging from scoring and statistics to footwork, angles, and field shape.</para>
+      <para id="para-00047">Soccer requires understanding of mathematical concepts and equations as well as skill, fitness, and game knowledge. One such example is angles, which you all will remember from your geometry class. While players are not carrying protractors and measuring angles during play, mental calculation of angles is a constant in any successful player’s thinking. A goalie is not physically able to cover the entire open net region and a player must calculate an angle to kick the ball consistent with the net opening while predicting the ability of the goalie to stop the ball from entering the net.</para>
+      <list list-type="enumerated" number-style="arabic" id="list-00034">
+      <item>Research angles as they apply to soccer play. Provide two examples of different plays indicating angle of a player’s body, angle of foot striking the ball, and angle to the net. Include relevant dimensions. Adding a diagram that may aid in clarity is an option.</item>
+      </list>
+      <para id="para-00048">There are multiple geometric shapes found on a soccer field, including rectangles, a circle, and quarter-circles.</para>
+      <list list-type="enumerated" number-style="arabic" start-value="2" id="list-00035">
+      <item>Draw a scale model of a soccer field including dimensions with labels.<newline/>
+      Answer: 
+      <figure id="fig-00005">
+      <media alt="Insert Alt Text">
+      <image mime-type="image/png" src="../../media/CS_Figure_13_05_004.png"/>
+      </media>
+      </figure>
+      </item>
+      </list>
+      <para id="para-00049">Using an Internet search, select two top soccer players from the same league to answer the following questions:
+      <list list-type="enumerated" number-style="arabic" start-value="3" id="list-00036">
+      <item>Write a paragraph sharing a minimum of five statistics for each player you have selected. Describe how each of the statistics are calculated and what each statistic means.</item>
+      <item>Write a paragraph comparing the two players and determine who you believe is the better player. Support your choice.</item>
+      </list>
+      </para>      
     </section>
     <section class="chapter-review" id="sect-00011">
     <title>Chapter Review</title>
@@ -365,7 +700,7 @@
     </exercise>
     <exercise id="exer-00015">
     <problem id="prob-00015">
-    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C13-M5-Q015"/></para>
+    <para id="para-00106"><link class="os-embed" url="#exercise/CM-C13-M5-Q015"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00016">
@@ -383,7 +718,7 @@
     <title><link document="m00113">Section 13.2 Math and the Environment</link></title>
     <exercise id="exer-00018">
     <problem id="prob-00018">
-    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C13-M5-Q018"/></para>
+    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C13-M5-Q018"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00019">
@@ -408,7 +743,7 @@
     </exercise>
     <exercise id="exer-00023">
     <problem id="prob-00023">
-    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C13-M5-Q023"/></para>
+    <para id="para-00108"><link class="os-embed" url="#exercise/CM-C13-M5-Q023"/></para>
     </problem>
     </exercise>
     </section>
@@ -416,7 +751,7 @@
     <title><link document="m00114">Section 13.3 Math and Medicine</link></title>
     <exercise id="exer-00024">
     <problem id="prob-00024">
-    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C13-M5-Q024"/></para>
+    <para id="para-00109"><link class="os-embed" url="#exercise/CM-C13-M5-Q024"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00025">
@@ -441,7 +776,7 @@
     </exercise>
     <exercise id="exer-00029">
     <problem id="prob-00029">
-    <para id="para-00067"><link class="os-embed" url="#exercise/CM-C13-M5-Q029"/></para>
+    <para id="para-00110"><link class="os-embed" url="#exercise/CM-C13-M5-Q029"/></para>
     </problem>
     </exercise>
     </section>
@@ -449,7 +784,7 @@
     <title><link document="m00115">Section 13.4 Math and Music</link></title>
     <exercise id="exer-00030">
     <problem id="prob-00030">
-    <para id="para-00068"><link class="os-embed" url="#exercise/CM-C13-M5-Q030"/></para>
+    <para id="para-00111"><link class="os-embed" url="#exercise/CM-C13-M5-Q030"/></para>
     </problem>
     </exercise>
     <exercise id="exer-00031">
