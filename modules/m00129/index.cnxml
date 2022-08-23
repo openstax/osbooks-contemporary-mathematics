@@ -7,28 +7,26 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-    <code/>
-    <!--<media alt="Insert Alt Text">
-    <image mime-type="image/png" src="../../media/**"/>
-    </media>-->
-    <caption>[caption TK] (credit: Wikimedia Commons/M.C. Escher)</caption>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_10_05_001.jpg"/>
+    </media>
+    <caption>[caption TK] (credit: "Penrose Tiling" by Inductiveload/Wikimedia Commons, Public Domain)</caption>
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
-    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <para id="para-00001">After completing this section, you should be able to:</para>
     <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Apply translations, rotations, and reflections.</item>
     <item>Determine if a shape tessellates.</item>
     </list>
     </section>
-    <para id="para-00002">The illustration shown above is an unusual pattern. Notice that there are 14 white birds and 14 grey birds, and each one is different. As you will learn, this type of design, which comprises repeated shapes, primarily polygons, that fit together to fill the plane with no gaps or overlaps, is called a tessellation. Yet, this Escher print works as if a single motif replicated infinitely.</para>
+    <para id="para-00002">The illustration shown above is an unusual pattern. Notice that there are 14 white birds and 14 grey birds, and each one is different. As you will learn, this type of design, which is comprised of repeated shapes, is called a tessellation. Yet, this composition works as if a single motif replicated infinitely.</para>
     <para id="para-00003">Repeated patterns are found in architecture, fabric, floor tiles, wall patterns, rug patterns, and many unexpected places as well. It may be a simple hexagon-shaped floor tile, or a complex pattern comprised of several different motifs. These two-dimensional designs are called tessellations. There are countless designs that may be classified as tessellations, and they all have one thing in common—their patterns repeat and cover the plane.</para>
     <para id="para-00004">Patterns created using tessellations can be quite common or exceptionally striking, but they each lend a sense of organization and add interest to a surface. Some are as plain as a solid-color, one-shape tiling of a floor, and some are composed of multiple objects with intricate changes in a motif. Those represent the type of design you find yourself staring at for a long time trying to decipher the pattern. In this section, we will explore how tessellations are created and experiment with making some of our own as well. The topic of tessellations belongs to a field in mathematics called transformational geometry, which is a study of the ways objects can be moved while retaining the same shape and size. These movements are termed <emphasis effect="italic">rigid motions</emphasis> and <emphasis effect="italic">symmetries</emphasis>.</para>
     <note class="who-knew" id="note-00001">
     <title>M. C. Escher</title>
-    <para id="para-00005">The study of tessellations must begin with the work of M. C. Escher. The Dutch graphic artist was famous for the dimensional illusions he created in his woodcuts and lithographs, and that theme is carried out in many of his tessellations as well. Escher became obsessed with the idea of the “regular division of the plane.” He sought ways to divide the plane with shapes that would fit snuggly next to each other with no gaps or overlaps, represent beautiful patterns, and could be repeated infinitely to fill the plane. He experimented with practically every geometric shape imaginable and found the ones that would produce a regular division of the plane. The idea is similar to dividing a number by one of its factors. When a number divides another number evenly, there are no remainders, like there are no gaps when a shape divides or fills the plane.</para>
+    <para id="para-00005">The study of tessellations must begin with the work of M. C. Escher. The Dutch graphic artist was famous for the dimensional illusions he created in his woodcuts and lithographs, and that theme is carried out in many of his tessellations as well. Escher became obsessed with the idea of the “regular division of the plane.” He sought ways to divide the plane with shapes that would fit snugly next to each other with no gaps or overlaps, represent beautiful patterns, and could be repeated infinitely to fill the plane. He experimented with practically every geometric shape imaginable and found the ones that would produce a regular division of the plane. The idea is similar to dividing a number by one of its factors. When a number divides another number evenly, there are no remainders, like there are no gaps when a shape divides or fills the plane.</para>
     <para id="para-00006">Escher went far beyond geometric shapes, beyond triangles and polygons, beyond irregular polygons, and used other shapes like figures, faces, animals, fish, and practically any type of object to achieve his goal; and he did achieve it, beautifully, and left it for the ages to appreciate.</para>
-    <para id="para-00007">In this section, we will explore how tessellations are created and experiment with making some of our own as well. The topic of tessellations belongs to a field in mathematics called transformational geometry, which is a study of the ways objects can be moved while retaining the same shape and size. These movements are termed rigid motions and symmetries.</para>
     </note>
     <note class="video" id="note-00002">
     <para id="para-00008"><link url="https://openstax.org/r/ZNVyrxdlrGQ">M.C. Escher: How to Create a Tessellation</link></para>
@@ -60,7 +58,7 @@
     <para id="para-00012">The movements or rigid motions of the shapes that define tessellations are classified as translations, rotations, reflections, or glide reflections. Let’s first define these movements and then look at some examples showing how these transformations are revealed.</para>
     <section id="sect-00003">
     <title>Translation</title>
-    <para id="para-00013">A translation is a movement that shifts the shape vertically, horizontally, or on the diagonal. Consider the trapezoid <emphasis effect="italic">ABCD</emphasis> in Figure 10.33. We have translated it three units to the right and three units up. That means every corner is moved by the number of units and in the direction specified. Mathematicians will indicate this movement with a vector, an arrow that is drawn to illustrate the criteria and the magnitude of the translation. The location of the translated trapezoid is marked with the vertices, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup><msup><mi>D</mi><mo>′</mo></msup><mo>,</mo></mrow></math> but it is still the exact same shape and size as the original trapezoid <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">ABCD</emphasis>.</para>
+    <para id="para-00013">A translation is a movement that shifts the shape vertically, horizontally, or on the diagonal. Consider the trapezoid <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></math> in Figure 10.33. We have translated it 3 units to the right and 3 units up. That means every corner is moved by the number of units and in the direction specified. Mathematicians will indicate this movement with a vector, an arrow that is drawn to illustrate the criteria and the magnitude of the translation. The location of the translated trapezoid is marked with the vertices, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup><msup><mi>D</mi><mo>′</mo></msup><mo>,</mo></mrow></math> but it is still the exact same shape and size as the original trapezoid <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></math>.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_030.png"/>
@@ -80,7 +78,7 @@
     </figure>
     </problem>
     <solution id="sol-00001">
-    <para id="para-00015">The best way to do this is by translating the individual points <emphasis effect="italic">A, B, C, D, E, F</emphasis>. Once translated, the points become <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>,</mo><msup><mi>B</mi><mo>′</mo></msup><mo>,</mo><msup><mi>C</mi><mo>′</mo></msup><mo>,</mo><msup><mi>D</mi><mo>′</mo></msup><mo>,</mo><msup><mi>E</mi><mo>′</mo></msup><mo>,</mo><msup><mi>F</mi><mo>′</mo></msup><mo>.</mo></mrow></math></para>
+    <para id="para-00015">The best way to do this is by translating the individual points <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo>,</mo><mi>E</mi><mo>,</mo><mi>F</mi></mrow></math>. Once translated, the points become <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><mo>,</mo><msup><mi>B</mi><mo>′</mo></msup><mo>,</mo><msup><mi>C</mi><mo>′</mo></msup><mo>,</mo><msup><mi>D</mi><mo>′</mo></msup><mo>,</mo><msup><mi>E</mi><mo>′</mo></msup><mo>,</mo><msup><mi>F</mi><mo>′</mo></msup><mo>.</mo></mrow></math></para>
     <figure id="fig-00006" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN002.png"/>
@@ -100,7 +98,7 @@
     </section>
     <section id="sect-00004">
     <title>Rotation</title>
-    <para id="para-00017">The rotation transformation occurs when you rotate a shape about a point and at a predetermined angle. In Figure 10.34, the triangle is rotated around the red rotation point by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and then translated seven units up and four units over to the right. That means that each corner is translated to the new location by the same number of units and in the same direction.</para>
+    <para id="para-00017">The rotation transformation occurs when you rotate a shape about a point and at a predetermined angle. In Figure 10.34, the triangle is rotated around the rotation point by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and then translated 7 units up and 4 units over to the right. That means that each corner is translated to the new location by the same number of units and in the same direction.</para>
     <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_031.png"/>
@@ -145,7 +143,7 @@
     </section>
     <section id="sect-00006">
     <title>Glide Reflection</title>
-    <para id="para-00023">The glide reflection is the fourth transformation. It is a combination of a reflection and a translation. This can occur by first reflecting the shape and then gliding or translating it to its new location, or by translating first and then reflecting. The example in Figure 10.36 shows a trapezoid, which is reflected over the dashed line, so it appears upside down. Then, we shifted the shape horizontally by six units to the right. Whether we use the glide first or the reflection first, the end result is the same in most cases. However, the tessellation shown in the next example can only be achieved by a reflection first and then a translation.</para>
+    <para id="para-00023">The glide reflection is the fourth transformation. It is a combination of a reflection and a translation. This can occur by first reflecting the shape and then gliding or translating it to its new location, or by translating first and then reflecting. The example in Figure 10.36 shows a trapezoid, which is reflected over the dashed line, so it appears upside down. Then, we shifted the shape horizontally by 6 units to the right. Whether we use the glide first or the reflection first, the end result is the same in most cases. However, the tessellation shown in the next example can only be achieved by a reflection first and then a translation.</para>
     <figure id="fig-00010">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_032b.png"/>
@@ -311,18 +309,10 @@
     </media>
     <caption>Tessellating with Obtuse Irregular Triangles</caption>
     </figure>
-    <para id="para-00044">First, the triangle is reflected over the tip at point <emphasis effect="italic">A</emphasis>, and then translated to the right and joined with the original triangle to form a parallelogram. The parallelogram is then translated on the diagonal and to the right and to the left.</para>
-    <para id="para-00045">Escher experimented with many shapes and used animals, birds, and fish to fill the plane. In one of his more famous tessellations called <emphasis effect="italic">Flying Fish,</emphasis> 1949 (Figure 10.XX), Escher uses fish. We can see the rotation transformation as the fish is rotated three times to make up the pattern; each one is reflected and then rotated <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>120</mn></mrow><mo>∘</mo></msup></mrow></math>. In between, the white fish are red fish in the opposite pattern that fit in perfectly.</para>
-    <figure id="fig-00023" xmlns="http://cnx.rice.edu/cnxml">
-    <code/>
-    <!--<media alt="Insert Alt Text">
-    <image mime-type="image/png" src="../../media/**"/>
-    </media>-->
-    <caption><emphasis effect="italic">Flying Fish</emphasis> by M.C. Escher (credit: Wikimedia Commons/M.C. Escher)</caption>
-    </figure>
+    <para id="para-00044">First, the triangle is reflected over the tip at point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, and then translated to the right and joined with the original triangle to form a parallelogram. The parallelogram is then translated on the diagonal and to the right and to the left.</para>
     <section id="sect-00009">
     <title>Naming</title>
-    <para id="para-00046">A tessellation of squares is named by choosing a vertex and then counting the number of sides of each shape touching the vertex. Each square in the tessellation shown in Figure 10.45 has four sides, so starting with square A, the first number is 4, moving around counterclockwise to the next square meeting the vertex, square <emphasis effect="italic">B</emphasis>, we have another 4, square <emphasis effect="italic">C</emphasis> adds another 4, and finally square <emphasis effect="italic">D</emphasis> adds a fourth 4. So, we would name this tessellation a 4.4.4.4.</para>
+    <para id="para-00046">A tessellation of squares is named by choosing a vertex and then counting the number of sides of each shape touching the vertex. Each square in the tessellation shown in Figure 10.45 has four sides, so starting with square A, the first number is 4, moving around counterclockwise to the next square meeting the vertex, square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>, we have another 4, square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> adds another 4, and finally square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>D</mi></math> adds a fourth 4. So, we would name this tessellation a 4.4.4.4.</para>
     <para id="para-00047">The hexagon tessellation, shown in Figure 10.46 has six sides to the shape and three hexagons meet at the vertex. Thus, we would name this a 6.6.6. The triangle tessellation, shown in Figure 10.47 has six triangles meeting the vertex. Each triangle has three sides. Thus, we name this a 3.3.3.3.3.3.</para>
     <figure id="fig-00024">
     <media alt="Insert Alt Text">
@@ -395,13 +385,9 @@
     <para id="para-00055"><link class="os-embed" url="#exercise/CM-C10-M5-Q012"/></para>
     </problem>
     </exercise>
-    <exercise id="exer-00020">
-    <problem id="prob-00020">
-    <para id="para-00056"><link class="os-embed" url="#exercise/CM-C10-M5-Q013"/></para>
-    </problem>
-    </exercise>
     </section>
     <section class="section-exercises" id="sect-00011">
+    <title>Exercises</title>
     <exercise id="exer-00021">
     <problem id="prob-00021">
     <para id="para-00057"><link class="os-embed" url="#exercise/CM-C10-M5-Q014"/></para>
@@ -548,4 +534,4 @@
     </list>
     </section>
     </content>
-    </document>
+    </document>    
