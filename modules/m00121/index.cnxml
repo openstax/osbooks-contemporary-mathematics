@@ -22,7 +22,7 @@
     </list>
     </section>
     <para id="para-00002">In Section 12.5 and Section 12.6, we looked for circuits and paths that visited each <emphasis effect="italic">edge</emphasis> of a graph exactly once. In this section, we will look for circuits that visit each <emphasis effect="italic">vertex</emphasis> exactly once. Like many concepts in graph theory, the idea of a circuit that visits each vertex once was inspired by games and puzzles. As early as the ninth century, Indian and Islamic intellectuals wondered whether it was possible for a knight to visit every space on a chess board of a given size, which is equivalent to visiting every vertex of a graph that represents the chess board.</para>
-   <para id="para-00068">In 1857, a mathematician named William Rowan Hamilton invented a puzzle in which players were asked to find a route along the edges of a dodecahedron (see Figure 12.187) which visited every vertex exactly once. Let’s explore how graph theory provides insight into these games as well as practical applications such as the Traveling Salesman Problem.</para>
+   <para id="para-00067">In 1857, a mathematician named William Rowan Hamilton invented a puzzle in which players were asked to find a route along the edges of a dodecahedron (see Figure 12.187) which visited every vertex exactly once. Let’s explore how graph theory provides insight into these games as well as practical applications such as the Traveling Salesman Problem.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_07_187.png"/>
@@ -482,8 +482,8 @@
     <title>Key Terms</title>
     <list bullet-style="bulleted" id="list-00006">
     <item>Hamilton cycle, or Hamilton circuit</item> 
-    <item><emphasis effect="itelic">n</emphasis> factorial</item> 
-    <item>weighted graph</item>
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> factorial</item> 
+    <item xmlns="http://cnx.rice.edu/cnxml">weighted graph</item>
     <item>total weight</item>
     </list>
     </section>
@@ -501,10 +501,6 @@
     <title>Formulas</title>
     <para id="para-00065">The number of ways to arrange n distinct objects is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>!</mo></mrow></math>.</para>
     <para id="para-00066" xmlns="http://cnx.rice.edu/cnxml">The number of distinct Hamilton cycles in a complete graph with n vertices is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>!</mo></mrow></math></para>
-    </section>
-    <section class="eoc-videos" id="sect-00012" xmlns="http://cnx.rice.edu/cnxml">
-    <title>Videos</title>
-    <para id="para-00067"><link url="https://openstax.org/r/Working_on_these">Working on these</link></para>
-    </section>
-    </content>
-    </document>
+   </section>
+   </content>
+   </document>
