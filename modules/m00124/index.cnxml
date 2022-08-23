@@ -10,11 +10,11 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_10_001.jpg"/>
     </media>
-    <caption>[caption TK] (credit: xxx)</caption>
+    <caption>[caption TK] (credit: "Row of trees in Roslev" by AKA CJ/Flickr, Public Domain)</caption>
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
-    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <para id="para-00001">After completing this section, you should be able to: </para>
     <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Describe and identify trees.</item>
     <item>Determine a spanning tree for a connected graph.</item>
@@ -118,14 +118,14 @@
     </section>
     <section id="sect-00004">
     <title>Characteristics of Trees</title>
-    <para id="para-00013">As we study trees, it is helpful to be familiar with some of their characteristics. For example, if you add an edge to a tree graph between any two existing vertices, you will create a cycle, and the resulting graph is no longer a tree. Some examples are shown in Figure 12.250. Adding edge <emphasis effect="italic">bj</emphasis>to graph T creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">rt</emphasis> to graph P creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">tv</emphasis> to graph S creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>t</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
+    <para id="para-00013">As we study trees, it is helpful to be familiar with some of their characteristics. For example, if you add an edge to a tree graph between any two existing vertices, you will create a cycle, and the resulting graph is no longer a tree. Some examples are shown in Figure 12.250. Adding edge <emphasis effect="italic">bj</emphasis> to graph T creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">rt</emphasis> to graph P creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">tv</emphasis> to graph S creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>t</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
     <figure id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_250.png"/>
     </media>
     <caption>Adding an Edges to Trees</caption>
     </figure>
-    <para id="para-00014">It is also true that removing an edge from a tree graph will increase the number of components and the graph will no longer be connected. In fact, you can see in Figure 12.251 that removing one or more edges can create a forest! Removing edge <emphasis effect="italic">qr</emphasis> from graph P creates a graph with two components, one with vertices <emphasis effect="italic">o, p</emphasis> and <emphasis effect="italic">q</emphasis>, and the other with vertices <emphasis effect="italic">r, s</emphasis>, and <emphasis effect="italic">t</emphasis>. Removing edge <emphasis effect="italic">uw</emphasis> from graph S creates two components, one with just vertex <emphasis effect="italic">w</emphasis> and the other with the rest of the vertices. When two edges were removed from graph T, edge <emphasis effect="italic">bf</emphasis> and edge <emphasis effect="italic">cd</emphasis>, creates a graph with three components as shown in Figure 12.251.</para>
+    <para id="para-00014">It is also true that removing an edge from a tree graph will increase the number of components and the graph will no longer be connected. In fact, you can see in Figure 12.251 that removing one or more edges can create a forest. Removing edge <emphasis effect="italic">qr</emphasis> from graph P creates a graph with two components, one with vertices <emphasis effect="italic">o, p</emphasis> and <emphasis effect="italic">q</emphasis>, and the other with vertices <emphasis effect="italic">r, s</emphasis>, and <emphasis effect="italic">t</emphasis>. Removing edge <emphasis effect="italic">uw</emphasis> from graph S creates two components, one with just vertex <emphasis effect="italic">w</emphasis> and the other with the rest of the vertices. When two edges were removed from graph T, edge <emphasis effect="italic">bf</emphasis> and edge <emphasis effect="italic">cd</emphasis>, creates a graph with three components as shown in Figure 12.251.</para>
     <figure id="fig-00009">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_251.png"/>
@@ -155,7 +155,7 @@
     <caption>Graphs I and J</caption>
     </figure>
     <list list-type="enumerated" number-style="arabic" id="list-00004">
-    <item>Which vertices are in each of the components that remain when edge <emphasis effect="italic">be</emphasis>is removed from graph I?</item>
+    <item>Which vertices are in each of the components that remain when edge <emphasis effect="italic">be</emphasis> is removed from graph I?</item>
     <item>Determine the number of edges and the number of vertices in graph J. Explain how this confirms that graph J is a tree.</item>
     <item>What kind of cycle is created if edge <emphasis effect="italic">im</emphasis> is added to graph J?</item>
     </list>
@@ -323,11 +323,11 @@
     <caption>Removing Four Edges from Graph D</caption>
     </figure>
     <figure id="fig-00024">
-      <media alt="Insert Alt Text">
-      <image mime-type="image/png" src="../../media/CS_Figure_12_10_267b.png"/>
-      </media>
-      <caption>Removing Four Edges from Graph D</caption>
-      </figure>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_10_267b.png"/>
+    </media>
+    <caption>Removing Four Edges from Graph D</caption>
+    </figure>
     <note class="video" id="note-00009">
     <para id="para-00038"><link url="https://openstax.org/r/Spanning_Trees_in_Graph_Theory">Spanning Trees in Graph Theory</link></para>
     </note>
@@ -366,7 +366,7 @@
     </media>
     <caption>Spanning Tree Formed Removing <emphasis effect="italic">ad</emphasis>, <emphasis effect="italic">af</emphasis>, and <emphasis effect="italic">hi</emphasis></caption>
     </figure>
-  </item>
+    </item>
     </list>
     </solution>
     </exercise>
@@ -481,9 +481,55 @@
     <problem id="prob-00015">
     <para id="para-00061"><link class="os-embed" url="#exercise/CM-C12-M10-Q008"/></para>
     </problem>
-    </exercise>
+   </exercise>
+   <exercise id="exer-00071">
+   <problem id="prob-00071">
+   <para id="para-00126"><link class="os-embed" url="#exercise/CM-C12-M10-Q064"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00072">
+   <problem id="prob-00072">
+   <para id="para-00127"><link class="os-embed" url="#exercise/CM-C12-M10-Q065"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00073">
+   <problem id="prob-00073">
+   <para id="para-00128"><link class="os-embed" url="#exercise/CM-C12-M10-Q066"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00074">
+   <problem id="prob-00074">
+   <para id="para-00129"><link class="os-embed" url="#exercise/CM-C12-M10-Q067"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00075">
+   <problem id="prob-00075">
+   <para id="para-00130"><link class="os-embed" url="#exercise/CM-C12-M10-Q068"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00076">
+   <problem id="prob-00076">
+   <para id="para-00131"><link class="os-embed" url="#exercise/CM-C12-M10-Q069"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00077">
+   <problem id="prob-00077">
+   <para id="para-00132"><link class="os-embed" url="#exercise/CM-C12-M10-Q070"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00078">
+   <problem id="prob-00078">
+   <para id="para-00133"><link class="os-embed" url="#exercise/CM-C12-M10-Q071"/></para>
+   </problem>
+   </exercise>
+   <exercise id="exer-00079">
+   <problem id="prob-00079">
+   <para id="para-00134"><link class="os-embed" url="#exercise/CM-C12-M10-Q072"/></para>
+   </problem>
+   </exercise>
     </section>
     <section class="section-exercises" id="sect-00010">
+   <title>Exercise</title>
     <exercise id="exer-00016">
     <problem id="prob-00016">
     <para id="para-00062"><link class="os-embed" url="#exercise/CM-C12-M10-Q009"/></para>
@@ -569,7 +615,7 @@
     <section class="formula-review" id="sect-00043">
     <title>Formulas</title>
     <list bullet-style="bulleted" id="list-00012">
-    <item>"	The number of edges in a tree graph with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> vertices is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math>. A connected graph with n vertices and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math> edges is a tree graph.</item>
+    <item>" The number of edges in a tree graph with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> vertices is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math>. A connected graph with n vertices and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></math> edges is a tree graph.</item>
     </list>
     </section>
     <section class="projects" id="sect-00014" xmlns="http://cnx.rice.edu/cnxml">
@@ -584,7 +630,7 @@
     <item>Use your solution to part d to determine the minimum number of timeslots you must use to ensure that everyone has the opportunity to participate in their top three events.</item> 
     <item>Find the complement of the graph you created in Exercise 3. Explain what the edges in this graph represent.</item> 
     </list>
-    <para id="para-00077"><emphasis effect="bold">A Beautiful Day in the Neighborhood – Euler Circuits</emphasis>.</para>
+    <para id="para-00077"><emphasis effect="bold">A Beautiful Day in the Neighborhood – Euler Circuits</emphasis></para>
     <para id="para-00078">Let’s apply what you have learned to the community in which you live. Using resources such as your county’s property appraiser’s website, create a detailed graph of your neighborhood in which vertices represent turns and intersections. Represent a large enough part of your community to include no fewer than 10 intersections or turns. Then use your graph to answer the following questions.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00014">
     <item>Label the edges of your graph.</item> 
@@ -593,7 +639,7 @@
     <item>What does the Euler circuit you found in part c represent for your community?</item>
     <item>Describe an application for which this Euler circuit might be used.</item> 
     </list>
-    <para id="para-00079"><emphasis effect="bold">Dream Vacation – Hamilton Cycles and Paths</emphasis>.</para>
+    <para id="para-00079"><emphasis effect="bold">Dream Vacation – Hamilton Cycles and Paths</emphasis></para>
     <para id="para-00080">Where in the world would you like to travel most: the Eiffel Tower in Paris, a Broadway musical in New York city, a bike tour of Amsterdam, the Tenerife whale and dolphin cruises in the Canary Islands, the Giza Pyramid in Cairo, or maybe the Jokhang Temple in Tibet? Let's plan your dream vacation!</para>
     <list list-type="enumerated" number-style="arabic" id="list-00015">
     <item>Which 4 destinations are at the top of your bucket list?</item>
@@ -624,16 +670,16 @@
     <para id="para-00083"><link class="os-embed" url="#exercise/CM-C12-M10-Q021"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00017">
+    </section>
+    <section id="sect-00017">
     <title><link document="m00110">12.2 Graph Structures</link></title>
     <exercise id="exer-00029">
     <problem id="prob-00029">
     <para id="para-00084"><link class="os-embed" url="#exercise/CM-C12-M10-Q022"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00018">
+    </section>
+    <section id="sect-00018">
     <title><link document="m00111">12.3 Comparing Graphs</link></title>
     <exercise id="exer-00030">
     <problem id="prob-00030">
@@ -650,8 +696,8 @@
     <para id="para-00087"><link class="os-embed" url="#exercise/CM-C12-M10-Q025"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00019">
+    </section>
+    <section id="sect-00019">
     <title><link document="m00117">12.4 Navigating Graphs</link></title>
     <exercise id="exer-00033">
     <problem id="prob-00033">
@@ -668,8 +714,8 @@
     <para id="para-00090"><link class="os-embed" url="#exercise/CM-C12-M10-Q028"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00020">
+    </section>
+    <section id="sect-00020">
     <title><link document="m00119">12.5 Euler Circuits</link></title>
     <exercise id="exer-00036">
     <problem id="prob-00036">
@@ -681,8 +727,8 @@
     <para id="para-00092"><link class="os-embed" url="#exercise/CM-C12-M10-Q030"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00021">
+    </section>
+    <section id="sect-00021">
     <title><link document="m00120">12.6 Euler Trails</link></title>
     <exercise id="exer-00038">
     <problem id="prob-00038">
@@ -699,8 +745,8 @@
     <para id="para-00095"><link class="os-embed" url="#exercise/CM-C12-M10-Q033"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00022">
+    </section>
+    <section id="sect-00022">
     <title><link document="m00121">12.7 Hamilton Cycles</link></title>
     <exercise id="exer-00041">
     <problem id="prob-00041">
@@ -722,8 +768,8 @@
     <para id="para-00099"><link class="os-embed" url="#exercise/CM-C12-M10-Q037"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00023">
+    </section>
+    <section id="sect-00023">
     <title><link document="m00122">12.8 Hamilton Paths</link></title>
     <exercise id="exer-00045">
     <problem id="prob-00045">
@@ -740,8 +786,8 @@
     <para id="para-00102"><link class="os-embed" url="#exercise/CM-C12-M10-Q040"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00024">
+    </section>
+    <section id="sect-00024">
     <title><link document="m00123">12.9 Traveling Salesman Problem</link></title>
     <exercise id="exer-00048">
     <problem id="prob-00048">
@@ -768,8 +814,8 @@
     <para id="para-00107"><link class="os-embed" url="#exercise/CM-C12-M10-Q045"/></para>
     </problem>
     </exercise>
-  </section>
-  <section id="sect-00025">
+    </section>
+    <section id="sect-00025">
     <title><link document="m00124">12.10 Trees</link></title>
     <exercise id="exer-00053">
     <problem id="prob-00053">
