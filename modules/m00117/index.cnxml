@@ -14,7 +14,7 @@
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
-    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <para id="para-00001">After completing this section, you should be able to: </para>
     <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Describe and identify walks, trails, paths, and circuits.</item>
     <item>Solve application problems using walks, trails, paths, and circuits.</item>
@@ -26,21 +26,21 @@
     <para id="para-00002">Now that we know the basic parts of graphs and we can distinguish one graph from another, it is time to really put our graphs to work for us. Many applications of graph theory involve navigating through a graph very much like you would navigate through a maze. Imagine that you are at the entrance to a maze. Your goal is to get from one point to another as efficiently as possible. Maybe there are treasures hidden along the way that make straying from the shortest path worthwhile, or maybe you just need to get to the end fast. Either way, you definitely want to avoid any wrong turns that would cause unnecessary backtracking. Luckily, graph theory is here to help!</para>
     <section id="sect-00002">
     <title>Walks</title>
-    <para id="para-00003">Suppose Figure 12.89 is a maze you want to solve. You want to get from the start to the end.</para>
+    <para id="para-00003">Suppose <link target-id="fig-00002" document="m00117">Figure 12.95</link> is a maze you want to solve. You want to get from the start to the end.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_089.png"/>
     </media>
     <caption>Your Maze</caption>
     </figure>
-    <para id="para-00004">You can approach this task any way you want. The only rule is that you can’t climb over the wall. To put this in the context of graph theory, let’s imagine that at every intersection and every turn, there is a vertex. The edges that join the vertices must stay within the walls. The graph within the maze would look like Figure 12.90.</para>
+    <para id="para-00004">You can approach this task any way you want. The only rule is that you can’t climb over the wall. To put this in the context of graph theory, let’s imagine that at every intersection and every turn, there is a vertex. The edges that join the vertices must stay within the walls. The graph within the maze would look like <link target-id="fig-00003" document="m00117">Figure 12.96</link>.</para>
     <figure id="fig-00003">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_090.png"/>
     </media>
     <caption>The Graph in Your Maze</caption>
     </figure>
-    <para id="para-00005">One approach to solving a maze is to just start walking. It is not the most efficient approach. You might cross through the same intersection twice. You might backtrack a bit. It’s okay. We are just out for a walk. It might look something like the black sequence of vertices and edges in Figure 12.91.</para>
+    <para id="para-00005">One approach to solving a maze is to just start walking. It is not the most efficient approach. You might cross through the same intersection twice. You might backtrack a bit. It’s okay. We are just out for a walk. It might look something like the black sequence of vertices and edges in <link target-id="fig-00004" document="m00117">Figure 12.97</link>.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_091.png"/>
@@ -48,7 +48,7 @@
     <caption>The Walk Through the Graph in Your Maze</caption>
     </figure>
     <para id="para-00006">This type of sequence of adjacent vertices and edges is actually called a <term id="term-00001">walk</term> (or <term id="term-00002">directed walk</term>) in graph theory too!</para>
-    <para id="para-00007">A walk can be identified by naming the sequence of its vertices (or by naming the sequence of its edges if those are labeled). Let’s take the graph out of the context of the maze and give each vertex a name and each edge of the walk a direction as in Figure 12.92.</para>
+    <para id="para-00007">A walk can be identified by naming the sequence of its vertices (or by naming the sequence of its edges if those are labeled). Let’s take the graph out of the context of the maze and give each vertex a name and each edge of the walk a direction as in <link target-id="fig-00005" document="m00117">Figure 12.98</link>.</para>
     <figure id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_092.png"/>
@@ -65,7 +65,7 @@
     </media>
     <caption>A Walk or Not a Walk?</caption>
     </figure>
-    <para id="para-00010">The highlighted edges graph Y in Figure 12.93 represent a walk between <emphasis effect="italic">f</emphasis> and <emphasis effect="italic">b</emphasis>. The highlighted edges in graph X do <emphasis effect="underscore">not</emphasis> represent a walk between <emphasis effect="italic">f</emphasis> and <emphasis effect="italic">b</emphasis>, because there is a turn at a point that is not a vertex. This is like climbing over a wall when you are walking through a maze. Another way of saying this is that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>f</mi></mrow></math> is not a walk, because there is no edge between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> and <emphasis effect="italic">d</emphasis>.</para>
+    <para id="para-00010">The highlighted edges graph Y in <link target-id="fig-00006" document="m00117">Figure 12.99</link> represent a walk between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>f</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>. The highlighted edges in graph X do <emphasis effect="underscore">not</emphasis> represent a walk between <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>f</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>, because there is a turn at a point that is not a vertex. This is like climbing over a wall when you are walking through a maze. Another way of saying this is that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>f</mi></mrow></math> is not a walk, because there is no edge between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">b</emphasis> and <emphasis effect="italic">d</emphasis>.</para>
     <note class="check-point" id="note-00002">
     <para id="para-00011"><emphasis effect="italic">A point on a graph where two edges cross is not a vertex.</emphasis></para>
     </note>
@@ -73,7 +73,7 @@
     <title>Naming a Walk Through A House</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00012">Figure 12.94 shows the floor plan of a house. Use the floor plan to answer each question.</para>
+    <para id="para-00012"><link target-id="fig-00007" document="m00117">Figure 12.100</link> shows the floor plan of a house. Use the floor plan to answer each question.</para>
     <figure id="fig-00007">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_094.png"/>
@@ -87,7 +87,7 @@
     </problem>
     <solution id="sol-00001">
     <list list-type="enumerated" number-style="arabic" id="list-00003">
-    <item><para id="para-00013"><emphasis effect="bold">Step 1:</emphasis>We will need a vertex for each room and it is convenient to label them according to the names of the rooms. Visualize the scenario in your head as shown in Figure 12.95. You don’t have to write this step on your paper.
+    <item><para id="para-00013"><emphasis effect="bold">Step 1:</emphasis>We will need a vertex for each room and it is convenient to label them according to the names of the rooms. Visualize the scenario in your head as shown in <link target-id="fig-00008" document="m00117">Figure 12.101</link>. You don’t have to write this step on your paper.
     <figure id="fig-00008">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_095.png"/>
@@ -95,7 +95,7 @@
     <caption>Assigning Vertices to Rooms</caption>
     </figure>
     </para>
-    <para id="para-00014"><emphasis effect="bold">Step 2:</emphasis> Draw a graph to represent the scenario. Start with the vertices. Then connect those vertices which share a doorway in the floorplan as shown in Figure 12.96.</para>
+    <para id="para-00014"><emphasis effect="bold">Step 2:</emphasis> Draw a graph to represent the scenario. Start with the vertices. Then connect those vertices which share a doorway in the floorplan as shown in <link target-id="fig-00009" document="m00117">Figure 12.102</link>.</para>
     <figure id="fig-00009">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_096.png"/>
@@ -103,7 +103,7 @@
     <caption>Graph of the Floor plan</caption>
     </figure>
     </item>
-    <item><para id="para-00015"><emphasis effect="bold">Step 1:</emphasis> Draw a path that begins at vertex L, representing the living room, and ending at vertex G, representing the garage making sure to visit every room at least once. There are many ways this can be done. You may want to number the edges to keep track of their order. One example is shown in Figure 12.97.</para>
+    <item><para id="para-00015"><emphasis effect="bold">Step 1:</emphasis> Draw a path that begins at vertex L, representing the living room, and ending at vertex G, representing the garage making sure to visit every room at least once. There are many ways this can be done. You may want to number the edges to keep track of their order. One example is shown in <link target-id="fig-00010" document="m00117">Figure 12.103</link>.</para>
     <figure id="fig-00010">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_097.png"/>
@@ -133,14 +133,14 @@
     <item>All paths are trails, but trails which visit the same vertex twice are not paths.</item>
     <item>All trails are walks, but walks in which an edge is visited twice would not be trails.</item>
     </list>
-    <para id="para-00020">We can visualize the relationship as in Figure 12.99.</para>
+    <para id="para-00020">We can visualize the relationship as in <link target-id="fig-00011" document="m00117">Figure 12.105</link>.</para>
     <figure id="fig-00011">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_099.png"/>
     </media>
     <caption>Walks, Trails, and Paths</caption>
     </figure>
-    <para id="para-00021">Let’s practice identifying walks, trails, and paths using the graphs in Figure 12.100.</para>
+    <para id="para-00021">Let’s practice identifying walks, trails, and paths using the graphs in <link target-id="fig-00012" document="m00117">Figure 12.106</link>.</para>
     <figure id="fig-00012">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_100.png"/>
@@ -151,7 +151,7 @@
     <title>Identifying Walks, Paths, and Trails</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00022">Consider each sequence of vertices from graph A in Figure 12.100. Determine if it is only a walk, both a walk and a path, both a walk and a trail, all three, or none of these.</para>
+    <para id="para-00022">Consider each sequence of vertices from graph A in <link target-id="fig-00012" document="m00117">Figure 12.106</link>. Determine if it is only a walk, both a walk and a path, both a walk and a trail, all three, or none of these.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00005">
     <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>e</mi><mo>→</mo><mi>f</mi></mrow></math></item>
     <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>e</mi></mrow></math></item>
@@ -161,7 +161,7 @@
     </problem>
     <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
     <list list-type="enumerated" number-style="arabic" id="list-00006">
-    <item>First, check to see if the sequence of vertices is a walk by making sure that the vertices are consecutive. As you can see in Figure 12.101, there is no edge between vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> and vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>.
+    <item>First, check to see if the sequence of vertices is a walk by making sure that the vertices are consecutive. As you can see in <link target-id="fig-00013" document="m00117">Figure 12.107</link>, there is no edge between vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> and vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>.
     <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_101.png"/>
@@ -170,7 +170,7 @@
     </figure>
     <para id="para-00023">This means that the sequence is not a walk. If it is not a walk, then it can’t be a path and it cannot be a trail; so, it is none of these.</para>
     </item>
-    <item>First, check to see if the sequence is a walk. As you can see in Figure 12.102, the vertices are consecutive.
+    <item>First, check to see if the sequence is a walk. As you can see in <link target-id="fig-00014" document="m00117">Figure 12.108</link>, the vertices are consecutive.
     <figure id="fig-00014">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_102.png"/>
@@ -179,7 +179,7 @@
     </figure>
     <para id="para-00024">This means that the sequence is a walk. Since the vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> is visited twice, this walk is not a path. Since edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">bd</emphasis> is traveled twice, this walk is not a trail. So, the sequence is only a walk.</para>
     </item>
-    <item>First, check to see if the sequence is a walk. We can see in Figure 12.103 that the vertices are consecutive which means it is a walk.
+    <item>First, check to see if the sequence is a walk. We can see in <link target-id="fig-00015" document="m00117">Figure 12.109</link> that the vertices are consecutive which means it is a walk.
     <figure id="fig-00015">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_103.png"/>
@@ -187,7 +187,7 @@
     <caption>Graph for Part c</caption>
     </figure>
     <para id="para-00025">Next, check to see if any vertex is visited twice. Remember, we do <emphasis effect="underscore">not</emphasis> consider beginning and ending at the same vertex to be visiting a vertex twice. So, no vertex was visited twice. This means we have a walk that is also a path. Next check to see if any edge was visited twice; none were. So, the sequence is a walk, a path, and a trail.</para></item>
-    <item>First, check to see if the sequence is a walk. We can see in Figure 12.104 that the vertices are consecutive which means it is a walk.
+    <item>First, check to see if the sequence is a walk. We can see in <link target-id="fig-00016" document="m00117">Figure 12.110</link> that the vertices are consecutive which means it is a walk.
     <figure id="fig-00016">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_104.png"/>
@@ -262,7 +262,7 @@
     <item>All circuits are closed walks, but closed walks which visit the same edge twice are not circuits.</item>
     <item>All directed cycles are circuits, but circuits in which a vertex is visited twice are not directed cycles.</item>
     </list>
-    <para id="para-00042">We can visualize the relationship as in Figure 12.106.</para>
+    <para id="para-00042">We can visualize the relationship as in <link target-id="fig-00020" document="m00117">Figure 12.111</link>.</para>
     <figure id="fig-00020">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_106.png"/>
@@ -271,7 +271,7 @@
     </figure>
     <para id="para-00043">The same circuit can be named using any of its vertices as a starting point. For example, the circuit <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>→</mo><mi>f</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mrow></math> can also referred to in the following ways.</para>
     <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mtext> is the same as </mtext><mrow><mo>{</mo> <mtable columnalign="left"><mtr><mtd><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mtd></mtr></mtable></mrow></mrow></math></equation>
-    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Let’s practice working with closed walks, circuits (closed trails), and directed cycles (closed paths). In the graph in Figure 12.107, the vertices are major central and south Florida airports. The edges are direct flights between them.</para>
+    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Let’s practice working with closed walks, circuits (closed trails), and directed cycles (closed paths). In the graph in <link target-id="fig-00021" document="m00117">Figure 12.112</link>, the vertices are major central and south Florida airports. The edges are direct flights between them.</para>
     <figure id="fig-00021">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_107.png"/>
@@ -282,7 +282,7 @@
     <title>Determining a Closed Walk, Circuit, or Directed Cycle</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00045">Suppose that you need to travel by air from Miami (MIA) to Orlando (MCO) and you were restricted to flights represented on the graph. For the trip to Orlando, you decide to purchase tickets with a layover in Key West (EYW) as shown in Figure 12.108, but you still have to decide on the return trip. Determine if your roundtrip itinerary is a closed walk, a circuit, and/or a directed cycle, based on the return trip described in each part.</para>
+    <para id="para-00045">Suppose that you need to travel by air from Miami (MIA) to Orlando (MCO) and you were restricted to flights represented on the graph. For the trip to Orlando, you decide to purchase tickets with a layover in Key West (EYW) as shown in <link target-id="fig-00022" document="m00117">Figure 12.113</link>, but you still have to decide on the return trip. Determine if your roundtrip itinerary is a closed walk, a circuit, and/or a directed cycle, based on the return trip described in each part.</para>
     <figure id="fig-00022">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_108.png"/>
@@ -312,30 +312,30 @@
     </section>
     <section id="sect-00005">
     <title>Graph Colorings</title>
-    <para id="para-00047">In this section so far, we have looked at how to navigate graphs by proceeding from one vertex to another in a sequence that does not skip any vertices, but sometimes we want to do the opposite. Next, we will look at applications in which we want to skip vertices. Remember the camp Olympics at Camp Woebegone in Section 12.3? You were planning a camp Olympics with four events. The campers signed up for the events. You drew a graph to help you visualize which events have campers in common. The vertices of graph E in Figure 12.73 represent the events and adjacent vertices indicate that there are campers who are participating in both.</para>
+    <para id="para-00047">In this section so far, we have looked at how to navigate graphs by proceeding from one vertex to another in a sequence that does not skip any vertices, but sometimes we want to do the opposite. Next, we will look at applications in which we want to skip vertices. Remember the camp Olympics at Camp Woebegone in <link target-id="sect-00001" document="m00111">Comparing Graphs</link>? You were planning a camp Olympics with four events. The campers signed up for the events. You drew a graph to help you visualize which events have campers in common. The vertices of graph E in <link target-id="fig-00023" document="m00117">Figure 12.114</link> represent the events and adjacent vertices indicate that there are campers who are participating in both.</para>
     <figure id="fig-00023">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_073.png"/>
     </media>
     <caption>Graphs of Camp Olympics</caption>
     </figure>
-    <para id="para-00048">In this case, we do NOT want events represented by two adjacent vertices to occur in the same timeslot, because that would prevent the campers who wanted to participate in both from doing so. We can use the graph in Figure 12.73 to count the timeslots we need so there are no conflicts. Let’s assign each timeslot a different color. We could categorize events that happen at 1 pm as Red; 2 pm, Purple; 3 pm, Blue; and 4 pm, Green. Then assign different colors to any pair of adjacent vertices to ensure that the events they represent do not end up in the same timeslot. Figure 12.109 shows several of the ways to do this while obeying the rule that no pair of adjacent vertices can be the same color.</para>
+    <para id="para-00048">In this case, we do NOT want events represented by two adjacent vertices to occur in the same timeslot, because that would prevent the campers who wanted to participate in both from doing so. We can use the graph in <link target-id="fig-00023" document="m00117">Figure 12.114</link> to count the timeslots we need so there are no conflicts. Let’s assign each timeslot a different color. We could categorize events that happen at 1 pm as Red; 2 pm, Purple; 3 pm, Blue; and 4 pm, Green. Then assign different colors to any pair of adjacent vertices to ensure that the events they represent do not end up in the same timeslot. <link target-id="fig-00024" document="m00117">Figure 12.115</link> shows several of the ways to do this while obeying the rule that no pair of adjacent vertices can be the same color.</para>
     <figure id="fig-00024">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_109.png"/>
     </media>
     <caption>Graph Colorings</caption>
     </figure>
-    <para id="para-00049">In Figure 12.109, the graphs with vertices colored so that no adjacent vertices are the same color are called <term id="term-00011">graph colorings</term>. Notice that graph 3 has the fewest colors, which means it shows us how to have the fewest number of timeslots. The events marked in red, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>, can be held at the same time because they are not adjacent and do not have conflicts. Also, the events marked in purple, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>, can be held at the same time. We would not need green or blue timeslots at all!</para>
+    <para id="para-00049">In <link target-id="fig-00024" document="m00117">Figure 12.115</link>, the graphs with vertices colored so that no adjacent vertices are the same color are called <term id="term-00011">graph colorings</term>. Notice that graph 3 has the fewest colors, which means it shows us how to have the fewest number of timeslots. The events marked in red, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math>, can be held at the same time because they are not adjacent and do not have conflicts. Also, the events marked in purple, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>, can be held at the same time. We would not need green or blue timeslots at all!</para>
     <para id="para-00050">A graph that uses <emphasis effect="italic">n</emphasis> colors is called an <term id="term-00012"><emphasis effect="italic">n</emphasis>-coloring</term>. The smallest number of colors needed to color a particular graph is called its <term id="term-00013">chromatic number</term>.</para>
-    <para id="para-00051">Graph colorings can be used in many applications like the scheduling scenario at camp Woebegone. Let's look at how they work in more detail. Figure 12.110 shows two different colorings of a particular graph. Coloring A is called a 4-coloring, because it uses four colors, red (R), green (G), blue (B), and purple (P). Coloring B is called a 3-coloring because it uses three. The colors allow us to visually subdivide the graphs into groups. The only rule is that adjacent vertices are different colors so that they are in different groups.</para>
+    <para id="para-00051">Graph colorings can be used in many applications like the scheduling scenario at camp Woebegone. Let's look at how they work in more detail. <link target-id="fig-00025" document="m00117">Figure 12.116</link> shows two different colorings of a particular graph. Coloring A is called a 4-coloring, because it uses four colors, red (R), green (G), blue (B), and purple (P). Coloring B is called a 3-coloring because it uses three. The colors allow us to visually subdivide the graphs into groups. The only rule is that adjacent vertices are different colors so that they are in different groups.</para>
     <figure id="fig-00025">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_110.png"/>
     </media>
     <caption>Two Colorings of the Same Graph</caption>
     </figure>
-    <para id="para-00052">It turns out that a 3-coloring is the best we can do with the graph in Figure 12.103. No matter how many different patterns you try with only 2 colors, you will never find one in which the adjacent vertices are always different colors. In other words, the graph has a chromatic number of 3. For large graphs, computer assistance is usually required to find the chromatic numbers. There is no formula for finding the chromatic number of a graph, but there are some facts that are helpful in Table 12.2.</para>
+    <para id="para-00052">It turns out that a 3-coloring is the best we can do with the graph in Figure 12.103. No matter how many different patterns you try with only 2 colors, you will never find one in which the adjacent vertices are always different colors. In other words, the graph has a chromatic number of 3. For large graphs, computer assistance is usually required to find the chromatic numbers. There is no formula for finding the chromatic number of a graph, but there are some facts that are helpful in <link target-id="table-00002" document="m00110">Table 12.2</link>.</para>
     <table class="numbered" summary="." id="table-00002">
     <tgroup cols="2">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -375,10 +375,10 @@
     </tgroup>
     <caption>Facts about Graph Colorings</caption>
     </table>
-   </section>
+    </section>
     <section id="sect-00006">
     <title>Creating Colorings to Solve Problems</title>
-    <para id="para-00054">Let’s see how these facts can help us color the graph in Figure 12.112.</para>
+    <para id="para-00054">Let’s see how these facts can help us color the graph in <link target-id="fig-00029" document="m00117">Figure 12.117</link>.</para>
     <list bullet-style="bulleted" id="list-00010">
     <item>Since the graph is planar, the chromatic number is <emphasis effect="italic">no more than</emphasis> 4.</item>
     <item>The graph is not complete, but it has complete subgraphs of three vertices. In other words, it has triangles. This means that the chromatic number is <emphasis effect="italic">at least</emphasis> 3.</item>
@@ -389,35 +389,35 @@
     </media>
     <caption>A Graph with Triangles</caption>
     </figure>
-    <para id="para-00055">We know we can color this graph in 3 or 4 colors. It is usually best to start by coloring the vertex of highest degree as shown in Figure 12.113. In this case, we used red (R) instead of blue. The color is not important.</para>
+    <para id="para-00055">We know we can color this graph in 3 or 4 colors. It is usually best to start by coloring the vertex of highest degree as shown in <link target-id="fig-00030" document="m00117">Figure 12.118</link>. In this case, we used red (R) instead of blue. The color is not important.</para>
     <figure id="fig-00030">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_113.png"/>
     </media>
     <caption>Color Highest Degree Vertex First</caption>
     </figure>
-    <para id="para-00056">Since the vertex of highest degree is adjacent to every other vertex, no other vertex can be the same color. We want to color as many of the vertices the same color as possible; so, we look at all the vertices that are not adjacent to the red vertex and begin to color them red starting with the one among them of highest degree. Since the only vertices that are not adjacent are both degree 2, choose either one and color it red as shown in Figure 12.114.</para>
+    <para id="para-00056">Since the vertex of highest degree is adjacent to every other vertex, no other vertex can be the same color. We want to color as many of the vertices the same color as possible; so, we look at all the vertices that are not adjacent to the red vertex and begin to color them red starting with the one among them of highest degree. Since the only vertices that are not adjacent are both degree 2, choose either one and color it red as shown in <link target-id="fig-00031" document="m00117">Figure 12.119</link>.</para>
     <figure id="fig-00031">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_114.png"/>
     </media>
     <caption>Color More Red from Highest to Lowest Degree</caption>
     </figure>
-    <para id="para-00057">Now, there is only one vertex left that is not adjacent to a red; so, color it red. Of the remaining vertices, the highest degree is 4; so, color one of the vertices of degree four in a different color. These two steps are shown in Figure 12.109.</para>
+    <para id="para-00057">Now, there is only one vertex left that is not adjacent to a red; so, color it red. Of the remaining vertices, the highest degree is 4; so, color one of the vertices of degree four in a different color. These two steps are shown in <link target-id="fig-00032" document="m00117">Figure 12.120</link>.</para>
     <figure id="fig-00032">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_115.png"/>
     </media>
     <caption>Complete the Reds and Start Another Color</caption>
     </figure>
-    <para id="para-00058">Repeat the same procedure. There are three remaining vertices that are not adjacent to a blue. Color as many blue as possible, with priority going to vertices of higher degree as shown in Figure 12.116.</para>
+    <para id="para-00058">Repeat the same procedure. There are three remaining vertices that are not adjacent to a blue. Color as many blue as possible, with priority going to vertices of higher degree as shown in <link target-id="fig-00033" document="m00117">Figure 12.116</link>.</para>
     <figure id="fig-00033">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_116.png"/>
     </media>
     <caption>Repeat Procedure for Color Blue</caption>
     </figure>
-    <para id="para-00059">All the remaining vertices are adjacent to blue. So, it is time to repeat the procedure with another color as shown in Figure 12.117.</para>
+    <para id="para-00059">All the remaining vertices are adjacent to blue. So, it is time to repeat the procedure with another color as shown in <link target-id="fig-00034" document="m00117">Figure 12.122</link>.</para>
     <figure id="fig-00034">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_117.png"/>
@@ -428,7 +428,7 @@
     <note class="video" id="note-00006">
     <para id="para-00061"><link url="https://openstax.org/r/Coloring_and_Identifying">Coloring Graphs Part 1: Coloring and Identifying Chromatic Number</link></para>
     </note>
-    <para id="para-00062">Suppose the vertices of the graph in Figure 12.118 represented the nine events in the Camp Woebegone Olympics, and edges join any events that have campers in common, but nonadjacent vertices do not.</para>
+    <para id="para-00062">Suppose the vertices of the graph in <link target-id="fig-00035" document="m00117">Figure 12.123</link> represented the nine events in the Camp Woebegone Olympics, and edges join any events that have campers in common, but nonadjacent vertices do not.</para>
     <figure id="fig-00035">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_118.png"/>
@@ -440,7 +440,7 @@
     <title>Understanding Chromatic Colorings</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00064">In Example 12.17, we discussed a high school which holds end-of-course exams in (E3) English 3, (E4) English 4, (M) Advanced Math, (C) Calculus, (W) World History, (U) U.S. History, (B) Biology, and (P) Physics. We were given a list of courses that had no students in common. We used that information to find the graph in Figure 12.71 which shows edges between exams with students in common. Use the graph we found in Figure 12.71 to answer each question.</para>
+    <para id="para-00064">In <link target-id="exam-00005" document="m00111">Example 12.17</link>, we discussed a high school which holds end-of-course exams in (E3) English 3, (E4) English 4, (M) Advanced Math, (C) Calculus, (W) World History, (U) U.S. History, (B) Biology, and (P) Physics. We were given a list of courses that had no students in common. We used that information to find the graph in Figure 12.71 which shows edges between exams with students in common. Use the graph we found in Figure 12.71 to answer each question.</para>
     <figure id="fig-00036">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_077.png"/>
@@ -458,8 +458,8 @@
     <list list-type="enumerated" number-style="arabic" id="list-00012">
     <item>We would need 4 different colors just for the clique with 4 vertices; so, the chromatic number is <emphasis effect="italic">at least</emphasis> 4.</item>
     <item>XXXX</item>
-    <item>The process is shown in Table 12.6.
-   <table class="numbered" summary="." id="table-00003">
+    <item>The process is shown in <link target-id="table-00003" document="m00117">Table 12.6</link>.
+    <table class="numbered" summary="." id="table-00003">
     <tgroup cols="3">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
     <colspec colnum="2" colname="c2" colwidth="1pt"/>
@@ -526,7 +526,7 @@
     </tgroup>
     <caption>Coloring the Graph</caption>
     </table>
-   <para id="para-00065">The last graph in Table 12.6 is the final coloring.</para></item>
+    <para id="para-00065">The last graph in <link target-id="table-00003" document="m00117">Table 12.6</link> is the final coloring.</para></item>
     <item>Yes, the minimum number of times slots is the chromatic number. We knew the chromatic number had to be at least 4 because there was a clique with 4 vertices. Now we have found a 4-coloring of the graph which tells us that the chromatic number is at most 4. So, we know 4 must be the chromatic number.</item>
     </list>
     </solution>
@@ -555,14 +555,14 @@
     <note class="video" id="note-00009">
     <para id="para-00069"><link url="https://openstax.org/r/The_Four">The Four Color Map Theorem – Numberphile</link></para>
     </note>
-    <para id="para-00070">We saw how maps can be represented as graphs in Section 12.1. Figure 12.10 from Example 4 shows a map of the midwestern region of the United States.</para>
+    <para id="para-00070">We saw how maps can be represented as graphs in <link target-id="sect-00001" document="m00109">Graph Basics</link>. <link target-id="fig-00047" document="m00117">Figure 12.127</link> from Example 4 shows a map of the midwestern region of the United States.</para>
     <figure id="fig-00047">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_010.png"/>
     </media>
     <caption>Map of Midwestern States</caption>
     </figure>
-    <para id="para-00071">Figure 12.12 shows how this map can be associated with a graph in which each vertex represents a state and each edge indicates the states that share a common boundary. Figure 12.13 shows the final graph.</para>
+    <para id="para-00071"><link target-id="fig-00048" document="m00117">Figure 12.128</link> shows how this map can be associated with a graph in which each vertex represents a state and each edge indicates the states that share a common boundary. <link target-id="fig-00049" document="m00117">Figure 12.129</link> shows the final graph.</para>
     <figure id="fig-00048">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_012.png"/>
@@ -590,7 +590,7 @@
     <para id="para-00075">Find a coloring of the graph in Figure 12.13 which uses four colors or fewer. Use the resulting coloring as a guide to recolor the map in Figure 12.10. How many colors did you use? Does this support the conclusion of the Four-Color Theorem? If so, how?</para>
     </problem>
     <solution id="sol-00005">
-    <para id="para-00076">The steps to color the graph are shown in Table 12.7.</para> 
+    <para id="para-00076">The steps to color the graph are shown in <link target-id="table-00004" document="m00117">Table 12.7</link>.</para> 
     <table class="numbered" summary="." id="table-00004">
     <tgroup cols="3">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -680,7 +680,7 @@
     </tgroup>
     <caption>Steps to Color Graph of Midwestern States</caption>
     </table>
-    <para id="para-00098">The final graph in Table 12.7 shows how we would color the map. In Figure 12.123 we have colored the map to correspond to the colors on the graph.</para>
+    <para id="para-00098">The final graph in <link target-id="table-00004" document="m00117">Table 12.7</link> shows how we would color the map. In <link target-id="fig-00050" document="m00117">Figure 12.130</link> we have colored the map to correspond to the colors on the graph.</para>
     <figure id="fig-00050">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_123.png"/>
@@ -705,7 +705,7 @@
     <note class="video" id="note-00014">
     <para id="para-00102"><link url="https://openstax.org/r/Neil_de_Grasse">Neil de Grasse Tyson Explains the Möbius Strip:</link></para>
     </note>
-    <para id="para-00103">Now, you might be wondering what this has to do with Graph Theory. It turns out that a map drawn on a möbius strip cannot necessarily be drawn using four colors. This doesn’t contradict the Four-Color Theorem which only applies to graphs that are planar. A möbius strip does not live on a “plane,” or flat surface, which means the maps are not always planar like those drawn on a flat piece of paper. In the case of a möbius strip, it is the Six-Color Map Theorem! Figure 12.125 is an example of a möbius strip with a map that requires 5 colors.</para>
+    <para id="para-00103">Now, you might be wondering what this has to do with Graph Theory. It turns out that a map drawn on a möbius strip cannot necessarily be drawn using four colors. This doesn’t contradict the Four-Color Theorem which only applies to graphs that are planar. A möbius strip does not live on a “plane,” or flat surface, which means the maps are not always planar like those drawn on a flat piece of paper. In the case of a möbius strip, it is the Six-Color Map Theorem! <link target-id="fig-00051" document="m00117">Figure 12.133</link> is an example of a möbius strip with a map that requires 5 colors.</para>
     <figure id="fig-00051">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_125.png"/>
@@ -727,7 +727,7 @@
     </exercise>
     </section>
     <section class="section-exercises" id="sect-00009">
-   <title>Exercise</title>
+    <title>Exercise</title>
     <exercise id="exer-00013">
     <problem id="prob-00013">
     <para id="para-00106"><link class="os-embed" url="#exercise/CM-C12-M4-Q008"/></para>
@@ -837,5 +837,5 @@
     <para id="para-00124"><link url="https://openstax.org/r/Neil_de_Grasse">Neil de Grasse Tyson Explains the Möbius Strip:</link></para>
     </section>
     </content>
-    </document>   
+    </document>      
    
