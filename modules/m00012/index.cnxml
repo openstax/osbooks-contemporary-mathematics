@@ -33,7 +33,7 @@
     <para id="para-00008"><emphasis effect="italics">The empty set or null set, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∅</mo></math>, is a proper subset of every set, except itself.</emphasis></para>
     </note>
     <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">Graphically, sets are often represented as circles. In the following graphic, set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> is represented as a circle completely enclosed inside the circle representing set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>, showing that set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> is a proper subset of set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>. The element <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math> represents an element that is in both set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> and set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>.</para>
-    <figure id="fig-00003">
+    <figure id="fig-00003" xmlns="http://cnx.rice.edu/cnxml">
     <media alt=" A two-step Venn diagram, A and B, is shown, where A is inside B. A is marked at its center with an 'x.' ">
     <image mime-type="image/png" src="../../media/CS_Figure_01_02_TA_001.png"/>
     </media>
@@ -100,11 +100,11 @@
     <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">Express the relationship between the following sets symbolically.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00007">
     <item>Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>S</mi></math> and set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>.</item>
-    <item>Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> and set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>.</item>
-    <item>Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>R</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>R</mi></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> and set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>R</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>R</mi></math>.</item>
     </list>
     </problem>
-    <solution id="sol-00003">
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
     <para id="para-00025">
     <list list-type="enumerated" number-style="arabic" id="list-00008">
     <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo>⊂</mo><mi>S</mi></mrow></math>. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math> is a proper subset of set <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>S</mi></math>.</item>
@@ -180,7 +180,7 @@
     <problem id="prob-00009">
     <para id="para-00038">Using natural numbers, multiples of 3 are given by the sequence <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">{3, 6, 9, …}</mi></mrow></math>. Write this set using set builder notation by expressing each multiple of 3 using a formula in terms of a natural number, "><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</para>
     </problem>
-    <solution id="sol-00005">
+    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
     <para id="para-00039"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mi>m</mi><mo>|</mo><mi>m</mi><mo>=</mo><mn>3</mn><mi>n</mi><mspace width="0.28em"/><mi mathvariant="normal">where</mi><mspace width="0.28em"/><mi>n</mi><mspace width="0.28em"/><mi mathvariant="normal">is a natural number}</mi></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo><mi>m</mi><mo>|</mo><mi>m</mi><mo>=</mo><mn>3</mn><mi>n</mi><mspace width="0.28em"/><mi mathvariant="normal">where</mi><mspace width="0.28em"/><mi>n</mi><mo>∈</mo><mi mathvariant="normal">N</mi><mo>}</mo></mrow></math>. In this example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>m</mi></math> is a multiple of 3 and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is a natural number. The symbol <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo>∈</mo></math> is read as “is a member or element of.” Because there is a one-to-one correspondence between the set of multiples of 3 and the natural numbers, the set of multiples of 3 is an equivalent subset of the natural numbers.</para>
     </solution>
     </exercise>
@@ -311,5 +311,9 @@
     <item>Understand how to create and distinguish between equivalent subsets of finite and infinite sets that are not equal to the original set.</item>
     </list>
     </section>
-  </content>
+    <section class="formula-review" id="sect-00012">
+    <title>Formulas</title>
+    <para id="para-00016">The number of subsets of a finite set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> is equal to 2 raised to the power of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math>, where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>n</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></mrow></math> is the number of elements in set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math>: Number of Subsets of Set <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mo>=</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo></mrow></msup></math>.</para>
+</section>
+</content>
 </document>
