@@ -21,24 +21,18 @@
       <item>Use truth tables to determine the validity of conditional and biconditional statements.</item>
       </list>
      </section>
-      <para id="para-00002">Computer languages use <emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> or <emphasis effect="italic">if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">then</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>…</mo><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">else</emphasis> statements as decision statements. If the hypothesis is true, then do something. Or, if the hypothesis is true, then do something, otherwise do something else. For example, the following lines of code provide the structure of an if-then-else decision statement in the C programming language.</para>
-      <code display="block" xmlns="http://cnx.rice.edu/cnxml">
-      #include &lt;stdio.h> /* This is a comment, stdio.h is a built-in library of functions 
-  <newline/>that provides the printf function among other */
-      int main () { /* Another comment, open the main section of the program, */
-      /* local variable definition */
-      inti = 3; /* The variable i is assigned the value 3. */
-       /* Check to see if i is less than 1 */
-       if( i&lt;1 ) { /* if the value of the variable i is less than 1, write the message: <newline/>
-  “Hello World!” on the screen */
-      printf("Hello World!\n" );
-      } else { /* This piece of code will only get executed if i is greater than or equal to 1. */
-          printf("Logic tells us Spock is from Vulcan.\n" );
-        }
-      return 0; /* exit the program with return code of 0 */
-      }
-     </code>
-      <para id="para-00015">In this program, the variable <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math> is assigned the value 3, then the <emphasis effect="italic">if</emphasis> statement, checks to see whether <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math> is less than 1. It evaluates <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math> &lt; 1 as 3 &lt; 1, which is false. Because the condition is false, it will not write the message “Hello World!” to the screen; instead, it will execute the statement following the else, and write the message: “Logic tells us Spock is from Vulcan.” to the screen.</para>
+     <para id="para-00002">Computer languages use if-then or if-then-else statements as decision statements:</para>
+     <list list-type="bulleted" id="list-00010">
+      <item><emphasis effect="italic">If</emphasis> the hypothesis is true, <emphasis effect="italic">then</emphasis> do something.</item>
+      <item>Or, <emphasis effect="italic">if</emphasis> the hypothesis is true, <emphasis effect="italic">then</emphasis> do something; else do something else.</item>
+      </list>
+      <para id="para-00005">For example, the following representation of computer code creates an if-then-else decision statement:
+        Check value of variable <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>.</para>
+<para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">For example, the following representation of computer code creates an if-then-else decision statement:
+  Check value of variable i.
+  If i <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>&lt;</mo><mn>1</mn></mrow></math>, then print "Hello, World!" else print "Goodbye"</para>
+  <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">In this imaginary program, the if-then statement evaluates and acts on the value of the variable <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>i</mi></math>. For instance, if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow></math>, the program would consider the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>&lt;</mo><mn>1</mn></mrow></math> as true and “Hello, World!” would appear on the computer screen. If instead, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>=</mo><mn>3</mn></mrow></math>, the program would consider the statement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>&lt;</mo><mn>1</mn></mrow></math> as false (because 3 is greater than 1), and print “Goodbye” on the screen.</para>
+  <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">In this section, we will apply similar reasoning without the use of computer programs.</para>
       <note class="who-knew" id="note-00001">
       <para id="para-00016">The Countess of Lovelace, Ada Lovelace, is credited with writing the first computer program. She wrote an algorithm to work with Charles Babbage’s Analytical Engine that could compute the Bernoulli numbers in 1843. In doing so, she became the first person to write a program for a machine that would produce more than just a simple calculation. The computer programming language ADA is named after her.</para>
       <para id="para-00017">Reference: Posamentier, Alfred and Spreitzer Christian, “Chapter 34 Ada Lovelace: English (1815-1852)” pp. 272-278, <emphasis effect="italic">Math Makers: The Lives and Works of 50 Famous Mathematicians</emphasis>, Prometheus Books, 2019.</para>
@@ -96,7 +90,7 @@
       <exercise id="exer-00001">
       <problem id="prob-00001">
       <para id="para-00024">Assume both of the following statements are true: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>: My sibling washed the dishes, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>: My parents paid them $5.00. Create a truth table to determine the truth value of each of the following conditional statements.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00002">
+      <list list-type="enumerated" number-style="arabic" id="list-00002" xmlns="http://cnx.rice.edu/cnxml">
       <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>→</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></item>
@@ -362,7 +356,7 @@
       <exercise id="exer-00005">
       <problem id="prob-00005">
       <para id="para-00035">Assume both of the following statements are true: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math>: The plumber fixed the leak, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>: The homeowner paid the plumber $150.00. Create a truth table to determine the truth value of each of the following biconditional statements.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00006">
+      <list list-type="enumerated" number-style="arabic" id="list-00006" xmlns="http://cnx.rice.edu/cnxml">
       <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>~</mo><mi>p</mi><mo>↔</mo><mtext> </mtext><mo>~</mo><mi>q</mi></mrow></math></item>
@@ -462,7 +456,7 @@
       <note class="check-point" id="note-00013">
       <para id="para-00037"><emphasis effect="italic">The biconditional,</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi><mo>,</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">is true whenever the truth values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> match, otherwise it is false.</emphasis></para>
       </note>
-      <note class="video" id="note-00010">
+      <note class="video" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
       <para id="para-00038"><link url="https://openstax.org/r/AQB3svnxxiw">Logic Part 13: Truth Tables to Determine if Argument is Valid or Invalid</link></para>
       </note>
       <example id="exam-00004">
@@ -828,7 +822,7 @@
       <title>Key Concepts</title>
       <list id="list-00011">
       <item>The conditional statement, if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>, is like a contract. The only time it is false is when the contract has been broken. That is, when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> is true, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> is false.
-       <table class="unnumbered" summary="." id="table-00016">
+       <table class="unnumbered" summary="." id="table-00016" xmlns="http://cnx.rice.edu/cnxml">
         <tgroup cols="3">
         <colspec colnum="1" colname="c1" colwidth="1*"/>
         <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -836,8 +830,8 @@
         <thead>
         <row><entry namest="c1" nameend="c3">Conditional</entry></row>
         <row><entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-         <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-         <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
+         <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+         <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>→</mo><mi>q</mi></mrow></math></entry></row>
         </thead>
         <tbody xmlns="http://cnx.rice.edu/cnxml">
         <row><entry>T</entry>
@@ -856,7 +850,7 @@
         </tgroup>
         </table></item>
       <item xmlns="http://cnx.rice.edu/cnxml">The biconditional statement, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> if and only if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math>, it true whenever <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math> have matching true values, otherwise it is false.
-       <table class="unnumbered" summary="." id="table-00017">
+       <table class="unnumbered" summary="." id="table-00017" xmlns="http://cnx.rice.edu/cnxml">
         <tgroup cols="3">
         <colspec colnum="1" colname="c1" colwidth="1*"/>
         <colspec colnum="2" colname="c2" colwidth="1*"/>
@@ -864,8 +858,8 @@
         <thead>
         <row><entry namest="c1" nameend="c3">Biconditional</entry></row>
         <row><entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>p</mi></math></entry>
-        <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
-        <entry><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry></row>
+        <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>q</mi></math></entry>
+        <entry xmlns="http://cnx.rice.edu/cnxml"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>p</mi><mo>↔</mo><mi>q</mi></mrow></math></entry></row>
         </thead>
         <tbody xmlns="http://cnx.rice.edu/cnxml">
         <row><entry>T</entry>
