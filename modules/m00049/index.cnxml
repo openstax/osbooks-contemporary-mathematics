@@ -7,608 +7,608 @@
   </metadata>
   <content>
     <figure id="fig-00002">
-      <media alt="">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_03_09_001.png"/>
-      </media>
-      <caption> Avagadro’s Number is written using scientific notation.</caption>
-      </figure>
+    <media alt="">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_03_09_001.png"/>
+    </media>
+    <caption>Calculations in the sciences often involve numbers in scientific notation form.</caption>
+    </figure>
     <section class="learning-objectives" id="sect-00001">
-      <title>Learning Objectives</title>
-      <para id="para-00001">After completing this section, you should be able to:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00001">
-      <item>Write numbers in standard or scientific notation.</item>
-      <item>Convert numbers between standard and scientific notation.</item>
-      <item>Add and subtract numbers in scientific notation.</item>
-      <item>Multiply and divide numbers in scientific notation.</item>
-      <item>Use scientific notation in computing real world applications.</item>
-      </list>
-      </section>
-      <para id="para-00002">The amount of information available on the Internet is simply incomprehensible. One estimate for the amount of data that will be on the Internet by 2025 is 175 Zettabytes. A single zettabyte is one billion trillion. Written out, it is 1,000,000,000,000,000,000,000. One estimate is that we’re producing 2.5 quintillion bytes of data per day. A quintillion is a trillion trillion, or, written out, 1,000,000,000,000,000,000. To determine how many days it takes to increase the amount of information that is on the Internet by 1 zettabyte, divide these two numbers, a zettabyte being 1,000,000,000,000,000,000,000, and 2.5 quintillion, being 2,500,000,000,000,000,000, shows it takes 400 days to generate 1 zettabyte of information. But doing that calculation is awkward with a calculator. Keeping track of the zeros can be tedious, and a mistake can easily be made.</para>
-      <para id="para-00003">On the other end of the scale, a human red blood cell has a diameter of 7.8 micrometers. One micrometer is one millionth of a meter. Written out, 7.8 micrometers is 0.0000078 meters. Smaller still is the diameter of a virus, which is about 100 nanometers in diameter, where a nanometer is a billionth of a meter. Written out, 100 nanometers is 0.0000001 meters. To compare that to engineered items, a single transistor in a computer chip can be 14 nanometers in size (0.000000014 meters). Smaller yet is the diameter of an atom, at between 0.1 and 0.5 nanometers.</para>
-      <para id="para-00004">Sometimes we have numbers that are incredibly big, and so have an incredibly large number of digits, or sometimes numbers are incredibly small, where they have a large number of digits after the decimal. But using those representations of the names of the sizes makes comparing and computing with these numbers problematic. That’s where scientific notation comes in.</para>
-      <section id="sect-00002">
-      <title>Writing Numbers in Standard or Scientific Notation Form</title>
-      <para id="para-00005">When we say that a number is in <term id="term-00001">scientific notation</term>, we are specifying the form in which that number is written. That form begins with an integer with an absolute value between 1 and 9, then perhaps followed the decimal point and then some more digits. This is then multiplied by 10 raised to some power. When the number only has one non-zero digit, the scientific notation form is the digit multiplied by 10 raised to an exponent. When the number has more than one non-zero digit, the scientific notation form is a single digit, followed by a decimal, which is then followed by the remaining digits, which is then multiplied by 10 to a power.</para>
-      <para id="para-00006">The following numbers are written in scientific notation:</para>
-      <para id="para-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math></para>
-      <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>8.345</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow></math></para>
-      <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math></para>
-      <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.14159</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup></mrow></math></para>
-      <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">The following numbers are not written in scientific notation:</para>
-      <para id="para-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn></mrow></math> because it isn't multiplied by 10 raised to a power</para>
-      <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>50.053</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> because the absolute value of −50.053 is not at least 1 and less than 10</para>
-      <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>41.7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math> because 41.7 is not at least 1 and less than 10</para>
-      <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.036</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math> because 0.036 is not at least one and less than 10</para>
-      <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Identifying Numbers in Scientific Notation</title>
-      <exercise id="exer-00001">
-      <problem id="prob-00001">
-      <para id="para-00016">Which of the following numbers are in scientific notation? If the number is not in scientific notation, explain why it is not.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00002">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9.67</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>20</mn></mrow></msup></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn></mrow></math></item>
-      </list>
-      </problem>
-      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00003">
-      <item>The number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9.67</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>20</mn></mrow></msup></mrow>
-      </math> is in scientific notation because the absolute value of −9.67 is at least 1 and less than 10.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">The number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math> is not in scientific notation because 145 is not at least 1 and less than 10.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">The number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn></mrow></math> is not in scientific notation form. Even though it is at least 1 but less than 10, it is not multiplied by 10 raised to a power.</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00002">
-      <problem id="prob-00002">
-      <para id="para-00017"><link class="os-embed" url="#exercise/CM-C03-M9-Q001"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <para id="para-00018">Some numbers are so large or so small that it is impractical to write them out fully. Avogadro’s number is important in chemistry. It represents the number of units in 1 mole of any substance. The substance many be electrons, atoms, molecules, or something else. Written out, the number is: 602214076000000000000000. Another example of a number that is impractical to write out fully is the length of a light wave. The wavelength of the color blue is about 0.000000450 to 0.000000495 meters. Such numbers are awkward to work with, and so scientific notation is often used. We need to discuss how to convert numbers into scientific notation, and also out of scientific notation.</para>
-      <para id="para-00019">Recall that multiplying a number by 10 adds a 0 to the end of the number or moves the decimal one place to the right, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>43</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>430</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.89</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>38.9</mn></mrow></math>. And if you multiply by 100, it adds two zeros to the end of the number or moves the decimal two places to the right, and so on. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>38</mn><mo>×</mo><mn>100,000</mn><mo>=</mo><mn>3,800,000</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>32.998</mn><mo>×</mo><mn>10,000</mn><mo>=</mo><mn>329,980</mn></mrow></math>. Multiplying a number by 1 followed by some number of zeros just adds that many zeros to the end of the number or moves the decimal place that many places to the right. Numbers written as 1 followed by some zeros are just powers of 10, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>=</mo><mn>10</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>=</mo><mn>100</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>=</mo><mn>1,000</mn></mrow></math>, etc. Generally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mi>n</mi></msup><mo>=</mo><mn>1</mn><munder><munder><mrow><mn>0...0</mn></mrow><mo stretchy="true">︸</mo></munder><mi>n</mi></munder></mrow></math>.</para>
-      <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">We can use this to write very large numbers. For instance, Avogadro’s number is 602214076000000000000000, which can be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.02214076</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>23</mn></mrow></msup></mrow></math>. The multiplication moves the decimal 23 places to the right.</para>
-      <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">Similarly, when we divide by 10, we move the decimal one place to the left, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>46.7</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mn>4.67</mn></mrow></math>. If we divide by 100, we move the decimal two places to the left, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>3.456</mn></mrow><mrow><mn>100</mn></mrow></mfrac><mo>=</mo><mn>0.03456</mn></mrow></math>. In general, when you divide a number by a 1 followed by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> zeros, you move the decimal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> places to the left, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>8,244.902</mn></mrow><mrow><mn>1,000,000</mn></mrow></mfrac><mo>=</mo><mn>0.008244902</mn></mrow></math>. This denominator could be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup></mrow></math>. If we use that in the expression and allow for negative exponents, rewrite the number as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>8,244.902</mn></mrow><mrow><mn>1,000,000</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>8,244.902</mn></mrow><mrow><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup></mrow></mfrac><mo>=</mo><mn>8,244.902</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>. With this, we can write division by a 1 followed by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> zeros as multiplication by 10 raised to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo rspace="0">‒</mo><mi>n</mi></math>.</para>
-      <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">Using that information, we can demonstrate how to convert from a number in standard form into scientific notation form.</para>
-      <para id="para-00023"><emphasis effect="bold">Case 1:</emphasis> The number is a single-digit integer.</para>
-      <para id="para-00024">In this case, the scientific notation form of the number is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>t</mi><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup></mrow></math>.</para>
-      <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Case 2:</emphasis> The absolute value of the number is less than 1.</para>
-      <para id="para-00026">Follow the process below.</para>
+    <title>Learning Objectives</title>
+    <para id="para-00001">After completing this section, you should be able to:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Write numbers in standard or scientific notation.</item>
+    <item>Convert numbers between standard and scientific notation.</item>
+    <item>Add and subtract numbers in scientific notation.</item>
+    <item>Multiply and divide numbers in scientific notation.</item>
+    <item>Use scientific notation in computing real-world applications.</item>
+    </list>
+    </section>
+    <para id="para-00002">The amount of information available on the Internet is simply incomprehensible. One estimate for the amount of data that will be on the Internet by 2025 is 175 Zettabytes. A single zettabyte is one billion trillion. Written out, it is 1,000,000,000,000,000,000,000. One estimate is that we’re producing 2.5 quintillion bytes of data per day. A quintillion is a trillion trillion, or, written out, 1,000,000,000,000,000,000. To determine how many days it takes to increase the amount of information that is on the Internet by 1 zettabyte, divide these two numbers, a zettabyte being 1,000,000,000,000,000,000,000, and 2.5 quintillion, being 2,500,000,000,000,000,000, shows it takes 400 days to generate 1 zettabyte of information. But doing that calculation is awkward with a calculator. Keeping track of the zeros can be tedious, and a mistake can easily be made.</para>
+    <para id="para-00003">On the other end of the scale, a human red blood cell has a diameter of 7.8 micrometers. One micrometer is one millionth of a meter. Written out, 7.8 micrometers is 0.0000078 meters. Smaller still is the diameter of a virus, which is about 100 nanometers in diameter, where a nanometer is a billionth of a meter. Written out, 100 nanometers is 0.0000001 meters. To compare that to engineered items, a single transistor in a computer chip can be 14 nanometers in size (0.000000014 meters). Smaller yet is the diameter of an atom, at between 0.1 and 0.5 nanometers.</para>
+    <para id="para-00004">Sometimes we have numbers that are incredibly big, and so have an incredibly large number of digits, or sometimes numbers are incredibly small, where they have a large number of digits after the decimal. But using those representations of the names of the sizes makes comparing and computing with these numbers problematic. That’s where scientific notation comes in.</para>
+    <section id="sect-00002">
+    <title>Writing Numbers in Standard or Scientific Notation Form</title>
+    <para id="para-00005">When we say that a number is in <term id="term-00001">scientific notation</term>, we are specifying the form in which that number is written. That form begins with an integer with an absolute value between 1 and 9, then perhaps followed the decimal point and then some more digits. This is then multiplied by 10 raised to some power. When the number only has one non-zero digit, the scientific notation form is the digit multiplied by 10 raised to an exponent. When the number has more than one non-zero digit, the scientific notation form is a single digit, followed by a decimal, which is then followed by the remaining digits, which is then multiplied by 10 to a power.</para>
+    <para id="para-00006">The following numbers are written in scientific notation:</para>
+    <para id="para-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math></para>
+    <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>8.345</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow></math></para>
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math></para>
+    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.14159</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>0</mn></msup></mrow></math></para>
+    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">The following numbers are not written in scientific notation:</para>
+    <para id="para-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn></mrow></math> because it isn't multiplied by 10 raised to a power</para>
+    <para id="para-00013" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>50.053</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> because the absolute value of −50.053 is not at least 1 and less than 10</para>
+    <para id="para-00014" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>41.7</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math> because 41.7 is not at least 1 and less than 10</para>
+    <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.036</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math> because 0.036 is not at least one and less than 10</para>
+    <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Identifying Numbers in Scientific Notation</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00016">Which of the following numbers are in scientific notation? If the number is not in scientific notation, explain why it is not.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9.67</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>20</mn></mrow></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>The number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9.67</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>20</mn></mrow></msup></mrow>
+    </math> is in scientific notation because the absolute value of −9.67 is at least 1 and less than 10.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math> is not in scientific notation because 145 is not at least 1 and less than 10.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.45</mn></mrow></math> is not in scientific notation form. Even though it is at least 1 but less than 10, it is not multiplied by 10 raised to a power.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CM-C03-M9-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00018">Some numbers are so large or so small that it is impractical to write them out fully. Avogadro’s number is important in chemistry. It represents the number of units in 1 mole of any substance. The substance many be electrons, atoms, molecules, or something else. Written out, the number is: 602,214,076,000,000,000,000,000. Another example of a number that is impractical to write out fully is the length of a light wave. The wavelength of the color blue is about 0.000000450 to 0.000000495 meters. Such numbers are awkward to work with, and so scientific notation is often used. We need to discuss how to convert numbers into scientific notation, and also out of scientific notation.</para>
+    <para id="para-00019">Recall that multiplying a number by 10 adds a 0 to the end of the number or moves the decimal one place to the right, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>43</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>430</mn></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.89</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>38.9</mn></mrow></math>. And if you multiply by 100, it adds two zeros to the end of the number or moves the decimal two places to the right, and so on. For example, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>38</mn><mo>×</mo><mn>100,000</mn><mo>=</mo><mn>3,800,000</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>32.998</mn><mo>×</mo><mn>10,000</mn><mo>=</mo><mn>329,980</mn></mrow></math>. Multiplying a number by 1 followed by some number of zeros just adds that many zeros to the end of the number or moves the decimal place that many places to the right. Numbers written as 1 followed by some zeros are just powers of 10, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup><mo>=</mo><mn>10</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>=</mo><mn>100</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>=</mo><mn>1,000</mn></mrow></math>, etc. Generally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mi>n</mi></msup><mo>=</mo><mn>1</mn><munder><munder><mrow><mn>0...0</mn></mrow><mo stretchy="true">︸</mo></munder><mi>n</mi></munder></mrow></math>.</para>
+    <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">We can use this to write very large numbers. For instance, Avogadro’s number is 602,214,076,000,000,000,000,000, which can be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.02214076</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>23</mn></mrow></msup></mrow></math>. The multiplication moves the decimal 23 places to the right.</para>
+    <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">Similarly, when we divide by 10, we move the decimal one place to the left, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>46.7</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mn>4.67</mn></mrow></math>. If we divide by 100, we move the decimal two places to the left, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>3.456</mn></mrow><mrow><mn>100</mn></mrow></mfrac><mo>=</mo><mn>0.03456</mn></mrow></math>. In general, when you divide a number by a 1 followed by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> zeros, you move the decimal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> places to the left, as in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>8,244.902</mn></mrow><mrow><mn>1,000,000</mn></mrow></mfrac><mo>=</mo><mn>0.008244902</mn></mrow></math>. This denominator could be written as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup></mrow></math>. If we use that in the expression and allow for negative exponents, rewrite the number as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>8,244.902</mn></mrow><mrow><mn>1,000,000</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>8,244.902</mn></mrow><mrow><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup></mrow></mfrac><mo>=</mo><mn>8,244.902</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>. With this, we can write division by a 1 followed by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> zeros as multiplication by 10 raised to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mo rspace="0">‒</mo><mi>n</mi></math>.</para>
+    <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">Using that information, we can demonstrate how to convert from a number in standard form into scientific notation form.</para>
+    <para id="para-00023"><emphasis effect="bold">Case 1:</emphasis> The number is a single-digit integer.</para>
+    <para id="para-00024">In this case, the scientific notation form of the number is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>t</mi><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup></mrow></math>.</para>
+    <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Case 2:</emphasis> The absolute value of the number is less than 1.</para>
+    <para id="para-00026">Follow the process below.</para>
     <list bullet-style="none" id="list-00019">
-      <item id="para-00027"><emphasis effect="bold">Step 1:</emphasis> Count the number of zeros between the decimal and the first non-zero digit. Label this <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</item>
-      <item id="para-00028" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Starting with the first non-zero digit of the number, write the digits. If the number was negative, include the negative sign.</item>
-      <item id="para-00029"><emphasis effect="bold">Step 3:</emphasis> If there is more than one digit, place the decimal after the first digit from Step 2.</item>
-      <item id="para-00030"><emphasis effect="bold">Step 4:</emphasis> Multiply the number from Step 3 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></math>.</item>
+    <item id="para-00027"><emphasis effect="bold">Step 1:</emphasis> Count the number of zeros between the decimal and the first non-zero digit. Label this <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</item>
+    <item id="para-00028" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Starting with the first non-zero digit of the number, write the digits. If the number was negative, include the negative sign.</item>
+    <item id="para-00029"><emphasis effect="bold">Step 3:</emphasis> If there is more than one digit, place the decimal after the first digit from Step 2.</item>
+    <item id="para-00030"><emphasis effect="bold">Step 4:</emphasis> Multiply the number from Step 3 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></math>.</item>
     </list>
-      <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Case 3:</emphasis> The absolute value of the number is 10 or larger</para>
-      <para id="para-00032">Follow the process below.</para>
+    <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Case 3:</emphasis> The absolute value of the number is 10 or larger.</para>
+    <para id="para-00032">Follow the process below.</para>
     <list bullet-style="none" id="list-00020">
-      <item id="para-00033"><emphasis effect="bold">Step 1:</emphasis> Count the number of digits that are to the left of the decimal point. Label this <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</item>
-      <item id="para-00034" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Write the digits of the number without the decimal place, if one was present. If the number was negative, include the negative sign.</item>
-      <item id="para-00035"><emphasis effect="bold">Step 3:</emphasis> If there is more than one digit, place the decimal point after the first digit.</item>
-      <item id="para-00036"><emphasis effect="bold">Step 4:</emphasis> Multiply the number from Step 3 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>.</item>
+    <item id="para-00033"><emphasis effect="bold">Step 1:</emphasis> Count the number of digits that are to the left of the decimal point. Label this <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</item>
+    <item id="para-00034" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Write the digits of the number without the decimal place, if one was present. If the number was negative, include the negative sign.</item>
+    <item id="para-00035"><emphasis effect="bold">Step 3:</emphasis> If there is more than one digit, place the decimal point after the first digit.</item>
+    <item id="para-00036"><emphasis effect="bold">Step 4:</emphasis> Multiply the number from Step 3 by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>.</item>
     </list>
-      <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Writing a Number in Scientific Notation</title>
-      <exercise id="exer-00003">
-      <problem id="prob-00003">
-      <para id="para-00037">Write the following numbers in scientific notation form:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00004">
-      <item>428.9</item>
-      <item>−0.00000981</item>
-      <item>8</item>
-      </list>
-      </problem>
-      <solution id="sol-00002">
-      <list list-type="enumerated" number-style="arabic" id="list-00005">
-      <item>Since the absolute value of 428.9 is 10 or larger, so we use the process from Case 3, above.
-       <para id="para-00038"><emphasis effect="bold">Step 1:</emphasis> There are three digits to the left of the decimal point, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>3</mn></math>.</para>
-      <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Write the digits of the number without the decimal place, which is 4289.</para>
-      <para id="para-00040"><emphasis effect="bold">Step 3:</emphasis> Since there is more than one digit, place the decimal point after the first digit. We now have 4.289.</para>
-      <para id="para-00041"><emphasis effect="bold">Step 4:</emphasis> Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>3</mn></math>, we multiply 4.289 by 10 raised to the second power, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.289</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>.</para>
-      <para id="para-00042" xmlns="http://cnx.rice.edu/cnxml">The scientific notation form of 428.9 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.289</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>.</para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Since the absolute value of −0.00000981 is less than 1, we use the process from Case 2.
-       <para id="para-00043"><emphasis effect="bold">Step 1:</emphasis> The number of zeros between the decimal and the first non-zero digit is 5, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>5</mn></math>.</para>
-      <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> We write the non-zero digits, including the negative sign, yielding −981.</para>
-      <para id="para-00045"><emphasis effect="bold">Step 3:</emphasis> The decimal gets placed to the right of the first digit, resulting in −9.81.</para>
-      <para id="para-00046"><emphasis effect="bold">Step 4:</emphasis> Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>5</mn></math>, we multiply −9.81 by 10 raised to the fourth power, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9.81</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml">The scientific notation form of −0.00000981 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.81</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>.</para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Since 8 is a single-digit integer, apply Case 1. The scientific notation form of 8 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup></mrow></math>.</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00004">
-      <problem id="prob-00004">
-      <para id="para-00048"><link class="os-embed" url="#exercise/CM-C03-M9-Q002"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <para id="para-00049">When we write numbers in scientific notation form, we can manipulate the representation of the number by moving the decimal around, and making an appropriate change to the exponent of the 10. For instance, let’s look at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145.8141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math>. If we wanted to move the decimal one place to the left, we’d have to increase the power of 10, as shown here: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145.8141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mn>14.58141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math>. Since we moved the decimal one to the left, we balance that with moving the exponent up by one. Similarly, if we move the decimal one place to the right, we have to balance that by moving the exponent one to the left, or subtracting one from the exponent, as shown here: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145.8141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mn>1458.141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>. Generally, for a number in the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mi>u</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mo>×</mo><msup><mrow><mn>10</mn></mrow><mi>n</mi></msup></mrow></math>:</para>
-      <list bullet-style="none" id="list-00006" xmlns="http://cnx.rice.edu/cnxml">
-      <item>If you move the decimal to the left by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math> digits, you increase the exponent by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">If you move the decimal to the right by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math> digits, you decrease the exponent by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math> digits.</item>
-      </list>
-      <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Increasing the Exponent</title>
-      <exercise id="exer-00005">
-      <problem id="prob-00005">
-      <para id="para-00050">Change <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>456.142</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math> by moving the decimal two places to the left.</para>
-      </problem>
-      <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00051">Since we are moving the decimal to the left by two places, we increase the exponent of 10 by 2, so that the exponent is now 7. This gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>456.142</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>4.56142</mn><mo> ×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00006">
-      <problem id="prob-00006">
-      <para id="para-00052"><link class="os-embed" url="#exercise/CM-C03-M9-Q003"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00004">
-      <title>Decreasing the Exponent</title>
-      <exercise id="exer-00007">
-      <problem id="prob-00007">
-      <para id="para-00053">Change <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math> by moving the decimal five places to the right.</para>
-      </problem>
-      <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00054">Since we are moving the decimal to the right by five places, we decrease the exponent of 10 by 5, so that exponent is now −3. This give us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>=</mo><mn>1230000.0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math>.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00008">
-      <problem id="prob-00008">
-      <para id="para-00055"><link class="os-embed" url="#exercise/CM-C03-M9-Q004"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section id="sect-00003">
-      <title>Converting Numbers from Scientific Notation to Standard Form</title>
-      <para id="para-00056">In the previous section, converting a number from standard form to scientific notation was explored. Now, we explore converting from scientific notation back into standard form. Doing so involves moving the decimal according to the power of the 10. The decimal is moved a number of steps equal to the exponent of the 10. As demonstrated previously, when the exponent of the 10 is negative, the decimal is moved to the left and when the exponent of the 10 is positive, the decimal is moved to the right.</para>
-      <example id="exam-00005">
-      <title> Converting from Scientific Notation to Standard Form</title>
-      <exercise id="exer-00009">
-      <problem id="prob-00009">
-      <para id="para-00057">Convert the following into standard form:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00007">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.78</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.04</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math></item>
-      </list>
-      </problem>
-      <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00008">
-      <item>Since the exponent is positive, the decimal moves nine places to the right, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.78</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2,780,000,000</mn></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Since the exponent is negative, the decimal moves eight places to the left, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.04</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.0000000904</mn></mrow></math>.</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00010">
-      <problem id="prob-00010">
-      <para id="para-00058"><link class="os-embed" url="#exercise/CM-C03-M9-Q005"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="video" id="note-00006">
-      <para id="para-00059"><link url="https://openstax.org/r/Converting from_Standard_Form_to_Scientific_Notation_Form">Converting from Standard Form to Scientific Notation Form</link></para>
-      <para id="para-00060"><link url="https://openstax.org/r/Converting_from_Scientific_Notation_Form_to_Standard_Form">Converting from Scientific Notation Form to Standard Form</link></para>
-      </note>
-      <note class="tech-check" id="note-00007">
-      <title>Scientific Notation on a Calculator</title>
-      <para id="para-00061">Most scientific and graphing calculators come with the ability to directly convert from standard form to scientific notation. On the TI-83, it is accessed through the MODE menus. For a commonly used, free phone scientific calculator, the calculator can be forced to work in scientific notation mode through its settings.</para>
-      <para id="para-00062">Some calculators, such as the Desmos online calculator, display scientific notation as a number times 10 to a power as you’ve seen in this section. However, some calculators indicate scientific notation by replacing the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>×</mo><msup><mrow><mn>10</mn></mrow><mi>n</mi></msup></mrow></math> with an e (or E) followed by the exponent. For example, <link target-id="fig-00001" document="m00049" xmlns="http://cnx.rice.edu/cnxml">Figure 3.45</link> shows what you may see on a TI-84.</para>
-      <figure class="numbered" id="fig-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <media alt="Three Desmos online calculator screens show accessing E, using normal mode, and using sci mode. The first screen labeled normal float auto real radian HP has three rows. The first row reads, 2.53 times 10 power 12 on the left and 2.53 E 12 on the right. The second row reads, 2.53 E 12 on the left and 2.53 E 12 on the right. The third row reads, 2.53 E 1 on the left and 25.3 on the right. The second screen labeled normal float auto real radian HP has four rows. The first row reads, 411522630 times 3 on the left and 1234567890 on the right. The second row reads, 411522630 times 30 on the left and 1.23456789 E 10 on the right. The third row reads, 0.001 on the left and 0.001 on the right. The fourth row reads, 0.0009 on the left and 9 E minus 4 on the right. The third screen labeled sci float auto real radian HP has three rows. The first row reads, 2 times 5 on the left and 1 E 1 on the right. The second row reads, 12 times 42 on the left and 5.04 E 2 on the right. The third row reads, (2.3 times 10 power 3) (65 times 10 power 5) on the left and 1.495 E 10 on the right.">
-      <image mime-type="image/jpg" src="../../media/CS_Figure_03_09_001.jpg"/>
-      </media>
-      <caption>Desmos online calculator screens</caption>
-      </figure>
-      </note>
-      </section>
-      <section id="sect-00004">
-      <title>Adding and Subtracting Numbers in Scientific Notation</title>
-      <para id="para-00063">To add or subtract numbers in scientific notation, the numbers first need to have the same exponent for the 10s. It is possible to add the following since the powers of 10 match:
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>3.15</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>=</mo><mn>7.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math></para>
-      <para id="para-00064" xmlns="http://cnx.rice.edu/cnxml">Notice that the number parts were added, but the exponent part remained the same. This is due to the distributive property of the real numbers. The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> is factored from the two terms, as shown:
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>3.15</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mn>4.5</mn><mo>+</mo><mn>3.15</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>=</mo><mn>7.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math></para>
-      <para id="para-00065" xmlns="http://cnx.rice.edu/cnxml">Numbers in scientific notation can be added or subtracted directly using a calculator. Simply enter the values in scientific form and set your calculator to display scientific notation.</para>
-      <example id="exam-00006">
-      <title>Adding and Subtracting Numbers in Scientific Notation with the Same Powers of 10</title>
-      <exercise id="exer-00011">
-      <problem id="prob-00011">
-      <para id="para-00066">Calculate the following:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00009">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>1.006</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>−</mo><mn>3.85</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math></item>
-      </list>
-      </problem>
-      <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00010">
-      <item>Since the powers of 10 match, we use the distributive property of real numbers to factor 10<sup>−3</sup> from the numbers. We then add the number parts separately to get 4.806.
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>1.006</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><mn>3.8</mn><mo>+</mo><mn>1.006</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>4.806</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Since the powers of 10 match, we use the distributive property of real numbers to factor 10<sup>8</sup> from the numbers. We then subtract the number parts separately to get 5.76. 
-       <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="bolck"><mrow><mn>9.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>−</mo><mn>3.85</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mrow><mo>(</mo><mrow><mn>9.61</mn><mo>−</mo><mn>3.85</mn></mrow><mo>)</mo></mrow><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mn>5.76</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math></equation></item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00012">
-      <problem id="prob-00012">
-      <para id="para-00067"><link class="os-embed" url="#exercise/CM-C03-M9-Q006"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <para id="para-00068">Adding and subtracting in scientific notation is straightforward when the exponents are the same. Though there are two issues that can arise. The first issue is what to do if after adding or subtracting the result is not in scientific notation.</para>
-      <example id="exam-00007">
-      <title>Correcting an Answer to Scientific Notation After Adding or Subtracting</title>
-      <exercise id="exer-00013">
-      <problem id="prob-00013">
-      <para id="para-00069">Calculate the following:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00011">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.03</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>+</mo><mn>8.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>−</mo><mn>4.613</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup></mrow></math></item>
-      </list>
-      </problem>
-      <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00012">
-      <item><para id="para-00070">Since the powers of 10 match, we add the number parts and multiply that by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math>: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.03</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>+</mo><mn>8.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><mn>7.03</mn><mo>+</mo><mn>8.5</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>=</mo><mn>15.53</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml">However, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15.53</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math> is not in scientific notation because the absolute value of 15.53 is more than 10. To put this number in scientific notation, the decimal needs to move one to the left. To balance that move, the power of 10 must be increased by 1. So, the answer in scientific notation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.553</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>14</mn></mrow></msup></mrow></math>.</para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00072">Since the powers of 10 match, we add the number parts: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>−</mo><mn>4.613</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><mn>4.3</mn><mo>−</mo><mn>4.613</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>=</mo><mo>−</mo><mn>0.313</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup></mrow></math></para>
-      <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml">However, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>0.313</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup></mrow></math> is not in scientific notation because it is less than 1. To put it in scientific notation, the decimal needs to move one to the right. To balance that move, the power of 10 must be decreased by 1. So, the answer in scientific notation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>3.13</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>20</mn></mrow></msup></mrow></math>.</para></item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00014">
-      <problem id="prob-00014">
-      <para id="para-00074"><link class="os-embed" url="#exercise/CM-C03-M9-Q007"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <para id="para-00075">The second issue that might be encountered when adding or subtracting is that the powers of 10 do not match. In that case, one of the numbers must be changed so that the powers of 10 match. It is easiest to make the smaller power of 10 larger to match the other power of 10.</para>
+    <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Writing a Number in Scientific Notation</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00037">Write the following numbers in scientific notation form:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>428.9</item>
+    <item>−0.00000981</item>
+    <item>8</item>
+    </list>
+    </problem>
+    <solution id="sol-00002">
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>Since the absolute value of 428.9 is 10 or larger, so we use the process from Case 3, above.
+    <para id="para-00038"><emphasis effect="bold">Step 1:</emphasis> There are three digits to the left of the decimal point, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>3</mn></math>.</para>
+    <para id="para-00039" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Write the digits of the number without the decimal place, which is 4289.</para>
+    <para id="para-00040"><emphasis effect="bold">Step 3:</emphasis> Since there is more than one digit, place the decimal point after the first digit. We now have 4.289.</para>
+    <para id="para-00041"><emphasis effect="bold">Step 4:</emphasis> Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>3</mn></math>, we multiply 4.289 by 10 raised to the second power, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.289</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>.</para>
+    <para id="para-00042" xmlns="http://cnx.rice.edu/cnxml">The scientific notation form of 428.9 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.289</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>.</para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since the absolute value of −0.00000981 is less than 1, we use the process from Case 2.
+    <para id="para-00043"><emphasis effect="bold">Step 1:</emphasis> The number of zeros between the decimal and the first non-zero digit is 5, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>5</mn></math>.</para>
+    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> We write the non-zero digits, including the negative sign, yielding −981.</para>
+    <para id="para-00045"><emphasis effect="bold">Step 3:</emphasis> The decimal gets placed to the right of the first digit, resulting in −9.81.</para>
+    <para id="para-00046"><emphasis effect="bold">Step 4:</emphasis> Since <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mn>5</mn></math>, we multiply −9.81 by 10 raised to the fourth power, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>9.81</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml">The scientific notation form of −0.00000981 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.81</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>.</para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since 8 is a single-digit integer, apply Case 1. The scientific notation form of 8 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>1</mn></msup></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00048"><link class="os-embed" url="#exercise/CM-C03-M9-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00049">When we write numbers in scientific notation form, we can manipulate the representation of the number by moving the decimal around, and making an appropriate change to the exponent of the 10. For instance, let’s look at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145.8141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math>. If we wanted to move the decimal one place to the left, we’d have to increase the power of 10, as shown here: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145.8141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mn>14.58141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math>. Since we moved the decimal one to the left, we balance that with moving the exponent up by one. Similarly, if we move the decimal one place to the right, we have to balance that by moving the exponent one to the left, or subtracting one from the exponent, as shown here: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>145.8141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mn>1458.141</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>. Generally, for a number in the form <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mi>u</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mo>×</mo><msup><mrow><mn>10</mn></mrow><mi>n</mi></msup></mrow></math>:</para>
+    <list bullet-style="none" id="list-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <item>If you move the decimal to the left by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math> digits, you increase the exponent by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">If you move the decimal to the right by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math> digits, you decrease the exponent by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>k</mi></math> digits.</item>
+    </list>
+    <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Increasing the Exponent</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00050">Change <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>456.142</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math> by moving the decimal two places to the left.</para>
+    </problem>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00051">Since we are moving the decimal to the left by two places, we increase the exponent of 10 by 2, so that the exponent is now 7. This gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>456.142</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>4.56142</mn><mo> ×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C03-M9-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00004">
+    <title>Decreasing the Exponent</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00053">Change <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math> by moving the decimal five places to the right.</para>
+    </problem>
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00054">Since we are moving the decimal to the right by five places, we decrease the exponent of 10 by 5, so that exponent is now −3. This give us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>12.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup><mo>=</mo><mn>1230000.0</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00055"><link class="os-embed" url="#exercise/CM-C03-M9-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Converting Numbers from Scientific Notation to Standard Form</title>
+    <para id="para-00056">In the previous section, converting a number from standard form to scientific notation was explored. Now, we explore converting from scientific notation back into standard form. Doing so involves moving the decimal according to the power of the 10. The decimal is moved a number of steps equal to the exponent of the 10. As demonstrated previously, when the exponent of the 10 is negative, the decimal is moved to the left and when the exponent of the 10 is positive, the decimal is moved to the right.</para>
+    <example id="exam-00005">
+    <title> Converting from Scientific Notation to Standard Form</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00057">Convert the following into standard form:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00007">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.78</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.04</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00008">
+    <item>Since the exponent is positive, the decimal moves nine places to the right, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.78</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2,780,000,000</mn></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since the exponent is negative, the decimal moves eight places to the left, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.04</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></msup></mrow></math> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.0000000904</mn></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C03-M9-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00006">
+    <para id="para-00059"><link url="https://openstax.org/r/Converting from_Standard_Form_to_Scientific_Notation_Form">Converting from Standard Form to Scientific Notation Form</link></para>
+    <para id="para-00060"><link url="https://openstax.org/r/Converting_from_Scientific_Notation_Form_to_Standard_Form">Converting from Scientific Notation Form to Standard Form</link></para>
+    </note>
+    <note class="tech-check" id="note-00007">
+    <title>Scientific Notation on a Calculator</title>
+    <para id="para-00061">Most scientific and graphing calculators come with the ability to directly convert from standard form to scientific notation. On the TI-83, it is accessed through the MODE menus. For a commonly used, free phone scientific calculator, the calculator can be forced to work in scientific notation mode through its settings.</para>
+    <para id="para-00062">Some calculators, such as the Desmos online calculator, display scientific notation as a number times 10 to a power as you’ve seen in this section. However, some calculators indicate scientific notation by replacing the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>×</mo><msup><mrow><mn>10</mn></mrow><mi>n</mi></msup></mrow></math> with an e (or E) followed by the exponent. For example, <link target-id="fig-00001" document="m00049" xmlns="http://cnx.rice.edu/cnxml">Figure 3.45</link> shows what you may see on a TI-84.</para>
+    <figure class="numbered" id="fig-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Three Desmos online calculator screens show accessing E, using normal mode, and using sci mode. The first screen labeled normal float auto real radian HP has three rows. The first row reads, 2.53 times 10 power 12 on the left and 2.53 E 12 on the right. The second row reads, 2.53 E 12 on the left and 2.53 E 12 on the right. The third row reads, 2.53 E 1 on the left and 25.3 on the right. The second screen labeled normal float auto real radian HP has four rows. The first row reads, 411522630 times 3 on the left and 1234567890 on the right. The second row reads, 411522630 times 30 on the left and 1.23456789 E 10 on the right. The third row reads, 0.001 on the left and 0.001 on the right. The fourth row reads, 0.0009 on the left and 9 E minus 4 on the right. The third screen labeled sci float auto real radian HP has three rows. The first row reads, 2 times 5 on the left and 1 E 1 on the right. The second row reads, 12 times 42 on the left and 5.04 E 2 on the right. The third row reads, (2.3 times 10 power 3) (65 times 10 power 5) on the left and 1.495 E 10 on the right.">
+    <image mime-type="image/jpg" src="../../media/CS_Figure_03_09_001.jpg"/>
+    </media>
+    <caption>Desmos online calculator screens</caption>
+    </figure>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Adding and Subtracting Numbers in Scientific Notation</title>
+    <para id="para-00063">To add or subtract numbers in scientific notation, the numbers first need to have the same exponent for the 10s. It is possible to add the following since the powers of 10 match:
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>3.15</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>=</mo><mn>7.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math></para>
+    <para id="para-00064" xmlns="http://cnx.rice.edu/cnxml">Notice that the number parts were added, but the exponent part remained the same. This is due to the distributive property of the real numbers. The <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> is factored from the two terms, as shown:
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>3.15</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mn>4.5</mn><mo>+</mo><mn>3.15</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>=</mo><mn>7.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math></para>
+    <para id="para-00065" xmlns="http://cnx.rice.edu/cnxml">Numbers in scientific notation can be added or subtracted directly using a calculator. Simply enter the values in scientific form and set your calculator to display scientific notation.</para>
+    <example id="exam-00006">
+    <title>Adding and Subtracting Numbers in Scientific Notation with the Same Powers of 10</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00066">Calculate the following:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00009">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>1.006</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>−</mo><mn>3.85</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00010">
+    <item>Since the powers of 10 match, we use the distributive property of real numbers to factor 10<sup>−3</sup> from the numbers. We then add the number parts separately to get 4.806.
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>1.006</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><mn>3.8</mn><mo>+</mo><mn>1.006</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>4.806</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Since the powers of 10 match, we use the distributive property of real numbers to factor 10<sup>8</sup> from the numbers. We then subtract the number parts separately to get 5.76. 
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="bolck"><mrow><mn>9.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>−</mo><mn>3.85</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mrow><mo>(</mo><mrow><mn>9.61</mn><mo>−</mo><mn>3.85</mn></mrow><mo>)</mo></mrow><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup><mo>=</mo><mn>5.76</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math></equation></item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00067"><link class="os-embed" url="#exercise/CM-C03-M9-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00068">Adding and subtracting in scientific notation is straightforward when the exponents are the same. There are two issues that can arise. The first issue is what to do if after adding or subtracting the result is not in scientific notation.</para>
+    <example id="exam-00007">
+    <title>Correcting an Answer to Scientific Notation After Adding or Subtracting</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00069">Calculate the following:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00011">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.03</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>+</mo><mn>8.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>−</mo><mn>4.613</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00012">
+    <item><para id="para-00070">Since the powers of 10 match, we add the number parts and multiply that by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math>: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.03</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>+</mo><mn>8.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><mn>7.03</mn><mo>+</mo><mn>8.5</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup><mo>=</mo><mn>15.53</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00071" xmlns="http://cnx.rice.edu/cnxml">However, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>15.53</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>13</mn></mrow></msup></mrow></math> is not in scientific notation because the absolute value of 15.53 is more than 10. To put this number in scientific notation, the decimal needs to move one to the left. To balance that move, the power of 10 must be increased by 1. So, the answer in scientific notation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.553</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>14</mn></mrow></msup></mrow></math>.</para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00072">Since the powers of 10 match, we add the number parts: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>−</mo><mn>4.613</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><mn>4.3</mn><mo>−</mo><mn>4.613</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup><mo>=</mo><mo>−</mo><mn>0.313</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup></mrow></math></para>
+    <para id="para-00073" xmlns="http://cnx.rice.edu/cnxml">However, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>0.313</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>21</mn></mrow></msup></mrow></math> is not in scientific notation because it is less than 1. To put it in scientific notation, the decimal needs to move one to the right. To balance that move, the power of 10 must be decreased by 1. So, the answer in scientific notation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>3.13</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>20</mn></mrow></msup></mrow></math>.</para></item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C03-M9-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00075">The second issue that might be encountered when adding or subtracting is that the powers of 10 do not match. In that case, one of the numbers must be changed so that the powers of 10 match. It is easiest to make the smaller power of 10 larger to match the other power of 10.</para>
     <para id="para-00153">For example, to perform the following, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>3.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math>, we’d change the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math> so that the power of 10 is 5. To do so, we need to increase the power of 10 and move the decimal in the number part two places to the left. That would alter <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math> into <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.039</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math>. We would use <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.039</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math> in the addition problem, so that the exponents match, allowing the addition to occur.
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>3.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>=</mo><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>0.039</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mn>4.5</mn><mo>+</mo><mn>0.039</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>4.539</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math></para>
-      <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">The steps to take when the exponents of the 10s are not equal are:</para>
-      <para id="para-00077"><emphasis effect="bold">Step 1:</emphasis> Increase the smaller exponent to equal the larger exponent. Label the amount increased as<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</para>
-      <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> For the number with the smaller power of 10, move the decimal point of the number part to the left <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> places.</para>
-      <para id="para-00079" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Perform the addition or subtraction.</para>
-      <para id="para-00080"><emphasis effect="bold">Step 4:</emphasis> If the result is not in scientific notation, adjust the number to be in scientific notation.</para>
-      <example id="exam-00008">
-      <title>Adding Numbers in Scientific Notation with Different Powers of 10</title>
-      <exercise id="exer-00015">
-      <problem id="prob-00015">
-      <para id="para-00081">Calculate the following:</para>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>3.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo>=</mo><mn>4.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>0.039</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mn>4.5</mn><mo>+</mo><mn>0.039</mn><mo stretchy="false">)</mo><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>4.539</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math></para>
+    <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">The steps to take when the exponents of the 10s are not equal are:</para>
+    <para id="para-00077"><emphasis effect="bold">Step 1:</emphasis> Increase the smaller exponent to equal the larger exponent. Label the amount increased as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>.</para>
+    <para id="para-00078" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> For the number with the smaller power of 10, move the decimal point of the number part to the left <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> places.</para>
+    <para id="para-00079" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Perform the addition or subtraction.</para>
+    <para id="para-00080"><emphasis effect="bold">Step 4:</emphasis> If the result is not in scientific notation, adjust the number to be in scientific notation.</para>
+    <example id="exam-00008">
+    <title>Adding Numbers in Scientific Notation with Different Powers of 10</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00081">Calculate the following:</para>
     <para id="para-00174"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>6.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math></para>
-      </problem>
-      <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00082"><emphasis effect="bold">Step 1:</emphasis> The lower exponent is 4. To make this equal to the larger exponent, we increased it by 1.</para>
-      <para id="para-00083"><emphasis effect="bold">Step 2:</emphasis> Since the smaller exponent was increased by 1, move the decimal one to the left, so the addition become <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>0.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math>.</para>
-      <para id="para-00084" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now add the numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>5.41</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math></para>
-      <para id="para-00085" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> The result is in scientific notation, so no additional adjustment is necessary.</para>
+    </problem>
+    <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00082"><emphasis effect="bold">Step 1:</emphasis> The lower exponent is 4. To make this equal to the larger exponent, we increased it by 1.</para>
+    <para id="para-00083"><emphasis effect="bold">Step 2:</emphasis> Since the smaller exponent was increased by 1, move the decimal one to the left, so the addition become <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>0.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math>.</para>
+    <para id="para-00084" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Now add the numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.61</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>5.41</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math></para>
+    <para id="para-00085" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> The result is in scientific notation, so no additional adjustment is necessary.</para>
     <para id="para-00175"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo>+</mo><mn>4.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><mo>=</mo><mn>5.41</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup></mrow></math></para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00016">
-      <problem id="prob-00016">
-      <para id="para-00086"><link class="os-embed" url="#exercise/CM-C03-M9-Q008"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00009">
-      <title>Subtracting Numbers in Scientific Notation with Different Powers of 10</title>
-      <exercise id="exer-00017">
-      <problem id="prob-00017">
-      <para id="para-00087">Calculate the following:<newline/>
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>15</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math></para>
-      </problem>
-      <solution id="sol-00009" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00088"><emphasis effect="bold">Step 1:</emphasis> The lower exponent is −15 and the larger is −13. To make −15 equal to the larger exponent, we increased it by 2.</para>
-      <para id="para-00089"><emphasis effect="bold">Step 2:</emphasis> Since the smaller exponent increased by 2, move the decimal two to the left. The subtraction changes to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>15</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>=</mo><mn>0.079</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00090" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Subtract the numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.079</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>=</mo><mo>−</mo><mn>6.721</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00091" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> The result is in scientific notation, so no additional adjustment is necessary. <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>15</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>=</mo><mo>−</mo><mn>6.721</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math></para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00018">
-      <problem id="prob-00018">
-      <para id="para-00092"><link class="os-embed" url="#exercise/CM-C03-M9-Q009"/></para>
-      </problem>
-      </exercise>
-      </note>
-      </section>
-      <section id="sect-00005">
-      <title>Multiplying and Dividing Numbers in Scientific Notation</title>
-      <para id="para-00093">Multiplying and dividing numbers in scientific notation is somewhat easier than adding or subtracting, because the exponents of the 10s do not have to match. However, it is much more likely that the result will not be in scientific notation, and so that will have to be adjusted at the end. Generally, we multiply or divide the number parts of the two values, and then apply exponent rules to the 10 raised to the powers.</para>
-      <para id="para-00094"><emphasis effect="bold">Multiplying Numbers in Scientific Notation</emphasis></para>
-      <para id="para-00095">To multiply two numbers in scientific notation:</para>
-      <para id="para-00096"><emphasis effect="bold">Step 1:</emphasis> Multiply the number parts.</para>
-      <para id="para-00097"><emphasis effect="bold">Step 2:</emphasis> Add the exponents of the 10s.</para>
-      <para id="para-00098"><emphasis effect="bold">Step 3:</emphasis> The result is the answer from Step 1 times 10 raised to the answer from Step 2.</para>
-      <para id="para-00099"><emphasis effect="bold">Step 4:</emphasis> If the number is not in scientific notation, adjust it appropriately.</para>
-      <example id="exam-00010">
-      <title>Multiplying Numbers in Scientific Notation</title>
-      <exercise id="exer-00019">
-      <problem id="prob-00019">
-      <para id="para-00100">Calculate the following:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00013">
-      <item><para id="para-00101"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo></mrow></math></para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00102"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><msup><mrow/><mn>3</mn></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>7.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></math></para></item>
-      </list>
-      </problem>
-      <solution id="sol-00010" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00014">
-      <item><para id="para-00103"><emphasis effect="bold">Step 1:</emphasis> Multiply the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.3</mn><mo>×</mo><mn>1.8</mn><mo>=</mo><mn>7.74</mn></mrow></math>.</para>
-      <para id="para-00104" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Add the exponents of the 10s to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>10</mn></mrow></math>.</para>
-      <para id="para-00105" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.74</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>10</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00106" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> This number is already in scientific notation, so no additional adjustment is necessary, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>7.74</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>10</mn></mrow></msup></mrow></math>.</para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00107"><emphasis effect="bold">Step 1:</emphasis> Multiply the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>×</mo><mn>7.3</mn><mo>=</mo><mn>36.5</mn></mrow></math>.</para>
-      <para id="para-00108" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Add the exponents of the 10s to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>=</mo><mo>−</mo><mn>7</mn></mrow></math>.</para>
-      <para id="para-00109" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result then is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00110" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis>Since the number is not in scientific notation, it must be adjusted. To put <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></math> into scientific notation, the decimal moves one to the left, so the exponent would be increased by 1, giving <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00111" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>7.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>3.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math></para>
-      </item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00020">
-      <problem id="prob-00020">
-      <para id="para-00112"><link class="os-embed" url="#exercise/CM-C03-M9-Q010"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="video" id="note-00013">
-      <para id="para-00113"><link url="https://openstax.org/r/Multiplying_Numbers_in_Scientific_Notation">Multiplying Numbers in Scientific Notation</link></para>
-      </note>
-      </section>
-      <section id="sect-00006">
-      <title>Dividing Numbers in Scientific Notation</title>
-      <para id="para-00114">To divide two numbers that are in scientific notation:</para>
-      <para id="para-00115"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts.</para>
-      <para id="para-00116"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator.</para>
-      <para id="para-00117"><emphasis effect="bold">Step 3:</emphasis> The answer is the result from Step 1 times 10 raised to the result from Step 2.</para>
-      <para id="para-00118"><emphasis effect="bold">Step 4:</emphasis> If the number is not in scientific notation, adjust it appropriately.</para>
-      <example id="exam-00011">
-      <title>Dividing Numbers in Scientific Notation</title>
-      <exercise id="exer-00021">
-      <problem id="prob-00021">
-      <para id="para-00119">Calculate the following:</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00015">
-      <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>31</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>2.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.14</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>8.28</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo stretchy="false">)</mo></mrow></math></item>
-      </list>
-      </problem>
-      <solution id="sol-00011" xmlns="http://cnx.rice.edu/cnxml">
-      <list list-type="enumerated" number-style="arabic" id="list-00016">
-      <item><para id="para-00120"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>31</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>2.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo></mrow></math></para>
-      <para id="para-00121" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8.4</mn><mo>÷</mo><mn>2.1</mn><mo>=</mo><mn>4</mn></mrow></math>.</para>
-      <para id="para-00122" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>37</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>24</mn></mrow></math>.</para>
-      <para id="para-00123" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>24</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00124" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> This number is already in scientific notation, so no adjustment is necessary. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>31</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>2.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>24</mn></mrow></msup></mrow></math></para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00125"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.14</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>8.28</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo stretchy="false">)</mo></mrow></math></para>
-      <para id="para-00126" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.14</mn><mo>÷</mo><mn>8.28</mn><mo>=</mo><mn>0.5</mn></mrow></math>.</para>
-      <para id="para-00127" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>13</mn><mo>−</mo><mn>9</mn><mo>=</mo><mo>−</mo><mn>22</mn></mrow></math>.</para>
-      <para id="para-00128" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result then is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>22</mn></mrow></msup></mrow></math>.</para>
-      <para id="para-00129" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Since this number is not in scientific notation, it must be adjusted. To put <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>22</mn></mrow></msup></mrow></math> into scientific notation, the decimal needs to move one to the right, so the exponent is decreased by 1, giving <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>23</mn></mrow></msup></mrow></math>.
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.14</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>8.28</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>23</mn></mrow></msup></mrow></math></para>
-      </item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00022">
-      <problem id="prob-00022">
-      <para id="para-00130"><link class="os-embed" url="#exercise/CM-C03-M9-Q011"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="video" id="note-00015">
-      <para id="para-00131"><link url="https://openstax.org/r/Dividing_Numbers_in_Scientific_Notation">Dividing Numbers in Scientific Notation</link></para>
-      </note>
-      </section>
-      <section id="sect-00007">
-      <title>Using Scientific Notation in Computing Real-World Applications</title>
-      <para id="para-00132">As noted at the start of this section, scientific notation is useful when the standard representation of a number is awkward or impractical, which occurs when the numbers being used are extremely large or extremely small. For example, Venus is 67,667,000 miles from the sun. In scientific notation, this is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.7667</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>. Planetary and galaxy distances is one set of numbers that is easier to express using scientific notation.</para>
-      <example id="exam-00012" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Calculating Distances</title>
-      <exercise id="exer-00023">
-      <problem id="prob-00023">
-      <para id="para-00133">How much farther from the sun is Earth compared to Venus if Venus is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.7667</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> miles from the sun and Earth is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.1692</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> miles from the sun?</para>
-      </problem>
-      <solution id="sol-00012" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00134">To determine how much farther Earth is compared to Venus, we’d subtract the distances. <newline/>
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.1692</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo>−</mo><mn>6.7667</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo>=</mo><mn>2.4025</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>.</para>
-       <para id="para-00173" xmlns="http://cnx.rice.edu/cnxml">So, Earth is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.4025</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> miles farther from the sun than Venus.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00024">
-      <problem id="prob-00024">
-      <para id="para-00135"><link class="os-embed" url="#exercise/CM-C03-M9-Q012"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00013">
-      <title>Calculating Probability</title>
-      <exercise id="exer-00025">
-      <problem id="prob-00025">
-      <para id="para-00136">The probability of winning the Mega Millions lottery is published as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.304693</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>9</mn></mrow></msup></mrow></math>. The probability of being hit by lightning is approximated to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>. How many times more likely are you to be hit by lightning than win the Mega Millions?</para>
-      </problem>
-      <solution id="sol-00013" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00137">To find out how many times more likely you are to be hit by lightning, divide the probability of being hit by lightning by the probability of winning the Mega Millions.
-       <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="bolck"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>3.304693</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>9</mn></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>6.609386</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math></equation></para>
-      <para id="para-00138" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts to get = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6052</mn></mrow></math> (rounded to the fourth digit).</para>
-      <para id="para-00139" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>6</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>9</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>.</para>
-      <para id="para-00140" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result then is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math>.</para>
-      <para id="para-00141" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Since this number is not in scientific notation, it must be adjusted. To put <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math> into scientific notation, the decimal needs to move one place to the right, so the exponent is decreased by 1, giving <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>.</para>
-      <para id="para-00142" xmlns="http://cnx.rice.edu/cnxml">You are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>, or 605.2, times more likely to be hit by lightning than you are to win the Mega Millions.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00026">
-      <problem id="prob-00026">
-      <para id="para-00143"><link class="os-embed" url="#exercise/CM-C03-M9-Q013"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00014">
-      <title>Calculating Time and Length</title>
-      <exercise id="exer-00027">
-      <problem id="prob-00027">
-      <para id="para-00144">Sometimes it is entertaining to determine the time it takes for something to happen. Fingernails grow about <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8.032</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>11</mn></mrow></msup></mrow></math> km per minute. How many kilometers long would fingernails be after <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> minutes?</para>
-      </problem>
-      <solution id="sol-00014" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00145">To find the length of the fingernails after the specified time, we multiply their rate of growth and the time they’ve grown.
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.032</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>11</mn></mrow></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>48.192</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo>=</mo><mn>4.8192</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math></para>
-      <para id="para-00146" xmlns="http://cnx.rice.edu/cnxml">So, after <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> minutes, the fingernails would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.8192</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math> km long. To put this in perspective, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math> km is a millimeter, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> minutes is about 4.16 days. So, after about 4.16 days, fingernails have grown about 4.8 millimeters.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00018" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00028">
-      <problem id="prob-00028">
-      <para id="para-00147"><link class="os-embed" url="#exercise/CM-C03-M9-Q014"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <example id="exam-00015">
-      <title>Calculating Data Generated</title>
-      <exercise id="exer-00029">
-      <problem id="prob-00029">
-      <para id="para-00148">As mentioned in the opening to this section, it is estimated that we’re producing 2.5 quintillion bytes of data per day. A good estimate is that there are 7.674 billion people on the planet. Convert both of those numbers to scientific notation, and then determine how much data is being generated per person each day.</para>
-      </problem>
-      <solution id="sol-00015">
-      <para id="para-00149">Written in standard form, 2.5 quintillion is 2,500,000,000,000,000,000. Changing that to scientific notation, move the decimal 18 places, so 2.5 quintillion bytes = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>18</mn></mrow></msup></mrow></math> bytes. Writing 7.647 billion in scientific notation would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.647</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math> because a billion is 1,000,000,000 = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math>. So, to find out how much data is being produced daily per person, we would divide these two numbers.
-       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>2.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>18</mn></mrow></msup></mrow><mrow><mn>7.647</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></mfrac><mo>=</mo><mn>0.327</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo>=</mo><mn>3.27</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math></para>
-      <para id="para-00150" xmlns="http://cnx.rice.edu/cnxml">In standard form, that’s 327,000,000 bytes per person, so 327 million bytes of data daily are being produced per person.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00019">
-      <exercise id="exer-00030">
-      <problem id="prob-00030">
-      <para id="para-00151"><link class="os-embed" url="#exercise/CM-C03-M9-Q015"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="video" id="note-00020">
-      <para id="para-00152"><link url="https://openstax.org/r/Application_of_Scientific_Notation">Application of Scientific Notation</link></para>
-      </note>
-      </section>
-      <section id="sect-00008">
-      <title>What Numbers Could Be Considered “Too Big” or “Too Small”?</title>
-      <para id="para-00154">One wonders when the numbers we represent become too large or small for consideration. Perhaps the following examples put limits on what is meaningful. The number of particles in the known universe has been estimated at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>80</mn></mrow></msup></mrow></math> particles. The smallest distance that has been measured is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>18</mn></mrow></msup><mi mathvariant="normal">m</mi></mrow></math>, though the theoretical smallest measurable value is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>35</mn></mrow></msup><mi mathvariant="normal">m</mi></mrow></math>. The distance across the universe is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>26</mn></mrow></msup><mi mathvariant="normal">m</mi></mrow></math>. Considering what those numbers represent, the extreme largest and extreme smallest, they might be numbers that constrain what we should reasonably be expected to deal with.</para>
-      </section>
-      <section class="check-understanding" id="sect-00009" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Check Your Understanding</title>
-      <exercise id="exer-00031">
-      <problem id="prob-00031">
-      <para id="para-00155"><link class="os-embed" url="#exercise/CM-C03-M9-Q016"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00032">
-      <problem id="prob-00032">
-      <para id="para-00156"><link class="os-embed" url="#exercise/CM-C03-M9-Q017"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00033">
-      <problem id="prob-00033">
-      <para id="para-00157"><link class="os-embed" url="#exercise/CM-C03-M9-Q018"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00034">
-      <problem id="prob-00034">
-      <para id="para-00158"><link class="os-embed" url="#exercise/CM-C03-M9-Q019"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00035">
-      <problem id="prob-00035">
-      <para id="para-00159"><link class="os-embed" url="#exercise/CM-C03-M9-Q020"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00036">
-      <problem id="prob-00036">
-      <para id="para-00160"><link class="os-embed" url="#exercise/CM-C03-M9-Q021"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00037">
-      <problem id="prob-00037">
-      <para id="para-00161"><link class="os-embed" url="#exercise/CM-C03-M9-Q022"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="section-exercises" id="sect-00010">
-      <exercise id="exer-00038">
-      <problem id="prob-00038">
-      <para id="para-00162"><link class="os-embed" url="#exercise/CM-C03-M9-Q023"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00039">
-      <problem id="prob-00039">
-      <para id="para-00163"><link class="os-embed" url="#exercise/CM-C03-M9-Q024"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00040">
-      <problem id="prob-00040">
-      <para id="para-00164"><link class="os-embed" url="#exercise/CM-C03-M9-Q025"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00041">
-      <problem id="prob-00041">
-      <para id="para-00165"><link class="os-embed" url="#exercise/CM-C03-M9-Q026"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00042">
-      <problem id="prob-00042">
-      <para id="para-00166"><link class="os-embed" url="#exercise/CM-C03-M9-Q027"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00043">
-      <problem id="prob-00043">
-      <para id="para-00167"><link class="os-embed" url="#exercise/CM-C03-M9-Q028"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="key-terms" id="sect-00012">
-      <title>Key Terms</title>
-      <list bullet-style="none" id="list-00017">
-      <item>scientific notation</item>
-      <item>standard notation</item>
-      </list>
-      </section>
-      <section class="key-concepts" id="sect-00013">
-      <title>Key Concepts</title>
-      <list list-type="bulleted" id="list-00018">
-      <item>Some numbers are so large or so small that writing the number out is clumsy and make it difficult to determine the true size of the number. Scientific notation makes the number more readable and make the relative size of the number immediately apparent.</item>
-      <item>A number written in scientific notation is a number at least 1 and smaller than 10 multiplied by 10 raised to an exponent. Converting between scientific notation and standard notation involves correctly applying multiplication and division by powers of 10, which in practice equates to understanding how moving the decimal point of a number impacts the exponent of 10.</item>
-      <item>Adding and subtracting numbers in base 10 requires the exponent of 10 in each number be the same. Once the numbers are converted to have the same exponent with the ten, then the numbers are added or subtracted as indicated, with the power of 10 remaining the same. If the result is not in scientific notation (for instance, the number has exceeded 10), then then number must be converted into scientific notation.</item>
-      <item>Multiplying and dividing numbers in scientific notation is done by multiplying or dividing the number parts, then multiplying or dividing the 10 raised to the power parts, then multiplying those two results. If the new number is not in scientific notation, then the result must be converted into scientific notation.</item>
-      </list>
-      </section>
-      <section class="eoc-videos" id="sect-00014">
-      <title>Videos</title>
-      <para id="para-00168"><link url="https://openstax.org/r/Converting_form_Standard_Form_to_Scientific_Notation_Form">Converting form Standard Form to Scientific Notation Form</link></para>
-      <para id="para-00169"><link url="https://openstax.org/r/Converting_from_Scientific_Notation_Form_to_Standard_Form">Converting from Scientific Notation Form to Standard Form</link></para>
-      <para id="para-00170"><link url="https://openstax.org/r/Multiplying_Numbers_in_Scientific_Notation">Multiplying Numbers in Scientific Notation</link></para>
-      <para id="para-00171"><link url="https://openstax.org/r/Dividing_Numbers_in_Scientific_Notation">Dividing Numbers in Scientific Notation</link></para>
-      <para id="para-00172"><link url="https://openstax.org/r/Application_of_Scientific_Notation">Application of Scientific Notation</link></para>
-      </section>
-  </content>
-  </document>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00086"><link class="os-embed" url="#exercise/CM-C03-M9-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00009">
+    <title>Subtracting Numbers in Scientific Notation with Different Powers of 10</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00087">Calculate the following:<newline/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>15</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math></para>
+    </problem>
+    <solution id="sol-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00088"><emphasis effect="bold">Step 1:</emphasis> The lower exponent is −15 and the larger is −13. To make −15 equal to the larger exponent, we increased it by 2.</para>
+    <para id="para-00089"><emphasis effect="bold">Step 2:</emphasis> Since the smaller exponent increased by 2, move the decimal two to the left. The subtraction changes to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>15</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>=</mo><mn>0.079</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00090" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Subtract the numbers, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.079</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>=</mo><mo>−</mo><mn>6.721</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00091" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> The result is in scientific notation, so no additional adjustment is necessary. <newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.9</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>15</mn></mrow></msup><mo>−</mo><mn>6.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo>=</mo><mo>−</mo><mn>6.721</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup></mrow></math></para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00092"><link class="os-embed" url="#exercise/CM-C03-M9-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Multiplying and Dividing Numbers in Scientific Notation</title>
+    <para id="para-00093">Multiplying and dividing numbers in scientific notation is somewhat easier than adding or subtracting, because the exponents of the 10s do not have to match. However, it is much more likely that the result will not be in scientific notation, and so that will have to be adjusted at the end. Generally, we multiply or divide the number parts of the two values, and then apply exponent rules to the 10 raised to the powers.</para>
+    <para id="para-00094"><emphasis effect="bold">Multiplying Numbers in Scientific Notation</emphasis></para>
+    <para id="para-00095">To multiply two numbers in scientific notation:</para>
+    <para id="para-00096"><emphasis effect="bold">Step 1:</emphasis> Multiply the number parts.</para>
+    <para id="para-00097"><emphasis effect="bold">Step 2:</emphasis> Add the exponents of the 10s.</para>
+    <para id="para-00098"><emphasis effect="bold">Step 3:</emphasis> The result is the answer from Step 1 times 10 raised to the answer from Step 2.</para>
+    <para id="para-00099"><emphasis effect="bold">Step 4:</emphasis> If the number is not in scientific notation, adjust it appropriately.</para>
+    <example id="exam-00010">
+    <title>Multiplying Numbers in Scientific Notation</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00100">Calculate the following:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00013">
+    <item><para id="para-00101"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo></mrow></math></para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00102"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><msup><mrow/><mn>3</mn></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>7.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup><mo stretchy="false">)</mo></mrow></math></para></item>
+    </list>
+    </problem>
+    <solution id="sol-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00014">
+    <item><para id="para-00103"><emphasis effect="bold">Step 1:</emphasis> Multiply the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.3</mn><mo>×</mo><mn>1.8</mn><mo>=</mo><mn>7.74</mn></mrow></math>.</para>
+    <para id="para-00104" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Add the exponents of the 10s to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>10</mn></mrow></math>.</para>
+    <para id="para-00105" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.74</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>10</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00106" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> This number is already in scientific notation, so no additional adjustment is necessary, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>1.8</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>7.74</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>10</mn></mrow></msup></mrow></math>.</para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00107"><emphasis effect="bold">Step 1:</emphasis> Multiply the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>×</mo><mn>7.3</mn><mo>=</mo><mn>36.5</mn></mrow></math>.</para>
+    <para id="para-00108" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Add the exponents of the 10s to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>13</mn><mo>+</mo><mn>6</mn><mo>=</mo><mo>−</mo><mn>7</mn></mrow></math>.</para>
+    <para id="para-00109" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result then is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00110" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis>Since the number is not in scientific notation, it must be adjusted. To put <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>36.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>7</mn></mrow></msup></mrow></math> into scientific notation, the decimal moves one to the left, so the exponent would be increased by 1, giving <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00111" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>7.3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>6</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>3.65</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math></para>
+    </item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00112"><link class="os-embed" url="#exercise/CM-C03-M9-Q010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00013">
+    <para id="para-00113"><link url="https://openstax.org/r/Multiplying_Numbers_in_Scientific_Notation">Multiplying Numbers in Scientific Notation</link></para>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Dividing Numbers in Scientific Notation</title>
+    <para id="para-00114">To divide two numbers that are in scientific notation:</para>
+    <para id="para-00115"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts.</para>
+    <para id="para-00116"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator.</para>
+    <para id="para-00117"><emphasis effect="bold">Step 3:</emphasis> The answer is the result from Step 1 times 10 raised to the result from Step 2.</para>
+    <para id="para-00118"><emphasis effect="bold">Step 4:</emphasis> If the number is not in scientific notation, adjust it appropriately.</para>
+    <example id="exam-00011">
+    <title>Dividing Numbers in Scientific Notation</title>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00119">Calculate the following:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00015">
+    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>31</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>2.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo></mrow></math></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.14</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>8.28</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo stretchy="false">)</mo></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00016">
+    <item><para id="para-00120"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>31</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>2.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo></mrow></math></para>
+    <para id="para-00121" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8.4</mn><mo>÷</mo><mn>2.1</mn><mo>=</mo><mn>4</mn></mrow></math>.</para>
+    <para id="para-00122" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>37</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>24</mn></mrow></math>.</para>
+    <para id="para-00123" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>24</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00124" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> This number is already in scientific notation, so no adjustment is necessary. <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>31</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>2.1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>24</mn></mrow></msup></mrow></math></para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00125"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.14</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>8.28</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo stretchy="false">)</mo></mrow></math></para>
+    <para id="para-00126" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.14</mn><mo>÷</mo><mn>8.28</mn><mo>=</mo><mn>0.5</mn></mrow></math>.</para>
+    <para id="para-00127" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>13</mn><mo>−</mo><mn>9</mn><mo>=</mo><mo>−</mo><mn>22</mn></mrow></math>.</para>
+    <para id="para-00128" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result then is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>22</mn></mrow></msup></mrow></math>.</para>
+    <para id="para-00129" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Since this number is not in scientific notation, it must be adjusted. To put <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>22</mn></mrow></msup></mrow></math> into scientific notation, the decimal needs to move one to the right, so the exponent is decreased by 1, giving <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>23</mn></mrow></msup></mrow></math>.
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>4.14</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>13</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>8.28</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>23</mn></mrow></msup></mrow></math></para>
+    </item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00130"><link class="os-embed" url="#exercise/CM-C03-M9-Q011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00015">
+    <para id="para-00131"><link url="https://openstax.org/r/Dividing_Numbers_in_Scientific_Notation">Dividing Numbers in Scientific Notation</link></para>
+    </note>
+    </section>
+    <section id="sect-00007">
+    <title>Using Scientific Notation in Computing Real-World Applications</title>
+    <para id="para-00132">As noted at the start of this section, scientific notation is useful when the standard representation of a number is awkward or impractical, which occurs when the numbers being used are extremely large or extremely small. For example, Venus is 67,667,000 miles from the sun. In scientific notation, this is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.7667</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>. Planetary and galaxy distances is one set of numbers that is easier to express using scientific notation.</para>
+    <example id="exam-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Calculating Distances</title>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00133">How much farther from the sun is Earth compared to Venus if Venus is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.7667</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> miles from the sun and Earth is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.1692</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> miles from the sun?</para>
+    </problem>
+    <solution id="sol-00012" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00134">To determine how much farther Earth is compared to Venus, we’d subtract the distances. <newline/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.1692</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo>−</mo><mn>6.7667</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup><mo>=</mo><mn>2.4025</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math>.</para>
+    <para id="para-00173" xmlns="http://cnx.rice.edu/cnxml">So, Earth is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.4025</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>7</mn></msup></mrow></math> miles farther from the sun than Venus.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00016" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00135"><link class="os-embed" url="#exercise/CM-C03-M9-Q012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00013">
+    <title>Calculating Probability</title>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00136">The probability of winning the Mega Millions lottery is published as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3.304693</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>9</mn></mrow></msup></mrow></math>. The probability of being hit by lightning is approximated to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math>. How many times more likely are you to be hit by lightning than win the Mega Millions?</para>
+    </problem>
+    <solution id="sol-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00137">To find out how many times more likely you are to be hit by lightning, divide the probability of being hit by lightning by the probability of winning the Mega Millions.
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="bolck"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mspace width="0.28em"/><mo>/</mo><mspace width="0.28em"/><mo stretchy="false">(</mo><mn>3.304693</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>9</mn></mrow></msup><mo stretchy="false">)</mo><mo>=</mo><mn>6.609386</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math></equation></para>
+    <para id="para-00138" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Divide the number parts to get = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6052</mn></mrow></math> (rounded to the fourth digit).</para>
+    <para id="para-00139" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Subtract the exponent of the denominator from the exponent of the numerator to get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>−</mo><mn>6</mn><mo>−</mo><mo stretchy="false">(</mo><mo>−</mo><mn>9</mn><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow></math>.</para>
+    <para id="para-00140" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> The result then is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math>.</para>
+    <para id="para-00141" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 4:</emphasis> Since this number is not in scientific notation, it must be adjusted. To put <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.6052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>3</mn></msup></mrow></math> into scientific notation, the decimal needs to move one place to the right, so the exponent is decreased by 1, giving <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>.</para>
+    <para id="para-00142" xmlns="http://cnx.rice.edu/cnxml">You are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6.052</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>2</mn></msup></mrow></math>, or 605.2, times more likely to be hit by lightning than you are to win the Mega Millions.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00143"><link class="os-embed" url="#exercise/CM-C03-M9-Q013"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00014">
+    <title>Calculating Time and Length</title>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00144">Sometimes it is entertaining to determine the time it takes for something to happen. Fingernails grow about <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8.032</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>11</mn></mrow></msup></mrow></math> km per minute. How many kilometers long would fingernails be after <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> minutes?</para>
+    </problem>
+    <solution id="sol-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00145">To find the length of the fingernails after the specified time, we multiply their rate of growth and the time they’ve grown.
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>8.032</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>11</mn></mrow></msup><mo stretchy="false">)</mo><mo>×</mo><mo stretchy="false">(</mo><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>48.192</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>7</mn></mrow></msup><mo>=</mo><mn>4.8192</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math></para>
+    <para id="para-00146" xmlns="http://cnx.rice.edu/cnxml">So, after <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> minutes, the fingernails would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.8192</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math> km long. To put this in perspective, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>6</mn></mrow></msup></mrow></math> km is a millimeter, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>4</mn></msup></mrow></math> minutes is about 4.16 days. So, after about 4.16 days, fingernails have grown about 4.8 millimeters.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00018" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00147"><link class="os-embed" url="#exercise/CM-C03-M9-Q014"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00015">
+    <title>Calculating Data Generated</title>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00148">As mentioned in the opening to this section, it is estimated that we’re producing 2.5 quintillion bytes of data per day. A good estimate is that there are 7.674 billion people on the planet. Convert both of those numbers to scientific notation, and then determine how much data is being generated per person each day.</para>
+    </problem>
+    <solution id="sol-00015">
+    <para id="para-00149">Written in standard form, 2.5 quintillion is 2,500,000,000,000,000,000. Changing that to scientific notation, move the decimal 18 places, so 2.5 quintillion bytes = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>18</mn></mrow></msup></mrow></math> bytes. Writing 7.647 billion in scientific notation would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7.647</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math> because a billion is 1,000,000,000 = <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></math>. So, to find out how much data is being produced daily per person, we would divide these two numbers.
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>2.5</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>18</mn></mrow></msup></mrow><mrow><mn>7.647</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup></mrow></mfrac><mo>=</mo><mn>0.327</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mo>=</mo><mn>3.27</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mn>8</mn></msup></mrow></math></para>
+    <para id="para-00150" xmlns="http://cnx.rice.edu/cnxml">In standard form, that’s 327,000,000 bytes per person, so 327 million bytes of data daily are being produced per person.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00019">
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00151"><link class="os-embed" url="#exercise/CM-C03-M9-Q015"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00020">
+    <para id="para-00152"><link url="https://openstax.org/r/Application_of_Scientific_Notation">Application of Scientific Notation</link></para>
+    </note>
+    </section>
+    <section id="sect-00008">
+    <title>What Numbers Could Be Considered “Too Big” or “Too Small”?</title>
+    <para id="para-00154">One wonders when the numbers we represent become too large or small for consideration. Perhaps the following examples put limits on what is meaningful. The number of particles in the known universe has been estimated at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>80</mn></mrow></msup></mrow></math> particles. The smallest distance that has been measured is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>18</mn></mrow></msup><mi mathvariant="normal">m</mi></mrow></math>, though the theoretical smallest measurable value is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>−</mo><mn>35</mn></mrow></msup><mi mathvariant="normal">m</mi></mrow></math>. The distance across the universe is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>26</mn></mrow></msup><mi mathvariant="normal">m</mi></mrow></math>. Considering what those numbers represent, the extreme largest and extreme smallest, they might be numbers that constrain what we should reasonably be expected to deal with.</para>
+    </section>
+    <section class="check-understanding" id="sect-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00155"><link class="os-embed" url="#exercise/CM-C03-M9-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00156"><link class="os-embed" url="#exercise/CM-C03-M9-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00157"><link class="os-embed" url="#exercise/CM-C03-M9-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00158"><link class="os-embed" url="#exercise/CM-C03-M9-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00159"><link class="os-embed" url="#exercise/CM-C03-M9-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00160"><link class="os-embed" url="#exercise/CM-C03-M9-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00161"><link class="os-embed" url="#exercise/CM-C03-M9-Q022"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00010">
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00162"><link class="os-embed" url="#exercise/CM-C03-M9-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00163"><link class="os-embed" url="#exercise/CM-C03-M9-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00164"><link class="os-embed" url="#exercise/CM-C03-M9-Q025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00165"><link class="os-embed" url="#exercise/CM-C03-M9-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00166"><link class="os-embed" url="#exercise/CM-C03-M9-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00167"><link class="os-embed" url="#exercise/CM-C03-M9-Q028"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00012">
+    <title>Key Terms</title>
+    <list bullet-style="none" id="list-00017">
+    <item>scientific notation</item>
+    <item>standard notation</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00013">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00018">
+    <item>Some numbers are so large or so small that writing the number out is clumsy and make it difficult to determine the true size of the number. Scientific notation makes the number more readable and make the relative size of the number immediately apparent.</item>
+    <item>A number written in scientific notation is a number at least 1 and smaller than 10 multiplied by 10 raised to an exponent. Converting between scientific notation and standard notation involves correctly applying multiplication and division by powers of 10, which in practice equates to understanding how moving the decimal point of a number impacts the exponent of 10.</item>
+    <item>Adding and subtracting numbers in base 10 requires the exponent of 10 in each number be the same. Once the numbers are converted to have the same exponent with the ten, then the numbers are added or subtracted as indicated, with the power of 10 remaining the same. If the result is not in scientific notation (for instance, the number has exceeded 10), then then number must be converted into scientific notation.</item>
+    <item>Multiplying and dividing numbers in scientific notation is done by multiplying or dividing the number parts, then multiplying or dividing the 10 raised to the power parts, then multiplying those two results. If the new number is not in scientific notation, then the result must be converted into scientific notation.</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00014">
+    <title>Videos</title>
+    <para id="para-00168"><link url="https://openstax.org/r/Converting_form_Standard_Form_to_Scientific_Notation_Form">Converting form Standard Form to Scientific Notation Form</link></para>
+    <para id="para-00169"><link url="https://openstax.org/r/Converting_from_Scientific_Notation_Form_to_Standard_Form">Converting from Scientific Notation Form to Standard Form</link></para>
+    <para id="para-00170"><link url="https://openstax.org/r/Multiplying_Numbers_in_Scientific_Notation">Multiplying Numbers in Scientific Notation</link></para>
+    <para id="para-00171"><link url="https://openstax.org/r/Dividing_Numbers_in_Scientific_Notation">Dividing Numbers in Scientific Notation</link></para>
+    <para id="para-00172"><link url="https://openstax.org/r/Application_of_Scientific_Notation">Application of Scientific Notation</link></para>
+    </section>
+    </content>
+    </document>   
