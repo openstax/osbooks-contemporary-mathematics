@@ -7,1857 +7,1857 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-      <media alt="Insert Alt Text">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_04_05_001.jpg"/>
-      </media>
-      <caption>The processes for multiplication and division are the same for arithmetic in any bases. (credit: modification of work “NCTR Intern Claire Boyle” by Danny Tucker/U.S. Food and Drug Administration, Public Domain)</caption>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_04_05_001.jpg"/>
+    </media>
+    <caption>The processes for multiplication and division are the same for arithmetic in any bases. (credit: modification of work “NCTR Intern Claire Boyle” by Danny Tucker/U.S. Food and Drug Administration, Public Domain)</caption>
     </figure>
-  <section class="learning-objectives" id="sect-00001">
-  <para id="para-00001">After completing this section, you should be able to:</para>
-  <list list-type="enumerated" number-style="arabic" id="list-00001">
-  <item>Multiply and divide in bases other than 10.</item>
-  <item>Identify errors in multiplying and dividing in bases other than 10.</item>
-  </list>
-  </section>
-  <para id="para-00002">Just as in <link target-id="sect-00001" document="m00056">Section 4.4</link>, once we decide on a system for counting, we need to establish rules for combining the numbers we’re using. This includes the rules for multiplication and division. We are familiar with those operations in base 10. How do they change if we instead use a different base? A larger base? A smaller one?</para>
-  <para id="para-00003">In this section, we use multiplication and division in bases other than 10 by referencing the processes of base 10, but applied to a new base system.</para>
-  <section id="sect-00002">
-  <title>Multiplication in Bases Other Than 10</title>
-  <para id="para-00004">Multiplication is a way of representing repeated additions, regardless of what base is being used. However, different bases have different addition rules. In order to create the multiplication tables for a base other than 10, we need to rely on addition and the addition table for the base. So let’s look at multiplication in base 6.</para>
-  <para id="para-00005">Multiplication still has the same meaning as it does in base 10, in that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn></math> is 4 added to itself six times, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn></math>.</para>
-  <para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">So, let’s apply that to base 6. It should be clear that 0 multiplied by anything, regardless of base, will give 0, and that 1 multiplied by anything, regardless of base, will be the value of “anything.”</para>
-  <para id="para-00155"><emphasis effect="bold">Step 1:</emphasis> So, we start with the table below:</para>
-  <table class="unnumbered" summary="." id="table-00001">
-  <tgroup cols="7">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00007"><emphasis effect="bold">Step 2:</emphasis> Notice <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> is there. But we didn’t hit a problematic number there (4 works fine in both base 10 and base 6). But what is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>? If we use the repeated addition concept, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>2</mn></mrow></math>. According to the base 6 addition table (<link target-id="table-00006" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Table 4.4</link>), <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>. So, we add that to our table:</para>
-  <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="7">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>10</entry>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>10</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00008"><emphasis effect="bold">Step 3:</emphasis> Next, we need to fill in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>. Using repeated addition, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math> (if we use our base 6 addition rules). So, we add that to our table:</para>
-  <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="7">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>10</entry>
-  <entry>12</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>10</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>12</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00009"><emphasis effect="bold">Step 4:</emphasis> Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo> </mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>14</mn></mrow></math>. And so we add that to our table:</para>
-  <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="7">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>10</entry>
-  <entry>12</entry>
-  <entry>14</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>10</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>12</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry>14</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00010"><emphasis effect="bold">Step 5:</emphasis> A similar analysis will give us the remainder of the entries. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn></mrow></math> demonstrated: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo> </mo><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>24</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>32</mn></mrow></math>.</para>
-  <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Addition and Subtraction in Base Systems</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></math>, and then applying the addition processes we’ve always known, but with the base 6 table (<link target-id="table-00006" document="m00055">Table 4.4</link>). In the end, our multiplication table is as follows:</para>
-  <table summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="7">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>10</entry>
-  <entry>12</entry>
-  <entry>14</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>10</entry>
-  <entry>13</entry>
-  <entry>20</entry>
-  <entry>23</entry>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>12</entry>
-  <entry>20</entry>
-  <entry>24</entry>
-  <entry>32</entry>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry>14</entry>
-  <entry>23</entry>
-  <entry>32</entry>
-  <entry>41</entry>
-  </row>
-  </tbody>
-  </tgroup><caption>Base 6 Multiplication Table</caption>
-  </table>
-  <para id="para-00012">Notice anything about that bottom line? Is that similar to what happens in base 10?</para>
-  <para id="para-00013">To summarize the creation of a multiplication in a base other than base 10, you need the addition table of the base with which you are working. Create the table, and calculate the entries of the multiplication table by performing repeated addition in that base. The table needs to be drawn only the one time.</para>
-  <example id="exam-00001">
-  <title>Creating a Multiplication Table for a Base Lower Than 10</title>
-  <exercise id="exer-00001">
-  <problem id="prob-00001">
-  <para id="para-00014">Create the multiplication table for base 7.</para>
-  </problem>
-  <solution id="sol-00001">
-  <para id="para-00015"><emphasis effect="bold">Step 1:</emphasis> Let’s apply the process demonstrated and outlined above to find the base 7 multiplication table. It should be clear that 0 multiplied by anything, regardless of base, will give 0, and that 1 multiplied by anything, regardless of base, will be the value of “anything.” So, we start with the table below:</para>
-  <table class="unnumbered" summary="." id="table-00006">
-  <tgroup cols="8">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <colspec colnum="8" colname="c8" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>0</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00016"><emphasis effect="bold">Step 2:</emphasis> Notice <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> is there. But we didn’t hit a problematic number there (4 works fine in both base 10 and base 6). The same is true for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>, which equal 6. But what is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>? If we use the repeated addition concept, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>6</mn><mo>+</mo><mn>2</mn></mrow></math>. According to the base 7 addition table in the solution for <link target-id="exam-00002" document="m00056" xmlns="http://cnx.rice.edu/cnxml">Example 4.29</link>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>11</mn></mrow></math>. So, we add that to our table:</para>
-  <table class="unnumbered" summary="." id="table-00007" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="8">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <colspec colnum="8" colname="c8" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>6</entry>
-  <entry><emphasis effect="bold">11</emphasis></entry>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry><emphasis effect="bold">11</emphasis></entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>0</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00017"><emphasis effect="bold">Step 3:</emphasis> Next, we need to fill in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Using repeated addition, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>11</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>13</mn></mrow></math> if we use our base 7 addition rules. So, we add that to our table:</para>
-  <table class="unnumbered" summary="." id="table-00008" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="8">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <colspec colnum="8" colname="c8" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>6</entry>
-  <entry>11</entry>
-  <entry><emphasis effect="bold">13</emphasis></entry>
-  <entry/>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>11</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry><emphasis effect="bold">13</emphasis></entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>0</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00018"><emphasis effect="bold">Step 4:</emphasis> Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>13</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>15</mn></mrow></math>. And so we add that to our table:</para>
-  <table class="unnumbered" summary="." id="table-00009" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="8">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <colspec colnum="8" colname="c8" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>6</entry>
-  <entry>11</entry>
-  <entry>13</entry>
-  <entry><emphasis effect="bold">15</emphasis></entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>6</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>11</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry>13</entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>0</entry>
-  <entry>6</entry>
-  <entry><emphasis effect="bold">15</emphasis></entry>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00019"><emphasis effect="bold">Step 5:</emphasis> A similar analysis will give us the remainder of the entries. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>7</mn></msub><mo>×</mo><msub><mn>5</mn><mn>7</mn></msub></mrow></math> demonstrated:
-  <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mn>4</mn><mn>7</mn></msub><mo>×</mo><msub><mn>5</mn><mn>7</mn></msub><mo>=</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>11</mn></mrow><mn>7</mn></msub><mo>+</mo><msub><mrow><mn>11</mn></mrow><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>22</mn></mrow><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>26</mn></mrow><mn>7</mn></msub></mrow></math></equation></para>
-  <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Section 4.4</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>11</mn></mrow><mn>7</mn></msub></mrow></math> and then applying the addition processes we’ve always known, but with the base 7 table in the solution for <link target-id="exam-00002" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.29</link>. Using those addition rules, the rest of the table is given below:</para>
-  <table class="unnumbered" summary="." id="table-00010" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="8">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <colspec colnum="8" colname="c8" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>6</entry>
-  <entry>11</entry>
-  <entry>13</entry>
-  <entry>15</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>6</entry>
-  <entry>12</entry>
-  <entry>15</entry>
-  <entry>21</entry>
-  <entry>24</entry>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>11</entry>
-  <entry>15</entry>
-  <entry>22</entry>
-  <entry>26</entry>
-  <entry>33</entry>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry>13</entry>
-  <entry>21</entry>
-  <entry>26</entry>
-  <entry>34</entry>
-  <entry>42</entry>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>0</entry>
-  <entry>6</entry>
-  <entry>15</entry>
-  <entry>24</entry>
-  <entry>33</entry>
-  <entry>42</entry>
-  <entry>51</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00001">
-  <exercise id="exer-00002">
-  <problem id="prob-00002">
-  <para id="para-00021"><link class="os-embed" url="#exercise/CM-C04-M5-Q001"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <example id="exam-00002">
-  <title>Creating a Multiplication Table for a Base Higher Than 10</title>
-  <exercise id="exer-00003">
-  <problem id="prob-00003">
-  <para id="para-00022">Create the multiplication table for base 12.</para>
-  </problem>
-  <solution id="sol-00002">
-  <para id="para-00023">Let’s apply the repeated addition to base 12. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>9</mn><mrow><mn>12</mn></mrow></msub></mrow></math> demonstrated:
-  <equation id="eq-00002" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>9</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>48</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>53</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math></equation></para>
-  <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Addition and Subtraction in Base Systems</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math> and then applying the addition processes we’ve always known, but with the base 12 table in the solution for <link target-id="exam-00004" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.31</link>. Using those addition rules, the rest of the table is given below:</para>
-  <table summary="." id="table-00011" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="13">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <colspec colnum="7" colname="c7" colwidth="1pt"/>
-  <colspec colnum="8" colname="c8" colwidth="1pt"/>
-  <colspec colnum="9" colname="c9" colwidth="1pt"/>
-  <colspec colnum="10" colname="c10" colwidth="1pt"/>
-  <colspec colnum="11" colname="c11" colwidth="1pt"/>
-  <colspec colnum="12" colname="c12" colwidth="1pt"/>
-  <colspec colnum="13" colname="c13" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  <entry>7</entry>
-  <entry>8</entry>
-  <entry>9</entry>
-  <entry>A</entry>
-  <entry>B</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>5</entry>
-  <entry>6</entry>
-  <entry>7</entry>
-  <entry>8</entry>
-  <entry>9</entry>
-  <entry>A</entry>
-  <entry>B</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  <entry>6</entry>
-  <entry>8</entry>
-  <entry>A</entry>
-  <entry>10</entry>
-  <entry>12</entry>
-  <entry>14</entry>
-  <entry>16</entry>
-  <entry>18</entry>
-  <entry>1A</entry>
-  </row>
-  <row>
-  <entry>3</entry>
-  <entry>0</entry>
-  <entry>3</entry>
-  <entry>6</entry>
-  <entry>9</entry>
-  <entry>10</entry>
-  <entry>13</entry>
-  <entry>16</entry>
-  <entry>19</entry>
-  <entry>20</entry>
-  <entry>23</entry>
-  <entry>26</entry>
-  <entry>29</entry>
-  </row>
-  <row>
-  <entry>4</entry>
-  <entry>0</entry>
-  <entry>4</entry>
-  <entry>8</entry>
-  <entry>10</entry>
-  <entry>14</entry>
-  <entry>18</entry>
-  <entry>20</entry>
-  <entry>24</entry>
-  <entry>28</entry>
-  <entry>30</entry>
-  <entry>34</entry>
-  <entry>38</entry>
-  </row>
-  <row>
-  <entry>5</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry>A</entry>
-  <entry>13</entry>
-  <entry>18</entry>
-  <entry>21</entry>
-  <entry>26</entry>
-  <entry>2B</entry>
-  <entry>34</entry>
-  <entry>39</entry>
-  <entry>42</entry>
-  <entry>47</entry>
-  </row>
-  <row>
-  <entry>6</entry>
-  <entry>0</entry>
-  <entry>6</entry>
-  <entry>10</entry>
-  <entry>16</entry>
-  <entry>20</entry>
-  <entry>26</entry>
-  <entry>30</entry>
-  <entry>36</entry>
-  <entry>40</entry>
-  <entry>46</entry>
-  <entry>50</entry>
-  <entry>56</entry>
-  </row>
-  <row>
-  <entry>7</entry>
-  <entry>0</entry>
-  <entry>7</entry>
-  <entry>12</entry>
-  <entry>19</entry>
-  <entry>24</entry>
-  <entry>2B</entry>
-  <entry>36</entry>
-  <entry>41</entry>
-  <entry>48</entry>
-  <entry>53</entry>
-  <entry>5A</entry>
-  <entry>65</entry>
-  </row>
-  <row>
-  <entry>8</entry>
-  <entry>0</entry>
-  <entry>8</entry>
-  <entry>14</entry>
-  <entry>20</entry>
-  <entry>28</entry>
-  <entry>34</entry>
-  <entry>40</entry>
-  <entry>48</entry>
-  <entry>54</entry>
-  <entry>60</entry>
-  <entry>68</entry>
-  <entry>74</entry>
-  </row>
-  <row>
-  <entry>9</entry>
-  <entry>0</entry>
-  <entry>9</entry>
-  <entry>16</entry>
-  <entry>23</entry>
-  <entry>30</entry>
-  <entry>39</entry>
-  <entry>46</entry>
-  <entry>53</entry>
-  <entry>60</entry>
-  <entry>69</entry>
-  <entry>76</entry>
-  <entry>83</entry>
-  </row>
-  <row>
-  <entry>A</entry>
-  <entry>0</entry>
-  <entry>A</entry>
-  <entry>18</entry>
-  <entry>26</entry>
-  <entry>34</entry>
-  <entry>42</entry>
-  <entry>50</entry>
-  <entry>5A</entry>
-  <entry>68</entry>
-  <entry>76</entry>
-  <entry>84</entry>
-  <entry>92</entry>
-  </row>
-  <row>
-  <entry>B</entry>
-  <entry>0</entry>
-  <entry>B</entry>
-  <entry>1A</entry>
-  <entry>29</entry>
-  <entry>38</entry>
-  <entry>47</entry>
-  <entry>56</entry>
-  <entry>65</entry>
-  <entry>74</entry>
-  <entry>83</entry>
-  <entry>92</entry>
-  <entry>A1</entry>
-  </row>
-  </tbody>
-  </tgroup><caption>Base 12 Multiplication Table</caption>
-  </table>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00002">
-  <exercise id="exer-00004">
-  <problem id="prob-00004">
-  <para id="para-00025"><link class="os-embed" url="#exercise/CM-C04-M5-Q002"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <para id="para-00026">The multiplication table in base 2 below is as minimal as the addition table in the solution for <link target-id="table-00014" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.29</link>. Since the product of 1 with anything is itself, the following multiplication table is found.</para>
-  <table summary="." id="table-00012">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry>*</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  </row>
-  <row>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  </row>
-  </tbody>
-  </tgroup><caption>Base 2 Multiplication Table</caption>
-  </table>
-  <para id="para-00027">As with the addition table, we can use the multiplication tables and the addition tables to perform multiplication of two numbers in bases other than base 10. The process is the same, with the same carry rules and placeholder rules.</para>
-  <example id="exam-00003">
-  <title>Multiplying in a Base Lower Than 10</title>
-  <exercise id="exer-00005">
-  <problem id="prob-00005">
-  <list list-type="enumerated" number-style="arabic" id="list-00002">
-  <item>Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>45</mn></mrow><mn>6</mn></msub><mo>×</mo><msub><mrow><mn>24</mn></mrow><mn>6</mn></msub></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>101</mn></mrow><mn>2</mn></msub><mo>×</mo><msub><mrow><mn>110</mn></mrow><mn>2</mn></msub></mrow></math>.</item>
-  </list>
-  </problem>
-  <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
-  <list list-type="enumerated" number-style="arabic" id="list-00003">
-  <item><para id="para-00028"><emphasis effect="bold">Step 1:</emphasis> Use the base 6 multiplication table (<link target-id="table-00005" document="m00056">Table 4.8</link>) and, when necessary, the base 6 addition table (<link target-id="table-00006" document="m00055">Table 4.4</link>).</para>
-  <para id="para-00156">Set up this calculation using columns:
-  <table class="unnumbered" summary="." id="table-00013">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>x</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00029"><emphasis effect="bold">Step 2:</emphasis> Multiply the 1s digits, 5 and 4, using the base 6 multiplication table (<link target-id="table-00005" document="m00056">Table 4.8</link>). There we see the result is 32<sub>6</sub>. So, we enter the 2 and carry the 3.
-  <table class="unnumbered" summary="." id="table-00014">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry><emphasis effect="bold">3</emphasis></entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>x</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry><emphasis effect="bold">2</emphasis></entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00030"><emphasis effect="bold">Step 3:</emphasis> So, now we multiply the 4 and the 4, then add the 3 (just as you would do if multiplying two base 10 numbers!). <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>6</mn></msub><mo>×</mo><msub><mn>4</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>24</mn></mrow><mn>6</mn></msub></mrow></math> (from the base 6 table [<link target-id="table-00005" document="m00056">Table 4.5</link>]), then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>24</mn><mn>6</mn></msub><mo>+</mo><msub><mn>3</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>31</mn></mrow><mn>6</mn></msub></mrow></math>. So, we enter the 31.
-  <table class="unnumbered" summary="." id="table-00015" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry>3</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry>x</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="bold">3</emphasis></entry>
-  <entry><emphasis effect="bold">1</emphasis></entry>
-  <entry>2</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00031"><emphasis effect="bold">Step 4:</emphasis> Now we move on to the 2 in the “tens” place in the bottom value. We multiply the 2<sub>6</sub> and the 5<sub>6</sub>, and we get 14<sub>6</sub>. So, we enter the 4 and carry the 1.
-<figure class="unnumbered" id="fig-00002">
-<media alt="Insert Alt Text">
-<image mime-type="image/jpg" src="../../media/CS_figure_04_05_001.png"/>
-</media>
-</figure>
-</para>
-<para id="para-00032"><emphasis effect="bold">Step 5:</emphasis> Next up, we multiply the 2 and the 4, and then add 1. This gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>12</mn></mrow><mn>6</mn></msub><mo>+</mo><msub><mn>1</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>13</mn></mrow><mn>6</mn></msub></mrow></math>. We enter those on that second line.
-  <table class="unnumbered" summary="." id="table-00017" xmlns="http://cnx.rice.edu/cnxml">
-  <tgroup cols="4">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>x</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>3</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="bold">1</emphasis></entry>
-  <entry><emphasis effect="bold">3</emphasis></entry>
-  <entry>4</entry>
-  <entry>0</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00033"><emphasis effect="bold">Step 6:</emphasis> Now we add down the columns.
-  <table class="unnumbered" summary="." id="table-00018">
-  <tgroup cols="4">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>4</entry>
-  <entry>5</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>x</entry>
-  <entry>2</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="bold">1</emphasis></entry>
-  <entry>3</entry>
-  <entry>1</entry>
-  <entry>2</entry>
-  </row>
-  <row>
-  <entry>1</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>0</entry>
-  <entry>5</entry>
-  <entry>2</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00034"><emphasis effect="bold">Step 7:</emphasis> The 3 and the 3 add to 10 in base 6, so we enter the 0 and carry the 1. We now have the result: </para>
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>45</mn></mrow><mn>6</mn></msub><mo>×</mo><msub><mrow><mn>24</mn></mrow><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>2052</mn></mrow><mn>6</mn></msub></mrow></math>.<newline/></item>
-  <item xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Use the base 2 multiplication table (<link target-id="table-00012" document="m00056">Table 4.10</link>) and, when necessary, the base 2 addition table in the solution for <link target-id="table-00014" document="m00056">Example 4.29</link>. Set up this calculation using columns:
-  <table class="unnumbered" summary="." id="table-00019">
-  <tgroup cols="4">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  </row>
-  <row>
-  <entry>x</entry>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>0</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00035"><emphasis effect="bold">Step 2:</emphasis> Using the pattern established above, and the processes from multiplication from base 10, we find the following:
-  <table class="unnumbered" summary="." id="table-00020">
-  <tgroup cols="6">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  </row>
-  <row>
-  <entry>x</entry>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry/>
-  <entry/>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00036"><emphasis effect="bold">Step 3:</emphasis> Adding down the columns results in the following:
-  <table class="unnumbered" summary="." id="table-00021">
-  <tgroup cols="6">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <colspec colnum="5" colname="c5" colwidth="1pt"/>
-  <colspec colnum="6" colname="c6" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  </row>
-  <row>
-  <entry>x</entry>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry>0</entry>
-  <entry>0</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry>1</entry>
-  <entry>0</entry>
-  <entry>1</entry>
-  <entry/>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>1</entry>
-  <entry>0</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </para>
-  <para id="para-00037">So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>101</mn></mrow><mn>2</mn></msub><mo>×</mo><msub><mrow><mn>110</mn></mrow><mn>2</mn></msub><mo>=</mo><msub><mrow><mn>11110</mn></mrow><mn>2</mn></msub></mrow></math>.</para></item>
-  </list>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00006">
-  <problem id="prob-00006">
-  <para id="para-00038"><link class="os-embed" url="#exercise/CM-C04-M5-Q003"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <para id="para-00039">Summarizing the process of multiplying two numbers in different bases, the multiplication table is referenced. Using that table, the multiplication is carried out in the same manner as it is in base 10. The addition rules for the base will also be referenced when carrying a 1 or when adding the results for each digit’s multiplication line.</para>
-  <example id="exam-00004">
-  <title>Multiplying in a Base Higher Than 10</title>
-  <exercise id="exer-00007">
-  <problem id="prob-00007">
-  <para id="para-00040">Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mrow><mn>74</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math>.</para>
-  </problem>
-  <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00041"><emphasis effect="bold">Step 1:</emphasis> Use the base 12 multiplication table in the solution for <link target-id="exam-00002" document="m00056">Example 4.39</link> and, when necessary, the base 12 addition table in the solution for <link target-id="table-00021" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.31</link>. Set up this calculation using columns:</para>
-  <table class="unnumbered" summary="." id="table-00022">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry>3</entry>
-  <entry>A</entry>
-  </row>
-  <row>
-  <entry>×</entry>
-  <entry>7</entry>
-  <entry>4</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00042"><emphasis effect="bold">Step 2:</emphasis> First, the 4 is multiplied by 3A, resulting in the first line.</para>
-  <table class="unnumbered" summary="." id="table-00023">
-  <tgroup cols="3">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry>3</entry>
-  <entry>A</entry>
-  </row>
-  <row>
-  <entry>×</entry>
-  <entry>7</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="bold">1</emphasis></entry>
-  <entry><emphasis effect="bold">3</emphasis></entry>
-  <entry><emphasis effect="bold">4</emphasis></entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00043"><emphasis effect="bold">Step 3:</emphasis> Now we move on to the 7 in the “tens” place in the bottom value.</para>
-  <table class="unnumbered" summary="." id="table-00024">
-  <tgroup cols="4">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>5</entry>
-  <entry/>
-  </row>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>3</entry>
-  <entry>A</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>x</entry>
-  <entry>7</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>1</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="bold">2</emphasis></entry>
-  <entry><emphasis effect="bold">2</emphasis></entry>
-  <entry><emphasis effect="bold">A</emphasis></entry>
-  <entry><emphasis effect="bold">0</emphasis></entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00044"><emphasis effect="bold">Step 4:</emphasis> Now we add down the columns.</para>
-  <table class="unnumbered" summary="." id="table-00025">
-  <tgroup cols="4">
-  <colspec colnum="1" colname="c1" colwidth="1pt"/>
-  <colspec colnum="2" colname="c2" colwidth="1pt"/>
-  <colspec colnum="3" colname="c3" colwidth="1pt"/>
-  <colspec colnum="4" colname="c4" colwidth="1pt"/>
-  <tbody>
-  <row>
-  <entry/>
-  <entry/>
-  <entry>3</entry>
-  <entry>A</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>x</entry>
-  <entry>7</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry/>
-  <entry>1</entry>
-  <entry>3</entry>
-  <entry>4</entry>
-  </row>
-  <row>
-  <entry>2</entry>
-  <entry>2</entry>
-  <entry>A</entry>
-  <entry>0</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="bold">2</emphasis></entry>
-  <entry><emphasis effect="bold">4</emphasis></entry>
-  <entry><emphasis effect="bold">1</emphasis></entry>
-  <entry><emphasis effect="bold">4</emphasis></entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  <para id="para-00045"><emphasis effect="bold">Step 5:</emphasis> The 3 and the A add to 11 in base 12, so we enter the 1 and carry the 1.</para>
-  <para id="para-00046">We now have the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mrow><mn>74</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mn>2414</mn><mn>12</mn></msub></mrow></math>.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00008">
-  <problem id="prob-00008">
-  <para id="para-00047"><link class="os-embed" url="#exercise/CM-C04-M5-Q004"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section id="sect-00003">
-  <title>Division in Bases Other Than 10</title>
-  <para id="para-00049">Just as with the other operations, division in a base other than 10, the process of division in a base other than 10 is the same as the process when working in base 10. For instance, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>÷</mo><mn>9</mn><mo>=</mo><mn>8</mn></mrow></math> because, we know that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>×</mo><mn>8</mn><mo>=</mo><mn>72</mn></mrow></math>. So, for many division problems, we are simply looking to the multiplication table to identify the appropriate multiplication rule.</para>
-  <example id="exam-00005" xmlns="http://cnx.rice.edu/cnxml">
-  <title>Dividing with a Base Other Than 10</title>
-  <exercise id="exer-00009">
-  <problem id="prob-00009">
-  <list list-type="enumerated" number-style="arabic" id="list-00004">
-  <item>Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>14</mn></mrow><mn>6</mn></msub><mo>÷</mo><msub><mn>5</mn><mn>6</mn></msub></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>÷</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub></mrow></math></item>
-  </list>
-  </problem>
-  <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
-  <list list-type="enumerated" number-style="arabic" id="list-00005">
-  <item>Looking at the multiplication table for base 6 <link target-id="table-00005" document="m00056">Table 4.8</link>), we see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>5</mn><mn>6</mn></msub><mo>×</mo><msub><mn>2</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mn>6</mn></msub></mrow></math>. Using that, we know that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>14</mn></mrow><mn>6</mn></msub><mo>÷</mo><msub><mn>5</mn><mn>6</mn></msub><mo>=</mo><msub><mn>2</mn><mn>6</mn></msub></mrow></math>.</item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Looking at the multiplication table for base 12 in the solution for <link target-id="exam-00002" document="m00056">Example 4.39</link>, we see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>=</mo><mn>5</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub></mrow></math>. Using that, we know that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>÷</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub></mrow></math>.</item>
-  </list>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00010">
-  <problem id="prob-00010">
-  <para id="para-00050"><link class="os-embed" url="#exercise/CM-C04-M5-Q005"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section id="sect-00004">
-  <title>Errors in Multiplying and Dividing in Bases Other Than Base 10</title>
-  <para id="para-00051">The types of errors encountered when multiplying and dividing in bases other than base 10 are the same as when adding and subtracting. They often involve applying base 10 rules or symbols to an arithmetic problem in a base other than base 10. The first type of error is using a symbol that is not in the symbol set for the base.</para>
-  <example id="exam-00006">
-  <title>Identifying an Illegal Symbol in a Base Other Than Base 10</title>
-  <exercise id="exer-00011">
-  <problem id="prob-00011">
-  <para id="para-00052">Explain the error in the following calculation, and determine the correct answer:</para>
-  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mn>4</mn><mn>6</mn></msub><mo>×</mo><msub><mn>2</mn><mn>6</mn></msub><mo>=</mo><msub><mn>8</mn><mn>6</mn></msub></mrow></math></equation>
-  </problem>
-  <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00053">Since the problem is in base 6, the symbol set available is 0, 1, 2, 3, 4, and 5. The 8 in the answer is clearly not a legal symbol for base 6. Looking back to the base 6 multiplication table (<link target-id="table-00005" document="m00056">Table 4.8</link>), we see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>6</mn></msub><mo>×</mo><msub><mn>2</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mn>6</mn></msub></mrow></math>.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00012">
-  <problem id="prob-00012">
-  <para id="para-00054"><link class="os-embed" url="#exercise/CM-C04-M5-Q006"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <para id="para-00055">The second type of error is using a base 10 rule when the numbers are not in base 10. For instance, in base 17, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>6</mn><mrow><mn>17</mn></mrow></msub><mo>×</mo><msub><mn>9</mn><mrow><mn>17</mn></mrow></msub><mo>=</mo><msub><mrow><mn>54</mn></mrow><mrow><mn>17</mn></mrow></msub></mrow></math> would be incorrect, even though in base 10, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>54</mn></mrow></math>. That rule doesn’t apply in base 17.</para>
-  <example id="exam-00007" xmlns="http://cnx.rice.edu/cnxml">
-  <title>Identifying an Error in Arithmetic in a Base Other Than Base 10</title>
-  <exercise id="exer-00013">
-  <problem id="prob-00013">
-  <para id="para-00056">Explain the error in the following calculation. Determine the correct answer:</para>
-  <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mrow><mn>18</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>126</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math></equation>
-  </problem>
-  <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00057">If this problem was a base 10 problem, this would be the correct answer. However, in base 12, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>8</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub></mrow></math> is not 56, but is instead 48. To correct this error, carefully use the multiplication table for base 12 (<link target-id="table-00011" document="m00056" xmlns="http://cnx.rice.edu/cnxml">Table 4.9</link>). If properly used, the correct answer would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>18</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">B</mi><msub><mn>8</mn><mrow><mn>12</mn></mrow></msub></mrow></math>.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00014">
-  <problem id="prob-00014">
-  <para id="para-00058"><link class="os-embed" url="#exercise/CM-C04-M5-Q007"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section class="check-understanding" id="sect-00005" xmlns="http://cnx.rice.edu/cnxml">
-  <title>Check Your Understanding</title>
-  <exercise id="exer-00015">
-  <problem id="prob-00015">
-  <para id="para-00060"><link class="os-embed" url="#exercise/CM-C04-M5-Q008"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00016">
-  <problem id="prob-00016">
-  <para id="para-00061"><link class="os-embed" url="#exercise/CM-C04-M5-Q009"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00017">
-  <problem id="prob-00017">
-  <para id="para-00062"><link class="os-embed" url="#exercise/CM-C04-M5-Q010"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00018">
-  <problem id="prob-00018">
-  <para id="para-00063"><link class="os-embed" url="#exercise/CM-C04-M5-Q011"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00019">
-  <problem id="prob-00019">
-  <para id="para-00064"><link class="os-embed" url="#exercise/CM-C04-M5-Q012"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00020">
-  <problem id="prob-00020">
-  <para id="para-00065"><link class="os-embed" url="#exercise/CM-C04-M5-Q013"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00021">
-  <problem id="prob-00021">
-  <para id="para-00066"><link class="os-embed" url="#exercise/CM-C04-M5-Q014"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section class="section-exercises" id="sect-00006">
-  <title>Exercises</title>
-  <exercise id="exer-00022">
-  <problem id="prob-00022">
-  <para id="para-00067"><link class="os-embed" url="#exercise/CM-C04-M5-Q015"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00023">
-  <problem id="prob-00023">
-  <para id="para-00068"><link class="os-embed" url="#exercise/CM-C04-M5-Q016"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00024">
-  <problem id="prob-00024">
-  <para id="para-00069"><link class="os-embed" url="#exercise/CM-C04-M5-Q017"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00025">
-  <problem id="prob-00025">
-  <para id="para-00070"><link class="os-embed" url="#exercise/CM-C04-M5-Q018"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00026">
-  <problem id="prob-00026">
-  <para id="para-00071"><link class="os-embed" url="#exercise/CM-C04-M5-Q019"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00027">
-  <problem id="prob-00027">
-  <para id="para-00072"><link class="os-embed" url="#exercise/CM-C04-M5-Q020"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00028">
-  <problem id="prob-00028">
-  <para id="para-00073"><link class="os-embed" url="#exercise/CM-C04-M5-Q021"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00029">
-  <problem id="prob-00029">
-  <para id="para-00074"><link class="os-embed" url="#exercise/CM-C04-M5-Q022"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00030">
-  <problem id="prob-00030">
-  <para id="para-00075"><link class="os-embed" url="#exercise/CM-C04-M5-Q023"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00031">
-  <problem id="prob-00031">
-  <para id="para-00076"><link class="os-embed" url="#exercise/CM-C04-M5-Q024"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00032">
-  <problem id="prob-00032">
-  <para id="para-00077"><link class="os-embed" url="#exercise/CM-C04-M5-Q025"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00033">
-  <problem id="prob-00033">
-  <para id="para-00078"><link class="os-embed" url="#exercise/CM-C04-M5-Q026"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00034">
-  <problem id="prob-00034">
-  <para id="para-00079"><link class="os-embed" url="#exercise/CM-C04-M5-Q027"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00035">
-  <problem id="prob-00035">
-  <para id="para-00080"><link class="os-embed" url="#exercise/CM-C04-M5-Q028"/></para>
-  </problem>
-  </exercise>
-  </section>
-  
-
-  <section class="key-concepts" id="sect-00013">
-  <title>Key Concepts</title>
-  <list list-type="bulleted" id="list-00011">
-  <item>Multiplication tables for bases other than 10 can be built using the same processes that are used in base 10, including using repeated addition and the addition table for the base.</item>
-  <item>Multiplication in bases other than base 10 use the same processes as multiplication in base 10, but use the multiplication table for that base.</item>
-  <item>Basic division in bases other than base 10 use the same processes as basic division in base 10, where the missing factor process is used.</item>
-  </list>
-  </section>
-  <section class="projects" id="sect-00007">
+    <section class="learning-objectives" id="sect-00001">
+    <para id="para-00001">After completing this section, you should be able to:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Multiply and divide in bases other than 10.</item>
+    <item>Identify errors in multiplying and dividing in bases other than 10.</item>
+    </list>
+    </section>
+    <para id="para-00002">Just as in <link target-id="sect-00001" document="m00056">Section 4.4</link>, once we decide on a system for counting, we need to establish rules for combining the numbers we’re using. This includes the rules for multiplication and division. We are familiar with those operations in base 10. How do they change if we instead use a different base? A larger base? A smaller one?</para>
+    <para id="para-00003">In this section, we use multiplication and division in bases other than 10 by referencing the processes of base 10, but applied to a new base system.</para>
+    <section id="sect-00002">
+    <title>Multiplication in Bases Other Than 10</title>
+    <para id="para-00004">Multiplication is a way of representing repeated additions, regardless of what base is being used. However, different bases have different addition rules. In order to create the multiplication tables for a base other than 10, we need to rely on addition and the addition table for the base. So let’s look at multiplication in base 6.</para>
+    <para id="para-00005">Multiplication still has the same meaning as it does in base 10, in that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn></math> is 4 added to itself six times, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>4</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn></math>.</para>
+    <para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">So, let’s apply that to base 6. It should be clear that 0 multiplied by anything, regardless of base, will give 0, and that 1 multiplied by anything, regardless of base, will be the value of “anything.”</para>
+    <para id="para-00155"><emphasis effect="bold">Step 1:</emphasis> So, we start with the table below:</para>
+    <table class="unnumbered" summary="." id="table-00001">
+    <tgroup cols="7">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00007"><emphasis effect="bold">Step 2:</emphasis> Notice <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> is there. But we didn’t hit a problematic number there (4 works fine in both base 10 and base 6). But what is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math>? If we use the repeated addition concept, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo>+</mo><mn>2</mn></mrow></math>. According to the base 6 addition table (<link target-id="table-00006" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Table 4.4</link>), <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>. So, we add that to our table:</para>
+    <table class="unnumbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="7">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>10</entry>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>10</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00008"><emphasis effect="bold">Step 3:</emphasis> Next, we need to fill in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>. Using repeated addition, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn></mrow></math> (if we use our base 6 addition rules). So, we add that to our table:</para>
+    <table class="unnumbered" summary="." id="table-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="7">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>10</entry>
+    <entry>12</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>10</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>12</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00009"><emphasis effect="bold">Step 4:</emphasis> Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo> </mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>12</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>14</mn></mrow></math>. And so we add that to our table:</para>
+    <table class="unnumbered" summary="." id="table-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="7">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>10</entry>
+    <entry>12</entry>
+    <entry>14</entry>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>10</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>12</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>14</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00010"><emphasis effect="bold">Step 5:</emphasis> A similar analysis will give us the remainder of the entries. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn></mrow></math> demonstrated: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>×</mo><mn>5</mn><mo> </mo><mo>=</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>24</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>32</mn></mrow></math>.</para>
+    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Addition and Subtraction in Base Systems</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></math>, and then applying the addition processes we’ve always known, but with the base 6 table (<link target-id="table-00006" document="m00055">Table 4.4</link>). In the end, our multiplication table is as follows:</para>
+    <table summary="." id="table-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="7">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>10</entry>
+    <entry>12</entry>
+    <entry>14</entry>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>10</entry>
+    <entry>13</entry>
+    <entry>20</entry>
+    <entry>23</entry>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>12</entry>
+    <entry>20</entry>
+    <entry>24</entry>
+    <entry>32</entry>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>14</entry>
+    <entry>23</entry>
+    <entry>32</entry>
+    <entry>41</entry>
+    </row>
+    </tbody>
+    </tgroup><caption>Base 6 Multiplication Table</caption>
+    </table>
+    <para id="para-00012">Notice anything about that bottom line? Is that similar to what happens in base 10?</para>
+    <para id="para-00013">To summarize the creation of a multiplication in a base other than base 10, you need the addition table of the base with which you are working. Create the table, and calculate the entries of the multiplication table by performing repeated addition in that base. The table needs to be drawn only the one time.</para>
+    <example id="exam-00001">
+    <title>Creating a Multiplication Table for a Base Lower Than 10</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00014">Create the multiplication table for base 7.</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00015"><emphasis effect="bold">Step 1:</emphasis> Let’s apply the process demonstrated and outlined above to find the base 7 multiplication table. It should be clear that 0 multiplied by anything, regardless of base, will give 0, and that 1 multiplied by anything, regardless of base, will be the value of “anything.” So, we start with the table below:</para>
+    <table class="unnumbered" summary="." id="table-00006">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>0</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00016"><emphasis effect="bold">Step 2:</emphasis> Notice <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math> is there. But we didn’t hit a problematic number there (4 works fine in both base 10 and base 6). The same is true for <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>3</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><mn>2</mn></mrow></math>, which equal 6. But what is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn></mrow></math>? If we use the repeated addition concept, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>6</mn><mo>+</mo><mn>2</mn></mrow></math>. According to the base 7 addition table in the solution for <link target-id="exam-00002" document="m00056" xmlns="http://cnx.rice.edu/cnxml">Example 4.39</link>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>11</mn></mrow></math>. So, we add that to our table:</para>
+    <table class="unnumbered" summary="." id="table-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry><emphasis effect="bold">11</emphasis></entry>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry><emphasis effect="bold">11</emphasis></entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>0</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00017"><emphasis effect="bold">Step 3:</emphasis> Next, we need to fill in <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn></mrow></math>. Using repeated addition, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>11</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>13</mn></mrow></math> if we use our base 7 addition rules. So, we add that to our table:</para>
+    <table class="unnumbered" summary="." id="table-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry>11</entry>
+    <entry><emphasis effect="bold">13</emphasis></entry>
+    <entry/>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>11</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry><emphasis effect="bold">13</emphasis></entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>0</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00018"><emphasis effect="bold">Step 4:</emphasis> Finally, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn><mo>×</mo><mn>6</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>13</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>15</mn></mrow></math>. And so we add that to our table:</para>
+    <table class="unnumbered" summary="." id="table-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry>11</entry>
+    <entry>13</entry>
+    <entry><emphasis effect="bold">15</emphasis></entry>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>6</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>11</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>13</entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>0</entry>
+    <entry>6</entry>
+    <entry><emphasis effect="bold">15</emphasis></entry>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00019"><emphasis effect="bold">Step 5:</emphasis> A similar analysis will give us the remainder of the entries. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>7</mn></msub><mo>×</mo><msub><mn>5</mn><mn>7</mn></msub></mrow></math> demonstrated:
+    <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mn>4</mn><mn>7</mn></msub><mo>×</mo><msub><mn>5</mn><mn>7</mn></msub><mo>=</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>11</mn></mrow><mn>7</mn></msub><mo>+</mo><msub><mrow><mn>11</mn></mrow><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>22</mn></mrow><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>26</mn></mrow><mn>7</mn></msub></mrow></math></equation></para>
+    <para id="para-00020" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Addition and Subtraction in Base Systems</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>7</mn></msub><mo>+</mo><msub><mn>4</mn><mn>7</mn></msub><mo>=</mo><msub><mrow><mn>11</mn></mrow><mn>7</mn></msub></mrow></math> and then applying the addition processes we’ve always known, but with the base 7 table in the solution for <link target-id="exam-00002" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.29</link>. Using those addition rules, the rest of the table is given below:</para>
+    <table class="unnumbered" summary="." id="table-00010" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="8">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry>11</entry>
+    <entry>13</entry>
+    <entry>15</entry>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>6</entry>
+    <entry>12</entry>
+    <entry>15</entry>
+    <entry>21</entry>
+    <entry>24</entry>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>11</entry>
+    <entry>15</entry>
+    <entry>22</entry>
+    <entry>26</entry>
+    <entry>33</entry>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>13</entry>
+    <entry>21</entry>
+    <entry>26</entry>
+    <entry>34</entry>
+    <entry>42</entry>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>0</entry>
+    <entry>6</entry>
+    <entry>15</entry>
+    <entry>24</entry>
+    <entry>33</entry>
+    <entry>42</entry>
+    <entry>51</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C04-M5-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00002">
+    <title>Creating a Multiplication Table for a Base Higher Than 10</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00022">Create the multiplication table for base 12.</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00023">Let’s apply the repeated addition to base 12. Here is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>9</mn><mrow><mn>12</mn></mrow></msub></mrow></math> demonstrated:
+    <equation id="eq-00002" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>9</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>48</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>53</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math></equation></para>
+    <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">This is done by using the addition rules from <link target-id="sect-00001" document="m00055">Addition and Subtraction in Base Systems</link>, namely that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>+</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math> and then applying the addition processes we’ve always known, but with the base 12 table in the solution for <link target-id="exam-00004" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.31</link>. Using those addition rules, the rest of the table is given below:</para>
+    <table summary="." id="table-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="13">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <colspec colnum="7" colname="c7" colwidth="1pt"/>
+    <colspec colnum="8" colname="c8" colwidth="1pt"/>
+    <colspec colnum="9" colname="c9" colwidth="1pt"/>
+    <colspec colnum="10" colname="c10" colwidth="1pt"/>
+    <colspec colnum="11" colname="c11" colwidth="1pt"/>
+    <colspec colnum="12" colname="c12" colwidth="1pt"/>
+    <colspec colnum="13" colname="c13" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    <entry>7</entry>
+    <entry>8</entry>
+    <entry>9</entry>
+    <entry>A</entry>
+    <entry>B</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    <entry>7</entry>
+    <entry>8</entry>
+    <entry>9</entry>
+    <entry>A</entry>
+    <entry>B</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry>8</entry>
+    <entry>A</entry>
+    <entry>10</entry>
+    <entry>12</entry>
+    <entry>14</entry>
+    <entry>16</entry>
+    <entry>18</entry>
+    <entry>1A</entry>
+    </row>
+    <row>
+    <entry>3</entry>
+    <entry>0</entry>
+    <entry>3</entry>
+    <entry>6</entry>
+    <entry>9</entry>
+    <entry>10</entry>
+    <entry>13</entry>
+    <entry>16</entry>
+    <entry>19</entry>
+    <entry>20</entry>
+    <entry>23</entry>
+    <entry>26</entry>
+    <entry>29</entry>
+    </row>
+    <row>
+    <entry>4</entry>
+    <entry>0</entry>
+    <entry>4</entry>
+    <entry>8</entry>
+    <entry>10</entry>
+    <entry>14</entry>
+    <entry>18</entry>
+    <entry>20</entry>
+    <entry>24</entry>
+    <entry>28</entry>
+    <entry>30</entry>
+    <entry>34</entry>
+    <entry>38</entry>
+    </row>
+    <row>
+    <entry>5</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>A</entry>
+    <entry>13</entry>
+    <entry>18</entry>
+    <entry>21</entry>
+    <entry>26</entry>
+    <entry>2B</entry>
+    <entry>34</entry>
+    <entry>39</entry>
+    <entry>42</entry>
+    <entry>47</entry>
+    </row>
+    <row>
+    <entry>6</entry>
+    <entry>0</entry>
+    <entry>6</entry>
+    <entry>10</entry>
+    <entry>16</entry>
+    <entry>20</entry>
+    <entry>26</entry>
+    <entry>30</entry>
+    <entry>36</entry>
+    <entry>40</entry>
+    <entry>46</entry>
+    <entry>50</entry>
+    <entry>56</entry>
+    </row>
+    <row>
+    <entry>7</entry>
+    <entry>0</entry>
+    <entry>7</entry>
+    <entry>12</entry>
+    <entry>19</entry>
+    <entry>24</entry>
+    <entry>2B</entry>
+    <entry>36</entry>
+    <entry>41</entry>
+    <entry>48</entry>
+    <entry>53</entry>
+    <entry>5A</entry>
+    <entry>65</entry>
+    </row>
+    <row>
+    <entry>8</entry>
+    <entry>0</entry>
+    <entry>8</entry>
+    <entry>14</entry>
+    <entry>20</entry>
+    <entry>28</entry>
+    <entry>34</entry>
+    <entry>40</entry>
+    <entry>48</entry>
+    <entry>54</entry>
+    <entry>60</entry>
+    <entry>68</entry>
+    <entry>74</entry>
+    </row>
+    <row>
+    <entry>9</entry>
+    <entry>0</entry>
+    <entry>9</entry>
+    <entry>16</entry>
+    <entry>23</entry>
+    <entry>30</entry>
+    <entry>39</entry>
+    <entry>46</entry>
+    <entry>53</entry>
+    <entry>60</entry>
+    <entry>69</entry>
+    <entry>76</entry>
+    <entry>83</entry>
+    </row>
+    <row>
+    <entry>A</entry>
+    <entry>0</entry>
+    <entry>A</entry>
+    <entry>18</entry>
+    <entry>26</entry>
+    <entry>34</entry>
+    <entry>42</entry>
+    <entry>50</entry>
+    <entry>5A</entry>
+    <entry>68</entry>
+    <entry>76</entry>
+    <entry>84</entry>
+    <entry>92</entry>
+    </row>
+    <row>
+    <entry>B</entry>
+    <entry>0</entry>
+    <entry>B</entry>
+    <entry>1A</entry>
+    <entry>29</entry>
+    <entry>38</entry>
+    <entry>47</entry>
+    <entry>56</entry>
+    <entry>65</entry>
+    <entry>74</entry>
+    <entry>83</entry>
+    <entry>92</entry>
+    <entry>A1</entry>
+    </row>
+    </tbody>
+    </tgroup><caption>Base 12 Multiplication Table</caption>
+    </table>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00025"><link class="os-embed" url="#exercise/CM-C04-M5-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00026">The multiplication table in base 2 below is as minimal as the addition table in the solution for <link target-id="table-00014" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.29</link>. Since the product of 1 with anything is itself, the following multiplication table is found.</para>
+    <table summary="." id="table-00012">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry>*</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    </row>
+    <row>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    </row>
+    </tbody>
+    </tgroup><caption>Base 2 Multiplication Table</caption>
+    </table>
+    <para id="para-00027">As with the addition table, we can use the multiplication tables and the addition tables to perform multiplication of two numbers in bases other than base 10. The process is the same, with the same carry rules and placeholder rules.</para>
+    <example id="exam-00003">
+    <title>Multiplying in a Base Lower Than 10</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item>Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>45</mn></mrow><mn>6</mn></msub><mo>×</mo><msub><mrow><mn>24</mn></mrow><mn>6</mn></msub></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>101</mn></mrow><mn>2</mn></msub><mo>×</mo><msub><mrow><mn>110</mn></mrow><mn>2</mn></msub></mrow></math>.</item>
+    </list>
+    </problem>
+    <solution id="sol-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item><para id="para-00028"><emphasis effect="bold">Step 1:</emphasis> Use the base 6 multiplication table (<link target-id="table-00005" document="m00056">Table 4.8</link>) and, when necessary, the base 6 addition table (<link target-id="table-00006" document="m00055">Table 4.4</link>).</para>
+    <para id="para-00156">Set up this calculation using columns:
+    <table class="unnumbered" summary="." id="table-00013">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>x</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00029"><emphasis effect="bold">Step 2:</emphasis> Multiply the 1s digits, 5 and 4, using the base 6 multiplication table (<link target-id="table-00005" document="m00056">Table 4.8</link>). There we see the result is 32<sub>6</sub>. So, we enter the 2 and carry the 3.
+    <table class="unnumbered" summary="." id="table-00014">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry><emphasis effect="bold">3</emphasis></entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>x</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry><emphasis effect="bold">2</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00030"><emphasis effect="bold">Step 3:</emphasis> So, now we multiply the 4 and the 4, then add the 3 (just as you would do if multiplying two base 10 numbers!). <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>6</mn></msub><mo>×</mo><msub><mn>4</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>24</mn></mrow><mn>6</mn></msub></mrow></math> (from the base 6 table [<link target-id="table-00005" document="m00056">Table 4.8</link>]), then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>24</mn><mn>6</mn></msub><mo>+</mo><msub><mn>3</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>31</mn></mrow><mn>6</mn></msub></mrow></math>. So, we enter the 31.
+    <table class="unnumbered" summary="." id="table-00015" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry>3</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry>x</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">3</emphasis></entry>
+    <entry><emphasis effect="bold">1</emphasis></entry>
+    <entry>2</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00031"><emphasis effect="bold">Step 4:</emphasis> Now we move on to the 2 in the “tens” place in the bottom value. We multiply the 2<sub>6</sub> and the 5<sub>6</sub>, and we get 14<sub>6</sub>. So, we enter the 4 and carry the 1.
+    <figure class="unnumbered" id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_figure_04_05_001.png"/>
+    </media>
+    </figure>
+    </para>
+    <para id="para-00032"><emphasis effect="bold">Step 5:</emphasis> Next up, we multiply the 2 and the 4, and then add 1. This gives us <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>12</mn></mrow><mn>6</mn></msub><mo>+</mo><msub><mn>1</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>13</mn></mrow><mn>6</mn></msub></mrow></math>. We enter those on that second line.
+    <table class="unnumbered" summary="." id="table-00017" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>x</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>3</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">1</emphasis></entry>
+    <entry><emphasis effect="bold">3</emphasis></entry>
+    <entry>4</entry>
+    <entry>0</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00033"><emphasis effect="bold">Step 6:</emphasis> Now we add down the columns.
+    <table class="unnumbered" summary="." id="table-00018">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>4</entry>
+    <entry>5</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>x</entry>
+    <entry>2</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">1</emphasis></entry>
+    <entry>3</entry>
+    <entry>1</entry>
+    <entry>2</entry>
+    </row>
+    <row>
+    <entry>1</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>2</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00034"><emphasis effect="bold">Step 7:</emphasis> The 3 and the 3 add to 10 in base 6, so we enter the 0 and carry the 1. We now have the result: </para>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>45</mn></mrow><mn>6</mn></msub><mo>×</mo><msub><mrow><mn>24</mn></mrow><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>2052</mn></mrow><mn>6</mn></msub></mrow></math>.<newline/></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Use the base 2 multiplication table (<link target-id="table-00012" document="m00056">Table 4.10</link>) and, when necessary, the base 2 addition table in the solution for <link target-id="exam-00003" document="m00056">Example 4.40</link>. Set up this calculation using columns:
+    <table class="unnumbered" summary="." id="table-00019">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    </row>
+    <row>
+    <entry>x</entry>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>0</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00035"><emphasis effect="bold">Step 2:</emphasis> Using the pattern established above, and the processes from multiplication from base 10, we find the following:
+    <table class="unnumbered" summary="." id="table-00020">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    </row>
+    <row>
+    <entry>x</entry>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00036"><emphasis effect="bold">Step 3:</emphasis> Adding down the columns results in the following:
+    <table class="unnumbered" summary="." id="table-00021">
+    <tgroup cols="6">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <colspec colnum="5" colname="c5" colwidth="1pt"/>
+    <colspec colnum="6" colname="c6" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    </row>
+    <row>
+    <entry>x</entry>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry>0</entry>
+    <entry>0</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry>1</entry>
+    <entry>0</entry>
+    <entry>1</entry>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>1</entry>
+    <entry>0</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </para>
+    <para id="para-00037">So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>101</mn></mrow><mn>2</mn></msub><mo>×</mo><msub><mrow><mn>110</mn></mrow><mn>2</mn></msub><mo>=</mo><msub><mrow><mn>11110</mn></mrow><mn>2</mn></msub></mrow></math>.</para></item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C04-M5-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00039">Summarizing the process of multiplying two numbers in different bases, the multiplication table is referenced. Using that table, the multiplication is carried out in the same manner as it is in base 10. The addition rules for the base will also be referenced when carrying a 1 or when adding the results for each digit’s multiplication line.</para>
+    <example id="exam-00004">
+    <title>Multiplying in a Base Higher Than 10</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00040">Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mrow><mn>74</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math>.</para>
+    </problem>
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00041"><emphasis effect="bold">Step 1:</emphasis> Use the base 12 multiplication table in the solution for <link target-id="exam-00002" document="m00056">Example 4.39</link> and, when necessary, the base 12 addition table in the solution for <link target-id="table-00021" document="m00055" xmlns="http://cnx.rice.edu/cnxml">Example 4.31</link>. Set up this calculation using columns:</para>
+    <table class="unnumbered" summary="." id="table-00022">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry>3</entry>
+    <entry>A</entry>
+    </row>
+    <row>
+    <entry>×</entry>
+    <entry>7</entry>
+    <entry>4</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00042"><emphasis effect="bold">Step 2:</emphasis> First, the 4 is multiplied by 3A, resulting in the first line.</para>
+    <table class="unnumbered" summary="." id="table-00023">
+    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry>3</entry>
+    <entry>A</entry>
+    </row>
+    <row>
+    <entry>×</entry>
+    <entry>7</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">1</emphasis></entry>
+    <entry><emphasis effect="bold">3</emphasis></entry>
+    <entry><emphasis effect="bold">4</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00043"><emphasis effect="bold">Step 3:</emphasis> Now we move on to the 7 in the “tens” place in the bottom value.</para>
+    <table class="unnumbered" summary="." id="table-00024">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>5</entry>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>3</entry>
+    <entry>A</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>x</entry>
+    <entry>7</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>1</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">2</emphasis></entry>
+    <entry><emphasis effect="bold">2</emphasis></entry>
+    <entry><emphasis effect="bold">A</emphasis></entry>
+    <entry><emphasis effect="bold">0</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00044"><emphasis effect="bold">Step 4:</emphasis> Now we add down the columns.</para>
+    <table class="unnumbered" summary="." id="table-00025">
+    <tgroup cols="4">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <colspec colnum="3" colname="c3" colwidth="1pt"/>
+    <colspec colnum="4" colname="c4" colwidth="1pt"/>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry>3</entry>
+    <entry>A</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>x</entry>
+    <entry>7</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry/>
+    <entry>1</entry>
+    <entry>3</entry>
+    <entry>4</entry>
+    </row>
+    <row>
+    <entry>2</entry>
+    <entry>2</entry>
+    <entry>A</entry>
+    <entry>0</entry>
+    </row>
+    <row>
+    <entry><emphasis effect="bold">2</emphasis></entry>
+    <entry><emphasis effect="bold">4</emphasis></entry>
+    <entry><emphasis effect="bold">1</emphasis></entry>
+    <entry><emphasis effect="bold">4</emphasis></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00045"><emphasis effect="bold">Step 5:</emphasis> The 3 and the A add to 11 in base 12, so we enter the 1 and carry the 1.</para>
+    <para id="para-00046">We now have the result: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mrow><mn>74</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mn>2414</mn><mn>12</mn></msub></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C04-M5-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Division in Bases Other Than 10</title>
+    <para id="para-00049">Just as with the other operations, division in a base other than 10, the process of division in a base other than 10 is the same as the process when working in base 10. For instance, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>72</mn><mo>÷</mo><mn>9</mn><mo>=</mo><mn>8</mn></mrow></math> because, we know that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>×</mo><mn>8</mn><mo>=</mo><mn>72</mn></mrow></math>. So, for many division problems, we are simply looking to the multiplication table to identify the appropriate multiplication rule.</para>
+    <example id="exam-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Dividing with a Base Other Than 10</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>14</mn></mrow><mn>6</mn></msub><mo>÷</mo><msub><mn>5</mn><mn>6</mn></msub></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>÷</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub></mrow></math></item>
+    </list>
+    </problem>
+    <solution id="sol-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>Looking at the multiplication table for base 6 (<link target-id="table-00005" document="m00056">Table 4.8</link>), we see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>5</mn><mn>6</mn></msub><mo>×</mo><msub><mn>2</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mn>6</mn></msub></mrow></math>. Using that, we know that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>14</mn></mrow><mn>6</mn></msub><mo>÷</mo><msub><mn>5</mn><mn>6</mn></msub><mo>=</mo><msub><mn>2</mn><mn>6</mn></msub></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Looking at the multiplication table for base 12 in the solution for <link target-id="exam-00002" document="m00056">Example 4.39</link>, we see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>=</mo><mn>5</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub></mrow></math>. Using that, we know that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub><mo>÷</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mi mathvariant="normal">A</mi><mrow><mn>12</mn></mrow></msub></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C04-M5-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Errors in Multiplying and Dividing in Bases Other Than Base 10</title>
+    <para id="para-00051">The types of errors encountered when multiplying and dividing in bases other than base 10 are the same as when adding and subtracting. They often involve applying base 10 rules or symbols to an arithmetic problem in a base other than base 10. The first type of error is using a symbol that is not in the symbol set for the base.</para>
+    <example id="exam-00006">
+    <title>Identifying an Illegal Symbol in a Base Other Than Base 10</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00052">Explain the error in the following calculation, and determine the correct answer:</para>
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mn>4</mn><mn>6</mn></msub><mo>×</mo><msub><mn>2</mn><mn>6</mn></msub><mo>=</mo><msub><mn>8</mn><mn>6</mn></msub></mrow></math></equation>
+    </problem>
+    <solution id="sol-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00053">Since the problem is in base 6, the symbol set available is 0, 1, 2, 3, 4, and 5. The 8 in the answer is clearly not a legal symbol for base 6. Looking back to the base 6 multiplication table (<link target-id="table-00005" document="m00056">Table 4.8</link>), we see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>4</mn><mn>6</mn></msub><mo>×</mo><msub><mn>2</mn><mn>6</mn></msub><mo>=</mo><msub><mrow><mn>12</mn></mrow><mn>6</mn></msub></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C04-M5-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00055">The second type of error is using a base 10 rule when the numbers are not in base 10. For instance, in base 17, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>6</mn><mrow><mn>17</mn></mrow></msub><mo>×</mo><msub><mn>9</mn><mrow><mn>17</mn></mrow></msub><mo>=</mo><msub><mrow><mn>54</mn></mrow><mrow><mn>17</mn></mrow></msub></mrow></math> would be incorrect, even though in base 10, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>×</mo><mn>9</mn><mo>=</mo><mn>54</mn></mrow></math>. That rule doesn’t apply in base 17.</para>
+    <example id="exam-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Identifying an Error in Arithmetic in a Base Other Than Base 10</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00056">Explain the error in the following calculation. Determine the correct answer:</para>
+    <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mrow><mn>18</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><msub><mrow><mn>126</mn></mrow><mrow><mn>12</mn></mrow></msub></mrow></math></equation>
+    </problem>
+    <solution id="sol-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00057">If this problem was a base 10 problem, this would be the correct answer. However, in base 12, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mn>8</mn><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub></mrow></math> is not 56, but is instead 48. To correct this error, carefully use the multiplication table for base 12 (<link target-id="table-00011" document="m00056" xmlns="http://cnx.rice.edu/cnxml">Table 4.9</link>). If properly used, the correct answer would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mn>18</mn></mrow><mrow><mn>12</mn></mrow></msub><mo>×</mo><msub><mn>7</mn><mrow><mn>12</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">B</mi><msub><mn>8</mn><mrow><mn>12</mn></mrow></msub></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00058"><link class="os-embed" url="#exercise/CM-C04-M5-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00060"><link class="os-embed" url="#exercise/CM-C04-M5-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C04-M5-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C04-M5-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C04-M5-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00064"><link class="os-embed" url="#exercise/CM-C04-M5-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C04-M5-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00066"><link class="os-embed" url="#exercise/CM-C04-M5-Q014"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00006">
+    <title>Exercises</title>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00067"><link class="os-embed" url="#exercise/CM-C04-M5-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00068"><link class="os-embed" url="#exercise/CM-C04-M5-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00069"><link class="os-embed" url="#exercise/CM-C04-M5-Q017"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00070"><link class="os-embed" url="#exercise/CM-C04-M5-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00071"><link class="os-embed" url="#exercise/CM-C04-M5-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00072"><link class="os-embed" url="#exercise/CM-C04-M5-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00073"><link class="os-embed" url="#exercise/CM-C04-M5-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C04-M5-Q022"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00075"><link class="os-embed" url="#exercise/CM-C04-M5-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C04-M5-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00077"><link class="os-embed" url="#exercise/CM-C04-M5-Q025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00078"><link class="os-embed" url="#exercise/CM-C04-M5-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00079"><link class="os-embed" url="#exercise/CM-C04-M5-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C04-M5-Q028"/></para>
+    </problem>
+    </exercise>
+    </section>
+    
+    
+    <section class="key-concepts" id="sect-00013">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00011">
+    <item>Multiplication tables for bases other than 10 can be built using the same processes that are used in base 10, including using repeated addition and the addition table for the base.</item>
+    <item>Multiplication in bases other than base 10 use the same processes as multiplication in base 10, but use the multiplication table for that base.</item>
+    <item>Basic division in bases other than base 10 use the same processes as basic division in base 10, where the missing factor process is used.</item>
+    </list>
+    </section>
+    <section class="projects" id="sect-00007">
     <title>Projects</title>
     <section id="sect-00008">
     <title>Additive Systems</title>
-    <para id="para-00084">Go online. Google “additive number systems.”  What system comes up?</para>
+    <para id="para-00084">Go online. Google “additive number systems.”What system comes up?</para>
     <list list-type="bulleted" id="list-00007">
     <item>Describe the additive system you found.</item>
     </list>
@@ -1885,345 +1885,346 @@
     <item>Choose one of those systems. Explain that base system. Be sure to address whether the system is additive, place-value based, a blend of the two, and if it employs a zero.</item>
     </list>
     </section>
-  <section id="sect-00026">
-  <title>History of Zero</title>
-  <para id="para-00081">Using any resources available to you, determine the history of 0 in at least three different numbering systems. Address at least when and why such a development occurred and why a 0 is vital to the use of a positional system.</para>
-  </section>
-  <section id="sect-00011">
-  <title>Numbering Systems from Other Global Regions</title>
-  <para id="para-00083">Using any resources available to you, find at least three numbering systems from sub-Saharan Africa, Australia, China, or the Pacific Islands. Explore if they are positional or additive systems (or combinations!), the terminology of the system, if they used a 0, and what base they employed (if positional).</para>
-  </section>
-  </section>
-  <section class="chapter-review" id="sect-00014">
-  <title>Chapter Review</title>
-  <section id="sect-00015">
-  <title><link document="m00052">4.1 Hindu-Arabic Positional System</link></title>
-  <exercise id="exer-00036">
-  <problem id="prob-00036">
-  <para id="para-00093"><link class="os-embed" url="#exercise/CM-C04-M5-Q029"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00037">
-  <problem id="prob-00037">
-  <para id="para-00094"><link class="os-embed" url="#exercise/CM-C04-M5-Q030"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00038">
-  <problem id="prob-00038">
-  <para id="para-00095"><link class="os-embed" url="#exercise/CM-C04-M5-Q031"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00039">
-  <problem id="prob-00039">
-  <para id="para-00096"><link class="os-embed" url="#exercise/CM-C04-M5-Q032"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00040">
-  <problem id="prob-00040">
-  <para id="para-00097"><link class="os-embed" url="#exercise/CM-C04-M5-Q033"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section id="sect-00016">
-  <title><link document="m00053">4.2 Early Numeration Systems</link></title>
-  <exercise id="exer-00041">
-  <problem id="prob-00041">
-  <para id="para-00098"><link class="os-embed" url="#exercise/CM-C04-M5-Q034"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00042">
-  <problem id="prob-00042">
-  <para id="para-00099"><link class="os-embed" url="#exercise/CM-C04-M5-Q035"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00043">
-  <problem id="prob-00043">
-  <para id="para-00100"><link class="os-embed" url="#exercise/CM-C04-M5-Q036"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00044">
-  <problem id="prob-00044">
-  <para id="para-00101"><link class="os-embed" url="#exercise/CM-C04-M5-Q037"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00045">
-  <problem id="prob-00045">
-  <para id="para-00102"><link class="os-embed" url="#exercise/CM-C04-M5-Q038"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00046">
-  <problem id="prob-00046">
-  <para id="para-00103"><link class="os-embed" url="#exercise/CM-C04-M5-Q039"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00047">
-  <problem id="prob-00047">
-  <para id="para-00104"><link class="os-embed" url="#exercise/CM-C04-M5-Q040"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00048">
-  <problem id="prob-00048">
-  <para id="para-00105"><link class="os-embed" url="#exercise/CM-C04-M5-Q041"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00049">
-  <problem id="prob-00049">
-  <para id="para-00106"><link class="os-embed" url="#exercise/CM-C04-M5-Q042"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section id="sect-00017">
-  <title><link document="m00054">4.3 Converting with Base Systems</link></title>
-  <exercise id="exer-00050">
-  <problem id="prob-00050">
-  <para id="para-00107"><link class="os-embed" url="#exercise/CM-C04-M5-Q043"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00051">
-  <problem id="prob-00051">
-  <para id="para-00108"><link class="os-embed" url="#exercise/CM-C04-M5-Q044"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00052">
-  <problem id="prob-00052">
-  <para id="para-00109"><link class="os-embed" url="#exercise/CM-C04-M5-Q045"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00053">
-  <problem id="prob-00053">
-  <para id="para-00110"><link class="os-embed" url="#exercise/CM-C04-M5-Q046"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00054">
-  <problem id="prob-00054">
-  <para id="para-00111"><link class="os-embed" url="#exercise/CM-C04-M5-Q047"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00055">
-  <problem id="prob-00055">
-  <para id="para-00112"><link class="os-embed" url="#exercise/CM-C04-M5-Q048"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00056">
-  <problem id="prob-00056">
-  <para id="para-00113"><link class="os-embed" url="#exercise/CM-C04-M5-Q049"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00057">
-  <problem id="prob-00057">
-  <para id="para-00114"><link class="os-embed" url="#exercise/CM-C04-M5-Q050"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00058">
-  <problem id="prob-00058">
-  <para id="para-00115"><link class="os-embed" url="#exercise/CM-C04-M5-Q051"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00059">
-  <problem id="prob-00059">
-  <para id="para-00116"><link class="os-embed" url="#exercise/CM-C04-M5-Q052"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00060">
-  <problem id="prob-00060">
-  <para id="para-00117"><link class="os-embed" url="#exercise/CM-C04-M5-Q053"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00061">
-  <problem id="prob-00061">
-  <para id="para-00118"><link class="os-embed" url="#exercise/CM-C04-M5-Q054"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00062">
-  <problem id="prob-00062">
-  <para id="para-00119"><link class="os-embed" url="#exercise/CM-C04-M5-Q055"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section id="sect-00018">
-  <title><link document="m00055">4.4 Addition and Subtraction in Base Systems</link></title>
-  <exercise id="exer-00063">
-  <problem id="prob-00063">
-  <para id="para-00120"><link class="os-embed" url="#exercise/CM-C04-M5-Q056"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00064">
-  <problem id="prob-00064">
-  <para id="para-00121"><link class="os-embed" url="#exercise/CM-C04-M5-Q057"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00065">
-  <problem id="prob-00065">
-  <para id="para-00122"><link class="os-embed" url="#exercise/CM-C04-M5-Q058"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00066">
-  <problem id="prob-00066">
-  <para id="para-00123"><link class="os-embed" url="#exercise/CM-C04-M5-Q059"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00067">
-  <problem id="prob-00067">
-  <para id="para-00124"><link class="os-embed" url="#exercise/CM-C04-M5-Q060"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00068">
-  <problem id="prob-00068">
-  <para id="para-00125"><link class="os-embed" url="#exercise/CM-C04-M5-Q061"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00069">
-  <problem id="prob-00069">
-  <para id="para-00126"><link class="os-embed" url="#exercise/CM-C04-M5-Q062"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section id="sect-00019">
-  <title><link document="m00056">4.5 Multiplication and Division in Base Systems</link></title>
-  <exercise id="exer-00070">
-  <problem id="prob-00070">
-  <para id="para-00127"><link class="os-embed" url="#exercise/CM-C04-M5-Q063"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00071">
-  <problem id="prob-00071">
-  <para id="para-00128"><link class="os-embed" url="#exercise/CM-C04-M5-Q064"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00072">
-  <problem id="prob-00072">
-  <para id="para-00129"><link class="os-embed" url="#exercise/CM-C04-M5-Q065"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00073">
-  <problem id="prob-00073">
-  <para id="para-00130"><link class="os-embed" url="#exercise/CM-C04-M5-Q066"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00074">
-  <problem id="prob-00074">
-  <para id="para-00131"><link class="os-embed" url="#exercise/CM-C04-M5-Q067"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00075">
-  <problem id="prob-00075">
-  <para id="para-00132"><link class="os-embed" url="#exercise/CM-C04-M5-Q068"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00076">
-  <problem id="prob-00076">
-  <para id="para-00133"><link class="os-embed" url="#exercise/CM-C04-M5-Q069"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00077">
-  <problem id="prob-00077">
-  <para id="para-00134"><link class="os-embed" url="#exercise/CM-C04-M5-Q070"/></para>
-  </problem>
-  </exercise>
-  </section>
-  </section>
-  <section class="chapter-test" id="sect-00020">
-  <title>Chapter Test</title>
-  <exercise id="exer-00078">
-  <problem id="prob-00078">
-  <para id="para-00135"><link class="os-embed" url="#exercise/CM-C04-M5-Q071"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00079">
-  <problem id="prob-00079">
-  <para id="para-00136"><link class="os-embed" url="#exercise/CM-C04-M5-Q072"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00080">
-  <problem id="prob-00080">
-  <para id="para-00137"><link class="os-embed" url="#exercise/CM-C04-M5-Q073"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00081">
-  <problem id="prob-00081">
-  <para id="para-00138"><link class="os-embed" url="#exercise/CM-C04-M5-Q074"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00082">
-  <problem id="prob-00082">
-  <para id="para-00139"><link class="os-embed" url="#exercise/CM-C04-M5-Q075"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00083">
-  <problem id="prob-00083">
-  <para id="para-00140"><link class="os-embed" url="#exercise/CM-C04-M5-Q076"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00084">
-  <problem id="prob-00084">
-  <para id="para-00141"><link class="os-embed" url="#exercise/CM-C04-M5-Q077"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00085">
-  <problem id="prob-00085">
-  <para id="para-00142"><link class="os-embed" url="#exercise/CM-C04-M5-Q078"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00086">
-  <problem id="prob-00086">
-  <para id="para-00143"><link class="os-embed" url="#exercise/CM-C04-M5-Q079"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00087">
-  <problem id="prob-00087">
-  <para id="para-00144"><link class="os-embed" url="#exercise/CM-C04-M5-Q080"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00088">
-  <problem id="prob-00088">
-  <para id="para-00145"><link class="os-embed" url="#exercise/CM-C04-M5-Q081"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00089">
-  <problem id="prob-00089">
-  <para id="para-00146"><link class="os-embed" url="#exercise/CM-C04-M5-Q082"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00090">
-  <problem id="prob-00090">
-  <para id="para-00147"><link class="os-embed" url="#exercise/CM-C04-M5-Q083"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00091">
-  <problem id="prob-00091">
-  <para id="para-00148"><link class="os-embed" url="#exercise/CM-C04-M5-Q084"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00092">
-  <problem id="prob-00092">
-  <para id="para-00149"><link class="os-embed" url="#exercise/CM-C04-M5-Q085"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00093">
-  <problem id="prob-00093">
-  <para id="para-00150"><link class="os-embed" url="#exercise/CM-C04-M5-Q086"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00094">
-  <problem id="prob-00094">
-  <para id="para-00151"><link class="os-embed" url="#exercise/CM-C04-M5-Q087"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00095">
-  <problem id="prob-00095">
-  <para id="para-00152"><link class="os-embed" url="#exercise/CM-C04-M5-Q088"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00096">
-  <problem id="prob-00096">
-  <para id="para-00153"><link class="os-embed" url="#exercise/CM-C04-M5-Q089"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00097">
-  <problem id="prob-00097">
-  <para id="para-00154"><link class="os-embed" url="#exercise/CM-C04-M5-Q090"/></para>
-  </problem>
-  </exercise>
-  </section>
-  </content>
-  </document>
+    <section id="sect-00026">
+    <title>History of Zero</title>
+    <para id="para-00081">Using any resources available to you, determine the history of 0 in at least three different numbering systems. Address at least when and why such a development occurred and why a 0 is vital to the use of a positional system.</para>
+    </section>
+    <section id="sect-00011">
+    <title>Numbering Systems from Other Global Regions</title>
+    <para id="para-00083">Using any resources available to you, find at least three numbering systems from sub-Saharan Africa, Australia, China, or the Pacific Islands. Explore if they are positional or additive systems (or combinations!), the terminology of the system, if they used a 0, and what base they employed (if positional).</para>
+    </section>
+    </section>
+    <section class="chapter-review" id="sect-00014">
+    <title>Chapter Review</title>
+    <section id="sect-00015">
+    <title><link document="m00052">4.1 Hindu-Arabic Positional System</link></title>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00093"><link class="os-embed" url="#exercise/CM-C04-M5-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00094"><link class="os-embed" url="#exercise/CM-C04-M5-Q030"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00095"><link class="os-embed" url="#exercise/CM-C04-M5-Q031"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00096"><link class="os-embed" url="#exercise/CM-C04-M5-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C04-M5-Q033"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00016">
+    <title><link document="m00053">4.2 Early Numeration Systems</link></title>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00098"><link class="os-embed" url="#exercise/CM-C04-M5-Q034"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00099"><link class="os-embed" url="#exercise/CM-C04-M5-Q035"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00100"><link class="os-embed" url="#exercise/CM-C04-M5-Q036"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00101"><link class="os-embed" url="#exercise/CM-C04-M5-Q037"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00102"><link class="os-embed" url="#exercise/CM-C04-M5-Q038"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00103"><link class="os-embed" url="#exercise/CM-C04-M5-Q039"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00104"><link class="os-embed" url="#exercise/CM-C04-M5-Q040"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00105"><link class="os-embed" url="#exercise/CM-C04-M5-Q041"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00049">
+    <problem id="prob-00049">
+    <para id="para-00106"><link class="os-embed" url="#exercise/CM-C04-M5-Q042"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00017">
+    <title><link document="m00054">4.3 Converting with Base Systems</link></title>
+    <exercise id="exer-00050">
+    <problem id="prob-00050">
+    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C04-M5-Q043"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00051">
+    <problem id="prob-00051">
+    <para id="para-00108"><link class="os-embed" url="#exercise/CM-C04-M5-Q044"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00052">
+    <problem id="prob-00052">
+    <para id="para-00109"><link class="os-embed" url="#exercise/CM-C04-M5-Q045"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00053">
+    <problem id="prob-00053">
+    <para id="para-00110"><link class="os-embed" url="#exercise/CM-C04-M5-Q046"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00054">
+    <problem id="prob-00054">
+    <para id="para-00111"><link class="os-embed" url="#exercise/CM-C04-M5-Q047"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00055">
+    <problem id="prob-00055">
+    <para id="para-00112"><link class="os-embed" url="#exercise/CM-C04-M5-Q048"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00056">
+    <problem id="prob-00056">
+    <para id="para-00113"><link class="os-embed" url="#exercise/CM-C04-M5-Q049"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00057">
+    <problem id="prob-00057">
+    <para id="para-00114"><link class="os-embed" url="#exercise/CM-C04-M5-Q050"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00058">
+    <problem id="prob-00058">
+    <para id="para-00115"><link class="os-embed" url="#exercise/CM-C04-M5-Q051"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00059">
+    <problem id="prob-00059">
+    <para id="para-00116"><link class="os-embed" url="#exercise/CM-C04-M5-Q052"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00060">
+    <problem id="prob-00060">
+    <para id="para-00117"><link class="os-embed" url="#exercise/CM-C04-M5-Q053"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00061">
+    <problem id="prob-00061">
+    <para id="para-00118"><link class="os-embed" url="#exercise/CM-C04-M5-Q054"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00062">
+    <problem id="prob-00062">
+    <para id="para-00119"><link class="os-embed" url="#exercise/CM-C04-M5-Q055"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00018">
+    <title><link document="m00055">4.4 Addition and Subtraction in Base Systems</link></title>
+    <exercise id="exer-00063">
+    <problem id="prob-00063">
+    <para id="para-00120"><link class="os-embed" url="#exercise/CM-C04-M5-Q056"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00064">
+    <problem id="prob-00064">
+    <para id="para-00121"><link class="os-embed" url="#exercise/CM-C04-M5-Q057"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00065">
+    <problem id="prob-00065">
+    <para id="para-00122"><link class="os-embed" url="#exercise/CM-C04-M5-Q058"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00066">
+    <problem id="prob-00066">
+    <para id="para-00123"><link class="os-embed" url="#exercise/CM-C04-M5-Q059"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00067">
+    <problem id="prob-00067">
+    <para id="para-00124"><link class="os-embed" url="#exercise/CM-C04-M5-Q060"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00068">
+    <problem id="prob-00068">
+    <para id="para-00125"><link class="os-embed" url="#exercise/CM-C04-M5-Q061"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00069">
+    <problem id="prob-00069">
+    <para id="para-00126"><link class="os-embed" url="#exercise/CM-C04-M5-Q062"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section id="sect-00019">
+    <title><link document="m00056">4.5 Multiplication and Division in Base Systems</link></title>
+    <exercise id="exer-00070">
+    <problem id="prob-00070">
+    <para id="para-00127"><link class="os-embed" url="#exercise/CM-C04-M5-Q063"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00071">
+    <problem id="prob-00071">
+    <para id="para-00128"><link class="os-embed" url="#exercise/CM-C04-M5-Q064"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00072">
+    <problem id="prob-00072">
+    <para id="para-00129"><link class="os-embed" url="#exercise/CM-C04-M5-Q065"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00073">
+    <problem id="prob-00073">
+    <para id="para-00130"><link class="os-embed" url="#exercise/CM-C04-M5-Q066"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00074">
+    <problem id="prob-00074">
+    <para id="para-00131"><link class="os-embed" url="#exercise/CM-C04-M5-Q067"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00075">
+    <problem id="prob-00075">
+    <para id="para-00132"><link class="os-embed" url="#exercise/CM-C04-M5-Q068"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00076">
+    <problem id="prob-00076">
+    <para id="para-00133"><link class="os-embed" url="#exercise/CM-C04-M5-Q069"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00077">
+    <problem id="prob-00077">
+    <para id="para-00134"><link class="os-embed" url="#exercise/CM-C04-M5-Q070"/></para>
+    </problem>
+    </exercise>
+    </section>
+    </section>
+    <section class="chapter-test" id="sect-00020">
+    <title>Chapter Test</title>
+    <exercise id="exer-00078">
+    <problem id="prob-00078">
+    <para id="para-00135"><link class="os-embed" url="#exercise/CM-C04-M5-Q071"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00079">
+    <problem id="prob-00079">
+    <para id="para-00136"><link class="os-embed" url="#exercise/CM-C04-M5-Q072"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00080">
+    <problem id="prob-00080">
+    <para id="para-00137"><link class="os-embed" url="#exercise/CM-C04-M5-Q073"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00081">
+    <problem id="prob-00081">
+    <para id="para-00138"><link class="os-embed" url="#exercise/CM-C04-M5-Q074"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00082">
+    <problem id="prob-00082">
+    <para id="para-00139"><link class="os-embed" url="#exercise/CM-C04-M5-Q075"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00083">
+    <problem id="prob-00083">
+    <para id="para-00140"><link class="os-embed" url="#exercise/CM-C04-M5-Q076"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00084">
+    <problem id="prob-00084">
+    <para id="para-00141"><link class="os-embed" url="#exercise/CM-C04-M5-Q077"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00085">
+    <problem id="prob-00085">
+    <para id="para-00142"><link class="os-embed" url="#exercise/CM-C04-M5-Q078"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00086">
+    <problem id="prob-00086">
+    <para id="para-00143"><link class="os-embed" url="#exercise/CM-C04-M5-Q079"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00087">
+    <problem id="prob-00087">
+    <para id="para-00144"><link class="os-embed" url="#exercise/CM-C04-M5-Q080"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00088">
+    <problem id="prob-00088">
+    <para id="para-00145"><link class="os-embed" url="#exercise/CM-C04-M5-Q081"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00089">
+    <problem id="prob-00089">
+    <para id="para-00146"><link class="os-embed" url="#exercise/CM-C04-M5-Q082"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00090">
+    <problem id="prob-00090">
+    <para id="para-00147"><link class="os-embed" url="#exercise/CM-C04-M5-Q083"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00091">
+    <problem id="prob-00091">
+    <para id="para-00148"><link class="os-embed" url="#exercise/CM-C04-M5-Q084"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00092">
+    <problem id="prob-00092">
+    <para id="para-00149"><link class="os-embed" url="#exercise/CM-C04-M5-Q085"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00093">
+    <problem id="prob-00093">
+    <para id="para-00150"><link class="os-embed" url="#exercise/CM-C04-M5-Q086"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00094">
+    <problem id="prob-00094">
+    <para id="para-00151"><link class="os-embed" url="#exercise/CM-C04-M5-Q087"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00095">
+    <problem id="prob-00095">
+    <para id="para-00152"><link class="os-embed" url="#exercise/CM-C04-M5-Q088"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00096">
+    <problem id="prob-00096">
+    <para id="para-00153"><link class="os-embed" url="#exercise/CM-C04-M5-Q089"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00097">
+    <problem id="prob-00097">
+    <para id="para-00154"><link class="os-embed" url="#exercise/CM-C04-M5-Q090"/></para>
+    </problem>
+    </exercise>
+    </section>
+    </content>
+    </document>
+    
