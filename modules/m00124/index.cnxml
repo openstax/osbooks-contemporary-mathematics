@@ -10,7 +10,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_10_001.jpg"/>
     </media>
-    <caption>[caption TK] (credit: “Row of trees in Roslev” by AKA CJ/Flickr, Public Domain)</caption>
+    <caption>In graph theory, graphs known as trees have structures in common with live trees. (credit: “Row of trees in Roslev” by AKA CJ/Flickr, Public Domain)</caption>
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
@@ -25,12 +25,12 @@
     <para id="para-00002">We saved the best for last! In this last section, we will discuss arguably the most fun kinds of graphs, trees. Have you every researched your family tree? Family trees are a perfect example of the kind of trees we study in graph theory. One of the characteristics of a family tree graph is that it never loops back around, because no one is their own grandparent!</para>
     <section id="sect-00002">
     <title>What Is A Tree?</title>
-    <para id="para-00003">Whether we are talking about a family tree or a tree in a forest, none of the branches ever loops back around and rejoins the trunk. Here are some graphs that have the same characteristic. Each of the graphs in <link target-id="fig-00002" document="m00124">Figure 12.292</link> is a <term id="term-00001">tree</term>, which is a connected <term id="term-00002">acyclic</term> graph. An acyclic graph has no cyclic subgraphs.</para>
+    <para id="para-00003">Whether we are talking about a family tree or a tree in a forest, none of the branches ever loops back around and rejoins the trunk. This means that a <term id="term-00001">tree</term> has no cyclic subgraphs, or is <term id="term-00002">acyclic</term>. A tree also has only one component. So, a tree is a connected acyclic graph. Here are some graphs that have the same characteristic. Each of the graphs in <link target-id="fig-00002" document="m00124">Figure 12.292</link> is a tree.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_244.png"/>
     </media>
-    <caption>Graphs T, P, and S</caption>
+    <caption>Graphs <emphasis effect="italic">T</emphasis>, <emphasis effect="italic">P</emphasis>, and <emphasis effect="italic">S</emphasis></caption>
     </figure>
     <para id="para-00004">Let’s practice determining whether a graph is a tree. To do this, check if a graph is connected and has no cycles.</para>
     <example id="exam-00001">
@@ -42,14 +42,14 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_245.png"/>
     </media>
-    <caption>Graphs M, N, and P</caption>
+    <caption>Graphs <emphasis effect="italic">M</emphasis>, <emphasis effect="italic">N</emphasis>, and <emphasis effect="italic">P</emphasis></caption>
     </figure>
     </problem>
     <solution id="sol-00001">
     <list bullet-style="bulleted" id="list-00002">
-    <item>Graph M is not a tree because it contains the cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>.</item>
+    <item>Graph M is not a tree because it contains the cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>).</item>
     <item xmlns="http://cnx.rice.edu/cnxml">Graph N is not a tree because it is not connected. It has two components, one with vertices <emphasis effect="italic">h, i, j</emphasis>, and another with vertices <emphasis effect="italic">k, l, m</emphasis>.</item>
-    <item>Graph P is a tree. It has no cycles and it is connected.</item>
+    <item>Graph <emphasis effect="italic">P</emphasis> is a tree. It has no cycles and it is connected.</item>
     </list>
     </solution>
     </exercise>
@@ -90,17 +90,17 @@
     <title>Identifying Types of Trees</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00009">Each graph in <link target-id="fig-00007" document="m00124">Figure 12.296</link> is one of the special types of trees we have been discussing. Identify the type of tree.</para>
+    <para id="para-00009">Each graph in <link target-id="fig-00007" document="m00124">Figure 12.297</link> is one of the special types of trees we have been discussing. Identify the type of tree.</para>
     <figure id="fig-00007">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_249.png"/>
     </media>
-    <caption>Graphs Q and W</caption>
+    <caption>Graphs <emphasis effect="italics">U</emphasis> and <emphasis effect="italics">V</emphasis></caption>
     </figure>
     </problem>
     <solution id="sol-00002">
-    <para id="para-00010">Graph U has a central path <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>f</mi><mo>→</mo><mi>i</mi><mo>→</mo><mi>l</mi><mo>→</mo><mi>o</mi><mo>→</mo><mi>q</mi></mrow></math>. Each vertex that is not on the path has degree 1 and is adjacent to a vertex that is on the path. So, U is a caterpillar tree.</para>
-    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">Graph V is a path graph because it is a single path connecting exactly two vertices of degree one, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi><mo>→</mo><mi>s</mi><mo>→</mo><mo>→</mo><mi>u</mi><mo>→</mo><mi>v</mi><mo>→</mo><mi>w</mi></mrow></math>.</para>
+    <para id="para-00010">Graph <emphasis effect="italic">U</emphasis> has a central path <emphasis effect="italic">a</emphasis>→<emphasis effect="italic">b</emphasis>→<emphasis effect="italic">d</emphasis>→<emphasis effect="italic">f</emphasis>→<emphasis effect="italic">i</emphasis>→<emphasis effect="italic">l</emphasis>→<emphasis effect="italic">o</emphasis>→<emphasis effect="italic">q</emphasis>. Each vertex that is not on the path has degree 1 and is adjacent to a vertex that is on the path. So, <emphasis effect="italic">U</emphasis> is a caterpillar tree.</para>
+    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">V</emphasis> is a path graph because it is a single path connecting exactly two vertices of degree one, <emphasis effect="italic">r</emphasis>→<emphasis effect="italic">s</emphasis>→<emphasis effect="italic">u</emphasis>→<emphasis effect="italic">v</emphasis>→<emphasis effect="italic">w</emphasis>.</para>
     </solution>
     </exercise>
     </example>
@@ -114,21 +114,21 @@
     </section>
     <section id="sect-00004">
     <title>Characteristics of Trees</title>
-    <para id="para-00013">As we study trees, it is helpful to be familiar with some of their characteristics. For example, if you add an edge to a tree graph between any two existing vertices, you will create a cycle, and the resulting graph is no longer a tree. Some examples are shown in <link target-id="fig-00008" document="m00124">Figure 12.297</link>. Adding edge <emphasis effect="italic">bj</emphasis> to graph T creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">rt</emphasis> to graph P creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>r</mi><mo>,</mo><mi>s</mi><mo>,</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></math>. Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">tv</emphasis> to graph S creates cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>t</mi><mo>,</mo><mi>u</mi><mo>,</mo><mi>v</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
+    <para id="para-00013">As we study trees, it is helpful to be familiar with some of their characteristics. For example, if you add an edge to a tree graph between any two existing vertices, you will create a cycle, and the resulting graph is no longer a tree. Some examples are shown in <link target-id="fig-00008" document="m00124">Figure 12.298</link>. Adding edge <emphasis effect="italic">bj</emphasis> to Graph <emphasis effect="italic">T</emphasis> creates cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">j</emphasis>). Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">rt</emphasis> to Graph <emphasis effect="italic">P</emphasis> creates cycle (<emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>). Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">tv</emphasis> to Graph <emphasis effect="italic">S</emphasis> creates cycle (<emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">v</emphasis>).</para>
     <figure id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_250.png"/>
     </media>
     <caption>Adding an Edges to Trees</caption>
     </figure>
-    <para id="para-00014">It is also true that removing an edge from a tree graph will increase the number of components and the graph will no longer be connected. In fact, you can see in <link target-id="fig-00009" document="m00124">Figure 12.298</link> that removing one or more edges can create a forest. Removing edge <emphasis effect="italic">qr</emphasis> from graph P creates a graph with two components, one with vertices <emphasis effect="italic">o, p</emphasis> and <emphasis effect="italic">q</emphasis>, and the other with vertices <emphasis effect="italic">r, s</emphasis>, and <emphasis effect="italic">t</emphasis>. Removing edge <emphasis effect="italic">uw</emphasis> from graph S creates two components, one with just vertex <emphasis effect="italic">w</emphasis> and the other with the rest of the vertices. When two edges were removed from graph T, edge <emphasis effect="italic">bf</emphasis> and edge <emphasis effect="italic">cd</emphasis>, creates a graph with three components as shown in <link target-id="fig-00009" document="m00124">Figure 12.298</link>.</para>
+    <para id="para-00014">It is also true that removing an edge from a tree graph will increase the number of components and the graph will no longer be connected. In fact, you can see in <link target-id="fig-00009" document="m00124">Figure 12.298</link> that removing one or more edges can create a forest. Removing edge <emphasis effect="italic">qr</emphasis> from Graph <emphasis effect="italic">P</emphasis> creates a graph with two components, one with vertices <emphasis effect="italic">o, p</emphasis> and <emphasis effect="italic">q</emphasis>, and the other with vertices <emphasis effect="italic">r, s</emphasis>, and <emphasis effect="italic">t</emphasis>. Removing edge <emphasis effect="italic">uw</emphasis> from Graph <emphasis effect="italic">S</emphasis> creates two components, one with just vertex <emphasis effect="italic">w</emphasis> and the other with the rest of the vertices. When two edges were removed from Graph <emphasis effect="italic">T</emphasis>, edge <emphasis effect="italic">bf</emphasis> and edge <emphasis effect="italic">cd</emphasis>, creates a graph with three components as shown in <link target-id="fig-00009" document="m00124">Figure 12.298</link>.</para>
     <figure id="fig-00009">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_251.png"/>
     </media>
     <caption>Removing Edges from Trees</caption>
     </figure>
-    <para id="para-00015">A very useful characteristic of tree graphs is that the number of edges is always one less than the number of vertices. This is not the case for graphs in general. In fact, any connected graph in which the number of edges is one less than the number of vertices is guaranteed to be a tree. Some examples are given in <link target-id="fig-00010" document="m00124">Figure 12.299</link>.</para>
+    <para id="para-00015">A very useful characteristic of tree graphs is that the number of edges is always one less than the number of vertices. In fact, any connected graph in which the number of edges is one less than the number of vertices is guaranteed to be a tree. Some examples are given in <link target-id="fig-00010" document="m00124">Figure 12.299</link>.</para>
     <figure id="fig-00010">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_252.png"/>
@@ -143,24 +143,24 @@
     <title>Exploring Characteristics of Trees</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00018">Use graphs I and J in <link target-id="fig-00011" document="m00124">Figure 12.300</link> to answer each question.</para>
+    <para id="para-00018">Use Graphs <emphasis effect="italic">I</emphasis> and <emphasis effect="italic">J</emphasis> in <link target-id="fig-00011" document="m00124">Figure 12.300</link> to answer each question.</para>
     <figure id="fig-00011">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_253.png"/>
     </media>
-    <caption>Graphs I and J</caption>
+    <caption>Graphs <emphasis effect="italic">I</emphasis> and <emphasis effect="italic">J</emphasis></caption>
     </figure>
     <list list-type="enumerated" number-style="arabic" id="list-00004">
-    <item>Which vertices are in each of the components that remain when edge <emphasis effect="italic">be</emphasis> is removed from graph I?</item>
-    <item>Determine the number of edges and the number of vertices in graph J. Explain how this confirms that graph J is a tree.</item>
-    <item>What kind of cycle is created if edge <emphasis effect="italic">im</emphasis> is added to graph J?</item>
+    <item>Which vertices are in each of the components that remain when edge <emphasis effect="italic">be</emphasis> is removed from Graph <emphasis effect="italic">I</emphasis>?</item>
+    <item>Determine the number of edges and the number of vertices in Graph <emphasis effect="italic">J</emphasis>. Explain how this confirms that Graph <emphasis effect="italic">J</emphasis> is a tree.</item>
+    <item>What kind of cycle is created if edge <emphasis effect="italic">im</emphasis> is added to Graph <emphasis effect="italic">J</emphasis>?</item>
     </list>
     </problem>
     <solution id="sol-00003">
     <list list-type="enumerated" number-style="arabic" id="list-00005">
     <item>When edge <emphasis effect="italic">be</emphasis> is removed, there are two components that remain. One component includes vertices <emphasis effect="italic">a, b</emphasis>, and <emphasis effect="italic">c</emphasis>. The other component includes vertices <emphasis effect="italic">d, e</emphasis>, and <emphasis effect="italic">f</emphasis>.</item>
-    <item>There are 7 vertices and 6 edges in graph J. This confirms that graph J is a tree because the number of edges is one less than the number of vertices.</item>
-    <item>The pentagon <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>i</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>j</mi><mo>,</mo><mi>l</mi><mo>,</mo><mi>m</mi></mrow><mo>)</mo></mrow></mrow></math> is created when edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">im</emphasis> is added to graph J.</item>
+    <item>There are 7 vertices and 6 edges in Graph <emphasis effect="italic">J</emphasis>. This confirms that Graph <emphasis effect="italic">J</emphasis> is a tree because the number of edges is one less than the number of vertices.</item>
+    <item>The pentagon (<emphasis effect="italic">i</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">j</emphasis>, <emphasis effect="italic">l</emphasis>, <emphasis effect="italic">m</emphasis>) is created when edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">im</emphasis> is added to Graph <emphasis effect="italic">J</emphasis>.</item>
     </list>
     </solution>
     </exercise>
@@ -189,7 +189,7 @@
     </media>
     <caption>Common Network Configurations</caption>
     </figure>
-    <para id="para-00023">The mesh topology for four devices could be represented by the complete graph A<sub>1</sub> in <link target-id="fig-00013" document="m00124">Figure 12.302</link> where the vertices represent the devices, and the edges represent network connections. However, the devices could be networked using fewer connections. Graphs A<sub>2</sub>, A<sub>3,</sub> and A<sub>4</sub> of <link target-id="fig-00013" document="m00124">Figure 12.302</link> show configurations in which 3 of the 6 edges have been removed. Each of the graphs A<sub>2</sub>, A<sub>3</sub> and A<sub>4</sub> in <link target-id="fig-00013" document="m00124">Figure 12.302</link> is a tree because it is connected and contains no cycles. Since graphs A<sub>2</sub>, A<sub>3</sub> and A<sub>4</sub> are also subgraphs of graph A<sub>1</sub> that include every vertex of the original graph, they are also known as <term id="term-00004">spanning trees</term>.</para>
+    <para id="para-00023">The mesh topology for four devices could be represented by the complete Graph <emphasis effect="italic">A</emphasis><sub>1</sub> in <link target-id="fig-00013" document="m00124">Figure 12.302</link> where the vertices represent the devices, and the edges represent network connections. However, the devices could be networked using fewer connections. Graphs <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3,</sub> and <emphasis effect="italic">A</emphasis><sub>4</sub> of <link target-id="fig-00013" document="m00124">Figure 12.302</link> show configurations in which 3 of the 6 edges have been removed. Each of the Graphs <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3</sub> and <emphasis effect="italic">A</emphasis><sub>4</sub> in <link target-id="fig-00013" document="m00124">Figure 12.302</link> is a tree because it is connected and contains no cycles. Since Graphs <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3</sub> and <emphasis effect="italic">A</emphasis><sub>4</sub> are also subgraphs of Graph <emphasis effect="italic">A</emphasis><sub>1</sub> that include every vertex of the original graph, they are also known as <term id="term-00004">spanning trees</term>.</para>
     <figure id="fig-00013">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_254.png"/>
@@ -207,22 +207,22 @@
     <title>Identifying Spanning Trees</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00025">Use <link target-id="fig-00014" document="m00124">Figure 12.303</link> to determine which of graphs M<sub>1</sub>, M<sub>2</sub>, M<sub>3</sub>, and M<sub>4</sub>, are spanning trees of Q.</para>
+    <para id="para-00025">Use <link target-id="fig-00014" document="m00124">Figure 12.303</link> to determine which of graphs <emphasis effect="italic">M</emphasis><sub>1</sub>, <emphasis effect="italic">M</emphasis><sub>2</sub>, <emphasis effect="italic">M</emphasis><sub>3</sub>, and <emphasis effect="italic">M</emphasis><sub>4</sub>, are spanning trees of <emphasis effect="italic">Q</emphasis>.</para>
     <figure id="fig-00014">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_255.png"/>
     </media>
-    <caption>Graphs Q, M<sub>1</sub>, M<sub>2</sub>, M<sub>3,</sub> and M<sub>4</sub></caption>
+    <caption>Graphs <emphasis effect="italic">Q</emphasis>, <emphasis effect="italic">M</emphasis><sub>1</sub>, <emphasis effect="italic">M</emphasis><sub>2</sub>, <emphasis effect="italic">M</emphasis><sub>3,</sub> and M<sub>4</sub></caption>
     </figure>
     </problem>
     <solution id="sol-00004">
     <list list-type="enumerated" number-style="arabic" id="list-00007">
-    <item>Graph M<sub>1</sub> is not a spanning tree of graph Q because it has a cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Graph M<sub>2</sub> is a spanning tree of graph Q because it has all the original vertices, no vertices are adjacent in M<sub>2 </sub> that weren’t adjacent in graph Q, graph M<sub>2</sub> is connected and it contains no cycles.</item>
-    <item>Graph M<sub>3</sub> is not a spanning tree of graph Q because vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">f</emphasis> are adjacent in graph M<sub>3</sub> but not in graph Q.</item>
-    <item>Graph M<sub>4</sub> is not a spanning tree of graph Q because it is not connected.</item>
+    <item>Graph <emphasis effect="italic">M</emphasis><sub>1</sub> is not a spanning tree of Graph <emphasis effect="italic">Q</emphasis> because it has a cycle (<emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">e</emphasis>).</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">M</emphasis><sub>2</sub> is a spanning tree of Graph <emphasis effect="italic">Q</emphasis> because it has all the original vertices, no vertices are adjacent in <emphasis effect="italic">M</emphasis><sub>2</sub> that weren’t adjacent in Graph <emphasis effect="italic">Q</emphasis>, Graph <emphasis effect="italic">M</emphasis><sub>2</sub> is connected and it contains no cycles.</item>
+    <item>Graph <emphasis effect="italic">M</emphasis><sub>3</sub> is not a spanning tree of Graph <emphasis effect="italic">Q</emphasis> because vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">f</emphasis> are adjacent in Graph <emphasis effect="italic">M</emphasis><sub>3</sub> but not in Graph <emphasis effect="italic">Q</emphasis>.</item>
+    <item>Graph <emphasis effect="italic">M</emphasis><sub>4</sub> is not a spanning tree of Graph <emphasis effect="italic">Q</emphasis> because it is not connected.</item>
     </list>
-    <para id="para-00026">So, only graph M<sub>2</sub> is a spanning tree of graph Q.</para>
+    <para id="para-00026">So, only graph <emphasis effect="italic">M</emphasis><sub>2</sub> is a spanning tree of Graph <emphasis effect="italic">Q</emphasis>.</para>
     </solution>
     </exercise>
     </example>
@@ -236,28 +236,28 @@
     </section>
     <section id="sect-00006">
     <title>Constructing a Spanning Tree Using Paths</title>
-    <para id="para-00028">Suppose that you wanted to find a spanning tree within a graph. One approach is to find paths within the graph. You can start at any vertex, go any direction, and create a path through the graph stopping only when you can’t continue without backtracking as shown in <link target-id="fig-00015" document="m00124">Figure 12.305</link>.</para>
+    <para id="para-00028">Suppose that you wanted to find a spanning tree within a graph. One approach is to find paths within the graph. You can start at any vertex, go any direction, and create a path through the graph stopping only when you can’t continue without backtracking as shown in <link target-id="fig-00015" document="m00124">Figure 12.306</link>.</para>
     <figure id="fig-00015">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_257.png"/>
     </media>
     <caption>First Phase to Construct a Spanning Tree</caption>
     </figure>
-    <para id="para-00029">Once you have stopped, pick a vertex along the path you drew as a starting point for another path. Make sure to visit only vertices you have not visited before as shown in <link target-id="fig-00016" document="m00124">Figure 12.306</link>.</para>
+    <para id="para-00029">Once you have stopped, pick a vertex along the path you drew as a starting point for another path. Make sure to visit only vertices you have not visited before as shown in <link target-id="fig-00016" document="m00124">Figure 12.307</link>.</para>
     <figure id="fig-00016">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_258.png"/>
     </media>
     <caption>Intermediate Phase to Construct a Spanning Tree</caption>
     </figure>
-    <para id="para-00030">Repeat this process until all vertices have been visited as shown in <link target-id="fig-00017" document="m00124">Figure 12.307</link>.</para>
+    <para id="para-00030">Repeat this process until all vertices have been visited as shown in <link target-id="fig-00017" document="m00124">Figure 12.308</link>.</para>
     <figure id="fig-00017">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_259.png"/>
     </media>
     <caption>Final Phase to Construct a Spanning Tree</caption>
     </figure>
-    <para id="para-00031">The end result is a tree that spans the entire graph as shown in <link target-id="fig-00018" document="m00124">Figure 12.308</link>.</para>
+    <para id="para-00031">The end result is a tree that spans the entire graph as shown in <link target-id="fig-00018" document="m00124">Figure 12.309</link>.</para>
     <figure id="fig-00018">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_260.png"/>
@@ -269,27 +269,27 @@
     <title>Constructing Spanning Trees</title>
     <exercise id="exer-00009">
     <problem id="prob-00009">
-    <para id="para-00033">Construct two distinct spanning trees for the graph in <link target-id="fig-00019" document="m00124">Figure 12.309</link>.</para>
+    <para id="para-00033">Construct two distinct spanning trees for the graph in <link target-id="fig-00019" document="m00124">Figure 12.310</link>.</para>
     <figure id="fig-00019">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_261.png"/>
     </media>
-    <caption>Graph L</caption>
+    <caption>Graph <emphasis effect="italic">L</emphasis></caption>
     </figure>
     </problem>
     <solution id="sol-00005">
-    <para id="para-00034">Two possible solutions are given in <link target-id="fig-00020" document="m00124">Figure 12.310</link> and <link target-id="fig-00021" document="m00124">Figure 12.311</link>.</para>
+    <para id="para-00034">Two possible solutions are given in <link target-id="fig-00020" document="m00124">Figure 12.311</link> and <link target-id="fig-00021" document="m00124">Figure 12.312</link>.</para>
     <figure id="fig-00020">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_262.png"/>
     </media>
-    <caption>First Spanning Tree for Graph L</caption>
+    <caption>First Spanning Tree for Graph <emphasis effect="italic">L</emphasis></caption>
     </figure>
     <figure id="fig-00021">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_263.png"/>
     </media>
-    <caption>Second Spanning Tree for Graph L</caption>
+    <caption>Second Spanning Tree for Graph <emphasis effect="italic">L</emphasis></caption>
     </figure>
     </solution>
     </exercise>
@@ -304,20 +304,20 @@
     </section>
     <section id="sect-00007">
     <title>Revealing Spanning Trees</title>
-    <para id="para-00036">Another approach to finding a spanning tree in a connected graph involves removing unwanted edges to reveal a spanning tree. Consider graph D in <link target-id="fig-00022" document="m00124">Figure 12.312</link>.</para>
+    <para id="para-00036">Another approach to finding a spanning tree in a connected graph involves removing unwanted edges to reveal a spanning tree. Consider Graph <emphasis effect="italic">D</emphasis> in <link target-id="fig-00022" document="m00124">Figure 12.314</link>.</para>
     <figure id="fig-00022">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_266.png"/>
     </media>
-    <caption>Graph D</caption>
+    <caption>Graph <emphasis effect="italic">D</emphasis></caption>
     </figure>
-    <para id="para-00037">Graph D has 10 vertices. A spanning tree of graph D must have 9 edges, because any tree with 10 vertices has 9 edges. Graph D has 13 edges so 4 need to be removed. To determine which 4 edges to remove, remember that trees do not have cycles. There are 4 triangles in graph D which we need to break up. We can accomplish this by removing 1 edge from each of the triangles. There are many ways this can be done. Two of these ways are shown in <link target-id="fig-00023" document="m00124">Figure 12.313</link>.</para>
+    <para id="para-00037">Graph <emphasis effect="italic">D</emphasis> has 10 vertices. A spanning tree of Graph <emphasis effect="italic">D</emphasis> must have 9 edges, the number of edges is one less than the number of vertices in any tree. Graph <emphasis effect="italic">D</emphasis> has 13 edges so 4 need to be removed. To determine which 4 edges to remove, remember that trees do not have cycles. There are 4 triangles in Graph <emphasis effect="italic">D</emphasis> which we need to break up. We can accomplish this by removing 1 edge from each of the triangles. There are many ways this can be done. Two of these ways are shown in <link target-id="fig-00023" document="m00124">Figure 12.315</link>.</para>
     <figure id="fig-00023">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_267a.png"/>
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_267b.png"/>
     </media>
-    <caption>Removing Four Edges from Graph D</caption>
+    <caption>Removing Four Edges from Graph <emphasis effect="italic">D</emphasis></caption>
     </figure>
     <note class="video" id="note-00009">
     <para id="para-00038"><link url="https://openstax.org/r/Spanning_Trees_in_Graph_Theory">Spanning Trees in Graph Theory</link></para>
@@ -326,31 +326,31 @@
     <title>Removing Edges to Find Spanning Trees</title>
     <exercise id="exer-00011">
     <problem id="prob-00011">
-    <para id="para-00039">Use the graph in <link target-id="fig-00025" document="m00124">Figure 12.314</link> to answer each question.</para>
+    <para id="para-00039">Use the graph in <link target-id="fig-00025" document="m00124">Figure 12.316</link> to answer each question.</para>
     <figure id="fig-00025">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_268.png"/>
     </media>
-    <caption>Graph V</caption>
+    <caption>Graph <emphasis effect="italic">V</emphasis></caption>
     </figure>
     <list list-type="enumerated" number-style="arabic" id="list-00008">
     <item>Determine the number of edges that must be removed to reveal a spanning tree.</item>
-    <item>Name all the undirected cycles in graph V.</item>
-    <item>Find two distinct spanning trees of graph V.</item>
+    <item>Name all the undirected cycles in Graph <emphasis effect="italic">V</emphasis>.</item>
+    <item>Find two distinct spanning trees of Graph <emphasis effect="italic">V</emphasis>.</item>
     </list>
     </problem>
     <solution id="sol-00006">
     <list list-type="enumerated" number-style="arabic" id="list-00009">
-    <item>Graph V has 9 vertices so a spanning tree for the graph must have 8 edges. Since graph V has 11 edges, 3 edges must be removed to reveal a spanning tree.</item>
-    <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>g</mi></mrow><mo>)</mo></mrow></mrow></math></item>
-    <item xmlns="http://cnx.rice.edu/cnxml">To find the first spanning tree, remove edge <emphasis effect="italic">ac</emphasis> which will break up both of the triangles, remove edge <emphasis effect="italic">cf </emphasis> which will break up the quadrilateral, and remove <emphasis effect="italic">be</emphasis> which will break up the pentagon, to give us the spanning tree shown in <link target-id="fig-00026" document="m00124">Figure 12.315</link>.
+    <item>Graph <emphasis effect="italic">V</emphasis> has 9 vertices so a spanning tree for the graph must have 8 edges. Since Graph <emphasis effect="italic">V</emphasis> has 11 edges, 3 edges must be removed to reveal a spanning tree.</item>
+    <item>(<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>), (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), and (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">g</emphasis>)</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">To find the first spanning tree, remove edge <emphasis effect="italic">ac</emphasis> which will break up both of the triangles, remove edge <emphasis effect="italic">cf </emphasis> which will break up the quadrilateral, and remove <emphasis effect="italic">be</emphasis> which will break up the pentagon, to give us the spanning tree shown in <link target-id="fig-00026" document="m00124">Figure 12.317</link>.
     <figure id="fig-00026">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_269.png"/>
     </media>
     <caption>Spanning Tree Formed Removing <emphasis effect="italic">ac, cf</emphasis>, and <emphasis effect="italic">be</emphasis></caption>
     </figure>
-    <para id="para-00040">To find another spanning tree, remove <emphasis effect="italic">ad</emphasis> which will break up <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, remove <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">af</emphasis> to break up <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, and remove <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hi</emphasis> to break up <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>g</mi></mrow><mo>)</mo></mrow></mrow></math>. This will give us the spanning tree in <link target-id="fig-00027" document="m00124">Figure 12.316</link>.</para>
+    <para id="para-00040">To find another spanning tree, remove <emphasis effect="italic">ad</emphasis> which will break up (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>) and (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), remove <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">af</emphasis> to break up (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), and remove <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hi</emphasis> to break up (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">g</emphasis>). This will give us the spanning tree in <link target-id="fig-00027" document="m00124">Figure 12.318</link>.</para>
     <figure id="fig-00027" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_270.png"/>
@@ -396,7 +396,7 @@
     <title>Using Kruskal’s Algorithm</title>
     <exercise id="exer-00013">
     <problem id="prob-00013">
-    <para id="para-00051">A computer network will be set up with 6 devices. The vertices in the graph in <link target-id="fig-00029" document="m00124">Figure 12.317</link> represent the devices, and the edges represent the cost of a connection. Find the network configuration that will cost the least. What is the total cost?</para>
+    <para id="para-00051">A computer network will be set up with 6 devices. The vertices in the graph in <link target-id="fig-00029" document="m00124">Figure 12.320</link> represent the devices, and the edges represent the cost of a connection. Find the network configuration that will cost the least. What is the total cost?</para>
     <figure id="fig-00029">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_271.png"/>
@@ -406,49 +406,49 @@
     </problem>
     <solution id="sol-00007">
     <para id="para-00052">A minimum spanning tree will correspond to the network configuration of least cost. We will use Kruskal’s algorithm to find one. Since the graph has 6 vertices, the spanning tree will have 6 vertices and 5 edges.</para>
-    <para id="para-00053"><emphasis effect="bold">Step 1:</emphasis> Choose an edge of least weight. We have sorted the weights into numerical order. The least is $100. The only edge of this weight is edge AF as shown in <link target-id="fig-00030" document="m00124">Figure 12.318</link>.</para>
+    <para id="para-00053"><emphasis effect="bold">Step 1:</emphasis> Choose an edge of least weight. We have sorted the weights into numerical order. The least is $100. The only edge of this weight is edge <emphasis effect="italic">AF</emphasis> as shown in <link target-id="fig-00030" document="m00124">Figure 12.321</link>.</para>
     <figure id="fig-00030">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_272.png"/>
     </media>
     <caption>Step 1 Select Edge <emphasis effect="italic">AF</emphasis></caption>
     </figure>
-    <para id="para-00054"><emphasis effect="bold">Step 2:</emphasis> Choose the edge of least weight of the remaining edges, which is <emphasis effect="italic">BD</emphasis> with $120. Notice that the two selected edges do not need to be adjacent to each other as shown in <link target-id="fig-00031" document="m00124">Figure 12.319</link>.</para>
+    <para id="para-00054"><emphasis effect="bold">Step 2:</emphasis> Choose the edge of least weight of the remaining edges, which is <emphasis effect="italic">BD</emphasis> with $120. Notice that the two selected edges do not need to be adjacent to each other as shown in <link target-id="fig-00031" document="m00124">Figure 12.322</link>.</para>
     <figure id="fig-00031">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_273.png"/>
     </media>
     <caption>Step 2 Select Edge <emphasis effect="italic">BD</emphasis></caption>
     </figure>
-    <para id="para-00055"><emphasis effect="bold">Step 3:</emphasis> Select the lowest weight edge of the remaining edges, which is <emphasis effect="italic">DF</emphasis> with $150 and it does not form a cycle as shown in <link target-id="fig-00032" document="m00124">Figure 12.320</link>.</para>
+    <para id="para-00055"><emphasis effect="bold">Step 3:</emphasis> Select the lowest weight edge of the remaining edges, as long as it does not result in a cycle. We select <emphasis effect="italic">DF</emphasis> with $150 since it does not form a cycle as shown in <link target-id="fig-00032" document="m00124">Figure 12.323</link>.</para>
     <figure id="fig-00032">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_274.png"/>
     </media>
     <caption>Step 3 Select Edge <emphasis effect="italic">DF</emphasis></caption>
     </figure>
-    <para id="para-00056"><emphasis effect="bold">Repeat Step 3:</emphasis> Select the lowest weight edge of the remaining edges, which is <emphasis effect="italic">BE</emphasis> with $160 and it does not form a cycle as shown in <link target-id="fig-00033" document="m00124">Figure 12.321</link>. This gives us 4 edges so we only need to repeat step 3 once more to get the fifth edge.</para>
+    <para id="para-00056"><emphasis effect="bold">Repeat Step 3:</emphasis> Select the lowest weight edge of the remaining edges, which is <emphasis effect="italic">BE</emphasis> with $160 and it does not form a cycle as shown in <link target-id="fig-00033" document="m00124">Figure 12.324</link>. This gives us 4 edges so we only need to repeat step 3 once more to get the fifth edge.</para>
     <figure id="fig-00033">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_275.png"/>
     </media>
     <caption>Repeat Step 3 Select Edge <emphasis effect="italic">DF</emphasis></caption>
     </figure>
-    <para id="para-00057"><emphasis effect="bold">Repeat Step 3:</emphasis> The lowest weight of the remaining edges is $170. Both <emphasis effect="italic">BF</emphasis> and <emphasis effect="italic">CE</emphasis> have a weight of $170, but <emphasis effect="italic">BF</emphasis> would create cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></math> and there cannot be a cycle in a spanning tree as shown in <link target-id="fig-00034" document="m00124">Figure 12.322</link>.</para>
+    <para id="para-00057"><emphasis effect="bold">Repeat Step 3:</emphasis> The lowest weight of the remaining edges is $170. Both <emphasis effect="italic">BF</emphasis> and <emphasis effect="italic">CE</emphasis> have a weight of $170, but <emphasis effect="italic">BF</emphasis> would create cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>) and there cannot be a cycle in a spanning tree as shown in <link target-id="fig-00034" document="m00124">Figure 12.325</link>.</para>
     <figure id="fig-00034" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_276.png"/>
     </media>
-    <caption>Repeat Step 3 Do Not Select Edge BF</caption>
+    <caption>Repeat Step 3 Do Not Select Edge <emphasis effect="italic">BF</emphasis></caption>
     </figure>
-    <para id="para-00058">So, we will select <emphasis effect="italic">CE</emphasis> which will complete the spanning tree as shown in <link target-id="fig-00035" document="m00124">Figure 12.323</link>.</para>
+    <para id="para-00058">So, we will select <emphasis effect="italic">CE</emphasis> which will complete the spanning tree as shown in <link target-id="fig-00035" document="m00124">Figure 12.326</link>.</para>
     <figure id="fig-00035">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_277.png"/>
     </media>
     <caption>Repeat Step 3 Select Edge <emphasis effect="italic">CE</emphasis></caption>
     </figure>
-    <para id="para-00059">The minimum spanning tree is shown in <link target-id="fig-00036" document="m00124">Figure 12.324</link>. This is the configuration of the network of least cost. The spanning tree has a total weight of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>100</mn><mo>+</mo><mi>$</mi><mn>120</mn><mo>+</mo><mi>$</mi><mn>150</mn><mo>+</mo><mi>$</mi><mn>160</mn><mo>+</mo><mi>$</mi><mn>170</mn><mo>=</mo><mi>$</mi><mn>700</mn></mrow></math> which is the total cost of this network configuration.</para>
+    <para id="para-00059">The minimum spanning tree is shown in <link target-id="fig-00036" document="m00124">Figure 12.327</link>. This is the configuration of the network of least cost. The spanning tree has a total weight of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>$</mo><mn>100</mn><mo>+</mo><mo>$</mo><mn>120</mn><mo>+</mo><mo>$</mo><mn>150</mn><mo>+</mo><mo>$</mo><mn>160</mn><mo>+</mo><mo>$</mo><mn>170</mn><mo>=</mo><mo>$</mo><mn>700</mn></mrow></math> which is the total cost of this network configuration.</para>
     <figure id="fig-00036" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_278.png"/>
