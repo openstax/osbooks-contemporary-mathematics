@@ -10,7 +10,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_02_001.jpg"/>
     </media>
-    <caption>[caption TK] (credit: XX)</caption>
+    <caption>Neuroimaging shows brain activity. (credit: "MRI Scan" by NIH Image Gallery/Flickr, Public Domain)</caption>
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
@@ -19,7 +19,7 @@
     <item>Describe and interpret relationships in graphs.</item>
     <item>Model relationships with graphs.</item>
     </list>
-    <para id="para-00002">Graph theory is used in neuroscience to study how different parts of the brain connect. The vertices in a graph represent regions of the brain and the edges represent the connections between those regions. Neurobiologists use functional magnetic resonance imaging (fMRI) to measure levels of blood in different parts of the brain,called nodes. When nodes are active at the same time, it suggests there is a functional connection between them so they form a network. This network can be represented as a graph where the vertices are the nodes and the functional connections are the edges between them. (Mikey Taylor, "Graph Theory &amp; Machine Learning in Neuroscience," Medium.com, June 24, 2020)</para>
+    <para id="para-00002">Graph theory is used in neuroscience to study how different parts of the brain connect. Neurobiologists use functional magnetic resonance imaging (fMRI) to measure levels of blood in different parts of the brain, called nodes. When nodes are active at the same time, it suggests there is a functional connection between them so they form a network. This network can be represented as a graph where the vertices are the nodes and the functional connections are the edges between them. (Mikey Taylor, "Graph Theory &amp; Machine Learning in Neuroscience," Medium.com, June 24, 2020)</para>
     </section>
     <section id="sect-00002">
     <title>Importance of the Degrees of Vertices</title>
@@ -28,7 +28,7 @@
     <title>Using Graphs to Understand Relationships</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00004">The graphs in <link target-id="fig-00002" document="m00110">Figure 12.23</link> represent neural networks, where the vertices are the nodes, and the edges represent functional connections between them. Which graph do you think would represent a network with the highest resistance to failure? Which graph would probably be the most vulnerable to failure? How might this relate to thedegrees of the vertices?</para>
+    <para id="para-00004">The graphs in <link target-id="fig-00002" document="m00110">Figure 12.23</link> represent neural networks, where the vertices are the nodes, and the edges represent functional connections between them. Which graph do you think would represent a network with the highest resistance to failure? Which graph would probably be the most vulnerable to failure? How might this relate to the degrees of the vertices?</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_020.png"/>
@@ -37,7 +37,7 @@
     </figure>
     </problem>
     <solution id="sol-00001">
-    <para id="para-00005">Graph B represents a network that would have the highest resistance to failure because there are more edges connecting the nodes indicating there are more connections between nodes than on either of the other graphs. This would make the network more resistant to failure because there are more options to work around a faulty edge or node. Graph A would probably be the most susceptible to failure because the network depends on a few particular edges and vertices for connections. There are more vertices of higher degree in Graph B than in Graph A because there are more edges connecting the nodes.</para>
+    <para id="para-00005">Graph <emphasis effect="italic">B</emphasis> represents a network that would have the highest resistance to failure because there are more edges connecting the nodes indicating there are more connections between nodes than on either of the other graphs. This would make the network more resistant to failure because there are more options to work around a faulty edge or node. Graph <emphasis effect="italic">A</emphasis> would probably be the most susceptible to failure because the network depends on a few particular edges and vertices for connections. There are more vertices of higher degree in Graph <emphasis effect="italic">B</emphasis> than in Graph <emphasis effect="italic">A</emphasis> because there are more edges connecting the nodes.</para>
     </solution>
     </exercise>
     </example>
@@ -58,23 +58,26 @@
     </media>
     <caption>Graph with 5 Vertices and 0 Edges</caption>
     </figure>
-    <para id="para-00008">Instead of being marked with a name, each vertex in <link target-id="fig-00003" document="m00110">Figure 12.25</link> is marked with its degree. In this case, all of the degrees are 0 so the sum of the degrees is also 0. Next, add an edge between any two existing vertices and indicate the degrees of the vertices. This gives us a graph with 5 vertices and 1 edge like the graph in <link target-id="fig-00004" document="m00110">Figure 12.26</link>.</para>
+    <para id="para-00008">Instead of being marked with a name, each vertex in <link target-id="fig-00003" document="m00110">Figure 12.25</link> is marked with its degree. In this case, all of the degrees are 0 so the sum of the degrees is also 0. Suppose that we add an edge between any two existing vertices and indicate the degrees of the vertices. This gives us a graph with 5 vertices and 1 edge like the graph in <link target-id="fig-00004" document="m00110">Figure 12.26</link>.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_023.png"/>
     </media>
     <caption>Graph with 5 Vertices and 1 Edge</caption>
     </figure>
-    <para id="para-00009">Note that the degrees of two vertices increased, each by 1. So, the sum of the degrees is now 2. Continue in this way, making note of the number of edges and the sum of the degrees of the vertices as in <link target-id="fig-00005" document="m00110">Figure 12.27</link>.</para>
+    <para id="para-00009">Note that the degrees of two vertices increased, each by 1. So, the sum of the degrees is now 2. Suppose that we continue in this way, adding one edge at a time and making note of the number of edges and the sum of the degrees of the vertices as in <link target-id="fig-00005" document="m00110">Figure 12.27</link>.</para>
     <figure id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_024.png"/>
     </media>
     <caption>Comparing Number of Edges to Sum of Degrees</caption>
     </figure>
-    <para id="para-00010"><link target-id="fig-00005" document="m00110">Figure 12.27</link> demonstrates a characteristic that is true of all graphs of any shape or size. When the number of edges is increased by 1, the sum of the degrees increases by 2. This happens because each edge has two ends and each end increases the degree of one vertex by 1 unit. As a result, the sum of the degrees of the vertices on any graph is always twice the number of edges, known as the <emphasis effect="bold">Sum of Degrees Theorem</emphasis>.</para>
+    <para id="para-00010"><link target-id="fig-00005" document="m00110">Figure 12.27</link> demonstrates a characteristic that is true of all graphs of any shape or size. When the number of edges is increased by 1, the sum of the degrees increases by 2. This happens because each edge has two ends and each end increases the degree of one vertex by 1 unit. As a result, the sum of the degrees of the vertices on any graph is always twice the number of edges. This relationship is known as the <emphasis effect="bold">Sum of Degrees Theorem</emphasis>.</para>
     <note class="formula" id="note-00002">
-    <para id="para-00011">For the Sum of Degrees Theorem, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sum of the degrees</mi><mo>=</mo><mn>2</mn><mo>×</mo><mi>number of edges</mi></mrow></math> or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>number of edges</mi><mo>=</mo><mfrac><mrow><mi>sum of degrees</mi></mrow><mn>2</mn></mfrac></mrow></math></para>
+    <para id="para-00011">For the Sum of Degrees Theorem,</para>
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>sum of the degrees</mi><mo>=</mo><mn>2</mn><mo>×</mo><mi>number of edges</mi></mrow></math></equation>
+    <para id="para-00086" xmlns="http://cnx.rice.edu/cnxml">or</para>
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>number of edges</mi><mo>=</mo><mfrac><mrow><mi>sum of degrees</mi></mrow><mn>2</mn></mfrac></mrow></math></equation>
     </note>
     <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
     <title>Finding the Sum of Degrees</title>
@@ -125,7 +128,7 @@
     </media>
     <caption>Model of Introductions Between 5 Strangers</caption>
     </figure>
-    <para id="para-00015">Let’s approach the problem by thinking about how many new people Person A would meet, then Person B, and so on, making sure not to repeat any introductions. The first graph in <link target-id="fig-00007" document="m00110">Figure 12.29</link> shows Person A meeting Persons B, C, D, and E, for a total of 4 introductions. The next graph shows that Person B still has to meet Persons C, D, and E, for a total of 3 more introductions. The next graph shows that Person C still has to meet Persons D and E, which is 2 more introductions. The next graph shows that Person D only remains to meet Person E, which is 1 more introduction. The final graph has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>10</mn></mrow></math> edges representing 10 introductions. This graph is an example of a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">complete</emphasis> graph because every pair of vertices is an adjacent pair-in other words, every pair of vertices is joined by an edge. <link target-id="fig-00008" document="m00110">Figure 12.32</link> shows complete graphs with 3, 4, 5, and 6 vertices.</para>
+    <para id="para-00015">Let’s approach the problem by thinking about how many new people Person <emphasis effect="italic">A</emphasis> would meet, then Person <emphasis effect="italic">B</emphasis>, and so on, making sure not to repeat any introductions. The first graph in <link target-id="fig-00007" document="m00110">Figure 12.29</link> shows Person <emphasis effect="italic">A</emphasis> meeting Persons <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">C</emphasis>, and <emphasis effect="italic">E</emphasis>, for a total of 4 introductions. The next graph shows that Person <emphasis effect="italic">B</emphasis> still has to meet Persons <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">D</emphasis>, and <emphasis effect="italic">E</emphasis>, for a total of 3 more introductions. The next graph shows that Person <emphasis effect="italic">C</emphasis> still has to meet Persons <emphasis effect="italic">D</emphasis> and <emphasis effect="italic">E</emphasis>, which is 2 more introductions. The next graph shows that Person D only remains to meet Person <emphasis effect="italic">E</emphasis>, which is 1 more introduction. The final graph has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>10</mn></mrow></math> edges representing 10 introductions. The last graph is an example of a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">complete</emphasis> graph because every pair of vertices is an adjacent pair-in other words, every pair of vertices is joined by an edge. <link target-id="fig-00008" document="m00110">Figure 12.32</link> shows complete graphs with 3, 4, 5, and 6 vertices.</para>
     <figure id="fig-00008">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_028.png"/>
@@ -178,12 +181,12 @@
     </media>
     <caption>Orlando and South Florida Airports</caption>
     </figure>
-    <para id="para-00024">The graph in <link target-id="fig-00009" document="m00110">Figure 12.31.</link> includes an additional vertex, MCO, and the additional edges shown with dashed lines. The graph of direct flights between South Florida airports from <link target-id="fig-00005" document="m00109">Figure 12.5</link> is called a <emphasis effect="bold">subgraph</emphasis> of the graph that also includes direct flights between Orlando and the same South Florida airports in <link target-id="fig-00009" document="m00110">Figure 12.31.</link>. In general terms, if Graph B consists entirely of a set of edges and vertices from a larger Graph A, then B is called a subgraph of A</para>
+    <para id="para-00024">The graph in <link target-id="fig-00009" document="m00110">Figure 12.31.</link> includes an additional vertex, MCO, and additional edges shown with dashed lines. The graph of direct flights between South Florida airports from <link target-id="fig-00005" document="m00109">Figure 12.5</link> is called a <emphasis effect="bold">subgraph</emphasis> of the graph that also includes direct flights between Orlando and the same South Florida airports in <link target-id="fig-00009" document="m00110">Figure 12.31.</link>. In general terms, if Graph <emphasis effect="italic">B</emphasis> consists entirely of a set of edges and vertices from a larger Graph <emphasis effect="italic">A</emphasis>, then <emphasis effect="italic">B</emphasis> is called a subgraph of <emphasis effect="italic">A</emphasis>.</para>
     <example id="exam-00004">
     <title>Identifying a Subgraph</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00025">In <link target-id="fig-00010" document="m00110">Figure 12.32</link>, Graph <emphasis effect="italic">G</emphasis> is given, along with four diagrams. Determine whether each diagram is or is not a subgraph of Graph G and explain why.</para>
+    <para id="para-00025">In <link target-id="fig-00010" document="m00110">Figure 12.32</link>, Graph <emphasis effect="italic">G</emphasis> is given, along with four diagrams. Determine whether each diagram is or is not a subgraph of Graph <emphasis effect="italic">G</emphasis> and explain why.</para>
     <figure id="fig-00010">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_030.png"/>
@@ -195,7 +198,7 @@
     <list bullet-style="bulleted" id="list-00006">
     <item>Diagram <emphasis effect="italic">J</emphasis> is not a subgraph of Graph <emphasis effect="italic">G</emphasis> because edge <emphasis effect="italic">ec</emphasis> is not in Graph <emphasis effect="italic">G</emphasis>.</item>
     <item>Diagram <emphasis effect="italic">K</emphasis> is a subgraph of Graph <emphasis effect="italic">G</emphasis> because all of its vertices and edges were part of Graph <emphasis effect="italic">G</emphasis>.</item>
-    <item>Diagram <emphasis effect="italic">L</emphasis> is not a graph at all, because there is a line extending from vertex <emphasis effect="italic">a</emphasis> that does not connect <emphasis effect="italic">a</emphasis> to another vertex. So, Diagram L cannot be a subgraph.</item>
+    <item>Diagram <emphasis effect="italic">L</emphasis> is not a graph at all, because there is a line extending from vertex <emphasis effect="italic">a</emphasis> that does not connect <emphasis effect="italic">a</emphasis> to another vertex. So, Diagram <emphasis effect="italic">L</emphasis> cannot be a subgraph.</item>
     <item>Diagram <emphasis effect="italic">M</emphasis> is not a subgraph of Graph <emphasis effect="italic">G</emphasis> because it contains a vertex <emphasis effect="italic">f</emphasis>, which is not part of <emphasis effect="italic">G</emphasis>.</item>
     </list>
     </solution>
@@ -215,7 +218,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_02_002.jpg"/>
     </media>
-    <caption>[caption TK] (credit: XX)</caption>
+    <caption>The water cycle begins and ends with water (credit: "Simple water cycle" by The Odd Git/Wikimedia Commons, Public Domain)</caption>
     </figure>
     <para id="para-00027">When you think of a cycle in everyday life, you probably think of something that begins and ends the same way. For example, the water cycle (<link target-id="fig-00011" document="m00110">Figure 12.33</link>) begins with water in a lake or ocean which evaporates into water vapor, condenses into clouds, and then returns to earth as rain or some other form of precipitation which settles into lakes or oceans. A <emphasis effect="bold">cycle</emphasis> in graph theory is similar in that it begins and ends in the same way: It is a series of connected edges that begin and end at the same vertex but otherwise never repeat any vertices.</para>
     <para id="para-00028">In a cycle, the number of vertices and edges must be equal, and all vertices must be of degree 2. Cycles are often referred to by the number of vertices. For example, a cycle with 5 vertices can be called a 5-cycle. Cycles can also be named after polygons based on the number of edges. For example a 5-cycle is also called a pentagon. <link target-id="table-00001" document="m00110">Table 12.1</link> lists these names for cycles of size 3 through size 10.</para>
@@ -307,7 +310,7 @@
     <caption>Categories of Cycles</caption>
     </table>
     <para id="para-00029">There are many more polygon names, including a megagon that has a million edges and a googolgon that has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>100</mn></mrow></msup></mrow></math> edges, but usually we just say <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>-gon when the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is past 10. For example, a cycle with 11 edges could be called an 11-gon.</para>
-    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Notice that the 10-cycle, or decagon, appears to cross over itself in <link target-id="table-00001" document="m00110">Table 12.1</link>. Remember, graphs can be drawn differently but represent the same connections. In <link target-id="fig-00020" document="m00110">Figure 12.34</link>, the same decagon is transformed into a graph that does not appear to overlap itself. We have done this without changing any of the connections so the fundamental structure of the graph has not changed.</para>
+    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Notice that the 10-cycle, or decagon, appears to cross over itself in <link target-id="table-00001" document="m00110">Table 12.1</link>. Remember, graphs can be drawn differently but represent the same connections. In <link target-id="fig-00020" document="m00110">Figure 12.34</link>, the same decagon is transformed into a graph that does not appear to overlap itself. We have done this without changing any of the connections so both diagrams represent the same relationships, and both diagrams are considered decagons.</para>
     <figure id="fig-00020">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_032.png"/>
@@ -321,30 +324,30 @@
     </section>
     <section id="sect-00007">
     <title>Cyclic Subgraphs and Cliques</title>
-    <para id="para-00032">When cycles appear as subgraphs within a larger graph, they are called <emphasis effect="bold">cyclic subgraphs</emphasis>. Cyclic subgraphs are named by listing their vertices sequentially. The vertex where you begin is not important. Graph K in <link target-id="fig-00021" document="m00110">Figure 12.35</link> has two triangle cycles <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>g</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>h</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math>, and one quadrilateral cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>g</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>)</mo></mrow></mrow></math>.</para>
+    <para id="para-00032">When cycles appear as subgraphs within a larger graph, they are called <emphasis effect="bold">cyclic subgraphs</emphasis>. Cyclic subgraphs are named by listing their vertices sequentially. The vertex where you begin is not important. Graph <emphasis effect="italic">K</emphasis> in <link target-id="fig-00021" document="m00110">Figure 12.35</link> has two triangle cycles (<emphasis effect="italic">g</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">j</emphasis>) and (<emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">j</emphasis>), and one quadrilateral cycle (<emphasis effect="italic">g</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">j</emphasis>).</para>
     <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_033.png"/>
     </media>
-    <caption>Cycles in Graph K</caption>
+    <caption>Cycles in Graph <emphasis effect="italic">K</emphasis></caption>
     </figure>
     <note class="check-point" id="note-00009">
-    <para id="para-00033"><emphasis effect="italic">The same cycle can be named in many ways. For example, (g,h,i,j) can also be named (h,i,j,g) or (j,i,h,g). However, you cannot name it (g,i,h,j) which doesn't reflect the correct order of the vertices.</emphasis></para>
+    <para id="para-00033"><emphasis effect="italic">The same cycle can be named in many ways, but we must keep in mind that listing two vertices consecutively indicates an edge exists between them. For example, (g, h, i, j) can also be named (h, i, j, g) or (j, i, h, g). However, you cannot name it (g, i, h, j) which doesn't reflect the correct order of the vertices. We can see that the order (g, i, h, j) is incorrect because the cycle has no edges gi or hj.</emphasis></para>
     </note>
     <example id="exam-00005">
     <title>Identifying Cyclic Subgraphs</title>
     <exercise id="exer-00009">
     <problem id="prob-00009">
-    <para id="para-00034">Identify the types of cyclic subgraphs in Graph H in <link target-id="fig-00022" document="m00110">Figure 12.36</link> and name them.</para>
+    <para id="para-00034">Identify the types of cyclic subgraphs in Graph <emphasis effect="italic">H</emphasis> in <link target-id="fig-00022" document="m00110">Figure 12.36</link> and name them.</para>
     <figure id="fig-00022">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_034.png"/>
     </media>
-    <caption>Graph H</caption>
+    <caption>Graph <emphasis effect="italic">H</emphasis></caption>
     </figure>
     </problem>
     <solution id="sol-00005">
-    <para id="para-00035">In order to avoid missing a cycle, begin by analyzing the vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math>, then proceed in alphabetical order. Vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> is part of two cycles, the quadrilateral cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></math> and the hexagonal cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></math>. Next look at vertex <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math>. It is part of the hexagonal cycle <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></math>. After checking each of the remaining vertices, we see there are no other cycles.</para>
+    <para id="para-00035">In order to avoid missing a cycle, begin by analyzing the vertex <emphasis effect="italic">a</emphasis>, then proceed in alphabetical order. Vertex <emphasis effect="italic">a</emphasis> is part of two cycles, the quadrilateral cycle (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">g</emphasis>) and the hexagonal cycle (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">f</emphasis>). Next look at vertex <emphasis effect="italic">b</emphasis>. It is part of the hexagonal cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">g</emphasis>). After checking each of the remaining vertices, we see there are no other cycles.</para>
     </solution>
     </exercise>
     </example>
@@ -358,32 +361,32 @@
     </problem>
     </exercise>
     </note>
-    <para id="para-00038">We have seen that sociologists use graphs to study the structures of social networks. In sociology, there is a principle known as Triadic Closure. It says that if two individuals in a social network have a friend in common, then it is more likely those two individuals will become friends too. Sociologists refer to this as an open triad becoming a closed triad. This concept can be visualized as graphs in <link target-id="fig-00023" document="m00110">Figure 12.37</link>. (Chakraborty, Dutta, Mondal, and Nath, "Application of Graph Theory in Social Media, <emphasis effect="italic">International Journal of Computer Sciences and Engineering</emphasis>, 6(10):722-729) In the open triad in <link target-id="fig-00023" document="m00110">Figure 12.37</link>, person <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and person <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> each has a friendship with person <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math>. In the closed triad, person <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> and person <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> have also developed a friendship. Notice that the graph representing the closed triad is a 3-cycle, or a triangle, in graph theory terms.</para>
+    <para id="para-00038">We have seen that sociologists use graphs to study the structures of social networks. In sociology, there is a principle known as Triadic Closure. It says that if two individuals in a social network have a friend in common, then it is more likely those two individuals will become friends too. Sociologists refer to this as an open triad becoming a closed triad. This concept can be visualized as graphs in <link target-id="fig-00023" document="m00110">Figure 12.37</link>. (Chakraborty, Dutta, Mondal, and Nath, "Application of Graph Theory in Social Media, <emphasis effect="italic">International Journal of Computer Sciences and Engineering</emphasis>, 6(10):722-729) In the open triad in <link target-id="fig-00023" document="m00110">Figure 12.37</link>, person <emphasis effect="italic">a</emphasis> and person <emphasis effect="italic">b</emphasis> each has a friendship with person <emphasis effect="italic">c</emphasis>. In the closed triad, person <emphasis effect="italic">a</emphasis> and person <emphasis effect="italic">a</emphasis> have also developed a friendship. Notice that the graph representing the closed triad is a 3-cycle, or a triangle, in graph theory terms.</para>
     <figure id="fig-00023" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_035a.png"/>
     </media>
     <caption>Graphs of Open Triad and Closed Triad</caption>
     </figure>
-    <para id="para-00039">Another topic of interest to sociologists as computer scientists and scientists in many fields is the concept of a <emphasis effect="bold">clique</emphasis>. In a social group, a clique is a subgroup who are all friends. A triad is an example of a clique with 3 people, but there can be cliques of any size. In graph theory, a clique is a complete subgraph.</para>
+    <para id="para-00039">Another topic of interest to sociologists, as well as computer scientists and scientists in many fields, is the concept of a <emphasis effect="bold">clique</emphasis>. In a social group, a clique is a subgroup who are all friends. A triad is an example of a clique with 3 people, but there can be cliques of any size. In graph theory, a clique is a complete subgraph.</para>
     <example id="exam-00006">
     <title>Identifying Triads and Cliques</title>
     <exercise id="exer-00011">
     <problem id="prob-00011">
-    <para id="para-00040">The graphs in <link target-id="note-00001" document="m00109">Figure 12.24</link> represent social communities. The vertices are individuals and the edges are social connections. Use the graphs to answer the questions.</para>
+    <para id="para-00040">The graphs in <link target-id="fig-00003" document="m00109">Figure 12.4</link> represent social communities. The vertices are individuals and the edges are social connections. Use the graphs to answer the questions.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00007">
     <item>Which graph has the most triads? Name the triangles.</item>
     <item>Which graph has the fewest triads? Name the triangles.</item>
     <item>How might an increase in the number of triads in a graph affect the resilience of a community? Explain your reasoning.</item>
-    <item>Identify a clique with more than 3 vertices in Graph E by naming its vertices.</item>
+    <item>Identify a clique with more than 3 vertices in Graph <emphasis effect="italic">E</emphasis> by naming its vertices.</item>
     </list>
     </problem>
     <solution id="sol-00006">
     <list list-type="enumerated" number-style="arabic" id="list-00008">
-    <item>Graph E has the most triads. The triangles are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>b</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>g</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>e</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>e</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>g</mi></mrow><mo>)</mo></mrow></mrow></math>,and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>f</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>h</mi></mrow><mo>)</mo></mrow></mrow></math>.</item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Graph D has the fewest triads. There are no triangles in the graph.</item>
+    <item>Graph <emphasis effect="italic">E</emphasis> has the most triads. The triangles are  (<emphasis effect="italic">a, b, c</emphasis>), (<emphasis effect="italic">a, e, g</emphasis>), (<emphasis effect="italic">c, f, i</emphasis>), (<emphasis effect="italic">e, g, h</emphasis>), (<emphasis effect="italic">e, h, i</emphasis>), and (<emphasis effect="italic">f, h, i</emphasis>).</item>
+    <item>Graph <emphasis effect="italic">D</emphasis> has the fewest triads. There are no triangles in the graph.</item>
     <item>More triads means vertices of greater degree which indicates greater resilience. Specifically, if an edge is removed from a closed triad, there the two individuals who are no longer adjacent are still connected by way of the third member of the triad.</item>
-    <item>The vertices <emphasis effect="italic">a, e, c,</emphasis> and <emphasis effect="italic">g</emphasis>form a clique with four vertices.</item>
+    <item>The vertices <emphasis effect="italic">a, e, c,</emphasis> and <emphasis effect="italic">g</emphasis> form a clique with four vertices.</item>
     </list>
     </solution>
     </exercise>
@@ -405,7 +408,7 @@
     </media>
     <caption>Complete Graphs with Up to Six Vertices</caption>
     </figure>
-    <para id="para-00043">Let's list the names of all the triangles in each graph. <emphasis effect="italic"><emphasis effect="bold">Since every pair of vertices is adjacent, any three vertices on a complete graph form a triangle</emphasis></emphasis>. There is only one triangle in the complete graph with 3 vertices, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math>. For the rest of the graphs, it is important that we take an organized approach. Start with the vertex that is first alphabetically, listing any triangles that include that vertex also in alphabetical order. Then, proceed to the next vertex in the alphabet, and list any triangles that include that vertex, except those that are already listed. Keep going in this way as shown in <link target-id="table-00002" document="m00110">Figure 12.36</link>.</para>
+    <para id="para-00043">Let's list the names of all the triangles in each graph. <emphasis effect="italic"><emphasis effect="bold">Since every pair of vertices is adjacent, any three vertices on a complete graph form a triangle</emphasis></emphasis>. There is only one triangle in the complete graph with 3 vertices, (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>). For the rest of the graphs, it is important that we take an organized approach. Start with the vertex that is first alphabetically, listing any triangles that include that vertex also in alphabetical order. Then, proceed to the next vertex in the alphabet, and list any triangles that include that vertex, except those that are already listed. Keep going in this way as shown in <link target-id="table-00002" document="m00110">Figure 12.36</link>.</para>
     <table class="numbered" summary="." id="table-00002" xmlns="http://cnx.rice.edu/cnxml">
     <tgroup cols="5">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -424,36 +427,34 @@
     </thead>
     <tbody>
     <row>
-    <entry>All <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>a</mi></math> triangles</entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow/></math><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>a</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry>All <emphasis effect="italic">a</emphasis> triangles</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">(<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>)</entry>
+    <entry>(<emphasis effect="italic">a, b, c</emphasis>), (<emphasis effect="italic">a, b, d</emphasis>),(<emphasis effect="italic">a, c, d</emphasis>)</entry>
+    <entry>(<emphasis effect="italic">a, b, c</emphasis>), (<emphasis effect="italic">a, b, d</emphasis>), (<emphasis effect="italic">a, b, e</emphasis>) (<emphasis effect="italic">a, c, d</emphasis>), (<emphasis effect="italic">a, c, e</emphasis>) (<emphasis effect="italic">a, d, e</emphasis>)</entry>
+    <entry>(<emphasis effect="italic">a, b, c</emphasis>), (<emphasis effect="italic">a, b, d</emphasis>), (<emphasis effect="italic">a, b, e</emphasis>), (<emphasis effect="italic">a, b, f</emphasis>) (<emphasis effect="italic">a, c, d</emphasis>), (<emphasis effect="italic">a, c, e</emphasis>), (<emphasis effect="italic">a, c, f</emphasis>) (<emphasis effect="italic">a, d, e</emphasis>), (<emphasis effect="italic">a, d, f</emphasis>) (<emphasis effect="italic">a, e, f</emphasis>)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Other <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>b</mi></math> triangles</entry>
+    <entry>Other <emphasis effect="italic">b</emphasis> triangles</entry>
     <entry xmlns="http://cnx.rice.edu/cnxml">None</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>,<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>b</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry>(<emphasis effect="italic">b, c, d</emphasis>)</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">(<emphasis effect="italic">b, c, d</emphasis>), (<emphasis effect="italic">b, c, e</emphasis>), (<emphasis effect="italic">b, d, e</emphasis>)</entry>
+    <entry>(<emphasis effect="italic">b, c, d</emphasis>), (<emphasis effect="italic">b, c, e</emphasis>),(<emphasis effect="italic">b, c, f</emphasis>) (<emphasis effect="italic">b, d, e</emphasis>), (<emphasis effect="italic">b, d, f</emphasis>)
+    (<emphasis effect="italic">b, e, f</emphasis>)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Other <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>c</mi></math> triangles</entry>
+    <entry>Other <emphasis effect="italic">c</emphasis> triangles</entry>
     <entry xmlns="http://cnx.rice.edu/cnxml">None</entry>
     <entry>None</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
-    <entry xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow><mo>)</mo></mrow></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math>
-    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>c</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry>(<emphasis effect="italic">c, d, e</emphasis>)</entry>
+    <entry xmlns="http://cnx.rice.edu/cnxml">(<emphasis effect="italic">c, d, e</emphasis>), (<emphasis effect="italic">c, d, f</emphasis>)
+    (<emphasis effect="italic">c, e, f</emphasis>)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Other <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>d</mi></math> triangles</entry>
+    <entry>Other <emphasis effect="italic">d</emphasis> triangles</entry>
     <entry xmlns="http://cnx.rice.edu/cnxml">None</entry>
     <entry>None</entry>
     <entry>None</entry>
-    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi></mrow><mo>)</mo></mrow></mrow></math></entry>
+    <entry>(<emphasis effect="italic">d, e, f</emphasis>)</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
     <entry>Total</entry>
@@ -464,9 +465,9 @@
     </row>
     </tbody>
     </tgroup>
-    <caption>Listing Triangles in Complete Graphs</caption>
+    <caption xmlns="http://cnx.rice.edu/cnxml">Listing Triangles in Complete Graphs</caption>
     </table>
-    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Look at the last row in <link target-id="table-00002" document="m00110">Figure 12.36</link>. Do you see a pattern emerge for counting triangles in a complete graph? Without drawing a complete graph with 7 vertices, we can predict that it will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mn>35</mn></mrow></math> triangles inside it. This pattern also appears in a famous diagram called Pascal’s Triangle by Western mathematicians. <link target-id="fig-00025" document="m00110">Figure 12.39</link> displays the first 11 rows of Pascal’s Triangle. Row 0 of Pascal’s Triangle only has the number 1 in it. The first and last entries in each of the other rows are also 1s. Otherwise, all the entries are formed by adding two entries from the previous row. For example, in row 6, entry 1 is 6, which was found by adding 1 and the 5 from the previous row, and entry 2 is 15, which was found by adding the 5 and the 10 from the previous row, as shown in <link target-id="table-00002" document="m00110">Figure 12.36</link>.</para>
+    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Look at the last row in <link target-id="table-00002" document="m00110">Table 12.2</link>. Do you see a pattern emerge for counting triangles in a complete graph? Without drawing a complete graph with 7 vertices, we can predict that it will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mn>35</mn></mrow></math> triangles inside it. This pattern also appears in a famous diagram known to Western mathematicians as "Pascal’s Triangle." <link target-id="fig-00025" document="m00110" xmlns="http://cnx.rice.edu/cnxml">Figure 12.39</link> displays the first 11 rows of Pascal’s Triangle. Row 0 of Pascal’s Triangle only has the number 1 in it. The first and last entries in each of the other rows are also 1s. Otherwise, all the entries are formed by adding two entries from the previous row. For example, in row 6, entry 1 is 6, which was found by adding 1 and the 5 from the previous row, and entry 2 is 15, which was found by adding the 5 and the 10 from the previous row, as shown in <link target-id="table-00002" document="m00110">Table 12.2</link>.</para>
     <figure id="fig-00025" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_037.png"/>
@@ -479,15 +480,18 @@
     <note class="video" id="note-00014">
     <para id="para-00046"><link url="https://openstax.org/r/Wajdi_Mohamed_Ratemi">The Mathematical Secrets of Pascal's Triangle by Wajdi Mohamed Ratemi</link></para>
     </note>
-    <para id="para-00047">It turns out that Pascal’s Triangle can also be used to find the number of cycles of any size in a complete graph, but things get a bit more complicated (we’ll look at that in section 12.7.). For now, let’s practice using Pascal’s triangle to find the number of triangles in a complete graph.</para>
+    <para id="para-00047">If we begin to list the third entries in each row of Pascal's triangle from the top down, we see 1, 4, 10, 20, 35, and so on. Notice that these values are exactly the number of triangles in a complete graph of sizes 3, 4, 5, 6, and 7 respectively. Specifically, entry 3 in row 7 is 35, the number of triangles in a complete graph of size 7. Let's practice using Pascal’s triangle to find the number of triangles in a complete graph of a particular size.</para>
+    <para id="para-00087">STEPS TO FIND THE NUMBER OF TRIANGLES IN A COMPLETE GRAPH OF SIZE n</para>
+    <para id="para-00088">Step 1  Calculate the entries in row n of Pascal's Triangle using sums of pairs of entries in previous rows as needed.</para>
+    <para id="para-00089">Step 2  The number of triangles is entry 3 in row n. Remember to count the entries 0, 1, 2, and 3, from left to right.</para>
     <example id="exam-00007">
     <title>Using Pascal’s Triangle to Find the Number of Triangles in a Complete Graph</title>
     <exercise id="exer-00013">
     <problem id="prob-00013">
-    <para id="para-00048">Use Pascal’s Triangle in <link target-id="table-00002" document="m00110">Figure 12.36</link> to find the number of triangles in a complete graph with 11 vertices.</para>
+    <para id="para-00048">Use Pascal’s Triangle in <link target-id="fig-00025" document="m00110">Figure 12.39</link> to find the number of triangles in a complete graph with 11 vertices.</para>
     </problem>
     <solution id="sol-00007">
-    <para id="para-00049"><emphasis effect="bold">Step 1:</emphasis> Identify the row number and calculate its entries. Since the complete graph has 11 vertices, we will need to look in row 11 of Pascal’s Triangle. Use row 10 in <link target-id="table-00002" document="m00110">Figure 12.36</link> to find the entries in row 11 as shown in <link target-id="fig-00026" document="m00110">Figure 12.40</link>.</para>
+    <para id="para-00049"><emphasis effect="bold">Step 1:</emphasis> Identify the row number and calculate its entries. Since the complete graph has 11 vertices, we will need to look in row 11 of Pascal’s Triangle. Use row 10 in <link target-id="fig-00025" document="m00110">Figure 12.39</link> to find the entries in row 11 as shown in <link target-id="fig-00026" document="m00110">Figure 12.40</link>.</para>
     <figure id="fig-00026">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_038.png"/>
@@ -519,6 +523,7 @@
     <para id="para-00055"><emphasis effect="bold">Step 2:</emphasis> Select your preference, display the triangle until a particular row (line), display only one row (line), or calculate the value at coordinates (which means give the value of a single entry).</para>
     <para id="para-00056"><emphasis effect="bold">Step 3:</emphasis> Enter row number (line number) you are interested, or enter the row number and entry number in parentheses: (row number, entry number).</para>
     <para id="para-00057"><emphasis effect="bold">Step 4:</emphasis> Select Calculate.</para>
+    <para id="para-00090"><emphasis effect="bold">Step 5:</emphasis>Retrieve the answer from the results box.</para>
     <figure id="fig-00028">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_02_003.jpg"/>
@@ -571,7 +576,7 @@
     </exercise>
     </section>
     <section class="section-exercises" id="sect-00010">
-   <title>Exercise</title>
+     <title>Exercise</title>
     <exercise id="exer-00023">
     <problem id="prob-00023">
     <para id="para-00066"><link class="os-embed" url="#exercise/CM-C12-M2-Q016"/></para>
@@ -683,4 +688,4 @@
     <para id="para-00085"><link url="https://openstax.org/r/Wajdi_Mohamed_Ratemi">The Mathematical Secrets of Pascal's Triangle by Wajdi Mohamed Ratemi</link></para>
     </section>
     </content>
-    </document>   
+    </document>
