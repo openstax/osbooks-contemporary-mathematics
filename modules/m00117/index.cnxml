@@ -88,7 +88,7 @@
     <solution id="sol-00001">
     <list list-type="enumerated" number-style="arabic" id="list-00003">
     <item><para id="para-00013"><emphasis effect="bold">Step 1:</emphasis> We will need a vertex for each room and it is convenient to label them according to the names of the rooms. Visualize the scenario in your head as shown in <link target-id="fig-00008" document="m00117">Figure 12.101</link>. You don’t have to write this step on your paper.
-     <figure id="fig-00008">
+    <figure id="fig-00008">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_095.png"/>
     </media>
@@ -162,7 +162,7 @@
     <solution id="sol-00002" xmlns="http://cnx.rice.edu/cnxml">
     <list list-type="enumerated" number-style="arabic" id="list-00006">
     <item>First, check to see if the sequence of vertices is a walk by making sure that the vertices are consecutive. As you can see in <link target-id="fig-00013" document="m00117">Figure 12.107</link>, there is no edge between vertex <emphasis effect="italic">c</emphasis> and vertex <emphasis effect="italic">d</emphasis>.
-     <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_101.png"/>
     </media>
@@ -171,7 +171,7 @@
     <para id="para-00023">This means that the sequence is not a walk. If it is not a walk, then it can’t be a path and it cannot be a trail; so, it is none of these.</para>
     </item>
     <item>First, check to see if the sequence is a walk. As you can see in <link target-id="fig-00014" document="m00117">Figure 12.108</link>, the vertices are consecutive.
-     <figure id="fig-00014">
+    <figure id="fig-00014">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_102.png"/>
     </media>
@@ -180,7 +180,7 @@
     <para id="para-00024">This means that the sequence is a walk. Since the vertex <emphasis effect="italic">b</emphasis> is visited twice, this walk is not a path. Since edge <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="italic">bd</mi></math> is traveled twice, this walk is not a trail. So, the sequence is only a walk.</para>
     </item>
     <item xmlns="http://cnx.rice.edu/cnxml">First, check to see if the sequence is a walk. We can see in <link target-id="fig-00015" document="m00117">Figure 12.109</link> that the vertices are consecutive which means it is a walk.
-     <figure id="fig-00015">
+    <figure id="fig-00015">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_103.png"/>
     </media>
@@ -188,7 +188,7 @@
     </figure>
     <para id="para-00025">Next, check to see if any vertex is visited twice. Remember, we do <emphasis effect="underscore">not</emphasis> consider beginning and ending at the same vertex to be visiting a vertex twice. So, no vertex was visited twice. This means we have a walk that is also a path. Next check to see if any edge was visited twice; none were. So, the sequence is a walk, a path, and a trail.</para></item>
     <item>First, check to see if the sequence is a walk. We can see in <link target-id="fig-00016" document="m00117">Figure 12.110</link> that the vertices are consecutive which means it is a walk.
-     <figure id="fig-00016">
+    <figure id="fig-00016">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_104.png"/>
     </media>
@@ -273,7 +273,8 @@
     <caption>Closed Walks, Circuits, and Directed Cycles</caption>
     </figure>
     <para id="para-00043">The same circuit can be named using any of its vertices as a starting point. For example, the circuit <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> can also referred to in the following ways.</para>
-    <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mtext> is the same as </mtext><mrow><mo>{</mo> <mtable columnalign="left"><mtr><mtd><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mtd></mtr></mtable></mrow></mrow></math></equation>
+   <para id="para-00127"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis> is the same as</para>
+   <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mtable columnalign="left"><mtr><mtd><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mtd></mtr></mtable></mrow></math></equation>
     <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Let’s practice working with closed walks, circuits (closed trails), and directed cycles (closed paths). In the graph in <link target-id="fig-00021" document="m00117">Figure 12.112</link>, the vertices are major central and south Florida airports. The edges are direct flights between them.</para>
     <figure id="fig-00021">
     <media alt="Insert Alt Text">
@@ -355,7 +356,7 @@
     <tbody>
     <row>
     <entry>Recall that planar graphs are untangled; that is, they can be drawn on a flat surface so that no two edges are crossing.<emphasis effect="bold"> If a graph is planar, it can be colored with 4 colors or possibly fewer.
-     </emphasis></entry>
+    </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00026">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_111a.png"/>
@@ -363,7 +364,7 @@
     </row>
     <row>
     <entry>Each vertex in a complete graph is adjacent to every other vertex forcing us to color them all different colors.<emphasis effect="bold">The chromatic number of a complete graph is the same as the number of vertices.
-     </emphasis></entry>
+    </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00027">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_111b.png"/>
@@ -371,7 +372,7 @@
     </row>
     <row>
     <entry>If a graph has a clique, a complete subgraph, then each vertex in the clique must have a different color and the vertices outside the clique may or may not have even more colors. <emphasis effect="bold">The chromatic number of a graph is <emphasis effect="italic">at least</emphasis> the number of vertices in its biggest clique.
-     </emphasis></entry>
+    </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00028">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_111c.png"/>
@@ -465,7 +466,7 @@
     <item>We would need 4 different colors just for the clique with 4 vertices; so, the chromatic number is <emphasis effect="italic">at least</emphasis> 4.</item>
     <item>It is possible for the chromatic number to be greater than 4.</item>
     <item>The process is shown in <link target-id="table-00003" document="m00117">Table 12.6</link>.
-     <table class="numbered" summary="." id="table-00003">
+    <table class="numbered" summary="." id="table-00003">
     <tgroup cols="3">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
     <colspec colnum="2" colname="c2" colwidth="1pt"/>
@@ -597,7 +598,7 @@
     </problem>
     <solution id="sol-00005">
     <para id="para-00076">The steps to color the graph are shown in <link target-id="table-00004" document="m00117">Table 12.7</link>.</para> 
-     <table class="numbered" summary="." id="table-00004">
+    <table class="numbered" summary="." id="table-00004">
     <tgroup cols="3">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
     <colspec colnum="2" colname="c2" colwidth="1pt"/>
