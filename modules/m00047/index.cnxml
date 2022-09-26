@@ -27,7 +27,7 @@
     <section id="sect-00002">
     <title>Adding, Subtracting, and Multiplying Using Clock Arithmetic</title>
     <para id="para-00004">When we do arithmetic, numbers can become larger and larger. But when we work with time, specifically with clocks, the numbers cycle back on themselves. It will never be 49 o’clock. Once 12 o’clock is reached, we go back to 1 and repeat the numbers. If it's 11 AM and someone says, “See you in four hours,” you know that 11 AM plus 4 hours is 3 PM, not 15 AM (ignoring military time for now). Math worked on the clock, where numbers restart after passing 12, is called <term id="term-00001">clock arithmetic</term>.</para>
-    <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (<link target-id="fig-00002" document="m00047">Figure 3.42</link>). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
+    <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (<link target-id="fig-00002" document="m00047">Figure 3.43</link>). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
     <figure class="numbered" id="fig-00002">
     <media alt="An analog clock with the hour hand pointing to 3. A clockwise arrow around the clock is labeled 12 hours later.">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_001.jpg"/>
@@ -58,7 +58,7 @@
     <para id="para-00010"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 34 is divided by 12 using long division. The largest multiple of 12 that is less than or equal to 34 is 24, which is the product of 12 and 2.
     <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable rowspacing="0.1em"><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr></mtable></mrow></math></equation></para>
     <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Performing the subtraction yields 10.
-    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable rowspacing="0.1em"><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mstyle displaystyle="true"><mo stretchy="true">_</mo></mstyle></munder></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.4em"/><mn>10</mn></mrow></mtd></mtr></mtable></mrow></math></equation></para>
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtable rowspacing="0.1em"><mtr><mtd><mrow><mn>12</mn><mover><mrow><menclose notation="longdiv"><mrow><mn>34</mn></mrow></menclose></mrow><mn>2</mn></mover></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.38em"/><munder accentunder="true"><mrow><mn>24</mn></mrow><mo stretchy="true">_</mo></munder></mrow></mtd></mtr><mtr><mtd><mrow><mspace width="1.4em"/><mn>10</mn></mrow></mtd></mtr></mtable></mrow></math></equation></para>
     <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">Since that subtraction resulted in a number less than 12, that is the remainder, 10. The value of 34 modulo 12 is 10, or 34 = 10 (mod 12).</para></item>
     <item>To find the value 539 modulo 12:<newline/>
     <para id="para-00013"><emphasis effect="bold">Step 1:</emphasis> Determine the remainder when 539 is divided by 12 using long division. We first look to the first two digits of 539, 53. The largest multiple of 12 that is less than or equal to 53 is 48, which is the product of 12 and 4.
@@ -98,7 +98,7 @@
     </note>
     <note class="tech-check" id="note-00004">
     <title>Using Desmos to Determine the Value of a Number module 12</title>
-    <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, type <emphasis effect="bold">mod(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.43</link>.</para>
+    <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, type <emphasis effect="bold">mod(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047">Figure 3.44</link>.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_003.png"/>
@@ -136,7 +136,7 @@
     <para id="para-00034">If it is 4:00 now, what time was it 67 hours ago?</para>
     </problem>
     <solution id="sol-00003">
-    <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047">Figure 3.44</link>.</para>
+    <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047">Figure 3.45</link>.</para>
     <figure class="numbered" id="fig-00003">
     <media alt="An analog clock with the hour hand pointing to 4. A counterclockwise arrow around the clock is labeled negative 7 hours.">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_002.jpg"/>
@@ -291,4 +291,4 @@
     <para id="para-00061"><link url="https://openstax.org/r/Clock_Arithmetic">Clock Arithmetic</link></para>
     </section>
     </content>
-    </document>     
+    </document>         
