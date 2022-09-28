@@ -23,8 +23,8 @@
     </list>
     </section>
     <para id="para-00002">In our system of numbers, we use base 10, but using base 10 was not a given within other systems. There were other systems that used bases other than 10, as we saw with the Mayans and the Babylonians. The base 10 system comes down to grouping objects in sets of 10, but grouping in sets of 10 only happens if the culture values grouping by that many. We feel 10 is natural because we have 10 fingers. There are other systems using other grouping values, such as 4 or 20.</para>
-    <para id="para-00003">One good reason for examining other bases is to remind ourselves how we had to learn arithmetic when we were young, memorizing rules for our base 10 system. We had to learn why those arithmetic rules made sense. Another good reason for learning other base systems is due to computers; their circuitry instead uses base 2.</para>
-    <para id="para-00122">In this section, we explore other base systems and how to convert between them.</para>
+    <para id="para-00003">One good reason for examining other bases is to remind ourselves how we had to learn arithmetic when we were young, memorizing rules for our base 10 system. We had to learn why those arithmetic rules made sense, such as why <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></math>. Another good reason for learning other base systems is due to computers; their circuitry instead uses base 2.</para>
+    <para id="para-00122" xmlns="http://cnx.rice.edu/cnxml">In this section, we explore other base systems and how to convert between them.</para>
     <section id="sect-00002">
     <title>Conversion of Another Base into Base 10 and Other Bases</title>
     <para id="para-00004">We saw in <link target-id="sect-00001" document="m00052">Hindu-Arabic Positional System</link> that our Hindu-Arabic system uses <term id="term-00001">base 10</term>, which is a system using place values of digits that depend on powers of 10 (or, are based on powers of 10). We’ve already worked with bases other than base 10: The Babylonian system was base 60, while the Mayan system was base 20.</para>
@@ -35,7 +35,7 @@
     <para id="para-00008">Now imagine that we all only had 6 fingers instead of 10 and our counting system was based on those 6 fingers. We would be counting in groups of 6, not groups of 10. How would this change how we work with quantity?</para>
     <para id="para-00125">First, we’d need only six symbols. Let’s use 0, 1, 2, 3, 4, 5. Second, our place values would be based on powers of 6, not powers of 10. For instance, the number 3,024 in base 6 would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup></mrow></math>.
     That is how you can translate a base 6 number into a base 10 number. When we calculate that expression we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>×</mo><msup><mn>6</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>6</mn><mn>0</mn></msup><mo>=</mo><mn>3</mn><mo>×</mo><mn>216</mn><mo>+</mo><mn>0</mn><mo>×</mo><mn>36</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>648</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>664</mn></mrow></math>.</para>
-    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">So, 664 is what the base 6 number 3,024 equals in base 10.</para>
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">This means the base 6 number 3,024 is equal to the base 10 number 664.</para>
     <para id="para-00010">From now on, if we are using a base 6 number, we will follow it with the subscript 6, like the following: 3,024<sub>6</sub> means the number is in base 6.</para>
     <para id="para-00011">A base 10 number gets no subscript (it’s the standard). So, 3,024 is a base 10 number. A base 13 number would be 4,672<sub>13</sub>.</para>
     <para id="para-00012">So, a base 6 system uses only the symbols 0, 1, 2, 3, 4, and 5. Also, the place values use powers of 6. However, we still don’t know how to count in base 6. In order to do so, we’d have to know how to represent the quantities larger than five in base 6. Let’s review how our base 10 system works by counting from 0 to 100, which shows how larger values are represented.</para>
@@ -324,6 +324,7 @@
     </tgroup>
     </table>
     <para id="para-00024">The symbol pattern is the same, but truncated. We only use the six symbols. So that is how we represent base 6. Being able to write out these numbers is important when working with addition in the base.</para>
+   <para id="para-00161">When using a base larger than 10, though, we need more symbols. Instead of creating new symbols, we use capital letters, with A representing the digit for "10," B representing the digit for "11," and so on.</para>
     <example id="exam-00001">
     <title>Determining Digits of a Base with Less Than 10 Digits</title>
     <exercise id="exer-00001">
@@ -483,7 +484,7 @@
     </problem>
     <solution id="sol-00008">
     <para id="para-00053"><emphasis effect="bold">Step 1:</emphasis> Using the patterns we indicated earlier, we begin with the first 14 digits.</para>
-     <para id="para-00135">0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D</para>
+    <para id="para-00135">0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D</para>
     <para id="para-00054"><emphasis effect="bold">Step 2:</emphasis> Since we’ve run out of digits, we start with 10, indicating we’ve run out of symbols once.</para>
     <para id="para-00136">10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D</para>
     <para id="para-00055"><emphasis effect="bold">Step 3:</emphasis> Continuing in the same way, we get:</para>
@@ -498,7 +499,7 @@
     <para id="para-00145">A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, AA, AB, AC, AD</para>
     <para id="para-00146">B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, BA, BB, BC, BD</para>
     <para id="para-00147">C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, CA, CB, CC, CD</para>
-    <para id="para-00148">0, D1, D2, D3, D4, D5, D6, D7, D8, D9, DA, DB, DC, DD</para>
+    <para id="para-00148">D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, DA, DB, DC, DD</para>
     <para id="para-00149">100</para>
     </solution>
     </exercise>
@@ -853,11 +854,11 @@
     <item>To convert a number from base 10 into another base, the base 10 number is repeatedly divided by the new base. The remainders when performing these divisions become the digits for the number in the new base.</item>
     <item>Common errors can be detected when performing base conversions.</item>
     </list>
-     </section>
+    </section>
     <section class="eoc-videos" id="sect-00008">
     <title>Videos</title>
     <para id="para-00151"><link url="https://openstax.org/r/Convert_Base_6_to_Base_10">Convert Base 7 to Base 10</link></para>
     <para id="para-00152"><link url="https://openstax.org/r/Base_10_to_Another_Base">Converting from Base 10 to Another Base</link></para>
     </section>
     </content>
-    </document>    
+    </document>
