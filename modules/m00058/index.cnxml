@@ -6,226 +6,662 @@
   <md:uuid>5b2eeed1-542b-4235-a730-853ba0de7dae</md:uuid>
   </metadata>
   <content>
-  <figure id="fig-00001">
-  <media alt="A saleswoman interacts with a young couple in a car dealership showroom and gives a pen and a form to them.">
-  <image mime-type="image/jpg" src="../../media/CS_Photo_06_02_001.jpg"/>
-  </media>
-  <caption>(credit: Antoni Shkraba/Pexels) (Credit:"buy a balloon, get a car" by frankieleon/Flickr, CC BY 2.0)</caption>
-  </figure>
-  <section class="learning-objectives" id="sect-00001">
-  <title>Learning Objectives</title>
-  <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
-  <list list-type="enumerated" number-style="arabic" id="list-00001">
-  <item>Compute sales tax.</item>
-  <item>Solve application problems involving sales tax.</item>
-  </list>
-  </section>
-  <section id="sect-00002">
-  <title>Computing Sales Tax</title>
-  <para id="para-00002">When a tax on goods and services is paid by the consumer to the state, city, or county, it is called a <emphasis effect="bold">sales tax</emphasis>. Tax rates vary from state to state and can make a huge impact on your pocketbook. The state sales tax may affect your daily life. For example, suppose you want to buy a car. You live in Chicago, and the sticker price of the car you want is $32,549 at your local dealership. Then, you find that the final price, including sales tax, is $35,885.27. You decide to visit a friend in Indianapolis that weekend. You visit an Indianapolis dealership that has the exact same car you want. It has the same sticker price of $32,549. However, at this dealership, the final price including sales tax is $34,827.43. That is a difference of over $1,057. The difference is caused by the tax rate in the two different states.</para>
-  <para id="para-00006">Calculating a sales tax rate is the same regardless of where you live. To find out how much of the final price is sales tax, we subtract the sticker price from the total price, which in the car purchase example comes to $3,336.27 for the Chicago deal, and $2,278.43 for the Indianapolis deal. Then, use this equation: Letting <emphasis effect="italic">x</emphasis> = the tax rate, we have</para>
-  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>3336.27</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>3336.27</mn></mrow><mrow><mn>32549</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.1025</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>10.25</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
-  <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">That is a 10.25% sales tax rate for Chicago.</para>
-  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>2278.43</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>2278.43</mn></mrow><mrow><mn>32549</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.07</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>7</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
-  <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">While the sales tax rate in Indianapolis is 7%.</para>
-  <para id="para-00009">There are two ways to determine the final price of an item including sales tax if you know the tax rate:</para>
-  <para id="para-00044"><emphasis effect="bold">Method 1:</emphasis> Multiply the original amount by the tax rate and then add the tax to the item.</para>
-  <para id="para-00045"><emphasis effect="bold">Method 2:</emphasis> Multiply the original amount by 1 plus the tax rate, and the result is the final price.</para>
-  <para id="para-00010">Continuing with the same example and using method 1 to find the total price including sales tax for the Chicago deal we have</para>
-  <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>10.25</mn><mi>%</mi><mo>=</mo><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>0.1025</mn></mtd></mtr><mtr><mtd><mo>=</mo><mi>$</mi><mn>3336.27</mn></mtd></mtr><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>+</mo><mi>$</mi><mn>3336.27</mn><mo>=</mo><mi>$</mi><mn>35885.27</mn></mtd></mtr></mtable></math></equation>
-  <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">For the Indianapolis deal and using method 2, we have</para>
-  <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>7</mn><mi>%</mi><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>32</mn><mo>,</mo><mn>549</mn><mo>×</mo><mn>1.07</mn></mtd></mtr><mtr><mtd><mo>=</mo><mi>$</mi><mn>34</mn><mo>,</mo><mn>825.29</mn></mtd></mtr></mtable></math></equation>
-  <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">In any case, regardless of what it is you are purchasing, you can find either the amount of sales tax or the tax rate using these same methods.</para>
-  <example id="exam-00001">
-  <title>Computing Sales Tax</title>
-  <exercise id="exer-00001">
-  <problem id="prob-00001">
-  <list list-type="enumerated" number-style="arabic" id="list-00003">
-  <item>If the sales tax rate is 5.5%, how much tax will someone pay on something that costs $123.00?</item>
-  <item>How much more will someone pay if the sale tax rate is 6% on an item costing $123.00?</item>
-  <item>Find the sales tax rate on a purchase of $130.00 if the total amount is $139.75.</item>
-  <item>Find the sales tax rate on a purchase of $499.00 if the total price is $523.95.</item>
-  </list>
-  </problem>
-  <solution id="sol-00001">
-  <list list-type="enumerated" number-style="arabic" id="list-00004">
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>123</mn><mo stretchy="false">(</mo><mn>.055</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6.77</mn><mo>,</mo></mrow></math> or $6.77</item>
-  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>123</mn><mo stretchy="false">(</mo><mn>0.06</mn><mo stretchy="false">)</mo><mo>=</mo><mn>7.38</mn><mo>,</mo></mrow></math> or $7.38.<newline xmlns="http://cnx.rice.edu/cnxml"/>
-  <para id="para-00013">$7.38 - $6.77=$0.61 more.</para></item>
-  <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>139.75</mn><mo>−</mo><mn>130</mn><mo>=</mo><mn>9.75</mn></mrow></math>
-  <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable rowspacing="0.3em"><mtr><mtd columnalign="right"><mn>130</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>9.75</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>9.75</mn></mrow><mrow><mn>130</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.075</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7.5</mn><mi>%</mi></mtd></mtr></mtable></math></equation></item>
-  <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>523.95</mn><mo>−</mo><mi>$</mi><mn>499</mn><mo>=</mo><mi>$</mi><mn>24.95</mn></mrow></math>
-  <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable rowspacing="0.3em"><mtr><mtd columnalign="right"><mn>499</mn><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>24.95</mn></mtd></mtr><mtr><mtd columnalign="right"><mi>x</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>24.95</mn></mrow><mrow><mn>499</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.05</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn><mi>%</mi></mtd></mtr></mtable></math></equation></item>
-  </list>
-  </solution>
-  </exercise>
-  </example>
-  <note class="Your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00002">
-  <problem id="prob-00002">
-  <para id="para-00014"><link class="os-embed" url="#exercise/CM-C06-M2-Q001"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <para id="para-00015">If you know the final price and you know the tax rate, can you find the original amount? Of course, you can. Suppose that you are going to purchase an item with an original price of $60.00. The sales tax rate is 6%. To find the total amount in one step, using Method 2 multiply: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>60</mn><mo stretchy="false">(</mo><mn>1.06</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>61.60.</mn></mrow></math> Now, if you know the final price is $61.60, and you know the tax rate is 6%, we just reverse the process to find the original price. Then,</para>
-  <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>1.06</mn><mi>x</mi><mo>=</mo><mn>61.60</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>61.60</mn></mrow><mrow><mn>1.06</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>60.00</mn></mtd></mtr></mtable></math></equation>
-  <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
-  <title>Determining the Original Price</title>
-  <exercise id="exer-00003">
-  <problem id="prob-00003">
-  <para id="para-00016">Find the original price of an item that has a total cost of $4,860 if the sales tax in this state is 8%.</para>
-  </problem>
-  <solution id="sol-00002">
-  <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>1.08</mn><mi>x</mi><mo>=</mo><mi>$</mi><mn>4860</mn></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mn>4860</mn></mrow><mrow><mn>1.08</mn></mrow></mfrac><mo>=</mo><mi>$</mi><mn>4500</mn></mtd></mtr></mtable></math></equation>
-  </solution>
-  </exercise>
-  </example>
-  <note class="Your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00004">
-  <problem id="prob-00004">
-  <para id="para-00018"><link class="os-embed" url="#exercise/CM-C06-M2-Q002"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <example id="exam-00003">
-  <title>Calculating Sales Tax with a Discount</title>
-  <exercise id="exer-00005">
-  <problem id="prob-00005">
-  <para id="para-00019">Suppose you intend to buy a new computer and find what you want at a 15% discount. The sales tax rate is 6%. The initial cost of the computer is $1,550. How much will you end up paying for the computer?</para>
-  </problem>
-  <solution id="sol-00003">
-  <para id="para-00020"><emphasis effect="bold">Step 1:</emphasis> First, calculate the discount:</para>
-  <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>$</mi><mn>1550</mn><mo stretchy="false">(</mo><mn>0.15</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>232.5</mn></mtd></mtr><mtr><mtd><mi>$</mi><mn>1550</mn><mo>−</mo><mi>$</mi><mn>232.5</mn><mo>=</mo><mi>$</mi><mn>1317.5.</mn></mtd></mtr></mtable></math></equation>
-  <para id="para-00021" xmlns="http://cnx.rice.edu/cnxml">The cost of the computer with the discount is $1,317.50.</para>
-   <para id="para-00046"><emphasis effect="bold">Step 2:</emphasis> Next, calculate the sales tax.</para>
-  <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>$</mi><mn>1317.5</mn><mo stretchy="false">(</mo><mn>0.06</mn><mo stretchy="false">)</mo><mo>=</mo><mi>$</mi><mn>79.05.</mn></mrow></math></equation>
-  <para id="para-00022" xmlns="http://cnx.rice.edu/cnxml">The sales tax is $79.05.</para>
-  <para id="para-00047"><emphasis effect="bold">Step 3:</emphasis> Then, the total cost of the computer is the cost of the computer with the discount plus the sales tax: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>1317.5</mn><mo>+</mo><mi>$</mi><mn>79.05</mn><mo>=</mo><mi>$</mi><mn>1396.55.</mn></mrow></math></para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="Your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00006">
-  <problem id="prob-00006">
-  <para id="para-00023"><link class="os-embed" url="#exercise/CM-C06-M2-Q003"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section class="section-exercises" id="sect-00003">
-  <title>Exercises</title>
-  <exercise id="exer-00007">
-  <problem id="prob-00007">
-  <para id="para-00024"><link class="os-embed" url="#exercise/CM-C06-M2-Q004"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00008">
-  <problem id="prob-00008">
-  <para id="para-00025"><link class="os-embed" url="#exercise/CM-C06-M2-Q005"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00009">
-  <problem id="prob-00009">
-  <para id="para-00026"><link class="os-embed" url="#exercise/CM-C06-M2-Q006"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00010">
-  <problem id="prob-00010">
-  <para id="para-00027"><link class="os-embed" url="#exercise/CM-C06-M2-Q007"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00011">
-  <problem id="prob-00011">
-  <para id="para-00028"><link class="os-embed" url="#exercise/CM-C06-M2-Q008"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00012">
-  <problem id="prob-00012">
-  <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M2-Q009"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00013">
-  <problem id="prob-00013">
-  <para id="para-00030"><link class="os-embed" url="#exercise/CM-C06-M2-Q010"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00014">
-  <problem id="prob-00014">
-  <para id="para-00031"><link class="os-embed" url="#exercise/CM-C06-M2-Q011"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00015">
-  <problem id="prob-00015">
-  <para id="para-00032"><link class="os-embed" url="#exercise/CM-C06-M2-Q012"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00016">
-  <problem id="prob-00016">
-  <para id="para-00033"><link class="os-embed" url="#exercise/CM-C06-M2-Q013"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00017">
-  <problem id="prob-00017">
-  <para id="para-00034"><link class="os-embed" url="#exercise/CM-C06-M2-Q014"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00018">
-  <problem id="prob-00018">
-  <para id="para-00035"><link class="os-embed" url="#exercise/CM-C06-M2-Q015"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00019">
-  <problem id="prob-00019">
-  <para id="para-00036"><link class="os-embed" url="#exercise/CM-C06-M2-Q016"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00020">
-  <problem id="prob-00020">
-  <para id="para-00037"><link class="os-embed" url="#exercise/CM-C06-M2-Q017"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00021">
-  <problem id="prob-00021">
-  <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M2-Q018"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00022">
-  <problem id="prob-00022">
-  <para id="para-00039"><link class="os-embed" url="#exercise/CM-C06-M2-Q019"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00023">
-  <problem id="prob-00023">
-  <para id="para-00040"><link class="os-embed" url="#exercise/CM-C06-M2-Q020"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00024">
-  <problem id="prob-00024">
-  <para id="para-00041"><link class="os-embed" url="#exercise/CM-C06-M2-Q021"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00025">
-  <problem id="prob-00025">
-  <para id="para-00042"><link class="os-embed" url="#exercise/CM-C06-M2-Q022"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00026">
-  <problem id="prob-00026">
-  <para id="para-00043"><link class="os-embed" url="#exercise/CM-C06-M2-Q023"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section class="key-terms" id="sect-00004">
+    <figure id="fig-00001">
+    <media alt="alt-text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_06_02_001.jpg"/>
+    </media>
+    <caption>[caption TK] (credit: TK)</caption>
+    </figure>
+    <para id="para-00001">After completing this section, you should be able to:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Calculate discounts.</item>
+    <item>Solve application problems involving discounts.</item>
+    <item>Calculate markups.</item>
+    <item>Solve application problems involving markups.</item>
+    <item>Compute sales tax.</item>
+    <item>Solve application problems involving sales tax.</item>
+    </list>
+    <para id="para-00002">Many people first encounter percentages during a retail transaction such as a percent discount (SALE! 25% off!!), or through sales tax (“Wait, I thought this was $1.99?”), a report that something has increased by some percentage of the previous value (NOW! 20% more!!). These are examples of percent decreases and percent increases. In this section, we discuss decrease, increase, and then the case of sales tax.</para>
+    <section id="sect-00001">
+    <title>Calculating Discounts</title>
+    <para id="para-00003">Retailers frequently hold sales to help move merchandise. The sale price is almost always expressed as some amount off the original price. These are <emphasis effect="bold">discounts</emphasis>, a reduction in the price of something. The price after the discount is sometimes referred to as the reduced price or the sale price.</para>
+    <para id="para-00004">When a reduction is a percent discount, it is an application of percent, which was introduced in Understanding Percent. The formula used was <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">part</mi><mo>=</mo><mi mathvariant="normal">percentage</mi><mo>×</mo><mi mathvariant="normal">total</mi></mrow></math>. In a discount application, the discount plays the role of the part, the percent discount is the percentage, and the original price plays the role of the total.</para>
+    <note class="formula" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00005">The formula for a discount based on a percentage is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, with the percent discount expressed as a decimal. The price of the item after the discount is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>−</mo><mi mathvariant="normal">discount</mi></mrow></math>.</para>
+    <para id="para-00006" xmlns="http://cnx.rice.edu/cnxml">These are often combined into the following formula</para>
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>−</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mrow></math></equation>
+    </note>
+    <para id="para-00007" xmlns="http://cnx.rice.edu/cnxml">When the original price and the percent discount are known, the discount and the sale price can be directly computed.</para>
+    <example id="exam-00001">
+    <title>Calculating Discount for a Percent Discount</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00008">Calculate the discount for the given price and discount percentage. Then calculate the sale price.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item>Original price = $75.80; percent discount is 25%</item>
+    <item>Original price = $168.90; percent discount is 30%</item>
+    </list>
+    </problem>
+    <solution id="sol-00001">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>Substituting the values into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, we find that the discount is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.25</mi><mo>×</mo><mn>75.80</mn><mo>=</mo><mn>18.95</mn></mrow></math>. The discount is $18.95.
+    <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml">The sale price of the item is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>−</mo><mi mathvariant="normal">discount</mi><mo>=</mo><mn>75.80</mn><mo>−</mo><mn>18.95</mn><mo>=</mo><mn>56.85</mn></mrow></math>, or $56.85.</para>
+    </item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Substituting the values into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, we find that the discount is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.30</mi><mo>×</mo><mn>168.90</mn><mo>=</mo><mn>50.67</mn></mrow></math>. The discount is $50.67.
+    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml">The sale price of the item is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>−</mo><mi mathvariant="normal">discount</mi><mo>=</mo><mn>168.90</mn><mo>−</mo><mn>50.67</mn><mo>=</mo><mn>118.23</mn></mrow></math>, or $118.23.</para>
+    </item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00011"><link class="os-embed" url="#exercise/CM-C06-M2-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00012">Sometimes the original price and the sale price of an item is known. From this, the percent discount can be computed using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, by solving for the percent discount.</para>
+    <example id="exam-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Calculating the Percent Discount from the Original and Sale Prices</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00013">Determine the percent discount based on the given original and sale prices.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>Original price = $1,200.00; sale price = $900.00</item>
+    <item>Original price = $36.70; sale price = $29.52</item>
+    </list>
+    </problem>
+    <solution id="sol-00002">
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>
+    <para id="para-00014">Step 1. Find the discount. Using the original price and the sale price, we can find the discount with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>−</mo><mi mathvariant="normal">discount</mi></mrow></math>. Substituting and calculating, we find the discount to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>900.00</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>200.00</mn><mo>−</mo><mi mathvariant="normal">discount</mi></mrow></math>. Solving for the discount gives $300.00.</para>
+    <para id="para-00015" xmlns="http://cnx.rice.edu/cnxml">Step 2. Find the percent discount.  Substituting the discount of $300.00 and the original price of $1,200.00, into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, we can find the percent discount.</para>
+    <equation id="eq-00002" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">300</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">1,200</mi><mi mathvariant="normal">.00</mi></mtd></mtr><mtr><mtd columnalign="right">
+    <mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi mathvariant="normal">300</mi><mi mathvariant="normal">.00</mi></mrow><mrow><mn>1</mn><mo>,</mo><mn>200.00</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>0.25</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi></mtd></mtr></mtable></math></equation>
+    <para id="para-00016" xmlns="http://cnx.rice.edu/cnxml">Converting to percent form, the percent discount is 25%.</para>
+    </item>
+    <item>
+    <para id="para-00017">Step 1. Find the discount. Using the original price and the sale price, we can find the discount with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>−</mo><mi mathvariant="normal">discount</mi></mrow></math>. Substituting and calculating, we find the discount to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>29.52</mn><mo>=</mo><mn>36.70</mn><mo>−</mo><mi mathvariant="normal">discount</mi></mrow></math>. Solving for the discount gives $7.38.</para>
+    <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">Step 2. Find the percent discount. Substituting the discount of $7.38 and the original price of $36.70, into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, we can find the percent discount.</para>
+    <equation id="eq-00003" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right">
+    <mi mathvariant="normal">29</mi><mi mathvariant="normal">.52</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">36</mi><mi mathvariant="normal">.70</mi></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi mathvariant="normal">29</mi><mi mathvariant="normal">.52</mi></mrow><mrow><mn>36.70</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>0.2</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi></mtd></mtr></mtable></math></equation>
+    <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">Converting to percent form, the percent discount is 20%.</para>
+    </item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00020"><link class="os-embed" url="#exercise/CM-C06-M2-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00021">Sometimes the sale price and the percent discount of an item are known. From this, the original price can be found. To avoid multiple steps, though, the formula that we will use is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mrow></math>. The original price can be found by solving this equation for the original price.</para>
+    <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Calculating the Original Price from the Percent Discount and Sale Price</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00022">Determine the original price based on the percent discount and sale price.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00006">
+    <item>Percent discount 10%; sale price = $450.00</item>
+    <item>Percent discount 75%, sale price = $90.00</item>
+    </list>
+    </problem>
+    <solution id="sol-00003">
+    <list list-type="enumerated" number-style="arabic" id="list-00007">
+    <item>Using the percent discount and the sale price, we can find the original price with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mrow></math>. Substituting and solving for the original price, we find<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">sale price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">450</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.10)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">450</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(0</mi><mi mathvariant="normal">.90)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">500</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi></mtd></mtr></mtable></math></equation>
+    <newline xmlns="http://cnx.rice.edu/cnxml"/>The original price of the item was $500.00.
+    </item>
+    <item>Using the percent discount and the sale price, we can find the original price with the formula<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mrow></math>. Substituting and solving for the original price, we find
+    <equation id="eq-00005" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">sale price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">90</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.75)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">90</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(0</mi><mi mathvariant="normal">.25)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">360</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi></mtd></mtr></mtable></math></equation>
+    <newline xmlns="http://cnx.rice.edu/cnxml"/>The original price of the item was $360.00.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C06-M2-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00002">
+    <title>Solve Application Problems Involving Discounts</title>
+    <para id="para-00024">From the terms we have learned, like discount, original price, percent discount, and sale price, be sure to look for what is given and identify what you are to find. Once you have evaluated the problem, use the appropriate formula (or formulas) to find the solution(s).</para>
+    <example id="exam-00004">
+    <title>Determine Discount and New Price a Sale Rack Item</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00025">The sale rack at a clothing store is marked “All Items 30% off.” Ian finds a shirt that had an original price of $80.00. What is the discount on the shirt? What is the sale price of the shirt?</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00026">We are asked to find the discount, and the sale price. We know the percent discount is 30%, or 0.30 in decimal form. The original price was $80.</para>
+    <para id="para-00027">Substituting into the percent discount formula, we find that the discount is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi><mo>=</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.30</mi><mo>×</mo><mi mathvariant="normal">80</mi><mo>=</mo><mi mathvariant="normal">24</mi></mrow></math>.</para>
+    <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml">The discount is $24 on that shirt. The sale price is the original price minus the discount, so the sale price is $80 – $24 = $56.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00005">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M2-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Determine the Percent Discount of a Bus Pass</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00030">An annual pass on the city bus is priced at $240. The student price, though, is $168. What is the percent discount for students for the bus pass?</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00031">We know the original price of the item, $240. We also know the sale price of the item, $168. From this we know the discount is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>240</mn><mo>−</mo><mi>$</mi><mn>168</mn><mo>=</mo><mi>$</mi><mn>72</mn></mrow></math>. Substituting these values into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">discount</mi><mo>=</mo><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mrow></math>, we can find the percent discount.</para>
+    <equation id="eq-00006" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">discount</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi><mo>×</mo><mi mathvariant="normal">original price</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>72</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi><mo>×</mo><mn>240</mn></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mn>72</mn></mrow><mrow><mn>240</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi mathvariant="normal">percent discount</mi><mo>×</mo><mn>240</mn></mrow><mrow><mn>240</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd></mtr><mtr><mtd columnalign="right"><mn>0.3</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent discount</mi></mtd></mtr></mtable></math>
+    </equation>
+    <para id="para-00032" xmlns="http://cnx.rice.edu/cnxml">The student percent discount on the bus pass is 30%.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00033"><link class="os-embed" url="#exercise/CM-C06-M2-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00006">
+    <title>Finding the Original Price of a New Pair of Tires</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00034">Kendra’s car developed a flat, and the tire store told her that two tires had to be replaced. She got a 10% discount on the pair of tires, and the sale price came to $189.00. What was the original price of the tires?</para>
+    </problem>
+    <solution id="sol-00006">
+    <para id="para-00035">Using the percent discount and the sale price, we can find the original price with the formula<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sale price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mrow></math>. Substituting and solving for the original price, we find</para>
+    <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">sales price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">percent discount)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">189</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>−</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.10)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">189</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(0</mi><mi mathvariant="normal">.90)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">210</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">original price</mi></mtd></mtr></mtable></math></equation>
+    <para id="para-00036" xmlns="http://cnx.rice.edu/cnxml"> The original price of the two tires Kendra bought was $210.00.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C06-M2-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00008">
+    <para id="para-00038"><link url="https://openstax.org/r/Computing_Price_Based">Computing Price Based on a Percent Off Coupon</link></para>
+    </note>
+    <note class="work-out" id="note-00009">
+    <para id="para-00039">There are cases where retailers allow multiple discounts to be applied. However, it is rare that the discount percentages are added together. For example, if you have a 15% coupon and qualify for a 20% price reduction, the retailer typically does not add those two percentages together to determine the new price. The retailer instead applies one discount, then applies the second discount to the price obtained after the first discount was deducted.</para>
+    <para id="para-00040">Research the original prices of two different laptops offered by one retail outlet. Assume you will receive a student discount of 12% and your outlet of choice is having a 15% off sale on all laptops.</para>
+    <para id="para-00041">For each laptop:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00008">
+    <item>List the original price and calculate the price after applying the student discount (12%) only.</item>
+    <item>Then find the price after applying the sale discount (15% off) to the price found in Step 1.</item>
+    <item>Determine how much you would save on and also determine the percent discount.</item>
+    <item>Now, apply the discounts in reverse order (first the sale discount, then the student discount).</item>
+    <item>Note anything interesting about your findings.</item>
+    </list>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Calculate Markups</title>
+    <para id="para-00042">When retailers purchase goods to sell, they pay a certain price, called the cost. The retailer then charges more than that amount for the goods. This increase is called the <emphasis effect="bold">markup</emphasis>. This selling price, or <emphasis effect="bold">retail price</emphasis>, is what the retailer charges the consumer in order to pay their own costs and make a profit. Markup, then is very similar to discount, except we add the markup, while we subtract the discount.</para>
+    <note class="formula" id="note-00010">
+    <para id="para-00043">The formula for a markup based on a percentage is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, with the percent markup expressed as a decimal. The price of the item after the markup is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">​</mi><mi mathvariant="normal"> markup</mi></mrow></math>.</para>
+    <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">These are often combined into the following formula</para>
+    <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">percent markup </mi><mo>×</mo><mi mathvariant="normal">cost</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mrow></math></equation>
+    </note>
+    <para id="para-00045" xmlns="http://cnx.rice.edu/cnxml">It should be noted that the formulas used for a markup are very similar to those for a discount, with addition replacing the subtraction.</para>
+    <example id="exam-00007">
+    <title>Determining the Retail Price Based on the Cost and the Percent Markup</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00046">Calculate the markup for the given cost and markup percentage. Then calculate the retail price.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00009">
+    <item>Cost = $62.00; percent markup is 15%</item>
+    <item>Cost = $750.00; percent markup is 45%</item>
+    </list>
+    </problem>
+    <solution id="sol-00007">
+    <list list-type="enumerated" number-style="arabic" id="list-00010">
+    <item>Substituting the values into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, we find that the markup is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mn>0.15</mn><mo>×</mo><mn>62.00</mn><mo>=</mo><mn>9.30</mn></mrow></math>. The markup is $9.30.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The retail price of the item is then<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">​</mi><mi mathvariant="normal"> markup</mi></mrow></math>, or $62.00 + $9.30 = $71.30.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Substituting the values into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, we find that the markup is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mn>0.45</mn><mo>×</mo><mn>750.00</mn><mo>=</mo><mn>337.50</mn></mrow></math>. The markup is $337.50.
+    <newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The retail price of the item is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">​</mi><mi mathvariant="normal"> markup</mi></mrow></math>, or $750.00 + $337.50 = $1,087.50.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00011" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C06-M2-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00048">Sometimes the cost and the retail price of an item are known. From this, the percent markup can be computed using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, by solving for the percent markup.</para>
+    <example id="exam-00008" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Calculating the Percent Markup from the Cost and Retail Price</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00049">Determine the percent markup based on the given cost and retail price. Round percentages to two decimal places.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00011">
+    <item>Cost = $90.00; retail price = $103.50</item>
+    <item>Cost = $5.20; retail price = $9.90</item>
+    </list>
+    </problem>
+    <solution id="sol-00008">
+    <list list-type="enumerated" number-style="arabic" id="list-00012">
+    <item>Step 1: Using the cost and the retail price, we can find the markup with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">​</mi><mi mathvariant="normal"> markup</mi></mrow></math>. Substituting and calculating, we find the markup to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>103.50</mn><mo>=</mo><mn>90.00</mn><mo>+</mo><mi mathvariant="normal">markup</mi></mrow></math>. Solving for the markup gives $13.50.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    Step 2: After substituting the markup, $13.50, and the original price, $90.00, into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, we can find the percent markup.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">13</mi><mi mathvariant="normal">.50</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi><mo>×</mo><mn>90.00</mn></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi mathvariant="normal">13</mi><mi mathvariant="normal">.50</mi></mrow><mrow><mn>90.00</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>0.15</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    Converting to percent form, the percent markup is 15%.</item>
+    <item>Step 1: Using the cost and the retail price, we can find the markup with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">​</mi><mi mathvariant="normal"> markup</mi></mrow></math>. Substituting and calculating, we find the markup to be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9.90</mn><mo>=</mo><mn>5.20</mn><mo>+</mo><mi mathvariant="normal">markup</mi></mrow></math>. Solving for the markup gives $4.70.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    Step 2: After substituting the markup, $4.70, and the original price, $5.20, into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, we can find the percent markup.<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">4</mi><mi mathvariant="normal">.70</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi><mo>×</mo><mn>5.20</mn></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mn>4.70</mn></mrow><mrow><mn>5.20</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>0.9038</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    Converting to percent form, the percent markup is 90.38%.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00012">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C06-M2-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00051">Sometimes the retail price and the percent markup of an item are known. From this, the cost can be found. To avoid multiple steps, though, the formula that we will use is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mrow></math>. The cost can be found by solving this equation for the cost.</para>
+    <example id="exam-00009" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Calculating the Cost from the Percent Markup and Retail Price</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00052">Determine the cost based on the percent markup and retail price.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00013">
+    <item>Percent markup 20%; retail price = $10.62</item>
+    <item>Percent markup 125%; retail price = $26.55</item>
+    </list>
+    </problem>
+    <solution id="sol-00009">
+    <list list-type="enumerated" number-style="arabic" id="list-00014">
+    <item>Using the percent markup and the retail price, we can find the cost with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mrow></math>. Substituting and solving for the cost, we find
+    <equation id="eq-00011" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">retail price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">10</mi><mi mathvariant="normal">.62</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1+0</mi><mi mathvariant="normal">.2)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">10</mi><mi mathvariant="normal">.62</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mi mathvariant="normal">.2)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">8</mi><mi mathvariant="normal">.85</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The cost of the item was $8.85.</item>
+    <item>Using the percent markup and the retail price, we can find the cost with the formula<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mrow></math>. Substituting and solving for the original price, we find
+    <equation id="eq-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">retail price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">26</mi><mi mathvariant="normal">.55</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1+2</mi><mi mathvariant="normal">.25)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">26</mi><mi mathvariant="normal">.55</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(3</mi><mi mathvariant="normal">.25)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">11</mi><mi mathvariant="normal">.80</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+     The cost of the item was $11.80.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00013">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C06-M2-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Solve Application Problems Involving Markups</title>
+    <para id="para-00054">As before when working with application problems, be sure to look for what is given and identify what you are to find. Once you have evaluated the problem, use the appropriate formula to find the solution(s). These application problems address markups.</para>
+    <example id="exam-00010">
+    <title>Determine Retail Price of a Power Bar</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00055">Janice works at a convenience store near campus. It sells protein bars at a 60% markup. If a bar costs the store $1.30, how much is the retail price at the convenience store?</para>
+    </problem>
+    <solution id="sol-00010">
+    <para id="para-00056">We are asked to find the retail price. We know the percent markup is 60%. The cost of the bar was $1.30. Substituting into the percent markup formula, we find that the markup is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi><mo>=</mo><mn>0.60</mn><mo>×</mo><mn>1.30</mn><mo>=</mo><mn>0.78</mn></mrow></math> . The markup is $0.78 on that protein bar. The retail price is the cost plus the markup, so the retail price is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">cost</mi><mo>+</mo><mi mathvariant="normal">​</mi><mi mathvariant="normal"> markup</mi><mo>=</mo><mn>1.30</mn><mo>+</mo><mn>0.78</mn><mo>=</mo><mn>2.08</mn></mrow></math>. The retail price is $2.08.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00057"><link class="os-embed" url="#exercise/CM-C06-M2-Q010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00011">
+    <title>Determine the Percent Markup of a Phone</title>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00058">Javi began working at a phone outlet. In a recent shipment, he noticed that the cost of the phone to the store was $480.00. The phone sells for $840.00 in the store. What is the percent markup on the phone?</para>
+    </problem>
+    <solution id="sol-00011">
+    <para id="para-00059">We know the cost of the phone, $480. We also know the retail price of the phone, $840.00. From this we know the markup is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>840.00</mn><mo>−</mo><mi>$</mi><mn>480.00</mn><mo>=</mo><mi>$</mi><mn>360.00</mn></mrow></math>. Substituting these values into the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">markup</mi><mo>=</mo><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mrow></math>, we can find the percent markup.</para>
+    <equation id="eq-00013" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">markup</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi><mo>×</mo><mi mathvariant="normal">cost</mi></mtd></mtr><mtr><mtd columnalign="right"><mn>360</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi><mo>×</mo><mn>480</mn></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mn>360</mn></mrow><mrow><mn>480</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi mathvariant="normal">percent markup</mi><mo>×</mo><mn>480</mn></mrow><mrow><mn>480</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd></mtr><mtr><mtd columnalign="right"><mn>0.75</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">percent markup</mi></mtd></mtr></mtable></math></equation>
+    <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">The markup on the phone is 75%.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00015">
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C06-M2-Q011"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00012">
+    <title>Finding the Cost of a T-Shirt</title>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00062">Bob decided to order a t-shirt for his gaming friend online for $29.50. He knows the markup on such t-shirts is 18%. What was the t-shirt’s cost before the markup?</para>
+    </problem>
+    <solution id="sol-00012">
+    <para id="para-00063">Using the percent markup and the retail price, $29.50, we can find the cost with the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">retail price</mi><mo>=</mo><mi mathvariant="normal">original price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mrow></math>. Substituting and solving for cost we find</para>
+    <equation id="eq-00014" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">retail price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">percent markup)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">29</mi><mi mathvariant="normal">.50</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1+0</mi><mi mathvariant="normal">.18)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">29</mi><mi mathvariant="normal">.50</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mi mathvariant="normal">.18)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">25</mi><mi mathvariant="normal">.00</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">cost</mi></mtd></mtr></mtable></math></equation>
+    <para id="para-00064" xmlns="http://cnx.rice.edu/cnxml">The cost of the t-shirt was $25.00.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00016">
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C06-M2-Q012"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Compute Sales Tax</title>
+    <para id="para-00066">Sales tax is applied to the sale or lease of some goods and services in the United States but is not determined by the federal government. It is most often set, collected, and spent by individual states, counties, parishes, and municipalities. None of these sales tax revenues goes to the federal government.</para>
+    <para id="para-00067">For example, North Carolina has a state sales tax of 4.75% while New Mexico has a sales tax of 5%. Additionally, many counties in North Carolina charge an additional 2% sales tax, bringing the total sales tax for most (72 of the 100) counties in North Carolinians to 6.75%. However, in Durham, the county sales tax is 2.25% plus an additional 0.5% tax used to fund public transportation, bringing Durham County’s sales tax to 7%.</para>
+    <para id="para-00068">How much we pay in sales tax depends on where we are, and what we are buying.</para>
+    <para id="para-00069">To determine the amount of sales tax on taxable purchase, we need to find the product of the purchase price, or marked price, and the sales tax rate for that locality.</para>
+    <note class="formula" id="note-00017">
+    <para id="para-00070">To calculate the amount of sales tax paid on the purchase price in a locality with sales tax given in decimal form, calculate <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mrow></math> The total price is then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">Total price</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>+</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mrow></math></para>
+    </note>
+    <note class="check-point" id="note-00018" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00071"><emphasis effect="italic"> When the sales tax calculation results in a fraction of a penny, then normal rounding rules apply, round up for half a penny or more, but round down for less than half a penny.</emphasis></para>
+    </note>
+    <para id="para-00072">You should notice that this the same as markup, except using a different term. Sales tax plays the role of markup, the purchase price plays the role of cost, and the tax rate plays the role of percent markup. This means all the strategies developed for markups apply to this situation, with the changes indicated.</para>
+    <example id="exam-00013">
+    <title>Sales Tax in Kankakee Illinois</title>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00073">The sales tax in Kankakee, Illinois, is 8.25%. Find the sales tax and total price of items based on the purchase price listed.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00015">
+    <item>Purchase price = $428.99</item>
+    <item>Purchase price = $34.88</item>
+    </list>
+    </problem>
+    <solution id="sol-00013">
+    <list list-type="enumerated" number-style="arabic" id="list-00016">
+    <item>The sales tax is found using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mrow></math>. The purchase price is $428.99 and the tax rate is 8.25%. Substituting and calculating, the sales tax is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi>$</mi><mn>428.99</mn><mo>×</mo><mn>0.0825</mn><mo>=</mo><mi>$</mi><mn>35.391675</mn></mrow></math>. The sales tax needs to be rounded off. Since the third decimal place (fraction of a penny) is 1, we round down and the sales tax is $35.39. The total price is the sales tax plus the purchase price, so is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>428.99</mn><mo>+</mo><mi>$</mi><mn>35.88</mn><mo>=</mo><mi>$</mi><mn>464.87</mn></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The sales tax on the item is found using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mrow></math>. The purchase price is $34.88 and the tax rate is 8.25%. Substituting and calculating, the sales tax is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi>$</mi><mn>34.88</mn><mo>×</mo><mn>0.0825</mn><mo>=</mo><mi>$</mi><mn>2.8776</mn></mrow></math>. The sales tax needs to be rounded off. Since the third decimal place (fraction of a penny) is 7, we round up and the sales tax is $2.88. The total price of the item is the sales tax plus the purchase price, so is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>34.88</mn><mo>+</mo><mi>$</mi><mn>2.88</mn><mo>=</mo><mi>$</mi><mn>37.76</mn></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00019" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C06-M2-Q013"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00075">As before, the information available might be different than only the purchase price and the sales tax rate. In these cases, use either <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mrow></math> or<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">Total price</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mrow></math> and solve for the indicated tax, price, or rate. These problems mirror those for percent markup.</para>
+    <para id="para-00076" xmlns="http://cnx.rice.edu/cnxml">Be aware, almost all sales tax rates are structured as full percentages, or half percent, or one-quarter percent, or three-quarter percent. This means the decimal value of the sales tax rate, written as a percent, will be either 0, as in 5.0%, 5 as in 7.5%, 25 as in 3.25%, or 75 as in 4.75%. When rounding for the sales tax percentage, be sure to use this guideline.</para>
+    <example id="exam-00014">
+    <title>Calculating the Sales Tax from the Purchase Price and the Total Price</title>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00077">Find the sales tax rate for the indicated purchase price and total price. Round using the guideline for sales tax percentages.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00017">
+    <item>Purchase price = $329.50; total price = $354.21</item>
+    <item>Purchase Price = $13.77; total price = $14.39</item>
+    </list>
+    </problem>
+    <solution id="sol-00014">
+    <list list-type="enumerated" number-style="arabic" id="list-00018">
+    <item>Step 1. Find the sales tax paid. First, the amount of sales tax must be found. Subtracting the purchase price from the total price, the amount of sales tax is $24.71.<newline/>
+    Step 2. Find the sales tax rate. Using the purchase price, the sales tax, and the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mrow></math>, the sales tax rate can be found. Substituting and solving yields<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00015"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">Sales Tax</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>24.71</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>$</mi><mn>329.50</mn><mo>×</mo><mi mathvariant="normal">tax rate</mi></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi>$</mi><mn>24.71</mn></mrow><mrow><mi>$</mi><mn>329.50</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">tax rate</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">0</mi><mi mathvariant="normal">.07499</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">tax rate</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    Keeping in mind the guideline for rounding sales tax rate, the sales tax rate is 7.5%.</item>
+    <item>Step 1. Find the sales tax paid. First, the amount of sales tax must be found. Subtracting the purchase price from the total price, the amount of sales tax is $0.62.<newline/>
+    Step 2. Find the sales tax rate. Using the purchase price, the sales tax, and the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">sales tax</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mrow></math>, the sales tax rate can be found. Substituting and solving yields<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00016"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">sales tax</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>0.62</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>$</mi><mn>13.77</mn><mo>×</mo><mi mathvariant="normal">tax rate</mi></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi>$</mi><mn>0.62</mn></mrow><mrow><mi>$</mi><mn>13.77</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">tax rate</mi></mtd></mtr><mtr><mtd columnalign="right"><mi mathvariant="normal">0</mi><mi mathvariant="normal">.04503</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">tax rate</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    Keeping in mind the guideline for rounding sales tax rate, the sales tax rate is 4.5%.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00020">
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00078"><link class="os-embed" url="#exercise/CM-C06-M2-Q014"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00015">
+    <title>Calculating the Purchase Price from the Sales Tax and Total Price</title>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00079">Find the purchase price for the indicated sales tax rate and total price.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00019">
+    <item>Sales tax rate = 5.75%; total price = $36.56</item>
+    <item>Sales tax rate = 4.25%; total price = $97.17</item>
+    </list>
+    </problem>
+    <solution id="sol-00015">
+    <list list-type="enumerated" number-style="arabic" id="list-00020">
+    <item>When the sales tax rate and the total price are known, the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">total price</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mrow></math> can be used to find the purchase price. Substituting the tax rate and total price into the formula and solving, we find<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00017"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">Total price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>36.56</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.0575)</mi></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi>$</mi><mn>36.56</mn></mrow><mrow><mn>1.0575</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>34.57</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The purchase price, the price before tax, was $34.57.</item>
+    <item>When the sales tax rate and the total price are known, the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">total price</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mrow></math> can be used to find the purchase price. Substituting the tax rate and total price into the formula and solving, we find<newline xmlns="http://cnx.rice.edu/cnxml"/>
+    <equation id="eq-00018"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">Total price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>97.17</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">0</mi><mi mathvariant="normal">.0425)</mi></mtd></mtr><mtr><mtd columnalign="right"><mstyle displaystyle="true"><mstyle displaystyle="true"><mstyle displaystyle="true"><mfrac><mrow><mi>$</mi><mn>97.17</mn></mrow><mrow><mn>1.0425</mn></mrow></mfrac></mstyle></mstyle></mstyle></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>93.21</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The purchase price, the price before tax, was $93.21.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00021">
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C06-M2-Q015"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Solve Application Problems Involving Sales Tax</title>
+    <para id="para-00081">Solving problems involving sales tax follows the same ideas and steps as solving problems for markups. But here we will use the following formula:</para>
+    <equation id="eq-00019"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>total price</mtext><mo>=</mo><mtext>purchase price</mtext><mo>+</mo><mtext> sales tax </mtext></mrow></math></equation>
+    <para id="para-00082" xmlns="http://cnx.rice.edu/cnxml">We can also use the formula:</para>
+    <equation id="eq-00020"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>total price</mtext><mo>=</mo><mtext>purchase price</mtext><mo>×</mo><mtext>(1</mtext><mo>+</mo><mtext>sales tax rate)</mtext></mrow></math>.</equation>
+    <para id="para-00083" xmlns="http://cnx.rice.edu/cnxml">This can be seen in the following examples.</para>
+    <example id="exam-00016">
+    <title>Compute Sales Tax for Denver, Colorado</title>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00084">The sales tax rate in Denver Colorado is 8.81%. Keven buys a TV in Denver, and the purchase price (before taxes) is $499.00. How much will Keven pay in sales tax and what will be the total amount he spends when he buys the TV?</para>
+    </problem>
+    <solution id="sol-00016">
+    <para id="para-00085">The sales tax rate in Denver is 8.81%. To find the sales tax Keven will pay, find 8.81% of the purchase price. In decimal form, that sales tax rate is 0.0881. Using the formula and substituting 499.00 for purchase price, we find that Keven will pay <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">tax rate</mi><mo>=</mo><mi mathvariant="normal">$499</mi><mo>×</mo><mn>0.0881</mn><mo>=</mo><mi>$</mi><mn>43.96</mn></mrow></math> in sales tax for the TV.</para>
+    <para id="para-00086" xmlns="http://cnx.rice.edu/cnxml">The total price that Keven will pay is the purchase price plus the sales tax, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>$</mi><mn>499.00</mn><mo>+</mo><mi>$</mi><mn>43.96</mn><mo>=</mo><mi>$</mi><mn>542.96</mn></mrow></math>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00022" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00087"><link class="os-embed" url="#exercise/CM-C06-M2-Q016"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00017">
+    <title>Compute Sales Tax for Austin, Texas</title>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00088">Jillian visits Austin, Texas, and purchases a new set of weights for her home. She spends, including sales tax, $467.64. The sales tax rate in Austin Texas is 8.25%. How much of the total price is sales tax?</para>
+    </problem>
+    <solution id="sol-00017">
+    <para id="para-00089">The sales tax paid for this purchase is the difference in the total price and the purchase price. We know the total price is $467.64. We also know the sales tax rate, which is 8.25%. In decimal form, this is 0.0825. Using these values and the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi mathvariant="normal">l/c price</mi><mo>=</mo><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mrow></math> to find the purchase price.</para>
+    <equation id="eq-00021" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi mathvariant="normal">total price</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mi mathvariant="normal">(1</mi><mo>+</mo><mi mathvariant="normal">tax rate)</mi></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>467.64</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>0.0825</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>467.64</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi><mo>×</mo><mo stretchy="false">(</mo><mn>1.0825</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right"><mi>$</mi><mn>432</mn></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi mathvariant="normal">purchase price</mi></mtd></mtr></mtable></math></equation>
+    <para id="para-00090" xmlns="http://cnx.rice.edu/cnxml">Knowing both the total price and the now the purchase price, we can find the difference, which is the sales tax.</para>
+    <para id="para-00091">The total price was $467.64. The purchase price was $432. The difference of the total price and the purchase price, or the sales tax, is then $467.64 - $432.00, which is $35.64. Jillian pays $35.64 in sales tax.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00023">
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00092"><link class="os-embed" url="#exercise/CM-C06-M2-Q017"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00024">
+    <para id="para-00093"><link url="https://openstax.org/r/Finding_Sales_Tax">Finding Sales Tax Percentage</link></para>
+    </note>
+    <note class="who-knew" id="note-00025">
+    <para id="para-00094">West Virginia was the first state to impose a sales tax. This happened on May 3, 1921.</para>
+    </note>
+    <note class="research-it" id="note-00026">
+    <para id="para-00095">Look up your locality on <link url="https://openstax.org/r/resources_rates">this website that lists standard state-level sales tax rates</link> and compare the sales tax structure in your state to two nearby states (for the lower 48) and for any two states (Alaska and Hawaii).</para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00007">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00096"><link class="os-embed" url="#exercise/CM-C06-M2-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00097"><link class="os-embed" url="#exercise/CM-C06-M2-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00098"><link class="os-embed" url="#exercise/CM-C06-M2-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00099"><link class="os-embed" url="#exercise/CM-C06-M2-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00100"><link class="os-embed" url="#exercise/CM-C06-M2-Q022"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00101"><link class="os-embed" url="#exercise/CM-C06-M2-Q023"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00008">
+    <title>Exercises</title>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00102"><link class="os-embed" url="#exercise/CM-C06-M2-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00103"><link class="os-embed" url="#exercise/CM-C06-M2-Q025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00104"><link class="os-embed" url="#exercise/CM-C06-M2-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00105"><link class="os-embed" url="#exercise/CM-C06-M2-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00106"><link class="os-embed" url="#exercise/CM-C06-M2-Q028"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00107"><link class="os-embed" url="#exercise/CM-C06-M2-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00108"><link class="os-embed" url="#exercise/CM-C06-M2-Q030"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00048">
+    <problem id="prob-00048">
+    <para id="para-00109"><link class="os-embed" url="#exercise/CM-C06-M2-Q031"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00049">
+    <problem id="prob-00049">
+    <para id="para-00110"><link class="os-embed" url="#exercise/CM-C06-M2-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00050">
+    <problem id="prob-00050">
+    <para id="para-00111"><link class="os-embed" url="#exercise/CM-C06-M2-Q033"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00051">
+    <problem id="prob-00051">
+    <para id="para-00112"><link class="os-embed" url="#exercise/CM-C06-M2-Q034"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00052">
+    <problem id="prob-00052">
+    <para id="para-00113"><link class="os-embed" url="#exercise/CM-C06-M2-Q035"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00009">
     <title>Key Terms</title>
-    <list bullet-style="bulleted" id="list-00002">
-    <item>sales tax</item>
+    <list bullet-style="none" id="list-00021">
+    <item>Discount</item>
+    <item>Markup</item>
+    <item>Retail price</item>
     </list>
     </section>
-    <section class="key-concepts" id="sect-00005">
-      <title>Key Concepts</title>
-    <list bullet-style="bulleted" id="list-00005">
-    <item>Sales tax is the amount charged be the state to pay for the goods and services provide by the state. To calculate the sales tax, multiply the amount of the purchase by the tax rate in decimal form. To discover the tax rate, subtract the purchase price form the total amount of the purchase and then solve the equation<newline/><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable><mtr><mtd><mtext>(purchase price)</mtext><mi>x</mi><mo>=</mo><mtext>amount of tax</mtext></mtd></mtr><mtr><mtd><mi>x</mi><mo>=</mo><mfrac><mrow><mtext>amount of tax</mtext></mrow><mrow><mtext>purchase price</mtext></mrow></mfrac></mtd></mtr></mtable></math></item>
+    <section class="key-concepts" id="sect-00010">
+    <title>Key Concepts</title>
+    <list list-type="bulleted" id="list-00022">
+    <item>Discounts are markdowns from an original price.</item>
+    <item>Mark-ups are increases to the price paid by a retailer to cover their costs.</item>
+    <item>be able to calculate the markup based on a percentage of the cost</item>
+    <item>Sales taxes vary from state to state and often county to county.</item>
+    <item>Retail prices, sales prices and percent discounts can be calculated if the other two values are known.</item>
+    <item>Original costs, retail prices, and percent mark-up can be calculated if the other two values are known.</item>
+    <item>In calculations, sales tax acts like a mark-up.</item>
     </list>
     </section>
-  </content>
-  </document>
+    <section class="eoc-videos" id="sect-00011">
+    <title>Videos</title>
+    <para id="para-00114"><link url="https://openstax.org/r/Computing_Price_Based">Computing Price Based on a Percent Off Coupon</link></para>
+    <para id="para-00115"><link url="https://openstax.org/r/Finding_Sales_Tax">Finding Sales Tax Percentage</link></para>
+    </section>
+    <section class="formula-review" id="sect-00012">
+    <title>Formulas</title>
+    <para id="para-00116"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>discount</mtext><mo>=</mo><mtext>percent discount</mtext><mo>×</mo><mtext>original price</mtext></mrow></math></para>
+    <para id="para-00117" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>sale price</mtext><mo>=</mo><mtext>original price</mtext><mo>−</mo><mtext>discount</mtext></mrow></math></para>
+    <para id="para-00118" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>sale price</mtext><mo>=</mo><mtext>original price</mtext><mo>−</mo><mtext>percent discount</mtext><mo>×</mo><mtext>original price</mtext><mo>=</mo><mtext>original price</mtext><mo>×</mo><mtext>(1</mtext><mo>−</mo><mtext>percent discount)</mtext></mrow></math></para>
+    <para id="para-00119" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>markup</mtext><mo>=</mo><mtext>percent markup</mtext><mo>×</mo><mtext>cost</mtext></mrow></math></para>
+    <para id="para-00120" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>retail price</mtext><mo>=</mo><mtext>cost</mtext><mo>+</mo><mtext>​</mtext><mtext> markup</mtext></mrow></math></para>
+    <para id="para-00121" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>retail price</mtext><mo>=</mo><mtext>cost</mtext><mo>+</mo><mtext>percent markup</mtext><mo>×</mo><mtext>cost</mtext><mo>=</mo><mtext>cost</mtext><mo>×</mo><mtext>(1</mtext><mo>+</mo><mtext>percent markup)</mtext></mrow></math></para>
+    <para id="para-00122" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>sales tax</mtext><mo>=</mo><mtext>purchase price</mtext><mo>×</mo><mtext>tax rate</mtext></mrow></math></para>
+    <para id="para-00123" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Total price</mtext><mo>=</mo><mtext>purchase price</mtext><mo>+</mo><mtext>purchase price</mtext><mo>×</mo><mtext>tax rate</mtext><mo>=</mo><mtext>purchase price</mtext><mo>×</mo><mtext>(1</mtext><mo>+</mo><mtext>tax rate)</mtext></mrow></math></para>
+    </section>
+    </content>
+    </document>
