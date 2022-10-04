@@ -6,420 +6,541 @@
   <md:uuid>a6d2afc0-0209-47ca-ac13-1df1337c38b5</md:uuid>
   </metadata>
   <content>
-  <figure id="fig-00001">
-  <media alt="An illustration depicts the power of compounding. The illustration shows four stacks of dollar bills and coins arranged in ascending order. Beside the first stack, a man is looking through a telescope. Beside the second stack, a woman is standing and she looks excited. Beside the third stack, a man is standing. A woman is standing on top of the stack with a speaker. Beside the fourth stack, a man is holding another man above his head. The man at the top is holding a stack of coins. An increasing arrow is along the stacks from left to right.">
-  <image mime-type="image/jpg" src="../../media/CS_Photo_06_04_001.jpg"/>
-  </media>
-  <caption>(credit: Monstera/Pexels)</caption>
-  </figure>
-  <section class="learning-objectives" id="sect-00001">
-  <title>Learning Objectives</title>
-  <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
-  <list list-type="enumerated" number-style="arabic" id="list-00001">
-  <item>Compute compound interest.</item>
-  <item>Compute present value.</item>
-  <item>Determine the difference in interest between simple and compound calculations.</item>
-  <item>Compute and interpret effective annual yield.</item>
-  </list>
-  </section>
-  <para id="para-00002">The curve of the graph in this opening illustration shows that as we move horizontally from left to right; vertical movement increases disproportionally. This is typical of exponential growth, which is what <emphasis effect="bold">compound interest</emphasis> entails. As Albert Einstein said, “The most powerful force in the universe is compound interest.” In this section, we will explore the way compound interest is applied and validate Einstein’s words.</para>
-  <section id="sect-00002">
-  <title>Computing Compound Interest</title>
-  <para id="para-00003">You have a savings account that earns compound interest. After the first year, you have more money in your account. Your initial deposit has increased by the amount of interest earned during that year. After the second year, your balance has increased again by the amount of interest earned during the second year, but it is more than you earned during the first year because the interest was based on the new principal, namely your initial deposit plus a year’s interest. After the third year, your balance has increased by the interest paid onthe new balance, namely, last year’s balance plus interest, and so on, . . .</para>
-  <note class="formula" id="note-00007">
-   <para id="para-00004">The formula for compound interest is</para>
-  <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow></math></equation>
-   <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">where</para>
-  <table class="unnumbered" summary="." id="table-00001">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <tbody>
-  <row>
-  <entry><emphasis effect="italic">A</emphasis></entry>
-  <entry>amount in the account</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="italic">P</emphasis></entry>
-  <entry>present value or your deposit</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="italic">n</emphasis></entry>
-  <entry>number of compounding periods per year</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="italic">r</emphasis></entry>
-  <entry>interest rate in decimal form</entry>
-  </row>
-  <row>
-  <entry><emphasis effect="italic">t</emphasis></entry>
-  <entry>time in years</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </note>
-  <para id="para-00006"><emphasis effect="bold">Penny Picher Series</emphasis></para>
-  <para id="para-00007">Manhattan Island was purchased in 1626 from the natives living there by Peter Minuit for $24 in merchandise. At an interest rate of 5% compounded exponentially, what do you think Manhattan Island is worth today?</para>
-  <example id="exam-00001">
-  <title>Calculating Compound Interest</title>
-  <exercise id="exer-00001">
-  <problem id="prob-00001">
-  <para id="para-00008">Suppose you have $5,000 to invest in an account paying 3% interest compounded semiannually. Use the compound interest formula to calculate the amount in the account after 5 years.</para>
-  </problem>
-  <solution id="sol-00001">
-  <para id="para-00009">Fill in the numbers that represent each of the variables in the formula:</para>
-  <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow></math></equation>
-  <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable><mtr><mtd><mi>P</mi><mo>=</mo><mn>5000</mn></mtd></mtr><mtr><mtd><mi>r</mi><mo>=</mo><mn>0.03</mn></mtd></mtr><mtr><mtd><mi>n</mi><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd><mi>t</mi><mo>=</mo><mn>5</mn></mtd></mtr></mtable></math></para>
-  <equation id="eq-00003" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>A</mi><mo>=</mo><mn>5000</mn><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.03</mn></mrow><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mrow><mn>2</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>5000</mn><msup><mrow><mo>(</mo><mrow><mn>1.015</mn></mrow><mo>)</mo></mrow><mrow><mn>10</mn></mrow></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>5000</mn><mo stretchy="false">(</mo><mn>1.16054</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mo>=</mo><mn>5802.70</mn></mtd></mtr></mtable></math></equation>
-  <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">After 5 years, you will have $5,802.70.</para>
-  </solution>
+    <figure id="fig-00001">
+    <media alt="alt-text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_06_01_001.jpg"/>
+    </media>
+    <caption>The impact of compound interest (credit: TK)</caption>
+    </figure>
+    <section class="Learning Objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001">After completing this section, you should be able to:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Compute compound interest.</item>
+    <item>Determine the difference in interest between simple and compound calculations.</item>
+    <item>Understand and compute future value.</item>
+    <item>Compute present value.</item>
+    <item>Compute and interpret effective annual yield.</item>
+    </list>
+    </section>
+    <para id="para-00002">For a very long time, in the Christian world at least, interest was not practiced due to religious dictates. However, it is believed that in 17th-century Italy, compound interest become more common. Short-term loans were often taken out, and only simple interest applied to the loan. When loans began to stretch out over years, it was natural to add the interest at the end of 1 year, and then begin recalculating, based on the original loan amount and the added interest at the end of that year, or, the interest earned interest.</para>
+    <para id="para-00003">Since the amount in the account grows each year, more money earns interest, increasing the account faster. This growth follows a geometric series (see Module 3-11). It is this feature that gives compound interest its power. This module covers the mathematics of compound interest.</para>
+    <section id="sect-00002">
+    <title>Understand and Compute Compound Interest</title>
+    <para id="para-00004">As we saw in Section 6.2, an account that pays simple interest pays that interest on the principal once a year. Accounts offering <emphasis effect="bold">compound interest</emphasis> terms pay interest on a principal multiple times per year.</para>
+    <para id="para-00005">After each period, the interest on the account is computed, then added to the account. Then, after the next period, when interest is computed, it is computed based on the original principal AND the interest that was added in the previous periods.</para>
+    <para id="para-00006">The following example illustrates how compounded interest works.</para>
+    <example id="exam-00001">
+    <title>Interest Compounded Annually</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00007">Abena invests $1,000 in a CD (certificate of deposit) earning 4% compounded annually. How much will Abena’s CD be worth after 3 years?</para>
+    </problem>
+    <solution id="sol-00001">
+    <para id="para-00008">Since the interest is compounded annually, the interest will be computed at the end of each year and added to the CD’s value. The interest at the end of the following year will be based on the value found form the previous year.</para>
+    <para id="para-00009"><emphasis effect="bold">Step 1:</emphasis> After the first year, the interest in Abena’s CD is computed using the interest formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>I</mtext><mo>=</mo><mtext>P</mtext><mo>×</mo><mtext>r</mtext><mo>×</mo><mtext>t</mtext></mrow></math>. The principal is <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">P</emphasis> = 1,000, the rate, as a decimal, is 0.04, and the time is one year, so <emphasis effect="italic">t</emphasis> = 1. Using that, the interest earned in the first year is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>I</mtext><mo>=</mo><mtext>P</mtext><mo>×</mo><mtext>r</mtext><mo>×</mo><mtext>t</mtext><mo>=</mo><mn>1,000</mn><mo>×</mo><mn>0.04</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>40</mn></mrow></math>, so the interest earned in the first year was $40.00. This is added to the value of the CD, making the CD worth <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>$</mtext><mn>1,000</mn><mo>+</mo><mtext>$</mtext><mn>40</mn><mo>=</mo><mtext>$</mtext><mn>1,040</mn></mrow></math>.</para>
+    <para id="para-00010" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> At the end of the second year, interest is again computed, but is computed based on the CD’s new value, $1,040. Using this new value and the interest formula (<emphasis effect="italic">r</emphasis> and <emphasis effect="italic">t</emphasis> are still 0.04 and 1, respectively), we see that the CD earned <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>I</mtext><mo>=</mo><mtext>P</mtext><mo>×</mo><mtext>r</mtext><mo>×</mo><mtext>t</mtext><mo>=</mo><mn>1,040</mn><mo>×</mo><mn>0.04</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>41.6</mn></mrow></math>, or $41.60. This is added to the value of the CD, making the CD now worth <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>$</mtext><mn>1,040.00</mn><mo>+</mo><mtext>$</mtext><mn>41.60</mn><mo>=</mo><mtext>$</mtext><mn>1,081.60</mn></mrow></math>.</para>
+    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> At the end of the third year, interest is again computed, but is computed based on Abena’s CD’s new value, $1,081.60. Using this value and the interest formula (<emphasis effect="italic">r</emphasis> and <emphasis effect="italic">t</emphasis> are still 0.04 and 1, respectively), we see that the CD earned <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>I</mtext><mo>=</mo><mtext>P</mtext><mo>×</mo><mtext>r</mtext><mo>×</mo><mtext>t</mtext><mo>=</mo><mn>1,081.60</mn><mo>×</mo><mn>0.04</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>43.264</mn></mrow></math>, or $43.26 (remember to round down). This is added to the value of the CD, making the CD now worth <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>$</mtext><mn>1,081.60</mn><mo>+</mo><mtext>$</mtext><mn>43.26</mn><mo>=</mo><mtext>$</mtext><mn>1,124.86</mn></mrow></math>.</para>
+    <para id="para-00012" xmlns="http://cnx.rice.edu/cnxml">After 3 years, Abena’s CD is worth $1,124.86.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00013"><link class="os-embed" url="#exercise/CM-C06-M4-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Determine the Difference in Interest Between Simple and Compound Calculations</title>
+    <para id="para-00014">It is natural to ask, does compound interest make much of a difference? To find out, we revisit Abena’s CD.</para>
+    <example id="exam-00002">
+    <title>Comparing Simple to Compound Interest on a 3-Year CD</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00015">Abena invested $1,000 in a CD that earned 4% compounded annually, and the CD was worth $1,124.86 after 3 years. Had Abena invested in a CD with simple interest, how much would the CD have been worth after 3 years? How much more did Abena earn using compound interest?</para>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00016">Had Abena invested $1,000 in a 4% simple interest CD for 3 years, her CD would have been worth <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo>+</mo><mi>P</mi><mo>×</mo><mi>r</mi><mo>×</mo><mi>t</mi><mo>=</mo><mn>1,000</mn><mo>+</mo><mn>1,000</mn><mo>×</mo><mn>0.04</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>1,120</mn></mrow></math>, or $1,120.00. With interest compounded annually, Abena’s CD was worth $1,124.86. The difference between compound and simple interest is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>$</mtext><mn>1,124.86</mn><mo>−</mo><mtext>$</mtext><mn>1,120.00</mn><mo>=</mo><mtext>$</mtext><mn>4.86</mn></mrow></math>. So compound interest earned Abena $4.86 more than the simple interest did.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00017"><link class="os-embed" url="#exercise/CM-C06-M4-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00003">
+    <para id="para-00018"><link url="https://openstax.org/r/JWhkxNLOGFk"/>Compound Interest<link/></para>
+    </note>
+    </section>
+    <section id="sect-00004">
+    <title>Understand and Compute Future Value</title>
+    <para id="para-00019">Imagine investing for 30 years and compounding the interest every month. Using the method above, there would be 360 periods to calculate interest for. This is not a reasonable approach. Fortunately, there is a formula for finding the future value of an investment that earns compound interest.</para>
+    <note class="formula" id="note-00004">
+    <para id="para-00020">The value of an investment, <emphasis effect="italic">A</emphasis>, when the principal <emphasis effect="italic">P</emphasis> is invested at an annual interest rate of <emphasis effect="italic">r</emphasis> (in decimal form), compounded n times per year, for <emphasis effect="italic">t</emphasis> years, is found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow></math>. This is also referred to as the future value of the investment.</para>
+    </note>
+    <note class="check-point" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00021"><emphasis effect="italic">Note, sometimes the formula is presented with the total number of periods, n, and the interest rate per period, r. In that case the formula becomes</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup></mrow></math>.</para>
+    </note>
+    <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Computing Future Value for Compound Interest</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00022">In the following, compute the future value of the investment with the given conditions.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item>Principal is $5,000, annual interest rate is 3.8%, compounded monthly, for 5 years.</item>
+    <item>Principal is $18,500, annual interest rate is 6.25%, compounded quarterly, for 17 years.</item>
+    </list>
+    </problem>
+    <solution id="sol-00003">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>The principal is <emphasis effect="italic">P</emphasis> = $5,000, interest rate, in decimal form, <emphasis effect="italic">r</emphasis> = 0.038, compounded monthly so <emphasis effect="italic">n</emphasis> = 12, and for <emphasis effect="italic">t</emphasis> = 5 years. Substituting these values into the formula, we find
+    <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup><mo>=</mo><mn>5</mn><mo>,</mo><mn>000</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.038</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn><mo lspace="0.28em" rspace="0.28em">×</mo><mn>5</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn><mo>,</mo><mn>000</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.0031</mn><mover accent="true"><mn>6</mn><mo>¯</mo></mover></mrow><mo>)</mo></mrow></mrow><mrow><mn>60</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn><mo>,</mo><mn>000</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1.0031</mn><mover accent="true"><mn>6</mn><mo>¯</mo></mover></mrow><mo>)</mo></mrow></mrow><mrow><mn>40</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>5</mn><mo>,</mo><mn>000</mn><mo>×</mo><mn>1.20888663572</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6</mn><mo>,</mo><mn>044.4332</mn></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The future value of the investment is $6,044.43.</item>
+    <item>The principal is <emphasis effect="italic">P</emphasis> = $18,500, interest rate, in decimal form, <emphasis effect="italic">r</emphasis> = 0.0625, compounded quarterly so <emphasis effect="italic">n</emphasis> = 4, and for <emphasis effect="italic">t</emphasis> = 17 years. Substituting these values into the formula, we
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup><mo>=</mo><mn>18</mn><mo>,</mo><mn>500</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0625</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>4</mn><mo lspace="0.28em" rspace="0.28em">×</mo><mn>17</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>18</mn><mo>,</mo><mn>500</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.015625</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>68</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>18</mn><mo>,</mo><mn>500</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1.015625</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>68</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>18</mn><mo>,</mo><mn>500</mn><mo>×</mo><mn>2.86992151999</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>53</mn><mo>,</mo><mn>093.5481</mn></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    The future value of the investment is $53,093.54</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00023"><link class="os-embed" url="#exercise/CM-C06-M4-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00004">
+    <title>Interest Compounded Quarterly</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00024">Cody invests $7,500 in an account that earns 4.5% interest compounded quarterly (4 times per year). Determine the value of Cody’s investment after 10 years.</para>
+    </problem>
+    <solution id="sol-00004">
+    <para id="para-00025">Cody’s initial investment is $7,500, so <emphasis effect="italic">P</emphasis> = $7,500. The annual interest rate is 4.5%, which is 0.045 in decimal form. Compounding quarterly means there are four periods in a year, so <emphasis effect="italic">n</emphasis> = 4. He invests the money for 10 years. Substituting those values into the formula, we calculate</para>
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>A</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="center"><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup><mo>=</mo><mn>7</mn><mo>,</mo><mn>500</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.045</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>4</mn><mo lspace="0.28em" rspace="0.28em">×</mo><mn>10</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mo>,</mo><mn>500</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.01125</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>40</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mo>,</mo><mn>500</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1.01125</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>40</mn></mrow></msup></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>7</mn><mo>,</mo><mn>500</mn><mo>×</mo><mn>1.564376865391</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>11</mn><mo>,</mo><mn>732.8265</mn></mtd></mtr></mtable></math></equation>
+    <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml">After 10 years, Cody’s initial investment of $7,500 is worth $11,732.82.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00007">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00027"><link class="os-embed" url="#exercise/CM-C06-M4-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00005">
+    <title>Interest Compounded Daily</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00028">Kathy invests $10,000 in an account that yields 5.6% compounded daily. How much money will be in her account after 20 years?</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00029">Kathy’s initial investment is $10,000, so <emphasis effect="italic">P</emphasis> = $10,000. The annual interest rate is 5.6%, which is 0.056 in decimal form. Compounding daily means there are 364 periods in a year, so <emphasis effect="italic">n</emphasis> = 365. She invests the money for 20 years, so <emphasis effect="italic">t</emphasis> = 20. Substituting those values into the formula, we calculate</para>
+    <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup><mo>=</mo><mn>10,000</mn><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.056</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mn>365</mn><mo>×</mo><mn>20</mn></mrow></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>10,000</mn><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.000153424657534</mn></mrow><mo>)</mo></mrow><mrow><mn>7300</mn></mrow></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>10,000</mn><msup><mrow><mo>(</mo><mrow><mn>1.000153424657534</mn></mrow><mo>)</mo></mrow><mrow><mn>7300</mn></mrow></msup></mtd></mtr><mtr><mtd><mo>=</mo><mn>10,000</mn><mo>×</mo><mn>3.06459091598</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>30,645.909</mn></mtd></mtr></mtable></math></equation>
+    <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">After 20 years, Kathy’s initial investment of $10,000 is worth $30,645.90.</para>
+    </solution>
   </exercise>
-  </example>
-  <note class="your-turn" id="note-00001">
-  <exercise id="exer-00002">
-  <problem id="prob-00002">
-  <para id="para-00012"><link class="os-embed" url="#exercise/CM-C06-M4-Q001"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <example id="exam-00002">
-  <title>Calculating Monthly Compounded Interest</title>
-  <exercise id="exer-00003">
-  <problem id="prob-00003">
-  <para id="para-00013">You deposit $6,200 in an account paying 6% interest compounded monthly for 7 years. Find the future value.</para>
-  </problem>
-  <solution id="sol-00002">
-  <para id="para-00014"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtable><mtr><mtd><mrow><mn>91</mn><mo>+</mo><mi>A</mi><mo>=</mo><mn>6200</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.06</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></msup></mrow></mtd></mtr><mtr><mtd><mrow><mo>=</mo><mn>6200</mn><msup><mrow><mrow><mo>(</mo><mrow><mn>1.005</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>84</mn></mrow></msup></mrow></mtd></mtr><mtr><mtd><mrow><mo>=</mo><mn>6200</mn><mo stretchy="false">(</mo><mn>1.5204</mn><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>=</mo><mn>9426.29</mn></mrow></mtd></mtr></mtable></mrow></math>
-  </para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00004">
-  <problem id="prob-00004">
-  <para id="para-00015"><link class="os-embed" url="#exercise/CM-C06-M4-Q002"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section id="sect-00003">
-  <title>Present Value</title>
-  <para id="para-00016">The present value of money is a concept that lets you calculate exactly how much money you should invest at a given interest rate to have a certain amount in an account after a predetermined number of years. This is something that you would do if, for example, you wanted to make sure that you had enough money to pay for your child’s college tuition, or to make a down payment on a home.</para>
-  <note class="formula" id="note-00008">
-  <para id="para-00017">The formula for present value is</para>
-  <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>P</mi><mo>=</mo><malignmark/><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow></mfrac></mrow></math></equation>
-  <para id="para-00072" xmlns="http://cnx.rice.edu/cnxml">where <emphasis effect="italic">P</emphasis> = present value, <emphasis effect="italic">A</emphasis> = amount accrued, <emphasis effect="italic">r</emphasis> = interest rate, <emphasis effect="italic">n</emphasis> = number of periods in a year, and <emphasis effect="italic">t</emphasis> = time in years.</para>
-  </note>
-  <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Penny Pincher Series</emphasis></para>
-  <para id="para-00019">In 1867, the United States purchased Alaska from Russia for $7 million. If interest was 5% compounded exponentially, what would Alaska be worth today?</para>
-  <example id="exam-00003">
-  <title>Calculating Present Value</title>
-  <exercise id="exer-00005">
-  <problem id="prob-00005">
-  <para id="para-00020">Suppose you want to have a college fund of $100,000 for your newborn son when he is 18 years old. You can invest in an account paying 5% interest, compounded monthly. How much should you invest today so that your balance after 18 years is $100,000?</para>
-  </problem>
-  <solution id="sol-00003">
-  <para id="para-00021">It is helpful if you first state what each variable will represent.</para>
-  <para id="para-00022"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable><mtr><mtd><mi>A</mi><mo>=</mo><mn>100</mn><mo>,</mo><mn>000</mn></mtd></mtr><mtr><mtd><mi>r</mi><mo>=</mo><mn>0.05</mn></mtd></mtr><mtr><mtd><mi>n</mi><mo>=</mo><mn>12</mn></mtd></mtr><mtr><mtd><mi>t</mi><mo>=</mo><mn>18</mn></mtd></mtr></mtable></math></para>
-  <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml">Then, input the amounts for the variables into the formula. We have</para>
-  <equation id="eq-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>P</mi><mo>=</mo><mfrac><mrow><mn>100000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.05</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn><mo stretchy="false">(</mo><mn>18</mn><mo stretchy="false">)</mo></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mrow><mn>100000</mn></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mn>1.0041667</mn><mo stretchy="false">)</mo></mrow><mrow><mn>216</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mfrac><mrow><mn>100000</mn></mrow><mrow><mn>2.455</mn></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>40733.20</mn></mtd></mtr></mtable></math></equation>
-  <para id="para-00024" xmlns="http://cnx.rice.edu/cnxml">Therefore, you would have to invest $40,733.20 to have $100,000 in 18 years at an interest rate of 5% compounded monthly.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00003">
-  <exercise id="exer-00006">
-  <problem id="prob-00006">
-  <para id="para-00025"><link class="os-embed" url="#exercise/CM-C06-M4-Q003"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <example id="exam-00004">
-  <title>Calculating Present Value with Interest Compounded Quarterly</title>
-  <exercise id="exer-00007">
-  <problem id="prob-00007">
-  <para id="para-00026">What is the present value of $65,000 in 5 years at 9% compounded quarterly?</para>
-  </problem>
-  <solution id="sol-00004">
-  <para id="para-00027"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnalign="left"><mtr><mtd><mi>A</mi><mo>=</mo><mn>65000</mn></mtd></mtr><mtr><mtd><mi>r</mi><mo>=</mo><mn>0.09</mn></mtd></mtr><mtr><mtd><mi>n</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd><mi>t</mi><mo>=</mo><mn>5</mn></mtd></mtr></mtable></math></para>
-  <equation id="eq-00007" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>P</mi><mo>=</mo><mfrac><mrow><mn>65000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.09</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>4</mn><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd><mo>=</mo><mn>41653.07</mn></mtd></mtr></mtable></math></equation>
-  <para id="para-00028" xmlns="http://cnx.rice.edu/cnxml">The present value is $41,653.07.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00004">
-  <exercise id="exer-00008">
-  <problem id="prob-00008">
-  <para id="para-00029"><link class="os-embed" url="#exercise/CM-C06-M4-Q004"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section id="sect-00004">
-  <title>Effective Annual Yield</title>
-  <para id="para-00030">An account that pays simple interest pays that interest on the principal once a year. Accounts offering compound interest terms pay interest on a principal multiple times per year. If it is quarterly compounding, then it pays interest 4 times a year or every 3 months. If it is monthly compounding, then interest is paid 12 times a year, once a month. Daily compounding pays interest every day, and so on. <term id="term-00001">Effective annual yield</term> is something that equates simple interest with compound interest. In other words, it shows you the true amount of interest interpreted in terms of simple interest and give you more information so that you can make an informed decision.</para>
-  <para id="para-00031">Using a formula, we can interpret compound interest as simple interest. An example will clarify this. The Effective Annual Yield formula stems from the Compound Interest formula and is based on an investment of $1 for 1 year.</para>
-  <note class="formula" id="note-00009">
-  <para id="para-00073">Effective Annual Yield is</para>
-  <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></math></equation>
-  <para id="para-00074" xmlns="http://cnx.rice.edu/cnxml">where <emphasis effect="italic">Y</emphasis> = effective annual yield, <emphasis effect="italic">r</emphasis> = interest rate, and <emphasis effect="italic">n</emphasis> = number of periods.</para>
-  </note>
-  <para id="para-00032" xmlns="http://cnx.rice.edu/cnxml">For example, suppose you have an investment paying a rate of 6% compounded quarterly. The effective annual yield is</para>
-  <equation id="eq-00009"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>Y</mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.06</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mn>4</mn></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>1.015</mn></mrow><mo>)</mo></mrow><mn>4</mn></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>1.06136</mn><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.0614</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>6.14</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
-  <para id="para-00033" xmlns="http://cnx.rice.edu/cnxml">Therefore, a rate of 6% compounded quarterly is equivalent to a simple interest rate of 6.14%.</para>
-  <example id="exam-00005">
-  <title>Determining Effective Annual Yield</title>
-  <exercise id="exer-00009">
-  <problem id="prob-00009">
-  <para id="para-00034">What is the effective annual yield on a deposit earning interest at a rate of 3% compounded quarterly?</para>
-  </problem>
-  <solution id="sol-00005">
-  <para id="para-00035">Using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></math>, we have</para>
-  <para id="para-00036" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>y</mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.03</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mn>4</mn></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>0.030339</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>3.03</mn><mi>%</mi></mtd></mtr></mtable></math></para>
-  <para id="para-00037" xmlns="http://cnx.rice.edu/cnxml">Thus, an account earning 3% compounded quarterly is equivalent to earning 3.03% as simple interest.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00005">
-  <exercise id="exer-00010">
-  <problem id="prob-00010">
-  <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M4-Q005"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <example id="exam-00006">
-  <title>Choosing a Bank</title>
-  <exercise id="exer-00011">
-  <problem id="prob-00011">
-  <para id="para-00039">Minh has a choice of banks in which he will open a savings account. He will deposit $3,200 and he wants to get the best interest he can. The banks advertise as follows:</para>
-  <table class="unnumbered" summary="." id="table-00002">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="1*"/>
-  <colspec colnum="2" colname="c2" colwidth="1*"/>
-  <thead>
-  <row>
-  <entry>Bank</entry>
-  <entry>Interest Rate</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>ABC Bank</entry>
-  <entry>2.08%, compounded monthly</entry>
-  </row>
-  <row>
-  <entry>123 Bank</entry>
-  <entry>2.09% compounded annually</entry>
-  </row>
-  <row>
-  <entry>XYZ Bank</entry>
-  <entry>2.05% compounded daily</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  </table>
-  </problem>
-  <solution id="sol-00006">
-  <para id="para-00040">Compare the effective annual yield for all three choices.</para>
-  <para id="para-00041">ABC Bank: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0208</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.0210</mn><mo>=</mo><mn>2.10</mn><mi>%</mi></mrow></math></para>
-  <para id="para-00042" xmlns="http://cnx.rice.edu/cnxml">123 Bank: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0209</mn></mrow><mn>1</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>1</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.0209</mn><mo>=</mo><mn>2.09</mn><mi>%</mi></mrow></math></para>
-  <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">XYZ Bank: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0205</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>365</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.0207</mn><mo>=</mo><mn>2.07</mn><mi>%</mi></mrow></math></para>
-  <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">ABC Bank has the best terms.</para>
-  </solution>
-  </exercise>
-  </example>
-  <example id="exam-00007">
-  <title>Calculating Original Interest Rate</title>
-  <exercise id="exer-00012">
-  <problem id="prob-00012">
-  <para id="para-00045">If the effective annual yield is 5% on an account where interest is compounded quarterly, what is the original interest rate?</para>
-  </problem>
-  <solution id="sol-00007">
-  <para id="para-00046">To solve this problem, we input <emphasis effect="italic">Y =</emphasis> 0.05 and solve for <emphasis effect="italic">r.</emphasis> Thus,</para>
-  <equation id="eq-00010"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>0.05</mn><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>4</mn></msup><mo>−</mo><mn>1</mn></mrow></math></equation>
-  <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 1:</emphasis> Add 1 to both sides.</para>
-  <equation id="eq-00011"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>1.05</mn><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>4</mn></msup></mrow></math></equation>
-  <para id="para-00048" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> Raise each side to the ¼ power. This is the same as taking the fourth root.</para>
-  <equation id="eq-00012"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><msup><mrow><mo>(</mo><mrow><mn>1.05</mn></mrow><mo>)</mo></mrow><mrow><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></mrow></msup><mo>=</mo><msup><mrow><mo>[</mo> <mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>4</mn></msup></mrow> <mo>]</mo></mrow><mrow><mfrac bevelled="true"><mn>1</mn><mn>4</mn></mfrac></mrow></msup></mtd></mtr><mtr><mtd><mn>1.0123</mn><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mn>4</mn></mfrac></mtd></mtr></mtable></math></equation>
-  <para id="para-00049" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Subtract 1 and multiply by 4.</para>
-  <equation id="eq-00013"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mn>0.0123</mn><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo><mo>=</mo><mi>r</mi><mo>=</mo><mn>0.049</mn></mtd></mtr><mtr><mtd><mo>=</mo><mn>4.9</mn><mi>%</mi></mtd></mtr></mtable></math></equation>
-  <para id="para-00050" xmlns="http://cnx.rice.edu/cnxml">The original interest rate was 4.9%.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00006">
-  <exercise id="exer-00013">
-  <problem id="prob-00013">
-  <para id="para-00051"><link class="os-embed" url="#exercise/CM-C06-M4-Q006"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  <section class="section-exercises" id="sect-00005">
-  <title>Exercises</title>
-  <exercise id="exer-00014">
-  <problem id="prob-00014">
-  <para id="para-00052"><link class="os-embed" url="#exercise/CM-C06-M4-Q007"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00015">
-  <problem id="prob-00015">
-  <para id="para-00053"><link class="os-embed" url="#exercise/CM-C06-M4-Q008"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00016">
-  <problem id="prob-00016">
-  <para id="para-00054"><link class="os-embed" url="#exercise/CM-C06-M4-Q009"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00017">
-  <problem id="prob-00017">
-  <para id="para-00055"><link class="os-embed" url="#exercise/CM-C06-M4-Q010"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00018">
-  <problem id="prob-00018">
-  <para id="para-00056"><link class="os-embed" url="#exercise/CM-C06-M4-Q011"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00019">
-  <problem id="prob-00019">
-  <para id="para-00057"><link class="os-embed" url="#exercise/CM-C06-M4-Q012"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00020">
-  <problem id="prob-00020">
-  <para id="para-00058"><link class="os-embed" url="#exercise/CM-C06-M4-Q013"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00021">
-  <problem id="prob-00021">
-  <para id="para-00059"><link class="os-embed" url="#exercise/CM-C06-M4-Q014"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00022">
-  <problem id="prob-00022">
-  <para id="para-00060"><link class="os-embed" url="#exercise/CM-C06-M4-Q015"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00023">
-  <problem id="prob-00023">
-  <para id="para-00061"><link class="os-embed" url="#exercise/CM-C06-M4-Q016"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00024">
-  <problem id="prob-00024">
-  <para id="para-00062"><link class="os-embed" url="#exercise/CM-C06-M4-Q017"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00025">
-  <problem id="prob-00025">
-  <para id="para-00063"><link class="os-embed" url="#exercise/CM-C06-M4-Q018"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00026">
-  <problem id="prob-00026">
-  <para id="para-00064"><link class="os-embed" url="#exercise/CM-C06-M4-Q019"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00027">
-  <problem id="prob-00027">
-  <para id="para-00065"><link class="os-embed" url="#exercise/CM-C06-M4-Q020"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00028">
-  <problem id="prob-00028">
-  <para id="para-00066"><link class="os-embed" url="#exercise/CM-C06-M4-Q021"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00029">
-  <problem id="prob-00029">
-  <para id="para-00067"><link class="os-embed" url="#exercise/CM-C06-M4-Q022"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00030">
-  <problem id="prob-00030">
-  <para id="para-00068"><link class="os-embed" url="#exercise/CM-C06-M4-Q023"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00031">
-  <problem id="prob-00031">
-  <para id="para-00069"><link class="os-embed" url="#exercise/CM-C06-M4-Q024"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00032">
-  <problem id="prob-00032">
-  <para id="para-00070"><link class="os-embed" url="#exercise/CM-C06-M4-Q025"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00033">
-  <problem id="prob-00033">
-  <para id="para-00071"><link class="os-embed" url="#exercise/CM-C06-M4-Q026"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section class="key-terms" id="sect-00006">
+    </example>
+    <note class="your-turn" id="note-00008">
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00031"><link class="os-embed" url="#exercise/CM-C06-M4-Q005"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="video" id="note-00009">
+    <para id="para-00032"><link url="https://openstax.org/r/r8Ki3FcYwEY"/>Compare Simple Interest to Interest Compounded Annually
+    <link/></para>
+    </note>
+    <note class="video" id="note-00010">
+    <para id="para-00033"><link url="https://openstax.org/r/84x_IZCVXYM"/>Compare Simple Interest and Compound Interest for Different Number of Periods Per Year<link/></para>
+    </note>
+    <note class="work-out" id="note-00011">
+    <para id="para-00034">To truly grasp how compound interest works over a long period of time, create a table comparing simple interest to compound interest, with different numbers of periods per year, for many years would be useful. In this situation, the principal is $10,000, and the annual interest rate is 6%.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>Create a table with five columns. Label the first column YEARS, the second column SIMPLE INTEREST, the third column COMPOUND ANNUALLY, the fourth column COMPOUND MONTHLY and the last column COMPOUND DAILY, as shown below.
+    <table class="unnumbered" summary="." id="table-00001">
+    <tgroup cols="5">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <colspec colnum="3" colname="c3" colwidth="1*"/>
+    <colspec colnum="4" colname="c4" colwidth="1*"/>
+    <colspec colnum="5" colname="c5" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry>YEARS</entry>
+    <entry>SIMPLE INTEREST</entry>
+    <entry>COMPOUND ANNUALLY</entry>
+    <entry>COMPOUND MONTHLY</entry>
+    <entry>COMPOUND DAILY</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    </item>
+    <item>In the years column, enter 1, 2, 3, 5, 10, 20, and 30 for the rows.</item>
+    <item>Calculate the account value for each column and each year.</item>
+    <item>Compare the results from each of the values you find. How do the number of periods per year (compoundings per year) impact the account value? How does the number of years impact the account value?</item>
+    <item>Redo the chart, with an interest rate you choose and a principal you choose. Are the patterns identified earlier still present?</item>
+    </list>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Understand and Compute Present Value</title>
+    <para id="para-00035">When investing, there is often a goal to reach, such as “after 20 years, I’d like the account to be worth $100,000.” The question to be answered in this case is “How much money must be invested now to reach the goal?” As with simple interest, this is referred to as the present value.</para>
+    <note class="formula" id="note-00012">
+    <para id="para-00036">The money invested in an account bearing an annual interest rate of r (in decimal form), compounded n times per year for t years, is called the present value, <emphasis effect="italic">PV</emphasis>, of the account (or of the money) and found using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup></mrow></mfrac></mrow></math>, where A is the value of the account at the investment’s end. Always round this value up to the nearest penny.</para>
+    </note>
+    <example id="exam-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Computing Present Value</title>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00037">Find the present value of the accounts under the following conditions.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item><emphasis effect="italic">A</emphasis> = $250,000, invested at 6.75 interest, compounded monthly, for 30 years.</item>
+    <item><emphasis effect="italic">A</emphasis> = $500,000, invested at 7.1% interest, compounded quarterly, for 40 years.</item>
+    </list>
+    </problem>
+    <solution id="sol-00006">
+    <list list-type="enumerated" number-style="arabic" id="list-00006">
+    <item>To reach a final account value of <emphasis effect="italic">A</emphasis> = $250,000, invested at 6.75% interest, in decimal form <emphasis effect="italic">r</emphasis> = 0.0675 (decimal form!), compounded monthly, so <emphasis effect="italic">n</emphasis> = 12, for 30 years, substitute those values into the formula for present value. Calculating, we find the present value of the $250,000.
+    <equation id="eq-00005"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>P</mi><mi>V</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>250,000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mrow><mn>0.0675</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn><mo lspace="0.28em" rspace="0.28em">×</mo><mn>30</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>250,000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.005625</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>360</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>250,000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1.005625</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>360</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>250,000</mn></mrow><mrow><mn>7.5332454772</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>33,186.2277</mn></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    In order for this account to reach $250,000 after 30 years, $33,186.23 needs to be invested.</item>
+    <item>To reach a final account value of <emphasis effect="italic">A</emphasis> = $500,000, invested at 7.1% interest, in decimal form <emphasis effect="italic">r</emphasis> = 0.071, compounded quarterly, so <emphasis effect="italic">n</emphasis> = 4, for 40 years, substitute those values into the formula for present value. Calculating, we find the present value of the $500,000.
+    <equation id="eq-00006"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>P</mi><mi>V</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>500</mn><mo>,</mo><mn>000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mrow><mn>0.071</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>4</mn><mo lspace="0.28em" rspace="0.28em">×</mo><mn>40</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>500</mn><mo>,</mo><mn>000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.01775</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>160</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>500</mn><mo>,</mo><mn>000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1.01775</mn></mrow><mo>)</mo></mrow></mrow><mrow><mn>160</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>500</mn><mo>,</mo><mn>000</mn></mrow><mrow><mn>16.6946672846</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>29</mn><mo>,</mo><mn>949.6834</mn></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
+    In order for this account to reach $500,000 after 40 years, $29,949.69 needs to be invested.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00013">
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C06-M4-Q006"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00007">
+    <title>Investment Goal with Compound Interest</title>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00039">Pilar plans early for retirement, believing she will need $1,500,000 to live comfortably after the age of 67. How much will she need to deposit at age 23 in an account bearing 6.35% annual interest compounded monthly?</para>
+    </problem>
+    <solution id="sol-00007">
+    <para id="para-00040">Knowing how much to deposit at age 23 to reach a certain value later is a present value question. The target value for Pilar is $1,500,000. The interest rate is 6.35%, which in decimal form is 0.0635. Compounded monthly means <emphasis effect="italic">n</emphasis> = 12. She’s 23 and will leave the money in the account until the age of 67, which is 44 years, making <emphasis effect="italic">t</emphasis> = 44. Using this information and substituting in the formula for present value, we calculate</para>
+    <equation id="eq-00007"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>P</mi><mi>V</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1,500,000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mrow><mn>0.0635</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn><mo lspace="0.28em" rspace="0.28em">×</mo><mn>44</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>1,500,000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.005291</mn><mover accent="true"><mn>6</mn><mo stretchy="true">¯</mo></mover></mrow><mo>)</mo></mrow></mrow><mrow><mn>528</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>1,500,000</mn></mrow><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1.005291</mn><mover accent="true"><mn>6</mn><mo stretchy="true">¯</mo></mover></mrow><mo>)</mo></mrow></mrow><mrow><mn>528</mn></mrow></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mfrac><mrow><mn>1,500,000</mn></mrow><mrow><mn>16.226302189</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>92,442.5037</mn></mtd></mtr></mtable></math>
+    </equation>
+    <para id="para-00041" xmlns="http://cnx.rice.edu/cnxml">Pilar will need to invest $92,442,51 in this account to have $1,500,000 at age 67.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00014">
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00042"><link class="os-embed" url="#exercise/CM-C06-M4-Q007"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section id="sect-00006">
+    <title>Compute and Interpret Effective Annual Yield</title>
+    <para id="para-00043">As we’ve seen, quarterly compounding pays interest 4 times a year or every 3 months; monthly compounding pays 12 times a year; daily compounding pays interest every day, and so on. <emphasis effect="bold">Effective annual yield</emphasis> allows direct comparisons between simple interest and compound interest by converting compound interest to its equivalent simple interest rate. We can even directly compare different compound interest situations. This gives information that can be used to identify the best investment from a yield perspective.</para>
+    <para id="para-00044">Using a formula, we can interpret compound interest as simple interest. The effective annual yield formula stems from the compound interest formula and is based on an investment of $1 for 1 year.</para>
+    <note class="Formula" id="note-00015">
+    <para id="para-00045">Effective annual yield is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">Y</emphasis> = effective annual yield, <emphasis effect="italic">r</emphasis> = interest rate in decimal form, and <emphasis effect="italic">n</emphasis>= number of times the interest is compounded in a year. <emphasis effect="italic">Y</emphasis> is interpreted as the equivalent annual simple interest rate.</para>
+    </note>
+    <example id="exam-00008">
+    <title>Determine and Interpret Effective Annual Yield for 6% Compounded Quarterly</title>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00046">Suppose you have an investment paying a rate of 6% compounded quarterly. Determine and interpret that effective annual yield of the investment.</para>
+    </problem>
+    <solution id="sol-00008">
+    <para id="para-00047">Here, <emphasis effect="italic">n</emphasis> = 4 (quarterly) and <emphasis effect="italic">r</emphasis> = 0.06 (decimal form). Substituting into the formula we find that the effective annual yield is</para>
+    <equation id="eq-00008"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>Y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.06</mn></mrow><mn>4</mn></mfrac></mrow><mo>)</mo></mrow><mn>4</mn></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo>(</mo><mrow><mn>1.015</mn></mrow><mo>)</mo></mrow><mn>4</mn></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>1.06136</mn><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.0614</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>6.14</mn><mi>%</mi></mtd></mtr></mtable></math>
+    </equation>
+    <para id="para-00048" xmlns="http://cnx.rice.edu/cnxml">Therefore, a rate of 6% compounded quarterly is equivalent to a simple interest rate of 6.14%.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00016">
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C06-M4-Q008"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00009">
+    <title>Determine and Interpret Effective Annual Yield for 5% Compounded Daily</title>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00050">Calculate and interpret the effective annual yield on a deposit earning interest at a rate of 5% compounded daily.</para>
+    </problem>
+    <solution id="sol-00009">
+    <para id="para-00051">In this case, the rate is <emphasis effect="italic">r</emphasis> = 0.05 and <emphasis effect="italic">n</emphasis> = 365 (daily). Using the formula<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></math>, we have</para>
+    <equation id="eq-00009" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable columnspacing="0.3em"><mtr><mtd columnalign="right"><mi>Y</mi></mtd><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.05</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow><mo>)</mo></mrow><mrow><mn>365</mn></mrow></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><msup><mrow><mo>(</mo><mrow><mn>1.0001369863</mn></mrow><mo>)</mo></mrow><mrow><mn>365</mn></mrow></msup><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>1.051267</mn><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right"/><mtd columnalign="center"><mo>=</mo></mtd><mtd columnalign="left"><mn>0.0513</mn></mtd></mtr></mtable></math></equation>
+    <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml">This tells us that an account earning 5% compounded daily is equivalent to earning 5.13% as simple interest.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00017">
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C06-M4-Q009"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <example id="exam-00010">
+    <title>Choosing a Bank</title>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00054">Minh has a choice of banks in which he will open a savings account. He will deposit $3,200 and he wants to get the best interest he can. The banks advertise as follows:</para>
+    <table class="unnumbered" summary="." id="table-00002">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1*"/>
+    <colspec colnum="2" colname="c2" colwidth="1*"/>
+    <thead>
+    <row>
+    <entry>Bank</entry>
+    <entry>Interest Rate</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>ABC Bank</entry>
+    <entry>2.08% compounded monthly</entry>
+    </row>
+    <row>
+    <entry>123 Bank</entry>
+    <entry>2.09% compounded annually</entry>
+    </row>
+    <row>
+    <entry>XYZ Bank</entry>
+    <entry>2.05% compounded daily</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00055">Which bank offers the best interest?</para>
+    </problem>
+    <solution id="sol-00010">
+    <para id="para-00056">To compare these directly, Minh could change each interest rate to its effective annual yield, which would allow direct comparison between the rates. Computing the effective annual yield for all three choices gives:</para>
+    <para id="para-00057">ABC Bank: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0208</mn></mrow><mrow><mn>12</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>12</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.0210</mn><mo>=</mo><mn>2.10</mn><mi>%</mi></mrow></math></para>
+    <para id="para-00058" xmlns="http://cnx.rice.edu/cnxml">123 Bank: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0209</mn></mrow><mn>1</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mn>1</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.0209</mn><mo>=</mo><mn>2.09</mn><mi>%</mi></mrow></math></para>
+    <para id="para-00059" xmlns="http://cnx.rice.edu/cnxml">XYZ Bank: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0.0205</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mn>365</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.0207</mn><mo>=</mo><mn>2.07</mn><mi>%</mi></mrow></math></para>
+    <para id="para-00060" xmlns="http://cnx.rice.edu/cnxml">ABC Bank has the highest effective annual yield, so Minh should choose ABC bank.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00018">
+    <exercise id="exer-00020">
+    <problem id="prob-00020">
+    <para id="para-00061"><link class="os-embed" url="#exercise/CM-C06-M4-Q010"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00007">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00021">
+    <problem id="prob-00021">
+    <para id="para-00062"><link class="os-embed" url="#exercise/CM-C06-M4-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00022">
+    <problem id="prob-00022">
+    <para id="para-00063"><link class="os-embed" url="#exercise/CM-C06-M4-Q012"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00023">
+    <problem id="prob-00023">
+    <para id="para-00064"><link class="os-embed" url="#exercise/CM-C06-M4-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00024">
+    <problem id="prob-00024">
+    <para id="para-00065"><link class="os-embed" url="#exercise/CM-C06-M4-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00025">
+    <problem id="prob-00025">
+    <para id="para-00066"><link class="os-embed" url="#exercise/CM-C06-M4-Q015"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00026">
+    <problem id="prob-00026">
+    <para id="para-00067"><link class="os-embed" url="#exercise/CM-C06-M4-Q016"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00027">
+    <problem id="prob-00027">
+    <para id="para-00068"><link class="os-embed" url="#exercise/CM-C06-M4-Q017"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00008">
+    <title>Exercises</title>
+    <exercise id="exer-00028">
+    <problem id="prob-00028">
+    <para id="para-00069"><link class="os-embed" url="#exercise/CM-C06-M4-Q018"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00029">
+    <problem id="prob-00029">
+    <para id="para-00070"><link class="os-embed" url="#exercise/CM-C06-M4-Q019"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00030">
+    <problem id="prob-00030">
+    <para id="para-00071"><link class="os-embed" url="#exercise/CM-C06-M4-Q020"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00031">
+    <problem id="prob-00031">
+    <para id="para-00072"><link class="os-embed" url="#exercise/CM-C06-M4-Q021"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00032">
+    <problem id="prob-00032">
+    <para id="para-00073"><link class="os-embed" url="#exercise/CM-C06-M4-Q022"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00033">
+    <problem id="prob-00033">
+    <para id="para-00074"><link class="os-embed" url="#exercise/CM-C06-M4-Q023"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00034">
+    <problem id="prob-00034">
+    <para id="para-00075"><link class="os-embed" url="#exercise/CM-C06-M4-Q024"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00035">
+    <problem id="prob-00035">
+    <para id="para-00076"><link class="os-embed" url="#exercise/CM-C06-M4-Q025"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00036">
+    <problem id="prob-00036">
+    <para id="para-00077"><link class="os-embed" url="#exercise/CM-C06-M4-Q026"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00037">
+    <problem id="prob-00037">
+    <para id="para-00078"><link class="os-embed" url="#exercise/CM-C06-M4-Q027"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00038">
+    <problem id="prob-00038">
+    <para id="para-00079"><link class="os-embed" url="#exercise/CM-C06-M4-Q028"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00039">
+    <problem id="prob-00039">
+    <para id="para-00080"><link class="os-embed" url="#exercise/CM-C06-M4-Q029"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00040">
+    <problem id="prob-00040">
+    <para id="para-00081"><link class="os-embed" url="#exercise/CM-C06-M4-Q030"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00041">
+    <problem id="prob-00041">
+    <para id="para-00082"><link class="os-embed" url="#exercise/CM-C06-M4-Q031"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00042">
+    <problem id="prob-00042">
+    <para id="para-00083"><link class="os-embed" url="#exercise/CM-C06-M4-Q032"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00043">
+    <problem id="prob-00043">
+    <para id="para-00084"><link class="os-embed" url="#exercise/CM-C06-M4-Q033"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00044">
+    <problem id="prob-00044">
+    <para id="para-00085"><link class="os-embed" url="#exercise/CM-C06-M4-Q034"/></para> 
+    </problem>
+    </exercise>
+    <exercise id="exer-00045">
+    <problem id="prob-00045">
+    <para id="para-00086"><link class="os-embed" url="#exercise/CM-C06-M4-Q035"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00046">
+    <problem id="prob-00046">
+    <para id="para-00087"><link class="os-embed" url="#exercise/CM-C06-M4-Q036"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00047">
+    <problem id="prob-00047">
+    <para id="para-00088"><link class="os-embed" url="#exercise/CM-C06-M4-Q037"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00009">
     <title>Key Terms</title>
-    <list bullet-style="bulleted" id="list-00002">
-    <item>compound interest</item>
-    <item>effective annual yield</item>
+    <list bullet-style="none" id="list-00007">
+    <item>Compound interest</item>
+    <item>Effective annual yield</item>
     </list>
     </section>
-    <section class="key-concepts" id="sect-00007">
+    <section class="key-concepts" id="sect-00010">
     <title>Key Concepts</title>
-    <list bullet-style="bulleted" id="list-00003">
-    <item>Compound interest refers to the method of computing interest on an investment in which interest is calculated multiple times in a year. The interest is added to the amount of the investment and that sum becomes the new principal. Compound interest in calculated using the formula <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup><mo>,</mo></mrow></math> where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">A</emphasis> = the amount in the account, <emphasis effect="italic">P</emphasis> = the amount of the principal, <emphasis effect="italic">r</emphasis> = the interest rate, <emphasis effect="italic">n</emphasis> = the number of times interest in computed in a year, and <emphasis effect="italic">t</emphasis> = time in years.</item>
-    <item>Present value refers to the amount that must be invested at a specified interest rate for a specified number of years and compounded at a given number of times per year in order to have a particular amount at the end of the investment. Present value is found by solving for <emphasis effect="italic">P</emphasis> in the compound interest formula.</item>
-    <item>The effective annual yield or <emphasis effect="italic">APY</emphasis> is the yearly simple interest rate that is equivalent to the compound interest rate.</item>
+    <list list-type="bulleted" id="list-00008">
+    <item>Compound interest means that the interest earned during one period will earn interest in later periods. Essentially, the amount of the principal grows from period to period.</item>
+    <item>The important values in computing compound interest are the interest rate, the principal, the length of time the investment, and the number of times the investment is compounded.</item>
+    <item>Compound interest has minimal impact early, but later has a very large impact.</item>
+    <item>You can determine how much to invest today in order to reach a goal for some time later.</item>
+    <item>Compound interest can be translated into an effective annual yield, which allows for comparison between investment options.</item>
     </list>
     </section>
-    <section class="formula-review" id="sect-00009">
-      <title>Formulas</title>
-      <list bullet-style="bulleted" id="list-00031">
-      <item>The formula for compound interest is<newline/>
-        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>rn</mi></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mrow><mi>nt</mi></mrow></msup></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/>
-      where<newline/> 
-      <table class="unnumbered" summary="." id="table-00003">
-      <tgroup cols="2">
-      <colspec colnum="1" colname="c1" colwidth="1*"/>
-      <colspec colnum="2" colname="c2" colwidth="1*"/>
-      <tbody>
-      <row>
-      <entry><emphasis effect="italic">A</emphasis></entry>
-      <entry>amount in the account</entry>
-      </row>
-      <row>
-      <entry><emphasis effect="italic">P</emphasis></entry>
-      <entry>present value or your deposit</entry>
-      </row>
-      <row>
-      <entry><emphasis effect="italic">n</emphasis></entry>
-      <entry>number of compounding periods per year</entry>
-      </row>
-      <row>
-      <entry><emphasis effect="italic">r</emphasis></entry>
-      <entry>interest rate in decimal form</entry>
-      </row>
-      <row>
-      <entry><emphasis effect="italic">t</emphasis></entry>
-      <entry>time in years.</entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
-      </item>
-      <item>The formula for future value of an investment paying simple interest is<newline/>
-      <equation id="eq-00004"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtable><mtr><mtd><mi>A</mi><mo>=</mo><mi>P</mi><mo>+</mo><mi>Pr</mi><mi>t</mi><mi mathvariant="normal"> </mi><mi mathvariant="normal"> </mi><mi mathvariant="normal">or</mi><mi mathvariant="normal"> </mi></mtd></mtr><mtr><mtd><mi>A</mi><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>rt</mi><mo stretchy="false">)</mo></mtd></mtr></mtable></math></equation><newline xmlns="http://cnx.rice.edu/cnxml"/>
-      where <emphasis effect="italic">A</emphasis> = amount accrued, <emphasis effect="italic">P</emphasis> = principal, <emphasis effect="italic">r = </emphasis>interest rate, and <emphasis effect="italic">t</emphasis> = time.
-      </item>
-      <item>The formula for present value is<newline/>
-      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo>=</mo><malignmark/><mstyle displaystyle="true"><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>rn</mi></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mrow><mi>nt</mi></mrow></msup></mrow></mfrac></mstyle></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/>
-      where <emphasis effect="italic">P</emphasis> = present value, <emphasis effect="italic">A</emphasis> = amount accrued, <emphasis effect="italic">r</emphasis> = interest rate, <emphasis effect="italic">n</emphasis> = number of periods in a year, and <emphasis effect="italic">t</emphasis> = time in years.</item>
-      <item>Effective annual yield is<newline/>
-      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>rn</mi></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></math><newline xmlns="http://cnx.rice.edu/cnxml"/>
-      where <emphasis effect="italic">Y</emphasis> = effective annual yield, <emphasis effect="italic">r</emphasis> = interest rate, and <emphasis effect="italic">n</emphasis> = number of periods.</item>
-      </list>
-      </section>
-  </content>
-  </document>
+    <section class="eoc-videos" id="sect-00011">
+    <title>Videos</title>
+    <para id="para-00089"><link url="https://openstax.org/r/JWhkxNLOGFk"/>Compound Interest<link/></para>
+    <para id="para-00090"><link url="https://openstax.org/r/r8Ki3FcYwEY"/>Compare Simple Interest to Interest Compounded Annually
+    <link/></para>
+    <para id="para-00091"><link url="https://openstax.org/r/84x_IZCVXYM"/>Compare Simple Interest and Compound Interest for Different Number of Periods Per Year<link/></para>
+    </section>
+    <section class="formula-review" id="sect-00012">
+    <title>Formulas</title>
+    <para id="para-00092"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow></math></para>
+    <para id="para-00093" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mi>A</mi><mrow><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup></mrow></mfrac></mrow></math></para>
+    <para id="para-00094" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>Y</mi><mo>=</mo><msup><mrow><mrow><mo>(</mo><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow><mo>)</mo></mrow></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></math></para>
+    </section>
+    </content>
+    </document>
