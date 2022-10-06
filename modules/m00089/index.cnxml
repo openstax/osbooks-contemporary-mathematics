@@ -27,7 +27,7 @@
       <section id="sect-00002">
       <title>Introducing Probability</title>
       <para id="para-00003">Uncertainty is, almost by definition, a nebulous concept. In order to put enough constraints on it that we can mathematically study it, we will focus on uncertainty strictly in the context of experiments. Recall that experiments are processes whose outcomes are unknown; the sample space for the experiment is the collection of all those possible outcomes. When we want to talk about the likelihood of particular outcomes, we sometimes group outcomes together; for example, in the <emphasis effect="italic">Monopoly</emphasis> example at the beginning of this section, we were interested in the roll of 2 dice that might fall as a 4, 5, or 7. A grouping of outcomes that we’re interested in is called an <term id="term-00001">event</term>. In other words, an event is a subset of the sample space of an experiment; it often consists of the outcomes of interest to the experimenter.</para>
-      <para id="para-00004">Once we have defined the event that interests us, we can try to assess the likelihood of that event. We do that by assigning a number to each event (<emphasis effect="italic">E</emphasis>) called the <term id="term-00002">probability</term> of that event (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>). The probability of an event is a number between 0 and 1 (inclusive). If the probability of an event is 0, then the event is impossible. On the other hand, an event with probability 1 is certain to occur. In general, the higher the probability of an event, the more likely it is that the event will occur.</para>
+      <para id="para-00004">Once we have defined the event that interests us, we can try to assess the likelihood of that event. We do that by assigning a number to each event (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math>) called the <term id="term-00002">probability</term> of that event (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>). The probability of an event is a number between 0 and 1 (inclusive). If the probability of an event is 0, then the event is impossible. On the other hand, an event with probability 1 is certain to occur. In general, the higher the probability of an event, the more likely it is that the event will occur.</para>
       <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
       <title>Determining Certain and Impossible Events</title>
       <exercise id="exer-00001">
@@ -37,7 +37,7 @@
       <item><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>roll a 4</mtext><mo stretchy="false">)</mo></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>roll a 7</mtext><mo stretchy="false">)</mo></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>roll a positive number</mtext><mo stretchy="false">)</mo></mrow></math></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mrow><mo>(</mo><mrow><mtext>roll a</mtext><mspace width="0.28em"/><mfrac><mtext>1</mtext><mtext>3</mtext></mfrac></mrow><mo>)</mo></mrow></mrow></math></item>
+      <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo lspace="0">(</mo><mrow><mtext>roll a</mtext><mspace width="0.28em"/><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><mo>)</mo></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>roll an even number</mtext><mo stretchy="false">)</mo></mrow></math></item>
       <item xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>roll a single-digit number</mtext><mo stretchy="false">)</mo></mrow></math></item>
       </list>
@@ -399,4 +399,3 @@
       </section>
       </content>    
   </document>
-  
