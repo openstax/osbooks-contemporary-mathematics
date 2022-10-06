@@ -70,8 +70,8 @@
     </section>
     <section id="sect-00005">
     <title>Calculating Loan Payments</title>
-    <para id="para-00022">Loan payments are made up of two components. One component is the interest that accrued during the payment period. The other component is part of the principal. This should remind you of partial payments from <link>simple</link> interest.</para>
-    <para id="para-00023">Over the course of the loan, the amount of principal remaining to be paid decreases. The interest you pay in a month is based on the remaining principal, just as in the partial payments of <link>simple</link> interest.</para>
+    <para id="para-00022">Loan payments are made up of two components. One component is the interest that accrued during the payment period. The other component is part of the principal. This should remind you of partial payments from <link target-id="sect-00001" document="m00059">simple</link> interest.</para>
+    <para id="para-00023">Over the course of the loan, the amount of principal remaining to be paid decreases. The interest you pay in a month is based on the remaining principal, just as in the partial payments of <link target-id="sect-00001" document="m00059">simple</link> interest.</para>
     <note class="formula" id="note-00003">
     <para id="para-00024">The amount of interest, <emphasis effect="italic">I,</emphasis> to be paid for one period of a loan with remaining principal <emphasis effect="italic">P</emphasis> is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>I</mi><mo>=</mo><mi>P</mi><mo>×</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow></math>, where <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">r</emphasis> is the interest rate in decimal form and <emphasis effect="italic">n</emphasis> is he number of payments in a year (most often <emphasis effect="italic">n</emphasis> = 12). Since the interest is for the one period, the time is 1 and does not impact the calculation. Note, interest paid to lenders is always rounded up to the next penny.</para>
     </note>
@@ -143,7 +143,7 @@
     <para id="para-00036">Hit the enter key.</para>
     <para id="para-00037">The cell displays the payment.</para>
     <para id="para-00038">Please note the negative sign. Since Google Sheets is a spreadsheet program, is sees the payment as funds leaving the account, and so they are, by default, negative. The negative sign in front of the formula makes the result positive.</para>
-    <para id="para-00039">For example, for a $50,000 loan at 10.9% interest for 7 years, you would type =-PMT(0.109/12,12*7,50000). The formula and the result are shown in <link>Figure 6.21</link>.</para>
+    <para id="para-00039">For example, for a $50,000 loan at 10.9% interest for 7 years, you would type =-PMT(0.109/12,12*7,50000). The formula and the result are shown in <link target-id="fig-00002" document="m00064">Figure 6.21</link>.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_06_08_002.png"/>
@@ -155,7 +155,7 @@
     </section>
     <section id="sect-00006">
     <title>Reading Amortization Tables</title>
-    <para id="para-00041">An <emphasis effect="bold">amortization table</emphasis> or amortization schedule is a table that provides the details of the periodic payments for a loan where the payments are applied to both the principal and the interest. The principal of the loan is paid down over the life of the loan. Typically, the payments each period are equal. Importantly, one of the columns will show how much of each payment is used for interest, another column shows how much is applied to the outstanding principal, and another column shows the remaining principal or balance <link>(Figure 6.22)</link>.</para>
+    <para id="para-00041">An <emphasis effect="bold">amortization table</emphasis> or amortization schedule is a table that provides the details of the periodic payments for a loan where the payments are applied to both the principal and the interest. The principal of the loan is paid down over the life of the loan. Typically, the payments each period are equal. Importantly, one of the columns will show how much of each payment is used for interest, another column shows how much is applied to the outstanding principal, and another column shows the remaining principal or balance <link target-id="fig-00003" document="m00064"> (Figure 6.22)</link>.</para>
     <figure id="fig-00003">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_06_08_003.png"/>
@@ -166,7 +166,7 @@
     <title>Reading from an Amortization Table</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00042">Using the partial amortization table <link>(Figure 6.23)</link>, answer the following questions.</para>
+    <para id="para-00042">Using the partial amortization table <link target-id="fig-00004" document="m00064"> (Figure 6.23)</link>, answer the following questions.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_06_08_004.png"/>
@@ -375,5 +375,5 @@
     <para id="para-00073"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>I</mi><mo>=</mo><mi>P</mi><mo>×</mo><mfrac><mi>r</mi><mi>n</mi></mfrac></mrow></math></para>
     <para id="para-00074" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>p</mi><mi>m</mi><mi>t</mi><mo>=</mo><mfrac><mrow><mi>P</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mo stretchy="false">(</mo><mi>r</mi><mo>/</mo><mi>n</mi><mo stretchy="false">)</mo><mo lspace="0.28em" rspace="0.28em">×</mo><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mi>r</mi><mo>/</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mi>r</mi><mo>/</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo lspace="0.28em" rspace="0.28em">×</mo><mi>t</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math></para>
     </section>
-    </content>
+    </content>   
   </document>
