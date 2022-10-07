@@ -7,284 +7,284 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-      <media alt="Insert Alt Text">
-      <image mime-type="image/jpg" src="../../media/CS_Photo_07_09_001.jpg"/>
-      </media>
-      <caption> If you roll two dice by throwing them one at a time, the face showing on the first die will affect the possible outcomes for the sum of the two dice. (credit: “dice” by Ciarán Archer/Flickr, CC BY 2.0)</caption>
-      </figure>
-      <section class="learning-objectives" id="sect-00001">
-      <title>Learning Objectives</title>
-      <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
-      <list list-type="enumerated" number-style="arabic" id="list-00001">
-      <item>Calculate conditional probabilities.</item>
-      <item>Apply the Multiplication Rule for Probability to compute probabilities.</item>
-      </list>
-      </section>
-      <para id="para-00002">Back in <link target-id="exam-00003" document="m00089" xmlns="http://cnx.rice.edu/cnxml">Example 7.18</link>, we constructed the following table (<link target-id="fig-00002" document="m00093">Figure 7.39</link>) to help us find the probabilities associated with rolling two standard 6-sided dice:</para>
-      <figure id="fig-00002">
-      <media alt="Insert Alt Text">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_029.png"/>
-      </media>
-      </figure>
-      <para id="para-00003">For example, 3 of these 36 equally likely outcomes correspond to rolling a sum of 10, so the probability of rolling a 10 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mrow><mn>36</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math>. However, if you choose to roll the dice one at a time, the probability of rolling a 10 will change after the first die comes to rest. For example, if the first die shows a 5, then the probability of rolling a sum of 10 has jumped to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>—the event will occur if the second die also shows a 5, which is 1 of 6 equally likely outcomes for the second die. If instead the first die shows a 3, then the probability of rolling a sum of 10 drops to 0—there are no outcomes for the second die that will give us a sum of 10.</para>
-      <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">Understanding how probabilities can shift as we learn new information is critical in the analysis of our second type of compound events: those built with “and.” This section will explain how to compute probabilities of those compound events.</para>
-      <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Conditional Probabilities</title>
-      <para id="para-00004">When we analyze experiments with multiple stages, we often update the probabilities of the possible final outcomes or the later stages of the experiment based on the results of one or more of the initial stages. These updated probabilities are called <term id="term-00001">conditional probabilities</term>.</para>
-      <para id="para-00044">In other words if, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> is a possible outcome of the first stage in a multistage experiment, then the probability of an event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> conditional on <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> (denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo>|</mo><mi>O</mi><mo stretchy="false">)</mo></mrow></math>, read “the probability of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math>”) is the updated probability of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> under the assumption that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> occurred.</para>
-      <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">In the example that opened this section, we might consider rolling two dice as a multistage experiment: rolling one, then the other. If we define <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> to be the event “roll a sum of 10,” <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> to be the event “first die shows 5,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi></math> to be the event “first die shows 3,” then we computed <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow></math>.</para>
-      <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Computing Conditional Probabilities</title>
-      <exercise id="exer-00001">
-      <problem id="prob-00001">
-      <list list-type="enumerated" number-style="arabic" id="list-00002">
-      <item>April is playing a coin-flipping game with Ben. She will flip a coin 3 times. If the coin lands on heads more than tails, April wins; if it lands on tails more than heads, Ben wins. Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> be the event “April wins,” <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> be “first flip is heads,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>T</mi></math> be “first flip is tails.” Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>|</mo><mi>H</mi><mo stretchy="false">)</mo></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>|</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">You are about to draw 2 cards without replacement from a deck containing only these 10 cards: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♡</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♠</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♣</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♢</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>K</mtext><mo>♠</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>K</mtext><mo>♣</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Q</mtext><mo>♡</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Q</mtext><mo>♠</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>J</mtext><mo>♡</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>J</mtext><mo>♠</mo></mrow></math>. We’ll define the following events: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> is “both cards are the same rank,” <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> is “first card is an ace,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> is “first card is a king.” Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">Jim’s sock drawer contains 5 black socks and 3 blue socks. To avoid waking his partner, Jim doesn’t want to turn the lights on, so he puts on 2 socks at random. Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math> be the event “Jim’s 2 socks match,” let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> be the event “the sock on Jim’s left foot is black,” and let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>L</mi></math> be the event “the sock on Jim’s left foot is blue.” Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>L</mi><mo stretchy="false">)</mo></mrow></math>.</item>
-      </list>
-      </problem>
-      <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00006">
-      <list list-type="enumerated" number-style="arabic" id="list-00003">
-      
-      <item>
-      <para id="para-00045"><emphasis effect="bold">Step 1.</emphasis> The sample space is {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. The event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> consists of the first 4 of those outcomes: HHH, HHT, HTH, and THH. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>4</mn><mn>8</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>.</para>
-      <para id="para-00046" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2.</emphasis> Now, let’s compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">|</mo><mi>H</mi><mo stretchy="false">)</mo></mrow></math>. We are assuming the result of the first flip is heads. That leaves us with 4 possible outcomes: HHH, HHT, HTH, and HTT. Of those, April wins 3 (HHH, HHT, HTH) and loses one (HTT). So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">|</mo><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>.</para>
-      <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3.</emphasis> If the result of the first flip is instead tails, the 4 possible outcomes are THH, THT, TTH, and TTT. Of those, April wins 1 (THH) and loses 3 (THT, TTH, TTT). So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">|</mo><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>.</para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00048"><emphasis effect="bold">Step 1.</emphasis> If the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> happens, then 1 of the 4 aces is drawn first; the remaining cards in the deck are 3 aces, 2 kings, 2 queens, and 2 jacks. In order for the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> to occur, the second card drawn has to be an ace. Since there are 3 aces among the remaining 9 cards, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>.</para>
-      <para id="para-00049" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2.</emphasis> If the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> happens instead, then the first card drawn is a king. That leaves 4 aces, 1 king, 2 queens, and 2 jacks in the deck. Under the assumption that the first card is a king, the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> will occur only if the second card is also a king. Since only one of the remaining 9 cards is a king, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow></math>.</para></item>
-      <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00050"><emphasis effect="bold">Step 1.</emphasis> We can view the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math> as a compound event using “or”: both socks are blue or both socks are black. Let’s compute the probability that both socks are blue using combinations. We’re choosing 2 socks from a group of 8; 3 of the 8 are blue. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks blue</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mrow/><mn>3</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow><mrow><msub><mrow/><mn>8</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>28</mn></mrow></mfrac></mrow></math>. Similarly, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks black</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mrow/><mn>5</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow><mrow><msub><mrow/><mn>8</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>28</mn></mrow></mfrac></mrow></math>. Therefore, since these events are mutually exclusive, we can use the Addition Rule: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks blue</mtext><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks black</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mrow><mn>28</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>28</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>13</mn></mrow><mrow><mn>28</mn></mrow></mfrac></mrow></math>. </para>
-      <para id="para-00051" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2.</emphasis> If the sock on Jim’s left foot is black (i.e., <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> occurred), then there are 4 remaining black socks of the 7 in the drawer. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow></math>.</para>
-      <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3.</emphasis> If the sock on Jim’s left foot is blue (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>L</mi></math> occurred), then there are 2 blue socks among the 7 remaining in the drawer. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math>.</para></item>
-      </list>
-      </para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00002">
-      <problem id="prob-00002">
-      <para id="para-00007"><link class="os-embed" url="#exercise/CM-C07-M9-Q001"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="check-point" id="note-00002">
-      <para id="para-00008"><emphasis effect="italic">In <link target-id="sect-00001" document="m00088" xmlns="http://cnx.rice.edu/cnxml">Tree Diagrams, Tables, and Outcomes</link>, we introduced the concept of dependence between stages of a multistage experiment. We stated at the time that two stages were dependent if the result of one stage affects the other stage. We explained that dependence in terms of the sample space, but sometimes that dependence can be a little more subtle; it’s more properly understood in terms of conditional probabilities. Two stages of an experiment are dependent if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>F</mi><mo stretchy="false">)</mo><mo>≠</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>F</mi><mo>′</mo><mo stretchy="false">)</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">for some outcome of the second stage</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">and outcome of the first stage</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math>.</para>
-      </note>
-      <note class="who-knew" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-      <title>Protecting Bombers in World War II</title>
-      <para id="para-00009">In his book <emphasis effect="italic">How Not to Be Wrong</emphasis>, Jordan Ellenberg recounts this anecdote: During World War II, the American military wanted to add additional armor plating to bomber aircraft, in order to reduce the chances that they get shot down. So, they collected data on planes after returning from missions. The data showed that the fuselage, wings, and fuel system had many more bullet holes (per unit area) than the engine compartments, so the military brass wanted to add additional armor to the parts of the plane that were hit most often. Luckily, before they added the armor to the planes, they asked for a second opinion. Abraham Wald, a Jewish mathematician who had fled the rising Nazi regime, pointed out that it was far more important that the armor plating be added to areas where there were <emphasis effect="italic">fewer</emphasis> bullet holes. Why? The planes they were studying had already completed their missions, so the military was essentially looking at conditional probabilities: the probability of suffering a bullet strike, <emphasis effect="italic">given that</emphasis> the plane made it back safely. More bullet holes in an area on the plane indicated that was a region that wasn’t as important for the plane’s survival!</para>
-      </note>
-      </section>
-      <section id="sect-00003">
-      <title>Compound Events Using “And” and the Multiplication Rule</title>
-      <para id="para-00010">For multistage experiments, the outcomes of the experiment as a whole are often stated in terms of the outcomes of the individual stages. Commonly, those statements are joined with “and.” For example, in the sock drawer example just above, one outcome might be “the left sock is black and the right sock is blue.” As with “or” compound events, these probabilities can be computed with basic arithmetic.</para>
-      <note class="formula" id="note-00004">
-      <para id="para-00011">Multiplication Rule for Probability: If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> are events associated with the first and second stages of an experiment, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo rspace="0.28em"/><mtext>and</mtext><mo rspace="0.28em">⁢</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>.</para>
-      </note>
-      <note class="check-point" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
-      <para id="para-00012"><emphasis effect="italic">In <link target-id="sect-00001" document="m00092" xmlns="http://cnx.rice.edu/cnxml">The Addition Rule for Probability</link>, we considered probabilities of events connected with “and” in the statement of the Inclusion/Exclusion Principle. These two scenarios are different; in the statement of the Inclusion/Exclusion Principle, the events connected with “and” are both events associated with the <emphasis effect="bold">same</emphasis> single-stage experiment (or the same stage of a multistage experiment). In the Multiplication Rule, we’re looking at events associated with <emphasis effect="bold">different</emphasis> stages of a multistage experiment.</emphasis></para>
-      </note>
-      <example id="exam-00002">
-      <title>Using the Multiplication Rule for Probability</title>
-      <exercise id="exer-00003">
-      <problem id="prob-00003">
-      <para id="para-00013">You are president of a club with 10 members: 4 seniors, 3 juniors, 2 sophomores, and 1 first-year. You need to choose 2 members to represent the club on 2 college committees. The first person selected will be on the Club Awards Committee and the second will be on the New Club Orientation Committee. The same person cannot be selected for both. You decide to select these representatives at random.</para>
-      <list list-type="enumerated" number-style="arabic" id="list-00004">
-      <item>What is the probability that a senior is chosen for both positions?</item>
-      <item>What is the probability that a junior is chosen first and a sophomore is chosen second?</item>
-      <item>What is the probability that a sophomore is chosen first and a senior is chosen second?</item>
-      </list>
-      </problem>
-      <solution id="sol-00002">
-      <list list-type="enumerated" number-style="arabic" id="list-00005">
-      <item>We need the probability that a senior is chosen first and a senior is chosen second. These are two stages of a multistage experiment, so we’ll apply the Multiplication Rule for Probability: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext> senior chosen first and senior chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen second</mtext><mo stretchy="false">|</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mtext>.</mtext></mrow></math> Since there are 4 seniors among the 10 members, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>4</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow></math>. Next, assuming a senior is chosen first, there are 3 seniors among the 9 remaining members. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen second</mtext><mo stretchy="false">|</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>. Putting this all together, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen first and senior chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">There are 3 juniors among the 10 members, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>junior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math>. Assuming a junior is chosen first, there are 2 sophomores among the remaining 9 members, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>sophomore chosen second</mtext><mo stretchy="false">|</mo><mtext>junior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>9</mn></mfrac></mrow></math>. Thus, using the Multiplication Rule for Probability, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>junior chosen first and sophomore chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math>.</item>
-      <item xmlns="http://cnx.rice.edu/cnxml">The probability that a sophomore is chosen first is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math>, and the probability that a senior is chosen second given that a sophomore was chosen first is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>4</mn><mn>9</mn></mfrac></mrow></math>. Thus, using the Multiplication Rule for Probability, we have: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>sophomore chosen first and senior chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>×</mo><mfrac><mn>4</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mn>45</mn></mrow></mfrac></mrow></math>.</item>
-      </list>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
-      <exercise id="exer-00004">
-      <problem id="prob-00004">
-      <para id="para-00014"><link class="os-embed" url="#exercise/CM-C07-M9-Q002"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="work-out" id="note-00007">
-      <title>The Birthday Problem</title>
-      <para id="para-00015">One of the most famous problems in probability theory is the Birthday Problem, which has to do with shared birthdays in a large group. To make the analysis easier, we’ll ignore leap days, and assume that the probability of being born on any given date is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>365</mn></mrow></mfrac></mrow></math>. Now, if you have 366 people in a room, we’re guaranteed to have at least one pair of people who share a single birthday. Imagine filling the room by first admitting someone born on January 1, then someone born on January 2, and so on… The 365th person admitted would be born on December 31. If you add one more person to the room, that person’s birthday would <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">have</emphasis> to match someone else’s.</para>
-      <para id="para-00016">Let’s look at the other end of the spectrum. If you choose two people at random, what is the probability that they share a birthday? As with many probability questions, this is best addressed by find out the probability that they do <emphasis effect="italic">not</emphasis> share a birthday. The first person’s birthday can be anything (probability 1), and the second person’s birthday can be anything other than the first person’s birthday (probability <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>). The probability that they have <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">different</emphasis> birthdays is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>. So, the probability that they share a birthday is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>365</mn></mrow></mfrac></mrow></math>.</para>
-      <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">What if we have three people? The probability that they all have different birthdays can be obtained by extending our previous calculation: The probability that two people have different birthdays is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>, so if we add a third to the mix, the probability that they have a different birthday from the other two is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>363</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>. So, the probability that all three have different birthdays is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>×</mo><mfrac><mrow><mn>363</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>≈</mo><mn>0.9918</mn></mrow></math>, and thus the probability that there’s a shared birthday in the group is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>−</mo><mn>0.9918</mn><mo>≈</mo><mn>0.0082</mn></mrow></math>.</para> 
-      <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">The big question is this: How many people do we need in the room to have the probability of a shared birthday greater than <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>? Make a guess, then with a partner keep adding hypothetical people to the group and computing probabilities until you get there!</para>
-      </note>
-      <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">It is often useful to combine the rules we’ve seen so far with the techniques we used for finding sample spaces. In particular, trees can be helpful when we want to identify the probabilities of every possible outcome in a multistage experiment. The next example will illustrate this.</para>
-      <example id="exam-00003">
-      <title>Using Tree Diagrams to Help Find Probabilities</title>
-      <exercise id="exer-00005">
-      <problem id="prob-00005">
-      <para id="para-00020">The board game <emphasis effect="italic">Clue</emphasis> uses a deck of 21 cards: 6 suspects, 6 weapons, and 9 rooms. Suppose you are about to draw 2 cards from this deck. There are 6 possible outcomes for the draw: 2 suspects, 2 weapons, 2 rooms, 1 suspect and 1 weapon, 1 suspect and 1 room, or 1 weapon and 1 room. What are the probabilities for each of these outcomes?</para>
-      </problem>
-      <solution id="sol-00003">
-      <para id="para-00021"><emphasis effect="bold">Step 1:</emphasis> Let’s start by building a tree diagram that illustrates both stages of this experiment. Let’s use S, W, and R to indicate drawing a suspect, weapon, and room, respectively (<link target-id="fig-00003" document="m00093">Figure 7.40</link>).</para>
-      <figure id="fig-00003">
-      <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage. The second stage represents the first card. The third stage representing the second card is as follows. The node, S branches into three nodes labeled S, W, and R. The node, W branches into three nodes labeled S, W, and R. The node, R branches into three nodes labeled S, W, and R. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_030.png"/>
-      </media>
-      </figure>
-      <para id="para-00022"><emphasis effect="bold">Step 2:</emphasis> We want to start computing probabilities, starting with the first stage. The probability that the first card is a suspect is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>6</mn><mrow><mn>21</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math>. The probability that the first card is a weapon is the same: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math>. Finally, the probability that the first card is a room is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>9</mn><mrow><mn>21</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>7</mn></mfrac></mrow></math>.</para>
-       <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Let’s incorporate those probabilities into our tree: label the edges going into each of the nodes representing the first-stage outcomes with the corresponding probabilities (<link target-id="fig-00004" document="m00093">Figure 7.41</link>).</para>
-      <figure id="fig-00004">
-      <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. The node, S branches into three nodes labeled S, W, and R. The node, W branches into three nodes labeled S, W, and R. The node, R branches into three nodes labeled S, W, and R. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_031.png"/>
-      </media>
-      </figure>
-      <para id="para-00024">Note that the sum of the probabilities coming out of the initial node is 1; this should always be the case for the probabilities coming out of any node!</para> 
-       <para id="para-00025"><emphasis effect="bold">Step 4:</emphasis> Let’s look at the case where the first card is a suspect. There are 3 edges emanating from that node (leading to the outcomes SS, SW, and SR). We’ll label those edges with the appropriate <emphasis effect="italic">conditional</emphasis> probabilities, under the assumption that the first card is a suspect. First, there are 5 remaining suspect cards among the 20 left in the deck, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is suspect</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>5</mn><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>. Using similar reasoning, we can compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is weapon</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>6</mn><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is room</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>9</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math>.</para> 
-      <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Checking our work, we see that the sum of these 3 probabilities is again equal to 1. Let’s add those to our tree (<link target-id="fig-00005" document="m00093">Figure 7.42</link>).</para>
-      <figure id="fig-00005">
-      <media alt="Insert Alt Text">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_032a.png"/>
-      </media>
-      </figure>
-      <para id="para-00027"><emphasis effect="bold">Step 6:</emphasis> Let’s continue filling in the conditional probabilities at the other nodes, always checking to make sure the sum of the probabilities coming out of any node is equal to 1 (<link target-id="fig-00006" document="m00093">Figure 7.43</link>).</para>
-      <figure id="fig-00006">
-      <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R with the probabilities, three-tenths, one-fourth, and nine-twentieths. The node, R branches into three nodes labeled S, W, and R with the probabilities, three-tenths, three-tenths, and two-fifths. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_032b.png"/>
-      </media>
-      </figure>
-      <para id="para-00028"><emphasis effect="bold">Step 7:</emphasis> We can compute the probability of landing on any final node by multiplying the probabilities along the path we would take to get there. For example, the probability of drawing a suspect first and a weapon second (i.e., ending up on the node labeled“SW”) is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mn>7</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math>, as illustrated in <link target-id="fig-00007" document="m00093">Figure 7.44</link>.</para>
-      <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
-      <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R with the probabilities three-tenths, one-fourth, and nine-twentieths. The node, R branches into three nodes labeled S, W, and R with the probabilities three-tenths, three-tenths, and two-fifths. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R. The path from the start node through the nodes, S and W is highlighted. The probability for the outcome, S W reads, P of S W equals 2 over 7 times 3 over 10 equals 3 over 35.">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_033.png"/>
-      </media>
-      </figure>
-      <para id="para-00029"><emphasis effect="bold">Step 8:</emphasis> Let’s fill in the rest of the probabilities (<link target-id="fig-00008" document="m00093">Figure 7.45</link>).</para>
-      <figure id="fig-00008">
-      <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R with the probabilities three-tenths, one-fourth, and nine-twentieths. The node, R branches into three nodes labeled S, W, and R with the probabilities three-tenths, three-tenths, and two-fifths. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R. The probabilities for the outcomes are as follows. P of S S equals 2 over 7 times 1 over 4 equals 1 over 14. P of S W equals 2 over 7 times 3 over 10 equals 3 over 35. P of S R equals 2 over 7 times 9 over 20 equals 9 over 70. P of W S equals 2 over 7 times 3 over 10 equals 3 over 35. P of W W equals 2 over 7 times 1 over 4 equals 1 over 14. P of W R equals 2 over 7 times 9 over 20 equals 9 over 70. P of R S equals 3 over 7 times 3 over 10 equals 9 over 70. P of R W equals 3 over 7 times 3 over 10 equals 9 over 70. P of R R equals 3 over 7 times 2 over 5 equals 6 over 35.">
-      <image mime-type="image/png" src="../../media/CS_Figure_07_09_034.png"/>
-      </media>
-      </figure>
-      <para id="para-00030"><emphasis effect="bold">Step 9:</emphasis> A helpful feature of tree diagrams is that the final outcomes are always mutually exclusive, so the Addition Rule can be directly applied. For example, the probability of drawing one suspect and one room (in any order) would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>S</mi><mi>R</mi><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>S</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>+</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac><mn>9</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math>. We can find the probabilities of the other outcomes in a similar fashion, as shown in the following table:</para>
-      <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
-      <tgroup cols="2">
-      <colspec colnum="1" colname="c1" colwidth="1pt"/>
-      <colspec colnum="2" colname="c2" colwidth="1pt"/>
-      <thead>
-      <row>
-      <entry>Outcome</entry>
-      <entry>Probability</entry>
-      </row>
-      </thead>
-      <tbody>
-      <row>
-      <entry>2 suspects</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></entry>
-      </row>
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>2 weapons</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></entry>
-      </row>
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>2 rooms</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>6</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
-      </row>
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>1 suspect and 1 weapon</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mrow><mn>35</mn></mrow></mfrac><mo>+</mo><mfrac><mn>3</mn><mrow><mn>35</mn></mrow></mfrac><mo>=</mo><mfrac><mn>6</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
-      </row>
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>1 suspect and 1 room</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>+</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac><mn>9</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
-      </row>
-      <row xmlns="http://cnx.rice.edu/cnxml">
-      <entry>1 weapon and 1 room</entry>
-      <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>+</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac><mn>9</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
-      </row>
-      </tbody>
-      </tgroup>
-      </table>
-      <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Checking once again, the sum of these 6 probabilities is 1, as expected.</para>
-      </solution>
-      </exercise>
-      </example>
-      <note class="your-turn" id="note-00008">
-      <exercise id="exer-00006">
-      <problem id="prob-00006">
-      <para id="para-00032"><link class="os-embed" url="#exercise/CM-C07-M9-Q003"/></para>
-      </problem>
-      </exercise>
-      </note>
-      <note class="work-out" id="note-00009">
-      <title>The Monty Hall Problem</title>
-      <para id="para-00033">On the original version of the game show <emphasis effect="italic">Let’s Make a Deal</emphasis>, hosted by Monty Hall, one contestant was chosen to play a game for the grand prize of the day (often a car). Here’s how it worked: On the stage were three areas concealed by numbered curtains. The car was hidden behind one of the curtains; the other two curtains hid worthless prizes (called “Zonks” on the show). The contestant would guess which curtain concealed the car. To build tension, Monty would then reveal what was behind one of the <emphasis effect="italic">other</emphasis> curtains, which was always one of the Zonks (Since Monty knew where the car was hidden, he always had at least one Zonk curtain that hadn’t been chosen that he could reveal). Monty then turned to the contestant and asked: “Do you want to stick with your original choice, or do you want to switch your choice to the other curtain?” What should the contestant do? Does it matter?</para>
-      <para id="para-00034">With a partner or in a small group, simulate this game. You can do that with a small candy (the prize) hidden under one of three cups, or with three playing cards (just decide ahead of time which card represents the “Grand Prize”). One person plays the host, who knows where the prize is hidden. Another person plays the contestant and tries to guess where the prize is hidden. After the guess is made, the host should reveal a losing option that wasn’t chosen by the contestant. The contestant then has the option to stick with the original choice or switch to the other, unrevealed option. Play about 20 rounds, taking turns in each role and making sure that both contestant strategies (stick or switch) are used equally often. After each round, make a note of whether the contestant chose “stick” or “switch” and whether the contestant won or lost. Find the empirical probability of winning under each strategy. Then, see if you can use tree diagrams to verify your findings.</para>
-      </note>
-      </section>
-      <section class="check-understanding" id="sect-00004">
-      <title>Check Your Understanding</title>
-      <exercise id="exer-00007">
-      <problem id="prob-00007">
-      <para id="para-00035"><link class="os-embed" url="#exercise/CM-C07-M9-Q004"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00008">
-      <problem id="prob-00008">
-      <para id="para-00036"><link class="os-embed" url="#exercise/CM-C07-M9-Q005"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="section-exercises" id="sect-00005">
-      <title>Exercises</title>
-      <exercise id="exer-00009">
-      <problem id="prob-00009">
-      <para id="para-00037"><link class="os-embed" url="#exercise/CM-C07-M9-Q006"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00010">
-      <problem id="prob-00010">
-      <para id="para-00038"><link class="os-embed" url="#exercise/CM-C07-M9-Q007"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00011">
-      <problem id="prob-00011">
-      <para id="para-00039"><link class="os-embed" url="#exercise/CM-C07-M9-Q008"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00012">
-      <problem id="prob-00012">
-      <para id="para-00040"><link class="os-embed" url="#exercise/CM-C07-M9-Q009"/></para>
-      </problem>
-      </exercise>
-      <exercise id="exer-00013">
-      <problem id="prob-00013">
-      <para id="para-00041"><link class="os-embed" url="#exercise/CM-C07-M9-Q010"/></para>
-      </problem>
-      </exercise>
-      </section>
-      <section class="key-terms" id="sect-00006">
-      <title>Key Terms</title>
-      <list bullet-style="bulleted" id="list-00006">
-      <item>conditional probability</item>
-      </list>
-      </section>
-      <section class="key-concepts" id="sect-00007">
-      <title>Key Concepts</title>
-      <list bullet-style="bulleted" id="list-00007">
-      <item>Conditional probabilities are computed under the assumption that the condition has already occurred.</item>
-      <item>The Multiplication Rule for Probability is used to find the probability that two events occur in sequence.</item>
-      </list>
-      </section>
-      <section class="eoc-videos" id="sect-00008">
-      <title>Videos</title>
-      <para id="para-00042"><link url="https://openstax.org/r/Playing_Punch_a_Bunch">Playing "Punch a Bunch"</link></para>
-      </section>
-      <section class="formula-review" id="sect-00009">
-      <title>Formulas</title>
-      <list bullet-style="bulleted" id="list-00008">
-      <item>If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> are events associated with the first and second stages of an experiment, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo rspace="0.28em"/><mtext>and</mtext><mo rspace="0.28em">⁢</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>.</item>
-      </list>
-      </section>
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_07_09_001.jpg"/>
+    </media>
+    <caption> If you roll two dice by throwing them one at a time, the face showing on the first die will affect the possible outcomes for the sum of the two dice. (credit: “dice” by Ciarán Archer/Flickr, CC BY 2.0)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001"><emphasis effect="bold">After completing this section, you should be able to:</emphasis></para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Calculate conditional probabilities.</item>
+    <item>Apply the Multiplication Rule for Probability to compute probabilities.</item>
+    </list>
+    </section>
+    <para id="para-00002">Back in <link target-id="exam-00003" document="m00089" xmlns="http://cnx.rice.edu/cnxml">Example 7.18</link>, we constructed the following table (<link target-id="fig-00002" document="m00093">Figure 7.39</link>) to help us find the probabilities associated with rolling two standard 6-sided dice:</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_029.png"/>
+    </media>
+    </figure>
+    <para id="para-00003">For example, 3 of these 36 equally likely outcomes correspond to rolling a sum of 10, so the probability of rolling a 10 is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mrow><mn>36</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math>. However, if you choose to roll the dice one at a time, the probability of rolling a 10 will change after the first die comes to rest. For example, if the first die shows a 5, then the probability of rolling a sum of 10 has jumped to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>—the event will occur if the second die also shows a 5, which is 1 of 6 equally likely outcomes for the second die. If instead the first die shows a 3, then the probability of rolling a sum of 10 drops to 0—there are no outcomes for the second die that will give us a sum of 10.</para>
+    <para id="para-00043" xmlns="http://cnx.rice.edu/cnxml">Understanding how probabilities can shift as we learn new information is critical in the analysis of our second type of compound events: those built with “and.” This section will explain how to compute probabilities of those compound events.</para>
+    <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Conditional Probabilities</title>
+    <para id="para-00004">When we analyze experiments with multiple stages, we often update the probabilities of the possible final outcomes or the later stages of the experiment based on the results of one or more of the initial stages. These updated probabilities are called <term id="term-00001">conditional probabilities</term>.</para>
+    <para id="para-00044">In other words, if <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> is a possible outcome of the first stage in a multistage experiment, then the probability of an event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> conditional on <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> (denoted <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo>|</mo><mi>O</mi><mo stretchy="false">)</mo></mrow></math>, read “the probability of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math>”) is the updated probability of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> under the assumption that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> occurred.</para>
+    <para id="para-00005" xmlns="http://cnx.rice.edu/cnxml">In the example that opened this section, we might consider rolling two dice as a multistage experiment: rolling one, then the other. If we define <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> to be the event “roll a sum of 10,” <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>O</mi></math> to be the event “first die shows 5,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>Q</mi></math> to be the event “first die shows 3,” then we computed <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>12</mn></mrow></mfrac></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>O</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow></math>.</para>
+    <example id="exam-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Computing Conditional Probabilities</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item>April is playing a coin-flipping game with Ben. She will flip a coin 3 times. If the coin lands on heads more than tails, April wins; if it lands on tails more than heads, Ben wins. Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> be the event “April wins,” <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>H</mi></math> be “first flip is heads,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>T</mi></math> be “first flip is tails.” Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>|</mo><mi>H</mi><mo stretchy="false">)</mo></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo>|</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">You are about to draw 2 cards without replacement from a deck containing only these 10 cards: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♡</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♠</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♣</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>A</mtext><mo>♢</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>K</mtext><mo>♠</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>K</mtext><mo>♣</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Q</mtext><mo>♡</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>Q</mtext><mo>♠</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>J</mtext><mo>♡</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext>J</mtext><mo>♠</mo></mrow></math>. We’ll define the following events: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> is “both cards are the same rank,” <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> is “first card is an ace,” and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> is “first card is a king.” Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Jim’s sock drawer contains 5 black socks and 3 blue socks. To avoid waking his partner, Jim doesn’t want to turn the lights on, so he puts on 2 socks at random. Let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math> be the event “Jim’s 2 socks match,” let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> be the event “the sock on Jim’s left foot is black,” and let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>L</mi></math> be the event “the sock on Jim’s left foot is blue.” Compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>L</mi><mo stretchy="false">)</mo></mrow></math>.</item>
+    </list>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00006">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    
+    <item>
+    <para id="para-00045"><emphasis effect="bold">Step 1.</emphasis> The sample space is {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}. The event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> consists of the first 4 of those outcomes: HHH, HHT, HTH, and THH. Thus, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>4</mn><mn>8</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>.</para>
+    <para id="para-00046" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2.</emphasis> Now, let’s compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">|</mo><mi>H</mi><mo stretchy="false">)</mo></mrow></math>. We are assuming the result of the first flip is heads. That leaves us with 4 possible outcomes: HHH, HHT, HTH, and HTT. Of those, April wins 3 (HHH, HHT, HTH) and loses one (HTT). So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">|</mo><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>.</para>
+    <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3.</emphasis> If the result of the first flip is instead tails, the 4 possible outcomes are THH, THT, TTH, and TTT. Of those, April wins 1 (THH) and loses 3 (THT, TTH, TTT). So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">|</mo><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>.</para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00048"><emphasis effect="bold">Step 1.</emphasis> If the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math> happens, then 1 of the 4 aces is drawn first; the remaining cards in the deck are 3 aces, 2 kings, 2 queens, and 2 jacks. In order for the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> to occur, the second card drawn has to be an ace. Since there are 3 aces among the remaining 9 cards, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>.</para>
+    <para id="para-00049" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2.</emphasis> If the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> happens instead, then the first card drawn is a king. That leaves 4 aces, 1 king, 2 queens, and 2 jacks in the deck. Under the assumption that the first card is a king, the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> will occur only if the second card is also a king. Since only one of the remaining 9 cards is a king, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></mrow></math>.</para></item>
+    <item xmlns="http://cnx.rice.edu/cnxml"><para id="para-00050"><emphasis effect="bold">Step 1.</emphasis> We can view the event <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>M</mi></math> as a compound event using “or”: both socks are blue or both socks are black. Let’s compute the probability that both socks are blue using combinations. We’re choosing 2 socks from a group of 8; 3 of the 8 are blue. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks blue</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mrow/><mn>3</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow><mrow><msub><mrow/><mn>8</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>28</mn></mrow></mfrac></mrow></math>. Similarly, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks black</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msub><mrow/><mn>5</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow><mrow><msub><mrow/><mn>8</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>28</mn></mrow></mfrac></mrow></math>. Therefore, since these events are mutually exclusive, we can use the Addition Rule: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks blue</mtext><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>both socks black</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mrow><mn>28</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>28</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>13</mn></mrow><mrow><mn>28</mn></mrow></mfrac></mrow></math>. </para>
+    <para id="para-00051" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2.</emphasis> If the sock on Jim’s left foot is black (i.e., <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>K</mi></math> occurred), then there are 4 remaining black socks of the 7 in the drawer. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>K</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>4</mn><mn>7</mn></mfrac></mrow></math>.</para>
+    <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3.</emphasis> If the sock on Jim’s left foot is blue (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>L</mi></math> occurred), then there are 2 blue socks among the 7 remaining in the drawer. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">|</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math>.</para></item>
+    </list>
+    </para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CM-C07-M9-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="check-point" id="note-00002">
+    <para id="para-00008"><emphasis effect="italic">In <link target-id="sect-00001" document="m00088" xmlns="http://cnx.rice.edu/cnxml">Tree Diagrams, Tables, and Outcomes</link>, we introduced the concept of dependence between stages of a multistage experiment. We stated at the time that two stages were dependent if the result of one stage affects the other stage. We explained that dependence in terms of the sample space, but sometimes that dependence can be a little more subtle; it’s more properly understood in terms of conditional probabilities. Two stages of an experiment are dependent if</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>F</mi><mo stretchy="false">)</mo><mo>≠</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">|</mo><mi>F</mi><mo>′</mo><mo stretchy="false">)</mo></mrow></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">for some outcome of the second stage</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">and outcome of the first stage</emphasis> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math>.</para>
+    </note>
+    <note class="who-knew" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <title>Protecting Bombers in World War II</title>
+    <para id="para-00009">In his book <emphasis effect="italic">How Not to Be Wrong</emphasis>, Jordan Ellenberg recounts this anecdote: During World War II, the American military wanted to add additional armor plating to bomber aircraft, in order to reduce the chances that they get shot down. So, they collected data on planes after returning from missions. The data showed that the fuselage, wings, and fuel system had many more bullet holes (per unit area) than the engine compartments, so the military brass wanted to add additional armor to the parts of the plane that were hit most often. Luckily, before they added the armor to the planes, they asked for a second opinion. Abraham Wald, a Jewish mathematician who had fled the rising Nazi regime, pointed out that it was far more important that the armor plating be added to areas where there were <emphasis effect="italic">fewer</emphasis> bullet holes. Why? The planes they were studying had already completed their missions, so the military was essentially looking at conditional probabilities: the probability of suffering a bullet strike, <emphasis effect="italic">given that</emphasis> the plane made it back safely. More bullet holes in an area on the plane indicated that was a region that wasn’t as important for the plane’s survival!</para>
+    </note>
+    </section>
+    <section id="sect-00003">
+    <title>Compound Events Using “And” and the Multiplication Rule</title>
+    <para id="para-00010">For multistage experiments, the outcomes of the experiment as a whole are often stated in terms of the outcomes of the individual stages. Commonly, those statements are joined with “and.” For example, in the sock drawer example just above, one outcome might be “the left sock is black and the right sock is blue.” As with “or” compound events, these probabilities can be computed with basic arithmetic.</para>
+    <note class="formula" id="note-00004">
+    <para id="para-00011">Multiplication Rule for Probability: If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> are events associated with the first and second stages of an experiment, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo rspace="0.28em"/><mtext>and</mtext><mo rspace="0.28em">⁢</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>.</para>
+    </note>
+    <note class="check-point" id="note-00005" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00012"><emphasis effect="italic">In <link target-id="sect-00001" document="m00092" xmlns="http://cnx.rice.edu/cnxml">The Addition Rule for Probability</link>, we considered probabilities of events connected with “and” in the statement of the Inclusion/Exclusion Principle. These two scenarios are different; in the statement of the Inclusion/Exclusion Principle, the events connected with “and” are both events associated with the <emphasis effect="bold">same</emphasis> single-stage experiment (or the same stage of a multistage experiment). In the Multiplication Rule, we’re looking at events associated with <emphasis effect="bold">different</emphasis> stages of a multistage experiment.</emphasis></para>
+    </note>
+    <example id="exam-00002">
+    <title>Using the Multiplication Rule for Probability</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00013">You are president of a club with 10 members: 4 seniors, 3 juniors, 2 sophomores, and 1 first-year. You need to choose 2 members to represent the club on 2 college committees. The first person selected will be on the Club Awards Committee and the second will be on the New Club Orientation Committee. The same person cannot be selected for both. You decide to select these representatives at random.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00004">
+    <item>What is the probability that a senior is chosen for both positions?</item>
+    <item>What is the probability that a junior is chosen first and a sophomore is chosen second?</item>
+    <item>What is the probability that a sophomore is chosen first and a senior is chosen second?</item>
+    </list>
+    </problem>
+    <solution id="sol-00002">
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>We need the probability that a senior is chosen first and a senior is chosen second. These are two stages of a multistage experiment, so we’ll apply the Multiplication Rule for Probability: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext> senior chosen first and senior chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen second</mtext><mo stretchy="false">|</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mtext>.</mtext></mrow></math> Since there are 4 seniors among the 10 members, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>4</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow></math>. Next, assuming a senior is chosen first, there are 3 seniors among the 9 remaining members. So, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen second</mtext><mo stretchy="false">|</mo><mtext>senior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>. Putting this all together, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>senior chosen first and senior chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">There are 3 juniors among the 10 members, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>junior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math>. Assuming a junior is chosen first, there are 2 sophomores among the remaining 9 members, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>sophomore chosen second</mtext><mo stretchy="false">|</mo><mtext>junior chosen first</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>9</mn></mfrac></mrow></math>. Thus, using the Multiplication Rule for Probability, we have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>junior chosen first and sophomore chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>×</mo><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>15</mn></mrow></mfrac></mrow></math>.</item>
+    <item xmlns="http://cnx.rice.edu/cnxml">The probability that a sophomore is chosen first is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math>, and the probability that a senior is chosen second given that a sophomore was chosen first is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>4</mn><mn>9</mn></mfrac></mrow></math>. Thus, using the Multiplication Rule for Probability, we have: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>sophomore chosen first and senior chosen second</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>×</mo><mfrac><mn>4</mn><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mn>45</mn></mrow></mfrac></mrow></math>.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00014"><link class="os-embed" url="#exercise/CM-C07-M9-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="work-out" id="note-00007">
+    <title>The Birthday Problem</title>
+    <para id="para-00015">One of the most famous problems in probability theory is the Birthday Problem, which has to do with shared birthdays in a large group. To make the analysis easier, we’ll ignore leap days, and assume that the probability of being born on any given date is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>365</mn></mrow></mfrac></mrow></math>. Now, if you have 366 people in a room, we’re guaranteed to have at least one pair of people who share a single birthday. Imagine filling the room by first admitting someone born on January 1, then someone born on January 2, and so on… The 365th person admitted would be born on December 31. If you add one more person to the room, that person’s birthday would <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">have</emphasis> to match someone else’s.</para>
+    <para id="para-00016">Let’s look at the other end of the spectrum. If you choose two people at random, what is the probability that they share a birthday? As with many probability questions, this is best addressed by find out the probability that they do <emphasis effect="italic">not</emphasis> share a birthday. The first person’s birthday can be anything (probability 1), and the second person’s birthday can be anything other than the first person’s birthday (probability <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>). The probability that they have <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">different</emphasis> birthdays is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>. So, the probability that they share a birthday is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>365</mn></mrow></mfrac></mrow></math>.</para>
+    <para id="para-00017" xmlns="http://cnx.rice.edu/cnxml">What if we have three people? The probability that they all have different birthdays can be obtained by extending our previous calculation: The probability that two people have different birthdays is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>, so if we add a third to the mix, the probability that they have a different birthday from the other two is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>363</mn></mrow><mrow><mn>365</mn></mrow></mfrac></mrow></math>. So, the probability that all three have different birthdays is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>364</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>×</mo><mfrac><mrow><mn>363</mn></mrow><mrow><mn>365</mn></mrow></mfrac><mo>≈</mo><mn>0.9918</mn></mrow></math>, and thus the probability that there’s a shared birthday in the group is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>−</mo><mn>0.9918</mn><mo>≈</mo><mn>0.0082</mn></mrow></math>.</para> 
+    <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">The big question is this: How many people do we need in the room to have the probability of a shared birthday greater than <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>? Make a guess, then with a partner keep adding hypothetical people to the group and computing probabilities until you get there!</para>
+    </note>
+    <para id="para-00019" xmlns="http://cnx.rice.edu/cnxml">It is often useful to combine the rules we’ve seen so far with the techniques we used for finding sample spaces. In particular, trees can be helpful when we want to identify the probabilities of every possible outcome in a multistage experiment. The next example will illustrate this.</para>
+    <example id="exam-00003">
+    <title>Using Tree Diagrams to Help Find Probabilities</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00020">The board game <emphasis effect="italic">Clue</emphasis> uses a deck of 21 cards: 6 suspects, 6 weapons, and 9 rooms. Suppose you are about to draw 2 cards from this deck. There are 6 possible outcomes for the draw: 2 suspects, 2 weapons, 2 rooms, 1 suspect and 1 weapon, 1 suspect and 1 room, or 1 weapon and 1 room. What are the probabilities for each of these outcomes?</para>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00021"><emphasis effect="bold">Step 1:</emphasis> Let’s start by building a tree diagram that illustrates both stages of this experiment. Let’s use S, W, and R to indicate drawing a suspect, weapon, and room, respectively (<link target-id="fig-00003" document="m00093">Figure 7.40</link>).</para>
+    <figure id="fig-00003">
+    <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage. The second stage represents the first card. The third stage representing the second card is as follows. The node, S branches into three nodes labeled S, W, and R. The node, W branches into three nodes labeled S, W, and R. The node, R branches into three nodes labeled S, W, and R. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_030.png"/>
+    </media>
+    </figure>
+    <para id="para-00022"><emphasis effect="bold">Step 2:</emphasis> We want to start computing probabilities, starting with the first stage. The probability that the first card is a suspect is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>6</mn><mrow><mn>21</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math>. The probability that the first card is a weapon is the same: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mn>7</mn></mfrac></mrow></math>. Finally, the probability that the first card is a room is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>9</mn><mrow><mn>21</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>7</mn></mfrac></mrow></math>.</para>
+     <para id="para-00023" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> Let’s incorporate those probabilities into our tree: label the edges going into each of the nodes representing the first-stage outcomes with the corresponding probabilities (<link target-id="fig-00004" document="m00093">Figure 7.41</link>).</para>
+    <figure id="fig-00004">
+    <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. The node, S branches into three nodes labeled S, W, and R. The node, W branches into three nodes labeled S, W, and R. The node, R branches into three nodes labeled S, W, and R. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_031.png"/>
+    </media>
+    </figure>
+    <para id="para-00024">Note that the sum of the probabilities coming out of the initial node is 1; this should always be the case for the probabilities coming out of any node!</para> 
+     <para id="para-00025"><emphasis effect="bold">Step 4:</emphasis> Let’s look at the case where the first card is a suspect. There are 3 edges emanating from that node (leading to the outcomes SS, SW, and SR). We’ll label those edges with the appropriate <emphasis effect="italic">conditional</emphasis> probabilities, under the assumption that the first card is a suspect. First, there are 5 remaining suspect cards among the 20 left in the deck, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is suspect</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>5</mn><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>. Using similar reasoning, we can compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is weapon</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>6</mn><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is room</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>9</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math>.</para> 
+    <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Checking our work, we see that the sum of these 3 probabilities is again equal to 1. Let’s add those to our tree (<link target-id="fig-00005" document="m00093">Figure 7.42</link>).</para>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_032a.png"/>
+    </media>
+    </figure>
+    <para id="para-00027"><emphasis effect="bold">Step 6:</emphasis> Let’s continue filling in the conditional probabilities at the other nodes, always checking to make sure the sum of the probabilities coming out of any node is equal to 1 (<link target-id="fig-00006" document="m00093">Figure 7.43</link>).</para>
+    <figure id="fig-00006">
+    <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R with the probabilities, three-tenths, one-fourth, and nine-twentieths. The node, R branches into three nodes labeled S, W, and R with the probabilities, three-tenths, three-tenths, and two-fifths. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_032b.png"/>
+    </media>
+    </figure>
+    <para id="para-00028"><emphasis effect="bold">Step 7:</emphasis> We can compute the probability of landing on any final node by multiplying the probabilities along the path we would take to get there. For example, the probability of drawing a suspect first and a weapon second (i.e., ending up on the node labeled “SW”) is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>2</mn><mn>7</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math>, as illustrated in <link target-id="fig-00007" document="m00093">Figure 7.44</link>.</para>
+    <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R with the probabilities three-tenths, one-fourth, and nine-twentieths. The node, R branches into three nodes labeled S, W, and R with the probabilities three-tenths, three-tenths, and two-fifths. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R. The path from the start node through the nodes, S and W is highlighted. The probability for the outcome, S W reads, P of S W equals 2 over 7 times 3 over 10 equals 3 over 35.">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_033.png"/>
+    </media>
+    </figure>
+    <para id="para-00029"><emphasis effect="bold">Step 8:</emphasis> Let’s fill in the rest of the probabilities (<link target-id="fig-00008" document="m00093">Figure 7.45</link>).</para>
+    <figure id="fig-00008">
+    <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R with the probabilities three-tenths, one-fourth, and nine-twentieths. The node, R branches into three nodes labeled S, W, and R with the probabilities three-tenths, three-tenths, and two-fifths. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R. The probabilities for the outcomes are as follows. P of S S equals 2 over 7 times 1 over 4 equals 1 over 14. P of S W equals 2 over 7 times 3 over 10 equals 3 over 35. P of S R equals 2 over 7 times 9 over 20 equals 9 over 70. P of W S equals 2 over 7 times 3 over 10 equals 3 over 35. P of W W equals 2 over 7 times 1 over 4 equals 1 over 14. P of W R equals 2 over 7 times 9 over 20 equals 9 over 70. P of R S equals 3 over 7 times 3 over 10 equals 9 over 70. P of R W equals 3 over 7 times 3 over 10 equals 9 over 70. P of R R equals 3 over 7 times 2 over 5 equals 6 over 35.">
+    <image mime-type="image/png" src="../../media/CS_Figure_07_09_034.png"/>
+    </media>
+    </figure>
+    <para id="para-00030"><emphasis effect="bold">Step 9:</emphasis> A helpful feature of tree diagrams is that the final outcomes are always mutually exclusive, so the Addition Rule can be directly applied. For example, the probability of drawing one suspect and one room (in any order) would be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>S</mi><mi>R</mi><mo stretchy="false">)</mo><mo>+</mo><mi>P</mi><mo stretchy="false">(</mo><mi>R</mi><mi>S</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>+</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac><mn>9</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math>. We can find the probabilities of the other outcomes in a similar fashion, as shown in the following table:</para>
+    <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="1pt"/>
+    <colspec colnum="2" colname="c2" colwidth="1pt"/>
+    <thead>
+    <row>
+    <entry>Outcome</entry>
+    <entry>Probability</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>2 suspects</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>2 weapons</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mrow><mn>14</mn></mrow></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>2 rooms</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>6</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>1 suspect and 1 weapon</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>3</mn><mrow><mn>35</mn></mrow></mfrac><mo>+</mo><mfrac><mn>3</mn><mrow><mn>35</mn></mrow></mfrac><mo>=</mo><mfrac><mn>6</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>1 suspect and 1 room</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>+</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac><mn>9</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>1 weapon and 1 room</entry>
+    <entry><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>+</mo><mfrac><mn>9</mn><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac><mn>9</mn><mrow><mn>35</mn></mrow></mfrac></mrow></math></entry>
+    </row>
+    </tbody>
+    </tgroup>
+    </table>
+    <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml">Checking once again, the sum of these 6 probabilities is 1, as expected.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00008">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00032"><link class="os-embed" url="#exercise/CM-C07-M9-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="work-out" id="note-00009">
+    <title>The Monty Hall Problem</title>
+    <para id="para-00033">On the original version of the game show <emphasis effect="italic">Let’s Make a Deal</emphasis>, hosted by Monty Hall, one contestant was chosen to play a game for the grand prize of the day (often a car). Here’s how it worked: On the stage were three areas concealed by numbered curtains. The car was hidden behind one of the curtains; the other two curtains hid worthless prizes (called “Zonks” on the show). The contestant would guess which curtain concealed the car. To build tension, Monty would then reveal what was behind one of the <emphasis effect="italic">other</emphasis> curtains, which was always one of the Zonks (Since Monty knew where the car was hidden, he always had at least one Zonk curtain that hadn’t been chosen that he could reveal). Monty then turned to the contestant and asked: “Do you want to stick with your original choice, or do you want to switch your choice to the other curtain?” What should the contestant do? Does it matter?</para>
+    <para id="para-00034">With a partner or in a small group, simulate this game. You can do that with a small candy (the prize) hidden under one of three cups, or with three playing cards (just decide ahead of time which card represents the “Grand Prize”). One person plays the host, who knows where the prize is hidden. Another person plays the contestant and tries to guess where the prize is hidden. After the guess is made, the host should reveal a losing option that wasn’t chosen by the contestant. The contestant then has the option to stick with the original choice or switch to the other, unrevealed option. Play about 20 rounds, taking turns in each role and making sure that both contestant strategies (stick or switch) are used equally often. After each round, make a note of whether the contestant chose “stick” or “switch” and whether the contestant won or lost. Find the empirical probability of winning under each strategy. Then, see if you can use tree diagrams to verify your findings.</para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00004">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C07-M9-Q004"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00036"><link class="os-embed" url="#exercise/CM-C07-M9-Q005"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00005">
+    <title>Exercises</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00037"><link class="os-embed" url="#exercise/CM-C07-M9-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00038"><link class="os-embed" url="#exercise/CM-C07-M9-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00039"><link class="os-embed" url="#exercise/CM-C07-M9-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00040"><link class="os-embed" url="#exercise/CM-C07-M9-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C07-M9-Q010"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00006">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00006">
+    <item>conditional probability</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00007">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00007">
+    <item>Conditional probabilities are computed under the assumption that the condition has already occurred.</item>
+    <item>The Multiplication Rule for Probability is used to find the probability that two events occur in sequence.</item>
+    </list>
+    </section>
+    <section class="eoc-videos" id="sect-00008">
+    <title>Videos</title>
+    <para id="para-00042"><link url="https://openstax.org/r/Playing_Punch_a_Bunch">Playing "Punch a Bunch"</link></para>
+    </section>
+    <section class="formula-review" id="sect-00009">
+    <title>Formulas</title>
+    <list bullet-style="bulleted" id="list-00008">
+    <item>If <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>E</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi></math> are events associated with the first and second stages of an experiment, then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo rspace="0.28em"/><mtext>and</mtext><mo rspace="0.28em">⁢</mo><mi>F</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo><mo>×</mo><mi>P</mi><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">|</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></math>.</item>
+    </list>
+    </section>
     </content>
-  </document>  
+    </document>    
