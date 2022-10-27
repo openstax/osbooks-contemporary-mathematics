@@ -28,11 +28,11 @@
     <item>Find the complement of a graph</item>
     </list>
     </section>
-    <para id="para-00002">Maps of the same region may not always look the same. For example, a map of Earth on a flat surface looks distorted at the poles. When the same regions are mapped on a spherical globe, the countries that are closer to the polls appear smaller without the distortion. Despite these differences, the two maps still communicate the same relationships between nations such as shared boundaries, and relative position on the earth. In essence, they are the same map. This means that for every point on one map, there is a corresponding point on the other map in the same relative location. In this section, we will determine exactly what characteristics need to be the shared by two graphs in order for us to consider them “the same”.</para>
+    <para id="para-00002">Maps of the same region may not always look the same. For example, a map of Earth on a flat surface looks distorted at the poles. When the same regions are mapped on a spherical globe, the countries that are closer to the polls appear smaller without the distortion. Despite these differences, the two maps still communicate the same relationships between nations such as shared boundaries, and relative position on the earth. In essence, they are the same map. This means that for every point on one map, there is a corresponding point on the other map in the same relative location. In this section, we will determine exactly what characteristics need to be the shared by two graphs in order for us to consider them “the same.”</para>
     <section id="sect-00002">
     <title>When Are Two Graphs Really the Same Graph?</title>
     <para id="para-00003">In arithmetic, when two numbers have the same value, we say they are equal, like ½ = 0.5. Although ½ and 0.5 look different, they have the same value, because they are assigned the same position on the real number line. When do we say that two graphs are equal?</para>
-    <para id="para-00004"><link target-id="fig-00003" document="m00111">Figure 12.52</link> shows Graphs <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">F</emphasis> which are identical except for the labels. Graphs are visual representations of connections. As long as two graphs indicate the same pattern of connections, like Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis>, they are considered to be equal, or in graph theory terms, <emphasis effect="bold">isomorphic</emphasis>.</para>
+    <para id="para-00004"><link target-id="fig-00003" document="m00111">Figure 12.52</link> shows Graphs <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">F</emphasis>, which are identical except for the labels. Graphs are visual representations of connections. As long as two graphs indicate the same pattern of connections, like Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis>, they are considered to be equal, or in graph theory terms, <emphasis effect="bold">isomorphic</emphasis>.</para>
     <figure id="fig-00003">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_03_047.png"/>
@@ -44,7 +44,7 @@
     <item>One graph can be transformed into the other without breaking existing connections or adding new ones.</item>
     <item>There is a correspondence between their vertices in such a way that any adjacent pair in one graph corresponds to an adjacent pair in the other graph.</item>
     </list>
-    <para id="para-00006">It is important to note that if either one of the isomorphic conditions holds, then both of them do. When we need to decide if two graphs are isomorphic, we will need to make sure that one of them holds. For example, <link target-id="fig-00004" document="m00111">Figure 12.53</link> shows how Graph <emphasis effect="italic">T</emphasis> can be bent and flipped to look like Graph <emphasis effect="italic">Z</emphasis> which means that Graphs <emphasis effect="italic">T</emphasis> and <emphasis effect="italic">Z</emphasis> satisfy condition 1 and are isomorphic.</para>
+    <para id="para-00006">It is important to note that if either one of the isomorphic conditions holds, then both of them do. When we need to decide if two graphs are isomorphic, we will need to make sure that one of them holds. For example, <link target-id="fig-00004" document="m00111">Figure 12.53</link> shows how Graph <emphasis effect="italic">T</emphasis> can be bent and flipped to look like Graph <emphasis effect="italic">Z</emphasis>, which means that Graphs <emphasis effect="italic">T</emphasis> and <emphasis effect="italic">Z</emphasis> satisfy condition 1 and are isomorphic.</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_03_048.png"/>
@@ -109,7 +109,7 @@
     </media>
     <caption>Four Representations of the Same Graph</caption>
     </figure>
-    <para id="para-00010">Looking at <link target-id="fig-00010" document="m00111">Figure 12.55</link>, how can we know that these graphs are isomorphic? We will start by checking for any obvious differences. Each of the graphs in <link target-id="fig-00010" document="m00111">Figure 12.55</link> has 4 vertices and 5 edges; so, there are no differences there. Next, we will focus on the degrees of the vertices, which have been labeled in <link target-id="fig-00011" document="m00111">Figure 12.56</link>.</para>
+    <para id="para-00010">Looking at <link target-id="fig-00010" document="m00111">Figure 12.55</link>, how can we know that these graphs are isomorphic? We will start by checking for any obvious differences. Each of the graphs in <link target-id="fig-00010" document="m00111">Figure 12.55</link> has four vertices and five edges; so, there are no differences there. Next, we will focus on the degrees of the vertices, which have been labeled in <link target-id="fig-00011" document="m00111">Figure 12.56</link>.</para>
     <figure id="fig-00011">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_03_052.png"/>
@@ -131,7 +131,7 @@
     </media>
     <caption>Transforming Graphs</caption>
     </figure>
-    <para id="para-00014">Now that we have used visual analysis to see that condition 1 holds for graphs <emphasis effect="italic">A</emphasis><sub>1</sub>, <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3</sub>, and <emphasis effect="italic">A</emphasis><sub>4</sub> in <link target-id="fig-00012" document="m00111">Figure 12.57</link>, we know that they are isomorphic. In <link target-id="fig-00013" document="m00111">Figure 12.58</link>, one of the edges of graph <emphasis effect="italic">A</emphasis><sub>4</sub> crossed another edge of the graph. By transforming it into graph <emphasis effect="italic">A</emphasis><sub>3</sub>, we have “untangled” it. Graphs that can be untangled are called <term id="term-00001">planar</term> graphs. The complete graph with 5 vertices is an example of a <term id="term-00002">nonplanar</term> graph-that means that, no matter how hard you try, you can’t untangle it. But, when you try to figure out if two graphs are the same, it can be helpful to untangle them as much as possible to make the similarities and differences more obvious.</para>
+    <para id="para-00014">Now that we have used visual analysis to see that condition 1 holds for graphs <emphasis effect="italic">A</emphasis><sub>1</sub>, <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3</sub>, and <emphasis effect="italic">A</emphasis><sub>4</sub> in <link target-id="fig-00012" document="m00111">Figure 12.57</link>, we know that they are isomorphic. In <link target-id="fig-00013" document="m00111">Figure 12.58</link>, one of the edges of graph <emphasis effect="italic">A</emphasis><sub>4</sub> crossed another edge of the graph. By transforming it into graph <emphasis effect="italic">A</emphasis><sub>3</sub>, we have “untangled” it. Graphs that can be untangled are called <term id="term-00001">planar</term> graphs. The complete graph with five vertices is an example of a <term id="term-00002">nonplanar</term> graph-that means that, no matter how hard you try, you can’t untangle it. But, when you try to figure out if two graphs are the same, it can be helpful to untangle them as much as possible to make the similarities and differences more obvious.</para>
     <example id="exam-00001">
     <title>Identifying Isomorphic Graphs</title>
     <exercise id="exer-00001">
@@ -159,7 +159,7 @@
     <caption>Cycles of Graph <emphasis effect="italic">B</emphasis><sub>1</sub> and Graph <emphasis effect="italic">B</emphasis><sub>2</sub></caption>
     </figure>
     <para id="para-00017"><emphasis effect="bold">Step 2:</emphasis> If no differences were found and an isomorphism is possible, verify one of the conditions in the definition of isomorphic.</para>
-    <para id="para-00018">Since we were able to determine that Graph <emphasis effect="italic">B</emphasis><sub>1</sub> and Graph <emphasis effect="italic">B</emphasis><sub>2</sub> have no obvious differences, and they are relatively small graphs, we will attempt to transform one graph into the other which would verify condition 1. Graph <emphasis effect="italic">B</emphasis><sub>1</sub> can be transformed into Graph <emphasis effect="italic">B</emphasis><sub>2</sub> without breaking or adding connections as shown in <link target-id="fig-00016" document="m00111">Figure 12.61</link>. Begin by untangling graph <emphasis effect="italic">B</emphasis><sub>1</sub>. Then rotate or flip as needed to see that the graphs match.</para>
+    <para id="para-00018">Since we were able to determine that Graph <emphasis effect="italic">B</emphasis><sub>1</sub> and Graph <emphasis effect="italic">B</emphasis><sub>2</sub> have no obvious differences, and they are relatively small graphs, we will attempt to transform one graph into the other, which would verify condition 1. Graph <emphasis effect="italic">B</emphasis><sub>1</sub> can be transformed into Graph <emphasis effect="italic">B</emphasis><sub>2</sub> without breaking or adding connections as shown in <link target-id="fig-00016" document="m00111">Figure 12.61</link>. Begin by untangling graph <emphasis effect="italic">B</emphasis><sub>1</sub>. Then rotate or flip as needed to see that the graphs match.</para>
     <figure id="fig-00016">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_03_057.png"/>
@@ -177,30 +177,36 @@
     </problem>
     </exercise>
     </note>
-    <para id="para-00021">The board game <emphasis effect="italic">Monopoly</emphasis>® was submitted to the U.S. Patent Office in 1935. (See <link target-id="fig-00018" document="m00111">Figure 12.63</link>.) Although the rules have been revised a bit, a very similar game board is still in use today. There have been many versions of Monopoly over the years. <link target-id="fig-00017" document="m00111">Figure 12.64</link> shows the standard modern game board as well as one of many stylized to reflect a popular theme. In this case, the spaces on the board are based on popular items from the Canadian restaurant Tim Horton's.</para>
+    <para id="para-00021">Have you ever noticed that many popular board games may look different but are really the same game? A good example is the many variations of the  board game <emphasis effect="italic">Monopoly</emphasis>®, which was submitted to the U.S. Patent Office in 1935. Although the rules have been revised a bit, a very similar game board is still in use today. There have been many versions of Monopoly over the years. Many have been stylized to reflect a popular theme, such as a show or sports team, while retaining the same game board structure. If we were to represent these different versions of the game using a graph, we would find that the graphs are isomorphic.   . Let's analyze some game boards using graph theory to determine if they have the same structure despite having different appearances.</para>
      <figure id="fig-00018">
      <media alt="Insert Alt Text">
-     <image mime-type="image/jpg" src="../../media/CS_Photo_12_03_005.jpg"/>
+     <image mime-type="image/jpg" src="../../media/CS_Photo_12_03_005.png"/>
      </media>
-     <caption>The Original 1935 <emphasis effect="italic">Monopoly</emphasis> Board Patent (credit: "Monopoly Patent" Wikimedia Commons, Public Domain)</caption>
+     <caption>Two Game Boards</caption>
      </figure>
-     <figure id="fig-00017">
-     <media alt="Insert Alt Text">
-     <image mime-type="image/jpg" src="../../media/CS_Photo_12_03_003.jpg"/>
-     </media>
-     <caption><emphasis effect="italic">Timopoly</emphasis> Board</caption>
-     </figure>
-     <example id="exam-00002">
+    <example id="exam-00002">
      <title>Deciding If Graphs are Isomorphic</title>
      <exercise id="exer-00003">
      <problem id="prob-00003">
-     <para id="para-00022">Consider the game boards for <emphasis effect="italic">Monopoly</emphasis> and <emphasis effect="italic">Timopoly</emphasis> in <link target-id="fig-00018" document="m00111">Figures 12.63</link> and <link target-id="fig-00019" document="m00111">Figures 12.64</link>. A player can move from one space to another by rolling two six-sided dice. Suppose that you constructed a graph to represent each board such that each vertex represented a space on the game board and each edge represented the ability of a player to move between two spaces based on a roll of the dice. Would the graphs be isomorphic? Explain your reasoning.</para>
+   <para id="para-00022">A teacher uses games to teach her students about colors and numbers as shown in Figure 12.63.</para>
+   <para id="para-00023">In the Colors Game, shown in Figure A, each player begins in the space marked START and proceeds in a counterclockwise direction. On each turn, the player spins a spinner marked 1 and 2 and moves forward the number of spaces shown on the spinner.  If the player lands on a space marked with any color other than white, the player must move forward or back to the other space of the same color. The first player to land in or pass the space marked END wins.</para>
+   
+   <para id="para-00065">In the Clock Game, shown in Figure B, each player begins in the space marked START and proceeds in a clockwise direction. On each turn, the player spins a spinner marked 1 and 2 and moves forward the number of spaces shown on the spinner. In the same turn, the player must read the number in the space and move forward the number of spaces indicated by a positive value or backward the number of spaces indicated by a negative value. Then the turn ends.  The first player to land in or pass the space marked END wins.</para>
+   
+   <para id="para-00068">Draw a graph or multigraph to represent each game in which the vertices are the spaces and the edges represent the ability of a player to move between the spaces either by a spin or as dictated by a marked color or number. (We will ignore the direction of motion for simplicity.) Transform one of the graphs to show that it is isomorphic to the other and explain what this tells you about the games.</para>
      </problem>
      <solution id="sol-00002">
-     <para id="para-00023">Yes, the two graphs would be isomorphic. In each case, there would be 39 vertices, one for each space except the “Go to Jail” space on the <emphasis effect="italic">Monopoly</emphasis> board (or the “Go to Training” space on the <emphasis effect="italic">Timopoly</emphasis> board). If the vertices are arranged in the same pattern as the spaces on the board, each vertex would be connected to the 12 vertices prior to it and following it by an edge since there are rolls from 1 to 12, with one exception. The “In Jail/Just Visiting” vertex (or the "In Training/Drive Thru" vertex) would also share edges with the 12 vertices between “Tennessee Avenue” and “Marvin Gardens” vertices (or "Sandwich Tr." and "Muffin Ave." vertices). So, there are 38 vertices of degree 24, and 1 vertex of degree 36 on each graph, with corresponding neighboring vertices.</para>
-     </solution>
-     </exercise>
-     </example>
+    <para id="para-00069">The graph representing the Clock Game can be transformed as shown in Figure 12.64 so that we can see that the graphs are isomorphic. There is a correspondence between their vertices in such a way that any adjacent pair in one graph corresponds to an adjacent pair in the other graph.</para>
+   <figure id="fig-00017">
+   <media alt="Insert Alt Text">
+   <image mime-type="image/jpg" src="../../media/CS_Photo_12_03_003.png"/>
+   </media>
+   <caption>Graphs for Clock Game and Colors Game</caption>
+   </figure>
+   <para id="para-00070">This tells us that the games are essentially the same game with the same moves even though the games appear to be different.</para>
+   </solution>
+   </exercise>
+   </example>
      <note class="your-turn" id="note-00002">
      <exercise id="exer-00004">
      <problem id="prob-00004">
@@ -210,19 +216,19 @@
      </note>
      <note class="people-mathematics" id="note-00003">
      <title>Elizabeth Magie</title>
-     <para id="para-00025">Game designer, engineer, comedian, and political activist, Elizabeth Magie designed a game called “Landlord’s Game” to educate fellow citizens about the dangers of monopolies and the benefits of wealth redistribution through a land tax. Magie, whose father had campaigned with Abraham Lincoln, was a proponent of a land tax, an idea popularized by Henry George’s 1879 book, <emphasis effect="italic">Progress and Poverty</emphasis>. She designed the game to be played by two sets of rules for comparison. In one version, the goal was to dominate opponents by creating monopolies, leaving one wealthy player standing in the end. In the other version, all the players were rewarded when a monopoly was created through a simulated land tax. She patented this game for the first time in 1904. Does the game board in <link target-id="fig-00036" document="m00111">Figure 12.65</link> look familiar?</para>
+     <para id="para-00025">Game designer, engineer, comedian, and political activist, Elizabeth Magie designed a game called “Landlord’s Game” to educate fellow citizens about the dangers of monopolies and the benefits of wealth redistribution through a land tax. Magie, whose father had campaigned with Abraham Lincoln, was a proponent of a land tax, an idea popularized by Henry George’s 1879 book, <emphasis effect="italic">Progress and Poverty</emphasis>. She designed the game to be played by two sets of rules for comparison. In one version, the goal was to dominate opponents by creating monopolies, leaving one wealthy player standing in the end. In the other version, all the players were rewarded when a monopoly was created through a simulated land tax. She patented this game for the first time in 1904. Does the game board in <link target-id="fig-00036" document="m00111">Figure 12.66</link> look familiar?</para>
      <figure id="fig-00036">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Photo_12_03_006.jpg"/>
      </media>
      <caption><emphasis effect="italic">Landlord’s Game</emphasis> Patent (credit: "Landlord's Game Patent" Wikimedia Commons, Public Domain)</caption>
      </figure>
-     <para id="para-00026">That’s right! A modified version of the game was obtained from friends by a man named Charles Darrow who renamed it Monopoly and sold to Parker Brothers. Parker Brothers later paid Magie $500 for the right to her patent on it. The property tax version was left behind, and the modern game of Monopoly was born. (Mary Pilon,<emphasis effect="italic">Monopoly’s Lost Female Inventor</emphasis>, September 1, 2018, National Women’s History Museum, <link url="https://openstax.org/r/womens_history"><emphasis effect="italic">“Monopoly’s</emphasis> Lost Female Inventor,</link>”</para>
+     <para id="para-00026">That’s right! A modified version of the game was obtained from friends by a man named Charles Darrow who renamed it Monopoly and sold to Parker Brothers. Parker Brothers later paid Magie $500 for the right to her patent on it. The property tax version was left behind, and the modern game of Monopoly was born. (Mary Pilon,<emphasis effect="italic">Monopoly’s Lost Female Inventor</emphasis>, September 1, 2018, National Women’s History Museum, <link url="https://openstax.org/r/womens_history"><emphasis effect="italic">“Monopoly’s</emphasis> Lost Female Inventor,”</link></para>
      </note>
      </section>
      <section id="sect-00005">
      <title>Identifying and Naming Isomorphisms</title>
-     <para id="para-00027">When two graphs are isomorphic, meaning they have the same structure, there is a correspondence between their vertices which can be named by listing corresponding pairs of vertices. This list of corresponding pairs of vertices in such a way that any adjacent pair in one graph corresponds to an adjacent pair in the other graph is called an <emphasis effect="bold">isomorphism</emphasis>. Consider the isomorphic graphs in <link target-id="fig-00003" document="m00111">Figure 12.52</link>. In <link target-id="fig-00019" document="m00111">Figure 12.66</link>, we could replace the labels Graph <emphasis effect="italic">F</emphasis> with the labels from Graph <emphasis effect="italic">A</emphasis> and have an identical graph, as in <link target-id="fig-00020" document="m00111">Figure 12.67</link>.</para>
+     <para id="para-00027">When two graphs are isomorphic, meaning they have the same structure, there is a correspondence between their vertices, which can be named by listing corresponding pairs of vertices. This list of corresponding pairs of vertices in such a way that any adjacent pair in one graph corresponds to an adjacent pair in the other graph is called an <emphasis effect="bold">isomorphism</emphasis>. Consider the isomorphic graphs in <link target-id="fig-00003" document="m00111">Figure 12.52</link>. In <link target-id="fig-00019" document="m00111">Figure 12.67</link>, we could replace the labels Graph <emphasis effect="italic">F</emphasis> with the labels from Graph <emphasis effect="italic">A</emphasis> and have an identical graph, as in <link target-id="fig-00020" document="m00111">Figure 12.68</link>.</para>
      <figure id="fig-00019">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_047.png"/>
@@ -236,7 +242,7 @@
      <caption>Corresponding Vertices</caption>
      </figure>
      <para id="para-00028">So, we can identify an isomorphism between Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis> by listing the corresponding pairs of vertices: <emphasis effect="italic">b-g</emphasis>, <emphasis effect="italic">c-h</emphasis>, <emphasis effect="italic">d-i</emphasis>, and <emphasis effect="italic">e-j</emphasis>. Notice that <emphasis effect="italic">b</emphasis> is adjacent to <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">g</emphasis> is adjacent to <emphasis effect="italic">h</emphasis>. This must be the case since <emphasis effect="italic">b</emphasis> corresponds to <emphasis effect="italic">g</emphasis> and <emphasis effect="italic">c</emphasis> corresponds to <emphasis effect="italic">h</emphasis>. The same is true for other pairs of adjacent vertices.</para>
-     <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">An isomorphism between graphs is not necessarily unique. There can be more than one isomorphism between two graphs. We can see how to form a different isomorphism between Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis> from Figure 12.40 by rotating Graph <emphasis effect="italic">F</emphasis> clockwise and comparing the rotated version of <emphasis effect="italic">F</emphasis> to Graph <emphasis effect="italic">A</emphasis> as in <link target-id="note-00001" document="m00111">Figure 12.62</link>. Now, we can see that a second isomorphism exists which has the correspondence: <emphasis effect="italic">b-j</emphasis>, <emphasis effect="italic">d-h</emphasis>, <emphasis effect="italic">c-i</emphasis>, and <emphasis effect="italic">e-g</emphasis> as shown in <link target-id="fig-00021" document="m00111">Figure 12.68</link>.</para>
+     <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">An isomorphism between graphs is not necessarily unique. There can be more than one isomorphism between two graphs. We can see how to form a different isomorphism between Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis> from Figure 12.40 by rotating Graph <emphasis effect="italic">F</emphasis> clockwise and comparing the rotated version of <emphasis effect="italic">F</emphasis> to Graph <emphasis effect="italic">A</emphasis> as in <link target-id="note-00001" document="m00111">Figure 12.62</link>. Now, we can see that a second isomorphism exists, which has the correspondence: <emphasis effect="italic">b-j</emphasis>, <emphasis effect="italic">d-h</emphasis>, <emphasis effect="italic">c-i</emphasis>, and <emphasis effect="italic">e-g</emphasis> as shown in <link target-id="fig-00021" document="m00111">Figure 12.69</link>.</para>
      <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_064.png"/>
@@ -253,7 +259,7 @@
      <title>Identifying Isomorphisms</title>
      <exercise id="exer-00005">
      <problem id="prob-00005">
-     <para id="para-00032">In <link target-id="exam-00001" document="m00111">Example 12.13</link>, we showed that the Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub> in <link target-id="table-00001" document="m00111">Figure 12.50</link> are isomorphic. In <link target-id="fig-00022" document="m00111">Figure 12.69</link>, labels have been assigned to the vertices of Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub>. Identify an isomorphism between them by listing corresponding pairs of vertices.</para>
+     <para id="para-00032">In <link target-id="exam-00001" document="m00111">Example 12.13</link>, we showed that the Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub> in <link target-id="table-00001" document="m00111">Figure 12.50</link> are isomorphic. In <link target-id="fig-00022" document="m00111">Figure 12.70</link>, labels have been assigned to the vertices of Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub>. Identify an isomorphism between them by listing corresponding pairs of vertices.</para>
      <figure id="fig-00022">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_065.png"/>
@@ -262,7 +268,7 @@
      </figure>
      </problem>
      <solution id="sol-00003">
-     <para id="para-00033"><link target-id="fig-00016" document="m00111">Figure 12.61</link> showed how to transform Graph <emphasis effect="italic">B</emphasis><sub>1</sub> to get Graph <emphasis effect="italic">B</emphasis><sub>2</sub>. In <link target-id="fig-00023" document="m00111">Figure 12.70</link>, we will do the same, but this time we will include the labels.</para>
+     <para id="para-00033"><link target-id="fig-00016" document="m00111">Figure 12.61</link> showed how to transform Graph <emphasis effect="italic">B</emphasis><sub>1</sub> to get Graph <emphasis effect="italic">B</emphasis><sub>2</sub>. In <link target-id="fig-00023" document="m00111">Figure 12.71</link>, we will do the same, but this time we will include the labels.</para>
      <figure id="fig-00023">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_066.png"/>
@@ -284,7 +290,7 @@
      <title>Recognizing an Isomorphism</title>
      <exercise id="exer-00007">
      <problem id="prob-00007">
-     <para id="para-00036">Determine whether Graphs <emphasis effect="italic">G</emphasis> and <emphasis effect="italic">S</emphasis> in <link target-id="fig-00024" document="m00111">Figure 12.72</link> are isomorphic. If not, explain how they are different. If so, name the isomorphism.</para>
+     <para id="para-00036">Determine whether Graphs <emphasis effect="italic">G</emphasis> and <emphasis effect="italic">S</emphasis> in <link target-id="fig-00024" document="m00111">Figure 12.73</link> are isomorphic. If not, explain how they are different. If so, name the isomorphism.</para>
      <figure id="fig-00024">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_068.png"/>
@@ -295,10 +301,10 @@
      <solution id="sol-00004">
      <para id="para-00037"><emphasis effect="bold">Step 1:</emphasis> Check for any differences.</para>
      <list bullet-style="bulleted" id="list-00004">
-     <item>Vertices: Graphs <emphasis effect="italic">G</emphasis> and <emphasis effect="italic">S</emphasis> each have 6 vertices.</item>
-     <item>Edges: Graphs <emphasis effect="italic">G</emphasis> and <emphasis effect="italic">S</emphasis> each have 6 edges.</item>
+     <item>Vertices: Graphs <emphasis effect="italic">G</emphasis> and <emphasis effect="italic">S</emphasis> each have six vertices.</item>
+     <item>Edges: Graphs <emphasis effect="italic">G</emphasis> and <emphasis effect="italic">S</emphasis> each have six edges.</item>
      <item>Degrees: Each graph also has two vertices of degree 1, two vertices of degree 2, and two vertices of degree 3.</item>
-     <item>Cycles: From <link target-id="fig-00025" document="m00111">Figure 12.73</link>, we can see that Graph <emphasis effect="italic">G</emphasis> contains a quadrilateral cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis>) but Graph <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">S</emphasis> has no quadrilaterals. Also, Graph <emphasis effect="italic">S</emphasis> contains a triangle cycle (<emphasis effect="italic">m</emphasis>, <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">o</emphasis>) but Graph <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">G</emphasis> has no triangles. This means that the graphs are not isomorphic.</item>
+     <item>Cycles: From <link target-id="fig-00025" document="m00111">Figure 12.74</link>, we can see that Graph <emphasis effect="italic">G</emphasis> contains a quadrilateral cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis>) but Graph <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">S</emphasis> has no quadrilaterals. Also, Graph <emphasis effect="italic">S</emphasis> contains a triangle cycle (<emphasis effect="italic">m</emphasis>, <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">o</emphasis>) but Graph <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">G</emphasis> has no triangles. This means that the graphs are not isomorphic.</item>
      </list>
      <figure id="fig-00025">
      <media alt="Insert Alt Text">
@@ -320,21 +326,21 @@
      </section>
      <section id="sect-00006">
      <title>Complementary Graphs</title>
-     <para id="para-00040">Suppose that you are a camp counselor at Camp Woebegone and you are holding a camp Olympics with four events. The campers have signed up for the events. You drew a graph in <link target-id="fig-00026" document="m00111">Figure 12.76</link> to help you visualize which events have campers in common.</para>
+     <para id="para-00040">Suppose that you are a camp counselor at Camp Woebegone and you are holding a camp Olympics with four events. The campers have signed up for the events. You drew a graph in <link target-id="fig-00026" document="m00111">Figure 12.77</link> to help you visualize which events have campers in common.</para>
      <figure id="fig-00026">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_072.png"/>
      </media>
      <caption>Graph of Events with Campers in Common</caption>
      </figure>
-     <para id="para-00041">Graph <emphasis effect="italic">E</emphasis> in <link target-id="fig-00026" document="m00111">Figure 12.76</link> shows that some of the same campers will be in events <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis>, as well as <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">d</emphasis>, and <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">c</emphasis>. What do you think the graph would look like that represented the events that do not have campers in common? It would have the same vertices, but any pair of adjacent edges in Graph <emphasis effect="italic">E</emphasis>, would not be adjacent in the new graph, and vice versa. This is called a <emphasis effect="bold">complementary</emphasis> graph, as shown in <link target-id="fig-00027" document="m00111">Figure 12.77</link>. Two graphs are complementary if they have the same set of vertices, but any vertices that are adjacent in one, are not adjacent in the other. In this case, we can say that one graph is the <emphasis effect="bold">complement </emphasis>of the other.</para>
+     <para id="para-00041">Graph <emphasis effect="italic">E</emphasis> in <link target-id="fig-00026" document="m00111">Figure 12.77</link> shows that some of the same campers will be in events <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis>, as well as <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">d</emphasis>, and <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">c</emphasis>. What do you think the graph would look like that represented the events that do not have campers in common? It would have the same vertices, but any pair of adjacent edges in Graph <emphasis effect="italic">E</emphasis>, would not be adjacent in the new graph, and vice versa. This is called a <emphasis effect="bold">complementary</emphasis> graph, as shown in <link target-id="fig-00027" document="m00111">Figure 12.78</link>. Two graphs are complementary if they have the same set of vertices, but any vertices that are adjacent in one, are not adjacent in the other. In this case, we can say that one graph is the <emphasis effect="bold">complement </emphasis>of the other.</para>
      <figure id="fig-00027">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_073.png"/>
      </media>
      <caption>Graphs of Camp Olympics</caption>
      </figure>
-     <para id="para-00042">One way to find the complement of a graph is to draw the complete graph with the same number of vertices and remove all the edges that were in the original graph. Let’s say you wanted to find the complement of Graph <emphasis effect="italic">E</emphasis> from <link target-id="fig-00015" document="m00111">Figure 12.60</link>, and you didn’t already know it was Graph <emphasis effect="italic">F</emphasis>. You could start with the complete graph with four vertices and remove the edges that are in Graph <emphasis effect="italic">E</emphasis> as shown in <link target-id="fig-00028" document="m00111">Figure 12.78</link>.</para>
+     <para id="para-00042">One way to find the complement of a graph is to draw the complete graph with the same number of vertices and remove all the edges that were in the original graph. Let’s say you wanted to find the complement of Graph <emphasis effect="italic">E</emphasis> from <link target-id="fig-00015" document="m00111">Figure 12.60</link>, and you didn’t already know it was Graph <emphasis effect="italic">F</emphasis>. You could start with the complete graph with four vertices and remove the edges that are in Graph <emphasis effect="italic">E</emphasis> as shown in <link target-id="fig-00028" document="m00111">Figure 12.79</link>.</para>
      <figure id="fig-00028">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_074.png"/>
@@ -354,7 +360,7 @@
      </problem>
      <solution id="sol-00005">
      <list list-type="enumerated" number-style="arabic" id="list-00006">
-     <item>In <link target-id="fig-00029" document="m00111">Figure 12.79</link>, we have drawn a vertex for each exam and edges between any vertices that have no students in common.
+     <item>In <link target-id="fig-00029" document="m00111">Figure 12.80</link>, we have drawn a vertex for each exam and edges between any vertices that have no students in common.
      <figure id="fig-00029">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_075.png"/>
@@ -362,14 +368,14 @@
      <caption>Graph of Exams with No Students in Common</caption>
      </figure>
      </item>
-     <item>One way to get the complement of the graph in <link target-id="fig-00029" document="m00111">Figure 12.79</link> is to draw a complete graph with the same number of vertices and remove the edges they have in common as shown in <link target-id="fig-00030" document="m00111">Figure 12.80</link>.
+     <item>One way to get the complement of the graph in <link target-id="fig-00029" document="m00111">Figure 12.80</link> is to draw a complete graph with the same number of vertices and remove the edges they have in common as shown in <link target-id="fig-00030" document="m00111">Figure 12.81</link>.
      <figure id="fig-00030">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_076.png"/>
      </media>
      <caption>Remove Unwanted Edges from Complete Graph</caption>
      </figure>
-     <para id="para-00044">The final graph of the complement is in <link target-id="fig-00031" document="m00111">Figure 12.81</link>.</para>
+     <para id="para-00044">The final graph of the complement is in <link target-id="fig-00031" document="m00111">Figure 12.82</link>.</para>
      <figure id="fig-00031">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_077.png"/>
@@ -377,7 +383,7 @@
      <caption>Graph of Exams with Students in Common</caption>
      </figure>
      </item>
-     <item>In the graph in <link target-id="fig-00031" document="m00111">Figure 12.81</link>, the vertices are still the exams, and a pair of adjacent vertices represents a pair of exams that have students in common.</item>
+     <item>In the graph in <link target-id="fig-00031" document="m00111">Figure 12.82</link>, the vertices are still the exams, and a pair of adjacent vertices represents a pair of exams that have students in common.</item>
      </list>
      </solution>
      </exercise>
@@ -394,7 +400,7 @@
      <title>Using a Complement to Find an Isomorphism</title>
      <exercise id="exer-00011">
      <problem id="prob-00011">
-     <para id="para-00047">Use <link target-id="fig-00032" document="m00111">Figure 12.83</link> to answer each question.</para>
+     <para id="para-00047">Use <link target-id="fig-00032" document="m00111">Figure 12.84</link> to answer each question.</para>
      <figure id="fig-00032">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_080.png"/>
@@ -403,13 +409,13 @@
      </figure>
      <list list-type="enumerated" number-style="arabic" id="list-00007">
      <item>Find the complement of Graph <emphasis effect="italic">K</emphasis>.</item>
-     <item>Identify an isomorphism between the complement of Graph <emphasis effect="italic">K</emphasis> from part 1, and the complement of Graph <emphasis effect="italic">H</emphasis> in <link target-id="fig-00029" document="m00111">Figure 12.79</link>.</item>
-     <item>Confirm that the correspondence between the vertices you found in part 2 also gives an isomorphism between Graph <emphasis effect="italic">H</emphasis> from <link target-id="fig-00028" document="m00111">Figure 12.78</link>, and Graph <emphasis effect="italic">K</emphasis> from <link target-id="fig-00032" document="m00111">Figure 12.83</link>.</item>
+     <item>Identify an isomorphism between the complement of Graph <emphasis effect="italic">K</emphasis> from part 1, and the complement of Graph <emphasis effect="italic">H</emphasis> in <link target-id="note-00008" document="m00111">Figure 12.83</link>.</item>
+     <item>Confirm that the correspondence between the vertices you found in part 2 also gives an isomorphism between Graph <emphasis effect="italic">H</emphasis> from <link target-id="note-00008" document="m00111">Figure 12.83</link>, and Graph <emphasis effect="italic">K</emphasis> from <link target-id="fig-00032" document="m00111">Figure 12.84</link>.</item>
      </list>
      </problem>
      <solution id="sol-00006">
      <list list-type="enumerated" number-style="arabic" id="list-00008">
-     <item>The complement of Graph <emphasis effect="italic">K</emphasis> can be found by removing the edges of Graph <emphasis effect="italic">K</emphasis> from a complete graph with the same vertices as shown in <link target-id="fig-00033" document="m00111">Figure 12.84</link>
+     <item>The complement of Graph <emphasis effect="italic">K</emphasis> can be found by removing the edges of Graph <emphasis effect="italic">K</emphasis> from a complete graph with the same vertices as shown in <link target-id="fig-00033" document="m00111">Figure 12.85</link>.
      <figure id="fig-00033">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_081.png"/>
@@ -417,7 +423,7 @@
      <caption>Find Complement of Graph <emphasis effect="italic">K</emphasis></caption>
      </figure>
      </item>
-     <item>An isomorphism between the complement of Graph <emphasis effect="italic">K</emphasis> and the complement of Graph <emphasis effect="italic">H</emphasis> is <emphasis effect="italic">A-M</emphasis>, <emphasis effect="italic">C-L</emphasis>, <emphasis effect="italic">E-N</emphasis>, <emphasis effect="italic">B-O</emphasis>, and <emphasis effect="italic">D-P</emphasis>, which is confirmed by transforming the complement of Graph <emphasis effect="italic">K</emphasis> in <link target-id="fig-00034" document="m00111">Figure 12.85</link>
+     <item>An isomorphism between the complement of Graph <emphasis effect="italic">K</emphasis> and the complement of Graph <emphasis effect="italic">H</emphasis> is <emphasis effect="italic">A-M</emphasis>, <emphasis effect="italic">C-L</emphasis>, <emphasis effect="italic">E-N</emphasis>, <emphasis effect="italic">B-O</emphasis>, and <emphasis effect="italic">D-P</emphasis>, which is confirmed by transforming the complement of Graph <emphasis effect="italic">K</emphasis> in <link target-id="fig-00034" document="m00111">Figure 12.86</link>.
      <figure id="fig-00034" xmlns="http://cnx.rice.edu/cnxml">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_082.png"/>
@@ -425,7 +431,7 @@
      <caption>Isomorphism between Complements of <emphasis effect="italic">K</emphasis> and <emphasis effect="italic">H</emphasis></caption>
      </figure>
      </item>
-     <item><link target-id="fig-00035" document="m00111">Figure 12.86</link> shows how Graph <emphasis effect="italic">K</emphasis> can be transformed into Graph <emphasis effect="italic">H</emphasis> to confirm that the correspondence is <emphasis effect="italic">A-M</emphasis>, <emphasis effect="italic">C-L</emphasis>, <emphasis effect="italic">E-N</emphasis>, <emphasis effect="italic">B-O</emphasis>, and <emphasis effect="italic">D-P</emphasis> also gives an isomorphism between Graph <emphasis effect="italic">K</emphasis> and Graph <emphasis effect="italic">H</emphasis>.
+     <item><link target-id="fig-00035" document="m00111">Figure 12.87</link> shows how Graph <emphasis effect="italic">K</emphasis> can be transformed into Graph <emphasis effect="italic">H</emphasis> to confirm that the correspondence is <emphasis effect="italic">A-M</emphasis>, <emphasis effect="italic">C-L</emphasis>, <emphasis effect="italic">E-N</emphasis>, <emphasis effect="italic">B-O</emphasis>, and <emphasis effect="italic">D-P</emphasis> also gives an isomorphism between Graph <emphasis effect="italic">K</emphasis> and Graph <emphasis effect="italic">H</emphasis>.
      <figure id="fig-00035" xmlns="http://cnx.rice.edu/cnxml">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_083.png"/>
@@ -451,7 +457,7 @@
      </note>
      <note class="work-out" id="note-00010">
      <para id="para-00054">Here is an activity you can do with a few of your classmates that will build your graph comparison skills.</para>
-     <para id="para-00055"><emphasis effect="bold">Step 1:</emphasis> Draw a planar graph with the following characteristics: exactly 5 vertices, 1 vertex of degree four, at least 2 vertices of degree three, and exactly 8 edges. Give names to the vertices. Make sure you do not use the same letters or numbers to label your vertices as your classmates do.</para>
+     <para id="para-00055"><emphasis effect="bold">Step 1:</emphasis> Draw a planar graph with the following characteristics: exactly five vertices, one vertex of degree four, at least two vertices of degree three, and exactly eight edges. Give names to the vertices. Make sure you do not use the same letters or numbers to label your vertices as your classmates do.</para>
      <para id="para-00056"><emphasis effect="bold">Step 2:</emphasis> Analyze your graph. What is the degree of each vertex? Does your graph have any cyclic subgraphs? If so, list them and indicate their sizes.</para>
      <para id="para-00057"><emphasis effect="bold">Step 3:</emphasis> Draw and analyze the complement of your graph. How many edges and vertices does it have? What is the degree of each vertex? Does the complementary graph have any cyclic subgraphs? If so, list them and indicate their sizes.</para>
      <para id="para-00058"><emphasis effect="bold">Step 4:</emphasis> Compare your graphs to each of your classmates’ graphs. Does your graph have the same number of edges and vertices as the graph of your classmate? Does your graph have the same size cyclic subgraphs as the graph of your classmate? How does the complement of your graph compare to the complement of the graph of your classmate? Determine if your graph is isomorphic to your classmates’ graph. If so, give a correspondence that demonstrates the isomorphism. If not, explain how you know.</para>
@@ -492,12 +498,7 @@
      <para id="para-00064"><link class="os-embed" url="#exercise/CM-C12-M3-Q012"/></para>
      </problem>
      </exercise>
-     <exercise id="exer-00019">
-     <problem id="prob-00019">
-     <para id="para-00065"><link class="os-embed" url="#exercise/CM-C12-M3-Q013"/></para>
-     </problem>
-     </exercise>
-     <exercise id="exer-00020">
+    <exercise id="exer-00020">
      <problem id="prob-00020">
      <para id="para-00066"><link class="os-embed" url="#exercise/CM-C12-M3-Q015"/></para>
      </problem>
@@ -528,5 +529,5 @@
      <title>Videos</title>
      <para id="para-00067"><link url="https://openstax.org/r/Determine_If_Two">Determine If Two Graphs Are Isomorphic and Identify the Isomorphism</link></para>
      </section>
-     </content>
-     </document>       
+     </content>   
+     </document>
