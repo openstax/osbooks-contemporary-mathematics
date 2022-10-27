@@ -20,7 +20,7 @@
     <item>State the Chinese postman problem.</item>
     <item>Describe and identify Euler Circuits.</item>
     <item>Apply the Euler Circuits Theorem.</item>
-    <item>Evaluate Euler Circuits in real world applications.</item>
+    <item>Evaluate Euler Circuits in real-world applications.</item>
     </list>
     </section>
     <para id="para-00002">The delivery of goods is a huge part of our daily lives. From the factory to the distribution center, to the local vendor, or to your front door, nearly every product that you buy has been shipped multiple times to get to you. If the cost and time of that delivery is too great, you will not be able to afford the product. Delivery personnel have to leave from one location, deliver the goods to various places, and then return to their original location and do all of this in an organized way without losing money. How do delivery services find the most efficient delivery route? The answer lies in graph theory.</para>
@@ -38,7 +38,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_136.png"/>
     </media>
-    <caption>Connected Vs. Disconnected</caption>
+    <caption>Connected vs. Disconnected</caption>
     </figure>
     <para id="para-00005">When you are working with a planar graph, you can also determine if a graph is connected by untangling it. If you draw it so that so that none of the edges are overlapping, like we did with Graph <emphasis effect="italic">X</emphasis> in <link target-id="fig-00003" document="m00119">Figure 12.148</link>, it is easier to see that the graph is disconnected.</para>
     <figure id="fig-00004">
@@ -48,7 +48,7 @@
     <caption>Untangling Graph <emphasis effect="italic">X</emphasis></caption>
     </figure>
     <para id="para-00006">Versions 2 and 3 of Graph <emphasis effect="italic">X</emphasis> in <link target-id="fig-00004" document="m00119">Figure 12.149</link> each have the same number of vertices, number of edges, degrees of the vertices, and pairs of adjacent vertices as version 1. In other words, each version retains the same structure as the original graph. Since versions 2 and 3 of Graph <emphasis effect="italic">X</emphasis>, do not have overlapping edges, it is easier to identify pairs of vertices that do not have paths between them, and it is more obvious that Graph <emphasis effect="italic">X</emphasis> is disconnected. In fact, there are two completely separate, disconnected subgraphs, one with the vertices in <emphasis effect="italic">{a, b, e}</emphasis>, and the other with the vertices <emphasis effect="italic">{c, d, f}</emphasis></para>
-    <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">These sets of vertices together with all of their edges are called <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">components</emphasis> of Graph <emphasis effect="italic">X</emphasis>. A <emphasis effect="bold">component</emphasis> of a graph is a subgraph in which there is a path between each pair of vertices in the subgraph, but no edges between any of the vertices in the subgraph and a vertex that is not in the subgraph.</para>
+    <para id="para-00057" xmlns="http://cnx.rice.edu/cnxml">These sets of vertices together with all of their edges are called <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">components</emphasis> of Graph <emphasis effect="italic">X</emphasis>. A component of a graph is a subgraph in which there is a path between each pair of vertices in the subgraph, but no edges between any of the vertices in the subgraph and a vertex that is not in the subgraph.</para>
     <para id="para-00007">Now let’s focus on Graph <emphasis effect="italic">Y</emphasis> from Figure 12.136. As in Graph <emphasis effect="italic">X</emphasis>, there is a path between vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis>, as well as between vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">e</emphasis>, but Graph <emphasis effect="italic">Y</emphasis> is different from Graph <emphasis effect="italic">X</emphasis> because of vertex <emphasis effect="italic">g</emphasis>. Not only is there a path between vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">g</emphasis>, but vertex <emphasis effect="italic">g</emphasis> bridges the gap between <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">c</emphasis> with the path <emphasis effect="italic">a → b → g → c</emphasis>. Similarly, there is a path between vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">d</emphasis> and vertices <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">f</emphasis>: <emphasis effect="italic">a → b → g → d</emphasis>, <emphasis effect="italic">a → b → g → d → f</emphasis>. Since there is a path between vertex <emphasis effect="italic">a</emphasis> and every other vertex, Graph <emphasis effect="italic">Y</emphasis> is connected. You can also see this a bit more clearly by untangling Graph <emphasis effect="italic">Y</emphasis> as in <link target-id="fig-00005" document="m00119">Figure 12.150</link>. Even when <emphasis effect="italic">Y</emphasis> is drawn so that the edges do not overlap, the graph cannot be drawn as two separate, unconnected pieces. In other words, Graph <emphasis effect="italic">Y</emphasis> has only one component with the vertices <emphasis effect="italic">{a, b, c, d, e, f}</emphasis>.</para>
     <para id="para-00058" xmlns="http://cnx.rice.edu/cnxml">We can give an alternate definition of <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">connected</emphasis> and <emphasis effect="bold">disconnected</emphasis> using the idea of components. A graph is connected if it has only one component. A graph is disconnected if it has more than one component. These alternate definitions are equivalent to the previous definitions. This means that you can confirm a graph is connected or disconnected either by checking to see if there is a path between each vertex and each other vertex, or by identifying the number of components. A graph is connected if it has only one component.</para>
     <figure id="fig-00005">
@@ -114,7 +114,7 @@
     </section>
     <section id="sect-00003">
     <title>Origin of Euler Circuits</title>
-    <para id="para-00013">The city of Konigsberg, modern day Kaliningrad, Russia, has waterways that divide up the city. In the 1700s, the city had 7 bridges over the various waterways. The map of those bridges is shown in <link target-id="fig-00007" document="m00119">Figure 12.153</link>. The question as to whether it was possible to find a route that crossed each bridge exactly once and return to the starting point was known as the Konigsberg Bridge Problem. In 1735, one of the most influential mathematicians of all time, Leonard Euler, solved the problem using an area of mathematics that he created himself, graph theory!</para>
+    <para id="para-00013">The city of Konigsberg, modern day Kaliningrad, Russia, has waterways that divide up the city. In the 1700s, the city had seven bridges over the various waterways. The map of those bridges is shown in <link target-id="fig-00007" document="m00119">Figure 12.153</link>. The question as to whether it was possible to find a route that crossed each bridge exactly once and return to the starting point was known as the Konigsberg Bridge Problem. In 1735, one of the most influential mathematicians of all time, Leonard Euler, solved the problem using an area of mathematics that he created himself, graph theory!</para>
     <figure id="fig-00007">
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_05_002.jpg"/>
@@ -126,7 +126,7 @@
     <para id="para-00061"><link url="https://openstax.org/r/hoxAspffBg8">Recognizing Euler Trails and Euler Circuits</link></para>
     </note>
     
-     <para id="para-00059">Euler was able to prove that, in order to have an Euler circuit, the degrees of all the vertices of a graph have to be even. He also proved that any graph with that characteristic must have an Euler circuit. So, saying that a connected graph is Eulerian is the same as saying it has vertices with all even degrees, known as the <emphasis effect="bold">Eulerian circuit theorem</emphasis>.</para>
+    <para id="para-00059">Euler was able to prove that, in order to have an Euler circuit, the degrees of all the vertices of a graph have to be even. He also proved that any graph with that characteristic must have an Euler circuit. So, saying that a connected graph is Eulerian is the same as saying it has vertices with all even degrees, known as the <emphasis effect="bold">Eulerian circuit theorem</emphasis>.</para>
     <figure id="fig-00008">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_142.png"/>
@@ -140,8 +140,8 @@
     </media>
     <caption>A Vertex of Degree 3</caption>
     </figure>
-    <para id="para-00016">First imagine the vertex of degree 3 shown in <link target-id="fig-00009" document="m00119">Figure 12.155</link> is not the starting vertex. At some point, each edge must be travelled. The first time one of the 3 edges is travelled, the direction will be toward the vertex, and the second time it will be away from the vertex. Then, at some point, the third edge must be travelled coming in toward the vertex again. This is a problem, because the only way to get back to the starting vertex is to then visit one of the three edges a second time. So, this vertex cannot be part of an Euler circuit.</para>
-    <para id="para-00017">Next imagine the vertex of degree 3 shown in <link target-id="fig-00009" document="m00119">Figure 12.155</link> is the starting vertex. The first time one of the edges is travelled, the direction is away from the vertex. At some point, the second edge will be travelled coming in toward the vertex, and the third edge will be the way back out, but the starting vertex is also the ending vertex in a circuit. The only way to return to the vertex is now to travel one of the edges a second time. So, again, this vertex cannot be part of an Euler circuit.</para>
+    <para id="para-00016">First imagine the vertex of degree 3 shown in <link target-id="fig-00009" document="m00119">Figure 12.155</link> is not the starting vertex. At some point, each edge must be traveled. The first time one of the three edges is traveled, the direction will be toward the vertex, and the second time it will be away from the vertex. Then, at some point, the third edge must be traveled coming in toward the vertex again. This is a problem, because the only way to get back to the starting vertex is to then visit one of the three edges a second time. So, this vertex cannot be part of an Euler circuit.</para>
+    <para id="para-00017">Next imagine the vertex of degree 3 shown in <link target-id="fig-00009" document="m00119">Figure 12.155</link> is the starting vertex. The first time one of the edges is traveled, the direction is away from the vertex. At some point, the second edge will be traveled coming in toward the vertex, and the third edge will be the way back out, but the starting vertex is also the ending vertex in a circuit. The only way to return to the vertex is now to travel one of the edges a second time. So, again, this vertex cannot be part of an Euler circuit.</para>
     <para id="para-00018">For the same reason that a vertex of degree 3 can never be part of an Euler circuit, a vertex of any odd degree cannot either. We can use this fact and the graph in <link target-id="fig-00010" document="m00119">Figure 12.156</link> to solve the Konigsberg Bridge Problem. Since the degrees of the vertices of the graph in <link target-id="fig-00009" document="m00119">Figure 12.155</link> are not even, the graph is not Eulerian and it cannot have an Euler circuit. This means it is not possible to travel through the city of Konigsberg, crossing every bridge exactly once, and returning to your starting position.</para>
     <figure id="fig-00010">
     <media alt="Insert Alt Text">
@@ -199,7 +199,7 @@
     <solution id="sol-00003">
     <list list-type="enumerated" number-style="arabic" id="list-00005">
     <item>The graph is in <link target-id="fig-00015" document="m00119">Figure 12.161</link>.
-     <figure id="fig-00015">
+    <figure id="fig-00015">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_149.png"/>
     </media>
@@ -248,8 +248,8 @@
     <para id="para-00029">Now that each of the edges is included in one and only once circuit, we can create one large circuit by inserting the second and third circuits into the first. We will insert them at their starting vertices 2 and 3</para>
     <equation id="eq-00001"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>1</mn><mo>→</mo><mi>A</mi><mo>→</mo><menclose notation="box"><mn>2</mn></menclose><mo>→</mo><mi>B</mi><mo>→</mo><menclose notation="box"><mn>3</mn></menclose><mo>→</mo><mi>C</mi><mo>→</mo><mn>4</mn><mo>→</mo><mi>G</mi><mo>→</mo><mn>5</mn><mo>→</mo><mi>J</mi><mo>→</mo><mn>1</mn></mrow></math></equation>
     <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">becomes</para> 
-     <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mn>1</mn><mo>→</mo><mi>A</mi><mo>→</mo><menclose notation="box"><mrow><mn>2</mn><mo>→</mo><mi>D</mi><mo>→</mo><mn>6</mn><mo>→</mo><mi>E</mi><mo>→</mo><mn>7</mn><mo>→</mo><mi>F</mi><mo>→</mo><mn>2</mn></mrow></menclose><mo>→</mo><mi>B</mi><mo>→</mo></mtd></mtr><mtr><mtd><menclose notation="box"><mrow><mn>3</mn><mo>→</mo><mi>H</mi><mo>→</mo><mn>5</mn><mo>→</mo><mi>I</mi><mo>→</mo><mn>1</mn><mo>→</mo><mi>K</mi><mo>→</mo><mn>3</mn></mrow></menclose><mo>→</mo><mi>C</mi><mo>→</mo><mn>4</mn><mo>→</mo><mi>G</mi><mo>→</mo><mn>5</mn><mo>→</mo><mi>J</mi><mo>→</mo><mn>1</mn></mtd></mtr></mtable></math></equation>
-    <para id="para-00063" xmlns="http://cnx.rice.edu/cnxml">Finally, we can name the circuit using vertices, 1 → 2 → 6 → 7 → 2 → 3 → 5 → 1 → 3 → 4 → 5 → 1, or edges, <emphasis effect="italic">A</emphasis> → <emphasis effect="italic">D</emphasis>→ <emphasis effect="italic">E</emphasis> → <emphasis effect="italic">F</emphasis> → <emphasis effect="italic">B</emphasis> → <emphasis effect="italic">H</emphasis> → <emphasis effect="italic">I</emphasis> → <emphasis effect="italic">K</emphasis> → <emphasis effect="italic">C</emphasis> → G → <emphasis effect="italic">J</emphasis>.</para> 
+    <equation id="eq-00002"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnalign="left"><mtr><mtd><mn>1</mn><mo>→</mo><mi>A</mi><mo>→</mo><menclose notation="box"><mrow><mn>2</mn><mo>→</mo><mi>D</mi><mo>→</mo><mn>6</mn><mo>→</mo><mi>E</mi><mo>→</mo><mn>7</mn><mo>→</mo><mi>F</mi><mo>→</mo><mn>2</mn></mrow></menclose><mo>→</mo><mi>B</mi><mo>→</mo></mtd></mtr><mtr><mtd><menclose notation="box"><mrow><mn>3</mn><mo>→</mo><mi>H</mi><mo>→</mo><mn>5</mn><mo>→</mo><mi>I</mi><mo>→</mo><mn>1</mn><mo>→</mo><mi>K</mi><mo>→</mo><mn>3</mn></mrow></menclose><mo>→</mo><mi>C</mi><mo>→</mo><mn>4</mn><mo>→</mo><mi>G</mi><mo>→</mo><mn>5</mn><mo>→</mo><mi>J</mi><mo>→</mo><mn>1</mn></mtd></mtr></mtable></math></equation>
+    <para id="para-00063" xmlns="http://cnx.rice.edu/cnxml">Finally, we can name the circuit using vertices, 1 → 2 → 6 → 7 → 2 → 3 → 5 → 1 → 3 → 4 → 5 → 1, or edges, <emphasis effect="italic">A</emphasis> → <emphasis effect="italic">D</emphasis> → <emphasis effect="italic">E</emphasis> → <emphasis effect="italic">F</emphasis> → <emphasis effect="italic">B</emphasis> → <emphasis effect="italic">H</emphasis> → <emphasis effect="italic">I</emphasis> → <emphasis effect="italic">K</emphasis> → <emphasis effect="italic">C</emphasis> → G → <emphasis effect="italic">J</emphasis>.</para> 
     <para id="para-00064">Let's review the steps we used to find this Eulerian Circuit.</para>
     <para id="para-00031" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Steps to Find an Euler Circuit in an Eulerian Graph</emphasis></para>
     <para id="para-00032"><emphasis effect="bold">Step 1</emphasis> - Find a circuit beginning and ending at any point on the graph. If the circuit crosses every edges of the graph, the circuit you found is an Euler circuit. If not, move on to step 2.</para>
@@ -274,30 +274,30 @@
     <solution id="sol-00004">
     <list list-type="enumerated" number-style="arabic" id="list-00007">
     <item>The graph is connected because it has only one component. Also, each of the vertices in graph <emphasis effect="italic">F</emphasis> has even degree as shown in <link target-id="fig-00020" document="m00119">Figure 12.167</link>. So, the graph is Eulerian.
-     <figure id="fig-00020">
+    <figure id="fig-00020">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_156.png"/>
     </media>
     <caption>Degrees of Vertices in Graph <emphasis effect="italic">F</emphasis></caption>
     </figure></item>
     <item><emphasis effect="bold">Step 1:</emphasis> Beginning at vertex <emphasis effect="italic">c</emphasis>, identify circuit <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> as shown in <link target-id="fig-00021" document="m00119">Figure 12.168</link>. Since this circuit does not cover every edge in the graph, move on to Step 2.
-     <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_157.png"/>
     </media>
     <caption>First Circuit in Graph <emphasis effect="italic">F</emphasis></caption>
     </figure>
     <emphasis effect="bold">Step 2:</emphasis> Find another circuit beginning at one of the vertices in the first circuit, using only edges that have not been used in the first circuit. It is possible to do this using either vertex <emphasis effect="italic">c</emphasis> or vertex <emphasis effect="italic">b</emphasis>. In <link target-id="fig-00022" document="m00119">Figure 12.169</link>, we have used vertex <emphasis effect="italic">b</emphasis> as the starting and ending point for a second circuit, <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis>. Since all edges have been crossed by one of the two circuits, move on to Step 3.
-     <figure id="fig-00022" xmlns="http://cnx.rice.edu/cnxml">
+    <figure id="fig-00022" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_158.png"/>
     </media>
     <caption>Second Circuit in Graph <emphasis effect="italic">F</emphasis></caption>
     </figure>
     <emphasis effect="bold">Step 3:</emphasis> Combine the two circuits into one. Replace vertex <emphasis effect="italic">b</emphasis> in the first circuit with the whole second circuit that begins at vertex <emphasis effect="italic">b</emphasis>.
-     <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>c</mi><mo>→</mo><mi>e</mi><mo>→</mo><menclose notation="box"><mi>b</mi></menclose><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mtext>becomes</mtext></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>e</mi><mo>→</mo><menclose notation="box"><mrow><mi>b</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow></menclose><mo>→</mo><mi>c</mi></mtd></mtr></mtable></math>.</equation>
+    <equation id="eq-00003"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable><mtr><mtd><mi>c</mi><mo>→</mo><mi>e</mi><mo>→</mo><menclose notation="box"><mi>b</mi></menclose><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mtext>becomes</mtext></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>e</mi><mo>→</mo><menclose notation="box"><mrow><mi>b</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow></menclose><mo>→</mo><mi>c</mi></mtd></mtr></mtable></math>.</equation>
     <newline xmlns="http://cnx.rice.edu/cnxml"/>An Euler circuit that begins at vertex <emphasis effect="italic">c</emphasis> is <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis>.
-     </item>
+    </item>
     </list>
     </solution>
     </exercise>
@@ -326,14 +326,14 @@
     <caption>Graph of Subdivision</caption>
     </figure>
     <para id="para-00038">Since the graph of the subdivision has vertices of odd degree, there is no Euler circuit. This means that there is no route through the subdivision that visits every block of every street without repeating a block. What should our delivery person do? They need to repeat as few blocks as possible. The technique we will use to find a closed walk that repeats as few edges as possible is called <emphasis effect="bold">eulerization</emphasis>. This method adds duplicate edges to a graph to create vertices of even degree so that the graph will have an Euler circuit.</para>
-    <para id="para-00039">In <link target-id="fig-00025" document="m00119">Figure 12.73</link>, the 8 vertices of odd degree in the graph of the subdivision are circled in green. We have added duplicate edges between the pairs of vertices which changes the degrees of the vertices to even degrees so the resulting multigraph has an Euler circuit. In other words, we have eulerized the graph.</para>
+    <para id="para-00039">In <link target-id="fig-00025" document="m00119">Figure 12.73</link>, the eight vertices of odd degree in the graph of the subdivision are circled in green. We have added duplicate edges between the pairs of vertices, which changes the degrees of the vertices to even degrees so the resulting multigraph has an Euler circuit. In other words, we have eulerized the graph.</para>
     <figure id="fig-00025">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_159.png"/>
     </media>
     <caption>An Eulerized Graph</caption>
     </figure>
-    <para id="para-00040">The duplicate edges in the eulerized graph correspond to blocks that our delivery person would have to travel twice. By keeping these duplicate edges to a minimum, we ensure the shortest possible route. It can be challenging to determine the fewest duplicate edges needed to eulerize a graph, but you can never do better than half the number of odd vertices. In the graph in 12.159, we have found a way to fix the 8 vertices of odd degree with only 4 duplicate edges. Since 4 is half of 8, we will never do better.</para>
+    <para id="para-00040">The duplicate edges in the eulerized graph correspond to blocks that our delivery person would have to travel twice. By keeping these duplicate edges to a minimum, we ensure the shortest possible route. It can be challenging to determine the fewest duplicate edges needed to eulerize a graph, but you can never do better than half the number of odd vertices. In the graph in 12.159, we have found a way to fix the eight vertices of odd degree with only four duplicate edges. Since four is half of eight, we will never do better.</para>
     <note class="check-point" id="note-00005">
     <para id="para-00041"><emphasis effect="italic">IMPORTANT! The duplicate edges that we add indicate places where the route will pass twice. An entirely new edge between two vertices that were not previously adjacent would indicate that our postal delivery person created a new road through someone’s property! So, <emphasis effect="bold">we can duplicate existing edges, but we cannot create new ones</emphasis>.</emphasis></para>
     </note>
@@ -358,7 +358,7 @@
     <list list-type="enumerated" number-style="arabic" id="list-00009">
     <item>Multigraph <emphasis effect="italic">B</emphasis> is not an eulerization of <emphasis effect="italic">A</emphasis> because the edge <emphasis effect="italic">N</emphasis> between vertices <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">d</emphasis> is not a duplicate of an existing edge. Multigraph <emphasis effect="italic">E</emphasis> is not an eulerization of <emphasis effect="italic">A</emphasis> because vertices <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">e</emphasis> have odd degree.</item>
     <item>Multigraph <emphasis effect="italic">C</emphasis> uses 3 duplicate edges while multigraph <emphasis effect="italic">D</emphasis> only uses 2. So, <emphasis effect="italic">D</emphasis> uses the fewest.</item>
-    <item>Since there were 4 vertices in Graph <emphasis effect="italic">A</emphasis>, the fewest number of edges that could possibly eulerize the graph is half of 4, which is 2. So, it is not possible to eulerize Graph <emphasis effect="italic">A</emphasis> using fewer edges.</item>
+    <item>Since there were four vertices in Graph <emphasis effect="italic">A</emphasis>, the fewest number of edges that could possibly eulerize the graph is half of four, which is two. So, it is not possible to eulerize Graph <emphasis effect="italic">A</emphasis> using fewer edges.</item>
     </list>
     </solution>
     </exercise>
@@ -456,7 +456,7 @@
     <item>disconnected</item>
     <item>Euler circuit</item>
     <item>Eulerian graph</item> 
-     <item>Chinese postman problem</item>
+    <item>Chinese postman problem</item>
     <item>Eulerization</item>
     </list>
     </section>
@@ -464,12 +464,18 @@
     <title>Key Concepts</title>
     <list bullet-style="bulleted" id="list-00012">
     <item>A connected graph has only one component.</item> 
-     <item>The Euler circuit theorem states that an Euler circuit exists in every connected graph in which all vertices of even degree, but not in disconnected graphs with one or more vertices of odd degree.</item>
+    <item>The Euler circuit theorem states that an Euler circuit exists in every connected graph in which all vertices have even degree, but not in disconnected graphs or any graph with one or more vertices of odd degree.</item>
     <item>The Chinese postman problem asks how to find the shortest closed trail that visits all edges at least once.</item> 
-     <item>If an Euler circuit exists, it is always the best solution to the Chinese postman problem.</item> 
-     <item>Eulerization is the process of adding duplicate edges to a graph so that the new multigraph has an Euler circuit.</item> 
-     <item>The minimum number of duplicated edges needed to eulerize a graph is half the number of odd vertices or more.</item>
+    <item>If an Euler circuit exists, it is always the best solution to the Chinese postman problem.</item> 
+    <item>Eulerization is the process of adding duplicate edges to a graph so that the new multigraph has an Euler circuit.</item> 
+    <item>The minimum number of duplicated edges needed to eulerize a graph is half the number of odd vertices or more.</item>
     </list>
     </section>
-    </content>
+   <section class="eoc-videos" id="sect-00011">
+    <title>Videos</title>
+   <para id="para-00065"><link url="https://openstax.org/r/qWxAQ-BeXeU">Connected and Disconnected Graphs in Graph Theory</link></para>
+   <para id="para-00066"><link url="https://openstax.org/r/hoxAspffBg8">Recognizing Euler Trails and Euler Circuits</link></para>
+   <para id="para-00067"><link url="https://openstax.org/r/IeRJWobrwXM">Existence of Euler Circuits in Graph Theory</link></para>
+   </section>
+    </content>   
     </document>
