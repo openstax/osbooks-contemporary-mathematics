@@ -6,388 +6,388 @@
   <md:uuid>8be2bfc6-8069-470f-9ef6-819504fcd54a</md:uuid>
   </metadata>
   <content>
-  <figure id="fig-00001">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/jpg" src="../../media/CS_Photo_12_08_001.jpg"/>
-  </media>
-  <caption>A school bus picks up children along a planned route. (credit: “Kids at School Bus Stop” by Ty Hatch/Flickr, CC-BY 2.0)</caption>
-  </figure>
-  <section class="learning-objectives" id="sect-00001">
-  <title>Learning Objectives</title>
-  <para id="para-00001">After completing this section, you should be able to:</para>
-  <list list-type="enumerated" number-style="arabic" id="list-00001">
-  <item>Describe and identify Hamilton paths.</item>
-  <item>Evaluate Hamilton paths in real world applications.</item>
-  <item>Distinguish between Hamilton paths and Euler trails.</item>
-  </list>
-  </section>
-  <para id="para-00002">In the United States, school buses carry 25 million children between school and home every day. The total distance they travel is around 6 billion kilometers per year. In the city of Boston, Massachusetts, the 2016 budget for running those buses was $120 million dollars. In 2017, the city held a competition to find ways to cut costs and the Quantum Team from the MIT Operations Research Center came to the rescue, using a computer algorithm to identify the most efficient and least costly routes which saved the city of Boston $5 million each year and even reduced daily CO<sub>2</sub> emissions by 9,000 kilograms! (<emphasis effect="italic">This US city put an algorithm in charge of its school bus routes and saved $5 million</emphasis>, Sean Fleming, World Economic Forum)</para>
-  <para id="para-00003">The problem the Quantum Team tackled involves graph theory. Imagine a graph in which vertices are the bus depot, the school, and the bus stops along a particular route. The bus must start at the depot, visit every stop exactly once, and end at the school. The route is a special kind of path that visits every vertex exactly once. Can you guess what those paths are called?</para>
-  <section id="sect-00002">
-  <title>Hamilton Paths</title>
-  <para id="para-00004">Just as circuits which visit each vertex in a graph exactly once are called Hamilton cycles (or Hamilton circuits), paths which visit each vertex on a graph exactly once are called <emphasis effect="bold">Hamilton paths</emphasis>. As we explore Hamilton paths, you might find it helpful to refresh your memory about the relationships between walks, trails, and paths by looking at <link target-id="fig-00011" document="m00117">Figure 12.105</link>. We know that paths are walks that don’t repeat any vertices or edges. So, a Hamilton path visits every vertex without repeating any vertices or edges. <link target-id="fig-00003" document="m00122">Figure 12.242</link> shows a path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis> and a Hamilton path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis>.</para>
-  <figure id="fig-00002">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_099.png"/>
-  </media>
-  <caption>Walks, Trails, and Paths</caption>
-  </figure>
-  <figure id="fig-00003">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_204.png"/>
-  </media>
-  <caption>Path or Hamilton Path?</caption>
-  </figure>
-  <example id="exam-00001">
-  <title>Identifying Hamilton Paths</title>
-  <exercise id="exer-00001">
-  <problem id="prob-00001">
-  <para id="para-00005">Which of the following sequences of vertices is a Hamilton path for Graph <emphasis effect="italic">Q</emphasis> in <link target-id="fig-00004" document="m00122">Figure 12.243</link>?</para>
-  <figure id="fig-00004">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_192.png"/>
-  </media>
-  <caption>Graph <emphasis effect="italic">Q</emphasis></caption>
-  </figure>
-  <list list-type="enumerated" number-style="arabic" id="list-00006">
-  <item><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis></item>
-  <item><emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">h</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis></item>
-  <item><emphasis effect="italic">h</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis></item>
-  </list>
-  </problem>
-  <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
-  <para id="para-00006">Sequence a is a path, because it is a walk that doesn’t repeat any vertices or edges, but not a Hamilton path because it skips vertex <emphasis effect="italic">h</emphasis>. Sequence b is a path that visits each vertex exactly once; so, it is a Hamilton path. Sequence c is a walk, but it is not a path because it visits vertices <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">e</emphasis>, and <emphasis effect="italic">b</emphasis> each more than once; so, it cannot be a Hamilton path. So, we can see that only sequence b is a Hamilton path.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00001">
-  <exercise id="exer-00002">
-  <problem id="prob-00002">
-  <para id="para-00007"><link class="os-embed" url="#exercise/CM-C12-M8-Q001"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <note class="check-point" id="note-00002">
-  <para id="para-00008"><emphasis effect="italic">TIP! Since a Hamilton path visits each vertex exactly once, it must have the same number of vertices listed as appear in the graph.</emphasis></para>
-  </note>
-  <section id="sect-00003">
-  <title>Finding Hamilton Paths</title>
-  <para id="para-00009">Suppose you were visiting an aquarium with some friends. The map of the aquarium is given in <link target-id="fig-00005" document="m00122">Figure 12.245</link>. The letters represent the exhibits.</para>
-  <figure id="fig-00005">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_165.png"/>
-  </media>
-  <caption>Map of Aquarium Exhibits</caption>
-  </figure>
-  <para id="para-00010"><link target-id="fig-00006" document="m00122">Figure 12.246</link> shows a graph of the aquarium in which each vertex represents an exhibit and each edge is a route between the pair of exhibits that doesn’t bypass another exhibit.</para>
-  <figure id="fig-00006">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_205.png"/>
-  </media>
-  <caption>Graph of Aquarium</caption>
-  </figure>
-  <para id="para-00011">Let’s see if we can plan a tour of the exhibits that visits each exhibit exactly once, beginning at exhibit <emphasis effect="italic">O</emphasis> and ending at exhibit <emphasis effect="italic">C</emphasis>. Suppose that, after exhibit <emphasis effect="italic">O</emphasis>, we plan to visit exhibit <emphasis effect="italic">Q</emphasis> and then exhibit <emphasis effect="italic">M</emphasis>. After <emphasis effect="italic">M</emphasis>, should we plan to visit <emphasis effect="italic">N</emphasis>, <emphasis effect="italic">L</emphasis>, or <emphasis effect="italic">R</emphasis>? Take a look at <link target-id="fig-00007" document="m00122">Figure 12.247</link>. If <emphasis effect="italic">R</emphasis> is not chosen next, that will cause a problem later on. Do you see what it is?</para>
-  <figure id="fig-00007">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_206.png"/>
-  </media>
-  <caption>Choosing Vertex <emphasis effect="italic">L</emphasis>, <emphasis effect="italic">N</emphasis>, or <emphasis effect="italic">R</emphasis></caption>
-  </figure>
-  <para id="para-00012">If <emphasis effect="italic">L</emphasis> or <emphasis effect="italic">N</emphasis> is chosen next, the only way to get to <emphasis effect="italic">R</emphasis> later will be to go from <emphasis effect="italic">S</emphasis> to <emphasis effect="italic">R</emphasis>, and then we will not be able to continue without repeating a vertex. So, we will pick <emphasis effect="italic">R</emphasis> next, and then the only option is <emphasis effect="italic">S</emphasis>. After <emphasis effect="italic">S</emphasis> we have another choice to make. As shown in <link target-id="fig-00008" document="m00122">Figure 12.248</link>, the next choice is between <emphasis effect="italic">B</emphasis> and <emphasis effect="italic">E</emphasis>. Keeping in mind that the goal is to end at <emphasis effect="italic">C</emphasis>, which would be the better choice?</para>
-  <figure id="fig-00008">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_207.png"/>
-  </media>
-  <caption>Choosing Vertex <emphasis effect="italic">B</emphasis> or <emphasis effect="italic">E</emphasis></caption>
-  </figure>
-  <para id="para-00013">If you said vertex <emphasis effect="italic">B</emphasis>, you are right! Otherwise, we will not be able to visit <emphasis effect="italic">B</emphasis> later. After <emphasis effect="italic">B</emphasis>, the only option is <emphasis effect="italic">E</emphasis>. Then we can choose either <emphasis effect="italic">D</emphasis> or <emphasis effect="italic">G</emphasis>. Either will work fine. Let’s choose <emphasis effect="italic">G</emphasis> as shown in <link target-id="fig-00009" document="m00122">Figure 12.249</link>. After <emphasis effect="italic">G</emphasis>, you must visit <emphasis effect="italic">H</emphasis>, but should you visit <emphasis effect="italic">K</emphasis> or <emphasis effect="italic">L</emphasis> after that?</para>
-  <figure id="fig-00009">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_208.png"/>
-  </media>
-  <caption>Choose Vertex <emphasis effect="italic">L</emphasis> or <emphasis effect="italic">K</emphasis></caption>
-  </figure>
-  <para id="para-00014">If you said to go to vertex <emphasis effect="italic">L</emphasis> next, you are right! Otherwise, it will be impossible to visit <emphasis effect="italic">N</emphasis> without repeating a vertex. So, next is <emphasis effect="italic">L</emphasis>, then <emphasis effect="italic">N</emphasis>, then <emphasis effect="italic">K</emphasis>, and then at <emphasis effect="italic">J</emphasis> you have another decision to make we can see in <link target-id="fig-00010" document="m00122">Figure 12.250</link>. Should you choose <emphasis effect="italic">F</emphasis>, <emphasis effect="italic">I</emphasis>, or <emphasis effect="italic">P</emphasis> next?</para>
-  <figure id="fig-00010">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_209.png"/>
-  </media>
-  <caption>Choose Vertex <emphasis effect="italic">F</emphasis>, <emphasis effect="italic">I</emphasis> or <emphasis effect="italic">P</emphasis></caption>
-  </figure>
-  <para id="para-00015">If you said <emphasis effect="italic">P</emphasis>, you are right! If you choose either of the other two vertices, you will not be able to visit <emphasis effect="italic">P</emphasis> later without passing through another vertex twice. Once <emphasis effect="italic">P</emphasis> is chosen, vertex <emphasis effect="italic">I</emphasis> must be next followed by <emphasis effect="italic">F</emphasis>. Then you have to choose between <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">D</emphasis> as shown in <link target-id="fig-00011" document="m00122">Figure 12.251</link>.</para>
-  <figure id="fig-00011">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_210.png"/>
-  </media>
-  <caption>Choose Vertex <emphasis effect="italic">A</emphasis> or <emphasis effect="italic">D</emphasis></caption>
-  </figure>
-  <para id="para-00016">In this case, we must go to <emphasis effect="italic">D</emphasis> then to <emphasis effect="italic">A</emphasis> so that we can visit <emphasis effect="italic">C</emphasis> without backtracking. The complete Hamilton path is shown in <link target-id="fig-00012" document="m00122">Figure 12.252</link>.</para>
-  <figure id="fig-00012">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_211.png"/>
-  </media>
-  <caption>Complete Hamilton Path from <emphasis effect="italic">O</emphasis> to <emphasis effect="italic">C</emphasis></caption>
-  </figure>
-  <para id="para-00017">So, one Hamilton path that begins at <emphasis effect="italic">O</emphasis> and ends at <emphasis effect="italic">C</emphasis> is <emphasis effect="italic">O</emphasis> → <emphasis effect="italic">Q</emphasis> → <emphasis effect="italic">M</emphasis> → <emphasis effect="italic">R</emphasis> → <emphasis effect="italic">S</emphasis> → <emphasis effect="italic">B</emphasis> → <emphasis effect="italic">E</emphasis> → <emphasis effect="italic">G</emphasis> → <emphasis effect="italic">H</emphasis> → <emphasis effect="italic">L</emphasis> → <emphasis effect="italic">N</emphasis> → <emphasis effect="italic">K</emphasis> → <emphasis effect="italic">J</emphasis> → <emphasis effect="italic">P</emphasis> → <emphasis effect="italic">I</emphasis> → <emphasis effect="italic">F</emphasis> → <emphasis effect="italic">D</emphasis> → <emphasis effect="italic">A</emphasis> → <emphasis effect="italic">C</emphasis>.</para>
-  <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">There is no set sequence of steps that can be used to find a Hamilton path if it exists, but it does help to keep in mind where we are headed and avoid choices that will make returning to a particular vertex impossible without repeating vertices. Let’s practice finding Hamilton paths.</para>
-  <example id="exam-00002">
-  <title>Finding a Hamilton Path</title>
-  <exercise id="exer-00003">
-  <problem id="prob-00003">
-  <para id="para-00019">Use <link target-id="fig-00013" document="m00122">Figure 12.253</link> to find a Hamilton path between vertices <emphasis effect="italic">C</emphasis> and <emphasis effect="italic">D</emphasis>.</para>
-  <figure id="fig-00013">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_212.png"/>
-  </media>
-  <caption>Graph <emphasis effect="italic">G</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00002">
-  <para id="para-00020">If we start at vertex <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">A</emphasis> must be next. Then we must choose between <emphasis effect="italic">B</emphasis> and <emphasis effect="italic">F</emphasis>. If we choose <emphasis effect="italic">F</emphasis>, we will have to backtrack to get to include <emphasis effect="italic">B</emphasis>; so, we must choose <emphasis effect="italic">B</emphasis>. Once we choose <emphasis effect="italic">B</emphasis>, we must choose <emphasis effect="italic">F</emphasis> next. After <emphasis effect="italic">F</emphasis>, we choose <emphasis effect="italic">E</emphasis>, because we want to end at <emphasis effect="italic">D</emphasis>. So, a Hamilton path between <emphasis effect="italic">C</emphasis> and <emphasis effect="italic">D</emphasis> is <emphasis effect="italic">C</emphasis> → <emphasis effect="italic">A</emphasis> → <emphasis effect="italic">B</emphasis> → <emphasis effect="italic">F</emphasis> → <emphasis effect="italic">E</emphasis> → <emphasis effect="italic">D</emphasis>.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
-  <exercise id="exer-00004">
-  <problem id="prob-00004">
-  <para id="para-00021"><link class="os-embed" url="#exercise/CM-C12-M8-Q002"/></para>
-  </problem>
-  </exercise>
-  </note>
-  </section>
-  </section>
-  <section id="sect-00004">
-  <title>Existence of a Hamilton Path</title>
-  <para id="para-00022">It turns out that there is no Hamilton path between vertices <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">E</emphasis> in Graph <emphasis effect="italic">G</emphasis> in <link target-id="fig-00013" document="m00122">Figure 12.253</link>. To understand why, let’s imagine there is a red apple tree on one side of a bridge and a green apple tree on the other side of the bridge. Now suppose someone asked you to pick up all the fallen apples under each tree without crossing the bridge more than once, and making sure that the first apple you pick up and the last apple you pick up are both red. You would say, that is impossible! To have the first and last apple be red would either require leaving the green apples on the ground or crossing the bridge twice.</para>
-  <para id="para-00023">Let’s see how this relates to finding a Hamilton path between <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">E</emphasis> in Graph <emphasis effect="italic">G</emphasis>. The edge <emphasis effect="italic">AC</emphasis> is a bridge because, if it were removed, the graph would become disconnected with two components, the component {<emphasis effect="italic">C</emphasis>} and the component {<emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">D</emphasis>, <emphasis effect="italic">E</emphasis>, <emphasis effect="italic">F</emphasis>}. So, we can think of the vertices <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">D</emphasis>, <emphasis effect="italic">E</emphasis>, and <emphasis effect="italic">F</emphasis> as the red apples, vertex <emphasis effect="italic">C</emphasis> as the green apple, and the edge <emphasis effect="italic">AC</emphasis> is the bridge between them as in <link target-id="fig-00014" document="m00122">Figure 12.254</link>.</para>
-  <figure id="fig-00014" xmlns="http://cnx.rice.edu/cnxml">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_213.png"/>
-  </media>
-  <caption>Bridge Between Red and Green Apples</caption>
-  </figure>
-  <para id="para-00024">The creation of a Hamilton path requires a visit to each vertex, just as picking up all the apples requires a visit to each apple. <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">E</emphasis> are both red apples; so, a path from <emphasis effect="italic">A</emphasis> to <emphasis effect="italic">E</emphasis> would both start and end at a red apple, just as you were asked to do. And you wouldn’t be able to cross the bridge twice because that would mean visiting <emphasis effect="italic">A</emphasis> twice which is not allowed in a Hamilton path. So, it is impossible to find a Hamilton path from <emphasis effect="italic">A</emphasis> to <emphasis effect="italic">E</emphasis> just as it was impossible to pick up all the apples without crossing the bridge more than once. By the same reasoning, if a graph has a bridge, there will never be a Hamilton path that begins and ends on the same side of that bridge, meaning beginning and ending at vertices that would be in the same component if the bridge were removed from the graph.</para>
-  <example id="exam-00003">
-  <title>Finding a Hamilton Path If One Exists</title>
-  <exercise id="exer-00005">
-  <problem id="prob-00005">
-  <para id="para-00025">Find a Hamilton path from vertex <emphasis effect="italic">s</emphasis> to vertex <emphasis effect="italic">v</emphasis> for each graph in <link target-id="fig-00015" document="m00122">Figure 12.255</link> or indicate that there is none.</para>
-  <figure id="fig-00015">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_184.png"/>
-  </media>
-  <caption>Graphs <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis> and <emphasis effect="italic">D</emphasis></caption>
-  </figure>
-  </problem>
-  <solution id="sol-00003">
-  <para id="para-00026">Graph <emphasis effect="italic">A</emphasis>: Edge <emphasis effect="italic">uw</emphasis> is a bridge connecting component {<emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">v</emphasis>} to the component {<emphasis effect="italic">w</emphasis>, <emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>, <emphasis effect="italic">z</emphasis>}. There is no Hamilton path from vertex <emphasis effect="italic">s</emphasis> to vertex <emphasis effect="italic">v</emphasis> because they would be part of the same component if the bridge <emphasis effect="italic">uw</emphasis> were removed.</para>
-  <para id="para-00027">Graph <emphasis effect="italic">B</emphasis>: There are no bridges in Graph <emphasis effect="italic">B</emphasis>. The only method we have to determine if a Hamilton path from vertex <emphasis effect="italic">s</emphasis> to vertex <emphasis effect="italic">v</emphasis> exists is to try every possibility. From vertex <emphasis effect="italic">s</emphasis>, we can visit either vertex <emphasis effect="italic">y</emphasis> or vertex <emphasis effect="italic">t</emphasis>. We will try vertex <emphasis effect="italic">y</emphasis> first and then come back to see what happens with vertex <emphasis effect="italic">t</emphasis>. After visiting <emphasis effect="italic">y</emphasis>, we must visit <emphasis effect="italic">z</emphasis> and then <emphasis effect="italic">u</emphasis>, but then we have to decide between vertices <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">t</emphasis>, and <emphasis effect="italic">v</emphasis> next as shown in <link target-id="fig-00016" document="m00122">Figure 12.256</link>.</para>
-  <figure id="fig-00016">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_214.png"/>
-  </media>
-  <caption>Choose Vertex <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">t</emphasis>, or <emphasis effect="italic">v</emphasis></caption>
-  </figure>
-  <para id="para-00028">Vertex <emphasis effect="italic">v</emphasis> is not an option since we want to end at <emphasis effect="italic">v</emphasis>. Vertex <emphasis effect="italic">t</emphasis> is not an option since that would force us to go to visit <emphasis effect="italic">s</emphasis> a second time. So, we must go to vertex <emphasis effect="italic">r</emphasis> next. After vertex <emphasis effect="italic">r</emphasis>, we must visit <emphasis effect="italic">x</emphasis>, then <emphasis effect="italic">w</emphasis>, then <emphasis effect="italic">v</emphasis>, but we missed vertex <emphasis effect="italic">t</emphasis> as shown in <link target-id="fig-00017" document="m00122">Figure 12.257</link>.</para>
-  <figure id="fig-00017">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_215.png"/>
-  </media>
-  <caption>Missed Vertex <emphasis effect="italic">t</emphasis></caption>
-  </figure>
-  <para id="para-00029">Let’s go back to the beginning and choose <emphasis effect="italic">t</emphasis> instead of <emphasis effect="italic">y</emphasis>. After <emphasis effect="italic">t</emphasis>, we must go to <emphasis effect="italic">u</emphasis> and then we have a choice to make between <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">v</emphasis>, and <emphasis effect="italic">z</emphasis> as shown in <link target-id="fig-00018" document="m00122">Figure 12.258</link>.</para>
-  <figure id="fig-00018">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_216.png"/>
-  </media>
-  <caption>Choose Vertex <emphasis effect="italic">v</emphasis>, <emphasis effect="italic">r</emphasis>, or <emphasis effect="italic">z</emphasis></caption>
-  </figure>
-  <para id="para-00030">Vertex <emphasis effect="italic">v</emphasis> is not an option since we want to end at <emphasis effect="italic">v</emphasis>. Vertex <emphasis effect="italic">z</emphasis> is not an option since that would force us to go <emphasis effect="italic">y</emphasis> and then to visit <emphasis effect="italic">s</emphasis> a second time. So, we must go to vertex <emphasis effect="italic">r</emphasis> next. After <emphasis effect="italic">r</emphasis>, we must go to <emphasis effect="italic">x</emphasis> then <emphasis effect="italic">w</emphasis> then <emphasis effect="italic">v</emphasis>, where we have to stop even though we have missed vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">z</emphasis>, as shown in <link target-id="fig-00019" document="m00122">Figure 12.259</link>.</para>
-  <figure id="fig-00019">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_217.png"/>
-  </media>
-  <caption>Missed Vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">z</emphasis></caption>
-  </figure>
-  <para id="para-00031">So, we have tried every possible route and there are no Hamilton paths between <emphasis effect="italic">s</emphasis> and <emphasis effect="italic">v</emphasis> in Graph <emphasis effect="italic">B</emphasis>.</para>
-  <para id="para-00032">Graph <emphasis effect="italic">C</emphasis>: In Graph <emphasis effect="italic">C</emphasis>, there is a Hamilton path, <emphasis effect="italic">s</emphasis> → <emphasis effect="italic">t</emphasis> → <emphasis effect="italic">u</emphasis> → <emphasis effect="italic">x</emphasis> → <emphasis effect="italic">w</emphasis> → <emphasis effect="italic">v</emphasis>.</para>
-  <para id="para-00033" xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">D</emphasis>: In Graph <emphasis effect="italic">D</emphasis>, there is a bridge, <emphasis effect="italic">tx</emphasis>, which would form components {<emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">q</emphasis>} and {<emphasis effect="italic">v</emphasis>, <emphasis effect="italic">w</emphasis>, <emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>, <emphasis effect="italic">z</emphasis>} if it were removed. Since <emphasis effect="italic">s</emphasis> and <emphasis effect="italic">v</emphasis> would be in different components, it is possible there is a Hamilton path between them. The only way to know is to try all possibilities. If we begin at <emphasis effect="italic">s</emphasis>, we can go to <emphasis effect="italic">r</emphasis> then <emphasis effect="italic">t</emphasis>, or we can go directly to <emphasis effect="italic">t</emphasis>, either way, we have a problem as you can see in <link target-id="fig-00020" document="m00122">Figure 12.260</link>.</para>
-  <figure id="fig-00020">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_218.png"/>
-  </media>
-  <caption>Vertices Visited Twice or Skipped</caption>
-  </figure>
-  <para id="para-00034">If we visit all the vertices in the component {<emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">q</emphasis>}, we will have to visit <emphasis effect="italic">t</emphasis> a second time in order to cross the bridge. If we visit <emphasis effect="italic">t</emphasis> only once, we have to skip some of the vertices. So, there is no Hamilton path between <emphasis effect="italic">s</emphasis> and <emphasis effect="italic">v</emphasis>.</para>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00004">
-  <exercise id="exer-00006">
-  <problem id="prob-00006">
-  <para id="para-00035"><link class="os-embed" url="#exercise/CM-C12-M8-Q003"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <para id="para-00036">There is not a short way to determine if there is a Hamilton path between two vertices on a graph that works in every situation. However, there are a few common situations that can help us to quickly determine that there is no Hamilton path. Some of these are listed in <link target-id="table-00001" document="m00122">Table 12.10</link>.</para>
-  <table class="numbered" summary="." id="table-00001">
-  <tgroup cols="2">
-  <colspec colnum="1" colname="c1" colwidth="120pt"/>
-  <colspec colnum="2" colname="c2" colwidth="120pt"/>
-  <thead>
-  <row>
-  <entry>Scenario</entry>
-  <entry>Diagram</entry>
-  </row>
-  </thead>
-  <tbody>
-  <row>
-  <entry>Scenario 1 If an edge <emphasis effect="italic">ab</emphasis> is a bridge, then there is no Hamilton path between a pair of vertices that are on the same side of edge <emphasis effect="italic">ab</emphasis>.
-   We saw this in Graph <emphasis effect="italic">A</emphasis> of Example 12.39.</entry>
-  <entry><figure class="unnumbered" id="fig-00022">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_219a.png"/>
-  </media></figure> No Hamilton path between any two vertices in the component {<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>}.<newline/>
-   No Hamilton path between any two vertices in {<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">i</emphasis>}</entry>
-  </row>
-  <row xmlns="http://cnx.rice.edu/cnxml">
-  <entry>Scenario 2 If an edge <emphasis effect="italic">ab</emphasis> is a bridge with at least three components on each side, then there is no Hamilton path beginning or ending at <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis>. We saw this in Graph <emphasis effect="italic">D</emphasis> of Example 12.39.</entry>
-  <entry>
-  <para id="para-00037"><figure class="unnumbered" id="fig-00023">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_219b.png"/>
-  </media></figure> No Hamilton path beginning or ending at <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis>.</para>
-  </entry>
-  </row>
-  <row>
-  <entry>Scenario 3 If a graph is comprised of two cycles joined only at a single vertex <emphasis effect="italic">p</emphasis>, and <emphasis effect="italic">v</emphasis> is any vertex that is NOT adjacent to <emphasis effect="italic">p</emphasis>, then there are no Hamilton paths beginning or ending at <emphasis effect="italic">p</emphasis>. We saw this in Graph <emphasis effect="italic">B</emphasis> of Example 12.39.</entry>
-  <entry><figure class="unnumbered" id="fig-00024">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_219c.png"/>
-  </media></figure> No Hamilton path can be formed starting or ending at vertices, <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">v</emphasis>, or <emphasis effect="italic">u</emphasis> because they are not adjacent to <emphasis effect="italic">p</emphasis>.</entry>
-  </row>
-  </tbody>
-  </tgroup>
-  <caption>Some Impossible Hamilton Paths</caption>
-  </table>
-  <note class="check-point" id="note-00005">
-  <para id="para-00038"><emphasis effect="italic">There are also many other situations in which a Hamilton path is not possible. These are just a few that you will encounter.</emphasis></para>
-  </note>
-  </section>
-  <section id="sect-00005">
-  <title>Hamilton Path or Euler Trail?</title>
-  <para id="para-00039">We learned in <link target-id="sect-00001" document="m00120">Euler Trails</link> that an Euler trail visits each edge exactly once, whereas a Hamilton path visits each vertex exactly once. Let’s practice distinguishing between the two.</para>
-  <example id="exam-00004">
-  <title>Distinguishing Between Hamilton Path and Euler Trail</title>
-  <exercise id="exer-00007">
-  <problem id="prob-00007">
-  <para id="para-00040">Use <link target-id="fig-00025" document="m00122">Figure 12.262</link> to determine if the given sequence of vertices is a Hamilton path, an Euler trail, both, or neither.</para>
-  <figure id="fig-00025">
-  <media alt="Insert Alt Text">
-  <image mime-type="image/png" src="../../media/CS_Figure_12_08_220.png"/>
-  </media>
-  <caption>Graphs <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">F</emphasis>, and <emphasis effect="italic">K</emphasis></caption>
-  </figure>
-  <list list-type="enumerated" number-style="arabic" id="list-00002">
-  <item>Graph <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis></item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">F</emphasis>, <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">j</emphasis> → <emphasis effect="italic">h</emphasis> → <emphasis effect="italic">i</emphasis></item>
-  <item xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">K</emphasis>, <emphasis effect="italic">k</emphasis> → <emphasis effect="italic">l</emphasis> → <emphasis effect="italic">m</emphasis> → <emphasis effect="italic">n</emphasis> → <emphasis effect="italic">o</emphasis></item>
-  </list>
-  </problem>
-  <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
-  <list list-type="enumerated" number-style="arabic" id="list-00003">
-  <item>Since the sequence covers every edge once but visits vertices more than once, it is only an Euler trail.</item>
-  <item>Since the sequence visits every vertex exactly once but skips some edges, it is only a Hamilton path.</item>
-  <item>Since the sequence visits each edge and each vertex exactly once, it is both an Euler trail and a Hamilton path.</item>
-  </list>
-  </solution>
-  </exercise>
-  </example>
-  <note class="your-turn" id="note-00006">
-  <exercise id="exer-00008">
-  <problem id="prob-00008">
-  <para id="para-00041"><link class="os-embed" url="#exercise/CM-C12-M8-Q004"/></para>
-  </problem>
-  </exercise>
-  </note>
-  <note class="work-out" id="note-00007">
-  <para id="para-00042">As we saw in the <link target-id="fig-00027" document="m00119">Figure 12.176</link>, the Emerald City lies at the center of the Magical Land of Oz, with Gillikin Country to the north, Winkie Country to the east, Munchkin Country to the west, and Quadling Country to the south. Munchkin Country and Winkie Country each shares a border with Gillikin Country and Quadling Country. Let’s apply graph theory to Dorothy’s famous journey through Oz one more time!</para>
-  <para id="para-00043">Draw a graph in which each vertex is one of the regions of Oz. Is there a Hamilton path that Dorothy could follow, instead of the yellow brick road, to lead her from the land of the Munchkins, through all the regions of Oz exactly once, and end in the Emerald City? If so, what might it be? Compare your results with those of a classmate.</para>
-  </note>
-  </section>
-  <section class="check-understanding" id="sect-00006">
-  <title>Check Your Understanding</title>
-  <exercise id="exer-00009">
-  <problem id="prob-00009">
-  <para id="para-00044"><link class="os-embed" url="#exercise/CM-C12-M8-Q005"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00010">
-  <problem id="prob-00010">
-  <para id="para-00045"><link class="os-embed" url="#exercise/CM-C12-M8-Q006"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00011">
-  <problem id="prob-00011">
-  <para id="para-00046"><link class="os-embed" url="#exercise/CM-C12-M8-Q013"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00012">
-  <problem id="prob-00012">
-  <para id="para-00047"><link class="os-embed" url="#exercise/CM-C12-M8-Q014"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00013">
-  <problem id="prob-00013">
-  <para id="para-00048"><link class="os-embed" url="#exercise/CM-C12-M8-Q015"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section class="section-exercises" id="sect-00007">
-  <title>Exercise</title>
-  <exercise id="exer-00014">
-  <problem id="prob-00014">
-  <para id="para-00049"><link class="os-embed" url="#exercise/CM-C12-M8-Q007"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00015">
-  <problem id="prob-00015">
-  <para id="para-00050"><link class="os-embed" url="#exercise/CM-C12-M8-Q008"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00016">
-  <problem id="prob-00016">
-  <para id="para-00051"><link class="os-embed" url="#exercise/CM-C12-M8-Q009"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00017">
-  <problem id="prob-00017">
-  <para id="para-00052"><link class="os-embed" url="#exercise/CM-C12-M8-Q010"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00018">
-  <problem id="prob-00018">
-  <para id="para-00053"><link class="os-embed" url="#exercise/CM-C12-M8-Q011"/></para>
-  </problem>
-  </exercise>
-  <exercise id="exer-00019">
-  <problem id="prob-00019">
-  <para id="para-00054"><link class="os-embed" url="#exercise/CM-C12-M8-Q012"/></para>
-  </problem>
-  </exercise>
-  </section>
-  <section class="key-terms" id="sect-00008">
-  <title>Key Terms</title>
-  <list bullet-style="bulleted" id="list-00004">
-  <item>Hamilton path</item>
-  </list>
-  </section>
-  <section class="key-concepts" id="sect-00009">
-  <title>Key Concepts</title>
-  <list bullet-style="bulleted" id="list-00005">
-  <item>A Hamilton path visits every vertex exactly once.</item>
-  <item>Some Hamilton paths are also Euler trails, but some are not.</item>
-  </list>
-  </section>
-  </content>
+    <figure id="fig-00001">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/jpg" src="../../media/CS_Photo_12_08_001.jpg"/>
+    </media>
+    <caption>A school bus picks up children along a planned route. (credit: “Kids at School Bus Stop” by Ty Hatch/Flickr, CC-BY 2.0)</caption>
+    </figure>
+    <section class="learning-objectives" id="sect-00001">
+    <title>Learning Objectives</title>
+    <para id="para-00001">After completing this section, you should be able to:</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00001">
+    <item>Describe and identify Hamilton paths.</item>
+    <item>Evaluate Hamilton paths in real-world applications.</item>
+    <item>Distinguish between Hamilton paths and Euler trails.</item>
+    </list>
+    </section>
+    <para id="para-00002">In the United States, school buses carry 25 million children between school and home every day. The total distance they travel is around 6 billion kilometers per year. In the city of Boston, Massachusetts, the 2016 budget for running those buses was $120 million dollars. In 2017, the city held a competition to find ways to cut costs and the Quantum Team from the MIT Operations Research Center came to the rescue, using a computer algorithm to identify the most efficient and least costly routes, which saved the city of Boston $5 million each year and even reduced daily CO<sub>2</sub> emissions by 9,000 kilograms! (<emphasis effect="italic">This</emphasis> US <emphasis effect="italic">city put an algorithm in charge of its school bus routes and saved $5 million</emphasis>, Sean Fleming, World Economic Forum)</para>
+    <para id="para-00003">The problem the Quantum Team tackled involves graph theory. Imagine a graph in which vertices are the bus depot, the school, and the bus stops along a particular route. The bus must start at the depot, visit every stop exactly once, and end at the school. The route is a special kind of path that visits every vertex exactly once. Can you guess what those paths are called?</para>
+    <section id="sect-00002">
+    <title>Hamilton Paths</title>
+    <para id="para-00004">Just as circuits that visit each vertex in a graph exactly once are called Hamilton cycles (or Hamilton circuits), paths that visit each vertex on a graph exactly once are called <emphasis effect="bold">Hamilton paths</emphasis>. As we explore Hamilton paths, you might find it helpful to refresh your memory about the relationships between walks, trails, and paths by looking at <link target-id="fig-00011" document="m00117">Figure 12.105</link>. We know that paths are walks that don’t repeat any vertices or edges. So, a Hamilton path visits every vertex without repeating any vertices or edges. <link target-id="fig-00003" document="m00122">Figure 12.242</link> shows a path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis> and a Hamilton path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis>.</para>
+    <figure id="fig-00002">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_099.png"/>
+    </media>
+    <caption>Walks, Trails, and Paths</caption>
+    </figure>
+    <figure id="fig-00003">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_204.png"/>
+    </media>
+    <caption>Path or Hamilton Path?</caption>
+    </figure>
+    <example id="exam-00001">
+    <title>Identifying Hamilton Paths</title>
+    <exercise id="exer-00001">
+    <problem id="prob-00001">
+    <para id="para-00005">Which of the following sequences of vertices is a Hamilton path for Graph <emphasis effect="italic">Q</emphasis> in <link target-id="fig-00004" document="m00122">Figure 12.243</link>?</para>
+    <figure id="fig-00004">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_192.png"/>
+    </media>
+    <caption>Graph <emphasis effect="italic">Q</emphasis></caption>
+    </figure>
+    <list list-type="enumerated" number-style="arabic" id="list-00006">
+    <item><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis></item>
+    <item><emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">h</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis></item>
+    <item><emphasis effect="italic">h</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis></item>
+    </list>
+    </problem>
+    <solution id="sol-00001" xmlns="http://cnx.rice.edu/cnxml">
+    <para id="para-00006">Sequence 1 is a path, because it is a walk that doesn’t repeat any vertices or edges, but not a Hamilton path because it skips vertex <emphasis effect="italic">h</emphasis>. Sequence 2 is a path that visits each vertex exactly once; so, it is a Hamilton path. Sequence 3 is a walk, but it is not a path because it visits vertices <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">e</emphasis>, and <emphasis effect="italic">b</emphasis> each more than once; so, it cannot be a Hamilton path. So, we can see that only sequence 2 is a Hamilton path.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00001">
+    <exercise id="exer-00002">
+    <problem id="prob-00002">
+    <para id="para-00007"><link class="os-embed" url="#exercise/CM-C12-M8-Q001"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="check-point" id="note-00002">
+    <para id="para-00008"><emphasis effect="italic">TIP! Since a Hamilton path visits each vertex exactly once, it must have the same number of vertices listed as appear in the graph.</emphasis></para>
+    </note>
+    <section id="sect-00003">
+    <title>Finding Hamilton Paths</title>
+    <para id="para-00009">Suppose you were visiting an aquarium with some friends. The map of the aquarium is given in <link target-id="fig-00005" document="m00122">Figure 12.245</link>. The letters represent the exhibits.</para>
+    <figure id="fig-00005">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_165.png"/>
+    </media>
+    <caption>Map of Aquarium Exhibits</caption>
+    </figure>
+    <para id="para-00010"><link target-id="fig-00006" document="m00122">Figure 12.246</link> shows a graph of the aquarium in which each vertex represents an exhibit and each edge is a route between the pair of exhibits that doesn’t bypass another exhibit.</para>
+    <figure id="fig-00006">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_205.png"/>
+    </media>
+    <caption>Graph of Aquarium</caption>
+    </figure>
+    <para id="para-00011">Let’s see if we can plan a tour of the exhibits that visits each exhibit exactly once, beginning at exhibit <emphasis effect="italic">O</emphasis> and ending at exhibit <emphasis effect="italic">C</emphasis>. Suppose that, after exhibit <emphasis effect="italic">O</emphasis>, we plan to visit exhibit <emphasis effect="italic">Q</emphasis> and then exhibit <emphasis effect="italic">M</emphasis>. After <emphasis effect="italic">M</emphasis>, should we plan to visit <emphasis effect="italic">N</emphasis>, <emphasis effect="italic">L</emphasis>, or <emphasis effect="italic">R</emphasis>? Take a look at <link target-id="fig-00007" document="m00122">Figure 12.247</link>. If <emphasis effect="italic">R</emphasis> is not chosen next, that will cause a problem later on. Do you see what it is?</para>
+    <figure id="fig-00007">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_206.png"/>
+    </media>
+    <caption>Choosing Vertex <emphasis effect="italic">L</emphasis>, <emphasis effect="italic">N</emphasis>, or <emphasis effect="italic">R</emphasis></caption>
+    </figure>
+    <para id="para-00012">If <emphasis effect="italic">L</emphasis> or <emphasis effect="italic">N</emphasis> is chosen next, the only way to get to <emphasis effect="italic">R</emphasis> later will be to go from <emphasis effect="italic">S</emphasis> to <emphasis effect="italic">R</emphasis>, and then we will not be able to continue without repeating a vertex. So, we will pick <emphasis effect="italic">R</emphasis> next, and then the only option is <emphasis effect="italic">S</emphasis>. After <emphasis effect="italic">S</emphasis> we have another choice to make. As shown in <link target-id="fig-00008" document="m00122">Figure 12.248</link>, the next choice is between <emphasis effect="italic">B</emphasis> and <emphasis effect="italic">E</emphasis>. Keeping in mind that the goal is to end at <emphasis effect="italic">C</emphasis>, which would be the better choice?</para>
+    <figure id="fig-00008">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_207.png"/>
+    </media>
+    <caption>Choosing Vertex <emphasis effect="italic">B</emphasis> or <emphasis effect="italic">E</emphasis></caption>
+    </figure>
+    <para id="para-00013">If you said vertex <emphasis effect="italic">B</emphasis>, you are right! Otherwise, we will not be able to visit <emphasis effect="italic">B</emphasis> later. After <emphasis effect="italic">B</emphasis>, the only option is <emphasis effect="italic">E</emphasis>. Then we can choose either <emphasis effect="italic">D</emphasis> or <emphasis effect="italic">G</emphasis>. Either will work fine. Let’s choose <emphasis effect="italic">G</emphasis> as shown in <link target-id="fig-00009" document="m00122">Figure 12.249</link>. After <emphasis effect="italic">G</emphasis>, you must visit <emphasis effect="italic">H</emphasis>, but should you visit <emphasis effect="italic">K</emphasis> or <emphasis effect="italic">L</emphasis> after that?</para>
+    <figure id="fig-00009">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_208.png"/>
+    </media>
+    <caption>Choose Vertex <emphasis effect="italic">L</emphasis> or <emphasis effect="italic">K</emphasis></caption>
+    </figure>
+    <para id="para-00014">If you said to go to vertex <emphasis effect="italic">L</emphasis> next, you are right! Otherwise, it will be impossible to visit <emphasis effect="italic">N</emphasis> without repeating a vertex. So, next is <emphasis effect="italic">L</emphasis>, then <emphasis effect="italic">N</emphasis>, then <emphasis effect="italic">K</emphasis>, and then at <emphasis effect="italic">J</emphasis> you have another decision to make we can see in <link target-id="fig-00010" document="m00122">Figure 12.250</link>. Should you choose <emphasis effect="italic">F</emphasis>, <emphasis effect="italic">I</emphasis>, or <emphasis effect="italic">P</emphasis> next?</para>
+    <figure id="fig-00010">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_209.png"/>
+    </media>
+    <caption>Choose Vertex <emphasis effect="italic">F</emphasis>, <emphasis effect="italic">I</emphasis>, or <emphasis effect="italic">P</emphasis></caption>
+    </figure>
+    <para id="para-00015">If you said <emphasis effect="italic">P</emphasis>, you are right! If you choose either of the other two vertices, you will not be able to visit <emphasis effect="italic">P</emphasis> later without passing through another vertex twice. Once <emphasis effect="italic">P</emphasis> is chosen, vertex <emphasis effect="italic">I</emphasis> must be next followed by <emphasis effect="italic">F</emphasis>. Then you have to choose between <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">D</emphasis> as shown in <link target-id="fig-00011" document="m00122">Figure 12.251</link>.</para>
+    <figure id="fig-00011">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_210.png"/>
+    </media>
+    <caption>Choose Vertex <emphasis effect="italic">A</emphasis> or <emphasis effect="italic">D</emphasis></caption>
+    </figure>
+    <para id="para-00016">In this case, we must go to <emphasis effect="italic">D</emphasis> then to <emphasis effect="italic">A</emphasis> so that we can visit <emphasis effect="italic">C</emphasis> without backtracking. The complete Hamilton path is shown in <link target-id="fig-00012" document="m00122">Figure 12.252</link>.</para>
+    <figure id="fig-00012">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_211.png"/>
+    </media>
+    <caption>Complete Hamilton Path from <emphasis effect="italic">O</emphasis> to <emphasis effect="italic">C</emphasis></caption>
+    </figure>
+    <para id="para-00017">So, one Hamilton path that begins at <emphasis effect="italic">O</emphasis> and ends at <emphasis effect="italic">C</emphasis> is <emphasis effect="italic">O</emphasis> → <emphasis effect="italic">Q</emphasis> → <emphasis effect="italic">M</emphasis> → <emphasis effect="italic">R</emphasis> → <emphasis effect="italic">S</emphasis> → <emphasis effect="italic">B</emphasis> → <emphasis effect="italic">E</emphasis> → <emphasis effect="italic">G</emphasis> → <emphasis effect="italic">H</emphasis> → <emphasis effect="italic">L</emphasis> → <emphasis effect="italic">N</emphasis> → <emphasis effect="italic">K</emphasis> → <emphasis effect="italic">J</emphasis> → <emphasis effect="italic">P</emphasis> → <emphasis effect="italic">I</emphasis> → <emphasis effect="italic">F</emphasis> → <emphasis effect="italic">D</emphasis> → <emphasis effect="italic">A</emphasis> → <emphasis effect="italic">C</emphasis>.</para>
+    <para id="para-00018" xmlns="http://cnx.rice.edu/cnxml">There is no set sequence of steps that can be used to find a Hamilton path if it exists, but it does help to keep in mind where we are headed and avoid choices that will make returning to a particular vertex impossible without repeating vertices. Let’s practice finding Hamilton paths.</para>
+    <example id="exam-00002">
+    <title>Finding a Hamilton Path</title>
+    <exercise id="exer-00003">
+    <problem id="prob-00003">
+    <para id="para-00019">Use <link target-id="fig-00013" document="m00122">Figure 12.253</link> to find a Hamilton path between vertices <emphasis effect="italic">C</emphasis> and <emphasis effect="italic">D</emphasis>.</para>
+    <figure id="fig-00013">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_212.png"/>
+    </media>
+    <caption>Graph <emphasis effect="italic">G</emphasis></caption>
+    </figure>
+    </problem>
+    <solution id="sol-00002">
+    <para id="para-00020">If we start at vertex <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">A</emphasis> must be next. Then we must choose between <emphasis effect="italic">B</emphasis> and <emphasis effect="italic">F</emphasis>. If we choose <emphasis effect="italic">F</emphasis>, we will have to backtrack to get to include <emphasis effect="italic">B</emphasis>; so, we must choose <emphasis effect="italic">B</emphasis>. Once we choose <emphasis effect="italic">B</emphasis>, we must choose <emphasis effect="italic">F</emphasis> next. After <emphasis effect="italic">F</emphasis>, we choose <emphasis effect="italic">E</emphasis>, because we want to end at <emphasis effect="italic">D</emphasis>. So, a Hamilton path between <emphasis effect="italic">C</emphasis> and <emphasis effect="italic">D</emphasis> is <emphasis effect="italic">C</emphasis> → <emphasis effect="italic">A</emphasis> → <emphasis effect="italic">B</emphasis> → <emphasis effect="italic">F</emphasis> → <emphasis effect="italic">E</emphasis> → <emphasis effect="italic">D</emphasis>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00003" xmlns="http://cnx.rice.edu/cnxml">
+    <exercise id="exer-00004">
+    <problem id="prob-00004">
+    <para id="para-00021"><link class="os-embed" url="#exercise/CM-C12-M8-Q002"/></para>
+    </problem>
+    </exercise>
+    </note>
+    </section>
+    </section>
+    <section id="sect-00004">
+    <title>Existence of a Hamilton Path</title>
+    <para id="para-00022">It turns out that there is no Hamilton path between vertices <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">E</emphasis> in Graph <emphasis effect="italic">G</emphasis> in <link target-id="fig-00013" document="m00122">Figure 12.253</link>. To understand why, let’s imagine there is a red apple tree on one side of a bridge and a green apple tree on the other side of the bridge. Now suppose someone asked you to pick up all the fallen apples under each tree without crossing the bridge more than once, and making sure that the first apple you pick up and the last apple you pick up are both red. You would say, that is impossible! To have the first and last apple be red would either require leaving the green apples on the ground or crossing the bridge twice.</para>
+    <para id="para-00023">Let’s see how this relates to finding a Hamilton path between <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">E</emphasis> in Graph <emphasis effect="italic">G</emphasis>. The edge <emphasis effect="italic">AC</emphasis> is a bridge because, if it were removed, the graph would become disconnected with two components, the component {<emphasis effect="italic">C</emphasis>} and the component {<emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">D</emphasis>, <emphasis effect="italic">E</emphasis>, <emphasis effect="italic">F</emphasis>}. So, we can think of the vertices <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">D</emphasis>, <emphasis effect="italic">E</emphasis>, and <emphasis effect="italic">F</emphasis> as the red apples, vertex <emphasis effect="italic">C</emphasis> as the green apple, and the edge <emphasis effect="italic">AC</emphasis> is the bridge between them as in <link target-id="fig-00014" document="m00122">Figure 12.254</link>.</para>
+    <figure id="fig-00014" xmlns="http://cnx.rice.edu/cnxml">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_213.png"/>
+    </media>
+    <caption>Bridge between Red and Green Apples</caption>
+    </figure>
+    <para id="para-00024">The creation of a Hamilton path requires a visit to each vertex, just as picking up all the apples requires a visit to each apple. <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">E</emphasis> are both red apples; so, a path from <emphasis effect="italic">A</emphasis> to <emphasis effect="italic">E</emphasis> would both start and end at a red apple, just as you were asked to do. And you wouldn’t be able to cross the bridge twice because that would mean visiting <emphasis effect="italic">A</emphasis> twice, which is not allowed in a Hamilton path. So, it is impossible to find a Hamilton path from <emphasis effect="italic">A</emphasis> to <emphasis effect="italic">E</emphasis> just as it was impossible to pick up all the apples without crossing the bridge more than once. By the same reasoning, if a graph has a bridge, there will never be a Hamilton path that begins and ends on the same side of that bridge, meaning beginning and ending at vertices that would be in the same component if the bridge were removed from the graph.</para>
+    <example id="exam-00003">
+    <title>Finding a Hamilton Path If One Exists</title>
+    <exercise id="exer-00005">
+    <problem id="prob-00005">
+    <para id="para-00025">Find a Hamilton path from vertex <emphasis effect="italic">s</emphasis> to vertex <emphasis effect="italic">v</emphasis> for each graph in <link target-id="fig-00015" document="m00122">Figure 12.255</link> or indicate that there is none.</para>
+    <figure id="fig-00015">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_184.png"/>
+    </media>
+    <caption>Graphs <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis>, and <emphasis effect="italic">D</emphasis></caption>
+    </figure>
+    </problem>
+    <solution id="sol-00003">
+    <para id="para-00026">Graph <emphasis effect="italic">A</emphasis>: Edge <emphasis effect="italic">uw</emphasis> is a bridge connecting component {<emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">v</emphasis>} to the component {<emphasis effect="italic">w</emphasis>, <emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>, <emphasis effect="italic">z</emphasis>}. There is no Hamilton path from vertex <emphasis effect="italic">s</emphasis> to vertex <emphasis effect="italic">v</emphasis> because they would be part of the same component if the bridge <emphasis effect="italic">uw</emphasis> were removed.</para>
+    <para id="para-00027">Graph <emphasis effect="italic">B</emphasis>: There are no bridges in Graph <emphasis effect="italic">B</emphasis>. The only method we have to determine if a Hamilton path from vertex <emphasis effect="italic">s</emphasis> to vertex <emphasis effect="italic">v</emphasis> exists is to try every possibility. From vertex <emphasis effect="italic">s</emphasis>, we can visit either vertex <emphasis effect="italic">y</emphasis> or vertex <emphasis effect="italic">t</emphasis>. We will try vertex <emphasis effect="italic">y</emphasis> first and then come back to see what happens with vertex <emphasis effect="italic">t</emphasis>. After visiting <emphasis effect="italic">y</emphasis>, we must visit <emphasis effect="italic">z</emphasis> and then <emphasis effect="italic">u</emphasis>, but then we have to decide between vertices <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">t</emphasis>, and <emphasis effect="italic">v</emphasis> next as shown in <link target-id="fig-00016" document="m00122">Figure 12.256</link>.</para>
+    <figure id="fig-00016">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_214.png"/>
+    </media>
+    <caption>Choose Vertex <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">t</emphasis>, or <emphasis effect="italic">v</emphasis></caption>
+    </figure>
+    <para id="para-00028">Vertex <emphasis effect="italic">v</emphasis> is not an option since we want to end at <emphasis effect="italic">v</emphasis>. Vertex <emphasis effect="italic">t</emphasis> is not an option since that would force us to go to visit <emphasis effect="italic">s</emphasis> a second time. So, we must go to vertex <emphasis effect="italic">r</emphasis> next. After vertex <emphasis effect="italic">r</emphasis>, we must visit <emphasis effect="italic">x</emphasis>, then <emphasis effect="italic">w</emphasis>, then <emphasis effect="italic">v</emphasis>, but we missed vertex <emphasis effect="italic">t</emphasis> as shown in <link target-id="fig-00017" document="m00122">Figure 12.257</link>.</para>
+    <figure id="fig-00017">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_215.png"/>
+    </media>
+    <caption>Missed Vertex <emphasis effect="italic">t</emphasis></caption>
+    </figure>
+    <para id="para-00029">Let’s go back to the beginning and choose <emphasis effect="italic">t</emphasis> instead of <emphasis effect="italic">y</emphasis>. After <emphasis effect="italic">t</emphasis>, we must go to <emphasis effect="italic">u</emphasis> and then we have a choice to make between <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">v</emphasis>, and <emphasis effect="italic">z</emphasis> as shown in <link target-id="fig-00018" document="m00122">Figure 12.258</link>.</para>
+    <figure id="fig-00018">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_216.png"/>
+    </media>
+    <caption>Choose Vertex <emphasis effect="italic">v</emphasis>, <emphasis effect="italic">r</emphasis>, or <emphasis effect="italic">z</emphasis></caption>
+    </figure>
+    <para id="para-00030">Vertex <emphasis effect="italic">v</emphasis> is not an option since we want to end at <emphasis effect="italic">v</emphasis>. Vertex <emphasis effect="italic">z</emphasis> is not an option since that would force us to go <emphasis effect="italic">y</emphasis> and then to visit <emphasis effect="italic">s</emphasis> a second time. So, we must go to vertex <emphasis effect="italic">r</emphasis> next. After <emphasis effect="italic">r</emphasis>, we must go to <emphasis effect="italic">x</emphasis> then <emphasis effect="italic">w</emphasis> then <emphasis effect="italic">v</emphasis>, where we have to stop even though we have missed vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">z</emphasis>, as shown in <link target-id="fig-00019" document="m00122">Figure 12.259</link>.</para>
+    <figure id="fig-00019">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_217.png"/>
+    </media>
+    <caption>Missed Vertices <emphasis effect="italic">y</emphasis> and <emphasis effect="italic">z</emphasis></caption>
+    </figure>
+    <para id="para-00031">So, we have tried every possible route and there are no Hamilton paths between <emphasis effect="italic">s</emphasis> and <emphasis effect="italic">v</emphasis> in Graph <emphasis effect="italic">B</emphasis>.</para>
+    <para id="para-00032">Graph <emphasis effect="italic">C</emphasis>: In Graph <emphasis effect="italic">C</emphasis>, there is a Hamilton path, <emphasis effect="italic">s</emphasis> → <emphasis effect="italic">t</emphasis> → <emphasis effect="italic">u</emphasis> → <emphasis effect="italic">x</emphasis> → <emphasis effect="italic">w</emphasis> → <emphasis effect="italic">v</emphasis>.</para>
+    <para id="para-00033" xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">D</emphasis>: In Graph <emphasis effect="italic">D</emphasis>, there is a bridge, <emphasis effect="italic">tx</emphasis>, which would form components {<emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">q</emphasis>} and {<emphasis effect="italic">v</emphasis>, <emphasis effect="italic">w</emphasis>, <emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>, <emphasis effect="italic">z</emphasis>} if it were removed. Since <emphasis effect="italic">s</emphasis> and <emphasis effect="italic">v</emphasis> would be in different components, it is possible there is a Hamilton path between them. The only way to know is to try all possibilities. If we begin at <emphasis effect="italic">s</emphasis>, we can go to <emphasis effect="italic">r</emphasis> then <emphasis effect="italic">t</emphasis>, or we can go directly to <emphasis effect="italic">t</emphasis>, either way, we have a problem as you can see in <link target-id="fig-00020" document="m00122">Figure 12.260</link>.</para>
+    <figure id="fig-00020">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_218.png"/>
+    </media>
+    <caption>Vertices Visited Twice or Skipped</caption>
+    </figure>
+    <para id="para-00034">If we visit all the vertices in the component {<emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">q</emphasis>}, we will have to visit <emphasis effect="italic">t</emphasis> a second time in order to cross the bridge. If we visit <emphasis effect="italic">t</emphasis> only once, we have to skip some of the vertices. So, there is no Hamilton path between <emphasis effect="italic">s</emphasis> and <emphasis effect="italic">v</emphasis>.</para>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00004">
+    <exercise id="exer-00006">
+    <problem id="prob-00006">
+    <para id="para-00035"><link class="os-embed" url="#exercise/CM-C12-M8-Q003"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <para id="para-00036">There is not a short way to determine if there is a Hamilton path between two vertices on a graph that works in every situation. However, there are a few common situations that can help us to quickly determine that there is no Hamilton path. Some of these are listed in <link target-id="table-00001" document="m00122">Table 12.10</link>.</para>
+    <table class="numbered" summary="." id="table-00001">
+    <tgroup cols="2">
+    <colspec colnum="1" colname="c1" colwidth="120pt"/>
+    <colspec colnum="2" colname="c2" colwidth="120pt"/>
+    <thead>
+    <row>
+    <entry>Scenario</entry>
+    <entry>Diagram</entry>
+    </row>
+    </thead>
+    <tbody>
+    <row>
+    <entry>Scenario 1 If an edge <emphasis effect="italic">ab</emphasis> is a bridge, then there is no Hamilton path between a pair of vertices that are on the same side of edge <emphasis effect="italic">ab</emphasis>.
+    We saw this in Graph <emphasis effect="italic">A</emphasis> of Example 12.39.</entry>
+    <entry><figure class="unnumbered" id="fig-00022">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_219a.png"/>
+    </media></figure> No Hamilton path between any two vertices in the component {<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>}.<newline/>
+    No Hamilton path between any two vertices in {<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">i</emphasis>}.</entry>
+    </row>
+    <row xmlns="http://cnx.rice.edu/cnxml">
+    <entry>Scenario 2 If an edge <emphasis effect="italic">ab</emphasis> is a bridge with at least three components on each side, then there is no Hamilton path beginning or ending at <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis>. We saw this in Graph <emphasis effect="italic">D</emphasis> of Example 12.39.</entry>
+    <entry>
+    <para id="para-00037"><figure class="unnumbered" id="fig-00023">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_219b.png"/>
+    </media></figure> No Hamilton path beginning or ending at <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis>.</para>
+    </entry>
+    </row>
+    <row>
+    <entry>Scenario 3 If a graph is composed of two cycles joined only at a single vertex <emphasis effect="italic">p</emphasis>, and <emphasis effect="italic">v</emphasis> is any vertex that is NOT adjacent to <emphasis effect="italic">p</emphasis>, then there are no Hamilton paths beginning or ending at <emphasis effect="italic">p</emphasis>. We saw this in Graph <emphasis effect="italic">B</emphasis> of Example 12.39.</entry>
+    <entry><figure class="unnumbered" id="fig-00024">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_219c.png"/>
+    </media></figure> No Hamilton path can be formed starting or ending at vertices, <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">v</emphasis>, or <emphasis effect="italic">u</emphasis> because they are not adjacent to <emphasis effect="italic">p</emphasis>.</entry>
+    </row>
+    </tbody>
+    </tgroup>
+    <caption>Some Impossible Hamilton Paths</caption>
+    </table>
+    <note class="check-point" id="note-00005">
+    <para id="para-00038"><emphasis effect="italic">There are also many other situations in which a Hamilton path is not possible. These are just a few that you will encounter.</emphasis></para>
+    </note>
+    </section>
+    <section id="sect-00005">
+    <title>Hamilton Path or Euler Trail?</title>
+    <para id="para-00039">We learned in <link target-id="sect-00001" document="m00120">Euler Trails</link> that an Euler trail visits each edge exactly once, whereas a Hamilton path visits each vertex exactly once. Let’s practice distinguishing between the two.</para>
+    <example id="exam-00004">
+    <title>Distinguishing between Hamilton Path and Euler Trail</title>
+    <exercise id="exer-00007">
+    <problem id="prob-00007">
+    <para id="para-00040">Use <link target-id="fig-00025" document="m00122">Figure 12.262</link> to determine if the given sequence of vertices is a Hamilton path, an Euler trail, both, or neither.</para>
+    <figure id="fig-00025">
+    <media alt="Insert Alt Text">
+    <image mime-type="image/png" src="../../media/CS_Figure_12_08_220.png"/>
+    </media>
+    <caption>Graphs <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">F</emphasis>, and <emphasis effect="italic">K</emphasis></caption>
+    </figure>
+    <list list-type="enumerated" number-style="arabic" id="list-00002">
+    <item>Graph <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">F</emphasis>, <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">j</emphasis> → <emphasis effect="italic">h</emphasis> → <emphasis effect="italic">i</emphasis></item>
+    <item xmlns="http://cnx.rice.edu/cnxml">Graph <emphasis effect="italic">K</emphasis>, <emphasis effect="italic">k</emphasis> → <emphasis effect="italic">l</emphasis> → <emphasis effect="italic">m</emphasis> → <emphasis effect="italic">n</emphasis> → <emphasis effect="italic">o</emphasis></item>
+    </list>
+    </problem>
+    <solution id="sol-00004" xmlns="http://cnx.rice.edu/cnxml">
+    <list list-type="enumerated" number-style="arabic" id="list-00003">
+    <item>Since the sequence covers every edge once but visits vertices more than once, it is only an Euler trail.</item>
+    <item>Since the sequence visits every vertex exactly once but skips some edges, it is only a Hamilton path.</item>
+    <item>Since the sequence visits each edge and each vertex exactly once, it is both an Euler trail and a Hamilton path.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="your-turn" id="note-00006">
+    <exercise id="exer-00008">
+    <problem id="prob-00008">
+    <para id="para-00041"><link class="os-embed" url="#exercise/CM-C12-M8-Q004"/></para>
+    </problem>
+    </exercise>
+    </note>
+    <note class="work-out" id="note-00007">
+    <para id="para-00042">As we saw in <link target-id="fig-00027" document="m00119">Figure 12.176</link>, the Emerald City lies at the center of the Magical Land of Oz, with Gillikin Country to the north, Winkie Country to the east, Munchkin Country to the west, and Quadling Country to the south. Munchkin Country and Winkie Country each shares a border with Gillikin Country and Quadling Country. Let’s apply graph theory to Dorothy’s famous journey through Oz one more time!</para>
+    <para id="para-00043">Draw a graph in which each vertex is one of the regions of Oz. Is there a Hamilton path that Dorothy could follow, instead of the yellow brick road, to lead her from the land of the Munchkins, through all the regions of Oz exactly once, and end in the Emerald City? If so, what might it be? Compare your results with those of a classmate.</para>
+    </note>
+    </section>
+    <section class="check-understanding" id="sect-00006">
+    <title>Check Your Understanding</title>
+    <exercise id="exer-00009">
+    <problem id="prob-00009">
+    <para id="para-00044"><link class="os-embed" url="#exercise/CM-C12-M8-Q005"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00010">
+    <problem id="prob-00010">
+    <para id="para-00045"><link class="os-embed" url="#exercise/CM-C12-M8-Q006"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00011">
+    <problem id="prob-00011">
+    <para id="para-00046"><link class="os-embed" url="#exercise/CM-C12-M8-Q013"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00012">
+    <problem id="prob-00012">
+    <para id="para-00047"><link class="os-embed" url="#exercise/CM-C12-M8-Q014"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00013">
+    <problem id="prob-00013">
+    <para id="para-00048"><link class="os-embed" url="#exercise/CM-C12-M8-Q015"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="section-exercises" id="sect-00007">
+    <title>Exercise</title>
+    <exercise id="exer-00014">
+    <problem id="prob-00014">
+    <para id="para-00049"><link class="os-embed" url="#exercise/CM-C12-M8-Q007"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00015">
+    <problem id="prob-00015">
+    <para id="para-00050"><link class="os-embed" url="#exercise/CM-C12-M8-Q008"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00016">
+    <problem id="prob-00016">
+    <para id="para-00051"><link class="os-embed" url="#exercise/CM-C12-M8-Q009"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00017">
+    <problem id="prob-00017">
+    <para id="para-00052"><link class="os-embed" url="#exercise/CM-C12-M8-Q010"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00018">
+    <problem id="prob-00018">
+    <para id="para-00053"><link class="os-embed" url="#exercise/CM-C12-M8-Q011"/></para>
+    </problem>
+    </exercise>
+    <exercise id="exer-00019">
+    <problem id="prob-00019">
+    <para id="para-00054"><link class="os-embed" url="#exercise/CM-C12-M8-Q012"/></para>
+    </problem>
+    </exercise>
+    </section>
+    <section class="key-terms" id="sect-00008">
+    <title>Key Terms</title>
+    <list bullet-style="bulleted" id="list-00004">
+    <item>Hamilton path</item>
+    </list>
+    </section>
+    <section class="key-concepts" id="sect-00009">
+    <title>Key Concepts</title>
+    <list bullet-style="bulleted" id="list-00005">
+    <item>A Hamilton path visits every vertex exactly once.</item>
+    <item>Some Hamilton paths are also Euler trails, but some are not.</item>
+    </list>
+    </section>
+    </content>   
   </document>
