@@ -95,7 +95,7 @@
     <caption>Assigning Vertices to Rooms</caption>
     </figure>
     </para>
-    <para id="para-00014"><emphasis effect="bold">Step 2:</emphasis> Draw a graph to represent the scenario. Start with the vertices. Then connect those vertices which share a doorway in the floorplan as shown in <link target-id="fig-00009" document="m00117">Figure 12.102</link>.</para>
+    <para id="para-00014"><emphasis effect="bold">Step 2:</emphasis> Draw a graph to represent the scenario. Start with the vertices. Then connect those vertices that share a doorway in the floorplan as shown in <link target-id="fig-00009" document="m00117">Figure 12.102</link>.</para>
     <figure id="fig-00009">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_096.png"/>
@@ -130,7 +130,7 @@
     <para id="para-00018">A walk is the most basic way of navigating a graph because it has no restrictions except staying on the graph. When there are restrictions on which vertices or edges we can visit, we will call the walk by a different name. For example, if we want to find a walk that avoids travelling the same edge twice, we will say we want to find a <term id="term-00003">trail</term> (or <term id="term-00004">directed trail</term>). If we want to find a walk that avoids visiting the same vertex twice, we will say, we want to find a <term id="term-00005">path</term> (or <term id="term-00006">directed path</term>).</para>
     <para id="para-00019">Walks, trails, and paths are all related.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00004">
-    <item>All paths are trails, but trails which visit the same vertex twice are not paths.</item>
+    <item>All paths are trails, but trails that visit the same vertex twice are not paths.</item>
     <item>All trails are walks, but walks in which an edge is visited twice would not be trails.</item>
     </list>
     <para id="para-00020">We can visualize the relationship as in <link target-id="fig-00011" document="m00117">Figure 12.105</link>.</para>
@@ -168,7 +168,7 @@
     </media>
     <caption/>
     </figure>
-    <para id="para-00023">This means that the sequence is not a walk. If it is not a walk, then it can’t be a path and it cannot be a trail; so, it is none of these.</para>
+    <para id="para-00023">This means that the sequence is not a walk. If it is not a walk, then it can’t be a path and it cannot be a trail, so, it is none of these.</para>
     </item>
     <item>First, check to see if the sequence is a walk. As you can see in <link target-id="fig-00014" document="m00117">Figure 12.108</link>, the vertices are consecutive.
     <figure id="fig-00014">
@@ -179,7 +179,7 @@
     </figure>
     <para id="para-00024">This means that the sequence is a walk. Since the vertex <emphasis effect="italic">b</emphasis> is visited twice, this walk is not a path. Since edge <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="italic">bd</mi></math> is traveled twice, this walk is not a trail. So, the sequence is only a walk.</para>
     </item>
-    <item xmlns="http://cnx.rice.edu/cnxml">First, check to see if the sequence is a walk. We can see in <link target-id="fig-00015" document="m00117">Figure 12.109</link> that the vertices are consecutive which means it is a walk.
+    <item xmlns="http://cnx.rice.edu/cnxml">First, check to see if the sequence is a walk. We can see in <link target-id="fig-00015" document="m00117">Figure 12.109</link> that the vertices are consecutive, which means it is a walk.
     <figure id="fig-00015">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_103.png"/>
@@ -187,7 +187,7 @@
     <caption/>
     </figure>
     <para id="para-00025">Next, check to see if any vertex is visited twice. Remember, we do <emphasis effect="underscore">not</emphasis> consider beginning and ending at the same vertex to be visiting a vertex twice. So, no vertex was visited twice. This means we have a walk that is also a path. Next check to see if any edge was visited twice; none were. So, the sequence is a walk, a path, and a trail.</para></item>
-    <item>First, check to see if the sequence is a walk. We can see in <link target-id="fig-00016" document="m00117">Figure 12.110</link> that the vertices are consecutive which means it is a walk.
+    <item>First, check to see if the sequence is a walk. We can see in <link target-id="fig-00016" document="m00117">Figure 12.110</link> that the vertices are consecutive, which means it is a walk.
     <figure id="fig-00016">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_104.png"/>
@@ -262,7 +262,7 @@
     </table>
     <para id="para-00041">Since walks, trails, and paths are all related, closed walks, circuits, and directed cycles are related too.</para>
     <list list-type="enumerated" number-style="arabic" id="list-00007">
-    <item>All circuits are closed walks, but closed walks which visit the same edge twice are not circuits.</item>
+    <item>All circuits are closed walks, but closed walks that visit the same edge twice are not circuits.</item>
     <item>All directed cycles are circuits, but circuits in which a vertex is visited twice are not directed cycles.</item>
     </list>
     <para id="para-00042">We can visualize the relationship as in <link target-id="fig-00020" document="m00117">Figure 12.111</link>.</para>
@@ -272,9 +272,9 @@
     </media>
     <caption>Closed Walks, Circuits, and Directed Cycles</caption>
     </figure>
-    <para id="para-00043">The same circuit can be named using any of its vertices as a starting point. For example, the circuit <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> can also referred to in the following ways.</para>
-   <para id="para-00127"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis> is the same as</para>
-   <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mtable columnalign="left"><mtr><mtd><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mtd></mtr></mtable></mrow></math></equation>
+    <para id="para-00043">The same circuit can be named using any of its vertices as a starting point. For example, the circuit <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> can also be referred to in the following ways.</para>
+    <para id="para-00127"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis> is the same as</para>
+    <equation id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mtable columnalign="left"><mtr><mtd><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mtd></mtr></mtable></mrow></math></equation>
     <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Let’s practice working with closed walks, circuits (closed trails), and directed cycles (closed paths). In the graph in <link target-id="fig-00021" document="m00117">Figure 12.112</link>, the vertices are major central and south Florida airports. The edges are direct flights between them.</para>
     <figure id="fig-00021">
     <media alt="Insert Alt Text">
@@ -319,7 +319,7 @@
     </section>
     <section id="sect-00005">
     <title>Graph Colorings</title>
-    <para id="para-00047">In this section so far, we have looked at how to navigate graphs by proceeding from one vertex to another in a sequence that does not skip any vertices, but sometimes we want to do the opposite. Next, we will look at applications in which we want to skip vertices. Remember the camp Olympics at Camp Woebegone in <link target-id="sect-00001" document="m00111">Comparing Graphs</link>? You were planning a camp Olympics with four events. The campers signed up for the events. You drew a graph to help you visualize which events have campers in common. The vertices of Graph <emphasis effect="italic">E</emphasis> in <link target-id="fig-00023" document="m00117">Figure 12.114</link> represent the events and adjacent vertices indicate that there are campers who are participating in both.</para>
+    <para id="para-00047">In this section so far, we have looked at how to navigate graphs by proceeding from one vertex to another in a sequence that does not skip any vertices, but in some applications we may want to skip vertices. Remember the camp Olympics at Camp Woebegone in <link target-id="sect-00001" document="m00111">Comparing Graphs</link>? You were planning a camp Olympics with four events. The campers signed up for the events. You drew a graph to help you visualize which events have campers in common. The vertices of Graph <emphasis effect="italic">E</emphasis> in <link target-id="fig-00023" document="m00117">Figure 12.114</link> represent the events and adjacent vertices indicate that there are campers who are participating in both.</para>
     <figure id="fig-00023">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_073.png"/>
@@ -335,14 +335,14 @@
     </figure>
     <para id="para-00049">In <link target-id="fig-00024" document="m00117">Figure 12.115</link>, the graphs with vertices colored so that no adjacent vertices are the same color are called <term id="term-00011">graph colorings</term>. Notice that Graph 3 has the fewest colors, which means it shows us how to have the fewest number of timeslots. The events marked in red, <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">d</emphasis>, can be held at the same time because they are not adjacent and do not have conflicts. Also, the events marked in purple, <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">c</emphasis>, can be held at the same time. We would not need green or blue timeslots at all!</para>
     <para id="para-00050">A graph that uses <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> colors is called an <term id="term-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>-coloring</term>. The smallest number of colors needed to color a particular graph is called its <term id="term-00013" xmlns="http://cnx.rice.edu/cnxml">chromatic number</term>.</para>
-    <para id="para-00051">Graph colorings can be used in many applications like the scheduling scenario at camp Woebegone. Let's look at how they work in more detail. <link target-id="fig-00025" document="m00117">Figure 12.116</link> shows two different colorings of a particular graph. Coloring A is called a 4-coloring, because it uses four colors, red (R), green (G), blue (B), and purple (P). Coloring B is called a 3-coloring because it uses three. The colors allow us to visually subdivide the graphs into groups. The only rule is that adjacent vertices are different colors so that they are in different groups.</para>
+    <para id="para-00051">Graph colorings can be used in many applications like the scheduling scenario at camp Woebegone. Let's look at how they work in more detail. <link target-id="fig-00025" document="m00117">Figure 12.116</link> shows two different colorings of a particular graph. Coloring A is called a four-coloring, because it uses four colors, red (R), green (G), blue (B), and purple (P). Coloring B is called a three-coloring because it uses three. The colors allow us to visually subdivide the graphs into groups. The only rule is that adjacent vertices are different colors so that they are in different groups.</para>
     <figure id="fig-00025">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_110.png"/>
     </media>
     <caption>Two Colorings of the Same Graph</caption>
     </figure>
-    <para id="para-00052">It turns out that a 3-coloring is the best we can do with the graph in Figure 12.103. No matter how many different patterns you try with only 2 colors, you will never find one in which the adjacent vertices are always different colors. In other words, the graph has a chromatic number of 3. For large graphs, computer assistance is usually required to find the chromatic numbers. There is no formula for finding the chromatic number of a graph, but there are some facts that are helpful in <link target-id="table-00002" document="m00110">Table 12.2</link>.</para>
+    <para id="para-00052">It turns out that a three-coloring is the best we can do with the graph in Figure 12.103. No matter how many different patterns you try with only two colors, you will never find one in which the adjacent vertices are always different colors. In other words, the graph has a chromatic number of three. For large graphs, computer assistance is usually required to find the chromatic numbers. There is no formula for finding the chromatic number of a graph, but there are some facts that are helpful in <link target-id="table-00002" document="m00110">Table 12.2</link>.</para>
     <table class="numbered" summary="." id="table-00002">
     <tgroup cols="2">
     <colspec colnum="1" colname="c1" colwidth="1pt"/>
@@ -355,7 +355,7 @@
     </thead>
     <tbody>
     <row>
-    <entry>Recall that planar graphs are untangled; that is, they can be drawn on a flat surface so that no two edges are crossing.<emphasis effect="bold"> If a graph is planar, it can be colored with 4 colors or possibly fewer.
+    <entry>Recall that planar graphs are untangled; that is, they can be drawn on a flat surface so that no two edges are crossing.<emphasis effect="bold"> If a graph is planar, it can be colored with four colors or possibly fewer.
     </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00026">
     <media alt="Insert Alt Text">
@@ -387,8 +387,8 @@
     <title>Creating Colorings to Solve Problems</title>
     <para id="para-00054">Let’s see how these facts can help us color the graph in <link target-id="fig-00029" document="m00117">Figure 12.117</link>.</para>
     <list bullet-style="bulleted" id="list-00010">
-    <item>Since the graph is planar, the chromatic number is <emphasis effect="italic">no more than</emphasis> 4.</item>
-    <item>The graph is not complete, but it has complete subgraphs of three vertices. In other words, it has triangles like the one shown with blue vertices in <link target-id="fig-00029" document="m00117">Figure 12.117</link>. This means that the chromatic number is <emphasis effect="italic">at least</emphasis> 3.</item>
+    <item>Since the graph is planar, the chromatic number is <emphasis effect="italic">no more than</emphasis> four.</item>
+    <item>The graph is not complete, but it has complete subgraphs of three vertices. In other words, it has triangles like the one shown with blue vertices in <link target-id="fig-00029" document="m00117">Figure 12.117</link>. This means that the chromatic number is <emphasis effect="italic">at least</emphasis> three.</item>
     </list>
     <figure id="fig-00029">
     <media alt="Insert Alt Text">
@@ -396,7 +396,7 @@
     </media>
     <caption>A Graph with Triangles</caption>
     </figure>
-    <para id="para-00055">We know we can color this graph in 3 or 4 colors. It is usually best to start by coloring the vertex of highest degree as shown in <link target-id="fig-00030" document="m00117">Figure 12.118</link>. In this case, we used red (R). The color is not important.</para>
+    <para id="para-00055">We know we can color this graph in three or four colors. It is usually best to start by coloring the vertex of highest degree as shown in <link target-id="fig-00030" document="m00117">Figure 12.118</link>. In this case, we used red (R). The color is not important.</para>
     <figure id="fig-00030">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_113.png"/>
@@ -410,7 +410,7 @@
     </media>
     <caption>Color More Red from Highest to Lowest Degree</caption>
     </figure>
-    <para id="para-00057">Now, there is only one vertex left that is not adjacent to a red; so, color it red. Of the remaining vertices, the highest degree is 4; so, color one of the vertices of degree four in a different color. These two steps are shown in <link target-id="fig-00032" document="m00117">Figure 12.120</link>.</para>
+    <para id="para-00057">Now, there is only one vertex left that is not adjacent to a red; so, color it red. Of the remaining vertices, the highest degree is four; so, color one of the vertices of degree four in a different color. These two steps are shown in <link target-id="fig-00032" document="m00117">Figure 12.120</link>.</para>
     <figure id="fig-00032">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_115.png"/>
@@ -431,7 +431,7 @@
     </media>
     <caption>Repeat Procedure for Color Purple</caption>
     </figure>
-    <para id="para-00060">All the vertices are now colored with a 3-coloring so we know the chromatic number is <emphasis effect="italic">at most</emphasis> 3, but we knew the chromatic number was <emphasis effect="italic">at least</emphasis> 3 because the graph has a triangle. So, we are now certain it is <emphasis effect="italic">exactly </emphasis>3.</para>
+    <para id="para-00060">All the vertices are now colored with a three-coloring so we know the chromatic number is <emphasis effect="italic">at most</emphasis> three, but we knew the chromatic number was <emphasis effect="italic">at least</emphasis> three because the graph has a triangle. So, we are now certain it is <emphasis effect="italic">exactly </emphasis>three.</para>
     <note class="video" id="note-00016">
     <para id="para-00126"><link url="https://openstax.org/r/Coloring_and_Identifying">Coloring Graphs Part 1: Coloring and Identifying Chromatic Number</link></para>
     </note>
@@ -440,14 +440,14 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_118.png"/>
     </media>
-    <caption>Coloring for 9 Event Camp Woebegone Olympics</caption>
+    <caption>Coloring for Nine Event Camp Woebegone Olympics</caption>
     </figure>
-    <para id="para-00063">Any vertices of the same color are nonadjacent; so, they have no conflicts. Since this graph is a 3-coloring, all nine events could be scheduled in just 3 timeslots!</para>
+    <para id="para-00063">Any vertices of the same color are nonadjacent; so, they have no conflicts. Since this graph is a three-coloring, all nine events could be scheduled in just three timeslots!</para>
     <example id="exam-00004">
     <title>Understanding Chromatic Numbers</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00064">In <link target-id="exam-00005" document="m00111">Example 12.17</link>, we discussed a high school which holds end-of-course exams in (E3) English 3, (E4) English 4, (M) Advanced Math, (C) Calculus, (W) World History, (U) U.S. History, (B) Biology, and (P) Physics. We were given a list of courses that had no students in common. We used that information to find the graph in <link target-id="fig-00031" document="m00111">Figure 12.81</link> which shows edges between exams with students in common. Use the graph we found in Example 12.71 (<link target-id="fig-00036" document="m00117">Figure 12.124</link>) to answer each question.</para>
+    <para id="para-00064">In <link target-id="exam-00005" document="m00111">Example 12.17</link>, we discussed a high school, which holds end-of-course exams in (E3) English 3, (E4) English 4, (M) Advanced Math, (C) Calculus, (W) World History, (U) U.S. History, (B) Biology, and (P) Physics. We were given a list of courses that had no students in common. We used that information to find the graph in <link target-id="fig-00031" document="m00111">Figure 12.81</link>, which shows edges between exams with students in common. Use the graph we found in <link target-id="exam-00003" document="m00117">Example 12.21</link> to answer each question.</para>
     <figure id="fig-00036">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_077.png"/>
@@ -463,8 +463,8 @@
     </problem>
     <solution id="sol-00004">
     <list list-type="enumerated" number-style="arabic" id="list-00012">
-    <item>We would need 4 different colors just for the clique with 4 vertices; so, the chromatic number is <emphasis effect="italic">at least</emphasis> 4.</item>
-    <item>It is possible for the chromatic number to be greater than 4.</item>
+    <item>We would need four different colors just for the clique with four vertices; so, the chromatic number is <emphasis effect="italic">at least</emphasis> four.</item>
+    <item>It is possible for the chromatic number to be greater than four.</item>
     <item>The process is shown in <link target-id="table-00003" document="m00117">Table 12.6</link>.
     <table class="numbered" summary="." id="table-00003">
     <tgroup cols="3">
@@ -534,7 +534,7 @@
     <caption>Coloring the Graph</caption>
     </table>
     <para id="para-00065">The last graph in <link target-id="table-00003" document="m00117">Table 12.6</link> is the final coloring.</para></item>
-    <item>Yes, the minimum number of times slots is the chromatic number. We knew the chromatic number had to be at least 4 because there was a clique with 4 vertices. Now we have found a 4-coloring of the graph which tells us that the chromatic number is at most 4. So, we know 4 must be the chromatic number.</item>
+    <item>Yes, the minimum number of times slots is the chromatic number. We knew the chromatic number had to be at least four because there was a clique with four vertices. Now we have found a four -coloring of the graph which tells us that the chromatic number is at most four. So, we know four must be the chromatic number.</item>
     </list>
     </solution>
     </exercise>
@@ -556,7 +556,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_12_04_002.jpg"/>
     </media>
-    <caption>Using only four colors, no two adjacent regions have the same color. (credit: XX)</caption>
+    <caption>Using only four colors, no two adjacent regions have the same color.</caption>
     </figure>
     <para id="para-00068">The idea of coloring graphs to solve problems was inspired by one of the most famous problems in mathematics, the “four color problem.” The idea was that, no matter how complicated a map might be, only four colors were needed to color the map so that no two regions that shared a boundary would be the same color. For many years, everyone suspected this to be true, because no one could create a map that needed more than four colors, but they couldn’t prove it was true in general. Finally, graphs were used to solve the problem!</para>
     <note class="video" id="note-00009">
@@ -580,21 +580,21 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_013.png"/>
     </media>
-    <caption>Final Graph Representing Common Boundaries Between Midwestern States</caption>
+    <caption>Final Graph Representing Common Boundaries between Midwestern States</caption>
     </figure>
-    <para id="para-00072">Notice that the graph representing the common boundaries between midwestern states is planar, meaning that it can be drawn on a flat surface without edges crossing. As we have seen, any planar graph has a chromatic number of 4 or less. This very well-known fact is called the <term id="term-00014">Four-Color Theorem</term>, or <term id="term-00015">Four-Color Map Theorem.</term></para>
+    <para id="para-00072">Notice that the graph representing the common boundaries between midwestern states is planar, meaning that it can be drawn on a flat surface without edges crossing. As we have seen, any planar graph has a chromatic number of four or less. This very well-known fact is called the <term id="term-00014">Four-Color Theorem</term>, or <term id="term-00015">Four-Color Map Theorem.</term></para>
     <note class="video" id="note-00010">
     <para id="para-00073"><link url="https://openstax.org/r/Coloring_Maps">Coloring Graphs Part 2: Coloring Maps and the Four Color Problem</link></para>
     </note>
     <note class="people-mathematics" id="note-00011">
     <title>Four-Color Theorem</title>
-    <para id="para-00074">In the 19th century, Francis Guthrie was coloring a map of British counties and noticed that he could color so that no two adjacent counties were the same color using only four colors. This seemed to be the case for other maps as well, but he could not figure out why. He shared this with his brother, Frederick, who subsequently took the problem to his professor, August De Morgan, one of the most famous mathematicians of all time. De Morgan never was able to solve the problem, but he shared it with his colleagues. The problem continued to intrigue and perplex mathematicians for over a hundred years, inspiring discoveries in several areas of mathematics. It was finally proven by Kenneth Appel and Wolfgang Haken from the University of Illinois 1976 using a combination of computer aided calculations and graph theory. This was the first time in history that a mathematical theorem was proven using a computer! (Jesus Najera, “The Four-Color Theorem,” <emphasis effect="italic">Cantor’s Paradise</emphasis>, a Medium publication, October 22, 2019)</para>
+    <para id="para-00074">In the 19th century, Francis Guthrie was coloring a map of British counties and noticed that he could color so that no two adjacent counties were the same color using only four colors. This seemed to be the case for other maps as well, but he could not figure out why. He shared this with his brother, Frederick, who subsequently took the problem to his professor, August De Morgan, one of the most famous mathematicians of all time. De Morgan never was able to solve the problem, but he shared it with his colleagues. The problem continued to intrigue and perplex mathematicians for over a hundred years, inspiring discoveries in several areas of mathematics. It was finally proven by Kenneth Appel and Wolfgang Haken from the University of Illinois in 1976 using a combination of computer-aided calculations and graph theory. This was the first time in history that a mathematical theorem was proven using a computer! (Jesus Najera, “The Four-Color Theorem,” <emphasis effect="italic">Cantor’s Paradise</emphasis>, a Medium publication, October 22, 2019)</para>
     </note>
     <example id="exam-00005">
     <title>Using Four Colors or Fewer to Color a Graph</title>
     <exercise id="exer-00009">
     <problem id="prob-00009">
-    <para id="para-00075">Find a coloring of the graph in <link target-id="fig-00047" document="m00117">Figure 12.127</link> which uses four colors or fewer. Use the resulting coloring as a guide to recolor the map in <link target-id="fig-00049" document="m00117">Figure 12.129</link>. How many colors did you use? Does this support the conclusion of the Four-Color Theorem? If so, how?</para>
+    <para id="para-00075">Find a coloring of the graph in <link target-id="fig-00047" document="m00117">Figure 12.127</link>, which uses four colors or fewer. Use the resulting coloring as a guide to recolor the map in <link target-id="fig-00049" document="m00117">Figure 12.129</link>. How many colors did you use? Does this support the conclusion of the Four-Color Theorem? If so, how?</para>
     </problem>
     <solution id="sol-00005">
     <para id="para-00076">The steps to color the graph are shown in <link target-id="table-00004" document="m00117">Table 12.7</link>.</para> 
@@ -628,7 +628,7 @@
     <para id="para-00080">Vertices ND, KS, MI, OH, and IN are NOT adjacent to IA.</para>
     <para id="para-00081">MI and IN have highest degree, 3.</para></entry>
     <entry><para id="para-00082"><emphasis effect="bold">Step 3:</emphasis> Color either MI or IN the same color as IA.</para>
-    <para id="para-00083">Vertex ND and KS are the only remaining vertices not adjacentto a red vertex.</para>
+    <para id="para-00083">Vertex ND and KS are the only remaining vertices not adjacent to a red vertex.</para>
     <para id="para-00084">They both have degree 2.</para></entry>
     </row>
     <row>
@@ -649,7 +649,7 @@
     </figure></entry>
     </row>
     <row>
-    <entry><emphasis effect="bold">Step 4:</emphasis> Since KS and ND are not adjacent to each other, we can save a step and color both red. The highest degreeof remaining vertices is 4.</entry>
+    <entry><emphasis effect="bold">Step 4:</emphasis> Since KS and ND are not adjacent to each other, we can save a step and color both red. The highest degreeof remaining vertices is four.</entry>
     <entry><para id="para-00085"><emphasis effect="bold">Step 5:</emphasis> Choose one of the vertices of degree 4, SD, to color with a new color, blue. The vertices WI, IL, MO, IN,and OH are NOT adjacent to blue.</para>
     <para id="para-00086">WI, IL, and MO have the highest degree.</para></entry>
     <entry><para id="para-00087"><emphasis effect="bold">Step 6:</emphasis> Choose one of WI, IL, or MO to color.</para>
@@ -676,12 +676,12 @@
     </row>
     <row>
     <entry><para id="para-00091"><emphasis effect="bold">Step 7:</emphasis> Color MO blue. All remaining vertices are adjacent to blue.</para>
-    <para id="para-00092">Choose a new color. 4 vertices remain, MN, NE, IL, and OH. MN, NE, and IL have the highest degree.</para></entry>
-    <entry><para id="para-00093"><emphasis effect="bold">Step 8:</emphasis> Since MN, IL, and NE are not adjacent, save steps and color all 3 the new color, purple.</para>
-    <para id="para-00094">Vertex OH is theonly remaining vertex that has NOT been colored.</para></entry>
+    <para id="para-00092">Choose a new color. four vertices remain, MN, NE, IL, and OH. MN, NE, and IL have the highest degree.</para></entry>
+    <entry><para id="para-00093"><emphasis effect="bold">Step 8:</emphasis> Since MN, IL, and NE are not adjacent, save steps and color all three the new color, purple.</para>
+    <para id="para-00094">Vertex OH is the only remaining vertex that has NOT been colored.</para></entry>
     <entry><para id="para-00095"><emphasis effect="bold">Step 9:</emphasis> Since vertex OH is not adjacent to purple, color it purple.</para>
     <para id="para-00096">This is the final graph.</para>
-    <para id="para-00097">We used 3 colors.</para></entry>
+    <para id="para-00097">We used three colors.</para></entry>
     </row>
     </tbody>
     </tgroup>
@@ -694,7 +694,7 @@
     </media>
     <caption>Midwestern States in Three Colors</caption>
     </figure>
-    <para id="para-00099">We used 3 colors to color the graph. This supports the Four-Color Theorem, because the graph is planar and its chromatic number is less than 4.</para>
+    <para id="para-00099">We used three colors to color the graph. This supports the Four-Color Theorem, because the graph is planar and its chromatic number is less than four.</para>
     </solution>
     </exercise>
     </example>
@@ -708,12 +708,12 @@
     <note class="who-knew" id="note-00013">
     <title>Coloring A Möbius Strip</title>
     <para id="para-00101">Have you ever heard of a möbius strip? It is a flat object with only one side. This might sound theoretical, but you can make one for yourself. Take a narrow strip of paper, make a half twist in it, and tape the ends together. To prove to yourself that it has only one side, pick a point anywhere on the paper and start drawing a line. You can draw the line continuously without lifting your pen from the paper and eventually, you will get back to the point at which you started. Since you never had to flip over the paper, you have just proved it has one side!</para>
-    <para id="para-00103">Now, you might be wondering what this has to do with Graph Theory. It turns out that a map drawn on a möbius strip cannot necessarily be drawn using four colors. This doesn’t contradict the Four-Color Theorem which only applies to graphs that are planar. A möbius strip does not live on a “plane,” or flat surface, which means the maps are not always planar like those drawn on a flat piece of paper. In the case of a möbius strip, it is the Six-Color Map Theorem! <link target-id="fig-00051" document="m00117">Figure 12.133</link> is an example of a möbius strip with a map that requires 5 colors.</para>
+    <para id="para-00103">Now, you might be wondering what this has to do with Graph Theory. It turns out that a map drawn on a möbius strip cannot necessarily be drawn using four colors. This doesn’t contradict the Four-Color Theorem, which only applies to graphs that are planar. A möbius strip does not live on a “plane,” or flat surface, which means the maps are not always planar like those drawn on a flat piece of paper. In the case of a möbius strip, it is the Six-Color Map Theorem! <link target-id="fig-00051" document="m00117">Figure 12.133</link> is an example of a möbius strip with a map that requires five colors.</para>
     <figure id="fig-00051">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_125.png"/>
     </media>
-    <caption>A 5-Coloring on a Möbius Strip</caption>
+    <caption>A Five-Coloring on a Möbius Strip</caption>
     </figure>
     </note>
     <note class="video" id="note-00014">
@@ -833,15 +833,17 @@
     <item>Walks, trails, and paths are ways to navigate through a graph using a sequence of connected vertices and edges.</item>
     <item>Closed walks, circuits, and directed cycles are ways to navigate from a vertex on a graph and return to the same vertex.</item>
     <item>Colorings are a way to organize the vertices of a graph into groups so that no two members of a group are adjacent.</item>
-    <item>Maps can be represented with planar graphs which can always be colored using four colors or fewer.</item>
+    <item>Maps can be represented with planar graphs, which can always be colored using four colors or fewer.</item>
     </list>
     </section>
     <section class="eoc-videos" id="sect-00012">
     <title>Videos</title>
+   <para id="para-00128"><link url="https://openstax.org/r/POjMICd2sdQ">Walks Trails and Paths in Graph Theory</link></para>
+   <para id="para-00129"><link url="https://openstax.org/r/SRBJ5IQUB3o">Closed Walks, Closed Trails (Circuits), and Closed Paths (Directed Cycles) in Graph Theory</link></para>
     <para id="para-00121"><link url="https://openstax.org/r/Coloring_and_Identifying">Coloring Graphs Part 1: Coloring and Identifying Chromatic Number</link></para>
     <para id="para-00122"><link url="https://openstax.org/r/The_Four">The Four Color Map Theorem – Numberphile</link></para>
     <para id="para-00123"><link url="https://openstax.org/r/Coloring_Maps">Coloring Graphs Part 2: Coloring Maps and the Four Color Problem</link></para>
     <para id="para-00124"><link url="https://openstax.org/r/Neil_de_Grasse">Neil de Grasse Tyson Explains the Möbius Strip:</link></para>
     </section>
-    </content>
+    </content>   
     </document>
