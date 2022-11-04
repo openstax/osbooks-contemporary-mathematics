@@ -25,7 +25,7 @@
     <para id="para-00003">The problem the Quantum Team tackled involves graph theory. Imagine a graph in which vertices are the bus depot, the school, and the bus stops along a particular route. The bus must start at the depot, visit every stop exactly once, and end at the school. The route is a special kind of path that visits every vertex exactly once. Can you guess what those paths are called?</para>
     <section id="sect-00002">
     <title>Hamilton Paths</title>
-    <para id="para-00004">Just as circuits that visit each vertex in a graph exactly once are called Hamilton cycles (or Hamilton circuits), paths that visit each vertex on a graph exactly once are called <emphasis effect="bold">Hamilton paths</emphasis>. As we explore Hamilton paths, you might find it helpful to refresh your memory about the relationships between walks, trails, and paths by looking at <link target-id="fig-00011" document="m00117">Figure 12.105</link>. We know that paths are walks that don’t repeat any vertices or edges. So, a Hamilton path visits every vertex without repeating any vertices or edges. <link target-id="fig-00003" document="m00122">Figure 12.242</link> shows a path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis> and a Hamilton path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis>.</para>
+    <para id="para-00004">Just as circuits that visit each vertex in a graph exactly once are called Hamilton cycles (or Hamilton circuits), paths that visit each vertex on a graph exactly once are called <emphasis effect="bold">Hamilton paths</emphasis>. As we explore Hamilton paths, you might find it helpful to refresh your memory about the relationships between walks, trails, and paths by looking at <link target-id="fig-00011" document="m00117">Figure 12.241</link>. We know that paths are walks that don’t repeat any vertices or edges. So, a Hamilton path visits every vertex without repeating any vertices or edges. <link target-id="fig-00003" document="m00122">Figure 12.242</link> shows a path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis> and a Hamilton path from vertex <emphasis effect="italic">A</emphasis> to vertex <emphasis effect="italic">E</emphasis>.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_08_099.png"/>
@@ -243,15 +243,15 @@
     <tbody>
     <row>
     <entry>Scenario 1 If an edge <emphasis effect="italic">ab</emphasis> is a bridge, then there is no Hamilton path between a pair of vertices that are on the same side of edge <emphasis effect="italic">ab</emphasis>.
-    We saw this in Graph <emphasis effect="italic">A</emphasis> of Example 12.39.</entry>
+    We saw this in Graph <emphasis effect="italic">A</emphasis> of <link target-id="exam-00003" document="m00122">Example 12.40</link>.</entry>
     <entry><figure class="unnumbered" id="fig-00022">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_08_219a.png"/>
-    </media></figure> No Hamilton path between any two vertices in the component {<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>}.<newline/>
+    </media></figure> No Hamilton path between any two vertices in the component<newline/> {<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>}.<newline/>
     No Hamilton path between any two vertices in {<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">i</emphasis>}.</entry>
     </row>
     <row xmlns="http://cnx.rice.edu/cnxml">
-    <entry>Scenario 2 If an edge <emphasis effect="italic">ab</emphasis> is a bridge with at least three components on each side, then there is no Hamilton path beginning or ending at <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis>. We saw this in Graph <emphasis effect="italic">D</emphasis> of Example 12.39.</entry>
+    <entry>Scenario 2 If an edge <emphasis effect="italic">ab</emphasis> is a bridge with at least three components on each side, then there is no Hamilton path beginning or ending at <emphasis effect="italic">a</emphasis> or <emphasis effect="italic">b</emphasis>. We saw this in Graph <emphasis effect="italic">D</emphasis> of <link target-id="exam-00003" document="m00122">Example 12.40</link>.</entry>
     <entry>
     <para id="para-00037"><figure class="unnumbered" id="fig-00023">
     <media alt="Insert Alt Text">
@@ -260,7 +260,7 @@
     </entry>
     </row>
     <row>
-    <entry>Scenario 3 If a graph is composed of two cycles joined only at a single vertex <emphasis effect="italic">p</emphasis>, and <emphasis effect="italic">v</emphasis> is any vertex that is NOT adjacent to <emphasis effect="italic">p</emphasis>, then there are no Hamilton paths beginning or ending at <emphasis effect="italic">p</emphasis>. We saw this in Graph <emphasis effect="italic">B</emphasis> of Example 12.39.</entry>
+    <entry>Scenario 3 If a graph is composed of two cycles joined only at a single vertex <emphasis effect="italic">p</emphasis>, and <emphasis effect="italic">v</emphasis> is any vertex that is NOT adjacent to <emphasis effect="italic">p</emphasis>, then there are no Hamilton paths beginning or ending at <emphasis effect="italic">p</emphasis>. We saw this in Graph <emphasis effect="italic">B</emphasis> of <link target-id="exam-00003" document="m00122">Example 12.40</link>.</entry>
     <entry><figure class="unnumbered" id="fig-00024">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_12_08_219c.png"/>
