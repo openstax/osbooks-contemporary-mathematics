@@ -16,7 +16,7 @@
     <media alt="Insert Alt Text">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_03_002.jpg"/>
     </media>
-    <caption>A globe represents the surface of the Earth in three dimensions. (credit: "Globe" by Wendy Cope/Flickr, CC-BY 2.0)</caption>
+    <caption>A globe represents the surface of Earth in three dimensions. (credit: "Globe" by Wendy Cope/Flickr, CC-BY 2.0)</caption>
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
@@ -188,15 +188,15 @@
      <title>Deciding If Graphs are Isomorphic</title>
      <exercise id="exer-00003">
      <problem id="prob-00003">
-   <para id="para-00022">A teacher uses games to teach her students about colors and numbers as shown in Figure 12.63.</para>
-   <para id="para-00023">In the Colors Game, shown in Figure A, each player begins in the space marked START and proceeds in a counterclockwise direction. On each turn, the player spins a spinner marked 1 and 2 and moves forward the number of spaces shown on the spinner.  If the player lands on a space marked with any color other than white, the player must move forward or back to the other space of the same color. The first player to land in or pass the space marked END wins.</para>
+   <para id="para-00022">A teacher uses games to teach her students about colors and numbers as shown in <link target-id="fig-00018" document="m00111">Figure 12.63</link>.</para>
+   <para id="para-00023">In the Colors Game, shown in Figure <emphasis effect="italic">A</emphasis>, each player begins in the space marked START and proceeds in a counterclockwise direction. On each turn, the player spins a spinner marked 1 and 2 and moves forward the number of spaces shown on the spinner.  If the player lands on a space marked with any color other than white, the player must move forward or back to the other space of the same color. The first player to land in or pass the space marked END wins.</para>
    
-   <para id="para-00065">In the Clock Game, shown in Figure B, each player begins in the space marked START and proceeds in a clockwise direction. On each turn, the player spins a spinner marked 1 and 2 and moves forward the number of spaces shown on the spinner. In the same turn, the player must read the number in the space and move forward the number of spaces indicated by a positive value or backward the number of spaces indicated by a negative value. Then the turn ends.  The first player to land in or pass the space marked END wins.</para>
+   <para id="para-00065">In the Clock Game, shown in Figure <emphasis effect="italic">B</emphasis>, each player begins in the space marked START and proceeds in a clockwise direction. On each turn, the player spins a spinner marked 1 and 2 and moves forward the number of spaces shown on the spinner. In the same turn, the player must read the number in the space and move forward the number of spaces indicated by a positive value or backward the number of spaces indicated by a negative value. Then the turn ends.  The first player to land in or pass the space marked END wins.</para>
    
    <para id="para-00068">Draw a graph or multigraph to represent each game in which the vertices are the spaces and the edges represent the ability of a player to move between the spaces either by a spin or as dictated by a marked color or number. (We will ignore the direction of motion for simplicity.) Transform one of the graphs to show that it is isomorphic to the other and explain what this tells you about the games.</para>
      </problem>
      <solution id="sol-00002">
-    <para id="para-00069">The graph representing the Clock Game can be transformed as shown in Figure 12.64 so that we can see that the graphs are isomorphic. There is a correspondence between their vertices in such a way that any adjacent pair in one graph corresponds to an adjacent pair in the other graph.</para>
+    <para id="para-00069">The graph representing the Clock Game can be transformed as shown in <link target-id="fig-00017" document="m00111">Figure 12.64</link> so that we can see that the graphs are isomorphic. There is a correspondence between their vertices in such a way that any adjacent pair in one graph corresponds to an adjacent pair in the other graph.</para>
    <figure id="fig-00017">
    <media alt="Insert Alt Text">
    <image mime-type="image/jpg" src="../../media/CS_Photo_12_03_003.png"/>
@@ -242,7 +242,7 @@
      <caption>Corresponding Vertices</caption>
      </figure>
      <para id="para-00028">So, we can identify an isomorphism between Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis> by listing the corresponding pairs of vertices: <emphasis effect="italic">b-g</emphasis>, <emphasis effect="italic">c-h</emphasis>, <emphasis effect="italic">d-i</emphasis>, and <emphasis effect="italic">e-j</emphasis>. Notice that <emphasis effect="italic">b</emphasis> is adjacent to <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">g</emphasis> is adjacent to <emphasis effect="italic">h</emphasis>. This must be the case since <emphasis effect="italic">b</emphasis> corresponds to <emphasis effect="italic">g</emphasis> and <emphasis effect="italic">c</emphasis> corresponds to <emphasis effect="italic">h</emphasis>. The same is true for other pairs of adjacent vertices.</para>
-     <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">An isomorphism between graphs is not necessarily unique. There can be more than one isomorphism between two graphs. We can see how to form a different isomorphism between Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis> from Figure 12.40 by rotating Graph <emphasis effect="italic">F</emphasis> clockwise and comparing the rotated version of <emphasis effect="italic">F</emphasis> to Graph <emphasis effect="italic">A</emphasis> as in <link target-id="note-00001" document="m00111">Figure 12.62</link>. Now, we can see that a second isomorphism exists, which has the correspondence: <emphasis effect="italic">b-j</emphasis>, <emphasis effect="italic">d-h</emphasis>, <emphasis effect="italic">c-i</emphasis>, and <emphasis effect="italic">e-g</emphasis> as shown in <link target-id="fig-00021" document="m00111">Figure 12.69</link>.</para>
+     <para id="para-00029" xmlns="http://cnx.rice.edu/cnxml">An isomorphism between graphs is not necessarily unique. There can be more than one isomorphism between two graphs. We can see how to form a different isomorphism between Graph <emphasis effect="italic">A</emphasis> and Graph <emphasis effect="italic">F</emphasis> from <link target-id="fig-00026" document="m00110">Figure 12.40</link> by rotating Graph <emphasis effect="italic">F</emphasis> clockwise and comparing the rotated version of <emphasis effect="italic">F</emphasis> to Graph <emphasis effect="italic">A</emphasis> as in <link target-id="note-00001" document="m00111">Figure 12.62</link>. Now, we can see that a second isomorphism exists, which has the correspondence: <emphasis effect="italic">b-j</emphasis>, <emphasis effect="italic">d-h</emphasis>, <emphasis effect="italic">c-i</emphasis>, and <emphasis effect="italic">e-g</emphasis> as shown in <link target-id="fig-00021" document="m00111">Figure 12.69</link>.</para>
      <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_064.png"/>
@@ -259,7 +259,7 @@
      <title>Identifying Isomorphisms</title>
      <exercise id="exer-00005">
      <problem id="prob-00005">
-     <para id="para-00032">In <link target-id="exam-00001" document="m00111">Example 12.13</link>, we showed that the Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub> in <link target-id="table-00001" document="m00111">Figure 12.50</link> are isomorphic. In <link target-id="fig-00022" document="m00111">Figure 12.70</link>, labels have been assigned to the vertices of Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub>. Identify an isomorphism between them by listing corresponding pairs of vertices.</para>
+     <para id="para-00032">In <link target-id="exam-00001" document="m00111">Example 12.13</link>, we showed that the Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub> in <link target-id="fig-00014" document="m00111">Figure 12.59</link> are isomorphic. In <link target-id="fig-00022" document="m00111">Figure 12.70</link>, labels have been assigned to the vertices of Graphs <emphasis effect="italic">B</emphasis><sub>1</sub> and <emphasis effect="italic">B</emphasis><sub>2</sub>. Identify an isomorphism between them by listing corresponding pairs of vertices.</para>
      <figure id="fig-00022">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_065.png"/>
@@ -340,7 +340,7 @@
      </media>
      <caption>Graphs of Camp Olympics</caption>
      </figure>
-     <para id="para-00042">One way to find the complement of a graph is to draw the complete graph with the same number of vertices and remove all the edges that were in the original graph. Let’s say you wanted to find the complement of Graph <emphasis effect="italic">E</emphasis> from <link target-id="fig-00015" document="m00111">Figure 12.60</link>, and you didn’t already know it was Graph <emphasis effect="italic">F</emphasis>. You could start with the complete graph with four vertices and remove the edges that are in Graph <emphasis effect="italic">E</emphasis> as shown in <link target-id="fig-00028" document="m00111">Figure 12.79</link>.</para>
+     <para id="para-00042">One way to find the complement of a graph is to draw the complete graph with the same number of vertices and remove all the edges that were in the original graph. Let’s say you wanted to find the complement of Graph <emphasis effect="italic">E</emphasis> from <link target-id="fig-00027" document="m00111">Figure 12.78</link>, and you didn’t already know it was Graph <emphasis effect="italic">F</emphasis>. You could start with the complete graph with four vertices and remove the edges that are in Graph <emphasis effect="italic">E</emphasis> as shown in <link target-id="fig-00028" document="m00111">Figure 12.79</link>.</para>
      <figure id="fig-00028">
      <media alt="Insert Alt Text">
      <image mime-type="image/png" src="../../media/CS_Figure_12_03_074.png"/>
