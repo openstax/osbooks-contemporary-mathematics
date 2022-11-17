@@ -58,14 +58,14 @@
       <section id="sect-00003">
       <title>Counting Combinations</title>
       <para id="para-00007">Permutations and combinations are certainly related, because they both involve choosing a subset of a large group. Let’s explore that connection, so that we can figure out how to use what we know about permutations to help us count combinations. We’ll take a basic example. How many ways can we select 3 letters from the group A, B, C, D, and E? If order matters, that number is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mn>5</mn></msub><msub><mi>P</mi><mn>3</mn></msub><mo>=</mo><mn>60</mn></mrow></math>. That’s small enough that we can list them all out in the table below.</para>
-      <table class="unnumbered" summary="." id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
+      <table class="unnumbered" summary=" " id="table-00001" xmlns="http://cnx.rice.edu/cnxml">
       <tgroup cols="6">
-      <colspec colnum="1" colname="c1" colwidth="1pt"/>
-      <colspec colnum="2" colname="c2" colwidth="1pt"/>
-      <colspec colnum="3" colname="c3" colwidth="1pt"/>
-      <colspec colnum="4" colname="c4" colwidth="1pt"/>
-      <colspec colnum="5" colname="c5" colwidth="1pt"/>
-      <colspec colnum="6" colname="c6" colwidth="1pt"/>
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
+      <colspec colnum="3" colname="c3" colwidth="1*"/>
+      <colspec colnum="4" colname="c4" colwidth="1*"/>
+      <colspec colnum="5" colname="c5" colwidth="1*"/>
+      <colspec colnum="6" colname="c6" colwidth="1*"/>
       <tbody>
       <row>
       <entry>ABC</entry>
@@ -243,10 +243,10 @@
       <list list-type="enumerated" number-style="arabic" id="list-00009">
       <item>There are 28 people to choose from, and we need 8. So, the number of possible committees is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow/><mrow><mn>28</mn></mrow></msub><msub><mi>C</mi><mn>8</mn></msub><mo>=</mo><mn>3,108,105</mn></mrow></math>.</item>
       <item xmlns="http://cnx.rice.edu/cnxml">Break the selection of the committee members down into a 4-step process: Choose the seniors, then choose the juniors, then the sophomores, and then the first-years, as shown in the table below:
-      <table class="unnumbered" summary="." id="table-00002">
+      <table class="unnumbered" summary=" " id="table-00002">
       <tgroup cols="2">
-      <colspec colnum="1" colname="c1" colwidth="1pt"/>
-      <colspec colnum="2" colname="c2" colwidth="1pt"/>
+      <colspec colnum="1" colname="c1" colwidth="1*"/>
+      <colspec colnum="2" colname="c2" colwidth="1*"/>
       <thead>
       <row>
       <entry>Class</entry>
