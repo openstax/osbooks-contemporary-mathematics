@@ -331,7 +331,7 @@
     <problem id="prob-00009">
     <para id="para-00034">Identify the types of cyclic subgraphs in Graph <emphasis effect="italic">H</emphasis> in <link target-id="fig-00022" document="m00110">Figure 12.36</link> and name them.</para>
     <figure id="fig-00022">
-    <media alt="Insert Alt Text">
+    <media alt="A graph. The graph has seven vertices: a, b, c, d, e, f, and g. The edges connect a b, b c, c d, d e, e f, f a, b g, and g f.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_034.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">H</emphasis></caption>
@@ -354,7 +354,7 @@
     </note>
     <para id="para-00038">We have seen that sociologists use graphs to study the structures of social networks. In sociology, there is a principle known as Triadic Closure. It says that if two individuals in a social network have a friend in common, then it is more likely those two individuals will become friends too. Sociologists refer to this as an open triad becoming a closed triad. This concept can be visualized as graphs in <link target-id="fig-00023" document="m00110">Figure 12.37</link>. (Chakraborty, Dutta, Mondal, and Nath, "Application of Graph Theory in Social Media, <emphasis effect="italic">International Journal of Computer Sciences and Engineering</emphasis>, 6(10):722-729) In the open triad in <link target-id="fig-00023" document="m00110">Figure 12.37</link>, person <emphasis effect="italic">a</emphasis> and person <emphasis effect="italic">b</emphasis> each has a friendship with person <emphasis effect="italic">c</emphasis>. In the closed triad, person <emphasis effect="italic">a</emphasis> and person <emphasis effect="italic">a</emphasis> have also developed a friendship. Notice that the graph representing the closed triad is a three-cycle, or a triangle, in graph theory terms.</para>
     <figure id="fig-00023" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs represent the open triad and closed triad. The first graph shows three vertices, a, b, and c. The edges connect a c and c b. The second graph shows the same vertices. The edges connect a c, c b, and b a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_035a.png"/>
     </media>
     <caption>Graphs of Open Triad and Closed Triad</caption>
@@ -394,7 +394,7 @@
     <title>Three-Cycles in Complete Graphs</title>
     <para id="para-00042">Just as complete graphs have a predictable number of edges, complete graphs have a predictable number of cyclic subgraphs. Let’s look at the three-cycles within complete graphs with up to six vertices, which are shown in <link target-id="fig-00024" document="m00110">Figure 12.38</link>.</para>
     <figure id="fig-00024">
-    <media alt="Insert Alt Text">
+    <media alt="Four graphs. The first graph shows three vertices, a, b, and c. The edges connect a c, a b, and c b. The second graph shows four vertices, a, b, c, and d. The edges connect a b, b c, c d, a d, a c, and b d. The third graph shows five vertices, a, b, c, d, and e. The edges connect a b, b c, c d, d e, e a, a d, a c, b e, b d, and c e. The fourth graph shows six vertices, a, b, c, d, e, and f. All the vertices are interconnected using 15 edges.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_035b.png"/>
     </media>
     <caption>Complete Graphs with Up to Six Vertices</caption>
@@ -459,7 +459,7 @@
     </table>
     <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Look at the last row in <link target-id="table-00002" document="m00110">Table 12.2</link>. Do you see a pattern emerge for counting triangles in a complete graph? Without drawing a complete graph with 7 vertices, we can predict that it will have <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mo stretchy="false">(</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mn>35</mn></mrow></math> triangles inside it. This pattern also appears in a famous diagram known to Western mathematicians as "Pascal’s Triangle." <link target-id="fig-00025" document="m00110" xmlns="http://cnx.rice.edu/cnxml">Figure 12.39</link> displays the first 11 rows of Pascal’s Triangle. Row 0 of Pascal’s Triangle only has the number 1 in it. The first and last entries in each of the other rows are also 1s. Otherwise, all the entries are formed by adding two entries from the previous row. For example, in row 6, entry 1 is 6, which was found by adding 1 and the 5 from the previous row, and entry 2 is 15, which was found by adding the 5 and the 10 from the previous row, as shown in <link target-id="table-00002" document="m00110">Table 12.2</link>.</para>
     <figure id="fig-00025" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="Pascal's triangle with 10 rows. Row 0: 1. Row 1: 1, 1. Row 2: 1, 2, 1. Row 3: 1, 3, 3, 1. Row 4: 1, 4, 6, 4, 1. Row 5: 1, 5, 10, 10, 5, 1. Row 6: 1, 6, 15, 20, 15, 6, 1. Row 7: 1, 7, 21, 35, 35, 21, 7, 1. Row 8: 1, 8, 28, 56, 70, 56, 28, 8, 1. Row 9: 1, 9, 36, 84, 126, 126, 84, 36, 9, 1. Row 10: 1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1. 6 in row 6 is achieved by adding 1 and 5 in row 5. 15 in row 6 is achieved by adding 5 and 10 in row 5. Arrows from 1 in row 1 point to the 1s in row 2. Row 7 is outlined. In row 10, entry 0 is 1, entry 1 is 10, entry 2 is 45, entry 3 is 120, and so on. The entry 3 diagonal is outlined. 35 is highlighted. Entry 3 in row 7 is the number of triangles (cycles of size 3) in a complete graph with 7 vertices.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_037.png"/>
     </media>
     <caption>Pascal’s Triangle</caption>
@@ -483,14 +483,14 @@
     <solution id="sol-00007">
     <para id="para-00049"><emphasis effect="bold">Step 1:</emphasis> Identify the row number and calculate its entries. Since the complete graph has 11 vertices, we will need to look in row 11 of Pascal’s Triangle. Use row 10 in <link target-id="fig-00025" document="m00110">Figure 12.39</link> to find the entries in row 11 as shown in <link target-id="fig-00026" document="m00110">Figure 12.40</link>.</para>
     <figure id="fig-00026">
-    <media alt="Insert Alt Text">
+    <media alt="Rows 10 and 11 of Pascal's triangle. Row 10: 1, 10, 45, 120, 210, 252, 210, 120, 45, 10, and 1. Row 11: 1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, and 1. Arrows from the first number of row 10 point to the first two numbers of row 11 and so on.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_038.png"/>
     </media>
     <caption>Rows 10 and 11 of Pascal’s Triangle</caption>
     </figure>
     <para id="para-00050"><emphasis effect="bold">Step 2:</emphasis> Find entry number 3. The number of triangles is in entry 3. Remember to count the entries beginning with entry 0 as shown in <link target-id="fig-00027" document="m00110">Figure 12.41</link>.</para>
     <figure id="fig-00027">
-    <media alt="Insert Alt Text">
+    <media alt="Rows 10 and 11 of Pascal's triangle. Row 10: 1, 10, 45, 120, 210, 252, 210, 120, 45, 10, and 1. Row 11: 1, 11, 55, 165, 330, 462, 462, 330, 165, 55, 11, and 1. The entries of row 11 are numbered from 0 to 11. Arrows from the first number of row 10 point to the first two numbers of row 11 and so on.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_039.png"/>
     </media>
     <caption>Identifying an Entry in Pascal’s Triangle</caption>
@@ -515,7 +515,7 @@
     <para id="para-00057"><emphasis effect="bold">Step 4:</emphasis> Select Calculate.</para>
     <para id="para-00090"><emphasis effect="bold">Step 5:</emphasis> Retrieve the answer from the results box.</para>
     <figure id="fig-00028">
-    <media alt="Insert Alt Text">
+    <media alt="A screenshot of Pascal's triangle. The left section displays a search tool with results: 55. This section is numbered 5. The right section shows two sections titled, Pascal triangle calculator and Position of a number in Pascal triangle. The first section displays the following information. Display the triangle until line: 8. Display only line number: 11. Calculate only the value at coordinates (line, column): (11, 9) (numbered 3). These 3 options are numbered 2. Index: 0, the first row is noted 0. This is numbered 1. Calculate button is present. This is numbered 4. The second section shows the value to search set to 210. Index: 0, the first row is noted 0. Calculate button is present.">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_02_003.jpg"/>
     </media>
     <caption>Pascal's Triangle Tool on dCode.xyz</caption>
