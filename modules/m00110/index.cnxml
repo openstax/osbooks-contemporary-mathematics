@@ -30,7 +30,7 @@
     <problem id="prob-00001">
     <para id="para-00004">The graphs in <link target-id="fig-00002" document="m00110">Figure 12.23</link> represent neural networks, where the vertices are the nodes, and the edges represent functional connections between them. Which graph do you think would represent a network with the highest resistance to failure? Which graph would probably be the most vulnerable to failure? How might this relate to the degrees of the vertices?</para>
     <figure id="fig-00002">
-    <media alt="Insert Alt Text">
+    <media alt="Three graphs, graph A, graph B, and graph C represent models of neural networks. The graphs have n number of edges and vertices.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_020.png"/>
     </media>
     <caption>Models of Neural Networks</caption>
@@ -53,21 +53,21 @@
     <title>Relating the Number of Edges to the Degrees of Vertices</title>
     <para id="para-00007">In the applications of graph theory to neuroscience and sociology in <link target-id="exam-00001" document="m00110">Example 12.6</link> and <link target-id="note-00001" document="m00110">Your Turn 12.6</link>, there was a correlation between the degrees of vertices and the resilience of a network. Researchers in many fields have also observed a direct relationship between the number of edges in a graph and the degrees of the vertices. To begin to understand this relationship, consider a graph with five vertices and zero edges as in <link target-id="fig-00003" document="m00110">Figure 12.25</link>.</para>
     <figure id="fig-00003">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has five vertices and no edges. The vertices are labeled 0.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_022.png"/>
     </media>
     <caption>Graph with Five Vertices and zero Edges</caption>
     </figure>
     <para id="para-00008">Instead of being marked with a name, each vertex in <link target-id="fig-00003" document="m00110">Figure 12.25</link> is marked with its degree. In this case, all of the degrees are 0 so the sum of the degrees is also zero. Suppose that we add an edge between any two existing vertices and indicate the degrees of the vertices. This gives us a graph with five vertices and one edge like the graph in <link target-id="fig-00004" document="m00110">Figure 12.26</link>.</para>
     <figure id="fig-00004">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has five vertices: three vertices are labeled 0 and two others are labeled 1. The vertices labeled 1 are connected with an edge.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_023.png"/>
     </media>
     <caption>Graph with Five Vertices and One Edge</caption>
     </figure>
     <para id="para-00009">Note that the degrees of two vertices increased, each by 1. So, the sum of the degrees is now 2. Suppose that we continue in this way, adding one edge at a time and making note of the number of edges and the sum of the degrees of the vertices as in <link target-id="fig-00005" document="m00110">Figure 12.27</link>.</para>
     <figure id="fig-00005">
-    <media alt="Insert Alt Text">
+    <media alt="Four graphs. The first graph is labeled edges: 2. Sum of degrees: 4. The graph has five vertices: two vertices labeled 0, two labeled 1, and one labeled 2. The edges connect 1 2 and 1 2. The second graph is labeled edges: 3. Sum of degrees: 6. The graph has five vertices: four vertices labeled 1 and one labeled 2. The edges connect 1 1, 1 2, and 1 2. The third graph is labeled edges: 4. Sum of degrees: 8. The graph has five vertices: three vertices labeled 1, one labeled 2, and one labeled 3. The edges connect 1 2, 2 3, 1 3, and 1 3. The fourth graph is labeled edges: 5. Sum of degrees: 10. The graph has five vertices: two vertices labeled 1, two labeled 3, and one labeled 2. The edges connect 1 3, 3 3, 2 3, 1 3, and 3 2.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_024.png"/>
     </media>
     <caption>Comparing Number of Edges to Sum of Degrees</caption>
@@ -91,11 +91,11 @@
     </problem>
     <solution id="sol-00002">
     <list list-type="enumerated" number-style="arabic" id="list-00003">
-    <item>The sum of the degrees is twice the number of edges: 2×5=10. The sum of the degrees is 10.</item>
+    <item>The sum of the degrees is twice the number of edges: 2 × 5=10. The sum of the degrees is 10.</item>
     <item>See <link target-id="fig-00006" document="m00110">Figure 12.28</link>.</item>
     </list>
     <figure id="fig-00006">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs are labeled graph 1 and graph 2. Graph 1 has six vertices labeled 1, 2, 2, 2, 2, and 1. The edges connect 1 2, 2 2, 2 2, 2 2, and 2 1. Graph 2 has four vertices labeled 3, 2, 3, and 2. The edges connect 3 2, 2 3, 3 2, 2 3, and 3 3.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_025.png"/>
     </media>
     </figure> 
@@ -114,14 +114,14 @@
     <title>Completeness</title>
     <para id="para-00014">Suppose that there were five strangers in a room, <emphasis effect="italic">A</emphasis>, <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">D</emphasis>, and <emphasis effect="italic">E</emphasis>, and each one would be introduced to each of the others. How many introductions are necessary? One way to begin to answer this question is to draw a graph with each vertex representing an individual in the room and each edge representing an introduction as in <link target-id="fig-00007" document="m00110">Figure 12.29</link>.</para>
     <figure id="fig-00007">
-    <media alt="Insert Alt Text">
+    <media alt="Five graphs titled 4 edges, 3 more edges, 2 more edges, 1 more edge, and 4 plus 3 plus 2 plus 1 equals 10 edges. The first graph shows the edges connecting the following vertices: A E, A D, A C, and A B. The second graph shows the edges connecting the following vertices: A E, A B, A D, A C, E B, B C, and B D. The third graph shows the edges connecting the following vertices: A E, A B, A D, A C, E B, B C, B D, D C, and E C. The fourth graph shows the edges connecting the following vertices: A E, A B, A D, A C, E B, B C, B D, D C, E C, and E D. The fifth graph shows the edges connecting the following vertices: A E, A B, A D, A C, E B, B C, B D, D C, E C, and E D.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_027.png"/>
     </media>
     <caption>Model of Introductions between Five Strangers</caption>
     </figure>
     <para id="para-00015">Let’s approach the problem by thinking about how many new people Person <emphasis effect="italic">A</emphasis> would meet, then Person <emphasis effect="italic">B</emphasis>, and so on, making sure not to repeat any introductions. The first graph in <link target-id="fig-00007" document="m00110">Figure 12.29</link> shows Person <emphasis effect="italic">A</emphasis> meeting Persons <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">D</emphasis>, and <emphasis effect="italic">E</emphasis>, for a total of 4 introductions. The next graph shows that Person <emphasis effect="italic">B</emphasis> still has to meet Persons <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">D</emphasis>, and <emphasis effect="italic">E</emphasis>, for a total of 3 more introductions. The next graph shows that Person <emphasis effect="italic">C</emphasis> still has to meet Persons <emphasis effect="italic">D</emphasis> and <emphasis effect="italic">E</emphasis>, which is 2 more introductions. The next graph shows that Person <emphasis effect="italic">D</emphasis> only remains to meet Person <emphasis effect="italic">E</emphasis>, which is 1 more introduction. The final graph has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>10</mn></mrow></math> edges representing 10 introductions. The last graph is an example of a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">complete</emphasis> graph because each pair of vertices is joined by an edge. Another way of saying this is that the graph is complete because each vertex is adjacent to every other vertex.<link target-id="fig-00008" document="m00110">Figure 12.32</link> shows complete graphs with three, four, five, and six vertices.</para>
     <figure id="fig-00008">
-    <media alt="Insert Alt Text">
+    <media alt="Four graphs. The first graph shows three vertices, a, b, and c. The edges connect a c, a b, and c b. The second graph shows four vertices, a, b, c, and d. The edges connect a b, b c, c d, a d, a c, and b d. The third graph shows five vertices, a, b, c, d, and e. The edges connect a b, b c, c d, d e, e a, a d, a c, b e, b d, and c e. The fourth graph shows six vertices, a, b, c, d, e, and f. All the vertices are interconnected using 15 edges.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_028.png"/>
     </media>
     <caption>Complete Graphs with Up to Six Vertices</caption>
