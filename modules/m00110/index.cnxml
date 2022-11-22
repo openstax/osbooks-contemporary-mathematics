@@ -167,7 +167,7 @@
     <title>Subgraphs</title>
     <para id="para-00023">Sometimes a graph is a part of a larger graph. For example, the graph of South Florida Airports from <link target-id="fig-00005" document="m00109">Figure 12.5</link> is part of a larger graph that includes Orlando International Airport in Central Florida, which is shown in <link target-id="fig-00009" document="m00110">Figure 12.31.</link></para>
     <figure id="fig-00009">
-    <media alt="Insert Alt Text">
+    <media alt="A graph with six vertices. The edges connect Tampa T P A with Key West E Y W, Miami M I A, Fort Lauderdale F L L, and West Palm Beach P B I. An edge connects Key West with Miami. An edge connects Key West with Fort Lauderdale. Edges from Orlando M C O connect with Key West, Miami, and Fort Lauderdale.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_029.png"/>
     </media>
     <caption>Orlando and South Florida Airports</caption>
@@ -179,7 +179,7 @@
     <problem id="prob-00007">
     <para id="para-00025">In <link target-id="fig-00010" document="m00110">Figure 12.32</link>, Graph <emphasis effect="italic">G</emphasis> is given, along with four diagrams. Determine whether each diagram is or is not a subgraph of Graph <emphasis effect="italic">G</emphasis> and explain why.</para>
     <figure id="fig-00010">
-    <media alt="Insert Alt Text">
+    <media alt="Five graphs. Graph G has five vertices: a, b, c, d, and e. The edges connect a b, b c, c d, d e, e a, a d, and b e. Diagram J has five vertices: a, b, c, d, and e. The edges connect a b, a e, a d, e c, and c d. Diagram K has four vertices: a, e, c, and d. The edges connect a e, a d, and d c. Diagram L has four vertices: a, b, c, and d. The edges connect a d, d c, and b c. Diagram M has five vertices: a, b, c, d, and f. The edges connect a b, b c, c d, a f, and f d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_030.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">G</emphasis> and Potential Subgraphs</caption>
@@ -206,7 +206,7 @@
     <section id="sect-00006">
     <title>Identifying and Naming Cycles</title>
     <figure id="fig-00011">
-    <media alt="Insert Alt Text">
+    <media alt="An illustration represents the water cycle. Through the evaporation process, water from the ocean gets evaporated. The evaporated water converts into clouds through the condensation process. Through the precipitation process, rain pours down from clouds. The surface runoff water from the mountains reaches the lake and from the lake to the ocean.">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_02_002.jpg"/>
     </media>
     <caption>The water cycle begins and ends with water. (credit: "Simple water cycle" by The Odd Git/Wikimedia Commons, Public Domain)</caption>
@@ -303,7 +303,7 @@
     <para id="para-00029">There are many more polygon names, including a megagon that has a million edges and a googolgon that has <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>100</mn></mrow></msup></mrow></math> edges, but usually we just say <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math>-gon when the number <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is past 10. For example, a cycle with 11 edges could be called an 11-gon.</para>
     <para id="para-00030" xmlns="http://cnx.rice.edu/cnxml">Notice that the 10-cycle, or decagon, appears to cross over itself in <link target-id="table-00001" document="m00110">Table 12.1</link>. Remember, graphs can be drawn differently but represent the same connections. In <link target-id="fig-00020" document="m00110">Figure 12.34</link>, the same decagon is transformed into a graph that does not appear to overlap itself. We have done this without changing any of the connections so both diagrams represent the same relationships, and both diagrams are considered decagons.</para>
     <figure id="fig-00020">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs. The first graph represents a decagon with 10 edges and 10 vertices. The second graph shows 10 edges and 10 vertices. The edges do not overlap.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_032.png"/>
     </media>
     <caption>Transformation of a Decagon</caption>
@@ -317,7 +317,7 @@
     <title>Cyclic Subgraphs and Cliques</title>
     <para id="para-00032">When cycles appear as subgraphs within a larger graph, they are called <emphasis effect="bold">cyclic subgraphs</emphasis>. Cyclic subgraphs are named by listing their vertices sequentially. The vertex where you begin is not important. Graph <emphasis effect="italic">K</emphasis> in <link target-id="fig-00021" document="m00110">Figure 12.35</link> has two triangle cycles (<emphasis effect="italic">g</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">j</emphasis>) and (<emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">j</emphasis>), and one quadrilateral cycle (<emphasis effect="italic">g</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">j</emphasis>).</para>
     <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="Four graphs. Graph K shows four vertices: g, h, i, and j. The edges connect h i, i j, j g, g h, and h j. The second graph shows (g, h, j). The edges connect g h, g j, and j h. The third graph shows (h, i, j). The edges connect h i, i j, and j h. The fourth graph shows (g, h, i, j). The edges connect g h, h i, i j, and j g.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_02_033.png"/>
     </media>
     <caption>Cycles in Graph <emphasis effect="italic">K</emphasis></caption>
