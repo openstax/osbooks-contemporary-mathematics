@@ -114,7 +114,7 @@
     <problem id="prob-00005">
     <para id="para-00017">Determine the degree of each vertex of Graph <emphasis effect="italic">J</emphasis> in <link target-id="fig-00005" document="m00109">Figure 12.9</link>. If graph <emphasis effect="italic">J</emphasis> represents direct flights between a set of airports, do any of the airports have direct flights to two or more of the other cities on the graph?</para>
     <figure id="fig-00006">
-    <media alt="Insert Alt Text">
+    <media alt="A graph labeled graph J. The graph has five vertices, a, b, c, d, and e. Edges connect a with b, c, and d. An edge connects c with d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_006.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">J</emphasis></caption>
@@ -123,7 +123,7 @@
     <solution id="sol-00003">
     <para id="para-00018">For each vertex, count the number of edges that meet at that vertex. This value is the degree of the vertex. In <link target-id="fig-00007" document="m00109">Figure 12.10</link>, the dashed edges indicate the edges that meet at the marked vertex.</para>
     <figure id="fig-00007">
-    <media alt="Insert Alt Text">
+    <media alt="Five graphs labeled graph J. In the first graph vertex a has degree 3. The graph has five vertices, a, b, c, d, and e. Dotted edges from a connect with b, c, and d. An edge connects c with d. In the second graph vertex b has degree 1. The graph has five vertices, a, b, c, d, and e. Edges from a connect with b, c, and d. An edge connects c with d. The edge connecting b and a is dotted. In the third graph vertex c has degree 2. The graph has five vertices, a, b, c, d, and e. Edges from a connect with b, c, and d. An edge connects c with d. The edges connecting a and c and c and d are dotted. In the fourth graph vertex d has degree 2. The graph has five vertices, a, b, c, d, and e. Edges from a connect with b, c, and d. An edge connects c with d. The edges connecting c and d and a and d are dotted. In the fifth graph vertex e has degree 0. The graph has five vertices, a, b, c, d, and e. Edges from a connect with b, c, and d. An edge connects c with d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_007.png"/>
     </media>
     <caption>Degrees of Vertices of Graph <emphasis effect="italic">J</emphasis></caption>
@@ -142,14 +142,14 @@
     <para id="para-00021">Graphs are also used to analyze regional boundaries. The states of Utah, Colorado, Arizona, and New Mexico all meet at a single point known as the “Four Corners,” which is shown in the map in <link target-id="fig-00008" document="m00109">Figure 12.11</link>.
     </para>
     <figure id="fig-00008">
-    <media alt="Insert Alt Text">
+    <media alt="A map of the USA with the four corners region highlighted. It includes Utah, Colorado, Arizona, and New Mexico.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_008.png"/>
     </media>
     <caption>Map of the Four Corners</caption>
     </figure>
     <para id="para-00022">In <link target-id="fig-00009" document="m00109">Figure 12.12</link>, each vertex represents one of these states, and each edge represents a shared border. States like Utah and New Mexico that meet at only a single point are <emphasis effect="italic">not</emphasis> considered to have a shared border. By representing this map as a graph, where the connections are shared borders, we shift our perspective from physical attributes such as shape, size and distance, toward the existence of the relationship of having a shared boundary.</para>
     <figure id="fig-00009">
-    <media alt="Insert Alt Text">
+    <media alt="A graph of four corner states. The graph shows four edges and four vertices forming a rectangle. The vertices are Utah, Colorado, Arizona, and New Mexico.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_009.png"/>
     </media>
     <caption>Graph of the Shared Boundaries of Four Corners States</caption>
@@ -160,7 +160,7 @@
     <problem id="prob-00007">
     <para id="para-00023">A map of the Midwest is given in <link target-id="fig-00010" document="m00109">Figure 12.13</link>. Create a graph of the region in which each vertex represents a state and each edge represents a shared border.</para>
     <figure id="fig-00010">
-    <media alt="Insert Alt Text">
+    <media alt="A partial map of the USA with the midwestern states. The Midwestern states are North Dakota, South Dakota, Nebraska, Kansas, Minnesota, Iowa, Missouri, Wisconsin, Illinois, Indiana, Michigan, and Ohio.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_010.png"/>
     </media>
     <caption>Map of Midwestern States</caption>
@@ -169,21 +169,21 @@
     <solution id="sol-00004">
     <para id="para-00024"><emphasis effect="bold">Step 1:</emphasis> For each state, draw and label a vertex as in <link target-id="fig-00011" document="m00109">Figure 12.14</link>.</para>
     <figure id="fig-00011">
-    <media alt="Insert Alt Text">
+    <media alt="A partial map of the USA with the midwestern states. The Midwestern states are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H).">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_011.png"/>
     </media>
     <caption>Vertex Assigned to Each Midwestern State</caption>
     </figure>
     <para id="para-00025"><emphasis effect="bold">Step 2:</emphasis> Draw edges between any two states that share a common land border as in <link target-id="fig-00012" document="m00109">Figure 12.15</link>.</para>
     <figure id="fig-00012">
-    <media alt="Insert Alt Text">
+    <media alt="A partial map of the USA with the midwestern states. The Midwestern states are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from N D connect with S D and M N. Edges from S D connect with N E, I A, and M N. Edges from M N connect with I A and W I. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_012.png"/>
     </media>
     <caption>Edge Assigned to Each Pair of Midwestern States with Common Border</caption>
     </figure>
     <para id="para-00026">The graph is given in <link target-id="fig-00013" document="m00109">Figure 12.16</link>.</para>
     <figure id="fig-00013">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents common boundaries between midwestern states. Edges from M N connect with I A and W I. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_01_013.png"/>
     </media>
     <caption>Final Graph Representing Common Boundaries between Midwestern States</caption>
