@@ -7,7 +7,7 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-    <media alt="Insert Alt Text">
+    <media alt="People walking through a maze of hedges.">
     <image mime-type="image/png" src="../../media/CS_Photo_12_04_001.jpg"/>
     </media>
     <caption>Visitors navigate a garden maze. (credit: “Longleat Maze” by Niki Odolphie/Wikimedia, CC-BY 2.0)</caption>
@@ -28,21 +28,21 @@
     <title>Walks</title>
     <para id="para-00003">Suppose <link target-id="fig-00002" document="m00117">Figure 12.95</link> is a maze you want to solve. You want to get from the start to the end.</para>
     <figure id="fig-00002">
-    <media alt="Insert Alt Text">
+    <media alt=" A maze with its start and end labeled.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_089.png"/>
     </media>
     <caption>Your Maze</caption>
     </figure>
     <para id="para-00004">You can approach this task any way you want. The only rule is that you can’t climb over the wall. To put this in the context of graph theory, let’s imagine that at every intersection and every turn, there is a vertex. The edges that join the vertices must stay within the walls. The graph within the maze would look like <link target-id="fig-00003" document="m00117">Figure 12.96</link>.</para>
     <figure id="fig-00003">
-    <media alt="Insert Alt Text">
+    <media alt=" A maze with its start and end labeled. Vertices are marked at each corner of the maze. A path connects all the vertices of the maze.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_090.png"/>
     </media>
     <caption>The Graph in Your Maze</caption>
     </figure>
     <para id="para-00005">One approach to solving a maze is to just start walking. It is not the most efficient approach. You might cross through the same intersection twice. You might backtrack a bit. It’s okay. We are just out for a walk. It might look something like the black sequence of vertices and edges in <link target-id="fig-00004" document="m00117">Figure 12.97</link>.</para>
     <figure id="fig-00004">
-    <media alt="Insert Alt Text">
+    <media alt=" A maze with its start and end labeled. Vertices are marked at each corner of the maze. A path connects all the vertices of the maze. The path from start to end is highlighted.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_091.png"/>
     </media>
     <caption>The Walk Through the Graph in Your Maze</caption>
@@ -50,7 +50,7 @@
     <para id="para-00006">This type of sequence of adjacent vertices and edges is actually called a <term id="term-00001">walk</term> (or <term id="term-00002">directed walk</term>) in graph theory too!</para>
     <para id="para-00007">A walk can be identified by naming the sequence of its vertices (or by naming the sequence of its edges if those are labeled). Let’s take the graph out of the context of the maze and give each vertex a name and each edge of the walk a direction as in <link target-id="fig-00005" document="m00117">Figure 12.98</link>.</para>
     <figure id="fig-00005">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph with 19 vertices and 19 edges. The vertices are a, l, e, h, m, p, r, q, s, o, n, i, j, k, g, c, d, f, and b. The edges connect l a, a b, b f, e f, e h, h m, r s, p q, c d c j, g k, i j, j k, i n, n o, o q, and k s. The following path is highlighted p, q, o, n, i, j, k, s, and r. p is labeled start and q is labeled end. The edges from j to c and c to d are connected via double-headed arrows.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_092.png"/>
     </media>
     <caption>The Graph without Your Maze</caption>
@@ -60,7 +60,7 @@
     <para id="para-00009"><emphasis effect="italic">Not every list of vertices or list of edges makes a path. The order must take into account the way in which the edges and vertices are connected. The list must be a sequence, which means they are in order. No edges or vertices can be skipped and you cannot go off the graph.</emphasis></para>
     </note>
     <figure id="fig-00006">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs are labeled graph X and graph Y. Graph X has six vertices: a, b, c, d, e, and f. The vertices a, b, and e are connected by three edges and it resembles a triangle. The vertices, c, d, and f are connected by three edges and it resembles a triangle. These two triangles overlap and the point where they overlap has no vertex. The edges from b to d and d to f are highlighted. Graph Y is the same as that of graph X. The point where they overlap has a vertex, g.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_093.png"/>
     </media>
     <caption>A Walk or Not a Walk?</caption>
@@ -75,7 +75,7 @@
     <problem id="prob-00001">
     <para id="para-00012"><link target-id="fig-00007" document="m00117">Figure 12.100</link> shows the floor plan of a house. Use the floor plan to answer each question.</para>
     <figure id="fig-00007">
-    <media alt="Insert Alt Text">
+    <media alt=" A floor plan of a house includes the master bedroom, bedroom, kitchen, living room, hallway, garage, and restroom.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_094.png"/>
     </media>
     <caption>Floor Plan of a House</caption>
@@ -89,7 +89,7 @@
     <list list-type="enumerated" number-style="arabic" id="list-00003">
     <item><para id="para-00013"><emphasis effect="bold">Step 1:</emphasis> We will need a vertex for each room and it is convenient to label them according to the names of the rooms. Visualize the scenario in your head as shown in <link target-id="fig-00008" document="m00117">Figure 12.101</link>. You don’t have to write this step on your paper.
     <figure id="fig-00008">
-    <media alt="Insert Alt Text">
+    <media alt=" A floor plan of a house includes the master bedroom, bedroom, kitchen, living room, hallway, garage, and restroom. The following vertices are assigned to rooms: master bedroom, M; bedroom, B; kitchen, K; living room, L; hallway, H; garage, G; and restroom, R. Edges from H lead to M, B, L, and G. Edges from L lead to K and R.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_095.png"/>
     </media>
     <caption>Assigning Vertices to Rooms</caption>
@@ -97,7 +97,7 @@
     </para>
     <para id="para-00014"><emphasis effect="bold">Step 2:</emphasis> Draw a graph to represent the scenario. Start with the vertices. Then connect those vertices that share a doorway in the floorplan as shown in <link target-id="fig-00009" document="m00117">Figure 12.102</link>.</para>
     <figure id="fig-00009">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph of the floor plan. The graph has seven vertices: M, B, K, H, L, G, and R. Edges from H lead to M, B, and G. Edges from L lead to K and R. An edge connects H with L.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_096.png"/>
     </media>
     <caption>Graph of the Floor plan</caption>
@@ -105,7 +105,7 @@
     </item>
     <item><para id="para-00015"><emphasis effect="bold">Step 1:</emphasis> Draw a path that begins at vertex <emphasis effect="italic">L</emphasis>, representing the living room, and ending at vertex <emphasis effect="italic">G</emphasis>, representing the garage making sure to visit every room at least once. There are many ways this can be done. You may want to number the edges to keep track of their order. One example is shown in <link target-id="fig-00010" document="m00117">Figure 12.103</link>.</para>
     <figure id="fig-00010">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph of the floor plan. The graph has seven vertices: M, B, K, H, L, G, and R. Edge 1: L to R. Edge 2: R to L. Edge 3: L to K. Edge 4: K to L. Edge 5: L to H. Edge 6: H to B. Edge 7: B to H. Edge 8: H to M. Edge 9: M to H. Edge 10: H to G.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_097.png"/>
     </media>
     <caption>Draw the Path from <emphasis effect="italic">L</emphasis> to <emphasis effect="italic">G</emphasis></caption>
@@ -135,14 +135,14 @@
     </list>
     <para id="para-00020">We can visualize the relationship as in <link target-id="fig-00011" document="m00117">Figure 12.105</link>.</para>
     <figure id="fig-00011">
-    <media alt="Insert Alt Text">
+    <media alt=" Three concentric ovals represent paths, trails, and walks. The first (inner) oval labeled paths reads, no repeated edges or vertices. The second oval labeled trails reads, no repeated edges. The third oval is labeled walks.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_099.png"/>
     </media>
     <caption>Walks, Trails, and Paths</caption>
     </figure>
     <para id="para-00021">Let’s practice identifying walks, trails, and paths using the graphs in <link target-id="fig-00012" document="m00117">Figure 12.106</link>.</para>
     <figure id="fig-00012">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs are labeled graph A and graph K. Graph A has five vertices: b, c, d, e, and f. The edges connect b c, c f, b d, b e, d e, and e f. Graph K has five vertices: m, n, o, p, and q. The edges connect m n, n o, n q, q o, o p, n p, and m p.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_100.png"/>
     </media>
     <caption>Graphs <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">K</emphasis></caption>
@@ -163,7 +163,7 @@
     <list list-type="enumerated" number-style="arabic" id="list-00006">
     <item>First, check to see if the sequence of vertices is a walk by making sure that the vertices are consecutive. As you can see in <link target-id="fig-00013" document="m00117">Figure 12.107</link>, there is no edge between vertex <emphasis effect="italic">c</emphasis> and vertex <emphasis effect="italic">d</emphasis>.
     <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt=" Graph A has five vertices: b, c, d, e, and f. The edges connect b c, c f, b d, b e, d e, and e f. A sequence of arrows flows from b to c, c to d, d to e, and e to f.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_101.png"/>
     </media>
     <caption/>
@@ -172,7 +172,7 @@
     </item>
     <item>First, check to see if the sequence is a walk. As you can see in <link target-id="fig-00014" document="m00117">Figure 12.108</link>, the vertices are consecutive.
     <figure id="fig-00014">
-    <media alt="Insert Alt Text">
+    <media alt=" Graph A has five vertices: b, c, d, e, and f. The edges connect b c, c f, b d, b e, d e, and e f. An arrow labeled 1 flows from c to b. An arrow labeled 2 flows from b to d. An arrow labeled 3 flows from d to e. An arrow labeled 4 flows from b to e.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_102.png"/>
     </media>
     <caption/>
@@ -181,7 +181,7 @@
     </item>
     <item xmlns="http://cnx.rice.edu/cnxml">First, check to see if the sequence is a walk. We can see in <link target-id="fig-00015" document="m00117">Figure 12.109</link> that the vertices are consecutive, which means it is a walk.
     <figure id="fig-00015">
-    <media alt="Insert Alt Text">
+    <media alt=" Graph A has five vertices: b, c, d, e, and f. The edges connect b c, c f, b d, b e, d e, and e f. An arrow labeled 1 flows from c to f. An arrow labeled 2 flows from f to e. An arrow labeled 3 flows from e to d. An arrow labeled 4 flows from d to b. An arrow labeled 5 flows from b to c.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_103.png"/>
     </media>
     <caption/>
@@ -189,7 +189,7 @@
     <para id="para-00025">Next, check to see if any vertex is visited twice. Remember, we do <emphasis effect="underscore">not</emphasis> consider beginning and ending at the same vertex to be visiting a vertex twice. So, no vertex was visited twice. This means we have a walk that is also a path. Next check to see if any edge was visited twice; none were. So, the sequence is a walk, a path, and a trail.</para></item>
     <item>First, check to see if the sequence is a walk. We can see in <link target-id="fig-00016" document="m00117">Figure 12.110</link> that the vertices are consecutive, which means it is a walk.
     <figure id="fig-00016">
-    <media alt="Insert Alt Text">
+    <media alt=" Graph A has five vertices: b, c, d, e, and f. The edges connect b c, c f, b d, b e, d e, and e f. An arrow labeled 1 flows from b to e. An arrow labeled 2 flows from e to f. An arrow labeled 3 flows from f to c. An arrow labeled 4 flows from c to b. An arrow labeled 5 flows from b to d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_104.png"/>
     </media>
     <caption/>
@@ -229,7 +229,7 @@
     <row>
     <entry>A closed walk is a walk that begins and ends at the same vertex.</entry>
     <entry><para id="para-00029"><figure class="unnumbered" id="fig-00017">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph has five vertices: b, c, d, e, and f. All the vertices are interconnected. In the graph, an arrow labeled 1 flows from d to f. An arrow labeled 2 flows from f to b. An arrow labeled 3 flows from b to c. An arrow labeled 4 flows from c to f. An arrow labeled 5 flows from f to d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_105a.png"/>
     </media></figure></para>
     <para id="para-00030"><emphasis effect="italic">d</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">d</emphasis></para></entry>
@@ -239,7 +239,7 @@
     <row>
     <entry>A closed trail is a trail that begins and ends at the same vertex. It is commonly called a <term id="term-00009">circuit</term>.</entry>
     <entry><para id="para-00033"><figure class="unnumbered" id="fig-00018">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph has five vertices: b, c, d, e, and f. All the vertices are interconnected. In the graph, an arrow labeled 1 flows from d to f. An arrow labeled 2 flows from f to b. An arrow labeled 3 flows from b to c. An arrow labeled 4 flows from c to f. An arrow labeled 5 flows from f to e. An arrow labeled 6 flows from e to d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_105b.png"/>
     </media></figure></para>
     <para id="para-00034"><emphasis effect="italic">d</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">d</emphasis></para></entry>
@@ -249,7 +249,7 @@
     <row>
     <entry>A closed path is a path that begins and ends at the same vertex. It is also referred to as a <term id="term-00010">directed cycle</term> because it travels through a cyclic subgraph.</entry>
     <entry><para id="para-00037"><figure class="unnumbered" id="fig-00019">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph has five vertices: b, c, d, e, and f. All the vertices are interconnected. In the graph, an arrow labeled 1 flows from d to f. An arrow labeled 2 flows from f to b. An arrow labeled 3 flows from b to c. An arrow labeled 4 flows from c to d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_105c.png"/>
     </media></figure></para>
     <para id="para-00038"><emphasis effect="italic">d</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis></para></entry>
@@ -267,7 +267,7 @@
     </list>
     <para id="para-00042">We can visualize the relationship as in <link target-id="fig-00020" document="m00117">Figure 12.111</link>.</para>
     <figure id="fig-00020">
-    <media alt="Insert Alt Text">
+    <media alt=" Three concentric ovals represent directed cycles, circuits, and closed walks. The first (inner) oval labeled directed cycles (closed paths) reads, no repeated edges or vertices. The second oval labeled circuits (closed talks) reads, no repeated edges. The third oval is labeled closed walks.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_106.png"/>
     </media>
     <caption>Closed Walks, Circuits, and Directed Cycles</caption>
@@ -277,7 +277,7 @@
     <equation class="unnumbered" id="eq-00001" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>{</mo> <mtable columnalign="left"><mtr><mtd><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi><mo>→</mo><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi></mtd></mtr><mtr><mtd><mi>d</mi><mo>→</mo><mi>a</mi><mo>→</mo><mi>b</mi><mo>→</mo><mi>c</mi><mo>→</mo><mi>d</mi></mtd></mtr></mtable></mrow></math></equation>
     <para id="para-00044" xmlns="http://cnx.rice.edu/cnxml">Let’s practice working with closed walks, circuits (closed trails), and directed cycles (closed paths). In the graph in <link target-id="fig-00021" document="m00117">Figure 12.112</link>, the vertices are major central and south Florida airports. The edges are direct flights between them.</para>
     <figure id="fig-00021">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph represents the direct flights between Central and South Florida airports. The graph has six vertices: T P A, M C O, P B I, F L L, M I A, and E Y W. Edges from T P A lead to E Y W, M I A, F L L, and P B I. Edges from M C O lead to E Y W, M I A, and F L L. An edge from E Y W leads to F L L.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_107.png"/>
     </media>
     <caption>Major Central and South Florida Airports</caption>
@@ -288,7 +288,7 @@
     <problem id="prob-00005">
     <para id="para-00045">Suppose that you need to travel by air from Miami (MIA) to Orlando (MCO) and you were restricted to flights represented on the graph. For the trip to Orlando, you decide to purchase tickets with a layover in Key West (EYW) as shown in <link target-id="fig-00022" document="m00117">Figure 12.113</link>, but you still have to decide on the return trip. Determine if your roundtrip itinerary is a closed walk, a circuit, and/or a directed cycle, based on the return trip described in each part.</para>
     <figure id="fig-00022">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph represents the direct flights between Central and South Florida airports. The graph has six vertices: T P A, M C O, P B I, F L L, M I A, and E Y W. Edges from T P A lead to E Y W, M I A, F L L, and P B I. Edges from M C O lead to E Y W, M I A, and F L L. An edge from E Y W leads to F L L. An arrow from M I A points to E Y W. An arrow from E Y W points to M C O.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_108.png"/>
     </media>
     <caption>MIA to EYW to MCO</caption>
@@ -321,14 +321,14 @@
     <title>Graph Colorings</title>
     <para id="para-00047">In this section so far, we have looked at how to navigate graphs by proceeding from one vertex to another in a sequence that does not skip any vertices, but in some applications we may want to skip vertices. Remember the camp Olympics at Camp Woebegone in <link target-id="sect-00001" document="m00111">Comparing Graphs</link>? You were planning a camp Olympics with four events. The campers signed up for the events. You drew a graph to help you visualize which events have campers in common. The vertices of Graph <emphasis effect="italic">E</emphasis> in <link target-id="fig-00023" document="m00117">Figure 12.114</link> represent the events and adjacent vertices indicate that there are campers who are participating in both.</para>
     <figure id="fig-00023">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph with four vertices: a, b, c, and d. The edges connect a b, b d, d c, and c a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_073.png"/>
     </media>
     <caption>Graphs of Camp Olympics</caption>
     </figure>
     <para id="para-00048">In this case, we do NOT want events represented by two adjacent vertices to occur in the same timeslot, because that would prevent the campers who wanted to participate in both from doing so. We can use the graph in <link target-id="fig-00023" document="m00117">Figure 12.114</link> to count the timeslots we need so there are no conflicts. Let’s assign each timeslot a different color. We could categorize events that happen at 1 pm as Red; 2 pm, Purple; 3 pm, Blue; and 4 pm, Green. Then assign different colors to any pair of adjacent vertices to ensure that the events they represent do not end up in the same timeslot. <link target-id="fig-00024" document="m00117">Figure 12.115</link> shows several of the ways to do this while obeying the rule that no pair of adjacent vertices can be the same color.</para>
     <figure id="fig-00024">
-    <media alt="Insert Alt Text">
+    <media alt=" Three graphs are labeled graph 1, graph 2, and graph 3. Graph 1 has four vertices: a, b, c, and d in blue, green, purple, and red, respectively. Graph 2 has four vertices: a, b, c, and d in blue, purple, purple, and red, respectively. Graph 3 has four vertices: a, b, c, and d in red, purple, purple, and red, respectively. In each graph, the edges connect a b, b d, d c, and c a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_109.png"/>
     </media>
     <caption>Graph Colorings</caption>
@@ -337,7 +337,7 @@
     <para id="para-00050">A graph that uses <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> colors is called an <term id="term-00012" xmlns="http://cnx.rice.edu/cnxml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>-coloring</term>. The smallest number of colors needed to color a particular graph is called its <term id="term-00013" xmlns="http://cnx.rice.edu/cnxml">chromatic number</term>.</para>
     <para id="para-00051">Graph colorings can be used in many applications like the scheduling scenario at camp Woebegone. Let's look at how they work in more detail. <link target-id="fig-00025" document="m00117">Figure 12.116</link> shows two different colorings of a particular graph. Coloring A is called a four-coloring, because it uses four colors, red (R), green (G), blue (B), and purple (P). Coloring B is called a three-coloring because it uses three. The colors allow us to visually subdivide the graphs into groups. The only rule is that adjacent vertices are different colors so that they are in different groups.</para>
     <figure id="fig-00025">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs are labeled coloring A and coloring B In the first graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: B, G, and R. Row 2: G, R, and P. Row 3: P, B, and G. The outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect G R, R B, G R, and R P. Diagonal lines connect B R, R G, G B, and G P. In the second graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: B, G, and R. Row 2: G, R, and B. Row 3: R, B, and G. The outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect G R, R B, G R, and R B. Diagonal lines connect B R, R G, G B, and G B.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_110.png"/>
     </media>
     <caption>Two Colorings of the Same Graph</caption>
@@ -358,7 +358,7 @@
     <entry>Recall that planar graphs are untangled; that is, they can be drawn on a flat surface so that no two edges are crossing.<emphasis effect="bold"> If a graph is planar, it can be colored with four colors or possibly fewer.
     </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00026">
-    <media alt="Insert Alt Text">
+    <media alt=" Three graphs. The first graph titled tangled has nine vertices labeled a to i. The edges connect a b, a d, a e, c e, e g, e i, g f, f i, and i h. The second graph titled untangled has nine vertices labeled a to i. The edges connect a b, a d, a e, e c, e g, e i, i h, i f, and g f. The third graph titled 4 or fewer colors has nine vertices a to i in red, green, green, green, blue, blue, green, blue, and red. The edges connect a b, a d, a e, e c, e g, e i, i h, i f, and g f.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_111a.png"/>
     </media></figure></entry>
     </row>
@@ -366,7 +366,7 @@
     <entry>Each vertex in a complete graph is adjacent to every other vertex forcing us to color them all different colors.<emphasis effect="bold">The chromatic number of a complete graph is the same as the number of vertices.
     </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00027">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs. The first graph has five vertices in red, blue, green, yellow, and purple. All vertices are interconnected. Text reads, 5 vertices and 5 colors. The second graph has four vertices in red, blue, green, and purple. All vertices are interconnected. Text reads, 4 vertices, and 4 colors.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_111b.png"/>
     </media></figure></entry>
     </row>
@@ -374,7 +374,7 @@
     <entry>If a graph has a clique, a complete subgraph, then each vertex in the clique must have a different color and the vertices outside the clique may or may not have even more colors. <emphasis effect="bold">The chromatic number of a graph is <emphasis effect="italic">at least</emphasis> the number of vertices in its biggest clique.
     </emphasis></entry>
     <entry><figure class="unnumbered" id="fig-00028">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs. The first graph has five vertices in red, green, purple, green, and red. The edges connect R with G, R with P, G with P, P with second G, and second G with the second R. The three colors, R, G, and P are outlined. The second graph has six vertices in red, blue, green, purple, blue, and red. The first four vertices are interconnected and outlined. Purple is connected with the fifth vertex, blue. The fifth vertex is connected to the sixth vertex, red.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_111c.png"/>
     </media></figure></entry>
     </row>
@@ -391,42 +391,42 @@
     <item>The graph is not complete, but it has complete subgraphs of three vertices. In other words, it has triangles like the one shown with blue vertices in <link target-id="fig-00029" document="m00117">Figure 12.117</link>. This means that the chromatic number is <emphasis effect="italic">at least</emphasis> three.</item>
     </list>
     <figure id="fig-00029">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph has nine vertices arranged in 3 rows and 3 columns. The outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines. The vertices at the top-left, left-center, and center are highlighted in grey.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_112.png"/>
     </media>
     <caption>A Graph with Triangles</caption>
     </figure>
     <para id="para-00055">We know we can color this graph in three or four colors. It is usually best to start by coloring the vertex of highest degree as shown in <link target-id="fig-00030" document="m00117">Figure 12.118</link>. In this case, we used red (R). The color is not important.</para>
     <figure id="fig-00030">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs are labeled degrees of vertices and degree 6 vertex colored first. In the first graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, 4, and 2. Row 2: 4, 6, and 4. Row 3: 2, 4, and 3. In the second graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, 4, and 2. Row 3: 4, R, and 4. Row 3: 2, 4, and 3. In each graph, the outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines. An arrow from the first graph points to the second graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_113.png"/>
     </media>
     <caption>Color Highest Degree Vertex First</caption>
     </figure>
     <para id="para-00056">We want to color as many of the vertices the same color as possible; so, we look at all the vertices that are not adjacent to the red vertex and begin to color them, red starting with the one among them of highest degree. Since the only vertices that are not adjacent are both degree 2, choose either one and color it red as shown in <link target-id="fig-00031" document="m00117">Figure 12.119</link>.</para>
     <figure id="fig-00031">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs. In the first graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, 4, and 2. Row 3: 4, R, and 4. Row 3: 2, 4, and 3. 2 in the top-right and bottom-left vertices are outlined. In the second graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, 4, and R. Row 2: 4, R, and 4. Row 3: 2, 4, and 3. In each graph, the outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines. An arrow from the first graph points to the second graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_114.png"/>
     </media>
     <caption>Color More Red from Highest to Lowest Degree</caption>
     </figure>
     <para id="para-00057">Now, there is only one vertex left that is not adjacent to a red; so, color it red. Of the remaining vertices, the highest degree is four; so, color one of the vertices of degree four in a different color. These two steps are shown in <link target-id="fig-00032" document="m00117">Figure 12.120</link>.</para>
     <figure id="fig-00032">
-    <media alt="Insert Alt Text">
+    <media alt=" Two graphs. In the first graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, 4, and R. Row 3: 4, R, and 4. Row 3: R, 4, and 3. In the second graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, B, and R. Row 2: 4, R, and 4. Row 3: R, 4, and 3. In each graph, the outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines. An arrow from the first graph points to the second graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_115.png"/>
     </media>
     <caption>Complete the Reds and Start Another Color</caption>
     </figure>
     <para id="para-00058">Repeat the same procedure. There are three remaining vertices that are not adjacent to a blue. Color as many blue as possible, with priority going to vertices of higher degree as shown in <link target-id="fig-00033" document="m00117">Figure 12.121</link>.</para>
     <figure id="fig-00033">
-    <media alt="Insert Alt Text">
+    <media alt=" Three graphs. In the first graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, B, and R. Row 3: 4, R, and 4. Row 3: R, 4, and 3. 4 in the left-center and bottom-center vertices are outlined. 3 in the bottom-right vertex is outlined. In the second graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, B, and R. Row 2: B, R, and 4. Row 3: R, 4, and 3. 3 in the bottom-right vertex is outlined. In the third graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, B, and R. Row 2: B, R, and 4. Row 3: R, 4, and B. In each graph, the outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines. An arrow from the first graph points to the second graph. An arrow from the second graph points to the third graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_116.png"/>
     </media>
     <caption>Repeat Procedure for Color Blue</caption>
     </figure>
     <para id="para-00059">All the remaining vertices are adjacent to blue. So, it is time to repeat the procedure with another color as shown in <link target-id="fig-00034" document="m00117">Figure 12.122</link>.</para>
     <figure id="fig-00034">
-    <media alt="Insert Alt Text">
+    <media alt=" Three graphs. In the first graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, B, and R. Row 3: B, R, and P. Row 3: R, 4, and B. 3 in the top-left vertex is outlined. 4 in the bottom-center is outlined. In the second graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: 3, B, and R. Row 2: B, R, and P. Row 3: R, P, and B. 3 in the top-left vertex is outlined. In the third graph, nine vertices are present. The vertices are arranged in 3 rows and 3 columns. Row 1: P, B, and R. Row 2: B, R, and P. Row 3: R, P, and B. In each graph, the outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines. An arrow from the first graph points to the second graph. An arrow from the second graph points to the third graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_117.png"/>
     </media>
     <caption>Repeat Procedure for Color Purple</caption>
@@ -437,7 +437,7 @@
     </note>
     <para id="para-00062">Suppose the vertices of the graph in <link target-id="fig-00035" document="m00117">Figure 12.123</link> represented the nine events in the Camp Woebegone Olympics, and edges join any events that have campers in common, but nonadjacent vertices do not.</para>
     <figure id="fig-00035">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph has nine vertices. The vertices are arranged in 3 rows and 3 columns. Row 1: P, B, and R. Row 2: B, R, and P. Row 3: R, P, and B. In each graph, the outer vertices are connected to form a square. A vertical line and a horizontal line at the center connect the vertices along the lines. Diagonal lines from top-left to bottom-right connect the vertices along the lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_118.png"/>
     </media>
     <caption>Coloring for Nine Event Camp Woebegone Olympics</caption>
@@ -449,7 +449,7 @@
     <problem id="prob-00007">
     <para id="para-00064">In <link target-id="exam-00005" document="m00111">Example 12.17</link>, we discussed a high school, which holds end-of-course exams in (E3) English 3, (E4) English 4, (M) Advanced Math, (C) Calculus, (W) World History, (U) U.S. History, (B) Biology, and (P) Physics. We were given a list of courses that had no students in common. We used that information to find the graph in <link target-id="fig-00031" document="m00111">Figure 12.81</link>, which shows edges between exams with students in common. Use the graph we found in <link target-id="exam-00005" document="m00111">Example 12.17</link> to answer each question.</para>
     <figure id="fig-00036">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph has eight vertices. The vertices are P, B, U, W, C, M, E 4, and E 3. Edges from P lead to E 3, B, U, W, and C. Edges from B lead to U, W, C, M, and E 4. Edges from U lead to E 3, M, and C. Edges from W lead to E 4, M, and C. An edge from C leads to E 3. An edge from M leads to E 3.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_077.png"/>
     </media>
     <caption>Graph of Exams with Students in Common</caption>
@@ -553,7 +553,7 @@
     <section id="sect-00007">
     <title>The Four Color Problem</title>
     <figure id="fig-00061">
-    <media alt="Insert Alt Text">
+    <media alt=" Two figures. The first figure shows a rectangle divided into several small blocks. The second figure is the same as that of the first figure with the addition that the blocks are shaded in 4 different colors.">
     <image mime-type="image/png" src="../../media/CS_Photo_12_04_002.jpg"/>
     </media>
     <caption>Using only four colors, no two adjacent regions have the same color.</caption>
@@ -564,20 +564,20 @@
     </note>
     <para id="para-00070">We saw how maps can be represented as graphs in <link target-id="sect-00001" document="m00109">Graph Basics</link>. <link target-id="fig-00047" document="m00117">Figure 12.127</link> from <link target-id="exam-00004" document="m00109">Example 12.4</link> shows a map of the midwestern region of the United States.</para>
     <figure id="fig-00047">
-    <media alt="Insert Alt Text">
+    <media alt=" A partial map of the USA with midwestern states. The Midwestern states are North Dakota, South Dakota, Nebraska, Kansas, Minnesota, Iowa, Missouri, Wisconsin, Illinois, Indiana, Michigan, and Ohio.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_010.png"/>
     </media>
     <caption>Map of Midwestern States</caption>
     </figure>
     <para id="para-00071"><link target-id="fig-00048" document="m00117">Figure 12.128</link> shows how this map can be associated with a graph in which each vertex represents a state and each edge indicates the states that share a common boundary. <link target-id="fig-00049" document="m00117">Figure 12.129</link> shows the final graph.</para>
     <figure id="fig-00048">
-    <media alt="Insert Alt Text">
+    <media alt=" A partial map of the USA with midwestern states. The Midwestern states are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from N D connect with S D and M N. Edges from S D connect with N E, I A, and M N. Edges from M N connect with I A and W I. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_012.png"/>
     </media>
     <caption>Edge Assigned to Each Pair of Midwestern States with Common Border</caption>
     </figure>
     <figure id="fig-00049">
-    <media alt="Insert Alt Text">
+    <media alt=" A graph represents common boundaries between midwestern states. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_013.png"/>
     </media>
     <caption>Final Graph Representing Common Boundaries between Midwestern States</caption>
@@ -606,17 +606,17 @@
     <tbody>
     <row>
     <entry><figure class="unnumbered" id="fig-00052">
-    <media alt="Insert Alt Text">
+    <media alt="This graph infers the following data. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I and their corresponding degrees are 2, 4, 4, 2, 4, 6, 4, 4, 4, 3, 3, and 2. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H. An arrow from the this graph points to the next graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_122a-1.png"/>
     </media>
     </figure></entry>
     <entry><figure class="unnumbered" id="fig-00053">
-    <media alt="Insert Alt Text">
+    <media alt="This graph infers the following data. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I and their corresponding degrees are 2, 4, 4, 2, 4, 6, 4, 4, 4, 3, 3, and 2. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H. In this graph, I A is in red. An arrow from this graph points to the next graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_122a-2.png"/>
     </media>
     </figure></entry>
     <entry><figure class="unnumbered" id="fig-00054">
-    <media alt="Insert Alt Text">
+    <media alt="This graph infers the following data. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I and their corresponding degrees are 2, 4, 4, 2, 4, 6, 4, 4, 4, 3, 3, and 2. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H. In this graph, I A and M I are in red.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_122a-3.png"/>
     </media>
     </figure></entry>
@@ -633,17 +633,17 @@
     </row>
     <row>
     <entry><figure class="unnumbered" id="fig-00055">
-    <media alt="Insert Alt Text">
+    <media alt="This graph infers the following data. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I and their corresponding degrees are 2, 4, 4, 2, 4, 6, 4, 4, 4, 3, 3, and 2. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H. In the first graph, N D, I A, and K S are in red. An arrow from the this graph points to the next graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_122b-1.png"/>
     </media>
     </figure></entry>
     <entry><figure class="unnumbered" id="fig-00056">
-    <media alt="Insert Alt Text">
+    <media alt="This graph infers the following data. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I and their corresponding degrees are 2, 4, 4, 2, 4, 6, 4, 4, 4, 3, 3, and 2. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H. In the second graph, N D, I A, K S, and M I are in red. S D is in blue. An arrow from this graph points to the next graph.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_122b-2.png"/>
     </media>
     </figure></entry>
     <entry><figure class="unnumbered" id="fig-00057">
-    <media alt="Insert Alt Text">
+    <media alt="This graph infers the following data. The vertices are North Dakota (N D), South Dakota (S D), Nebraska (N E), Kansas (K S), Minnesota (M N), Iowa (I A), Missouri (M O), Wisconsin (W I), Illinois (I L), Indiana (I N), Michigan (M I), and Ohio (O H). Edges from M N connect with I A and W I and their corresponding degrees are 2, 4, 4, 2, 4, 6, 4, 4, 4, 3, 3, and 2. Edges from N E connect with K S, M O, and I A. Edges from I A connect with M O and I L. Edges from W I connect with I A and I L. An edge from K S connects with M O. An edge from M O connects with I L. An edge from I L connects with I N. Edges from I N connect with M I and O H. An edge from M I connects with O H. In the third graph, N D, K S, I A, and M I are in red. S D and W I are in blue.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_122b-3.png"/>
     </media>
     </figure></entry>
@@ -689,7 +689,7 @@
     </table>
     <para id="para-00098">The final graph in <link target-id="table-00004" document="m00117">Table 12.7</link> shows how we would color the map. In <link target-id="fig-00050" document="m00117">Figure 12.130</link> we have colored the map to correspond to the colors on the graph.</para>
     <figure id="fig-00050">
-    <media alt="Insert Alt Text">
+    <media alt=" A partial map of the USA with midwestern states. The Midwestern states are North Dakota, South Dakota, Nebraska, Kansas, Minnesota, Iowa, Missouri, Wisconsin, Illinois, Indiana, Michigan, and Ohio. North Dakota, Kansas, Iowa, and Michigan are in red. South Dakota, Missouri, Wisconsin, and Indiana are in blue. Nebraska, Minnesota, Illinois, and Ohio are in purple.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_123.png"/>
     </media>
     <caption>Midwestern States in Three Colors</caption>
@@ -710,7 +710,7 @@
     <para id="para-00101">Have you ever heard of a möbius strip? It is a flat object with only one side. This might sound theoretical, but you can make one for yourself. Take a narrow strip of paper, make a half twist in it, and tape the ends together. To prove to yourself that it has only one side, pick a point anywhere on the paper and start drawing a line. You can draw the line continuously without lifting your pen from the paper and eventually, you will get back to the point at which you started. Since you never had to flip over the paper, you have just proved it has one side!</para>
     <para id="para-00103">Now, you might be wondering what this has to do with Graph Theory. It turns out that a map drawn on a möbius strip cannot necessarily be drawn using four colors. This doesn’t contradict the Four-Color Theorem, which only applies to graphs that are planar. A möbius strip does not live on a “plane,” or flat surface, which means the maps are not always planar like those drawn on a flat piece of paper. In the case of a möbius strip, it is the Six-Color Map Theorem! <link target-id="fig-00051" document="m00117">Figure 12.133</link> is an example of a möbius strip with a map that requires five colors.</para>
     <figure id="fig-00051">
-    <media alt="Insert Alt Text">
+    <media alt=" A Mobius strip is shaded in five different colors.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_04_125.png"/>
     </media>
     <caption>A Five-Coloring on a Möbius Strip</caption>
