@@ -7,7 +7,7 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-    <media alt="Insert Alt Text">
+    <media alt="A row of trees with no leaves.">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_10_001.jpg"/>
     </media>
     <caption>In graph theory, graphs known as trees have structures in common with live trees. (credit: “Row of trees in Roslev” by AKA CJ/Flickr, Public Domain)</caption>
@@ -27,7 +27,7 @@
     <title>What Is A Tree?</title>
     <para id="para-00003">Whether we are talking about a family tree or a tree in a forest, none of the branches ever loops back around and rejoins the trunk. This means that a <term id="term-00001">tree</term> has no cyclic subgraphs, or is <term id="term-00002">acyclic</term>. A tree also has only one component. So, a tree is a connected acyclic graph. Here are some graphs that have the same characteristic. Each of the graphs in <link target-id="fig-00002" document="m00124">Figure 12.292</link> is a tree.</para>
     <figure id="fig-00002">
-    <media alt="Insert Alt Text">
+    <media alt="Three graphs. Graph T has 15 vertices. The edges are as follows: a b, b c, c d, c i, i j, j k, k o, d e, d l, e n, e m, b f, f g, and g h. Graph P has 6 vertices. The edges are as follows: t s, s r, r q, q p, and p o. Graph S has 7 vertices. The edges are as follows: u t, u v, u w, u x, u y, and u z.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_244.png"/>
     </media>
     <caption>Graphs <emphasis effect="italic">T</emphasis>, <emphasis effect="italic">P</emphasis>, and <emphasis effect="italic">S</emphasis></caption>
@@ -39,7 +39,7 @@
     <problem id="prob-00001">
     <para id="para-00005">Identify any trees in <link target-id="fig-00003" document="m00124">Figure 12.293</link>. If a graph is not a tree, explain how you know.</para>
     <figure id="fig-00003">
-    <media alt="Insert Alt Text">
+    <media alt="Three graphs. Graph M has 7 vertices. The edges are a b, b f, f g, f c, b c, b d, and d e. Graph N has 6 vertices. The edges are I j, I h, l k, and l m. The edges, I j, and l k intersect each other. Graph P has 6 vertices. The edges are s t, s r, r q, q p, and p o.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_245.png"/>
     </media>
     <caption>Graphs <emphasis effect="italic">M</emphasis>, <emphasis effect="italic">N</emphasis>, and <emphasis effect="italic">P</emphasis></caption>
@@ -74,13 +74,13 @@
     </list>
     <para id="para-00008">Examples of each of these types of structures are given in <link target-id="fig-00005" document="m00124">Figure 12.296</link>.</para>
     <figure id="fig-00004">
-    <media alt="Insert Alt Text">
+    <media alt="Graph F has 8 vertices. The vertices are labeled a to h. Edges connect b a, b d, b c, f e, f h, and f g.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_247.png"/>
     </media>
     <caption>Forest Graph F</caption>
     </figure>
     <figure id="fig-00005">
-    <media alt="Insert Alt Text">
+    <media alt="Six graphs. Graph S has 7 vertices. The edges are a b, b f, f g, f c, b c, b d, and d e. Graph N has 6 vertices. The edges are I j, I h, l k, and l m. The edges, I j, and l k intersect each other. Graph P has 6 vertices. The edges are s t, s r, r q, q p, and p o. Graph Z has 12 vertices. The edges are a b, a c, a d, a e, a f, a g, a h, h i, c j, e k, and k l. Graph C has 14 vertices. The edges are m n, n z, n o, o r, o p, o x, o y, p y, p x, p s, p t, p u, p q, p v, and p w. Graph L has 26 vertices. The edges are f q, f t, f s, f e, e o, e p, p z, e d, d m, m v, d n, n y, d c, c k, k u, c l, l k, c b, b i, i t, b j, j w, b a, b g, and b h.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_248a.png"/>
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_248b.png"/>
     </media>
@@ -92,7 +92,7 @@
     <problem id="prob-00003">
     <para id="para-00009">Each graph in <link target-id="fig-00007" document="m00124">Figure 12.297</link> is one of the special types of trees we have been discussing. Identify the type of tree.</para>
     <figure id="fig-00007">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs. Graph U has 17 vertices. The edges are o q, o p, o l, l n, l k, l m, l i, I j, I f, f g, f h, f d, d e, f b, b c, and b a. Graph V hs 6 vertices. The edges are r s, s t, t u, u v, and v w. The edges, s t and u v intersect.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_249.png"/>
     </media>
     <caption>Graphs <emphasis effect="italics">U</emphasis> and <emphasis effect="italics">V</emphasis></caption>
@@ -116,21 +116,21 @@
     <title>Characteristics of Trees</title>
     <para id="para-00013">As we study trees, it is helpful to be familiar with some of their characteristics. For example, if you add an edge to a tree graph between any two existing vertices, you will create a cycle, and the resulting graph is no longer a tree. Some examples are shown in <link target-id="fig-00008" document="m00124">Figure 12.298</link>. Adding edge <emphasis effect="italic">bj</emphasis> to Graph <emphasis effect="italic">T</emphasis> creates cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">j</emphasis>). Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">rt</emphasis> to Graph <emphasis effect="italic">P</emphasis> creates cycle (<emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>). Adding edge <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">tv</emphasis> to Graph <emphasis effect="italic">S</emphasis> creates cycle (<emphasis effect="italic">t</emphasis>, <emphasis effect="italic">u</emphasis>, <emphasis effect="italic">v</emphasis>).</para>
     <figure id="fig-00008" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="Three graphs. Graph T has 15 vertices. The edges are as follows: a b, b c, c d, c i, i j, j k, k o, d e, d l, e n, e m, b f, f g, and g h. The edges, c i, and i j are in blue. A dashed edge connects b and j. Graph P has 6 vertices. The edges are as follows: t s, s r, r q, q p, and p o. The edges, t s, and s r are in blue. A dashed edge connects t and r. Graph S has 7 vertices. The edges are as follows: u t, u v, u w, u x, u y, and u z. The edges, u t, and u v are in blue. A dashed edge connects t and v.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_250.png"/>
     </media>
     <caption>Adding Edges to Trees</caption>
     </figure>
     <para id="para-00014">It is also true that removing an edge from a tree graph will increase the number of components and the graph will no longer be connected. In fact, you can see in <link target-id="fig-00009" document="m00124">Figure 12.299</link> that removing one or more edges can create a forest. Removing edge <emphasis effect="italic">qr</emphasis> from Graph <emphasis effect="italic">P</emphasis> creates a graph with two components, one with vertices <emphasis effect="italic">o, p</emphasis> and <emphasis effect="italic">q</emphasis>, and the other with vertices <emphasis effect="italic">r, s</emphasis>, and <emphasis effect="italic">t</emphasis>. Removing edge <emphasis effect="italic">uw</emphasis> from Graph <emphasis effect="italic">S</emphasis> creates two components, one with just vertex <emphasis effect="italic">w</emphasis> and the other with the rest of the vertices. When two edges were removed from Graph <emphasis effect="italic">T</emphasis>, edge <emphasis effect="italic">bf</emphasis> and edge <emphasis effect="italic">cd</emphasis>, creates a graph with three components as shown in <link target-id="fig-00009" document="m00124">Figure 12.299</link>.</para>
     <figure id="fig-00009">
-    <media alt="Insert Alt Text">
+    <media alt="Three graphs. Graph T has 15 vertices. The edges are as follows: a b, b c, c d, c i, i j, j k, k o, d e, d l, e n, e m, b f, f g, and g h. The edges, d c, and b f are in dashed lines. The graph is separated into three blocks. Graph P has 6 vertices. The edges are as follows: t s, s r, r q, q p, and p o. The edge, q r is in dashed lines. The graph is separated into two blocks. Graph S has 7 vertices. The edges are as follows: u t, u v, u w, u x, u y, and u z. The edge, u w is in dashed lines. The graph is separated into two blocks.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_251.png"/>
     </media>
     <caption>Removing Edges from Trees</caption>
     </figure>
     <para id="para-00015">A very useful characteristic of tree graphs is that the number of edges is always one less than the number of vertices. In fact, any connected graph in which the number of edges is one less than the number of vertices is guaranteed to be a tree. Some examples are given in <link target-id="fig-00010" document="m00124">Figure 12.300</link>.</para>
     <figure id="fig-00010">
-    <media alt="Insert Alt Text">
+    <media alt="Six graphs. Graph T has 15 vertices. The edges are as follows: a b, b c, c d, c i, i j, j k, k o, d e, d l, e n, e m, b f, f g, and g h. Graph P has 6 vertices. The edges are as follows: t s, s r, r q, q p, and p o. Graph S has 7 vertices. The edges are as follows: u t, u v, u w, u x, u y, and u z. Graph Z has 12 vertices. The edges are a b, a c, a d, a e, a f, a g, a h, h i, c j, e k, and k l. Graph C has 14 vertices. The edges are m n, n z, n o, o r, o p, o x, o y, p y, p x, p s, p t, p u, p q, p v, and p w. Graph L has 26 vertices. The edges are f q, f t, f s, f e, e o, e p, p z, e d, d m, m v, d n, n y, d c, c k, k u, c l, l k, c b, b i, i t, b j, j w, b a, b g, and b h.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_252.png"/>
     </media>
     <caption>Number of Vertices and Edges in Trees vs. Other Graphs</caption>
@@ -145,7 +145,7 @@
     <problem id="prob-00005">
     <para id="para-00018">Use Graphs <emphasis effect="italic">I</emphasis> and <emphasis effect="italic">J</emphasis> in <link target-id="fig-00011" document="m00124">Figure 12.301</link> to answer each question.</para>
     <figure id="fig-00011">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs. Graph I has six vertices: a, b, c, d, e, and f. Edges connect a b, b c, b e, d e, and e f. Graph J has seven vertices: g h, i, j, k, l, and m. Edges connect g h, h i, j h, j l, k l, and l m.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_253.png"/>
     </media>
     <caption>Graphs <emphasis effect="italic">I</emphasis> and <emphasis effect="italic">J</emphasis></caption>
@@ -184,14 +184,14 @@
     <title>Spanning Trees</title>
     <para id="para-00022">Suppose that you planned to set up your own computer network with four devices. One option is to use a “mesh topology” like the one in <link target-id="fig-00012" document="m00124">Figure 12.302</link>, in which each device is connected directly to every other device in the network.</para>
     <figure id="fig-00012">
-    <media alt="Insert Alt Text">
+    <media alt="Four illustrations represent the common network configurations. The first illustration represents mesh topology. Six computers are interconnected. The second illustration represents a ring topology. Five computers are connected in a ring. The third illustration represents star topology. A computer at the center is connected to five computers surrounding it. The fourth illustration represents tree topology. Two branches arise from a horizontal bus. Each branch has a computer at the center connected to five computers surrounding it.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_246.png"/>
     </media>
     <caption>Common Network Configurations</caption>
     </figure>
     <para id="para-00023">The mesh topology for four devices could be represented by the complete Graph <emphasis effect="italic">A</emphasis><sub>1</sub> in <link target-id="fig-00013" document="m00124">Figure 12.303</link> where the vertices represent the devices, and the edges represent network connections. However, the devices could be networked using fewer connections. Graphs <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3,</sub> and <emphasis effect="italic">A</emphasis><sub>4</sub> of <link target-id="fig-00013" document="m00124">Figure 12.303</link> show configurations in which three of the six edges have been removed. Each of the Graphs <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3</sub> and <emphasis effect="italic">A</emphasis><sub>4</sub> in <link target-id="fig-00013" document="m00124">Figure 12.303</link> is a tree because it is connected and contains no cycles. Since Graphs <emphasis effect="italic">A</emphasis><sub>2</sub>, <emphasis effect="italic">A</emphasis><sub>3</sub> and <emphasis effect="italic">A</emphasis><sub>4</sub> are also subgraphs of Graph <emphasis effect="italic">A</emphasis><sub>1</sub> that include every vertex of the original graph, they are also known as <term id="term-00004">spanning trees</term>.</para>
     <figure id="fig-00013">
-    <media alt="Insert Alt Text">
+    <media alt="Four graphs. Graph A 1 has four vertices: a, b, c, and d. The edges are a b, b d, d c, c a, a d, and b c. Graph A 2 has four vertices: a, b, c, and d. The edges are a b, b c, and c d. Graph A 3 has four vertices: a, b, c, and d. The edges are a b, a c, and c d. Graph A 4 has four vertices: a, b, c, and d. The edges are a b, a c, and a d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_254.png"/>
     </media>
     <caption>Network Configurations for Four Devices</caption>
@@ -209,7 +209,7 @@
     <problem id="prob-00007">
     <para id="para-00025">Use <link target-id="fig-00014" document="m00124">Figure 12.304</link> to determine which of graphs <emphasis effect="italic">M</emphasis><sub>1</sub>, <emphasis effect="italic">M</emphasis><sub>2</sub>, <emphasis effect="italic">M</emphasis><sub>3</sub>, and <emphasis effect="italic">M</emphasis><sub>4</sub>, are spanning trees of <emphasis effect="italic">Q</emphasis>.</para>
     <figure id="fig-00014">
-    <media alt="Insert Alt Text">
+    <media alt="Five graphs. Graph Q has six vertices: a, b, c, d, e, and f. The edges are a b, a c, a d, b d, d f, c d, c e, c f, and e f. Graph M 1 has six vertices: a, b, c, d, e, and f. The edges are a b, b d, d c, c e, f, and f d. Graph M 2 has six vertices: a, b, c, d, e, and f. The edges are a b, a d, d f, f e, and e c. Graph M 3 has six vertices; a, b, c, d, e, and f. The edges are b d, d f, a f, f e, and e c. Graph M 4 has six vertices: a, b, c, d, e, and f. The edges are a b, c e, e f, and f d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_255.png"/>
     </media>
     <caption>Graphs <emphasis effect="italic">Q</emphasis>, <emphasis effect="italic">M</emphasis><sub>1</sub>, <emphasis effect="italic">M</emphasis><sub>2</sub>, <emphasis effect="italic">M</emphasis><sub>3,</sub> and <emphasis effect="italic">M</emphasis><sub>4</sub></caption>
@@ -238,28 +238,28 @@
     <title>Constructing a Spanning Tree Using Paths</title>
     <para id="para-00028">Suppose that you wanted to find a spanning tree within a graph. One approach is to find paths within the graph. You can start at any vertex, go any direction, and create a path through the graph stopping only when you can’t continue without backtracking as shown in <link target-id="fig-00015" document="m00124">Figure 12.306</link>.</para>
     <figure id="fig-00015">
-    <media alt="Insert Alt Text">
+    <media alt="A graph with 23 vertices and 35 edges. Ten edges are highlighted in green. Two vertices are labeled started here and stopped here.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_257.png"/>
     </media>
     <caption>First Phase to Construct a Spanning Tree</caption>
     </figure>
     <para id="para-00029">Once you have stopped, pick a vertex along the path you drew as a starting point for another path. Make sure to visit only vertices you have not visited before as shown in <link target-id="fig-00016" document="m00124">Figure 12.307</link>.</para>
     <figure id="fig-00016">
-    <media alt="Insert Alt Text">
+    <media alt="A graph with 23 vertices and 35 edges. Ten edges are highlighted in blue. Ten edges are highlighted in green. Two vertices are labeled started here and stopped here.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_258.png"/>
     </media>
     <caption>Intermediate Phase to Construct a Spanning Tree</caption>
     </figure>
     <para id="para-00030">Repeat this process until all vertices have been visited as shown in <link target-id="fig-00017" document="m00124">Figure 12.308</link>.</para>
     <figure id="fig-00017">
-    <media alt="Insert Alt Text">
+    <media alt="A graph with 23 vertices and 35 edges. Ten edges are highlighted in blue. Ten edges are highlighted in green. Two vertices are labeled started here and stopped here. Two edges are highlighted in purple.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_259.png"/>
     </media>
     <caption>Final Phase to Construct a Spanning Tree</caption>
     </figure>
     <para id="para-00031">The end result is a tree that spans the entire graph as shown in <link target-id="fig-00018" document="m00124">Figure 12.309</link>.</para>
     <figure id="fig-00018">
-    <media alt="Insert Alt Text">
+    <media alt="A graph with 23 vertices and 22 edges.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_260.png"/>
     </media>
     <caption>The Resulting Spanning Tree</caption>
@@ -271,7 +271,7 @@
     <problem id="prob-00009">
     <para id="para-00033">Construct two distinct spanning trees for the graph in <link target-id="fig-00019" document="m00124">Figure 12.310</link>.</para>
     <figure id="fig-00019">
-    <media alt="Insert Alt Text">
+    <media alt="Graph L has 11 vertices and 19 edges. The graph resembles a square resting below a triangle on either side. The triangles are connected via a trapezoid. The squares have diagonal lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_261.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">L</emphasis></caption>
@@ -280,13 +280,13 @@
     <solution id="sol-00005">
     <para id="para-00034">Two possible solutions are given in <link target-id="fig-00020" document="m00124">Figure 12.311</link> and <link target-id="fig-00021" document="m00124">Figure 12.312</link>.</para>
     <figure id="fig-00020">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs depict removing edges from graph L. The first graph has 11 vertices and 19 edges. It resembles a square resting below a triangle on either side. The triangles are connected via a trapezoid. The squares have diagonal lines. 6 edges are in green, 2 edges are in purple, and 2 edges are in blue. Green represents phase 1, blue represents phase 2, and purple represents phase 3. The second graph is the final tree. The black edges from the first graph are removed.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_262.png"/>
     </media>
     <caption>First Spanning Tree for Graph <emphasis effect="italic">L</emphasis></caption>
     </figure>
     <figure id="fig-00021">
-    <media alt="Insert Alt Text">
+    <media alt="Two graphs depict removing edges from graph L. The first graph has 11 vertices and 19 edges. It resembles a square resting below a triangle on either side. The triangles are connected via a trapezoid. The squares have diagonal lines. 6 edges are in green, 2 edges are in purple, and 2 edges are in blue. Green represents phase 1, blue represents phase 2, and purple represents phase 3. The second graph is the final tree. The black edges from the first graph are removed.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_263.png"/>
     </media>
     <caption>Second Spanning Tree for Graph <emphasis effect="italic">L</emphasis></caption>
@@ -306,14 +306,14 @@
     <title>Revealing Spanning Trees</title>
     <para id="para-00036">Another approach to finding a spanning tree in a connected graph involves removing unwanted edges to reveal a spanning tree. Consider Graph <emphasis effect="italic">D</emphasis> in <link target-id="fig-00022" document="m00124">Figure 12.314</link>.</para>
     <figure id="fig-00022">
-    <media alt="Insert Alt Text">
+    <media alt="Graph D has 10 vertices. The vertices are labeled from a to j. The edges are c d, c a, d a, a g, a h, g h, a b, b e, b f, e f, b i, b j, and I j.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_266.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">D</emphasis></caption>
     </figure>
     <para id="para-00037">Graph <emphasis effect="italic">D</emphasis> has 10 vertices. A spanning tree of Graph <emphasis effect="italic">D</emphasis> must have 9 edges, because the number of edges is one less than the number of vertices in any tree. Graph <emphasis effect="italic">D</emphasis> has 13 edges so 4 need to be removed. To determine which 4 edges to remove, remember that trees do not have cycles. There are four triangles in Graph <emphasis effect="italic">D</emphasis> that we need to break up. We can accomplish this by removing 1 edge from each of the triangles. There are many ways this can be done. Two of these ways are shown in <link target-id="fig-00023" document="m00124">Figure 12.315</link>.</para>
     <figure id="fig-00023">
-    <media alt="Insert Alt Text">
+    <media alt="Four graphs depict removing edges from graph D.	In the first graph, the vertices are labeled from a to j. The edges are c d, c a, d a, a g, a h, g h, a b, b e, b f, e f, b i, b j, and i j. The edges, a c, e f, g h, and b j are shown in dashed lines. The second graph is the same as that of the first with edges, a c, e f, g h, and b j removed. In the Third graph, the vertices are labeled from a to j. The edges are c d, c a, d a, a g, a h, g h, a b, b e, b f, e f, b i, b j, and i j. The edges, a c, a g, b f, and b i are shown in dashed lines. The Fourth graph is the same as that of the first with edges, a c, a g, b f, and b i removed.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_267a.png"/>
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_267b.png"/>
     </media>
@@ -328,7 +328,7 @@
     <problem id="prob-00011">
     <para id="para-00039">Use the graph in <link target-id="fig-00025" document="m00124">Figure 12.316</link> to answer each question.</para>
     <figure id="fig-00025">
-    <media alt="Insert Alt Text">
+    <media alt="Graph V has 9 vertices. The vertices are labeled from a to i. The edges are f c, f a, c a, c d, d a, a b, b e, e h, h i, I g, and g b.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_268.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">V</emphasis></caption>
@@ -345,14 +345,14 @@
     <item>(<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>), (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), and (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">g</emphasis>)</item>
     <item xmlns="http://cnx.rice.edu/cnxml">To find the first spanning tree, remove edge <emphasis effect="italic">ac</emphasis>, which will break up both of the triangles, remove edge <emphasis effect="italic">cf </emphasis>, which will break up the quadrilateral, and remove <emphasis effect="italic">be</emphasis>, which will break up the pentagon, to give us the spanning tree shown in <link target-id="fig-00026" document="m00124">Figure 12.317</link>.
     <figure id="fig-00026">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 9 vertices. The vertices are labeled from a to i. The edges are f a, c d, d a, a b, b g, g i, I h, and h e.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_269.png"/>
     </media>
     <caption>Spanning Tree Formed Removing <emphasis effect="italic">ac, cf</emphasis>, and <emphasis effect="italic">be</emphasis></caption>
     </figure>
     <para id="para-00040">To find another spanning tree, remove <emphasis effect="italic">ad</emphasis>, which will break up (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>) and (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), remove <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">af</emphasis> to break up (<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">f</emphasis>), and remove <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">hi</emphasis> to break up (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">h</emphasis>, <emphasis effect="italic">i</emphasis>, <emphasis effect="italic">g</emphasis>). This will give us the spanning tree in <link target-id="fig-00027" document="m00124">Figure 12.318</link>.</para>
     <figure id="fig-00027" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 9 vertices. The vertices are labeled from a to i. The edges are f c, c d, c a, a b, b e, e h, b g, and g i.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_270.png"/>
     </media>
     <caption>Spanning Tree Formed Removing <emphasis effect="italic">ad</emphasis>, <emphasis effect="italic">af</emphasis>, and <emphasis effect="italic">hi</emphasis></caption>
@@ -373,7 +373,7 @@
     <title>Chains of Affection</title>
     <para id="para-00042">Here is a strange question to ask in a math class: Have you ever dated your ex’s new partner’s ex? Research suggests that your answer is probably no. When researchers Peter S. Bearman, James Moody, and Katherine Stovel attempted to compare the structure of heterosexual romantic networks at a typical midwestern high school to simulated networks, they found something surprising. The actual social networks were more like spanning trees than other possible models because there were very few short cycles. In particular, there were almost no four-cycles.</para>
     <figure id="fig-00028">
-    <media alt="Insert Alt Text">
+    <media alt="A graph with four vertices. The vertices are Bob, Alice, Carol, and Ted. A double-headed arrow labeled time 1 is between Bob and Carol. A double-headed arrow labeled time 1 is between Alice and Tex. A double-headed arrow labeled time 2 is between Carol and Ted. A double-headed arrow labeled with a question mark is between Bob and Alice.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_295.png"/>
     </media>
     <caption>Chains of Affection</caption>
@@ -398,7 +398,7 @@
     <problem id="prob-00013">
     <para id="para-00051">A computer network will be set up with six devices. The vertices in the graph in <link target-id="fig-00029" document="m00124">Figure 12.320</link> represent the devices, and the edges represent the cost of a connection. Find the network configuration that will cost the least. What is the total cost?</para>
     <figure id="fig-00029">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_271.png"/>
     </media>
     <caption>Graph of Network Connection Costs</caption>
@@ -408,49 +408,49 @@
     <para id="para-00052">A minimum spanning tree will correspond to the network configuration of least cost. We will use Kruskal’s algorithm to find one. Since the graph has six vertices, the spanning tree will have six vertices and five edges.</para>
     <para id="para-00053"><emphasis effect="bold">Step 1:</emphasis> Choose an edge of least weight. We have sorted the weights into numerical order. The least is $100. The only edge of this weight is edge <emphasis effect="italic">AF</emphasis> as shown in <link target-id="fig-00030" document="m00124">Figure 12.321</link>.</para>
     <figure id="fig-00030">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. Edge, A F is in dashed lines. Cost in dollars are as follows: 100, 120, 150, 160, 170, 170, 200, 210, 220, 250, 270, 300, 310, 330, and 350. 100 is struck through.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_272.png"/>
     </media>
     <caption>Step 1 Select Edge <emphasis effect="italic">AF</emphasis></caption>
     </figure>
     <para id="para-00054"><emphasis effect="bold">Step 2:</emphasis> Choose the edge of least weight of the remaining edges, which is <emphasis effect="italic">BD</emphasis> with $120. Notice that the two selected edges do not need to be adjacent to each other as shown in <link target-id="fig-00031" document="m00124">Figure 12.322</link>.</para>
     <figure id="fig-00031">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. Edges, A F, and B D are in dashed lines. Cost in dollars are as follows: 100, 120, 150, 160, 170, 170, 200, 210, 220, 250, 270, 300, 310, 330, and 350. 100 and 120 are struck through.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_273.png"/>
     </media>
     <caption>Step 2 Select Edge <emphasis effect="italic">BD</emphasis></caption>
     </figure>
     <para id="para-00055"><emphasis effect="bold">Step 3:</emphasis> Select the lowest weight edge of the remaining edges, as long as it does not result in a cycle. We select <emphasis effect="italic">DF</emphasis> with $150 since it does not form a cycle as shown in <link target-id="fig-00032" document="m00124">Figure 12.323</link>.</para>
     <figure id="fig-00032">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. Edges, A F, B D, and D F are in dashed lines. Cost in dollars are as follows: 100, 120, 150, 160, 170, 170, 200, 210, 220, 250, 270, 300, 310, 330, and 350. 100, 120, and 150 are struck through.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_274.png"/>
     </media>
     <caption>Step 3 Select Edge <emphasis effect="italic">DF</emphasis></caption>
     </figure>
     <para id="para-00056"><emphasis effect="bold">Repeat Step 3:</emphasis> Select the lowest weight edge of the remaining edges, which is <emphasis effect="italic">BE</emphasis> with $160 and it does not form a cycle as shown in <link target-id="fig-00033" document="m00124">Figure 12.324</link>. This gives us four edges so we only need to repeat step 3 once more to get the fifth edge.</para>
     <figure id="fig-00033">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. Edges, A F, B D, B E, and D F are in dashed lines. Cost in dollars are as follows: 100, 120, 150, 160, 170, 170, 200, 210, 220, 250, 270, 300, 310, 330, and 350. 100, 120, 150, and 160 are struck through.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_275.png"/>
     </media>
     <caption>Repeat Step 3 Select Edge <emphasis effect="italic">DF</emphasis></caption>
     </figure>
     <para id="para-00057"><emphasis effect="bold">Repeat Step 3:</emphasis> The lowest weight of the remaining edges is $170. Both <emphasis effect="italic">BF</emphasis> and <emphasis effect="italic">CE</emphasis> have a weight of $170, but <emphasis effect="italic">BF</emphasis> would create cycle (<emphasis effect="italic">b</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">f</emphasis>) and there cannot be a cycle in a spanning tree as shown in <link target-id="fig-00034" document="m00124">Figure 12.325</link>.</para>
     <figure id="fig-00034" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. Edges, A F, B D, B E, and DF are in dashed lines. Edge, B F is in red. Cost in dollars are as follows: 100, 120, 150, 160, 170, 170, 200, 210, 220, 250, 270, 300, 310, 330, and 350. 100, 120, 150, and 160 are struck through. 170 is crossed out.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_276.png"/>
     </media>
     <caption>Repeat Step 3 Do Not Select Edge <emphasis effect="italic">BF</emphasis></caption>
     </figure>
     <para id="para-00058">So, we will select <emphasis effect="italic">CE</emphasis>, which will complete the spanning tree as shown in <link target-id="fig-00035" document="m00124">Figure 12.326</link>.</para>
     <figure id="fig-00035">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. Edges, A F, B D, B E, C E, and D F are in dashed lines. Cost in dollars are as follows: 100, 120, 150, 160, 170, 170, 200, 210, 220, 250, 270, 300, 310, 330, and 350. 100, 120, 150, 160, and 170 are struck through. 170 is crossed out.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_277.png"/>
     </media>
     <caption>Repeat Step 3 Select Edge <emphasis effect="italic">CE</emphasis></caption>
     </figure>
     <para id="para-00059">The minimum spanning tree is shown in <link target-id="fig-00036" document="m00124">Figure 12.327</link>. This is the configuration of the network of least cost. The spanning tree has a total weight of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>$</mo><mn>100</mn><mo>+</mo><mo>$</mo><mn>120</mn><mo>+</mo><mo>$</mo><mn>150</mn><mo>+</mo><mo>$</mo><mn>160</mn><mo>+</mo><mo>$</mo><mn>170</mn><mo>=</mo><mo>$</mo><mn>700</mn></mrow></math>, which is the total cost of this network configuration.</para>
     <figure id="fig-00036" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has six vertices labeled A to F. The edges are as follows. A F, curved edge, 100 dollars. B E, 160 dollars. B D, 120 dollars. C E, 170 dollars. D F, 150 dollars.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_10_278.png"/>
     </media>
     <caption>Final Minimum Spanning Tree</caption>
@@ -903,5 +903,5 @@
     </problem>
     </exercise>
     </section>
-    </content>   
-    </document>   
+    </content> 
+    </document>       
