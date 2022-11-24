@@ -35,7 +35,7 @@
     <para id="para-00004">An algorithm is a sequence of steps that can be used to solve a particular problem. We have solved many problems in this chapter, and the procedures that we used were different types of algorithms. In this section, we will use two common types of algorithms, a <term id="term-00001">brute force algorithm</term> and a <term id="term-00002">greedy algorithm</term>. A brute force algorithm begins by listing every possible solution and applying each one until the best solution is found. A greedy algorithm approaches a problem in stages, making the apparent best choice at each stage, then linking the choices together into an overall solution which may or may not be the best solution.</para>
     <para id="para-00005">To understand the difference between these two algorithms, consider the tree diagram in <link target-id="fig-00002" document="m00123">Figure 12.271</link>. Suppose we want to find the path from left to right with the largest total sum. For example, branch A in the tree diagram has a sum of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>10</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>11</mn><mo>+</mo><mn>13</mn><mo>=</mo><mn>36</mn></mrow></math>.</para>
     <figure id="fig-00002" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 15 vertices. The vertices are labeled 1 to 15. 10 branches into 2 and 7. 2 branches into 11 and 15. 11 branches into 13 and 8. 15 branches into 1 and 6. 7 branches into 3 and 4. 3 branches into 20 and 14. 4 branches into 11 and 5. 13, 8, 1, 6, 20, 14, 11, and 5 are labeled A to H.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_226.png"/>
     </media>
     <caption>Points Along Different Paths</caption>
@@ -51,28 +51,28 @@
     <para id="para-00100" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="italic">H</emphasis>: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mn>10</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>26</mn></math></para>
     <para id="para-00008" xmlns="http://cnx.rice.edu/cnxml">Then we know with certainty that branch <emphasis effect="italic">E</emphasis> has the greatest sum.</para>
     <figure id="fig-00003">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 15 vertices. The vertices are labeled 1 to 15. 10 branches into 2 and 7. 2 branches into 11 and 15. 11 branches into 13 and 8. 15 branches into 1 and 6. 7 branches into 3 and 4. 3 branches into 20 and 14. 4 branches into 11 and 5. 13, 8, 1, 6, 20, 14, 11, and 5 are labeled A to H. The edges 10 to 7, 7 to 3, and 3 to 20 are highlighted. An arrow from E points to 20.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_227.png"/>
     </media>
     <caption>Branch <emphasis effect="italic">E</emphasis></caption>
     </figure>
     <para id="para-00009">Now suppose that you wanted to find the branch with the highest value, but you only were shown the tree diagram in phases, one step at a time.</para>
     <figure id="fig-00004">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 3 vertices. The vertices are labeled 10, 2, and 7. 10 branches into 2 and 7. The edge, 10 to 7 is highlighted.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_228.png"/>
     </media>
     <caption>Tree Diagram Phase 1</caption>
     </figure>
     <para id="para-00010">After phase 1, you would have chosen the branch with 10 and 7. So far, you are following the same branch. Let’s look at the next phase.</para>
     <figure id="fig-00005">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 5 vertices. The vertices are labeled 10, 2, 7, 3, and 4. 10 branches into 2 and 7. 7 branches into 3 and 4. The edges, 10 to 7 and 7 to 4 are highlighted.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_229.png"/>
     </media>
     <caption>Tree Diagram Phase 2</caption>
     </figure>
     <para id="para-00011">After phase 2, based on the information you have, you will choose the branch with 10, 7 and 4. Now, you are following a different branch than before, but it is the best choice based on the information you have. Let’s look at the last phase.</para>
     <figure id="fig-00006">
-    <media alt="Insert Alt Text">
+    <media alt="A graph has 7 vertices. The vertices are labeled 10, 2, 7, 3, 4, 11, and 15. 10 branches into 2 and 7. 7 branches into 3 and 4. 4 branches into 11 and 5. The edges, 10 to 7, 7 to 4, and 4 to 11 are highlighted. 11 and 5 are labeled G and H.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_230.png"/>
     </media>
     <caption>Tree Diagram Phase 3</caption>
@@ -110,7 +110,7 @@
     <para id="para-00015">Now let’s focus our attention on the graph theory application known as the <term id="term-00003">traveling salesman problem (TSP)</term> in which we must find the shortest route to visit a number of locations and return to the starting point.</para>
     <para id="para-00016">Recall from <link target-id="sect-00001" document="m00121">Hamilton Cycles</link>, the officer in the U.S. Air Force who is stationed at Vandenberg Air Force base and must drive to visit three other California Air Force bases before returning to Vandenberg. The officer needed to visit each base once. We looked at the weighted graph in <link target-id="fig-00007" document="m00123">Figure 12.276</link> representing the four U.S. Air Force bases: Vandenberg, Edwards, Los Angeles, and Beal and the distances between them.</para>
     <figure id="fig-00007">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the four California air force bases. The graph has four vertices: E, B, V, and L. The edge, E B is labeld 410 miles. The edge, B V is labeled 396 miles. The edge, V L is labeled 159 miles. The edge, L E is labeled 106 miles. The edge, L B is labeled 439 miles. The edge, E V is labeled 207 miles.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_199.png"/>
     </media>
     <caption>Graph of Four California Air Force Bases</caption>
@@ -133,36 +133,36 @@
     <tbody>
     <row>
     <entry><figure class="unnumbered" id="fig-00009">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. Edges connect a b, b c, c d, d a, a c, and b d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196a.png"/>
     </media></figure></entry>
     <entry><figure class="unnumbered" id="fig-00010">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this second graph, the edges, a c, and b d are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196b.png"/>
     </media></figure></entry>
     <entry><figure class="unnumbered" id="fig-00011">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this third graph, the edges, a d, and b c are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196c.png"/>
     </media></figure></entry>
     <entry><figure class="unnumbered" id="fig-00012">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this fourth graph, the edges, a b, and d c are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196d.png"/>
     </media></figure></entry>
     </row>
     <row>
     <entry><emphasis effect="bold">Clockwise Hamilton Cycle</emphasis></entry>
     <entry><para id="para-00018"><figure class="unnumbered" id="fig-00013">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this fifth graph, the edges, a c, and bd are in dashed lines. Directed arrows flow from a to b, b to c, c to d, and d to a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196e.png"/>
     </media></figure></para>
     <para id="para-00019"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis></para></entry>
     <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00020"><figure class="unnumbered" id="fig-00014">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this sixth graph, the edges, ad, and bc are in dashed lines. Directed edges flow from a to b, b to d, d to c, and c to a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196f.png"/>
     </media></figure></para>
     <para id="para-00021"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">a</emphasis></para></entry>
     <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00022"><figure class="unnumbered" id="fig-00015">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this seventh graph, the edges, a b, and dc are in dashed lines. Directed edges flow from a to c, c to b, b to d, and d to a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196g.png"/>
     </media></figure></para>
     <para id="para-00023"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">a</emphasis></para></entry>
@@ -170,17 +170,17 @@
     <row xmlns="http://cnx.rice.edu/cnxml">
     <entry><emphasis effect="bold">Counterclockwise Hamilton Cycle</emphasis></entry>
     <entry><para id="para-00024"><figure class="unnumbered" id="fig-00016">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this eighth graph, the edges, a c, and b d are in dashed lines. Directed edges flow from a to d, d to c, c to b, and b to a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196h.png"/>
     </media></figure></para>
     <para id="para-00025"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">a</emphasis></para></entry>
     <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00026"><figure class="unnumbered" id="fig-00017">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this ninth graph, the edges, a d, and bc are in dashed lines. The directed edges flow from a to c, c to d, d to b, and b to a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196i.png"/>
     </media></figure></para>
     <para id="para-00027"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">a</emphasis></para></entry>
     <entry xmlns="http://cnx.rice.edu/cnxml"><para id="para-00028"><figure class="unnumbered" id="fig-00018">
-    <media alt="Insert Alt Text">
+    <media alt="In this graph, four vertices, a, b, c, and d are present. In this tenth graph, the edges, a b, and dc are in dashed lines. The edges flow from a to d, d to b, b to c, and c to a.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_196j.png"/>
     </media></figure></para>
     <para id="para-00029"><emphasis effect="italic">a</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">a</emphasis></para></entry>
@@ -191,7 +191,7 @@
     </table>
     <para id="para-00030">Since the distance between bases is the same in either direction, it does not matter if the officer travels clockwise or counterclockwise. So, there are really only three possible distances as shown in <link target-id="fig-00019" document="m00123">Figure 12.277</link>.</para>
     <figure id="fig-00019">
-    <media alt="Insert Alt Text">
+    <media alt="Three graphs represent the four California air force bases. Each graph has four vertices: E, B, V, and L. The edge, E B is labeled 410 miles. The edge, B V is labeled 396 miles. The edge, V L is labeled 159 miles. The edge, L E is labeled 106 miles. The edge, L B is labeled 439 miles. The edge, E V is labeled 207 miles. In the first graph, the edges, E V, and L B are in dashed lines. In the second graph, the edges, E L and B V are in dashed lines. In the third graph, the edges, E B and L V are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_231a.png"/>
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_231b.png"/>
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_231c.png"/>
@@ -268,7 +268,7 @@
     <problem id="prob-00005">
     <para id="para-00046">On the next assignment, the air force officer must leave from Travis Air Force base, visit Beal, Edwards, and Vandenberg Air Force bases each exactly once and return to Travis Air Force base. There is no need to visit Los Angeles Air Force base. Use <link target-id="fig-00022" document="m00123">Figure 12.278</link> to find the shortest route.</para>
     <figure id="fig-00022">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the five California air force bases. The graph has five vertices: E, B, V, L, and T. The edge, E B is labeled 410 miles. The edge, B V is labeled 396 miles. The edge, V L is labeled 159 miles. The edge, L E is labeled 106 miles. The edge, L B is labeled 439 miles. The edge, E V is labeled 207 miles. The edge, E T is labeled 370 miles. The edge, L T is labeled 396 miles. The edge, B T is labeled 84 miles. The edge, V T is labeled 396 miles.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_232.png"/>
     </media>
     <caption>Distances between Five California Air Force Bases</caption>
@@ -278,7 +278,7 @@
     <para id="para-00047"><emphasis effect="bold">Step 1:</emphasis> Since there are 4 vertices, there will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mo>(</mo><mrow><mn>4</mn><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>!</mo><mo>=</mo><mn>3</mn><mo>!</mo><mo>=</mo><mn>6</mn></mrow></math> cycles, but half of them will be the reverse of the others; so, there will be <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mrow><mo>(</mo><mrow><mn>4</mn><mo>−</mo><mn>1</mn></mrow><mo>)</mo></mrow><mo>!</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>6</mn><mn>2</mn></mfrac><mo>=</mo><mn>3</mn></mrow></math> possible distances.</para>
     <para id="para-00048" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 2:</emphasis> List all the Hamilton cycles in the subgraph of the graph in <link target-id="fig-00023" document="m00123">Figure 12.279</link>.</para>
     <figure id="fig-00023">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents four cities. The graph has five vertices: E, B, V, L, and T. The edge, E B is labeled 410 miles. The edge, B V is labeled 396 miles. The edge, V L is labeled 159 miles. The edge, L E is labeled 106 miles. The edge, L B is labeled 439 miles. The edge, E V is labeled 207 miles. The edge, E T is labeled 370 miles. The edge, L T is labeled 396 miles. The edge, B T is labeled 84 miles. The edge, V T is labeled 396 miles. The edges, E L, L V, L B, and L T are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_233.png"/>
     </media>
     <caption>Subgraph with Cities <emphasis effect="italic">B, E, T</emphasis>, and <emphasis effect="italic">V</emphasis></caption>
@@ -316,42 +316,42 @@
     <para id="para-00055">When the brute force method is impractical for solving a traveling salesman problem, an alternative is a greedy algorithm known as the <term id="term-00005">nearest neighbor method</term>, which always visit the closest or least costly place first. This method finds a Hamilton cycle of relatively low weight in a complete graph in which, at each phase, the next vertex is chosen by comparing the edges between the current vertex and the remaining vertices to find the lowest weight. Since the nearest neighbor method is a greedy algorithm, it usually doesn’t give the best solution, but it usually gives a solution that is "good enough." Most importantly, the number of steps will be the number of vertices. That’s right! A problem with 10 vertices requires 10 steps, not 362,880. Let’s look at an example to see how it works.</para>
     <para id="para-00056">Suppose that a candidate for governor wants to hold rallies around the state. They plan to leave their home in city <emphasis effect="italic">A</emphasis>, visit cities <emphasis effect="italic">B, C, D, E</emphasis>, and <emphasis effect="italic">F</emphasis> each once, and return home. The airfare between cities is indicated in the graph in <link target-id="fig-00024" document="m00123">Figure 12.280</link>.</para>
     <figure id="fig-00024">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_234.png"/>
     </media>
     <caption>Airfares between Cities <emphasis effect="italic">A, B, C, D, E</emphasis>, and <emphasis effect="italic">F</emphasis></caption>
     </figure>
     <para id="para-00057">Let’s help the candidate keep costs of travel down by applying the nearest neighbor method to find a Hamilton cycle that has a reasonably low weight. Begin by marking starting vertex as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>V</mi><mn>1</mn></msub></mrow></math> for "visited 1st." Then to compare the weights of the edges between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">A</emphasis> and vertices adjacent to <emphasis effect="italic">A</emphasis>: $250, $210, $300, $200, and $100 as shown in <link target-id="fig-00025" document="m00123">Figure 12.281</link>. The lowest of these is $100, which is the edge between <emphasis effect="italic">A</emphasis> and <emphasis effect="italic">F</emphasis>.</para>
     <figure id="fig-00025">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. The edges from A are in dashed lines. A is labeled V 1.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_235.png"/>
     </media>
     <caption>Finding the Second Vertex</caption>
     </figure>
     <para id="para-00058">Mark <emphasis effect="italic">F</emphasis> as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>V</mi><mn>2</mn></msub></mrow></math> for "visited 2nd" then compare the weights of the edges between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">F</emphasis> and the remaining vertices adjacent to <emphasis effect="italic">F</emphasis>: $170, $330, $150 and $350 as shown in <link target-id="fig-00026" document="m00123">Figure 12.282</link>. The lowest of these is $150, which is the edge between <emphasis effect="italic">F</emphasis> and <emphasis effect="italic">D</emphasis>.</para>
     <figure id="fig-00026">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars. The edges from F are in dashed lines. A is labeled V 1. F is labeled V 2.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_236.png"/>
     </media>
     <caption>Finding the Third Vertex</caption>
     </figure>
     <para id="para-00059">Mark <emphasis effect="italic">D</emphasis> as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>V</mi><mn>3</mn></msub></mrow></math> for "visited 3rd." Next, compare the weights of the edges between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">D</emphasis> and the remaining vertices adjacent to <emphasis effect="italic">D</emphasis>: $120, $310, and $270 as shown in <link target-id="fig-00027" document="m00123">Figure 12.283</link>. The lowest of these is $120, which is the edge between <emphasis effect="italic">D</emphasis> and <emphasis effect="italic">B</emphasis>.</para>
     <figure id="fig-00027">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. A is labeled V 1. F is labeled V 2. D is labeled V 3. The edges, B D, C D, and D E are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_237.png"/>
     </media>
     <caption>Finding the Fourth Vertex</caption>
     </figure>
     <para id="para-00060">So, mark <emphasis effect="italic">B</emphasis> as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>V</mi><mn>4</mn></msub></mrow></math> for "visited 4th." Finally, compare the weights of the edges between <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">B</emphasis> and the remaining vertices adjacent to <emphasis effect="italic">B</emphasis>: $160 and $220 as shown in <link target-id="fig-00028" document="m00123">Figure 12.284</link>. The lower amount is $160, which is the edge between <emphasis effect="italic">B</emphasis> and <emphasis effect="italic">E</emphasis>.</para>
     <figure id="fig-00028">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. A is labeled V 1. F is labeled V 2. D is labeled V 3. B is labeled V 4. The edges, B E and B C are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_238.png"/>
     </media>
     <caption>Finding the Fifth Vertex</caption>
     </figure>
     <para id="para-00061">Now you can mark <emphasis effect="italic">E</emphasis> as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>V</mi><mn>5</mn></msub></mrow></math> and mark the only remaining vertex, which is <emphasis effect="italic" xmlns="http://cnx.rice.edu/cnxml">C</emphasis>, as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>V</mi><mn>6</mn></msub></mrow></math>. This is shown in <link target-id="fig-00029" document="m00123" xmlns="http://cnx.rice.edu/cnxml">Figure 12.285</link>. Make a note of the weight of the edge from <emphasis effect="italic">E</emphasis> to <emphasis effect="italic">C</emphasis>, which is $180, and from <emphasis effect="italic">C</emphasis> back to <emphasis effect="italic">A</emphasis>, which is $210.</para>
     <figure id="fig-00029" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. A is labeled V 1. F is labeled V 2. D is labeled V 3. B is labeled V 4. E is labeled V 5. C is labeled V 6. The edges, A C, and E C are in dashed lines.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_239.png"/>
     </media>
     <caption>Finding the Sixth Vertex</caption>
@@ -366,7 +366,7 @@
     <problem id="prob-00007">
     <para id="para-00066">Suppose that the candidate for governor wants to hold rallies around the state but time before the election is very limited. They would like to leave their home in city <emphasis effect="italic">A</emphasis>, visit cities <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">D</emphasis>, <emphasis effect="italic">E</emphasis>, and <emphasis effect="italic">F</emphasis> each once, and return home. The airfare between cities is not as important as the time of travel, which is indicated in <link target-id="fig-00030" document="m00123">Figure 12.286</link>. Use the nearest neighbor method to find a route with relatively low travel time. What is the total travel time of the route that you found?</para>
     <figure id="fig-00030">
-    <media alt="Insert Alt Text">
+    <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 120 minutes, 140 minutes, 85 minutes, 90 minutes, and 180 minutes. Edges from B leading to C, D, E, and F are labeled 100 minutes, 80 minutes, 95 minutes, and 110 minutes. Edges from C to D, E, and F are labeled 220 minutes, 200 minutes, and 75 minutes. Edges from D to E and F are labeled 130 minutes and 70 minutes. An edge from E to F is labeled 210 minutes.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_09_240.png"/>
     </media>
     <caption>Travel Times between Cities <emphasis effect="italic">A, B, C, D, E</emphasis> and <emphasis effect="italic">F</emphasis></caption>
@@ -527,5 +527,5 @@
     <item xmlns="http://cnx.rice.edu/cnxml">In a complete graph with <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> vertices, there are at most <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>!</mo></mrow><mn>2</mn></mfrac></mrow></math> different weights of Hamilton cycles.</item>
     </list>
     </section>
-    </content>   
-    </document>  
+    </content> 
+    </document>     
