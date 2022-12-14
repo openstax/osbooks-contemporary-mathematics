@@ -7,7 +7,7 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-    <media alt="Insert Alt Text">
+    <media alt="Two red dice are shown. The first die shows 5 and the second die shows 1.">
     <image mime-type="image/jpg" src="../../media/CS_Photo_07_09_001.jpg"/>
     </media>
     <caption> If you roll two dice by throwing them one at a time, the face showing on the first die will affect the possible outcomes for the sum of the two dice. (credit: “dice” by Ciarán Archer/Flickr, CC BY 2.0)</caption>
@@ -22,7 +22,7 @@
     </section>
     <para id="para-00002">Back in <link target-id="exam-00003" document="m00089" xmlns="http://cnx.rice.edu/cnxml">Example 7.18</link>, we constructed the following table (<link target-id="fig-00002" document="m00093">Figure 7.39</link>) to help us find the probabilities associated with rolling two standard 6-sided dice:</para>
     <figure id="fig-00002">
-    <media alt="Insert Alt Text">
+    <media alt="A table with 6 rows and 6 columns. The columns represent the first die and are titled, 1, 2, 3, 4, 5, and 6. The rows represent the second die and are titled, 1, 2, 3, 4, 5, and 6. The data is as follows: Row 1: 2, 3, 4, 5, 6, 7. Row 2: 3, 4, 5, 6, 7, 8. Row 3: 4, 5, 6, 7, 8, 9. Row 4: 5, 6, 7, 8, 9, 10. Row 5: 6, 7, 8, 9, 10, 11. Row 6: 7, 8, 9, 10, 11, 12.">
     <image mime-type="image/png" src="../../media/CS_Figure_07_09_029.png"/>
     </media>
     </figure>
@@ -144,7 +144,7 @@
      <para id="para-00025"><emphasis effect="bold">Step 4:</emphasis> Let’s look at the case where the first card is a suspect. There are 3 edges emanating from that node (leading to the outcomes SS, SW, and SR). We’ll label those edges with the appropriate <emphasis effect="italic">conditional</emphasis> probabilities, under the assumption that the first card is a suspect. First, there are 5 remaining suspect cards among the 20 left in the deck, so <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is suspect</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>5</mn><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math>. Using similar reasoning, we can compute <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is weapon</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>6</mn><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>10</mn></mrow></mfrac></mrow></math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>P</mi><mo stretchy="false">(</mo><mtext>second is room</mtext><mo stretchy="false">|</mo><mtext>first is suspect</mtext><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>9</mn><mrow><mn>20</mn></mrow></mfrac></mrow></math>.</para> 
     <para id="para-00026" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 5:</emphasis> Checking our work, we see that the sum of these 3 probabilities is again equal to 1. Let’s add those to our tree (<link target-id="fig-00005" document="m00093">Figure 7.42</link>).</para>
     <figure id="fig-00005">
-    <media alt="Insert Alt Text">
+    <media alt="A tree diagram with three stages. The diagram shows a node in the first stage branching into three nodes labeled S, W, and R in the second stage with the probabilities, two-sevenths, two-sevenths, and three-sevenths, respectively. The second stage represents the first card. The third stage representing the second card is as follows. Node, S branches into three nodes labeled S, W, and R with the probabilities, one-fourth, three-tenths, and nine-twentieths. Node, W branches into three nodes labeled S, W, and R. The node, R branches into three nodes labeled S, W, and R. The possible outcomes are as follows: S S, S W, S R, W S, W W, W R, R S, R W, and R R.">
     <image mime-type="image/png" src="../../media/CS_Figure_07_09_032a.png"/>
     </media>
     </figure>
