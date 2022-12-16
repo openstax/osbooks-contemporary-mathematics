@@ -7,7 +7,7 @@
   </metadata>
   <content>
     <figure id="fig-00001">
-    <media alt="Insert Alt Text">
+    <media alt="A delivery vehicle.">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_05_001.jpg"/>
     </media>
     <caption>Delivery trucks move goods from place to place. (credit: “Mack Midliner” by Jason Lawrence/Flickr, CC-BY 2.0)</caption>
@@ -128,14 +128,14 @@
     
     <para id="para-00059">Euler was able to prove that, in order to have an Euler circuit, the degrees of all the vertices of a graph have to be even. He also proved that any graph with that characteristic must have an Euler circuit. So, saying that a connected graph is Eulerian is the same as saying it has vertices with all even degrees, known as the <emphasis effect="bold">Eulerian circuit theorem</emphasis>.</para>
     <figure id="fig-00008">
-    <media alt=" A graph of Konigsberg Bridges has four vertices. The vertices are connected with edges forming two right cones.">
+    <media alt="A graph of Konigsberg Bridges has four vertices. The vertices are connected with edges forming two right cones.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_142.png"/>
     </media>
     <caption>Graph of Konigsberg Bridges</caption>
     </figure>
     <para id="para-00015">To understand why the Euler circuit theorem is true, think about a vertex of degree 3 on any graph, as shown in <link target-id="fig-00009" document="m00119">Figure 12.155</link>.</para>
     <figure id="fig-00009">
-    <media alt=" Two illustrations. The first illustration shows a vertex, 3. Two arrows point to it and an arrow points away from it. The second illustration shows a vertex, 3. Two arrows point away from it and an arrow points to it.">
+    <media alt="Two illustrations. The first illustration shows a vertex, 3. Two arrows point to it and an arrow points away from it. The second illustration shows a vertex, 3. Two arrows point away from it and an arrow points to it.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_143.png"/>
     </media>
     <caption>A Vertex of Degree 3</caption>
@@ -144,7 +144,7 @@
     <para id="para-00017">Next imagine the vertex of degree 3 shown in <link target-id="fig-00009" document="m00119">Figure 12.155</link> is the starting vertex. The first time one of the edges is traveled, the direction is away from the vertex. At some point, the second edge will be traveled coming in toward the vertex, and the third edge will be the way back out, but the starting vertex is also the ending vertex in a circuit. The only way to return to the vertex is now to travel one of the edges a second time. So, again, this vertex cannot be part of an Euler circuit.</para>
     <para id="para-00018">For the same reason that a vertex of degree 3 can never be part of an Euler circuit, a vertex of any odd degree cannot either. We can use this fact and the graph in <link target-id="fig-00010" document="m00119">Figure 12.156</link> to solve the Konigsberg Bridge Problem. Since the degrees of the vertices of the graph in <link target-id="fig-00009" document="m00119">Figure 12.155</link> are not even, the graph is not Eulerian and it cannot have an Euler circuit. This means it is not possible to travel through the city of Konigsberg, crossing every bridge exactly once, and returning to your starting position.</para>
     <figure id="fig-00010">
-    <media alt=" A graph of Konigsberg Bridges has four vertices. The vertices are connected with edges forming two right cones. The degrees of the vertices are 3, 3, 5, and 3.">
+    <media alt="A graph of Konigsberg Bridges has four vertices. The vertices are connected with edges forming two right cones. The degrees of the vertices are 3, 3, 5, and 3.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_144.png"/>
     </media>
     <caption>Degrees of Vertices in Konigsberg Bridge Multigraph</caption>
@@ -157,14 +157,14 @@
     <title>Chinese Postman Problem</title>
     <para id="para-00019">At Camp Woebegone, campers travel the waterways in canoes. As part of the Camp Woebegone Olympics, you will hold a canoeing race. You have placed a checkpoint on each of the 11 different streams. The competition requires each team to travel each stream, pass through the checkpoints in any order, and return to the starting line, as shown in the <link target-id="fig-00011" document="m00119">Figure 12.157</link>.</para>
     <figure id="fig-00011">
-    <media alt=" A map of canoe event checkpoints. The map has vertices labeled from A to K. The start point is also marked on the map.">
+    <media alt="A map of canoe event checkpoints. The map has vertices labeled from A to K. The start point is also marked on the map.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_145.png"/>
     </media>
     <caption>Map of Canoe Event Checkpoints</caption>
     </figure>
     <para id="para-00020">Since the teams want to go as fast as possible, they would like to find the shortest route through the course that visits each checkpoint and returns to the starting line. If possible, they would also like to avoid backtracking. Let’s visualize the course as a multigraph in which the vertices represent turns and the edges represent checkpoints as in <link target-id="fig-00012" document="m00119">Figure 12.158</link>.</para>
     <figure id="fig-00012">
-    <media alt=" A multigraph of canoe event checkpoints. The map has seven vertices. The vertices are connected via edges resembling a closed trail. The start point is also marked on the map.">
+    <media alt="A multigraph of canoe event checkpoints. The map has seven vertices. The vertices are connected via edges resembling a closed trail. The start point is also marked on the map.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_146.png"/>
     </media>
     <caption>Multigraph of Canoe Event</caption>
@@ -172,7 +172,7 @@
     <para id="para-00021">The teams would like to find a closed walk that repeats as few edges as possible while still visiting every edge. If they never repeat an edge, then they have found a closed trail, which is a circuit. That circuit must cover all edges; so, it would be an Euler circuit. The task of finding a shortest circuit that visits every edge of a connected graph is often referred to as the <emphasis effect="bold">Chinese postman problem</emphasis>. The name Chinese postman problem was coined in honor of the Chinese mathematician named Kwan Mei-Ko in 1960 who first studied the problem.</para>
     <para id="para-00022">If a graph has an Euler circuit, that will always be the best solution to a Chinese postman problem. Let’s determine if the multigraph of the course has an Euler circuit by looking at the degrees of the vertices in <link target-id="fig-00013" document="m00119">Figure 12.159</link>. Since the degrees of the vertices are all even, and the graph is connected, the graph is Eulerian. It is possible for a team to complete the canoe course in such a way that they pass through each checkpoint exactly once and return to the starting line.</para>
     <figure id="fig-00013">
-    <media alt=" A graph with seven vertices. The degrees of the vertices are 4, 4, 4, 4, 2, 2, and 2.">
+    <media alt="A graph with seven vertices. The degrees of the vertices are 4, 4, 4, 4, 2, 2, and 2.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_147.png"/>
     </media>
     <caption>Degrees of Vertices in Graph of Canoe Event</caption>
@@ -183,7 +183,7 @@
     <problem id="prob-00005">
     <para id="para-00023">A postal delivery person must deliver mail to every block on every street in a local subdivision. <link target-id="fig-00014" document="m00119">Figure 12.160</link> is a map of the subdivision. Use the map to answer each question.</para>
     <figure id="fig-00014">
-    <media alt=" A map of a subdivision. The map has nine sections. Each section has four blocks. The entrance to the subdivision is at the bottom.">
+    <media alt="A map of a subdivision. The map has nine sections. Each section has four blocks. The entrance to the subdivision is at the bottom.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_148.png"/>
     </media>
     <caption>Map of Subdivision</caption>
@@ -200,7 +200,7 @@
     <list list-type="enumerated" number-style="arabic" id="list-00005">
     <item>The graph is in <link target-id="fig-00015" document="m00119">Figure 12.161</link>.
     <figure id="fig-00015">
-    <media alt=" A graph of a subdivision has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. ">
+    <media alt="A graph of a subdivision has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. ">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_149.png"/>
     </media>
     <caption>Graph of Subdivision</caption>
@@ -226,21 +226,21 @@
     <para id="para-00025">Solving the Chinese postman problem requires finding a shortest circuit through any graph or multigraph that visits every edge. In the case of Eulerian graphs, this means finding an Euler circuit. The method we will use is to find any circuit in the graph, then find a second circuit starting at a vertex from the first circuit that uses only edges that were not in the first circuit, then find a third circuit starting at a vertex from either of the first two circuits that uses only edges that were not in the first two circuits, and then continue this process until all edges have been used. In the end, you will be able to link all the circuits together into one large Euler circuit.</para>
     <para id="para-00026">Let’s find an Euler circuit in the map of the Camp Woebegone canoe race. In <link target-id="fig-00016" document="m00119">Figure 12.163</link>, we have labeled the edges of the multigraph so that the circuits can be named. In a multigraph it is necessary to name circuits using edges and vertices because there can be more than one edge between adjacent vertices.</para>
     <figure id="fig-00016">
-    <media alt=" A multigraph of canoe race. The multigraph has 7 vertices. The vertices are numbered 1 to 7. The vertex is labeled start. Edges are as follows. A: 1 to 2. B: 2 to 3. C: 3 to 4. D: 2 to 6. E: 6 to 7. F: 7 to 2. G: 4 to 5. H: 5 to 3. I: 5 to 1. J, curved edge: 5 to 1. K: 1 to 3. ">
+    <media alt="A multigraph of canoe race. The multigraph has 7 vertices. The vertices are numbered 1 to 7. The vertex is labeled start. Edges are as follows. A: 1 to 2. B: 2 to 3. C: 3 to 4. D: 2 to 6. E: 6 to 7. F: 7 to 2. G: 4 to 5. H: 5 to 3. I: 5 to 1. J, curved edge: 5 to 1. K: 1 to 3. ">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_152.png"/>
     </media>
     <caption>Multigraph of Canoe Race with Vertices and Edges Labeled</caption>
     </figure>
     <para id="para-00027">We will begin with vertex 1 because it represents the starting line in this application. In general, you can start at any vertex you want. Find any circuit beginning and ending with vertex 1. Remember, a circuit is a trail, so it doesn’t pass through any edge more than once. <link target-id="fig-00017" document="m00119">Figure 12.164</link> shows one possible circuit that we could use as the first circuit, 1 → <emphasis effect="italic">A</emphasis> → 2 → <emphasis effect="italic">B</emphasis> → 3 → <emphasis effect="italic">C</emphasis> → 4 → <emphasis effect="italic">G</emphasis> → 5 → <emphasis effect="italic">J</emphasis> → 1.</para>
     <figure id="fig-00017" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt=" A multigraph of canoe race. The multigraph has 7 vertices. The vertices are numbered 1 to 7. The vertex is labeled start. Edges are as follows. A: 1 to 2. B: 2 to 3. C: 3 to 4. D: 2 to 6. E: 6 to 7. F: 7 to 2. G: 4 to 5. H: 5 to 3. I: 5 to 1. J, curved edge: 5 to 1. K: 1 to 3. The edges, A, B, C, J, and G are in blue.">
+    <media alt="A multigraph of canoe race. The multigraph has 7 vertices. The vertices are numbered 1 to 7. The vertex is labeled start. Edges are as follows. A: 1 to 2. B: 2 to 3. C: 3 to 4. D: 2 to 6. E: 6 to 7. F: 7 to 2. G: 4 to 5. H: 5 to 3. I: 5 to 1. J, curved edge: 5 to 1. K: 1 to 3. The edges, A, B, C, J, and G are in blue.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_153.png"/>
     </media>
     <caption>First Circuit</caption>
     </figure>
     <para id="para-00028">From the edges that remain, we can form two more circuits that each start at one of the vertices along the first circuit. Starting at vertex 3 we can use 3 → <emphasis effect="italic">H</emphasis> → 5 → <emphasis effect="italic">I</emphasis> → 1 → <emphasis effect="italic">K</emphasis> → 3 and starting at vertex 2 we can use 2 → <emphasis effect="italic">D</emphasis> → 6 → <emphasis effect="italic">E</emphasis> → 7 → <emphasis effect="italic">F</emphasis> → 2, as shown in <link target-id="fig-00018" document="m00119">Figure 12.165</link>.</para>
     <figure id="fig-00018" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt=" A multigraph of canoe race. The multigraph has 7 vertices. The vertices are numbered 1 to 7. The vertex is labeled start. Edges are as follows. A: 1 to 2. B: 2 to 3. C: 3 to 4. D: 2 to 6. E: 6 to 7. F: 7 to 2. G: 4 to 5. H: 5 to 3. I: 5 to 1. J, curved edge: 5 to 1. K: 1 to 3. The edges, A, B, C, J, and G are in blue. The edges, I, K, and H are in green. The edges, F, D, and E are in red. ">
+    <media alt="A multigraph of canoe race. The multigraph has 7 vertices. The vertices are numbered 1 to 7. The vertex is labeled start. Edges are as follows. A: 1 to 2. B: 2 to 3. C: 3 to 4. D: 2 to 6. E: 6 to 7. F: 7 to 2. G: 4 to 5. H: 5 to 3. I: 5 to 1. J, curved edge: 5 to 1. K: 1 to 3. The edges, A, B, C, J, and G are in blue. The edges, I, K, and H are in green. The edges, F, D, and E are in red.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_154.png"/>
     </media>
     <caption>Second and Third Circuits</caption>
@@ -261,7 +261,7 @@
     <problem id="prob-00007">
     <para id="para-00035">Use <link target-id="fig-00019" document="m00119">Figure 12.166</link> to answer each question.</para>
     <figure id="fig-00019">
-    <media alt=" Graph F has five vertices. The vertices are a, b, c, d, and e. The edges connect a c, a b, e c, e b, c b, c d, and b d. ">
+    <media alt="Graph F has five vertices. The vertices are a, b, c, d, and e. The edges connect a c, a b, e c, e b, c b, c d, and b d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_155.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">F</emphasis></caption>
@@ -275,21 +275,21 @@
     <list list-type="enumerated" number-style="arabic" id="list-00007">
     <item>The graph is connected because it has only one component. Also, each of the vertices in graph <emphasis effect="italic">F</emphasis> has even degree as shown in <link target-id="fig-00020" document="m00119">Figure 12.167</link>. So, the graph is Eulerian.
     <figure id="fig-00020">
-    <media alt=" Graph F has five vertices. The vertices are a, b, c, d, and their corresponding degrees are 2, 4, 4, 2, and 2. The edges connect a c, a b, e c, e b, c b, c d, and b d.">
+    <media alt="Graph F has five vertices. The vertices are a, b, c, d, and their corresponding degrees are 2, 4, 4, 2, and 2. The edges connect a c, a b, e c, e b, c b, c d, and b d.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_156.png"/>
     </media>
     <caption>Degrees of Vertices in Graph <emphasis effect="italic">F</emphasis></caption>
     </figure></item>
     <item><emphasis effect="bold">Step 1:</emphasis> Beginning at vertex <emphasis effect="italic">c</emphasis>, identify circuit <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> as shown in <link target-id="fig-00021" document="m00119">Figure 12.168</link>. Since this circuit does not cover every edge in the graph, move on to Step 2.
     <figure id="fig-00021" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt=" Graph F has five vertices. The vertices are a, b, c, d, and e. The edges connect a c, a b, e c, e b, c b, c d, and b d. The edges, b c, c e, and e b are in green.">
+    <media alt="Graph F has five vertices. The vertices are a, b, c, d, and e. The edges connect a c, a b, e c, e b, c b, c d, and b d. The edges, b c, c e, and e b are in green.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_157.png"/>
     </media>
     <caption>First Circuit in Graph <emphasis effect="italic">F</emphasis></caption>
     </figure>
     <emphasis effect="bold">Step 2:</emphasis> Find another circuit beginning at one of the vertices in the first circuit, using only edges that have not been used in the first circuit. It is possible to do this using either vertex <emphasis effect="italic">c</emphasis> or vertex <emphasis effect="italic">b</emphasis>. In <link target-id="fig-00022" document="m00119">Figure 12.169</link>, we have used vertex <emphasis effect="italic">b</emphasis> as the starting and ending point for a second circuit, <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis>. Since all edges have been crossed by one of the two circuits, move on to Step 3.
     <figure id="fig-00022" xmlns="http://cnx.rice.edu/cnxml">
-    <media alt=" Graph F has five vertices. The vertices are a, b, c, d, and e. The edges connect a c, a b, e c, e b, c b, c d, and b d. The edges, b c, c e, and e b are in green. The edges, c a, a b, b d, and d c are in blue.">
+    <media alt="Graph F has five vertices. The vertices are a, b, c, d, and e. The edges connect a c, a b, e c, e b, c b, c d, and b d. The edges, b c, c e, and e b are in green. The edges, c a, a b, b d, and d c are in blue.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_158.png"/>
     </media>
     <caption>Second Circuit in Graph <emphasis effect="italic">F</emphasis></caption>
@@ -314,13 +314,13 @@
     <title>Eulerization</title>
     <para id="para-00037">The Chinese postman problem doesn’t only apply to Eulerian graphs. Recall the postal delivery person who needed to deliver mail to every block of every street in a subdivision. We used the map in <link target-id="fig-00023" document="m00119">Figure 12.171</link> to create the graph in <link target-id="fig-00024" document="m00119">Figure 12.172</link>.</para>
     <figure id="fig-00023">
-    <media alt=" A map of a subdivision. The map has nine sections. Each section has four blocks. The entrance to the subdivision is at the bottom.">
+    <media alt="A map of a subdivision. The map has nine sections. Each section has four blocks. The entrance to the subdivision is at the bottom.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_148.png"/>
     </media>
     <caption>Map of Subdivision</caption>
     </figure>
     <figure id="fig-00024">
-    <media alt=" A graph of subdivision has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares.">
+    <media alt="A graph of subdivision has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_149.png"/>
     </media>
     <caption>Graph of Subdivision</caption>
@@ -328,7 +328,7 @@
     <para id="para-00038">Since the graph of the subdivision has vertices of odd degree, there is no Euler circuit. This means that there is no route through the subdivision that visits every block of every street without repeating a block. What should our delivery person do? They need to repeat as few blocks as possible. The technique we will use to find a closed walk that repeats as few edges as possible is called <emphasis effect="bold">eulerization</emphasis>. This method adds duplicate edges to a graph to create vertices of even degree so that the graph will have an Euler circuit.</para>
     <para id="para-00039">In <link target-id="fig-00025" document="m00119">Figure 12.173</link>, the eight vertices of odd degree in the graph of the subdivision are circled in green. We have added duplicate edges between the pairs of vertices, which changes the degrees of the vertices to even degrees so the resulting multigraph has an Euler circuit. In other words, we have eulerized the graph.</para>
     <figure id="fig-00025">
-    <media alt=" Two graphs. The first graph has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. The second graph has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. On each side, a curved edge connects the center two vertices.">
+    <media alt="Two graphs. The first graph has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. The second graph has 16 vertices arranged in 4 rows and 4 columns. The vertices are connected to form 9 squares. On each side, a curved edge connects the center two vertices.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_159.png"/>
     </media>
     <caption>An Eulerized Graph</caption>
@@ -343,7 +343,7 @@
     <problem id="prob-00009">
     <para id="para-00042">Use Graph <emphasis effect="italic">A</emphasis> and multigraphs <emphasis effect="italic">B</emphasis>, <emphasis effect="italic">C</emphasis>, <emphasis effect="italic">D</emphasis>, and <emphasis effect="italic">E</emphasis> given in <link target-id="fig-00026" document="m00119">Figure 12.174</link> to answer the questions.</para>
     <figure id="fig-00026">
-    <media alt=" Five graphs. Each graph has five vertices, a to e. Graph A: edge F, a to c. Edge H, a to d. Edge G, a to b. Edge I, b to c. Edge J, b to d. Edge K, c to e. Edge L, d to e. Multigraph B: edge F, a to c. Edge H, a to d. Edges G and M, a to b. Edge I, b to c. Edge J, b to d. Edge N, c to d. Edge K, c to e. Edge L, d to e. Multigraph C: edge F, a to c. Edge H, a to d. Edges M and G, a to b. Edges I and P, b to c. Edges J and Q, b to d. Edge K, c to e. Edge L, d to e. Multigraph D: edge F, a to c. Edges H and A, a to d. Edge G, a to b. Edges P and I, b to c. Edge J, b to d. Edge K, c to e. Edge L, d to e. Multigraph E: edge F, a to c. Edge H, a to d. Edge I, b to c. Edges J and a, b to d. Edges K and S, c ad e. Edge L, d to e.">
+    <media alt="Five graphs. Each graph has five vertices, a to e. Graph A: edge F, a to c. Edge H, a to d. Edge G, a to b. Edge I, b to c. Edge J, b to d. Edge K, c to e. Edge L, d to e. Multigraph B: edge F, a to c. Edge H, a to d. Edges G and M, a to b. Edge I, b to c. Edge J, b to d. Edge N, c to d. Edge K, c to e. Edge L, d to e. Multigraph C: edge F, a to c. Edge H, a to d. Edges M and G, a to b. Edges I and P, b to c. Edges J and Q, b to d. Edge K, c to e. Edge L, d to e. Multigraph D: edge F, a to c. Edges H and A, a to d. Edge G, a to b. Edges P and I, b to c. Edge J, b to d. Edge K, c to e. Edge L, d to e. Multigraph E: edge F, a to c. Edge H, a to d. Edge I, b to c. Edges J and a, b to d. Edges K and S, c ad e. Edge L, d to e.">
     <image mime-type="image/png" src="../../media/CS_Figure_12_05_160.png"/>
     </media>
     <caption>Graph <emphasis effect="italic">A</emphasis> and Multigraphs <emphasis effect="italic">B</emphasis> through <emphasis effect="italic">E</emphasis></caption>
@@ -375,7 +375,7 @@
     </note>
     <note class="work-out" id="note-00008">
     <figure id="fig-00027">
-    <media alt=" A map of The Magical Land of Oz. The regions are Gillikin Country, Munchkin Country, Emerald City, Winkie Country, and Quadling Country.">
+    <media alt="A map of The Magical Land of Oz. The regions are Gillikin Country, Munchkin Country, Emerald City, Winkie Country, and Quadling Country.">
     <image mime-type="image/png" src="../../media/CS_Photo_12_05_003.jpg"/>
     </media>
     <caption>Map of the Magical Land of Oz (credit: “Map of Oz within the surrounding deserts” by L. Frank Baum/Wikimedia Commons, Public Domain)</caption>
