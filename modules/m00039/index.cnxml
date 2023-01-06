@@ -23,7 +23,7 @@
     <para id="para-00002">Have you ever wondered why anyone still uses traditional analog clocks at all, now that we have digital clocks that are so much easier to read? Apart from the decorative ambience of a beautiful analog clock, there are some practical considerations. Analog clocks are less expensive to purchase and more energy efficient, often running for years on few small batteries. Mathematicians appreciate analog clocks for a different reason. They are a visual representation of a special kind of number system in which crazy things happen. For example, suppose the current time is 6 o’clock. What time will it be in 7 hours? If you said, 1 o’clock, you are correct! So, 6 o’clock plus 7 hours is 1 o’clock, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>1</mn></mrow></math>!</para>
     <section id="sect-00002" xmlns="http://cnx.rice.edu/cnxml">
     <title>The Face of a Clock</title>
-    <para id="para-00003">Let’s look at the parts of the face of an analog clock as shown in <link target-id="fig-00002" document="m00039">Figure A.2</link>. The face of a clock is generally circular with the circle divided into 12 equal parts, one for each hour. The numbers 1 through 12 are displayed with 12 at the top, 6 at the bottom, 3 on the right, and 9 on the left. There are up to 3 pointers attached at the center of the clock that rotate at different speeds. These are called the <emphasis effect="bold">hands</emphasis> of the clock. Each hand takes a different amount of time to make a full rotation. The rotation is always in the same direction as the numbers are increasing 1, 2, 3, …. This direction is known as <emphasis effect="bold">clockwise</emphasis>. The opposite direction, 12, 11, 10, … is known as <emphasis effect="bold">counterclockwise</emphasis>.</para>
+    <para id="para-00003">Let’s look at the parts of the face of an analog clock as shown in <link target-id="fig-00002" document="m00039" />. The face of a clock is generally circular with the circle divided into 12 equal parts, one for each hour. The numbers 1 through 12 are displayed with 12 at the top, 6 at the bottom, 3 on the right, and 9 on the left. There are up to 3 pointers attached at the center of the clock that rotate at different speeds. These are called the <emphasis effect="bold">hands</emphasis> of the clock. Each hand takes a different amount of time to make a full rotation. The rotation is always in the same direction as the numbers are increasing 1, 2, 3, …. This direction is known as <emphasis effect="bold">clockwise</emphasis>. The opposite direction, 12, 11, 10, … is known as <emphasis effect="bold">counterclockwise</emphasis>.</para>
     <figure id="fig-00002">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_CRA_02_003-5.png"/>
@@ -61,19 +61,19 @@
     <section id="sect-00003">
     <title>Telling Time</title>
     <para id="para-00008">When we read the time off a clock, we call it “telling time.” To tell time, we read the hours, then minutes, then seconds (if appropriate), beginning with the largest unit of time and working down to the smallest.</para>
-    <para id="para-00009">The clock face in <link target-id="fig-00002" document="m00039">Figure A.2</link> displays the time 12:30 and 17 seconds. To see this, begin by identifying the value of the hour hand, which is the shorter of the two black hands. Notice that it has moved past the 12, but hasn’t quite reached the 1. This means that the hour is 12. Next, we look at the minute hand. Since the minute hand moves around the clock once an hour and there are 60 minutes in an hour, each of the 12 parts of the circle must represent <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>60</mn><mo>÷</mo><mn>12</mn><mo>=</mo><mn>5</mn></mrow></math> minutes. This is shown in <link target-id="fig-00003" document="m00039">Figure A.3</link>.</para>
+    <para id="para-00009">The clock face in <link target-id="fig-00002" document="m00039" /> displays the time 12:30 and 17 seconds. To see this, begin by identifying the value of the hour hand, which is the shorter of the two black hands. Notice that it has moved past the 12, but hasn’t quite reached the 1. This means that the hour is 12. Next, we look at the minute hand. Since the minute hand moves around the clock once an hour and there are 60 minutes in an hour, each of the 12 parts of the circle must represent <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>60</mn><mo>÷</mo><mn>12</mn><mo>=</mo><mn>5</mn></mrow></math> minutes. This is shown in <link target-id="fig-00003" document="m00039" />.</para>
     <figure id="fig-00003" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_image_A_02_001.png"/>
     </media>
     <caption>Face of Clock Divided into 60 Equal Parts</caption>
     </figure>
-    <para id="para-00010">It is often the case that the minutes are not marked off on the clock, and skip counting by fives will help you read the minutes. In this case, the minute hand is pointing toward 6 and 6 fives is 30. So far, we know that the clock reads 12:30. Notice that we put a colon between the hours and the minutes. If we want to read the second hand too, remember that the second hand goes around the clock once per minute which means once every 60 seconds. So, the same division of the circle into 60 equal pieces from <link target-id="fig-00003" document="m00039">Figure A.3</link> will work for seconds. In the case of the clock in <link target-id="fig-00003" document="m00039">Figure A.3</link>, the second hand is pointing two marks past 15, which is 17 seconds. So, the time on this clock is 12:30 and 17 seconds, or 12:30:17, in HH:MM:SS (Hour Hour: Minute Minute: Second Second) format. Either way, this is read allowed as “12 thirty and 17 seconds.” The seconds are often not given. When the minutes are 0, the time is read as the hour followed by “o’clock”. For example, 10:00, is read 10 o’clock.</para>
+    <para id="para-00010">It is often the case that the minutes are not marked off on the clock, and skip counting by fives will help you read the minutes. In this case, the minute hand is pointing toward 6 and 6 fives is 30. So far, we know that the clock reads 12:30. Notice that we put a colon between the hours and the minutes. If we want to read the second hand too, remember that the second hand goes around the clock once per minute which means once every 60 seconds. So, the same division of the circle into 60 equal pieces from <link target-id="fig-00003" document="m00039" /> will work for seconds. In the case of the clock in <link target-id="fig-00003" document="m00039" />, the second hand is pointing two marks past 15, which is 17 seconds. So, the time on this clock is 12:30 and 17 seconds, or 12:30:17, in HH:MM:SS (Hour Hour: Minute Minute: Second Second) format. Either way, this is read allowed as “12 thirty and 17 seconds.” The seconds are often not given. When the minutes are 0, the time is read as the hour followed by “o’clock”. For example, 10:00, is read 10 o’clock.</para>
     <example id="exam-00002">
     <title>Determining What Time Someone Left for Work</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00011">One of the clocks in <link target-id="fig-00004" document="m00039">Figure A.4</link> shows the time that Leandro left for work today. If he always leaves between 5 o’clock and 9 o’clock in the morning, which clock shows the time he left for work?</para>
+    <para id="para-00011">One of the clocks in <link target-id="fig-00004" document="m00039" /> shows the time that Leandro left for work today. If he always leaves between 5 o’clock and 9 o’clock in the morning, which clock shows the time he left for work?</para>
     <figure id="fig-00004">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_CRA_02_006-8.png"/>
@@ -104,7 +104,7 @@
     <title>Determining What Time Friends Are Eating Dinner</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00018">Jean is meeting his friend at a restaurant to eat dinner after work at the time indicated on the clock in <link target-id="fig-00005" document="m00039">Figure A.6</link>. Give the time in standard time.</para>
+    <para id="para-00018">Jean is meeting his friend at a restaurant to eat dinner after work at the time indicated on the clock in <link target-id="fig-00005" document="m00039" />. Give the time in standard time.</para>
     <figure id="fig-00005">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Photo_CRA_02_011.jpg"/>
@@ -131,7 +131,7 @@
     <title>Converting Between Standard and Military Times</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00022">Repeat <link target-id="exer-00005" document="m00039">Example A.3</link>, except give the answer in military time.</para>
+    <para id="para-00022">Repeat <link target-id="exer-00005" document="m00039" />, except give the answer in military time.</para>
     </problem>
     <solution id="sol-00004">
     <para id="para-00023">7:45 PM is past midday; so, add 1200 to 745 to get 1945.</para>

@@ -439,51 +439,51 @@
       </problem>
       <solution id="sol-00004">
       <list list-type="enumerated" number-style="arabic" id="list-00009">
-      <item><emphasis effect="bold">Step 1:</emphasis> Let’s start by placing our first node (<link target-id="fig-00002" document="m00088">Figure 7.11</link>).
+      <item><emphasis effect="bold">Step 1:</emphasis> Let’s start by placing our first node (<link target-id="fig-00002" document="m00088" />).
       <figure id="fig-00002">
       <media alt="A node.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_004.png"/>
       </media>
       </figure>
-      <para id="para-00022"><emphasis effect="bold">Step 2:</emphasis> We’ll add two branches, one for each outcome of the first coin flip, and label them (<link target-id="fig-00003" document="m00088">Figure 7.12</link>).</para>
+      <para id="para-00022"><emphasis effect="bold">Step 2:</emphasis> We’ll add two branches, one for each outcome of the first coin flip, and label them (<link target-id="fig-00003" document="m00088" />).</para>
       <figure id="fig-00003">
       <media alt="A tree diagram shows a node branching into two nodes labeled H and T.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_005.png"/>
       </media>
       </figure>
       <para id="para-00023"><emphasis effect="bold">Step 3:</emphasis> We’re ready for stage two of the experiment: another coin flip. At each node, we
- add in branches that represent those outcomes (<link target-id="fig-00004" document="m00088">Figure 7.13</link>).</para>
+ add in branches that represent those outcomes (<link target-id="fig-00004" document="m00088" />).</para>
       <figure id="fig-00004">
       <media alt="A tree diagram with three stages.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_006.png"/>
       </media>
       </figure>
-      <para id="para-00024">Finally, we can add another set of branches for the outcomes of the third stage (<link target-id="fig-00005" document="m00088">Figure 7.14</link>).</para>
+      <para id="para-00024">Finally, we can add another set of branches for the outcomes of the third stage (<link target-id="fig-00005" document="m00088" />).</para>
       <figure id="fig-00005">
       <media alt="A tree diagram with four stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into two nodes labeled H and T. The node, T branches into two nodes labeled H and T. In the fourth stage, each H from the third stage branches into two nodes labeled H and T, and each T from the third stage branches into two nodes labeled H and T.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_007.png"/>
       </media>
       </figure>
       <para id="para-00025">(These final nodes are called <emphasis effect="italic">leaves.)</emphasis></para>
-       <para id="para-00026"><emphasis effect="bold">Step 4:</emphasis> We can write down the outcomes in the sample space by tracing the path out to each leaf, writing down the outcome at each node we pass through. For example, this leaf (<link target-id="fig-00006" document="m00088">Figure 7.15</link>):</para>
+       <para id="para-00026"><emphasis effect="bold">Step 4:</emphasis> We can write down the outcomes in the sample space by tracing the path out to each leaf, writing down the outcome at each node we pass through. For example, this leaf (<link target-id="fig-00006" document="m00088" />):</para>
       <figure id="fig-00006">
       <media alt="A tree diagram with four stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into two nodes labeled H and T. The node, T branches into two nodes labeled H and T. In the fourth stage, each H from the third stage branches into two nodes labeled H and T, and each T from the third stage branches into two nodes labeled H and T. The last H in the path, H-T-H is highlighted.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_008.png"/>
       </media>
       </figure>
-      <para id="para-00027">is reached via this path (<link target-id="fig-00007" document="m00088">Figure 7.16</link>):</para>
+      <para id="para-00027">is reached via this path (<link target-id="fig-00007" document="m00088" />):</para>
       <figure id="fig-00007">
       <media alt="A tree diagram with four stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into two nodes labeled H and T. The node, T branches into two nodes labeled H and T. In the fourth stage, each H from the third stage branches into two nodes labeled H and T, and each T from the third stage branches into two nodes labeled H and T. The last H in the path, H-T-H is highlighted. The path from the start node through the nodes, H, T, and H is highlighted.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_009.png"/>
       </media>
       </figure>
-      <para id="para-00028"><emphasis effect="bold">Step 5:</emphasis> We’ll label that leaf as "HTH" (<link target-id="fig-00008" document="m00088">Figure 7.17</link>), since the path passes through nodes labeled H, T, and H on its way out to our leaf.</para>
+      <para id="para-00028"><emphasis effect="bold">Step 5:</emphasis> We’ll label that leaf as "HTH" (<link target-id="fig-00008" document="m00088" />), since the path passes through nodes labeled H, T, and H on its way out to our leaf.</para>
       <figure id="fig-00008">
       <media alt="A tree diagram with four stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into two nodes labeled H and T. The node, T branches into two nodes labeled H and T. In the fourth stage, each H from the third stage branches into two nodes labeled H and T, and each T from the third stage branches into two nodes labeled H and T. One of the possible outcome reads, H T H.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_010.png"/>
       </media>
       </figure>
-      <para id="para-00029"><emphasis effect="bold">Step 6:</emphasis> We can label the remaining leaves using the same method (<link target-id="fig-00009" document="m00088">Figure 7.18</link>).</para>
+      <para id="para-00029"><emphasis effect="bold">Step 6:</emphasis> We can label the remaining leaves using the same method (<link target-id="fig-00009" document="m00088" />).</para>
       <figure id="fig-00009">
       <media alt="A tree diagram with four stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into two nodes labeled H and T. The node, T branches into two nodes labeled H and T. In the fourth stage, each H from the third stage branches into two nodes labeled H and T, and each T from the third stage branches into two nodes labeled H and T. The possible outcomes are as follows: H H H, H H T, H T H, H T T, T H H, T H T, T T H, and T T T.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_011.png"/>
@@ -491,13 +491,13 @@
       </figure>
       <para id="para-00030">The sample space is the labels on the leaves: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}.</para>
       </item>
-      <item><emphasis effect="bold">Step 1:</emphasis> We’ll start with our initial node (<link target-id="fig-00010" document="m00088">Figure 7.19</link>).
+      <item><emphasis effect="bold">Step 1:</emphasis> We’ll start with our initial node (<link target-id="fig-00010" document="m00088" />).
       <figure id="fig-00010">
       <media alt="A tree diagram with four stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into two nodes labeled H and T. The node, T branches into two nodes labeled H and T. In the fourth stage, each H from the third stage branches into two nodes labeled H and T, and each T from the third stage branches into two nodes labeled H and T. One of the possible outcome reads, H T H.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_012.png"/>
       </media>
       </figure>
-      <para id="para-00031"><emphasis effect="bold">Step 2:</emphasis> We’ll add in branches for the outcomes of the first stage (<link target-id="fig-00011" document="m00088">Figure 7.20</link>), which is the coin flip.</para>
+      <para id="para-00031"><emphasis effect="bold">Step 2:</emphasis> We’ll add in branches for the outcomes of the first stage (<link target-id="fig-00011" document="m00088" />), which is the coin flip.</para>
       <figure id="fig-00011">
       <media alt="A tree diagram shows a node branching into two nodes labeled H and T.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_013.png"/>
@@ -507,20 +507,20 @@
       </item>
       </list>
      <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
-       <item>If the outcome of the first stage was H, then we roll a 4-sided die. So, <emphasis effect="italic">only</emphasis> on the node for H, we’ll add in the outcomes of a 4-sided die roll (<link target-id="fig-00012" document="m00088">Figure 7.21</link>).
+       <item>If the outcome of the first stage was H, then we roll a 4-sided die. So, <emphasis effect="italic">only</emphasis> on the node for H, we’ll add in the outcomes of a 4-sided die roll (<link target-id="fig-00012" document="m00088" />).
       <figure id="fig-00012">
       <media alt="A tree diagram with three stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into four nodes labeled 1, 2, 3, and 4.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_014.png"/>
       </media>
       </figure>
       </item>
-      <item>If the outcome of the first stage was T, then we roll a 6-sided die. So, we’ll add those branches to the node for T (<link target-id="fig-00013" document="m00088">Figure 7.22</link>).
+      <item>If the outcome of the first stage was T, then we roll a 6-sided die. So, we’ll add those branches to the node for T (<link target-id="fig-00013" document="m00088" />).
       <figure id="fig-00013">
       <media alt="A tree diagram with three stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into four nodes labeled 1, 2, 3, and 4. Node, T branches into six nodes labeled 1, 2, 3, 4, 5, and 6.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_015.png"/>
       </media>
       </figure>
-      <para id="para-00033"><emphasis effect="bold">Step 4:</emphasis> We can label the leaves to get the sample space (<link target-id="fig-00014" document="m00088">Figure 7.23</link>).</para>
+      <para id="para-00033"><emphasis effect="bold">Step 4:</emphasis> We can label the leaves to get the sample space (<link target-id="fig-00014" document="m00088" />).</para>
       <figure id="fig-00014">
       <media alt="A tree diagram with three stages. The diagram shows a node branching into two nodes labeled H and T. Node, H branches into four nodes labeled 1, 2, 3, and 4. Node, T branches into six nodes labeled 1, 2, 3, 4, 5, and 6. The possible outcomes are as follows: H 1, H 2, H 3, H 4, T 1, T 2, T 3, T 4, T 5, and T 6.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_016.png"/>
@@ -528,13 +528,13 @@
       </figure>
       <para id="para-00034">The sample space is: {H1, H2, H3, H4, T1, T2, T3, T4, T5, T6}.</para>
       </item>
-      <item><emphasis effect="bold">Step 1:</emphasis> Let’s label the trails A, B, and C for ease of labeling. Even though the trails are listed first in the exercise, we can’t use the trail choice as our first stage: the trails available to us depend on whether Jess is able to join the trip. So, the first stage is whether Jess joins us (J) or not (N) (<link target-id="fig-00015" document="m00088">Figure 7.24</link>).
+      <item><emphasis effect="bold">Step 1:</emphasis> Let’s label the trails A, B, and C for ease of labeling. Even though the trails are listed first in the exercise, we can’t use the trail choice as our first stage: the trails available to us depend on whether Jess is able to join the trip. So, the first stage is whether Jess joins us (J) or not (N) (<link target-id="fig-00015" document="m00088" />).
       <figure id="fig-00015">
       <media alt="A tree diagram shows a node branching into two nodes labeled J and N.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_017.png"/>
       </media>
       </figure>
-      <para id="para-00035"><emphasis effect="bold">Step 2:</emphasis> We list the appropriate trails on each branch (<link target-id="fig-00016" document="m00088">Figure 7.25</link>).</para>
+      <para id="para-00035"><emphasis effect="bold">Step 2:</emphasis> We list the appropriate trails on each branch (<link target-id="fig-00016" document="m00088" />).</para>
       <figure id="fig-00016">
       <media alt="A tree diagram with three stages. The tree diagram shows a node branching into two nodes labeled J and N. The node, J branches into two nodes labeled A and B. Node, N branches into three nodes labeled A, B, and C. The possible outcomes are as follows: J A, J B, N A, N B, and N C.">
       <image mime-type="image/png" src="../../media/CS_Figure_07_04_018.png"/>
