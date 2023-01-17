@@ -31,7 +31,7 @@
   <title>Recognizing Euler Trails</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
-  <para id="para-00004">Use <link target-id="fig-00002" document="m00120" /> to determine if each series of vertices represents a trail, an Euler trail, both, or neither. Explain your reasoning.</para>
+  <para id="para-00004">Use <link target-id="fig-00002" document="m00120"/> to determine if each series of vertices represents a trail, an Euler trail, both, or neither. Explain your reasoning.</para>
   <figure id="fig-00002">
   <media alt="Graph H has 7 vertices labeled a to g. The edges connect a b, a d, b e, e d, d c, c f, f g, d g, and g e.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_166.png"/>
@@ -63,22 +63,22 @@
   </section>
   <section id="sect-00003">
   <title>The Five Rooms Puzzle</title>
-  <para id="para-00006">Just as Euler determined that only graphs with vertices of even degree have Euler circuits, he also realized that the only vertices of odd degree in a graph with an Euler trail are the starting and ending vertices. For example, in <link target-id="fig-00002" document="m00120" />, Graph <emphasis effect="italic">H</emphasis> has exactly two vertices of odd degree, vertex <emphasis effect="italic">g</emphasis> and vertex <emphasis effect="italic">e</emphasis>. Notice the Euler trail we saw in Excercise 3 of <link target-id="exam-00001" document="m00120" /> began at vertex <emphasis effect="italic">g</emphasis> and ended at vertex <emphasis effect="italic">e</emphasis>.</para>
-  <para id="para-00007">This is consistent with what we learned about vertices off odd degree when we were studying Euler circuits. We saw that a vertex of odd degree couldn't exist in an Euler circuit as depicted in <link target-id="fig-00003" document="m00120" />. If it was a starting vertex, at some point we would leave the vertex and not be able to return without repeating an edge. If it was not a starting vertex, at some point we would return and not be able to leave without repeating an edge. Since the starting and ending vertices in an Euler trail are not the same, the start is a vertex we want to leave without returning, and the end is a vertex we want to return to and never leave. Those two vertices must have odd degree, but the others cannot.</para>
+  <para id="para-00006">Just as Euler determined that only graphs with vertices of even degree have Euler circuits, he also realized that the only vertices of odd degree in a graph with an Euler trail are the starting and ending vertices. For example, in <link target-id="fig-00002" document="m00120"/>, Graph <emphasis effect="italic">H</emphasis> has exactly two vertices of odd degree, vertex <emphasis effect="italic">g</emphasis> and vertex <emphasis effect="italic">e</emphasis>. Notice the Euler trail we saw in Excercise 3 of <link target-id="exam-00001" document="m00120"/> began at vertex <emphasis effect="italic">g</emphasis> and ended at vertex <emphasis effect="italic">e</emphasis>.</para>
+  <para id="para-00007">This is consistent with what we learned about vertices off odd degree when we were studying Euler circuits. We saw that a vertex of odd degree couldn't exist in an Euler circuit as depicted in <link target-id="fig-00003" document="m00120"/>. If it was a starting vertex, at some point we would leave the vertex and not be able to return without repeating an edge. If it was not a starting vertex, at some point we would return and not be able to leave without repeating an edge. Since the starting and ending vertices in an Euler trail are not the same, the start is a vertex we want to leave without returning, and the end is a vertex we want to return to and never leave. Those two vertices must have odd degree, but the others cannot.</para>
   <figure id="fig-00003">
   <media alt="Two illustrations. The first illustration shows a vertex, 3. Two arrows point to it and an arrow points away from it. The second illustration shows a vertex, 3. Two arrows point away from it and an arrow points to it.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_143.png"/>
   </media>
   <caption>A Vertex of Degree 3</caption>
   </figure>
-  <para id="para-00008">Let’s use the Euler trail theorem to solve a puzzle so you can amaze your friends! This puzzle is called the “Five Rooms Puzzle.” Suppose that you were in a house with five rooms and the exterior. There is a doorway in every shared wall between any two rooms and between any room and the exterior as shown in <link target-id="fig-00004" document="m00120" />. Could you find a route through the house that passes through each doorway exactly once?</para>
+  <para id="para-00008">Let’s use the Euler trail theorem to solve a puzzle so you can amaze your friends! This puzzle is called the “Five Rooms Puzzle.” Suppose that you were in a house with five rooms and the exterior. There is a doorway in every shared wall between any two rooms and between any room and the exterior as shown in <link target-id="fig-00004" document="m00120"/>. Could you find a route through the house that passes through each doorway exactly once?</para>
   <figure id="fig-00004">
   <media alt="An illustration shows five rooms in a rectangle labeled f. The rooms are labeled a to e.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_168.png"/>
   </media>
   <caption>Five Rooms Puzzle</caption>
   </figure>
-  <para id="para-00009">Let’s represent the puzzle with a graph in which vertices are rooms (or the exterior) and an edge indicates a door between two rooms as shown in <link target-id="fig-00005" document="m00120" />.</para>
+  <para id="para-00009">Let’s represent the puzzle with a graph in which vertices are rooms (or the exterior) and an edge indicates a door between two rooms as shown in <link target-id="fig-00005" document="m00120"/>.</para>
   <figure id="fig-00005">
   <media alt="An illustration shows five rooms in a rectangle labeled f. An arrow from the illustration points to a graph with six vertices. In the illustration, the rooms are labeled a to e. The vertices are a to f. Edges interconnect all the vertices. In the graph, the vertices are labeled a to f. edges connect a b, a d, b d, b e, a c, c d, d e, c d, c f, d f, d e, and e f. Double curved edges connect a to f and b to f. Curved edges connect c to f and f to e.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_169.png"/>
@@ -92,11 +92,11 @@
   </media>
   <caption>Degrees of Vertices in Five Rooms Puzzle</caption>
   </figure>
-  <para id="para-00011">Since there are more than two vertices of odd degree as shown in <link target-id="fig-00006" document="m00120" />, the graph of the five rooms puzzle contains no Euler path. Now you can amaze and astonish your friends!</para>
+  <para id="para-00011">Since there are more than two vertices of odd degree as shown in <link target-id="fig-00006" document="m00120"/>, the graph of the five rooms puzzle contains no Euler path. Now you can amaze and astonish your friends!</para>
   </section>
   <section id="sect-00004">
   <title>Bridges and Local Bridges</title>
-  <para id="para-00012">Now that we know which graphs have Euler trails, let’s work on a method to find them. The method we will use involves identifying <term id="term-00002">bridges</term> in our graphs. A bridge is an edge which, if removed, increases the number of components in a graph. Bridges are often referred to as cut-edges. In <link target-id="fig-00007" document="m00120" />, there are several examples of bridges. Notice that an edge that is not part of a cycle is always a bridge, and an edge that is part of a cycle is never a bridge.</para>
+  <para id="para-00012">Now that we know which graphs have Euler trails, let’s work on a method to find them. The method we will use involves identifying <term id="term-00002">bridges</term> in our graphs. A bridge is an edge which, if removed, increases the number of components in a graph. Bridges are often referred to as cut-edges. In <link target-id="fig-00007" document="m00120"/>, there are several examples of bridges. Notice that an edge that is not part of a cycle is always a bridge, and an edge that is part of a cycle is never a bridge.</para>
   <figure id="fig-00007">
   <media alt="A graph has two triangles and one square. The first triangle has vertices, a, b, and c. The second triangle has vertices, g, k, and j. The square has the vertices, e, f, h, and i. An edge connects e and i. The bridges connect b f, c g, and d g.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_171.png"/>
@@ -104,14 +104,14 @@
   <caption>Graph with Bridges</caption>
   </figure>
   <para id="para-00013">Edges <emphasis effect="italic">bf</emphasis>, <emphasis effect="italic">cg</emphasis>, and <emphasis effect="italic">dg</emphasis> are “bridges”</para>
-  <para id="para-00014">The graph in <link target-id="fig-00007" document="m00120" /> is connected, which means it has exactly one component. Each time we remove one of the bridges from the graph the number of components increases by one as shown in <link target-id="fig-00008" document="m00120" />. If we remove all three, the resulting graph in <link target-id="fig-00008" document="m00120" /> has four components.</para>
+  <para id="para-00014">The graph in <link target-id="fig-00007" document="m00120"/> is connected, which means it has exactly one component. Each time we remove one of the bridges from the graph the number of components increases by one as shown in <link target-id="fig-00008" document="m00120"/>. If we remove all three, the resulting graph in <link target-id="fig-00008" document="m00120"/> has four components.</para>
   <figure id="fig-00008">
   <media alt="Four graphs. The first graph has two triangles and a square. The first triangle has vertices, a, b, and c. The second triangle has vertices, g, k, and j. The square has the vertices, e, f, h, and i. An edge connects e and i. The bridges connect b f, c g, and d g. The second graph is the same. The square is separated. The third graph shows the square and the triangles separated. The second triangle is connected to the vertex, d. In the fourth graph, the triangles, square, and the d vertex are separated.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_172.png"/>
   </media>
   <caption>Removing a Bridge Increases Number of Components</caption>
   </figure>
-  <para id="para-00015">In sociology, bridges are a key part of social network analysis. Sociologists study two kinds of bridges: local bridges and regular bridges. Regular bridges are defined the same in sociology as in graph theory, but they are unusual when studying a large social network because it is very unlikely a group of individuals in a large social network has only one link to the rest of the network. On the other hand, a <term id="term-00003">local bridge</term> occurs much more frequently. A local bridge is a friendship between two individuals who have no other friends in common. If they lose touch, there is no single individual who can pass information between them. In graph theory, a <term id="term-00004">local bridge</term> is an edge between two vertices, which, when removed, increases the length of the shortest path between its vertices to more than two edges. In <link target-id="fig-00009" document="m00120" />, a local bridge between vertices <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">e</emphasis> has been removed. As a result, the shortest path between <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">e</emphasis> is <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">i</emphasis> → <emphasis effect="italic">j</emphasis> → <emphasis effect="italic">k</emphasis> → <emphasis effect="italic">e</emphasis>, which is four edges. On the other hand, if edge <emphasis effect="italic">ab</emphasis> were removed, then there are still paths between <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis> that cover only two edges, like <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">i</emphasis> → <emphasis effect="italic">b</emphasis>.</para>
+  <para id="para-00015">In sociology, bridges are a key part of social network analysis. Sociologists study two kinds of bridges: local bridges and regular bridges. Regular bridges are defined the same in sociology as in graph theory, but they are unusual when studying a large social network because it is very unlikely a group of individuals in a large social network has only one link to the rest of the network. On the other hand, a <term id="term-00003">local bridge</term> occurs much more frequently. A local bridge is a friendship between two individuals who have no other friends in common. If they lose touch, there is no single individual who can pass information between them. In graph theory, a <term id="term-00004">local bridge</term> is an edge between two vertices, which, when removed, increases the length of the shortest path between its vertices to more than two edges. In <link target-id="fig-00009" document="m00120"/>, a local bridge between vertices <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">e</emphasis> has been removed. As a result, the shortest path between <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">e</emphasis> is <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">i</emphasis> → <emphasis effect="italic">j</emphasis> → <emphasis effect="italic">k</emphasis> → <emphasis effect="italic">e</emphasis>, which is four edges. On the other hand, if edge <emphasis effect="italic">ab</emphasis> were removed, then there are still paths between <emphasis effect="italic">a</emphasis> and <emphasis effect="italic">b</emphasis> that cover only two edges, like <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">i</emphasis> → <emphasis effect="italic">b</emphasis>.</para>
   <figure id="fig-00009" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="Two graphs. The first graph shows a triangle, i a b resting on a square, a b d e, and another triangle, k e f resting on a square, e f g h. The squares have diagonal lines. Edges connect i j and j k. A bridge connects b e. The second graph shows a triangle, i a b resting on a square, a b d e, and another triangle, k e f resting on a square, e f g h. The squares have diagonal lines. Bridges connect i j and j k.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_173.png"/>
@@ -123,7 +123,7 @@
   <title>Identifying Bridges and Local Bridges</title>
   <exercise id="exer-00003">
   <problem id="prob-00003">
-  <para id="para-00018">Use the graph of a social network in <link target-id="fig-00010" document="m00120" /> to answer each question.</para>
+  <para id="para-00018">Use the graph of a social network in <link target-id="fig-00010" document="m00120"/> to answer each question.</para>
   <figure id="fig-00010">
   <media alt="A graph with 23 vertices. The edges are as follows: a b, b c, h i, a d, b e, c e, h g, d e, e f, f g, d n, f j, f k, g k, j k, k u, j o, n m, m o, n p, n q, m q, q o, o r, u v, u w, u x, p q, q r, v w, w x, p s, q t, and s t.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_174.png"/>
@@ -140,7 +140,7 @@
   <solution id="sol-00002">
   <list list-type="enumerated" number-style="arabic" id="list-00005">
   <item>The edges <emphasis effect="italic">ku, gh</emphasis>, and <emphasis effect="italic">hi</emphasis> are bridges.</item>
-  <item>If the bridges were all removed, there would be four components in the resulting graph, {<emphasis effect="italic">i</emphasis>}, {<emphasis effect="italic">h</emphasis>}, {<emphasis effect="italic">u</emphasis>, <emphasis effect="italic">v</emphasis>, <emphasis effect="italic">w</emphasis>, <emphasis effect="italic">x</emphasis>}, and {<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">j</emphasis>, <emphasis effect="italic">k</emphasis>, <emphasis effect="italic">m</emphasis>, <emphasis effect="italic">n</emphasis>, <emphasis effect="italic">o</emphasis>, <emphasis effect="italic">p</emphasis>, <emphasis effect="italic">q</emphasis>, <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>} as shown in <link target-id="fig-00011" document="m00120" />.
+  <item>If the bridges were all removed, there would be four components in the resulting graph, {<emphasis effect="italic">i</emphasis>}, {<emphasis effect="italic">h</emphasis>}, {<emphasis effect="italic">u</emphasis>, <emphasis effect="italic">v</emphasis>, <emphasis effect="italic">w</emphasis>, <emphasis effect="italic">x</emphasis>}, and {<emphasis effect="italic">a</emphasis>, <emphasis effect="italic">b</emphasis>, <emphasis effect="italic">c</emphasis>, <emphasis effect="italic">d</emphasis>, <emphasis effect="italic">e</emphasis>, <emphasis effect="italic">f</emphasis>, <emphasis effect="italic">g</emphasis>, <emphasis effect="italic">j</emphasis>, <emphasis effect="italic">k</emphasis>, <emphasis effect="italic">m</emphasis>, <emphasis effect="italic">n</emphasis>, <emphasis effect="italic">o</emphasis>, <emphasis effect="italic">p</emphasis>, <emphasis effect="italic">q</emphasis>, <emphasis effect="italic">r</emphasis>, <emphasis effect="italic">s</emphasis>, <emphasis effect="italic">t</emphasis>} as shown in <link target-id="fig-00011" document="m00120"/>.
   <figure id="fig-00011" xmlns="http://cnx.rice.edu/cnxml">
   <media alt="A graph with 23 vertices. The edges are as follows: a b, b c, a d, b e, c e, d e, e f, f g, d n, f j, f k, g k, j k, j o, n m, m o, n p, n q, m q, q o, o r, u v, u w, u x, p q, q r, v w, w x, p s, q t, and s t. The vertices h and i are separated. The graph is divided into two blocks.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_175.png"/>
@@ -171,19 +171,19 @@
   <para id="para-00022"><emphasis effect="bold">Step 1:</emphasis> Begin at either of the two vertices of odd degree.</para>
   <para id="para-00023"><emphasis effect="bold">Step 2:</emphasis> Remove an edge between the vertex and any adjacent vertex that is NOT a bridge, unless there is no other choice, making a note of the edge you removed. Repeat this step until all edges are removed.</para>
   <para id="para-00024"><emphasis effect="bold">Step 3:</emphasis> Write out the Euler trail using the sequence of vertices and edges that you found. For example, if you removed <emphasis effect="italic">ab, bc, cd, de</emphasis>, and <emphasis effect="italic">ef</emphasis>, in that order, then the Euler trail is <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">f</emphasis>.</para>
-  <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml"><link target-id="fig-00012" document="m00120" /> shows the steps to find an Euler trail in a graph using Fleury’s algorithm.</para>
+  <para id="para-00025" xmlns="http://cnx.rice.edu/cnxml"><link target-id="fig-00012" document="m00120"/> shows the steps to find an Euler trail in a graph using Fleury’s algorithm.</para>
   <figure id="fig-00012">
   <media alt="Eight graphs. Each graph has six vertices: t, u, v, w, x, and y. In the first graph, the edges are t u, u w, w y, y x, x v, v t, and v w. Text reads, start at odd degree. Choose direction. The edges flowing from t to u, v, and w are highlighted in blue. The second graph is the same as that of the first, with the edge, tv in dashed lines and labeled remove tv. The edges flowing from v to w and x are in blue. Text reads, then choose the direction. The third graph shows edges, t u, u w, w y, y x, x v, and v w. The edge, v w is in dashed lines and labeled remove v w. The edges from w to t and u are in blue and labeled then choose the direction. The edge from w to y is shown in red and labeled no. The fourth graph shows the edges, t u, u w, w y, y x, x v, and t w. The edge, w u is in dashed lines, and remove w u. The edge from w to y is in red and labeled do not remove bridge wy. The edge from u to t is in blue. The fifth graph shows the edge, t u, t w, w y, y x, and x v. The edge, u t is in dashed lines and labeled remove u t. The edge from t to w is in blue. The sixth graph shows the edge, t w, w y, y z, and x v. The edge, t w is in dashed lines and labeled remove t w. The edge from w to y is in blue. The seventh graph shows the edges, w y, y z, and x v. The edge, w y is in dashed lines and labeled remove w y. The edge from y to x is in blue. The eighth graph shows the edges, y x, and x v. The edge, y x is in dashed lines and labeled remove y x then x v. The edge from x to v is in blue.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_176.png"/>
   </media>
   <caption>Using Fleury’s Algorithm To Find Euler Trail</caption>
   </figure>
-  <para id="para-00026">The Euler trail that was found in <link target-id="fig-00012" document="m00120" /> is <emphasis effect="italic">t</emphasis> → <emphasis effect="italic">v</emphasis> → <emphasis effect="italic">w</emphasis> → <emphasis effect="italic">u</emphasis> → <emphasis effect="italic">t</emphasis> → <emphasis effect="italic">w</emphasis> → <emphasis effect="italic">y</emphasis> → <emphasis effect="italic">x</emphasis> → <emphasis effect="italic">v</emphasis>.</para>
+  <para id="para-00026">The Euler trail that was found in <link target-id="fig-00012" document="m00120"/> is <emphasis effect="italic">t</emphasis> → <emphasis effect="italic">v</emphasis> → <emphasis effect="italic">w</emphasis> → <emphasis effect="italic">u</emphasis> → <emphasis effect="italic">t</emphasis> → <emphasis effect="italic">w</emphasis> → <emphasis effect="italic">y</emphasis> → <emphasis effect="italic">x</emphasis> → <emphasis effect="italic">v</emphasis>.</para>
   <example id="exam-00003" xmlns="http://cnx.rice.edu/cnxml">
   <title>Finding an Euler Trail with Fleury’s Algorithm</title>
   <exercise id="exer-00005">
   <problem id="prob-00005">
-  <para id="para-00027">Use Fleury’s Algorithm to find an Euler trail for Graph <emphasis effect="italic">J</emphasis> in <link target-id="fig-00013" document="m00120" />.</para>
+  <para id="para-00027">Use Fleury’s Algorithm to find an Euler trail for Graph <emphasis effect="italic">J</emphasis> in <link target-id="fig-00013" document="m00120"/>.</para>
   <figure id="fig-00013">
   <media alt="Graph J has 9 vertices: a, b, c, d, e, f, g, h, and i. Edges connect a b, b d, d c, c a, b c, b f, e f, f g, g i, I h, and h e.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_177.png"/>
@@ -193,28 +193,28 @@
   </problem>
   <solution id="sol-00003">
   <para id="para-00028"><emphasis effect="bold">Step 1:</emphasis> Choose one of the two vertices of odd degree, <emphasis effect="italic">c</emphasis> or <emphasis effect="italic">f</emphasis>, as your starting vertex. We will choose <emphasis effect="italic">c</emphasis>.</para>
-  <para id="para-00029"><emphasis effect="bold">Step 2:</emphasis> Remove edge <emphasis effect="italic">ca, cb</emphasis>, or <emphasis effect="italic">cd</emphasis>. None of these are cut edges so we can select any of the three. We will choose <emphasis effect="italic">cb</emphasis> as shown in <link target-id="fig-00014" document="m00120" /> to be the first edge removed.</para>
+  <para id="para-00029"><emphasis effect="bold">Step 2:</emphasis> Remove edge <emphasis effect="italic">ca, cb</emphasis>, or <emphasis effect="italic">cd</emphasis>. None of these are cut edges so we can select any of the three. We will choose <emphasis effect="italic">cb</emphasis> as shown in <link target-id="fig-00014" document="m00120"/> to be the first edge removed.</para>
   <figure id="fig-00014">
   <media alt="Graph J has 9 vertices: a, b, c, d, e, f, g, h, and i. Edges connect a b, b d, d c, c a, b c, b f, e f, f g, g i, I h, and h e. The edge, b c is shown in dashed lines. The edges, b d, and b a are in blue. The edge from b to f is in red and labeled no!">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_178.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">J</emphasis> with <emphasis effect="italic">cb</emphasis> Removed</caption>
   </figure>
-  <para id="para-00030"><emphasis effect="bold">Repeat Step 2</emphasis> The next choice is to remove edge <emphasis effect="italic">ba, bd</emphasis>, or <emphasis effect="italic">bf</emphasis> as shown in <link target-id="fig-00014" document="m00120" />, but <emphasis effect="italic">bf</emphasis> is not an option since it is a bridge. We will choose <emphasis effect="italic">ba</emphasis> as shown in <link target-id="fig-00015" document="m00120" /> to be the second edge removed.</para>
+  <para id="para-00030"><emphasis effect="bold">Repeat Step 2</emphasis> The next choice is to remove edge <emphasis effect="italic">ba, bd</emphasis>, or <emphasis effect="italic">bf</emphasis> as shown in <link target-id="fig-00014" document="m00120"/>, but <emphasis effect="italic">bf</emphasis> is not an option since it is a bridge. We will choose <emphasis effect="italic">ba</emphasis> as shown in <link target-id="fig-00015" document="m00120"/> to be the second edge removed.</para>
   <figure id="fig-00015">
   <media alt="Graph J has 9 vertices: a, b, c, d, e, f, g, h, and i. The edges connect a b, b d, d c, c a, b f, e f, f g, g i, I h, and h e. The edge, a b is in dashed lines. The edges from a to c, c to d, b to f, f to e, and f to g are labeled 3, 4, 5, 6, blank, and blank and shaded in blue.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_179.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">J</emphasis> with <emphasis effect="italic">cb</emphasis> and <emphasis effect="italic">ba</emphasis> Removed</caption>
   </figure>
-  <para id="para-00031"><emphasis effect="bold">Repeat Step 2</emphasis> for the third, fourth, fifth, sixth, and seventh edges. As shown in <link target-id="fig-00015" document="m00120" />, until we get to the seventh edge there is only one option each time, <emphasis effect="italic">ac, cd, db</emphasis>, and <emphasis effect="italic">bf</emphasis> in that order. For the seventh edge, we must choose between <emphasis effect="italic">fe</emphasis> and <emphasis effect="italic">fg</emphasis>. Neither of these are bridges. We choose <emphasis effect="italic">fe</emphasis>. <link target-id="fig-00016" document="m00120" /> shows that <emphasis effect="italic">ac, cd, db, bf,</emphasis> and <emphasis effect="italic">fe</emphasis> have been removed.</para>
+  <para id="para-00031"><emphasis effect="bold">Repeat Step 2</emphasis> for the third, fourth, fifth, sixth, and seventh edges. As shown in <link target-id="fig-00015" document="m00120"/>, until we get to the seventh edge there is only one option each time, <emphasis effect="italic">ac, cd, db</emphasis>, and <emphasis effect="italic">bf</emphasis> in that order. For the seventh edge, we must choose between <emphasis effect="italic">fe</emphasis> and <emphasis effect="italic">fg</emphasis>. Neither of these are bridges. We choose <emphasis effect="italic">fe</emphasis>. <link target-id="fig-00016" document="m00120"/> shows that <emphasis effect="italic">ac, cd, db, bf,</emphasis> and <emphasis effect="italic">fe</emphasis> have been removed.</para>
   <figure id="fig-00016">
   <media alt="Graph J has 9 vertices: a, b, c, d, e, f, g, h, and i. The edges connect b d, d c, c a, b f, e f, f g, g i, I h, and h e. The edges, a c, c d, d b, b f, and f e are in dashed lines. The edges, e to h, h to i, i to g, and g to f are shaded in blue and labeled 8, 9, 10, and 11.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_180.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">J</emphasis> with Seven Edges Removed</caption>
   </figure>
-  <para id="para-00032"><emphasis effect="bold">Repeat Step 2</emphasis> for the eight, ninth, tenth, and eleventh edges. As shown in <link target-id="fig-00016" document="m00120" />, there is only one option for each of these edges, <emphasis effect="italic">eh, hi, ig</emphasis>, and <emphasis effect="italic">gf</emphasis>, in that order.</para>
+  <para id="para-00032"><emphasis effect="bold">Repeat Step 2</emphasis> for the eight, ninth, tenth, and eleventh edges. As shown in <link target-id="fig-00016" document="m00120"/>, there is only one option for each of these edges, <emphasis effect="italic">eh, hi, ig</emphasis>, and <emphasis effect="italic">gf</emphasis>, in that order.</para>
   <para id="para-00033"><emphasis effect="bold">Step 3:</emphasis> Write out the Euler trail using the vertices in the sequence that the edges were removed. We removed <emphasis effect="italic">cb, ba, ac, cd, db, bf, fe, eh, hi, ig</emphasis>, and <emphasis effect="italic">gf</emphasis>, in that order. The Euler trail is <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">a</emphasis> → <emphasis effect="italic">c</emphasis> → <emphasis effect="italic">d</emphasis> → <emphasis effect="italic">b</emphasis> → <emphasis effect="italic">f</emphasis> → <emphasis effect="italic">e</emphasis> → <emphasis effect="italic">h</emphasis> → <emphasis effect="italic">i</emphasis> → <emphasis effect="italic">g</emphasis> → <emphasis effect="italic">f</emphasis>.</para>
   </solution>
   </exercise>
@@ -243,7 +243,7 @@
   <title>Finding an Euler Circuit or Euler Trail Using Fleury’s Algorithm</title>
   <exercise id="exer-00007">
   <problem id="prob-00007">
-  <para id="para-00041">Use Fleury’s algorithm to find either an Euler circuit or Euler trail in Graph <emphasis effect="italic">G</emphasis> in <link target-id="fig-00017" document="m00120" />.</para>
+  <para id="para-00041">Use Fleury’s algorithm to find either an Euler circuit or Euler trail in Graph <emphasis effect="italic">G</emphasis> in <link target-id="fig-00017" document="m00120"/>.</para>
   <figure id="fig-00017">
   <media alt="Graph G has three quadrilaterals. The vertices of the first quadrilateral are b, d, e, and c. The vertices of the second quadrilateral are i, h, j, and k. The vertices of the third quadrilateral are n, m, o, and p. Other edges connect c to d, d to i, i to j, j to n, and n to o. A curved edge connects c and o.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_181b.png"/>
@@ -254,49 +254,49 @@
   <solution id="sol-00004">
   <para id="para-00042">Graph <emphasis effect="italic">G</emphasis> has all vertices of even degree so it has an Euler circuit.</para>
   <para id="para-00043"><emphasis effect="bold">Step 1:</emphasis> Choose any vertex. We will choose vertex <emphasis effect="italic">j</emphasis>.</para>
-  <para id="para-00044"><emphasis effect="bold">Step 2:</emphasis> Remove one of the four edges that meet at vertex <emphasis effect="italic">j</emphasis>. Since <emphasis effect="italic">jn</emphasis> is a bridge, we must remove either <emphasis effect="italic">jh, ji</emphasis>, or <emphasis effect="italic">jk.</emphasis> We remove <emphasis effect="italic">ji</emphasis> as shown in <link target-id="fig-00018" document="m00120" />.</para>
+  <para id="para-00044"><emphasis effect="bold">Step 2:</emphasis> Remove one of the four edges that meet at vertex <emphasis effect="italic">j</emphasis>. Since <emphasis effect="italic">jn</emphasis> is a bridge, we must remove either <emphasis effect="italic">jh, ji</emphasis>, or <emphasis effect="italic">jk.</emphasis> We remove <emphasis effect="italic">ji</emphasis> as shown in <link target-id="fig-00018" document="m00120"/>.</para>
   <figure id="fig-00018">
   <media alt="Graph G has three quadrilaterals. The vertices of the first quadrilateral are b, d, e, and c. The vertices of the second quadrilateral are i, h, j, and k. The vertices of the third quadrilateral are n, m, o, and p. Other edges connect c to d, d to i, i to j, j to n, and n to o. A curved edge connects c and o. The edge, i j is in dashed lines. The edges, i h, and i k are in blue. The edge, d i is in red and labeled no!">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_182a.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">G</emphasis> with 1 Edge Removed</caption>
   </figure>
-  <para id="para-00045"><emphasis effect="bold">Repeat Step 2:</emphasis> Since <emphasis effect="italic">id</emphasis> is a bridge, we can remove either <emphasis effect="italic">ih</emphasis> or <emphasis effect="italic">ik</emphasis> next. We remove <emphasis effect="italic">ih</emphasis>, and then the only option is to remove <emphasis effect="italic">hj</emphasis> as shown in <link target-id="fig-00019" document="m00120" />.</para>
+  <para id="para-00045"><emphasis effect="bold">Repeat Step 2:</emphasis> Since <emphasis effect="italic">id</emphasis> is a bridge, we can remove either <emphasis effect="italic">ih</emphasis> or <emphasis effect="italic">ik</emphasis> next. We remove <emphasis effect="italic">ih</emphasis>, and then the only option is to remove <emphasis effect="italic">hj</emphasis> as shown in <link target-id="fig-00019" document="m00120"/>.</para>
   <figure id="fig-00019">
   <media alt="Graph G has three quadrilaterals. The vertices of the first quadrilateral are b, d, e, and c. The vertices of the second quadrilateral are i, h, j, and k. The vertices of the third quadrilateral are n, m, o, and p. Other edges connect c to d, d to i, j to n, and n to o. A curved edge connects c and o. The edges, i h, and hj are in dashed lines. The edges, j k, k i, and i d are in blue. The edge, j n is in red and labeled no!">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_183.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">G</emphasis> with 3 Edges Removed</caption>
   </figure>
-  <para id="para-00046"><emphasis effect="bold">Repeat Step 2:</emphasis> Since <emphasis effect="italic">jn</emphasis> is a bridge, the next edge removed must be <emphasis effect="italic">jk</emphasis>, and then the only option is to remove <emphasis effect="italic">ki</emphasis> followed by <emphasis effect="italic">id</emphasis> as shown in <link target-id="fig-00019" document="m00120" />. Even though <emphasis effect="italic">id</emphasis> is a bridge, it can be removed because it is the only option at this point. <link target-id="fig-00020" document="m00120" /> shows Graph <emphasis effect="italic">G</emphasis> with these additional edges removed.</para>
+  <para id="para-00046"><emphasis effect="bold">Repeat Step 2:</emphasis> Since <emphasis effect="italic">jn</emphasis> is a bridge, the next edge removed must be <emphasis effect="italic">jk</emphasis>, and then the only option is to remove <emphasis effect="italic">ki</emphasis> followed by <emphasis effect="italic">id</emphasis> as shown in <link target-id="fig-00019" document="m00120"/>. Even though <emphasis effect="italic">id</emphasis> is a bridge, it can be removed because it is the only option at this point. <link target-id="fig-00020" document="m00120"/> shows Graph <emphasis effect="italic">G</emphasis> with these additional edges removed.</para>
   <figure id="fig-00020">
   <media alt="Graph G has two quadrilaterals. The vertices of the first quadrilateral are b, d, e, and c. The other vertices are i, h, j, and k. The vertices of the second quadrilateral are n, m, o, and p. Other edges connect c to d, d to i, i to k, k to j, j to n, and n to o. A curved edge connects c and o. The edges, i k, i k, and i d are in dashed lines. The edges d b, d c, and d e are in blue.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_184a.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">G</emphasis> with 6 Edges Removed</caption>
   </figure>
-  <para id="para-00047"><emphasis effect="bold">Repeat Step 2:</emphasis> Choose any one of the edges <emphasis effect="italic">db, dc</emphasis>, or <emphasis effect="italic">de</emphasis>. We remove <emphasis effect="italic">dc</emphasis> as shown in <link target-id="fig-00021" document="m00120" />.</para>
+  <para id="para-00047"><emphasis effect="bold">Repeat Step 2:</emphasis> Choose any one of the edges <emphasis effect="italic">db, dc</emphasis>, or <emphasis effect="italic">de</emphasis>. We remove <emphasis effect="italic">dc</emphasis> as shown in <link target-id="fig-00021" document="m00120"/>.</para>
   <figure id="fig-00021">
   <media alt="Graph G has two quadrilaterals. The vertices of the first quadrilateral are b, d, e, and c. The other vertices are i, h, j, and k. The vertices of the second quadrilateral are n, m, o, and p. Other edges connect c to d, j to n, and n to o. A curved edge connects c and o. The edge, c d is in dashed lines. The edges, c b, b d, and d e are in blue. The edge c to o is in red and is labeled no!">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_185a.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">G</emphasis> with 7 Edges Removed</caption>
   </figure>
-  <para id="para-00048"><emphasis effect="bold">Repeat Step 2:</emphasis> Since <emphasis effect="italic">co</emphasis> is a bridge, choose <emphasis effect="italic">cb</emphasis> next. We remove <emphasis effect="italic">cb</emphasis>, then <emphasis effect="italic">bd</emphasis>, and then <emphasis effect="italic">de</emphasis> as shown in <link target-id="fig-00022" document="m00120" />.</para>
+  <para id="para-00048"><emphasis effect="bold">Repeat Step 2:</emphasis> Since <emphasis effect="italic">co</emphasis> is a bridge, choose <emphasis effect="italic">cb</emphasis> next. We remove <emphasis effect="italic">cb</emphasis>, then <emphasis effect="italic">bd</emphasis>, and then <emphasis effect="italic">de</emphasis> as shown in <link target-id="fig-00022" document="m00120"/>.</para>
   <figure id="fig-00022">
   <media alt="Graph G has two quadrilaterals. The vertices of the first quadrilateral are b, d, e, and c. The other vertices are i, h, j, and k. The vertices of the second quadrilateral are n, m, o, and p. Other edges connect j to n, and n to o. A curved edge connects c and o. The edges, c b, b d, and d e are in dashed lines. The edges, e to c, c to o, o to m, o to n, and o to p are in blue.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_186a.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">G</emphasis> with 10 Edges Removed</caption>
   </figure>
-  <para id="para-00049"><emphasis effect="bold">Repeat Step 2:</emphasis> Next, remove <emphasis effect="italic">ec</emphasis> and <emphasis effect="italic">co</emphasis>. Then choose any of <emphasis effect="italic">op, pn</emphasis>, or <emphasis effect="italic">om</emphasis>. We remove on as shown in <link target-id="fig-00023" document="m00120" />.</para>
+  <para id="para-00049"><emphasis effect="bold">Repeat Step 2:</emphasis> Next, remove <emphasis effect="italic">ec</emphasis> and <emphasis effect="italic">co</emphasis>. Then choose any of <emphasis effect="italic">op, pn</emphasis>, or <emphasis effect="italic">om</emphasis>. We remove on as shown in <link target-id="fig-00023" document="m00120"/>.</para>
   <figure id="fig-00023">
   <media alt="Graph G has one quadrilateral. The vertices are b, d, e, c, i, h, j, and k. The vertices of the second quadrilateral are n, m, o, and p. Other edges connect j to n, and n to o. A curved edge connects c and o. The edges, n o, c e, and co are in dashed lines. The edges, n m, and n p are in blue. The edge, n j is in red and labeled no!">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_187.png"/>
   </media>
   <caption>Graph <emphasis effect="italic">G</emphasis> with 13 Edges Removed</caption>
   </figure>
-  <para id="para-00050"><emphasis effect="bold">Repeat Step 2:</emphasis> Next, remove either <emphasis effect="italic">nm</emphasis>, <emphasis effect="italic">np</emphasis>, or <emphasis effect="italic">nj</emphasis>, but <emphasis effect="italic">nj</emphasis> is a So, we remove <emphasis effect="italic">nm</emphasis> as shown in <link target-id="fig-00024" document="m00120" />.</para>
+  <para id="para-00050"><emphasis effect="bold">Repeat Step 2:</emphasis> Next, remove either <emphasis effect="italic">nm</emphasis>, <emphasis effect="italic">np</emphasis>, or <emphasis effect="italic">nj</emphasis>, but <emphasis effect="italic">nj</emphasis> is a So, we remove <emphasis effect="italic">nm</emphasis> as shown in <link target-id="fig-00024" document="m00120"/>.</para>
   <figure id="fig-00024">
   <media alt="Graph G has one quadrilateral. The vertices are b, d, e, c, i, h, j, and k. The vertices of the quadrilateral are n, m, o, and p. An edge connects j to n. The edge, n m is in dashed lines. The edges, m o, o p, p n, and n j are in blue.">
   <image mime-type="image/png" src="../../media/CS_Figure_12_06_188.png"/>
@@ -407,8 +407,10 @@
  </section>
  <section class="eoc-videos" id="sect-00010">
   <title>Videos</title>
- <para id="para-00068"><link url="https://openstax.org/r/uoXNXACwB3Y">Bridges and Local Bridges in Graph Theory</link></para>
- <para id="para-00069"><link url="https://openstax.org/r/-AuSG3etwso">Fluery's Algorithm to Find an Euler Circuit</link></para>
+  <list id="list-00009">
+ <item><link url="https://openstax.org/r/uoXNXACwB3Y">Bridges and Local Bridges in Graph Theory</link></item>
+ <item><link url="https://openstax.org/r/-AuSG3etwso">Fluery's Algorithm to Find an Euler Circuit</link></item>
+  </list>
  </section>
  </content> 
  </document>

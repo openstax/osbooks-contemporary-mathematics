@@ -130,13 +130,13 @@
     </table>
     <para id="para-00009" xmlns="http://cnx.rice.edu/cnxml"><emphasis effect="bold">Step 3:</emphasis> We add all of the values in that last column: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>+</mo><mn>1</mn><mo>=</mo><mfrac><mn>7</mn><mn>2</mn></mfrac><mo>=</mo><mn>3.5</mn></mrow></math>. So, the expected value of a single roll of a die is 3.5.</para>
     </item>
-    <item xmlns="http://cnx.rice.edu/cnxml">Back in <link target-id="exam-00003" document="m00089" xmlns="http://cnx.rice.edu/cnxml" />, we made this table of all of the equally likely outcomes (<link target-id="fig-00001" document="m00097" />):
+    <item xmlns="http://cnx.rice.edu/cnxml">Back in <link target-id="exam-00003" document="m00089" xmlns="http://cnx.rice.edu/cnxml"/>, we made this table of all of the equally likely outcomes (<link target-id="fig-00001" document="m00097"/>):
     <figure id="fig-00001">
     <media alt="A table with 6 rows and 6 columns. The columns represent the first die and are titled, 1, 2, 3, 4, 5, and 6. The rows represent the second die and are titled, 1, 2, 3, 4, 5, and 6. The data is as follows: Row 1: 2, 3, 4, 5, 6, 7. Row 2: 3, 4, 5, 6, 7, 8. Row 3: 4, 5, 6, 7, 8, 9. Row 4: 5, 6, 7, 8, 9, 10. Row 5: 6, 7, 8, 9, 10, 11. Row 6: 7, 8, 9, 10, 11, 12.">
     <image mime-type="image/png" src="../../media/CS_Figure_07_11_036.png"/>
     </media>
     </figure>
-    <para id="para-00010"><emphasis effect="bold">Step 1:</emphasis> Let’s use <link target-id="fig-00001" document="m00097" /> to create the PDF for this experiment, as shown in the following table:</para>
+    <para id="para-00010"><emphasis effect="bold">Step 1:</emphasis> Let’s use <link target-id="fig-00001" document="m00097"/> to create the PDF for this experiment, as shown in the following table:</para>
     <table class="unnumbered" summary=" " id="table-00003">
     <tgroup cols="2">
     <colspec colnum="1" colname="c1" colwidth="1*"/>
@@ -376,7 +376,7 @@
     </problem>
     </exercise>
     </note>
-    <para id="para-00017">Let’s make note of some things we can learn from <link target-id="exam-00001" document="m00097" xmlns="http://cnx.rice.edu/cnxml" />. First, as Exercises 1 and 3 demonstrate, the expected value of an experiment might not be a value that could come up in the experiment. Remember that the expected value is interpreted as a mean, and the mean of a collection of numbers doesn’t have to actually be one of those numbers.</para>
+    <para id="para-00017">Let’s make note of some things we can learn from <link target-id="exam-00001" document="m00097" xmlns="http://cnx.rice.edu/cnxml"/>. First, as Exercises 1 and 3 demonstrate, the expected value of an experiment might not be a value that could come up in the experiment. Remember that the expected value is interpreted as a mean, and the mean of a collection of numbers doesn’t have to actually be one of those numbers.</para>
     <para id="para-00018"> Second, looking at Exercise 1, the expected value (3.5) was just the mean of the numbers on the faces of the die: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mn>1</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mn>2</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mn>3</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mn>4</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mn>5</mn><mo lspace="0.28em" rspace="0.28em">+</mo><mn>6</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>3.5</mn></mrow></math>. This is no accident! If we break that fraction up using the addition in the numerator, we get <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>2</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>6</mn><mn>6</mn></mfrac></mrow></math>, which we can rewrite as <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mn>2</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mn>3</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mn>4</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mn>5</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mn>6</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math>. That’s exactly the computation we did to find the expected value! In fact, expected values can always be treated as a special kind of mean called a <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">weighted mean</emphasis>, where the weights are the probabilities associated with each value. When the probabilities are all equal, the weighted mean is just the regular mean.</para>
     </section>
     <section id="sect-00003">
@@ -416,7 +416,7 @@
     </section>
     <section id="sect-00004">
     <title>Using Expected Value</title>
-    <para id="para-00023">Now that we know how to find and interpret expected values, we can turn our attention to using them. Suppose someone offers to play a game with you. If you roll a die and get a 6, you get $10. However, if you get a 5 or below, you lose $1. Is this a game you’d want to play? Let’s look at the expected value: The probability of winning is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math> and the probability of losing is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math>, so the expected value is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x0024;</mo><mn>10</mn><mo>&#x00D7;</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mo>&#x0024;</mo><mn>1</mn><mo stretchy='false'>)</mo><mo>&#x00D7;</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>=</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>&#x2248;</mo><mo>&#x0024;</mo><mn>0.83</mn></mrow></math>. That means, on average, you’ll come out ahead by about 83 cents every time you play this game. It’s a great deal! On the other hand, if the winnings for rolling a 6 drop to $3, the expected value becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x0024;</mo><mn>3</mn><mo>&#x00D7;</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mo stretchy='false'>(</mo><mo>&#x2212;</mo><mo>&#x0024;</mo><mn>1</mn><mo stretchy='false'>)</mo><mo>&#x00D7;</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>=</mo><mo>&#x2212;</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>&#x2248;</mo><mo>&#x2212;</mo><mo>&#x0024;</mo><mn>0.33</mn></mrow></math>, meaning you should expect to lose about 33 cents on average for every time you play. Playing that game is not a good idea! In general, this is how casinos and lottery corporations make money: Every game has a negative expected value for the player.</para>
+    <para id="para-00023">Now that we know how to find and interpret expected values, we can turn our attention to using them. Suppose someone offers to play a game with you. If you roll a die and get a 6, you get $10. However, if you get a 5 or below, you lose $1. Is this a game you’d want to play? Let’s look at the expected value: The probability of winning is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow></math> and the probability of losing is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mn>5</mn><mn>6</mn></mfrac></mrow></math>, so the expected value is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>$</mo><mn>10</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mo stretchy="false">(</mo><mo>−</mo><mo>$</mo><mn>1</mn><mo stretchy="false">)</mo><mo>×</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>=</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>≈</mo><mo>$</mo><mn>0.83</mn></mrow></math>. That means, on average, you’ll come out ahead by about 83 cents every time you play this game. It’s a great deal! On the other hand, if the winnings for rolling a 6 drop to $3, the expected value becomes <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>$</mo><mn>3</mn><mo>×</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mo stretchy="false">(</mo><mo>−</mo><mo>$</mo><mn>1</mn><mo stretchy="false">)</mo><mo>×</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>≈</mo><mo>−</mo><mo>$</mo><mn>0.33</mn></mrow></math>, meaning you should expect to lose about 33 cents on average for every time you play. Playing that game is not a good idea! In general, this is how casinos and lottery corporations make money: Every game has a negative expected value for the player.</para>
     </section>
     <section id="sect-00005" xmlns="http://cnx.rice.edu/cnxml">
     <note class="who-knew" id="note-00005"> 
@@ -581,7 +581,9 @@
     </section>
     <section class="eoc-videos" id="sect-00010">
     <title>Videos</title>
-    <para id="para-00053"><link url="https://openstax.org/r/Playing_Punch_a_Bunch">Playing "Punch a Bunch"</link></para>
+    <list id="list-00012">
+    <item><link url="https://openstax.org/r/Playing_Punch_a_Bunch">Playing "Punch a Bunch"</link></item>
+    </list>
     </section>
     <section class="formula-review" id="sect-00011">
     <title>Formulas</title>
@@ -860,4 +862,4 @@
     </exercise>
     </section>
     </content>
-    </document>     
+    </document>
