@@ -425,14 +425,14 @@
       <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_091.jpg"/>
       </media>
       </figure>
-      <newline/>We saw in <link target-id="fig-00019" document="m00007" /> that this proportion is 2.5%.</item>
+      <newline/>We saw in <link target-id="fig-00019"/> that this proportion is 2.5%.</item>
       <item>To figure out what proportion of the data will be between 74 and 77, let's start by shading in that area of data. These are data that are more than one but less than two standard deviations below the mean.<newline/>
       <figure id="fig-00030">
       <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. Five vertical lines are drawn at 74, 77, 80, 83, and 86. The region in between lines, 74 and 77 is shaded in blue.">
       <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_092.jpg"/>
       </media>
       </figure><newline/>
-      From <link target-id="fig-00019" document="m00007" />, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from <link target-id="note-00005" document="m00007" />, we know that 34% of the data is less than one standard deviation below the mean:<newline/>
+      From <link target-id="fig-00019"/>, we know that the proportion of data less than two standard deviations below the mean is 47.5%. And, from <link target-id="exer-00006"/>, we know that 34% of the data is less than one standard deviation below the mean:<newline/>
       <figure id="fig-00031">
       <media alt="A normal distribution curve. The horizontal axis ranges from 70 to 90, in increments of 1. The curve begins at 70, has a peak value at 80, and ends at 90. The region from 74 to 77 is shaded in blue. The region from 77 to 80 is shaded in red. The total shaded region from 74 to 80 is marked 47.5 percent. The shaded region from 74 to 77 is marked 13.5 percent. The shaded region from 77 to 80 is marked 34 percent.">
       <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_093.jpg"/>
@@ -451,7 +451,7 @@
       <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_095.jpg"/>
       </media>
       </figure><newline/>
-      From <link target-id="fig-00019" document="m00007" />, we know the blue (leftmost) region represents 47.5% of the data. And, using <link target-id="note-00005" document="m00007" />, we get that the red (rightmost) region covers 34% of the data. Adding those together, the proportion we want is 81.5%.</item>
+      From <link target-id="fig-00019"/>, we know the blue (leftmost) region represents 47.5% of the data. And, using <link target-id="exer-00006"/>, we get that the red (rightmost) region covers 34% of the data. Adding those together, the proportion we want is 81.5%.</item>
       </list>
       </solution>
       </exercise>
@@ -542,7 +542,7 @@
       <image mime-type="image/jpg" src="../../media/CS_Figure_08_06_096.jpg"/>
       </media>
       </figure>
-      <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at <link target-id="fig-00019" document="m00007" /> and <link target-id="fig-00020" document="m00007" />, the best we can say is that 50 is between the 84th and 99.5th percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
+      <para id="para-00072">Since 50 doesn’t line up with one of our lines, the 68-95-99.7 Rule fails us. Looking back at <link target-id="fig-00019" document="m00007"/> and <link target-id="fig-00020" document="m00007"/>, the best we can say is that 50 is between the 84th and 99.5th percentiles, but that’s a pretty wide range. Google Sheets has a function that can help; it’s called NORM.DIST. Here’s how to use it:</para>
       <list list-type="enumerated" number-style="arabic" id="list-00026">
       <item>Click in an empty cell in your worksheet.</item>
       <item>Type “=NORM.DIST(“</item>

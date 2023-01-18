@@ -129,8 +129,8 @@
     <exercise id="exer-00007">
     <problem id="prob-00007">
     <list list-type="enumerated" number-style="arabic" id="list-00002">
-    <item>Determine the return on investment for the 5-year CD from <link target-id="exam-00002" document="m00062" />. Round the percentage to two decimal places.</item>
-    <item>Determine the return on investment for the money market account from <link target-id="exam-00003" document="m00062" />. Round the percentage to two decimal places.</item>
+    <item>Determine the return on investment for the 5-year CD from <link target-id="exam-00002" document="m00062"/>. Round the percentage to two decimal places.</item>
+    <item>Determine the return on investment for the money market account from <link target-id="exam-00003" document="m00062"/>. Round the percentage to two decimal places.</item>
     </list>
     </problem>
     <solution id="sol-00004">
@@ -222,14 +222,14 @@
     <para id="para-00050">=fv(rate,number_of_periods, payment, present_value, end_or_beginning).</para>
     <para id="para-00051">To explain, the rate is the rate per compounding period. From our formula, that is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>/</mo><mi>n</mi></math>. Also, the number of periods must be entered. From our formula, that is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>×</mo><mi>t</mi></mrow></math>. The payment is the amount deposited each period. Present value is 0 if we begin with no money and rely only on the payments to be made. However, if some money is available to put in the account before the payments start, that amount, an initial deposit, would be the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mi>V</mi></math>. Finally, for an ordinary annuity, enter 0 for end or beginning. Using the values for Jill, the payment amount is $250, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math> = 0.0375, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> = 12, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>t</mi></math> = 8, and that there is no initial deposit, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mi>V</mi></math> = 0, the Google Sheets formula is</para>
     <para id="para-00052" xmlns="http://cnx.rice.edu/cnxml">=fv(0.0375/12,12*8,250,0,0).</para>
-    <para id="para-00053"><link target-id="fig-00002" document="m00062" /> shows the formula in Google Sheets.</para>
+    <para id="para-00053"><link target-id="fig-00002" document="m00062"/> shows the formula in Google Sheets.</para>
     <figure id="fig-00002">
     <media alt="A Google Sheet spreadsheet. The first-row cell reads a formula, = f v (0.0375/12, 12*8, 250, 0) and the equation is highlighted.">
     <image mime-type="image/png" src="../../media/CS_Photo_06_06_002.png"/>
     </media>
     <caption>Google Sheets formula</caption>
     </figure>
-    <para id="para-00054">Hitting the enter key shows the payment value (<link target-id="fig-00003" document="m00062" />).</para>
+    <para id="para-00054">Hitting the enter key shows the payment value (<link target-id="fig-00003" document="m00062"/>).</para>
     <figure id="fig-00003">
     <media alt="A Google Sheet spreadsheet. The first-row cell reads $27,938.20 and the formula is mentioned as,= f v (0.0375/12, 12*8, 250, 0).">
     <image mime-type="image/png" src="../../media/CS_Photo_06_06_003.png"/>
@@ -279,14 +279,14 @@
     <para id="para-00067">=pmt(rate,number_of_periods, present_value, future_value, end_or_beginning).</para>
     <para id="para-00068">To explain, the rate is per compounding period. From our formula, that is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi><mo>/</mo><mi>n</mi></math>. Also, the number of periods must be entered. From our formula, that is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi><mo>×</mo><mi>t</mi></mrow></math>. The present value is the amount of money that the account begins with. If we begin with no money and rely only on the payments to be made, then this number is 0. However, if some money is available to put in the account before the payments start, that amount, an initial deposit, would be the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mi>V</mi></math>. Next, enter the future value, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>F</mi><mi>V</mi></math>. Finally, for an ordinary annuity, enter 0 for end or beginning. Using the values for Yaroslava, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>r</mi></math> = 0.0425, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> = 12, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>t</mi></math> = 3, and that there is no initial deposit, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>P</mi><mi>V</mi></math> = 0, the Google Sheets formula is</para>
     <para id="para-00069" xmlns="http://cnx.rice.edu/cnxml">=pmt(0.0425/12,12*3,0,35500,0).</para>
-    <para id="para-00070"><link target-id="fig-00004" document="m00062" /> shows the formula in Google Sheets.</para>
+    <para id="para-00070"><link target-id="fig-00004" document="m00062"/> shows the formula in Google Sheets.</para>
     <figure id="fig-00004">
     <media alt="A Google Sheet spreadsheet. The first-row cell reads a formula, = p m t (0.0425/12, 12*3, 35500, 0) and the formula is highlighted.">
     <image mime-type="image/png" src="../../media/CS_Photo_06_06_004.png"/>
     </media>
     <caption>Google Sheets formula</caption>
     </figure>
-    <para id="para-00071">Hitting the enter key shows the payment value (<link target-id="fig-00005" document="m00062" />).</para>
+    <para id="para-00071">Hitting the enter key shows the payment value (<link target-id="fig-00005" document="m00062"/>).</para>
     <figure id="fig-00005">
     <media alt="A Google Sheet spreadsheet. The first-row cell reads $926.32 and the formula is mentioned as,= p m t (0.0425/12, 12*3, 35500, 0).">
     <image mime-type="image/png" src="../../media/CS_Photo_06_06_005.png"/>
@@ -450,7 +450,7 @@
     </section>
     <section class="eoc-videos" id="sect-00013">
     <title>Videos</title>
-    <list>
+    <list id="list-00007">
     <item><link url="https://openstax.org/r/This_video">Return on Investment, ROI.</link></item>
     <item><link url="https://openstax.org/r/cell_references">Future Value using Google Sheets.</link></item>
     </list>

@@ -27,7 +27,7 @@
     <section id="sect-00002">
     <title>Adding, Subtracting, and Multiplying Using Clock Arithmetic</title>
     <para id="para-00004">When we do arithmetic, numbers can become larger and larger. But when we work with time, specifically with clocks, the numbers cycle back on themselves. It will never be 49 o’clock. Once 12 o’clock is reached, we go back to 1 and repeat the numbers. If it's 11 AM and someone says, “See you in four hours,” you know that 11 AM plus 4 hours is 3 PM, not 15 AM (ignoring military time for now). Math worked on the clock, where numbers restart after passing 12, is called <term id="term-00001">clock arithmetic</term>.</para>
-    <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (<link target-id="fig-00002" document="m00047" />). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
+    <para id="para-00005">Clock arithmetic hinges on the number 12. Each cycle of 12 hours returns to the original time (<link target-id="fig-00002" document="m00047"/>). Imagine going around the clock one full time. Twelve hours pass, but the time is the same. So, if it is 3:00, 14 hours later and two hours later both read the same on the clock, 5:00. Adding 14 hours and adding 2 hours are identical. As is adding 26 hours. And adding 38 hours.</para>
     <figure class="numbered" id="fig-00002">
     <media alt="An analog clock with the hour hand pointing to 3. A clockwise arrow around the clock is labeled 12 hours later.">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_001.jpg"/>
@@ -37,7 +37,7 @@
     <para id="para-00006">What do 2, 14, 26, and 38 have in common in relation to 12? When they are divided by 12, they each have a remainder of 2. That's the key. When you add a number of hours to a specific time on the clock, first divide the number of hours being added by 12 and determine the remainder. Add that remainder to the time on the clock to know what time it will be.</para>
     <para id="para-00048">A good visualization is to wrap a number line around the clock, with the 0 at the starting time. Then each time 12 on the number line passes, the number line passes the starting spot on the clock. This is referred to as <term id="term-00002">modulo 12</term> arithmetic. Even though the process says to divide the number being added by 12, first perform the addition; the result will be the same if you add the numbers first, and then divide by 12 and determine the remainder.</para>
     <para id="para-00049">In general terms, let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> be a positive integer. Then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, written (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> mod 12), is the remainder when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is divided by 12. If that remainder is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>, we would write <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mi>x</mi></math> (mod 12).</para>
-    <note class="check-point" id="note-00002">
+    <note class="check-point" id="note-00002" xmlns="http://cnx.rice.edu/cnxml">
     <para id="para-00007"><emphasis effect="italic">Caution: 12 mod 12 is 0. So, if a mod 12 problem ends at 0, that would be 12 on the clock.</emphasis></para>
     </note>
     <example id="exam-00001">
@@ -98,7 +98,7 @@
     </note>
     <note class="tech-check" id="note-00004">
     <title>Using Desmos to Determine the Value of a Number module 12</title>
-    <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, type <emphasis effect="bold">mod(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047" />.</para>
+    <para id="para-00027">Desmos may be used to determine the value of a number modulo 12. It is flexible enough to find the value of a number modulo of any other integer you want. To determine the value of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 12, type <emphasis effect="bold" xmlns="http://cnx.rice.edu/cnxml">mod(<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi mathvariant="bold-italic">n</mi></math>,12)</emphasis> into Desmos. The result will be displayed immediately. This can be used to find 539 modulo 12, as shown in the <link target-id="fig-00004" document="m00047" xmlns="http://cnx.rice.edu/cnxml"/>.</para>
     <figure id="fig-00004">
     <media alt="Desmos screen is displayed. It reads, 539 mod 12 equals 11.">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_003.png"/>
@@ -136,7 +136,7 @@
     <para id="para-00034">If it is 4:00 now, what time was it 67 hours ago?</para>
     </problem>
     <solution id="sol-00003">
-    <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047" />.</para>
+    <para id="para-00035">To find that past time, we may determine the value of 67 (mod 12), either by long division or by using a calculator, such as Desmos. Then subtract the result to 4:00. Entering <emphasis effect="bold">mod(67,12)</emphasis> in Desmos results in 7. Subtracting 7 hours from 4:00 results in ‒3:00. We know, though, that time is not represented with negative times. This value, ‒3:00, indicates three hours before 12:00, which is 9:00. So, 67 hours before 4:00 was 9:00. We see this in the <link target-id="fig-00003" document="m00047"/>.</para>
     <figure class="numbered" id="fig-00003">
     <media alt="An analog clock with the hour hand pointing to 4. A counterclockwise arrow around the clock is labeled negative 7 hours.">
     <image mime-type="image/jpg" src="../../media/CS_Figure_03_07_002.jpg"/>
@@ -194,7 +194,7 @@
     </exercise>
     </note>
     <para id="para-00044">Clock arithmetic processes can be applied to days of the week. Every 7 days the day of the week repeats, much like every 12 hours the time on the clock repeats. The only difference will be that we work with remainders after dividing by 7. In technical terms, this is referred to as <term id="term-00003">modulo 7</term>. More generally, let <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> be a positive integer. Then <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> modulo 7, written <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> mod 7, is the remainder when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi></math> is divided by 7. If that value is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>x</mi></math>, we may write <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>n</mi><mo>=</mo><mi>x</mi></math> (mod 7).</para>
-    <example id="exam-00006">
+    <example id="exam-00006" xmlns="http://cnx.rice.edu/cnxml">
     <title>Applying Clock Arithmetic to Days of the Week</title>
     <exercise id="exer-00011">
     <problem id="prob-00011">
@@ -287,10 +287,10 @@
     </section>
     <section class="eoc-videos" id="sect-00009">
     <title>Videos</title>
-    <list>
+    <list id="list-00004">
     <item><link url="https://openstax.org/r/Determining_the_Day_of_the_Week_for_Any_Date_in_History">Determining the Day of the Week for Any Date in History</link></item>
     <item><link url="https://openstax.org/r/Clock_Arithmetic">Clock Arithmetic</link></item>
   </list>
     </section>
     </content>
-    </document>         
+    </document>

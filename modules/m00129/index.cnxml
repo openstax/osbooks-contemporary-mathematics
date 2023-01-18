@@ -20,7 +20,7 @@
     <item>Determine if a shape tessellates.</item>
     </list>
     </section>
-    <para id="para-00002">The illustration shown above (<link target-id="fig-00001" document="m00129" />) is an unusual pattern called a Penrose tiling. Notice that there are two types of shapes used throughout the pattern: smaller green parallelograms and larger blue parallelograms. What's interesting about this design is that although it uses only two shapes over and over, there is no repeating pattern.</para>
+    <para id="para-00002">The illustration shown above (<link target-id="fig-00001" document="m00129"/>) is an unusual pattern called a Penrose tiling. Notice that there are two types of shapes used throughout the pattern: smaller green parallelograms and larger blue parallelograms. What's interesting about this design is that although it uses only two shapes over and over, there is no repeating pattern.</para>
     <para id="para-00003">In this section, we will focus on patterns that do repeat. Repeated patterns are found in architecture, fabric, floor tiles, wall patterns, rug patterns, and many unexpected places as well. It may be a simple hexagon-shaped floor tile, or a complex pattern composed of several different motifs. These two-dimensional designs are called regular (or periodic) tessellations. There are countless designs that may be classified as regular tessellations, and they all have one thing in common—their patterns repeat and cover the plane.</para>
     <para id="para-00004">We will explore how tessellations are created and experiment with making some of our own as well. The topic of tessellations belongs to a field in mathematics called transformational geometry, which is a study of the ways objects can be moved while retaining the same shape and size. These movements are termed <emphasis effect="italic">rigid motions</emphasis> and <emphasis effect="italic">symmetries</emphasis>.</para>
     <note class="who-knew" id="note-00001">
@@ -42,7 +42,7 @@
     <item>All the shapes are joined at a vertex. In other words, if you were to draw a circle around a vertex, it would include a corner of each shape touching at that vertex.</item>
     <item>For a tessellation of regular congruent polygons, the sum of the measures of the interior angles that meet at a vertex equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math></item>
     </list></para>
-    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">In <link target-id="fig-00002" document="m00129" />, the tessellation is made up of squares. There are four squares meeting at a vertex. An interior angle of a square is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> and the sum of four interior angles is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> In <link target-id="fig-00003" document="m00129" xmlns="http://cnx.rice.edu/cnxml" />, the tessellation is made up of regular hexagons. There are three hexagons meeting at each vertex. The interior angle of a hexagon is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>120</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and the sum of three interior angles is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> Both tessellations will fill the plane, there are no gaps, the sum of the interior angle meeting at the vertex is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and both are achieved by translation transformations. These tessellations work because all the properties of a tessellation are present.</para>
+    <para id="para-00011" xmlns="http://cnx.rice.edu/cnxml">In <link target-id="fig-00002" document="m00129"/>, the tessellation is made up of squares. There are four squares meeting at a vertex. An interior angle of a square is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup></mrow></math> and the sum of four interior angles is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> In <link target-id="fig-00003" document="m00129" xmlns="http://cnx.rice.edu/cnxml"/>, the tessellation is made up of regular hexagons. There are three hexagons meeting at each vertex. The interior angle of a hexagon is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>120</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and the sum of three interior angles is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>.</mo></mrow></math> Both tessellations will fill the plane, there are no gaps, the sum of the interior angle meeting at the vertex is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and both are achieved by translation transformations. These tessellations work because all the properties of a tessellation are present.</para>
     <figure id="fig-00002" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="A square grid is made up of four rows of four squares, each. Points are marked at the bottom-right vertices of the first, second, and third squares in the first row. The second point is outlined. Points are marked at the bottom-right vertices of the first and third squares in the third row.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_028.png"/>
@@ -58,7 +58,7 @@
     <para id="para-00012">The movements or rigid motions of the shapes that define tessellations are classified as translations, rotations, reflections, or glide reflections. Let’s first define these movements and then look at some examples showing how these transformations are revealed.</para>
     <section id="sect-00003">
     <title>Translation</title>
-    <para id="para-00013">A translation is a movement that shifts the shape vertically, horizontally, or on the diagonal. Consider the trapezoid <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></math> in <link target-id="fig-00004" document="m00129" xmlns="http://cnx.rice.edu/cnxml" />. We have translated it 3 units to the right and 3 units up. That means every corner is moved by the number of units and in the direction specified. Mathematicians will indicate this movement with a vector, an arrow that is drawn to illustrate the criteria and the magnitude of the translation. The location of the translated trapezoid is marked with the vertices, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup><msup><mi>D</mi><mo>′</mo></msup><mo>,</mo></mrow></math> but it is still the exact same shape and size as the original trapezoid <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></math>.</para>
+    <para id="para-00013">A translation is a movement that shifts the shape vertically, horizontally, or on the diagonal. Consider the trapezoid <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></math> in <link target-id="fig-00004" document="m00129" xmlns="http://cnx.rice.edu/cnxml"/>. We have translated it 3 units to the right and 3 units up. That means every corner is moved by the number of units and in the direction specified. Mathematicians will indicate this movement with a vector, an arrow that is drawn to illustrate the criteria and the magnitude of the translation. The location of the translated trapezoid is marked with the vertices, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>A</mi><mo>′</mo></msup><msup><mi>B</mi><mo>′</mo></msup><msup><mi>C</mi><mo>′</mo></msup><msup><mi>D</mi><mo>′</mo></msup><mo>,</mo></mrow></math> but it is still the exact same shape and size as the original trapezoid <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></math>.</para>
     <figure id="fig-00004" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="A trapezoid is translated on a rectangular grid. The vertices of the original trapezoid are A, B, C, and D. The trapezoid can be described as follows. The top side measures 2 units. From its right, it goes 3 units bottom-right, then goes 4 units left, and then goes 3 units to the top-right. The trapezoid is translated 3 units to the right and 3 units up. The vertices of the translated trapezoid are A prime, B prime, C prime, and D prime.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_030.png"/>
@@ -69,7 +69,7 @@
     <title>Creating a Translation</title>
     <exercise id="exer-00001">
     <problem id="prob-00001">
-    <para id="para-00014">Suppose you have a hexagon on a grid as in <link target-id="fig-00005" document="m00129" />. Translate the hexagon 5 units to the right and 3 units up.</para>
+    <para id="para-00014">Suppose you have a hexagon on a grid as in <link target-id="fig-00005" document="m00129"/>. Translate the hexagon 5 units to the right and 3 units up.</para>
     <figure id="fig-00005">
     <media alt="Hexagon, A B C D E F is plotted on a grid. The bottom and top sides, A F and C D measure 3 units, each. The other sides, C B, B A, D E, and E F measure 2 units, each.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN001.png"/>
@@ -98,7 +98,7 @@
     </section>
     <section id="sect-00004">
     <title>Rotation</title>
-    <para id="para-00017">The rotation transformation occurs when you rotate a shape about a point and at a predetermined angle. In <link target-id="fig-00007" document="m00129" />, the triangle is rotated around the rotation point by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and then translated 7 units up and 4 units over to the right. That means that each corner is translated to the new location by the same number of units and in the same direction.</para>
+    <para id="para-00017">The rotation transformation occurs when you rotate a shape about a point and at a predetermined angle. In <link target-id="fig-00007" document="m00129"/>, the triangle is rotated around the rotation point by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>90</mn></mrow><mo>∘</mo></msup><mo>,</mo></mrow></math> and then translated 7 units up and 4 units over to the right. That means that each corner is translated to the new location by the same number of units and in the same direction.</para>
     <figure id="fig-00007" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="A triangle is rotated in a rectangular grid. The original triangle is plotted on a rectangular grid. The bottom-left vertex is labeled A and rotation point. The sides of the triangle measure 3 units. The base measures 4 units. The triangle is rotated 90 degrees about the rotation point. The triangle is moved 7 units up and 4 units to the right. In the rotated triangle, one of the vertices is labeled A prime.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_031.png"/>
@@ -110,7 +110,7 @@
     <title>Applying a Rotation</title>
     <exercise id="exer-00003">
     <problem id="prob-00003">
-    <para id="para-00019"><link target-id="fig-00008" document="m00129" /> illustrates a tessellation begun with an equilateral triangle. Explain how this pattern is produced.</para>
+    <para id="para-00019"><link target-id="fig-00008" document="m00129"/> illustrates a tessellation begun with an equilateral triangle. Explain how this pattern is produced.</para>
     <figure id="fig-00008">
     <media alt="Two tessellation patterns. The first tessellation pattern shows six equilateral triangles. The triangles are arranged in a circle and counterclockwise arrows are drawn. A point is marked at the center of the triangles. The second tessellation pattern is made up of three hexagons. Each hexagon is made up of six equilateral triangles.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN005.png"/>
@@ -133,7 +133,7 @@
     </section>
     <section id="sect-00005">
     <title>Reflection</title>
-    <para id="para-00022">A reflection is the third transformation. A shape is reflected about a line and the new shape becomes a mirror image. You can reflect the shape vertically, horizontally, or on the diagonal. There are two shapes in <link target-id="fig-00009" document="m00129" />. The quadrilateral is reflected horizontally; the arrow shape is reflected vertically.</para>
+    <para id="para-00022">A reflection is the third transformation. A shape is reflected about a line and the new shape becomes a mirror image. You can reflect the shape vertically, horizontally, or on the diagonal. There are two shapes in <link target-id="fig-00009" document="m00129"/>. The quadrilateral is reflected horizontally; the arrow shape is reflected vertically.</para>
     <figure id="fig-00009">
     <media alt="Two shapes are reflected vertically and horizontally about a dashed line. The first shape is a right trapezoid. The bottom side measures 4 units. From its left, it goes 2 and a half units, then goes 4 units top-right, and then goes 3 units down. The shape is reflected along a vertical dashed line. The second shape is an up arrow. The bottom side measures 2 units. From its left, it goes 1 unit up, then goes 1 and a quarter units left, then goes 2 and a quarter units top-right, then goes 2 and a quarter units bottom-right, then goes 1 and a quarter units left, and then goes 1 unit down. The arrow is reflected along a horizontal dashed line.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_032a.png"/>
@@ -143,7 +143,7 @@
     </section>
     <section id="sect-00006">
     <title>Glide Reflection</title>
-    <para id="para-00023">The glide reflection is the fourth transformation. It is a combination of a reflection and a translation. This can occur by first reflecting the shape and then gliding or translating it to its new location, or by translating first and then reflecting. The example in <link target-id="fig-00010" document="m00129" /> shows a trapezoid, which is reflected over the dashed line, so it appears upside down. Then, we shifted the shape horizontally by 6 units to the right. Whether we use the glide first or the reflection first, the end result is the same in most cases. However, the tessellation shown in the next example can only be achieved by a reflection first and then a translation.</para>
+    <para id="para-00023">The glide reflection is the fourth transformation. It is a combination of a reflection and a translation. This can occur by first reflecting the shape and then gliding or translating it to its new location, or by translating first and then reflecting. The example in <link target-id="fig-00010" document="m00129"/> shows a trapezoid, which is reflected over the dashed line, so it appears upside down. Then, we shifted the shape horizontally by 6 units to the right. Whether we use the glide first or the reflection first, the end result is the same in most cases. However, the tessellation shown in the next example can only be achieved by a reflection first and then a translation.</para>
     <figure id="fig-00010">
     <media alt="A trapezoid is reflected across a dashed line on a rectangular grid. The original trapezoid, A B C D is described as follows. The bottom side, A D measures 4 units. The left side, A B measures 3 units. The top side, B C measures 2 units. The right side, C D measures 3 units. The original trapezoid is reflected across a dashed line above it. The reflected trapezoid is shifted 6 units to the right. ">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_032b.png"/>
@@ -154,7 +154,7 @@
     <title>Applying the Glide Reflection</title>
     <exercise id="exer-00005">
     <problem id="prob-00005">
-    <para id="para-00024">An obtuse triangle is reflected about the dashed line, and the two shapes are joined together. How does the tessellation shown in <link target-id="fig-00011" document="m00129" /> materialize?</para>
+    <para id="para-00024">An obtuse triangle is reflected about the dashed line, and the two shapes are joined together. How does the tessellation shown in <link target-id="fig-00011" document="m00129"/> materialize?</para>
     <figure id="fig-00011">
     <media alt="An obtuse triangle is reflected about a dashed line. The shapes are joined together and it resembles a down arrowhead. The joined shapes are reflected horizontally and it resembles an up arrowhead. A tessellation pattern is made up of three rows of four down arrowheads, each and three rows of three up arrowheads, each.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN007.png"/>
@@ -178,7 +178,7 @@
     <title>Applying More Than One Tessellation</title>
     <exercise id="exer-00007">
     <problem id="prob-00007">
-    <para id="para-00027">Show how this tessellation (<link target-id="fig-00012" document="m00129" />) can be achieved.</para>
+    <para id="para-00027">Show how this tessellation (<link target-id="fig-00012" document="m00129"/>) can be achieved.</para>
     <figure id="fig-00012">
     <media alt="A tessellation pattern made up of six trapezoids is plotted on a rectangular grid. The sides of each square measure 2 units. The sides of each equilateral triangle measure 2 units. The square A 1 is rotated 30 degrees to the right to form a new square A 2. The new square is reflected horizontally to form a new square A 3. These 3 squares are reflected vertically along a dashed line. The spaces in between the squares resemble triangles.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN009.png"/>
@@ -202,14 +202,14 @@
     </section>
     <section id="sect-00007">
     <title>Interior Angles</title>
-    <para id="para-00030">The sum of the interior angles of a tessellation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup></mrow></math>. In <link target-id="fig-00015" document="m00129" xmlns="http://cnx.rice.edu/cnxml" />, the tessellation is made of six triangles formed into the shape of a hexagon. Each angle inside a triangle equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup></mrow></math>, and the six vertices meet the sum of those interior angles, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mrow><mo>(</mo><mrow><msup><mrow><mn>60</mn></mrow><mo>°</mo></msup></mrow><mo>)</mo></mrow><mo>=</mo><msup><mrow><mn>360</mn></mrow><mo>°</mo></msup></mrow></math>.</para>
+    <para id="para-00030">The sum of the interior angles of a tessellation is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>360</mn></mrow><mo>∘</mo></msup></mrow></math>. In <link target-id="fig-00015" document="m00129" xmlns="http://cnx.rice.edu/cnxml"/>, the tessellation is made of six triangles formed into the shape of a hexagon. Each angle inside a triangle equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>60</mn></mrow><mo>∘</mo></msup></mrow></math>, and the six vertices meet the sum of those interior angles, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>6</mn><mrow><mo>(</mo><mrow><msup><mrow><mn>60</mn></mrow><mo>°</mo></msup></mrow><mo>)</mo></mrow><mo>=</mo><msup><mrow><mn>360</mn></mrow><mo>°</mo></msup></mrow></math>.</para>
     <figure id="fig-00015" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="A hexagon is made up of six equilateral triangles. A point is marked at the center of the hexagon and it is outlined.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_034.png"/>
     </media>
     <caption>Interior Angles at the Vertex of Triangles</caption>
     </figure>
-    <para id="para-00032">In <link target-id="fig-00013" document="m00129" />, the tessellation is made up of trapezoids, such that two of the interior angles of each trapezoid equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>75</mn></mrow><mo>°</mo></msup></mrow></math> and the other two angles equal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>105</mn></mrow><mo>°</mo></msup></mrow></math>. Thus, the sum of the interior angles where the vertices of four trapezoids meet equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>105</mn></mrow><mo>°</mo></msup><mo>+</mo><msup><mrow><mn>75</mn></mrow><mo>°</mo></msup><mo>+</mo><msup><mrow><mn>75</mn></mrow><mo>°</mo></msup><mo>+</mo><msup><mrow><mn>105</mn></mrow><mo>°</mo></msup><mo>=</mo><msup><mrow><mn>360</mn></mrow><mo>°</mo></msup></mrow></math>.</para>
+    <para id="para-00032">In <link target-id="fig-00013" document="m00129"/>, the tessellation is made up of trapezoids, such that two of the interior angles of each trapezoid equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>75</mn></mrow><mo>°</mo></msup></mrow></math> and the other two angles equal <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>105</mn></mrow><mo>°</mo></msup></mrow></math>. Thus, the sum of the interior angles where the vertices of four trapezoids meet equals <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mrow><mn>105</mn></mrow><mo>°</mo></msup><mo>+</mo><msup><mrow><mn>75</mn></mrow><mo>°</mo></msup><mo>+</mo><msup><mrow><mn>75</mn></mrow><mo>°</mo></msup><mo>+</mo><msup><mrow><mn>105</mn></mrow><mo>°</mo></msup><mo>=</mo><msup><mrow><mn>360</mn></mrow><mo>°</mo></msup></mrow></math>.</para>
     <figure id="fig-00013" xmlns="http://cnx.rice.edu/cnxml">
     <media alt="Insert Alt Text">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_034a.png"/>
@@ -220,7 +220,7 @@
     </section>
     <section id="sect-00008" xmlns="http://cnx.rice.edu/cnxml">
     <title>Tessellating Shapes</title>
-    <para id="para-00033">We might think that all regular polygons will tessellate the plane by themselves. We have seen that squares do and hexagons do. The pattern of squares in <link target-id="fig-00016" document="m00129" /> is a translation of the shape horizontally and vertically. The hexagonal pattern in <link target-id="fig-00017" document="m00129" />, is translated horizontally, and then on the diagonal, either to the right or to the left. This particular pattern can also be formed by rotations. Both tessellations are made up of congruent shapes and each shape fits in perfectly as the pattern repeats.</para>
+    <para id="para-00033">We might think that all regular polygons will tessellate the plane by themselves. We have seen that squares do and hexagons do. The pattern of squares in <link target-id="fig-00016" document="m00129"/> is a translation of the shape horizontally and vertically. The hexagonal pattern in <link target-id="fig-00017" document="m00129"/>, is translated horizontally, and then on the diagonal, either to the right or to the left. This particular pattern can also be formed by rotations. Both tessellations are made up of congruent shapes and each shape fits in perfectly as the pattern repeats.</para>
     <figure id="fig-00016">
     <media alt="A rectangular grid is made up of three rows of four squares, each. Points are marked at the bottom-right vertices of the first, and third squares in the first row. Points are marked at the bottom-right vertices of the first and third squares in the third row.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_035.png"/>
@@ -233,7 +233,7 @@
     </media>
     <caption>Translation Horizontally and Slide Diagonally</caption>
     </figure>
-    <para id="para-00034">We have also seen that equilateral triangles will tessellate the plane without gaps or overlaps, as shown in <link target-id="fig-00018" document="m00129" />. The pattern is made by a reflection and a translation. The darker side is the face of the triangle and the lighter side is the back of the triangle, shown by the reflection. Each triangle is reflected and then translated on the diagonal.</para>
+    <para id="para-00034">We have also seen that equilateral triangles will tessellate the plane without gaps or overlaps, as shown in <link target-id="fig-00018" document="m00129"/>. The pattern is made by a reflection and a translation. The darker side is the face of the triangle and the lighter side is the back of the triangle, shown by the reflection. Each triangle is reflected and then translated on the diagonal.</para>
     <figure id="fig-00018">
     <media alt="A tessellation pattern is made up of 10 red triangles and 10 white triangles.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_037.png"/>
@@ -245,7 +245,7 @@
     <title>Tessellating the Plane</title>
     <exercise id="exer-00009">
     <problem id="prob-00009">
-    <para id="para-00036">Do regular pentagons tessellate the plane by themselves (<link target-id="fig-00019" document="m00129" />)?</para>
+    <para id="para-00036">Do regular pentagons tessellate the plane by themselves (<link target-id="fig-00019" document="m00129"/>)?</para>
     <figure id="fig-00019">
     <media alt="A tessellation pattern is made up of eight pentagons.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN011.png"/>
@@ -269,7 +269,7 @@
     <title>Tessellating Octagons</title>
     <exercise id="exer-00011">
     <problem id="prob-00011">
-    <para id="para-00039">Do regular octagons tessellate the plane by themselves (<link target-id="fig-00020" document="m00129" />)?</para>
+    <para id="para-00039">Do regular octagons tessellate the plane by themselves (<link target-id="fig-00020" document="m00129"/>)?</para>
     <figure id="fig-00020">
     <media alt="A tessellation pattern is made up of 12 octagons. The octagons are arranged in such a way that 3 squares are formed.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN013.png"/>
@@ -289,14 +289,14 @@
     </problem>
     </exercise>
     </note>
-    <para id="para-00042">Just because regular pentagons do not tessellate the plane by themselves does not mean that there are no pentagons that tessellate the plane, as we see in <link target-id="fig-00021" document="m00129" />.</para>
+    <para id="para-00042">Just because regular pentagons do not tessellate the plane by themselves does not mean that there are no pentagons that tessellate the plane, as we see in <link target-id="fig-00021" document="m00129"/>.</para>
     <figure id="fig-00021">
     <media alt="A tessellation pattern is made up of 48 pentagons.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_038.png"/>
     </media>
     <caption>Tessellation of Pentagons</caption>
     </figure>
-    <para id="para-00043">Another example of an irregular polygon that tessellates the plane is by using the obtuse irregular triangle from a previous example. What transformations should be performed to produce the tessellation shown in <link target-id="fig-00022" document="m00129" />?</para>
+    <para id="para-00043">Another example of an irregular polygon that tessellates the plane is by using the obtuse irregular triangle from a previous example. What transformations should be performed to produce the tessellation shown in <link target-id="fig-00022" document="m00129"/>?</para>
     <figure id="fig-00022">
     <media alt="Two figures. The first figure shows two triangles. In each triangle, a vertex is labeled A. The second figure is a tessellation pattern made up of 16 triangles.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_039.png"/>
@@ -306,8 +306,8 @@
     <para id="para-00044">First, the triangle is reflected over the tip at point <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, and then translated to the right and joined with the original triangle to form a parallelogram. The parallelogram is then translated on the diagonal and to the right and to the left.</para>
     <section id="sect-00009" xmlns="http://cnx.rice.edu/cnxml">
     <title>Naming</title>
-    <para id="para-00046">A tessellation of squares is named by choosing a vertex and then counting the number of sides of each shape touching the vertex. Each square in the tessellation shown in <link target-id="fig-00024" document="m00129" /> has four sides, so starting with square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, the first number is 4, moving around counterclockwise to the next square meeting the vertex, square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>, we have another 4, square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> adds another 4, and finally square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>D</mi></math> adds a fourth 4. So, we would name this tessellation a 4.4.4.4.</para>
-    <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml">The hexagon tessellation, shown in <link target-id="fig-00025" document="m00129" /> has six sides to the shape and three hexagons meet at the vertex. Thus, we would name this a 6.6.6. The triangle tessellation, shown in <link target-id="fig-00026" document="m00129" /> has six triangles meeting the vertex. Each triangle has three sides. Thus, we name this a 3.3.3.3.3.3.</para>
+    <para id="para-00046">A tessellation of squares is named by choosing a vertex and then counting the number of sides of each shape touching the vertex. Each square in the tessellation shown in <link target-id="fig-00024" document="m00129"/> has four sides, so starting with square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>A</mi></math>, the first number is 4, moving around counterclockwise to the next square meeting the vertex, square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>B</mi></math>, we have another 4, square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>C</mi></math> adds another 4, and finally square <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>D</mi></math> adds a fourth 4. So, we would name this tessellation a 4.4.4.4.</para>
+    <para id="para-00047" xmlns="http://cnx.rice.edu/cnxml">The hexagon tessellation, shown in <link target-id="fig-00025" document="m00129"/> has six sides to the shape and three hexagons meet at the vertex. Thus, we would name this a 6.6.6. The triangle tessellation, shown in <link target-id="fig-00026" document="m00129"/> has six triangles meeting the vertex. Each triangle has three sides. Thus, we name this a 3.3.3.3.3.3.</para>
     <figure id="fig-00024">
     <media alt="A figure made up of 3 rows of squares. The first two rows have 3 squares, each. The last row has 2 squares. The first two squares in the first row are labeled D and C. A point is marked at the bottom-right vertex of the first square. The second two squares in the second row are labeled A and B.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_041.png"/>
@@ -333,7 +333,7 @@
     <para id="para-00048">Create a tessellation using two colors and two shapes.</para>
     </problem>
     <solution id="sol-00007">
-    <para id="para-00049">We used a parallelogram and an isosceles triangle. The parallelogram is reflected vertically and horizontally so that only every other corner touches. The triangles are reflected vertically and horizontally and then translated over the parallelogram. The result is alternating vertical columns of parallelograms and then triangles (<link target-id="fig-00027" document="m00129" />).</para>
+    <para id="para-00049">We used a parallelogram and an isosceles triangle. The parallelogram is reflected vertically and horizontally so that only every other corner touches. The triangles are reflected vertically and horizontally and then translated over the parallelogram. The result is alternating vertical columns of parallelograms and then triangles (<link target-id="fig-00027" document="m00129"/>).</para>
     <figure id="fig-00027">
     <media alt="A tessellation pattern. The pattern has four rows. Each row has a triangle, a parallelogram, a triangle, a parallelogram, a triangle, a parallelogram, and a triangle.">
     <image mime-type="image/png" src="../../media/CS_Figure_10_05_UN015.png"/>
