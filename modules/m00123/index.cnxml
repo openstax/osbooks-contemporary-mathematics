@@ -1,7 +1,7 @@
 <document xmlns="http://cnx.rice.edu/cnxml">
-  <title>Traveling Salesman Problem</title>
+  <title>Traveling Salesperson Problem</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:title>Traveling Salesman Problem</md:title>
+  <md:title>Traveling Salesperson Problem</md:title>
   <md:content-id>m00123</md:content-id>
   <md:uuid>d9b00371-a3a1-4568-9b4b-7110a7c8c96f</md:uuid>
   </metadata>
@@ -10,7 +10,7 @@
     <media alt="Three doors are shown side-by-side.">
     <image mime-type="image/jpg" src="../../media/CS_Photo_12_09_001.jpg"/>
     </media>
-    <caption>Each door on the route of a traveling salesman can be represented as a vertex on a graph. (credit: "Three in a row, Heriot Row" by Jason Mason/Flickr, CC BY 2.1)</caption>
+    <caption>Each door on the route of a traveling salesperson can be represented as a vertex on a graph. (credit: "Three in a row, Heriot Row" by Jason Mason/Flickr, CC BY 2.1)</caption>
     </figure>
     <section class="learning-objectives" id="sect-00001">
     <title>Learning Objectives</title>
@@ -18,8 +18,8 @@
     <list list-type="enumerated" number-style="arabic" id="list-00001">
     <item>Distinguish between brute force algorithms and greedy algorithms.</item>
     <item>List all distinct Hamilton cycles of a complete graph.</item>
-    <item>Apply brute force method to solve traveling salesman applications.</item>
-    <item>Apply nearest neighbor method to solve traveling salesman applications.</item>
+    <item>Apply brute force method to solve traveling salesperson applications.</item>
+    <item>Apply nearest neighbor method to solve traveling salesperson applications.</item>
     </list>
     </section>
     <para id="para-00002">We looked at Hamilton cycles and paths in the previous sections <link target-id="sect-00001" document="m00121">Hamilton Cycles</link> and <link target-id="sect-00001" document="m00122">Hamilton Paths</link>. In this section, we will analyze Hamilton cycles in complete weighted graphs to find the shortest route to visit a number of locations and return to the starting point. Besides the many routing applications in which we need the shortest distance, there are also applications in which we search for the route that is least expensive or takes the least time. Here are a few less common applications that you can read about on <link url="https://openstax.org/r/University_of_Waterloo">a website set up by the mathematics department at the University of Waterloo in Ontario, Canada:</link></para>
@@ -313,7 +313,7 @@
     </section>
     <section id="sect-00006" xmlns="http://cnx.rice.edu/cnxml">
     <title>The Nearest Neighbor Method</title>
-    <para id="para-00055">When the brute force method is impractical for solving a traveling salesman problem, an alternative is a greedy algorithm known as the <term id="term-00005">nearest neighbor method</term>, which always visit the closest or least costly place first. This method finds a Hamilton cycle of relatively low weight in a complete graph in which, at each phase, the next vertex is chosen by comparing the edges between the current vertex and the remaining vertices to find the lowest weight. Since the nearest neighbor method is a greedy algorithm, it usually doesn’t give the best solution, but it usually gives a solution that is "good enough." Most importantly, the number of steps will be the number of vertices. That’s right! A problem with 10 vertices requires 10 steps, not 362,880. Let’s look at an example to see how it works.</para>
+    <para id="para-00055">When the brute force method is impractical for solving a traveling salesperson problem, an alternative is a greedy algorithm known as the <term id="term-00005">nearest neighbor method</term>, which always visit the closest or least costly place first. This method finds a Hamilton cycle of relatively low weight in a complete graph in which, at each phase, the next vertex is chosen by comparing the edges between the current vertex and the remaining vertices to find the lowest weight. Since the nearest neighbor method is a greedy algorithm, it usually doesn’t give the best solution, but it usually gives a solution that is "good enough." Most importantly, the number of steps will be the number of vertices. That’s right! A problem with 10 vertices requires 10 steps, not 362,880. Let’s look at an example to see how it works.</para>
     <para id="para-00056">Suppose that a candidate for governor wants to hold rallies around the state. They plan to leave their home in city <emphasis effect="italic">A</emphasis>, visit cities <emphasis effect="italic">B, C, D, E</emphasis>, and <emphasis effect="italic">F</emphasis> each once, and return home. The airfare between cities is indicated in the graph in <link target-id="fig-00024" document="m00123"/>.</para>
     <figure id="fig-00024">
     <media alt="A graph represents the airfares between six different cities. The graph has 6 vertices. The vertices are A, B, C, D, E, and F. Edges from A leading to B, C, D, E, and F are labeled 250 dollars, 210 dollars, 300 dollars, 200 dollars, and 100 dollars. Edges from B leading to C, D, E, and F are labeled 220 dollars, 120 dollars, 160 dollars, and 170 dollars. Edges from C to D, E, and F are labeled 310 dollars, 180 dollars, and 330 dollars. Edges from D to E and F 270 dollars and 150 dollars. An edge from E to F is labeled 350 dollars.">
@@ -505,7 +505,7 @@
     <list id="list-00008">
     <item>brute force algorithm</item>
     <item>greedy algorithm</item>
-    <item>traveling salesman problem (TSP)</item>
+    <item>traveling salesperson problem (TSP)</item>
     <item>brute force method</item>
     <item>nearest neighbor method</item>
     </list>
