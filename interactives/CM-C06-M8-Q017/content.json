@@ -1,0 +1,49 @@
+{
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 100
+    }
+  ],
+  "behaviour": {
+    "inputFieldSize": "10",
+    "enableRetry": true,
+    "ignoreScoring": false,
+    "pointsHost": 1,
+    "linebreakReplacement": " "
+  },
+  "checkAnswer": "Check",
+  "submitAnswer": "Submit",
+  "tryAgain": "Retry",
+  "showSolution": "Show solution",
+  "feedbackHeader": "Feedback",
+  "solutionTitle": "Sample solution",
+  "remainingChars": "Remaining characters: @chars",
+  "notEnoughChars": "You must enter at least @chars characters!",
+  "messageSave": "saved",
+  "ariaYourResult": "You got @score out of @total points",
+  "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+  "ariaCheck": "Check the answers.",
+  "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+  "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+  "taskDescription": "<p>Given the following transactions on your Visa statement, calculate the opening balance for your next billing period. The interest rate on unpaid balances is 20.5%.</p>\n<p><table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<th>Date</th>\n<th>Activity</th>\n<th>Amount</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Oct. 1</td>\n<td>Balance</td>\n<td>$506.50</td>\n</tr>\n<tr>\n<td>Oct. 15</td>\n<td>Purchase</td>\n<td>$300.00</td>\n</tr>\n<tr>\n<td>Oct. 20</td>\n<td>Payment</td>\n<td>$250.00</td>\n</tr>\n<tr>\n<td>Oct. 31</td>\n<td>Gasoline</td>\n<td>$45.00</td>\n</tr>\n</tbody>\n</table></p>",
+  "isSolutionPublic": true,
+  "solution": {
+    "introduction": "",
+    "sample": ""
+  },
+  "keywords": [
+    {
+      "options": {
+        "points": 1,
+        "occurrences": 1,
+        "caseSensitive": false,
+        "forgiveMistakes": false,
+        "feedbackIncludedWord": "keyword",
+        "feedbackMissedWord": "none"
+      },
+      "keyword": "*"
+    }
+  ],
+  "detailedSolution": "<p>Create a table for a running balance.</p>\n<table class=\"unnumbered\" summary=\".\">\n<thead>\n<tr>\n<td>Date</td>\n<td>Running Balance</td>\n<td>Number of Days Until Change</td>\n<td>Running Balance * Number of Days</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Oct.1</td>\n<td>$506</td>\n<td>14</td>\n<td>$7,091</td>\n</tr>\n<tr>\n<td>Oct. 15</td>\n<td>$806</td>\n<td>5</td>\n<td>$4,030</td>\n</tr>\n<tr>\n<td>Oct. 20</td>\n<td>$556</td>\n<td>11</td>\n<td>$6,116</td>\n</tr>\n<tr>\n<td>Oct. 31</td>\n<td>$601</td>\n<td>1</td>\n<td>$601</td>\n</tr>\n<tr>\n<td></td>\n<td>Totals</td>\n<td>31</td>\n<td>$17,831</td>\n</tr>\n</tbody>\n</table>\n<p>Compute the average daily balance: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mn>17838</mn>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mn>31</mn>\n    </mrow>\n  </mfrac>\n  <mo>=</mo>\n  <mi mathvariant=\"normal\">$<!-- $ --></mi>\n  <mn>575.19.</mn>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{17838}}{{31}} = \\$ 575.19.</annotation></semantics></math></p>\n<p>The interest rate is 20.5%, but monthly it is 1.7%. Then, the finance charge is $9.77. The opening balance for the next billing cycle is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi mathvariant=\"normal\">$<!-- $ --></mi>\n  <mn>601</mn>\n  <mo>+</mo>\n  <mi mathvariant=\"normal\">$<!-- $ --></mi>\n  <mn>9.77</mn>\n  <mo>=</mo>\n  <mi mathvariant=\"normal\">$<!-- $ --></mi>\n  <mn>610.77.</mn>\n</mrow><annotation encoding=\"LaTeX\">\\$ 601 + \\$ 9.77 = \\$ 610.77.</annotation></semantics></math></p>"
+}
