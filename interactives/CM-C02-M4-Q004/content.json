@@ -1,0 +1,298 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 4,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>p</mi>\n      <mo>∧<!-- ∧ --></mo>\n      <mi>q</mi>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mtext>~</mtext>\n      <mi>p</mi>\n      <mo>∨<!-- ∨ --></mo>\n      <mtext>~</mtext>\n      <mi>q</mi>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}\\left( {p \\wedge q} \\right) \\leftrightarrow \\left( {\\text{~}p \\vee \\text{~}q} \\right)</annotation></semantics></math>",
+        "subContentId": "42701216-2620-46db-87f2-3c1f29558c57",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "\nValid\n<table>\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo>∧<!-- ∧ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{p} \\wedge {q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>p</mi>\n      </mrow>\n      <mo>∧<!-- ∧ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>q</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}\\left( {{p} \\wedge {q}} \\right)</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo>∨<!-- ∨ --></mo>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p} \\vee \\text{~}{q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>p</mi>\n      </mrow>\n      <mo>∧<!-- ∧ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>q</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mtext>~</mtext>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>p</mi>\n      </mrow>\n      <mo>∨<!-- ∨ --></mo>\n      <mtext>~</mtext>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>q</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}\\left( {{p} \\wedge {q}} \\right) \\leftrightarrow \\left( {\\text{~}{p} \\vee \\text{~}{q}} \\right)</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M4-Q004-1",
+        "extraTitle": "CM-C02-M4-Q004-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mi>p</mi>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mi>q</mi>\n  <mo>∧<!-- ∧ --></mo>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}p \\leftrightarrow q \\wedge p</annotation></semantics></math>",
+        "subContentId": "2c43dea3-633d-4204-912d-52892a946c69",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "Not Valid\n<table>\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n  <mo>∧<!-- ∧ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{q} \\wedge {p}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>q</mi>\n      </mrow>\n      <mo>∧<!-- ∧ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>p</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p} \\leftrightarrow \\left( {{q} \\wedge {p}} \\right)</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td><b>F</b></td>\n</tr>\n<tr>                                                                                                                                                                                                                                                                                                                     \n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td><b>F</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td><b>F</b></td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M4-Q004-2",
+        "extraTitle": "CM-C02-M4-Q004-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n  <mo stretchy=\"false\">→<!-- → --></mo>\n  <mi>q</mi>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> </mtext>\n  </mrow>\n  <mtext>~</mtext>\n  <mi>p</mi>\n  <mo>∨<!-- ∨ --></mo>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">p \\to q \\leftrightarrow {\\text{ }}\\text{~}p \\vee q</annotation></semantics></math>",
+        "subContentId": "9c96a2a0-fefa-410f-9194-16eca2aa9704",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "Valid\n<table>\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo stretchy=\"false\">→<!-- → --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{p} \\to {q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo>∨<!-- ∨ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p} \\vee {q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>p</mi>\n      <mo stretchy=\"false\">→<!-- → --></mo>\n      <mi>q</mi>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mtext>~</mtext>\n      <mi>p</mi>\n      <mo>∨<!-- ∨ --></mo>\n      <mi>q</mi>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {p \\to q} \\right) \\leftrightarrow \\left( {\\text{~}p \\vee q} \\right)</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M4-Q004-3",
+        "extraTitle": "CM-C02-M4-Q004-3"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n  <mo>∧<!-- ∧ --></mo>\n  <mi>q</mi>\n  <mo stretchy=\"false\">→<!-- → --></mo>\n  <mi>r</mi>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> </mtext>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> </mtext>\n  </mrow>\n  <mtext>~</mtext>\n  <mi>p</mi>\n  <mo>∨<!-- ∨ --></mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n  <mo>∨<!-- ∨ --></mo>\n  <mi>r</mi>\n</mrow><annotation encoding=\"LaTeX\">p \\wedge q \\to r{\\text{ }} \\leftrightarrow {\\text{ }}\\text{~}p \\vee \\text{~}q \\vee r</annotation></semantics></math>",
+        "subContentId": "e8ff3b17-1828-48df-8a1a-c2c3e83aead9",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "Valid\n<table>\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>r</mi>\n</mrow><annotation encoding=\"LaTeX\">r</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo>∧<!-- ∧ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{p} \\wedge {q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>p</mi>\n      </mrow>\n      <mo>∧<!-- ∧ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>q</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo stretchy=\"false\">→<!-- → --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>r</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {{p} \\wedge {q}} \\right) \\to {r}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>p</mi>\n  </mrow>\n  <mo>∨<!-- ∨ --></mo>\n  <mtext>~</mtext>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>q</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}{p} \\vee \\text{~}{q}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mtext>~</mtext>\n        <mi>p</mi>\n      </mrow>\n      <mo>∨<!-- ∨ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mtext>~</mtext>\n        <mi>q</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo>∨<!-- ∨ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>r</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {{\\text{~}p} \\vee {\\text{~}q}} \\right) \\vee {r}</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>p</mi>\n      </mrow>\n      <mo>∧<!-- ∧ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>q</mi>\n      </mrow>\n      <mo stretchy=\"false\">→<!-- → --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>r</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mtext>~</mtext>\n        <mi>p</mi>\n      </mrow>\n      <mo>∨<!-- ∨ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mtext>~</mtext>\n        <mi>q</mi>\n      </mrow>\n      <mo>∨<!-- ∨ --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>r</mi>\n      </mrow>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {{p} \\wedge {q} \\to {r}} \\right) \\leftrightarrow \\left( {{\\text{~}p} \\vee {\\text{~}q} \\vee {r}} \\right)</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td><b>T</b></td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M4-Q004-4",
+        "extraTitle": "CM-C02-M4-Q004-4"
+      }
+    }
+  ],
+  "questionSetStimulus": "Construct a truth table to analyze all possible outcomes for each of the following statements, then determine whether they are valid."
+}
