@@ -1,0 +1,90 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Kellie makes tables and chairs. Kellie profits $20 from a table (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>t</mi>\n</mrow><annotation encoding=\"LaTeX\">t</annotation></semantics></math>), and $10 from a chair (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>c</mi>\n</mrow><annotation encoding=\"LaTeX\">c</annotation></semantics></math>). The maximum number of tables and chairs Kellie can make in any one day is 12. What is the constraint inequality in this situation?\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>t</mi>\n    <mo>+</mo>\n    <mi>c</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mn>12</mn>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{t + c \\leq 12}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mn>20</mn>\n    <mi>t</mi>\n    <mo>+</mo>\n    <mn>10</mn>\n    <mi>c</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mn>12</mn>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{ 20t + 10c \\leq 12}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mn>20</mn>\n    <mi>t</mi>\n    <mo>+</mo>\n    <mn>10</mn>\n    <mi>c</mi>\n    <mo>≥<!-- ≥ --></mo>\n    <mn>12</mn>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{ 20t + 10c \\geq 12}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mn>20</mn>\n    <mi>t</mi>\n    <mo>+</mo>\n    <mn>10</mn>\n    <mi>c</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mn>70</mn>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{ 20t + 10c \\leq 70}</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "82b7b509-d2cf-427c-82f1-c17ea6607128"
+}
