@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "There is a fourth temperature scale, although it is not used much today. The Rankin temperature scale varies from the Fahrenheit scale by about 460 degrees. So given a temperature in Fahrenheit, add 460 degrees to get the temperature in Rankin. Which formula represents a formula to find degrees Rankin when given degrees Celsius?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>R</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>9</mn>\n  </mfrac>\n  <mi>C</mi>\n  <mo>−<!-- − --></mo>\n  <mn>492</mn>\n</mrow><annotation encoding=\"LaTeX\">R = \\frac{5}{9}C-492</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>R</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>9</mn>\n    <mn>5</mn>\n  </mfrac>\n  <mi>C</mi>\n  <mo>+</mo>\n  <mn>492</mn>\n</mrow><annotation encoding=\"LaTeX\">R = \\frac{9}{5}C + 492</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>R</mi>\n  <mo>=</mo>\n  <mi>C</mi>\n  <mo>+</mo>\n  <mn>492</mn>\n</mrow><annotation encoding=\"LaTeX\">R = C + 492</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>R</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>9</mn>\n  </mfrac>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>C</mi>\n      <mo>−<!-- − --></mo>\n      <mn>492</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">R = \\frac{5}{9}\\left( {C-492} \\right)</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "de37a300-b352-4a24-b439-af51d16e504e",
+  "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>R</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>9</mn>\n    <mn>5</mn>\n  </mfrac>\n  <mi>C</mi>\n  <mo>+</mo>\n  <mn>492</mn>\n</mrow><annotation encoding=\"LaTeX\"> R = \\frac{9}{5}C + 492</annotation></semantics></math>"
+}
