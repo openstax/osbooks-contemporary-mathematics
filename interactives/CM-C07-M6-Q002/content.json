@@ -1,0 +1,176 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 2,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "At a charity event with 58 people in attendance, 3 raffle winners are chosen. All receive the same prize, so order doesn’t matter. You are attending with 4 of your friends. What is the probability that at least one of you or your friends wins a raffle prize? Hint: Find the probability that none of you wins, and use the formula for complements.\n\n",
+        "subContentId": "9b3112ba-7efd-43a4-8090-af916c8f31c9",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>1</mn>\n  <mo>−<!-- − --></mo>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <msub>\n        <mi></mi>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>53</mn>\n        </mrow>\n      </msub>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msub>\n          <mi>C</mi>\n          <mn>3</mn>\n        </msub>\n      </mrow>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <msub>\n        <mi></mi>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>58</mn>\n        </mrow>\n      </msub>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msub>\n          <mi>C</mi>\n          <mn>3</mn>\n        </msub>\n      </mrow>\n    </mrow>\n  </mfrac>\n  <mo>≈<!-- ≈ --></mo>\n  <mn>10.7</mn>\n  <mi mathvariant=\"normal\">%<!-- % --></mi>\n</mrow><annotation encoding=\"LaTeX\">1 - \\frac{{_{53}{C_3}}}{{_{58}{C_3}}} \\approx 10.7\\%</annotation></semantics></math>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C07-M6-Q002-1",
+        "extraTitle": "CM-C07-M6-Q002-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "If you draw a hand of 5 cards from a standard deck, what is the probability that 2 cards are  <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi mathvariant=\"normal\">♠<!-- ♠ --></mi>\n</mrow><annotation encoding=\"LaTeX\">\\spadesuit</annotation></semantics></math> and 3 cards are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mo>♡</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">♡</annotation></semantics></math>?",
+        "subContentId": "58017a38-3381-4550-b7a6-ff8f4ed0004f",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <msub>\n        <mi></mi>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>13</mn>\n        </mrow>\n      </msub>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msub>\n          <mi>C</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mspace width=\"thinmathspace\"></mspace>\n        <mo>×<!-- × --></mo>\n        <msub>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>13</mn>\n          </mrow>\n        </msub>\n      </mrow>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msub>\n          <mi>C</mi>\n          <mn>3</mn>\n        </msub>\n      </mrow>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <msub>\n        <mi></mi>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>52</mn>\n        </mrow>\n      </msub>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msub>\n          <mi>C</mi>\n          <mn>5</mn>\n        </msub>\n      </mrow>\n    </mrow>\n  </mfrac>\n  <mo>≈<!-- ≈ --></mo>\n  <mn>0.86</mn>\n  <mi mathvariant=\"normal\">%<!-- % --></mi>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{_{13}{C_2}{\\, \\times \\, _{13}}{C_3}}}{{_{52}{C_5}}} \\approx 0.86\\%</annotation></semantics></math>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C07-M6-Q002-2",
+        "extraTitle": "CM-C07-M6-Q002-2"
+      }
+    }
+  ],
+  "questionSetStimulus": ""
+}
