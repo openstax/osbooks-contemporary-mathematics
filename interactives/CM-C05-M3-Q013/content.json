@@ -1,0 +1,100 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mo stretchy=\"false\">(</mo>\n    <mo>−<!-- − --></mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi mathvariant=\"normal\">∞<!-- ∞ --></mi>\n    </mrow>\n    <mo>,</mo>\n    <mo>−<!-- − --></mo>\n    <mn>3</mn>\n    <mo stretchy=\"false\">)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{( - {\\infty} , - 3)}</annotation></semantics></math> is the solution for which inequality?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>&lt;</mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">- 6x &lt; 18</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>&gt;</mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">- 6x &gt; 18</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>≤<!-- ≤ --></mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">- 6x \\leq 18</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>≥<!-- ≥ --></mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">- 6x \\geq 18</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>≤<!-- ≤ --></mo>\n  <mo>−<!-- − --></mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">- 6x \\leq  - 18</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b1092c8c-bdf0-4682-ae8f-f42b47b85197",
+  "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>&gt;<!-- > --></mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">-6x \\gt 18</annotation></semantics></math>"
+}
