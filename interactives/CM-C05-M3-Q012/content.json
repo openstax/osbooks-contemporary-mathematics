@@ -1,0 +1,100 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">[</mo>\n  <mn>4</mn>\n  <mo>,</mo>\n  <mi mathvariant=\"normal\">∞<!-- ∞ --></mi>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">[4,\\infty )</annotation></semantics></math> is the solution for which inequality?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>4</mn>\n  <mi>x</mi>\n  <mo>≥<!-- ≥ --></mo>\n  <mn>0</mn>\n</mrow><annotation encoding=\"LaTeX\">4x \\geq 0</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>4</mn>\n  <mi>x</mi>\n  <mo>≤<!-- ≤ --></mo>\n  <mn>0</mn>\n</mrow><annotation encoding=\"LaTeX\">4x \\leq 0</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>&lt;</mo>\n  <mn>24</mn>\n</mrow><annotation encoding=\"LaTeX\">6x &lt; 24</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>&gt;</mo>\n  <mn>24</mn>\n</mrow><annotation encoding=\"LaTeX\">6x &gt; 24</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>≥<!-- ≥ --></mo>\n  <mn>24</mn>\n</mrow><annotation encoding=\"LaTeX\">6x \\geq 24</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "50f57f92-d1b8-4166-ab19-82799efc35da",
+  "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>6</mn>\n  <mi>x</mi>\n  <mo>≥<!-- ≥ --></mo>\n  <mn>24</mn>\n</mrow><annotation encoding=\"LaTeX\">6x \\geq 24</annotation></semantics></math>"
+}
