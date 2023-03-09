@@ -1,0 +1,90 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "An antique music store sells two types of vinyl records; 45 rpm records (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>f</mi>\n</mrow><annotation encoding=\"LaTeX\">f</annotation></semantics></math>) and 33 rpm records (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>t</mi>\n</mrow><annotation encoding=\"LaTeX\">t</annotation></semantics></math>). It makes a profit of $2.50 for each 45 rpm record and $6.75 for each 33 rpm record. The objective function for profit in this situation is:\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>P</mi>\n    <mo>=</mo>\n    <mn>2.50</mn>\n    <mi>f</mi>\n    <mo>+</mo>\n    <mn>6.75</mn>\n    <mi>c</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{P = 2.50f + 6.75c}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>P</mi>\n    <mo>=</mo>\n    <mn>2.50</mn>\n    <mi>f</mi>\n    <mo>+</mo>\n    <mn>6.75</mn>\n    <mi>t</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{P = 2.50f + 6.75t}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>P</mi>\n    <mo>=</mo>\n    <mn>2.50</mn>\n    <mi>t</mi>\n    <mo>+</mo>\n    <mn>6.75</mn>\n    <mi>f</mi>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{P = 2.50t + 6.75f}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "None of these",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "14cb5aee-401e-4d90-9f59-0c75f4b17f51"
+}
