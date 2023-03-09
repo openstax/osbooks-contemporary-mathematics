@@ -1,0 +1,176 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 2,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <msup>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mfrac>\n            <mrow class=\"MJX-TeXAtom-ORD\">\n              <mrow class=\"MJX-TeXAtom-ORD\">\n                <msup>\n                  <mn>7</mn>\n                  <mn>9</mn>\n                </msup>\n              </mrow>\n            </mrow>\n            <mrow class=\"MJX-TeXAtom-ORD\">\n              <mrow class=\"MJX-TeXAtom-ORD\">\n                <msup>\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mn>10</mn>\n                  </mrow>\n                  <mn>5</mn>\n                </msup>\n              </mrow>\n              <mo>×<!-- × --></mo>\n              <mrow class=\"MJX-TeXAtom-ORD\">\n                <msup>\n                  <mn>6</mn>\n                  <mn>3</mn>\n                </msup>\n              </mrow>\n            </mrow>\n          </mfrac>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mn>8</mn>\n    </msup>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{\\left( {\\frac{{{7^9}}}{{{{10}^5} \\times {6^3}}}} \\right)^8}</annotation></semantics></math>",
+        "subContentId": "20cdc888-0170-42d1-a42b-b179ab4dff5d",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msup>\n          <mn>7</mn>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>72</mn>\n          </mrow>\n        </msup>\n      </mrow>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msup>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>10</mn>\n          </mrow>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>40</mn>\n          </mrow>\n        </msup>\n      </mrow>\n      <mo>×<!-- × --></mo>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msup>\n          <mn>6</mn>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>24</mn>\n          </mrow>\n        </msup>\n      </mrow>\n    </mrow>\n  </mfrac>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{{7^{72}}}}{{{{10}^{40}} \\times {6^{24}}}}</annotation></semantics></math>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C03-M8-Q010-1",
+        "extraTitle": "CM-C03-M8-Q010-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <msup>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mfrac>\n            <mn>4</mn>\n            <mrow class=\"MJX-TeXAtom-ORD\">\n              <mrow class=\"MJX-TeXAtom-ORD\">\n                <msup>\n                  <mi>a</mi>\n                  <mn>9</mn>\n                </msup>\n              </mrow>\n              <mrow class=\"MJX-TeXAtom-ORD\">\n                <msup>\n                  <mi>b</mi>\n                  <mn>6</mn>\n                </msup>\n              </mrow>\n            </mrow>\n          </mfrac>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mn>2</mn>\n    </msup>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{\\left( {\\frac{4}{{{a^9}{b^6}}}} \\right)^2}</annotation></semantics></math>",
+        "subContentId": "7bb153d3-c455-4154-9e2e-a3b8632e8b20",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mn>16</mn>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msup>\n          <mi>a</mi>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>18</mn>\n          </mrow>\n        </msup>\n      </mrow>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <msup>\n          <mi>b</mi>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>12</mn>\n          </mrow>\n        </msup>\n      </mrow>\n    </mrow>\n  </mfrac>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{16}}{{{a^{18}}{b^{12}}}}</annotation></semantics></math>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C03-M8-Q010-2",
+        "extraTitle": "CM-C03-M8-Q010-2"
+      }
+    }
+  ],
+  "questionSetStimulus": "Simplify the following:"
+}
