@@ -1,0 +1,237 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 3,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n  <mo>∧</mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">p∧\\text{~}q</annotation></semantics></math>",
+        "subContentId": "79ae872f-7b0c-4b10-a3b2-591245276782",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">\\text~q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n  <mo>∧<!-- ∧ --></mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">p \\wedge \\text{~}q</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M3-Q005-1",
+        "extraTitle": "CM-C02-M3-Q005-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mo stretchy=\"false\">(</mo>\n  <mi>p</mi>\n  <mo>∨</mo>\n  <mi>q</mi>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}(p∨q)</annotation></semantics></math>",
+        "subContentId": "445cc9f7-044f-48c4-b238-c9d4ad458381",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n  <mo>∨<!-- ∨ --></mo>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">p \\vee q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mo stretchy=\"false\">(</mo>\n  <mi>p</mi>\n  <mo>∨<!-- ∨ --></mo>\n  <mi>q</mi>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}(p \\vee q)</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M3-Q005-2",
+        "extraTitle": "CM-C02-M3-Q005-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mi>p</mi>\n  <mo>∧</mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>∨</mo>\n  <mi>r</mi>\n</mrow><annotation encoding=\"LaTeX\">(p∧\\text{~}q)∨r</annotation></semantics></math>",
+        "subContentId": "a57326ff-b9f9-48e9-bfde-f9276cbf0165",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<table class=\"unnumbered\">\n<thead>\n<tr>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n</mrow><annotation encoding=\"LaTeX\">p</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>r</mi>\n</mrow><annotation encoding=\"LaTeX\">r</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>p</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mo>∧<!-- ∧ --></mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">p\\, \\wedge \\text{~}q</annotation></semantics></math></th>\n<th><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mi>p</mi>\n  <mo>∧<!-- ∧ --></mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>∨<!-- ∨ --></mo>\n  <mi>r</mi>\n</mrow><annotation encoding=\"LaTeX\">(p \\wedge \\text{~}q) \\vee r</annotation></semantics></math></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n</tr>\n<tr>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n</tr>\n<tr>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>T</td>\n<td>F</td>\n<td>T</td>\n</tr>\n<tr>\n<td>F</td>\n<td>F</td>\n<td>F</td>\n<td>T</td>\n<td>F</td>\n<td>F</td>\n</tr>\n</tbody>\n</table>"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M3-Q005-3",
+        "extraTitle": "CM-C02-M3-Q005-3"
+      }
+    }
+  ],
+  "questionSetStimulus": "Construct a truth table to analyze all possible outcomes for each of the following arguments."
+}
