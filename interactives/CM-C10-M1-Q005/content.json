@@ -1,0 +1,359 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 5,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Identify the location of points <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>D</mi>\n</mrow><annotation encoding=\"LaTeX\">D</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>E</mi>\n</mrow><annotation encoding=\"LaTeX\">E</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>F</mi>\n</mrow><annotation encoding=\"LaTeX\">F</annotation></semantics></math>.",
+        "subContentId": "d5c7b4e5-7188-44e3-9dba-23cfa3000c4b",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "Point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math> is located at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mo>−<!-- − --></mo>\n  <mn>5</mn>\n  <mo>,</mo>\n  <mo>−<!-- − --></mo>\n  <mn>2</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">( - 5, - 2)</annotation></semantics></math>; Point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math> is located at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mo>−<!-- − --></mo>\n  <mn>3</mn>\n  <mo>,</mo>\n  <mn>4</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">(- 3,4)</annotation></semantics></math>; Point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> is located at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mn>3</mn>\n  <mo>,</mo>\n  <mo>−<!-- − --></mo>\n  <mn>6</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">(3, - 6)</annotation></semantics></math>;  Point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>D</mi>\n</mrow><annotation encoding=\"LaTeX\">D</annotation></semantics></math> is located at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mn>5</mn>\n  <mo>,</mo>\n  <mo>−<!-- − --></mo>\n  <mn>2</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">(5, - 2)</annotation></semantics></math>; Point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>E</mi>\n</mrow><annotation encoding=\"LaTeX\">E</annotation></semantics></math> is located at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mn>3</mn>\n  <mo>,</mo>\n  <mn>2</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">(3,2)</annotation></semantics></math>; Point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>F</mi>\n</mrow><annotation encoding=\"LaTeX\">F</annotation></semantics></math> is located at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mo stretchy=\"false\">(</mo>\n  <mn>5</mn>\n  <mo>,</mo>\n  <mn>5</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">(5,5)</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q005-1",
+        "extraTitle": "CM-C10-M1-Q005-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Describe the line that includes point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math> and point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>.",
+        "subContentId": "a449ae94-5543-40a5-8e31-2ade0ef67654",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "Points <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math> are on the straight line <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>A</mi>\n      <mi>B</mi>\n    </mrow>\n    <mo>↔<!-- ↔ --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overleftrightarrow {AB}</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q005-2",
+        "extraTitle": "CM-C10-M1-Q005-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Describe the line from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>E</mi>\n</mrow><annotation encoding=\"LaTeX\">E</annotation></semantics></math> to point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>F</mi>\n</mrow><annotation encoding=\"LaTeX\">F</annotation></semantics></math>.",
+        "subContentId": "477f6ecf-4059-49f1-ae6d-1820a017e735",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "The line that begins at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>E</mi>\n</mrow><annotation encoding=\"LaTeX\">E</annotation></semantics></math> in the direction of point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>F</mi>\n</mrow><annotation encoding=\"LaTeX\">F</annotation></semantics></math> is a ray, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>E</mi>\n      <mi>F</mi>\n    </mrow>\n    <mo>→<!-- → --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overrightarrow {EF}</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q005-3",
+        "extraTitle": "CM-C10-M1-Q005-3"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Describe the line from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> to point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>D</mi>\n</mrow><annotation encoding=\"LaTeX\">D</annotation></semantics></math>.",
+        "subContentId": "5c00fc61-da7d-4967-a3a3-e91a1f883c65",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "The line from point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> to point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>D</mi>\n</mrow><annotation encoding=\"LaTeX\">D</annotation></semantics></math> is a line segment <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>C</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo accent=\"false\">¯<!-- ¯ --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overline {CD} </annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q005-4",
+        "extraTitle": "CM-C10-M1-Q005-4"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Does this figure represent a plane?",
+        "subContentId": "f42026bd-cf62-4078-8417-370f9a4393f3",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "Yes, this represents a plane. One reason is that the figure contains four points that are not on the line <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>A</mi>\n      <mi>B</mi>\n    </mrow>\n    <mo>↔<!-- ↔ --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overleftrightarrow {AB}</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q005-5",
+        "extraTitle": "CM-C10-M1-Q005-5"
+      }
+    }
+  ],
+  "questionSetStimulus": "<img src=\"media/CS_Figure_10_01_UN014.png\" alt=\"A line, a ray, and a line segment are graphed on an x y coordinate plane. The x and y axes range from negative 7 to 7, in increments of 1. The line segment, C D begins at C (3, negative 6) and D (5, negative 2). The ray, EF passes through the points, E (3, 2) and F (5, 5). The line, A B passes through the points, A (negative 5, negative 2) and B (negative 3, 4).\">"
+}
