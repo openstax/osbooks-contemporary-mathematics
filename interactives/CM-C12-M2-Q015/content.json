@@ -1,0 +1,49 @@
+{
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 100
+    }
+  ],
+  "behaviour": {
+    "inputFieldSize": "10",
+    "enableRetry": true,
+    "ignoreScoring": false,
+    "pointsHost": 1,
+    "linebreakReplacement": " "
+  },
+  "checkAnswer": "Check",
+  "submitAnswer": "Submit",
+  "tryAgain": "Retry",
+  "showSolution": "Show solution",
+  "feedbackHeader": "Feedback",
+  "solutionTitle": "Sample solution",
+  "remainingChars": "Remaining characters: @chars",
+  "notEnoughChars": "You must enter at least @chars characters!",
+  "messageSave": "saved",
+  "ariaYourResult": "You got @score out of @total points",
+  "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+  "ariaCheck": "Check the answers.",
+  "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+  "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+  "taskDescription": "A student finds the number of edges in a complete graph by taking half the number of vertices, then subtracting one from the number of vertices, then multiplying these two values together. Will the student get the correct result?",
+  "isSolutionPublic": true,
+  "solution": {
+    "introduction": "",
+    "sample": ""
+  },
+  "keywords": [
+    {
+      "options": {
+        "points": 1,
+        "occurrences": 1,
+        "caseSensitive": false,
+        "forgiveMistakes": false,
+        "feedbackIncludedWord": "keyword",
+        "feedbackMissedWord": "none"
+      },
+      "keyword": "*"
+    }
+  ],
+  "detailedSolution": "Yes. If <i>n</i> is the number of vertices in a complete graph, the number of edges is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>n</mi>\n      <mo stretchy=\"false\">(</mo>\n      <mi>n</mi>\n      <mo>−<!-- − --></mo>\n      <mn>1</mn>\n      <mo stretchy=\"false\">)</mo>\n    </mrow>\n    <mn>2</mn>\n  </mfrac>\n  <mo>=</mo>\n  <mfrac>\n    <mi>n</mi>\n    <mn>2</mn>\n  </mfrac>\n  <mo stretchy=\"false\">(</mo>\n  <mi>n</mi>\n  <mo>−<!-- − --></mo>\n  <mn>1</mn>\n  <mo stretchy=\"false\">)</mo>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{n(n - 1)}}{2} = \\frac{n}{2}(n - 1)</annotation></semantics></math> which is half the number of vertices times one less than the number of vertices."
+}
