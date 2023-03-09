@@ -1,0 +1,81 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Kellie makes tables and chairs. Kellie profits $20 from a table (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>t</mi>\n</mrow><annotation encoding=\"LaTeX\">t</annotation></semantics></math>), and $10 from a chair (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>c</mi>\n</mrow><annotation encoding=\"LaTeX\">c</annotation></semantics></math>). A table requires 15 board feet of wood, while a chair requires 4 board feet of wood. Kellie has 70 board feet available. The maximum number of tables and chairs Kellie can make in any one day is 12. The four corner points of the system are:\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mo stretchy=\"false\">(</mo>\n    <mn>0</mn>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>0</mn>\n    <mo>,</mo>\n    <mn>12</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>10</mn>\n    <mo>,</mo>\n    <mn>2</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>12</mn>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{(0, 0), (0, 12), (10, 2), (12, 0)}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mo stretchy=\"false\">(</mo>\n    <mn>0</mn>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>0</mn>\n    <mo>,</mo>\n    <mn>12</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>2</mn>\n    <mo>,</mo>\n    <mn>10</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>4</mn>\n    <mstyle displaystyle=\"false\" scriptlevel=\"0\">\n      <mfrac>\n        <mn>2</mn>\n        <mn>3</mn>\n      </mfrac>\n    </mstyle>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{(0, 0), (0, 12), (2, 10), (4\\tfrac{2}{3} , 0)}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mo stretchy=\"false\">(</mo>\n    <mn>0</mn>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>17.5</mn>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>2</mn>\n    <mo>,</mo>\n    <mn>10</mn>\n    <mo stretchy=\"false\">)</mo>\n    <mo>,</mo>\n    <mo stretchy=\"false\">(</mo>\n    <mn>12</mn>\n    <mo>,</mo>\n    <mn>0</mn>\n    <mo stretchy=\"false\">)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{(0, 0), (17.5, 0), (2, 10), (12, 0)}</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "3699ba76-3bec-4a6e-bd16-dcf6eb9afb6c"
+}
