@@ -1,0 +1,49 @@
+{
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 100
+    }
+  ],
+  "behaviour": {
+    "inputFieldSize": "10",
+    "enableRetry": true,
+    "ignoreScoring": false,
+    "pointsHost": 1,
+    "linebreakReplacement": " "
+  },
+  "checkAnswer": "Check",
+  "submitAnswer": "Submit",
+  "tryAgain": "Retry",
+  "showSolution": "Show solution",
+  "feedbackHeader": "Feedback",
+  "solutionTitle": "Sample solution",
+  "remainingChars": "Remaining characters: @chars",
+  "notEnoughChars": "You must enter at least @chars characters!",
+  "messageSave": "saved",
+  "ariaYourResult": "You got @score out of @total points",
+  "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+  "ariaCheck": "Check the answers.",
+  "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+  "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+  "taskDescription": "A store declares a deep discount of 40% for an item, which they say will save $30. What was the original price of the item?",
+  "isSolutionPublic": true,
+  "solution": {
+    "introduction": "",
+    "sample": ""
+  },
+  "keywords": [
+    {
+      "options": {
+        "points": 1,
+        "occurrences": 1,
+        "caseSensitive": false,
+        "forgiveMistakes": false,
+        "feedbackIncludedWord": "keyword",
+        "feedbackMissedWord": "none"
+      },
+      "keyword": "*"
+    }
+  ],
+  "detailedSolution": "We want the original price of the item, which is the total. We know the percent, 40, and the percentage of the total, $30. To find the original cost, use <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mn>100</mn>\n      <mspace width=\"thinmathspace\"></mspace>\n      <mo>×<!-- × --></mo>\n      <mspace width=\"thinmathspace\"></mspace>\n      <mrow class=\"MJX-TeXAtom-ORD\">\n        <mi>x</mi>\n      </mrow>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>n</mi>\n    </mrow>\n  </mfrac>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{100\\,\\times \\,{x}}}{{n}}</annotation></semantics></math>, with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>x</mi>\n  <mo>=</mo>\n  <mn>30</mn>\n</mrow><annotation encoding=\"LaTeX\">x = 30</annotation></semantics></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> = </mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>40</mtext>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">n\\,{\\text{ = }}\\,{\\text{40}}</annotation></semantics></math>. Calculating with those values yields <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mfrac>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mn>100</mn>\n      <mspace width=\"thinmathspace\"></mspace>\n      <mo>×<!-- × --></mo>\n      <mspace width=\"thinmathspace\"></mspace>\n      <mn>30</mn>\n    </mrow>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mn>40</mn>\n    </mrow>\n  </mfrac>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mo>=</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mn>75</mn>\n</mrow><annotation encoding=\"LaTeX\">\\frac{{100\\, \\times \\,30}}{{40}}\\, = \\,75</annotation></semantics></math>. So, the original was $75."
+}
