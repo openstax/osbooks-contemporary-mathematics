@@ -1,0 +1,49 @@
+{
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 100
+    }
+  ],
+  "behaviour": {
+    "inputFieldSize": "10",
+    "enableRetry": true,
+    "ignoreScoring": false,
+    "pointsHost": 1,
+    "linebreakReplacement": " "
+  },
+  "checkAnswer": "Check",
+  "submitAnswer": "Submit",
+  "tryAgain": "Retry",
+  "showSolution": "Show solution",
+  "feedbackHeader": "Feedback",
+  "solutionTitle": "Sample solution",
+  "remainingChars": "Remaining characters: @chars",
+  "notEnoughChars": "You must enter at least @chars characters!",
+  "messageSave": "saved",
+  "ariaYourResult": "You got @score out of @total points",
+  "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+  "ariaCheck": "Check the answers.",
+  "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+  "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+  "taskDescription": "How many bridges and local bridges are in a complete graph with three or more vertices? Explain your reasoning.",
+  "isSolutionPublic": true,
+  "solution": {
+    "introduction": "",
+    "sample": ""
+  },
+  "keywords": [
+    {
+      "options": {
+        "points": 1,
+        "occurrences": 1,
+        "caseSensitive": false,
+        "forgiveMistakes": false,
+        "feedbackIncludedWord": "keyword",
+        "feedbackMissedWord": "none"
+      },
+      "keyword": "*"
+    }
+  ],
+  "detailedSolution": "In a complete graph with three or more vertices, any three vertices form a triangle which is a cycle. Any edge in a graph that is part of a cycle cannot be a bridge so, there are no bridges in a complete graph. Also, any edge that is part of a triangle cannot be a local bridge because the removal of any edge of a triangle will leave a path of only two edges between the vertices of that edge. So, there are no bridges or local bridges in a complete graph."
+}
