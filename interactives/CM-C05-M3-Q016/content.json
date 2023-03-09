@@ -1,0 +1,276 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 2,
+  "questions": [
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "Renaldo is hauling boxes of lawn chairs. Each box is the same size, 8 cubic feet. Renaldo’s truck has a capacity of 764 cubic feet. How many boxes of lawn chairs can Renaldo put in his truck?",
+        "answers": [
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>8</mn>\n  <mo>&lt;</mo>\n  <mn>764</mn>\n  <mi>x</mi>\n</mrow><annotation encoding=\"LaTeX\">8 &lt; 764x</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>8</mn>\n  <mi>x</mi>\n  <mo>&lt;</mo>\n  <mn>764</mn>\n</mrow><annotation encoding=\"LaTeX\">8x &lt; 764</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>8</mn>\n  <mo>&gt;</mo>\n  <mn>764</mn>\n  <mi>x</mi>\n</mrow><annotation encoding=\"LaTeX\">8 &gt; 764x</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>8</mn>\n  <mi>x</mi>\n  <mo>&gt;</mo>\n  <mn>764</mn>\n</mrow><annotation encoding=\"LaTeX\">8x &gt; 764</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "None of these",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "c4b25859-f67c-4f6a-b135-d50d566e06aa",
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>8</mn>\n  <mi>x</mi>\n  <mo>&lt;</mo>\n  <mn>764</mn>\n</mrow><annotation encoding=\"LaTeX\">8x &lt; 764</annotation></semantics></math>"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M3-Q016-1",
+        "extraTitle": "CM-C05-M3-Q016-1"
+      }
+    },
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "Bernadette babysits the neighbor’s kids, making on average $50 a night. How many nights will she have to babysit in order to earn enough money to buy a used car, whose cost is $8,120?",
+        "answers": [
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>50</mn>\n  <mo>&lt;</mo>\n  <mtext>8,120x</mtext>\n</mrow><annotation encoding=\"LaTeX\">50 &lt; \\text{8,120x}</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>50</mn>\n  <mi>x</mi>\n  <mo>&lt;</mo>\n  <mtext>8,120</mtext>\n</mrow><annotation encoding=\"LaTeX\">50x &lt; \\text{8,120}</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>50</mn>\n  <mo>&lt;</mo>\n  <mtext>8,120x</mtext>\n</mrow><annotation encoding=\"LaTeX\">50 &lt; \\text{8,120x}</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>50</mn>\n  <mi>x</mi>\n  <mo>&gt;</mo>\n  <mtext>8,120</mtext>\n</mrow><annotation encoding=\"LaTeX\">50x &gt; \\text{8,120}</annotation></semantics></math>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "None of these",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "c69ffe4e-8827-433d-9e35-db8027cea532",
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>50</mn>\n  <mi>x</mi>\n  <mo>&gt;</mo>\n  <mtext>8,120</mtext>\n</mrow><annotation encoding=\"LaTeX\">50x &gt; \\text{8,120}</annotation></semantics></math>"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M3-Q016-2",
+        "extraTitle": "CM-C05-M3-Q016-2"
+      }
+    }
+  ],
+  "questionSetStimulus": "For the following exercises, choose the equation that best models the situation."
+}
