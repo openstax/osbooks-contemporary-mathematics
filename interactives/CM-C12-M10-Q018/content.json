@@ -1,0 +1,140 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 2,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "City planners are tasked with building roadways to connect locations <i>A</i>, <i>B</i>, <i>C</i>, and <i>D</i>. The cost to build the roadways between any given pair of locations is given in the table.<br><br>\n<table class=\"unnumbered\">\n<caption>Construction Costs in Thousands between Locations</caption>\n<thead>\n<tr>\n<th></th>\n<th><i>A</i></th>\n<th><i>B</i></th>\n<th><i>C</i></th>\n<th><i>D</i></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b><i>A</i></b></td>\n<td>-</td>\n<td>125</td>\n<td>320</td>\n<td>275</td></tr>\n<tr>\n<td><b><i>B</i></b></td>\n<td>125</td>\n<td>-</td>\n<td>110</td>\n<td>540</td></tr>\n<tr>\n<td><b><i>C</i></b></td>\n<td>320</td>\n<td>110</td>\n<td>-</td>\n<td>1,010</td></tr>\n<tr>\n<td><b><i>D</i></b></td>\n<td>275</td>\n<td>540</td>\n<td>1,010</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>",
+        "subContentId": "07bdcd00-cec5-4edb-bb30-70d7d3556af3"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C12-M10-Q018-1",
+        "extraTitle": "CM-C12-M10-Q018-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "In a video game, the goal is to visit five different lands, <i>V</i>, <i>W</i>, <i>X</i>, <i>Y</i> and <i>Z</i>, without losing all your lives. The paths between the lands are rated for danger, 1 being lowest and 10 being highest. Once a path has been traversed successfully, it is free from danger. The ratings are given in the table.<br><br>\n<table class=\"unnumbered\">\n<caption>Danger Ratings between Lands</caption>\n<thead>\n<tr>\n<th></th>\n<th><i>V</i></th>\n<th><i>W</i></th>\n<th><i>X</i></th>\n<th><i>Y</i></th>\n<th><i>Z</i></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><b><i>V</i></b></td>\n<td>-</td>\n<td>2</td>\n<td>4</td>\n<td>9</td>\n<td>10</td>\n</tr>\n<tr>\n<td><b><i>W</i></b></td>\n<td>2</td>\n<td>-</td>\n<td>6</td>\n<td>8</td>\n<td>No Path</td>\n</tr>\n<tr>\n<td><b><i>X</i></b></td>\n<td>4</td>\n<td>6</td>\n<td>-</td>\n<td>7</td>\n<td>No Path</td>\n</tr>\n<tr>\n<td><b><i>Y</i></b></td>\n<td>9</td>\n<td>8</td>\n<td>7</td>\n<td>-</td>\n<td>5</td>\n</tr>\n<tr>\n<td><b><i>Z</i></b></td>\n<td>10</td>\n<td>No Path</td>\n<td>No Path</td>\n<td>5</td>\n<td>-</td>\n</tr>\n</tbody>\n</table>",
+        "subContentId": "9efca458-4910-43c4-915b-6f5e0c53d927"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C12-M10-Q018-2",
+        "extraTitle": "CM-C12-M10-Q018-2"
+      }
+    }
+  ],
+  "questionSetStimulus": "For the following exercises, draw a weighted graph to represent the given information. Then use the graph to find a minimum spanning tree and give its weight. Explain what the weight represents in the given scenario."
+}
