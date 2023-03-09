@@ -1,0 +1,90 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Dave grows wheat (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>w</mi>\n</mrow><annotation encoding=\"LaTeX\">w</annotation></semantics></math>) and barley (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>b</mi>\n</mrow><annotation encoding=\"LaTeX\">b</annotation></semantics></math>) on a farm. Dave expects to profit $150 per acre for wheat and $180 per acre for barley. The cost of raising each crop is $30 per acre for wheat and $25 per acre for barley. Dave budgets $1,635 for the raising of both crops. What is the constraint inequality in this situation?\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mn>150</mn>\n    <mi>w</mi>\n    <mo>+</mo>\n    <mn>180</mn>\n    <mi>b</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mtext>1,635</mtext>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{150w + 180b \\leq \\text{1,635}}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mn>25</mn>\n    <mi>w</mi>\n    <mo>+</mo>\n    <mn>30</mn>\n    <mi>b</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mtext>1,635</mtext>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{25w + 30b \\leq \\text{1,635}}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mi>w</mi>\n    <mo>+</mo>\n    <mi>b</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mtext>1,635</mtext>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{w + b \\leq \\text{1,635}}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mn>30</mn>\n    <mi>w</mi>\n    <mo>+</mo>\n    <mn>25</mn>\n    <mi>b</mi>\n    <mo>≤<!-- ≤ --></mo>\n    <mtext>1,635</mtext>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{30w + 25b \\leq \\text{1,635}}</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "b712a449-b9b7-4635-bd62-0b18986a49e3"
+}
