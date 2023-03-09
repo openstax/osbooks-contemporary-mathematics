@@ -1,0 +1,90 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Which product is equal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <msup>\n      <mi>x</mi>\n      <mn>2</mn>\n    </msup>\n  </mrow>\n  <mo>−<!-- − --></mo>\n  <mn>8</mn>\n  <mi>x</mi>\n  <mo>+</mo>\n  <mn>15</mn>\n</mrow><annotation encoding=\"LaTeX\">{x^2}-8x + 15</annotation></semantics></math>?\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>−<!-- − --></mo>\n      <mn>3</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>+</mo>\n      <mn>5</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {x-3} \\right)\\left( {x + 5} \\right)</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>−<!-- − --></mo>\n      <mn>3</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>−<!-- − --></mo>\n      <mn>5</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {x-3} \\right)\\left( {x-5} \\right)</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>+</mo>\n      <mn>3</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>+</mo>\n      <mn>5</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {x + 3} \\right)\\left( {x + 5} \\right)</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>+</mo>\n      <mn>3</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>x</mi>\n      <mo>−<!-- − --></mo>\n      <mn>5</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left( {x + 3} \\right)\\left( {x-5} \\right)</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "e55c7353-4634-4042-a4ae-12217635eafb"
+}
