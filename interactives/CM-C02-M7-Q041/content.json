@@ -1,0 +1,140 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 2,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mi>p</mi>\n  <mo stretchy=\"false\">→<!-- → --></mo>\n  <mi>q</mi>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mi>r</mi>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}p \\to q \\leftrightarrow r</annotation></semantics></math>",
+        "subContentId": "abfd3e08-fdc1-4d61-a269-711445cc6585"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M7-Q041-1",
+        "extraTitle": "CM-C02-M7-Q041-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mtext>~</mtext>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>p</mi>\n      <mo>∧<!-- ∧ --></mo>\n      <mi>q</mi>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo stretchy=\"false\">↔<!-- ↔ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> </mtext>\n  </mrow>\n  <mtext>~</mtext>\n  <mi>p</mi>\n  <mo>∨<!-- ∨ --></mo>\n  <mtext>~</mtext>\n  <mi>q</mi>\n</mrow><annotation encoding=\"LaTeX\">\\text{~}\\left( {p \\wedge q} \\right) \\leftrightarrow {\\text{ }}\\text{~}p \\vee \\text{~}q</annotation></semantics></math>",
+        "subContentId": "810c32a0-efc5-42de-8bb5-d0c0eff14d79"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C02-M7-Q041-2",
+        "extraTitle": "CM-C02-M7-Q041-2"
+      }
+    }
+  ],
+  "questionSetStimulus": "For each of the following compound logical statements, apply the proper dominance of connectives by adding parentheses to indicate the order in which the statement must be evaluated."
+}
