@@ -1,0 +1,237 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 3,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "List the ordered pairs of the relation.",
+        "subContentId": "6f009afe-5c10-470e-9182-2a06ad9cdb39",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "The ordered pairs of the relation are: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mo>−<!-- − --></mo>\n          <mn>3</mn>\n          <mo>,</mo>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mn>3</mn>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>,</mo>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mo>−<!-- − --></mo>\n          <mn>2</mn>\n          <mo>,</mo>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mn>2</mn>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>,</mo>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mo>−<!-- − --></mo>\n          <mn>1</mn>\n          <mo>,</mo>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mn>0</mn>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>,</mo>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>0</mn>\n          <mo>,</mo>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mo>−<!-- − --></mo>\n          <mn>1</mn>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>,</mo>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>2</mn>\n          <mo>,</mo>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mo>−<!-- − --></mo>\n          <mn>2</mn>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>,</mo>\n      <mrow>\n        <mo>(</mo>\n        <mrow class=\"MJX-TeXAtom-ORD\">\n          <mn>4</mn>\n          <mo>,</mo>\n          <mspace width=\"thinmathspace\"></mspace>\n          <mo>−<!-- − --></mo>\n          <mn>4</mn>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n    </mrow>\n    <mo>}</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ {\\left( {-3,\\,3} \\right),\\left( {-2,\\,2} \\right),\\left( {-1,\\,0} \\right),\\left( {0,\\,-1} \\right),\\left( {2,\\,-2} \\right),\\left( {4,\\,-4} \\right)} \\right\\}</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M7-Q009-1",
+        "extraTitle": "CM-C05-M7-Q009-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Find the domain of the relation.",
+        "subContentId": "95363b2b-9159-4317-ad56-951488da1975",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "The domain is the set of all <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>x</mi>\n</mrow><annotation encoding=\"LaTeX\">x</annotation></semantics></math>-values of the relation: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mo>−<!-- − --></mo>\n      <mn>3</mn>\n      <mo>,</mo>\n      <mo>−<!-- − --></mo>\n      <mn>2</mn>\n      <mo>,</mo>\n      <mo>−<!-- − --></mo>\n      <mn>1</mn>\n      <mo>,</mo>\n      <mn>0</mn>\n      <mo>,</mo>\n      <mn>2</mn>\n      <mo>,</mo>\n      <mn>4</mn>\n    </mrow>\n    <mo>}</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ {-3,-2,-1,0,2,4} \\right\\}</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M7-Q009-2",
+        "extraTitle": "CM-C05-M7-Q009-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "<img src=\"media/CS_Figure_05_07_013.jpg\" alt=\"Six points are plotted on an x y coordinate plane. The x and y axes range from negative 6 to 6, in increments of 1. The points are plotted at the following coordinates: (negative 3, 3), (negative 2, 2), (negative 1, 0), (0, negative 1), (2, negative 2), and (4, negative 4).\">",
+        "subContentId": "60a50316-4f78-40b9-8735-95c7320ebd37",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "The range is the set of all <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>y</mi>\n</mrow><annotation encoding=\"LaTeX\">y</annotation></semantics></math>-values of the relation: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mo>−<!-- − --></mo>\n      <mn>4</mn>\n      <mo>,</mo>\n      <mo>−<!-- − --></mo>\n      <mn>2</mn>\n      <mo>,</mo>\n      <mo>−<!-- − --></mo>\n      <mn>1</mn>\n      <mo>,</mo>\n      <mn>0</mn>\n      <mo>,</mo>\n      <mn>2</mn>\n      <mo>,</mo>\n      <mn>3</mn>\n    </mrow>\n    <mo>}</mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{{-4,-2,-1,0,2,3}\\right\\}</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M7-Q009-3",
+        "extraTitle": "CM-C05-M7-Q009-3"
+      }
+    }
+  ],
+  "questionSetStimulus": "Use the given figure to:"
+}
