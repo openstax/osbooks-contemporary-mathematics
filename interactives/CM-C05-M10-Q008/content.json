@@ -1,0 +1,604 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 5,
+  "questions": [
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mn>2</mn>\n          <mi>x</mi>\n          <mo>+</mo>\n          <mn>3</mn>\n          <mi>y</mi>\n          <mo>&lt;</mo>\n          <mn>5</mn>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mi>x</mi>\n          <mo>−<!-- − --></mo>\n          <mi>y</mi>\n          <mo>&gt;</mo>\n          <mn>3</mn>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{r}   2x + 3y &lt; 5 \\\\   x - y &gt; 3  \\\\  \\end{array}  \\right.</annotation></semantics></math>",
+        "answers": [
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_017.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, 7.5), (0, 1.5), and (9, negative 4.5). The region below the line is shaded in dark blue. The second line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region above the line is shaded in grey. The two lines intersect at (4, negative 1). The region below the intersection point and within the lines is shaded in light blue.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_018.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first (dashed) line passes through the points, (negative 8, 7), (0, 1.5), (4, negative 1), and (9, negative 4.5). The region above the line is shaded in gray. The second (solid) line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region below the line is shaded in dark blue. The two lines intersect at (4, negative 1). The region above and to the left of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_019.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 8, 7), (0, 1.5), (4, negative ), and (9, negative 4.5). The region above the line is shaded in dark blue. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (9, 6). The region above the line is shaded in light blue. The two lines intersect at (2.8, negative 0.2). The region above the intersection point and within the lines is shaded in gray. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_020.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 6, 9), (0, 3) (3, 0), and (9, negative 6). The region to the left of the line is shaded in dark blue. The second line passes through the points, (negative 8, negative 7), (0, negative 1.5), (2.5, 0), and (10, 5). The region below the line is shaded in gray. The two lines intersect at (2.8, 0.2). The region below the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_021.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, negative 7), (0, negative 1.5), and (10, 5). The region above the line is shaded in gray. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (10, 7). The region below the line is shaded in dark blue. The two lines intersect at (4, 1). The region to the right of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "a5805209-9b72-474c-aab8-a0d29c21e79b"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q008-1",
+        "extraTitle": "CM-C05-M10-Q008-1"
+      }
+    },
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mn>2</mn>\n          <mi>x</mi>\n          <mo>−<!-- − --></mo>\n          <mn>3</mn>\n          <mi>y</mi>\n          <mo>≤<!-- ≤ --></mo>\n          <mn>5</mn>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mi>x</mi>\n          <mo>−<!-- − --></mo>\n          <mi>y</mi>\n          <mo>≥<!-- ≥ --></mo>\n          <mn>3</mn>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{r}   2x - 3y \\leq 5 \\\\   x - y \\geq 3 \\\\  \\end{array}  \\right.</annotation></semantics></math>",
+        "answers": [
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_017.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, 7.5), (0, 1.5), and (9, negative 4.5). The region below the line is shaded in dark blue. The second line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region above the line is shaded in grey. The two lines intersect at (4, negative 1). The region below the intersection point and within the lines is shaded in light blue.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_018.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first (dashed) line passes through the points, (negative 8, 7), (0, 1.5), (4, negative 1), and (9, negative 4.5). The region above the line is shaded in gray. The second (solid) line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region below the line is shaded in dark blue. The two lines intersect at (4, negative 1). The region above and to the left of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_019.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 8, 7), (0, 1.5), (4, negative ), and (9, negative 4.5). The region above the line is shaded in dark blue. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (9, 6). The region above the line is shaded in light blue. The two lines intersect at (2.8, negative 0.2). The region above the intersection point and within the lines is shaded in gray. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_020.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 6, 9), (0, 3) (3, 0), and (9, negative 6). The region to the left of the line is shaded in dark blue. The second line passes through the points, (negative 8, negative 7), (0, negative 1.5), (2.5, 0), and (10, 5). The region below the line is shaded in gray. The two lines intersect at (2.8, 0.2). The region below the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_021.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, negative 7), (0, negative 1.5), and (10, 5). The region above the line is shaded in gray. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (10, 7). The region below the line is shaded in dark blue. The two lines intersect at (4, 1). The region to the right of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "90aa5ec9-5f0b-4bd2-aacf-1d7e6c083e5c"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q008-2",
+        "extraTitle": "CM-C05-M10-Q008-2"
+      }
+    },
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mn>2</mn>\n          <mi>x</mi>\n          <mo>−<!-- − --></mo>\n          <mn>3</mn>\n          <mi>y</mi>\n          <mo>&gt;</mo>\n          <mn>5</mn>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mi>x</mi>\n          <mo>+</mo>\n          <mi>y</mi>\n          <mo>&lt;</mo>\n          <mn>3</mn>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{r}   2x - 3y &gt; 5  \\\\   x + y &lt; 3 \\\\  \\end{array}  \\right.</annotation></semantics></math>",
+        "answers": [
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_017.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, 7.5), (0, 1.5), and (9, negative 4.5). The region below the line is shaded in dark blue. The second line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region above the line is shaded in grey. The two lines intersect at (4, negative 1). The region below the intersection point and within the lines is shaded in light blue.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_018.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first (dashed) line passes through the points, (negative 8, 7), (0, 1.5), (4, negative 1), and (9, negative 4.5). The region above the line is shaded in gray. The second (solid) line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region below the line is shaded in dark blue. The two lines intersect at (4, negative 1). The region above and to the left of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_019.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 8, 7), (0, 1.5), (4, negative ), and (9, negative 4.5). The region above the line is shaded in dark blue. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (9, 6). The region above the line is shaded in light blue. The two lines intersect at (2.8, negative 0.2). The region above the intersection point and within the lines is shaded in gray. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_020.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 6, 9), (0, 3) (3, 0), and (9, negative 6). The region to the left of the line is shaded in dark blue. The second line passes through the points, (negative 8, negative 7), (0, negative 1.5), (2.5, 0), and (10, 5). The region below the line is shaded in gray. The two lines intersect at (2.8, 0.2). The region below the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_021.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, negative 7), (0, negative 1.5), and (10, 5). The region above the line is shaded in gray. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (10, 7). The region below the line is shaded in dark blue. The two lines intersect at (4, 1). The region to the right of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "8f306299-1fa5-4e2d-b708-d83a729771aa"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q008-3",
+        "extraTitle": "CM-C05-M10-Q008-3"
+      }
+    },
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mn>2</mn>\n          <mi>x</mi>\n          <mo>+</mo>\n          <mn>3</mn>\n          <mi>y</mi>\n          <mo>&gt;</mo>\n          <mn>5</mn>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mi>x</mi>\n          <mo>+</mo>\n          <mi>y</mi>\n          <mo>≤<!-- ≤ --></mo>\n          <mn>3</mn>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{r}   2x + 3y &gt; 5 \\\\   x + y \\leq 3 \\\\  \\end{array}  \\right.</annotation></semantics></math>",
+        "answers": [
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_017.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, 7.5), (0, 1.5), and (9, negative 4.5). The region below the line is shaded in dark blue. The second line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region above the line is shaded in grey. The two lines intersect at (4, negative 1). The region below the intersection point and within the lines is shaded in light blue.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_018.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first (dashed) line passes through the points, (negative 8, 7), (0, 1.5), (4, negative 1), and (9, negative 4.5). The region above the line is shaded in gray. The second (solid) line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region below the line is shaded in dark blue. The two lines intersect at (4, negative 1). The region above and to the left of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_019.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 8, 7), (0, 1.5), (4, negative ), and (9, negative 4.5). The region above the line is shaded in dark blue. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (9, 6). The region above the line is shaded in light blue. The two lines intersect at (2.8, negative 0.2). The region above the intersection point and within the lines is shaded in gray. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_020.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 6, 9), (0, 3) (3, 0), and (9, negative 6). The region to the left of the line is shaded in dark blue. The second line passes through the points, (negative 8, negative 7), (0, negative 1.5), (2.5, 0), and (10, 5). The region below the line is shaded in gray. The two lines intersect at (2.8, 0.2). The region below the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_021.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, negative 7), (0, negative 1.5), and (10, 5). The region above the line is shaded in gray. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (10, 7). The region below the line is shaded in dark blue. The two lines intersect at (4, 1). The region to the right of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "fa381cfd-068b-4710-bec1-0eee8670f42d"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q008-4",
+        "extraTitle": "CM-C05-M10-Q008-4"
+      }
+    },
+    {
+      "params": {
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "type": "auto",
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true,
+          "enableCheckButton": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 0,
+            "feedback": "Wrong"
+          },
+          {
+            "from": 1,
+            "to": 99,
+            "feedback": "Almost!"
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Correct!"
+          }
+        ],
+        "isSolutionPublic": true,
+        "isFreeResponseSupported": true,
+        "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mn>2</mn>\n          <mi>x</mi>\n          <mo>+</mo>\n          <mn>3</mn>\n          <mi>y</mi>\n          <mo>≤<!-- ≤ --></mo>\n          <mn>5</mn>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mi>x</mi>\n          <mo>+</mo>\n          <mi>y</mi>\n          <mo>≥<!-- ≥ --></mo>\n          <mn>3</mn>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{r}   2x + 3y \\leq 5 \\\\   x + y \\geq 3  \\\\  \\end{array}  \\right.</annotation></semantics></math>",
+        "answers": [
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_017.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, 7.5), (0, 1.5), and (9, negative 4.5). The region below the line is shaded in dark blue. The second line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region above the line is shaded in grey. The two lines intersect at (4, negative 1). The region below the intersection point and within the lines is shaded in light blue.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_018.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first (dashed) line passes through the points, (negative 8, 7), (0, 1.5), (4, negative 1), and (9, negative 4.5). The region above the line is shaded in gray. The second (solid) line passes through the points, (negative 6, 9), (0, 3), (3, 0), and (9, negative 6). The region below the line is shaded in dark blue. The two lines intersect at (4, negative 1). The region above and to the left of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_019.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 8, 7), (0, 1.5), (4, negative ), and (9, negative 4.5). The region above the line is shaded in dark blue. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (9, 6). The region above the line is shaded in light blue. The two lines intersect at (2.8, negative 0.2). The region above the intersection point and within the lines is shaded in gray. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_020.jpg\" alt=\"Two dashed lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 6, 9), (0, 3) (3, 0), and (9, negative 6). The region to the left of the line is shaded in dark blue. The second line passes through the points, (negative 8, negative 7), (0, negative 1.5), (2.5, 0), and (10, 5). The region below the line is shaded in gray. The two lines intersect at (2.8, 0.2). The region below the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<img src=\"media/CS_Figure_05_10_021.jpg\" alt=\"Two lines are plotted on a coordinate plane. The horizontal and vertical axes range from negative 10 to 9, in increments of 1. The first line passes through the points, (negative 9, negative 7), (0, negative 1.5), and (10, 5). The region above the line is shaded in gray. The second line passes through the points, (negative 6, negative 9), (0, negative 3), (3, 0), and (10, 7). The region below the line is shaded in dark blue. The two lines intersect at (4, 1). The region to the right of the intersection point and within the lines is shaded in light blue. Note: all values are approximate.\">",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "subContentId": "9c373c9c-4650-46c1-8f19-c8b6d411a7a1"
+      },
+      "library": "H5P.MultiChoice 1.16",
+      "metadata": {
+        "contentType": "Multiple Choice",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q008-5",
+        "extraTitle": "CM-C05-M10-Q008-5"
+      }
+    }
+  ],
+  "questionSetStimulus": "Match the correct graph to its system of inequalities."
+}
