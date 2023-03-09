@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Using the information from exercise 18 and exercise 19, which conversion formula would you use to find degrees Kelvin when given degrees Fahrenheit?",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>9</mn>\n  </mfrac>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>F</mi>\n      <mo>−<!-- − --></mo>\n      <mn>32</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo>+</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\">K = \\frac{5}{9}\\left( {F-32} \\right) + 273</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>9</mn>\n  </mfrac>\n  <mi>F</mi>\n  <mo>+</mo>\n  <mn>241</mn>\n</mrow><annotation encoding=\"LaTeX\">K = \\frac{5}{9}F + 241</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>9</mn>\n    <mn>5</mn>\n  </mfrac>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>F</mi>\n      <mo>−<!-- − --></mo>\n      <mn>32</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo>+</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\">K = \\frac{9}{5}\\left( {F-32} \\right) + 273</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>9</mn>\n    <mn>5</mn>\n  </mfrac>\n  <mi>F</mi>\n  <mo>+</mo>\n  <mn>241</mn>\n</mrow><annotation encoding=\"LaTeX\">K = \\frac{9}{5}F + 241</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "5d80bf40-8b6c-457a-bdae-36c11326a20e",
+  "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>9</mn>\n  </mfrac>\n  <mrow>\n    <mo>(</mo>\n    <mrow class=\"MJX-TeXAtom-ORD\">\n      <mi>F</mi>\n      <mo>−<!-- − --></mo>\n      <mn>32</mn>\n    </mrow>\n    <mo>)</mo>\n  </mrow>\n  <mo>+</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\">K = \\frac{5}{9}\\left( {F-32} \\right) + 273</annotation></semantics></math>"
+}
