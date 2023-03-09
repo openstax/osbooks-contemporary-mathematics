@@ -1,0 +1,785 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 17,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>2</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{y}&amp;{ \\leq }&amp;{3x + 2}\\\\{y}&amp;{ &gt; }&amp;{x - 1}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "5d0514b0-0eb1-4756-b472-2a115fa48d21"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-1",
+        "extraTitle": "CM-C05-M10-Q011-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mfrac>\n              <mn>1</mn>\n              <mn>2</mn>\n            </mfrac>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>4</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{y}&amp;{ &lt; }&amp;{2x - 1}\\\\{y}&amp;{ \\leq  }&amp;{- \\frac{1}{2}x + 4}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "03d1c5a9-b8dd-4b59-92f2-52189ada37aa"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-2",
+        "extraTitle": "CM-C05-M10-Q011-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mfrac>\n              <mn>1</mn>\n              <mn>4</mn>\n            </mfrac>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>3</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{x - y}&amp;{ &gt; }&amp;{1}\\\\{y}&amp;{ &lt; }&amp;{ - \\frac{1}{4}x + 3}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "cad085df-66d5-46e7-ac43-eba11ee1a6bb"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-3",
+        "extraTitle": "CM-C05-M10-Q011-3"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>6</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mfrac>\n              <mn>1</mn>\n              <mn>2</mn>\n            </mfrac>\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{3x - y}&amp;{ \\geq }&amp;{6}\\\\{y}&amp;{ \\geq }&amp;{ - \\frac{1}{2}x}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "c8126731-ae39-427a-9b5a-18f5bf676b38"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-4",
+        "extraTitle": "CM-C05-M10-Q011-4"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>4</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>8</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mfrac>\n              <mn>3</mn>\n              <mn>4</mn>\n            </mfrac>\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{2x + 4y}&amp;{ \\geq }&amp;{8}\\\\{y}&amp;{ \\leq }&amp;{\\frac{3}{4}x}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "6b3ad731-ec4b-40d9-a780-18cf1de97686"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-5",
+        "extraTitle": "CM-C05-M10-Q011-5"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>5</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>10</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>4</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>12</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{2x - 5y}&amp;{ &lt; }&amp;{10}\\\\{3x + 4y}&amp;{ \\geq }&amp;{12}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "35caedc0-9741-4ef2-ba37-7e7b4be849f7"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-6",
+        "extraTitle": "CM-C05-M10-Q011-6"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>2</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mn>4</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>3</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>9</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{2x + 2y}&amp;{ &gt; }&amp;{ - 4}\\\\{- x + 3y}&amp;{ \\geq }&amp;{9}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "b0441650-c72b-43a8-9093-399c8cb34085"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-7",
+        "extraTitle": "CM-C05-M10-Q011-7"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>2</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{x - 2y}&amp;{ &lt; }&amp;{3}\\\\{y}&amp;{ \\leq }&amp;{1}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "db231a39-5b80-48fd-9bec-9e95cc5575d4"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-8",
+        "extraTitle": "CM-C05-M10-Q011-8"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>3</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>4</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{x - 3y}&amp;{ &gt; }&amp;{4}\\\\{y}&amp;{ \\leq }&amp;{ - 1}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "a3e6d1ec-1822-498d-ab86-e0afbe018bc1"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-9",
+        "extraTitle": "CM-C05-M10-Q011-9"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mfrac>\n              <mn>1</mn>\n              <mn>2</mn>\n            </mfrac>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>3</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{y}&amp;{ \\geq }&amp;{ - \\frac{1}{2}x - 3}\\\\{x}&amp;{ \\leq }&amp;{2}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "524c12d9-680d-4eee-b3e5-51413fd8573a"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-10",
+        "extraTitle": "CM-C05-M10-Q011-10"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>3</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>6</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mfrac>\n              <mn>1</mn>\n              <mn>3</mn>\n            </mfrac>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{x - 3y}&amp;{ \\geq }&amp;{6}\\\\{y}&amp;{ &gt; }&amp;{\\frac{1}{3}x + 1}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "f573d2ab-36bc-439b-9308-0257bf4e0588"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-11",
+        "extraTitle": "CM-C05-M10-Q011-11"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mfrac>\n              <mn>3</mn>\n              <mn>4</mn>\n            </mfrac>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>2</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{y}&amp;{ \\geq }&amp;{\\frac{3}{4}x - 2}\\\\{y}&amp;{ &lt; }&amp;{2}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "a663ead2-c911-47ce-9edc-bb860d9a4671"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-12",
+        "extraTitle": "CM-C05-M10-Q011-12"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>4</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>8</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&lt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{3x - 4y}&amp;{ &lt; }&amp;{8}\\\\{x}&amp;{ &lt; }&amp;{1}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "be280bf7-ecb6-4d1c-aefc-6767b46b0900"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-13",
+        "extraTitle": "CM-C05-M10-Q011-13"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mn>3</mn>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>5</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>10</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{- 3x + 5y}&amp;{ &gt; }&amp;{10}\\\\{x}&amp;{ &gt; }&amp;{ - 1}\\end{array} \\right.</annotation></semantics></math>",
+        "subContentId": "395747ba-d797-4a46-a5ec-6fb8eaaf6bbf"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-14",
+        "extraTitle": "CM-C05-M10-Q011-14"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{x}&amp;{ \\geq }&amp;{3}\\\\{y}&amp;{ \\leq }&amp;{2}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "80082daf-e796-4d26-998a-056e2b743375"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-15",
+        "extraTitle": "CM-C05-M10-Q011-15"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>x</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mn>1</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≥<!-- ≥ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>3</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{x}&amp;{ \\leq }&amp;{ - 1}\\\\{y}&amp;{ \\geq }&amp;{3}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "af9a8bd2-66c8-4079-8d02-427757ad6f84"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-16",
+        "extraTitle": "CM-C05-M10-Q011-16"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow>\n    <mo>{</mo>\n    <mtable columnalign=\"right center left\" rowspacing=\"4pt\" columnspacing=\"1em\">\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>2</mn>\n            <mi>x</mi>\n            <mo>+</mo>\n            <mn>4</mn>\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>&gt;</mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mn>4</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n      <mtr>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mi>y</mi>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>≤<!-- ≤ --></mo>\n          </mrow>\n        </mtd>\n        <mtd>\n          <mrow class=\"MJX-TeXAtom-ORD\">\n            <mo>−<!-- − --></mo>\n            <mfrac>\n              <mn>1</mn>\n              <mn>2</mn>\n            </mfrac>\n            <mi>x</mi>\n            <mo>−<!-- − --></mo>\n            <mn>2</mn>\n          </mrow>\n        </mtd>\n      </mtr>\n    </mtable>\n    <mo fence=\"true\" stretchy=\"true\" symmetric=\"true\"></mo>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\left\\{ \\begin{array}{rcl}{2x + 4y}&amp;{ &gt; }&amp;{4}\\\\{y}&amp;{ \\leq }&amp;{ - \\frac{1}{2}x - 2}\\end{array}  \\right.</annotation></semantics></math>",
+        "subContentId": "f1f58076-7168-4a08-90f1-9f6f087483ce"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C05-M10-Q011-17",
+        "extraTitle": "CM-C05-M10-Q011-17"
+      }
+    }
+  ],
+  "questionSetStimulus": "For the following exercises, solve the systems of linear equations by graphing."
+}
