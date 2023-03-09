@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "To find a temperature on the Kelvin temperature scale, add 273 degrees to the temperature in Celsius. Which formula illustrates this?\n",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n  <mo>=</mo>\n  <mi>K</mi>\n  <mo>+</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\"> C = K + 273</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mi>C</mi>\n  <mo>+</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\"> K = C + 273</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mi>C</mi>\n  <mo>−<!-- − --></mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\"> K = C-273</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n  <mo>=</mo>\n  <mi>K</mi>\n  <mo>−<!-- − --></mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\"> C = K-273</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "7e901e15-1991-4478-923c-ca873ac4d525",
+  "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>K</mi>\n  <mo>=</mo>\n  <mi>C</mi>\n  <mo>+</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\">K = C + 273</annotation></semantics></math>, although d <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n  <mo>=</mo>\n  <mi>K</mi>\n  <mo>–</mo>\n  <mn>273</mn>\n</mrow><annotation encoding=\"LaTeX\">C = K – 273</annotation></semantics></math>  is an equivalent formula."
+}
