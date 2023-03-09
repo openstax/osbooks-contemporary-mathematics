@@ -1,0 +1,484 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 10,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The number of elements in the universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>U</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>48</mn>\n</mrow><annotation encoding=\"LaTeX\">n(U) = 48</annotation></semantics></math>. Sets <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> are subsets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>23</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>25</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 23,\\,n(B) = 25</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>17</mn>\n</mrow><annotation encoding=\"LaTeX\">n(C) = 17</annotation></semantics></math>. Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>15</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>12</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>11</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B) = 15,\\,n(B \\cap C) = 12,\\,n(C \\cap A) = 11</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>8</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B \\cap C) = 8</annotation></semantics></math>.",
+        "subContentId": "ee6536aa-63be-45ff-9705-eb27e3105e03"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-1",
+        "extraTitle": "CM-C01-M5-Q012-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The number of elements in the universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>U</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>88</mn>\n</mrow><annotation encoding=\"LaTeX\">n(U) = 88</annotation></semantics></math>. Sets <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> are subsets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>31</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>46</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 31,\\,n(B) = 46</annotation></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>33</mn>\n</mrow><annotation encoding=\"LaTeX\">n(C) = 33</annotation></semantics></math>. Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>24</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>24</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B) = 24,\\,n(B \\cap C) = 24</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>26</mn>\n</mrow><annotation encoding=\"LaTeX\">n(C \\cap A) = 26</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>22</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B \\cap C) = 22</annotation></semantics></math>.",
+        "subContentId": "19b01ab4-a5f7-4d61-9640-a19722040378"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-2",
+        "extraTitle": "CM-C01-M5-Q012-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The number of elements in the universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>U</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>52</mn>\n</mrow><annotation encoding=\"LaTeX\">n(U) = 52</annotation></semantics></math>. Sets <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> are subsets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>23</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 23</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>27</mn>\n</mrow><annotation encoding=\"LaTeX\">n(B) = 27</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>29</mn>\n</mrow><annotation encoding=\"LaTeX\">n(C) = 29</annotation></semantics></math>. Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>22</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>21</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>19</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B) = 22,\\,n(B \\cap C) = 21,\\,n(C \\cap A) = 19</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B \\cap C) = 18</annotation></semantics></math>.",
+        "subContentId": "756cafbd-bd44-460c-b66b-efaa1a863268"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-3",
+        "extraTitle": "CM-C01-M5-Q012-3"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The number of elements in the universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>U</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>144</mn>\n</mrow><annotation encoding=\"LaTeX\">n(U) = 144</annotation></semantics></math>. Sets <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math> are subsets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>36</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 36</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>64</mn>\n</mrow><annotation encoding=\"LaTeX\">n(B) = 64</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>81</mn>\n</mrow><annotation encoding=\"LaTeX\">n(C) = 81</annotation></semantics></math>. Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>26</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>61</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>29</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B) = 26,\\,n(B \\cap C) = 61,\\,n(C \\cap A) = 29</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>B</mi>\n  <mo>∩<!-- ∩ --></mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>25</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A \\cap B \\cap C) = 25</annotation></semantics></math>.",
+        "subContentId": "d4d89ee0-b60c-4360-b363-bab9ffb87ca6"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-4",
+        "extraTitle": "CM-C01-M5-Q012-4"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, has a cardinality of 36. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>12</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>12</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>15</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>3</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>4</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>5</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 12,\\,n(B) = 12,\\,n(C) = 15,\\,n(A\\,{\\text{and}}\\,B) = 3,\\,n(B\\,{\\text{and}}\\,C) = 4,\\,n(C\\,{\\text{and}}\\,A) = 5</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>5</mn>\n</mrow><annotation encoding=\"LaTeX\">n(C\\,{\\text{and}}\\,A) = 5</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> and </mtext>\n  </mrow>\n  <mi>B</mi>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext> and </mtext>\n  </mrow>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>1.</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A{\\text{ and }}B{\\text{ and }}C) = 1.</annotation></semantics></math>",
+        "subContentId": "53149263-f8c2-4207-8a6c-bb526552678c"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-5",
+        "extraTitle": "CM-C01-M5-Q012-5"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, has a cardinality of 63. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>29</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 29</annotation></semantics></math>,  <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>31</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>41</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>12</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>16</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>18</mn>\n</mrow><annotation encoding=\"LaTeX\">n(B) = 31,\\,n(C) = 41,\\,n(A\\,{\\text{and}}\\,B) = 12,\\,n(B\\,{\\text{and}}\\,C) = 16,\\,n(C\\,{\\text{and}}\\,A) = 18</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>5</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A\\,{\\text{and}}\\,B\\,{\\text{and}}\\,C) = 5</annotation></semantics></math>.",
+        "subContentId": "fff91c6b-525d-442b-ad2a-eb1a06b69ed4"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-6",
+        "extraTitle": "CM-C01-M5-Q012-6"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, has a cardinality of 72. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>32</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>32</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>44</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>18</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>22</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>26</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 32,\\,n(B) = 32,\\,n(C) = 44,\\,n(A\\,{\\text{and}}\\,B) = 18,\\,n(B\\,{\\text{and}}\\,C) = 22,\\,n(C\\,{\\text{and}}\\,A) = 26</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>14</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A\\,{\\text{and}}\\,B\\,{\\text{and}}\\,C) = 14</annotation></semantics></math>.",
+        "subContentId": "976796aa-e276-47fc-94c8-9353177f6d7d"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-7",
+        "extraTitle": "CM-C01-M5-Q012-7"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The universal set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>U</mi>\n</mrow><annotation encoding=\"LaTeX\">U</annotation></semantics></math>, has a cardinality of 81. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>54</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>41</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>52</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>32</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>28</mn>\n  <mo>,</mo>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>C</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>A</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>30</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A) = 54,\\,n(B) = 41,\\,n(C) = 52,\\,n(A\\,{\\text{and}}\\,B) = 32,\\,n(B\\,{\\text{and}}\\,C) = 28,\\,n(C\\,{\\text{and}}\\,A) = 30</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>n</mi>\n  <mo stretchy=\"false\">(</mo>\n  <mi>A</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>B</mi>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mtext>and</mtext>\n  </mrow>\n  <mspace width=\"thinmathspace\"></mspace>\n  <mi>C</mi>\n  <mo stretchy=\"false\">)</mo>\n  <mo>=</mo>\n  <mn>21</mn>\n</mrow><annotation encoding=\"LaTeX\">n(A\\,{\\text{and}}\\,B\\,{\\text{and}}\\,C) = 21</annotation></semantics></math>.",
+        "subContentId": "279d43ce-e7c1-40ae-a3c6-05a9befceac5"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-8",
+        "extraTitle": "CM-C01-M5-Q012-8"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "The anime drawing club at Pratt Institute conducted a survey of its 42 members and found that 23 of them sketched with pastels, 28 used charcoal, and 17 used colored pencils. Of these, 10 club members used all three mediums, 18 used charcoal and pastels, 11 used colored pencils and charcoal, and 12 used colored pencils and pastels. The remaining club members did not use any of these three mediums.",
+        "subContentId": "3028e50c-3f63-4149-a302-40307bae1f33"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-9",
+        "extraTitle": "CM-C01-M5-Q012-9"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": false,
+        "taskDescription": "A new SUV is selling with three optional packages: a sport package, a tow package, and an entertainment package. A dealership gathered the following data for all 31 of these vehicles sold during the month of July. A total of 18 SUVs included the entertainment package, 11 included the tow package, and 16 included the sport package. Of these, five SUVs included all three packages, seven were sold with both the tow package and sport package, 11 were sold with the entertainment and sport package, and eight were sold with the tow package and entertainment package. The remaining SUVs sold did not include any of these optional packages.",
+        "subContentId": "7268eaba-6ec5-4af5-a096-fe2c57656010"
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C01-M5-Q012-10",
+        "extraTitle": "CM-C01-M5-Q012-10"
+      }
+    }
+  ],
+  "questionSetStimulus": "For the following exercises, create a three circle Venn diagram to represent the relationship between the described sets.\n"
+}
