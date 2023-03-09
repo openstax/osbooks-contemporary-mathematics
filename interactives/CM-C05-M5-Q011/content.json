@@ -1,0 +1,91 @@
+{
+  "UI": {
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "checkAnswerButton": "Check",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "type": "auto",
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true,
+    "enableCheckButton": true
+  },
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 0,
+      "feedback": "Wrong"
+    },
+    {
+      "from": 1,
+      "to": 99,
+      "feedback": "Almost!"
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Correct!"
+    }
+  ],
+  "question": "Choose the correct solution to the equation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mn>6</mn>\n  <mi>y</mi>\n  <mo>+</mo>\n  <mn>10</mn>\n  <mo>=</mo>\n  <mn>12</mn>\n  <mi>y</mi>\n</mrow><annotation encoding=\"LaTeX\">6y + 10 = 12y</annotation></semantics></math>.",
+  "isSolutionPublic": true,
+  "isFreeResponseSupported": true,
+  "answers": [
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>y</mi>\n  <mo>=</mo>\n  <mn>5</mn>\n</mrow><annotation encoding=\"LaTeX\">y = 5</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>y</mi>\n  <mo>=</mo>\n  <mo>−<!-- − --></mo>\n  <mn>1</mn>\n</mrow><annotation encoding=\"LaTeX\">y = -1</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>y</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>1</mn>\n    <mn>2</mn>\n  </mfrac>\n</mrow><annotation encoding=\"LaTeX\">y = \\frac{1}{2}</annotation></semantics></math>",
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    },
+    {
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>y</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>3</mn>\n  </mfrac>\n</mrow><annotation encoding=\"LaTeX\">y = \\frac{5}{3}</annotation></semantics></math>",
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      }
+    }
+  ],
+  "subContentId": "fba50def-21d2-4a57-a46c-43526337fb9c",
+  "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>y</mi>\n  <mo>=</mo>\n  <mfrac>\n    <mn>5</mn>\n    <mn>3</mn>\n  </mfrac>\n</mrow><annotation encoding=\"LaTeX\"> y = \\frac{5}{3}</annotation></semantics></math>"
+}
