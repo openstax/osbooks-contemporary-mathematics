@@ -1,0 +1,237 @@
+{
+  "introPage": {
+    "showIntroPage": true,
+    "startButtonText": "Start Exercise"
+  },
+  "progressType": "dots",
+  "passPercentage": 100,
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Your result:",
+    "scoreBarLabel": "You got @finals out of @total points",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100
+      }
+    ],
+    "solutionButtonText": "Show solution",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": false,
+    "retryButton": true
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "nextButton": "Next question",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question: @current of @total questions",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions"
+  },
+  "poolSize": 3,
+  "questions": [
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Determine <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>A</mi>\n        <mi>B</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n  <mo>∪<!-- ∪ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>D</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{\\overline {AB}}  \\cup {\\overline {BD}}</annotation></semantics></math>.",
+        "subContentId": "fbec7b64-0dfe-4955-9881-2f8e4d30175c",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>A</mi>\n        <mi>B</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n  <mo>∪<!-- ∪ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>D</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n  <mo>=</mo>\n  <mover>\n    <mrow>\n      <mi>A</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo accent=\"false\">¯<!-- ¯ --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">{\\overline {AB}}  \\cup {\\overline {BD}}  = \\overline {AD} </annotation></semantics></math>. The union of line segment <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>A</mi>\n      <mi>B</mi>\n    </mrow>\n    <mo accent=\"false\">¯<!-- ¯ --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overline {AB} </annotation></semantics></math> and the line segment <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>D</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{\\overline {BD}}</annotation></semantics></math> contains all points in each line segment combined."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q008-1",
+        "extraTitle": "CM-C10-M1-Q008-1"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Determine <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo>←<!-- ← --></mo>\n  </mover>\n  <mo>∩<!-- ∩ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>C</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\overleftarrow {BD}  \\cap {\\overline {BC}} </annotation></semantics></math>.",
+        "subContentId": "72a0a011-8547-45f2-84e6-4d52c8101e6c",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo>→<!-- → --></mo>\n  </mover>\n  <mo>∩<!-- ∩ --></mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>C</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n  <mo>=</mo>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>C</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">\\overrightarrow {BD}  \\cap {\\overline {BC}}  = {\\overline {BC}} </annotation></semantics></math>. The intersection of the ray <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo>→<!-- → --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overrightarrow {BD} </annotation></semantics></math> and the line segment <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>C</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{\\overline {BC}} </annotation></semantics></math> contains only the points common to each set, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mrow class=\"MJX-TeXAtom-ORD\">\n    <mover>\n      <mrow>\n        <mi>B</mi>\n        <mi>C</mi>\n      </mrow>\n      <mo accent=\"false\">¯<!-- ¯ --></mo>\n    </mover>\n  </mrow>\n</mrow><annotation encoding=\"LaTeX\">{\\overline {BC}} </annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q008-2",
+        "extraTitle": "CM-C10-M1-Q008-2"
+      }
+    },
+    {
+      "params": {
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "behaviour": {
+          "inputFieldSize": "10",
+          "enableRetry": true,
+          "ignoreScoring": false,
+          "pointsHost": 1,
+          "linebreakReplacement": " "
+        },
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "feedbackHeader": "Feedback",
+        "solutionTitle": "Sample solution",
+        "remainingChars": "Remaining characters: @chars",
+        "notEnoughChars": "You must enter at least @chars characters!",
+        "messageSave": "saved",
+        "ariaYourResult": "You got @score out of @total points",
+        "ariaNavigatedToSolution": "Navigated to newly included sample solution after textarea.",
+        "ariaCheck": "Check the answers.",
+        "ariaShowSolution": "Show the solution. You will be provided with a sample solution.",
+        "ariaRetry": "Retry the task. You can improve your previous answer if the author allowed that.",
+        "isSolutionPublic": true,
+        "taskDescription": "Determine <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>A</mi>\n    </mrow>\n    <mo>←<!-- ← --></mo>\n  </mover>\n  <mo>∪<!-- ∪ --></mo>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo>→<!-- → --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overleftarrow {BA}  \\cup \\overrightarrow {BD} </annotation></semantics></math>.",
+        "subContentId": "bb8687f2-8877-4a4d-b6be-0ca07fe5b91b",
+        "solution": {
+          "introduction": "",
+          "sample": ""
+        },
+        "keywords": [
+          {
+            "options": {
+              "points": 1,
+              "occurrences": 1,
+              "caseSensitive": false,
+              "forgiveMistakes": false,
+              "feedbackIncludedWord": "keyword",
+              "feedbackMissedWord": "none"
+            },
+            "keyword": "*"
+          }
+        ],
+        "detailedSolution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>A</mi>\n    </mrow>\n    <mo>→<!-- → --></mo>\n  </mover>\n  <mo>∪<!-- ∪ --></mo>\n  <mover>\n    <mrow>\n      <mi>B</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo>→<!-- → --></mo>\n  </mover>\n  <mo>=</mo>\n  <mover>\n    <mrow>\n      <mi>A</mi>\n      <mi>D</mi>\n    </mrow>\n    <mo>↔<!-- ↔ --></mo>\n  </mover>\n</mrow><annotation encoding=\"LaTeX\">\\overrightarrow {BA}  \\cup \\overrightarrow {BD}  = \\overleftrightarrow {AD}</annotation></semantics></math>. The union of the ray starting at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math> and extending infinitely in the direction of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math> and the ray starting at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math> and extending infinitely in the direction of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>D</mi>\n</mrow><annotation encoding=\"LaTeX\">D</annotation></semantics></math> is the straight line extending infinitely in both directions containing points <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>A</mi>\n</mrow><annotation encoding=\"LaTeX\">A</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>B</mi>\n</mrow><annotation encoding=\"LaTeX\">B</annotation></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>C</mi>\n</mrow><annotation encoding=\"LaTeX\">C</annotation></semantics></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow>\n  <mi>D</mi>\n</mrow><annotation encoding=\"LaTeX\">D</annotation></semantics></math>."
+      },
+      "library": "H5P.Essay 1.5",
+      "metadata": {
+        "contentType": "Essay",
+        "license": "U",
+        "authors": [],
+        "changes": [],
+        "title": "CM-C10-M1-Q008-3",
+        "extraTitle": "CM-C10-M1-Q008-3"
+      }
+    }
+  ],
+  "questionSetStimulus": "<img src=\"media/CS_Figure_10_01_UN018.png\" alt=\"A line with four points, A, B, C, and D marked on it.\">"
+}
