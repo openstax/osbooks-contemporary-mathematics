@@ -20,7 +20,7 @@
     <item>State the Chinese postman problem.</item>
     <item>Describe and identify Euler Circuits.</item>
     <item>Apply the Euler Circuits Theorem.</item>
-    <item>Evaluate Euler Circuits in real-world applications.</item>
+    <item>Eulerize graphs in real-world applications.</item>
     </list>
     </section>
     <para id="para-00002">The delivery of goods is a huge part of our daily lives. From the factory to the distribution center, to the local vendor, or to your front door, nearly every product that you buy has been shipped multiple times to get to you. If the cost and time of that delivery is too great, you will not be able to afford the product. Delivery personnel have to leave from one location, deliver the goods to various places, and then return to their original location and do all of this in an organized way without losing money. How do delivery services find the most efficient delivery route? The answer lies in graph theory.</para>
@@ -358,7 +358,7 @@
     <list list-type="enumerated" number-style="arabic" id="list-00009">
     <item>Multigraph <emphasis effect="italic">B</emphasis> is not an eulerization of <emphasis effect="italic">A</emphasis> because the edge <emphasis effect="italic">N</emphasis> between vertices <emphasis effect="italic">c</emphasis> and <emphasis effect="italic">d</emphasis> is not a duplicate of an existing edge. Multigraph <emphasis effect="italic">E</emphasis> is not an eulerization of <emphasis effect="italic">A</emphasis> because vertices <emphasis effect="italic">b</emphasis> and <emphasis effect="italic">e</emphasis> have odd degree.</item>
     <item>Multigraph <emphasis effect="italic">C</emphasis> uses 3 duplicate edges while multigraph <emphasis effect="italic">D</emphasis> only uses 2. So, <emphasis effect="italic">D</emphasis> uses the fewest.</item>
-    <item>Since there were four vertices in Graph <emphasis effect="italic">A</emphasis>, the fewest number of edges that could possibly eulerize the graph is half of four, which is two. So, it is not possible to eulerize Graph <emphasis effect="italic">A</emphasis> using fewer edges.</item>
+    <item>Since there were four vertices of odd degree in Graph <emphasis effect="italic">A</emphasis>, the fewest number of edges that could possibly eulerize the graph is half of four, which is two. So, it is not possible to eulerize Graph <emphasis effect="italic">A</emphasis> using fewer edges.</item>
     </list>
     </solution>
     </exercise>
